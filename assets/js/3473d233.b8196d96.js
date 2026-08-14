@@ -1,0 +1,5545 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[90668],{
+
+/***/ 86459
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_database_management_systems_06_sql_advanced_md_347_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-database-management-systems-06-sql-advanced-md-347.json
+const site_docs_courses_database_management_systems_06_sql_advanced_md_347_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/database-management-systems/06-sql-advanced","title":"Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables","description":"Previous SQL Joins and Subqueries | Next Normalization","source":"@site/docs/courses/database-management-systems/06-sql-advanced.md","sourceDirName":"courses/database-management-systems","slug":"/database-management-systems/06-sql-advanced","permalink":"/ai-engineering-journey/database-management-systems/06-sql-advanced","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"06-sql-advanced","slug":"/database-management-systems/06-sql-advanced","title":"Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables","sidebar_label":"Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables","sidebar_position":6},"sidebar":"course-database-management-systems","previous":{"title":"Chapter 5: SQL Joins and Subqueries","permalink":"/ai-engineering-journey/database-management-systems/05-sql-joins"},"next":{"title":"Chapter 7: Normalization in Database Management Systems","permalink":"/ai-engineering-journey/database-management-systems/07-normalization"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/database-management-systems/06-sql-advanced.md
+
+
+const frontMatter = {
+	id: '06-sql-advanced',
+	slug: '/database-management-systems/06-sql-advanced',
+	title: 'Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables',
+	sidebar_label: 'Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables',
+	sidebar_position: 6
+};
+const contentTitle = 'Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "6.1 Subqueries",
+  "id": "61-subqueries",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy",
+  "level": 3
+}, {
+  "value": "6.1.1 Scalar Subquery",
+  "id": "611-scalar-subquery",
+  "level": 3
+}, {
+  "value": "6.1.2 Row Subquery",
+  "id": "612-row-subquery",
+  "level": 3
+}, {
+  "value": "6.1.3 Table Subquery",
+  "id": "613-table-subquery",
+  "level": 3
+}, {
+  "value": "6.1.4 Correlated Subquery",
+  "id": "614-correlated-subquery",
+  "level": 3
+}, {
+  "value": "6.1.5 EXISTS / NOT EXISTS",
+  "id": "615-exists--not-exists",
+  "level": 3
+}, {
+  "value": "6.1.6 ANY / ALL",
+  "id": "616-any--all",
+  "level": 3
+}, {
+  "value": "6.1.7 Subquery Types Comparison",
+  "id": "617-subquery-types-comparison",
+  "level": 3
+}, {
+  "value": "6.2 Common Table Expressions (CTEs)",
+  "id": "62-common-table-expressions-ctes",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-1",
+  "level": 3
+}, {
+  "value": "6.2.1 Basic CTE",
+  "id": "621-basic-cte",
+  "level": 3
+}, {
+  "value": "6.2.2 Multiple CTEs",
+  "id": "622-multiple-ctes",
+  "level": 3
+}, {
+  "value": "6.2.3 Recursive CTEs",
+  "id": "623-recursive-ctes",
+  "level": 3
+}, {
+  "value": "6.2.4 CTE vs Subquery vs Temp Table",
+  "id": "624-cte-vs-subquery-vs-temp-table",
+  "level": 3
+}, {
+  "value": "6.3 Window Functions",
+  "id": "63-window-functions",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-2",
+  "level": 3
+}, {
+  "value": "Syntax",
+  "id": "syntax",
+  "level": 3
+}, {
+  "value": "6.3.1 ROW_NUMBER",
+  "id": "631-row_number",
+  "level": 3
+}, {
+  "value": "6.3.2 RANK / DENSE_RANK",
+  "id": "632-rank--dense_rank",
+  "level": 3
+}, {
+  "value": "6.3.3 NTILE",
+  "id": "633-ntile",
+  "level": 3
+}, {
+  "value": "6.3.4 LAG / LEAD",
+  "id": "634-lag--lead",
+  "level": 3
+}, {
+  "value": "6.3.5 FIRST_VALUE / LAST_VALUE",
+  "id": "635-first_value--last_value",
+  "level": 3
+}, {
+  "value": "6.3.6 Aggregate Window Functions (SUM/AVG OVER)",
+  "id": "636-aggregate-window-functions-sumavg-over",
+  "level": 3
+}, {
+  "value": "6.3.7 Window Functions Comparison",
+  "id": "637-window-functions-comparison",
+  "level": 3
+}, {
+  "value": "C++ Implementation (Window Function Simulator)",
+  "id": "c-implementation-window-function-simulator",
+  "level": 3
+}, {
+  "value": "Python Implementation (Window Function Simulator)",
+  "id": "python-implementation-window-function-simulator",
+  "level": 3
+}, {
+  "value": "Complexity Analysis of Window Functions",
+  "id": "complexity-analysis-of-window-functions",
+  "level": 3
+}, {
+  "value": "Window Functions → Edge Cases",
+  "id": "window-functions--edge-cases",
+  "level": 3
+}, {
+  "value": "6.4 PIVOT / UNPIVOT",
+  "id": "64-pivot--unpivot",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-3",
+  "level": 3
+}, {
+  "value": "6.4.1 PIVOT (SQL Server)",
+  "id": "641-pivot-sql-server",
+  "level": 3
+}, {
+  "value": "6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)",
+  "id": "642-pivot-using-case-mysql--postgresql-compatible",
+  "level": 3
+}, {
+  "value": "6.4.3 PIVOT using crosstab (PostgreSQL)",
+  "id": "643-pivot-using-crosstab-postgresql",
+  "level": 3
+}, {
+  "value": "6.4.4 UNPIVOT (SQL Server)",
+  "id": "644-unpivot-sql-server",
+  "level": 3
+}, {
+  "value": "6.4.5 UNPIVOT using UNION ALL (cross-DBMS)",
+  "id": "645-unpivot-using-union-all-cross-dbms",
+  "level": 3
+}, {
+  "value": "6.5 MERGE / UPSERT",
+  "id": "65-merge--upsert",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-4",
+  "level": 3
+}, {
+  "value": "SQL (SQL Server / PostgreSQL)",
+  "id": "sql-sql-server--postgresql",
+  "level": 3
+}, {
+  "value": "PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)",
+  "id": "postgresql-insert--on-conflict-simpler-upsert",
+  "level": 3
+}, {
+  "value": "MySQL INSERT ... ON DUPLICATE KEY UPDATE",
+  "id": "mysql-insert--on-duplicate-key-update",
+  "level": 3
+}, {
+  "value": "Steps for MERGE Execution:",
+  "id": "steps-for-merge-execution",
+  "level": 3
+}, {
+  "value": "Edge Cases:",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "6.6 Dynamic SQL",
+  "id": "66-dynamic-sql",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-5",
+  "level": 3
+}, {
+  "value": "SQL Server (sp_executesql)",
+  "id": "sql-server-sp_executesql",
+  "level": 3
+}, {
+  "value": "PostgreSQL (EXECUTE)",
+  "id": "postgresql-execute",
+  "level": 3
+}, {
+  "value": "Security: Always Use QUOTENAME / format with %I",
+  "id": "security-always-use-quotename--format-with-i",
+  "level": 3
+}, {
+  "value": "Python Implementation (Dynamic SQL Builder):",
+  "id": "python-implementation-dynamic-sql-builder",
+  "level": 3
+}, {
+  "value": "6.7 Stored Procedures",
+  "id": "67-stored-procedures",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-6",
+  "level": 3
+}, {
+  "value": "SQL Server Example",
+  "id": "sql-server-example",
+  "level": 3
+}, {
+  "value": "MySQL Example",
+  "id": "mysql-example",
+  "level": 3
+}, {
+  "value": "PostgreSQL Example (plpgsql)",
+  "id": "postgresql-example-plpgsql",
+  "level": 3
+}, {
+  "value": "C++ Implementation (Stored Procedure Executor)",
+  "id": "c-implementation-stored-procedure-executor",
+  "level": 3
+}, {
+  "value": "Python Implementation (Stored Procedure Executor)",
+  "id": "python-implementation-stored-procedure-executor",
+  "level": 3
+}, {
+  "value": "Complexity &amp; Benefits",
+  "id": "complexity--benefits",
+  "level": 3
+}, {
+  "value": "6.8 User-Defined Functions (UDFs)",
+  "id": "68-user-defined-functions-udfs",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-7",
+  "level": 3
+}, {
+  "value": "Scalar Function (SQL Server)",
+  "id": "scalar-function-sql-server",
+  "level": 3
+}, {
+  "value": "Table-Valued Function (SQL Server)",
+  "id": "table-valued-function-sql-server",
+  "level": 3
+}, {
+  "value": "PostgreSQL Function",
+  "id": "postgresql-function",
+  "level": 3
+}, {
+  "value": "Deterministic vs Non-Deterministic",
+  "id": "deterministic-vs-non-deterministic",
+  "level": 3
+}, {
+  "value": "Complexity",
+  "id": "complexity",
+  "level": 3
+}, {
+  "value": "Python Implementation (UDF Simulator)",
+  "id": "python-implementation-udf-simulator",
+  "level": 3
+}, {
+  "value": "6.9 Triggers",
+  "id": "69-triggers",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-8",
+  "level": 3
+}, {
+  "value": "Types of Triggers",
+  "id": "types-of-triggers",
+  "level": 3
+}, {
+  "value": "BEFORE Trigger (MySQL)",
+  "id": "before-trigger-mysql",
+  "level": 3
+}, {
+  "value": "AFTER Trigger (SQL Server)",
+  "id": "after-trigger-sql-server",
+  "level": 3
+}, {
+  "value": "INSTEAD OF Trigger (SQL Server → for Views)",
+  "id": "instead-of-trigger-sql-server--for-views",
+  "level": 3
+}, {
+  "value": "Trigger Execution Order (SQL Server)",
+  "id": "trigger-execution-order-sql-server",
+  "level": 3
+}, {
+  "value": "C++ Implementation (Trigger Engine)",
+  "id": "c-implementation-trigger-engine",
+  "level": 3
+}, {
+  "value": "Python Implementation (Trigger Simulator)",
+  "id": "python-implementation-trigger-simulator",
+  "level": 3
+}, {
+  "value": "Trigger Complexity &amp; Considerations",
+  "id": "trigger-complexity--considerations",
+  "level": 3
+}, {
+  "value": "6.10 Views &amp; Indexed Views",
+  "id": "610-views--indexed-views",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-9",
+  "level": 3
+}, {
+  "value": "Creating Views",
+  "id": "creating-views",
+  "level": 3
+}, {
+  "value": "View Security (Column-Level Masking)",
+  "id": "view-security-column-level-masking",
+  "level": 3
+}, {
+  "value": "Indexed Views (SQL Server)",
+  "id": "indexed-views-sql-server",
+  "level": 3
+}, {
+  "value": "Materialized Views (PostgreSQL)",
+  "id": "materialized-views-postgresql",
+  "level": 3
+}, {
+  "value": "Updatable Views",
+  "id": "updatable-views",
+  "level": 3
+}, {
+  "value": "C++ Implementation (View Materialization)",
+  "id": "c-implementation-view-materialization",
+  "level": 3
+}, {
+  "value": "Python Implementation (View Abstraction)",
+  "id": "python-implementation-view-abstraction",
+  "level": 3
+}, {
+  "value": "View Complexity",
+  "id": "view-complexity",
+  "level": 3
+}, {
+  "value": "6.11 Temporary Tables &amp; Table Variables",
+  "id": "611-temporary-tables--table-variables",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-10",
+  "level": 3
+}, {
+  "value": "6.11.1 Local Temporary Tables (#temp)",
+  "id": "6111-local-temporary-tables-temp",
+  "level": 3
+}, {
+  "value": "6.11.2 Global Temporary Tables (##temp)",
+  "id": "6112-global-temporary-tables-temp",
+  "level": 3
+}, {
+  "value": "6.11.3 Table Variables",
+  "id": "6113-table-variables",
+  "level": 3
+}, {
+  "value": "6.11.4 Temp Table vs Table Variable Comparison",
+  "id": "6114-temp-table-vs-table-variable-comparison",
+  "level": 3
+}, {
+  "value": "C++ Implementation (Temp Table Simulation)",
+  "id": "c-implementation-temp-table-simulation",
+  "level": 3
+}, {
+  "value": "Python Implementation (Temp Table Simulator)",
+  "id": "python-implementation-temp-table-simulator",
+  "level": 3
+}, {
+  "value": "6.12 Procedure vs Function vs Trigger Comparison",
+  "id": "612-procedure-vs-function-vs-trigger-comparison",
+  "level": 2
+}, {
+  "value": "6.13 View vs Temp Table vs CTE Comparison",
+  "id": "613-view-vs-temp-table-vs-cte-comparison",
+  "level": 2
+}, {
+  "value": "6.14 Interview Corner",
+  "id": "614-interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: What is the maximum recursion depth for CTEs?",
+  "id": "q1-what-is-the-maximum-recursion-depth-for-ctes",
+  "level": 3
+}, {
+  "value": "Q2: Correlated vs Non-correlated subquery → performance difference?",
+  "id": "q2-correlated-vs-non-correlated-subquery--performance-difference",
+  "level": 3
+}, {
+  "value": "Q3: Can you create an index on a view?",
+  "id": "q3-can-you-create-an-index-on-a-view",
+  "level": 3
+}, {
+  "value": "Q4: Trigger vs CHECK constraint → which to use for validation?",
+  "id": "q4-trigger-vs-check-constraint--which-to-use-for-validation",
+  "level": 3
+}, {
+  "value": "Q5: What happens with NULLs in window function ORDER BY?",
+  "id": "q5-what-happens-with-nulls-in-window-function-order-by",
+  "level": 3
+}, {
+  "value": "Q6: Why would a MERGE statement fail with &quot;multiple rows in source match same target&quot;?",
+  "id": "q6-why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target",
+  "level": 3
+}, {
+  "value": "Q7: Can a CTE be used in multiple queries?",
+  "id": "q7-can-a-cte-be-used-in-multiple-queries",
+  "level": 3
+}, {
+  "value": "Q8: Dynamic SQL → why is QUOTENAME important?",
+  "id": "q8-dynamic-sql--why-is-quotename-important",
+  "level": 3
+}, {
+  "value": "6.15 Applications in Real Systems",
+  "id": "615-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "PostgreSQL Window Functions",
+  "id": "postgresql-window-functions",
+  "level": 3
+}, {
+  "value": "SQL Server Stored Procedures in Production",
+  "id": "sql-server-stored-procedures-in-production",
+  "level": 3
+}, {
+  "value": "MySQL Triggers for Data Sync",
+  "id": "mysql-triggers-for-data-sync",
+  "level": 3
+}, {
+  "value": "Dynamic SQL in Search Applications",
+  "id": "dynamic-sql-in-search-applications",
+  "level": 3
+}, {
+  "value": "Recursive CTE in Organization Management",
+  "id": "recursive-cte-in-organization-management",
+  "level": 3
+}, {
+  "value": "MERGE in Data Warehousing (Slowly Changing Dimensions)",
+  "id": "merge-in-data-warehousing-slowly-changing-dimensions",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "SQL Execution Order",
+  "id": "sql-execution-order",
+  "level": 2
+}, {
+  "value": "6.16 Recursive CTE Simulator (TypeScript)",
+  "id": "616-recursive-cte-simulator-typescript",
+  "level": 3
+}, {
+  "value": "Additional Chapter Quiz Questions",
+  "id": "additional-chapter-quiz-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 3
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 3
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-6-advanced-sql--subqueries-ctes-window-functions-pivot-merge-dynamic-sql-stored-procedures-functions-triggers-views-temp-tables",
+        children: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/database-management-systems/05-sql-joins",
+          children: "Chapter 5: SQL Joins and Subqueries"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/database-management-systems/07-normalization",
+          children: "Chapter 7: Normalization"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/06-sql-advanced/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/06-sql-advanced/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/06-sql-advanced/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/06-sql-advanced/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/06-sql-advanced/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/06-sql-advanced/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "61-subqueries",
+      children: "6.1 Subqueries"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "subquery"
+      }), " (inner query / nested query) is a query embedded inside another query (outer query). Subqueries can return scalar values, single rows, tables, or be correlated to the outer query."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scalar Subquery"
+        }), " = Asking \"What's the average salary in this company?\" before deciding your salary negotiation. One number.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Row Subquery"
+        }), " = Asking \"What's the full profile of the top performer?\" → one complete row.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Table Subquery"
+        }), " = Asking \"Which departments have above-average headcount?\" → a whole result set.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Correlated Subquery"
+        }), " = Asking \"For each employee, how does their salary compare to THEIR department's average?\" → the question changes per employee."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "611-scalar-subquery",
+      children: "6.1.1 Scalar Subquery"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Returns exactly ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "one column and one row"
+      }), " (single value). Used anywhere a single value is allowed: SELECT, WHERE, HAVING, SET."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DBMS executes the inner subquery first (execution-order characteristic, though optimizer may rewrite)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The single scalar result replaces the subquery in the outer query."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer query proceeds using that value."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function scalar_subquery():\n    inner_result = execute(\"SELECT AVG(salary) FROM employees\")\n    // inner_result = 75000 (single value)\n    outer_query = \"SELECT name, salary FROM employees WHERE salary > \" + inner_result\n    return execute(outer_query)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Sample data\nCREATE TABLE employees (\n    emp_id INT PRIMARY KEY,\n    name VARCHAR(50),\n    department VARCHAR(50),\n    salary DECIMAL(10,2)\n);\nINSERT INTO employees VALUES\n(1, 'Alice',   'Engineering', 95000),\n(2, 'Bob',     'Engineering', 72000),\n(3, 'Charlie', 'Sales',       68000),\n(4, 'Diana',   'Sales',       88000),\n(5, 'Eve',     'Marketing',   52000);\n\n-- Scalar subquery in WHERE\nSELECT name, salary\nFROM employees\nWHERE salary > (SELECT AVG(salary) FROM employees);\n-- AVG(salary) = (95000+72000+68000+88000+52000)/5 = 75000\n-- Result: Alice (95000), Diana (88000)\n\n-- Scalar subquery in SELECT\nSELECT name, salary,\n       (SELECT AVG(salary) FROM employees) AS company_avg,\n       salary - (SELECT AVG(salary) FROM employees) AS diff_from_avg\nFROM employees;\n\n-- Scalar subquery in HAVING\nSELECT department, AVG(salary) AS dept_avg\nFROM employees\nGROUP BY department\nHAVING AVG(salary) > (SELECT AVG(salary) FROM employees);\n-- Only departments above company avg\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Scalar Subquery):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Execute inner: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT AVG(salary) FROM employees"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "75000.00"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Rewrite outer: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT name, salary FROM employees WHERE salary > 75000"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check Alice: 95000 > 75000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check Bob: 72000 > 75000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check Charlie: 68000 > 75000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check Diana: 88000 > 75000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check Eve: 52000 > 75000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return result set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice, Diana"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <numeric>\n#include <algorithm>\n\nstruct Employee {\n    int id;\n    std::string name;\n    std::string dept;\n    double salary;\n};\n\nclass ScalarSubquerySimulator {\n    std::vector<Employee> data;\npublic:\n    ScalarSubquerySimulator(std::vector<Employee> d) : data(std::move(d)) {}\n\n    double computeAvg() {\n        if (data.empty()) return 0.0;\n        double sum = std::accumulate(data.begin(), data.end(), 0.0,\n            [](double acc, const Employee& e) { return acc + e.salary; });\n        return sum / data.size();\n    }\n\n    std::vector<Employee> aboveAvg() {\n        double avg = computeAvg();\n        std::vector<Employee> result;\n        std::copy_if(data.begin(), data.end(), std::back_inserter(result),\n            [avg](const Employee& e) { return e.salary > avg; });\n        return result;\n    }\n\n    void display(const std::vector<Employee>& v) {\n        for (auto& e : v)\n            std::cout << e.name << \" : \" << e.salary << \"\\n\";\n    }\n};\n\nint main() {\n    std::vector<Employee> emps = {\n        {1,\"Alice\",\"Engineering\",95000},\n        {2,\"Bob\",\"Engineering\",72000},\n        {3,\"Charlie\",\"Sales\",68000},\n        {4,\"Diana\",\"Sales\",88000},\n        {5,\"Eve\",\"Marketing\",52000}\n    };\n    ScalarSubquerySimulator sim(emps);\n    std::cout << \"Company Avg: \" << sim.computeAvg() << \"\\n\";\n    auto result = sim.aboveAvg();\n    std::cout << \"Employees above avg:\\n\";\n    sim.display(result);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass\nfrom statistics import mean\n\n@dataclass\nclass Employee:\n    emp_id: int\n    name: str\n    department: str\n    salary: float\n\nemployees = [\n    Employee(1, \"Alice\", \"Engineering\", 95000),\n    Employee(2, \"Bob\", \"Engineering\", 72000),\n    Employee(3, \"Charlie\", \"Sales\", 68000),\n    Employee(4, \"Diana\", \"Sales\", 88000),\n    Employee(5, \"Eve\", \"Marketing\", 52000),\n]\n\n# Scalar subquery analog\navg_salary = mean(e.salary for e in employees)\nabove_avg = [e for e in employees if e.salary > avg_salary]\nprint(f\"Company average: {avg_salary:.2f}\")\nprint(\"Above average:\")\nfor e in above_avg:\n    print(f\"  {e.name}: {e.salary}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n + m) where n = inner query rows, m = outer query rows. The scalar subquery runs once (O(n)), then the outer query uses the result for filtering (O(m))."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1) → only the single scalar value is stored between executions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Why linear?"
+        }), " Both queries are full table scans in the worst case. If indexes exist on WHERE columns, can drop to O(log n)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No rows returned:"
+        }), " Scalar subquery returns NULL. If used with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ">"
+        }), " comparison, result is empty (NULL comparison yields unknown)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multiple rows:"
+        }), " Runtime error → scalar subquery must return exactly one row. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MAX()"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TOP 1"
+        }), " to guarantee singleness."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NULLs in AVG:"
+        }), " AVG ignores NULLs. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AVG(salary)"
+        }), " with one NULL among five values still divides by 5."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "612-row-subquery",
+      children: "6.1.2 Row Subquery"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Returns a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "single row"
+      }), " with multiple columns. Used with row constructors ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(col1, col2) = (subquery)"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inner query produces one row (multiple columns)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer query compares using row comparison operators."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Returns all rows matching the composite comparison."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function row_subquery():\n    row = execute(\"SELECT MAX(salary), MIN(salary) FROM employees\")\n    // row = (95000, 52000)\n    return execute(\"SELECT * FROM employees WHERE (salary, 0) > (\" + row.salary + \", \" + row.minsalary + \")\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Find employees earning exactly the max salary\nSELECT name, salary, department\nFROM employees\nWHERE (salary, department) = (\n    SELECT MAX(salary), 'Engineering' FROM employees\n);\n-- Returns Alice with (95000, Engineering)\n\n-- Row comparison: find employees with the same salary AND department as a given employee\nSELECT e1.name, e1.salary, e1.department\nFROM employees e1\nWHERE (e1.salary, e1.department) IN (\n    SELECT e2.salary, e2.department\n    FROM employees e2\n    WHERE e2.emp_id <> e1.emp_id\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <tuple>\n#include <algorithm>\n\nstruct Employee {\n    int id; std::string name; std::string dept; double salary;\n};\n\nstruct RowSubqueryResult {\n    double maxSalary;\n    std::string dept;\n};\n\nRowSubqueryResult executeRowSubquery(const std::vector<Employee>& data) {\n    auto it = std::max_element(data.begin(), data.end(),\n        [](const Employee& a, const Employee& b) { return a.salary < b.salary; });\n    return {it->salary, it->dept};\n}\n\nint main() {\n    std::vector<Employee> data = {\n        {1,\"Alice\",\"Engineering\",95000},{2,\"Bob\",\"Engineering\",72000},\n        {3,\"Charlie\",\"Sales\",68000},{4,\"Diana\",\"Sales\",88000}\n    };\n    auto row = executeRowSubquery(data);\n    std::cout << \"Max salary row: (\" << row.maxSalary << \", \" << row.dept << \")\\n\";\n    for (auto& e : data)\n        if (std::tie(e.salary, e.dept) == std::tie(row.maxSalary, row.dept))\n            std::cout << \"Match: \" << e.name << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "employees = [\n    {\"id\":1,\"name\":\"Alice\",\"dept\":\"Engineering\",\"salary\":95000},\n    {\"id\":2,\"name\":\"Bob\",\"dept\":\"Engineering\",\"salary\":72000},\n    {\"id\":3,\"name\":\"Charlie\",\"dept\":\"Sales\",\"salary\":68000},\n    {\"id\":4,\"name\":\"Diana\",\"dept\":\"Sales\",\"salary\":88000},\n]\nmax_salary_emp = max(employees, key=lambda e: e[\"salary\"])\nmax_row = (max_salary_emp[\"salary\"], max_salary_emp[\"dept\"])\nfor e in employees:\n    if (e[\"salary\"], e[\"dept\"]) == max_row:\n        print(f\"Match: {e['name']}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) → finding max requires a full scan. Row comparison is O(m) with m matching constraints."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "613-table-subquery",
+      children: "6.1.3 Table Subquery"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "multiple rows and columns"
+      }), ". Used in FROM clause (derived table) or IN / EXISTS / JOIN."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inner query executes, producing a temporary result set (derived table)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer query treats it as a regular table (must be aliased in FROM)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Subsequent operations (WHERE, JOIN, GROUP BY) apply normally."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function table_subquery():\n    derived = execute(\"SELECT department, AVG(salary) as avg_sal FROM employees GROUP BY department\")\n    // derived = {(Engineering, 83500), (Sales, 78000), (Marketing, 52000)}\n    return execute(\"SELECT e.name, e.salary, d.avg_sal FROM employees e JOIN \" + derived + \" d ON e.department = d.department\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Table subquery in FROM (derived table)\nSELECT e.name, e.salary, dept_stats.avg_salary, e.salary - dept_stats.avg_salary AS diff\nFROM employees e\nJOIN (\n    SELECT department, AVG(salary) AS avg_salary\n    FROM employees\n    GROUP BY department\n) dept_stats ON e.department = dept_stats.department;\n\n-- Table subquery with IN\nSELECT name, salary\nFROM employees\nWHERE department IN (\n    SELECT department\n    FROM employees\n    GROUP BY department\n    HAVING AVG(salary) > 70000\n);\n\n-- Table subquery as derived table with filtering\nSELECT department, max_sal\nFROM (\n    SELECT department, MAX(salary) AS max_sal\n    FROM employees\n    GROUP BY department\n) dept_max\nWHERE max_sal > 80000;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Table Subquery):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Intermediate Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute inner: GROUP BY department, AVG(salary)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering: 83500, Sales: 78000, Marketing: 52000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Outer query joins employees with derived table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice: 95000 vs Engineering: 83500 → diff = 11500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob: 72000 vs Engineering: 83500 → diff = -11500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie: 68000 vs Sales: 78000 → diff = -10000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana: 88000 vs Sales: 78000 → diff = 10000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return all rows with computed diff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 rows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <unordered_map>\n#include <numeric>\n\nstruct Employee { int id; std::string name; std::string dept; double salary; };\n\nstruct DeptStats { double avgSalary; };\n\nstd::unordered_map<std::string, DeptStats> computeDeptStats(const std::vector<Employee>& data) {\n    std::unordered_map<std::string, std::pair<double, int>> acc;\n    for (auto& e : data) {\n        acc[e.dept].first += e.salary;\n        acc[e.dept].second++;\n    }\n    std::unordered_map<std::string, DeptStats> result;\n    for (auto& [dept, pair] : acc)\n        result[dept] = {pair.first / pair.second};\n    return result;\n}\n\nint main() {\n    std::vector<Employee> data = {\n        {1,\"Alice\",\"Engineering\",95000},{2,\"Bob\",\"Engineering\",72000},\n        {3,\"Charlie\",\"Sales\",68000},{4,\"Diana\",\"Sales\",88000},{5,\"Eve\",\"Marketing\",52000}\n    };\n    auto stats = computeDeptStats(data);\n    for (auto& e : data)\n        std::cout << e.name << \" | salary=\" << e.salary\n                  << \" | dept_avg=\" << stats[e.dept].avgSalary\n                  << \" | diff=\" << (e.salary - stats[e.dept].avgSalary) << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from statistics import mean\n\nemployees = [\n    {\"id\":1,\"name\":\"Alice\",\"dept\":\"Engineering\",\"salary\":95000},\n    {\"id\":2,\"name\":\"Bob\",\"dept\":\"Engineering\",\"salary\":72000},\n    {\"id\":3,\"name\":\"Charlie\",\"dept\":\"Sales\",\"salary\":68000},\n    {\"id\":4,\"name\":\"Diana\",\"dept\":\"Sales\",\"salary\":88000},\n    {\"id\":5,\"name\":\"Eve\",\"dept\":\"Marketing\",\"salary\":52000},\n]\ndept_stats = {}\nfor e in employees:\n    dept_stats.setdefault(e[\"dept\"], []).append(e[\"salary\"])\ndept_avg = {d: mean(sals) for d, sals in dept_stats.items()}\nfor e in employees:\n    diff = e[\"salary\"] - dept_avg[e[\"dept\"]]\n    print(f\"{e['name']}: {e['salary']} vs dept avg {dept_avg[e['dept']]:.0f}, diff={diff:.0f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n + d × m) where n = inner rows, d = distinct groups, m = outer rows matching. GROUP BY is O(n log n) worst case (sorting) or O(n) with hash aggregation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(d) → the derived table occupies memory proportional to distinct groups."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Why O(n log n) for GROUP BY?"
+        }), " Sorting-based aggregation is the default in most RDBMS when memory permits hashing."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "614-correlated-subquery",
+      children: "6.1.4 Correlated Subquery"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["References columns from the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "outer query"
+      }), ". Executed ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "once per outer row"
+      }), " → the inner query depends on the current outer row's value."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " For each employee, check if their salary exceeds THEIR department's average. The question changes per department."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer query fetches one row."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inner query executes using a value from that outer row (correlation)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "WHERE/HAVING condition evaluated with the inner result."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Repeat for every outer row → O(n × m) complexity."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function correlated_subquery(outer_rows):\n    result = []\n    for each row in outer_rows:                    // O(n)\n        inner_result = execute(\n            \"SELECT AVG(salary) FROM employees e2 WHERE e2.department = \" + row.department\n        )                                           // O(m) per iteration\n        if row.salary > inner_result:               // total O(n × m)\n            result.append(row)\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Find employees earning more than their department average\nSELECT e1.name, e1.salary, e1.department\nFROM employees e1\nWHERE e1.salary > (\n    SELECT AVG(e2.salary)\n    FROM employees e2\n    WHERE e2.department = e1.department\n);\n\n-- Correlated EXISTS: departments that have at least one employee earning > 90000\nSELECT DISTINCT e1.department\nFROM employees e1\nWHERE EXISTS (\n    SELECT 1\n    FROM employees e2\n    WHERE e2.department = e1.department\n      AND e2.salary > 90000\n);\n\n-- Correlated NOT EXISTS: employees who are the only one in their department\nSELECT e1.name, e1.department\nFROM employees e1\nWHERE NOT EXISTS (\n    SELECT 1\n    FROM employees e2\n    WHERE e2.department = e1.department\n      AND e2.emp_id <> e1.emp_id\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Correlated Subquery):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Outer Row"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Correlation Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Inner Query (AVG for dept)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Condition (salary > avg)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice (Eng, 95K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(95K+72K)/2 = 83500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95000 > 83500 ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob (Eng, 72K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "83500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "72000 > 83500 ✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie (Sales, 68K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(68K+88K)/2 = 78000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "68000 > 78000 ✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana (Sales, 88K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "78000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "88000 > 78000 ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Eve (Mktg, 52K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Marketing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52000 > 52000 ✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXCLUDE"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <unordered_map>\n#include <numeric>\n\nstruct Employee { int id; std::string name; std::string dept; double salary; };\n\nclass CorrelatedSubquerySim {\n    std::vector<Employee> data;\n    // Cache dept averages to simulate DBMS optimization (avoid recomputing)\n    std::unordered_map<std::string, double> deptAvgCache;\n\n    double getDeptAvg(const std::string& dept) {\n        if (deptAvgCache.count(dept)) return deptAvgCache[dept];\n        double sum = 0; int count = 0;\n        for (auto& e : data)\n            if (e.dept == dept) { sum += e.salary; count++; }\n        deptAvgCache[dept] = (count > 0) ? sum / count : 0;\n        return deptAvgCache[dept];\n    }\n\npublic:\n    CorrelatedSubquerySim(std::vector<Employee> d) : data(std::move(d)) {}\n\n    std::vector<Employee> aboveDeptAvg() {\n        std::vector<Employee> result;\n        for (auto& e : data)                      // O(n) outer\n            if (e.salary > getDeptAvg(e.dept))     // O(m) per call, amortized O(1) with cache\n                result.push_back(e);\n        return result;\n    }\n};\n\nint main() {\n    std::vector<Employee> data = {\n        {1,\"Alice\",\"Engineering\",95000},{2,\"Bob\",\"Engineering\",72000},\n        {3,\"Charlie\",\"Sales\",68000},{4,\"Diana\",\"Sales\",88000},{5,\"Eve\",\"Marketing\",52000}\n    };\n    CorrelatedSubquerySim sim(data);\n    for (auto& e : sim.aboveDeptAvg())\n        std::cout << e.name << \" (\" << e.dept << \"): \" << e.salary << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from statistics import mean\n\nemployees = [\n    {\"id\":1,\"name\":\"Alice\",\"dept\":\"Engineering\",\"salary\":95000},\n    {\"id\":2,\"name\":\"Bob\",\"dept\":\"Engineering\",\"salary\":72000},\n    {\"id\":3,\"name\":\"Charlie\",\"dept\":\"Sales\",\"salary\":68000},\n    {\"id\":4,\"name\":\"Diana\",\"dept\":\"Sales\",\"salary\":88000},\n    {\"id\":5,\"name\":\"Eve\",\"dept\":\"Marketing\",\"salary\":52000},\n]\n\n# Simulating a correlated subquery (naive O(n*m) approach)\ndef above_dept_avg(rows):\n    result = []\n    for e in rows:  # O(n)\n        dept_salaries = [e2[\"salary\"] for e2 in rows if e2[\"dept\"] == e[\"dept\"]]\n        dept_avg = mean(dept_salaries)  # O(m) each iteration\n        if e[\"salary\"] > dept_avg:\n            result.append(e)\n    return result\n\nfor e in above_dept_avg(employees):\n    print(f\"{e['name']}: {e['salary']} in {e['dept']}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n × m) worst case → inner query runs n times, each scanning m rows. Best case O(n × log m) with index on correlation column."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1) per iteration, no accumulation beyond outer result set."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY correlated subqueries can be slow:"
+        }), " The inner query is re-executed per outer row. DBMS optimizers often rewrite correlated subqueries to JOINs. Always EXPLAIN ANALYZE correlated subqueries."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Optimization:"
+        }), " Add index on the correlation column (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "department"
+        }), "). This reduces inner query from O(m) to O(log m)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "615-exists--not-exists",
+      children: "6.1.5 EXISTS / NOT EXISTS"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["EXISTS returns TRUE if the subquery returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "at least one row"
+      }), ". NOT EXISTS returns TRUE if the subquery returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "zero rows"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " \"Does at least one student have a perfect score?\" → you stop checking as soon as you find one."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each row in the outer query, the subquery executes."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If ANY row satisfies the subquery, EXISTS returns TRUE immediately (short-circuit)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The outer row is included/excluded based on EXISTS/NOT EXISTS."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Departments with at least one high earner\nSELECT d.department_name\nFROM departments d\nWHERE EXISTS (\n    SELECT 1\n    FROM employees e\n    WHERE e.department_id = d.department_id\n      AND e.salary > 100000\n);\n\n-- Customers who have placed NO orders\nSELECT c.customer_id, c.name\nFROM customers c\nWHERE NOT EXISTS (\n    SELECT 1\n    FROM orders o\n    WHERE o.customer_id = c.customer_id\n);\n\n-- EXISTS is more efficient than IN when the subquery is large\n-- IN materializes the whole subquery; EXISTS can short-circuit\nSELECT *\nFROM products p\nWHERE EXISTS (\n    SELECT 1\n    FROM order_items oi\n    WHERE oi.product_id = p.product_id\n      AND oi.quantity > 100\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (EXISTS):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Outer Row"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Subquery Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Short-Circuit"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXISTS(SELECT 1 FROM emp WHERE dept='Engineering' AND salary>90K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice matches → stop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TRUE → INCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXISTS(SELECT 1 FROM emp WHERE dept='Sales' AND salary>90K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No match"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FALSE → EXCLUDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Marketing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXISTS(SELECT 1 FROM emp WHERE dept='Marketing' AND salary>90K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No match"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FALSE → EXCLUDE"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\n\nstruct Employee { int id; std::string name; std::string dept; double salary; };\n\nbool existsHighEarner(const std::vector<Employee>& data, const std::string& dept, double threshold) {\n    return std::any_of(data.begin(), data.end(),\n        [&](const Employee& e) { return e.dept == dept && e.salary > threshold; });\n}\n\nint main() {\n    std::vector<Employee> data = {\n        {1,\"Alice\",\"Engineering\",95000},{2,\"Bob\",\"Engineering\",72000},\n        {3,\"Charlie\",\"Sales\",68000},{4,\"Diana\",\"Sales\",88000}\n    };\n    std::vector<std::string> depts = {\"Engineering\",\"Sales\",\"Marketing\"};\n    for (auto& d : depts)\n        std::cout << d << \": \" << (existsHighEarner(data, d, 90000) ? \"HAS high earner\" : \"NO high earner\") << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "employees = [\n    {\"dept\":\"Engineering\",\"salary\":95000},\n    {\"dept\":\"Engineering\",\"salary\":72000},\n    {\"dept\":\"Sales\",\"salary\":68000},\n    {\"dept\":\"Sales\",\"salary\":88000},\n]\ndef exists_high_earner(dept, threshold=90000):\n    return any(e[\"dept\"] == dept and e[\"salary\"] > threshold for e in employees)\n\nfor d in [\"Engineering\",\"Sales\",\"Marketing\"]:\n    print(f\"{d}: {'HAS high earner' if exists_high_earner(d) else 'NO high earner'}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " Best case O(1) if first row matches (short-circuit). Worst case O(n) if no match (full scan). With index on correlation column + salary: O(log n) per lookup."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1) → EXISTS does not materialize the subquery."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY EXISTS beats IN for large subqueries:"
+        }), " IN must compute and store the entire subquery result set. EXISTS can short-circuit on the first match."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "616-any--all",
+      children: "6.1.6 ANY / ALL"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Used with comparison operators: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "= ANY"
+      }), " (same as IN), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> ANY"
+      }), " (greater than at least one), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> ALL"
+      }), " (greater than all)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " \"ANY = beat at least one person in the race\" vs \"ALL = beat everyone in the race.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Subquery executes, producing a list of values."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For ANY: condition is TRUE if comparison holds for AT LEAST ONE value in the list."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For ALL: condition is TRUE if comparison holds for EVERY value in the list."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- ANY: salary greater than ANY salary in Sales\nSELECT name, salary\nFROM employees\nWHERE salary > ANY (\n    SELECT salary FROM employees WHERE department = 'Sales'\n);\n-- Sales salaries: 68000, 88000\n-- > ANY (68000, 88000) means > 68000\n-- Returns: Alice (95000), Bob (72000), Diana (88000)\n\n-- ALL: salary greater than ALL salaries in Sales\nSELECT name, salary\nFROM employees\nWHERE salary > ALL (\n    SELECT salary FROM employees WHERE department = 'Sales'\n);\n-- > ALL (68000, 88000) means > 88000\n-- Returns: Alice (95000)\n\n-- = ANY is equivalent to IN\nSELECT * FROM employees\nWHERE department = ANY (\n    SELECT department FROM employees WHERE salary > 90000\n);\n-- Same as: WHERE department IN (SELECT department FROM employees WHERE salary > 90000)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (ANY/ALL):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Employee"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Salary"
+          }), (0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "> ANY Sales"
+            }), " (threshold: > 68000)"]
+          }), (0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "> ALL Sales"
+            }), " (threshold: > 88000)"]
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95000 > 68000 ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95000 > 88000 ✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "72000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "72000 > 68000 ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "72000 > 88000 ✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "68000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "68000 > 68000 ✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "68000 > 88000 ✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "88000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "88000 > 68000 ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "88000 > 88000 ✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Eve"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52000 > 68000 ✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52000 > 88000 ✗"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nbool anyGreater(const std::vector<double>& values, double threshold) {\n    return std::any_of(values.begin(), values.end(),\n        [threshold](double v) { return v > threshold; });\n}\n\nbool allGreater(const std::vector<double>& values, double threshold) {\n    return std::all_of(values.begin(), values.end(),\n        [threshold](double v) { return v > threshold; });\n}\n\nint main() {\n    std::vector<double> sales = {68000, 88000};\n    double alice = 95000, bob = 72000, eve = 52000;\n    for (auto [name, sal] : {std::pair{\"Alice\",alice},{\"Bob\",bob},{\"Eve\",eve}})\n        std::cout << name << \": > ANY Sales=\" << (sal > *std::min_element(sales.begin(), sales.end()))\n                  << \", > ALL Sales=\" << (sal > *std::max_element(sales.begin(), sales.end())) << \"\\n\";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "sales_salaries = [68000, 88000]\nemployees = [(\"Alice\",95000),(\"Bob\",72000),(\"Charlie\",68000),(\"Diana\",88000),(\"Eve\",52000)]\nfor name, sal in employees:\n    any_gt = sal > min(sales_salaries)  # > ANY = greater than minimum\n    all_gt = sal > max(sales_salaries)  # > ALL = greater than maximum\n    print(f\"{name}: > ANY Sales={any_gt}, > ALL Sales={all_gt}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) to compute subquery result set, then O(1) for ANY/ALL evaluation (MIN/MAX optimization: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> ANY x"
+      }), " = ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> MIN(x)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> ALL x"
+      }), " = ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "> MAX(x)"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "617-subquery-types-comparison",
+      children: "6.1.7 Subquery Types Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Scalar"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Row"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Table"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Correlated"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Returns"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single row"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple rows/cols"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on context"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rows returned"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0..N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0..N"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Columns returned"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1..N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1..N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1..N"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Executed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per outer row"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Runtime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n × m) worst"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use in SELECT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use in FROM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓ (as value)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓ (derived table)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use in WHERE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓ (row constructors)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓ (IN/EXISTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Can use outer refs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NULL handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL if no rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL row if no rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Empty set if no rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Optimization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Index on aggregated column"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Index on compared columns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Index on GROUP BY/WHERE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Index on correlation column"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "62-common-table-expressions-ctes",
+      children: "6.2 Common Table Expressions (CTEs)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A CTE (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WITH"
+      }), " clause) defines a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "temporary named result set"
+      }), " that exists only within the execution scope of the query. CTEs improve readability, enable recursion, and allow referencing the same subquery multiple times."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-1",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CTE"
+        }), " = A sticky note you write an intermediate calculation on, then use to build your final answer. You throw the sticky note away after you're done.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Recursive CTE"
+        }), " = Russian nesting dolls → opening each doll reveals a smaller doll inside, until you reach the smallest one (anchor), then you close them back up (recursion unwind)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "621-basic-cte",
+      children: "6.2.1 Basic CTE"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Define the CTE using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "WITH cte_name AS (subquery)"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The CTE materializes (or inlines) as a temporary result."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reference the CTE by name in the main query → can reference it multiple times."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "WITH high_earners AS (\n    SELECT name, salary, department\n    FROM employees\n    WHERE salary > 75000\n)\nSELECT department, COUNT(*) AS count, AVG(salary) AS avg_salary\nFROM high_earners\nGROUP BY department\nORDER BY avg_salary DESC;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "622-multiple-ctes",
+      children: "6.2.2 Multiple CTEs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "WITH\ndept_stats AS (\n    SELECT department, AVG(salary) AS avg_sal, COUNT(*) AS headcount\n    FROM employees\n    GROUP BY department\n),\ndept_ranking AS (\n    SELECT department, avg_sal, headcount,\n           RANK() OVER (ORDER BY avg_sal DESC) AS rank\n    FROM dept_stats\n)\nSELECT department, avg_sal, headcount, rank\nFROM dept_ranking\nWHERE rank <= 2;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Multiple CTEs):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "CTE Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dept_stats"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GROUP BY department"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eng: (83500,2), Sales: (78000,2), Mktg: (52000,1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dept_ranking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RANK OVER (ORDER BY avg_sal DESC)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eng:1, Sales:2, Mktg:3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Main query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WHERE rank <= 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eng: (83500,2,1), Sales: (78000,2,2)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "623-recursive-ctes",
+      children: "6.2.3 Recursive CTEs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A recursive CTE references ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "itself"
+      }), ". It has two parts:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Anchor member:"
+        }), " The base result set (non-recursive initial query)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Recursive member:"
+        }), " References the CTE by name, building on the previous iteration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute the anchor member → result set R0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute the recursive member using R0 → result set R1."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute recursive member using R1 → R2."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Repeat until the recursive member returns ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "zero rows"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UNION ALL"
+        }), " all result sets (R0 ∪ R1 ∪ R2 ∪ ...)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function recursive_cte(anchor_query, recursive_query, max_iterations=1000):\n    result = execute(anchor_query)          // R0: anchor\n    previous = result\n    iteration = 1\n    while iteration < max_iterations:\n        current = execute(recursive_query using previous)\n        if current is empty:\n            break\n        result = result UNION ALL current\n        previous = current\n        iteration++\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Generate number sequence 1 to 10\nWITH RECURSIVE numbers(n) AS (\n    SELECT 1                           -- Anchor\n    UNION ALL\n    SELECT n + 1 FROM numbers WHERE n < 10  -- Recursive\n)\nSELECT n FROM numbers;\n\n-- Employee org chart with level and path\nWITH RECURSIVE org_chart AS (\n    -- Anchor: top-level managers\n    SELECT emp_id, name, manager_id, 0 AS level,\n           CAST(name AS VARCHAR(500)) AS path\n    FROM employees\n    WHERE manager_id IS NULL\n\n    UNION ALL\n\n    -- Recursive: direct reports\n    SELECT e.emp_id, e.name, e.manager_id, oc.level + 1,\n           CAST(oc.path || ' -> ' || e.name AS VARCHAR(500))\n    FROM employees e\n    JOIN org_chart oc ON e.manager_id = oc.emp_id\n)\nSELECT * FROM org_chart ORDER BY path;\n\n-- Date range generation\nWITH RECURSIVE dates(d) AS (\n    SELECT DATE('2026-01-01')\n    UNION ALL\n    SELECT d + INTERVAL 1 DAY FROM dates WHERE d < DATE('2026-12-31')\n)\nSELECT d FROM dates;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Recursive CTE → Numbers 1..5):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Set"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Produced Rows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Accumulated Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Anchor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT n+1 FROM numbers WHERE n<5 using R0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT n+1 WHERE n<5 using R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2, 3}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT n+1 WHERE n<5 using R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2, 3, 4}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT n+1 WHERE n<5 using R3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2, 3, 4, 5}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT n+1 WHERE n<5 using R4 (n=5, not <5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "() empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2, 3, 4, 5}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "End"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Empty result set → stop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1, 2, 3, 4, 5}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Org Chart):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Working Set"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "New Rows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Path"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Anchor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{CEO(id=1)}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CEO (level=0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"CEO\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{CEO}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VP Eng(id=2), VP Sales(id=3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"CEO -> VP Eng\", \"CEO -> VP Sales\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{VP Eng, VP Sales}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eng Mgr(id=4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"CEO -> VP Eng -> Eng Mgr\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{Eng Mgr}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice(id=5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"CEO -> VP Eng -> Eng Mgr -> Alice\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{Alice}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(empty)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation (Recursive CTE Simulator):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <variant>\n\nstruct Employee {\n    int id; std::string name; int managerId; // 0 = no manager\n};\n\nstruct OrgNode {\n    int id; std::string name; int level; std::string path;\n};\n\nclass RecursiveCTESim {\n    std::vector<Employee> data;\npublic:\n    RecursiveCTESim(std::vector<Employee> d) : data(std::move(d)) {}\n\n    std::vector<OrgNode> traverse() {\n        std::vector<OrgNode> result;\n        std::vector<OrgNode> working;\n\n        // Anchor: top-level (no manager)\n        for (auto& e : data)\n            if (e.managerId == 0)\n                working.push_back({e.id, e.name, 0, e.name});\n\n        // Recursive loop\n        while (!working.empty()) {\n            result.insert(result.end(), working.begin(), working.end());\n            std::vector<OrgNode> next;\n            for (auto& w : working) {\n                for (auto& e : data) {\n                    if (e.managerId == w.id)\n                        next.push_back({e.id, e.name, w.level + 1, w.path + \" -> \" + e.name});\n                }\n            }\n            working = std::move(next);\n        }\n        return result;\n    }\n};\n\nint main() {\n    std::vector<Employee> data = {\n        {1,\"CEO\",0},{2,\"VP Eng\",1},{3,\"VP Sales\",1},\n        {4,\"Eng Mgr\",2},{5,\"Alice\",4},{6,\"Bob\",4}\n    };\n    RecursiveCTESim sim(data);\n    for (auto& n : sim.traverse())\n        std::cout << std::string(n.level * 2, ' ') << n.name << \" (lv\" << n.level << \") \" << n.path << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation (Recursive CTE Simulator):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass\n\n@dataclass\nclass Employee:\n    emp_id: int\n    name: str\n    manager_id: int  # 0 means top-level\n\nemployees = [\n    Employee(1, \"CEO\", 0),\n    Employee(2, \"VP Eng\", 1),\n    Employee(3, \"VP Sales\", 1),\n    Employee(4, \"Eng Mgr\", 2),\n    Employee(5, \"Alice\", 4),\n    Employee(6, \"Bob\", 4),\n]\n\ndef recursive_cte_simulation(rows):\n    result = []\n    # Anchor\n    working = [(e.emp_id, e.name, 0, e.name) for e in rows if e.manager_id == 0]\n    while working:\n        result.extend(working)\n        next_level = []\n        for eid, name, level, path in working:\n            for e in rows:\n                if e.manager_id == eid:\n                    next_level.append((e.emp_id, e.name, level+1, f\"{path} -> {e.name}\"))\n        working = next_level\n    return result\n\nfor node in recursive_cte_simulation(employees):\n    eid, name, level, path = node\n    indent = \"  \" * level\n    print(f\"{indent}{name} (lv{level}) [{path}]\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n × d) where n = total rows and d = tree depth. Each level processes its parent set. For a balanced tree, O(n log n); for a chain, O(n²)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(n) → the accumulated result set plus the current working set."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY recursive CTEs have depth limits:"
+        }), " Most DBMS cap recursion at 100-1000 iterations (PostgreSQL: default 100, set with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SET max_recursive_iterations = 2000"
+        }), "). Infinite loops are prevented by this limit; if exceeded, the query errors out."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MAX_RECURSION (SQL Server):"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "OPTION (MAXRECURSION 0)"
+        }), " for unlimited (use cautiously)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "624-cte-vs-subquery-vs-temp-table",
+      children: "6.2.4 CTE vs Subquery vs Temp Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CTE"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Subquery"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Temp Table"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single query only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single query only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Session-wide"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reusable across queries"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Indexable"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (inlined)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recursion support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (WITH RECURSIVE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Readability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best for complex queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can nest deeply"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good (separate steps)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Debugging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (cannot SELECT from alone in all DBMS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (can inspect)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimizer inlines (no materialization typically)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May be materialized or inlined"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always materialized (disk/memory)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex queries, recursion, readability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple lookups, EXISTS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large intermediate results, multiple references"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transaction support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (part of query)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (part of query)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (can rollback)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "63-window-functions",
+      children: "6.3 Window Functions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Window functions perform calculations across a set of rows ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "related to the current row"
+      }), " without collapsing rows (unlike GROUP BY). The \"window\" is defined by PARTITION BY, ORDER BY, and frame clauses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-2",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Window function"
+        }), " = Standing in a line and asking: \"What's my height rank? How tall is the person before me? What's the average height of everyone in my row?\" The line stays intact, and each person gets their answer alongside their own data."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "syntax",
+      children: "Syntax"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "function_name() OVER (\n    [PARTITION BY col1, col2, ...]\n    [ORDER BY col1 [ASC|DESC], ...]\n    [frame_clause]\n) AS alias\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Partitioning:"
+      }), " Divides the result set into groups. The window function resets for each partition.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ordering:"
+      }), " Defines the logical order within each partition.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Frame Clause:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ROWS | RANGE BETWEEN start AND end"
+      }), " where start/end are UNBOUNDED PRECEDING, n PRECEDING, CURRENT ROW, n FOLLOWING, UNBOUNDED FOLLOWING."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "631-row_number",
+      children: "6.3.1 ROW_NUMBER"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Assigns a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "unique sequential integer"
+      }), " to each row within a partition, starting at 1."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sort rows within each partition by ORDER BY columns."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Assign 1 to the first row, 2 to the second, etc."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ties are broken arbitrarily (non-deterministic unless ORDER BY is unique)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Sample data\nCREATE TABLE sales (\n    emp_name VARCHAR(50),\n    department VARCHAR(50),\n    amount DECIMAL(10,2),\n    sale_date DATE\n);\nINSERT INTO sales VALUES\n('Alice', 'Engineering', 15000, '2026-01-15'),\n('Bob',   'Engineering', 12000, '2026-02-20'),\n('Alice', 'Engineering', 18000, '2026-03-10'),\n('Charlie', 'Sales',     22000, '2026-01-20'),\n('Diana', 'Sales',       19000, '2026-02-28'),\n('Charlie', 'Sales',     25000, '2026-03-15');\n\n-- ROW_NUMBER: unique rank within department by amount\nSELECT\n    emp_name,\n    department,\n    amount,\n    ROW_NUMBER() OVER (PARTITION BY department ORDER BY amount DESC) AS row_num\nFROM sales;\n\n-- Top 2 per department (using subquery)\nSELECT * FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY department ORDER BY amount DESC) AS rn\n    FROM sales\n) ranked\nWHERE rn <= 2;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (ROW_NUMBER):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Department"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Sorted Employees (by amount DESC)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "row_num"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice (18000), Alice (15000), Bob (12000)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1, 2, 3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie (25000), Diana (19000), Charlie (22000→wait, let me re-sort)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1, 2, 3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Actually, let me re-sort properly:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Department"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Sorted (amount DESC)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ROW_NUMBER"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice / 18000 (Mar)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice / 15000 (Jan)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob / 12000 (Feb)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie / 25000 (Mar)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie / 22000 (Jan)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana / 19000 (Feb)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "632-rank--dense_rank",
+      children: "6.3.2 RANK / DENSE_RANK"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "RANK:"
+      }), " Same value for ties, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "skips"
+      }), " numbers after ties (1,1,3,4).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DENSE_RANK:"
+      }), " Same value for ties, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "no skipping"
+      }), " (1,1,2,3)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    emp_name,\n    department,\n    amount,\n    ROW_NUMBER() OVER (PARTITION BY department ORDER BY amount DESC) AS row_num,\n    RANK() OVER (PARTITION BY department ORDER BY amount DESC) AS rank,\n    DENSE_RANK() OVER (PARTITION BY department ORDER BY amount DESC) AS dense_rank\nFROM sales;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "emp_name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "department"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "row_num"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "rank"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dense_rank"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "22000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "With tied values:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "emp_name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "department"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "row_num"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "rank"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dense_rank"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charlie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Diana"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "633-ntile",
+      children: "6.3.3 NTILE"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Divides rows into ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "N approximately equal buckets"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Count rows in partition → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "total_rows"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Bucket size = ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "total_rows / N"
+        }), ". If not divisible, first ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "total_rows % N"
+        }), " buckets get one extra row."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Assign bucket number 1 to N sequentially."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    emp_name,\n    amount,\n    NTILE(4) OVER (ORDER BY amount DESC) AS quartile,\n    NTILE(10) OVER (ORDER BY amount DESC) AS decile\nFROM sales;\n\n-- Top quartile sales\nSELECT * FROM (\n    SELECT *, NTILE(4) OVER (ORDER BY amount DESC) AS quartile\n    FROM sales\n) ranked\nWHERE quartile = 1;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (NTILE(4) with 10 rows):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total = 10 rows, N = 4 buckets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Base size = floor(10/4) = 2, remainder = 10 % 4 = 2"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First 2 buckets get 3 rows each; last 2 buckets get 2 rows each"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Buckets: [1: rows 1-3], [2: rows 4-6], [3: rows 7-8], [4: rows 9-10]"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "634-lag--lead",
+      children: "6.3.4 LAG / LEAD"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "LAG(col, n, default):"
+      }), " Access the value from ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "n rows before"
+      }), " the current row.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LEAD(col, n, default):"
+      }), " Access the value from ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "n rows after"
+      }), " the current row."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    emp_name,\n    sale_date,\n    amount,\n    LAG(amount, 1, 0) OVER (PARTITION BY emp_name ORDER BY sale_date) AS prev_amount,\n    LEAD(amount, 1, 0) OVER (PARTITION BY emp_name ORDER BY sale_date) AS next_amount,\n    amount - LAG(amount, 1, 0) OVER (PARTITION BY emp_name ORDER BY sale_date) AS growth\nFROM sales\nORDER BY emp_name, sale_date;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output for Alice:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "emp_name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "sale_date"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "prev_amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "next_amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "growth"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-01-15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-03-10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3000"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (LAG):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partition by emp_name, order by sale_date"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice group sorted by date"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row 1 (Alice, Jan): LAG = 0 (default)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "prev_amount = 0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row 2 (Alice, Mar): LAG looks 1 row back → 15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "prev_amount = 15000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row 1 (Alice, Jan): LEAD looks 1 row forward → 18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "next_amount = 18000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row 2 (Alice, Mar): LEAD = 0 (no next row)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "next_amount = 0"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "635-first_value--last_value",
+      children: "6.3.5 FIRST_VALUE / LAST_VALUE"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FIRST_VALUE(col):"
+      }), " First value in the window frame.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LAST_VALUE(col):"
+      }), " Last value in the window frame (frame-sensitive → needs RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to get true last value of partition)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    emp_name, department, amount, sale_date,\n    FIRST_VALUE(amount) OVER (\n        PARTITION BY department ORDER BY amount DESC\n    ) AS highest_in_dept,\n    LAST_VALUE(amount) OVER (\n        PARTITION BY department ORDER BY amount DESC\n        RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING\n    ) AS lowest_in_dept,\n    amount - FIRST_VALUE(amount) OVER (\n        PARTITION BY department ORDER BY amount DESC\n    ) AS gap_from_highest\nFROM sales;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "636-aggregate-window-functions-sumavg-over",
+      children: "6.3.6 Aggregate Window Functions (SUM/AVG OVER)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Standard aggregates (SUM, AVG, COUNT, MIN, MAX) used with OVER compute ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "cumulative"
+      }), " or ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "moving"
+      }), " aggregations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SQL:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    emp_name, department, amount, sale_date,\n    SUM(amount) OVER (PARTITION BY department ORDER BY sale_date\n        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n    ) AS running_total,\n    AVG(amount) OVER (PARTITION BY department ORDER BY sale_date\n        ROWS BETWEEN 2 PRECEDING AND CURRENT ROW\n    ) AS moving_avg_3,\n    COUNT(*) OVER (PARTITION BY department) AS dept_count,\n    amount / SUM(amount) OVER (PARTITION BY department) * 100 AS pct_of_dept\nFROM sales;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output for Engineering:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "emp_name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "sale_date"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "running_total"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "moving_avg_3"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dept_count"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "pct_of_dept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-01-15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "33.33"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-02-20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "27000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "13500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "26.67"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-03-10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "40.00"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Running Total):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Row"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current Row: amount"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame (UNBOUNDED PRECEDING TO CURRENT)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SUM"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Running Total"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{15000}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{15000, 12000}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "27000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "27000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{15000, 12000, 18000}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45000"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "637-window-functions-comparison",
+      children: "6.3.7 Window Functions Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handles Ties"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Skips Numbers"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Requires ORDER BY"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ROW_NUMBER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unique sequential number"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (unique)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Usually"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RANK"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ranking with gaps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same rank"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DENSE_RANK"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ranking without gaps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same rank"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NTILE(n)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row distribution into n buckets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Approx equal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Usually"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LAG(col, n)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access previous row value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LEAD(col, n)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access next row value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FIRST_VALUE(col)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First value in frame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (needs order for meaningful result)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LAST_VALUE(col)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last value in frame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SUM/AVG OVER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cumulative/moving aggregate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For running totals"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-window-function-simulator",
+      children: "C++ Implementation (Window Function Simulator)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\n#include <numeric>\n#include <map>\n\nstruct Sale {\n    std::string name;\n    std::string dept;\n    double amount;\n    std::string date;\n\n    // For ordering\n    bool operator<(const Sale& o) const { return date < o.date; }\n};\n\nclass WindowFunctionSim {\n    std::vector<Sale> data;\npublic:\n    WindowFunctionSim(std::vector<Sale> d) : data(std::move(d)) {}\n\n    void simulateRanking() {\n        // Group by department\n        std::map<std::string, std::vector<Sale>> groups;\n        for (auto& s : data) groups[s.dept].push_back(s);\n\n        for (auto& [dept, sales] : groups) {\n            std::sort(sales.begin(), sales.end(),\n                [](auto& a, auto& b) { return a.amount > b.amount; });\n\n            for (size_t i = 0; i < sales.size(); i++) {\n                auto& s = sales[i];\n                std::cout << s.name << \" | \" << dept << \" | \" << s.amount\n                          << \" | ROW_NUM=\" << (i + 1);\n                if (i > 0 && sales[i].amount == sales[i-1].amount)\n                    std::cout << \" | RANK=(same as prev)\";\n                else\n                    std::cout << \" | RANK=\" << (i + 1);\n                std::cout << \"\\n\";\n            }\n        }\n    }\n\n    void simulateRunningTotal() {\n        std::sort(data.begin(), data.end());\n        double running = 0;\n        for (auto& s : data) {\n            running += s.amount;\n            std::cout << s.date << \" | \" << s.name << \" | \" << s.amount\n                      << \" | running_total=\" << running << \"\\n\";\n        }\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-window-function-simulator",
+      children: "Python Implementation (Window Function Simulator)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass\nfrom itertools import groupby\nfrom operator import attrgetter\n\n@dataclass\nclass Sale:\n    name: str\n    dept: str\n    amount: float\n    date: str\n\nsales = [\n    Sale(\"Alice\", \"Engineering\", 15000, \"2026-01-15\"),\n    Sale(\"Bob\", \"Engineering\", 12000, \"2026-02-20\"),\n    Sale(\"Alice\", \"Engineering\", 18000, \"2026-03-10\"),\n    Sale(\"Charlie\", \"Sales\", 22000, \"2026-01-20\"),\n    Sale(\"Diana\", \"Sales\", 19000, \"2026-02-28\"),\n    Sale(\"Charlie\", \"Sales\", 25000, \"2026-03-15\"),\n]\n\ndef simulate_row_number(rows, partition_by, order_by):\n    rows_sorted = sorted(rows, key=attrgetter(partition_by, order_by))\n    result = []\n    for dept, group in groupby(rows_sorted, key=attrgetter(partition_by)):\n        for i, item in enumerate(group, 1):\n            result.append((item, i))\n    return result\n\ndef simulate_lag(rows, partition_by, order_by, n=1):\n    rows_sorted = sorted(rows, key=attrgetter(partition_by, order_by))\n    groups = {}\n    for k, g in groupby(rows_sorted, key=attrgetter(partition_by)):\n        groups[k] = list(g)\n    result = []\n    for dept, items in groups.items():\n        for i, item in enumerate(items):\n            prev_val = items[i-n].amount if i >= n else 0\n            result.append((item, prev_val))\n    return result\n\nfor item, rank in simulate_row_number(sales, \"dept\", \"amount\"):\n    print(f\"{item.dept} | {item.name} | {item.amount} | rn={rank}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-of-window-functions",
+      children: "Complexity Analysis of Window Functions"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WHY"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ROW_NUMBER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n log n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sorting within each partition dominates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RANK"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n log n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same sorting requirement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DENSE_RANK"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n log n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identical sorting + tie detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NTILE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) after sort"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple arithmetic distribution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LAG/LEAD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single pass after ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FIRST_VALUE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Track first value in partition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LAST_VALUE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires full partition scan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SUM/AVG OVER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cumulative scan"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "window-functions--edge-cases",
+      children: "Window Functions → Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty partition:"
+        }), " Returns no rows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NULLs in ORDER BY:"
+        }), " Default behavior depends on DBMS (NULLS FIRST/LAST in PostgreSQL, NULLS FIRST in MySQL)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Frame clause with RANGE vs ROWS:"
+        }), " RANGE treats ties as a single group; ROWS treats them as individual rows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "LAG/LEAD with non-existent row:"
+        }), " Returns default value (NULL if not specified). Always provide a default for non-optional columns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NTILE with fewer rows than buckets:"
+        }), " Some buckets will be empty. Remaining rows distributed one per bucket."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "64-pivot--unpivot",
+      children: "6.4 PIVOT / UNPIVOT"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Transforms rows into columns (PIVOT) and columns into rows (UNPIVOT). SQL Server has native operators; PostgreSQL uses crosstab (tablefunc extension); MySQL uses CASE with aggregation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-3",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PIVOT"
+        }), " = Turning a shopping list (item, store, price) into a price comparison table where stores are columns: you can see all prices at once.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "UNPIVOT"
+        }), " = Taking that price comparison table and turning it back into a list format."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "641-pivot-sql-server",
+      children: "6.4.1 PIVOT (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Sample data: monthly sales by product category\nCREATE TABLE monthly_sales (\n    category VARCHAR(50),\n    month INT,\n    revenue DECIMAL(10,2)\n);\nINSERT INTO monthly_sales VALUES\n('Electronics', 1, 50000), ('Electronics', 2, 55000),\n('Clothing', 1, 30000),    ('Clothing', 2, 28000),\n('Books', 1, 15000),       ('Books', 2, 18000);\n\n-- SQL Server PIVOT\nSELECT *\nFROM monthly_sales\nPIVOT (\n    SUM(revenue)\n    FOR month IN ([1], [2])\n) AS pvt;\n\n-- Output:\n-- category   | 1      | 2\n-- Electronics| 50000  | 55000\n-- Clothing   | 30000  | 28000\n-- Books      | 15000  | 18000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "642-pivot-using-case-mysql--postgresql-compatible",
+      children: "6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT\n    category,\n    SUM(CASE WHEN month = 1 THEN revenue ELSE 0 END) AS \"Jan\",\n    SUM(CASE WHEN month = 2 THEN revenue ELSE 0 END) AS \"Feb\",\n    AVG(CASE WHEN month = 1 THEN revenue ELSE NULL END) AS \"Jan_avg\"\nFROM monthly_sales\nGROUP BY category;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "643-pivot-using-crosstab-postgresql",
+      children: "6.4.3 PIVOT using crosstab (PostgreSQL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE EXTENSION IF NOT EXISTS tablefunc;\n\nSELECT *\nFROM crosstab(\n    'SELECT category, month::TEXT, SUM(revenue)::NUMERIC\n     FROM monthly_sales\n     GROUP BY category, month\n     ORDER BY category, month',\n    'SELECT generate_series(1, 2)::TEXT'\n) AS ct(category TEXT, jan NUMERIC, feb NUMERIC);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "644-unpivot-sql-server",
+      children: "6.4.4 UNPIVOT (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Sample data: pivoted format\nCREATE TABLE quarterly_sales (\n    product VARCHAR(50),\n    q1 DECIMAL(10,2),\n    q2 DECIMAL(10,2),\n    q3 DECIMAL(10,2),\n    q4 DECIMAL(10,2)\n);\n\nINSERT INTO quarterly_sales VALUES\n('Widget', 10000, 12000, 11000, 13000);\n\n-- UNPIVOT columns to rows\nSELECT product, quarter, sales\nFROM quarterly_sales\nUNPIVOT (\n    sales FOR quarter IN (q1, q2, q3, q4)\n) AS unpvt;\n\n-- Output:\n-- product | quarter | sales\n-- Widget  | q1      | 10000\n-- Widget  | q2      | 12000\n-- Widget  | q3      | 11000\n-- Widget  | q4      | 13000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "645-unpivot-using-union-all-cross-dbms",
+      children: "6.4.5 UNPIVOT using UNION ALL (cross-DBMS)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "SELECT product, 'Q1' AS quarter, q1 AS sales FROM quarterly_sales\nUNION ALL\nSELECT product, 'Q2', q2 FROM quarterly_sales\nUNION ALL\nSELECT product, 'Q3', q3 FROM quarterly_sales\nUNION ALL\nSELECT product, 'Q4', q4 FROM quarterly_sales;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation (PIVOT):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pandas as pd\ndata = [\n    (\"Electronics\", 1, 50000), (\"Electronics\", 2, 55000),\n    (\"Clothing\", 1, 30000), (\"Clothing\", 2, 28000),\n    (\"Books\", 1, 15000), (\"Books\", 2, 18000),\n]\ndf = pd.DataFrame(data, columns=[\"category\", \"month\", \"revenue\"])\npivoted = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\nprint(pivoted)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) → PIVOT scans once, groups, and distributes into columns. The number of pivot columns is known at query time; the GROUP BY is O(n) with hash aggregation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "65-merge--upsert",
+      children: "6.5 MERGE / UPSERT"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MERGE (aka UPSERT) performs INSERT, UPDATE, or DELETE based on whether a matching row exists. Use it to synchronize two tables."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-4",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "= Updating your address book: if the contact already exists, update their info. If not, add a new entry. One operation, not two."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sql-sql-server--postgresql",
+      children: "SQL (SQL Server / PostgreSQL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Target table: product_inventory (current stock)\n-- Source table: daily_shipments (new stock arrivals)\n\nMERGE INTO product_inventory AS target\nUSING daily_shipments AS source\nON target.product_id = source.product_id\n\nWHEN MATCHED THEN\n    UPDATE SET\n        target.quantity = target.quantity + source.quantity,\n        target.last_updated = CURRENT_TIMESTAMP\n\nWHEN NOT MATCHED THEN\n    INSERT (product_id, product_name, quantity, last_updated)\n    VALUES (source.product_id, source.product_name, source.quantity, CURRENT_TIMESTAMP)\n\nWHEN NOT MATCHED BY SOURCE THEN\n    DELETE  -- Remove products no longer in source (optional)\n\nOUTPUT $action, inserted.product_id, deleted.quantity, inserted.quantity;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "postgresql-insert--on-conflict-simpler-upsert",
+      children: "PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "INSERT INTO product_inventory (product_id, product_name, quantity)\nVALUES (101, 'Widget', 50)\nON CONFLICT (product_id)\nDO UPDATE SET\n    quantity = product_inventory.quantity + EXCLUDED.quantity,\n    last_updated = CURRENT_TIMESTAMP;\n\n-- ON CONFLICT DO NOTHING (silently skip)\nINSERT INTO employees (emp_id, name, email)\nVALUES (100, 'John', 'john@example.com')\nON CONFLICT (emp_id) DO NOTHING;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mysql-insert--on-duplicate-key-update",
+      children: "MySQL INSERT ... ON DUPLICATE KEY UPDATE"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "INSERT INTO product_inventory (product_id, product_name, quantity)\nVALUES (101, 'Widget', 50)\nON DUPLICATE KEY UPDATE\n    quantity = quantity + 50,\n    last_updated = NOW();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-for-merge-execution",
+      children: "Steps for MERGE Execution:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Join phase:"
+        }), " Source and target are joined on the match condition."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Matched rows:"
+        }), " For rows that exist in both, execute WHEN MATCHED actions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not matched (target):"
+        }), " For rows in source but not in target, execute WHEN NOT MATCHED (INSERT)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not matched by source:"
+        }), " For rows in target but not in source, execute WHEN NOT MATCHED BY SOURCE (DELETE or UPDATE)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (MERGE):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Row"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Source product_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target exists?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes, qty=10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UPDATE: qty = 10 + 50 = 60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Updated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "102"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INSERT: (102, 'Gadget', 30)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inserted"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "product 103 in target only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DELETE: remove 103"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deleted"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n + m) where n = source rows, m = target rows for the join. A hash join on the match column is O(n + m). The MERGE is a single pass; no separate SELECT + UPDATE + INSERT needed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multiple matches:"
+        }), " If source has multiple rows matching one target row, the MERGE fails with a \"multiple rows in source match same target row\" error."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Concurrent MERGE:"
+        }), " Race conditions → two concurrent MERGE statements can produce unexpected results. Use SERIALIZABLE isolation or application-level locking."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trigger firing:"
+        }), " MERGE fires INSERT, UPDATE, and DELETE triggers on the target table."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "66-dynamic-sql",
+      children: "6.6 Dynamic SQL"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Dynamic SQL constructs and executes SQL statements ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "at runtime"
+      }), " using string building. Used for dynamic table names, dynamic WHERE clauses, pivot queries, and DDL operations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-5",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "= Writing a fill-in-the-blank form where you decide which blanks to fill based on user input. \"SELECT * FROM [you_pick_the_table] WHERE [you_pick_the_column] = [you_pick_the_value].\""
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sql-server-sp_executesql",
+      children: "SQL Server (sp_executesql)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE PROCEDURE search_employees\n    @column_name NVARCHAR(50),\n    @search_value NVARCHAR(100)\nAS\nBEGIN\n    DECLARE @sql NVARCHAR(MAX);\n    SET @sql = N'\n        SELECT emp_id, name, department, salary\n        FROM employees\n        WHERE ' + QUOTENAME(@column_name) + ' = @val';\n\n    EXEC sp_executesql @sql, N'@val NVARCHAR(100)', @val = @search_value;\nEND;\n\n-- Usage: EXEC search_employees 'department', 'Engineering';\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "postgresql-execute",
+      children: "PostgreSQL (EXECUTE)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE OR REPLACE FUNCTION search_table(\n    table_name TEXT,\n    column_name TEXT,\n    search_value TEXT\n) RETURNS SETOF RECORD AS $$\nBEGIN\n    RETURN QUERY EXECUTE format(\n        'SELECT * FROM %I WHERE %I = %L',\n        table_name, column_name, search_value\n    );\nEND;\n$$ LANGUAGE plpgsql;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-always-use-quotename--format-with-i",
+      children: "Security: Always Use QUOTENAME / format with %I"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- VULNERABLE (SQL injection):\nSET @sql = 'SELECT * FROM ' + @table_name + ' WHERE id = ' + @id;\n\n-- SAFE (SQL Server):\nSET @sql = 'SELECT * FROM ' + QUOTENAME(@table_name) + ' WHERE id = @id';\n\n-- SAFE (PostgreSQL):\nEXECUTE format('SELECT * FROM %I WHERE id = %L', table_name, id);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-dynamic-sql-builder",
+      children: "Python Implementation (Dynamic SQL Builder):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import sqlite3\n\nclass DynamicQueryBuilder:\n    def __init__(self, conn):\n        self.conn = conn\n\n    def build_select(self, table, columns=None, where=None, order_by=None, limit=None):\n        cols = \", \".join(columns) if columns else \"*\"\n        sql = f\"SELECT {cols} FROM {table}\"\n\n        if where:\n            clauses = []\n            params = []\n            for col, val in where.items():\n                clauses.append(f\"{col} = ?\")\n                params.append(val)\n            sql += \" WHERE \" + \" AND \".join(clauses)\n\n        if order_by:\n            sql += f\" ORDER BY {order_by}\"\n\n        if limit:\n            sql += f\" LIMIT {limit}\"\n\n        return sql, params\n\n    def execute(self, sql, params=None):\n        cursor = self.conn.cursor()\n        cursor.execute(sql, params or [])\n        return cursor.fetchall()\n\nconn = sqlite3.connect(\":memory:\")\nbuilder = DynamicQueryBuilder(conn)\nsql, params = builder.build_select(\"employees\", where={\"department\": \"Engineering\", \"salary\": 50000})\nprint(f\"SQL: {sql}, Params: {params}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) → the SQL string is constructed in O(k) where k is the number of dynamic parts, then the query executes at normal complexity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SQL Injection:"
+        }), " NEVER concatenate user input directly. Use parameterized queries or QUOTENAME."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Syntax errors at runtime:"
+        }), " Dynamic SQL fails are not caught at compile time. Always test with representative inputs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Performance:"
+        }), " Each execution may need a new query plan. Parameterized dynamic SQL allows plan reuse."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "67-stored-procedures",
+      children: "6.7 Stored Procedures"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "stored procedure"
+      }), " is a pre-compiled collection of SQL statements stored on the database server. It can accept parameters, perform complex operations, and return results."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-6",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "= A saved recipe in the restaurant kitchen. Instead of telling the chef the steps each time (\"chop onions, sauté, add tomatoes, simmer\"), you just say \"make marinara sauce.\" The recipe is pre-written, pre-practiced, and ready to execute."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sql-server-example",
+      children: "SQL Server Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE PROCEDURE sp_GetDepartmentSummary\n    @dept_id INT,\n    @min_salary DECIMAL(10,2) = 0  -- Optional parameter with default\nAS\nBEGIN\n    SET NOCOUNT ON;\n\n    -- Result set 1: department info\n    SELECT d.department_name, d.location, COUNT(e.emp_id) AS headcount\n    FROM departments d\n    LEFT JOIN employees e ON d.department_id = e.department_id\n    WHERE d.department_id = @dept_id\n    GROUP BY d.department_name, d.location;\n\n    -- Result set 2: employees in department\n    SELECT emp_id, name, salary, hire_date\n    FROM employees\n    WHERE department_id = @dept_id\n      AND salary >= @min_salary\n    ORDER BY salary DESC;\n\n    -- Return value: total salary expenditure\n    SELECT @total = SUM(salary)\n    FROM employees\n    WHERE department_id = @dept_id;\n\n    RETURN @total;\nEND;\n\n-- Execute\nDECLARE @result INT;\nEXEC @result = sp_GetDepartmentSummary @dept_id = 3, @min_salary = 50000;\nPRINT 'Total salary: ' + CAST(@result AS VARCHAR);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mysql-example",
+      children: "MySQL Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "DELIMITER //\n\nCREATE PROCEDURE GetDepartmentSummary(\n    IN dept_id INT,\n    IN min_salary DECIMAL(10,2),\n    OUT total_salary DECIMAL(10,2)\n)\nBEGIN\n    SELECT d.department_name, COUNT(e.emp_id) AS headcount\n    FROM departments d\n    LEFT JOIN employees e ON d.department_id = e.department_id\n    WHERE d.department_id = dept_id\n    GROUP BY d.department_name;\n\n    SELECT emp_id, name, salary\n    FROM employees\n    WHERE department_id = dept_id AND salary >= min_salary;\n\n    SELECT SUM(salary) INTO total_salary\n    FROM employees\n    WHERE department_id = dept_id;\nEND//\n\nDELIMITER ;\n\nCALL GetDepartmentSummary(3, 50000, @total);\nSELECT @total;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "postgresql-example-plpgsql",
+      children: "PostgreSQL Example (plpgsql)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE OR REPLACE FUNCTION get_department_summary(\n    dept_id INT,\n    min_salary DECIMAL DEFAULT 0,\n    OUT total_salary DECIMAL\n) RETURNS DECIMAL AS $$\nBEGIN\n    RETURN QUERY\n    SELECT d.department_name, COUNT(e.emp_id)::INT AS headcount\n    FROM departments d\n    LEFT JOIN employees e ON d.department_id = e.department_id\n    WHERE d.department_id = dept_id\n    GROUP BY d.department_name;\n\n    SELECT SUM(salary) INTO total_salary\n    FROM employees\n    WHERE department_id = dept_id AND salary >= min_salary;\nEND;\n$$ LANGUAGE plpgsql;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-stored-procedure-executor",
+      children: "C++ Implementation (Stored Procedure Executor)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <functional>\n#include <map>\n#include <vector>\n#include <string>\n#include <any>\n\nstruct ResultSet {\n    std::vector<std::string> columns;\n    std::vector<std::vector<std::any>> rows;\n};\n\nclass StoredProcedure {\npublic:\n    std::string name;\n    std::function<ResultSet(std::map<std::string, std::any>)> body;\n\n    StoredProcedure(const std::string& n,\n        std::function<ResultSet(std::map<std::string, std::any>)> b)\n        : name(n), body(std::move(b)) {}\n\n    ResultSet execute(std::map<std::string, std::any> params) {\n        return body(std::move(params));\n    }\n};\n\nclass StoredProcedureEngine {\n    std::map<std::string, StoredProcedure> procedures;\npublic:\n    void registerProcedure(StoredProcedure sp) {\n        procedures[sp.name] = std::move(sp);\n    }\n\n    ResultSet call(const std::string& name, std::map<std::string, std::any> params) {\n        auto it = procedures.find(name);\n        if (it == procedures.end())\n            throw std::runtime_error(\"Procedure not found: \" + name);\n        return it->second.execute(std::move(params));\n    }\n};\n\nint main() {\n    StoredProcedureEngine engine;\n\n    // Register a mock procedure\n    engine.registerProcedure(StoredProcedure(\"get_employee_count\", [](auto params) {\n        ResultSet rs;\n        rs.columns = {\"department\", \"count\"};\n        std::string dept = std::any_cast<std::string>(params[\"dept\"]);\n        rs.rows.push_back({dept, 42});\n        return rs;\n    }));\n\n    auto result = engine.call(\"get_employee_count\", {{\"dept\", std::string(\"Engineering\")}});\n    for (auto& row : result.rows) {\n        std::cout << std::any_cast<std::string>(row[0]) << \": \"\n                  << std::any_cast<int>(row[1]) << \"\\n\";\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-stored-procedure-executor",
+      children: "Python Implementation (Stored Procedure Executor)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Any, Callable\nimport sqlite3\n\nclass StoredProcedure:\n    def __init__(self, name: str, sql: str, param_names: list[str] = None):\n        self.name = name\n        self.sql = sql\n        self.param_names = param_names or []\n\nclass StoredProcedureEngine:\n    def __init__(self, conn: sqlite3.Connection):\n        self.conn = conn\n        self.procedures: dict[str, StoredProcedure] = {}\n\n    def register(self, sp: StoredProcedure):\n        self.procedures[sp.name] = sp\n\n    def call(self, name: str, **kwargs) -> list[tuple]:\n        sp = self.procedures.get(name)\n        if not sp:\n            raise ValueError(f\"Procedure '{name}' not found\")\n        params = [kwargs[p] for p in sp.param_names]\n        cursor = self.conn.execute(sp.sql, params)\n        return cursor.fetchall()\n\nconn = sqlite3.connect(\":memory:\")\nconn.execute(\"CREATE TABLE employees (id INT, name TEXT, dept TEXT, salary REAL)\")\nconn.execute(\"INSERT INTO employees VALUES (1, 'Alice', 'Engineering', 95000)\")\nconn.execute(\"INSERT INTO employees VALUES (2, 'Bob', 'Engineering', 72000)\")\n\nengine = StoredProcedureEngine(conn)\nengine.register(StoredProcedure(\n    \"dept_employees\",\n    \"SELECT name, salary FROM employees WHERE dept = ?\",\n    [\"department\"]\n))\n\nresults = engine.call(\"dept_employees\", department=\"Engineering\")\nfor row in results:\n    print(f\"{row[0]}: {row[1]}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity--benefits",
+      children: "Complexity & Benefits"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compilation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiled once, executed many times → plan reuse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network traffic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only the CALL/EXEC statement is sent, not the entire SQL"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Users can EXECUTE without underlying table permissions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintenance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Centralized logic; change one procedure, all callers benefit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) for execution; compilation overhead is one-time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Nested procedures:"
+        }), " Up to 32 levels in SQL Server. Monitor for deep nesting causing stack overflow."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transaction management:"
+        }), " Procedures can have explicit BEGIN TRAN/COMMIT. Ensure error handling with TRY/CATCH."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Side effects:"
+        }), " Procedures may modify database state. Use WITH EXECUTE AS / SECURITY DEFINER for permissions."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "68-user-defined-functions-udfs",
+      children: "6.8 User-Defined Functions (UDFs)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Functions return a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "single value"
+      }), " (scalar) or a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "table"
+      }), " (table-valued). Unlike stored procedures, functions:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Must"
+        }), " return a value."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cannot"
+        }), " have side effects (no INSERT/UPDATE/DELETE on tables → with exceptions in some DBMS)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Can"
+        }), " be used inside SELECT statements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-7",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "= A calculator button. You input numbers, get a result. It doesn't change anything outside the calculator. Pressing \"sqrt(25)\" always returns 5, no side effects."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scalar-function-sql-server",
+      children: "Scalar Function (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE FUNCTION dbo.CalculateBonus(\n    @salary DECIMAL(10,2),\n    @performance_rating INT\n)\nRETURNS DECIMAL(10,2)\nAS\nBEGIN\n    DECLARE @bonus DECIMAL(10,2);\n    SET @bonus = @salary *\n        CASE\n            WHEN @performance_rating >= 5 THEN 0.20\n            WHEN @performance_rating >= 3 THEN 0.10\n            ELSE 0.05\n        END;\n    RETURN @bonus;\nEND;\n\n-- Usage in SELECT\nSELECT name, salary,\n       dbo.CalculateBonus(salary, performance_rating) AS bonus\nFROM employees;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "table-valued-function-sql-server",
+      children: "Table-Valued Function (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE FUNCTION GetEmployeesByDepartment(@dept_id INT)\nRETURNS TABLE\nAS\nRETURN (\n    SELECT emp_id, name, salary, hire_date\n    FROM employees\n    WHERE department_id = @dept_id\n);\n\n-- Usage: treat like a table with parameters\nSELECT * FROM GetEmployeesByDepartment(3) WHERE salary > 50000;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "postgresql-function",
+      children: "PostgreSQL Function"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE OR REPLACE FUNCTION calculate_bonus(\n    salary DECIMAL,\n    rating INT\n) RETURNS DECIMAL AS $$\nBEGIN\n    RETURN salary *\n        CASE\n            WHEN rating >= 5 THEN 0.20\n            WHEN rating >= 3 THEN 0.10\n            ELSE 0.05\n        END;\nEND;\n$$ LANGUAGE plpgsql IMMUTABLE;\n\n-- IMMUTABLE tells the optimizer the result depends only on inputs (can be precomputed)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deterministic-vs-non-deterministic",
+      children: "Deterministic vs Non-Deterministic"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Function Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Examples"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Caching"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DETERMINISTIC"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ABS()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "UPPER()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "CalculateBonus(salary, rating)"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be indexed, precomputed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NOT DETERMINISTIC"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "GETDATE()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "RAND()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "NEWID()"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot be indexed, computed each time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity",
+      children: "Complexity"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Function Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Execution Pattern"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Performance"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scalar (row-level)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Called per row → O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be slow for large result sets; use carefully in WHERE/SELECT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Table-valued (inline)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expanded into outer query → optimized"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast → optimizer inlines like a view"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Table-valued (multi-stmt)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Materialized → temp table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slower → always materializes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-udf-simulator",
+      children: "Python Implementation (UDF Simulator)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import Callable, Any\nimport sqlite3\n\nclass UDFRegistry:\n    def __init__(self, conn: sqlite3.Connection):\n        self.conn = conn\n        self.udfs: dict[str, Callable] = {}\n\n    def register(self, name: str, func: Callable, num_params: int):\n        self.udfs[name] = func\n        self.conn.create_function(name, num_params, func)\n\nconn = sqlite3.connect(\":memory:\")\nconn.execute(\"CREATE TABLE emp(id, name, salary, rating)\")\nconn.execute(\"INSERT INTO emp VALUES (1,'Alice',95000,5),(2,'Bob',72000,3),(3,'Charlie',68000,2)\")\n\nregistry = UDFRegistry(conn)\ndef calculate_bonus(salary, rating):\n    if rating >= 5: return salary * 0.20\n    elif rating >= 3: return salary * 0.10\n    else: return salary * 0.05\n\nregistry.register(\"bonus\", calculate_bonus, 2)\ncursor = conn.execute(\"SELECT name, salary, bonus(salary, rating) FROM emp\")\nfor row in cursor:\n    print(f\"{row[0]}: salary={row[1]}, bonus={row[2]:.0f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "69-triggers",
+      children: "6.9 Triggers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "trigger"
+      }), " is a stored procedure that automatically executes (fires) in response to DML events (INSERT, UPDATE, DELETE) or DDL events on a table or view."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-8",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "= A motion-sensor light. You don't flip a switch → the light automatically turns on when someone enters the room (event), checks the time (condition), and turns on (action). All happens without human intervention."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "types-of-triggers",
+      children: "Types of Triggers"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Timing"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BEFORE / FOR EACH ROW"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Before row modification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Validation, default values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AFTER / FOR EACH ROW"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "After row modification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Audit logging, cascading changes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "INSTEAD OF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replaces the operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "View updates, complex logic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DDL Trigger"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Schema changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevent DROP TABLE, audit schema changes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "before-trigger-mysql",
+      children: "BEFORE Trigger (MySQL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "DELIMITER //\nCREATE TRIGGER before_employee_update\nBEFORE UPDATE ON employees\nFOR EACH ROW\nBEGIN\n    -- Log the old salary\n    INSERT INTO salary_audit(emp_id, old_salary, new_salary, changed_by, changed_at)\n    VALUES (OLD.emp_id, OLD.salary, NEW.salary, CURRENT_USER(), NOW());\n\n    -- Prevent salary decrease\n    IF NEW.salary < OLD.salary THEN\n        SIGNAL SQLSTATE '45000'\n        SET MESSAGE_TEXT = 'Salary cannot be decreased';\n    END IF;\nEND//\nDELIMITER ;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "after-trigger-sql-server",
+      children: "AFTER Trigger (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE TRIGGER trg_EmployeeAudit\nON employees\nAFTER INSERT, UPDATE, DELETE\nAS\nBEGIN\n    SET NOCOUNT ON;\n\n    INSERT INTO employee_changes(emp_id, old_name, new_name, old_salary, new_salary,\n                                 change_type, changed_by, changed_at)\n    SELECT\n        COALESCE(i.emp_id, d.emp_id),\n        d.name, i.name,\n        d.salary, i.salary,\n        CASE\n            WHEN i.emp_id IS NOT NULL AND d.emp_id IS NOT NULL THEN 'UPDATE'\n            WHEN i.emp_id IS NOT NULL THEN 'INSERT'\n            ELSE 'DELETE'\n        END,\n        CURRENT_USER,\n        GETDATE()\n    FROM inserted i\n    FULL OUTER JOIN deleted d ON i.emp_id = d.emp_id;\nEND;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "instead-of-trigger-sql-server--for-views",
+      children: "INSTEAD OF Trigger (SQL Server → for Views)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE VIEW emp_view AS\nSELECT emp_id, name, salary, department_id FROM employees;\n\nCREATE TRIGGER trg_emp_view_insert\nON emp_view\nINSTEAD OF INSERT\nAS\nBEGIN\n    -- Validate and transform before inserting into base table\n    INSERT INTO employees(emp_id, name, salary, department_id, created_at)\n    SELECT emp_id, name,\n           CASE WHEN salary < 0 THEN 0 ELSE salary END,\n           department_id, GETDATE()\n    FROM inserted;\nEND;\n\n-- Now INSERT INTO emp_view works (normally views are not updatable if complex)\nINSERT INTO emp_view(emp_id, name, salary, department_id) VALUES (100, 'John', -5000, 1);\n-- Actually inserts with salary=0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trigger-execution-order-sql-server",
+      children: "Trigger Execution Order (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BEFORE triggers (not in SQL Server → check constraints fire first)\n→ INSTEAD OF trigger (replaces the operation entirely)\n→ CHECK CONSTRAINTS\n→ Primary Key / Foreign Key validation\n→ AFTER triggers (multiple, ordered by sp_settriggerorder)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-trigger-engine",
+      children: "C++ Implementation (Trigger Engine)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <functional>\n\nenum class TriggerEvent { INSERT, UPDATE, DELETE };\nenum class TriggerTiming { BEFORE, AFTER, INSTEAD_OF };\n\nstruct Row {\n    std::vector<std::pair<std::string, std::string>> columns;\n    std::string get(const std::string& col) {\n        for (auto& c : columns) if (c.first == col) return c.second;\n        return \"\";\n    }\n};\n\nstruct TriggerContext {\n    TriggerEvent event;\n    TriggerTiming timing;\n    Row oldRow;  // For UPDATE/DELETE\n    Row newRow;  // For INSERT/UPDATE\n};\n\nclass Trigger {\npublic:\n    std::string name;\n    TriggerEvent event;\n    TriggerTiming timing;\n    std::function<bool(TriggerContext&)> action;\n\n    Trigger(std::string n, TriggerEvent e, TriggerTiming t,\n            std::function<bool(TriggerContext&)> a)\n        : name(n), event(e), timing(t), action(std::move(a)) {}\n};\n\nclass TriggerEngine {\n    std::vector<Trigger> triggers;\npublic:\n    void addTrigger(Trigger t) { triggers.push_back(std::move(t)); }\n\n    bool fire(TriggerEvent event, TriggerTiming timing, Row& oldRow, Row& newRow) {\n        TriggerContext ctx{event, timing, oldRow, newRow};\n        for (auto& t : triggers) {\n            if (t.event == event && t.timing == timing) {\n                if (!t.action(ctx)) return false;  // Trigger prevented operation\n            }\n        }\n        return true;\n    }\n};\n\nint main() {\n    TriggerEngine engine;\n    engine.addTrigger(Trigger(\"prevent_salary_decrease\", TriggerEvent::UPDATE,\n        TriggerTiming::BEFORE, [](TriggerContext& ctx) {\n            double oldSal = std::stod(ctx.oldRow.get(\"salary\"));\n            double newSal = std::stod(ctx.newRow.get(\"salary\"));\n            if (newSal < oldSal) {\n                std::cout << \"Trigger: Cannot decrease salary!\\n\";\n                return false;\n            }\n            return true;\n        }));\n\n    Row oldR, newR;\n    oldR.columns = {{\"salary\", \"100000\"}};\n    newR.columns = {{\"salary\", \"80000\"}};\n\n    if (engine.fire(TriggerEvent::UPDATE, TriggerTiming::BEFORE, oldR, newR))\n        std::cout << \"Update allowed\\n\";\n    else\n        std::cout << \"Update rejected by trigger\\n\";\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-trigger-simulator",
+      children: "Python Implementation (Trigger Simulator)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from enum import Enum\nfrom typing import Callable\n\nclass TriggerEvent(Enum):\n    INSERT = 1\n    UPDATE = 2\n    DELETE = 3\n\nclass TriggerTiming(Enum):\n    BEFORE = 1\n    AFTER = 2\n    INSTEAD_OF = 3\n\nclass Trigger:\n    def __init__(self, name: str, event: TriggerEvent, timing: TriggerTiming,\n                 action: Callable[..., bool]):\n        self.name = name\n        self.event = event\n        self.timing = timing\n        self.action = action\n\nclass TriggerEngine:\n    def __init__(self):\n        self.triggers: list[Trigger] = []\n\n    def add(self, trigger: Trigger):\n        self.triggers.append(trigger)\n\n    def fire(self, event: TriggerEvent, timing: TriggerTiming, old_row=None, new_row=None) -> bool:\n        for t in self.triggers:\n            if t.event == event and t.timing == timing:\n                if not t.action(old_row, new_row):\n                    return False\n        return True\n\nengine = TriggerEngine()\n\ndef audit_log(old, new):\n    print(f\"[AUDIT] Row changed: old={old}, new={new}\")\n    return True\n\ndef prevent_salary_decrease(old, new):\n    if old and new and new.get(\"salary\", 0) < old.get(\"salary\", 0):\n        print(\"[TRIGGER] Cannot decrease salary!\")\n        return False\n    return True\n\nengine.add(Trigger(\"audit\", TriggerEvent.UPDATE, TriggerTiming.AFTER, audit_log))\nengine.add(Trigger(\"no_paycut\", TriggerEvent.UPDATE, TriggerTiming.BEFORE, prevent_salary_decrease))\n\nold_emp = {\"emp_id\": 1, \"salary\": 100000}\nnew_emp = {\"emp_id\": 1, \"salary\": 80000}\nengine.fire(TriggerEvent.UPDATE, TriggerTiming.BEFORE, old_emp, new_emp)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trigger-complexity--considerations",
+      children: "Trigger Complexity & Considerations"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(t) where t = operations within the trigger body. Triggers add overhead to every DML operation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recursive triggers"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A trigger that modifies the same table causing itself to fire again. SQL Server default: recursive_triggers = OFF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nested triggers"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trigger on Table A modifies Table B which has its own trigger. Default nesting level: 32"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Trigger recursion depth"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MySQL max_sp_recursion_depth; PostgreSQL no recursion by default; SQL Server up to 32 levels"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance impact"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Triggers run within the same transaction → they hold locks until complete"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "610-views--indexed-views",
+      children: "6.10 Views & Indexed Views"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "view"
+      }), " is a saved query definition that behaves like a virtual table. An ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "indexed view"
+      }), " (materialized view) stores the query result physically."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-9",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Regular view"
+        }), " = A saved search filter on a dating app. You define \"age 25-35, non-smoker\" once, and it always shows current results.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Indexed view"
+        }), " = A printed photo album. It's fast to browse but you need to take new photos when people change."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "creating-views",
+      children: "Creating Views"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE VIEW sales_summary AS\nSELECT\n    c.category_name,\n    COUNT(DISTINCT o.order_id) AS order_count,\n    SUM(oi.quantity * oi.unit_price) AS total_revenue,\n    AVG(oi.quantity * oi.unit_price) AS avg_order_value\nFROM categories c\nJOIN products p ON c.category_id = p.category_id\nJOIN order_items oi ON p.product_id = oi.product_id\nJOIN orders o ON oi.order_id = o.order_id\nWHERE o.status = 'completed'\nGROUP BY c.category_name;\n\n-- Querying is simple:\nSELECT * FROM sales_summary WHERE total_revenue > 10000 ORDER BY total_revenue DESC;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "view-security-column-level-masking",
+      children: "View Security (Column-Level Masking)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE VIEW employee_public AS\nSELECT emp_id, name, department_id\nFROM employees;\n-- Excludes salary, ssn, birth_date → sensitive columns hidden\n\nCREATE VIEW employee_hr AS\nSELECT * FROM employees;\n-- HR sees everything\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "indexed-views-sql-server",
+      children: "Indexed Views (SQL Server)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Must be created WITH SCHEMABINDING\nCREATE VIEW dbo.monthly_sales WITH SCHEMABINDING AS\nSELECT\n    product_id,\n    COUNT_BIG(*) AS transaction_count,\n    SUM(quantity) AS total_quantity,\n    SUM(quantity * unit_price) AS total_revenue\nFROM dbo.order_items\nGROUP BY product_id;\n\n-- Create unique clustered index on the view\nCREATE UNIQUE CLUSTERED INDEX IX_monthly_sales_product\nON dbo.monthly_sales(product_id);\n\n-- Now the view is materialized → queries use the index directly\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "materialized-views-postgresql",
+      children: "Materialized Views (PostgreSQL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE MATERIALIZED VIEW monthly_sales_mv AS\nSELECT\n    EXTRACT(YEAR FROM order_date) AS year,\n    EXTRACT(MONTH FROM order_date) AS month,\n    COUNT(*) AS order_count,\n    SUM(total_amount) AS revenue\nFROM orders\nWHERE status = 'completed'\nGROUP BY 1, 2\nWITH DATA;  -- Populate immediately\n\n-- Refresh (blocking → table is locked during refresh)\nREFRESH MATERIALIZED VIEW monthly_sales_mv;\n\n-- Refresh concurrently (non-blocking, requires unique index)\nCREATE UNIQUE INDEX idx_monthly_sales_mv ON monthly_sales_mv(year, month);\nREFRESH MATERIALIZED VIEW CONCURRENTLY monthly_sales_mv;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "updatable-views",
+      children: "Updatable Views"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Simple views can support INSERT/UPDATE/DELETE if they:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reference only one base table."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Do not use GROUP BY, DISTINCT, aggregate functions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Do not include computed columns."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Include all NOT NULL columns without defaults."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Updatable view\nCREATE VIEW engineering_dept AS\nSELECT emp_id, name, salary, hire_date\nFROM employees\nWHERE department_id = 3;\n\n-- These modify the underlying employees table\nINSERT INTO engineering_dept VALUES (101, 'John', 85000, '2026-06-01');\nUPDATE engineering_dept SET salary = 90000 WHERE emp_id = 101;\nDELETE FROM engineering_dept WHERE emp_id = 101;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-view-materialization",
+      children: "C++ Implementation (View Materialization)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <memory>\n\nstruct Row {\n    std::vector<std::pair<std::string, std::string>> data;\n    std::string operator[](const std::string& col) const {\n        for (auto& [k, v] : data) if (k == col) return v;\n        return \"\";\n    }\n};\n\nclass BaseTable {\npublic:\n    std::string name;\n    std::vector<Row> rows;\n    BaseTable(std::string n) : name(std::move(n)) {}\n};\n\nclass View {\npublic:\n    std::string name;\n    std::vector<std::string> columns;\n    std::function<std::vector<Row>(const std::vector<std::shared_ptr<BaseTable>>&)> query;\n\n    std::vector<Row> execute(const std::vector<std::shared_ptr<BaseTable>>& tables) {\n        return query(tables);\n    }\n};\n\nclass MaterializedView : public View {\n    std::vector<Row> materialized_data;\n    bool is_stale = true;\npublic:\n    void refresh(const std::vector<std::shared_ptr<BaseTable>>& tables) {\n        materialized_data = query(tables);\n        is_stale = false;\n        std::cout << \"Materialized view '\" << name << \"' refreshed (\" \n                  << materialized_data.size() << \" rows)\\n\";\n    }\n\n    std::vector<Row> query_data() {\n        if (is_stale)\n            std::cout << \"WARNING: View '\" << name << \"' is stale. Call refresh().\\n\";\n        return materialized_data;\n    }\n};\n\nint main() {\n    auto orders = std::make_shared<BaseTable>(\"orders\");\n    orders->rows = {{ {{\"id\",\"1\"},{\"amount\",\"100\"},{\"status\",\"completed\"}} }};\n\n    MaterializedView mv;\n    mv.name = \"completed_orders\";\n    mv.query = [](const auto& tables) {\n        std::vector<Row> result;\n        for (auto& t : tables)\n            for (auto& r : t->rows)\n                if (r[\"status\"] == \"completed\")\n                    result.push_back(r);\n        return result;\n    };\n\n    mv.refresh({orders});\n    auto data = mv.query_data();\n    for (auto& r : data)\n        std::cout << \"Order \" << r[\"id\"] << \": $\" << r[\"amount\"] << \"\\n\";\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-view-abstraction",
+      children: "Python Implementation (View Abstraction)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass, field\nfrom typing import Callable\n\n@dataclass\nclass Row:\n    data: dict\n\n@dataclass\nclass BaseTable:\n    name: str\n    rows: list[Row] = field(default_factory=list)\n\n@dataclass\nclass View:\n    name: str\n    query_func: Callable  # Takes list of tables, returns list of Rows\n\n    def query(self, tables: list[BaseTable]) -> list[Row]:\n        return self.query_func(tables)\n\nclass MaterializedView(View):\n    def __init__(self, name: str, query_func: Callable):\n        super().__init__(name, query_func)\n        self._data: list[Row] = []\n        self._is_stale = True\n\n    def refresh(self, tables: list[BaseTable]):\n        self._data = self.query_func(tables)\n        self._is_stale = False\n        print(f\"Refreshed '{self.name}' ({len(self._data)} rows)\")\n\n    def get_data(self) -> list[Row]:\n        if self._is_stale:\n            print(f\"WARNING: '{self.name}' is stale\")\n        return self._data\n\norders = BaseTable(\"orders\")\norders.rows = [Row({\"id\":\"1\",\"amount\":\"100\",\"status\":\"completed\"})]\n\ncompleted_view = MaterializedView(\"completed_orders\", lambda tables: [\n    r for t in tables for r in t.rows if r.data.get(\"status\") == \"completed\"\n])\ncompleted_view.refresh([orders])\nfor r in completed_view.get_data():\n    print(f\"Order {r.data['id']}: ${r.data['amount']}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "view-complexity",
+      children: "View Complexity"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Regular View"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Indexed/Materialized View"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (query definition only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disk space for result set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Query time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) → runs underlying query each access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) with index → precomputed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Freshness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always current"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stale until refresh"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DML impact"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Refresh overhead; updates to base table may fail (SQL Server indexed view restrictions)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Index support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Abstraction, security, simplicity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance, data warehouse, heavy aggregations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "611-temporary-tables--table-variables",
+      children: "6.11 Temporary Tables & Table Variables"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Temporary tables store intermediate results for the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "duration of a session"
+      }), " or ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "scope of a batch"
+      }), ". Table variables are similar but scoped to a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "batch, function, or stored procedure"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-10",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Temp Table"
+        }), " = A whiteboard in a meeting room. You write intermediate results, erase when the meeting ends. Anyone in the meeting can see and modify it.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Table Variable"
+        }), " = A personal notepad. You scribble intermediate notes for yourself, and it's thrown away when you leave the room."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6111-local-temporary-tables-temp",
+      children: "6.11.1 Local Temporary Tables (#temp)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Create local temp table (single # → visible only to current session)\nCREATE TABLE #dept_summary (\n    department_id INT,\n    department_name VARCHAR(100),\n    employee_count INT,\n    total_salary DECIMAL(12,2),\n    created_at DATETIME DEFAULT GETDATE()\n);\n\n-- Insert into temp table\nINSERT INTO #dept_summary (department_id, department_name, employee_count, total_salary)\nSELECT\n    d.department_id,\n    d.department_name,\n    COUNT(e.emp_id),\n    ISNULL(SUM(e.salary), 0)\nFROM departments d\nLEFT JOIN employees e ON d.department_id = e.department_id\nGROUP BY d.department_id, d.department_name;\n\n-- Use the temp table in subsequent queries\nSELECT * FROM #dept_summary WHERE total_salary > 500000;\n\n-- Temp table is automatically dropped when session ends\n-- But explicit drop is good practice:\nDROP TABLE IF EXISTS #dept_summary;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6112-global-temporary-tables-temp",
+      children: "6.11.2 Global Temporary Tables (##temp)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Global temp table (## → visible to ALL sessions)\nCREATE TABLE ##global_temp_errors (\n    error_id INT IDENTITY,\n    error_message VARCHAR(500),\n    error_time DATETIME DEFAULT GETDATE(),\n    session_id INT\n);\n\nINSERT INTO ##global_temp_errors (error_message, session_id)\nVALUES ('Division by zero', @@SPID);\n\n-- Any session can query it:\nSELECT * FROM ##global_temp_errors;\n\n-- Drops when creating session ends AND no other sessions reference it\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6113-table-variables",
+      children: "6.11.3 Table Variables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Declare a table variable (scoped to batch/procedure)\nDECLARE @ProductSales TABLE (\n    product_id INT PRIMARY KEY,\n    product_name NVARCHAR(100),\n    total_sold INT,\n    total_revenue DECIMAL(12,2)\n);\n\nINSERT INTO @ProductSales (product_id, product_name, total_sold, total_revenue)\nSELECT\n    p.product_id,\n    p.product_name,\n    SUM(oi.quantity),\n    SUM(oi.quantity * oi.unit_price)\nFROM products p\nJOIN order_items oi ON p.product_id = oi.product_id\nGROUP BY p.product_id, p.product_name;\n\n-- Query the table variable\nSELECT * FROM @ProductSales ORDER BY total_revenue DESC;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6114-temp-table-vs-table-variable-comparison",
+      children: "6.11.4 Temp Table vs Table Variable Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Temp Table (#)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Table Variable (@)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Current session"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Current batch/procedure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Location"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tempdb (disk)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tempdb (mostly memory)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Indexes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can create explicit indexes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only PRIMARY KEY / UNIQUE constraints"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Statistics"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes → optimizer has histogram"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No → optimizer assumes 1 row (can cause bad plans)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transactions"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Participates → can rollback"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Participates → can rollback"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Explicit DROP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (auto-dropped)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not needed (auto-cleared)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nested procedures"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visible to inner procedures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not visible to inner procedures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large datasets, need indexes, multiple scopes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Small datasets ( < 100 rows ), simple lookups"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Better for large data (stats help optimizer)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Better for small data (less overhead, mostly in memory)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-temp-table-simulation",
+      children: "C++ Implementation (Temp Table Simulation)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n#include <string>\n#include <memory>\n#include <any>\n\nclass Row {\npublic:\n    std::unordered_map<std::string, std::any> columns;\n    template<typename T>\n    T get(const std::string& col) const {\n        return std::any_cast<T>(columns.at(col));\n    }\n};\n\nclass TempTable {\n    std::string name;\n    bool isGlobal;\n    std::vector<Row> rows;\npublic:\n    TempTable(const std::string& n, bool global = false)\n        : name(n), isGlobal(global) {}\n\n    void insert(Row r) { rows.push_back(std::move(r)); }\n\n    std::vector<Row> query(const std::string& condition) {\n        std::vector<Row> result;\n        for (auto& r : rows) {\n            result.push_back(r);\n        }\n        return result;\n    }\n\n    size_t size() const { return rows.size(); }\n    void clear() { rows.clear(); }\n};\n\nclass TempTableManager {\n    std::unordered_map<std::string, std::unique_ptr<TempTable>> localTables;\npublic:\n    TempTable* create(const std::string& name, bool global = false) {\n        auto tt = std::make_unique<TempTable>(name, global);\n        auto* ptr = tt.get();\n        localTables[name] = std::move(tt);\n        return ptr;\n    }\n\n    void drop(const std::string& name) {\n        localTables.erase(name);\n    }\n\n    void clearSession() {\n        localTables.clear();\n    }\n\n    template<typename Func>\n    std::vector<Row> withTempTable(const std::string& name, Func setup, Func query) {\n        TempTable tt(name);\n        setup(tt);\n        return query(tt);\n    }\n};\n\nint main() {\n    TempTableManager mgr;\n    TempTable* deptSummaries = mgr.create(\"#dept_summary\");\n\n    Row r1, r2;\n    r1.columns = {{\"dept_id\", 1}, {\"name\", std::string(\"Engineering\")}, {\"count\", 42}};\n    r2.columns = {{\"dept_id\", 2}, {\"name\", std::string(\"Sales\")}, {\"count\", 30}};\n    deptSummaries->insert(r1);\n    deptSummaries->insert(r2);\n\n    std::cout << \"Temp table has \" << deptSummaries->size() << \" rows\\n\";\n    mgr.clearSession();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-temp-table-simulator",
+      children: "Python Implementation (Temp Table Simulator)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass, field\nfrom typing import Any, Optional\n\n@dataclass\nclass TempTable:\n    name: str\n    is_global: bool = False\n    rows: list[dict[str, Any]] = field(default_factory=list)\n\n    def insert(self, row: dict):\n        self.rows.append(row)\n\n    def query(self, condition: Optional[callable] = None) -> list[dict]:\n        if condition:\n            return [r for r in self.rows if condition(r)]\n        return self.rows.copy()\n\n    @property\n    def size(self) -> int:\n        return len(self.rows)\n\nclass TempTableManager:\n    def __init__(self):\n        self._tables: dict[str, TempTable] = {}\n\n    def create(self, name: str, global_: bool = False) -> TempTable:\n        tt = TempTable(name, global_)\n        self._tables[name] = tt\n        return tt\n\n    def drop(self, name: str):\n        self._tables.pop(name, None)\n\n    def clear_session(self):\n        self._tables.clear()\n\n# Usage\nmgr = TempTableManager()\ndept_summary = mgr.create(\"#dept_summary\")\ndept_summary.insert({\"dept_id\": 1, \"name\": \"Engineering\", \"count\": 42})\ndept_summary.insert({\"dept_id\": 2, \"name\": \"Sales\", \"count\": 30})\nprint(f\"Rows: {dept_summary.size}\")\n\n# Query like a temp table\nfor row in dept_summary.query(lambda r: r[\"count\"] > 35):\n    print(f\"  {row['name']}: {row['count']} employees\")\n\nmgr.clear_session()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "612-procedure-vs-function-vs-trigger-comparison",
+      children: "6.12 Procedure vs Function vs Trigger Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stored Procedure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Function (UDF)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trigger"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Returns"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero or more result sets, output params, return code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single scalar value or table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (fires implicitly)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Can be called from SELECT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (use EXEC/CALL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (in SELECT, WHERE, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (automatic)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Side effects"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (INSERT/UPDATE/DELETE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (cannot modify tables in most DBMS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (within same transaction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transaction control"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (BEGIN TRAN, COMMIT, ROLLBACK)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (runs within caller's transaction)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (runs within firing transaction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Parameters"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IN, OUT, INOUT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IN only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (OLD/NEW implicit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compilation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiled, plan cached"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiled, plan cached"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiled, plan cached"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Exception handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (TRY/CATCH)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (EXCEPTION blocks)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (SIGNAL, THROW)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nesting depth"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 32 levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (function call stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 32 levels"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Business logic, batch ops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Computations, data transformations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auditing, validation, cascading"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deterministic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be (IMMUTABLE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Can be indexed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (deterministic functions in computed columns)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "613-view-vs-temp-table-vs-cte-comparison",
+      children: "6.13 View vs Temp Table vs CTE Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "View"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Temp Table"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CTE"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Definition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Saved query definition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Temporary storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Named query expression"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lifetime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Permanent (until dropped)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Session/batch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single query execution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (virtual)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tempdb (disk/memory)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (inlined or materialized by optimizer)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reusable across queries"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Indexable"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (indexed/materialized views only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recursion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (WITH RECURSIVE)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Modifiable (DML)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (simple views only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Statistics"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (query definition)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (tempdb stats)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Parameterizable"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (needs function for params)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (can use variables)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Readability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (encapsulates complexity)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (separate DDL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (inline with main query)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Frequent queries on complex joins"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-step ETL, large intermediate sets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single-query complex logic, recursion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal (query expansion)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Significant (DDL + I/O)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal (optimizer decides)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "614-interview-corner",
+      children: "6.14 Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-is-the-maximum-recursion-depth-for-ctes",
+      children: "Q1: What is the maximum recursion depth for CTEs?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Most DBMS enforce a default limit to prevent infinite recursion:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SQL Server:"
+        }), " Default 100, max 32767 (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "OPTION (MAXRECURSION 32767)"
+        }), "). Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MAXRECURSION 0"
+        }), " for unlimited (dangerous)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PostgreSQL:"
+        }), " Default 100 (set by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "max_recursive_iterations"
+        }), " GUC). No hard limit, but stack overflow may occur around 1000+ iterations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MySQL:"
+        }), " 8.0+ supports recursive CTEs with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cte_max_recursion_depth"
+        }), " (default 1000, max 4294967295)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Oracle:"
+        }), " Default unlimited but limited by system resources."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"Recursive CTE depth is capped to prevent infinite loops. Default is 100 in most systems. Always use a termination condition (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WHERE n < limit"
+      }), ") and consider whether a set-based approach (hierarchyid, nested sets) might be more performant for deep hierarchies.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-correlated-vs-non-correlated-subquery--performance-difference",
+      children: "Q2: Correlated vs Non-correlated subquery → performance difference?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Non-correlated:"
+      }), " Inner query runs ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "once"
+      }), ". Example: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WHERE salary > (SELECT AVG(salary) FROM employees)"
+      }), " → AVG is computed once.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Correlated:"
+      }), " Inner query runs ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "once per outer row"
+      }), ". Example: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WHERE salary > (SELECT AVG(e2.salary) FROM employees e2 WHERE e2.dept_id = e1.dept_id)"
+      }), " → AVG computed per department."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"Non-correlated subqueries execute once and are generally faster. Correlated subqueries execute for each outer row and can be O(n²). The optimizer may rewrite correlated subqueries to joins or apply caching (subquery decorrelation). Always check the execution plan. When possible, rewrite correlated subqueries to window functions or JOINs with GROUP BY.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-can-you-create-an-index-on-a-view",
+      children: "Q3: Can you create an index on a view?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Regular view:"
+      }), " No → it's just a stored query; there's nothing to index.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Indexed view (SQL Server) / Materialized view (PostgreSQL/Oracle):"
+      }), " Yes → creates a physical copy with a clustered index."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Requirements for indexed views in SQL Server:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "WITH SCHEMABINDING"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No subqueries in the view definition (unless using EXISTS)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No UNION, EXCEPT, INTERSECT"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No DISTINCT, TOP, OFFSET"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No outer joins (LEFT/RIGHT JOIN)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First index must be UNIQUE CLUSTERED"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"You cannot index a regular view. For materialized views, you create a unique clustered index which physically stores the view's result set. This dramatically speeds up queries against the view but adds overhead to base table modifications.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-trigger-vs-check-constraint--which-to-use-for-validation",
+      children: "Q4: Trigger vs CHECK constraint → which to use for validation?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "CHECK constraint:"
+      }), " Simple, declarative, fast. Best for: column-level validation, domain integrity.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trigger:"
+      }), " Complex, procedural, flexible. Best for: cross-table validation, business rules, audit logging."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- CHECK constraint: salary must be positive (simple, fast)\nALTER TABLE employees ADD CONSTRAINT ck_salary_positive CHECK (salary > 0);\n\n-- Trigger: salary cannot decrease (complex, needs cross-row reference)\nCREATE TRIGGER trg_no_salary_decrease ON employees\nINSTEAD OF UPDATE AS\nBEGIN\n    IF EXISTS (SELECT 1 FROM inserted i JOIN deleted d ON i.emp_id = d.emp_id\n               WHERE i.salary < d.salary)\n        THROW 50000, 'Salary cannot decrease', 1;\nEND;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"Use CHECK constraints for simple, single-row validation → they're declarative, faster, and the optimizer understands them. Use triggers only for complex business rules that span rows or tables, or when you need side effects like audit logging.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-happens-with-nulls-in-window-function-order-by",
+      children: "Q5: What happens with NULLs in window function ORDER BY?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PostgreSQL:"
+        }), " NULLS LAST by default (ASC), NULLS FIRST by default (DESC)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SQL Server:"
+        }), " NULLS FIRST (ASC), NULLS LAST (DESC)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MySQL:"
+        }), " NULLS FIRST by default."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Impact: ROW_NUMBER assigns 1 to the first row in sort order; RANK/DENSE_RANK may group NULLs together."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"NULL handling in window functions follows the database's NULL sort order. This affects ROW_NUMBER assignment → if you're ranking salaries and some are NULL, they'll appear at the start or end depending on the DBMS. Use ORDER BY with NULLS LAST/NULLS FIRST for explicit control.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target",
+      children: "Q6: Why would a MERGE statement fail with \"multiple rows in source match same target\"?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MERGE requires a 1:1 or 0:1 relationship between source and target on the join condition. If the source has duplicates on the join key, the DBMS cannot determine which source row to use for the UPDATE."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- This fails if source has duplicate product_ids\nMERGE INTO inventory AS target\nUSING (\n    SELECT product_id, SUM(quantity) AS qty\n    FROM shipments\n    GROUP BY product_id  -- Ensure uniqueness\n) AS source\nON target.product_id = source.product_id\nWHEN MATCHED THEN UPDATE SET quantity = quantity + source.qty;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview answer:"
+      }), " \"MERGE requires a unique join between source and target. Aggregating the source to remove duplicates before the MERGE or adding a DISTINCT resolves this. Always ensure the source has unique rows on the join key.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-can-a-cte-be-used-in-multiple-queries",
+      children: "Q7: Can a CTE be used in multiple queries?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["No → a CTE is scoped to the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "single"
+      }), " statement that follows the WITH clause. For multiple queries, use a temp table or a view."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "WITH cte AS (SELECT * FROM employees WHERE salary > 80000)\nSELECT * FROM cte;          -- First query uses CTE\n\n-- SELECT * FROM cte;       -- ERROR: CTE no longer in scope\n-- CREATE VIEW ...          -- Use view instead for reusability\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-dynamic-sql--why-is-quotename-important",
+      children: "Q8: Dynamic SQL → why is QUOTENAME important?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Without QUOTENAME, a malicious user can perform SQL injection:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- VULNERABLE: @table_name from user input\nSET @sql = 'SELECT * FROM ' + @table_name;\n-- Input: 'employees; DROP TABLE employees; --'\n\n-- SAFE: QUOTENAME escapes and brackets the name\nSET @sql = 'SELECT * FROM ' + QUOTENAME(@table_name);\n-- Output: SELECT * FROM [employees; DROP TABLE employees; --]\n--                      ^^^ entire input is treated as ONE identifier ^^^\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "615-applications-in-real-systems",
+      children: "6.15 Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "postgresql-window-functions",
+      children: "PostgreSQL Window Functions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "PostgreSQL's window function support is the gold standard → it supports ALL standard SQL:2003 window functions plus extensions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real Use Case: Stock Market Technical Analysis"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Compute 50-day and 200-day moving averages for stock signals\nSELECT\n    symbol,\n    trade_date,\n    close_price,\n    AVG(close_price) OVER (\n        PARTITION BY symbol ORDER BY trade_date\n        ROWS BETWEEN 49 PRECEDING AND CURRENT ROW\n    ) AS sma_50,\n    AVG(close_price) OVER (\n        PARTITION BY symbol ORDER BY trade_date\n        ROWS BETWEEN 199 PRECEDING AND CURRENT ROW\n    ) AS sma_200\nFROM daily_prices\nWHERE symbol = 'AAPL'\nORDER BY trade_date DESC;\n\n-- Find the first and last price of each month (monthly OHLC summary)\nSELECT DISTINCT ON (symbol, DATE_TRUNC('month', trade_date))\n    symbol,\n    DATE_TRUNC('month', trade_date) AS month,\n    FIRST_VALUE(close_price) OVER w AS month_open,\n    LAST_VALUE(close_price) OVER w AS month_close,\n    MAX(high_price) OVER w AS month_high,\n    MIN(low_price) OVER w AS month_low\nFROM daily_prices\nWINDOW w AS (PARTITION BY symbol, DATE_TRUNC('month', trade_date)\n             ORDER BY trade_date\n             RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sql-server-stored-procedures-in-production",
+      children: "SQL Server Stored Procedures in Production"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SQL Server stored procedures are the backbone of enterprise applications for encapsulating business logic."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real Use Case: Order Processing Pipeline"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE PROCEDURE sp_ProcessOrder\n    @customer_id INT,\n    @order_date DATETIME = NULL,\n    @order_id INT OUTPUT\nAS\nBEGIN\n    SET XACT_ABORT ON;  -- Auto-rollback on error\n    BEGIN TRY\n        BEGIN TRANSACTION;\n\n        -- 1. Validate customer credit\n        DECLARE @credit_limit DECIMAL(12,2), @current_balance DECIMAL(12,2);\n        SELECT @credit_limit = credit_limit, @current_balance = balance\n        FROM customers WHERE customer_id = @customer_id;\n\n        IF @current_balance >= @credit_limit\n            THROW 50001, 'Customer exceeds credit limit', 1;\n\n        -- 2. Create the order\n        INSERT INTO orders (customer_id, order_date, status)\n        VALUES (@customer_id, ISNULL(@order_date, GETDATE()), 'Pending');\n        SET @order_id = SCOPE_IDENTITY();\n\n        -- 3. Reserve inventory (pessimistic locking)\n        -- (calls sp_ReserveInventory for each item in application layer)\n\n        -- 4. Update customer balance\n        UPDATE customers\n        SET balance = balance + @order_total,\n            last_order_date = GETDATE()\n        WHERE customer_id = @customer_id;\n\n        COMMIT TRANSACTION;\n    END TRY\n    BEGIN CATCH\n        IF @@TRANCOUNT > 0 ROLLBACK TRANSACTION;\n        THROW;\n    END CATCH;\nEND;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mysql-triggers-for-data-sync",
+      children: "MySQL Triggers for Data Sync"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MySQL triggers are commonly used for denormalization, audit trails, and cross-table synchronization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real Use Case: Materialized Aggregate Cache"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Maintain a running aggregate table that avoids expensive COUNT/SUM queries\nCREATE TABLE product_stats (\n    product_id INT PRIMARY KEY,\n    total_units_sold INT DEFAULT 0,\n    total_revenue DECIMAL(12,2) DEFAULT 0,\n    last_sale_date DATETIME\n);\n\nDELIMITER //\nCREATE TRIGGER trg_after_order_item_insert\nAFTER INSERT ON order_items\nFOR EACH ROW\nBEGIN\n    INSERT INTO product_stats (product_id, total_units_sold, total_revenue, last_sale_date)\n    VALUES (NEW.product_id, NEW.quantity, NEW.quantity * NEW.unit_price, NOW())\n    ON DUPLICATE KEY UPDATE\n        total_units_sold = total_units_sold + NEW.quantity,\n        total_revenue = total_revenue + (NEW.quantity * New.unit_price),\n        last_sale_date = NOW();\nEND//\n\nCREATE TRIGGER trg_after_order_item_delete\nAFTER DELETE ON order_items\nFOR EACH ROW\nBEGIN\n    UPDATE product_stats\n    SET total_units_sold = total_units_sold - OLD.quantity,\n        total_revenue = total_revenue - (OLD.quantity * OLD.unit_price)\n    WHERE product_id = OLD.product_id;\nEND//\nDELIMITER ;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dynamic-sql-in-search-applications",
+      children: "Dynamic SQL in Search Applications"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real Use Case: Dynamic Filter Builder"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE PROCEDURE sp_SearchProducts\n    @category_id INT = NULL,\n    @min_price DECIMAL(10,2) = NULL,\n    @max_price DECIMAL(10,2) = NULL,\n    @in_stock BIT = NULL,\n    @search_term NVARCHAR(200) = NULL,\n    @sort_column NVARCHAR(50) = 'product_name',\n    @sort_direction NVARCHAR(4) = 'ASC',\n    @page INT = 1,\n    @page_size INT = 20\nAS\nBEGIN\n    DECLARE @sql NVARCHAR(MAX);\n    DECLARE @params NVARCHAR(MAX);\n    DECLARE @offset INT = (@page - 1) * @page_size;\n\n    SET @sql = N'SELECT product_id, product_name, price, stock_quantity\n                 FROM products WHERE 1=1';\n\n    SET @params = N'@cat INT, @min DECIMAL, @max DECIMAL, @stock BIT, @term NVARCHAR(200)';\n\n    IF @category_id IS NOT NULL\n        SET @sql += N' AND category_id = @cat';\n    IF @min_price IS NOT NULL\n        SET @sql += N' AND price >= @min';\n    IF @max_price IS NOT NULL\n        SET @sql += N' AND price <= @max';\n    IF @in_stock IS NOT NULL\n        SET @sql += N' AND (stock_quantity > 0) = @stock';\n    IF @search_term IS NOT NULL\n        SET @sql += N' AND product_name LIKE N''%'' + @term + N''%''';\n\n    -- Validate sort column to prevent injection\n    IF @sort_column NOT IN ('product_name', 'price', 'stock_quantity')\n        SET @sort_column = 'product_name';\n    IF @sort_direction NOT IN ('ASC', 'DESC')\n        SET @sort_direction = 'ASC';\n\n    SET @sql += N' ORDER BY ' + QUOTENAME(@sort_column) + N' ' + @sort_direction;\n    SET @sql += N' OFFSET @offset ROWS FETCH NEXT @pagesize ROWS ONLY';\n\n    SET @params += N', @offset INT, @pagesize INT';\n\n    EXEC sp_executesql @sql, @params,\n        @cat = @category_id, @min = @min_price, @max = @max_price,\n        @stock = @in_stock, @term = @search_term,\n        @offset = @offset, @pagesize = @page_size;\nEND;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "recursive-cte-in-organization-management",
+      children: "Recursive CTE in Organization Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real Use Case: Access Control Hierarchy Resolution"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Given a user's role, find all permissions including inherited ones\nWITH RECURSIVE role_permissions AS (\n    -- Direct permissions for the user's role\n    SELECT rp.role_id, rp.permission_id, p.permission_name, 0 AS inheritance_depth\n    FROM role_permissions rp\n    JOIN permissions p ON rp.permission_id = p.permission_id\n    WHERE rp.role_id = @user_role_id\n\n    UNION ALL\n\n    -- Permissions inherited from parent roles\n    SELECT rp.role_id, rp.permission_id, p.permission_name, rp.inheritance_depth + 1\n    FROM role_hierarchy rh\n    JOIN role_permissions rp ON rh.parent_role_id = rp.role_id\n    JOIN permissions p ON rp.permission_id = p.permission_id\n)\nSELECT DISTINCT permission_name\nFROM role_permissions;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "merge-in-data-warehousing-slowly-changing-dimensions",
+      children: "MERGE in Data Warehousing (Slowly Changing Dimensions)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Type 2 SCD: track historical changes to customer data\nMERGE INTO dim_customer AS target\nUSING staging_customer AS source\nON target.customer_bk = source.customer_id\n   AND target.is_current = 1\n\nWHEN MATCHED AND (\n    target.name <> source.name OR\n    target.address <> source.address OR\n    target.phone <> source.phone\n) THEN\n    -- Close the current record\n    UPDATE SET\n        is_current = 0,\n        valid_to = GETDATE()\n\nWHEN NOT MATCHED THEN\n    -- Insert new record\n    INSERT (customer_bk, name, address, phone, valid_from, valid_to, is_current)\n    VALUES (source.customer_id, source.name, source.address, source.phone,\n            GETDATE(), '9999-12-31', 1)\n\nWHEN NOT MATCHED BY SOURCE AND target.is_current = 1 THEN\n    -- Customer no longer exists in source\n    UPDATE SET\n        is_current = 0,\n        valid_to = GETDATE();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Subqueries"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested queries returning scalar/row/table/correlated results"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correlated subqueries = O(n²); prefer JOINs or window functions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EXISTS/NOT EXISTS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Short-circuit existence check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EXISTS > IN for large subqueries due to early termination"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ANY/ALL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare against any or all values in a set"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "> ANY"
+            }), " = ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "> MIN()"
+            }), "; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "> ALL"
+            }), " = ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "> MAX()"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CTEs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Named temporary result sets within a single query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use for readability, recursion, multiple references"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recursive CTEs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-referencing queries for hierarchies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Anchor + UNION ALL + recursive member; mind depth limits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Window Functions"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-row analytic calculations without grouping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace 80% of self-join and subquery use cases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PIVOT/UNPIVOT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row-to-column and column-to-row transformation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CASE-based PIVOT is cross-DBMS compatible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MERGE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronize tables with INSERT/UPDATE/DELETE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensure unique source; watch for concurrency issues"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dynamic SQL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runtime SQL construction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always use QUOTENAME/parameters; never concatenate input"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stored Procedures"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pre-compiled server-side logic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use for transactions, security boundaries, performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Functions"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deterministic computations inside queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalar UDFs can be slow per-row; inline TVFs are optimized"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Triggers"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic execution on DML events"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use sparingly → they add latency and can cause recursion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Views"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual tables for abstraction and security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Indexed views for performance; regular views for encapsulation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Indexed Views"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Materialized query results with clustered index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Great for aggregations; adds base table update overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Temp Tables"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Session-scoped intermediate storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use for large datasets; statistics help optimizer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Table Variables"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Batch-scoped lightweight storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use for small datasets (< 100 rows)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "sql-execution-order",
+      children: "SQL Execution Order"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FROM / JOIN      → Determines source tables and joins\nWHERE            → Filters rows BEFORE grouping\nGROUP BY         → Partitions rows into groups\nHAVING           → Filters groups AFTER aggregation\nSELECT           → Projects columns; computes window functions\nORDER BY         → Sorts the final result set\nLIMIT / OFFSET   → Pagination\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "616-recursive-cte-simulator-typescript",
+      children: "6.16 Recursive CTE Simulator (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following code models recursive CTE execution — anchor member, recursive member, and termination — with performance tracking."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// ============================================================\n// Recursive CTE Simulator — TypeScript\n// ============================================================\n\ninterface CTEContext {\n  anchor: (input: Record<string, unknown>[]) => Record<string, unknown>[];\n  recursive: (previous: Record<string, unknown>[], all: Record<string, unknown>[]) => Record<string, unknown>[];\n  maxDepth: number;\n}\n\nclass RecursiveCTESimulator {\n  execute<T extends Record<string, unknown>>(ctx: CTEContext): T[] {\n    const allResults: T[] = [];\n    const seen = new Set<string>();\n\n    // 1. Anchor member: execute once\n    const anchorResult = ctx.anchor([]) as T[];\n    for (const row of anchorResult) {\n      const key = JSON.stringify(row);\n      if (!seen.has(key)) { seen.add(key); allResults.push(row); }\n    }\n\n    let previous = anchorResult;\n    let depth = 0;\n\n    // 2. Recursive member: execute until no new rows or max depth\n    while (previous.length > 0 && depth < ctx.maxDepth) {\n      depth++;\n      const newRows = ctx.recursive(previous, allResults) as T[];\n      previous = [];\n      for (const row of newRows) {\n        const key = JSON.stringify(row);\n        if (!seen.has(key)) { seen.add(key); allResults.push(row); previous.push(row); }\n      }\n    }\n\n    console.log('[CTE] Executed anchor + ' + depth + ' recursive steps, total ' + allResults.length + ' rows');\n    return allResults;\n  }\n}\n\n// Demo: Generate dates for January 2026\nconst cte = new RecursiveCTESimulator();\nconst dates = cte.execute({\n  anchor: () => [{ date: '2026-01-01', day: 1, month: 1, year: 2026 }],\n  recursive: (prev, all) => {\n    const last = prev[0] as { date: string; day: number };\n    if (!last) return [];\n    const nextDay = last.day + 1;\n    if (nextDay > 31) return [];\n    const nextDate = '2026-01-' + String(nextDay).padStart(2, '0');\n    return [{ date: nextDate, day: nextDay, month: 1, year: 2026 }];\n  },\n  maxDepth: 40\n});\nconsole.log('Generated ' + dates.length + ' dates (Jan 1-31, 2026)');\n\n// Demo 2: Employee hierarchy (Org chart)\nconst employees: Record<string, { name: string; managerId: string | null }> = {\n  '1': { name: 'CEO', managerId: null },\n  '2': { name: 'VP Eng', managerId: '1' },\n  '3': { name: 'VP Sales', managerId: '1' },\n  '4': { name: 'Dir Eng', managerId: '2' },\n  '5': { name: 'Eng Mgr', managerId: '4' },\n  '6': { name: 'Engineer', managerId: '5' },\n};\n\nconst orgTree = cte.execute({\n  anchor: () => Object.entries(employees)\n    .filter(([_, e]) => e.managerId === null)\n    .map(([id, e]) => ({ id, name: e.name, level: 0, path: e.name })),\n  recursive: (prev, all) => {\n    const result: Record<string, unknown>[] = [];\n    for (const p of prev) {\n      const parentId = p.id as string;\n      const parentLevel = p.level as number;\n      const parentPath = p.path as string;\n      for (const [id, emp] of Object.entries(employees)) {\n        if (emp.managerId === parentId) {\n          result.push({ id, name: emp.name, level: parentLevel + 1, path: parentPath + ' > ' + emp.name });\n        }\n      }\n    }\n    return result;\n  },\n  maxDepth: 10\n});\nconsole.log('Org tree:');\norgTree.forEach(r => console.log('  '.repeat(r.level as number) + (r.name as string) + ' (depth ' + r.level + ')'));\n\n// Window Function Simulator\nconsole.log('\\n--- Window Function: Moving Average ---');\nconst stockPrices = [\n  { day: 1, price: 100 }, { day: 2, price: 102 }, { day: 3, price: 101 },\n  { day: 4, price: 105 }, { day: 5, price: 108 }, { day: 6, price: 107 },\n  { day: 7, price: 110 }, { day: 8, price: 112 }, { day: 9, price: 115 }, { day: 10, price: 113 },\n];\n\nfunction movingAverage(data: { day: number; price: number }[], window: number): void {\n  for (let i = 0; i < data.length; i++) {\n    const start = Math.max(0, i - window + 1);\n    const end = i + 1;\n    const slice = data.slice(start, end);\n    const avg = slice.reduce((sum, r) => sum + r.price, 0) / slice.length;\n    console.log('Day ' + data[i].day + ': Price=' + data[i].price + ' SMA(' + window + ')=' + avg.toFixed(2));\n  }\n}\nmovingAverage(stockPrices, 3);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mermaid Diagram: Window Function Operations"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph \"Dataset\"\n        D[Raw rows]\n    end\n    subgraph \"PARTITION BY\"\n        P1[Partition 1] --> W1[Window Frame]\n        P2[Partition 2] --> W2[Window Frame]\n    end\n    subgraph \"ORDER BY\"\n        W1 --> S1[Sorted rows within partition]\n        W2 --> S2[Sorted rows within partition]\n    end\n    subgraph \"Frame\"\n        S1 --> F[ROWS BETWEEN<br/>n PRECEDING AND<br/>CURRENT ROW]\n        S2 --> F\n    end\n    F --> R[Compute: ROW_NUMBER, RANK,<br/>SUM, AVG, LAG, LEAD]\n    D --> P1\n    D --> P2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-chapter-quiz-questions",
+      children: "Additional Chapter Quiz Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A recursive CTE must contain which operator between the anchor and recursive members?\na) UNION\nb) UNION ALL\nc) INTERSECT\nd) EXCEPT"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the default maximum recursion depth in most DBMS?\na) 10\nb) 100\nc) 1000\nd) Unlimited"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The LAG function in window functions is used to:\na) Get the next row's value\nb) Get the previous row's value\nc) Skip rows in the result\nd) Remove duplicates"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A MERGE statement is also known as:\na) Upsert\nb) Truncate\nc) Append\nd) Diff"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Dynamic SQL should always parameterize input to prevent:\na) Syntax errors\nb) SQL injection\nc) Performance degradation\nd) Deadlocks"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 11-b, 12-b, 13-b, 14-a, 15-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Write a recursive CTE that generates Fibonacci numbers up to the 20th term. Schema: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "fib(n, fibonacci_number)"
+          }), "."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a query using LAG and LEAD to compute the difference between each employee's salary and their next-hire colleague's salary. Schema: employees(id, name, salary, hire_date)."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a stored procedure in concept (pseudocode or TypeScript) that implements paginated dynamic search with sortable columns, parameterized queries, and proper error handling."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Window Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ROW_NUMBER()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unique sequential number per partition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "ROW_NUMBER() OVER (PARTITION BY dept ORDER BY salary DESC)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RANK()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rank with gaps for ties"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "RANK() OVER (ORDER BY score DESC)"
+            }), " → 1,1,3,4"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DENSE_RANK()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rank without gaps for ties"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "DENSE_RANK() OVER (ORDER BY score DESC)"
+            }), " → 1,1,2,3"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NTILE(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distribute into n buckets"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "NTILE(4) OVER (ORDER BY amount)"
+            }), " → quartiles"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LAG(col, n, d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Previous row value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "LAG(salary, 1, 0) OVER (ORDER BY hire_date)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LEAD(col, n, d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Next row value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "LEAD(price, 1) OVER (ORDER BY trade_date)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FIRST_VALUE(col)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First value in frame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "FIRST_VALUE(price) OVER (ORDER BY date)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LAST_VALUE(col)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last value in full frame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "LAST_VALUE(price) OVER (ORDER BY date RANGE BETWEEN ... )"
+            })
+          })]
+        })]
+      })]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Subquery Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Returns"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Location"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Executed"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalar"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 value (1x1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT/WHERE/HAVING"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Row"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 row (1xN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WHERE (row constructors)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple rows (NxM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FROM (derived table)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Once"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Correlated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dependent value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELECT/WHERE/HAVING"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per outer row"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "What does a scalar subquery return?"
+          }), "\na) Multiple rows and columns\nb) One row with multiple columns\nc) One column and one row (single value)\nd) A boolean value"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the main difference between a correlated and non-correlated subquery?"
+          }), "\na) Correlated subqueries are faster\nb) Correlated subqueries reference the outer query and execute per outer row\nc) Non-correlated subqueries execute per outer row\nd) There is no difference"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "True or False: A recursive CTE must contain UNION ALL."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Which window function would you use to find the top 3 sales per region?"
+          }), "\na) SUM() OVER()\nb) ROW_NUMBER() OVER()\nc) AVG() OVER()\nd) LAG() OVER()"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "What happens when a source table has duplicates on the MERGE join key?"
+          }), "\na) MERGE succeeds, updating the target with the first match\nb) MERGE succeeds, updating the target with the last match\nc) MERGE fails with \"multiple rows in source match same target row\"\nd) MERGE ignores duplicates silently"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "What's the key difference between RANK() and DENSE_RANK()?"
+          }), "\na) RANK is faster\nb) DENSE_RANK skips numbers; RANK does not\nc) RANK skips numbers after ties; DENSE_RANK does not\nd) The functions are identical"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Which trigger type can be used to make a non-updatable view updatable?"
+          }), "\na) AFTER INSERT\nb) BEFORE UPDATE\nc) INSTEAD OF\nd) DDL trigger"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Dynamic SQL risk: What does QUOTENAME protect against?"
+          }), "\na) Syntax errors\nb) SQL injection by safely quoting identifiers\nc) Performance degradation\nd) Data type mismatches"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "A materialized view differs from a regular view because:"
+          }), "\na) It is always current\nb) It stores results physically\nc) It cannot be queried\nd) It supports INSERT/UPDATE/DELETE automatically"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When should you use a table variable instead of a temp table?"
+          }), "\na) For large datasets needing indexes\nb) For small datasets (< 100 rows) in a single batch\nc) When you need cross-session visibility\nd) When you need statistics for the optimizer"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 1-c, 2-b, 3-True, 4-b, 5-c, 6-c, 7-c, 8-b, 9-b, 10-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Subqueries"
+        }), " (scalar, row, table, correlated) → nested queries for single values, row comparisons, derived tables, and per-row lookups. Correlated subqueries run once per outer row; prefer JOINs when possible."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EXISTS / NOT EXISTS"
+        }), " → short-circuit existence checks. More efficient than IN for large subqueries."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ANY / ALL"
+        }), " → compare a value against any one or all values from a subquery. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "> ANY = > MIN(); > ALL = > MAX()"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CTEs (WITH clause)"
+        }), " → named temporary result sets for readability, reuse, and recursion. Recursive CTEs require an anchor, UNION ALL, and a recursive member. Depth is capped (default 100)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Window Functions"
+        }), " (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, SUM/AVG OVER) → per-row calculations across partitions without collapsing rows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PIVOT / UNPIVOT"
+        }), " → transform rows to columns and vice versa. CASE-based PIVOT is most portable."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MERGE / UPSERT"
+        }), " → single-statement INSERT, UPDATE, DELETE synchronization. Ensure unique source join keys."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dynamic SQL"
+        }), " → runtime SQL construction. Always parameterize or use QUOTENAME to prevent injection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stored Procedures"
+        }), " → compiled server-side logic with transactions, error handling, and reusable execution plans."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Functions (UDFs)"
+        }), " → deterministic computations usable inside queries. Scalar UDFs run per-row; inline TVFs are optimized into outer queries."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Triggers"
+        }), " → automatic event-driven execution. Use for auditing, validation, cascading. Avoid complex logic that slows DML."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Views"
+        }), " → virtual tables for abstraction and security. Indexed/materialized views store results physically for performance."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Temp Tables & Table Variables"
+        }), " → session-scoped intermediate storage. Temp tables suit large datasets; table variables suit small ones."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a scalar subquery to find all employees whose salary is above the company average. Include the average in the output."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a query using EXISTS to find all departments that have at least one employee."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a CTE that calculates the total sales per customer, then select customers with total sales > $500."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Create a view named ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "recent_orders"
+          }), " showing all orders from the last 30 days."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a query using ROW_NUMBER to find the top 3 highest-paid employees in each department."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a recursive CTE that generates dates from January 1, 2026 to December 31, 2026."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Find employees whose salary is above their department's average salary. Write this using: a) a correlated subquery, b) a window function. Compare the approaches."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a MERGE statement that synchronizes a product_inventory table with new shipments, updating quantities for existing products and inserting new ones."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a trigger that logs all salary changes to a salary_audit table, capturing old and new values along with the timestamp."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a dynamic SQL procedure that accepts a table name and column name, and returns the MIN, MAX, AVG of that column."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Write a query using LAG to compute the day-over-day percentage change in stock price. Schema: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "prices(symbol, date, close_price)"
+          }), ". Return symbol, date, price, and pct_change."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Using a recursive CTE, find the management chain (all ancestors) for a given employee. Schema: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "employees(emp_id, name, manager_id)"
+          }), ". Show the full chain from employee to CEO."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a stored procedure with TRY/CATCH that processes an order within a transaction, validating customer credit, reserving inventory, and handling errors gracefully."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement a Type 2 slowly changing dimension using MERGE to track historical changes to customer addresses."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a query using NTILE(4) to find the top quartile of products by revenue, then use window functions to compare each product's revenue to the quartile average."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Compare the performance of a regular view vs. a materialized view for a sales reporting query that aggregates millions of rows. Under what circumstances would you use each?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Design a trigger-based solution that prevents a user from deleting their account if they have active orders. Ensure referential integrity is maintained."
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

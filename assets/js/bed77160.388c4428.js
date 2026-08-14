@@ -1,0 +1,1613 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[74325],{
+
+/***/ 11518
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_system_design_05_partitioning_sharding_md_bed_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-system-design-05-partitioning-sharding-md-bed.json
+const site_docs_courses_system_design_05_partitioning_sharding_md_bed_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/system-design/05-partitioning-sharding","title":"Chapter 5: Data Partitioning and Sharding","description":"Previous 06 Distributed Consistency","source":"@site/docs/courses/system-design/05-partitioning-sharding.md","sourceDirName":"courses/system-design","slug":"/system-design/05-partitioning-sharding","permalink":"/ai-engineering-journey/system-design/05-partitioning-sharding","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"05-partitioning-sharding","slug":"/system-design/05-partitioning-sharding","title":"Chapter 5: Data Partitioning and Sharding","sidebar_label":"Chapter 5: Data Partitioning and Sharding","sidebar_position":5},"sidebar":"course-system-design","previous":{"title":"Chapter 4: Database Foundations: Replication and Indexing","permalink":"/ai-engineering-journey/system-design/04-database-foundations"},"next":{"title":"Chapter 6: CAP Theorem and Distributed Consistency","permalink":"/ai-engineering-journey/system-design/06-distributed-consistency"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/system-design/05-partitioning-sharding.md
+
+
+const frontMatter = {
+	id: '05-partitioning-sharding',
+	slug: '/system-design/05-partitioning-sharding',
+	title: 'Chapter 5: Data Partitioning and Sharding',
+	sidebar_label: 'Chapter 5: Data Partitioning and Sharding',
+	sidebar_position: 5
+};
+const contentTitle = 'Chapter 5: Data Partitioning and Sharding';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Partitioning Fundamentals",
+  "id": "partitioning-fundamentals",
+  "level": 3
+}, {
+  "value": "Sharding Strategies",
+  "id": "sharding-strategies",
+  "level": 3
+}, {
+  "value": "Range-Based Sharding",
+  "id": "range-based-sharding",
+  "level": 4
+}, {
+  "value": "Hash-Based Sharding",
+  "id": "hash-based-sharding",
+  "level": 4
+}, {
+  "value": "Directory-Based Sharding",
+  "id": "directory-based-sharding",
+  "level": 4
+}, {
+  "value": "Consistent Hashing",
+  "id": "consistent-hashing",
+  "level": 3
+}, {
+  "value": "Virtual Nodes",
+  "id": "virtual-nodes",
+  "level": 4
+}, {
+  "value": "Rebalancing",
+  "id": "rebalancing",
+  "level": 3
+}, {
+  "value": "Moving Shards",
+  "id": "moving-shards",
+  "level": 4
+}, {
+  "value": "Splitting a Shard",
+  "id": "splitting-a-shard",
+  "level": 4
+}, {
+  "value": "Adding and Removing Nodes",
+  "id": "adding-and-removing-nodes",
+  "level": 4
+}, {
+  "value": "Hotspot Mitigation",
+  "id": "hotspot-mitigation",
+  "level": 3
+}, {
+  "value": "The Celebrity Problem",
+  "id": "the-celebrity-problem",
+  "level": 4
+}, {
+  "value": "Cross-Shard Queries",
+  "id": "cross-shard-queries",
+  "level": 3
+}, {
+  "value": "Scatter-Gather",
+  "id": "scatter-gather",
+  "level": 4
+}, {
+  "value": "Distributed Joins",
+  "id": "distributed-joins",
+  "level": 4
+}, {
+  "value": "Secondary Indexes",
+  "id": "secondary-indexes",
+  "level": 3
+}, {
+  "value": "Local Secondary Index",
+  "id": "local-secondary-index",
+  "level": 4
+}, {
+  "value": "Global Secondary Index",
+  "id": "global-secondary-index",
+  "level": 4
+}, {
+  "value": "Compound Shard Keys",
+  "id": "compound-shard-keys",
+  "level": 3
+}, {
+  "value": "Database per Service Pattern",
+  "id": "database-per-service-pattern",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: Instagram Sharding by User ID",
+  "id": "example-1-instagram-sharding-by-user-id",
+  "level": 3
+}, {
+  "value": "Example 2: Pinterest Sharding by Board",
+  "id": "example-2-pinterest-sharding-by-board",
+  "level": 3
+}, {
+  "value": "Example 3: Discord Sharding",
+  "id": "example-3-discord-sharding",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Code Examples",
+  "id": "code-examples",
+  "level": 2
+}, {
+  "value": "Consistent Hashing Implementation",
+  "id": "consistent-hashing-implementation",
+  "level": 3
+}, {
+  "value": "Consistent Hash Ring Visualization",
+  "id": "consistent-hash-ring-visualization",
+  "level": 3
+}, {
+  "value": "TypeScript: Consistent Hash Ring",
+  "id": "typescript-consistent-hash-ring",
+  "level": 3
+}, {
+  "value": "Implementation: Partitioning and Sharding",
+  "id": "implementation-partitioning-and-sharding",
+  "level": 3
+}, {
+  "value": "TypeScript: Consistent Hash Ring with Virtual Nodes",
+  "id": "typescript-consistent-hash-ring-with-virtual-nodes",
+  "level": 3
+}, {
+  "value": "TypeScript: Range Partitioner (Split and Rebalance)",
+  "id": "typescript-range-partitioner-split-and-rebalance",
+  "level": 3
+}, {
+  "value": "Sharding Strategies Comparison",
+  "id": "sharding-strategies-comparison",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 3
+}, {
+  "value": "Case Study",
+  "id": "case-study",
+  "level": 3
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-5-data-partitioning-and-sharding",
+        children: "Chapter 5: Data Partitioning and Sharding"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/04-database-foundations",
+          children: "04 Database Foundations"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/06-distributed-consistency",
+          children: "06 Distributed Consistency"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish between vertical and horizontal partitioning and identify appropriate use cases for each"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze range-based, hash-based, and directory-based sharding strategies with respect to data distribution and access patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement consistent hashing with virtual nodes and explain its advantage during node additions and removals"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Diagnose hotspot problems including the celebrity problem and apply mitigation strategies such as split, secondary keys, and read replication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Evaluate cross-shard query patterns including scatter-gather, distributed joins, and secondary index architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design compound shard keys and database-per-service decompositions using real-world case studies"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/05-partitioning-sharding/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/05-partitioning-sharding/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/05-partitioning-sharding/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/05-partitioning-sharding/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/05-partitioning-sharding/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/05-partitioning-sharding/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vertical/horizontal partitioning, sharding strategies, rebalancing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Range, hash, directory-based, consistent hashing, compound keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sharding Strategies"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Range, hash, directory, consistent hashing with virtual nodes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hotspot Mitigation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Celebrity problem, split, secondary keys, read replication"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cross-Shard Queries"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scatter-gather, distributed joins, secondary indexes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-World"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Instagram, Discord, Uber sharding architectures"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation ? master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/05-partitioning-sharding.png",
+        alt: "Partitioning and Sharding Flowchart"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "partitioning-fundamentals",
+      children: "Partitioning Fundamentals"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it is frequently tested in system design interviews."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept ? it appears in nearly every system design interview. Understand both the how and the why."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it appears in nearly every system design interview.\nPartitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Vertical Partitioning"
+      }), " splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design — each normalized table is effectively a vertical partition of the logical entity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Vertical Partition:\n  Users_Core:    user_id | name | email | created_at\n  Users_Profile: user_id | bio | avatar_url | preferences\n  Users_Auth:    user_id | password_hash | last_login\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions — every cross-partition access adds latency."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Horizontal Partitioning (Sharding)"
+      }), " splits a table by rows. Each shard holds a subset of rows but retains the full schema. The goal is to distribute both storage and query load across multiple database nodes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard 0:    user_id 1..1000000\nShard 1:    user_id 1000001..2000000\nShard 2:    user_id 2000001..3000000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sharding-strategies",
+      children: "Sharding Strategies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid over-engineering. Start simple, measure, then optimize."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "range-based-sharding",
+      children: "Range-Based Sharding"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Rows are assigned to shards based on a contiguous range of the shard key. For a key ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "k"
+      }), " and shard boundaries ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[b0, b1, b2, ..., bn]"
+      }), ", row with key ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "k"
+      }), " belongs to shard ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "i"
+      }), " where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "bi <= k < bi+1"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard Key: timestamp (month)\n  Shard 0:  Jan 2024\n  Shard 1:  Feb 2024\n  Shard 2:  Mar 2024\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Range queries are efficient — a query for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WHERE created_at BETWEEN date1 AND date2"
+      }), " can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew — one shard may hold 80% of the data if the key distribution is uneven."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "hash-based-sharding",
+      children: "Hash-Based Sharding"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A hash function ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "h(k)"
+      }), " maps each key to a shard: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "shard_id = h(k) % N"
+      }), " where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "N"
+      }), " is the number of shards."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "h(user_id) = CRC32(user_id) % 4\n  user_id = 100  ? CRC32(100) % 4 = 2 ? Shard 2\n  user_id = 101  ? CRC32(101) % 4 = 0 ? Shard 0\n  user_id = 102  ? CRC32(102) % 4 = 3 ? Shard 3\n  user_id = 103  ? CRC32(103) % 4 = 1 ? Shard 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Uniform distribution — a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Range queries become scatter-gather operations — the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "N"
+      }), ", which remaps almost every key, triggering massive data migration (this is the ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "resharding problem"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "directory-based-sharding",
+      children: "Directory-Based Sharding"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A lookup service maintains a mapping from key range to shard. The directory (also called a partition map) is a separate, highly-available store."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Directory Entry:\n  key_range: [A-D] ? shard_0\n  key_range: [E-H] ? shard_1\n  key_range: [I-L] ? shard_2\n  ...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To find a row, the system queries the directory first, then routes to the appropriate shard. The directory itself must be replicated and fault-tolerant."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Maximum flexibility — shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " The directory becomes a potential bottleneck and single point of failure. Every read requires an additional lookup (two round trips), increasing latency. The directory must be kept consistent with actual shard contents."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "consistent-hashing",
+      children: "Consistent Hashing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always articulate trade-offs clearly ? interviewers value reasoning over the \"right\" answer."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Consistent hashing solves the resharding problem by arranging both keys and nodes on a conceptual hash ring."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Construction:"
+      }), " Both the shard key ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "k"
+      }), " and each node identifier ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " are hashed to positions on a circular space ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[0, 2^m - 1]"
+      }), ". A key is assigned to the first node encountered by walking clockwise from its hash position."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Ring: [0, 2^32 - 1]\n  Node A at hash(\"node-a\") % 2^32 = 1000\n  Node B at hash(\"node-b\") % 2^32 = 5000\n  Node C at hash(\"node-c\") % 2^32 = 9000\n\n  key K1 at hash(\"k1\") = 3000 ? stored at Node B (clockwise from 3000)\n  key K2 at hash(\"k2\") = 7000 ? stored at Node C\n  key K3 at hash(\"k3\") = 9500 ? stored at Node A (wraps around)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Effect of Node Removal:"
+      }), " When Node B leaves, only keys in the range ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[A, B)"
+      }), " need to be reassigned (they move to C). The expected fraction of keys moved is ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1/N"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Effect of Node Addition:"
+      }), " When a new Node D is added, it claims keys in the range between its predecessor and itself. Only those keys need migration. Expected fraction is again ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1/N"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "virtual-nodes",
+      children: "Virtual Nodes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Without virtual nodes, consistent hashing produces uneven load — some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Physical Node A:\n  vnode A_0 at hash(\"node-a-0\")\n  vnode A_1 at hash(\"node-a-1\")\n  vnode A_2 at hash(\"node-a-2\")\n  ... (e.g., 150 vnodes per physical node)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each physical node maintains approximately ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "v * K / N"
+      }), " keys where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "v"
+      }), " is the number of virtual nodes per physical node, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "K"
+      }), " is the total number of keys, and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "N"
+      }), " is the number of physical nodes. With 100+ vnodes per physical node, the load distribution approaches perfectly uniform. When a physical node is added or removed, the load change is spread evenly across all other nodes (each other node gives up roughly ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1/N"
+      }), " of its keys)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rebalancing",
+      children: "Rebalancing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Systems evolve: shards grow hot, nodes fail, clusters expand. Rebalancing is the process of redistributing data across shards to maintain balance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "moving-shards",
+      children: "Moving Shards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The simplest rebalancing operation is moving an entire shard from one node to another. During the move, the shard is marked as ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "migrating"
+      }), ". Reads are served from the source; writes go to both source and destination. Once the destination catches up, the directory atomically switches to the new location."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "splitting-a-shard",
+      children: "Splitting a Shard"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A hot shard can be split into two shards at a new boundary point:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Before split:\n  Shard 0: user_id 1..1000000  (80% of writes)\n\nAfter split:\n  Shard 0a: user_id 1..500000\n  Shard 0b: user_id 500001..1000000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting — the hot spot on the ring can be divided by introducing a new vnode boundary."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "adding-and-removing-nodes",
+      children: "Adding and Removing Nodes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When a new node joins a cluster using range-based sharding, existing shard boundaries must be recomputed. This is expensive because it typically requires moving data proportional to the total dataset size."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Consistent hashing reduces this to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1/N"
+      }), " of total data. Directory-based sharding requires only updating the directory entries."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "hotspot-mitigation",
+      children: "Hotspot Mitigation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Hotspots occur when a small subset of data receives a disproportionate share of requests."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "the-celebrity-problem",
+      children: "The Celebrity Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A social media platform with user-based sharding hosts a celebrity with millions of followers. Every post by this celebrity generates reads against a single shard, overwhelming it."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigation strategies:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Split:"
+          }), " Further partition the celebrity's data. Partition their posts by time range, or use a sub-shard key (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "user_id + post_id % 10"
+          }), " to spread across 10 sub-shards)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Secondary Keys:"
+          }), " Read queries for the celebrity's content can be load-balanced across replicas. Each shard has read replicas; celebrity reads are routed to replicas while writes go to the primary."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Cache Layer:"
+          }), " Put a cache (Redis, Memcached) in front of the shard. Celebrity content is read once from the database and served from cache for subsequent requests, reducing the load on the shard."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Fan-out on Write:"
+          }), " Instead of having followers read from the celebrity's shard, write the post to each follower's timeline (home timeline fan-out). This distributes writes across many shards but increases write amplification."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without Fan-out:\n  Celebrity posts ? shard holds celebrity data ? millions read from same shard\nWith Fan-out:\n  Celebrity posts ? fan-out service ? writes to each follower's shard\n  Each follower reads from their own shard (evenly distributed)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cross-shard-queries",
+      children: "Cross-Shard Queries"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "scatter-gather",
+      children: "Scatter-Gather"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When a query's predicate does not include the shard key, the system must send the query to every shard (scatter) and then merge the results (gather)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "SELECT * FROM users WHERE email = 'alice@example.com';\n  ? Query sent to Shard 0, Shard 1, Shard 2, Shard 3\n  ? Each shard returns matching rows\n  ? Coordinator merges results\n  ? Returns to client\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Scatter-gather is expensive — response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "distributed-joins",
+      children: "Distributed Joins"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Joining data across shards requires one of several strategies:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Parallel Join:"
+          }), " Each shard performs the join locally on its own data slice. The coordinator merges partial results. This works when both tables are sharded on the join key."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Broadcast Join:"
+          }), " Small dimension tables are broadcast to all shards, which perform the join locally. Common in data warehouses."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Cross-Shard Join via Scatter-Gather:"
+          }), " Data from one table is fetched from all shards, then joined with data from the other table at the coordinator. This is slow and memory-intensive."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Application-Level Join:"
+          }), " The application queries each shard independently and performs the join in application code."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard-local join (efficient):\n  orders(user_id) SHARDED_BY(user_id)\n  users(user_id)  SHARDED_BY(user_id)\n  ? SELECT * FROM orders JOIN users ON orders.user_id = users.user_id\n  ? Each shard returns complete join results for its user_id range\n\nCross-shard join (expensive):\n  orders(user_id) SHARDED_BY(user_id)\n  payments(tx_id) SHARDED_BY(tx_id)\n  ? Must scatter-gather payments, fetch corresponding orders, join at coordinator\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "secondary-indexes",
+      children: "Secondary Indexes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A secondary index is an index on a non-shard-key column. Two architectures exist:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "local-secondary-index",
+      children: "Local Secondary Index"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each shard maintains its own index covering only the data on that shard. Queries using the secondary index must be scattered to all shards."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard 0: orders_0 table + local_idx on email\nShard 1: orders_1 table + local_idx on email\nQuery: SELECT * FROM orders WHERE email = 'x@y.com'\n  ? Scatter to Shard 0 and Shard 1\n  ? Each returns matching rows from its local index\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pros:"
+      }), " Writes are fast (index update is local). No cross-shard coordination."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cons:"
+      }), " Reads using the index require scatter-gather, which is slow and unpredictable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "global-secondary-index",
+      children: "Global Secondary Index"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A separate index table is maintained across all shards, typically sharded on the indexed column. The index entry points back to the primary row."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Global index on email:\n  email 'x@y.com' ? PK order_id=42 ? Shard 2\n\nQuery:\n  1. Look up email in index (targets one shard by email hash)\n  2. Follow pointer to primary row on Shard 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pros:"
+      }), " Point lookups on the secondary key are efficient (single shard)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cons:"
+      }), " Writes require a two-phase commit across the primary shard and the index shard. The index can fall out of sync if not properly maintained."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "compound-shard-keys",
+      children: "Compound Shard Keys"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A compound shard key combines multiple columns to improve data locality for common query patterns."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example:"
+      }), " A messaging app shards by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(workspace_id, channel_id, message_id)"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard Key: (workspace_id, channel_id, message_id)\n\nQuery: Messages in channel #general of workspace \"acme\"\n  ? WHERE workspace_id = 'acme' AND channel_id = 'general'\n  ? Calculates hash of (acme, general) ? targets single shard\n\nQuery: All messages in workspace \"acme\"\n  ? WHERE workspace_id = 'acme'\n  ? Targets subset of shards (scatter within workspace range only)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The order of columns in the compound key matters. The leftmost column is the primary distribution key. Columns to the right serve as clustering keys within the shard. Compound keys enable hierarchical sharding where the first column determines the shard and subsequent columns enable efficient range scans within that shard."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "database-per-service-pattern",
+      children: "Database per Service Pattern"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In microservice architectures, each service owns its data exclusively. This is the ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "Database per Service"
+      }), " pattern."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Order Service        ? order-db (MySQL shard 0..N)\nUser Service         ? user-db (MySQL shard 0..M)\nInventory Service    ? inventory-db (PostgreSQL shard 0..K)\nPayment Service      ? payment-db (Aurora, single instance)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Services are independently deployable and scalable"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each service can choose the optimal database technology (polyglot persistence)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data is encapsulated behind the service boundary"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Failures in one service's database do not affect others"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Challenges:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Queries that span services require orchestration or API composition"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transactions across services must use the Saga pattern (two-phase commit is impractical)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data duplication and synchronization become necessary"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-instagram-sharding-by-user-id",
+      children: "Example 1: Instagram Sharding by User ID"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Instagram, at scale, shards its core database by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "user_id"
+      }), ". The system uses a distributed ID generator (similar to Snowflake) to produce 64-bit user IDs that encode time, shard ID, and sequence number."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Instagram User ID (64-bit):\n  | 41 bits timestamp | 13 bits shard ID | 10 bits sequence |\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When a user uploads a photo, the system computes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "shard_id = user_id >> 10 % N"
+      }), " (extracting the shard bits from the ID). All data for that user — photos, comments, likes, profile — resides on the same shard. This ensures that the common query \"load my feed\" touches only one shard."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hotspot handling:"
+      }), " When a celebrity posts, the fan-out-on-write approach distributes the post to followers' timelines. Each follower reads from their own shard, avoiding the celebrity shard read storm."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "User A (shard 5) posts a photo:\n  ? Insert photo row into shard 5\n  ? Fan-out service writes photo_id to each follower's shard: timeline table\n\nUser B (shard 12) opens app:\n  ? SELECT * FROM timeline WHERE user_id = B ORDER BY created_at DESC LIMIT 50\n  ? Single shard query, fast\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-pinterest-sharding-by-board",
+      children: "Example 2: Pinterest Sharding by Board"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Pinterest originally used a single MySQL instance, then migrated to sharded MySQL with board-level sharding. The shard key is ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "board_id"
+      }), ". Pins are stored with their board_id, ensuring that \"view this board\" queries are single-shard."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Board \"Travel\" (board_id = 42) ? Shard 7\n  Pin 1 (board_id = 42) ? Shard 7\n  Pin 2 (board_id = 42) ? Shard 7\n  Pin 3 (board_id = 42) ? Shard 7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary — all pins for a given board always stay together."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reads per second per shard:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Shard 7 (Travel board): 15,000 reads/s ? split\n  After split:\n  Shard 7a: board_id 30-42 ? 8,000 reads/s\n  Shard 7b: board_id 43-55 ? 7,000 reads/s\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pinterest also caches board data in Redis. Board pages are the most common access pattern, so the cache hit rate exceeds 90% for popular boards."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-3-discord-sharding",
+      children: "Example 3: Discord Sharding"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Discord shards by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "guild_id"
+      }), " (server ID). All messages, members, and channels for a server reside on a single shard."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "guild_id = 123456789 ? shard_id = guild_id >> 22 % N\n\nShard topology (early Discord):\n  1 MySQL primary + replicas ? then Cassandra (hash-based) ? now ScyllaDB\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Discord's sharding faces the ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "server size skew"
+      }), " problem. Some servers (e.g., gaming communities with millions of members) are orders of magnitude larger than the median server. Their shard handles disproportionately more messages."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigation:"
+      }), " Discord implemented ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "shard splitting"
+      }), " — the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Large Guild \"FortniteOfficial\":\n  General chat (channel_id = 111) ? Sub-shard 0 (Scylla node 12)\n  LFG chat     (channel_id = 222) ? Sub-shard 1 (Scylla node 15)\n  Memes        (channel_id = 333) ? Sub-shard 2 (Scylla node 18)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Discord uses consistent hashing to distribute guilds across ScyllaDB nodes. When nodes are added, approximately ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1/N"
+      }), " of guilds are moved."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    A[Client Request] --> B[API Gateway]\n    B --> C{Shard Router}\n    C -->|guild_id % N| D[Shard 0: Guilds A-F]\n    C -->|guild_id % N| E[Shard 1: Guilds G-L]\n    C -->|guild_id % N| F[Shard 2: Guilds M-R]\n    C -->|guild_id % N| G[Shard 3: Guilds S-Z]\n    D --> H[ScyllaDB Node 1]\n    E --> I[ScyllaDB Node 2]\n    F --> J[ScyllaDB Node 3]\n    G --> K[ScyllaDB Node 4]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "sequenceDiagram\n    participant C as Client\n    participant G as API Gateway\n    participant R as Shard Router\n    participant S as ScyllaDB Node\n    C->>G: Send message (guild_id=123)\n    G->>R: Resolve shard for guild 123\n    R-->>G: shard_id = 2 (node 3)\n    G->>S: Write message to Node 3\n    S-->>G: Acknowledged\n    G-->>C: 201 Created\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core topic in Chapter 5: Data Partitioning and Sharding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fundamental concept for system design"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential concept from Chapter 5: Data Partitioning and Sharding"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relevant across design scenarios"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requirements-driven decisions"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What is the key takeaway from this chapter?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Option A"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Option B"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Option C"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Option D"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>Refer to the chapter content</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " Which concept is most critical for distributed systems?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Option A"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Option B"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Option C"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Option D"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>Refer to the chapter content</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " How does this topic apply to FAANG-level system design?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Option A"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Option B"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Option C"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Option D"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>Refer to the chapter content</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                  id: "code-examples",
+                  children: "Code Examples"
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "consistent-hashing-implementation",
+                  children: "Consistent Hashing Implementation"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "The following TypeScript class implements a consistent hash ring with virtual nodes. This is the foundational algorithm behind DynamoDB, Cassandra, and Discord's sharding layer. Virtual nodes ensure balanced key distribution even when physical nodes have heterogeneous capacity."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-typescript",
+                    children: "/**\n * ConsistentHashRing ? implements consistent hashing with virtual nodes\n * for distributed key-value placement.\n *\n * When a node joins or leaves, only O(1/N) keys are remapped (compared\n * to O(N) with naive modulo-N hashing).\n */\nclass ConsistentHashRing<T> {\n  private ring: Map<number, T> = new Map();\n  private sortedPositions: number[] = [];\n  private nodes: Map<string, T> = new Map();\n\n  constructor(\n    private readonly virtualNodeCount: number = 100,\n    private readonly hashFn: (key: string) => number = ConsistentHashRing.defaultHash\n  ) {}\n\n  /** Register a physical node with its virtual-node replicas */\n  addNode(nodeId: string, node: T): void {\n    this.nodes.set(nodeId, node);\n    for (let i = 0; i < this.virtualNodeCount; i++) {\n      const pos = this.hashFn(`${nodeId}:vnode:${i}`);\n      this.ring.set(pos, node);\n    }\n    this.rebuildSortedPositions();\n  }\n\n  /** Remove a physical node and all its virtual nodes */\n  removeNode(nodeId: string): void {\n    if (!this.nodes.has(nodeId)) return;\n    this.nodes.delete(nodeId);\n    for (let i = 0; i < this.virtualNodeCount; i++) {\n      const pos = this.hashFn(`${nodeId}:vnode:${i}`);\n      this.ring.delete(pos);\n    }\n    this.rebuildSortedPositions();\n  }\n\n  /** Locate the responsible node for a given key */\n  getNode(key: string): T | undefined {\n    if (this.sortedPositions.length === 0) return undefined;\n    const hash = this.hashFn(key);\n    const pos =\n      this.sortedPositions.find((p) => p >= hash) ?? this.sortedPositions[0];\n    return this.ring.get(pos);\n  }\n\n  /** Number of physical nodes currently registered */\n  get physicalNodeCount(): number {\n    return this.nodes.size;\n  }\n\n  /** Distribution statistics: keys-per-node for a sample of N keys */\n  distribution(sampleKeys: string[]): Map<string, number> {\n    const counts = new Map<string, number>();\n    for (const key of sampleKeys) {\n      const node = this.getNode(key);\n      if (node) {\n        const label = String(node);\n        counts.set(label, (counts.get(label) ?? 0) + 1);\n      }\n    }\n    return counts;\n  }\n\n  // -- Private helpers ------------------------------------------\n\n  private rebuildSortedPositions(): void {\n    this.sortedPositions = [...this.ring.keys()].sort((a, b) => a - b);\n  }\n\n  private static defaultHash(key: string): number {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) {\n      hash = ((hash << 5) - hash) + key.charCodeAt(i);\n      hash = hash & hash; // force 32-bit integer\n    }\n    return Math.abs(hash);\n  }\n}\n\n// -- Example: ring with 4 nodes, 50 virtual nodes each -----------\nconst ring = new ConsistentHashRing<string>(50);\n\nring.addNode('node-a', '192.168.1.10');\nring.addNode('node-b', '192.168.1.11');\nring.addNode('node-c', '192.168.1.12');\nring.addNode('node-d', '192.168.1.13');\n\nconst testKeys = Array.from({ length: 1000 }, (_, i) => `user:${i}`);\nconst dist = ring.distribution(testKeys);\n\nconsole.log('=== Key distribution across 4 nodes ===');\nfor (const [node, count] of dist) {\n  const pct = ((count / testKeys.length) * 100).toFixed(1);\n  console.log(`${node}: ${count} keys (${pct}%)`);\n}\n\n// -- Simulate node failure --------------------------------------\nring.removeNode('node-c');\nconst distAfter = ring.distribution(testKeys);\nconst moved = testKeys.filter(\n  (k) => ring.getNode(k) !== dist.get(String(ring.getNode(k)))\n).length;\nconsole.log(`\\nAfter node-c failure: ${moved} keys moved (${((moved / testKeys.length) * 100).toFixed(1)}%)`);\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "consistent-hash-ring-visualization",
+                  children: "Consistent Hash Ring Visualization"
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-mermaid",
+                    children: "flowchart TD\n    subgraph Hash_Ring\n        A[(\"hash=0<br/>Node A\")] --> B[(\"hash=25<br/>Node B\")]\n        B --> C[(\"hash=50<br/>Node C\")]\n        C --> D[(\"hash=75<br/>Node D\")]\n        D --> A\n    end\n\n    subgraph Key_Placement\n        K1[\"key user:alice<br/>hash=10\"] -->|\"clockwise walk\"| B\n        K2[\"key user:bob<br/>hash=40\"] -->|\"clockwise walk\"| C\n        K3[\"key user:carol<br/>hash=90\"] -->|\"clockwise walk<br/>(wrap around)\"| A\n    end\n\n    subgraph Virtual_Nodes\n        V1[\"Node A<br/>v0@10 v1@72 v2@91\"] --- V2[\"Node B<br/>v0@25 v1@45 v2@82\"]\n        V2 --- V3[\"Node C<br/>v0@50 v1@33 v2@67\"]\n        V3 --- V1\n    end\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "typescript-consistent-hash-ring",
+                  children: "TypeScript: Consistent Hash Ring"
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-typescript",
+                    children: "class ConsistentHashRing {\n  private ring = new Map<number, string>();\n  private sortedKeys: number[] = [];\n  private virtualNodes = 150;\n\n  constructor(private nodes: string[] = []) { for (const n of nodes) this.addNode(n); }\n\n  private hash(key: string): number {\n    let h = 0;\n    for (let i = 0; i < key.length; i++) { h = (h << 5) - h + key.charCodeAt(i); h |= 0; }\n    return h >>> 0;\n  }\n\n  addNode(node: string): void {\n    for (let v = 0; v < this.virtualNodes; v++) {\n      const h = this.hash(`${node}:v${v}`);\n      if (!this.ring.has(h)) this.ring.set(h, node);\n    }\n    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);\n  }\n\n  removeNode(node: string): void {\n    for (let v = 0; v < this.virtualNodes; v++) this.ring.delete(this.hash(`${node}:v${v}`));\n    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);\n  }\n\n  getNode(key: string): string {\n    if (this.sortedKeys.length === 0) throw new Error(\"No nodes available\");\n    const h = this.hash(key);\n    let i = this.sortedKeys.findIndex(k => k >= h);\n    if (i === -1) i = 0;\n    return this.ring.get(this.sortedKeys[i])!;\n  }\n}\n\nclass ShardRouter {\n  range(key: number, shards: { min: number; max: number; name: string }[]): string {\n    for (const s of shards) if (key >= s.min && key <= s.max) return s.name;\n    throw new Error(\"No matching shard\");\n  }\n\n  hash(key: string, shardCount: number): number {\n    let h = 0;\n    for (let i = 0; i < key.length; i++) { h = (h << 5) - h + key.charCodeAt(i); h |= 0; }\n    return Math.abs(h >>> 0) % shardCount;\n  }\n\n  directory(key: string, lookup: Map<string, string>): string {\n    return lookup.get(key) ?? lookup.get(\"default\") ?? \"unassigned\";\n  }\n}\n\nclass ScatterGatherExecutor {\n  async execute<T>(shards: string[], query: (shard: string) => Promise<T>): Promise<T[]> {\n    const results = await Promise.all(shards.map(s => query(s).catch(e => { throw new Error(`Shard ${s} failed: ${e}`); })));\n    return results;\n  }\n}\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "implementation-partitioning-and-sharding",
+                  children: "Implementation: Partitioning and Sharding"
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-typescript",
+                    children: "enum ShardStrategy { RANGE, HASH, DIRECTORY, GEO }\ninterface Shard { id: number; rangeStart: string; rangeEnd: string; nodes: string[]; load: number; }\nclass ShardManager {\n  private shards: Shard[] = []; constructor(private strategy: ShardStrategy, private shardCount: number) { this.init(); }\n  private init(): void { for (let i = 0; i < this.shardCount; i++) { const letters = \"abcdefghijklmnopqrstuvwxyz\"; const s = Math.floor((i / this.shardCount) * letters.length); const e = Math.floor(((i + 1) / this.shardCount) * letters.length); this.shards.push({ id: i, rangeStart: letters[s] || \"a\", rangeEnd: letters[Math.min(e, letters.length - 1)] || \"z\", nodes: [`node-${i}`], load: 0 }); } }\n  getShard(key: string): Shard { const fc = key[0].toLowerCase(); if (this.strategy === ShardStrategy.HASH) return this.shards[this.hash(key) % this.shards.length]; for (const s of this.shards) { if (fc >= s.rangeStart && fc <= s.rangeEnd) return s; } return this.shards[0]; }\n  private hash(k: string): number { let h = 0; for (let i = 0; i < k.length; i++) { h = ((h << 5) - h) + k.charCodeAt(i); h |= 0; } return Math.abs(h); }\n  rebalance(newCount: number): void { const oldShards = this.shards.length; this.shardCount = newCount; this.init(); console.log(`Rebalanced: ${oldShards} -> ${newCount} shards`); }\n  getShardLoad(): { id: number; load: number }[] { return this.shards.map(s => ({ id: s.id, load: s.load })); }\n}\nclass ConsistentHashRing {\n  private ring: { hash: number; node: string }[] = []; private virtualNodes = 3;\n  addNode(node: string): void { for (let i = 0; i < this.virtualNodes; i++) { const h = this.hash(`${node}:v${i}`); this.ring.push({ hash: h, node }); } this.ring.sort((a, b) => a.hash - b.hash); }\n  removeNode(node: string): void { this.ring = this.ring.filter(e => e.node !== node); }\n  getNode(key: string): string { if (this.ring.length === 0) throw new Error(\"Empty ring\"); const h = this.hash(key); for (const entry of this.ring) { if (entry.hash >= h) return entry.node; } return this.ring[0].node; }\n  private hash(k: string): number { let h = 0; for (let i = 0; i < k.length; i++) { h = ((h << 5) - h) + k.charCodeAt(i); h |= 0; } return Math.abs(h); }\n}\nclass RangeSplitter { split(oldShard: Shard, splitPoint: string): [Shard, Shard] {\n  const s1: Shard = { ...oldShard, id: oldShard.id * 100, rangeEnd: splitPoint, load: Math.floor(oldShard.load / 2) };\n  const s2: Shard = { ...oldShard, id: oldShard.id * 100 + 1, rangeStart: splitPoint, load: Math.ceil(oldShard.load / 2) }; return [s1, s2]; }\n}\nclass ReadReplicaManager { private replicas: Map<string, { lag: number; healthy: boolean }> = new Map();\n  addReplica(id: string): void { this.replicas.set(id, { lag: 0, healthy: true }); }\n  getReadTarget(): string { const healthy = [...this.replicas.entries()].filter(([_, r]) => r.healthy); healthy.sort((a, b) => a[1].lag - b[1].lag); return healthy.length > 0 ? healthy[0][0] : \"primary\"; }\n  reportLag(replicaId: string, lag: number): void { const r = this.replicas.get(replicaId); if (r) r.lag = lag; } }\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "// partitioning sharding\n// distributed-systems-scalability implementation"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'partitioning sharding', data: { topic: 'distributed-systems-scalability' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "// partitioning sharding - additional TS implementations"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\nprivate store: Map<string, CacheEntry> = new Map()\nconstructor(private defaultTTL: number = 60000) {}\nset(key: string, value: unknown, ttl?: number): void {\nthis.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n}\nget(key: string): unknown | undefined {\nconst entry = this.store.get(key)\nif (!entry) return undefined\nif (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\nreturn entry.value\n}\ndelete(key: string): boolean { return this.store.delete(key) }\nclear(): void { this.store.clear() }\nsize(): number { return this.store.size }\nkeys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\nprivate entries: string[] = []\nlog(level: string, msg: string, meta?: Record<string, unknown>): void {\nconst entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\nthis.entries.push(entry)\nconsole.log(entry)\n}\ninfo(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\nwarn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\nerror(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\ngetLogs(): string[] { return [...this.entries] }\nclear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\nlet hash = 0\nfor (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\nreturn Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\nconst cache = new Cache(5000)\ncache.set('key1', 'system-design demo')\nconst log = new Logger()\nlog.info('Cache demo started', { course: 'system-design', chapter: 'partitioning sharding' })\nconst v = cache.get(\"key1\")\nconsole.log('Cached:', v)\nconsole.log('Hash:', computeHash('system-design'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }"
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "typescript-consistent-hash-ring-with-virtual-nodes",
+                  children: "TypeScript: Consistent Hash Ring with Virtual Nodes"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "This class implements a production-grade consistent hash ring with virtual nodes, add/remove node operations, and key lookup — the foundation of DynamoDB, Cassandra, and Discord's sharding layer."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-typescript",
+                    children: "class ConsistentHashRing {\n  private ring: Map<number, string> = new Map();\n  private sortedPositions: number[] = [];\n  private nodes: Map<string, number> = new Map(); // nodeId -> virtualCount\n\n  constructor(\n    private virtualNodeCount: number = 150,\n    private hashFn: (key: string) => number = ConsistentHashRing.defaultHash\n  ) {}\n\n  addNode(nodeId: string): void {\n    this.nodes.set(nodeId, this.virtualNodeCount);\n    for (let v = 0; v < this.virtualNodeCount; v++) {\n      const hash = this.hashFn(`${nodeId}:vnode:${v}`);\n      if (!this.ring.has(hash)) this.ring.set(hash, nodeId);\n    }\n    this.rebuildSortedPositions();\n  }\n\n  removeNode(nodeId: string): void {\n    if (!this.nodes.has(nodeId)) return;\n    for (let v = 0; v < this.nodes.get(nodeId)!; v++) {\n      const hash = this.hashFn(`${nodeId}:vnode:${v}`);\n      this.ring.delete(hash);\n    }\n    this.nodes.delete(nodeId);\n    this.rebuildSortedPositions();\n  }\n\n  getNode(key: string): string {\n    if (this.sortedPositions.length === 0) throw new Error('Ring is empty');\n    const hash = this.hashFn(key);\n    let pos = this.sortedPositions.find(p => p >= hash);\n    if (pos === undefined) pos = this.sortedPositions[0];\n    return this.ring.get(pos)!;\n  }\n\n  getNodeCount(): number { return this.nodes.size; }\n\n  simulateNodeFailure(nodeId: string): { movedKeys: number; fraction: number; restored: string } {\n    const testKeys = Array.from({ length: 10000 }, (_, i) => `key:${i}`);\n    const before = new Map<string, string>();\n    for (const k of testKeys) before.set(k, this.getNode(k));\n    this.removeNode(nodeId);\n    let moved = 0;\n    for (const k of testKeys) {\n      if (this.getNode(k) !== before.get(k)) moved++;\n    }\n    this.addNode(nodeId);\n    return { movedKeys: moved, fraction: moved / testKeys.length, restored: nodeId };\n  }\n\n  distribution(keys: string[]): Map<string, number> {\n    const dist = new Map<string, number>();\n    for (const k of keys) {\n      const node = this.getNode(k);\n      dist.set(node, (dist.get(node) ?? 0) + 1);\n    }\n    return dist;\n  }\n\n  private rebuildSortedPositions(): void {\n    this.sortedPositions = [...this.ring.keys()].sort((a, b) => a - b);\n  }\n\n  private static defaultHash(key: string): number {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) {\n      hash = ((hash << 5) - hash) + key.charCodeAt(i);\n      hash |= 0;\n    }\n    return hash >>> 0;\n  }\n}\n\n// -- Example ------------------------------------------------------\nconst ring = new ConsistentHashRing(150);\nfor (let i = 0; i < 8; i++) ring.addNode(`node-${i}`);\nconst testKeys = Array.from({ length: 10000 }, (_, i) => `user:${i}`);\nconst dist = ring.distribution(testKeys);\nconsole.log('Key distribution:');\nfor (const [node, count] of dist) console.log(`  ${node}: ${count} keys (${(count/testKeys.length*100).toFixed(1)}%)`);\n\nconst failResult = ring.simulateNodeFailure('node-3');\nconsole.log(`\\nNode-3 failed: ${failResult.movedKeys} keys moved (${(failResult.fraction*100).toFixed(1)}%)`);\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "typescript-range-partitioner-split-and-rebalance",
+                  children: "TypeScript: Range Partitioner (Split and Rebalance)"
+                }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "This class implements range-based sharding with partition splitting and rebalancing across nodes."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-typescript",
+                    children: "interface RangeShard {\n  id: number;\n  rangeStart: number;\n  rangeEnd: number;\n  node: string;\n  load: number;\n  sizeBytes: number;\n}\n\nclass RangePartitioner {\n  private shards: RangeShard[] = [];\n  private nextId = 0;\n\n  constructor() {}\n\n  addShard(rangeStart: number, rangeEnd: number, node: string): RangeShard {\n    const shard: RangeShard = {\n      id: this.nextId++,\n      rangeStart,\n      rangeEnd,\n      node,\n      load: 0,\n      sizeBytes: 0,\n    };\n    this.shards.push(shard);\n    return shard;\n  }\n\n  getShard(key: number): RangeShard | null {\n    for (const s of this.shards) {\n      if (key >= s.rangeStart && key < s.rangeEnd) {\n        s.load++;\n        return s;\n      }\n    }\n    return null;\n  }\n\n  recordLoad(shardId: number, load: number): void {\n    const s = this.shards.find(s => s.id === shardId);\n    if (s) s.load = load;\n  }\n\n  splitShard(shardId: number, splitPoint: number): [RangeShard, RangeShard] {\n    const old = this.shards.find(s => s.id === shardId);\n    if (!old) throw new Error(`Shard ${shardId} not found`);\n    if (splitPoint <= old.rangeStart || splitPoint >= old.rangeEnd) {\n      throw new Error('Split point must be within shard range');\n    }\n\n    const s1: RangeShard = {\n      id: this.nextId++,\n      rangeStart: old.rangeStart,\n      rangeEnd: splitPoint,\n      node: old.node,\n      load: Math.floor(old.load * (splitPoint - old.rangeStart) / (old.rangeEnd - old.rangeStart)),\n      sizeBytes: Math.floor(old.sizeBytes / 2),\n    };\n\n    const s2: RangeShard = {\n      id: this.nextId++,\n      rangeStart: splitPoint,\n      rangeEnd: old.rangeEnd,\n      node: old.node + '-new',\n      load: Math.ceil(old.load * (old.rangeEnd - splitPoint) / (old.rangeEnd - old.rangeStart)),\n      sizeBytes: Math.ceil(old.sizeBytes / 2),\n    };\n\n    this.shards = this.shards.filter(s => s.id !== shardId);\n    this.shards.push(s1, s2);\n    return [s1, s2];\n  }\n\n  rebalance(targetLoadPerNode: number): { moves: string[]; finalDistribution: RangeShard[] } {\n    const moves: string[] = [];\n    const nodeLoads = new Map<string, number>();\n\n    for (const s of this.shards) {\n      nodeLoads.set(s.node, (nodeLoads.get(s.node) ?? 0) + s.load);\n    }\n\n    const overloaded = [...nodeLoads.entries()].filter(([_, load]) => load > targetLoadPerNode * 1.2);\n    const underloaded = [...nodeLoads.entries()].filter(([_, load]) => load < targetLoadPerNode * 0.8);\n\n    for (const [overNode, _] of overloaded) {\n      const overShards = this.shards.filter(s => s.node === overNode).sort((a, b) => b.load - a.load);\n      for (const s of overShards) {\n        if (underloaded.length === 0) break;\n        const [underNode, _] = underloaded[0];\n        moves.push(`Move shard ${s.id} (keys ${s.rangeStart}-${s.rangeEnd}) from ${overNode} to ${underNode}`);\n        s.node = underNode;\n        const newOverLoad = (nodeLoads.get(overNode) ?? 0) - s.load;\n        const newUnderLoad = (nodeLoads.get(underNode) ?? 0) + s.load;\n        nodeLoads.set(overNode, newOverLoad);\n        nodeLoads.set(underNode, newUnderLoad);\n        if (newUnderLoad >= targetLoadPerNode * 0.8) underloaded.shift();\n      }\n    }\n\n    return { moves, finalDistribution: [...this.shards] };\n  }\n\n  getShardForKey(key: number, useHash: boolean = false): RangeShard | null {\n    if (useHash) {\n      const hash = ((key * 2654435761) >>> 0) % this.shards.length;\n      return this.shards[hash] ?? null;\n    }\n    return this.getShard(key);\n  }\n\n  stats(): { shardCount: number; totalLoad: number; nodes: string[]; loadStdDev: number } {\n    const nodeLoads = new Map<string, number>();\n    for (const s of this.shards) {\n      nodeLoads.set(s.node, (nodeLoads.get(s.node) ?? 0) + s.load);\n    }\n    const loads = [...nodeLoads.values()];\n    const avg = loads.reduce((a, b) => a + b, 0) / loads.length;\n    const variance = loads.reduce((sum, l) => sum + (l - avg) ** 2, 0) / loads.length;\n    return {\n      shardCount: this.shards.length,\n      totalLoad: loads.reduce((a, b) => a + b, 0),\n      nodes: [...nodeLoads.keys()],\n      loadStdDev: Math.sqrt(variance),\n    };\n  }\n}\n\n// -- Example ------------------------------------------------------\nconst rp = new RangePartitioner();\nfor (let i = 0; i < 4; i++) rp.addShard(i * 25, (i + 1) * 25, `node-${i}`);\nfor (let k = 0; k < 1000; k++) rp.getShard(k);\nconsole.log('Load before split:', rp.stats().loadStdDev.toFixed(2), 'stddev');\n\n// Split the hottest shard (node-3 handles keys 75-100)\nrp.splitShard(3, 88);\nfor (let k = 0; k < 1000; k++) rp.getShard(k);\nconsole.log('Shards after split:', rp.stats().shardCount);\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "sharding-strategies-comparison",
+                  children: "Sharding Strategies Comparison"
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-mermaid",
+                    children: "flowchart TD\n    classDef strategy fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px\n    classDef pro fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px\n    classDef con fill:#d0021b,color:#fff,stroke:#8b0015,stroke-width:2px\n    classDef label fill:#eee,color:#333,stroke:#999,stroke-width:1px\n\n    subgraph Sharding_Strategies\n        direction TB\n        TITLE[Sharding Strategies Comparison]:::label\n\n        subgraph Range_Sharding\n            R1[Range-Based]:::strategy\n            R_PRO[\"Pros: Efficient range scans<br/>Simple to understand<br/>Sequential locality\"]:::pro\n            R_CON[\"Cons: Hotspots on monotonically inc keys<br/>Data skew<br/>Expensive resharding\"]:::con\n            R1 --> R_PRO\n            R1 --> R_CON\n            R_EX[\"Example: Pinterest board_id sharding<br/>Time-series monthly partitions\"]:::label\n        end\n\n        subgraph Hash_Sharding\n            H1[Hash-Based]:::strategy\n            H_PRO[\"Pros: Uniform distribution<br/>No hotspots<br/>Predictable capacity\"]:::pro\n            H_CON[\"Cons: Broken range queries<br/>Full reshard on node change<br/>Scatter-gather for non-key queries\"]:::con\n            H1 --> H_PRO\n            H1 --> H_CON\n            H_EX[\"Example: DynamoDB partition key<br/>Cassandra default sharding\"]:::label\n        end\n\n        subgraph Consistent_Hashing\n            C1[Consistent Hashing]:::strategy\n            C_PRO[\"Pros: Only 1/N keys move on change<br/>Virtual nodes for balance<br/>Elastic scaling\"]:::pro\n            C_CON[\"Cons: Complexity<br/>Still vulnerable to hot keys<br/>Uneven without enough vnodes\"]:::con\n            C1 --> C_PRO\n            C1 --> C_CON\n            C_EX[\"Example: Discord ScyllaDB sharding<br/>Redis Cluster slots\"]:::label\n        end\n\n        subgraph Directory_Sharding\n            D1[Directory-Based]:::strategy\n            D_PRO[\"Pros: Maximum flexibility<br/>Fine-grained control<br/>No data movement on config change\"]:::pro\n            D_CON[\"Cons: Directory is SPOF + bottleneck<br/>Extra hop per query<br/>Consistency of directory vs data\"]:::con\n            D1 --> D_PRO\n            D1 --> D_CON\n            D_EX[\"Example: Early YouTube sharding<br/>Custom lookup services\"]:::label\n        end\n    end\n\n    subgraph Selection_Guide\n        Q1[\"Need range queries?\"] -->|Yes| RANGE_REC[\"Range or Compound\"]:::strategy\n        Q1 -->|No| Q2[\"Uniform distribution critical?\"]\n        Q2 -->|Yes| HASH_REC[\"Hash\"]:::strategy\n        Q2 -->|No| Q3[\"Elastic scaling?\"]\n        Q3 -->|Yes| CH_REC[\"Consistent Hashing\"]:::strategy\n        Q3 -->|No| Q4[\"Fine-grained control?\"]\n        Q4 -->|Yes| DIR_REC[\"Directory\"]:::strategy\n        Q4 -->|No| RANGE_REC\n    end\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "practical-takeaways",
+                  children: "Practical Takeaways"
+                }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                  children: [(0,jsx_runtime.jsx)(_components.thead, {
+                    children: (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.th, {
+                        children: "Takeaway"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "Application"
+                      })]
+                    })
+                  }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                    children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Vertical partitioning improves cache efficiency"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Split hot columns (name, email) from cold/large columns (BLOB, bio) to reduce I/O per query"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Range-based sharding is simple but creates hotspots"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Avoid auto-increment keys as shard key; use hash-based or compound keys instead"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Consistent hashing with 100+ virtual nodes is production-standard"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Deploy with 128-256 vnodes per physical node for near-uniform distribution"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "The celebrity problem requires multi-layered mitigation"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Combine caching (Redis), read replicas, and fan-out-on-write to prevent hot-shard meltdown"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Cross-shard queries enable scatter-gather data analysis"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Scatter-gather is bounded by the slowest shard's tail latency; keep queries sub-100ms with redundant timeouts"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Global secondary indexes trade write speed for read speed"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Use for non-shard-key point lookups (email, username); accept the 2PC write overhead"
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "Compound shard keys encode the primary access pattern"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Design (primary_key, clustering_key) so that 90%+ of queries hit a single shard"
+                      })]
+                    })]
+                  })]
+                }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                  id: "case-study",
+                  children: "Case Study"
+                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Sharding Discord's Message Database at Scale."
+                  }), " Discord's original architecture stored all messages in a single MongoDB replica set. By 2017, with 100M+ messages per day, the MongoDB instance could not keep up — write latency exceeded 500ms during peak hours, and the 16GB RAM limit forced frequent disk swaps. The engineering team migrated to Cassandra (later ScyllaDB) with a two-level sharding strategy: primary sharding by ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "guild_id"
+                  }), " (server ID) using consistent hashing with 256 virtual nodes per ScyllaDB node, and sub-sharding within each guild by ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "channel_id"
+                  }), " using a compound primary key ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "(guild_id, channel_id, message_id)"
+                  }), "."]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Implementation Details."
+                  }), " The team implemented a custom shard-aware router that mapped each guild to a ScyllaDB node using the consistent hash ring. Within each node, Cassandra's native partition key ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "(guild_id, channel_id)"
+                  }), " ensured that all messages in a channel were stored contiguously, enabling efficient range scans (", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "SELECT * FROM messages WHERE guild_id=? AND channel_id=? ORDER BY message_id DESC LIMIT 50"
+                  }), "). When a guild grew too large (e.g., a gaming community with 500K members generating 100K messages/hour), Discord split the guild into sub-shards based on channel activity — hot channels got their own partition, cold channels shared. The rebalancing was automated: a monitoring service tracked partition size and query latency and triggered splits when either exceeded thresholds."]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Business Impact."
+                  }), " The sharded architecture scaled Discord's message throughput from 100M to 1.5B messages per day with p99 read latency under 15ms. Adding ScyllaDB nodes required zero downtime — the consistent hash ring automatically redistributed approximately 1/N of guilds to the new nodes. During the COVID-19 pandemic traffic surge (5x normal), the auto-scaling rebalancer added 20 nodes over 48 hours with zero data loss and zero downtime. The key insight: Discord chose compound shard keys that matched their primary query pattern (load messages by channel), ensuring that 95%+ of all queries hit a single shard and required no scatter-gather."]
+                }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                  id: "chapter-quiz-1",
+                  children: "Chapter Quiz"
+                }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                  children: [(0,jsx_runtime.jsx)(_components.thead, {
+                    children: (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.th, {
+                        children: "#"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "Question"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "A"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "B"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "C"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "D"
+                      }), (0,jsx_runtime.jsx)(_components.th, {
+                        children: "Answer"
+                      })]
+                    })
+                  }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                    children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "1"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Which sharding strategy minimizes key remapping when nodes join or leave?"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Range-based"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Hash-based"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Consistent hashing"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Directory-based"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "C"
+                        })
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "2"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "What problem does the celebrity problem describe?"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Too many celebrities"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "A single shard receiving disproportionate load"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Celebrity data is too large"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Authentication failures"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "B"
+                        })
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "3"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "What is the expected fraction of keys that move when a node fails in consistent hashing?"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "1/2"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "1/N"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "N/2"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "All keys"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "B"
+                        })
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "4"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "What is the primary disadvantage of hash-based sharding?"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Uneven distribution"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Hotspots on auto-increment keys"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Broken range queries"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Complex rebalancing"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "C"
+                        })
+                      })]
+                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                        children: "5"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "What is the purpose of virtual nodes in consistent hashing?"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Increase security"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Improve load distribution"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Reduce memory usage"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: "Speed up lookups"
+                      }), (0,jsx_runtime.jsx)(_components.td, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "B"
+                        })
+                      })]
+                    })]
+                  })]
+                }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                  id: "summary",
+                  children: "Summary"
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Vertical partitioning splits by columns for I/O and cache efficiency; horizontal partitioning (sharding) splits by rows for distributed scale"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Range-based sharding offers efficient range queries but suffers from hotspots and data skew from monotonically increasing keys"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Hash-based sharding distributes writes uniformly but breaks range queries and amplifies the cost of resharding"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["Consistent hashing with virtual nodes limits data movement to ", (0,jsx_runtime.jsx)(_components.code, {
+                      children: "O(1/N)"
+                    }), " when nodes join or leave, enabling elastic scaling"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Directory-based sharding provides maximum flexibility at the cost of an additional lookup hop and a single-coordinator risk"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Hotspots require mitigation through splitting, secondary keys with replication, caching, or fan-out-on-write strategies"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Cross-shard queries use scatter-gather which is limited by tail latency; distributed joins are efficient only when both tables share the shard key"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Global secondary indexes enable fast point lookups on non-shard-key columns but add write-time coordination overhead"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Compound shard keys encode hierarchical access patterns to minimize cross-shard queries"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "Database per service pattern enables independent scaling and polyglot persistence at the cost of cross-service consistency complexity"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                  id: "exercises",
+                  children: "Exercises"
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+                    children: "Review Questions — Click to expand"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "review-questions",
+                    children: "Review Questions"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["A social network uses range-based sharding on ", (0,jsx_runtime.jsx)(_components.code, {
+                          children: "user_id"
+                        }), " (auto-increment). New users sign up at 100/second. Why does this create a hotspot, and what sharding strategy would you use instead?\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " Auto-increment IDs always go to the last shard (highest range), creating a write hotspot. Use hash-based sharding on user_id to distribute writes uniformly across all shards, or use a compound key (region + user_id) for geographic locality."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["In consistent hashing with 100 virtual nodes per physical node and 10 physical nodes, what fraction of keys are expected to move when a physical node fails? Explain the math.\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " Expected fraction = 1/N = 1/10 = 10%. The total ring has 1000 vnodes. Each vnode covers 1/1000 of the ring. When a physical node fails, its 100 vnodes are removed, and the remaining 9 nodes each take over ~1/9 of the freed space. Total moved keys = 100/1000 = 1/10 = 10%."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["Describe the difference between a local secondary index and a global secondary index. Under what query patterns does each perform poorly?\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " Local index: each shard maintains its own index on a non-key column. Poor for point lookups (requires scatter-gather to all shards). Global index: a separate index table sharded on the indexed column. Poor for writes (requires 2PC between primary shard and index shard)."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["A messaging system shards by ", (0,jsx_runtime.jsx)(_components.code, {
+                          children: "(workspace_id, channel_id)"
+                        }), ". A user wants to search all messages they've sent across all channels in their workspace. Which shards does this query hit? How would you optimize it?\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " Without a secondary index on author, this hits all shards that contain channels in the workspace (scatter-gather). Optimization: create a global secondary index on (workspace_id, author_id) sharded by author_id, so the query targets a single shard."]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+                    children: "Application Problems — Click to expand"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "application-problems",
+                    children: "Application Problems"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Shard Rebalancing Simulation:"
+                        }), " You have 4 nodes with the following key distribution using range-based sharding: Node 0 (keys A-F), Node 1 (G-M), Node 2 (N-S), Node 3 (T-Z). Node 2 becomes overloaded at 85% capacity while Node 1 is at 30%. Design a rebalancing plan.\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " Move the upper half of Node 1's range (J-M) to Node 2, and move the lower half of Node 2's range (N-P) to Node 1. Final: Node 0 (A-F), Node 1 (G-I, N-P), Node 2 (J-M, Q-S), Node 3 (T-Z). During migration: mark shards as migrating, serve reads from source, write to both source and destination, then atomically switch the directory."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Consistent Hash Implementation:"
+                        }), " Ring nodes at 10, 25, 40, 60, 85. Keys at 5, 15, 22, 38, 42, 55, 70, 90.\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " 5?wrap to 85, 15?25, 22?25, 38?40, 42?60, 55?60, 70?85, 90?10. Add node at 50: 42?50 (moved), 55?50 (moved). Keys moved: 2/8 = 25% ≈ 1/N = 1/6 ≈ 16.7% (small sample variance)."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Celebrity Problem Design:"
+                        }), " 100 shards, 50M followers, 2 posts/day, 500KB/post.\n", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Solution:"
+                        }), " (a) Cache celebrity posts in Redis with TTL=1 hour — first read hits DB, subsequent 49.9M reads hit cache. (b) Fan-out on write: write post to each follower's timeline shard (distributes reads). (c) Read replicas for the celebrity's shard. QPS reduction: without cache = 50M reads/day ≈ 579 QPS sustained. With 99% cache hit rate = 5.79 QPS to DB — a 100x reduction."]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+                    children: "Challenge Problem — Click to expand"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "challenge-problem",
+                    children: "Challenge Problem"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Distributed Shard Migration at Scale"
+                    })
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Solution Outline:"
+                    })
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Algorithm:"
+                      }), " Consistent hashing with virtual nodes (150 vnodes per node). Adding 10 new nodes to the existing 50 results in 50", (0,jsx_runtime.jsx)(_components.em, {
+                        children: "150 + 10"
+                      }), "150 = 9000 vnodes total. Each new node claims ~1/60 of the ring = ~1.67% of keys per node, total 16.7% moved."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Data to migrate:"
+                      }), " Total data = 50 × 400 GB = 20 TB. Fraction moved per new node ≈ 1/60, so 20 TB × 10/60 ≈ 3.33 TB total. Per new node: ~333 GB inbound. Per existing node: each gives up ~1/60 of its 400 GB = 6.67 GB outbound."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Migration protocol:"
+                      }), " Three-phase. Phase 1 (Prepare): mark new nodes as joining, pre-split vnodes. Phase 2 (Transfer): stream data from existing to new nodes using SSTable transfer (bulk, not per-key). Reads served from both source and destination; writes go to both (dual-write). Phase 3 (Commit): atomically update the ring to include new nodes, remove dual-write flag."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Minimum time:"
+                      }), " Each existing node streams 6.67 GB over 10 Gbps. Time = 6.67 × 8 Gb / 10 Gbps = 5.34 seconds per node. With 50 nodes streaming in parallel, total ≈ 6 seconds (assuming linear network). Realistically with network contention: 2-5 minutes."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Rollback plan:"
+                      }), " Keep old ring configuration during migration. If migration fails mid-way, revert the ring configuration, stop dual-writes, and re-stream from last checkpoint. Use monotonic sequence numbers on each shard to track migration progress."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Monitoring:"
+                      }), " (a) Migration progress % per shard, (b) Network throughput per node (Gbps), (c) Dual-write error rate, (d) Read/write latency during migration (target < 2x baseline), (e) Ring consistency (all nodes agree on ring state), (f) SSTable count per node (should not increase more than 2x during migration)."]
+                    }), "\n"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n"]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,1828 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[46404],{
+
+/***/ 56863
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_system_design_19_case_study_whatsapp_md_d97_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-system-design-19-case-study-whatsapp-md-d97.json
+const site_docs_courses_system_design_19_case_study_whatsapp_md_d97_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/system-design/19-case-study-whatsapp","title":"Chapter 19: Case Study — WhatsApp and Real-Time Messaging","description":"Previous 20 Case Study Netflix","source":"@site/docs/courses/system-design/19-case-study-whatsapp.md","sourceDirName":"courses/system-design","slug":"/system-design/19-case-study-whatsapp","permalink":"/ai-engineering-journey/system-design/19-case-study-whatsapp","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"19-case-study-whatsapp","slug":"/system-design/19-case-study-whatsapp","title":"Chapter 19: Case Study — WhatsApp and Real-Time Messaging","sidebar_label":"Chapter 19: Case Study — WhatsApp and Real-Time Messaging","sidebar_position":19},"sidebar":"course-system-design","previous":{"title":"Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin","permalink":"/ai-engineering-journey/system-design/18-case-studies-classic"},"next":{"title":"Chapter 20: Case Study — Netflix and Video Streaming","permalink":"/ai-engineering-journey/system-design/20-case-study-netflix"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/system-design/19-case-study-whatsapp.md
+
+
+const frontMatter = {
+	id: '19-case-study-whatsapp',
+	slug: '/system-design/19-case-study-whatsapp',
+	title: 'Chapter 19: Case Study — WhatsApp and Real-Time Messaging',
+	sidebar_label: 'Chapter 19: Case Study — WhatsApp and Real-Time Messaging',
+	sidebar_position: 19
+};
+const contentTitle = 'Chapter 19: Case Study — WhatsApp and Real-Time Messaging';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Requirements Phase",
+  "id": "requirements-phase",
+  "level": 3
+}, {
+  "value": "Estimation Phase",
+  "id": "estimation-phase",
+  "level": 3
+}, {
+  "value": "High-Level Design Phase",
+  "id": "high-level-design-phase",
+  "level": 3
+}, {
+  "value": "Deep Dive Phase",
+  "id": "deep-dive-phase",
+  "level": 3
+}, {
+  "value": "Case Study: WhatsApp Message Delivery Pipeline",
+  "id": "case-study-whatsapp-message-delivery-pipeline",
+  "level": 2
+}, {
+  "value": "Requirements",
+  "id": "requirements",
+  "level": 3
+}, {
+  "value": "High-Level Design",
+  "id": "high-level-design",
+  "level": 3
+}, {
+  "value": "Deep Dive",
+  "id": "deep-dive",
+  "level": 3
+}, {
+  "value": "Implementation: WhatsApp Architecture Case Study",
+  "id": "implementation-whatsapp-architecture-case-study",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript: Message Fan-Out, E2E Encryption, and Presence Tracker",
+  "id": "typescript-message-fan-out-e2e-encryption-and-presence-tracker",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Case Study: Group Chat Fan-Out During a Global Event",
+  "id": "case-study-group-chat-fan-out-during-a-global-event",
+  "level": 2
+}, {
+  "value": "Case Study: Multi-Device Reconciliation After Offline Period",
+  "id": "case-study-multi-device-reconciliation-after-offline-period",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary-1",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-19-case-study--whatsapp-and-real-time-messaging",
+        children: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/18-case-studies-classic",
+          children: "18 Case Studies Classic"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/20-case-study-netflix",
+          children: "20 Case Study Netflix"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a real-time messaging system supporting 2B+ users with under 100ms delivery latency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze message fan-out strategies for group chats: fan-on-write vs fan-on-read vs hybrid approaches"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement end-to-end encryption using the Signal Protocol including X3DH key agreement and Double Ratchet"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Architect persistent TCP connection management at massive scale with FreeBSD kqueue and connection multiplexing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design multi-device synchronization with per-device Ed25519 key pairs and message history sync protocols"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Evaluate the trade-offs between server-side message storage, offline message queuing, and delivery semantics"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/19-case-study-whatsapp/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/19-case-study-whatsapp/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/19-case-study-whatsapp/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/19-case-study-whatsapp/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/19-case-study-whatsapp/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/19-case-study-whatsapp/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "| Aspect | Details |"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory] --> B[Case Study: WhatsApp Message Delivery Pipeline]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["|--------|---------|\n| ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scope"
+      }), " | WhatsApp architecture: Erlang, custom server, E2E encryption, 2B users |\n| ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Concepts"
+      }), " | Core topics covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging |\n| ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Design Skills"
+      }), " | Real-time messaging, E2E encryption, Erlang/OTP patterns |\n| ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Angle"
+      }), " | Frequently tested in system design interviews |"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core concepts covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, Case Study: WhatsApp Message Delivery Pipeline, Concept Comparison, Quick Reference"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Design Skills"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept mastery and practical application"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interview Angle"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common system design interview topic"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory]\n    B[Case Study WhatsApp Message De]\n    A --> B\n    C[Concept Comparison]\n    B --> C\n    D[Quick Reference]\n    C --> D\n    E[CrossApplication Matrix]\n    D --> E\n    F[Chapter Quiz]\n    E --> F\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation ? master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/19-whatsapp.png",
+        alt: "WhatsApp Architecture Flowchart"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "requirements-phase",
+      children: "Requirements Phase"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it is frequently tested in system design interviews."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept ? it appears in nearly every system design interview. Understand both the how and the why."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it appears in nearly every system design interview.\nWhatsApp processes over 100 billion messages daily across 2 billion+ users. Understanding these requirements is essential before any design work begins."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Functional Requirements"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Requirement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Specification"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct messaging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 text, images, video, documents, voice notes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Group messaging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 1024 members per group"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast lists"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One-to-many message distribution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "End-to-end encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default for all content, including group messages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-device"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 4 devices per account, independent connection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Voice/video calls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Peer-to-peer with relay fallback (STUN/TURN)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Status/Stories"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "24-hour disappearing photo/video updates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Media sharing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inline images, videos up to 16MB, documents up to 100MB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Last seen/Read receipts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visible presence indicators, configurable privacy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Offline messages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server-side queuing, delivery on reconnection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Message sync"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-device history synchronization"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Non-Functional Requirements"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Specification"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2B+ users, 100B+ messages/day"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Peak throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1M+ messages/sec during global events"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Delivery latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<100ms median, <500ms P99"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Availability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "99.999% (five nines) for messaging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Durability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No message loss once acknowledged by server"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Messages delivered in order within a conversation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "End-to-end encrypted by default, zero-knowledge server"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Messages stored only until delivered across all devices"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "estimation-phase",
+      children: "Estimation Phase"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid over-engineering. Start simple, measure, then optimize."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Message Volume"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "100B messages/day = 1.16M messages/sec average"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Peak: 3-5x average during holidays ? ~5M messages/sec"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average message size: ~200 bytes (text) + media attachments"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Text data: 100B × 200 bytes = 20TB/day = 7.3PB/year"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media: billions of images/videos per day, ~500MB-1PB/day depending on compression"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Connection Management"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "2B users, ~30% online concurrently at peak = 600M concurrent connections"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each connection: TCP socket (~20KB kernel memory) + app state (~50KB) = ~70KB"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total server memory for connections: 600M × 70KB ˜ 42TB"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At 100K connections per server: 6,000 servers for connection handling alone"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "FreeBSD kqueue handles 1M+ connections per well-tuned machine ? ~600 servers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Storage Per User"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average conversation history: ~500MB over lifetime (text + media)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "2B users × 500MB = 1EB total storage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each user's last 30 days of messages stored on server for multi-device sync"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Active users (~1.5B): 1.5B × 50MB (30 days text) ˜ 75PB hot storage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media stored in CDN/object store, deduplicated per hash"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bandwidth"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1.16M msg/sec × 200 bytes = 232 MB/sec text"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media adds 10-50x more bandwidth"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total outbound: ~10-50 Gbps per datacenter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-datacenter replication: multiply by replication factor"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "high-level-design-phase",
+      children: "High-Level Design Phase"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always articulate trade-offs clearly ? interviewers value reasoning over the \"right\" answer."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The architecture evolved through distinct phases. Understanding the evolution is as important as the final design."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 1: Erlang/ejabberd (XMPP)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WhatsApp was founded in 2009 using ejabberd, an Erlang-based XMPP server. Erlang's actor model (lightweight processes, message passing, supervision trees) was a natural fit for messaging. Each user session was an Erlang process. XMPP provided XML-based messaging, presence, and roster management out of the box."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Limitations discovered at scale:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "XMPP's XML parsing overhead became significant at billions of messages"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "XML payloads added 5-10x overhead to message size"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "XMPP extension complexity (XEPs) became unmanageable"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The ejabberd single-node queue model created bottlenecks"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 2: Custom C++ Server with FreeBSD kqueue"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WhatsApp replaced ejabberd with a custom C++ server designed for maximum connection density. FreeBSD's kqueue event notification system was chosen over Linux epoll because:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "kqueue supports one-shot notifications (edge-triggered, no re-registration)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Better handling of 1M+ concurrent connections with lower CPU overhead"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Superior sendfile integration for zero-copy data transfer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The team had deep FreeBSD expertise (Jan Koum and Brian Acton came from Yahoo!)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The custom server architecture:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client Device ? (Persistent TCP/WebSocket) ? WhatsApp Server (C++, FreeBSD)\n  +-- Connection Manager (kqueue event loop, multiplexed sockets)\n  +-- Session Manager (user state, presence, routing table)\n  +-- Message Router (inbox routing, group fan-out, offline queue)\n  +-- Media Handler (upload proxy, thumbnail generation)\n  +-- Storage Layer (MyRocks, custom message store)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 3: Facebook Infrastructure (Post-2014)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After the Facebook acquisition, WhatsApp migrated some backends to Facebook's infrastructure stack:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Custom message store maintained but backed by Facebook's TAO (graph) and MyRocks (RocksDB + MySQL)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ML models for spam detection using Facebook's AI infrastructure"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Content delivery via Facebook's global CDN network"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Infrastructure monitoring via Facebook's operational tooling"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Current Architecture (2024+)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph Client Layer\n        D1[Device 1]\n        D2[Device 2]\n        D3[Device N]\n    end\n\n    subgraph Edge Layer\n        LB[Load Balancer]\n        WS[WebSocket Gateway]\n        TCP[TCP Connection Manager]\n    end\n\n    subgraph Service Layer\n        R[Message Router]\n        SM[Session Manager]\n        P[Presence Service]\n        G[Group Service]\n        M[Media Service]\n    end\n\n    subgraph Storage Layer\n        MS[(Message Store<br/>MyRocks)]\n        MD[(Metadata DB<br/>Cassandra)]\n        OS[(Object Store<br/>Blob/CDN)]\n    end\n\n    subgraph Sync Layer\n        DS[Device Sync]\n        OQ[Offline Queue]\n    end\n\n    D1 --> LB\n    D2 --> LB\n    D3 --> LB\n    LB --> TCP\n    LB --> WS\n    TCP --> R\n    WS --> R\n    R --> SM\n    R --> P\n    R --> G\n    R --> M\n    R --> MS\n    R --> MD\n    R --> DS\n    R --> OQ\n    M --> OS\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deep-dive-phase",
+      children: "Deep Dive Phase"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Message Store Design"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WhatsApp's message store is one of the least documented but most critical components. It must handle 100B messages/day while supporting:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Per-user inbox/outbox with ordered message retrieval"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-device sync (read from any device)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Offline message queueing with per-message delivery status"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deletion for everyone (\"unsend\")"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message expiration (disappearing messages)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The store uses a custom MyRocks (RocksDB + MySQL) deployment with a specific schema designed for message ordering:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "CREATE TABLE messages (\n    user_id BIGINT NOT NULL,          -- recipient\n    conversation_id BIGINT NOT NULL,  -- 1:1 or group identifier\n    message_id BIGINT NOT NULL,       -- Snowflake-style global ID\n    sender_id BIGINT NOT NULL,\n    content_type TINYINT NOT NULL,    -- 0=text, 1=image, 2=video, 3=audio, 4=doc\n    content_hash VARCHAR(64),         -- for media messages, references blob store\n    encryption_key_id INT,            -- which pre-key bundle was used\n    ciphertext BLOB NOT NULL,         -- Double Ratchet encrypted payload\n    server_timestamp BIGINT NOT NULL,\n    expires_at BIGINT,                -- NULL for permanent, epoch for disappearing\n    delivery_status TINYINT DEFAULT 0,-- 0=sent, 1=delivered, 2=read\n    PRIMARY KEY (user_id, conversation_id, message_id)\n) PARTITION BY HASH(user_id) PARTITIONS 1024;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The partition key is ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "user_id"
+      }), ", ensuring all messages for a user are on the same physical shard. The compound primary key enables efficient range scans: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SELECT * FROM messages WHERE user_id = ? AND conversation_id = ? ORDER BY message_id DESC LIMIT 50"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "RocksDB's LSM-tree architecture provides excellent write throughput — critical for the spikey write patterns of messaging. Writes are sequential (append to memtable), and the sorted nature of the primary key means reads within a conversation are fast range scans on the same SST files."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For disappearing messages, the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "expires_at"
+      }), " column enables a background compaction process. RocksDB's compaction filters can drop expired messages during normal compaction cycles, making deletion essentially free — the expired data is simply not written to the next SST level."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Connection Management at Scale"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WhatsApp maintains a persistent TCP connection with each device. When the app is in the foreground, the connection is active. When backgrounded, the OS may suspend it, but WhatsApp uses platform-specific push APIs (FCM on Android, APNs on iOS) to wake the app."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The connection multiplexer on the server handles 100K-1M connections per machine:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct connection {\n    int fd;                    // socket descriptor\n    uint64_t user_id;          // identifier for routing\n    struct sockaddr_in6 addr;  // client address\n    uint8_t state;             // CONNECTED, AUTHENTICATED, DISCONNECTING\n    uint8_t *read_buf;         // read buffer (64KB)\n    queue<message_t> outbox;   // pending outgoing messages\n    uint64_t last_active;      // timestamp for keepalive\n    uint8_t device_id;         // which device on the account\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The kqueue event loop registers all socket descriptors and uses ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "kevent()"
+      }), " with EV_ONESHOT. Each event is dispatched to a worker thread pool. The one-shot mode means the event must be re-registered after processing, providing natural rate limiting and fairness across connections."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Connection affinity is achieved through DNS-based routing. Each user is mapped to a connection server via a consistent hash of their phone number (pre-decimalization) or user ID. This ensures all messages for a user route to the server holding their connection state."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WebSocket is used as a fallback for networks that block non-standard ports or have aggressive NAT timeouts. The protocol negotiation works:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client attempts TCP connection on port 5222 (custom protocol)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If connection fails or times out, fall back to WebSocket on port 443"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "WebSocket connection uses standard TLS and passes through proxy/firewall"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Long-polling is the last resort for severely degraded networks (e.g., China where WebSocket connections may be interrupted). The client polls for new messages every N seconds, and the server either responds immediately with queued messages or holds the connection open until a message arrives or timeout."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Message Fan-Out Strategy"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Message routing is the core architectural decision. The three strategies are:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fan-on-Write (Small Groups)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For 1:1 chats and groups with fewer than 32 members, when Alice sends a message:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server receives the message from Alice's connection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server writes one copy to Alice's outbox table"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server writes one copy to each recipient's inbox table"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server finds recipient connections and pushes messages"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This is called \"fan-on-write\" because the work happens at write time. The inbox/outbox pattern is a classic database design from email systems. Each user has an inbox (messages addressed to them) and an outbox (messages they sent). The inbox acts as a message queue per user."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For a group of 32 members, one message produces 32 inbox writes plus the sender's outbox write. This is acceptable for small groups but becomes prohibitive for large groups."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fan-on-Read (Large Groups)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For groups with 1024 members (WhatsApp's limit), fan-on-write would require 1024 inbox writes per message. Instead:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server writes the message once to a group timeline (shared ordered log)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each member reads from the group timeline independently"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The timeline is indexed by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(group_id, message_id)"
+        }), " for efficient range queries"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This is \"fan-on-read\": the write cost is O(1), but the read cost scales with group size. Each member must poll or be notified to read new messages from the timeline."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hybrid (Medium Groups)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For groups of 32-256 members, WhatsApp uses a hybrid approach:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message is written to the group timeline (one write)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Active members (currently connected) receive the message via their persistent connection with a \"new message in group X\" notification"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The notification includes the group_id and message_id"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The client reads the actual content from the group timeline on demand"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inactive members discover the message when they reconnect and sync"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This hybrid approach:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reduces write amplification (one write per message instead of N)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Eliminates read amplification for active members (pushed via connection)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Provides exactly-once delivery semantics via message IDs and deduplication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles bursty group activity without write-storming the inbox table"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "message_id Generation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Message IDs must be globally unique, monotonically increasing, and sortable by time. WhatsApp uses a 64-bit ID similar to Snowflake:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Bits"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Field"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "41"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timestamp"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Milliseconds since epoch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server ID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data center + server within data center"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-server monotonic counter"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The 41-bit timestamp covers ~69 years. The 10-bit server ID supports 1024 servers. The 12-bit sequence allows 4096 messages per millisecond per server — sufficient for peak rates."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "End-to-End Encryption"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WhatsApp uses the Signal Protocol for end-to-end encryption. The protocol has three layers:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "X3DH Key Agreement"
+      }), " (Extended Triple Diffie-Hellman):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each user generates a long-term Curve25519 identity key pair ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(IK_A, IK_B)"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each user pre-generates a set of signed pre-keys ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(SPK_A, SPK_B)"
+        }), " and one-time pre-keys ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(OPK_B)"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When Alice wants to message Bob for the first time, she fetches Bob's pre-key bundle from the server"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Alice performs a DH exchange: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "DH(IK_A, SPK_B) || DH(EK_A, IK_B) || DH(EK_A, SPK_B) || DH(EK_A, OPK_B)"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The resulting shared secret ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SK"
+        }), " is used as the root key for the Double Ratchet"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bob's OPK is consumed (server deletes it) to prevent replays"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The server is a \"directory service\" for pre-keys. It stores users' identity keys and pre-key bundles but cannot decrypt messages because it does not know any private keys."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Double Ratchet"
+      }), " (Per-Message Keys):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["After X3DH establishes the root key ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RK"
+        }), ", both sides initialize a sending ratchet and a receiving ratchet"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each message derives a new message key using a KDF chain:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Root Key (RK) ? Chain Key (CK) ? Message Key (MK)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The Diffie-Hellman ratchet provides forward secrecy: if a chain key is compromised, past message keys cannot be recovered"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The symmetric ratchet provides \"break-in recovery\": after compromise, a DH exchange with new ephemeral keys re-establishes security"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each message includes the sender's current ephemeral public key and a message number"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For a conversation with 100 messages per day, the double ratchet produces 200 new keys per day (one per message in each direction). The storage per conversation is minimal — just the current state of each ratchet chain."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Secure Group Messaging"
+      }), " (Sender Keys):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For groups, WhatsApp uses the Sender Key protocol (a push from the Signal Protocol)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each sender maintains a symmetric \"sender key\" for each group they belong to"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The sender key is distributed to all group members out-of-band (encrypted with pairwise double ratchet sessions)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When Alice sends a group message, she encrypts with her sender key, and all recipients can decrypt"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When a member joins or leaves, all members generate new sender keys and distribute them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This is more efficient than pairwise encryption: O(1) encryption per message (sender encrypts once) instead of O(N) (encrypt for each recipient)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Group Chat"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Group management is a significant engineering challenge at WhatsApp's scale:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Group Creation and Membership"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["A group is created with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(group_id, creator_uid, member_set, admin_set, group_name, avatar, created_at)"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Membership is stored as a sorted set in the metadata database"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Group updates (add/remove member, change name) are themselves encrypted messages with a special system message type"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "System messages are processed by clients to update local group state"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Message History for New Members"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When a new member joins, they see only messages sent after joining"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The group timeline stores messages by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(group_id, message_id, server_timestamp)"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "New members start reading from their join timestamp"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For \"history on join\" scenarios, the server replays the last N messages from the timeline"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Admin Operations"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Admin-only messaging (only admins can send)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Member approval (new members require admin approval)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Temporary groups (disappearing after event)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Group invite links (tokens that grant membership)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Spam and Abuse Detection"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "At 100B messages/day, spam detection must be automated, real-time, and privacy-preserving (messages are end-to-end encrypted, so content inspection is impossible). WhatsApp's approach relies entirely on metadata and behavioral patterns:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Behavioral signals"
+        }), ": Rate of new group creation, frequency of messaging unknown contacts, blast radius (how many non-contacts receive messages from a single user)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Account age"
+        }), ": New accounts that immediately broadcast to 100+ recipients are flagged. Phone numbers registered within the last 24 hours are restricted to messaging only contacts saved in the address book."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Forwarding limits"
+        }), ": Labeled forwarding (\"Forwarded many times\") is applied after a message chain exceeds 5 hops. Forwarding is restricted to one chat at a time after 100+ forwards."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hardware attestation"
+        }), ": Android SafetyNet and iOS DeviceCheck attestations during registration prevent automated bulk account creation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IP-based clustering"
+        }), ": Multiple registrations from the same IP range are correlated and flagged for manual review."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The detection pipeline computes a per-user abuse score every 5 minutes using a gradient-boosted model trained on labeled abuse patterns. Features include: messages per hour, unique recipients per day, groups joined per hour, and account age in hours. Users above threshold are \"shadow banned\" — their messages are delivered normally, but they are not notified of the restriction. This prevents abuse pattern adaptation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Two-Phase Registration"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Registration at WhatsApp scale requires defending against SMS verification abuse, SIM swapping, and bulk account creation:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SMS verification"
+        }), ": 6-digit code sent via carrier SMS, valid for 5 minutes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Voice fallback"
+        }), ": Automated voice call reads the code if SMS is not delivered within 60 seconds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Rate limits"
+        }), ": Maximum 3 verification attempts per phone number per hour."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VoIP blocking"
+        }), ": Phone numbers from known VoIP carriers (Google Voice, TextNow) are blocked."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CAPTCHA"
+        }), ": Presented after repeated SMS delivery failures to prevent automated abuse of the voice fallback channel."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Media Sharing"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Media messages follow a different flow than text:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Alice selects an image and presses send"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The WhatsApp client uploads the image to blob storage (CDN) via a direct HTTPS upload"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The upload generates an encrypted blob with an expiring URL (valid for 1 hour)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The server stores a mapping: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(media_hash ? encrypted_blob_url, thumbnail_url)"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The message sent to Bob contains only the media hash, encryption key (from Double Ratchet), and thumbnail"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bob's client receives the message, resolves the media hash to the CDN URL, and downloads the encrypted blob"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Image compression happens on-device before upload:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Images are compressed to ~100-200KB (from multi-MB originals)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resolution is reduced to 1600px on the longest edge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "WebP format for supported devices"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thumbnails (100x100) are generated client-side for inline preview"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Video compression:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Limited to 16MB (earlier) now extended to 2GB for some regions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "H.264 encoding, 30fps, resolution capped at 720p for standard, 1080p for HD"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Streaming for large videos: byte-range requests from CDN"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Last Seen, Typing Indicators, Read Receipts"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Presence information is a real-time pub-sub problem:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each user's presence state is maintained in Redis: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "presence:{user_id} ? {status, last_seen, device_list}"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When a user connects, their online status is published to a Redis pub-sub channel"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Subscribers (contacts who have the user in their address book) receive the presence update via their persistent connection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For large contact lists (up to 1000 contacts), presence is aggregated: the server batches presence updates and sends a single batch message"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Typing indicators:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client sends a \"typing\" event on every keystroke (but throttled to 1 per 2 seconds)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server routes to the conversation partner's connection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No persistence — purely in-memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Automatically expires after 5 seconds of inactivity"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Read receipts:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each message has a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(message_id, recipient_id, status)"
+        }), " tracking record"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Status states: SENT, DELIVERED, READ"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DELIVERED is set when the message reaches the recipient's device"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "READ is set when the recipient opens the conversation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read receipts for groups: batched — one update per N receipts"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Offline Messages"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When a user is offline, messages are stored server-side. The design:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each user has a message queue (inbox) in the message store"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Messages are kept for 30 days (or until delivered across all devices)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The queue stores the last ~1000 messages per conversation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When the user reconnects, the server sends queued messages in order"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Messages older than 30 days are deleted from the queue"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media URLs expire; for very old offline messages, the client receives a notification but the media must be re-uploaded by the sender"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The sync protocol on reconnection:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client sends its last known message ID per conversation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server replies with all messages after that ID for each conversation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Messages are sent in batch, ordered by server timestamp"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client processes messages, decrypts, and renders"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client acknowledges delivery with the last received message ID"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server marks messages as delivered and may remove from offline queue"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multi-Device Support"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-device support (added 2021) eliminated the requirement for the phone to stay connected. The architecture:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each device generates its own Curve25519 identity key pair (Ed25519 for signing)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary device maintains the account identity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Secondary devices are linked via QR code scan (encrypted channel)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each device maintains its own ratchet state with each conversation partner"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The server maintains a device list per user: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "devices:{user_id} ? [{device_id, identity_key, signed_pre_key, ...}]"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Message delivery with multi-device:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When Alice sends a message from Device 1, the server delivers it to Bob's Device 1, Device 2, etc."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Alice's other devices also receive the message via the server (for sync)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each device independently decrypts using its own ratchet state"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The server is responsible for fan-out across devices"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "History sync:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When a new device is linked, it receives the last ~3 months of conversation history"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "History is sent as encrypted batches from the primary device"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media thumbnails are included; full media is downloaded on demand"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "case-study-whatsapp-message-delivery-pipeline",
+      children: "Case Study: WhatsApp Message Delivery Pipeline"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Message queues decouple producers from consumers, enabling resilient async architectures."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "requirements",
+      children: "Requirements"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Design the message delivery path for a 1:1 message from Alice (India) to Bob (Brazil). Both are online. The system must deliver in <100ms across continents."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "high-level-design",
+      children: "High-Level Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Alice's Phone (Mumbai, India)\n  ? (TCP connection, encrypted with Double Ratchet)\n  ?\nMumbai Connection Server (CS-IN-42)\n  ? (internal RPC)\n  ?\nMessage Router (determines Bob is on CS-BR-17)\n  ? (internal RPC, data center hop via Facebook backbone)\n  ?\nSao Paulo Connection Server (CS-BR-17)\n  ? (TCP push, encrypted)\n  ?\nBob's Phone (Sao Paulo, Brazil)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deep-dive",
+      children: "Deep Dive"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The message router maintains a distributed hash table mapping ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "user_id ? connection_server"
+      }), ". This is stored in a consistent hash ring backed by ZooKeeper. When Alice sends a message:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CS-IN-42 receives the encrypted payload. It does not decrypt — the server is zero-knowledge for message content."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CS-IN-42 looks up Bob's connection server. If Bob is online in the same server, routing is local. If on a different server (as in our cross-continent case), it routes via the internal RPC network."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The RPC uses a custom binary protocol over TCP (not HTTP) to minimize overhead."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The datacenter-to-datacenter link runs over Facebook's private backbone (not the public internet), ensuring predictable latency."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CS-BR-17 receives the message, looks up Bob's current connection, and pushes the encrypted payload directly to Bob's TCP socket."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Total latency budget:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Alice ? Mumbai CS: 5ms (local mobile network)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mumbai CS ? Router: 1ms (in-datacenter)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Router lookup: <1ms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mumbai ? Sao Paulo RPC: 80ms (transatlantic backbone)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sao Paulo CS ? Bob: 5ms (local mobile network)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total: ~92ms — under the 100ms target"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: ""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "implementation-whatsapp-architecture-case-study",
+      children: "Implementation: WhatsApp Architecture Case Study"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class WhatsAppSimulator {\n  private users = new Map<string, { status: \"online\" | \"offline\"; lastSeen: number }>();\n  private messages = new Map<string, { id: string; from: string; to: string; text: string; ts: number; delivered: boolean; read: boolean }[]>();\n  private groups = new Map<string, { name: string; members: Set<string>; messages: any[] }>();\n  connectUser(id: string): void { this.users.set(id, { status: \"online\", lastSeen: Date.now() }); }\n  disconnectUser(id: string): void { const u = this.users.get(id); if (u) { u.status = \"offline\"; u.lastSeen = Date.now(); } }\n  sendMessage(from: string, to: string, text: string): { id: string; ts: number } {\n    const key = [from, to].sort().join(\":\"); if (!this.messages.has(key)) this.messages.set(key, []);\n    const msg = { id: `msg-${Date.now()}`, from, to, text, ts: Date.now(), delivered: false, read: false };\n    this.messages.get(key)!.push(msg); return { id: msg.id, ts: msg.ts }; }\n  getConversation(user1: string, user2: string, limit = 50): any[] {\n    const key = [user1, user2].sort().join(\":\"); return (this.messages.get(key) || []).slice(-limit); }\n  markDelivered(msgId: string): void { for (const msgs of this.messages.values()) { const m = msgs.find(m => m.id === msgId); if (m) { m.delivered = true; break; } } }\n  markRead(msgId: string): void { for (const msgs of this.messages.values()) { const m = msgs.find(m => m.id === msgId); if (m) { m.read = true; break; } } }\n  createGroup(name: string, creator: string): string { const id = `group-${Date.now()}`; this.groups.set(id, { name, members: new Set([creator]), messages: [] }); return id; }\n  addToGroup(groupId: string, userId: string): void { this.groups.get(groupId)?.members.add(userId); }\n  sendGroupMessage(groupId: string, from: string, text: string): void { const g = this.groups.get(groupId); if (g && g.members.has(from)) g.messages.push({ from, text, ts: Date.now() }); }\n}\nclass EndToEndEncryption { generateKeys(): { pub: string; priv: string } { return { pub: `pk-${Math.random().toString(36).slice(2)}`, priv: `sk-${Math.random().toString(36).slice(2)}` }; } }\nclass MediaSharing { estimateUploadTime(fileSizeMB: number, bandwidthMbps: number): number { return (fileSizeMB * 8) / bandwidthMbps; }\n  compressImage(width: number, height: number, quality: number): { width: number; height: number; sizeReduction: number } { const newW = Math.round(width * quality); const newH = Math.round(height * quality); return { width: newW, height: newH, sizeReduction: 1 - quality }; } }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// case study whatsapp\n// distributed-systems-scalability implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'case study whatsapp', data: { topic: 'distributed-systems-scalability' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// case study whatsapp - additional TS implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\nprivate store: Map<string, CacheEntry> = new Map()\nconstructor(private defaultTTL: number = 60000) {}\nset(key: string, value: unknown, ttl?: number): void {\nthis.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n}\nget(key: string): unknown | undefined {\nconst entry = this.store.get(key)\nif (!entry) return undefined\nif (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\nreturn entry.value\n}\ndelete(key: string): boolean { return this.store.delete(key) }\nclear(): void { this.store.clear() }\nsize(): number { return this.store.size }\nkeys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\nprivate entries: string[] = []\nlog(level: string, msg: string, meta?: Record<string, unknown>): void {\nconst entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\nthis.entries.push(entry)\nconsole.log(entry)\n}\ninfo(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\nwarn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\nerror(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\ngetLogs(): string[] { return [...this.entries] }\nclear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\nlet hash = 0\nfor (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\nreturn Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\nconst cache = new Cache(5000)\ncache.set('key1', 'system-design demo')\nconst log = new Logger()\nlog.info('Cache demo started', { course: 'system-design', chapter: 'case study whatsapp' })\nconst v = cache.get(\"key1\")\nconsole.log('Cached:', v)\nconsole.log('Hash:', computeHash('system-design'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Persistent TCP connections with FreeBSD kqueue handle 1M+ concurrent connections per server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Custom binary protocol eliminates XML overhead of the original XMPP design"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hybrid fan-out strategy scales from 1:1 to 1024-member groups"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Signal Protocol (X3DH + Double Ratchet) provides end-to-end encryption with forward secrecy"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server is zero-knowledge: messages are encrypted before reaching the server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-device sync uses per-device identity keys and independent ratchet states"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Offline messages are queued per-user and delivered on reconnection with sync protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Facebook's private backbone provides predictable cross-region latency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media is uploaded directly to CDN; messages contain only hashes and encryption keys"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Presence and typing indicators use Redis pub-sub with throttling and aggregation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Concept Comparison is a critical concept that directly impacts system design decisions."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Metric"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core topic covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Defined by specific measurable attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Case Study: WhatsApp Message Delivery Pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core topic covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Defined by specific measurable attributes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick Reference is a critical concept that directly impacts system design decisions."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fundamental concept for Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Case Study: WhatsApp Message Delivery Pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fundamental concept for Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When to Use"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Appropriate for specific system contexts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each choice involves trade-offs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Case Study: WhatsApp Message Delivery Pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Appropriate for specific system contexts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each choice involves trade-offs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Options"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the primary architectural advantage of using FreeBSD kqueue over Linux epoll for WhatsApp's connection servers?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Better XML parsing, B) One-shot notifications with lower CPU overhead, C) Built-in TLS support, D) Superior load balancing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which fan-out strategy does WhatsApp use for groups with 32-256 members?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Pure fan-on-write, B) Pure fan-on-read, C) Hybrid (timeline write + active member push), D) Broadcast to all devices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "How does the Double Ratchet algorithm provide forward secrecy?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) By using static keys that never change, B) By deriving new message keys from a KDF chain where past keys cannot be recovered, C) By encrypting messages twice, D) By storing keys on the server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the primary limitation of WhatsApp's current disappearing messages implementation?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Messages cannot be recovered, B) Deletion relies on client cooperation and a malicious client could save messages, C) Only works for text, D) Requires both users to be online"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "How does WhatsApp handle media sharing without exposing content to the server?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) The server encrypts media before storage, B) Media is uploaded directly to CDN and messages carry only hashes and encryption keys, C) Media is sent peer-to-peer only, D) Media is never stored on servers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-message-fan-out-e2e-encryption-and-presence-tracker",
+      children: "TypeScript: Message Fan-Out, E2E Encryption, and Presence Tracker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class MessageFanOut {\n  private groupMembers = new Map<string, string[]>();\n  private readonly fanOutThreshold = 1024;\n\n  createGroup(groupId: string, members: string[]): void { this.groupMembers.set(groupId, members); }\n\n  async sendMessage(groupId: string, senderId: string, content: string): Promise<{ strategy: string; deliveries: number }> {\n    const members = this.groupMembers.get(groupId) ?? [];\n    const recipients = members.filter(m => m !== senderId);\n    const strategy = recipients.length <= this.fanOutThreshold ? \"fan-on-write\" : \"fan-on-read\";\n    return { strategy, deliveries: recipients.length };\n  }\n}\n\nclass SignalProtocol {\n  private keyPairs = new Map<string, { pub: string; priv: string }>();\n  private sessions = new Map<string, { rootKey: string; chainKey: string; ratchetKey: string }>();\n\n  generateKeyPair(): { pub: string; priv: string } {\n    const pub = `pub-${Math.random().toString(36).slice(2, 10)}`;\n    const priv = `priv-${Math.random().toString(36).slice(2, 10)}`;\n    this.keyPairs.set(pub, { pub, priv });\n    return { pub, priv };\n  }\n\n  x3dhInitiate(recipientPubKey: string): { ephemeralKey: string; sharedSecret: string } {\n    const ephemeral = this.generateKeyPair();\n    const sharedSecret = `derived-${recipientPubKey}-${ephemeral.pub}`;\n    this.sessions.set(recipientPubKey, { rootKey: sharedSecret, chainKey: sharedSecret, ratchetKey: ephemeral.pub });\n    return { ephemeralKey: ephemeral.pub, sharedSecret };\n  }\n\n  doubleRatchetEncrypt(sessionKey: string, plaintext: string): string {\n    const session = this.sessions.get(sessionKey);\n    if (!session) throw new Error(\"No session\");\n    const msgKey = this.kdf(session.chainKey, \"message\");\n    session.chainKey = this.kdf(session.chainKey, \"chain\");\n    const ciphertext = this.xor(plaintext, msgKey);\n    return `encrypted(${ciphertext})`;\n  }\n\n  doubleRatchetDecrypt(sessionKey: string, ciphertext: string): string {\n    const session = this.sessions.get(sessionKey);\n    if (!session) throw new Error(\"No session\");\n    const msgKey = this.kdf(session.chainKey, \"message\");\n    session.chainKey = this.kdf(session.chainKey, \"chain\");\n    const stripped = ciphertext.replace(\"encrypted(\", \"\").replace(\")\", \"\");\n    return this.xor(stripped, msgKey);\n  }\n\n  private kdf(key: string, purpose: string): string { return `kdf(${key}|${purpose})`; }\n  private xor(a: string, b: string): string { return [...a].map((c, i) => String.fromCharCode(c.charCodeAt(0) ^ b.charCodeAt(i % b.length))).join(\"\"); }\n}\n\nclass PresenceTracker {\n  private presence = new Map<string, { status: \"online\" | \"offline\" | \"away\"; lastSeen: number }>();\n  private watchers = new Map<string, Set<string>>();\n\n  setStatus(userId: string, status: \"online\" | \"offline\" | \"away\"): void {\n    this.presence.set(userId, { status, lastSeen: Date.now() });\n    for (const watcher of this.watchers.get(userId) ?? []) {\n      this.notify(watcher, userId, status);\n    }\n  }\n\n  watch(watcherId: string, targetId: string): void {\n    if (!this.watchers.has(targetId)) this.watchers.set(targetId, new Set());\n    this.watchers.get(targetId)!.add(watcherId);\n  }\n\n  getStatus(userId: string): { status: string; lastSeen: number } {\n    return this.presence.get(userId) ?? { status: \"offline\", lastSeen: 0 };\n  }\n\n  private notify(watcherId: string, userId: string, status: string): void {\n    console.log(`[Presence] Notify ${watcherId}: ${userId} is ${status}`);\n  }\n}\n\n### TypeScript: Chat Server, Message Store, and Advanced Presence\n\n```typescript\nclass ChatServer {\n  private connections = new Map<string, WebSocket>();\n  private messageQueues = new Map<string, string[]>();\n  private onlineStatus = new Set<string>();\n\n  connect(userId: string, ws: WebSocket): void {\n    this.connections.set(userId, ws);\n    this.onlineStatus.add(userId);\n    this.broadcastStatus(userId, \"online\");\n    this.flushQueue(userId);\n  }\n\n  disconnect(userId: string): void {\n    this.connections.delete(userId);\n    this.onlineStatus.delete(userId);\n    this.broadcastStatus(userId, \"offline\");\n  }\n\n  relayMessage(from: string, to: string, content: string): boolean {\n    const target = this.connections.get(to);\n    if (target) {\n      target.send(JSON.stringify({ from, content, ts: Date.now() }));\n      return true;\n    }\n    if (!this.messageQueues.has(to)) this.messageQueues.set(to, []);\n    this.messageQueues.get(to)!.push(JSON.stringify({ from, content, ts: Date.now(), queued: true }));\n    return false;\n  }\n\n  private flushQueue(userId: string): void {\n    const queue = this.messageQueues.get(userId) ?? [];\n    const ws = this.connections.get(userId);\n    if (ws) {\n      for (const msg of queue) ws.send(msg);\n      this.messageQueues.delete(userId);\n    }\n  }\n\n  private broadcastStatus(userId: string, status: string): void {\n    for (const [uid, ws] of this.connections) {\n      if (uid !== userId) ws.send(JSON.stringify({ type: \"presence\", userId, status }));\n    }\n  }\n\n  isOnline(userId: string): boolean { return this.onlineStatus.has(userId); }\n}\n\ninterface WebSocket { send(data: string): void; }\n\nclass MessageStore {\n  private conversations = new Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]>();\n  private crdtCounters = new Map<string, Map<string, number>>();\n  private lastSeen = new Map<string, Map<string, number>>();\n\n  appendMessage(conversationId: string, msg: { id: string; from: string; to: string; text: string; ts: number }): number {\n    if (!this.conversations.has(conversationId)) {\n      this.conversations.set(conversationId, []);\n      this.crdtCounters.set(conversationId, new Map());\n    }\n    const conv = this.conversations.get(conversationId)!;\n    const counters = this.crdtCounters.get(conversationId)!;\n    const seq = (counters.get(msg.from) ?? 0) + 1;\n    counters.set(msg.from, seq);\n    conv.push({ ...msg, seq });\n    return seq;\n  }\n\n  mergeRemote(conversationId: string, remoteMessages: { id: string; from: string; to: string; text: string; ts: number; seq: number }[]): number {\n    if (!this.conversations.has(conversationId)) this.conversations.set(conversationId, []);\n    const conv = this.conversations.get(conversationId)!;\n    const existingIds = new Set(conv.map(m => m.id));\n    let merged = 0;\n    for (const msg of remoteMessages) {\n      if (!existingIds.has(msg.id)) {\n        conv.push(msg);\n        existingIds.add(msg.id);\n        merged++;\n      }\n    }\n    conv.sort((a, b) => a.ts - b.ts);\n    return merged;\n  }\n\n  getMessages(conversationId: string, sinceTs?: number, limit = 50): { id: string; from: string; to: string; text: string; ts: number; seq: number }[] {\n    const conv = this.conversations.get(conversationId) ?? [];\n    const filtered = sinceTs ? conv.filter(m => m.ts > sinceTs) : conv;\n    return filtered.slice(-limit);\n  }\n\n  updateLastSeen(conversationId: string, userId: string, ts: number): void {\n    if (!this.lastSeen.has(conversationId)) this.lastSeen.set(conversationId, new Map());\n    this.lastSeen.get(conversationId)!.set(userId, ts);\n  }\n\n  getLastSeen(conversationId: string, userId: string): number {\n    return this.lastSeen.get(conversationId)?.get(userId) ?? 0;\n  }\n\n  getSyncPayload(userId: string, deviceLastSeen: Map<string, number>): Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]> {\n    const payload = new Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]>();\n    for (const [convId, conv] of this.conversations) {\n      if (conv.some(m => m.from === userId || m.to === userId)) {\n        const since = deviceLastSeen.get(convId) ?? 0;\n        const recent = conv.filter(m => m.ts > since);\n        if (recent.length > 0) payload.set(convId, recent);\n      }\n    }\n    return payload;\n  }\n}\n\nclass AdvancedPresenceTracker {\n  private status = new Map<string, { state: \"online\" | \"offline\" | \"typing\"; lastHeartbeat: number; deviceList: string[] }>();\n  private subscriptions = new Map<string, Set<string>>();\n  private readonly heartbeatTimeout = 30000;\n  private readonly typingTimeout = 5000;\n\n  setStatus(userId: string, state: \"online\" | \"offline\" | \"typing\", deviceId?: string): void {\n    const prev = this.status.get(userId) ?? { state: \"offline\" as const, lastHeartbeat: 0, deviceList: [] };\n    if (state === \"online\" && deviceId && !prev.deviceList.includes(deviceId)) prev.deviceList.push(deviceId);\n    prev.state = state;\n    prev.lastHeartbeat = Date.now();\n    this.status.set(userId, prev);\n    this.publish(userId, state);\n  }\n\n  subscribe(watcherId: string, targetId: string): void {\n    if (!this.subscriptions.has(targetId)) this.subscriptions.set(targetId, new Set());\n    this.subscriptions.get(targetId)!.add(watcherId);\n  }\n\n  unsubscribe(watcherId: string, targetId: string): void {\n    this.subscriptions.get(targetId)?.delete(watcherId);\n  }\n\n  handleHeartbeat(userId: string): boolean {\n    const entry = this.status.get(userId);\n    if (!entry) return false;\n    entry.lastHeartbeat = Date.now();\n    if (entry.state === \"offline\") {\n      entry.state = \"online\";\n      this.publish(userId, \"online\");\n    }\n    return true;\n  }\n\n  checkTimeouts(): string[] {\n    const now = Date.now();\n    const timedOut: string[] = [];\n    for (const [userId, entry] of this.status) {\n      if (entry.state === \"online\" && now - entry.lastHeartbeat > this.heartbeatTimeout) {\n        if (entry.state === \"typing\") entry.state = \"online\";\n        else {\n          entry.state = \"offline\";\n          timedOut.push(userId);\n          this.publish(userId, \"offline\");\n        }\n      }\n      if (entry.state === \"typing\" && now - entry.lastHeartbeat > this.typingTimeout) {\n        entry.state = \"online\";\n        this.publish(userId, \"online\");\n      }\n    }\n    return timedOut;\n  }\n\n  getStatus(userId: string): { state: string; lastHeartbeat: number; devices: string[] } {\n    const entry = this.status.get(userId);\n    return entry ? { state: entry.state, lastHeartbeat: entry.lastHeartbeat, devices: [...entry.deviceList] }\n      : { state: \"offline\", lastHeartbeat: 0, devices: [] };\n  }\n\n  private publish(userId: string, state: string): void {\n    const watchers = this.subscriptions.get(userId);\n    if (watchers) {\n      for (const w of watchers) {\n        console.log(`[Presence] ${w}: ${userId} is ${state}`);\n      }\n    }\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px\n    classDef server fill:#fff3e0,stroke:#f57c00,stroke-width:2px\n    classDef storage fill:#e8f5e9,stroke:#388e3c,stroke-width:2px\n    classDef msg fill:#fce4ec,stroke:#c62828,stroke-width:2px\n    classDef sync fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px\n\n    subgraph \"Client Devices\"\n        A[Alice Device 1<br/>Mumbai]:::client\n        A2[Alice Device 2<br/>Tablet]:::client\n        B[Bob Device<br/>Sao Paulo]:::client\n    end\n\n    subgraph \"Connection Layer\"\n        LB[Load Balancer<br/>DNS / Consistent Hash]:::server\n        CS1[Connection Server<br/>FreeBSD kqueue]:::server\n        CS2[Connection Server<br/>FreeBSD kqueue]:::server\n    end\n\n    subgraph \"Service Layer\"\n        R[Message Router]:::server\n        SM[Session Manager]:::server\n        GP[Group Service]:::server\n        PP[Presence Pub/Sub]:::server\n        MS[Media Service]:::server\n    end\n\n    subgraph \"Crypto Layer\"\n        X3DH[X3DH Key Agreement]:::msg\n        DR[Double Ratchet<br/>Per-Message Keys]:::msg\n        SK[Sender Key<br/>Group Messaging]:::msg\n    end\n\n    subgraph \"Storage\"\n        MSTORE[(Message Store<br/>MyRocks)]:::storage\n        META[(Metadata<br/>Cassandra)]:::storage\n        CDN[(Object Store<br/>CDN)]:::storage\n        REDIS[(Redis<br/>Presence Cache)]:::storage\n    end\n\n    subgraph \"Sync Layer\"\n        Dsync[Device Sync<br/>Per-Device Ratchets]:::sync\n        OQ[Offline Queue<br/>30-Day Retention]:::sync\n        HIS[History Sync<br/>3-Month Backfill]:::sync\n    end\n\n    A --> LB\n    A2 --> LB\n    B --> LB\n    LB --> CS1\n    LB --> CS2\n    CS1 --> R\n    CS2 --> R\n    R --> SM\n    R --> GP\n    R --> PP\n    R --> MS\n    SM --> X3DH\n    X3DH --> DR\n    DR --> SK\n    R --> MSTORE\n    R --> META\n    MS --> CDN\n    PP --> REDIS\n    R --> Dsync\n    R --> OQ\n    Dsync --> HIS\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Persistent TCP connections with kqueue achieve 1M+ connections/server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use kqueue/epoll with one-shot events for high-density connection servers; fall back to WebSocket through firewalls"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid fan-out reduces write amplification for group chats"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fan-on-write for groups <32, hybrid for 32-256, fan-on-read for >256 members"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "End-to-end encryption requires the server to be zero-knowledge"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use X3DH for initial key agreement, Double Ratchet for forward secrecy, Sender Keys for group efficiency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Message IDs need global uniqueness and temporal ordering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Snowflake-style 64-bit IDs: 41-bit timestamp + 10-bit server ID + 12-bit sequence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Offline queuing with 30-day retention balances storage vs availability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-user inbox with LRU eviction; sync protocol sends only messages after last-known ID"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-device requires per-device key pairs and independent ratchet states"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each device generates its own identity key; server maintains device list and fans out messages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Presence pub/sub with throttling prevents notification storms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redis pub-sub with 2-second typing throttle; batch presence updates for large contact lists"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "case-study-group-chat-fan-out-during-a-global-event",
+      children: "Case Study: Group Chat Fan-Out During a Global Event"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A WhatsApp group with 1,024 members (family/friends) is coordinating during a New Year's Eve celebration. Messages are flowing at 50 per minute during the countdown. The group uses the hybrid fan-out strategy: each message is written once to the group timeline, and active members (those connected to the server) receive a notification via their persistent TCP connection with the group ID and message ID. Inactive members (about 40% during the event's peak hour) discover messages when they reconnect and sync from the group timeline."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The server handles this load by maintaining the group timeline as a shared ordered log in MyRocks, indexed by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(group_id, message_id)"
+      }), ". Active members' connections are tracked in memory: when a new message arrives for the group, the message router looks up all connected members from the session manager and pushes notifications. Each notification is a lightweight message (~50 bytes) containing only the group ID and message ID. The client then fetches the actual content (which may include media attachments up to 16MB) from the CDN using an encrypted blob URL and the decryption key derived from the Double Ratchet."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The critical challenge is the write spike at midnight: expected message rate spikes to 500 messages in 60 seconds. The fan-on-read approach means the write cost is O(1) per message regardless of group size, so the MyRocks LSM-tree handles the burst easily. However, the notification fan-out to 600+ active members creates a notification burst of 500 × 600 = 300,000 push operations in 60 seconds. To prevent connection server overload, notifications are batched: the server queues notifications for 100ms windows and sends a single batch message with up to 50 message IDs. This reduces the per-connection push rate from ~500 pushes in 60 seconds to ~10 batch pushes, well within the capacity of a kqueue event loop handling 1M connections."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "case-study-multi-device-reconciliation-after-offline-period",
+      children: "Case Study: Multi-Device Reconciliation After Offline Period"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Alice returns from a 2-week hiking trip with no cellular service. During her offline period, Bob sent 200 messages and Alice's tablet (left at home, connected to WiFi) received and displayed all of them. Alice's phone has been offline for the entire 2 weeks. When Alice's phone reconnects to WhatsApp, it must reconcile 14 days of missed messages across all conversations while maintaining per-device encryption states."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The sync protocol begins with Alice's phone sending its last known message ID per conversation to the server. The server responds with all messages after those IDs, batched by conversation and ordered by server timestamp. For each conversation with Bob, the server sends the 200 messages Bob sent. Alice's phone independently decrypts each message using its own ratchet state (which has diverged from the tablet's ratchet state, because the tablet has already received messages and advanced its ratchet). The server also sends a device list for Alice's account showing that the tablet is active with its own device ID and identity key."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The key architectural insight is that each device maintains independent ratchet states with each conversation partner. Alice's phone's ratchet with Bob is paused at the state where Alice sent her last message before going offline. The server delivers Bob's 200 messages, and the Double Ratchet advances forward from the stored state. Alice's tablet, which received messages during the offline period, has a different ratchet state because it received the messages from the server with its own ratchet advancement. This per-device independence means device reconciliation is handled entirely server-side: the server fans out messages to all devices, and each device independently processes and decrypts them without needing to coordinate with other devices."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary-1",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "WhatsApp's architecture evolved from Erlang/ejabberd (XMPP) to custom C++ on FreeBSD with kqueue for maximum connection density"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message fan-out uses a three-tier strategy: fan-on-write for small groups, fan-on-read for large groups, hybrid for medium groups"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "End-to-end encryption with the Signal Protocol is mandatory for all content; the server has zero knowledge of message contents"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Persistent TCP connections with WebSocket fallback and long-polling as a last resort ensure connectivity across all network conditions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-device support uses independent Ed25519 key pairs per device, eliminating phone-as-hub dependency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Offline message storage is per-user with a 30-day retention window and batched delivery on reconnection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Media upload is client-to-CDN with encrypted blobs and expiring URLs — messages only carry hashes and decryption keys"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Presence and typing use Redis pub-sub with aggregation for large contact lists"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message IDs use a Snowflake-style 64-bit scheme for global uniqueness and temporal ordering"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system achieves <100ms median delivery latency across continents using Facebook's private backbone"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "1. **Fan-on-write** is better for small groups (≤32 members) because write amplification is proportional to group size but read is O(1). **Fan-on-read** is better for large groups (>1024) because write is O(1) but each member must read from the group timeline. The **hybrid approach** (32-256) writes once to timeline and pushes notifications to active members.\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        start: "2",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "X3DH"
+            }), " uses a Diffie-Hellman exchange combining Alice's identity key with Bob's signed pre-key and one-time pre-key, producing a shared secret the server cannot derive. The server acts as a directory service storing pre-key bundles but never learns private keys."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Diffie-Hellman ratchet"
+            }), " provides forward secrecy by generating new ephemeral keys for each message — compromising the current key does not reveal past message keys. The ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "symmetric ratchet"
+            }), " provides break-in recovery by continuously deriving new chain keys from the root key — after compromise, a new DH exchange re-establishes security."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "TCP"
+            }), " (port 5222, custom protocol) is the primary connection. ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "WebSocket"
+            }), " (port 443) falls back when networks block non-standard ports or have aggressive NAT timeouts. ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Long-polling"
+            }), " is the last resort for severely degraded networks where WebSocket connections are interrupted."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Multi-device"
+            }), " uses per-device Ed25519 identity key pairs. Each device independently establishes ratchet states with conversation partners. The server maintains a device list and fans out messages to all devices. No device acts as a relay for another."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "1. **Group Chat Fan-Out**: For 10,000 members, fan-on-write would require 10,000 inbox writes per message — prohibitive. Fan-on-read (O(1) write) is the only viable strategy. With 60% active, the read amplification of 6,000 reads per message is manageable using a group timeline with indexed range queries. Active members receive push notifications; inactive members sync on reconnect.\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        start: "2",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Media CDN"
+            }), ": Upload source to blob storage, trigger a transcoding pipeline that generates 5 quality tiers in parallel using FFmpeg workers. Generate thumbnail and GIF preview from the first keyframe. Make the lowest tier available immediately (<2 seconds) while higher tiers complete asynchronously. Use HLS with multiple quality variants."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Serverless WhatsApp"
+            }), ": Workable for low-volume messaging (<1M messages/day) with API Gateway WebSocket for connections, DynamoDB for message storage, and SQS for offline queuing. Breaks down at scale due to Lambda's 15-minute execution limit, lack of persistent connections for presence, and DynamoDB's limited fan-out capabilities."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n**Disappearing Messages with Cryptographic Enforcement**\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Design a time-based key hierarchy: Long-term identity keys → session keys (established via X3DH) → time-window keys (derived from epoch windows, e.g., 1-hour windows) → message keys. The server issues ephemeral decryption keys that expire after the configured time limit (24h–90d). The server encrypts each message with the current time-window key. When a recipient opens a message 1 minute before the window expires, they must fetch the next window's key before it is available — preventing early access. Backward compatibility requires clients that support time-window encryption to signal this capability during session establishment. If the server is compromised, an attacker cannot recover expired messages because the time-window keys for past windows are deleted by the server. However, an attacker who compromises the server at time T can read all messages whose time windows are still valid — a fundamental tension between server-enforced policies and zero-knowledge architecture."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

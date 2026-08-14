@@ -1,0 +1,1898 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[97970],{
+
+/***/ 38236
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_34_real_estate_md_57a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-34-real-estate-md-57a.json
+const site_docs_courses_laravel_34_real_estate_md_57a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/34-real-estate","title":"Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents","description":"Previous Legal & Compliance Agents","source":"@site/docs/courses/laravel/34-real-estate.md","sourceDirName":"courses/laravel","slug":"/laravel/34-real-estate","permalink":"/ai-engineering-journey/laravel/34-real-estate","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":34,"frontMatter":{"id":"34-real-estate","slug":"/laravel/34-real-estate","title":"Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents","sidebar_label":"Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents","sidebar_position":34},"sidebar":"course-laravel","previous":{"title":"Chapter 33: Customer Service & Support Agents","permalink":"/ai-engineering-journey/laravel/33-customer-service"},"next":{"title":"Chapter 35: Legal & Compliance Agents","permalink":"/ai-engineering-journey/laravel/35-legal"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/34-real-estate.md
+
+
+const frontMatter = {
+	id: '34-real-estate',
+	slug: '/laravel/34-real-estate',
+	title: 'Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents',
+	sidebar_label: 'Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents',
+	sidebar_position: 34
+};
+const contentTitle = 'Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "34.1 Real Estate Data Models",
+  "id": "341-real-estate-data-models",
+  "level": 3
+}, {
+  "value": "Migrations",
+  "id": "migrations",
+  "level": 4
+}, {
+  "value": "Eloquent Models",
+  "id": "eloquent-models",
+  "level": 4
+}, {
+  "value": "34.2 Property Listing Agents",
+  "id": "342-property-listing-agents",
+  "level": 3
+}, {
+  "value": "34.3 Valuation Prediction Agents",
+  "id": "343-valuation-prediction-agents",
+  "level": 3
+}, {
+  "value": "34.4 Tour Scheduling Automation",
+  "id": "344-tour-scheduling-automation",
+  "level": 3
+}, {
+  "value": "34.5 Document Processing Agents",
+  "id": "345-document-processing-agents",
+  "level": 3
+}, {
+  "value": "34.6 Lead Qualification Agents",
+  "id": "346-lead-qualification-agents",
+  "level": 3
+}, {
+  "value": "34.7 Market Analysis Agents",
+  "id": "347-market-analysis-agents",
+  "level": 3
+}, {
+  "value": "34.8 Rental Management Agents",
+  "id": "348-rental-management-agents",
+  "level": 3
+}, {
+  "value": "34.9 CRM for Real Estate Agents",
+  "id": "349-crm-for-real-estate-agents",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-34-real-estate--property--ai-powered-real-estate-agents",
+        children: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/33-customer-service",
+          children: "Customer Service & Support Agents"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/35-legal",
+          children: "Legal & Compliance Agents"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design and implement real estate domain data models (Property, Listing, Agent, Client, Showing, Offer) with Laravel migrations and Eloquent relationships"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a PropertyListingAgent that generates optimized property descriptions and extracts key features using AI"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create a ValuationAgent that estimates property values using comparable sales analysis and market data"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a TourSchedulingAgent that handles property showing requests, availability coordination, and automated reminders"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deploy a DocumentProcessingAgent that extracts structured data from lease agreements, deeds, and inspection reports"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a LeadQualificationAgent that scores buyer and renter leads against property criteria and budget constraints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct a MarketAnalysisAgent that analyzes neighborhood trends and generates market reports"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Develop a RentalManagementAgent that automates rent collection, maintenance ticketing, and lease renewals"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a RealEstateCrmAgent that tracks client interactions and recommends strategic follow-ups"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/34-real-estate/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/34-real-estate/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/34-real-estate/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/34-real-estate/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/34-real-estate/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/34-real-estate/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real estate AI agents for property listing, matching, valuation, tour scheduling, lead management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Property matching, price prediction, virtual tours, lead scoring, market analysis, document processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, geolocation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real estate AI agents for property listing, matching, valuation, tour scheduling, lead management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Property matching, price prediction, virtual tours, lead scoring, market analysis, document processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, geolocation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real estate AI agents for property listing, matching, valuation, tour scheduling, lead management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Property matching, price prediction, virtual tours, lead scoring, market analysis, document processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, geolocation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real estate AI agents for property listing, matching, valuation, tour scheduling, lead management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Property matching, price prediction, virtual tours, lead scoring, market analysis, document processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, geolocation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/34-real-estate.png",
+        alt: "Real Estate Domain"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "341-real-estate-data-models",
+      children: "34.1 Real Estate Data Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every real estate platform begins with a solid data foundation. The core domain includes properties (the physical assets), listings (how properties are marketed), agents (the professionals), clients (buyers, sellers, renters), showings (property tours), and offers (purchase or lease proposals). These models establish the relationships that all AI agents will query, analyze, and augment."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "migrations",
+      children: "Migrations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('properties', function (Blueprint $table) {\n            $table->id();\n            $table->string('parcel_id')->unique()->nullable();\n            $table->string('address_line_1');\n            $table->string('address_line_2')->nullable();\n            $table->string('city');\n            $table->string('state', 2);\n            $table->string('zip_code', 10);\n            $table->string('county')->nullable();\n            $table->string('neighborhood')->nullable();\n            $table->decimal('latitude', 10, 7)->nullable();\n            $table->decimal('longitude', 10, 7)->nullable();\n            $table->string('property_type')->default('single_family');\n            $table->string('subtype')->nullable();\n            $table->integer('year_built')->nullable();\n            $table->decimal('square_feet', 10, 2)->nullable();\n            $table->decimal('lot_size', 10, 2)->nullable();\n            $table->integer('bedrooms')->default(0);\n            $table->integer('bathrooms')->default(0);\n            $table->integer('half_bathrooms')->default(0);\n            $table->integer('stories')->nullable();\n            $table->string('garage_type')->nullable();\n            $table->integer('garage_spaces')->default(0);\n            $table->string('heating_type')->nullable();\n            $table->string('cooling_type')->nullable();\n            $table->string('roof_type')->nullable();\n            $table->string('foundation_type')->nullable();\n            $table->json('amenities')->nullable();\n            $table->json('features')->nullable();\n            $table->text('description')->nullable();\n            $table->json('images')->nullable();\n            $table->json('virtual_tour_url')->nullable();\n            $table->json('ai_enriched_data')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('agents', function (Blueprint $table) {\n            $table->id();\n            $table->string('license_number')->unique();\n            $table->string('first_name');\n            $table->string('last_name');\n            $table->string('email')->unique();\n            $table->string('phone');\n            $table->string('company')->nullable();\n            $table->text('bio')->nullable();\n            $table->string('photo_url')->nullable();\n            $table->json('specialties')->nullable();\n            $table->json('service_areas')->nullable();\n            $table->string('status')->default('active');\n            $table->decimal('commission_rate', 5, 2)->default(0.00);\n            $table->integer('years_experience')->default(0);\n            $table->decimal('ai_rating', 3, 2)->nullable();\n            $table->json('ai_performance_data')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('listings', function (Blueprint $table) {\n            $table->id();\n            $table->string('mls_number')->unique()->nullable();\n            $table->foreignId('property_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('agent_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('co_agent_id')->nullable()->constrained('agents')->nullOnDelete();\n            $table->string('listing_type')->default('sale');\n            $table->string('status')->default('active');\n            $table->decimal('list_price', 12, 2);\n            $table->decimal('original_price', 12, 2)->nullable();\n            $table->date('list_date');\n            $table->date('expiry_date')->nullable();\n            $table->json('marketing_description')->nullable();\n            $table->json('featured_amenities')->nullable();\n            $table->json('open_house_dates')->nullable();\n            $table->boolean('is_featured')->default(false);\n            $table->boolean('is_virtual_tour_available')->default(false);\n            $table->json('ai_generated_description')->nullable();\n            $table->json('ai_features')->nullable();\n            $table->json('ai_market_insights')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('clients', function (Blueprint $table) {\n            $table->id();\n            $table->string('first_name');\n            $table->string('last_name');\n            $table->string('email')->unique();\n            $table->string('phone');\n            $table->string('client_type')->default('buyer');\n            $table->decimal('budget_min', 12, 2)->nullable();\n            $table->decimal('budget_max', 12, 2)->nullable();\n            $table->json('preferences')->nullable();\n            $table->json('search_criteria')->nullable();\n            $table->string('preferred_contact_method')->default('email');\n            $table->string('status')->default('active');\n            $table->text('notes')->nullable();\n            $table->string('source')->nullable();\n            $table->json('ai_lead_score')->nullable();\n            $table->json('ai_insights')->nullable();\n            $table->foreignId('assigned_agent_id')->nullable()->constrained('agents')->nullOnDelete();\n            $table->timestamps();\n        });\n\n        Schema::create('showings', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('listing_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('client_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('agent_id')->constrained('agents')->cascadeOnDelete();\n            $table->datetime('scheduled_at');\n            $table->datetime('confirmed_at')->nullable();\n            $table->datetime('completed_at')->nullable();\n            $table->datetime('cancelled_at')->nullable();\n            $table->string('status')->default('pending');\n            $table->text('notes')->nullable();\n            $table->json('feedback')->nullable();\n            $table->json('ai_reminders')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('offers', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('listing_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('client_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('agent_id')->constrained('agents')->cascadeOnDelete();\n            $table->decimal('offer_amount', 12, 2);\n            $table->string('offer_type')->default('purchase');\n            $table->decimal('earnest_money', 12, 2)->nullable();\n            $table->date('proposed_closing_date')->nullable();\n            $table->json('contingencies')->nullable();\n            $table->text('terms')->nullable();\n            $table->string('status')->default('submitted');\n            $table->text('counter_terms')->nullable();\n            $table->datetime('submitted_at');\n            $table->datetime('responded_at')->nullable();\n            $table->json('ai_risk_assessment')->nullable();\n            $table->json('ai_recommendation')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('transactions', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('listing_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('offer_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('buyer_id')->constrained('clients')->cascadeOnDelete();\n            $table->foreignId('seller_id')->constrained('clients')->cascadeOnDelete();\n            $table->foreignId('agent_id')->constrained('agents')->cascadeOnDelete();\n            $table->decimal('sale_price', 12, 2);\n            $table->date('closing_date');\n            $table->decimal('commission_amount', 12, 2);\n            $table->decimal('commission_rate', 5, 2);\n            $table->json('closing_costs')->nullable();\n            $table->text('notes')->nullable();\n            $table->json('ai_closing_summary')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('rentals', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('property_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('agent_id')->constrained('agents')->cascadeOnDelete();\n            $table->foreignId('tenant_id')->constrained('clients')->cascadeOnDelete();\n            $table->decimal('monthly_rent', 10, 2);\n            $table->decimal('security_deposit', 10, 2)->nullable();\n            $table->date('lease_start');\n            $table->date('lease_end');\n            $table->string('lease_type')->default('fixed');\n            $table->json('lease_terms')->nullable();\n            $table->decimal('late_fee', 10, 2)->default(0.00);\n            $table->string('status')->default('active');\n            $table->date('last_rent_paid_at')->nullable();\n            $table->date('next_rent_due')->nullable();\n            $table->json('ai_payment_history')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('maintenance_requests', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('property_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('rental_id')->nullable()->constrained()->nullOnDelete();\n            $table->foreignId('tenant_id')->constrained('clients')->cascadeOnDelete();\n            $table->string('category')->default('general');\n            $table->string('urgency')->default('normal');\n            $table->text('description');\n            $table->json('photos')->nullable();\n            $table->string('status')->default('reported');\n            $table->datetime('scheduled_at')->nullable();\n            $table->datetime('completed_at')->nullable();\n            $table->decimal('cost', 10, 2)->nullable();\n            $table->string('vendor_name')->nullable();\n            $table->text('resolution_notes')->nullable();\n            $table->json('ai_priority_score')->nullable();\n            $table->json('ai_estimated_cost')->nullable();\n            $table->timestamps();\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('maintenance_requests');\n        Schema::dropIfExists('rentals');\n        Schema::dropIfExists('transactions');\n        Schema::dropIfExists('offers');\n        Schema::dropIfExists('showings');\n        Schema::dropIfExists('clients');\n        Schema::dropIfExists('listings');\n        Schema::dropIfExists('agents');\n        Schema::dropIfExists('properties');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "eloquent-models",
+      children: "Eloquent Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\nuse Illuminate\\Support\\Arr;\n\nclass Property extends Model\n{\n    protected $fillable = [\n        'parcel_id', 'address_line_1', 'address_line_2', 'city', 'state',\n        'zip_code', 'county', 'neighborhood', 'latitude', 'longitude',\n        'property_type', 'subtype', 'year_built', 'square_feet', 'lot_size',\n        'bedrooms', 'bathrooms', 'half_bathrooms', 'stories', 'garage_type',\n        'garage_spaces', 'heating_type', 'cooling_type', 'roof_type',\n        'foundation_type', 'amenities', 'features', 'description',\n        'images', 'virtual_tour_url', 'ai_enriched_data',\n    ];\n\n    protected $casts = [\n        'amenities' => 'array',\n        'features' => 'array',\n        'images' => 'array',\n        'virtual_tour_url' => 'array',\n        'ai_enriched_data' => 'array',\n        'latitude' => 'decimal:7',\n        'longitude' => 'decimal:7',\n    ];\n\n    public function listings(): HasMany\n    {\n        return $this->hasMany(Listing::class);\n    }\n\n    public function activeListing()\n    {\n        return $this->hasOne(Listing::class)->where('status', 'active');\n    }\n\n    public function rentals(): HasMany\n    {\n        return $this->hasMany(Rental::class);\n    }\n\n    public function fullAddress(): string\n    {\n        return implode(', ', array_filter([\n            $this->address_line_1,\n            $this->address_line_2,\n            \"{$this->city}, {$this->state} {$this->zip_code}\",\n        ]));\n    }\n\n    public function scopeInCity($query, string $city)\n    {\n        return $query->where('city', $city);\n    }\n\n    public function scopeByType($query, string $type)\n    {\n        return $query->where('property_type', $type);\n    }\n\n    public function scopeByBedrooms($query, int $min, ?int $max = null)\n    {\n        return $query->where('bedrooms', '>=', $min)\n            ->when($max, fn($q, $v) => $q->where('bedrooms', '<=', $v));\n    }\n\n    public function scopeByPriceRange($query, float $min, float $max)\n    {\n        return $query->whereHas('activeListing', function ($q) use ($min, $max) {\n            $q->whereBetween('list_price', [$min, $max]);\n        });\n    }\n\n    public function scopeNearby($query, float $lat, float $lng, float $radiusMiles = 1.0)\n    {\n        $latDelta = $radiusMiles / 69.0;\n        $lngDelta = $radiusMiles / (69.0 * cos(deg2rad($lat)));\n\n        return $query->whereBetween('latitude', [$lat - $latDelta, $lat + $latDelta])\n            ->whereBetween('longitude', [$lng - $lngDelta, $lng + $lngDelta]);\n    }\n}\n\nclass Agent extends Model\n{\n    protected $fillable = [\n        'license_number', 'first_name', 'last_name', 'email', 'phone',\n        'company', 'bio', 'photo_url', 'specialties', 'service_areas',\n        'status', 'commission_rate', 'years_experience',\n        'ai_rating', 'ai_performance_data',\n    ];\n\n    protected $casts = [\n        'specialties' => 'array',\n        'service_areas' => 'array',\n        'ai_performance_data' => 'array',\n    ];\n\n    public function listings(): HasMany\n    {\n        return $this->hasMany(Listing::class);\n    }\n\n    public function clients(): HasMany\n    {\n        return $this->hasMany(Client::class, 'assigned_agent_id');\n    }\n\n    public function transactions(): HasMany\n    {\n        return $this->hasMany(Transaction::class);\n    }\n\n    public function getFullNameAttribute(): string\n    {\n        return \"{$this->first_name} {$this->last_name}\";\n    }\n}\n\nclass Listing extends Model\n{\n    protected $fillable = [\n        'mls_number', 'property_id', 'agent_id', 'co_agent_id',\n        'listing_type', 'status', 'list_price', 'original_price',\n        'list_date', 'expiry_date', 'marketing_description',\n        'featured_amenities', 'open_house_dates', 'is_featured',\n        'is_virtual_tour_available', 'ai_generated_description',\n        'ai_features', 'ai_market_insights',\n    ];\n\n    protected $casts = [\n        'marketing_description' => 'array',\n        'featured_amenities' => 'array',\n        'open_house_dates' => 'array',\n        'ai_generated_description' => 'array',\n        'ai_features' => 'array',\n        'ai_market_insights' => 'array',\n    ];\n\n    public function property(): BelongsTo\n    {\n        return $this->belongsTo(Property::class);\n    }\n\n    public function agent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class);\n    }\n\n    public function coAgent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class, 'co_agent_id');\n    }\n\n    public function showings(): HasMany\n    {\n        return $this->hasMany(Showing::class);\n    }\n\n    public function offers(): HasMany\n    {\n        return $this->hasMany(Offer::class);\n    }\n\n    public function daysOnMarket(): int\n    {\n        return now()->startOfDay()->diffInDays($this->list_date);\n    }\n\n    public function priceChangeRatio(): ?float\n    {\n        if (!$this->original_price || $this->original_price === 0.0) {\n            return null;\n        }\n        return round(\n            (($this->list_price - $this->original_price) / $this->original_price) * 100,\n            2\n        );\n    }\n\n    public function scopeActive($query)\n    {\n        return $query->where('status', 'active');\n    }\n\n    public function scopeByPriceRange($query, $min, $max)\n    {\n        return $query->whereBetween('list_price', [$min, $max]);\n    }\n}\n\nclass Client extends Model\n{\n    protected $fillable = [\n        'first_name', 'last_name', 'email', 'phone', 'client_type',\n        'budget_min', 'budget_max', 'preferences', 'search_criteria',\n        'preferred_contact_method', 'status', 'notes', 'source',\n        'ai_lead_score', 'ai_insights', 'assigned_agent_id',\n    ];\n\n    protected $casts = [\n        'preferences' => 'array',\n        'search_criteria' => 'array',\n        'ai_lead_score' => 'array',\n        'ai_insights' => 'array',\n    ];\n\n    public function assignedAgent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class, 'assigned_agent_id');\n    }\n\n    public function showings(): HasMany\n    {\n        return $this->hasMany(Showing::class);\n    }\n\n    public function offers(): HasMany\n    {\n        return $this->hasMany(Offer::class);\n    }\n\n    public function scopeByType($query, string $type)\n    {\n        return $query->where('client_type', $type);\n    }\n}\n\nclass Showing extends Model\n{\n    protected $fillable = [\n        'listing_id', 'client_id', 'agent_id', 'scheduled_at',\n        'confirmed_at', 'completed_at', 'cancelled_at', 'status',\n        'notes', 'feedback', 'ai_reminders',\n    ];\n\n    protected $casts = [\n        'feedback' => 'array',\n        'ai_reminders' => 'array',\n    ];\n\n    public function listing(): BelongsTo\n    {\n        return $this->belongsTo(Listing::class);\n    }\n\n    public function client(): BelongsTo\n    {\n        return $this->belongsTo(Client::class);\n    }\n\n    public function agent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class);\n    }\n}\n\nclass Offer extends Model\n{\n    protected $fillable = [\n        'listing_id', 'client_id', 'agent_id', 'offer_amount',\n        'offer_type', 'earnest_money', 'proposed_closing_date',\n        'contingencies', 'terms', 'status', 'counter_terms',\n        'submitted_at', 'responded_at', 'ai_risk_assessment',\n        'ai_recommendation',\n    ];\n\n    protected $casts = [\n        'contingencies' => 'array',\n        'ai_risk_assessment' => 'array',\n        'ai_recommendation' => 'array',\n    ];\n\n    public function listing(): BelongsTo\n    {\n        return $this->belongsTo(Listing::class);\n    }\n\n    public function client(): BelongsTo\n    {\n        return $this->belongsTo(Client::class);\n    }\n\n    public function agent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class);\n    }\n}\n\nclass Rental extends Model\n{\n    protected $fillable = [\n        'property_id', 'agent_id', 'tenant_id', 'monthly_rent',\n        'security_deposit', 'lease_start', 'lease_end', 'lease_type',\n        'lease_terms', 'late_fee', 'status', 'last_rent_paid_at',\n        'next_rent_due', 'ai_payment_history',\n    ];\n\n    protected $casts = [\n        'lease_terms' => 'array',\n        'ai_payment_history' => 'array',\n    ];\n\n    public function property(): BelongsTo\n    {\n        return $this->belongsTo(Property::class);\n    }\n\n    public function agent(): BelongsTo\n    {\n        return $this->belongsTo(Agent::class);\n    }\n\n    public function tenant(): BelongsTo\n    {\n        return $this->belongsTo(Client::class, 'tenant_id');\n    }\n\n    public function maintenanceRequests(): HasMany\n    {\n        return $this->hasMany(MaintenanceRequest::class);\n    }\n\n    public function isOverdue(): bool\n    {\n        return $this->next_rent_due && $this->next_rent_due->isPast()\n            && $this->status === 'active';\n    }\n}\n\nclass MaintenanceRequest extends Model\n{\n    protected $fillable = [\n        'property_id', 'rental_id', 'tenant_id', 'category',\n        'urgency', 'description', 'photos', 'status', 'scheduled_at',\n        'completed_at', 'cost', 'vendor_name', 'resolution_notes',\n        'ai_priority_score', 'ai_estimated_cost',\n    ];\n\n    protected $casts = [\n        'photos' => 'array',\n        'ai_priority_score' => 'array',\n        'ai_estimated_cost' => 'array',\n    ];\n\n    public function property(): BelongsTo\n    {\n        return $this->belongsTo(Property::class);\n    }\n\n    public function rental(): BelongsTo\n    {\n        return $this->belongsTo(Rental::class);\n    }\n\n    public function tenant(): BelongsTo\n    {\n        return $this->belongsTo(Client::class, 'tenant_id');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "342-property-listing-agents",
+      children: "34.2 Property Listing Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A PropertyListingAgent transforms raw property data into compelling, search-optimized listings. It generates human-readable descriptions that highlight a property's best features, extracts structured amenity tags for MLS compliance, and suggests pricing strategies based on comparable listings."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Listing;\nuse App\\Models\\Property;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass PropertyListingAgent\n{\n    protected string $apiKey;\n    protected string $model;\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n        $this->model = config('services.openai.model', 'gpt-4o');\n    }\n\n    public function generateListing(int $propertyId): Listing\n    {\n        $property = Property::with('listings')->findOrFail($propertyId);\n\n        $features = $this->extractFeatures($property);\n        $description = $this->generateDescription($property, $features);\n        $sellingPoints = $this->generateSellingPoints($property, $features);\n        $mlsKeywords = $this->generateMlsKeywords($property, $features);\n\n        $listingData = [\n            'property_id' => $property->id,\n            'agent_id' => $this->resolveAgent($property),\n            'listing_type' => 'sale',\n            'status' => 'draft',\n            'list_price' => $this->suggestPrice($property),\n            'list_date' => now(),\n            'ai_generated_description' => $description,\n            'ai_features' => [\n                'extracted_features' => $features,\n                'selling_points' => $sellingPoints,\n                'mls_keywords' => $mlsKeywords,\n                'generated_at' => now()->toIso8601String(),\n            ],\n        ];\n\n        return Listing::create($listingData);\n    }\n\n    public function extractFeatures(Property $property): array\n    {\n        $features = [];\n\n        $features['square_footage'] = $property->square_feet\n            ? $this->classifySize($property->square_feet)\n            : null;\n\n        $features['bedroom_config'] = \"{$property->bedrooms} bedroom\";\n        if ($property->bathrooms > 0) {\n            $features['bathroom_config'] = \"{$property->bathrooms} full bath\" .\n                ($property->half_bathrooms ? \", {$property->half_bathrooms} half bath\" : '');\n        }\n\n        $features['exterior_features'] = [];\n        if ($property->garage_spaces > 0) {\n            $features['exterior_features'][] = \"{$property->garage_spaces}-car {$property->garage_type}\";\n        }\n        if ($property->lot_size > 0) {\n            $features['exterior_features'][] = $property->lot_size >= 1\n                ? number_format($property->lot_size, 2) . ' acre lot'\n                : number_format($property->lot_size * 43560) . ' sq ft lot';\n        }\n\n        if ($property->year_built) {\n            $features['age_category'] = $this->classifyAge($property->year_built);\n        }\n\n        if ($property->amenities) {\n            $features['notable_amenities'] = $property->amenities;\n        }\n\n        if ($property->features) {\n            $features['special_features'] = $property->features;\n        }\n\n        $features['property_style'] = $this->inferStyle($property);\n        $features['condition_indicators'] = $this->assessCondition($property);\n\n        return $features;\n    }\n\n    public function generateDescription(Property $property, array $features): array\n    {\n        $prompt = $this->buildDescriptionPrompt($property, $features);\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => $this->model,\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are an expert real estate copywriter. Generate compelling property listing descriptions in JSON format with short_description (1 sentence), medium_description (2-3 paragraphs), and full_description (5-7 paragraphs highlighting location, layout, finishes, outdoor space, and neighborhood).'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'response_format' => ['type' => 'json_object'],\n                'temperature' => 0.7,\n                'max_tokens' => 1500,\n            ]);\n\n            $result = $response->json();\n            $content = json_decode(\n                $result['choices'][0]['message']['content'] ?? '{}',\n                true\n            );\n\n            return [\n                'short' => $content['short_description'] ?? $this->fallbackDescription($property),\n                'medium' => $content['medium_description'] ?? '',\n                'full' => $content['full_description'] ?? '',\n                'generated_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            Log::error('PropertyListingAgent description generation failed', [\n                'property_id' => $property->id,\n                'error' => $e->getMessage(),\n            ]);\n\n            return [\n                'short' => $this->fallbackDescription($property),\n                'medium' => '',\n                'full' => '',\n                'error' => $e->getMessage(),\n            ];\n        }\n    }\n\n    public function generateSellingPoints(Property $property, array $features): array\n    {\n        $points = [];\n\n        if ($property->year_built && $property->year_built >= 2020) {\n            $points[] = 'New construction → move-in ready with modern finishes';\n        }\n\n        if ($property->square_feet && $property->square_feet > 2500) {\n            $points[] = 'Spacious ' . number_format($property->square_feet) . ' sq ft layout';\n        }\n\n        if ($property->garage_spaces >= 2) {\n            $points[] = \"Oversized {$property->garage_spaces}-car garage\";\n        }\n\n        if ($property->amenities && in_array('pool', $property->amenities)) {\n            $points[] = 'Private pool → perfect for entertaining';\n        }\n\n        if ($property->bedrooms >= 4) {\n            $points[] = 'Ideal for growing families with ' . $property->bedrooms . ' bedrooms';\n        }\n\n        if ($property->lot_size && $property->lot_size > 0.5) {\n            $points[] = 'Generous lot at ' . number_format($property->lot_size, 2) . ' acres';\n        }\n\n        $prompt = \"For this {$property->property_type} at {$property->address_line_1}, {$property->city}, {$property->state}, generate 3 additional unique selling points based on: bedrooms={$property->bedrooms}, baths={$property->bathrooms}, sqft={$property->square_feet}, year_built={$property->year_built}. Return as JSON array of strings.\";\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => $this->model,\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a real estate marketing expert. Generate unique selling points.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'response_format' => ['type' => 'json_object'],\n                'temperature' => 0.6,\n                'max_tokens' => 500,\n            ]);\n\n            $result = $response->json();\n            $aiPoints = json_decode(\n                $result['choices'][0]['message']['content'] ?? '{\"points\":[]}',\n                true\n            );\n\n            $points = array_merge($points, $aiPoints['points'] ?? []);\n        } catch (\\Exception $e) {\n            Log::warning('Selling point generation failed', ['error' => $e->getMessage()]);\n        }\n\n        return array_unique($points);\n    }\n\n    public function generateMlsKeywords(Property $property, array $features): array\n    {\n        $keywords = [\n            $property->property_type,\n            \"{$property->bedrooms} bedroom\",\n            \"{$property->bathrooms} bathroom\",\n            $features['property_style'] ?? null,\n            $property->city,\n            $property->neighborhood,\n            $property->county,\n        ];\n\n        if ($property->amenities) {\n            $keywords = array_merge($keywords, $property->amenities);\n        }\n\n        if ($property->features) {\n            $keywords = array_merge($keywords, $property->features);\n        }\n\n        return array_values(array_unique(array_filter($keywords)));\n    }\n\n    public function suggestPrice(Property $property): float\n    {\n        $avgPricePerSqFt = Property::where('city', $property->city)\n            ->where('property_type', $property->property_type)\n            ->whereHas('listings', fn($q) => $q->active())\n            ->join('listings', 'properties.id', '=', 'listings.property_id')\n            ->selectRaw('AVG(listings.list_price / NULLIF(properties.square_feet, 0)) as avg_ppsf')\n            ->value('avg_ppsf');\n\n        if ($avgPricePerSqFt && $property->square_feet) {\n            $computedPrice = $avgPricePerSqFt * $property->square_feet;\n\n            return round($computedPrice / 1000) * 1000;\n        }\n\n        return 0.0;\n    }\n\n    protected function resolveAgent(Property $property): ?int\n    {\n        $existing = $property->listings()->first();\n        if ($existing && $existing->agent_id) {\n            return $existing->agent_id;\n        }\n\n        return Agent::where('status', 'active')\n            ->whereJsonContains('service_areas', $property->city)\n            ->inRandomOrder()\n            ->value('id');\n    }\n\n    protected function buildDescriptionPrompt(Property $property, array $features): string\n    {\n        return \"Generate a real estate listing description for:\\n\\n\" .\n            \"Address: {$property->address_line_1}, {$property->city}, {$property->state} {$property->zip_code}\\n\" .\n            \"Type: {$property->property_type}\\n\" .\n            \"Bedrooms: {$property->bedrooms}\\n\" .\n            \"Bathrooms: {$property->bathrooms}\\n\" .\n            \"Square Feet: {$property->square_feet}\\n\" .\n            \"Year Built: {$property->year_built}\\n\" .\n            \"Lot Size: {$property->lot_size} acres\\n\" .\n            \"Features: \" . json_encode($features) . \"\\n\" .\n            \"Neighborhood: {$property->neighborhood}\";\n    }\n\n    protected function fallbackDescription(Property $property): string\n    {\n        $parts = [\n            \"Beautiful {$property->bedrooms}-bedroom, {$property->bathrooms}-bathroom\",\n            $property->property_type,\n            \"located in {$property->city}, {$property->state}.\",\n        ];\n\n        if ($property->square_feet) {\n            array_splice($parts, 1, 0, [number_format($property->square_feet) . ' square foot']);\n        }\n\n        return implode(' ', $parts);\n    }\n\n    protected function classifySize(float $sqft): string\n    {\n        return match (true) {\n            $sqft < 1000 => 'compact',\n            $sqft < 1500 => 'moderate',\n            $sqft < 2500 => 'spacious',\n            $sqft < 4000 => 'large',\n            default => 'estate-sized',\n        };\n    }\n\n    protected function classifyAge(int $yearBuilt): string\n    {\n        $age = now()->year - $yearBuilt;\n        return match (true) {\n            $age <= 5 => 'new',\n            $age <= 20 => 'modern',\n            $age <= 50 => 'established',\n            $age <= 100 => 'historic',\n            default => 'heritage',\n        };\n    }\n\n    protected function inferStyle(Property $property): string\n    {\n        $typeStyles = [\n            'single_family' => $property->stories && $property->stories > 1\n                ? 'two-story' : 'ranch',\n            'condo' => 'contemporary',\n            'townhouse' => 'multi-level',\n            'multifamily' => 'multi-unit',\n        ];\n\n        return $typeStyles[$property->property_type] ?? 'traditional';\n    }\n\n    protected function assessCondition(Property $property): array\n    {\n        $indicators = [];\n\n        if ($property->year_built && $property->year_built >= 2010) {\n            $indicators[] = 'modern construction';\n        }\n\n        if ($property->roof_type === 'metal') {\n            $indicators[] = 'premium roofing';\n        }\n\n        if ($property->heating_type === 'geothermal' || $property->cooling_type === 'zoned') {\n            $indicators[] = 'energy efficient';\n        }\n\n        return $indicators;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "343-valuation-prediction-agents",
+      children: "34.3 Valuation Prediction Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A ValuationAgent estimates property market value by analyzing comparable sales, local market trends, and property-specific characteristics. It draws on recent closed transactions, active listings, and statistical models to produce a confidence-weighted price range."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Listing;\nuse App\\Models\\Property;\nuse App\\Models\\Transaction;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass ValuationAgent\n{\n    protected string $apiKey;\n    protected int $compsCount = 5;\n    protected int $lookbackMonths = 6;\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function estimateValue(int $propertyId): array\n    {\n        $property = Property::findOrFail($propertyId);\n        $comps = $this->findComps($property);\n        $marketTrends = $this->getMarketTrends($property);\n        $avmEstimate = $this->calculateAvm($property, $comps, $marketTrends);\n        $aiRefinement = $this->aiRefineEstimate($property, $comps, $avmEstimate);\n\n        return [\n            'estimated_value' => $aiRefinement['adjusted_value'] ?? $avmEstimate['value'],\n            'price_per_sqft' => $avmEstimate['price_per_sqft'],\n            'confidence_score' => $aiRefinement['confidence'] ?? $avmEstimate['confidence'],\n            'range_low' => $aiRefinement['range_low'] ?? $avmEstimate['range_low'],\n            'range_high' => $aiRefinement['range_high'] ?? $avmEstimate['range_high'],\n            'comps' => $comps,\n            'market_trends' => $marketTrends,\n            'avm_details' => $avmEstimate,\n            'ai_adjustments' => $aiRefinement['adjustments'] ?? [],\n            'generated_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function findComps(Property $property): array\n    {\n        $cacheKey = \"valuation_comps_{$property->id}\";\n\n        return Cache::remember($cacheKey, 3600, function () use ($property) {\n            $comps = Transaction::whereHas('listing.property', function ($q) use ($property) {\n                $q->where('property_type', $property->property_type)\n                    ->where('city', $property->city)\n                    ->where('state', $property->state);\n            })\n            ->where('closing_date', '>=', now()->subMonths($this->lookbackMonths))\n            ->with('listing.property')\n            ->orderBy('closing_date', 'desc')\n            ->limit($this->compsCount * 3)\n            ->get();\n\n            return $comps->map(function ($transaction) use ($property) {\n                $compProperty = $transaction->listing->property;\n                $score = $this->scoreComparable($property, $compProperty);\n\n                return [\n                    'transaction_id' => $transaction->id,\n                    'address' => $compProperty->fullAddress(),\n                    'sale_price' => $transaction->sale_price,\n                    'closing_date' => $transaction->closing_date->toDateString(),\n                    'bedrooms' => $compProperty->bedrooms,\n                    'bathrooms' => $compProperty->bathrooms,\n                    'square_feet' => $compProperty->square_feet,\n                    'price_per_sqft' => $compProperty->square_feet > 0\n                        ? round($transaction->sale_price / $compProperty->square_feet, 2)\n                        : 0,\n                    'similarity_score' => round($score, 2),\n                    'adjustments' => $this->calculateAdjustments($property, $compProperty),\n                ];\n            })\n            ->sortByDesc('similarity_score')\n            ->take($this->compsCount)\n            ->values()\n            ->toArray();\n        });\n    }\n\n    public function getMarketTrends(Property $property): array\n    {\n        $cacheKey = \"market_trends_{$property->city}_{$property->property_type}\";\n\n        return Cache::remember($cacheKey, 7200, function () use ($property) {\n            $sixMonthsAgo = now()->subMonths(6);\n\n            $avgSoldPrice = Transaction::whereHas('listing.property', function ($q) use ($property) {\n                $q->where('city', $property->city)\n                    ->where('property_type', $property->property_type);\n            })\n            ->where('closing_date', '>=', $sixMonthsAgo)\n            ->avg('sale_price');\n\n            $avgActivePrice = Listing::active()\n                ->whereHas('property', function ($q) use ($property) {\n                    $q->where('city', $property->city)\n                        ->where('property_type', $property->property_type);\n                })\n                ->avg('list_price');\n\n            $totalSold = Transaction::whereHas('listing.property', function ($q) use ($property) {\n                $q->where('city', $property->city)\n                    ->where('property_type', $property->property_type);\n            })\n            ->where('closing_date', '>=', $sixMonthsAgo)\n            ->count();\n\n            $avgDaysOnMarket = Listing::whereHas('property', function ($q) use ($property) {\n                $q->where('city', $property->city)\n                    ->where('property_type', $property->property_type);\n            })\n            ->where('status', 'sold')\n            ->where('list_date', '>=', $sixMonthsAgo)\n            ->get()\n            ->avg(fn($l) => $l->daysOnMarket());\n\n            $inventory = Listing::active()\n                ->whereHas('property', fn($q) => $q->where('city', $property->city))\n                ->count();\n\n            $monthsSupply = $totalSold > 0\n                ? round($inventory / ($totalSold / 6), 1)\n                : null;\n\n            return [\n                'city' => $property->city,\n                'property_type' => $property->property_type,\n                'avg_sold_price' => round($avgSoldPrice ?? 0, 2),\n                'avg_active_price' => round($avgActivePrice ?? 0, 2),\n                'total_sold_6mo' => $totalSold,\n                'avg_days_on_market' => round($avgDaysOnMarket ?? 0, 1),\n                'months_of_inventory' => $monthsSupply,\n                'market_type' => $monthsSupply !== null\n                    ? ($monthsSupply < 4 ? 'seller' : ($monthsSupply < 6 ? 'balanced' : 'buyer'))\n                    : 'unknown',\n                'analyzed_at' => now()->toIso8601String(),\n            ];\n        });\n    }\n\n    public function calculateAvm(Property $property, array $comps, array $trends): array\n    {\n        if (empty($comps)) {\n            return [\n                'value' => 0,\n                'price_per_sqft' => 0,\n                'confidence' => 0.1,\n                'range_low' => 0,\n                'range_high' => 0,\n            ];\n        }\n\n        $compPrices = array_column($comps, 'sale_price');\n        $medianPrice = $this->median($compPrices);\n\n        $compPpsf = array_filter(array_column($comps, 'price_per_sqft'));\n        $medianPpsf = !empty($compPpsf) ? $this->median($compPpsf) : 0;\n\n        $propertyPpsf = $property->square_feet > 0\n            ? $medianPpsf * $property->square_feet\n            : $medianPrice;\n\n        $adjPrices = array_map(function ($comp) {\n            $adj = $comp['sale_price'];\n            foreach (($comp['adjustments'] ?? []) as $adjustment) {\n                $adj += $adjustment['amount'];\n            }\n            return $adj;\n        }, $comps);\n\n        $adjustedMedian = !empty($adjPrices) ? $this->median($adjPrices) : 0;\n\n        $value = match (true) {\n            $property->square_feet > 0 && $medianPpsf > 0 => (int) round(\n                ($propertyPpsf + $adjustedMedian) / 2\n            ),\n            default => (int) round($adjustedMedian ?: $medianPrice),\n        };\n\n        $stdDev = $this->stdDev($compPrices, $medianPrice);\n        $variance = $medianPrice > 0 ? $stdDev / $medianPrice : 0.5;\n        $confidence = max(0.1, min(0.95, 1.0 - $variance));\n        $rangeWidth = $value * ($variance * 1.5);\n\n        $trendMultiplier = 1.0;\n        if ($trends['market_type'] === 'seller' && $trends['avg_sold_price'] > 0) {\n            $trendMultiplier = 1.03;\n        } elseif ($trends['market_type'] === 'buyer' && $trends['avg_sold_price'] > 0) {\n            $trendMultiplier = 0.97;\n        }\n\n        $finalValue = (int) round($value * $trendMultiplier);\n\n        return [\n            'value' => $finalValue,\n            'price_per_sqft' => round($medianPpsf, 2),\n            'confidence' => round($confidence, 2),\n            'range_low' => (int) round($finalValue - $rangeWidth),\n            'range_high' => (int) round($finalValue + $rangeWidth),\n            'comps_used' => count($comps),\n            'median_comp_price' => (int) round($medianPrice),\n            'adjusted_median' => (int) round($adjustedMedian),\n            'trend_multiplier' => $trendMultiplier,\n        ];\n    }\n\n    public function aiRefineEstimate(Property $property, array $comps, array $avm): array\n    {\n        $prompt = \"You are a senior real estate appraiser. Review this AVM estimate and property data, then provide refinements.\\n\\n\" .\n            \"Property: {$property->address_line_1}, {$property->city}, {$property->state}\\n\" .\n            \"Type: {$property->property_type}, {$property->bedrooms}br/{$property->bathrooms}ba, {$property->square_feet}sqft\\n\" .\n            \"Year Built: {$property->year_built}, Lot: {$property->lot_size} acres\\n\" .\n            \"AVM Estimate: \\${$avm['value']} (confidence: {$avm['confidence']})\\n\" .\n            \"Comps used: \" . json_encode($comps) . \"\\n\\n\" .\n            \"Return JSON: {adjusted_value, confidence, range_low, range_high, adjustments: [{factor, amount, reason}], market_notes}\";\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => 'gpt-4o',\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a certified real estate appraiser. Analyze valuation data and provide adjustments. Return only valid JSON.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'response_format' => ['type' => 'json_object'],\n                'temperature' => 0.3,\n                'max_tokens' => 1000,\n            ]);\n\n            $result = $response->json();\n            $refinement = json_decode(\n                $result['choices'][0]['message']['content'] ?? '{}',\n                true\n            );\n\n            return [\n                'adjusted_value' => $refinement['adjusted_value'] ?? $avm['value'],\n                'confidence' => $refinement['confidence'] ?? $avm['confidence'],\n                'range_low' => $refinement['range_low'] ?? $avm['range_low'],\n                'range_high' => $refinement['range_high'] ?? $avm['range_high'],\n                'adjustments' => $refinement['adjustments'] ?? [],\n                'market_notes' => $refinement['market_notes'] ?? '',\n            ];\n        } catch (\\Exception $e) {\n            Log::warning('AI valuation refinement failed', ['error' => $e->getMessage()]);\n            return [\n                'adjusted_value' => $avm['value'],\n                'confidence' => $avm['confidence'],\n                'range_low' => $avm['range_low'],\n                'range_high' => $avm['range_high'],\n                'adjustments' => [],\n            ];\n        }\n    }\n\n    protected function scoreComparable(Property $subject, Property $comp): float\n    {\n        $score = 100.0;\n\n        $bedDiff = abs($subject->bedrooms - $comp->bedrooms);\n        $score -= $bedDiff * 5;\n\n        $bathDiff = abs($subject->bathrooms - $comp->bathrooms);\n        $score -= $bathDiff * 4;\n\n        if ($subject->square_feet > 0 && $comp->square_feet > 0) {\n            $sqftRatio = min($subject->square_feet, $comp->square_feet)\n                / max($subject->square_feet, $comp->square_feet);\n            $score -= (1 - $sqftRatio) * 15;\n        }\n\n        if ($subject->year_built && $comp->year_built) {\n            $yearDiff = abs($subject->year_built - $comp->year_built);\n            $score -= min($yearDiff * 2, 20);\n        }\n\n        $score -= $subject->neighborhood === $comp->neighborhood ? 0 : 10;\n\n        return max(0, min(100, $score));\n    }\n\n    protected function calculateAdjustments(Property $subject, Property $comp): array\n    {\n        $adjustments = [];\n\n        if ($subject->square_feet > 0 && $comp->square_feet > 0) {\n            $sqftDiff = $subject->square_feet - $comp->square_feet;\n            if (abs($sqftDiff) > 100) {\n                $adjustments[] = [\n                    'factor' => 'square_footage',\n                    'amount' => round($sqftDiff * 150, -2),\n                    'reason' => ($sqftDiff > 0 ? '+' : '') . number_format($sqftDiff) . ' sq ft difference',\n                ];\n            }\n        }\n\n        $bedDiff = $subject->bedrooms - $comp->bedrooms;\n        if ($bedDiff !== 0) {\n            $adjustments[] = [\n                'factor' => 'bedrooms',\n                'amount' => $bedDiff * 25000,\n                'reason' => ($bedDiff > 0 ? '+' : '') . $bedDiff . ' bedroom(s)',\n            ];\n        }\n\n        $bathDiff = $subject->bathrooms - $comp->bathrooms;\n        if ($bathDiff !== 0) {\n            $adjustments[] = [\n                'factor' => 'bathrooms',\n                'amount' => $bathDiff * 15000,\n                'reason' => ($bathDiff > 0 ? '+' : '') . $bathDiff . ' bathroom(s)',\n            ];\n        }\n\n        if ($subject->year_built && $comp->year_built) {\n            $yearDiff = $subject->year_built - $comp->year_built;\n            if (abs($yearDiff) > 5) {\n                $adjustments[] = [\n                    'factor' => 'age',\n                    'amount' => $yearDiff * -500,\n                    'reason' => ($yearDiff > 0 ? 'Newer' : 'Older') . ' by ' . abs($yearDiff) . ' years',\n                ];\n            }\n        }\n\n        return $adjustments;\n    }\n\n    protected function median(array $values): float\n    {\n        sort($values);\n        $count = count($values);\n        $mid = intdiv($count, 2);\n\n        if ($count % 2 === 0) {\n            return ($values[$mid - 1] + $values[$mid]) / 2;\n        }\n\n        return $values[$mid];\n    }\n\n    protected function stdDev(array $values, float $mean): float\n    {\n        $variance = 0.0;\n        foreach ($values as $value) {\n            $variance += ($value - $mean) ** 2;\n        }\n\n        return sqrt($variance / count($values));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "344-tour-scheduling-automation",
+      children: "34.4 Tour Scheduling Automation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The TourSchedulingAgent automates property showing coordination. It checks agent availability, confirms client appointments, schedules open houses, and sends reminder notifications to all parties, reducing the administrative burden on agents."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Agent;\nuse App\\Models\\Client;\nuse App\\Models\\Listing;\nuse App\\Models\\Showing;\nuse Illuminate\\Support\\Facades\\Mail;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass TourSchedulingAgent\n{\n    protected array $businessHours = [\n        'monday' => ['09:00', '18:00'],\n        'tuesday' => ['09:00', '18:00'],\n        'wednesday' => ['09:00', '18:00'],\n        'thursday' => ['09:00', '18:00'],\n        'friday' => ['09:00', '17:00'],\n        'saturday' => ['10:00', '16:00'],\n        'sunday' => ['12:00', '16:00'],\n    ];\n\n    protected int $showingDurationMinutes = 30;\n\n    public function requestShowing(int $listingId, int $clientId, string $preferredDateTime): array\n    {\n        $listing = Listing::with('agent', 'property')->findOrFail($listingId);\n        $client = Client::findOrFail($clientId);\n        $agent = $listing->agent;\n\n        $requestedTime = new \\DateTime($preferredDateTime);\n\n        if (!$this->isWithinBusinessHours($requestedTime)) {\n            return [\n                'success' => false,\n                'message' => 'Requested time is outside business hours. Available hours: ' . $this->getBusinessHoursSummary(),\n                'suggestions' => $this->getAvailableSlots($agent, $requestedTime, 3),\n            ];\n        }\n\n        if (!$this->isAgentAvailable($agent, $requestedTime)) {\n            return [\n                'success' => false,\n                'message' => 'Agent is not available at this time.',\n                'suggestions' => $this->getAvailableSlots($agent, $requestedTime, 5),\n            ];\n        }\n\n        $showing = Showing::create([\n            'listing_id' => $listing->id,\n            'client_id' => $client->id,\n            'agent_id' => $agent->id,\n            'scheduled_at' => $requestedTime,\n            'status' => 'pending',\n            'ai_reminders' => [\n                '24h_reminder_sent' => false,\n                '2h_reminder_sent' => false,\n            ],\n        ]);\n\n        $this->sendConfirmation($showing);\n        $this->scheduleReminders($showing);\n\n        return [\n            'success' => true,\n            'showing' => $showing,\n            'message' => 'Showing request submitted successfully. Confirmation sent.',\n        ];\n    }\n\n    public function confirmShowing(int $showingId): Showing\n    {\n        $showing = Showing::findOrFail($showingId);\n        $showing->update([\n            'confirmed_at' => now(),\n            'status' => 'confirmed',\n        ]);\n\n        $this->sendConfirmation($showing);\n        $this->scheduleReminders($showing);\n\n        return $showing->fresh();\n    }\n\n    public function getAvailableSlots(Agent $agent, \\DateTime $startFrom, int $count = 5): array\n    {\n        $slots = [];\n        $current = clone $startFrom;\n        $maxDays = 14;\n\n        for ($day = 0; $day < $maxDays && count($slots) < $count; $day++) {\n            if (!$this->isWithinBusinessHours($current)) {\n                $current = $this->nextBusinessHour($current);\n                continue;\n            }\n\n            $slotEnd = (clone $current)->modify(\"+{$this->showingDurationMinutes} minutes\");\n\n            if ($this->isAgentAvailable($agent, $current)) {\n                $slots[] = [\n                    'start' => $current->format('Y-m-d H:i'),\n                    'end' => $slotEnd->format('Y-m-d H:i'),\n                    'date' => $current->format('D, M j'),\n                    'time' => $current->format('g:i A'),\n                ];\n            }\n\n            $current->modify(\"+{$this->showingDurationMinutes} minutes\");\n\n            if ($current->format('H:i') >= '18:00') {\n                $current->modify('+1 day')->setTime(9, 0);\n            }\n        }\n\n        return $slots;\n    }\n\n    public function cancelShowing(int $showingId, string $reason = ''): Showing\n    {\n        $showing = Showing::findOrFail($showingId);\n        $showing->update([\n            'status' => 'cancelled',\n            'cancelled_at' => now(),\n            'notes' => $reason ? ($showing->notes . \"\\nCancellation: \" . $reason) : $showing->notes,\n        ]);\n\n        $this->sendCancellationNotice($showing, $reason);\n\n        return $showing->fresh();\n    }\n\n    public function completeShowing(int $showingId, array $feedback = []): Showing\n    {\n        $showing = Showing::findOrFail($showingId);\n        $showing->update([\n            'completed_at' => now(),\n            'status' => 'completed',\n            'feedback' => $feedback,\n        ]);\n\n        return $showing->fresh();\n    }\n\n    public function scheduleOpenHouse(int $listingId, \\DateTime $start, \\DateTime $end): array\n    {\n        $listing = Listing::with('agent', 'property')->findOrFail($listingId);\n\n        if (!$this->isWithinBusinessHours($start) || !$this->isWithinBusinessHours($end)) {\n            return [\n                'success' => false,\n                'message' => 'Open house must be within business hours.',\n            ];\n        }\n\n        $overlapping = Showing::where('listing_id', $listing->id)\n            ->where('status', '!=', 'cancelled')\n            ->where(function ($q) use ($start, $end) {\n                $q->whereBetween('scheduled_at', [$start, $end])\n                    ->orWhereBetween('scheduled_at', [\n                        (clone $start)->modify('-' . $this->showingDurationMinutes . ' minutes'),\n                        $end,\n                    ]);\n            })\n            ->exists();\n\n        if ($overlapping) {\n            return [\n                'success' => false,\n                'message' => 'Time slot overlaps with an existing showing.',\n            ];\n        }\n\n        $openHouse = Showing::create([\n            'listing_id' => $listing->id,\n            'client_id' => null,\n            'agent_id' => $listing->agent_id,\n            'scheduled_at' => $start,\n            'status' => 'confirmed',\n            'notes' => \"OPEN HOUSE: {$start->format('g:i A')} - {$end->format('g:i A')}\",\n        ]);\n\n        return [\n            'success' => true,\n            'showing' => $openHouse,\n            'message' => 'Open house scheduled.',\n        ];\n    }\n\n    protected function isWithinBusinessHours(\\DateTime $time): bool\n    {\n        $day = strtolower($time->format('l'));\n        $timeStr = $time->format('H:i');\n\n        if (!isset($this->businessHours[$day])) {\n            return false;\n        }\n\n        [$open, $close] = $this->businessHours[$day];\n        return $timeStr >= $open && $timeStr <= $close;\n    }\n\n    protected function isAgentAvailable(Agent $agent, \\DateTime $time): bool\n    {\n        $slotEnd = (clone $time)->modify(\"+{$this->showingDurationMinutes} minutes\");\n\n        return !Showing::where('agent_id', $agent->id)\n            ->where('status', '!=', 'cancelled')\n            ->where(function ($q) use ($time, $slotEnd) {\n                $q->whereBetween('scheduled_at', [$time, $slotEnd])\n                    ->orWhereBetween('scheduled_at', [\n                        (clone $time)->modify('-30 minutes'),\n                        $slotEnd,\n                    ]);\n            })\n            ->exists();\n    }\n\n    protected function nextBusinessHour(\\DateTime $current): \\DateTime\n    {\n        $next = clone $current;\n        $maxAttempts = 14;\n\n        for ($i = 0; $i < $maxAttempts; $i++) {\n            $next->modify('+1 day')->setTime(9, 0);\n            $day = strtolower($next->format('l'));\n            if (isset($this->businessHours[$day])) {\n                return $next;\n            }\n        }\n\n        return $next;\n    }\n\n    public function sendReminders(): int\n    {\n        $sent = 0;\n\n        $upcomingShowings = Showing::where('status', 'confirmed')\n            ->where('scheduled_at', '>=', now())\n            ->where('scheduled_at', '<=', now()->addDays(1))\n            ->with('client', 'agent', 'listing.property')\n            ->get();\n\n        foreach ($upcomingShowings as $showing) {\n            $hoursUntil = now()->diffInHours($showing->scheduled_at, false);\n\n            $reminders = $showing->ai_reminders ?? [];\n\n            if ($hoursUntil <= 2 && $hoursUntil > 1 && !($reminders['2h_reminder_sent'] ?? false)) {\n                $this->sendNotification(\n                    $showing->client,\n                    \"Your showing at {$showing->listing->property->address_line_1} is in 2 hours!\",\n                    'reminder'\n                );\n                $this->sendNotification(\n                    $showing->agent,\n                    \"Showing reminder: {$showing->client->first_name} {$showing->client->last_name} at {$showing->listing->property->address_line_1} in 2 hours.\",\n                    'reminder'\n                );\n                $reminders['2h_reminder_sent'] = true;\n                $sent++;\n            }\n\n            if ($hoursUntil <= 24 && $hoursUntil > 23 && !($reminders['24h_reminder_sent'] ?? false)) {\n                $this->sendNotification(\n                    $showing->client,\n                    \"Reminder: You have a showing tomorrow at {$showing->listing->property->address_line_1} ({$showing->scheduled_at->format('g:i A')}).\",\n                    'reminder'\n                );\n                $reminders['24h_reminder_sent'] = true;\n                $sent++;\n            }\n\n            $showing->update(['ai_reminders' => $reminders]);\n        }\n\n        return $sent;\n    }\n\n    protected function sendConfirmation(Showing $showing): void\n    {\n        $property = $showing->listing->property;\n        $time = $showing->scheduled_at->format('l, F jS \\\\a\\\\t g:i A');\n\n        $this->sendNotification(\n            $showing->client,\n            \"Your showing at {$property->address_line_1} is confirmed for {$time}. Agent: {$showing->agent->first_name} {$showing->agent->last_name} ({$showing->agent->phone}).\",\n            'confirmation'\n        );\n\n        $this->sendNotification(\n            $showing->agent,\n            \"New showing confirmed: {$showing->client->first_name} {$showing->client->last_name} at {$property->address_line_1} on {$time}.\",\n            'notification'\n        );\n    }\n\n    protected function sendCancellationNotice(Showing $showing, string $reason): void\n    {\n        $property = $showing->listing->property;\n        $message = \"Your showing at {$property->address_line_1} on {$showing->scheduled_at->format('l, F jS \\\\a\\\\t g:i A')} has been cancelled.\";\n        if ($reason) {\n            $message .= \" Reason: {$reason}\";\n        }\n\n        $this->sendNotification($showing->client, $message, 'cancellation');\n        $this->sendNotification($showing->agent, $message, 'cancellation');\n    }\n\n    protected function scheduleReminders(Showing $showing): void\n    {\n        Log::info('Tour reminders scheduled', [\n            'showing_id' => $showing->id,\n            '24h_at' => (clone $showing->scheduled_at)->modify('-24 hours')->format('c'),\n            '2h_at' => (clone $showing->scheduled_at)->modify('-2 hours')->format('c'),\n        ]);\n    }\n\n    protected function sendNotification(Client|Agent $recipient, string $message, string $type): void\n    {\n        Log::info(\"{$type} notification sent to {$recipient->email}: {$message}\");\n    }\n\n    protected function getBusinessHoursSummary(): string\n    {\n        $parts = [];\n        foreach ($this->businessHours as $day => [$open, $close]) {\n            $parts[] = ucfirst($day) . \" {$open}-{$close}\";\n        }\n        return implode(', ', $parts);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "345-document-processing-agents",
+      children: "34.5 Document Processing Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The DocumentProcessingAgent extracts structured information from real estate documents using OCR and AI-powered text analysis. It handles lease agreements, property deeds, inspection reports, title documents, and disclosure forms, populating database fields and flagging anomalies for review."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Document;\nuse App\\Models\\Property;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Storage;\n\nclass DocumentProcessingAgent\n{\n    protected string $apiKey;\n    protected array $supportedTypes = [\n        'lease_agreement', 'deed', 'inspection_report',\n        'title_report', 'disclosure', 'appraisal',\n        'purchase_agreement', 'hoa_document',\n    ];\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function processDocument(int $documentId): array\n    {\n        $document = Document::findOrFail($documentId);\n        $text = $this->performOcr($document);\n\n        if (empty($text)) {\n            return [\n                'success' => false,\n                'error' => 'No text could be extracted from the document.',\n            ];\n        }\n\n        $extracted = $this->extractStructuredData($document->type, $text);\n        $validation = $this->validateDocument($document, $extracted);\n\n        $document->update([\n            'extracted_text' => $text,\n            'ai_extracted_data' => $extracted,\n            'ai_validation' => $validation,\n            'processed_at' => now(),\n        ]);\n\n        if ($document->property_id && !empty($extracted['property_details'])) {\n            $this->enrichProperty($document->property_id, $extracted['property_details']);\n        }\n\n        return [\n            'success' => true,\n            'document_id' => $document->id,\n            'extracted_data' => $extracted,\n            'validation' => $validation,\n            'confidence' => $validation['overall_confidence'] ?? 0.0,\n        ];\n    }\n\n    public function performOcr(Document $document): string\n    {\n        $path = Storage::disk('local')->path($document->file_path);\n\n        if (!file_exists($path)) {\n            Log::warning('Document file not found for OCR', ['document_id' => $document->id]);\n            return '';\n        }\n\n        $extension = strtolower(pathinfo($document->file_path, PATHINFO_EXTENSION));\n\n        if (in_array($extension, ['txt', 'csv', 'json', 'xml'])) {\n            return Storage::disk('local')->get($document->file_path);\n        }\n\n        $base64 = base64_encode(file_get_contents($path));\n        $mimeType = $this->getMimeType($extension);\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => 'gpt-4o',\n                'messages' => [\n                    [\n                        'role' => 'user',\n                        'content' => [\n                            [\n                                'type' => 'text',\n                                'text' => 'Extract all text from this document. Return only the extracted text verbatim, preserving sections and formatting.',\n                            ],\n                            [\n                                'type' => 'image_url',\n                                'image_url' => [\n                                    'url' => \"data:{$mimeType};base64,{$base64}\",\n                                    'detail' => 'high',\n                                ],\n                            ],\n                        ],\n                    ],\n                ],\n                'max_tokens' => 4000,\n                'temperature' => 0.0,\n            ]);\n\n            $result = $response->json();\n            return $result['choices'][0]['message']['content'] ?? '';\n        } catch (\\Exception $e) {\n            Log::error('OCR processing failed', [\n                'document_id' => $document->id,\n                'error' => $e->getMessage(),\n            ]);\n            return '';\n        }\n    }\n\n    public function extractStructuredData(string $documentType, string $text): array\n    {\n        $schema = $this->getExtractionSchema($documentType);\n\n        $prompt = \"Extract structured data from this {$documentType}. Return ONLY valid JSON matching the schema.\\n\\n\" .\n            \"Document Text:\\n{$text}\\n\\n\" .\n            \"Required Schema:\\n\" . json_encode($schema, JSON_PRETTY_PRINT);\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => 'gpt-4o',\n                'messages' => [\n                    [\n                        'role' => 'system',\n                        'content' => 'You are a real estate document analyst. Extract structured data precisely. Return only valid JSON.',\n                    ],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'response_format' => ['type' => 'json_object'],\n                'temperature' => 0.1,\n                'max_tokens' => 2000,\n            ]);\n\n            $result = $response->json();\n            $extracted = json_decode(\n                $result['choices'][0]['message']['content'] ?? '{}',\n                true\n            );\n\n            return array_merge(\n                ['document_type' => $documentType, 'extracted_at' => now()->toIso8601String()],\n                $extracted\n            );\n        } catch (\\Exception $e) {\n            Log::error('Data extraction failed', [\n                'document_type' => $documentType,\n                'error' => $e->getMessage(),\n            ]);\n            return [\n                'document_type' => $documentType,\n                'error' => $e->getMessage(),\n            ];\n        }\n    }\n\n    public function validateDocument(Document $document, array $extractedData): array\n    {\n        $issues = [];\n        $confidence = 0.9;\n        $fieldCount = 0;\n        $validCount = 0;\n\n        foreach ($extractedData as $key => $value) {\n            if (in_array($key, ['document_type', 'extracted_at', 'error'])) {\n                continue;\n            }\n\n            $fieldCount++;\n            if (is_array($value) && empty($value)) {\n                $issues[] = \"Field '{$key}' is empty.\";\n                $confidence -= 0.05;\n            } elseif (is_null($value)) {\n                $issues[] = \"Field '{$key}' could not be determined.\";\n                $confidence -= 0.05;\n            } else {\n                $validCount++;\n            }\n        }\n\n        if ($document->type === 'lease_agreement') {\n            if (empty($extractedData['parties'] ?? [])) {\n                $issues[] = 'No tenant/landlord parties identified.';\n                $confidence -= 0.15;\n            }\n            if (empty($extractedData['rent_amount'] ?? null)) {\n                $issues[] = 'Rent amount missing.';\n                $confidence -= 0.15;\n            }\n            if (empty($extractedData['lease_term'] ?? null)) {\n                $issues[] = 'Lease term missing.';\n                $confidence -= 0.1;\n            }\n        }\n\n        if ($document->type === 'deed') {\n            if (empty($extractedData['grantor'] ?? null)) {\n                $issues[] = 'Grantor (seller) not identified.';\n                $confidence -= 0.1;\n            }\n            if (empty($extractedData['grantee'] ?? null)) {\n                $issues[] = 'Grantee (buyer) not identified.';\n                $confidence -= 0.1;\n            }\n            if (empty($extractedData['legal_description'] ?? null)) {\n                $issues[] = 'Legal description could not be extracted.';\n                $confidence -= 0.15;\n            }\n        }\n\n        if ($document->type === 'inspection_report') {\n            if (empty($extractedData['major_issues'] ?? [])) {\n                $issues[] = 'No major issues flagged → review may be incomplete.';\n                $confidence -= 0.05;\n            }\n            if (empty($extractedData['overall_condition'] ?? null)) {\n                $issues[] = 'Overall condition assessment missing.';\n                $confidence -= 0.1;\n            }\n        }\n\n        return [\n            'overall_confidence' => round(max(0.0, $confidence), 2),\n            'fields_extracted' => $fieldCount,\n            'fields_valid' => $validCount,\n            'issues' => $issues,\n            'is_valid' => $confidence >= 0.6,\n            'validated_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function batchProcess(array $documentIds): array\n    {\n        $results = [];\n\n        foreach ($documentIds as $id) {\n            $results[$id] = $this->processDocument($id);\n        }\n\n        return [\n            'total' => count($results),\n            'successful' => count(array_filter($results, fn($r) => $r['success'])),\n            'failed' => count(array_filter($results, fn($r) => !$r['success'])),\n            'results' => $results,\n        ];\n    }\n\n    public function getExtractionSchema(string $documentType): array\n    {\n        $schemas = [\n            'lease_agreement' => [\n                'parties' => [\n                    ['role' => 'landlord|tenant', 'name' => '', 'address' => ''],\n                ],\n                'property_address' => '',\n                'rent_amount' => 0.0,\n                'security_deposit' => 0.0,\n                'lease_term' => '',\n                'lease_start' => '',\n                'lease_end' => '',\n                'late_fee' => 0.0,\n                'utilities_included' => [],\n                'pet_policy' => '',\n                'termination_clause' => '',\n                'renewal_terms' => '',\n            ],\n            'deed' => [\n                'document_type_detail' => '',\n                'grantor' => '',\n                'grantee' => '',\n                'consideration_amount' => 0.0,\n                'property_address' => '',\n                'legal_description' => '',\n                'parcel_id' => '',\n                'recorded_date' => '',\n                'notary_information' => '',\n            ],\n            'inspection_report' => [\n                'property_address' => '',\n                'inspection_date' => '',\n                'inspector' => '',\n                'overall_condition' => '',\n                'major_issues' => [],\n                'minor_issues' => [],\n                'safety_concerns' => [],\n                'estimated_repair_costs' => 0.0,\n                'systems_evaluated' => [],\n                'recommendations' => [],\n            ],\n            'disclosure' => [\n                'property_address' => '',\n                'known_defects' => [],\n                'past_repairs' => [],\n                'hazards' => [],\n                'hoa_info' => '',\n                'pending_lawsuits' => [],\n                'date' => '',\n            ],\n        ];\n\n        return $schemas[$documentType] ?? ['content' => ''];\n    }\n\n    protected function enrichProperty(int $propertyId, array $details): void\n    {\n        $property = Property::find($propertyId);\n        if (!$property) {\n            return;\n        }\n\n        $updates = [];\n\n        if (!empty($details['parcel_id']) && empty($property->parcel_id)) {\n            $updates['parcel_id'] = $details['parcel_id'];\n        }\n\n        if (!empty($details['square_feet']) && empty($property->square_feet)) {\n            $updates['square_feet'] = $details['square_feet'];\n        }\n\n        if (!empty($details['year_built']) && empty($property->year_built)) {\n            $updates['year_built'] = $details['year_built'];\n        }\n\n        if (!empty($details['bedrooms']) && $property->bedrooms === 0) {\n            $updates['bedrooms'] = $details['bedrooms'];\n        }\n\n        if (!empty($details['bathrooms']) && $property->bathrooms === 0) {\n            $updates['bathrooms'] = $details['bathrooms'];\n        }\n\n        if (!empty($details['features'])) {\n            $existing = $property->features ?? [];\n            $updates['features'] = array_values(array_unique(\n                array_merge($existing, (array) $details['features'])\n            ));\n        }\n\n        if (!empty($details['amenities'])) {\n            $existing = $property->amenities ?? [];\n            $updates['amenities'] = array_values(array_unique(\n                array_merge($existing, (array) $details['amenities'])\n            ));\n        }\n\n        if (!empty($updates)) {\n            $enriched = $property->ai_enriched_data ?? [];\n            $enriched['document_sourced'][] = [\n                'fields' => array_keys($updates),\n                'source' => 'Document #' . ($details['document_id'] ?? 'unknown'),\n                'enriched_at' => now()->toIso8601String(),\n            ];\n            $updates['ai_enriched_data'] = $enriched;\n\n            $property->update($updates);\n        }\n    }\n\n    protected function getMimeType(string $extension): string\n    {\n        return match ($extension) {\n            'pdf' => 'application/pdf',\n            'png' => 'image/png',\n            'jpg', 'jpeg' => 'image/jpeg',\n            'tiff', 'tif' => 'image/tiff',\n            'gif' => 'image/gif',\n            'bmp' => 'image/bmp',\n            default => 'application/octet-stream',\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "346-lead-qualification-agents",
+      children: "34.6 Lead Qualification Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The LeadQualificationAgent scores inbound buyer and renter leads against active inventory. It analyzes budget constraints, location preferences, property requirements, and behavioral signals to assign a qualification score and recommend the best property matches."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Agent;\nuse App\\Models\\Client;\nuse App\\Models\\Listing;\nuse App\\Models\\Property;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass LeadQualificationAgent\n{\n    protected string $apiKey;\n    protected array $scoringWeights = [\n        'budget_alignment' => 0.30,\n        'preference_match' => 0.25,\n        'property_type_match' => 0.15,\n        'location_match' => 0.15,\n        'timeline_urgency' => 0.10,\n        'engagement_level' => 0.05,\n    ];\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function qualifyLead(int $clientId): array\n    {\n        $client = Client::with('assignedAgent')->findOrFail($clientId);\n        $scores = $this->calculateScores($client);\n        $matches = $this->findMatches($client, $scores);\n        $classification = $this->classifyLead($scores);\n        $recommendations = $this->generateRecommendations($client, $scores, $classification);\n\n        $client->update([\n            'ai_lead_score' => [\n                'overall_score' => $scores['overall'],\n                'component_scores' => $scores['components'],\n                'classification' => $classification,\n                'top_matches' => array_slice($matches, 0, 3),\n                'recommendations' => $recommendations,\n                'scored_at' => now()->toIso8601String(),\n            ],\n        ]);\n\n        return [\n            'client_id' => $client->id,\n            'client_name' => $client->first_name . ' ' . $client->last_name,\n            'client_type' => $client->client_type,\n            'overall_score' => $scores['overall'],\n            'classification' => $classification,\n            'matches' => array_slice($matches, 0, 5),\n            'recommendations' => $recommendations,\n        ];\n    }\n\n    public function calculateScores(Client $client): array\n    {\n        $components = [];\n\n        $components['budget_alignment'] = $this->scoreBudget($client);\n        $components['preference_match'] = $this->scorePreferences($client);\n        $components['property_type_match'] = $this->scorePropertyType($client);\n        $components['location_match'] = $this->scoreLocation($client);\n        $components['timeline_urgency'] = $this->scoreTimeline($client);\n        $components['engagement_level'] = $this->scoreEngagement($client);\n\n        $overall = 0.0;\n        foreach ($this->scoringWeights as $key => $weight) {\n            $overall += ($components[$key] ?? 0.0) * $weight;\n        }\n\n        return [\n            'overall' => round($overall, 3),\n            'components' => $components,\n        ];\n    }\n\n    public function findMatches(Client $client, array $scores): array\n    {\n        $inventory = Listing::active()\n            ->with('property')\n            ->whereHas('property', function ($q) use ($client) {\n                if ($client->client_type === 'buyer') {\n                    $q->whereNotIn('property_type', ['rental']);\n                }\n            })\n            ->get();\n\n        $matches = [];\n\n        foreach ($inventory as $listing) {\n            $matchScore = $this->scoreListingMatch($client, $listing);\n            if ($matchScore >= 0.4) {\n                $matches[] = [\n                    'listing_id' => $listing->id,\n                    'property_id' => $listing->property_id,\n                    'address' => $listing->property->fullAddress(),\n                    'price' => $listing->list_price,\n                    'bedrooms' => $listing->property->bedrooms,\n                    'bathrooms' => $listing->property->bathrooms,\n                    'sqft' => $listing->property->square_feet,\n                    'match_score' => round($matchScore, 3),\n                ];\n            }\n        }\n\n        usort($matches, fn($a, $b) => $b['match_score'] <=> $a['match_score']);\n\n        return $matches;\n    }\n\n    public function classifyLead(array $scores): string\n    {\n        $score = $scores['overall'];\n\n        return match (true) {\n            $score >= 0.80 => 'hot',\n            $score >= 0.60 => 'warm',\n            $score >= 0.35 => 'lukewarm',\n            default => 'cold',\n        };\n    }\n\n    public function matchLeadToAgent(int $clientId): ?Agent\n    {\n        $client = Client::findOrFail($clientId);\n        $preferences = $client->search_criteria ?? [];\n\n        $preferredCity = $preferences['city'] ?? null;\n        $preferredType = $preferences['property_type'] ?? null;\n\n        $query = Agent::where('status', 'active');\n\n        if ($preferredCity) {\n            $query->whereJsonContains('service_areas', $preferredCity);\n        }\n\n        if ($preferredType && in_array($preferredType, ['residential', 'commercial'])) {\n            $query->whereJsonContains('specialties', $preferredType);\n        }\n\n        $agent = $query->withCount('transactions')\n            ->orderBy('transactions_count', 'desc')\n            ->first();\n\n        if ($agent) {\n            $client->update(['assigned_agent_id' => $agent->id]);\n        }\n\n        return $agent;\n    }\n\n    public function generateRecommendations(Client $client, array $scores, string $classification): array\n    {\n        $recommendations = [];\n\n        if ($classification === 'cold') {\n            $recommendations[] = 'Send nurture email sequence with market updates';\n            $recommendations[] = 'Request budget reassessment via automated survey';\n\n            if ($client->budget_max && $client->budget_max < 100000) {\n                $recommendations[] = 'Suggest rental options as alternative';\n            }\n        }\n\n        if ($classification === 'lukewarm') {\n            $recommendations[] = 'Schedule introductory call to refine criteria';\n            $recommendations[] = 'Share curated listing digest via email';\n\n            if (($scores['components']['location_match'] ?? 0) < 0.5) {\n                $recommendations[] = 'Expand location criteria to nearby neighborhoods';\n            }\n        }\n\n        if ($classification === 'warm') {\n            $recommendations[] = 'Schedule property tour within 48 hours';\n            $recommendations[] = 'Prepare pre-qualification letter (buyers)';\n            $recommendations[] = 'Set up automated MLS alerts for new listings';\n\n            if ($client->budget_max && $client->budget_max > 500000) {\n                $recommendations[] = 'Offer concierge-level service for high-value lead';\n            }\n        }\n\n        if ($classification === 'hot') {\n            $recommendations[] = 'URGENT: Personal outreach within 2 hours';\n            $recommendations[] = 'Prepare showing schedule for top-matched properties';\n            $recommendations[] = 'Run comparative market analysis for negotiation prep';\n            $recommendations[] = 'Alert listing agents of qualified buyer interest';\n        }\n\n        return $recommendations;\n    }\n\n    protected function scoreBudget(Client $client): float\n    {\n        if (!$client->budget_min && !$client->budget_max) {\n            return 0.3;\n        }\n\n        $avgPrice = Listing::active()\n            ->whereHas('property', fn($q) => $q->where('property_type', $client->client_type === 'buyer' ? 'single_family' : 'condo'))\n            ->avg('list_price');\n\n        if (!$avgPrice) {\n            return 0.5;\n        }\n\n        if ($client->budget_max && $avgPrice > $client->budget_max) {\n            return 0.2;\n        }\n\n        if ($client->budget_min && $avgPrice < $client->budget_min) {\n            return 0.4;\n        }\n\n        if ($client->budget_max && $client->budget_min) {\n            $range = $client->budget_max - $client->budget_min;\n            $withinRange = $avgPrice >= $client->budget_min && $avgPrice <= $client->budget_max;\n            return $withinRange ? 1.0 : ($range > 100000 ? 0.7 : 0.4);\n        }\n\n        return 0.6;\n    }\n\n    protected function scorePreferences(Client $client): float\n    {\n        $criteria = $client->search_criteria ?? [];\n        if (empty($criteria)) {\n            return 0.4;\n        }\n\n        $filledFields = 0;\n        $totalFields = 0;\n\n        $fields = ['bedrooms', 'bathrooms', 'min_sqft', 'property_type', 'city'];\n\n        foreach ($fields as $field) {\n            $totalFields++;\n            if (!empty($criteria[$field])) {\n                $filledFields++;\n            }\n        }\n\n        return $totalFields > 0 ? round($filledFields / $totalFields, 2) : 0.4;\n    }\n\n    protected function scorePropertyType(Client $client): float\n    {\n        $criteria = $client->search_criteria ?? [];\n        $preferredType = $criteria['property_type'] ?? null;\n\n        if (!$preferredType) {\n            return 0.5;\n        }\n\n        $inventoryCount = Listing::active()\n            ->whereHas('property', fn($q) => $q->where('property_type', $preferredType))\n            ->count();\n\n        if ($inventoryCount === 0) {\n            return 0.2;\n        }\n\n        $totalActive = Listing::active()->count();\n\n        if ($totalActive === 0) {\n            return 0.5;\n        }\n\n        $ratio = $inventoryCount / $totalActive;\n\n        return match (true) {\n            $ratio >= 0.3 => 1.0,\n            $ratio >= 0.15 => 0.8,\n            $ratio >= 0.05 => 0.5,\n            default => 0.3,\n        };\n    }\n\n    protected function scoreLocation(Client $client): float\n    {\n        $criteria = $client->search_criteria ?? [];\n        $city = $criteria['city'] ?? $client->preferences['city'] ?? null;\n        $neighborhood = $criteria['neighborhood'] ?? null;\n\n        if (!$city && !$neighborhood) {\n            return 0.5;\n        }\n\n        $listingCount = Listing::active()\n            ->whereHas('property', function ($q) use ($city, $neighborhood) {\n                if ($city) {\n                    $q->where('city', $city);\n                }\n                if ($neighborhood) {\n                    $q->where('neighborhood', $neighborhood);\n                }\n            })\n            ->count();\n\n        return $listingCount > 5 ? 1.0 : ($listingCount > 0 ? 0.6 : 0.2);\n    }\n\n    protected function scoreTimeline(Client $client): float\n    {\n        $criteria = $client->search_criteria ?? [];\n        $timeline = $criteria['timeline'] ?? null;\n\n        return match ($timeline) {\n            'immediately', 'asap' => 1.0,\n            '1_month', '30_days' => 0.9,\n            '2_3_months' => 0.7,\n            '3_6_months' => 0.5,\n            '6_plus_months', 'just_browsing' => 0.2,\n            default => 0.4,\n        };\n    }\n\n    protected function scoreEngagement(Client $client): float\n    {\n        $showingCount = $client->showings()->count();\n        $offerCount = $client->offers()->count();\n        $hasPhone = !empty($client->phone);\n\n        $score = 0.3;\n        $score += min($showingCount * 0.1, 0.3);\n        $score += min($offerCount * 0.15, 0.2);\n        $score += $hasPhone ? 0.2 : 0.0;\n\n        return round(min($score, 1.0), 2);\n    }\n\n    protected function scoreListingMatch(Client $client, Listing $listing): float\n    {\n        $property = $listing->property;\n        $criteria = $client->search_criteria ?? [];\n        $score = 0.0;\n        $totalWeight = 0.0;\n\n        if (!empty($criteria['bedrooms'])) {\n            $totalWeight += 0.25;\n            $diff = abs((int) $criteria['bedrooms'] - $property->bedrooms);\n            $score += 0.25 * match (true) {\n                $diff === 0 => 1.0,\n                $diff === 1 => 0.6,\n                $diff === 2 => 0.3,\n                default => 0.1,\n            };\n        }\n\n        if (!empty($criteria['bathrooms'])) {\n            $totalWeight += 0.20;\n            $diff = abs((int) $criteria['bathrooms'] - $property->bathrooms);\n            $score += 0.20 * match (true) {\n                $diff === 0 => 1.0,\n                $diff === 1 => 0.6,\n                default => 0.2,\n            };\n        }\n\n        if ($client->budget_max) {\n            $totalWeight += 0.30;\n            if ($listing->list_price <= $client->budget_max) {\n                $ratio = $listing->list_price / $client->budget_max;\n                $score += 0.30 * match (true) {\n                    $ratio <= 0.8 => 1.0,\n                    $ratio <= 0.95 => 0.8,\n                    $ratio <= 1.0 => 0.6,\n                    default => 0.2,\n                };\n            }\n        }\n\n        if (!empty($criteria['city'])) {\n            $totalWeight += 0.15;\n            $score += 0.15 * ($property->city === $criteria['city'] ? 1.0 : 0.2);\n        }\n\n        if (!empty($criteria['property_type'])) {\n            $totalWeight += 0.10;\n            $score += 0.10 * ($property->property_type === $criteria['property_type'] ? 1.0 : 0.3);\n        }\n\n        return $totalWeight > 0 ? $score / $totalWeight : 0.5;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "347-market-analysis-agents",
+      children: "34.7 Market Analysis Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The MarketAnalysisAgent ingests listing and transaction data to produce neighborhood-level market intelligence. It tracks price trends, inventory velocity, seasonality, and supply-demand dynamics, generating reports that agents can share with clients during listing presentations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Listing;\nuse App\\Models\\Property;\nuse App\\Models\\Transaction;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass MarketAnalysisAgent\n{\n    protected string $apiKey;\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function generateNeighborhoodReport(string $city, ?string $neighborhood = null): array\n    {\n        $cacheKey = \"market_report_{$city}_\" . ($neighborhood ?? 'all');\n\n        return Cache::remember($cacheKey, 7200, function () use ($city, $neighborhood) {\n            $trends = $this->analyzePriceTrends($city, $neighborhood);\n            $inventory = $this->analyzeInventory($city, $neighborhood);\n            $daysOnMarket = $this->analyzeDaysOnMarket($city, $neighborhood);\n            $seasonality = $this->analyzeSeasonality($city, $neighborhood);\n            $comparables = $this->getNeighborhoodComparables($city, $neighborhood);\n\n            $narrative = $this->generateNarrative(\n                $city,\n                $neighborhood,\n                $trends,\n                $inventory,\n                $daysOnMarket,\n                $seasonality\n            );\n\n            return [\n                'city' => $city,\n                'neighborhood' => $neighborhood,\n                'report_date' => now()->toDateString(),\n                'price_trends' => $trends,\n                'inventory_analysis' => $inventory,\n                'days_on_market' => $daysOnMarket,\n                'seasonality' => $seasonality,\n                'comparables' => $comparables,\n                'narrative' => $narrative,\n                'generated_at' => now()->toIso8601String(),\n            ];\n        });\n    }\n\n    public function analyzePriceTrends(string $city, ?string $neighborhood = null): array\n    {\n        $query = Transaction::whereHas('listing.property', function ($q) use ($city, $neighborhood) {\n            $q->where('city', $city);\n            if ($neighborhood) {\n                $q->where('neighborhood', $neighborhood);\n            }\n        });\n\n        $monthlyData = [];\n        for ($i = 5; $i >= 0; $i--) {\n            $start = now()->subMonths($i + 1)->startOfMonth();\n            $end = now()->subMonths($i)->endOfMonth();\n\n            $monthQuery = clone $query;\n            $avgPrice = $monthQuery->whereBetween('closing_date', [$start, $end])->avg('sale_price');\n            $count = (clone $query)->whereBetween('closing_date', [$start, $end])->count();\n\n            $monthlyData[] = [\n                'month' => $start->format('M Y'),\n                'avg_price' => round($avgPrice ?? 0, 2),\n                'sales_count' => $count,\n            ];\n        }\n\n        $prices = array_column($monthlyData, 'avg_price');\n        $trend = $this->calculateTrend($prices);\n\n        $avgActivePrice = Listing::active()\n            ->whereHas('property', fn($q) => $q->where('city', $city))\n            ->avg('list_price');\n\n        $avgSoldPrice = $query->where('closing_date', '>=', now()->subMonths(3))->avg('sale_price');\n        $soldToListRatio = $avgActivePrice > 0 && $avgSoldPrice > 0\n            ? round($avgSoldPrice / $avgActivePrice, 3)\n            : null;\n\n        return [\n            'monthly_trend' => $monthlyData,\n            'overall_trend' => $trend,\n            'avg_active_price' => round($avgActivePrice ?? 0, 2),\n            'avg_sold_price_3mo' => round($avgSoldPrice ?? 0, 2),\n            'sold_to_list_ratio' => $soldToListRatio,\n            'price_appreciation_6mo' => $this->calculateAppreciation($monthlyData),\n        ];\n    }\n\n    public function analyzeInventory(string $city, ?string $neighborhood = null): array\n    {\n        $active = Listing::active()\n            ->whereHas('property', fn($q) => $q->where('city', $city))\n            ->count();\n\n        $pending = Listing::where('status', 'pending')\n            ->whereHas('property', fn($q) => $q->where('city', $city))\n            ->count();\n\n        $soldLastMonth = Transaction::whereHas('listing.property', fn($q) => $q->where('city', $city))\n            ->where('closing_date', '>=', now()->subMonth())\n            ->count();\n\n        $newListings = Listing::where('list_date', '>=', now()->subMonth())\n            ->whereHas('property', fn($q) => $q->where('city', $city))\n            ->count();\n\n        $absorptionRate = $soldLastMonth > 0\n            ? round($active / $soldLastMonth, 1)\n            : null;\n\n        $byType = Property::where('city', $city)\n            ->selectRaw('property_type, COUNT(*) as count')\n            ->groupBy('property_type')\n            ->pluck('count', 'property_type')\n            ->toArray();\n\n        return [\n            'active_listings' => $active,\n            'pending_listings' => $pending,\n            'sold_last_30_days' => $soldLastMonth,\n            'new_listings_30_days' => $newListings,\n            'absorption_rate_months' => $absorptionRate,\n            'market_type' => $absorptionRate !== null\n                ? ($absorptionRate < 4 ? 'seller' : ($absorptionRate < 6 ? 'balanced' : 'buyer'))\n                : 'insufficient_data',\n            'inventory_by_type' => $byType,\n        ];\n    }\n\n    public function analyzeDaysOnMarket(string $city, ?string $neighborhood = null): array\n    {\n        $soldListings = Listing::where('status', 'sold')\n            ->whereHas('property', fn($q) => $q->where('city', $city))\n            ->where('list_date', '>=', now()->subMonths(6))\n            ->get();\n\n        $avgDom = $soldListings->avg(fn($l) => $l->daysOnMarket());\n        $medDom = $soldListings->median(fn($l) => $l->daysOnMarket());\n\n        $byPriceRange = [];\n        $ranges = [\n            ['min' => 0, 'max' => 250000, 'label' => 'Under $250k'],\n            ['min' => 250000, 'max' => 500000, 'label' => '$250k-$500k'],\n            ['min' => 500000, 'max' => 1000000, 'label' => '$500k-$1M'],\n            ['min' => 1000000, 'max' => PHP_FLOAT_MAX, 'label' => '$1M+'],\n        ];\n\n        foreach ($ranges as $range) {\n            $filtered = $soldListings->filter(fn($l) =>\n                $l->list_price >= $range['min'] && $l->list_price < $range['max']\n            );\n            if ($filtered->count() > 0) {\n                $byPriceRange[] = [\n                    'range' => $range['label'],\n                    'avg_dom' => round($filtered->avg(fn($l) => $l->daysOnMarket()), 1),\n                    'count' => $filtered->count(),\n                ];\n            }\n        }\n\n        return [\n            'average_days_on_market' => round($avgDom ?? 0, 1),\n            'median_days_on_market' => round($medDom ?? 0, 1),\n            'by_price_range' => $byPriceRange,\n        ];\n    }\n\n    public function analyzeSeasonality(string $city, ?string $neighborhood = null): array\n    {\n        $monthlyCounts = [];\n        for ($month = 1; $month <= 12; $month++) {\n            $count = Transaction::whereHas('listing.property', fn($q) => $q->where('city', $city))\n                ->whereMonth('closing_date', $month)\n                ->whereYear('closing_date', now()->year)\n                ->count();\n\n            $monthlyCounts[\\DateTime::createFromFormat('!m', $month)->format('F')] = $count;\n        }\n\n        $maxMonth = array_keys($monthlyCounts, max($monthlyCounts))[0] ?? null;\n        $minMonth = array_keys($monthlyCounts, min($monthlyCounts))[0] ?? null;\n\n        return [\n            'monthly_distribution' => $monthlyCounts,\n            'peak_month' => $maxMonth,\n            'slow_month' => $minMonth,\n            'peak_vs_slow_ratio' => max($monthlyCounts) > 0 && min($monthlyCounts) > 0\n                ? round(max($monthlyCounts) / min($monthlyCounts), 2)\n                : null,\n        ];\n    }\n\n    public function getNeighborhoodComparables(string $city, ?string $neighborhood = null): array\n    {\n        return Transaction::whereHas('listing.property', function ($q) use ($city, $neighborhood) {\n            $q->where('city', $city);\n            if ($neighborhood) {\n                $q->where('neighborhood', $neighborhood);\n            }\n        })\n        ->where('closing_date', '>=', now()->subMonths(3))\n        ->with('listing.property')\n        ->orderBy('closing_date', 'desc')\n        ->limit(10)\n        ->get()\n        ->map(fn($t) => [\n            'address' => $t->listing->property->fullAddress(),\n            'sale_price' => $t->sale_price,\n            'closing_date' => $t->closing_date->toDateString(),\n            'bedrooms' => $t->listing->property->bedrooms,\n            'bathrooms' => $t->listing->property->bathrooms,\n            'sqft' => $t->listing->property->square_feet,\n            'price_per_sqft' => $t->listing->property->square_feet > 0\n                ? round($t->sale_price / $t->listing->property->square_feet, 2)\n                : null,\n        ])\n        ->toArray();\n    }\n\n    public function generateNarrative(\n        string $city,\n        ?string $neighborhood,\n        array $trends,\n        array $inventory,\n        array $dom,\n        array $seasonality\n    ): array {\n        $prompt = \"You are a real estate market analyst. Write a professional market narrative for {$city}\" .\n            ($neighborhood ? \" {$neighborhood}\" : '') .\n            \" based on these data points.\\n\\n\" .\n            \"Price Trends: \" . json_encode($trends) . \"\\n\" .\n            \"Inventory: \" . json_encode($inventory) . \"\\n\" .\n            \"Days on Market: \" . json_encode($dom) . \"\\n\" .\n            \"Seasonality: \" . json_encode($seasonality) . \"\\n\\n\" .\n            \"Return JSON: {executive_summary, market_dynamics, price_analysis, buyer_advice, seller_advice, outlook}\";\n\n        try {\n            $response = Http::withToken($this->apiKey)->post('https://api.openai.com/v1/chat/completions', [\n                'model' => 'gpt-4o',\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a senior real estate market analyst. Return only valid JSON.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'response_format' => ['type' => 'json_object'],\n                'temperature' => 0.5,\n                'max_tokens' => 1500,\n            ]);\n\n            $result = $response->json();\n            return json_decode(\n                $result['choices'][0]['message']['content'] ?? '{}',\n                true\n            );\n        } catch (\\Exception $e) {\n            Log::error('Market narrative generation failed', ['error' => $e->getMessage()]);\n            return [\n                'executive_summary' => \"Market analysis for {$city} generated.\",\n                'market_dynamics' => 'Narrative generation unavailable.',\n            ];\n        }\n    }\n\n    protected function calculateTrend(array $values): string\n    {\n        if (count($values) < 2) {\n            return 'insufficient_data';\n        }\n\n        $first = $values[0];\n        $last = $values[count($values) - 1];\n\n        if ($first == 0) {\n            return 'insufficient_data';\n        }\n\n        $change = (($last - $first) / $first) * 100;\n\n        return match (true) {\n            $change > 5 => 'increasing',\n            $change > 1 => 'slightly_increasing',\n            $change >= -1 => 'stable',\n            $change >= -5 => 'slightly_decreasing',\n            default => 'decreasing',\n        };\n    }\n\n    protected function calculateAppreciation(array $monthlyData): ?float\n    {\n        $prices = array_filter(array_column($monthlyData, 'avg_price'));\n        if (count($prices) < 2) {\n            return null;\n        }\n\n        $first = reset($prices);\n        $last = end($prices);\n\n        if ($first == 0) {\n            return null;\n        }\n\n        return round((($last - $first) / $first) * 100, 2);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "348-rental-management-agents",
+      children: "34.8 Rental Management Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The RentalManagementAgent automates the landlord-tenant lifecycle. It tracks monthly rent payments, flags overdue accounts, coordinates maintenance requests from report through resolution, and manages lease renewals with automated reminders and proposal generation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Client;\nuse App\\Models\\MaintenanceRequest;\nuse App\\Models\\Property;\nuse App\\Models\\Rental;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass RentalManagementAgent\n{\n    protected string $apiKey;\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function processRentPayment(int $rentalId, float $amount, string $paymentMethod): array\n    {\n        $rental = Rental::with('tenant', 'property')->findOrFail($rentalId);\n\n        if ($amount < $rental->monthly_rent) {\n            return [\n                'success' => false,\n                'payment_processed' => false,\n                'message' => \"Partial payment of \\${$amount} received. Full rent of \\${$rental->monthly_rent} is required.\",\n                'balance_due' => $rental->monthly_rent - $amount,\n            ];\n        }\n\n        $overpayment = $amount - $rental->monthly_rent;\n        $nextDue = $this->calculateNextDueDate($rental);\n\n        $history = $rental->ai_payment_history ?? [];\n        $history[] = [\n            'amount' => $amount,\n            'method' => $paymentMethod,\n            'received_at' => now()->toIso8601String(),\n            'overpayment' => $overpayment > 0 ? $overpayment : 0,\n        ];\n\n        $rental->update([\n            'last_rent_paid_at' => now(),\n            'next_rent_due' => $nextDue,\n            'status' => 'active',\n            'ai_payment_history' => $history,\n        ]);\n\n        $this->sendPaymentConfirmation($rental->tenant, $amount, $rental->property);\n\n        $result = [\n            'success' => true,\n            'payment_processed' => true,\n            'amount' => $amount,\n            'rental_id' => $rental->id,\n            'next_due_date' => $nextDue->toDateString(),\n            'message' => \"Payment of \\${$amount} received successfully.\",\n        ];\n\n        if ($overpayment > 0) {\n            $result['overpayment'] = $overpayment;\n            $result['message'] .= \" Overpayment of \\${$overpayment} credited.\";\n        }\n\n        return $result;\n    }\n\n    public function processMaintenanceRequest(\n        int $propertyId,\n        int $tenantId,\n        string $category,\n        string $description,\n        ?array $photos = null\n    ): array {\n        $rental = Rental::where('property_id', $propertyId)\n            ->where('tenant_id', $tenantId)\n            ->where('status', 'active')\n            ->first();\n\n        $urgency = $this->assessUrgency($category, $description);\n        $estimatedCost = $this->estimateRepairCost($category, $urgency);\n\n        $request = MaintenanceRequest::create([\n            'property_id' => $propertyId,\n            'rental_id' => $rental?->id,\n            'tenant_id' => $tenantId,\n            'category' => $category,\n            'urgency' => $urgency,\n            'description' => $description,\n            'photos' => $photos,\n            'status' => 'reported',\n            'ai_priority_score' => [\n                'score' => $this->calculatePriorityScore($category, $urgency),\n                'level' => $urgency,\n                'estimated_cost' => $estimatedCost,\n                'auto_assessed_at' => now()->toIso8601String(),\n            ],\n            'ai_estimated_cost' => $estimatedCost,\n        ]);\n\n        $this->notifyMaintenanceTeam($request);\n\n        return [\n            'success' => true,\n            'request_id' => $request->id,\n            'urgency' => $urgency,\n            'estimated_cost' => $estimatedCost,\n            'message' => \"Maintenance request #{$request->id} submitted with {$urgency} urgency.\",\n        ];\n    }\n\n    public function scheduleMaintenance(int $requestId, \\DateTime $scheduledAt): MaintenanceRequest\n    {\n        $request = MaintenanceRequest::findOrFail($requestId);\n        $request->update([\n            'scheduled_at' => $scheduledAt,\n            'status' => 'scheduled',\n        ]);\n\n        $this->sendNotification(\n            $request->tenant,\n            \"Maintenance scheduled for {$scheduledAt->format('l, F jS \\\\a\\\\t g:i A')}. Technician will visit for: {$request->description}\"\n        );\n\n        return $request->fresh();\n    }\n\n    public function completeMaintenance(int $requestId, float $cost, string $vendor, string $resolution): MaintenanceRequest\n    {\n        $request = MaintenanceRequest::findOrFail($requestId);\n        $request->update([\n            'completed_at' => now(),\n            'status' => 'completed',\n            'cost' => $cost,\n            'vendor_name' => $vendor,\n            'resolution_notes' => $resolution,\n        ]);\n\n        $this->sendNotification(\n            $request->tenant,\n            \"Maintenance request #{$requestId} has been completed. Resolution: {$resolution}\"\n        );\n\n        return $request->fresh();\n    }\n\n    public function generateLeaseRenewal(int $rentalId): array\n    {\n        $rental = Rental::with('tenant', 'property', 'agent')->findOrFail($rentalId);\n        $daysUntilExpiry = now()->diffInDays($rental->lease_end, false);\n\n        $newRent = $this->calculateRenewalRent($rental);\n        $renewalTerms = $this->generateRenewalTerms($rental, $newRent);\n\n        $proposal = [\n            'rental_id' => $rental->id,\n            'tenant_name' => $rental->tenant->first_name . ' ' . $rental->tenant->last_name,\n            'property_address' => $rental->property->fullAddress(),\n            'current_rent' => $rental->monthly_rent,\n            'proposed_rent' => $newRent,\n            'increase_percentage' => $rental->monthly_rent > 0\n                ? round((($newRent - $rental->monthly_rent) / $rental->monthly_rent) * 100, 2)\n                : 0,\n            'current_lease_end' => $rental->lease_end->toDateString(),\n            'proposed_term' => '12 months',\n            'proposed_start' => $rental->lease_end->addDay()->toDateString(),\n            'proposed_end' => $rental->lease_end->addYear()->toDateString(),\n            'days_until_expiry' => $daysUntilExpiry,\n            'terms' => $renewalTerms,\n            'generated_at' => now()->toIso8601String(),\n        ];\n\n        if ($daysUntilExpiry <= 60) {\n            $this->sendRenewalReminder($rental, $proposal);\n        }\n\n        return $proposal;\n    }\n\n    public function getDelinquentAccounts(): array\n    {\n        $overdueRentals = Rental::where('status', 'active')\n            ->where('next_rent_due', '<', now())\n            ->with('tenant', 'property')\n            ->get()\n            ->filter(fn($r) => $r->isOverdue())\n            ->values();\n\n        $result = [];\n\n        foreach ($overdueRentals as $rental) {\n            $daysOverdue = now()->diffInDays($rental->next_rent_due);\n            $lateFee = $daysOverdue > 5 ? $rental->late_fee : 0;\n\n            $result[] = [\n                'rental_id' => $rental->id,\n                'tenant' => $rental->tenant->first_name . ' ' . $rental->tenant->last_name,\n                'tenant_email' => $rental->tenant->email,\n                'property' => $rental->property->fullAddress(),\n                'monthly_rent' => $rental->monthly_rent,\n                'days_overdue' => $daysOverdue,\n                'late_fee' => $lateFee,\n                'total_due' => $rental->monthly_rent + $lateFee,\n                'last_payment' => $rental->last_rent_paid_at?->toDateString(),\n            ];\n        }\n\n        return $result;\n    }\n\n    protected function assessUrgency(string $category, string $description): string\n    {\n        $emergencyKeywords = [\n            'gas leak', 'fire', 'flood', 'no heat', 'no electricity',\n            'sewage', 'burst pipe', 'broken lock', 'smoke',\n        ];\n\n        foreach ($emergencyKeywords as $keyword) {\n            if (stripos($description, $keyword) !== false) {\n                return 'emergency';\n            }\n        }\n\n        $urgentCategories = ['plumbing', 'electrical', 'hvac', 'gas'];\n\n        if (in_array($category, $urgentCategories)) {\n            return 'urgent';\n        }\n\n        return 'normal';\n    }\n\n    protected function estimateRepairCost(string $category, string $urgency): array\n    {\n        $estimates = [\n            'plumbing' => ['min' => 150, 'max' => 800],\n            'electrical' => ['min' => 100, 'max' => 600],\n            'hvac' => ['min' => 200, 'max' => 2000],\n            'appliance' => ['min' => 100, 'max' => 500],\n            'structural' => ['min' => 500, 'max' => 5000],\n            'pest' => ['min' => 200, 'max' => 1000],\n            'general' => ['min' => 50, 'max' => 300],\n        ];\n\n        $range = $estimates[$category] ?? ['min' => 100, 'max' => 500];\n\n        if ($urgency === 'emergency') {\n            $range['max'] *= 1.5;\n        }\n\n        return [\n            'estimated_min' => $range['min'],\n            'estimated_max' => $range['max'],\n            'currency' => 'USD',\n        ];\n    }\n\n    protected function calculatePriorityScore(string $category, string $urgency): float\n    {\n        $urgencyScores = ['emergency' => 1.0, 'urgent' => 0.75, 'normal' => 0.4];\n        $categoryBoost = ['plumbing' => 0.1, 'electrical' => 0.1, 'hvac' => 0.05];\n\n        return min(1.0, ($urgencyScores[$urgency] ?? 0.4) + ($categoryBoost[$category] ?? 0));\n    }\n\n    protected function calculateNextDueDate(Rental $rental): \\DateTime\n    {\n        $currentDue = $rental->next_rent_due ?? $rental->lease_start;\n        $next = clone $currentDue;\n        $next->modify('+1 month');\n\n        while ($next->isPast()) {\n            $next->modify('+1 month');\n        }\n\n        return $next;\n    }\n\n    protected function calculateRenewalRent(Rental $rental): float\n    {\n        $avgIncrease = Rental::where('property_id', $rental->property_id)\n            ->where('status', 'active')\n            ->avg('monthly_rent');\n\n        $marketRate = $avgIncrease ?: $rental->monthly_rent;\n        $increase = $marketRate * 1.04;\n\n        return round(max($increase, $rental->monthly_rent * 1.03), 2);\n    }\n\n    protected function generateRenewalTerms(Rental $rental, float $newRent): array\n    {\n        return [\n            'term_length' => '12 months',\n            'monthly_rent' => $newRent,\n            'security_deposit' => $rental->security_deposit,\n            'late_fee' => $rental->late_fee,\n            'notice_period' => '60 days',\n            'utilities_included' => $rental->lease_terms['utilities_included'] ?? [],\n            'pet_policy' => $rental->lease_terms['pet_policy'] ?? 'No change',\n        ];\n    }\n\n    protected function sendPaymentConfirmation(Client $tenant, float $amount, Property $property): void\n    {\n        Log::info(\"Payment confirmation sent to {$tenant->email}: \\${$amount} for {$property->address_line_1}\");\n    }\n\n    protected function notifyMaintenanceTeam(MaintenanceRequest $request): void\n    {\n        Log::info(\"Maintenance team notified: Request #{$request->id} - {$request->urgency}\", [\n            'category' => $request->category,\n            'description' => $request->description,\n        ]);\n    }\n\n    protected function sendRenewalReminder(Rental $rental, array $proposal): void\n    {\n        Log::info(\"Lease renewal reminder sent to {$rental->tenant->email}\", [\n            'proposal' => $proposal,\n        ]);\n    }\n\n    protected function sendNotification(Client $client, string $message): void\n    {\n        Log::info(\"Notification sent to {$client->email}: {$message}\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "349-crm-for-real-estate-agents",
+      children: "34.9 CRM for Real Estate Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The RealEstateCrmAgent tracks every client touchpoint → calls, emails, showings, offers, and closing milestones → and uses AI to recommend the next best action. It surfaces follow-up reminders, identifies at-risk relationships, and suggests strategic touches that keep agents top-of-mind."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\RealEstate;\n\nuse App\\Models\\Agent;\nuse App\\Models\\Client;\nuse App\\Models\\Listing;\nuse App\\Models\\Showing;\nuse App\\Models\\Offer;\nuse App\\Models\\Transaction;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass RealEstateCrmAgent\n{\n    protected string $apiKey;\n\n    public function __construct()\n    {\n        $this->apiKey = config('services.openai.api_key');\n    }\n\n    public function getClientTimeline(int $clientId): array\n    {\n        $client = Client::with('assignedAgent')->findOrFail($clientId);\n\n        $events = [];\n\n        foreach ($client->showings as $showing) {\n            $events[] = [\n                'type' => 'showing',\n                'date' => $showing->scheduled_at->toIso8601String(),\n                'summary' => \"Showing at {$showing->listing->property->address_line_1}\",\n                'status' => $showing->status,\n                'details' => $showing->feedback ? json_encode($showing->feedback) : null,\n            ];\n        }\n\n        foreach ($client->offers as $offer) {\n            $events[] = [\n                'type' => 'offer',\n                'date' => $offer->submitted_at->toIso8601String(),\n                'summary' => \"Offer of \\${$offer->offer_amount} on {$offer->listing->property->address_line_1}\",\n                'status' => $offer->status,\n                'details' => \"Type: {$offer->offer_type}, Contingencies: \" . count($offer->contingencies ?? []),\n            ];\n        }\n\n        usort($events, fn($a, $b) => $b['date'] <=> $a['date']);\n\n        $lastContact = $client->updated_at;\n\n        return [\n            'client' => [\n                'id' => $client->id,\n                'name' => $client->first_name . ' ' . $client->last_name,\n                'type' => $client->client_type,\n                'status' => $client->status,\n                'assigned_agent' => $client->assignedAgent?->full_name,\n                'days_since_last_contact' => $lastContact->diffInDays(now()),\n            ],\n            'events' => $events,\n            'event_count' => count($events),\n        ];\n    }\n\n    public function suggestFollowUps(int $agentId): array\n    {\n        $agent = Agent::with('clients')->findOrFail($agentId);\n        $suggestions = [];\n\n        foreach ($agent->clients as $client) {\n            $lastActivity = $this->getLastActivity($client);\n            $daysSince = $lastActivity ? $lastActivity->diffInDays(now()) : 999;\n\n            if ($daysSince > 90 && $client->status === 'active') {\n                $suggestions[] = [\n                    'priority' => 'high',\n                    'client_id' => $client->id,\n                    'client_name' => $client->first_name . ' ' . $client->last_name,\n                    'type' => 're-engagement',\n                    'action' => 'Reach out to reconnect → no activity in ' . $daysSince . ' days',\n                    'days_inactive' => $daysSince,\n                ];\n            } elseif ($daysSince > 30) {\n                $suggestions[] = [\n                    'priority' => 'medium',\n                    'client_id' => $client->id,\n                    'client_name' => $client->first_name . ' ' . $client->last_name,\n                    'type' => 'check-in',\n                    'action' => 'Send market update or check-in email',\n                    'days_inactive' => $daysSince,\n                ];\n            }\n\n            $showingCount = $client->showings()\n                ->where('status', 'completed')\n                ->where('completed_at', '>=', now()->subWeek())\n                ->count();\n\n            if ($showingCount >= 2 && $client->offers()->where('status', 'submitted')->count() === 0) {\n                $suggestions[] = [\n                    'priority' => 'high',\n                    'client_id' => $client->id,\n                    'client_name' => $client->first_name . ' ' . $client->last_name,\n                    'type' => 'follow-up',\n                    'action' => \"Follow up after {$showingCount} showings → no offer submitted yet\",\n                ];\n            }\n        }\n\n        $upcomingClosing = Transaction::where('agent_id', $agentId)\n            ->where('closing_date', '>=', now())\n            ->where('closing_date', '<=', now()->addDays(14))\n            ->with('buyer', 'seller')\n            ->get();\n\n        foreach ($upcomingClosing as $transaction) {\n            $daysUntil = now()->diffInDays($transaction->closing_date);\n\n            $suggestions[] = [\n                'priority' => 'high',\n                'type' => 'closing_prep',\n                'client_id' => $transaction->buyer_id,\n                'client_name' => $transaction->buyer->first_name . ' ' . $transaction->buyer->last_name,\n                'action' => \"Closing in {$daysUntil} days → prepare final documents\",\n                'closing_date' => $transaction->closing_date->toDateString(),\n            ];\n        }\n\n        usort($suggestions, fn($a, $b) => match (true) {\n            $a['priority'] === 'high' && $b['priority'] !== 'high' => -1,\n            $a['priority'] !== 'high' && $b['priority'] === 'high' => 1,\n            default => 0,\n        });\n\n        return $suggestions;\n    }\n\n    public function analyzeClientHealth(int $agentId): array\n    {\n        $agent = Agent::with('clients')->findOrFail($agentId);\n        $clients = $agent->clients;\n\n        $total = $clients->count();\n        $active = $clients->where('status', 'active')->count();\n        $inactive = $clients->where('status', 'inactive')->count();\n\n        $highValue = $clients->filter(fn($c) =>\n            ($c->budget_max ?? 0) >= 500000 && $c->status === 'active'\n        )->count();\n\n        $recentActivity = $clients->filter(function ($c) {\n            $lastActivity = $this->getLastActivity($c);\n            return $lastActivity && $lastActivity->diffInDays(now()) <= 30;\n        })->count();\n\n        $atRisk = $clients->filter(function ($c) {\n            $lastActivity = $this->getLastActivity($c);\n            return (!$lastActivity || $lastActivity->diffInDays(now()) > 90)\n                && $c->status === 'active';\n        })->count();\n\n        $typeBreakdown = [\n            'buyers' => $clients->where('client_type', 'buyer')->count(),\n            'sellers' => $clients->where('client_type', 'seller')->count(),\n            'renters' => $clients->where('client_type', 'renter')->count(),\n            'both' => $clients->where('client_type', 'both')->count(),\n        ];\n\n        return [\n            'agent_id' => $agentId,\n            'agent_name' => $agent->full_name,\n            'summary' => [\n                'total_clients' => $total,\n                'active_clients' => $active,\n                'inactive_clients' => $inactive,\n                'high_value_clients' => $highValue,\n                'recently_contacted' => $recentActivity,\n                'at_risk_clients' => $atRisk,\n                'engagement_rate' => $total > 0 ? round(($recentActivity / $total) * 100, 1) : 0,\n            ],\n            'type_breakdown' => $typeBreakdown,\n            'recommendations' => $this->generateCrmRecommendations($agent, $atRisk, $recentActivity, $total),\n        ];\n    }\n\n    public function sendBirthdayWishes(): int\n    {\n        $sent = 0;\n\n        $celebrants = Client::whereMonth('created_at', now()->month)\n            ->whereDay('created_at', now()->day)\n            ->where('status', 'active')\n            ->with('assignedAgent')\n            ->get();\n\n        foreach ($celebrants as $client) {\n            if ($client->assignedAgent) {\n                $message = \"Happy anniversary with our team, {$client->first_name}! Thank you for trusting us with your real estate journey.\";\n                Log::info(\"Celebration message sent to {$client->email}: {$message}\");\n                $sent++;\n            }\n        }\n\n        return $sent;\n    }\n\n    public function calculateConversionRate(int $agentId): array\n    {\n        $agent = Agent::withCount('clients')->findOrFail($agentId);\n\n        $totalLeads = $agent->clients()->count();\n        $leadWithShowings = $agent->clients()\n            ->whereHas('showings')\n            ->count();\n        $leadWithOffers = $agent->clients()\n            ->whereHas('offers')\n            ->count();\n\n        $transactions = Transaction::where('agent_id', $agentId)->count();\n\n        return [\n            'total_leads' => $totalLeads,\n            'showing_conversion' => $totalLeads > 0\n                ? round(($leadWithShowings / $totalLeads) * 100, 1) . '%'\n                : '0%',\n            'offer_conversion' => $totalLeads > 0\n                ? round(($leadWithOffers / $totalLeads) * 100, 1) . '%'\n                : '0%',\n            'closed_deals' => $transactions,\n            'close_rate' => $leadWithOffers > 0\n                ? round(($transactions / $leadWithOffers) * 100, 1) . '%'\n                : '0%',\n        ];\n    }\n\n    public function autoTagClients(): int\n    {\n        $tagged = 0;\n        $clients = Client::where('status', 'active')->with('assignedAgent')->get();\n\n        foreach ($clients as $client) {\n            $budgetMax = $client->budget_max ?? 0;\n            $tier = match (true) {\n                $budgetMax >= 1000000 => 'luxury',\n                $budgetMax >= 500000 => 'premium',\n                $budgetMax >= 200000 => 'mid_range',\n                $budgetMax > 0 => 'value',\n                default => 'unqualified',\n            };\n\n            $insights = $client->ai_insights ?? [];\n            $insights['tier'] = $tier;\n            $insights['auto_tagged_at'] = now()->toIso8601String();\n\n            $showingCount = $client->showings()->count();\n            $insights['engagement_level'] = match (true) {\n                $showingCount >= 5 => 'high',\n                $showingCount >= 2 => 'medium',\n                $showingCount >= 1 => 'low',\n                default => 'new',\n            };\n\n            $client->update(['ai_insights' => $insights]);\n            $tagged++;\n        }\n\n        return $tagged;\n    }\n\n    protected function getLastActivity(Client $client): ?\\DateTime\n    {\n        $dates = [];\n\n        $latestShowing = $client->showings()\n            ->whereNotNull('scheduled_at')\n            ->orderBy('scheduled_at', 'desc')\n            ->value('scheduled_at');\n\n        if ($latestShowing) {\n            $dates[] = $latestShowing;\n        }\n\n        $latestOffer = $client->offers()\n            ->orderBy('submitted_at', 'desc')\n            ->value('submitted_at');\n\n        if ($latestOffer) {\n            $dates[] = $latestOffer;\n        }\n\n        if (empty($dates)) {\n            return $client->updated_at;\n        }\n\n        return max($dates);\n    }\n\n    protected function generateCrmRecommendations(Agent $agent, int $atRisk, int $recentlyContacted, int $total): array\n    {\n        $recommendations = [];\n\n        if ($atRisk > 0) {\n            $recommendations[] = \"Re-engage {$atRisk} at-risk clients with personalized market updates\";\n        }\n\n        if ($total > 0 && ($recentlyContacted / $total) < 0.3) {\n            $recommendations[] = 'Increase outreach frequency → less than 30% of clients contacted recently';\n        }\n\n        $recommendations[] = 'Schedule weekly pipeline review to identify stalled transactions';\n        $recommendations[] = 'Send monthly market newsletter to nurture inactive leads';\n\n        if ($agent->clients()->where('client_type', 'seller')->count() < 5) {\n            $recommendations[] = 'Focus on listing acquisitions → seller client count is low';\n        }\n\n        return $recommendations;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare real estate agents and their AI techniques."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Agent"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Primary Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AI Technique Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PropertyMatchingAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match buyers with properties"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector embeddings + preference scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ValuationAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Estimate property values"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regression models + market data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TourSchedulingAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coordinate property viewings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constraint satisfaction + calendar management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LeadScoringAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Score real estate leads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predictive modeling + engagement tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MarketAnalysisAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Analyze market trends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Statistical analysis + LLM insights"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for real estate AI agents and concepts."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RE Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Property, Buyer, Listing, Tour, Lead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Property Matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector similarity + preference weighting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Price Valuation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparable sales + market trends"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tour Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-party calendar coordination"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lead Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engagement score + intent prediction"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Property Matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Buyer-property recommendations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relevance vs discovery"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Price Valuation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated property appraisal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy vs data availability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tour Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Viewing coordination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation vs personal touch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lead Scoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales pipeline prioritization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precision vs false negatives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Market Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trend identification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depth vs timeliness"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your understanding of real estate AI agents."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " How does the PropertyMatchingAgent match buyers to properties?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Exact keyword matching"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Vector embeddings + preference scoring"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Random selection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Alphabetical sorting"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Vector embeddings + preference scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " What technique does the ValuationAgent use for price estimation?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Random guess"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Regression models + market data analysis"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Fixed pricing per square foot"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) User-provided price"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) Regression models + market data analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What does the TourSchedulingAgent coordinate?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Only property showings"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Multi-party schedule coordination between agents, buyers, and sellers"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Open house events only"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Inspector appointments only"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " What signals does the LeadScoringAgent use?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Only email opens"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) Engagement tracking + intent prediction"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Only phone calls"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Only website visits"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) Engagement tracking + intent prediction</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare real estate agents and their AI techniques."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Agent"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Primary Function"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "AI Technique Used"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "PropertyMatchingAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Match buyers with properties"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Vector embeddings + preference scoring"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "ValuationAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Estimate property values"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Regression models + market data"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "TourSchedulingAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coordinate property viewings"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Constraint satisfaction + calendar management"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "LeadScoringAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Score real estate leads"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Predictive modeling + engagement tracking"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "MarketAnalysisAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Analyze market trends"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Statistical analysis + LLM insights"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for real estate AI agents and concepts."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "RE Models"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Property, Buyer, Listing, Tour, Lead"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Property Matching"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Vector similarity + preference weighting"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Price Valuation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Comparable sales + market trends"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Tour Scheduling"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Multi-party calendar coordination"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Lead Management"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Engagement score + intent prediction"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Property Matching"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Buyer-property recommendations"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Relevance vs discovery"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Price Valuation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Automated property appraisal"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Accuracy vs data availability"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Tour Scheduling"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Viewing coordination"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Automation vs personal touch"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Lead Scoring"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Sales pipeline prioritization"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Precision vs false negatives"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Market Analysis"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Trend identification"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Depth vs timeliness"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your understanding of real estate AI agents."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " How does the PropertyMatchingAgent match buyers to properties?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Exact keyword matching"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Vector embeddings + preference scoring"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Random selection"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Alphabetical sorting"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Vector embeddings + preference scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " What technique does the ValuationAgent use for price estimation?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Random guess"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) Regression models + market data analysis"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Fixed pricing per square foot"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) User-provided price"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) Regression models + market data analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " What does the TourSchedulingAgent coordinate?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) Only property showings"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) Multi-party schedule coordination between agents, buyers, and sellers"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) Open house events only"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) Inspector appointments only"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " What signals does the LeadScoringAgent use?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Only email opens"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) Engagement tracking + intent prediction"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Only phone calls"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Only website visits"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) Engagement tracking + intent prediction</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare real estate agents and their AI techniques."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Agent"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Primary Function"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "AI Technique Used"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "PropertyMatchingAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Match buyers with properties"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Vector embeddings + preference scoring"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "ValuationAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Estimate property values"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Regression models + market data"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "TourSchedulingAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coordinate property viewings"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Constraint satisfaction + calendar management"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LeadScoringAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Score real estate leads"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Predictive modeling + engagement tracking"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "MarketAnalysisAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Analyze market trends"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Statistical analysis + LLM insights"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for real estate AI agents and concepts."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "RE Models"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Property, Buyer, Listing, Tour, Lead"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Property Matching"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Vector similarity + preference weighting"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Price Valuation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Comparable sales + market trends"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Tour Scheduling"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Multi-party calendar coordination"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Lead Management"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Engagement score + intent prediction"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Property Matching"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Buyer-property recommendations"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Relevance vs discovery"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Price Valuation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Automated property appraisal"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Accuracy vs data availability"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Tour Scheduling"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Viewing coordination"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Automation vs personal touch"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Lead Scoring"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Sales pipeline prioritization"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Precision vs false negatives"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Market Analysis"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Trend identification"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Depth vs timeliness"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your understanding of real estate AI agents."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " How does the PropertyMatchingAgent match buyers to properties?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Exact keyword matching"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Vector embeddings + preference scoring"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Random selection"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Alphabetical sorting"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Vector embeddings + preference scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " What technique does the ValuationAgent use for price estimation?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Random guess"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) Regression models + market data analysis"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Fixed pricing per square foot"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) User-provided price"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) Regression models + market data analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " What does the TourSchedulingAgent coordinate?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) Only property showings"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) Multi-party schedule coordination between agents, buyers, and sellers"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) Open house events only"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) Inspector appointments only"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " What signals does the LeadScoringAgent use?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Only email opens"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) Engagement tracking + intent prediction"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Only phone calls"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Only website visits"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) Engagement tracking + intent prediction</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare real estate agents and their AI techniques."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Agent"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Primary Function"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "AI Technique Used"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "PropertyMatchingAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Match buyers with properties"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Vector embeddings + preference scoring"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "ValuationAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Estimate property values"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Regression models + market data"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "TourSchedulingAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coordinate property viewings"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Constraint satisfaction + calendar management"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LeadScoringAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Score real estate leads"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Predictive modeling + engagement tracking"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "MarketAnalysisAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Analyze market trends"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Statistical analysis + LLM insights"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for real estate AI agents and concepts."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "RE Models"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Property, Buyer, Listing, Tour, Lead"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Property Matching"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Vector similarity + preference weighting"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Price Valuation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Comparable sales + market trends"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Tour Scheduling"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Multi-party calendar coordination"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Lead Management"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Engagement score + intent prediction"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Property Matching"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Buyer-property recommendations"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Relevance vs discovery"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Price Valuation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Automated property appraisal"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Accuracy vs data availability"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Tour Scheduling"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Viewing coordination"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Automation vs personal touch"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Lead Scoring"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Sales pipeline prioritization"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Precision vs false negatives"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Market Analysis"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Trend identification"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Depth vs timeliness"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your understanding of real estate AI agents."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " How does the PropertyMatchingAgent match buyers to properties?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Exact keyword matching"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Vector embeddings + preference scoring"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Random selection"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Alphabetical sorting"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Vector embeddings + preference scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " What technique does the ValuationAgent use for price estimation?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Random guess"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) Regression models + market data analysis"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Fixed pricing per square foot"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) User-provided price"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) Regression models + market data analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " What does the TourSchedulingAgent coordinate?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) Only property showings"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Multi-party schedule coordination between agents, buyers, and sellers"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) Open house events only"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) Inspector appointments only"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " What signals does the LeadScoringAgent use?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Only email opens"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) Engagement tracking + intent prediction"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Only phone calls"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Only website visits"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) Engagement tracking + intent prediction</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["This chapter demonstrated how AI agents transform every facet of real estate operations within a Laravel application. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "PropertyListingAgent"
+                                                                      }), " generates compelling, search-optimized listings from raw property data. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "ValuationAgent"
+                                                                      }), " produces statistically grounded price estimates using comparable sales, market trends, and AI refinement. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "TourSchedulingAgent"
+                                                                      }), " eliminates the back-and-forth of showing coordination with automated availability checks, confirmations, and reminders. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "DocumentProcessingAgent"
+                                                                      }), " converts scanned leases, deeds, and inspection reports into structured, queryable data. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "LeadQualificationAgent"
+                                                                      }), " scores and routes prospects based on budget, preferences, and behavioral signals. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "MarketAnalysisAgent"
+                                                                      }), " transforms transaction data into neighborhood intelligence reports that agents can share with clients. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "RentalManagementAgent"
+                                                                      }), " automates the landlord lifecycle from payment processing to maintenance coordination. Finally, the ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "RealEstateCrmAgent"
+                                                                      }), " keeps agents organized with activity tracking, follow-up suggestions, and pipeline health analytics."]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Taken together, these agents form a complete AI-powered real estate platform that reduces manual overhead, accelerates deal cycles, and surfaces insights that would otherwise remain buried in spreadsheets and email threads."
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "exercises",
+                                                                      children: "Exercises"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Listing Agent Enhancement"
+                                                                          }), ": Extend ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "PropertyListingAgent.generateListing()"
+                                                                          }), " to accept a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "listingType"
+                                                                          }), " parameter (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "sale"
+                                                                          }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "lease"
+                                                                          }), ") and adjust the generated description, selling points, and suggested price accordingly. For lease listings, estimate monthly rent instead of sale price using local rental comps."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Valuation Confidence"
+                                                                          }), ": Modify ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "ValuationAgent.estimateValue()"
+                                                                          }), " to return a human-readable confidence label (\"High\" for >= 0.8, \"Medium\" for >= 0.5, \"Low\" otherwise) and include an explanation of the key factors that most influenced the estimate."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Tour Scheduling Conflict Resolution"
+                                                                          }), ": Enhance ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "TourSchedulingAgent"
+                                                                          }), " to handle double-booking scenarios. When a requested time conflicts with an existing showing, automatically find the next three available slots and offer them as alternatives in the response."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Document Version Tracking"
+                                                                          }), ": Add a versioning system to ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "DocumentProcessingAgent"
+                                                                          }), " that detects when a re-processed document differs from its previous extraction. Log the changed fields and trigger a review notification for any financial fields (rent amount, sale price, deposit) that changed by more than 10%."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Lead Score Decay"
+                                                                          }), ": Implement a score decay mechanism in ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "LeadQualificationAgent"
+                                                                          }), " where a lead's overall score decreases by 5% each week without engagement (showing, offer, or agent contact). Re-classify the lead when the score drops below the next classification threshold."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Market Report PDF Export"
+                                                                          }), ": Build a command or job that calls ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "MarketAnalysisAgent.generateNeighborhoodReport()"
+                                                                          }), " and renders the result into a PDF using Laravel's Blade-to-PDF pipeline (e.g., barryvdh/laravel-dompdf). Include charts for the monthly price trend and inventory breakdown."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Rental Late Fee Automation"
+                                                                          }), ": Add a method to ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "RentalManagementAgent"
+                                                                          }), " that runs daily, identifies overdue accounts beyond the grace period, automatically applies the configured late fee, and sends a payment reminder to the tenant with the updated balance."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "CRM Dashboard Endpoint"
+                                                                          }), ": Create a Laravel API route ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "/api/agent/{agent}/crm-dashboard"
+                                                                          }), " that aggregates data from ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "RealEstateCrmAgent.getClientTimeline()"
+                                                                          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "analyzeClientHealth()"
+                                                                          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "suggestFollowUps()"
+                                                                          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "calculateConversionRate()"
+                                                                          }), " into a single JSON response suitable for a front-end dashboard."]
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

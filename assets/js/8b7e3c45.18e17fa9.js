@@ -1,0 +1,5791 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[10414],{
+
+/***/ 58831
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_09_virtual_memory_md_8b7_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-09-virtual-memory-md-8b7.json
+const site_docs_courses_operating_systems_09_virtual_memory_md_8b7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/09-virtual-memory","title":"Chapter 9: Virtual Memory","description":"---","source":"@site/docs/courses/operating-systems/09-virtual-memory.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/09-virtual-memory","permalink":"/ai-engineering-journey/operating-systems/09-virtual-memory","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"id":"09-virtual-memory","slug":"/operating-systems/09-virtual-memory","title":"Chapter 9: Virtual Memory","sidebar_label":"Chapter 9: Virtual Memory","sidebar_position":9},"sidebar":"course-operating-systems","previous":{"title":"Chapter 8: Memory Management","permalink":"/ai-engineering-journey/operating-systems/08-memory-management"},"next":{"title":"Chapter 10: File Systems","permalink":"/ai-engineering-journey/operating-systems/10-file-systems"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/09-virtual-memory.md
+
+
+const frontMatter = {
+	id: '09-virtual-memory',
+	slug: '/operating-systems/09-virtual-memory',
+	title: 'Chapter 9: Virtual Memory',
+	sidebar_label: 'Chapter 9: Virtual Memory',
+	sidebar_position: 9
+};
+const contentTitle = 'Chapter 9: Virtual Memory';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Virtual Memory Concept",
+  "id": "virtual-memory-concept",
+  "level": 3
+}, {
+  "value": "Demand Paging",
+  "id": "demand-paging",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy",
+  "level": 4
+}, {
+  "value": "Demand Paging - Numbered Steps",
+  "id": "demand-paging---numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - Demand Paging Handler",
+  "id": "pseudocode---demand-paging-handler",
+  "level": 4
+}, {
+  "value": "Dry Run - Demand Paging Trace",
+  "id": "dry-run---demand-paging-trace",
+  "level": 4
+}, {
+  "value": "C++ Implementation - Demand Paging Simulation",
+  "id": "c-implementation---demand-paging-simulation",
+  "level": 4
+}, {
+  "value": "Python Implementation - Demand Paging Simulation",
+  "id": "python-implementation---demand-paging-simulation",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 4
+}, {
+  "value": "A&amp;D Table",
+  "id": "ad-table",
+  "level": 4
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 4
+}, {
+  "value": "Page Fault Handling - Detailed Flow",
+  "id": "page-fault-handling---detailed-flow",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-1",
+  "level": 4
+}, {
+  "value": "The 9 Steps of Page Fault Handling",
+  "id": "the-9-steps-of-page-fault-handling",
+  "level": 4
+}, {
+  "value": "Effective Access Time with Demand Paging",
+  "id": "effective-access-time-with-demand-paging",
+  "level": 4
+}, {
+  "value": "Copy-on-Write (COW)",
+  "id": "copy-on-write-cow",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-2",
+  "level": 4
+}, {
+  "value": "COW Numbered Steps",
+  "id": "cow-numbered-steps",
+  "level": 4
+}, {
+  "value": "COW Dry Run Trace",
+  "id": "cow-dry-run-trace",
+  "level": 4
+}, {
+  "value": "C++ Implementation - COW Simulation",
+  "id": "c-implementation---cow-simulation",
+  "level": 4
+}, {
+  "value": "Python Implementation - COW Simulation",
+  "id": "python-implementation---cow-simulation",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 4
+}, {
+  "value": "Page Replacement",
+  "id": "page-replacement",
+  "level": 3
+}, {
+  "value": "Page Replacement Algorithms",
+  "id": "page-replacement-algorithms",
+  "level": 4
+}, {
+  "value": "FIFO (First-In, First-Out)",
+  "id": "fifo-first-in-first-out",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-3",
+  "level": 4
+}, {
+  "value": "FIFO Numbered Steps",
+  "id": "fifo-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - FIFO",
+  "id": "pseudocode---fifo",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - FIFO",
+  "id": "dry-run-trace-table---fifo",
+  "level": 4
+}, {
+  "value": "C++ Implementation - FIFO",
+  "id": "c-implementation---fifo",
+  "level": 4
+}, {
+  "value": "Python Implementation - FIFO",
+  "id": "python-implementation---fifo",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-2",
+  "level": 4
+}, {
+  "value": "A&amp;D Table",
+  "id": "ad-table-1",
+  "level": 4
+}, {
+  "value": "Edge Cases - FIFO",
+  "id": "edge-cases---fifo",
+  "level": 4
+}, {
+  "value": "Optimal Page Replacement (OPT or MIN)",
+  "id": "optimal-page-replacement-opt-or-min",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-4",
+  "level": 4
+}, {
+  "value": "Optimal Numbered Steps",
+  "id": "optimal-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - Optimal",
+  "id": "pseudocode---optimal",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - Optimal",
+  "id": "dry-run-trace-table---optimal",
+  "level": 4
+}, {
+  "value": "C++ Implementation - Optimal",
+  "id": "c-implementation---optimal",
+  "level": 4
+}, {
+  "value": "Python Implementation - Optimal",
+  "id": "python-implementation---optimal",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-3",
+  "level": 4
+}, {
+  "value": "A&amp;D Table",
+  "id": "ad-table-2",
+  "level": 4
+}, {
+  "value": "LRU (Least Recently Used)",
+  "id": "lru-least-recently-used",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-5",
+  "level": 4
+}, {
+  "value": "LRU Numbered Steps",
+  "id": "lru-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - LRU",
+  "id": "pseudocode---lru",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - LRU",
+  "id": "dry-run-trace-table---lru",
+  "level": 4
+}, {
+  "value": "C++ Implementation - LRU",
+  "id": "c-implementation---lru",
+  "level": 4
+}, {
+  "value": "Python Implementation - LRU",
+  "id": "python-implementation---lru",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-4",
+  "level": 4
+}, {
+  "value": "A&amp;D Table",
+  "id": "ad-table-3",
+  "level": 4
+}, {
+  "value": "Second-Chance (Clock) Algorithm",
+  "id": "second-chance-clock-algorithm",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-6",
+  "level": 4
+}, {
+  "value": "Second-Chance Numbered Steps",
+  "id": "second-chance-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - Second-Chance (Clock)",
+  "id": "pseudocode---second-chance-clock",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - Second-Chance",
+  "id": "dry-run-trace-table---second-chance",
+  "level": 4
+}, {
+  "value": "C++ Implementation - Second-Chance (Clock)",
+  "id": "c-implementation---second-chance-clock",
+  "level": 4
+}, {
+  "value": "Python Implementation - Second-Chance (Clock)",
+  "id": "python-implementation---second-chance-clock",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-5",
+  "level": 4
+}, {
+  "value": "A&amp;D Table",
+  "id": "ad-table-4",
+  "level": 4
+}, {
+  "value": "MFU (Most Frequently Used) Page Replacement",
+  "id": "mfu-most-frequently-used-page-replacement",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-7",
+  "level": 4
+}, {
+  "value": "MFU Numbered Steps",
+  "id": "mfu-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - MFU",
+  "id": "pseudocode---mfu",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - MFU",
+  "id": "dry-run-trace-table---mfu",
+  "level": 4
+}, {
+  "value": "C++ Implementation - MFU",
+  "id": "c-implementation---mfu",
+  "level": 4
+}, {
+  "value": "Python Implementation - MFU",
+  "id": "python-implementation---mfu",
+  "level": 4
+}, {
+  "value": "LFU (Least Frequently Used) Page Replacement",
+  "id": "lfu-least-frequently-used-page-replacement",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-8",
+  "level": 4
+}, {
+  "value": "LFU Numbered Steps",
+  "id": "lfu-numbered-steps",
+  "level": 4
+}, {
+  "value": "Pseudocode - LFU",
+  "id": "pseudocode---lfu",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table - LFU",
+  "id": "dry-run-trace-table---lfu",
+  "level": 4
+}, {
+  "value": "C++ Implementation - LFU",
+  "id": "c-implementation---lfu",
+  "level": 4
+}, {
+  "value": "Python Implementation - LFU",
+  "id": "python-implementation---lfu",
+  "level": 4
+}, {
+  "value": "LRU Approximation Algorithms",
+  "id": "lru-approximation-algorithms",
+  "level": 3
+}, {
+  "value": "1. Reference Bit Method",
+  "id": "1-reference-bit-method",
+  "level": 4
+}, {
+  "value": "2. Not Recently Used (NRU) Algorithm",
+  "id": "2-not-recently-used-nru-algorithm",
+  "level": 4
+}, {
+  "value": "3. Second-Chance (Clock) Algorithm",
+  "id": "3-second-chance-clock-algorithm",
+  "level": 4
+}, {
+  "value": "4. Aging Algorithm",
+  "id": "4-aging-algorithm",
+  "level": 4
+}, {
+  "value": "Page Replacement Algorithms Comparison Table",
+  "id": "page-replacement-algorithms-comparison-table",
+  "level": 3
+}, {
+  "value": "Frame Allocation",
+  "id": "frame-allocation",
+  "level": 3
+}, {
+  "value": "Fixed Allocation",
+  "id": "fixed-allocation",
+  "level": 4
+}, {
+  "value": "Priority Allocation",
+  "id": "priority-allocation",
+  "level": 4
+}, {
+  "value": "Local vs Global Allocation",
+  "id": "local-vs-global-allocation",
+  "level": 4
+}, {
+  "value": "Thrashing",
+  "id": "thrashing",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-9",
+  "level": 4
+}, {
+  "value": "Thrashing Model with Degree of Multiprogramming",
+  "id": "thrashing-model-with-degree-of-multiprogramming",
+  "level": 4
+}, {
+  "value": "Thrashing Detection",
+  "id": "thrashing-detection",
+  "level": 4
+}, {
+  "value": "Thrashing Prevention",
+  "id": "thrashing-prevention",
+  "level": 4
+}, {
+  "value": "Working Set Model",
+  "id": "working-set-model",
+  "level": 3
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition",
+  "level": 4
+}, {
+  "value": "Working Set Numbered Steps",
+  "id": "working-set-numbered-steps",
+  "level": 4
+}, {
+  "value": "Working Set Evolution Trace",
+  "id": "working-set-evolution-trace",
+  "level": 4
+}, {
+  "value": "Working Set vs Thrashing Prevention",
+  "id": "working-set-vs-thrashing-prevention",
+  "level": 4
+}, {
+  "value": "Page Size",
+  "id": "page-size",
+  "level": 3
+}, {
+  "value": "Page Size Trade-offs Table",
+  "id": "page-size-trade-offs-table",
+  "level": 4
+}, {
+  "value": "TLB Reach Formula",
+  "id": "tlb-reach-formula",
+  "level": 4
+}, {
+  "value": "Why 4 KB is Standard",
+  "id": "why-4-kb-is-standard",
+  "level": 4
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-10",
+  "level": 4
+}, {
+  "value": "Modern Developments",
+  "id": "modern-developments",
+  "level": 3
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: Walk through the complete steps of page fault handling.",
+  "id": "q1-walk-through-the-complete-steps-of-page-fault-handling",
+  "level": 3
+}, {
+  "value": "Q2: What are the trade-offs between small and large page sizes?",
+  "id": "q2-what-are-the-trade-offs-between-small-and-large-page-sizes",
+  "level": 3
+}, {
+  "value": "Q3: How does the TLB differ from a CPU cache?",
+  "id": "q3-how-does-the-tlb-differ-from-a-cpu-cache",
+  "level": 3
+}, {
+  "value": "Q4: What is the difference between paging and swapping?",
+  "id": "q4-what-is-the-difference-between-paging-and-swapping",
+  "level": 3
+}, {
+  "value": "Q5: Explain Belady Anomaly and which algorithms exhibit it.",
+  "id": "q5-explain-belady-anomaly-and-which-algorithms-exhibit-it",
+  "level": 3
+}, {
+  "value": "Q6: How would you implement LRU in a real OS kernel?",
+  "id": "q6-how-would-you-implement-lru-in-a-real-os-kernel",
+  "level": 3
+}, {
+  "value": "Q7: What is the difference between local and global page replacement?",
+  "id": "q7-what-is-the-difference-between-local-and-global-page-replacement",
+  "level": 3
+}, {
+  "value": "Q8: What happens when you allocate more memory than physical RAM?",
+  "id": "q8-what-happens-when-you-allocate-more-memory-than-physical-ram",
+  "level": 3
+}, {
+  "value": "Q9: Why does fork() use copy-on-write? How much does it save?",
+  "id": "q9-why-does-fork-use-copy-on-write-how-much-does-it-save",
+  "level": 3
+}, {
+  "value": "Q10: What is mmap() and how does it relate to demand paging?",
+  "id": "q10-what-is-mmap-and-how-does-it-relate-to-demand-paging",
+  "level": 3
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "Linux Page Reclaim (kswapd + PFRA)",
+  "id": "linux-page-reclaim-kswapd--pfra",
+  "level": 3
+}, {
+  "value": "Windows Virtual Memory",
+  "id": "windows-virtual-memory",
+  "level": 3
+}, {
+  "value": "macOS Virtual Memory",
+  "id": "macos-virtual-memory",
+  "level": 3
+}, {
+  "value": "Key Differences Table",
+  "id": "key-differences-table",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: Page Fault Rate vs Performance",
+  "id": "example-1-page-fault-rate-vs-performance",
+  "level": 3
+}, {
+  "value": "Example 2: Page Replacement Simulation in Python (All Algorithms)",
+  "id": "example-2-page-replacement-simulation-in-python-all-algorithms",
+  "level": 3
+}, {
+  "value": "Example 3: C++ Program for all Page Replacement Algorithms",
+  "id": "example-3-c-program-for-all-page-replacement-algorithms",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript Virtual Memory Simulator",
+  "id": "typescript-virtual-memory-simulator",
+  "level": 3
+}, {
+  "value": "Numerical Examples",
+  "id": "numerical-examples",
+  "level": 3
+}, {
+  "value": "Page Replacement Trace (LRU with 4 frames)",
+  "id": "page-replacement-trace-lru-with-4-frames",
+  "level": 4
+}, {
+  "value": "Belady&#39;s Anomaly with FIFO",
+  "id": "beladys-anomaly-with-fifo",
+  "level": 4
+}, {
+  "value": "Additional Chapter Quiz Questions",
+  "id": "additional-chapter-quiz-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 4
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 4
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 4
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Basic",
+  "id": "basic-1",
+  "level": 3
+}, {
+  "value": "Intermediate",
+  "id": "intermediate-1",
+  "level": 3
+}, {
+  "value": "Advanced",
+  "id": "advanced-1",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    div: "div",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-9-virtual-memory",
+        children: "Chapter 9: Virtual Memory"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/08-memory-management",
+          children: "Memory Management"
+        })]
+      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/operating-systems/10-file-systems",
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next: File Systems"
+        })
+      }), " >>"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish virtual memory from physical memory management"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain demand paging and the concept of page faults"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement and compare page replacement algorithms (FIFO, Optimal, LRU, Second-Chance, MFU, LFU)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze thrashing and its relation to the working-set model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe the effects of page size on system performance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply the principle of locality (spatial and temporal)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand frame allocation strategies and their impact"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain LRU approximation techniques used in real OS"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/09-virtual-memory/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/09-virtual-memory/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/09-virtual-memory/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/09-virtual-memory/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/09-virtual-memory/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/09-virtual-memory/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtual Memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Allows execution of processes partially in memory; illusion of larger memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Demand Paging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pages loaded only when referenced; lazy pager"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page Fault"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Referenced page not in memory => trap to OS => load from disk => restart instruction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Copy-on-Write"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pages shared after fork(); copied only on write"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page Replacement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Select victim page: FIFO, Optimal, LRU, Clock, MFU, LFU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LRU Approximation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reference bit, Second-Chance, NRU, Aging - practical LRU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Frame Allocation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed, proportional, priority, local, global"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Thrashing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Excessive paging - process spends more time paging than executing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Allocation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Equal, proportional, or priority-based page allocation among processes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Virtual Memory Concept] --> B[Demand Paging]\n    B --> C[Page Fault Handling]\n    C --> D[Copy-on-Write]\n    D --> E[Page Replacement Algorithms]\n    E --> F[Frame Allocation]\n    F --> G[Thrashing]\n    G --> H[Working Set Model]\n    H --> I[Page Size]\n    I --> J[Real Systems]\n    J --> K[Summary]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/09-virtual-memory.png",
+        alt: "Paging and Segmentation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "virtual-memory-concept",
+      children: "Virtual Memory Concept"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Virtual memory separates the logical memory (address space) as seen by a process from physical memory. This allows:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Programs larger than physical memory to run (using demand paging)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each process to have its own private, contiguous address space"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Efficient sharing of memory between processes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Simplified memory management (each process sees a clean linear address space)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The virtual address space is divided into pages. Only pages that are actively needed must be in physical memory."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A large library with a small reading desk. You cannot place all books on the desk at once. Instead, you bring books from the stacks to the desk only when you need them. When the desk is full and you need another book, you return one to the stacks. The desk is physical memory; the stacks are disk; your research paper is the process accessing data across many books."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "demand-paging",
+      children: "Demand Paging"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "demand paging"
+      }), " system, pages are loaded into memory only when they are referenced (not in advance). This is like a paging system with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lazy loading"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Page Table Entry (with demand paging):\n+-------+---+---+---+------------+\n| Frame | V | R | D | Protection |\n| Number| a | e | i |           |\n|       | l | f | r |           |\n|       | i |   | t |           |\n|       | d |   | y |           |\n+-------+---+---+---+------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Valid bit"
+        }), " = 0: Page is not in memory (page fault)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Valid bit"
+        }), " = 1: Page is in memory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reference bit (R):"
+        }), " Set by hardware when page is accessed"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dirty bit (D):"
+        }), " Set when page is written to"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A food delivery kitchen with limited counter space. Ingredients (pages) are stored in a large walk-in refrigerator (disk). The chef (CPU) only brings ingredients to the counter (physical memory) when a dish (instruction) requires them. If the counter is full when a new ingredient is needed, the chef must put something back in the fridge first."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "demand-paging---numbered-steps",
+      children: "Demand Paging - Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CPU generates virtual address for instruction/data fetch"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MMU translates virtual page number (VPN) to page table entry (PTE)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MMU checks valid bit in PTE"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If valid bit = 1 (page in memory): MMU extracts frame number, forms physical address, accesses memory"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If valid bit = 0 (page not in memory): MMU raises a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "page fault"
+        }), " trap to the OS"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS saves CPU state (PC, registers)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS validates the faulting address (is it a valid mapping?)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS reads the page from swap space/disk into a free frame"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS updates page table: set valid bit = 1, record frame number"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS restarts the faulting instruction"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "DEMAND PAGING FLOW:\n\n   CPU Access\n      |\n      v\n   MMU: Translate VPN -> PTE\n      |\n      v\n   Check Valid Bit\n   /              \\\n Valid=1          Valid=0\n   |                 |\n   v                 v\n Extract Frame    PAGE FAULT\n   |                 |\n   v                 v\n Physical Addr    OS Handler\n   |              - Save state\n   v              - Validate addr\n Memory Access    - Disk I/O (page in)\n   |              - Update page table\n   v              - Restart instr\n   Done\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---demand-paging-handler",
+      children: "Pseudocode - Demand Paging Handler"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE handle_memory_access(virtual_address):\n    vpn = virtual_address >> PAGE_SHIFT\n    pte = page_table[vpn]\n\n    IF pte.valid == 1:\n        frame = pte.frame_number\n        physical_address = (frame << PAGE_SHIFT) | (virtual_address & OFFSET_MASK)\n        access_memory(physical_address)\n    ELSE:\n        CALL page_fault_handler(vpn)\n    END IF\nEND PROCEDURE\n\nPROCEDURE page_fault_handler(vpn):\n    SAVE process_state(PC, registers)\n\n    IF NOT is_valid_address(vpn):\n        SEND_SIGSEGV(process)\n        RETURN\n    END IF\n\n    IF page_table[vpn].valid == 1:\n        // Race condition: page was brought in by another thread\n        RESTORE process_state()\n        RETURN\n    END IF\n\n    frame = FIND_free_frame()\n    IF frame == NULL:\n        victim = SELECT_victim_page()\n        IF victim.dirty == 1:\n            WRITE victim TO swap_disk\n        END IF\n        UPDATE page_table[victim.vpn].valid = 0\n        frame = victim.frame_number\n    END IF\n\n    ISSUE_disk_read(vpn, frame)\n    UPDATE page_table[vpn].valid = 1\n    UPDATE page_table[vpn].frame = frame\n    UPDATE page_table[vpn].dirty = 0\n\n    RESTORE process_state()\n    // Instruction restarts - MMU retries access\nEND PROCEDURE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run---demand-paging-trace",
+      children: "Dry Run - Demand Paging Trace"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Access"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Page Table State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fault?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Free Frames"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3->[1,F0], others [0,-]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Load from disk, frame 0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3->[1,F0], 5->[1,F1], others [0,-]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Load from disk, frame 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3->[1,F0], 5->[1,F1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit - already in F0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3->[1,F0], 5->[1,F1], 8->[1,F2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Load from disk, frame 2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN=9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9->[1,F0] replaces 3 (FIFO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace: evict VPN 3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---demand-paging-simulation",
+      children: "C++ Implementation - Demand Paging Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n#include <algorithm>\n#include <climits>\n\nstruct PageTableEntry {\n    bool valid;\n    unsigned frame;\n    bool dirty;\n    bool referenced;\n};\n\nclass DemandPagingSimulator {\n    unsigned page_count;\n    unsigned frame_count;\n    std::vector<PageTableEntry> page_table;\n    std::vector<unsigned> free_frames;\n    std::vector<unsigned> memory;\n\npublic:\n    DemandPagingSimulator(unsigned pages, unsigned frames)\n        : page_count(pages), frame_count(frames) {\n        page_table.resize(pages, {false, 0, false, false});\n        for (unsigned i = 0; i < frames; i++) free_frames.push_back(i);\n        memory.resize(frames, UINT_MAX);\n    }\n\n    struct Result {\n        unsigned page_faults;\n        unsigned page_hits;\n        double fault_rate;\n    };\n\n    Result run(const std::vector<unsigned>& references) {\n        unsigned faults = 0, hits = 0;\n        for (auto vpn : references) {\n            if (page_table[vpn].valid) {\n                hits++;\n                page_table[vpn].referenced = true;\n                std::cout << \"VPN \" << vpn << \" -> HIT (frame \"\n                          << page_table[vpn].frame << \")\\n\";\n            } else {\n                faults++;\n                handle_fault(vpn);\n                std::cout << \"VPN \" << vpn << \" -> FAULT (frame \"\n                          << page_table[vpn].frame << \")\\n\";\n            }\n        }\n        return {faults, hits, (double)faults / references.size()};\n    }\n\nprivate:\n    void handle_fault(unsigned vpn) {\n        if (!free_frames.empty()) {\n            unsigned frame = free_frames.back();\n            free_frames.pop_back();\n            page_table[vpn] = {true, frame, false, true};\n            memory[frame] = vpn;\n        } else {\n            unsigned victim_frame = 0;\n            unsigned victim_vpn = memory[0];\n            if (page_table[victim_vpn].dirty) {\n                std::cout << \"  Writing back VPN \" << victim_vpn << \"\\n\";\n            }\n            page_table[victim_vpn].valid = false;\n            page_table[vpn] = {true, victim_frame, false, true};\n            memory[victim_frame] = vpn;\n        }\n    }\n};\n\nint main() {\n    DemandPagingSimulator dps(20, 3);\n    std::vector<unsigned> refs = {3, 5, 3, 8, 5, 9};\n    auto r = dps.run(refs);\n    std::cout << \"\\nFaults: \" << r.page_faults\n              << \", Hits: \" << r.page_hits\n              << \", Rate: \" << r.fault_rate << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---demand-paging-simulation",
+      children: "Python Implementation - Demand Paging Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass\nfrom typing import List, Optional\n\n\n@dataclass\nclass PageTableEntry:\n    valid: bool = False\n    frame: Optional[int] = None\n    dirty: bool = False\n    referenced: bool = False\n\n\nclass DemandPagingSimulator:\n    def __init__(self, num_pages: int, num_frames: int):\n        self.page_table = [PageTableEntry() for _ in range(num_pages)]\n        self.free_frames = list(range(num_frames))\n        self.memory: List[Optional[int]] = [None] * num_frames\n\n    def run(self, references: List[int]):\n        faults = hits = 0\n        for vpn in references:\n            if self.page_table[vpn].valid:\n                hits += 1\n                self.page_table[vpn].referenced = True\n                print(f\"VPN {vpn} -> HIT (frame {self.page_table[vpn].frame})\")\n            else:\n                faults += 1\n                self._handle_fault(vpn)\n                print(f\"VPN {vpn} -> FAULT (frame {self.page_table[vpn].frame})\")\n        print(f\"\\nFaults: {faults}, Hits: {hits}, Rate: {faults / len(references):.2f}\")\n        return faults, hits\n\n    def _handle_fault(self, vpn: int):\n        if self.free_frames:\n            frame = self.free_frames.pop()\n            self.page_table[vpn] = PageTableEntry(valid=True, frame=frame, referenced=True)\n            self.memory[frame] = vpn\n        else:\n            victim_frame = 0\n            victim_vpn = self.memory[0]\n            if self.page_table[victim_vpn].dirty:\n                print(f\"  Writing back VPN {victim_vpn}\")\n            self.page_table[victim_vpn] = PageTableEntry()\n            self.page_table[vpn] = PageTableEntry(valid=True, frame=victim_frame, referenced=True)\n            self.memory[victim_frame] = vpn\n\n\nif __name__ == \"__main__\":\n    dps = DemandPagingSimulator(20, 3)\n    dps.run([3, 5, 3, 8, 5, 9])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time per access:"
+        }), " O(1) for hit (MMU lookup + memory access); O(p) for fault where p = page replacement overhead"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(P + F) where P = number of virtual pages, F = number of frames"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY O(1) for hits:"
+        }), " Page table lookup is direct-indexed by VPN; MMU does it in hardware"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY page faults are expensive:"
+        }), " Disk I/O (~10ms) vs RAM access (~100ns) = 100,000x slower"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EAT formula:"
+        }), " EAT = (1-p) * MA + p * PFT where p = fault probability, MA = memory access time, PFT = page fault time"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ad-table",
+      children: "A&D Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Runs programs larger than physical RAM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page faults are expensive (disk I/O)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher multiprogramming degree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead of page table management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Less I/O (only needed pages loaded)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thrashing possible under memory pressure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Each process gets private address space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLB misses add translation cost"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero pages (lazy allocation):"
+        }), " On first access, OS maps to a shared zero-filled page, then copy-on-write. No physical page allocated until write."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No free frame available:"
+        }), " Triggers page replacement. If all frames are wired/pinned, the fault cannot be serviced (system panic in extreme cases)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Instruction restart:"
+        }), " If the faulting instruction is complex (e.g. string move spanning pages), the OS must save enough state to restart safely."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "page-fault-handling---detailed-flow",
+      children: "Page Fault Handling - Detailed Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-1",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "You are reading a textbook at a library desk. You realize the chapter you need is in a different book still on the shelf (page fault). You:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mark your current place (save state)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Walk to the shelf (disk seek)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Retrieve the book (read from disk)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bring it to your desk and open to the right page (load into frame)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume reading where you left off (restart instruction)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "the-9-steps-of-page-fault-handling",
+      children: "The 9 Steps of Page Fault Handling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trap to OS:"
+        }), " The MMU detects the valid bit = 0 and raises a page fault exception. Control transfers to the OS page fault handler."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Save Process State:"
+        }), " The OS saves the program counter, registers, and other volatile state of the currently running process."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identify Faulting Page:"
+        }), " The OS reads the faulting virtual address from the CPU control registers (CR2 on x86) and extracts the VPN."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Validate Address:"
+        }), " The OS checks:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Is the VPN within the process valid address range?"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Do the protection bits permit the requested access (read/write/execute)?"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If invalid -> segmentation fault / access violation."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Find a Free Frame:"
+        }), " Consult the free-frame list. If empty, invoke page replacement to evict a victim."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Initiate Disk I/O:"
+        }), " Issue a block read from the swap area or mapped file into the allocated frame. This is the slowest step."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Context Switch (Optional):"
+        }), " While waiting for disk, the OS may run another process to keep the CPU busy."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O Completion Interrupt:"
+        }), " The disk controller signals completion. The OS updates the PTE: set valid = 1, fill frame number, clear dirty bit."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Restart Instruction:"
+        }), " The OS restores the saved state and re-executes the faulting instruction. The MMU retries the translation - this time valid = 1, access succeeds."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PAGE FAULT FLOW (detailed):\n\n  +------------------+\n  | Instruction Ref  |\n  | Virtual Address  |\n  +--------+---------+\n           |\n           v\n  +--------+---------+\n  | MMU: VPN->PTE    |\n  | Valid bit == 0   |\n  +--------+---------+\n           |\n           v\n  +--------+---------+\n  | TRAP to OS       |\n  | Page Fault       |\n  | Handler          |\n  +--------+---------+\n           |\n           v\n  +--------+---------+\n  | Save CPU state   |\n  | (PC, regs)       |\n  +--------+---------+\n           |\n           v\n  +--------+---------+\n  | Validate address |\n  +--------+---------+\n   /                \\\n  v                  v\nValid             Invalid\n  |                  |\n  v                  v\n+--+-----------+   SEGFAULT\n| Free Frame?  |   (kill process)\n+--+--------+--+\n /          \\\nv            v\nYes          No\n|             |\n|     +-------+-------+\n|     | Page Replace   |\n|     | Select victim  |\n|     | Dirty? Writebk |\n|     +-------+-------+\n|             |\n+------+------+\n       |\n       v\n+------+---------+\n| Start Disk I/O |\n| (blocking/async)|\n+------+---------+\n       |\n       v\n+------+---------+\n| Update PTE      |\n| valid=1, frame= |\n+------+---------+\n       |\n       v\n+------+---------+\n| Restart Instr   |\n+----------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "effective-access-time-with-demand-paging",
+      children: "Effective Access Time with Demand Paging"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "EAT = (1 - p) * memory_access + p * page_fault_time\n\nWhere p = page fault probability (0 <= p <= 1)\n\nMemory access = 100 ns\nPage fault service time = 10 ms (including disk access)\n\nEAT for various fault rates:\n\np = 0.00001 (1 in 100,000):\n  EAT = 0.99999 * 100ns + 0.00001 * 10ms\n      = 99.999ns + 100ns = ~200ns  (2x slowdown)\n\np = 0.0001 (1 in 10,000):\n  EAT = 0.9999 * 100ns + 0.0001 * 10ms\n      = 99.99ns + 1000ns = ~1100ns  (11x slowdown)\n\np = 0.001 (1 in 1,000):\n  EAT = 0.999 * 100ns + 0.001 * 10ms\n      = 99.9ns + 10000ns = ~10100ns  (101x slowdown)\n\np = 0.01 (1 in 100):\n  EAT = 0.99 * 100ns + 0.01 * 10ms\n      = 99ns + 100000ns = ~100100ns  (1001x slowdown)\n\nCONCLUSION: Even 0.1% page faults cause a 100x slowdown.\nSystems must keep fault rate extremely low (< 0.001%).\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "copy-on-write-cow",
+      children: "Copy-on-Write (COW)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fork()"
+      }), " is called, instead of copying all pages, the child ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "shares"
+      }), " the parent pages. Pages are marked as copy-on-write. When either process writes to a page, a trap occurs, and the page is duplicated."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["COW eliminates the overhead of copying the entire address space - especially valuable when ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "exec()"
+      }), " follows ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fork()"
+      }), " (the common case)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-2",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A shared office document. Instead of photocopying the entire binder for every team member, everyone reads the same original. The first person who wants to mark up a page makes a photocopy of just that page. Everyone else still reads the original."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cow-numbered-steps",
+      children: "COW Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Parent process calls ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fork()"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS creates child process with its own page table"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS copies parent page table entries to child page table"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All PTEs are marked read-only with COW flag set"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Both processes share the same physical frames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Process P1 writes to shared page at address A"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MMU detects write to read-only page (page fault)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS fault handler sees COW flag:\na. Allocate a new physical frame\nb. Copy page content from original frame\nc. Update P1 PTE: point to new frame, set read-write\nd. Decrement original frame reference count"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P1 retries instruction - write succeeds on private copy"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Other process still has read-only access to original"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cow-dry-run-trace",
+      children: "COW Dry Run Trace"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pages Shared"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "New Frames"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial parent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A(pvt), B(pvt), C(pvt)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 frames in use"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fork()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A(cow), B(cow), C(cow)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 new frames allocated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Child reads A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit, no copy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read-only ok"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parent writes B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fault! OS copies B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "New frame for B'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Child writes A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fault! OS copies A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "New frame for A'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both read C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit, still shared"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C remains COW"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---cow-simulation",
+      children: "C++ Implementation - COW Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n\nclass COWSimulator {\n    struct Frame {\n        std::vector<char> data;\n        int ref_count;\n        bool cow;\n    };\n    std::vector<Frame> frames;\n\npublic:\n    COWSimulator() {\n        frames.push_back({{'A'}, 1, false});\n        frames.push_back({{'B'}, 1, false});\n        frames.push_back({{'C'}, 1, false});\n    }\n\n    void fork(int parent_pid, int child_pid) {\n        std::cout << \"  COW fork: child \" << child_pid\n                  << \" shares \" << frames.size() << \" frames\\n\";\n        for (auto& f : frames) {\n            f.ref_count++;\n            f.cow = true;\n        }\n    }\n\n    void write(int pid, int frame_id) {\n        auto& f = frames[frame_id];\n        if (f.cow) {\n            std::cout << \"  COW fault on frame \" << frame_id\n                      << \" (refs=\" << f.ref_count << \")\\n\";\n            frames.push_back({f.data, 1, false});\n            f.ref_count--;\n            if (f.ref_count == 0) f.cow = false;\n            std::cout << \"  Copied to new frame \" << frames.size() - 1 << \"\\n\";\n        } else {\n            std::cout << \"  Write to private frame \" << frame_id << \"\\n\";\n        }\n    }\n\n    void print_stats() {\n        std::cout << \"Total frames: \" << frames.size() << \"\\n\";\n        for (size_t i = 0; i < frames.size(); i++) {\n            std::cout << \"  Frame \" << i << \": refs=\" << frames[i].ref_count\n                      << \" cow=\" << frames[i].cow << \"\\n\";\n        }\n    }\n};\n\nint main() {\n    COWSimulator sim;\n    std::cout << \"=== COW Simulation ===\\n\";\n    sim.fork(1, 2);\n    sim.write(2, 0);\n    sim.write(1, 1);\n    sim.print_stats();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---cow-simulation",
+      children: "Python Implementation - COW Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class COWSimulator:\n    def __init__(self):\n        self.frames = [\n            {\"data\": \"AAAA\", \"refs\": 1, \"cow\": False},\n            {\"data\": \"BBBB\", \"refs\": 1, \"cow\": False},\n            {\"data\": \"CCCC\", \"refs\": 1, \"cow\": False},\n        ]\n\n    def fork(self, parent_pid, child_pid):\n        print(f\"  COW fork: child {child_pid} shares {len(self.frames)} frames\")\n        for f in self.frames:\n            f[\"refs\"] += 1\n            f[\"cow\"] = True\n\n    def write(self, pid, frame_id):\n        f = self.frames[frame_id]\n        if f[\"cow\"]:\n            print(f\"  COW fault on frame {frame_id} (refs={f['refs']})\")\n            self.frames.append({\"data\": f[\"data\"][:], \"refs\": 1, \"cow\": False})\n            f[\"refs\"] -= 1\n            if f[\"refs\"] == 0:\n                f[\"cow\"] = False\n            print(f\"  Copied to new frame {len(self.frames) - 1}\")\n        else:\n            print(f\"  Write to private frame {frame_id}\")\n\n    def print_stats(self):\n        print(f\"Total frames: {len(self.frames)}\")\n        for i, f in enumerate(self.frames):\n            print(f\"  Frame {i}: refs={f['refs']} cow={f['cow']}\")\n\n\nsim = COWSimulator()\nprint(\"=== COW Simulation ===\")\nsim.fork(1, 2)\nsim.write(2, 0)\nsim.write(1, 1)\nsim.print_stats()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time (fork):"
+        }), " O(P) where P = number of page table entries (copy PTEs, no memory copy)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time (COW fault):"
+        }), " O(page_size) for the actual copy + O(1) for PTE update"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space savings:"
+        }), " Without COW, fork() copies all pages - O(total_address_space). With COW, typically 90%+ of pages are never copied."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY O(P) for fork:"
+        }), " Must duplicate every PTE for the child process page table. But actual physical pages are not copied - only meta-data. This is thousands of times faster than copying all pages."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "page-replacement",
+      children: "Page Replacement"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When a page fault occurs and no free frames are available, the OS must ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "replace"
+      }), " an existing page to make room for the new one. The page replacement algorithm selects which page to evict."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "page-replacement-algorithms",
+      children: "Page Replacement Algorithms"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "fifo-first-in-first-out",
+      children: "FIFO (First-In, First-Out)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replace the page that has been in memory the longest."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-3",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A supermarket checkout queue. The first person in line (oldest arrival) is served and leaves first. In FIFO page replacement, the page that entered memory earliest is the first to be evicted - regardless of how frequently it is used."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "fifo-numbered-steps",
+      children: "FIFO Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maintain a queue of pages in memory order (by load time)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page fault with no free frames:\na. Dequeue the head of the queue (oldest page)\nb. Evict the dequeued page (write back if dirty)\nc. Load the new page\nd. Enqueue the new page at the tail"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page hit: no change to the queue"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---fifo",
+      children: "Pseudocode - FIFO"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE fifo_page_replace(reference_string, frame_count):\n    frames = EMPTY_ARRAY(frame_count)\n    queue = EMPTY_QUEUE()\n    faults = 0\n\n    FOR page IN reference_string:\n        IF page IN frames:\n            PRINT \"HIT\"\n        ELSE:\n            IF frames has free slot:\n                frames[next_free] = page\n            ELSE:\n                victim = queue.dequeue()\n                frames[position_of(victim)] = page\n            queue.enqueue(page)\n            faults++\n            PRINT \"FAULT\"\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---fifo",
+      children: "Dry Run Trace Table - FIFO"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1\n3 frames"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Queue (front->back)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fault?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Victim"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,0,4]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,4,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,2,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "7"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,7]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,7,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Total page faults: 15"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---fifo",
+      children: "C++ Implementation - FIFO"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <queue>\n#include <unordered_set>\n\nclass FIFOReplacement {\n    unsigned frame_count;\n    std::vector<int> frames;\n    std::queue<int> fifo_queue;\n    std::unordered_set<int> in_memory;\n\npublic:\n    FIFOReplacement(unsigned n) : frame_count(n), frames(n, -1) {}\n\n    unsigned run(const std::vector<int>& references) {\n        unsigned faults = 0;\n        int next_free = 0;\n\n        std::cout << \"\\n=== FIFO Page Replacement ===\\n\";\n        for (size_t i = 0; i < references.size(); i++) {\n            int page = references[i];\n            if (in_memory.count(page)) {\n                std::cout << \"Ref \" << page << \" -> HIT\\n\";\n            } else {\n                faults++;\n                if ((int)in_memory.size() < frame_count) {\n                    frames[next_free] = page;\n                    fifo_queue.push(page);\n                    in_memory.insert(page);\n                    next_free++;\n                    std::cout << \"Ref \" << page << \" -> FAULT (loaded into F\" << next_free-1 << \")\\n\";\n                } else {\n                    int victim = fifo_queue.front();\n                    fifo_queue.pop();\n                    in_memory.erase(victim);\n                    for (auto& f : frames) {\n                        if (f == victim) { f = page; break; }\n                    }\n                    fifo_queue.push(page);\n                    in_memory.insert(page);\n                    std::cout << \"Ref \" << page << \" -> FAULT (replaced \" << victim << \")\\n\";\n                }\n            }\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---fifo",
+      children: "Python Implementation - FIFO"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from collections import deque\n\nclass FIFOReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n        self.frames = [-1] * frame_count\n        self.fifo_queue = deque()\n        self.in_memory = set()\n\n    def run(self, references):\n        faults = 0\n        next_free = 0\n        print(\"\\n=== FIFO Page Replacement ===\")\n        for page in references:\n            if page in self.in_memory:\n                print(f\"Ref {page} -> HIT\")\n            else:\n                faults += 1\n                if len(self.in_memory) < self.frame_count:\n                    self.frames[next_free] = page\n                    self.fifo_queue.append(page)\n                    self.in_memory.add(page)\n                    print(f\"Ref {page} -> FAULT (loaded into F{next_free})\")\n                    next_free += 1\n                else:\n                    victim = self.fifo_queue.popleft()\n                    self.in_memory.remove(victim)\n                    idx = self.frames.index(victim)\n                    self.frames[idx] = page\n                    self.fifo_queue.append(page)\n                    self.in_memory.add(page)\n                    print(f\"Ref {page} -> FAULT (replaced {victim})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-2",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(N * F) worst case where N = references, F = frames (linear scan to check membership). With hash set: O(N) average."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(F) for frames + queue"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY O(N):"
+        }), " Each reference requires O(1) set lookup and O(1) queue operations in the average case with hash set optimization."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ad-table-1",
+      children: "A&D Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Extremely simple to implement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Suffers from Belady Anomaly"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low overhead (no metadata needed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May evict frequently used pages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fairness - all pages eventually replaced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ignores access patterns entirely"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases---fifo",
+      children: "Edge Cases - FIFO"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Belady Anomaly:"
+        }), " Adding more frames INCREASES page faults. Example: Reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames has 9 faults; with 4 frames has 10 faults."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero pages:"
+        }), " If process references no pages, FIFO never activates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No frame available:"
+        }), " If all frames are pinned (locked in memory), the fault cannot be serviced."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identical references:"
+        }), " If the same page is referenced repeatedly, FIFO fails to keep it in memory because age determines eviction, not utility."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BELADY ANOMALY DEMONSTRATION:\n\nRef str: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5\n\n3 frames:\n  1 -> F(1) [1]\n  2 -> F(2) [1,2]\n  3 -> F(3) [1,2,3]\n  4 -> F(4) [2,3,4]  replaces 1\n  1 -> F(5) [3,4,1]  replaces 2\n  2 -> F(6) [4,1,2]  replaces 3\n  5 -> F(7) [1,2,5]  replaces 4\n  1 -> HIT\n  2 -> HIT\n  3 -> F(8) [2,5,3]  replaces 1\n  4 -> F(9) [5,3,4]  replaces 2\n  5 -> HIT\n  Total: 9 faults\n\n4 frames:\n  1 -> F(1) [1]\n  2 -> F(2) [1,2]\n  3 -> F(3) [1,2,3]\n  4 -> F(4) [1,2,3,4]\n  1 -> HIT\n  2 -> HIT\n  5 -> F(5) [2,3,4,5]  replaces 1\n  1 -> F(6) [3,4,5,1]  replaces 2\n  2 -> F(7) [4,5,1,2]  replaces 3\n  3 -> F(8) [5,1,2,3]  replaces 4\n  4 -> F(9) [1,2,3,4]  replaces 5\n  5 -> F(10) [2,3,4,5] replaces 1\n  Total: 10 faults  <-- MORE faults with MORE frames!\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "optimal-page-replacement-opt-or-min",
+      children: "Optimal Page Replacement (OPT or MIN)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replace the page that will not be used for the longest time in the future."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-4",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A chess grandmaster planning future moves. When deciding which piece to sacrifice, they look ahead several moves to see which piece will be least needed in the future. The piece needed farthest in the future is sacrificed."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "optimal-numbered-steps",
+      children: "Optimal Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page fault:\na. For each page currently in a frame, scan the future reference string\nb. Find the page whose next reference occurs farthest in the future\nc. If a page is never referenced again, choose it immediately\nd. Evict that page"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page hit: do nothing"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---optimal",
+      children: "Pseudocode - Optimal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE optimal_replace(references, frame_count):\n    frames = EMPTY_ARRAY(frame_count)\n    faults = 0\n\n    FOR i = 0 TO references.length - 1:\n        page = references[i]\n        IF page IN frames:\n            PRINT \"HIT\"\n        ELSE:\n            faults++\n            IF frames has free slot:\n                frames[free] = page\n            ELSE:\n                victim = -1\n                farthest = -1\n                FOR each f in frames:\n                    next_use = INFINITY\n                    FOR j = i+1 TO references.length - 1:\n                        IF references[j] == f:\n                            next_use = j\n                            BREAK\n                    IF next_use > farthest:\n                        farthest = next_use\n                        victim = f\n                REPLACE victim with page in frames\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---optimal",
+      children: "Dry Run Trace Table - Optimal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1\n3 frames"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Future Lookup (victim choice)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fault?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7 next@17, 0 next@5, 1 next@14 -> farthest=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 next@9, 0 next@11, 1 next@14 -> farthest=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 next@9, 0 next@11, 1 next@14 -> farthest=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 never again, 3 next@10, 0 next@11 -> farthest=4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 never again, 3 next@10, 2 next@13 -> farthest=4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 next@16, 3 never again, 2 next@15 -> farthest=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "7"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 next@20, 1 next@19, 2 never again -> farthest=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7 never again, 1 never again -> farthest=7 or 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Total page faults: 9"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---optimal",
+      children: "C++ Implementation - Optimal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_set>\n#include <algorithm>\n#include <climits>\n\nclass OptimalReplacement {\n    unsigned frame_count;\n\npublic:\n    OptimalReplacement(unsigned n) : frame_count(n) {}\n\n    unsigned run(const std::vector<int>& references) {\n        std::vector<int> frames(frame_count, -1);\n        std::unordered_set<int> in_memory;\n        unsigned faults = 0;\n        int next_free = 0;\n\n        std::cout << \"\\n=== Optimal Page Replacement ===\\n\";\n        for (size_t i = 0; i < references.size(); i++) {\n            int page = references[i];\n            if (in_memory.count(page)) {\n                std::cout << \"Ref \" << page << \" -> HIT\\n\";\n                continue;\n            }\n            faults++;\n            if ((int)in_memory.size() < frame_count) {\n                frames[next_free] = page;\n                in_memory.insert(page);\n                std::cout << \"Ref \" << page << \" -> FAULT (F\" << next_free++ << \")\\n\";\n            } else {\n                int victim = -1, farthest = -1;\n                for (int f = 0; f < frame_count; f++) {\n                    int next_use = INT_MAX;\n                    for (size_t j = i + 1; j < references.size(); j++) {\n                        if (frames[f] == references[j]) {\n                            next_use = j;\n                            break;\n                        }\n                    }\n                    if (next_use > farthest) {\n                        farthest = next_use;\n                        victim = f;\n                    }\n                }\n                int victim_page = frames[victim];\n                in_memory.erase(victim_page);\n                frames[victim] = page;\n                in_memory.insert(page);\n                std::cout << \"Ref \" << page << \" -> FAULT (replaced \" << victim_page << \")\\n\";\n            }\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---optimal",
+      children: "Python Implementation - Optimal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class OptimalReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n\n    def run(self, references):\n        frames = [-1] * self.frame_count\n        in_memory = set()\n        faults = 0\n        next_free = 0\n\n        print(\"\\n=== Optimal Page Replacement ===\")\n        for i, page in enumerate(references):\n            if page in in_memory:\n                print(f\"Ref {page} -> HIT\")\n                continue\n            faults += 1\n            if len(in_memory) < self.frame_count:\n                frames[next_free] = page\n                in_memory.add(page)\n                print(f\"Ref {page} -> FAULT (F{next_free})\")\n                next_free += 1\n            else:\n                farthest = -1\n                victim = -1\n                for f in range(self.frame_count):\n                    page_f = frames[f]\n                    next_use = float('inf')\n                    for j in range(i + 1, len(references)):\n                        if references[j] == page_f:\n                            next_use = j\n                            break\n                    if next_use > farthest:\n                        farthest = next_use\n                        victim = f\n                victim_page = frames[victim]\n                in_memory.remove(victim_page)\n                frames[victim] = page\n                in_memory.add(page)\n                print(f\"Ref {page} -> FAULT (replaced {victim_page})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-3",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(N * F * R) worst case where N = references, F = frames, R = remaining references (scanning future). In practice O(N * F) for short strings, but unbounded for long strings."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(F) for frames"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["WHY O(N", (0,jsx_runtime.jsx)(_components.em, {
+            children: "F"
+          }), "R):"]
+        }), " For each fault, we scan the future reference string for each frame to find the farthest next use. This is expensive but provides the theoretical minimum fault rate."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ad-table-2",
+      children: "A&D Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimum possible page faults (theoretical benchmark)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires future knowledge - impossible to implement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No Belady Anomaly (stack property)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High computational cost even if future were known"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Best for comparison/evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot be used in real-time systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lru-least-recently-used",
+      children: "LRU (Least Recently Used)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replace the page that has not been used for the longest time. This approximates Optimal using past behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-5",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A cluttered desk. When you need more workspace and must clear items, you move the items you have not touched in the longest time. The document you were reading just moments ago stays; the one you have not looked at in hours goes."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "lru-numbered-steps",
+      children: "LRU Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On a page access (hit OR fault):\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Update the access timestamp for the page"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page fault with no free frames:\na. Scan all frames to find the page with the oldest (smallest) timestamp\nb. Evict that page (write back if dirty)\nc. Load the new page with current timestamp"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---lru",
+      children: "Pseudocode - LRU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE lru_replace(references, frame_count):\n    frames = EMPTY_ARRAY(frame_count)\n    last_used = EMPTY_ARRAY(frame_count)  // timestamps\n    time = 0\n    faults = 0\n\n    FOR page IN references:\n        time++\n        IF page IN frames:\n            last_used[position] = time   // update access time\n            PRINT \"HIT\"\n        ELSE:\n            faults++\n            IF frames has free slot:\n                frames[free] = page\n                last_used[free] = time\n            ELSE:\n                // Find page with minimum last_used (oldest)\n                victim = INDEX_OF_MIN(last_used)\n                frames[victim] = page\n                last_used[victim] = time\n            PRINT \"FAULT\"\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---lru",
+      children: "Dry Run Trace Table - LRU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1\n3 frames (timestamps shown)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F0(page,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F1(page,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F2(page,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "LRU Order (oldest->newest)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fault?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,2] replaces 7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,0] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,3] replaces 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,0] replaces 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(4,8)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,0,4] replaces 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(4,8)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,4,2] replaces 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(4,8)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,10)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,2,3] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(4,8)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,11)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,2,0] replaces 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,12)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,11)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,0,3] replaces 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,12)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,11)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,13)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,3,2] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,12)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,14)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,13)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,2,1] replaces 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,12)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,14)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,15)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,1,2] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,16)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,14)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,15)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,0] replaces 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,16)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,17)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,15)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,0,1] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,16)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,17)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,18)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,7] replaces 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,19)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,17)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,18)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,7,0] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,19)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,20)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,18)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,0,1] update ts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Total page faults: 12"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---lru",
+      children: "C++ Implementation - LRU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n#include <algorithm>\n#include <climits>\n\nclass LRUReplacement {\n    unsigned frame_count;\n\npublic:\n    LRUReplacement(unsigned n) : frame_count(n) {}\n\n    unsigned run(const std::vector<int>& references) {\n        std::vector<int> frames(frame_count, -1);\n        std::vector<int> last_used(frame_count, 0);\n        std::unordered_map<int, int> page_to_frame;\n        unsigned faults = 0, time = 0;\n        int next_free = 0;\n\n        std::cout << \"\\n=== LRU Page Replacement ===\\n\";\n        for (int page : references) {\n            time++;\n            if (page_to_frame.count(page)) {\n                int f = page_to_frame[page];\n                last_used[f] = time;\n                std::cout << \"Ref \" << page << \" -> HIT (F\" << f << \")\\n\";\n            } else {\n                faults++;\n                if ((int)page_to_frame.size() < frame_count) {\n                    frames[next_free] = page;\n                    last_used[next_free] = time;\n                    page_to_frame[page] = next_free;\n                    std::cout << \"Ref \" << page << \" -> FAULT (F\" << next_free++ << \")\\n\";\n                } else {\n                    int victim_f = 0, oldest = INT_MAX;\n                    for (int f = 0; f < frame_count; f++) {\n                        if (last_used[f] < oldest) {\n                            oldest = last_used[f];\n                            victim_f = f;\n                        }\n                    }\n                    int victim_page = frames[victim_f];\n                    page_to_frame.erase(victim_page);\n                    frames[victim_f] = page;\n                    last_used[victim_f] = time;\n                    page_to_frame[page] = victim_f;\n                    std::cout << \"Ref \" << page << \" -> FAULT (replaced \" << victim_page << \")\\n\";\n                }\n            }\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---lru",
+      children: "Python Implementation - LRU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class LRUReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n\n    def run(self, references):\n        frames = [-1] * self.frame_count\n        last_used = [0] * self.frame_count\n        page_to_frame = {}\n        faults = 0\n        time = 0\n        next_free = 0\n\n        print(\"\\n=== LRU Page Replacement ===\")\n        for page in references:\n            time += 1\n            if page in page_to_frame:\n                f = page_to_frame[page]\n                last_used[f] = time\n                print(f\"Ref {page} -> HIT (F{f})\")\n            else:\n                faults += 1\n                if len(page_to_frame) < self.frame_count:\n                    frames[next_free] = page\n                    last_used[next_free] = time\n                    page_to_frame[page] = next_free\n                    print(f\"Ref {page} -> FAULT (F{next_free})\")\n                    next_free += 1\n                else:\n                    victim_f = min(range(self.frame_count), key=lambda f: last_used[f])\n                    victim_page = frames[victim_f]\n                    del page_to_frame[victim_page]\n                    frames[victim_f] = page\n                    last_used[victim_f] = time\n                    page_to_frame[page] = victim_f\n                    print(f\"Ref {page} -> FAULT (replaced {victim_page})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-4",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time (counter method):"
+        }), " O(N * F) worst case for scanning frames on each fault. Can be O(N) with hash map + priority queue."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(F) for frames + O(F) for metadata"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY O(N*F):"
+        }), " On each fault we may scan all frames to find the minimum timestamp. Using a stack (move-to-front on access) gives O(N) but high constant factor for pointer updates."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ad-table-3",
+      children: "A&D Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-optimal performance (approximates OPT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High implementation cost for exact LRU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No Belady Anomaly (stack property)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware support needed for per-access timestamp"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Good temporal locality exploitation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Counter overflow in long-running systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "second-chance-clock-algorithm",
+      children: "Second-Chance (Clock) Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A FIFO variant that uses the reference bit. Pages are arranged in a circular list with a hand pointer."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-6",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A lazy professor collecting exams. Walking around the room (circular), they check each student. If a student is still writing (reference bit = 1), the professor says \"keep going, I will come back\" and clears the bit. If the student is done (ref = 0), the professor takes the exam (evicts the page)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "second-chance-numbered-steps",
+      children: "Second-Chance Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Arrange pages in a circular buffer with a hand pointer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On a page fault:\na. While True:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Check page at hand position"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If ref bit = 0: evict this page, load new page with ref = 1, advance hand, break"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If ref bit = 1: set ref = 0, advance hand, continue"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page hit: set ref bit = 1 (hand pointer does not move)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---second-chance-clock",
+      children: "Pseudocode - Second-Chance (Clock)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE clock_replace(references, frame_count):\n    frames = EMPTY_ARRAY(frame_count)  // page numbers\n    ref_bits = EMPTY_ARRAY(frame_count, 0)\n    hand = 0\n    faults = 0\n\n    FOR page IN references:\n        IF page IN frames:\n            ref_bits[position] = 1   // set reference\n            PRINT \"HIT\"\n        ELSE:\n            faults++\n            WHILE frames[hand] != -1  // skip empty slots initially\n                IF ref_bits[hand] == 0:\n                    // Victim found\n                    IF frames[hand] != -1:\n                        PRINT \"Evict \" + frames[hand]\n                    frames[hand] = page\n                    ref_bits[hand] = 1\n                    hand = (hand + 1) % frame_count\n                    BREAK\n                ELSE:\n                    ref_bits[hand] = 0  // second chance\n                    hand = (hand + 1) % frame_count\n            IF frames[hand] == -1:  // empty slot\n                frames[hand] = page\n                ref_bits[hand] = 1\n                hand = (hand + 1) % frame_count\n            PRINT \"FAULT\"\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---second-chance",
+      children: "Dry Run Trace Table - Second-Chance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference string: 7, 0, 1, 2, 0, 3, 0, 4 (first 8), 3 frames"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame0(p,r)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame1(p,r)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame2(p,r)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hand"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT, hand->1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT, hand->2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT, hand->0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)->(7,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)->(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)->(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0->1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scan: 7r=1->0,hand=1; 0r=1->0,hand=2; 1r=1->0,hand=0; 7r=0->evict!"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: " |     | **(2,1)**   | (0,0)       | (1,0)       | 1    | FAULT, hand->1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["5    | 0   | (2,1)       | (0,1)       | (1,0)       | 1    | HIT (0 already in F1, set ref=1)\n6    | 3   | (2,1)       | (0,1)->(0,0)| (1,0)->evict| 1->2 | Scan: 0r=1->0,hand=2; 1r=0->evict!\n|     | (2,1)       | (0,0)       | ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "(3,1)"
+      }), "   | 0    | FAULT, hand->0\n7    | 0   | (2,1)       | (0,1)       | (3,1)       | 0    | HIT (0 already in F1, set ref=1)\n8    | 4   | (2,1)->(2,0)| (0,1)->(0,0)| (3,1)->(3,0)| 0->1 | Scan: 2r=1->0,hand=1; 0r=1->0,hand=2; 3r=1->0,hand=0; 2r=0->evict!\n|     | ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "(4,1)"
+      }), "   | (0,0)       | (3,0)       | 1    | FAULT, hand->1"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---second-chance-clock",
+      children: "C++ Implementation - Second-Chance (Clock)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n\nclass ClockReplacement {\n    unsigned frame_count;\n    std::vector<int> frames;\n    std::vector<bool> ref_bits;\n    int hand;\n    std::unordered_map<int, int> page_to_frame;\n\npublic:\n    ClockReplacement(unsigned n) : frame_count(n), hand(0) {\n        frames.resize(n, -1);\n        ref_bits.resize(n, false);\n    }\n\n    unsigned run(const std::vector<int>& references) {\n        unsigned faults = 0;\n        int loaded = 0;\n\n        std::cout << \"\\n=== Clock (Second-Chance) Page Replacement ===\\n\";\n        for (int page : references) {\n            if (page_to_frame.count(page)) {\n                int f = page_to_frame[page];\n                ref_bits[f] = true;\n                std::cout << \"Ref \" << page << \" -> HIT (F\" << f << \")\\n\";\n            } else {\n                faults++;\n                if (loaded < frame_count) {\n                    frames[loaded] = page;\n                    ref_bits[loaded] = true;\n                    page_to_frame[page] = loaded;\n                    std::cout << \"Ref \" << page << \" -> FAULT (F\" << loaded << \")\\n\";\n                    loaded++;\n                } else {\n                    while (true) {\n                        if (!ref_bits[hand]) {\n                            int victim = frames[hand];\n                            page_to_frame.erase(victim);\n                            std::cout << \"  Evict \" << victim << \" from F\" << hand << \"\\n\";\n                            frames[hand] = page;\n                            ref_bits[hand] = true;\n                            page_to_frame[page] = hand;\n                            hand = (hand + 1) % frame_count;\n                            break;\n                        } else {\n                            ref_bits[hand] = false;\n                            hand = (hand + 1) % frame_count;\n                        }\n                    }\n                    std::cout << \"Ref \" << page << \" -> FAULT\\n\";\n                }\n            }\n            // Print current state\n            std::cout << \"  State: \";\n            for (int f = 0; f < frame_count; f++) {\n                if (frames[f] >= 0)\n                    std::cout << \"[\" << frames[f] << \":\" << ref_bits[f] << \"] \";\n                else std::cout << \"[-] \";\n            }\n            std::cout << \"(hand->\" << hand << \")\\n\";\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---second-chance-clock",
+      children: "Python Implementation - Second-Chance (Clock)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ClockReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n        self.frames = [-1] * frame_count\n        self.ref_bits = [False] * frame_count\n        self.hand = 0\n        self.page_to_frame = {}\n\n    def run(self, references):\n        faults = 0\n        loaded = 0\n\n        print(\"\\n=== Clock (Second-Chance) Page Replacement ===\")\n        for page in references:\n            if page in self.page_to_frame:\n                f = self.page_to_frame[page]\n                self.ref_bits[f] = True\n                print(f\"Ref {page} -> HIT (F{f})\")\n            else:\n                faults += 1\n                if loaded < self.frame_count:\n                    self.frames[loaded] = page\n                    self.ref_bits[loaded] = True\n                    self.page_to_frame[page] = loaded\n                    print(f\"Ref {page} -> FAULT (F{loaded})\")\n                    loaded += 1\n                else:\n                    while True:\n                        if not self.ref_bits[self.hand]:\n                            victim = self.frames[self.hand]\n                            del self.page_to_frame[victim]\n                            print(f\"  Evict {victim} from F{self.hand}\")\n                            self.frames[self.hand] = page\n                            self.ref_bits[self.hand] = True\n                            self.page_to_frame[page] = self.hand\n                            self.hand = (self.hand + 1) % self.frame_count\n                            break\n                        else:\n                            self.ref_bits[self.hand] = False\n                            self.hand = (self.hand + 1) % self.frame_count\n                    print(f\"Ref {page} -> FAULT\")\n            state = \" \".join(f\"[{self.frames[f]}:{int(self.ref_bits[f])}]\"\n                             if self.frames[f] >= 0 else \"[-]\"\n                             for f in range(self.frame_count))\n            print(f\"  State: {state} (hand->{self.hand})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-5",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(N * F) worst case if every fault requires a full scan (all ref=1). Average case O(N) as scans are short."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(F) for frames + reference bits"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WHY O(N*F) worst case:"
+        }), " If all frames have ref=1, the clock hand makes a full revolution before finding a victim. In practice, systems avoid this by periodically clearing ref bits."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ad-table-4",
+      children: "A&D Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple, low overhead (only 1 bit per frame)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can degrade to FIFO if all ref bits are 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approximates LRU well"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hand pointer management adds slight complexity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No Belady Anomaly in practice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance depends on reference bit patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Used in real systems (Linux, BSD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not as good as true LRU for some workloads"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mfu-most-frequently-used-page-replacement",
+      children: "MFU (Most Frequently Used) Page Replacement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replace the most frequently used page. The rationale: a page that has been used many times may have already completed its purpose."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-7",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A pop song that was popular last year but is now overplayed. Everyone has heard it enough (most frequently played), so the radio station drops it to make room for fresh songs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mfu-numbered-steps",
+      children: "MFU Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maintain a counter per page tracking frequency of access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page hit: increment the counter for that page"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On a page fault with no free frames:\na. Scan all frames to find the page with the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "highest"
+        }), " frequency counter\nb. Evict that page (write back if dirty)\nc. Load the new page with counter = 1"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---mfu",
+      children: "Pseudocode - MFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE mfu_replace(references, frame_count):\n    frames = EMPTY_ARRAY(frame_count)\n    frequencies = EMPTY_ARRAY(frame_count, 0)\n    faults = 0\n\n    FOR page IN references:\n        IF page IN frames:\n            frequencies[position]++     // increment frequency\n            PRINT \"HIT\"\n        ELSE:\n            faults++\n            IF frames has free slot:\n                frames[free] = page\n                frequencies[free] = 1\n            ELSE:\n                // Find frame with MAX frequency\n                victim = INDEX_OF_MAX(frequencies)\n                frames[victim] = page\n                frequencies[victim] = 1\n            PRINT \"FAULT\"\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---mfu",
+      children: "Dry Run Trace Table - MFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference: 7, 0, 1, 2, 0, 3, 0, 4 with 3 frames"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F0(page,freq)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F1(page,freq)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F2(page,freq)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2,1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (tie->replace 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["(0,", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            }), ")"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT (freq++)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3,1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (MFU=0@2, replace 1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["(0,", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            }), ")"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT (freq++)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4,1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (MFU=0@3, replace 3)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---mfu",
+      children: "C++ Implementation - MFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n#include <algorithm>\n\nclass MFUReplacement {\n    unsigned frame_count;\n\npublic:\n    MFUReplacement(unsigned n) : frame_count(n) {}\n\n    unsigned run(const std::vector<int>& references) {\n        std::vector<int> frames(frame_count, -1);\n        std::vector<int> freq(frame_count, 0);\n        std::unordered_map<int, int> page_to_frame;\n        unsigned faults = 0;\n        int next_free = 0;\n\n        std::cout << \"\\n=== MFU Page Replacement ===\\n\";\n        for (int page : references) {\n            if (page_to_frame.count(page)) {\n                int f = page_to_frame[page];\n                freq[f]++;\n                std::cout << \"Ref \" << page << \" -> HIT (F\" << f << \", freq=\" << freq[f] << \")\\n\";\n            } else {\n                faults++;\n                if ((int)page_to_frame.size() < frame_count) {\n                    frames[next_free] = page;\n                    freq[next_free] = 1;\n                    page_to_frame[page] = next_free;\n                    std::cout << \"Ref \" << page << \" -> FAULT (F\" << next_free++ << \")\\n\";\n                } else {\n                    int victim_f = 0;\n                    for (int f = 1; f < frame_count; f++)\n                        if (freq[f] > freq[victim_f]) victim_f = f;\n                    int victim = frames[victim_f];\n                    page_to_frame.erase(victim);\n                    frames[victim_f] = page;\n                    freq[victim_f] = 1;\n                    page_to_frame[page] = victim_f;\n                    std::cout << \"Ref \" << page << \" -> FAULT (replaced \" << victim\n                              << \", freq=\" << freq[victim_f] << \")\\n\";\n                }\n            }\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---mfu",
+      children: "Python Implementation - MFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class MFUReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n\n    def run(self, references):\n        frames = [-1] * self.frame_count\n        freq = [0] * self.frame_count\n        page_to_frame = {}\n        faults = 0\n        next_free = 0\n\n        print(\"\\n=== MFU Page Replacement ===\")\n        for page in references:\n            if page in page_to_frame:\n                f = page_to_frame[page]\n                freq[f] += 1\n                print(f\"Ref {page} -> HIT (F{f}, freq={freq[f]})\")\n            else:\n                faults += 1\n                if len(page_to_frame) < self.frame_count:\n                    frames[next_free] = page\n                    freq[next_free] = 1\n                    page_to_frame[page] = next_free\n                    print(f\"Ref {page} -> FAULT (F{next_free})\")\n                    next_free += 1\n                else:\n                    victim_f = max(range(self.frame_count), key=lambda f: freq[f])\n                    victim = frames[victim_f]\n                    del page_to_frame[victim]\n                    frames[victim_f] = page\n                    freq[victim_f] = 1\n                    page_to_frame[page] = victim_f\n                    print(f\"Ref {page} -> FAULT (replaced {victim}, freq={freq[victim_f]})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lfu-least-frequently-used-page-replacement",
+      children: "LFU (Least Frequently Used) Page Replacement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replace the page that has been used the fewest number of times."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-8",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A museum rotating exhibits. The exhibit that has attracted the fewest visitors (lowest footfall) is the first to be replaced when a new exhibit arrives. The most popular exhibits stay."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "lfu-numbered-steps",
+      children: "LFU Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maintain a counter per page tracking frequency of access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "On a page hit: increment the counter for that page"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On a page fault with no free frames:\na. Scan all frames to find the page with the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "lowest"
+        }), " frequency counter\nb. On tie: use LRU among ties (or FIFO)\nc. Evict that page\nd. Load the new page with counter = 1"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode---lfu",
+      children: "Pseudocode - LFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PROCEDURE lfu_replace(references, frame_count):\n    frames = EMPTY_ARRAY(frame_count)\n    frequencies = EMPTY_ARRAY(frame_count, 0)\n    last_used = EMPTY_ARRAY(frame_count, 0)\n    time = 0\n    faults = 0\n\n    FOR page IN references:\n        time++\n        IF page IN frames:\n            frequencies[position]++\n            last_used[position] = time\n            PRINT \"HIT\"\n        ELSE:\n            faults++\n            IF frames has free slot:\n                frames[free] = page\n                frequencies[free] = 1\n                last_used[free] = time\n            ELSE:\n                // Find frame with MIN frequency, break ties with LRU\n                victim = INDEX_OF_MIN_FREQ_TIE_LRU(frequencies, last_used)\n                frames[victim] = page\n                frequencies[victim] = 1\n                last_used[victim] = time\n            PRINT \"FAULT\"\n    RETURN faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table---lfu",
+      children: "Dry Run Trace Table - LFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference: 7, 0, 1, 2, 0, 3, 0, 4 with 3 frames"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F0(page,freq,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F1(page,freq,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "F2(page,freq,ts)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(7,1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2,1,4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (tie->LRU=7, replace)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1,4)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["(0,", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2"
+            }), ",5)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1,3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2,5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3,1,6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (min freq=1@2or3, LRU=1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1,4)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["(0,", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            }), ",7)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(3,1,6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1,4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,3,7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4,1,8"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAULT (min freq=1@2or4, LRU=2@4)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "c-implementation---lfu",
+      children: "C++ Implementation - LFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <unordered_map>\n#include <limits>\n\nclass LFUReplacement {\n    unsigned frame_count;\n\npublic:\n    LFUReplacement(unsigned n) : frame_count(n) {}\n\n    unsigned run(const std::vector<int>& references) {\n        std::vector<int> frames(frame_count, -1);\n        std::vector<int> freq(frame_count, 0);\n        std::vector<int> last_used(frame_count, 0);\n        std::unordered_map<int, int> page_to_frame;\n        unsigned faults = 0, time = 0;\n        int next_free = 0;\n\n        std::cout << \"\\n=== LFU Page Replacement ===\\n\";\n        for (int page : references) {\n            time++;\n            if (page_to_frame.count(page)) {\n                int f = page_to_frame[page];\n                freq[f]++;\n                last_used[f] = time;\n                std::cout << \"Ref \" << page << \" -> HIT (F\" << f << \", freq=\" << freq[f] << \")\\n\";\n            } else {\n                faults++;\n                if ((int)page_to_frame.size() < frame_count) {\n                    frames[next_free] = page;\n                    freq[next_free] = 1;\n                    last_used[next_free] = time;\n                    page_to_frame[page] = next_free;\n                    std::cout << \"Ref \" << page << \" -> FAULT (F\" << next_free++ << \")\\n\";\n                } else {\n                    int victim_f = 0;\n                    int min_freq = std::numeric_limits<int>::max();\n                    int oldest_time = std::numeric_limits<int>::max();\n                    for (int f = 0; f < frame_count; f++) {\n                        if (freq[f] < min_freq ||\n                            (freq[f] == min_freq && last_used[f] < oldest_time)) {\n                            min_freq = freq[f];\n                            oldest_time = last_used[f];\n                            victim_f = f;\n                        }\n                    }\n                    int victim = frames[victim_f];\n                    page_to_frame.erase(victim);\n                    frames[victim_f] = page;\n                    freq[victim_f] = 1;\n                    last_used[victim_f] = time;\n                    page_to_frame[page] = victim_f;\n                    std::cout << \"Ref \" << page << \" -> FAULT (replaced \" << victim\n                              << \", freq=\" << min_freq << \")\\n\";\n                }\n            }\n        }\n        return faults;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "python-implementation---lfu",
+      children: "Python Implementation - LFU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class LFUReplacement:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n\n    def run(self, references):\n        frames = [-1] * self.frame_count\n        freq = [0] * self.frame_count\n        last_used = [0] * self.frame_count\n        page_to_frame = {}\n        faults = 0\n        time = 0\n        next_free = 0\n\n        print(\"\\n=== LFU Page Replacement ===\")\n        for page in references:\n            time += 1\n            if page in page_to_frame:\n                f = page_to_frame[page]\n                freq[f] += 1\n                last_used[f] = time\n                print(f\"Ref {page} -> HIT (F{f}, freq={freq[f]})\")\n            else:\n                faults += 1\n                if len(page_to_frame) < self.frame_count:\n                    frames[next_free] = page\n                    freq[next_free] = 1\n                    last_used[next_free] = time\n                    page_to_frame[page] = next_free\n                    print(f\"Ref {page} -> FAULT (F{next_free})\")\n                    next_free += 1\n                else:\n                    def victim_key(f):\n                        return (freq[f], last_used[f])\n                    victim_f = min(range(self.frame_count), key=victim_key)\n                    victim = frames[victim_f]\n                    del page_to_frame[victim]\n                    frames[victim_f] = page\n                    freq[victim_f] = 1\n                    last_used[victim_f] = time\n                    page_to_frame[page] = victim_f\n                    print(f\"Ref {page} -> FAULT (replaced {victim}, freq={freq[victim_f]})\")\n        return faults\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lru-approximation-algorithms",
+      children: "LRU Approximation Algorithms"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Exact LRU is expensive. Real systems approximate LRU with minimal hardware support."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1-reference-bit-method",
+      children: "1. Reference Bit Method"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A single reference bit per page. Hardware sets the bit on any access. The OS periodically clears the bit. Pages with bit=0 have not been accessed recently."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Periodic scan (every timer tick):\n  FOR each page:\n    IF ref_bit == 0:\n      Page has not been accessed since last scan\n      Candidate for eviction\n    ELSE:\n      ref_bit = 0  // Reset for next interval\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "2-not-recently-used-nru-algorithm",
+      children: "2. Not Recently Used (NRU) Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Combines reference bit (R) and dirty bit (D) to classify pages into 4 classes:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Class"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Priority for Eviction"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Highest"
+            }), " - not referenced, not dirty"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High - not referenced, but dirty (write-back needed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low - referenced, not dirty"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lowest"
+            }), " - referenced and dirty"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "NRU removes a random page from the lowest-numbered non-empty class."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "NRU Algorithm:\n  1. Periodically (e.g. every 20ms clock interrupt):\n     - Clear reference bits of all pages\n  2. On page fault:\n     - Inspect all pages, classify into R/D classes 0-3\n     - Select a random victim page from the lowest class\n     - If dirty, schedule write-back\n     - Load the new page\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "3-second-chance-clock-algorithm",
+      children: "3. Second-Chance (Clock) Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Already covered in detail above. The clock algorithm is the most widely used LRU approximation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "4-aging-algorithm",
+      children: "4. Aging Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A more accurate LRU approximation using multiple bits. Maintains an N-bit counter per page (typically 8 bits). Periodically (every timer tick):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Shift the counter right by 1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add the reference bit to the high-order bit"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Clear the reference bit"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "AGING ALGORITHM:\n\nEach page has an 8-bit counter initially 00000000.\n\nTimer tick processing (every ~20ms):\n  FOR each page:\n    counter = (counter >> 1)        // Shift right\n    IF ref_bit == 1:\n      counter = counter | 0x80      // Set MSB\n    ref_bit = 0                      // Clear\n\nOn page fault:\n  Victim = page with smallest counter value\n  (Lower counter = less recently used over the window)\n\nExample counter evolution:\n  Page A: 00000000 -> 10000000 -> 11000000 -> 11100000 -> 01110000\n  Page B: 00000000 -> 01000000 -> 00100000 -> 10010000 -> 01001000\n  Page C: 00000000 -> 10000000 -> 01000000 -> 10100000 -> 11010000\n\nAfter 5 ticks, Page B (01001000 = 72) is older than Page A (01110000 = 112)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "page-replacement-algorithms-comparison-table",
+      children: "Page Replacement Algorithms Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Philosophy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implementation Cost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fault Rate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Belady Anomaly"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Real-World Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FIFO"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Oldest page first"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low (queue)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (educational)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Optimal (MIN)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Farthest future use"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible (needs future)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lowest (theoretical)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Benchmark only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LRU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Least recently used"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (timestamps/stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-optimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some databases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Second-Chance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ref bit + circular FIFO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (1 bit + pointer)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Varies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, BSD, macOS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Aging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-bit LRU approx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (8-bit counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some UNIX variants"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NRU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R/D bit classes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low (random pick)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MINIX, educational"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MFU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most frequently used"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (freq counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (niche)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LFU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Least frequently used"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (freq counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache systems (Redis)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "frame-allocation",
+      children: "Frame Allocation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "How many frames should each process get? The allocation strategy directly impacts performance and thrashing behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "fixed-allocation",
+      children: "Fixed Allocation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Equal Allocation:"
+      }), " If 100 frames and 5 processes, give each 20 frames regardless of size."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "equal_frames_per_process = total_free_frames / total_processes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proportional Allocation:"
+      }), " Give frames proportional to process size."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "frames_for_Pi = (size_of_Pi / total_size_of_all_processes) * total_frames\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Example: Process A = 100 KB, Process B = 300 KB, total frames = 64"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A gets: (100/400) * 64 = 16 frames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B gets: (300/400) * 64 = 48 frames"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "priority-allocation",
+      children: "Priority Allocation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Higher-priority processes get proportionally more frames."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "frames_for_Pi = (size_of_Pi * priority_Pi) / SUM(size * priority) * total_frames\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Or simply: priority acts as a multiplier on the proportional allocation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "local-vs-global-allocation",
+      children: "Local vs Global Allocation"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Victim Selection"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Characteristic"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Local Replacement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Victim from the SAME process that faulted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Processes isolated - one process thrashing does not affect others"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Global Replacement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Victim from ANY process in system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More efficient overall - memory flows to where needed"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Local Replacement:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each process has its own fixed set of frames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Replaces only its own pages"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pro: Isolation (one process thrashing does not steal frames from others)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Con: Inefficient (idle processes keep frames that active processes need)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Global Replacement:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All frames are in a single pool"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Any process can replace any page"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pro: Adaptive (memory goes to active processes)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Con: One process thrashing can steal frames from others"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Most modern OS use ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "global replacement"
+      }), " with working-set monitoring to prevent thrashing."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FRAME ALLOCATION STRATEGIES:\n\n          Fixed Allocation\n          /               \\\n     Equal           Proportional\n         |                   |\n   (frame/process)    (frame proportional to size)\n         |                   |\n     Local repl.         Local repl.\n         |\n   +----+----+\n   |         |\n Isolated   May waste frames\n processes  under-utilized\n\n          Global Allocation\n                |\n         All frames shared\n                |\n        Victim from any process\n                |\n   +----+----+----+----+\n   |         |         |\nAdaptive  Can steal  Requires WSS\nefficient from others monitoring\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "thrashing",
+      children: "Thrashing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Thrashing"
+      }), " occurs when a process spends more time paging than executing. The system is overcommitted - the working set of all processes exceeds physical memory."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-9",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A chef in a tiny kitchen. There are too many dishes being prepared simultaneously. The chef spends all their time shuffling ingredients between the counter and the refrigerator (paging), with almost no time actually cooking. The kitchen is in a frenzy of constant swapping."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "thrashing-model-with-degree-of-multiprogramming",
+      children: "Thrashing Model with Degree of Multiprogramming"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "CPU Utilization\n    ^\n    |              *\n    |           *     *\n    |         *         *\n    |       *             * *\n    |     *                   * * * * *\n    |   *                               * * *\n    | *                                       * * * * *\n    +-------------------------------------------------------> Degree of\n        Low                     Optimal         High       Multiprogramming\n                                   |\n                                Thrashing\n                                Begins Here\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "As the degree of multiprogramming (number of processes) increases:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initially, CPU utilization increases (more work to do)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At some point, memory becomes overcommitted"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Processes start faulting more frequently"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each fault requires disk I/O - process blocks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS sees CPU idle and brings in more processes (wrong response!)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "More processes -> more paging -> worse thrashing"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This is a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "positive feedback loop"
+      }), " (vicious cycle):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "More processes\n    |\n    v\nLess memory per process\n    |\n    v\nMore page faults\n    |\n    v\nMore disk I/O (processes block)\n    |\n    v\nCPU utilization drops\n    |\n    v\nOS thinks: \"CPU is idle, add more processes!\"\n    |\n    v\n(System spirals)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "thrashing-detection",
+      children: "Thrashing Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Symptoms of thrashing:\n  - Page fault rate climbs significantly above threshold\n  - CPU utilization drops despite high multiprogramming\n  - Disk queue length increases (all processes waiting for paging)\n  - Throughput decreases as more work is added\n\nDetection:\n  IF (page_fault_rate > HIGH_THRESHOLD) AND\n     (cpu_utilization < LOW_THRESHOLD) AND\n     (disk_queue_length > DISK_THRESHOLD):\n    System is thrashing\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "thrashing-prevention",
+      children: "Thrashing Prevention"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Working Set Model:"
+        }), " Ensure each process has enough frames for its working set"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Page Fault Frequency (PFF) Control:"
+        }), " Monitor fault rate per process:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If fault rate too high: allocate more frames"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If fault rate too low: deallocate frames (make available to others)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Suspend processes:"
+        }), " If thrashing is detected, suspend (swap out) one or more processes"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PAGE FAULT FREQUENCY CONTROL:\n\nPage Fault Rate\n    ^\n    |              * * * * *\n    |         *               * *\n    |       *                     * *\n    |     *                          * *\n    |    *                               * * * *\n    |   *                                    Upper bound\n    |  *                                         (increase frames)\n    | *                                           |\n    |*                               * * * * * *  v\n    |    Lower bound (decrease frames)\n    +------------------------------------------------------>\n                       Frames Allocated\n\n  Upper bound: Fault rate too high -> add frames\n  Lower bound: Fault rate too low  -> remove frames\n  Operating range: between bounds\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "working-set-model",
+      children: "Working Set Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "working set"
+      }), " is the set of pages a process is currently using. It represents the current locality."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The working set W(t, Delta) is the set of pages referenced by a process in the time interval [t - Delta + 1, t], where Delta is the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "working-set window"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Working set at time t:\n  W(t, Delta) = { pages referenced in the last Delta memory accesses }\n\nWorking set size (WSS):\n  |W(t, Delta)| = number of unique pages referenced in the window\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "working-set-numbered-steps",
+      children: "Working Set Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose a window size Delta (e.g. 10,000 references)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maintain a sliding window of the last Delta references"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At any time t, the working set = set of unique pages in the window"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["As the process executes, the working set changes:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Program enters a new phase -> new pages added, old pages drop out"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Stable phase -> working set size remains relatively constant"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The OS ensures each process has at least WSS frames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If total WSS across all processes > physical memory -> thrashing"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "working-set-evolution-trace",
+      children: "Working Set Evolution Trace"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reference string: 1, 2, 3, 2, 1, 4, 5, 6, 1, 2, 4, 5, 6, 1, 2\nWindow Delta = 6"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Window (last 6)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Working Set"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WSS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,3}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,3}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,3,2,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,3}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,3,2,1,4]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,3,4}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Phase transition: adding 4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,2,1,4,5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,3,4,5}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Phase transition: adding 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,1,4,5,6]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 dropped, 6 added"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,4,5,6,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 dropped"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,5,6,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Locality shift"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5,6,1,2,4]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stable phase"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[6,1,2,4,5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,4,5,6]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2,4,5,6,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,5,6,1,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{1,2,4,5,6}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "working-set-vs-thrashing-prevention",
+      children: "Working Set vs Thrashing Prevention"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Total Working Set = Sum of all process WSS\n\nIF total_working_set > physical_memory:\n    -> System is overcommitted\n    -> Thrashing imminent\n    -> Action: Suspend one or more processes\n\nIF total_working_set << physical_memory:\n    -> Resources are underutilized\n    -> Can increase multiprogramming\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "page-size",
+      children: "Page Size"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Choosing the page size involves trade-offs that impact multiple system components."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "page-size-trade-offs-table",
+      children: "Page Size Trade-offs Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Factor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Small Pages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Large Pages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Internal Fragmentation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Less waste"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More waste"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last page may be only partially used"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page Table Size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Larger (more entries)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smaller (fewer entries)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page table = address_space / page_size"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O Overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More transfers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fewer transfers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each page fault requires one I/O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TLB Reach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smaller (fewer mappings)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Larger (more address space mapped)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLB entries * page_size"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Locality"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Better matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May include unrelated data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large pages bring in unneeded data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disk Transfer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More seeks, less data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fewer seeks, more data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disk throughput vs latency trade-off"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "tlb-reach-formula",
+      children: "TLB Reach Formula"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "TLB Reach = TLB_Entries * Page_Size\n\nExample:\n  4 KB pages, 64 TLB entries -> TLB Reach = 256 KB\n  2 MB pages, 64 TLB entries -> TLB Reach = 128 MB\n\nLarger TLB reach means more of the working set fits in the TLB,\nreducing TLB misses.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "why-4-kb-is-standard",
+      children: "Why 4 KB is Standard"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Historical: PDP-11 used 8 KB pages, then 4 KB became common"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Trade-off sweet spot: 4 KB balances internal fragmentation vs page table size"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hardware support: x86, ARM, RISC-V all support 4 KB base pages"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Huge pages (2 MB, 1 GB): Available for workloads with large, contiguous memory (databases, VMs)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-10",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Packing a suitcase. Small pages = many small boxes (lots of labels to manage, but tightly packed). Large pages = fewer big boxes (fewer labels, but wasted space inside each partially-filled box). For a trip (process), you pack items you need. If boxes are too big, you bring unnecessary items. If too small, you spend all day managing boxes."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "modern-developments",
+      children: "Modern Developments"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transparent Huge Pages (THP):"
+      }), " Linux automatically promotes groups of 4 KB pages to 2 MB pages when they are frequently accessed together."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory-mapped files:"
+      }), " Instead of using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "read()"
+      }), "/", (0,jsx_runtime.jsx)(_components.code, {
+        children: "write()"
+      }), ", files are mapped into the address space via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "mmap()"
+      }), ". Accessing the mapped region causes page faults that bring in file data. This unifies file I/O and memory management."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <sys/mman.h>\n#include <sys/stat.h>\n#include <fcntl.h>\n#include <unistd.h>\n\nint main() {\n    int fd = open(\"data.txt\", O_RDONLY);\n    struct stat sb;\n\n    fstat(fd, &sb);\n    size_t size = sb.st_size;\n\n    // Map the entire file into memory\n    char *data = mmap(NULL, size, PROT_READ, MAP_PRIVATE, fd, 0);\n\n    // Now access file data as if it were memory\n    for (size_t i = 0; i < size; i++) {\n        putchar(data[i]);  // Generates page faults on first access\n    }\n\n    munmap(data, size);\n    close(fd);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kernel Same-page Merging (KSM):"
+      }), " Linux kernel scans memory and merges identical pages from different processes into a single copy-on-write page. Used in virtualization to reduce memory usage."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory Ballooning:"
+      }), " In virtualized environments, the hypervisor can \"inflate\" a balloon driver inside the guest to reclaim memory, then \"deflate\" to give memory back. This allows dynamic memory balancing between VMs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Common interview questions on virtual memory with detailed answers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-walk-through-the-complete-steps-of-page-fault-handling",
+      children: "Q1: Walk through the complete steps of page fault handling."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " A page fault follows these 9 steps:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trap:"
+        }), " MMU detects valid bit = 0, raises page fault exception"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Save state:"
+        }), " OS saves PC, registers of current process"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identify page:"
+        }), " OS reads CR2 register (x86) to extract faulting virtual address"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Validate:"
+        }), " Check if VPN is in valid range, verify protection bits"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Free frame:"
+        }), " Check free-frame list; if empty, invoke replacement"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Disk I/O:"
+        }), " Issue read from swap/mapped file (slowest step)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Context switch (optional):"
+        }), " Run another process during I/O wait"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O complete:"
+        }), " Disk interrupt -> update PTE (valid=1, frame=f)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Restart:"
+        }), " Restore saved state, re-execute faulting instruction"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight:"
+      }), " The instruction restarts from scratch, not resumes. This matters for auto-increment instructions or string copies that span page boundaries."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-what-are-the-trade-offs-between-small-and-large-page-sizes",
+      children: "Q2: What are the trade-offs between small and large page sizes?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Small Page (4 KB)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Large Page (2 MB)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Internal fragmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page table size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large (512 entries per 2MB for 4KB pages)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Small (1 entry per 2MB)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TLB reach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4KB * entries (e.g. 256KB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2MB * entries (e.g. 128MB)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page fault I/O"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Small transfer per fault"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large transfer per fault"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Allocation flexibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (may need contiguous physical)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use large pages:"
+      }), " Databases, in-memory caches, VMs, HPC.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use small pages:"
+      }), " General-purpose workloads, I/O-bound processes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-how-does-the-tlb-differ-from-a-cpu-cache",
+      children: "Q3: How does the TLB differ from a CPU cache?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TLB"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CPU Cache (L1/L2/L3)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "What it caches"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual-to-physical address translations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Actual data and instructions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Small (32-2048 entries)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Larger (32KB-64MB)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Associativity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fully/highly associative"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N-way set associative"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Miss penalty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page walk (walk page table)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access next-level cache or memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Replacement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Typically LRU/random"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LRU, pseudo-LRU, RR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Managed by"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware (MMU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware (cache controller)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "TLB miss:"
+      }), " Access page table in memory (may trigger page fault).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cache miss:"
+      }), " Access next level cache or main memory.\nWithout TLB: every memory access needs two physical accesses (page table + data)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-is-the-difference-between-paging-and-swapping",
+      children: "Q4: What is the difference between paging and swapping?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Paging:"
+      }), " Moves individual pages between memory and swap (fixed-size units).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Swapping:"
+      }), " Moves entire processes between memory and swap."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern systems use paging, not swapping (except for suspend/resume)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-explain-belady-anomaly-and-which-algorithms-exhibit-it",
+      children: "Q5: Explain Belady Anomaly and which algorithms exhibit it."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Belady Anomaly occurs when increasing the number of frames ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "increases"
+      }), " page faults. Only FIFO exhibits it (and some FIFO-like algorithms). LRU and Optimal do NOT exhibit it because they follow the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "stack property"
+      }), ": the set of pages in memory with N frames is a subset of the set with N+1 frames. FIFO does not satisfy this because the queue order changes with different frame counts."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-how-would-you-implement-lru-in-a-real-os-kernel",
+      children: "Q6: How would you implement LRU in a real OS kernel?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In practice, exact LRU is too expensive. Use ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LRU approximation"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Clock (Second-Chance):"
+        }), " Circular buffer with reference bit - used in Linux, BSD"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Aging:"
+        }), " N-bit counter per page shifted periodically with reference bit injected"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Two-handed clock:"
+        }), " Two pointers racing - one clears ref bits, one evicts"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-what-is-the-difference-between-local-and-global-page-replacement",
+      children: "Q7: What is the difference between local and global page replacement?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Local:"
+      }), " Victim selected from the faulting process only. Provides isolation but may waste memory.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Global:"
+      }), " Victim selected from any process. More efficient but can cause cross-process thrashing."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Linux uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "global"
+      }), " replacement (page reclaim from any process) but with per-process working-set estimation to prevent thrashing."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-what-happens-when-you-allocate-more-memory-than-physical-ram",
+      children: "Q8: What happens when you allocate more memory than physical RAM?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "On most systems, it works (via demand paging). Pages that are not accessed stay on disk. When you actually access all allocated memory, the system either:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thrash (hard disk continuously paging)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Invoke OOM (Out-Of-Memory) killer to terminate processes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Swap to SSD with better performance (but still slow)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-why-does-fork-use-copy-on-write-how-much-does-it-save",
+      children: "Q9: Why does fork() use copy-on-write? How much does it save?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Without COW: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fork()"
+      }), " copies the entire address space of the parent (could be GB). With COW: only page tables are copied (a few KB). Actual pages are shared and duplicated only on write. Since ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "exec()"
+      }), " (removing the entire address space) usually follows ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fork()"
+      }), ", COW avoids copying pages that will be immediately discarded. Savings: 99.9%+ in common case."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-what-is-mmap-and-how-does-it-relate-to-demand-paging",
+      children: "Q10: What is mmap() and how does it relate to demand paging?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "mmap()"
+      }), " maps a file (or device) into the virtual address space. File content is demand-paged: accessing a mapped region causes a page fault, and the OS reads the file block from disk into memory. This unifies file I/O and memory management - the same page fault mechanism handles both swap and file-backed pages."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "linux-page-reclaim-kswapd--pfra",
+      children: "Linux Page Reclaim (kswapd + PFRA)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux uses a sophisticated page reclamation system:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Components:\n  - kswapd: Kernel thread that activates when free memory is low\n  - PFRA: Page Frame Reclamation Algorithm\n  - LRU lists: active (referenced recently) and inactive lists\n\nLRU Lists in Linux:\n  [Inactive List] <-> [Active List]\n        |                    |\n    Clean pages         Recently used\n    Ready for eviction  Promoted on second access\n\nkswapd Operation:\n  1. Monitors free memory pages (watermarks: min, low, high)\n  2. When free < low watermark: kswapd wakes up\n  3. Scans pages from inactive list and reclaims clean ones\n  4. Moves pages from active to inactive if ref bit is clear\n  5. Sleeps when free > high watermark\n\nWatermarks:\n  High: kswapd sleeps\n  Low:  kswapd starts reclaim\n  Min:  Direct reclaim (processes reclaim pages synchronously)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Page types in Linux:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "File-backed pages:"
+        }), " Content from files (can be dropped if clean)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Anonymous pages:"
+        }), " Heap, stack (must be swapped to swap space)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Shared pages:"
+        }), " Mapped by multiple processes (COW)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reclaim priority (swappiness):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "swappiness = 0: Only reclaim file-backed pages (no swap)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "swappiness = 60 (default): Balance between file-backed and anonymous"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "swappiness = 100: Aggressively swap anonymous pages"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "windows-virtual-memory",
+      children: "Windows Virtual Memory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows uses a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "demand paging with clustering"
+      }), " approach:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Windows Virtual Memory Components:\n\n  Working Set Manager:\n    - Monitors per-process working set sizes\n    - Adjusts working set limits dynamically\n    - Uses FIFO-with-clock replacement (approximate LRU)\n\n  Balance Set Manager:\n    - system thread that runs every 4 seconds\n    - Checks memory-related counters\n    - Modifies process working set limits\n\n  Pages:\n    - Valid: In physical memory, accessible\n    - Transition: In standby list (still in memory but not in working set)\n    - Invalid: On disk (page file)\n    - Modified: Dirty pages not yet written to disk\n\n  Memory Lists:\n    - Zeroed list: Pages cleared for security (satisfied first)\n    - Free list: Unused pages\n    - Standby list: Recently evicted pages (reclaim without disk I/O!)\n    - Modified list: Dirty pages waiting to be written to disk\n\n  Page File:\n    - System managed pagefile.sys\n    - Can extend across multiple disks\n    - Size recommendations: 1-3x physical RAM\n\n  Working Set Policies:\n    - Minimum: Process must have at least this many pages\n    - Maximum: Hard limit (default: 345 pages on 32-bit)\n    - Current: Dynamically adjusted based on memory pressure\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Windows Clock Algorithm:"
+      }), "\nWindows uses FIFO with clock (improved variant). Each page has:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reference bit:"
+        }), " Set on access"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Modified bit:"
+        }), " Set on write"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protection bits:"
+        }), " Read/write/execute"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The clock hand scans forward, skipping recently referenced pages."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "macos-virtual-memory",
+      children: "macOS Virtual Memory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "macOS (XNU kernel) uses a unified cache architecture:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "macOS Virtual Memory Components:\n\n  Unified Buffer Cache:\n    - Single cache for both file system and virtual memory\n    - No separate buffer cache (unlike older UNIX)\n    - All file I/O goes through the page cache\n\n  Dynamic Pager:\n    - Manages swap backing store\n    - Creates/removes swap files as needed\n    - Automatically adjusts number of swap files\n\n  Memory Pressure:\n    - Level: Normal -> Warning -> Critical\n    - memorystatus: Notifies apps of pressure level\n    - Jetsam: Terminates processes under critical pressure\n    - Compression: Compress inactive pages instead of swapping\n\n  Page Compression (since Mavericks 10.9):\n    - Instead of swapping idle pages to disk, compress them\n    - WKdm compression algorithm (fast, designed for memory)\n    - Compressed pages stored in \"compressor\" (separate from swap)\n    - ~2x compression ratio typical\n    - Avoids disk I/O = faster and saves SSD wear\n\n  Memory Zones:\n    - Kernel map: Kernel allocations\n    - I/O map: Device I/O buffers\n    - User map: Application memory\n    - Shared map: Shared libraries, inter-process communication\n\n  Swap Files:\n    - /private/var/vm/swapfile0, swapfile1, ...\n    - Created on demand, removed when empty\n    - Multiple swap files for parallelism\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "key-differences-table",
+      children: "Key Differences Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Replacement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two-list LRU (active/inactive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clock (FIFO with ref bit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LRU with compression"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Swapping"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "kswapd + OOM killer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Working set manager"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic pager + Jetsam"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compression"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "zram/zswap (optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (uses page file)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (default since 10.9)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Huge Pages"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "THP (2MB/1GB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large Pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Super Pages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "File Cache"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page cache (unified)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standby list"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unified cache"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "OOM Handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OOM killer (sends SIGKILL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Out-of-memory manager"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jetsam (priority-based)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Swap Location"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Separate partition or file"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pagefile.sys"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/private/var/vm/"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-page-fault-rate-vs-performance",
+      children: "Example 1: Page Fault Rate vs Performance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    // Allocate a large array\n    int size = 100 * 1024 * 1024;  // 100 million integers = 400 MB\n    int *arr = malloc(size * sizeof(int));\n\n    if (!arr) { perror(\"malloc\"); return 1; }\n\n    // Sequential access (good locality - low page faults)\n    for (int i = 0; i < size; i++) {\n        arr[i] = i;  // Pages brought in sequentially\n    }\n\n    // Random access (poor locality - many page faults)\n    srand(0);\n    for (int i = 0; i < 1000000; i++) {\n        int idx = rand() % size;\n        arr[idx] = i;  // May cause TLB misses and page faults\n    }\n\n    free(arr);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-page-replacement-simulation-in-python-all-algorithms",
+      children: "Example 2: Page Replacement Simulation in Python (All Algorithms)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class PageReplacementBenchmark:\n    def __init__(self, frame_count: int):\n        self.frame_count = frame_count\n\n    def fifo(self, refs):\n        frames, faults, q = [], 0, []\n        for p in refs:\n            if p in frames:\n                continue\n            faults += 1\n            if len(frames) < self.frame_count:\n                frames.append(p)\n                q.append(p)\n            else:\n                victim = q.pop(0)\n                idx = frames.index(victim)\n                frames[idx] = p\n                q.append(p)\n        return faults\n\n    def optimal(self, refs):\n        frames, faults = [], 0\n        for i, p in enumerate(refs):\n            if p in frames:\n                continue\n            faults += 1\n            if len(frames) < self.frame_count:\n                frames.append(p)\n            else:\n                farthest, victim = -1, -1\n                for f in frames:\n                    try:\n                        nxt = refs.index(f, i + 1)\n                    except ValueError:\n                        nxt = float('inf')\n                    if nxt > farthest:\n                        farthest = nxt\n                        victim = f\n                frames.remove(victim)\n                frames.append(p)\n        return faults\n\n    def lru(self, refs):\n        frames, faults, last_used = [], 0, {}\n        for i, p in enumerate(refs):\n            if p in frames:\n                last_used[p] = i\n                continue\n            faults += 1\n            if len(frames) < self.frame_count:\n                frames.append(p)\n            else:\n                lru_page = min(frames, key=lambda f: last_used.get(f, -1))\n                frames.remove(lru_page)\n                frames.append(p)\n            last_used[p] = i\n        return faults\n\n    def clock(self, refs):\n        frames, refs_bits, hand = [None] * self.frame_count, [0] * self.frame_count, 0\n        page_set, faults, loaded = set(), 0, 0\n        for p in refs:\n            if p in page_set:\n                refs_bits[frames.index(p)] = 1\n                continue\n            faults += 1\n            if loaded < self.frame_count:\n                frames[loaded] = p\n                refs_bits[loaded] = 1\n                page_set.add(p)\n                hand = (loaded + 1) % self.frame_count if loaded == hand else hand\n                loaded += 1\n            else:\n                while True:\n                    if refs_bits[hand] == 0:\n                        victim = frames[hand]\n                        page_set.remove(victim)\n                        frames[hand] = p\n                        refs_bits[hand] = 1\n                        page_set.add(p)\n                        hand = (hand + 1) % self.frame_count\n                        break\n                    else:\n                        refs_bits[hand] = 0\n                        hand = (hand + 1) % self.frame_count\n        return faults\n\n    def mfu(self, refs):\n        frames, freq, faults = [], {}, 0\n        for p in refs:\n            if p in freq:\n                freq[p] += 1\n                continue\n            faults += 1\n            if len(frames) < self.frame_count:\n                frames.append(p)\n                freq[p] = 1\n            else:\n                mfu_page = max(frames, key=lambda f: freq.get(f, 0))\n                frames.remove(mfu_page)\n                del freq[mfu_page]\n                frames.append(p)\n                freq[p] = 1\n        return faults\n\n    def lfu(self, refs):\n        frames, freq, faults = [], {}, 0\n        for p in refs:\n            if p in freq:\n                freq[p] += 1\n                continue\n            faults += 1\n            if len(frames) < self.frame_count:\n                frames.append(p)\n                freq[p] = 1\n            else:\n                lfu_page = min(frames, key=lambda f: freq.get(f, 0))\n                frames.remove(lfu_page)\n                del freq[lfu_page]\n                frames.append(p)\n                freq[p] = 1\n        return faults\n\n\nif __name__ == \"__main__\":\n    refs = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1]\n    bm = PageReplacementBenchmark(3)\n\n    results = {\n        \"FIFO\":   bm.fifo(refs),\n        \"OPT\":    bm.optimal(refs),\n        \"LRU\":    bm.lru(refs),\n        \"Clock\":  bm.clock(refs),\n        \"MFU\":    bm.mfu(refs),\n        \"LFU\":    bm.lfu(refs),\n    }\n\n    print(f\"{'Algorithm':<10} {'Faults':>6}\")\n    print(\"-\" * 18)\n    for algo, faults in sorted(results.items(), key=lambda x: x[1]):\n        print(f\"{algo:<10} {faults:>6}\")\n\n    print(\"\\nRunning on reference string:\")\n    print(refs)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-3-c-program-for-all-page-replacement-algorithms",
+      children: "Example 3: C++ Program for all Page Replacement Algorithms"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <queue>\n#include <unordered_set>\n#include <unordered_map>\n#include <algorithm>\n#include <climits>\n\nclass PageReplacementBenchmark {\n    int frame_count;\n\npublic:\n    PageReplacementBenchmark(int n) : frame_count(n) {}\n\n    int fifo(const std::vector<int>& refs) {\n        std::queue<int> q;\n        std::unordered_set<int> in_mem;\n        int faults = 0;\n        for (int p : refs) {\n            if (in_mem.count(p)) continue;\n            faults++;\n            if ((int)in_mem.size() < frame_count) {\n                in_mem.insert(p); q.push(p);\n            } else {\n                int v = q.front(); q.pop();\n                in_mem.erase(v); in_mem.insert(p); q.push(p);\n            }\n        }\n        return faults;\n    }\n\n    int optimal(const std::vector<int>& refs) {\n        std::unordered_set<int> in_mem;\n        int faults = 0;\n        for (size_t i = 0; i < refs.size(); i++) {\n            int p = refs[i];\n            if (in_mem.count(p)) continue;\n            faults++;\n            if ((int)in_mem.size() < frame_count) {\n                in_mem.insert(p);\n            } else {\n                int victim = -1, farthest = -1;\n                for (int f : in_mem) {\n                    int next = INT_MAX;\n                    for (size_t j = i+1; j < refs.size(); j++)\n                        if (refs[j] == f) { next = j; break; }\n                    if (next > farthest) { farthest = next; victim = f; }\n                }\n                in_mem.erase(victim);\n                in_mem.insert(p);\n            }\n        }\n        return faults;\n    }\n\n    int lru(const std::vector<int>& refs) {\n        std::unordered_set<int> in_mem;\n        std::unordered_map<int, int> lru_map;\n        int faults = 0;\n        for (size_t i = 0; i < refs.size(); i++) {\n            int p = refs[i];\n            if (in_mem.count(p)) { lru_map[p] = i; continue; }\n            faults++;\n            if ((int)in_mem.size() < frame_count) {\n                in_mem.insert(p);\n            } else {\n                int lru_page = -1, oldest = INT_MAX;\n                for (int f : in_mem) {\n                    if (lru_map[f] < oldest) { oldest = lru_map[f]; lru_page = f; }\n                }\n                in_mem.erase(lru_page);\n                in_mem.insert(p);\n            }\n            lru_map[p] = i;\n        }\n        return faults;\n    }\n\n    int mfu(const std::vector<int>& refs) {\n        std::vector<int> frames;\n        std::unordered_map<int, int> freq;\n        int faults = 0;\n        for (int p : refs) {\n            if (freq.count(p)) { freq[p]++; continue; }\n            faults++;\n            if ((int)frames.size() < frame_count) {\n                frames.push_back(p); freq[p] = 1;\n            } else {\n                auto it = std::max_element(frames.begin(), frames.end(),\n                    [&](int a, int b) { return freq[a] < freq[b]; });\n                freq.erase(*it);\n                *it = p; freq[p] = 1;\n            }\n        }\n        return faults;\n    }\n\n    int lfu(const std::vector<int>& refs) {\n        std::vector<int> frames;\n        std::unordered_map<int, int> freq;\n        int faults = 0;\n        for (int p : refs) {\n            if (freq.count(p)) { freq[p]++; continue; }\n            faults++;\n            if ((int)frames.size() < frame_count) {\n                frames.push_back(p); freq[p] = 1;\n            } else {\n                auto it = std::min_element(frames.begin(), frames.end(),\n                    [&](int a, int b) { return freq[a] < freq[b]; });\n                freq.erase(*it);\n                *it = p; freq[p] = 1;\n            }\n        }\n        return faults;\n    }\n};\n\nint main() {\n    std::vector<int> refs = {7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};\n    PageReplacementBenchmark bm(3);\n\n    std::cout << \"Ref string: \";\n    for (int r : refs) std::cout << r << \" \";\n    std::cout << \"\\n\\nAlgorithm  Faults\\n--------  ------\\n\";\n    std::cout << \"FIFO    \" << bm.fifo(refs) << \"\\n\";\n    std::cout << \"OPT     \" << bm.optimal(refs) << \"\\n\";\n    std::cout << \"LRU     \" << bm.lru(refs) << \"\\n\";\n    std::cout << \"MFU     \" << bm.mfu(refs) << \"\\n\";\n    std::cout << \"LFU     \" << bm.lfu(refs) << \"\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Belady Anomaly"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implementation Cost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hit Ratio"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FIFO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor - may evict frequently used pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Educational"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimal (MIN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible (needs future)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best (benchmark)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theoretical comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LRU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (full implementation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-optimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Databases, caches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Clock (2nd Chance)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Varies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (reference bit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good approx. of LRU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, BSD, Windows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Aging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (8-bit counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some UNIX systems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NRU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low (R/D bits)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MINIX, embedded"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MFU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (freq counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor for temporal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare, niche"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LFU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (freq counter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redis, CDN caches"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtual Memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Separation of logical from physical memory; process runs partially loaded"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Demand Paging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page loaded only when a reference to it occurs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page Fault"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt when referenced page is not in physical memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Valid Bit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Indicates whether a page is in physical memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dirty Bit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Indicates whether page content has been modified"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reference Bit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-set bit indicating page was accessed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Thrashing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical performance collapse from excessive paging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Copy-on-Write"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pages shared until modified, then copied"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Working Set"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set of pages a process is actively referencing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Working Set Window"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time interval defining the working set (Delta)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Belady Anomaly"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More frames can increase page faults (FIFO only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TLB Reach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amount of virtual address space covered by TLB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Locality"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tendency to access nearby or recently accessed addresses"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Swappiness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux kernel parameter for swap aggressiveness"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "OOM Killer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process that terminates processes when memory is exhausted"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Server"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Database"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Embedded System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Smartphone"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "HPC/ML"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Demand Paging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May disable (prefers own caching)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Host-paged"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS manages own paging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large page allocations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LRU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Approximated (Clock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Buffer pool replacement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not applicable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page ballooning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Huge pages, pinned memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thrashing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good allocation reduces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (controlled workload)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (predefined)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Over-commitment risk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory oversubscription"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CoW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fork() optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snapshot/checkpoint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container layers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM cloning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MPI fork optimization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page Size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 KB standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 MB / 1 GB huge pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom (MMU optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 KB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 MB / 1 GB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Replacement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Global (Linux)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application-level (Buffer Pool)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pre-allocated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Global + compression"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pinned memory"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What happens when a process references a page not in memory?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Process terminated"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Page fault; OS loads page from disk"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) System reboots"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) TLB is flushed"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which replacement algorithm is impossible to implement in a real OS?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FIFO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) LRU"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Optimal (MIN)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Clock"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Belady anomaly is associated with:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FIFO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) LRU"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Optimal"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Clock"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Spending more time paging than executing is called:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Thrashing"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Starvation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Race condition"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The Clock algorithm approximates:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FIFO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Optimal"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) LRU"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) MFU"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which algorithm uses reference and dirty bits to classify pages into 4 classes?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Aging"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) NRU"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Second-Chance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) FIFO"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "When fork() is called, pages are initially:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Copied to new physical frames"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Shared as copy-on-write"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Mapped to the zero page"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Swapped to disk"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The working set is:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) All pages a process has ever accessed"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Pages referenced in the last Delta time interval"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) The entire address space"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Pages in the TLB"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-virtual-memory-simulator",
+      children: "TypeScript Virtual Memory Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following TypeScript implementation models demand paging, FIFO/LRU/Optimal page replacement, working set tracking, and thrashing detection:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Virtual Memory Simulator\n * Implements: demand paging, FIFO/LRU/Optimal page replacement,\n *             working set model, thrashing detection, Belady's anomaly\n */\nclass PageReplacementSimulator {\n  private frames: number[];\n  private capacity: number;\n  private pageFaults = 0;\n  private pageHits = 0;\n  private accessCount = 0;\n\n  constructor(capacity: number) {\n    this.capacity = capacity;\n    this.frames = [];\n  }\n\n  fifo(referenceString: number[]): number {\n    this.frames = [];\n    this.pageFaults = 0;\n    this.pageHits = 0;\n    this.accessCount = 0;\n    let queue: number[] = [];\n    \n    for (const page of referenceString) {\n      this.accessCount++;\n      if (this.frames.includes(page)) {\n        this.pageHits++;\n        continue;\n      }\n\n      this.pageFaults++;\n      if (this.frames.length < this.capacity) {\n        this.frames.push(page);\n        queue.push(page);\n      } else {\n        const evicted = queue.shift()!;\n        const idx = this.frames.indexOf(evicted);\n        this.frames[idx] = page;\n        queue.push(page);\n      }\n    }\n    return this.pageFaults;\n  }\n\n  lru(referenceString: number[]): number {\n    this.frames = [];\n    this.pageFaults = 0;\n    this.pageHits = 0;\n    this.accessCount = 0;\n    const indices = new Map<number, number>();\n\n    for (let i = 0; i < referenceString.length; i++) {\n      const page = referenceString[i];\n      this.accessCount++;\n\n      if (this.frames.includes(page)) {\n        this.pageHits++;\n        indices.set(page, i);\n        continue;\n      }\n\n      this.pageFaults++;\n      if (this.frames.length < this.capacity) {\n        this.frames.push(page);\n        indices.set(page, i);\n      } else {\n        let lruPage = this.frames[0];\n        let lruTime = indices.get(lruPage) ?? Infinity;\n        for (const fp of this.frames) {\n          const time = indices.get(fp) ?? Infinity;\n          if (time < lruTime) {\n            lruTime = time;\n            lruPage = fp;\n          }\n        }\n        const idx = this.frames.indexOf(lruPage);\n        this.frames[idx] = page;\n        indices.delete(lruPage);\n        indices.set(page, i);\n      }\n    }\n    return this.pageFaults;\n  }\n\n  optimal(referenceString: number[]): number {\n    this.frames = [];\n    this.pageFaults = 0;\n    this.pageHits = 0;\n    this.accessCount = 0;\n\n    for (let i = 0; i < referenceString.length; i++) {\n      const page = referenceString[i];\n      this.accessCount++;\n\n      if (this.frames.includes(page)) {\n        this.pageHits++;\n        continue;\n      }\n\n      this.pageFaults++;\n      if (this.frames.length < this.capacity) {\n        this.frames.push(page);\n      } else {\n        let evictPage = this.frames[0];\n        let farthestDist = -1;\n\n        for (const fp of this.frames) {\n          const nextUse = referenceString.indexOf(fp, i + 1);\n          const dist = nextUse === -1 ? Infinity : nextUse - i;\n          if (dist > farthestDist) {\n            farthestDist = dist;\n            evictPage = fp;\n          }\n        }\n\n        const idx = this.frames.indexOf(evictPage);\n        this.frames[idx] = page;\n      }\n    }\n    return this.pageFaults;\n  }\n\n  getFaultRate(): number {\n    return this.accessCount > 0 ? this.pageFaults / this.accessCount : 0;\n  }\n\n  printSummary(): void {\n    console.log(`Page faults: ${this.pageFaults}, Hits: ${this.pageHits}, ` +\n      `Fault rate: ${(this.getFaultRate() * 100).toFixed(2)}%`);\n  }\n}\n\nclass WorkingSetModel {\n  private window: number[] = [];\n  private windowSize: number;\n  private workingSet: Set<number> = new Set();\n  private pageFaults = 0;\n  private thrashed = false;\n\n  constructor(windowSize: number) {\n    this.windowSize = windowSize;\n  }\n\n  access(page: number): void {\n    this.window.push(page);\n    if (this.window.length > this.windowSize) {\n      const removed = this.window.shift()!;\n      if (!this.window.includes(removed)) {\n        this.workingSet.delete(removed);\n      }\n    }\n\n    if (!this.workingSet.has(page)) {\n      this.pageFaults++;\n      this.workingSet.add(page);\n    }\n\n    if (this.workingSet.size > 10) {\n      this.thrashed = true;\n    }\n  }\n\n  getWorkingSetSize(): number { return this.workingSet.size; }\n  isThrashing(): boolean { return this.thrashed; }\n}\n\n// Compare page replacement algorithms\nconst refString = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1];\nconst capacities = [3, 4, 5];\n\nconsole.log('=== Page Replacement Comparison ===');\nfor (const cap of capacities) {\n  const fifo = new PageReplacementSimulator(cap);\n  const lru = new PageReplacementSimulator(cap);\n  const opt = new PageReplacementSimulator(cap);\n\n  console.log(`\\n--- Frames = ${cap} ---`);\n  console.log('FIFO:', fifo.fifo(refString), 'faults');\n  console.log('LRU:', lru.lru(refString), 'faults');\n  console.log('OPT:', opt.optimal(refString), 'faults');\n}\n\n// Belady's anomaly demonstration\nconsole.log('\\n=== Belady\\'s Anomaly ===');\nconst refPattern = [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5];\nfor (let cap = 1; cap <= 6; cap++) {\n  const f = new PageReplacementSimulator(cap);\n  const faults = f.fifo(refPattern);\n  console.log(`FIFO with ${cap} frames: ${faults} faults`);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numerical-examples",
+      children: "Numerical Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "page-replacement-trace-lru-with-4-frames",
+      children: "Page Replacement Trace (LRU with 4 frames)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reference string:"
+      }), " 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Ref"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frames (LRU order)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hit/Fault"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7, 0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7, 0, 1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7, 0, 1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7, 1, 2, 0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "H"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 0, 3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 3, 0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "H"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2, 3, 0, 4]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3, 0, 4, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "H"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0, 4, 2, 3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "H"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 3, 0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "H"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Total: 8 faults"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "beladys-anomaly-with-fifo",
+      children: "Belady's Anomaly with FIFO"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reference string:"
+      }), " [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5]"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Frames"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FIFO Faults"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every reference faults"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal capacity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Better"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "10"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "More faults than 3 frames!"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Finally fits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-chapter-quiz-questions",
+      children: "Additional Chapter Quiz Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "9",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the minimum number of frames required for a process with 5 virtual pages to guarantee no thrashing under pure demand paging?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) 1"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) 2"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) 5"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Depends on page size and reference pattern"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The working set model prevents thrashing by:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Increasing page size dynamically"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Ensuring each process has at least as many frames as its working set size"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Using larger TLBs"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Reducing the degree of multiprogramming"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Zero-Fill-On-Demand"
+          }), "?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Pre-zeroing pages during process creation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Keeping a pool of pre-zeroed frames for demand paging"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Zeroing pages during swap-in"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Compressing zero-filled pages to save swap space"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What happens in the ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "swap-out"
+          }), " step of page fault handling?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) The faulted page is read from disk"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A victim frame is selected and written to swap space if dirty"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) The page table is updated immediately"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) The TLB is flushed"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which page replacement policy uses reference and dirty bits to classify pages into four classes?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FIFO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) LRU"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Second Chance (Clock)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) NRU (Not Recently Used)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 9-d, 10-b, 11-b, 12-b, 13-d"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "14",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given the reference string [0, 2, 1, 3, 5, 4, 6, 3, 0, 2, 1, 4, 0, 2] with 3 frames, compute page faults for FIFO, LRU, and Optimal. Which algorithm has the fewest faults?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "15",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a TypeScript program that simulates the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Clock (Second Chance)"
+        }), " page replacement algorithm. Use a circular list of frames with reference bits. Process a reference string of 30 random pages with 4 frames. Show the frame state after each access, identifying which frames are \"second chance\" candidates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Aging"
+        }), " LRU approximation algorithm in TypeScript. Use an 8-bit counter per frame that is shifted right and ORed with the reference bit on each clock tick. Compare fault counts against exact LRU on a reference string of 50 accesses."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "17",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Page Fault Frequency (PFF)"
+        }), " algorithm that dynamically adjusts frame allocation. Track page fault rate per 100 accesses. If the fault rate exceeds 5%, allocate an additional frame. If it drops below 1%, deallocate a frame. Demonstrate that PFF prevents thrashing by simulating a process that suddenly expands its working set."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a TypeScript simulation comparing ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "local vs. global page replacement"
+        }), " with two co-running processes. In local replacement, each process replaces within its allocated frames. In global replacement, they compete for all frames. Show that global replacement can cause one process to steal frames from another, potentially inducing thrashing."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Virtual memory decouples logical address space from physical memory via demand paging"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Page faults are expensive (~10ms); even 0.1% fault rate causes a 100x slowdown"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "FIFO is simple but can exhibit Belady Anomaly (more frames = more faults)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optimal page replacement minimizes faults but requires future knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LRU approximates Optimal using past references; Clock algorithm approximates LRU with low overhead"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MFU/LFU use access frequency - useful for specific workloads (caching)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LRU approximations (Aging, NRU, Clock) provide practical LRU without full hardware support"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Frame allocation: fixed (equal/proportional) vs priority, local vs global"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thrashing occurs when working set exceeds physical memory; solved by adjusting multiprogramming"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Working set model uses a sliding window (Delta) to estimate each process memory needs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Locality (spatial + temporal) makes virtual memory work in practice"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Page size involves trade-offs between internal fragmentation, TLB reach, and I/O overhead"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Real systems (Linux, Windows, macOS) use demand paging with LRU approximation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linux uses kswapd with active/inactive lists; Windows uses clock with standby/modified lists"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "macOS uses page compression to reduce swapping on SSDs"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic-1",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is a page fault? Walk through the steps the OS takes to handle one."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given the reference string 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 frames, compute page faults for FIFO, LRU, and Clock."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is thrashing? What is the working set, and how does it relate to thrashing?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "List the page replacement algorithms and rank them by implementation cost."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "intermediate-1",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Demonstrate Belady Anomaly: Find a reference string where FIFO with 4 frames has more faults than with 3 frames."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement the Clock (Second-Chance) page replacement algorithm. Use a circular list of page table entries with reference bits. Test it on the same reference string as Example 2."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the working-set model. If a process has working-set window Delta = 10, and the reference string is 1, 2, 3, 2, 1, 4, 5, 6, 1, 2, 4, 5, 6, 1, 2, what is the working set at each point? Identify locality transitions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare local vs global page replacement. Give an advantage and disadvantage of each."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a Python program that compares FIFO, LRU, Optimal, Clock, MFU, and LFU on the same reference string and prints the fault counts."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced-1",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a benchmark that allocates a 1 GB array and measures access time for sequential, strided (stride = page_size * 2), and fully random access patterns. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "clock_gettime()"
+        }), " for precise measurement. Explain the results in terms of TLB misses and page faults."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Working-Set Page Replacement Algorithm"
+        }), ": keep track of each process working set and preempt pages not in the working set. Compare its fault rate to LRU for the reference string."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Design and implement a program that uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "mmap()"
+        }), " to process a 1 GB file. Measure the time to read the file sequentially with and without ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "madvise()"
+        }), " hints (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MADV_SEQUENTIAL"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MADV_RANDOM"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MADV_WILLNEED"
+        }), "). What is the impact of each hint on page faults?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement the Aging LRU approximation algorithm. Compare its fault count against exact LRU on the standard reference string."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Research and describe how Linux reclaims pages during memory pressure. Explain the roles of kswapd, the active/inactive lists, and swappiness."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

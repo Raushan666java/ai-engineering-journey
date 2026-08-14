@@ -1,0 +1,1906 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[9847],{
+
+/***/ 55949
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_35_legal_md_1c4_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-35-legal-md-1c4.json
+const site_docs_courses_laravel_35_legal_md_1c4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/35-legal","title":"Chapter 35: Legal & Compliance Agents","description":"Previous Manufacturing & Industrial — AI-Powered Factory Agents","source":"@site/docs/courses/laravel/35-legal.md","sourceDirName":"courses/laravel","slug":"/laravel/35-legal","permalink":"/ai-engineering-journey/laravel/35-legal","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":35,"frontMatter":{"id":"35-legal","slug":"/laravel/35-legal","title":"Chapter 35: Legal & Compliance Agents","sidebar_label":"Chapter 35: Legal & Compliance Agents","sidebar_position":35},"sidebar":"course-laravel","previous":{"title":"Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents","permalink":"/ai-engineering-journey/laravel/34-real-estate"},"next":{"title":"Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents","permalink":"/ai-engineering-journey/laravel/36-manufacturing"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/35-legal.md
+
+
+const frontMatter = {
+	id: '35-legal',
+	slug: '/laravel/35-legal',
+	title: 'Chapter 35: Legal & Compliance Agents',
+	sidebar_label: 'Chapter 35: Legal & Compliance Agents',
+	sidebar_position: 35
+};
+const contentTitle = 'Chapter 35: Legal & Compliance Agents';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "35.1 Legal Data Models",
+  "id": "351-legal-data-models",
+  "level": 3
+}, {
+  "value": "Migration for Legal Domain Tables",
+  "id": "migration-for-legal-domain-tables",
+  "level": 4
+}, {
+  "value": "Case Model with Relationships",
+  "id": "case-model-with-relationships",
+  "level": 4
+}, {
+  "value": "Contract Model with Serialization",
+  "id": "contract-model-with-serialization",
+  "level": 4
+}, {
+  "value": "35.2 Contract Review &amp; Analysis Agents",
+  "id": "352-contract-review--analysis-agents",
+  "level": 3
+}, {
+  "value": "35.3 Document Discovery Automation",
+  "id": "353-document-discovery-automation",
+  "level": 3
+}, {
+  "value": "35.4 Compliance Monitoring Agents",
+  "id": "354-compliance-monitoring-agents",
+  "level": 3
+}, {
+  "value": "35.5 Case Management Workflows",
+  "id": "355-case-management-workflows",
+  "level": 3
+}, {
+  "value": "35.6 Legal Research Agents",
+  "id": "356-legal-research-agents",
+  "level": 3
+}, {
+  "value": "35.7 E-Discovery Pipelines",
+  "id": "357-e-discovery-pipelines",
+  "level": 3
+}, {
+  "value": "35.8 Automated Report Generation",
+  "id": "358-automated-report-generation",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-35-legal--compliance-agents",
+        children: "Chapter 35: Legal & Compliance Agents"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/34-real-estate",
+          children: "Real Estate & Property — AI-Powered Real Estate Agents"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/36-manufacturing",
+          children: "Manufacturing & Industrial — AI-Powered Factory Agents"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design legal-domain data models with case, document, contract, matter, and compliance record entities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a contract review agent that detects risky clauses, scores risk levels, and extracts key terms using AI"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a document discovery agent that searches, classifies, and flags privileged content for e-discovery"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct a compliance monitoring agent that checks regulatory rules and generates violation alerts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deploy a case management agent that tracks deadlines, automates tasks, and manages case workflows"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a legal research agent that queries case law, formulates search strings, and summarizes results"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement an e-discovery pipeline with staged collection, processing, deduplication, and production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Automate legal report generation with template filling, data aggregation, and multi-format output"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/35-legal/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/35-legal/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/35-legal/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/35-legal/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/35-legal/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/35-legal/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/35-legal.png",
+        alt: "Legal Domain"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "351-legal-data-models",
+      children: "35.1 Legal Data Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Legal software must handle sensitive, confidential, and often court-mandated data with strict access controls, audit trails, and encryption. The core entities span cases, documents, contracts, clients, matters, and compliance records. Every model should support soft deletes, tenant scoping for law-firm multi-tenancy, and encrypted fields for attorney-client privileged content."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "migration-for-legal-domain-tables",
+      children: "Migration for Legal Domain Tables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('legal_clients', function (Blueprint $table) {\n            $table->id();\n            $table->string('external_ref')->unique();\n            $table->string('client_type'); // individual, corporate, government\n            $table->string('name');\n            $table->string('encrypted_email');\n            $table->string('encrypted_phone');\n            $table->text('encrypted_address');\n            $table->string('status')->default('active');\n            $table->timestamps();\n            $table->softDeletes();\n        });\n\n        Schema::create('legal_matters', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('client_id')->constrained('legal_clients');\n            $table->string('matter_number')->unique();\n            $table->string('title');\n            $table->text('description')->nullable();\n            $table->string('practice_area');\n            $table->string('status')->default('open'); // open, closed, pending\n            $table->date('opened_at');\n            $table->date('closed_at')->nullable();\n            $table->foreignId('primary_attorney_id')->nullable()->constrained('users');\n            $table->decimal('budget', 15, 2)->nullable();\n            $table->json('tags')->nullable();\n            $table->timestamps();\n            $table->softDeletes();\n        });\n\n        Schema::create('legal_cases', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('matter_id')->constrained('legal_matters');\n            $table->string('case_number')->unique();\n            $table->string('court')->nullable();\n            $table->string('judge')->nullable();\n            $table->string('case_type'); // civil, criminal, family, corporate\n            $table->text('relief_sought')->nullable();\n            $table->date('filing_date');\n            $table->date('next_hearing')->nullable();\n            $table->string('status')->default('active');\n            $table->json('opposing_counsel')->nullable();\n            $table->timestamps();\n            $table->softDeletes();\n        });\n\n        Schema::create('legal_documents', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('matter_id')->constrained('legal_matters');\n            $table->foreignId('case_id')->nullable()->constrained('legal_cases');\n            $table->string('title');\n            $table->string('type'); // pleading, contract, correspondence, evidence, discovery\n            $table->string('file_path');\n            $table->string('mime_type');\n            $table->string('hash_sha256');\n            $table->boolean('is_privileged')->default(false);\n            $table->string('privilege_type')->nullable(); // attorney-client, work-product\n            $table->string('status')->default('draft');\n            $table->json('metadata')->nullable();\n            $table->foreignId('uploaded_by')->constrained('users');\n            $table->timestamps();\n            $table->softDeletes();\n        });\n\n        Schema::create('legal_contracts', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('matter_id')->constrained('legal_matters');\n            $table->string('contract_number')->unique();\n            $table->string('title');\n            $table->string('counterparty');\n            $table->date('execution_date');\n            $table->date('effective_date');\n            $table->date('expiration_date')->nullable();\n            $table->decimal('contract_value', 15, 2)->nullable();\n            $table->string('jurisdiction');\n            $table->string('governing_law');\n            $table->string('status')->default('active');\n            $table->json('key_clauses')->nullable();\n            $table->json('risk_scores')->nullable();\n            $table->timestamps();\n            $table->softDeletes();\n        });\n\n        Schema::create('legal_compliance_records', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('matter_id')->constrained('legal_matters');\n            $table->string('regulation');\n            $table->string('requirement');\n            $table->string('status'); // compliant, non-compliant, pending-review\n            $table->timestamp('checked_at');\n            $table->text('notes')->nullable();\n            $table->foreignId('reviewed_by')->nullable()->constrained('users');\n            $table->timestamps();\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('legal_compliance_records');\n        Schema::dropIfExists('legal_contracts');\n        Schema::dropIfExists('legal_documents');\n        Schema::dropIfExists('legal_cases');\n        Schema::dropIfExists('legal_matters');\n        Schema::dropIfExists('legal_clients');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "case-model-with-relationships",
+      children: "Case Model with Relationships"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models\\Legal;\n\nuse App\\Models\\User;\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\nuse Illuminate\\Database\\Eloquent\\SoftDeletes;\n\nclass CaseModel extends Model\n{\n    use SoftDeletes;\n\n    protected $table = 'legal_cases';\n\n    protected $fillable = [\n        'matter_id', 'case_number', 'court', 'judge',\n        'case_type', 'relief_sought', 'filing_date',\n        'next_hearing', 'status', 'opposing_counsel',\n    ];\n\n    protected $casts = [\n        'filing_date' => 'date',\n        'next_hearing' => 'date',\n        'opposing_counsel' => 'array',\n    ];\n\n    public function matter(): BelongsTo\n    {\n        return $this->belongsTo(Matter::class);\n    }\n\n    public function documents(): HasMany\n    {\n        return $this->hasMany(Document::class, 'case_id');\n    }\n\n    public function isOverdue(): bool\n    {\n        return $this->next_hearing && $this->next_hearing->isPast() && $this->status === 'active';\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "contract-model-with-serialization",
+      children: "Contract Model with Serialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models\\Legal;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\SoftDeletes;\n\nclass Contract extends Model\n{\n    use SoftDeletes;\n\n    protected $table = 'legal_contracts';\n\n    protected $fillable = [\n        'matter_id', 'contract_number', 'title', 'counterparty',\n        'execution_date', 'effective_date', 'expiration_date',\n        'contract_value', 'jurisdiction', 'governing_law',\n        'status', 'key_clauses', 'risk_scores',\n    ];\n\n    protected $casts = [\n        'execution_date' => 'date',\n        'effective_date' => 'date',\n        'expiration_date' => 'date',\n        'contract_value' => 'decimal:2',\n        'key_clauses' => 'array',\n        'risk_scores' => 'array',\n    ];\n\n    public function matter(): BelongsTo\n    {\n        return $this->belongsTo(Matter::class);\n    }\n\n    public function isExpired(): bool\n    {\n        return $this->expiration_date && $this->expiration_date->isPast();\n    }\n\n    public function overallRiskScore(): ?float\n    {\n        $scores = $this->risk_scores;\n\n        if (empty($scores)) {\n            return null;\n        }\n\n        return array_sum($scores) / count($scores);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "352-contract-review--analysis-agents",
+      children: "35.2 Contract Review & Analysis Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Contract review is a high-volume, high-stakes legal task. An AI-powered agent can scan contracts for risky clauses, extract key terms, and assign risk scores before a human attorney ever opens the document. The agent combines clause-detection patterns with LLM-powered analysis for nuanced understanding."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent ingests a contract's text, runs clause-detection rules (indemnification, limitation of liability, auto-renewal, non-compete), scores each clause for risk, and returns a structured review report."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\Contract;\nuse Illuminate\\Support\\Facades\\Log;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass ContractReviewAgent\n{\n    protected Llm $llm;\n\n    protected array $clausePatterns = [\n        'indemnification' => [\n            'patterns' => ['indemnify', 'indemnification', 'hold harmless'],\n            'weight' => 0.25,\n        ],\n        'limitation_of_liability' => [\n            'patterns' => ['limitation of liability', 'cap on liability', 'maximum liability'],\n            'weight' => 0.20,\n        ],\n        'auto_renewal' => [\n            'patterns' => ['auto-renew', 'automatically renew', 'tacit reconduction'],\n            'weight' => 0.15,\n        ],\n        'non_compete' => [\n            'patterns' => ['non-compete', 'noncompete', 'covenant not to compete'],\n            'weight' => 0.20,\n        ],\n        'termination_for_convenience' => [\n            'patterns' => ['terminate for convenience', 'termination for convenience'],\n            'weight' => 0.10,\n        ],\n        'confidentiality' => [\n            'patterns' => ['confidential', 'non-disclosure', 'proprietary information'],\n            'weight' => 0.10,\n        ],\n    ];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n    }\n\n    public function reviewContract(Contract $contract, string $fullText): array\n    {\n        $detectedClauses = $this->detectClauses($fullText);\n        $riskScores = $this->scoreRisks($detectedClauses);\n        $extractedTerms = $this->extractKeyTerms($fullText, $detectedClauses);\n        $summary = $this->generateSummary($detectedClauses, $riskScores, $extractedTerms);\n        $aiReview = $this->aiDeepReview($fullText, $detectedClauses);\n\n        $contract->update([\n            'key_clauses' => $detectedClauses,\n            'risk_scores' => $riskScores,\n        ]);\n\n        return [\n            'contract_id' => $contract->id,\n            'detected_clauses' => $detectedClauses,\n            'risk_scores' => $riskScores,\n            'extracted_terms' => $extractedTerms,\n            'summary' => $summary,\n            'ai_review' => $aiReview,\n        ];\n    }\n\n    protected function detectClauses(string $text): array\n    {\n        $lower = strtolower($text);\n        $detected = [];\n\n        foreach ($this->clausePatterns as $clause => $config) {\n            $found = [];\n\n            foreach ($config['patterns'] as $pattern) {\n                if (str_contains($lower, $pattern)) {\n                    $positions = $this->findAllPositions($lower, $pattern);\n                    foreach ($positions as $pos) {\n                        $found[] = [\n                            'pattern' => $pattern,\n                            'position' => $pos,\n                            'snippet' => mb_substr($text, max(0, $pos - 50), 200),\n                        ];\n                    }\n                }\n            }\n\n            if (!empty($found)) {\n                $detected[$clause] = [\n                    'present' => true,\n                    'count' => count($found),\n                    'matches' => $found,\n                    'weight' => $config['weight'],\n                ];\n            }\n        }\n\n        return $detected;\n    }\n\n    protected function findAllPositions(string $haystack, string $needle): array\n    {\n        $positions = [];\n        $offset = 0;\n\n        while (($pos = strpos($haystack, $needle, $offset)) !== false) {\n            $positions[] = $pos;\n            $offset = $pos + strlen($needle);\n        }\n\n        return $positions;\n    }\n\n    protected function scoreRisks(array $clauses): array\n    {\n        $scores = [];\n        $totalWeight = 0;\n        $weightedSum = 0;\n\n        foreach ($clauses as $clause => $data) {\n            $baseRisk = match ($clause) {\n                'indemnification' => 0.7,\n                'limitation_of_liability' => 0.6,\n                'auto_renewal' => 0.5,\n                'non_compete' => 0.8,\n                'termination_for_convenience' => 0.3,\n                'confidentiality' => 0.2,\n                default => 0.5,\n            };\n\n            $multiplicityFactor = min(1.0, 1 + ($data['count'] - 1) * 0.1);\n            $score = min(1.0, $baseRisk * $multiplicityFactor);\n\n            $scores[$clause] = [\n                'score' => round($score, 2),\n                'level' => $this->riskLevel($score),\n                'weight' => $data['weight'],\n            ];\n\n            $totalWeight += $data['weight'];\n            $weightedSum += $score * $data['weight'];\n        }\n\n        $scores['overall'] = $totalWeight > 0\n            ? round($weightedSum / $totalWeight, 2)\n            : 0.0;\n\n        return $scores;\n    }\n\n    protected function riskLevel(float $score): string\n    {\n        return match (true) {\n            $score >= 0.7 => 'high',\n            $score >= 0.4 => 'medium',\n            default => 'low',\n        };\n    }\n\n    protected function extractKeyTerms(string $text, array $clauses): array\n    {\n        $terms = [];\n\n        $partyMatch = [];\n        preg_match(\n            '/this\\s+(agreement|contract)\\s+is\\s+(made|entered)\\s+(into\\s+)?(by\\s+and\\s+between\\s+)?([^,]+?)\\s+and\\s+([^,]+?)[\\s,.]/i',\n            $text, $partyMatch\n        );\n\n        if (!empty($partyMatch)) {\n            $terms['parties'] = [\n                'party_a' => trim($partyMatch[5] ?? ''),\n                'party_b' => trim($partyMatch[6] ?? ''),\n            ];\n        }\n\n        $effectiveMatch = [];\n        preg_match('/effective\\s+(as\\s+of|date)[:\\s]+([^,\\n]+)/i', $text, $effectiveMatch);\n        if (!empty($effectiveMatch)) {\n            $terms['effective_date'] = trim($effectiveMatch[2]);\n        }\n\n        $termMatch = [];\n        preg_match('/(term|duration|period)\\s+(of\\s+)?(this\\s+)?(agreement|contract)\\s+(shall\\s+be\\s+)?([^,\\n]+)/i', $text, $termMatch);\n        if (!empty($termMatch)) {\n            $terms['term'] = trim($termMatch[6]);\n        }\n\n        if (isset($clauses['indemnification'])) {\n            $terms['has_indemnification'] = true;\n        }\n\n        return $terms;\n    }\n\n    protected function generateSummary(array $clauses, array $scores, array $terms): string\n    {\n        $clauseCount = count($clauses);\n        $highRisk = count(array_filter($scores, fn ($s) => is_array($s) && ($s['level'] ?? '') === 'high'));\n        $overall = $scores['overall'] ?? 0;\n\n        $summaryParts = [\n            \"Detected {$clauseCount} clause categories.\",\n            \"Overall risk score: {$overall}.\",\n            \"High-risk clauses found: {$highRisk}.\",\n        ];\n\n        if (!empty($terms['parties'])) {\n            $summaryParts[] = \"Parties: {$terms['parties']['party_a']} / {$terms['parties']['party_b']}.\";\n        }\n\n        return implode(' ', $summaryParts);\n    }\n\n    protected function aiDeepReview(string $text, array $clauses): array\n    {\n        $presentClauses = implode(', ', array_keys($clauses));\n\n        $prompt = <<<PROMPT\nYou are a senior contract attorney. Review the following contract text.\n\nDetected clauses: {$presentClauses}\n\nFor each clause, provide:\n1. Risk assessment (low/medium/high) with reasoning\n2. Suggested language changes to reduce risk\n3. Any missing clauses that should be present\n\nContract text:\n{$text}\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are an expert contract review attorney.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.2,\n            ]);\n\n            return [\n                'review' => $response->content,\n                'reviewed_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            Log::error('Contract AI review failed', [\n                'contract_id' => $text,\n                'error' => $e->getMessage(),\n            ]);\n\n            return [\n                'review' => 'AI review unavailable. Manual review required.',\n                'reviewed_at' => now()->toIso8601String(),\n                'error' => $e->getMessage(),\n            ];\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "353-document-discovery-automation",
+      children: "35.3 Document Discovery Automation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "E-discovery is the process of identifying, collecting, and producing electronically stored information (ESI) in response to a legal request. A DiscoveryAgent automates search, classification, privilege review, and tagging of documents across a matter."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\Document;\nuse App\\Models\\Legal\\Matter;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\DB;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass DiscoveryAgent\n{\n    protected Llm $llm;\n\n    protected array $classificationTaxonomy = [\n        'privileged',\n        'responsive',\n        'non-responsive',\n        'attorney_client',\n        'work_product',\n        'confidential',\n        'public',\n        'redacted',\n    ];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n    }\n\n    public function search(Matter $matter, array $criteria): Collection\n    {\n        $query = Document::where('matter_id', $matter->id);\n\n        if (!empty($criteria['keywords'])) {\n            $keywordConditions = array_map(function ($kw) {\n                return \"title LIKE ? OR metadata LIKE ?\";\n            }, $criteria['keywords']);\n\n            $bindings = [];\n            foreach ($criteria['keywords'] as $kw) {\n                $bindings[] = \"%{$kw}%\";\n                $bindings[] = \"%{$kw}%\";\n            }\n\n            $where = implode(' OR ', $keywordConditions);\n            $query->whereRaw(\"({$where})\", $bindings);\n        }\n\n        if (!empty($criteria['date_from'])) {\n            $query->whereDate('created_at', '>=', $criteria['date_from']);\n        }\n\n        if (!empty($criteria['date_to'])) {\n            $query->whereDate('created_at', '<=', $criteria['date_to']);\n        }\n\n        if (!empty($criteria['types'])) {\n            $query->whereIn('type', (array) $criteria['types']);\n        }\n\n        if (!empty($criteria['status'])) {\n            $query->where('status', $criteria['status']);\n        }\n\n        if (!empty($criteria['privilege_status'])) {\n            if ($criteria['privilege_status'] === 'privileged') {\n                $query->where('is_privileged', true);\n            } elseif ($criteria['privilege_status'] === 'non-privileged') {\n                $query->where('is_privileged', false);\n            }\n        }\n\n        return $query->orderBy('created_at', 'desc')->get();\n    }\n\n    public function classifyDocument(Document $document, ?string $content = null): array\n    {\n        $textToAnalyze = $content ?? $document->title;\n\n        $classification = $this->aiClassify($textToAnalyze, $document);\n\n        $document->update([\n            'metadata' => array_merge($document->metadata ?? [], [\n                'discovery_classification' => $classification['primary'],\n                'discovery_tags' => $classification['tags'],\n                'classified_at' => now()->toIso8601String(),\n            ]),\n        ]);\n\n        return $classification;\n    }\n\n    protected function aiClassify(string $text, Document $document): array\n    {\n        $prompt = <<<PROMPT\nClassify the following legal document for e-discovery.\n\nDocument title: {$document->title}\nDocument type: {$document->type}\n\nContent:\n{$text}\n\nRespond with:\n- primary_classification: one of [privileged, responsive, non-responsive, attorney_client, work_product]\n- tags: comma-separated list of relevant tags\n- confidence: a score from 0.0 to 1.0\n- explanation: brief reasoning\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a senior e-discovery paralegal. Classify documents accurately and conservatively.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.1,\n            ]);\n\n            $parsed = $this->parseClassification($response->content);\n\n            return [\n                'primary' => $parsed['primary'] ?? 'non-responsive',\n                'tags' => $parsed['tags'] ?? [],\n                'confidence' => $parsed['confidence'] ?? 0.5,\n                'explanation' => $parsed['explanation'] ?? '',\n                'model' => get_class($this->llm),\n            ];\n        } catch (\\Exception $e) {\n            return [\n                'primary' => 'non-responsive',\n                'tags' => [],\n                'confidence' => 0.0,\n                'explanation' => 'Classification unavailable: ' . $e->getMessage(),\n            ];\n        }\n    }\n\n    protected function parseClassification(string $response): array\n    {\n        $result = [\n            'primary' => 'non-responsive',\n            'tags' => [],\n            'confidence' => 0.5,\n            'explanation' => '',\n        ];\n\n        if (preg_match('/primary_classification[:\\s]+(.+)/i', $response, $m)) {\n            $result['primary'] = trim(strtolower($m[1]));\n        }\n\n        if (preg_match('/tags[:\\s]+(.+)/i', $response, $m)) {\n            $result['tags'] = array_map('trim', explode(',', $m[1]));\n        }\n\n        if (preg_match('/confidence[:\\s]+([0-9.]+)/i', $response, $m)) {\n            $result['confidence'] = (float) $m[1];\n        }\n\n        if (preg_match('/explanation[:\\s]+(.+)/is', $response, $m)) {\n            $result['explanation'] = trim($m[1]);\n        }\n\n        return $result;\n    }\n\n    public function privilegeReview(Document $document, string $content): array\n    {\n        $classification = $this->classifyDocument($document, $content);\n\n        $privilegeIndicators = [\n            'attorney-client',\n            'privileged',\n            'confidential communication',\n            'legal advice',\n            'work product',\n            'litigation hold',\n        ];\n\n        $lowered = strtolower($content);\n        $foundIndicators = [];\n\n        foreach ($privilegeIndicators as $indicator) {\n            if (str_contains($lowered, $indicator)) {\n                $foundIndicators[] = $indicator;\n            }\n        }\n\n        $isPrivileged = $classification['primary'] === 'privileged'\n            || $classification['primary'] === 'attorney_client'\n            || $classification['primary'] === 'work_product'\n            || count($foundIndicators) >= 2;\n\n        $document->update([\n            'is_privileged' => $isPrivileged,\n            'privilege_type' => $isPrivileged\n                ? ($classification['primary'] === 'work_product' ? 'work-product' : 'attorney-client')\n                : null,\n        ]);\n\n        return [\n            'document_id' => $document->id,\n            'is_privileged' => $isPrivileged,\n            'privilege_type' => $document->privilege_type,\n            'indicators_found' => $foundIndicators,\n            'confidence' => $classification['confidence'],\n        ];\n    }\n\n    public function batchClassify(Matter $matter, ?callable $progress = null): Collection\n    {\n        $documents = Document::where('matter_id', $matter->id)\n            ->whereNull('metadata->discovery_classification')\n            ->get();\n\n        $results = collect();\n\n        foreach ($documents as $document) {\n            $result = $this->classifyDocument($document);\n            $results->push($result);\n\n            if ($progress) {\n                $progress($document, $result);\n            }\n        }\n\n        return $results;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "354-compliance-monitoring-agents",
+      children: "35.4 Compliance Monitoring Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Organizations must comply with a growing web of regulations → GDPR, HIPAA, SOX, FINRA, SEC rules. A ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ComplianceMonitoringAgent"
+      }), " checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\ComplianceRecord;\nuse App\\Models\\Legal\\Matter;\nuse App\\Models\\User;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Log;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass ComplianceMonitoringAgent\n{\n    protected Llm $llm;\n\n    protected array $rules = [];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n        $this->registerDefaultRules();\n    }\n\n    protected function registerDefaultRules(): void\n    {\n        $this->rules = [\n            'data_retention' => [\n                'regulation' => 'GDPR',\n                'check' => 'Retain personal data no longer than necessary',\n                'severity' => 'high',\n            ],\n            'client_confidentiality' => [\n                'regulation' => 'ABA Model Rules 1.6',\n                'check' => 'Client information must be encrypted at rest',\n                'severity' => 'critical',\n            ],\n            'conflict_of_interest' => [\n                'regulation' => 'ABA Model Rules 1.7',\n                'check' => 'No attorney shall represent a client with conflicting interests',\n                'severity' => 'critical',\n            ],\n            'trust_accounting' => [\n                'regulation' => 'IOLTA Rules',\n                'check' => 'Client trust accounts must be reconciled monthly',\n                'severity' => 'high',\n            ],\n            'discovery_deadline' => [\n                'regulation' => 'FRCP Rule 26',\n                'check' => 'Discovery responses must be served within 30 days',\n                'severity' => 'medium',\n            ],\n        ];\n    }\n\n    public function registerRule(string $key, array $definition): void\n    {\n        $this->rules[$key] = $definition;\n    }\n\n    public function runFullComplianceCheck(Matter $matter): array\n    {\n        $results = [];\n\n        foreach ($this->rules as $ruleKey => $rule) {\n            $result = $this->checkRule($matter, $ruleKey, $rule);\n            $results[$ruleKey] = $result;\n\n            $this->recordResult($matter, $rule, $result);\n        }\n\n        return [\n            'matter_id' => $matter->id,\n            'checked_at' => now()->toIso8601String(),\n            'total_rules' => count($this->rules),\n            'violations' => count(array_filter($results, fn ($r) => $r['status'] === 'violation')),\n            'passing' => count(array_filter($results, fn ($r) => $r['status'] === 'compliant')),\n            'pending' => count(array_filter($results, fn ($r) => $r['status'] === 'pending-review')),\n            'details' => $results,\n        ];\n    }\n\n    protected function checkRule(Matter $matter, string $ruleKey, array $rule): array\n    {\n        $isViolation = match ($ruleKey) {\n            'data_retention' => $this->checkDataRetention($matter),\n            'client_confidentiality' => $this->checkClientConfidentiality($matter),\n            'conflict_of_interest' => $this->checkConflictOfInterest($matter),\n            'trust_accounting' => $this->checkTrustAccounting($matter),\n            'discovery_deadline' => $this->checkDiscoveryDeadline($matter),\n            default => false,\n        };\n\n        $status = $isViolation ? 'violation' : 'compliant';\n\n        return [\n            'rule' => $ruleKey,\n            'regulation' => $rule['regulation'],\n            'status' => $status,\n            'severity' => $rule['severity'],\n            'checked_at' => now()->toIso8601String(),\n        ];\n    }\n\n    protected function checkDataRetention(Matter $matter): bool\n    {\n        if ($matter->status !== 'closed') {\n            return false;\n        }\n\n        $closedAt = $matter->closed_at;\n\n        if (!$closedAt) {\n            return false;\n        }\n\n        $retentionPeriod = config(\"legal.retention_periods.{$matter->practice_area}\", 365 * 7);\n\n        return $closedAt->addDays($retentionPeriod)->isPast();\n    }\n\n    protected function checkClientConfidentiality(Matter $matter): bool\n    {\n        return $matter->client()->exists()\n            && $matter->documents()\n                ->where('is_privileged', true)\n                ->whereNull('metadata->encrypted_at')\n                ->exists();\n    }\n\n    protected function checkConflictOfInterest(Matter $matter): bool\n    {\n        $client = $matter->client;\n        $opposingParty = $matter->opposing_counsel ?? [];\n\n        if (empty($opposingParty) || !$client) {\n            return false;\n        }\n\n        $conflictingMatters = Matter::where('client_id', '!=', $client->id)\n            ->whereJsonContains('tags', $client->name)\n            ->count();\n\n        return $conflictingMatters > 0;\n    }\n\n    protected function checkTrustAccounting(Matter $matter): bool\n    {\n        $reconciliation = $matter->complianceRecords()\n            ->where('regulation', 'IOLTA')\n            ->latest('checked_at')\n            ->first();\n\n        if (!$reconciliation) {\n            return $matter->budget && $matter->budget > 0;\n        }\n\n        return $reconciliation->status !== 'compliant'\n            && $reconciliation->created_at->addMonth()->isPast();\n    }\n\n    protected function checkDiscoveryDeadline(Matter $matter): bool\n    {\n        return false;\n    }\n\n    protected function recordResult(Matter $matter, array $rule, array $result): ComplianceRecord\n    {\n        return ComplianceRecord::create([\n            'matter_id' => $matter->id,\n            'regulation' => $rule['regulation'],\n            'requirement' => $rule['check'],\n            'status' => $result['status'],\n            'checked_at' => now(),\n            'notes' => json_encode($result),\n        ]);\n    }\n\n    public function dispatchAlerts(array $violations): void\n    {\n        foreach ($violations as $key => $violation) {\n            $this->sendAlert($violation);\n        }\n    }\n\n    protected function sendAlert(array $violation): void\n    {\n        $message = \"Compliance Violation: {$violation['regulation']} - {$violation['rule']} (Severity: {$violation['severity']})\";\n\n        Log::warning(\"Legal compliance alert: {$message}\", $violation);\n    }\n\n    public function aiAssistedReview(ComplianceRecord $record): array\n    {\n        $prompt = <<<PROMPT\nReview this compliance record and provide remediation recommendations.\n\nRegulation: {$record->regulation}\nCurrent status: {$record->status}\nNotes: {$record->notes}\n\nProvide:\n1. Risk assessment of this compliance gap\n2. Recommended remediation steps\n3. Suggested timeline for resolution\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a regulatory compliance attorney.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.3,\n            ]);\n\n            return [\n                'record_id' => $record->id,\n                'assessment' => $response->content,\n                'reviewed_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            return [\n                'record_id' => $record->id,\n                'assessment' => 'Automated review unavailable.',\n                'error' => $e->getMessage(),\n            ];\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "355-case-management-workflows",
+      children: "35.5 Case Management Workflows"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CaseManagementAgent"
+      }), " tracks case timelines, critical deadlines, and task assignments across a law firm's docket. It automatically notifies attorneys of upcoming deadlines, generates daily docket reports, and manages task completion workflows."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\CaseModel;\nuse App\\Models\\User;\nuse Carbon\\Carbon;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Log;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass CaseManagementAgent\n{\n    protected Llm $llm;\n\n    protected array $deadlineRules = [\n        'response_to_complaint' => 21,\n        'discovery_response' => 30,\n        'motion_response' => 14,\n        'expert_disclosure' => 90,\n        'pretrial_filing' => 7,\n        'appeal_notice' => 30,\n    ];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n    }\n\n    public function getUpcomingDeadlines(int $days = 30): Collection\n    {\n        $window = now()->addDays($days);\n\n        return CaseModel::where('status', 'active')\n            ->whereNotNull('next_hearing')\n            ->where('next_hearing', '<=', $window)\n            ->with('matter.client')\n            ->orderBy('next_hearing')\n            ->get()\n            ->map(function (CaseModel $case) {\n                $daysUntil = now()->diffInDays($case->next_hearing, false);\n\n                return [\n                    'case_id' => $case->id,\n                    'case_number' => $case->case_number,\n                    'matter' => $case->matter->title ?? 'N/A',\n                    'client' => $case->matter->client->name ?? 'N/A',\n                    'next_hearing' => $case->next_hearing->toDateString(),\n                    'days_until' => max(0, $daysUntil),\n                    'priority' => $daysUntil <= 7 ? 'critical' : ($daysUntil <= 14 ? 'high' : 'normal'),\n                    'overdue' => $case->isOverdue(),\n                ];\n            });\n    }\n\n    public function calculateDeadlines(CaseModel $case, string $filingType): array\n    {\n        $filingDate = $case->filing_date ?? now();\n        $rules = $this->deadlineRules;\n\n        if (!isset($rules[$filingType])) {\n            return ['error' => \"Unknown filing type: {$filingType}\"];\n        }\n\n        $deadlineDays = $rules[$filingType];\n        $deadlineDate = Carbon::parse($filingDate)->addDays($deadlineDays);\n\n        return [\n            'case_id' => $case->id,\n            'filing_type' => $filingType,\n            'filing_date' => $filingDate->toDateString(),\n            'deadline_date' => $deadlineDate->toDateString(),\n            'deadline_days' => $deadlineDays,\n            'days_remaining' => max(0, now()->diffInDays($deadlineDate, false)),\n            'is_overdue' => now()->greaterThan($deadlineDate),\n        ];\n    }\n\n    public function assignTask(array $taskData): array\n    {\n        $validated = validator($taskData, [\n            'case_id' => 'required|exists:legal_cases,id',\n            'assigned_to' => 'required|exists:users,id',\n            'title' => 'required|string|max:255',\n            'description' => 'nullable|string',\n            'due_at' => 'required|date',\n            'priority' => 'required|in:low,normal,high,critical',\n        ])->validate();\n\n        $task = Task::create($validated);\n\n        $this->notifyAssignee($task);\n\n        return [\n            'task_id' => $task->id,\n            'assigned_to' => User::find($task->assigned_to)?->name,\n            'due_at' => $task->due_at->toDateString(),\n            'status' => 'assigned',\n        ];\n    }\n\n    protected function notifyAssignee($task): void\n    {\n        $user = User::find($task->assigned_to);\n\n        if (!$user) {\n            return;\n        }\n\n        $case = CaseModel::find($task->case_id);\n\n        Log::info(\"Task assigned: {$task->title}\", [\n            'to' => $user->email,\n            'case' => $case?->case_number,\n            'due' => $task->due_at->toDateString(),\n        ]);\n    }\n\n    public function generateDailyDocket(): array\n    {\n        $todayDeadlines = $this->getUpcomingDeadlines(1);\n        $overdue = $todayDeadlines->where('overdue', true);\n        $critical = $todayDeadlines->where('priority', 'critical');\n\n        return [\n            'date' => now()->toDateString(),\n            'total_active_cases' => CaseModel::where('status', 'active')->count(),\n            'hearings_today' => $todayDeadlines->count(),\n            'overdue_items' => $overdue->values()->toArray(),\n            'critical_items' => $critical->values()->toArray(),\n            'deadline_summary' => [\n                'overdue' => $overdue->count(),\n                'critical' => $critical->count(),\n                'this_week' => $this->getUpcomingDeadlines(7)->count(),\n                'this_month' => $this->getUpcomingDeadlines(30)->count(),\n            ],\n        ];\n    }\n\n    public function aiSuggestedPriorities(array $docket): array\n    {\n        $docketJson = json_encode($docket);\n\n        $prompt = <<<PROMPT\nReview this daily legal docket and recommend priority actions:\n\n{$docketJson}\n\nFor each case, provide:\n1. Priority ranking (1 being highest)\n2. Recommended next action\n3. Risk of missing deadline\n4. Suggested delegation\n\nFormat as a JSON array of objects with keys: case_id, priority_rank, recommended_action, risk_level, suggested_assignee.\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a senior legal practice manager. Prioritize docket items efficiently.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.2,\n            ]);\n\n            return [\n                'docket_date' => $docket['date'],\n                'ai_recommendations' => $response->content,\n                'generated_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            return [\n                'error' => 'Priority suggestions unavailable.',\n                'message' => $e->getMessage(),\n            ];\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "356-legal-research-agents",
+      children: "35.6 Legal Research Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Legal research is one of the most time-intensive tasks in law practice. A ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "LegalResearchAgent"
+      }), " searches case law databases, formulates search queries, retrieves relevant precedents, and produces summarized research memos. The agent can integrate with external APIs like CourtListener, Caselaw Access Project, or FastCase."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass LegalResearchAgent\n{\n    protected Llm $llm;\n\n    protected array $researchDatabases = [\n        'caselaw' => 'https://api.case.law/v1/',\n        'courtlistener' => 'https://www.courtlistener.com/api/rest/v4/',\n        'google_scholar' => null,\n    ];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n    }\n\n    public function research(string $query, array $options = []): array\n    {\n        $formulatedQuery = $this->formulateQuery($query);\n\n        $results = $this->searchDatabases($formulatedQuery, $options);\n\n        $ranked = $this->rankResults($results);\n\n        $summary = $this->summarizeFindings($query, $ranked);\n\n        return [\n            'original_query' => $query,\n            'formulated_query' => $formulatedQuery,\n            'total_results' => count($ranked),\n            'results' => $ranked->take($options['max_results'] ?? 10)->values()->toArray(),\n            'summary' => $summary,\n            'research_id' => str()->uuid(),\n            'completed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function formulateQuery(string $naturalQuery): array\n    {\n        $prompt = <<<PROMPT\nConvert this legal research question into an optimized Boolean search query for case law databases.\n\nQuestion: {$naturalQuery}\n\nExtract:\n1. Primary keywords (key legal concepts, cause of action)\n2. Jurisdiction filters (if any)\n3. Date range (if implied)\n4. Boolean search string using AND/OR/NOT\n5. Alternative terms and synonyms\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a legal research librarian. Formulate precise Boolean queries.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.1,\n            ]);\n\n            return [\n                'natural_query' => $naturalQuery,\n                'analysis' => $response->content,\n                'formulated_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            return [\n                'natural_query' => $naturalQuery,\n                'analysis' => \"Unable to formulate query: {$e->getMessage()}\",\n                'fallback_keywords' => explode(' ', $naturalQuery),\n            ];\n        }\n    }\n\n    protected function searchDatabases(array $query, array $options): Collection\n    {\n        $allResults = collect();\n\n        foreach ($this->researchDatabases as $db => $url) {\n            if ($url === null) {\n                continue;\n            }\n\n            try {\n                $response = Http::timeout(15)->get($url . 'cases/', [\n                    'search' => $query['analysis'] ?? $query['natural_query'] ?? '',\n                    'page_size' => min($options['per_page'] ?? 10, 50),\n                    'court' => $options['jurisdiction'] ?? null,\n                    'decision_date__gte' => $options['date_from'] ?? null,\n                    'decision_date__lte' => $options['date_to'] ?? null,\n                ]);\n\n                if ($response->successful()) {\n                    $cases = $this->parseApiResponse($db, $response->json());\n                    $allResults = $allResults->concat($cases);\n                }\n            } catch (\\Exception $e) {\n                Log::warning(\"Legal research database '{$db}' unavailable\", [\n                    'error' => $e->getMessage(),\n                ]);\n            }\n        }\n\n        if ($allResults->isEmpty()) {\n            return $this->fallbackResearch($query['natural_query'] ?? '');\n        }\n\n        return $allResults;\n    }\n\n    protected function parseApiResponse(string $database, array $response): array\n    {\n        $results = [];\n\n        $cases = $response['results'] ?? $response['cases'] ?? [];\n\n        foreach ($cases as $case) {\n            $results[] = [\n                'database' => $database,\n                'case_name' => $case['name_abbreviation'] ?? $case['caseName'] ?? 'Unknown',\n                'court' => $case['court']['name'] ?? $case['court'] ?? 'Unknown',\n                'decision_date' => $case['decision_date'] ?? $case['dateFiled'] ?? null,\n                'citation' => $case['citations'][0]['cite'] ?? $case['citation'][0] ?? null,\n                'url' => $case['url'] ?? $case['absolute_url'] ?? null,\n                'snippet' => $this->extractSnippet($case),\n            ];\n        }\n\n        return $results;\n    }\n\n    protected function extractSnippet(array $case): string\n    {\n        if (!empty($case['syllabus'])) {\n            return mb_substr($case['syllabus'], 0, 500);\n        }\n\n        return $case['casebody']['data']['head_matter'] ?? $case['summary'] ?? 'No preview available.';\n    }\n\n    protected function fallbackResearch(string $query): Collection\n    {\n        $prompt = <<<PROMPT\nYou are a legal research assistant. Based on your knowledge of case law, provide a summary of relevant precedents for:\n\n{$query}\n\nFor each precedent, include:\n1. Case name and citation\n2. Court and year\n3. Holding (2-3 sentences)\n4. Relevance to the query\n\nProvide 3-5 relevant cases.\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a knowledgeable legal research assistant with comprehensive knowledge of case law.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.3,\n            ]);\n\n            return collect([\n                [\n                    'database' => 'ai_legal_knowledge',\n                    'case_name' => 'AI-Generated Research Summary',\n                    'content' => $response->content,\n                    'disclaimer' => 'This is AI-generated research. Verify all citations against primary sources.',\n                ],\n            ]);\n        } catch (\\Exception $e) {\n            return collect([\n                [\n                    'database' => 'fallback',\n                    'case_name' => 'Research Unavailable',\n                    'content' => 'Unable to complete legal research.',\n                    'error' => $e->getMessage(),\n                ],\n            ]);\n        }\n    }\n\n    protected function rankResults(Collection $results): Collection\n    {\n        return $results->sortByDesc(function ($r) {\n            $score = 0;\n\n            if (!empty($r['snippet']) && $r['snippet'] !== 'No preview available.') {\n                $score += 3;\n            }\n\n            if (!empty($r['citation'])) {\n                $score += 2;\n            }\n\n            if (!empty($r['decision_date'])) {\n                $score += 1;\n            }\n\n            return $score;\n        })->values();\n    }\n\n    public function summarizeFindings(string $query, Collection $results): array\n    {\n        $resultsJson = $results->take(10)->toJson();\n\n        $prompt = <<<PROMPT\nSummarize these legal research findings for an attorney.\n\nResearch query: {$query}\n\nResults:\n{$resultsJson}\n\nProvide:\n1. Executive summary of the legal landscape on this issue\n2. Key precedents and their holdings\n3. Split of authority (if any)\n4. Recommended next research steps\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a law clerk drafting a research memo.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.3,\n            ]);\n\n            return [\n                'summary' => $response->content,\n                'generated_at' => now()->toIso8601String(),\n            ];\n        } catch (\\Exception $e) {\n            return [\n                'summary' => 'Research summary generation failed.',\n                'error' => $e->getMessage(),\n            ];\n        }\n    }\n\n    public function generateResearchMemo(array $research, array $options = []): string\n    {\n        $findings = json_encode($research['results'] ?? []);\n        $summary = $research['summary']['summary'] ?? '';\n\n        $prompt = <<<PROMPT\nDraft a formal legal research memo using the following findings.\n\nTO: {$options['to'] ?? 'Legal Team'}\nFROM: AI Legal Research Agent\nRE: {$research['original_query'] ?? 'Legal Research'}\n\nResearch Summary:\n{$summary}\n\nDetailed Findings:\n{$findings}\n\nDraft a professional legal memo with:\n1. ISSUE: Statement of the legal question\n2. BRIEF ANSWER: One-paragraph summary\n3. FACTS: Relevant background\n4. DISCUSSION: Analysis of cases and statutes\n5. CONCLUSION: Recommended course of action\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a senior law clerk drafting a formal research memo. Use Bluebook citation format.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.3,\n            ]);\n\n            return $response->content;\n        } catch (\\Exception $e) {\n            return \"Research memo unavailable: {$e->getMessage()}\";\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "357-e-discovery-pipelines",
+      children: "35.7 E-Discovery Pipelines"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["E-discovery follows a strict lifecycle: Identification → Preservation → Collection → Processing → Review → Analysis → Production. An ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EDiscoveryPipeline"
+      }), " orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\Document;\nuse App\\Models\\Legal\\Matter;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Storage;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass EDiscoveryPipeline\n{\n    protected Llm $llm;\n\n    protected array $stages = [\n        'collection', 'processing', 'review', 'production',\n    ];\n\n    protected array $pipelineStatus = [];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n    }\n\n    public function runPipeline(Matter $matter, array $options = []): array\n    {\n        $this->pipelineStatus = [\n            'matter_id' => $matter->id,\n            'started_at' => now()->toIso8601String(),\n            'stages' => [],\n        ];\n\n        $collection = $this->stageCollection($matter, $options);\n        $this->pipelineStatus['stages']['collection'] = $collection;\n\n        $processing = $this->stageProcessing($collection['documents'] ?? collect(), $options);\n        $this->pipelineStatus['stages']['processing'] = $processing;\n\n        $review = $this->stageReview($processing['processed'] ?? collect(), $matter, $options);\n        $this->pipelineStatus['stages']['review'] = $review;\n\n        $production = $this->stageProduction($review['reviewed'] ?? collect(), $options);\n        $this->pipelineStatus['stages']['production'] = $production;\n\n        $this->pipelineStatus['completed_at'] = now()->toIso8601String();\n        $this->pipelineStatus['summary'] = $this->generatePipelineSummary();\n\n        return $this->pipelineStatus;\n    }\n\n    protected function stageCollection(Matter $matter, array $options): array\n    {\n        $sourceDirectories = $options['source_directories'] ?? [\n            \"matters/{$matter->id}/documents\",\n            \"matters/{$matter->id}/emails\",\n            \"matters/{$matter->id}/communications\",\n        ];\n\n        $collected = collect();\n\n        foreach ($sourceDirectories as $dir) {\n            if (!Storage::exists($dir)) {\n                continue;\n            }\n\n            $files = Storage::files($dir);\n\n            foreach ($files as $file) {\n                $hash = hash_file('sha256', Storage::path($file));\n\n                $doc = Document::firstOrCreate(\n                    ['hash_sha256' => $hash],\n                    [\n                        'matter_id' => $matter->id,\n                        'title' => basename($file),\n                        'file_path' => $file,\n                        'mime_type' => Storage::mimeType($file),\n                        'type' => $this->inferDocumentType($file),\n                        'uploaded_by' => $options['uploaded_by'] ?? auth()->id(),\n                        'status' => 'collected',\n                        'metadata' => [\n                            'collection_source' => $dir,\n                            'collected_at' => now()->toIso8601String(),\n                            'size_bytes' => Storage::size($file),\n                        ],\n                    ]\n                );\n\n                $collected->push($doc);\n            }\n        }\n\n        return [\n            'documents_collected' => $collected->count(),\n            'documents' => $collected,\n            'source_directories' => $sourceDirectories,\n            'completed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    protected function inferDocumentType(string $filename): string\n    {\n        $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));\n\n        return match ($ext) {\n            'pdf' => 'pdf_document',\n            'docx', 'doc' => 'word_document',\n            'xlsx', 'xls' => 'spreadsheet',\n            'msg', 'eml' => 'email',\n            'jpg', 'jpeg', 'png', 'tiff', 'tif' => 'image',\n            'pst', 'ost' => 'outlook_data',\n            'csv' => 'tabular_data',\n            'txt' => 'text',\n            default => 'other',\n        };\n    }\n\n    protected function stageProcessing(Collection $documents, array $options): array\n    {\n        $deduplicated = $this->deduplicate($documents);\n        $processed = collect();\n\n        foreach ($deduplicated as $doc) {\n            $content = $this->extractContent($doc);\n            $metadata = $this->extractMetadata($doc, $content);\n\n            $doc->update([\n                'status' => 'processed',\n                'metadata' => array_merge($doc->metadata ?? [], $metadata),\n            ]);\n\n            $processed->push($doc);\n        }\n\n        return [\n            'documents_processed' => $processed->count(),\n            'duplicates_removed' => $documents->count() - $deduplicated->count(),\n            'processed' => $processed,\n            'completed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    protected function deduplicate(Collection $documents): Collection\n    {\n        return $documents->unique(function (Document $doc) {\n            return $doc->hash_sha256;\n        });\n    }\n\n    protected function extractContent(Document $doc): ?string\n    {\n        try {\n            $path = Storage::path($doc->file_path);\n\n            if (!file_exists($path)) {\n                return null;\n            }\n\n            if ($doc->mime_type === 'application/pdf') {\n                return shell_exec(\"pdftotext \" . escapeshellarg($path) . \" -\");\n            }\n\n            if (str_starts_with($doc->mime_type, 'text/')) {\n                return file_get_contents($path);\n            }\n\n            return null;\n        } catch (\\Exception $e) {\n            Log::warning(\"Content extraction failed for document {$doc->id}\", [\n                'error' => $e->getMessage(),\n            ]);\n\n            return null;\n        }\n    }\n\n    protected function extractMetadata(Document $doc, ?string $content): array\n    {\n        return [\n            'processing_method' => $content ? 'full_text' : 'metadata_only',\n            'processed_at' => now()->toIso8601String(),\n            'word_count' => $content ? str_word_count($content) : 0,\n            'character_count' => $content ? mb_strlen($content) : 0,\n        ];\n    }\n\n    protected function stageReview(Collection $documents, Matter $matter, array $options): array\n    {\n        $reviewed = collect();\n\n        $discoveryAgent = new DiscoveryAgent($this->llm);\n\n        foreach ($documents as $doc) {\n            $content = $this->extractContent($doc);\n\n            $classification = $discoveryAgent->classifyDocument($doc, $content);\n            $privilege = $discoveryAgent->privilegeReview($doc, $content ?? '');\n\n            $doc->update(['status' => 'reviewed']);\n\n            $reviewed->push([\n                'document' => $doc,\n                'classification' => $classification,\n                'privilege' => $privilege,\n            ]);\n        }\n\n        return [\n            'documents_reviewed' => $reviewed->count(),\n            'privileged_count' => $reviewed->where('privilege.is_privileged', true)->count(),\n            'responsive_count' => $reviewed->where('classification.primary', 'responsive')->count(),\n            'reviewed' => $reviewed,\n            'completed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    protected function stageProduction(Collection $reviewedDocs, array $options): array\n    {\n        $productionSet = $reviewedDocs->filter(function ($item) {\n            return $item['classification']['primary'] === 'responsive'\n                && !$item['privilege']['is_privileged'];\n        });\n\n        $productionDir = $options['production_directory'] ?? 'discovery/production/';\n        $productionLabel = $options['production_label'] ?? 'PROD-' . now()->format('Ymd-His');\n        $exported = collect();\n\n        foreach ($productionSet as $item) {\n            $doc = $item['document'];\n            $sourcePath = Storage::path($doc->file_path);\n\n            if (!file_exists($sourcePath)) {\n                continue;\n            }\n\n            $destPath = $productionDir . $productionLabel . '/' . $doc->id . '_' . basename($doc->file_path);\n\n            Storage::copy($doc->file_path, $destPath);\n            $exported->push($destPath);\n        }\n\n        $privilegeLog = $reviewedDocs->filter(function ($item) {\n            return $item['privilege']['is_privileged'];\n        })->map(function ($item) {\n            return [\n                'document_id' => $item['document']->id,\n                'title' => $item['document']->title,\n                'privilege_type' => $item['privilege']['privilege_type'],\n                'indicators' => $item['privilege']['indicators_found'],\n            ];\n        });\n\n        Log::info(\"E-discovery production set created\", [\n            'production_label' => $productionLabel,\n            'responsive_exported' => $exported->count(),\n            'privileged_held_back' => $privilegeLog->count(),\n        ]);\n\n        return [\n            'production_label' => $productionLabel,\n            'production_directory' => $productionDir . $productionLabel,\n            'documents_produced' => $exported->count(),\n            'privilege_log' => $privilegeLog->values()->toArray(),\n            'completed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function generatePipelineSummary(): array\n    {\n        $stages = $this->pipelineStatus['stages'];\n\n        return [\n            'total_collected' => $stages['collection']['documents_collected'] ?? 0,\n            'total_processed' => $stages['processing']['documents_processed'] ?? 0,\n            'duplicates_removed' => $stages['processing']['duplicates_removed'] ?? 0,\n            'total_reviewed' => $stages['review']['documents_reviewed'] ?? 0,\n            'privileged' => $stages['review']['privileged_count'] ?? 0,\n            'responsive' => $stages['review']['responsive_count'] ?? 0,\n            'produced' => $stages['production']['documents_produced'] ?? 0,\n            'total_duration_seconds' => now()->diffInSeconds(\n                $this->pipelineStatus['started_at']\n            ),\n        ];\n    }\n\n    public function getStatus(): array\n    {\n        return $this->pipelineStatus;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "358-automated-report-generation",
+      children: "35.8 Automated Report Generation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Legal professionals produce a constant stream of reports: compliance filings, case summaries, briefs, and client updates. A ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "LegalReportGenerationAgent"
+      }), " automates this by combining template filling, data aggregation from multiple models, and optional AI-assisted drafting for narrative sections."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Legal;\n\nuse App\\Models\\Legal\\CaseModel;\nuse App\\Models\\Legal\\Matter;\nuse Barryvdh\\DomPDF\\PDF;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\View;\nuse LlmLaravel\\Sdk\\Llm;\n\nclass LegalReportGenerationAgent\n{\n    protected Llm $llm;\n\n    protected array $reportTemplates = [];\n\n    public function __construct(?Llm $llm = null)\n    {\n        $this->llm = $llm ?? new Llm;\n        $this->registerDefaultTemplates();\n    }\n\n    protected function registerDefaultTemplates(): void\n    {\n        $this->reportTemplates = [\n            'case_summary' => [\n                'sections' => ['case_info', 'parties', 'timeline', 'documents', 'next_steps'],\n                'format' => ['pdf', 'docx'],\n            ],\n            'compliance_report' => [\n                'sections' => ['overview', 'regulations', 'findings', 'remediation'],\n                'format' => ['pdf', 'xlsx'],\n            ],\n            'client_status_update' => [\n                'sections' => ['overview', 'recent_activity', 'upcoming_deadlines', 'budget'],\n                'format' => ['pdf', 'docx'],\n            ],\n            'discovery_status' => [\n                'sections' => ['overview', 'collected', 'reviewed', 'produced', 'timeline'],\n                'format' => ['pdf', 'xlsx'],\n            ],\n        ];\n    }\n\n    public function generateReport(Matter $matter, string $reportType, array $options = []): array\n    {\n        if (!isset($this->reportTemplates[$reportType])) {\n            return ['error' => \"Unknown report type: {$reportType}\"];\n        }\n\n        $data = $this->aggregateData($matter, $reportType, $options);\n        $narrative = $this->generateNarrative($data, $reportType, $options);\n\n        $report = [\n            'matter_id' => $matter->id,\n            'report_type' => $reportType,\n            'generated_at' => now()->toIso8601String(),\n            'data' => $data,\n            'narrative' => $narrative,\n        ];\n\n        if (!empty($options['format'])) {\n            $report['files'] = $this->renderToFormat($report, $options['format'], $options);\n        }\n\n        return $report;\n    }\n\n    protected function aggregateData(Matter $matter, string $reportType, array $options): array\n    {\n        return match ($reportType) {\n            'case_summary' => $this->aggregateCaseSummary($matter),\n            'compliance_report' => $this->aggregateComplianceData($matter),\n            'client_status_update' => $this->aggregateClientStatus($matter),\n            'discovery_status' => $this->aggregateDiscoveryStatus($matter),\n            default => [],\n        };\n    }\n\n    protected function aggregateCaseSummary(Matter $matter): array\n    {\n        $cases = $matter->cases;\n        $documents = $matter->documents;\n        $client = $matter->client;\n\n        return [\n            'matter' => [\n                'number' => $matter->matter_number,\n                'title' => $matter->title,\n                'practice_area' => $matter->practice_area,\n                'status' => $matter->status,\n                'opened' => $matter->opened_at?->toDateString(),\n                'budget' => $matter->budget,\n            ],\n            'client' => $client ? [\n                'name' => $client->name,\n                'type' => $client->client_type,\n            ] : null,\n            'cases' => $cases->map(function (CaseModel $case) {\n                return [\n                    'number' => $case->case_number,\n                    'court' => $case->court,\n                    'judge' => $case->judge,\n                    'type' => $case->case_type,\n                    'filing_date' => $case->filing_date?->toDateString(),\n                    'next_hearing' => $case->next_hearing?->toDateString(),\n                    'status' => $case->status,\n                ];\n            }),\n            'documents' => [\n                'total' => $documents->count(),\n                'by_type' => $documents->groupBy('type')->map->count(),\n            ],\n            'counts' => [\n                'total_cases' => $cases->count(),\n                'active_cases' => $cases->where('status', 'active')->count(),\n                'overdue_hearings' => $cases->filter->isOverdue()->count(),\n            ],\n        ];\n    }\n\n    protected function aggregateComplianceData(Matter $matter): array\n    {\n        $records = $matter->complianceRecords;\n\n        return [\n            'total_checks' => $records->count(),\n            'compliant' => $records->where('status', 'compliant')->count(),\n            'violations' => $records->where('status', 'non-compliant')->count(),\n            'pending' => $records->where('status', 'pending-review')->count(),\n            'by_regulation' => $records->groupBy('regulation')\n                ->map(fn ($group) => [\n                    'total' => $group->count(),\n                    'violations' => $group->where('status', 'non-compliant')->count(),\n                ]),\n            'latest_check' => $records->max('checked_at'),\n        ];\n    }\n\n    protected function aggregateClientStatus(Matter $matter): array\n    {\n        $cases = $matter->cases;\n        $upcoming = $cases->where('status', 'active')\n            ->filter(fn (CaseModel $c) => $c->next_hearing && $c->next_hearing->isFuture())\n            ->sortBy('next_hearing');\n\n        return [\n            'overview' => \"Matter {$matter->matter_number}: {$matter->title}\",\n            'status' => $matter->status,\n            'recent_activity' => $matter->documents()\n                ->where('created_at', '>=', now()->subDays(30))\n                ->count(),\n            'upcoming_deadlines' => $upcoming->map(fn (CaseModel $c) => [\n                'case' => $c->case_number,\n                'event' => 'Hearing',\n                'date' => $c->next_hearing?->toDateString(),\n            ])->values(),\n            'budget' => [\n                'allocated' => $matter->budget,\n                'utilization_pct' => $matter->budget ? 0 : null,\n            ],\n        ];\n    }\n\n    protected function aggregateDiscoveryStatus(Matter $matter): array\n    {\n        $docs = $matter->documents;\n        $discoveryDocs = $docs->whereIn('type', [\n            'discovery', 'evidence', 'email', 'pdf_document',\n        ]);\n\n        return [\n            'total_documents' => $docs->count(),\n            'discovery_documents' => $discoveryDocs->count(),\n            'by_status' => $docs->groupBy('status')->map->count(),\n            'by_type' => $discoveryDocs->groupBy('type')->map->count(),\n            'privileged_count' => $discoveryDocs->where('is_privileged', true)->count(),\n            'last_updated' => $docs->max('updated_at')?->toDateString(),\n        ];\n    }\n\n    protected function generateNarrative(array $data, string $reportType, array $options): ?string\n    {\n        if (!($options['include_narrative'] ?? true)) {\n            return null;\n        }\n\n        $dataJson = json_encode($data, JSON_PRETTY_PRINT);\n\n        $prompt = <<<PROMPT\nWrite a professional narrative section for a legal {$reportType} report.\n\nData:\n{$dataJson}\n\nWrite 2-3 paragraphs that explain the key findings, highlight important items, and provide context. Use formal legal writing style.\nPROMPT;\n\n        try {\n            $response = $this->llm->chat([\n                'messages' => [\n                    ['role' => 'system', 'content' => 'You are a legal writer drafting formal report narratives.'],\n                    ['role' => 'user', 'content' => $prompt],\n                ],\n                'temperature' => 0.3,\n            ]);\n\n            return $response->content;\n        } catch (\\Exception $e) {\n            Log::warning('Report narrative generation failed', ['error' => $e->getMessage()]);\n\n            return null;\n        }\n    }\n\n    public function renderToFormat(array $report, string $format, array $options): array\n    {\n        $files = [];\n        $timestamp = now()->format('Ymd_His');\n        $filename = preg_replace('/[^a-z0-9_]/i', '_', $report['report_type']);\n\n        foreach ((array) $format as $fmt) {\n            $path = match ($fmt) {\n                'pdf' => $this->renderPdf($report, \"{$filename}_{$timestamp}.pdf\"),\n                'docx' => $this->renderDocx($report, \"{$filename}_{$timestamp}.docx\"),\n                'xlsx' => $this->renderXlsx($report, \"{$filename}_{$timestamp}.xlsx\"),\n                default => null,\n            };\n\n            if ($path) {\n                $files[] = [\n                    'format' => $fmt,\n                    'path' => $path,\n                    'filename' => basename($path),\n                ];\n            }\n        }\n\n        return $files;\n    }\n\n    protected function renderPdf(array $report, string $filename): ?string\n    {\n        try {\n            $html = View::make(\"legal.reports.{$report['report_type']}\", [\n                'report' => $report,\n            ])->render();\n\n            $pdf = app('dompdf.wrapper');\n            $pdf->loadHTML($html);\n            $path = storage_path(\"app/reports/{$filename}\");\n            $pdf->save($path);\n\n            return $path;\n        } catch (\\Exception $e) {\n            Log::error('PDF report generation failed', ['error' => $e->getMessage()]);\n\n            return null;\n        }\n    }\n\n    protected function renderDocx(array $report, string $filename): ?string\n    {\n        $path = storage_path(\"app/reports/{$filename}\");\n\n        $phpWord = new \\PhpOffice\\PhpWord\\PhpWord();\n        $section = $phpWord->addSection();\n        $section->addTitle(ucwords(str_replace('_', ' ', $report['report_type'])), 1);\n        $section->addText(\"Generated: {$report['generated_at']}\");\n\n        if (!empty($report['narrative'])) {\n            $section->addTitle('Narrative', 2);\n            $section->addText($report['narrative']);\n        }\n\n        $section->addTitle('Data Overview', 2);\n        $section->addText(json_encode($report['data'] ?? [], JSON_PRETTY_PRINT));\n\n        $phpWord->save($path, 'Word2007');\n\n        return $path;\n    }\n\n    protected function renderXlsx(array $report, string $filename): ?string\n    {\n        $path = storage_path(\"app/reports/{$filename}\");\n\n        $spreadsheet = new \\PhpOffice\\PhpSpreadsheet\\Spreadsheet();\n        $sheet = $spreadsheet->getActiveSheet();\n        $sheet->setTitle('Summary');\n\n        $data = $report['data'] ?? [];\n        $row = 1;\n\n        foreach ($data as $key => $value) {\n            if (is_scalar($value)) {\n                $sheet->setCellValue(\"A{$row}\", $key);\n                $sheet->setCellValue(\"B{$row}\", (string) $value);\n                $row++;\n            }\n        }\n\n        $writer = new \\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx($spreadsheet);\n        $writer->save($path);\n\n        return $path;\n    }\n\n    public function getTemplates(): array\n    {\n        return $this->reportTemplates;\n    }\n\n    public function registerTemplate(string $name, array $definition): void\n    {\n        $this->reportTemplates[$name] = $definition;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare legal AI agents and their techniques."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Agent"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Primary Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AI Technique Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DocumentReviewAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Analyze legal documents for key clauses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM text extraction + classification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ContractAnalysisAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extract terms and flag risky clauses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM pattern matching + risk scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ComplianceMonitorAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Track regulatory changes and requirements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web scraping + LLM summarization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LegalResearchAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Search and summarize case law"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector search + semantic retrieval"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RiskAssessmentAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluate legal risk exposure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule engine + AI risk scoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for legal AI agents and concepts."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document, Contract, Case, Regulation, RiskRecord"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Document Review"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clause extraction + classification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Contract Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Term extraction + risk flagging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regulation tracking + requirement mapping"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal Research"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic case law search"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Risk Assessment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-factor risk scoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Document Review"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal document processing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Speed vs accuracy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Contract Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Risk identification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thoroughness vs false positives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regulatory adherence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coverage vs maintenance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal Research"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Case law discovery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precision vs recall"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Risk Assessment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exposure evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detail vs actionability"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your understanding of legal AI agents."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What does the DocumentReviewAgent extract from legal documents?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Only dates"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Key clauses using LLM text extraction"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Document metadata"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Author names"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Key clauses using LLM text extraction</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " How does the ContractAnalysisAgent identify risky clauses?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Manual review"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) LLM pattern matching + risk scoring"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Random checking"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) User flagging only"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) LLM pattern matching + risk scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What does the ComplianceMonitorAgent track?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Only internal policies"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Regulatory changes from external sources"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Employee attendance"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Budget compliance"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) Regulatory changes from external sources</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " How does the LegalResearchAgent search case law?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Full-text keyword search"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) Vector embeddings + semantic retrieval"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Manual catalog browsing"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Citation graph only"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) Vector embeddings + semantic retrieval</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare legal AI agents and their techniques."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Agent"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Primary Function"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "AI Technique Used"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "DocumentReviewAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Analyze legal documents for key clauses"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "LLM text extraction + classification"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "ContractAnalysisAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Extract terms and flag risky clauses"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "LLM pattern matching + risk scoring"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "ComplianceMonitorAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Track regulatory changes and requirements"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Web scraping + LLM summarization"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "LegalResearchAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Search and summarize case law"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Vector search + semantic retrieval"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "RiskAssessmentAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Evaluate legal risk exposure"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Rule engine + AI risk scoring"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for legal AI agents and concepts."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Legal Models"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Document, Contract, Case, Regulation, RiskRecord"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Document Review"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Clause extraction + classification"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Contract Analysis"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Term extraction + risk flagging"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Compliance Monitoring"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Regulation tracking + requirement mapping"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Legal Research"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Semantic case law search"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Risk Assessment"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Multi-factor risk scoring"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Document Review"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Legal document processing"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Speed vs accuracy"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Contract Analysis"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Risk identification"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Thoroughness vs false positives"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Compliance Monitoring"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Regulatory adherence"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coverage vs maintenance"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Legal Research"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Case law discovery"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Precision vs recall"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Risk Assessment"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Exposure evaluation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Detail vs actionability"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your understanding of legal AI agents."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " What does the DocumentReviewAgent extract from legal documents?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Only dates"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Key clauses using LLM text extraction"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Document metadata"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Author names"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Key clauses using LLM text extraction</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " How does the ContractAnalysisAgent identify risky clauses?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Manual review"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) LLM pattern matching + risk scoring"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Random checking"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) User flagging only"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) LLM pattern matching + risk scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " What does the ComplianceMonitorAgent track?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) Only internal policies"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) Regulatory changes from external sources"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) Employee attendance"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) Budget compliance"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) Regulatory changes from external sources</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " How does the LegalResearchAgent search case law?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Full-text keyword search"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) Vector embeddings + semantic retrieval"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Manual catalog browsing"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Citation graph only"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) Vector embeddings + semantic retrieval</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare legal AI agents and their techniques."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Agent"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Primary Function"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "AI Technique Used"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "DocumentReviewAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Analyze legal documents for key clauses"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LLM text extraction + classification"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "ContractAnalysisAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Extract terms and flag risky clauses"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LLM pattern matching + risk scoring"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "ComplianceMonitorAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Track regulatory changes and requirements"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Web scraping + LLM summarization"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LegalResearchAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Search and summarize case law"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Vector search + semantic retrieval"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "RiskAssessmentAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Evaluate legal risk exposure"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Rule engine + AI risk scoring"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for legal AI agents and concepts."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Legal Models"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Document, Contract, Case, Regulation, RiskRecord"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Document Review"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Clause extraction + classification"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Contract Analysis"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Term extraction + risk flagging"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Compliance Monitoring"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Regulation tracking + requirement mapping"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Legal Research"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Semantic case law search"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Risk Assessment"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Multi-factor risk scoring"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Document Review"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Legal document processing"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Speed vs accuracy"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Contract Analysis"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Risk identification"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Thoroughness vs false positives"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Compliance Monitoring"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Regulatory adherence"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coverage vs maintenance"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Legal Research"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Case law discovery"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Precision vs recall"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Risk Assessment"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Exposure evaluation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Detail vs actionability"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your understanding of legal AI agents."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " What does the DocumentReviewAgent extract from legal documents?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Only dates"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Key clauses using LLM text extraction"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Document metadata"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Author names"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Key clauses using LLM text extraction</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " How does the ContractAnalysisAgent identify risky clauses?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Manual review"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) LLM pattern matching + risk scoring"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Random checking"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) User flagging only"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) LLM pattern matching + risk scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " What does the ComplianceMonitorAgent track?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) Only internal policies"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) Regulatory changes from external sources"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) Employee attendance"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) Budget compliance"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) Regulatory changes from external sources</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " How does the LegalResearchAgent search case law?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Full-text keyword search"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) Vector embeddings + semantic retrieval"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Manual catalog browsing"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Citation graph only"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) Vector embeddings + semantic retrieval</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare legal AI agents and their techniques."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Agent"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Primary Function"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "AI Technique Used"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "DocumentReviewAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Analyze legal documents for key clauses"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LLM text extraction + classification"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "ContractAnalysisAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Extract terms and flag risky clauses"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LLM pattern matching + risk scoring"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "ComplianceMonitorAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Track regulatory changes and requirements"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Web scraping + LLM summarization"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LegalResearchAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Search and summarize case law"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Vector search + semantic retrieval"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "RiskAssessmentAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Evaluate legal risk exposure"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Rule engine + AI risk scoring"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for legal AI agents and concepts."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Legal Models"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Document, Contract, Case, Regulation, RiskRecord"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Document Review"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Clause extraction + classification"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Contract Analysis"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Term extraction + risk flagging"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Compliance Monitoring"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Regulation tracking + requirement mapping"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Legal Research"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Semantic case law search"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Risk Assessment"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Multi-factor risk scoring"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Document Review"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Legal document processing"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Speed vs accuracy"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Contract Analysis"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Risk identification"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Thoroughness vs false positives"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Compliance Monitoring"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Regulatory adherence"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coverage vs maintenance"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Legal Research"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Case law discovery"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Precision vs recall"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Risk Assessment"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Exposure evaluation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Detail vs actionability"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your understanding of legal AI agents."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " What does the DocumentReviewAgent extract from legal documents?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Only dates"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Key clauses using LLM text extraction"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Document metadata"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Author names"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Key clauses using LLM text extraction</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " How does the ContractAnalysisAgent identify risky clauses?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Manual review"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) LLM pattern matching + risk scoring"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Random checking"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) User flagging only"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) LLM pattern matching + risk scoring</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " What does the ComplianceMonitorAgent track?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) Only internal policies"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Regulatory changes from external sources"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) Employee attendance"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) Budget compliance"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Regulatory changes from external sources</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " How does the LegalResearchAgent search case law?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Full-text keyword search"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) Vector embeddings + semantic retrieval"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Manual catalog browsing"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Citation graph only"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) Vector embeddings + semantic retrieval</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["This chapter covered legal and compliance AI agents built with Laravel and the AI SDK. You learned to design legal data models with encryption, audit trails, and privilege markers. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "ContractReviewAgent"
+                                                                      }), " detects clauses, scores risk, and extracts key terms. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "DiscoveryAgent"
+                                                                      }), " searches, classifies, and flags privileged documents for e-discovery workflows."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "ComplianceMonitoringAgent"
+                                                                      }), " checks regulatory rules across matters and logs violations. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "CaseManagementAgent"
+                                                                      }), " tracks deadlines, assigns tasks, and generates daily dockets. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "LegalResearchAgent"
+                                                                      }), " formulates Boolean queries, searches databases, and produces research memos."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "EDiscoveryPipeline"
+                                                                      }), " orchestrates the full e-discovery lifecycle from collection through production with deduplication and privilege logging. Finally, the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "LegalReportGenerationAgent"
+                                                                      }), " aggregates data across models, generates AI narratives, and renders multi-format output."]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "These agents form the backbone of a modern legal practice platform, reducing manual effort in document review, compliance monitoring, research, and reporting while maintaining the accuracy and confidentiality required in legal work."
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "exercises",
+                                                                      children: "Exercises"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Extend the ContractReviewAgent"
+                                                                          }), ": Add clause types for ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "force_majeure"
+                                                                          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "arbitration"
+                                                                          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "governing_law"
+                                                                          }), ". Implement a severity modifier that increases risk scores when multiple high-risk clauses co-occur."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Build a Privilege Log Generator"
+                                                                          }), ": Create a feature in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "DiscoveryAgent"
+                                                                          }), " that outputs a formal privilege log document (CSV or PDF) listing all withheld documents with privilege type, date range, and basis for withholding."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Implement Rule-Scoring Weights"
+                                                                          }), ": Modify the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "ComplianceMonitoringAgent"
+                                                                          }), " to accept weighted rule sets. Implement a compliance score (0-100) per matter based on passing vs. failing weighted rules."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Calendar Integration"
+                                                                          }), ": Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "CaseManagementAgent"
+                                                                          }), " to sync deadlines to an external calendar (Google Calendar or Outlook) via API. Add automatic reminder scheduling."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Citation Validator"
+                                                                          }), ": Build a method in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "LegalResearchAgent"
+                                                                          }), " that validates citations from the research memo against an external API (CourtListener or Caselaw Access Project) to confirm they are accurate and not hallucinated."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Bates Numbering"
+                                                                          }), ": Implement a Bates-stamping system in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "EDiscoveryPipeline"
+                                                                          }), " production stage that applies unique sequential identifiers to each produced document image/page."]
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

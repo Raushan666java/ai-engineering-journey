@@ -1,0 +1,1498 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[86578],{
+
+/***/ 35575
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_17_openapi_md_3e3_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-17-openapi-md-3e3.json
+const site_docs_courses_java_17_openapi_md_3e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/17-openapi","title":"API Documentation with OpenAPI/Swagger","description":"Previous File Handling","source":"@site/docs/courses/java/17-openapi.md","sourceDirName":"courses/java","slug":"/java/17-openapi","permalink":"/ai-engineering-journey/java/17-openapi","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"17-openapi","slug":"/java/17-openapi","title":"API Documentation with OpenAPI/Swagger","sidebar_label":"API Documentation with OpenAPI/Swagger","sidebar_position":17},"sidebar":"course-java","previous":{"title":"Request Validation, Error Handling & Binding","permalink":"/ai-engineering-journey/java/16-validation"},"next":{"title":"File Upload, Download & Streaming","permalink":"/ai-engineering-journey/java/18-file-handling"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/17-openapi.md
+
+
+const frontMatter = {
+	id: '17-openapi',
+	slug: '/java/17-openapi',
+	title: 'API Documentation with OpenAPI/Swagger',
+	sidebar_label: 'API Documentation with OpenAPI/Swagger',
+	sidebar_position: 17
+};
+const contentTitle = 'API Documentation with OpenAPI/Swagger';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "1. OpenAPI and Swagger — The Big Picture",
+  "id": "1-openapi-and-swagger--the-big-picture",
+  "level": 3
+}, {
+  "value": "2. Project Setup",
+  "id": "2-project-setup",
+  "level": 3
+}, {
+  "value": "3. Customizing the OpenAPI Info Object",
+  "id": "3-customizing-the-openapi-info-object",
+  "level": 3
+}, {
+  "value": "4. Annotating Endpoints",
+  "id": "4-annotating-endpoints",
+  "level": 3
+}, {
+  "value": "4.1 @Tag — Grouping Controllers",
+  "id": "41-tag--grouping-controllers",
+  "level": 4
+}, {
+  "value": "4.2 @Operation — Describing Individual Endpoints",
+  "id": "42-operation--describing-individual-endpoints",
+  "level": 4
+}, {
+  "value": "5. @Schema — Modeling DTOs",
+  "id": "5-schema--modeling-dtos",
+  "level": 3
+}, {
+  "value": "6. @Parameter — Fine-Grained Parameter Documentation",
+  "id": "6-parameter--fine-grained-parameter-documentation",
+  "level": 3
+}, {
+  "value": "7. GroupedOpenApi — Partitioning the Spec",
+  "id": "7-groupedopenapi--partitioning-the-spec",
+  "level": 3
+}, {
+  "value": "8. Security Schemes",
+  "id": "8-security-schemes",
+  "level": 3
+}, {
+  "value": "8.1 Bearer JWT",
+  "id": "81-bearer-jwt",
+  "level": 4
+}, {
+  "value": "8.2 Per-Endpoint Security Overrides",
+  "id": "82-per-endpoint-security-overrides",
+  "level": 4
+}, {
+  "value": "9. @Content and @ExampleObject — Rich Examples",
+  "id": "9-content-and-exampleobject--rich-examples",
+  "level": 3
+}, {
+  "value": "10. API Versioning in Docs",
+  "id": "10-api-versioning-in-docs",
+  "level": 3
+}, {
+  "value": "10.1 Version in the Info Object",
+  "id": "101-version-in-the-info-object",
+  "level": 4
+}, {
+  "value": "10.2 Version in the URL Path",
+  "id": "102-version-in-the-url-path",
+  "level": 4
+}, {
+  "value": "10.3 Header-Based Versioning",
+  "id": "103-header-based-versioning",
+  "level": 4
+}, {
+  "value": "11. Spring HATEOAS Support",
+  "id": "11-spring-hateoas-support",
+  "level": 3
+}, {
+  "value": "12. Global Headers",
+  "id": "12-global-headers",
+  "level": 3
+}, {
+  "value": "13. Custom @Operation Meta-Annotation",
+  "id": "13-custom-operation-meta-annotation",
+  "level": 3
+}, {
+  "value": "14. OpenApiCustomizer — Programmatic Spec Manipulation",
+  "id": "14-openapicustomizer--programmatic-spec-manipulation",
+  "level": 3
+}, {
+  "value": "15. Hiding Endpoints",
+  "id": "15-hiding-endpoints",
+  "level": 3
+}, {
+  "value": "16. Swagger UI Customization",
+  "id": "16-swagger-ui-customization",
+  "level": 3
+}, {
+  "value": "17. Complete Working Example",
+  "id": "17-complete-working-example",
+  "level": 3
+}, {
+  "value": "18. Testing the OpenAPI Spec",
+  "id": "18-testing-the-openapi-spec",
+  "level": 3
+}, {
+  "value": "19. Application Properties Reference",
+  "id": "19-application-properties-reference",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: Basic Integration",
+  "id": "exercise-1-basic-integration",
+  "level": 3
+}, {
+  "value": "Exercise 2: Annotate a Controller",
+  "id": "exercise-2-annotate-a-controller",
+  "level": 3
+}, {
+  "value": "Exercise 3: Schema Documentation",
+  "id": "exercise-3-schema-documentation",
+  "level": 3
+}, {
+  "value": "Exercise 4: Grouped APIs",
+  "id": "exercise-4-grouped-apis",
+  "level": 3
+}, {
+  "value": "Exercise 5: Security Scheme",
+  "id": "exercise-5-security-scheme",
+  "level": 3
+}, {
+  "value": "Exercise 6: Custom Meta-Annotation",
+  "id": "exercise-6-custom-meta-annotation",
+  "level": 3
+}, {
+  "value": "Exercise 7: OpenApiCustomizer",
+  "id": "exercise-7-openapicustomizer",
+  "level": 3
+}, {
+  "value": "Exercise 8: Versioning",
+  "id": "exercise-8-versioning",
+  "level": 3
+}, {
+  "value": "Exercise 9: Swagger UI Customization",
+  "id": "exercise-9-swagger-ui-customization",
+  "level": 3
+}, {
+  "value": "Exercise 10: Testing the Spec",
+  "id": "exercise-10-testing-the-spec",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/16-validation",
+          children: "Validation"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/18-file-handling",
+          children: "File Handling"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "api-documentation-with-openapiswagger",
+        children: "API Documentation with OpenAPI/Swagger"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/17-openapi/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/17-openapi/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/17-openapi/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/17-openapi/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/17-openapi/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/17-openapi/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Integrate SpringDoc OpenAPI (springdoc-openapi-starter-webmvc-ui) into a Spring Boot project"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe the OpenAPI 3.0 specification sections (openapi, info, servers, paths, components, security)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Annotate endpoints with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Operation"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@ApiResponse"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Schema"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Parameter"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Tag"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Group API endpoints using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "GroupedOpenApi"
+        }), " beans"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Customize Swagger UI appearance and behavior"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure security schemes (bearer JWT, OAuth2) and apply global security"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Provide structured request/response examples with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Content"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@ExampleObject"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Version APIs and surface that versioning in documentation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Support Spring HATEOAS hypermedia in generated docs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define global headers across all endpoints"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create custom meta-annotations that compose ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Operation"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Modify the OpenAPI specification programmatically with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "OpenApiCustomizer"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hide endpoints from documentation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPI Spec"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard for REST API documentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version 3.0, JSON/YAML format"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SpringDoc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-configures OpenAPI via springdoc-openapi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal setup, Swagger UI included"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Annotations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Operation, @ApiResponse, @Schema"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative endpoint documentation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security Schemes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bearer JWT, OAuth2 in OpenAPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Global security configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "UI Customization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GroupedOpenApi, OpenApiCustomizer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Programmatic spec modification"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[OpenAPI Spec] --> B[SpringDoc Setup]\n    B --> C[Endpoint Annotations]\n    C --> D[Schema Definitions]\n    D --> E[Security Schemes]\n    E --> F[Grouping & Customization]\n    F --> G[Swagger UI]\n    G --> H[Programmatic Extension]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Add springdoc-openapi-starter-webmvc-ui as a dependency and visit /swagger-ui.html to see your API documentation instantly — no extra configuration needed."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/17-openapi.png",
+        alt: "OpenAPI / Swagger Documentation Mindmap"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-openapi-and-swagger--the-big-picture",
+      children: "1. OpenAPI and Swagger — The Big Picture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "OpenAPI is a specification (formerly Swagger 2.0, now OpenAPI 3.x) for describing HTTP APIs in a machine-readable format (JSON or YAML). Swagger UI renders that spec as interactive documentation. SpringDoc bridges Spring Boot and OpenAPI 3.0 without requiring the legacy SpringFox library."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The core contract:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "OpenAPI Specification (openapi.yaml)\n          |\n          v\n   SpringDoc auto-configuration\n          |\n          v\n  @RestController endpoints scanned\n          |\n          v\n  Annotations enrich the spec\n          |\n          v\n  OpenAPI JSON served at /v3/api-docs\n          |\n          v\n  Swagger UI renders at /swagger-ui/index.html\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-project-setup",
+      children: "2. Project Setup"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Add the SpringDoc starter — it auto-configures everything, scanning every ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@RestController"
+      }), " and building the OpenAPI document."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "build.gradle (Gradle)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-groovy",
+        children: "plugins {\n    id 'org.springframework.boot' version '3.4.0'\n    id 'io.spring.dependency-management' version '1.1.6'\n}\n\ndependencies {\n    implementation 'org.springframework.boot:spring-boot-starter-web'\n    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.3'\n\n    // Optional: Spring HATEOAS\n    implementation 'org.springframework.boot:spring-boot-starter-hateoas'\n\n    testImplementation 'org.springframework.boot:spring-boot-starter-test'\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "pom.xml (Maven)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<parent>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-parent</artifactId>\n    <version>3.4.0</version>\n</parent>\n\n<dependencies>\n    <dependency>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-web</artifactId>\n    </dependency>\n    <dependency>\n        <groupId>org.springdoc</groupId>\n        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>\n        <version>2.8.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-hateoas</artifactId>\n        <optional>true</optional>\n    </dependency>\n</dependencies>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "No additional configuration is required for a minimal setup. Running the application gives you:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Endpoint"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/v3/api-docs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPI JSON (default)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/v3/api-docs.yaml"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPI YAML"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/swagger-ui/index.html"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interactive Swagger UI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/swagger-ui.html"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redirect to Swagger UI"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "3-customizing-the-openapi-info-object",
+      children: "3. Customizing the OpenAPI Info Object"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "OpenAPI"
+      }), " bean lets you set metadata, servers, security schemes, and external docs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.models.OpenAPI;\nimport io.swagger.v3.oas.models.info.Contact;\nimport io.swagger.v3.oas.models.info.Info;\nimport io.swagger.v3.oas.models.info.License;\nimport io.swagger.v3.oas.models.servers.Server;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\nimport java.util.List;\n\n@Configuration\npublic class OpenApiConfig {\n\n    @Bean\n    public OpenAPI customOpenAPI() {\n        return new OpenAPI()\n            .openapi(\"3.0.3\")\n            .info(new Info()\n                .title(\"PetClinic API\")\n                .version(\"2.0.0\")\n                .description(\"RESTful API for managing pets, owners, and visits.\")\n                .termsOfService(\"https://example.com/terms\")\n                .contact(new Contact()\n                    .name(\"API Support\")\n                    .email(\"support@petclinic.io\")\n                    .url(\"https://petclinic.io/support\"))\n                .license(new License()\n                    .name(\"Apache 2.0\")\n                    .url(\"https://www.apache.org/licenses/LICENSE-2.0\")))\n            .servers(List.of(\n                new Server()\n                    .url(\"https://api.petclinic.io/v2\")\n                    .description(\"Production server\"),\n                new Server()\n                    .url(\"https://staging-api.petclinic.io/v2\")\n                    .description(\"Staging server\"),\n                new Server()\n                    .url(\"http://localhost:8080/api\")\n                    .description(\"Local development\")))\n            .externalDocs(new io.swagger.v3.oas.models.ExternalDocumentation()\n                .description(\"Full API Wiki\")\n                .url(\"https://wiki.petclinic.io/api\"));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "4-annotating-endpoints",
+      children: "4. Annotating Endpoints"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The most important annotations live in the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "io.swagger.v3.oas.annotations"
+      }), " package."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "41-tag--grouping-controllers",
+      children: "4.1 @Tag — Grouping Controllers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.tags.Tag;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\n@RequestMapping(\"/api/pets\")\n@Tag(name = \"Pet Management\", description = \"CRUD operations for pets\")\npublic class PetController {\n    // endpoints\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "42-operation--describing-individual-endpoints",
+      children: "4.2 @Operation — Describing Individual Endpoints"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Operation;\nimport io.swagger.v3.oas.annotations.Parameter;\nimport io.swagger.v3.oas.annotations.media.Content;\nimport io.swagger.v3.oas.annotations.media.ExampleObject;\nimport io.swagger.v3.oas.annotations.media.Schema;\nimport io.swagger.v3.oas.annotations.responses.ApiResponse;\nimport io.swagger.v3.oas.annotations.responses.ApiResponses;\nimport io.swagger.v3.oas.annotations.security.SecurityRequirement;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/pets\")\n@Tag(name = \"Pet Management\")\npublic class PetController {\n\n    private final PetService petService;\n\n    public PetController(PetService petService) {\n        this.petService = petService;\n    }\n\n    @GetMapping\n    @Operation(\n        summary = \"List all pets\",\n        description = \"Returns a paginated list of pets. Supports filtering by status and type.\",\n        operationId = \"listPets\",\n        tags = {\"Pet Management\"}\n    )\n    @ApiResponses({\n        @ApiResponse(\n            responseCode = \"200\",\n            description = \"Successfully retrieved list\",\n            content = @Content(\n                mediaType = MediaType.APPLICATION_JSON_VALUE,\n                schema = @Schema(implementation = PetPageResponse.class),\n                examples = @ExampleObject(\n                    name = \"default\",\n                    summary = \"Typical paginated response\",\n                    value = \"\"\"\n                    {\n                        \"content\": [\n                            {\n                                \"id\": 1,\n                                \"name\": \"Buddy\",\n                                \"type\": \"DOG\",\n                                \"age\": 3,\n                                \"ownerName\": \"John Doe\"\n                            }\n                        ],\n                        \"page\": 0,\n                        \"size\": 20,\n                        \"totalElements\": 1,\n                        \"totalPages\": 1\n                    }\n                    \"\"\"\n                )\n            )\n        ),\n        @ApiResponse(responseCode = \"401\", description = \"Unauthorized\"),\n        @ApiResponse(responseCode = \"403\", description = \"Forbidden\")\n    })\n    public ResponseEntity<PetPageResponse> listPets(\n            @Parameter(description = \"Page number (zero-based)\", example = \"0\")\n            @RequestParam(defaultValue = \"0\") int page,\n\n            @Parameter(description = \"Page size\", example = \"20\")\n            @RequestParam(defaultValue = \"20\") int size,\n\n            @Parameter(description = \"Filter by pet type: DOG, CAT, BIRD\",\n                       schema = @Schema(allowableValues = {\"DOG\", \"CAT\", \"BIRD\"}))\n            @RequestParam(required = false) String type,\n\n            @Parameter(hidden = true)\n            @RequestParam(defaultValue = \"false\") boolean internal) {\n\n        PetPageResponse response = petService.findAll(page, size, type);\n        return ResponseEntity.ok(response);\n    }\n\n    @GetMapping(\"/{id}\")\n    @Operation(\n        summary = \"Find pet by ID\",\n        description = \"Returns a single pet with full details.\"\n    )\n    @ApiResponses({\n        @ApiResponse(\n            responseCode = \"200\",\n            description = \"Pet found\",\n            content = @Content(\n                schema = @Schema(implementation = Pet.class)\n            )\n        ),\n        @ApiResponse(\n            responseCode = \"404\",\n            description = \"Pet not found\",\n            content = @Content(\n                schema = @Schema(implementation = ErrorResponse.class)\n            )\n        )\n    })\n    public ResponseEntity<Pet> getPet(\n            @Parameter(description = \"Pet ID\", required = true, example = \"42\")\n            @PathVariable Long id) {\n        return ResponseEntity.ok(petService.findById(id));\n    }\n\n    @PostMapping\n    @Operation(\n        summary = \"Create a new pet\",\n        description = \"Creates a pet and returns the created resource with its generated ID.\"\n    )\n    @ApiResponses({\n        @ApiResponse(\n            responseCode = \"201\",\n            description = \"Pet created\",\n            content = @Content(\n                schema = @Schema(implementation = Pet.class)\n            )\n        ),\n        @ApiResponse(\n            responseCode = \"400\",\n            description = \"Validation failed\",\n            content = @Content(\n                schema = @Schema(implementation = ValidationErrorResponse.class)\n            )\n        )\n    })\n    public ResponseEntity<Pet> createPet(\n            @io.swagger.v3.oas.annotations.parameters.RequestBody(\n                description = \"Pet data to create\",\n                required = true,\n                content = @Content(\n                    schema = @Schema(implementation = CreatePetRequest.class),\n                    examples = @ExampleObject(\n                        name = \"createDog\",\n                        summary = \"Create a dog named Buddy\",\n                        value = \"\"\"\n                        {\n                            \"name\": \"Buddy\",\n                            \"type\": \"DOG\",\n                            \"age\": 3,\n                            \"ownerId\": 10\n                        }\n                        \"\"\"\n                    )\n                )\n            )\n            @Valid @RequestBody CreatePetRequest request) {\n        Pet created = petService.create(request);\n        return ResponseEntity.status(201).body(created);\n    }\n\n    @PutMapping(\"/{id}\")\n    @Operation(summary = \"Update an existing pet\")\n    public ResponseEntity<Pet> updatePet(\n            @PathVariable Long id,\n            @Valid @RequestBody UpdatePetRequest request) {\n        return ResponseEntity.ok(petService.update(id, request));\n    }\n\n    @DeleteMapping(\"/{id}\")\n    @Operation(summary = \"Delete a pet\")\n    @ApiResponse(responseCode = \"204\", description = \"Deleted successfully\")\n    @ApiResponse(responseCode = \"404\", description = \"Pet not found\")\n    public ResponseEntity<Void> deletePet(@PathVariable Long id) {\n        petService.delete(id);\n        return ResponseEntity.noContent().build();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "5-schema--modeling-dtos",
+      children: "5. @Schema — Modeling DTOs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\nimport jakarta.validation.constraints.Min;\nimport jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\nimport jakarta.validation.constraints.Pattern;\n\n@Schema(description = \"A pet belonging to an owner\")\npublic class Pet {\n\n    @Schema(\n        description = \"Unique identifier\",\n        example = \"42\",\n        accessMode = Schema.AccessMode.READ_ONLY\n    )\n    private Long id;\n\n    @Schema(\n        description = \"Pet's name\",\n        example = \"Buddy\",\n        minLength = 1,\n        maxLength = 100\n    )\n    @NotBlank\n    private String name;\n\n    @Schema(\n        description = \"Type of pet\",\n        example = \"DOG\",\n        allowableValues = {\"DOG\", \"CAT\", \"BIRD\", \"FISH\", \"REPTILE\"}\n    )\n    @NotNull\n    private PetType type;\n\n    @Schema(description = \"Age in years\", example = \"3\", minimum = \"0\", maximum = \"50\")\n    @Min(0)\n    private int age;\n\n    @Schema(\n        description = \"Owner's full name\",\n        example = \"John Doe\",\n        readOnly = true\n    )\n    private String ownerName;\n\n    @Schema(hidden = true)\n    private String internalNotes;\n\n    public Pet() {}\n\n    public Pet(Long id, String name, PetType type, int age, String ownerName) {\n        this.id = id;\n        this.name = name;\n        this.type = type;\n        this.age = age;\n        this.ownerName = ownerName;\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getName() { return name; }\n    public void setName(String name) { this.name = name; }\n\n    public PetType getType() { return type; }\n    public void setType(PetType type) { this.type = type; }\n\n    public int getAge() { return age; }\n    public void setAge(int age) { this.age = age; }\n\n    public String getOwnerName() { return ownerName; }\n    public void setOwnerName(String ownerName) { this.ownerName = ownerName; }\n\n    public String getInternalNotes() { return internalNotes; }\n    public void setInternalNotes(String internalNotes) { this.internalNotes = internalNotes; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public enum PetType {\n    DOG, CAT, BIRD, FISH, REPTILE\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\nimport jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\n\n@Schema(description = \"Request payload for creating a new pet\")\npublic class CreatePetRequest {\n\n    @Schema(description = \"Pet name\", example = \"Buddy\", requiredMode = Schema.RequiredMode.REQUIRED)\n    @NotBlank\n    private String name;\n\n    @Schema(description = \"Pet type\", example = \"DOG\", requiredMode = Schema.RequiredMode.REQUIRED)\n    @NotNull\n    private PetType type;\n\n    @Schema(description = \"Age in years\", example = \"3\")\n    private int age;\n\n    @Schema(description = \"Owner ID\", example = \"10\", requiredMode = Schema.RequiredMode.REQUIRED)\n    @NotNull\n    private Long ownerId;\n\n    public String getName() { return name; }\n    public void setName(String name) { this.name = name; }\n\n    public PetType getType() { return type; }\n    public void setType(PetType type) { this.type = type; }\n\n    public int getAge() { return age; }\n    public void setAge(int age) { this.age = age; }\n\n    public Long getOwnerId() { return ownerId; }\n    public void setOwnerId(Long ownerId) { this.ownerId = ownerId; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\n\n@Schema(description = \"Paginated response wrapper for pets\")\npublic class PetPageResponse {\n\n    @Schema(description = \"List of pets in current page\")\n    private List<Pet> content;\n\n    @Schema(description = \"Current page number (zero-based)\", example = \"0\")\n    private int page;\n\n    @Schema(description = \"Page size\", example = \"20\")\n    private int size;\n\n    @Schema(description = \"Total elements across all pages\", example = \"150\")\n    private long totalElements;\n\n    @Schema(description = \"Total pages\", example = \"8\")\n    private int totalPages;\n\n    public PetPageResponse() {}\n\n    public PetPageResponse(List<Pet> content, int page, int size,\n                           long totalElements, int totalPages) {\n        this.content = content;\n        this.page = page;\n        this.size = size;\n        this.totalElements = totalElements;\n        this.totalPages = totalPages;\n    }\n\n    public List<Pet> getContent() { return content; }\n    public void setContent(List<Pet> content) { this.content = content; }\n    public int getPage() { return page; }\n    public void setPage(int page) { this.page = page; }\n    public int getSize() { return size; }\n    public void setSize(int size) { this.size = size; }\n    public long getTotalElements() { return totalElements; }\n    public void setTotalElements(long totalElements) { this.totalElements = totalElements; }\n    public int getTotalPages() { return totalPages; }\n    public void setTotalPages(int totalPages) { this.totalPages = totalPages; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\n\n@Schema(description = \"Standard error response body\")\npublic class ErrorResponse {\n\n    @Schema(description = \"HTTP status code\", example = \"404\")\n    private int status;\n\n    @Schema(description = \"Error message\", example = \"Pet with ID 42 not found\")\n    private String message;\n\n    @Schema(description = \"Timestamp in epoch millis\", example = \"1715000000000\")\n    private long timestamp;\n\n    public ErrorResponse() {}\n\n    public ErrorResponse(int status, String message, long timestamp) {\n        this.status = status;\n        this.message = message;\n        this.timestamp = timestamp;\n    }\n\n    public int getStatus() { return status; }\n    public void setStatus(int status) { this.status = status; }\n    public String getMessage() { return message; }\n    public void setMessage(String message) { this.message = message; }\n    public long getTimestamp() { return timestamp; }\n    public void setTimestamp(long timestamp) { this.timestamp = timestamp; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6-parameter--fine-grained-parameter-documentation",
+      children: "6. @Parameter — Fine-Grained Parameter Documentation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Parameter"
+      }), " on method parameters or at the method level for shared parameters."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Parameter;\nimport io.swagger.v3.oas.annotations.enums.ParameterIn;\nimport io.swagger.v3.oas.annotations.media.ArraySchema;\nimport io.swagger.v3.oas.annotations.media.Schema;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/pets\")\n@Tag(name = \"Pet Management\")\npublic class ParameterExamplesController {\n\n    @GetMapping(\"/search\")\n    @Operation(summary = \"Search pets with advanced filters\")\n    public ResponseEntity<List<Pet>> searchPets(\n            @Parameter(\n                description = \"Search query (matches name or owner)\",\n                example = \"Buddy\",\n                in = ParameterIn.QUERY\n            )\n            @RequestParam(required = false) String q,\n\n            @Parameter(\n                description = \"Filter by pet type\",\n                schema = @Schema(implementation = PetType.class),\n                in = ParameterIn.QUERY\n            )\n            @RequestParam(required = false) PetType type,\n\n            @Parameter(\n                name = \"X-Trace-Id\",\n                description = \"Request trace ID for correlation\",\n                in = ParameterIn.HEADER,\n                required = true,\n                example = \"abc-123-def\",\n                schema = @Schema(type = \"string\", format = \"uuid\")\n            )\n            @RequestHeader(\"X-Trace-Id\") String traceId,\n\n            @Parameter(\n                description = \"Sort fields. Prefix with '-' for descending.\",\n                example = \"name,-age\",\n                array = @ArraySchema(schema = @Schema(type = \"string\"))\n            )\n            @RequestParam(defaultValue = \"name\") String[] sort) {\n\n        List<Pet> results = petService.search(q, type, sort);\n        return ResponseEntity.ok(results);\n    }\n\n    @PostMapping(\"/batch\")\n    @Operation(summary = \"Batch create pets\")\n    public ResponseEntity<List<Pet>> batchCreate(\n            @Parameter(\n                description = \"Array of pets to create\",\n                required = true,\n                schema = @Schema(implementation = CreatePetRequest.class)\n            )\n            @Valid @RequestBody List<CreatePetRequest> requests) {\n\n        List<Pet> created = petService.batchCreate(requests);\n        return ResponseEntity.status(201).body(created);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7-groupedopenapi--partitioning-the-spec",
+      children: "7. GroupedOpenApi — Partitioning the Spec"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Split the API specification into logical groups (useful for microservices or role-specific docs)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.models.Info;\nimport org.springdoc.core.models.GroupedOpenApi;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\n@Configuration\npublic class GroupedOpenApiConfig {\n\n    @Bean\n    public GroupedOpenApi publicApi() {\n        return GroupedOpenApi.builder()\n            .group(\"public\")\n            .displayName(\"Public API\")\n            .pathsToMatch(\"/api/public/**\", \"/api/pets/**\")\n            .pathsToExclude(\"/api/admin/**\")\n            .addOpenApiCustomizer(openApi -> openApi\n                .info(new Info()\n                    .title(\"Public PetClinic API\")\n                    .version(\"v1\")\n                    .description(\"Public-facing endpoints. No authentication required.\")))\n            .build();\n    }\n\n    @Bean\n    public GroupedOpenApi adminApi() {\n        return GroupedOpenApi.builder()\n            .group(\"admin\")\n            .displayName(\"Admin API\")\n            .pathsToMatch(\"/api/admin/**\")\n            .addOpenApiCustomizer(openApi -> openApi\n                .info(new Info()\n                    .title(\"Admin PetClinic API\")\n                    .version(\"v1\")\n                    .description(\"Administrative endpoints. API key required.\")))\n            .build();\n    }\n\n    @Bean\n    public GroupedOpenApi internalApi() {\n        return GroupedOpenApi.builder()\n            .group(\"internal\")\n            .displayName(\"Internal API\")\n            .pathsToMatch(\"/api/internal/**\")\n            .addOpenApiCustomizer(openApi -> openApi\n                .info(new Info()\n                    .title(\"Internal PetClinic API\")\n                    .version(\"v1\")\n                    .description(\"Internal service endpoints. Service-mesh auth only.\")))\n            .build();\n    }\n\n    @Bean\n    public GroupedOpenApi petStoreApi() {\n        return GroupedOpenApi.builder()\n            .group(\"petstore\")\n            .displayName(\"PetStore v3\")\n            .pathsToMatch(\"/api/pets/**\")\n            .packagesToScan(\"com.petclinic.petstore\")\n            .addOpenApiCustomizer(openApi -> openApi\n                .info(new Info()\n                    .title(\"PetStore API\")\n                    .version(\"3.0.0\")\n                    .description(\"PetStore-compatible endpoints\")))\n            .build();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each group appears as a separate dropdown entry in Swagger UI, each with its own spec at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/v3/api-docs/{group}"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "8-security-schemes",
+      children: "8. Security Schemes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "81-bearer-jwt",
+      children: "8.1 Bearer JWT"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.models.Components;\nimport io.swagger.v3.oas.models.OpenAPI;\nimport io.swagger.v3.oas.models.info.Info;\nimport io.swagger.v3.oas.models.security.SecurityRequirement;\nimport io.swagger.v3.oas.models.security.SecurityScheme;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\n@Configuration\npublic class SecuritySchemesConfig {\n\n    private static final String SECURITY_SCHEME_NAME = \"BearerAuth\";\n    private static final String OAUTH2_SCHEME_NAME = \"OAuth2\";\n\n    @Bean\n    public OpenAPI securedOpenAPI() {\n        return new OpenAPI()\n            .info(new Info()\n                .title(\"PetClinic API\")\n                .version(\"2.0.0\")\n                .description(\"Secured API with JWT and OAuth2 support\"))\n            .components(new Components()\n                .addSecuritySchemes(SECURITY_SCHEME_NAME, new SecurityScheme()\n                    .type(SecurityScheme.Type.HTTP)\n                    .scheme(\"bearer\")\n                    .bearerFormat(\"JWT\")\n                    .description(\"Enter your JWT token. Example: eyJhbGciOiJIUzI1NiIs...\"))\n                .addSecuritySchemes(OAUTH2_SCHEME_NAME, new SecurityScheme()\n                    .type(SecurityScheme.Type.OAUTH2)\n                    .description(\"OAuth2 authorization code flow\")\n                    .flows(new io.swagger.v3.oas.models.security.OAuthFlows()\n                        .authorizationCode(\n                            new io.swagger.v3.oas.models.security.OAuthFlow()\n                                .authorizationUrl(\"https://auth.petclinic.io/oauth2/authorize\")\n                                .tokenUrl(\"https://auth.petclinic.io/oauth2/token\")\n                                .refreshUrl(\"https://auth.petclinic.io/oauth2/refresh\")\n                                .scopes(new io.swagger.v3.oas.models.security.Scopes()\n                                    .addString(\"pets:read\", \"Read pets\")\n                                    .addString(\"pets:write\", \"Create/update pets\")\n                                    .addString(\"admin\", \"Administrative access\")\n                                )\n                        )))\n                .addSecuritySchemes(\"ApiKey\", new SecurityScheme()\n                    .type(SecurityScheme.Type.APIKEY)\n                    .in(SecurityScheme.In.HEADER)\n                    .name(\"X-API-Key\")\n                    .description(\"API key for internal services\")))\n            .addSecurityItem(new SecurityRequirement()\n                .addList(SECURITY_SCHEME_NAME)\n                .addList(OAUTH2_SCHEME_NAME));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "82-per-endpoint-security-overrides",
+      children: "8.2 Per-Endpoint Security Overrides"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Operation;\nimport io.swagger.v3.oas.annotations.security.SecurityRequirement;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/admin\")\n@Tag(name = \"Admin Operations\")\npublic class AdminController {\n\n    @GetMapping(\"/audit-log\")\n    @Operation(\n        summary = \"Retrieve audit logs\",\n        security = {\n            @SecurityRequirement(name = \"BearerAuth\"),\n            @SecurityRequirement(name = \"ApiKey\")\n        }\n    )\n    public ResponseEntity<List<AuditEntry>> getAuditLogs() {\n        return ResponseEntity.ok(auditService.findAll());\n    }\n\n    @PostMapping(\"/maintenance\")\n    @Operation(\n        summary = \"Trigger maintenance\",\n        security = @SecurityRequirement(name = \"BearerAuth\",\n                                        scopes = {\"admin\"})\n    )\n    public ResponseEntity<Void> triggerMaintenance() {\n        maintenanceService.run();\n        return ResponseEntity.accepted().build();\n    }\n\n    @GetMapping(\"/health\")\n    @Operation(\n        summary = \"Health check (no auth)\",\n        security = {}   // overrides global security — no auth required\n    )\n    public ResponseEntity<HealthResponse> health() {\n        return ResponseEntity.ok(new HealthResponse(\"UP\"));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "9-content-and-exampleobject--rich-examples",
+      children: "9. @Content and @ExampleObject — Rich Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Content;\nimport io.swagger.v3.oas.annotations.media.ExampleObject;\nimport io.swagger.v3.oas.annotations.media.Schema;\nimport io.swagger.v3.oas.annotations.responses.ApiResponse;\nimport io.swagger.v3.oas.annotations.responses.ApiResponses;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/pets\")\npublic class ExampleDocumentationController {\n\n    @PostMapping(value = \"/{id}/medical-record\", consumes = MediaType.APPLICATION_JSON_VALUE)\n    @Operation(summary = \"Add a medical record entry\")\n    @ApiResponses({\n        @ApiResponse(\n            responseCode = \"201\",\n            description = \"Medical record created\",\n            content = @Content(\n                mediaType = MediaType.APPLICATION_JSON_VALUE,\n                schema = @Schema(implementation = MedicalRecord.class),\n                examples = {\n                    @ExampleObject(\n                        name = \"vaccination\",\n                        summary = \"Vaccination record\",\n                        value = \"\"\"\n                        {\n                            \"petId\": 42,\n                            \"type\": \"VACCINATION\",\n                            \"description\": \"Rabies booster shot\",\n                            \"administeredBy\": \"Dr. Smith\",\n                            \"date\": \"2026-03-15\",\n                            \"nextDueDate\": \"2027-03-15\"\n                        }\n                        \"\"\"\n                    ),\n                    @ExampleObject(\n                        name = \"surgery\",\n                        summary = \"Surgery record\",\n                        value = \"\"\"\n                        {\n                            \"petId\": 42,\n                            \"type\": \"SURGERY\",\n                            \"description\": \"Spay procedure\",\n                            \"administeredBy\": \"Dr. Jones\",\n                            \"date\": \"2026-02-20\",\n                            \"notes\": \"Procedure completed successfully. 2-week recovery.\"\n                        }\n                        \"\"\"\n                    )\n                }\n            )\n        ),\n        @ApiResponse(\n            responseCode = \"400\",\n            description = \"Validation error\",\n            content = @Content(\n                mediaType = MediaType.APPLICATION_JSON_VALUE,\n                schema = @Schema(implementation = ValidationErrorResponse.class),\n                examples = @ExampleObject(\n                    name = \"validationError\",\n                    summary = \"Missing required fields\",\n                    value = \"\"\"\n                    {\n                        \"status\": 400,\n                        \"errors\": [\n                            {\n                                \"field\": \"type\",\n                                \"message\": \"must not be null\"\n                            },\n                            {\n                                \"field\": \"description\",\n                                \"message\": \"must not be blank\"\n                            }\n                        ],\n                        \"timestamp\": \"2026-03-15T10:30:00Z\"\n                    }\n                    \"\"\"\n                )\n            )\n        )\n    })\n    public ResponseEntity<MedicalRecord> addMedicalRecord(\n            @PathVariable Long id,\n            @Valid @RequestBody CreateMedicalRecordRequest request) {\n        MedicalRecord record = medicalService.addRecord(id, request);\n        return ResponseEntity.status(201).body(record);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\nimport java.util.List;\n\n@Schema(description = \"Validation error containing field-level messages\")\npublic class ValidationErrorResponse {\n\n    @Schema(description = \"HTTP status\", example = \"400\")\n    private int status;\n\n    @Schema(description = \"List of field errors\")\n    private List<FieldError> errors;\n\n    @Schema(description = \"Timestamp\", example = \"2026-03-15T10:30:00Z\")\n    private String timestamp;\n\n    public ValidationErrorResponse() {}\n\n    public ValidationErrorResponse(int status, List<FieldError> errors, String timestamp) {\n        this.status = status;\n        this.errors = errors;\n        this.timestamp = timestamp;\n    }\n\n    @Schema(description = \"A single field validation error\")\n    public static class FieldError {\n        @Schema(description = \"Field name\", example = \"name\")\n        private String field;\n\n        @Schema(description = \"Validation message\", example = \"must not be blank\")\n        private String message;\n\n        public FieldError() {}\n\n        public FieldError(String field, String message) {\n            this.field = field;\n            this.message = message;\n        }\n\n        public String getField() { return field; }\n        public void setField(String field) { this.field = field; }\n        public String getMessage() { return message; }\n        public void setMessage(String message) { this.message = message; }\n    }\n\n    public int getStatus() { return status; }\n    public void setStatus(int status) { this.status = status; }\n    public List<FieldError> getErrors() { return errors; }\n    public void setErrors(List<FieldError> errors) { this.errors = errors; }\n    public String getTimestamp() { return timestamp; }\n    public void setTimestamp(String timestamp) { this.timestamp = timestamp; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "10-api-versioning-in-docs",
+      children: "10. API Versioning in Docs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Three strategies for surfacing version information."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "101-version-in-the-info-object",
+      children: "10.1 Version in the Info Object"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@Bean\npublic OpenAPI versionedOpenAPI() {\n    return new OpenAPI()\n        .info(new Info()\n            .title(\"PetClinic API\")\n            .version(\"2.5.0\")      // displayed prominently in Swagger UI\n            .description(\"\"\"\n                ## API Versioning\n                \n                Current version: **2.5.0**\n                \n                ### Changelog\n\n                - **2.5.0** — Added medical records endpoints\n                - **2.4.0** — Added batch operations\n                - **2.3.0** — Deprecated `/api/v1/pets` in favor of `/api/pets`\n                - **2.0.0** — Major overhaul, OpenAPI 3.0 migration\n                \"\"\"));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "102-version-in-the-url-path",
+      children: "10.2 Version in the URL Path"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@RestController\n@RequestMapping(\"/api/v1/pets\")\n@Tag(name = \"Pet Management (v1)\")\npublic class PetV1Controller {\n\n    @GetMapping(\"/{id}\")\n    @Operation(\n        summary = \"Get pet (legacy)\",\n        description = \"**Deprecated.** Use `/api/pets/{id}` instead.\",\n        deprecated = true\n    )\n    public ResponseEntity<PetV1> getPetV1(@PathVariable Long id) {\n        Pet pet = petService.findById(id);\n        return ResponseEntity.ok(new PetV1(pet));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "103-header-based-versioning",
+      children: "10.3 Header-Based Versioning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@RestController\n@RequestMapping(\"/api/pets\")\npublic class VersionedController {\n\n    @GetMapping\n    @Operation(summary = \"List pets (version-aware)\")\n    public ResponseEntity<?> listPets(\n            @Parameter(hidden = true)\n            @RequestHeader(value = \"X-API-Version\", defaultValue = \"2\") int apiVersion) {\n\n        if (apiVersion == 1) {\n            List<PetV1> v1 = petService.findAllV1();\n            return ResponseEntity.ok()\n                .header(\"X-API-Version\", \"1\")\n                .body(v1);\n        }\n        PetPageResponse response = petService.findAll(0, 20, null);\n        return ResponseEntity.ok()\n            .header(\"X-API-Version\", \"2\")\n            .body(response);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-spring-hateoas-support",
+      children: "11. Spring HATEOAS Support"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["SpringDoc natively inspects ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EntityModel"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CollectionModel"
+      }), " wrappers."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Operation;\nimport io.swagger.v3.oas.annotations.media.Schema;\nimport io.swagger.v3.oas.annotations.tags.Tag;\nimport org.springframework.hateoas.CollectionModel;\nimport org.springframework.hateoas.EntityModel;\nimport org.springframework.hateoas.Link;\nimport org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\nimport static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;\nimport static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;\n\n@RestController\n@RequestMapping(\"/api/hateoas/pets\")\n@Tag(name = \"HATEOAS Pet API\")\npublic class HateoasPetController {\n\n    @GetMapping(\"/{id}\")\n    @Operation(summary = \"Get pet with HATEOAS links\")\n    public ResponseEntity<EntityModel<Pet>> getPet(@PathVariable Long id) {\n        Pet pet = petService.findById(id);\n\n        EntityModel<Pet> model = EntityModel.of(pet);\n        model.add(linkTo(methodOn(HateoasPetController.class).getPet(id)).withSelfRel());\n        model.add(linkTo(methodOn(HateoasPetController.class).listPets()).withRel(\"pets\"));\n        model.add(linkTo(methodOn(HateoasPetController.class).getOwner(pet.getOwnerId()))\n            .withRel(\"owner\"));\n\n        return ResponseEntity.ok(model);\n    }\n\n    @GetMapping\n    @Operation(summary = \"List pets with HATEOAS links\")\n    public ResponseEntity<CollectionModel<EntityModel<Pet>>> listPets() {\n        List<Pet> pets = petService.findAll(0, 20, null).getContent();\n\n        List<EntityModel<Pet>> models = pets.stream()\n            .map(pet -> EntityModel.of(pet,\n                linkTo(methodOn(HateoasPetController.class).getPet(pet.getId())).withSelfRel(),\n                linkTo(methodOn(HateoasPetController.class).listPets()).withRel(\"pets\")))\n            .toList();\n\n        CollectionModel<EntityModel<Pet>> collection = CollectionModel.of(models);\n        collection.add(linkTo(methodOn(HateoasPetController.class).listPets()).withSelfRel());\n        collection.add(linkTo(methodOn(HateoasPetController.class).getOwner(null))\n            .withRel(\"owners\"));\n\n        return ResponseEntity.ok(collection);\n    }\n\n    @GetMapping(\"/{petId}/owner\")\n    @Operation(summary = \"Get owner of a pet\")\n    public ResponseEntity<EntityModel<?>> getOwner(@PathVariable Long petId) {\n        // Dummy response — the link is what matters for documentation\n        return ResponseEntity.ok().build();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To ensure HATEOAS schemas render correctly in Swagger UI, configure SpringDoc:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-properties",
+        children: "# application.properties\nspringdoc.use-fqn=true\nspringdoc.model-converters.add-entity-converter=false\nspringdoc.show-actuator=false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-global-headers",
+      children: "12. Global Headers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Add headers to every API response without annotating every controller method."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.models.OpenAPI;\nimport io.swagger.v3.oas.models.Operation;\nimport io.swagger.v3.oas.models.headers.Header;\nimport io.swagger.v3.oas.models.media.StringSchema;\nimport io.swagger.v3.oas.models.parameters.Parameter;\nimport io.swagger.v3.oas.models.parameters.HeaderParameter;\nimport org.springdoc.core.customizers.GlobalOpenApiCustomizer;\nimport org.springdoc.core.customizers.OperationCustomizer;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.method.HandlerMethod;\n\n@Configuration\npublic class GlobalHeadersConfig {\n\n    @Bean\n    public OperationCustomizer globalHeaderCustomizer() {\n        return (Operation operation, HandlerMethod handlerMethod) -> {\n            // Global request header\n            operation.addParametersItem(new HeaderParameter()\n                .name(\"X-Request-Id\")\n                .description(\"Correlation ID for request tracing\")\n                .required(true)\n                .schema(new StringSchema().format(\"uuid\"))\n                .example(\"550e8400-e29b-41d4-a716-446655440000\"));\n\n            // Global response header\n            operation.getResponses().values().forEach(response -> {\n                if (response.getHeaders() == null) {\n                    response.setHeaders(new java.util.LinkedHashMap<>());\n                }\n                response.addHeaderObject(\"X-RateLimit-Remaining\",\n                    new Header()\n                        .description(\"Remaining API calls in current window\")\n                        .schema(new StringSchema().example(\"95\")));\n                response.addHeaderObject(\"X-RateLimit-Reset\",\n                    new Header()\n                        .description(\"Seconds until rate limit resets\")\n                        .schema(new StringSchema().example(\"42\")));\n            });\n\n            return operation;\n        };\n    }\n\n    @Bean\n    public GlobalOpenApiCustomizer globalResponseHeaderCustomizer() {\n        return openApi -> {\n            // Add global headers at the spec level for all responses\n            var components = openApi.getComponents();\n            if (components == null) {\n                components = new io.swagger.v3.oas.models.Components();\n                openApi.setComponents(components);\n            }\n\n            var globalHeaders = new java.util.LinkedHashMap<String, Header>();\n            globalHeaders.put(\"X-Application-Name\", new Header()\n                .description(\"Application name\")\n                .schema(new StringSchema().example(\"PetClinic-API\"))\n                .required(true));\n            globalHeaders.put(\"X-Application-Version\", new Header()\n                .description(\"Application version\")\n                .schema(new StringSchema().example(\"2.5.0\"))\n                .required(true));\n\n            // These appear under \"Headers\" in components\n            components.setHeaders(globalHeaders);\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-custom-operation-meta-annotation",
+      children: "13. Custom @Operation Meta-Annotation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Compose a reusable annotation that bundles ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Operation"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@ApiResponses"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SecurityRequirement"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Operation;\nimport io.swagger.v3.oas.annotations.media.Content;\nimport io.swagger.v3.oas.annotations.media.Schema;\nimport io.swagger.v3.oas.annotations.responses.ApiResponse;\nimport io.swagger.v3.oas.annotations.security.SecurityRequirement;\nimport org.springframework.core.annotation.AliasFor;\n\nimport java.lang.annotation.*;\n\n@Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})\n@Retention(RetentionPolicy.RUNTIME)\n@Inherited\n@Operation\n@ApiResponse(\n    responseCode = \"401\",\n    description = \"Authentication required — provide a valid JWT token\",\n    content = @Content(schema = @Schema(implementation = ErrorResponse.class))\n)\n@ApiResponse(\n    responseCode = \"403\",\n    description = \"Insufficient permissions\",\n    content = @Content(schema = @Schema(implementation = ErrorResponse.class))\n)\n@ApiResponse(\n    responseCode = \"500\",\n    description = \"Internal server error\",\n    content = @Content(schema = @Schema(implementation = ErrorResponse.class))\n)\n@SecurityRequirement(name = \"BearerAuth\")\npublic @interface SecuredOperation {\n\n    @AliasFor(annotation = Operation.class, attribute = \"summary\")\n    String summary() default \"\";\n\n    @AliasFor(annotation = Operation.class, attribute = \"description\")\n    String description() default \"\";\n\n    @AliasFor(annotation = Operation.class, attribute = \"operationId\")\n    String operationId() default \"\";\n\n    @AliasFor(annotation = Operation.class, attribute = \"deprecated\")\n    boolean deprecated() default false;\n\n    @AliasFor(annotation = Operation.class, attribute = \"tags\")\n    String[] tags() default {};\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Also create a read-only variant\n@Target(ElementType.METHOD)\n@Retention(RetentionPolicy.RUNTIME)\n@SecuredOperation                    // inherits security + common error responses\n@ApiResponse(\n    responseCode = \"200\",\n    description = \"Success\"\n)\n@ApiResponse(responseCode = \"404\", description = \"Resource not found\")\npublic @interface ReadOperation {\n    @AliasFor(annotation = Operation.class, attribute = \"summary\")\n    String summary() default \"\";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@RestController\n@RequestMapping(\"/api/pets\")\n@Tag(name = \"Pet Management\")\npublic class MetaAnnotationController {\n\n    @GetMapping(\"/{id}\")\n    @ReadOperation(summary = \"Find pet by ID\")\n    public ResponseEntity<Pet> getPet(@PathVariable Long id) {\n        return ResponseEntity.ok(petService.findById(id));\n    }\n\n    @PostMapping\n    @SecuredOperation(\n        summary = \"Create a new pet\",\n        description = \"Requires pets:write scope\"\n    )\n    @ApiResponse(responseCode = \"201\", description = \"Pet created\")\n    @ApiResponse(responseCode = \"400\", description = \"Validation error\")\n    public ResponseEntity<Pet> createPet(@Valid @RequestBody CreatePetRequest request) {\n        return ResponseEntity.status(201).body(petService.create(request));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-openapicustomizer--programmatic-spec-manipulation",
+      children: "14. OpenApiCustomizer — Programmatic Spec Manipulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.models.OpenAPI;\nimport io.swagger.v3.oas.models.Paths;\nimport io.swagger.v3.oas.models.examples.Example;\nimport io.swagger.v3.oas.models.info.Contact;\nimport io.swagger.v3.oas.models.info.Info;\nimport io.swagger.v3.oas.models.media.Content;\nimport io.swagger.v3.oas.models.media.MediaType;\nimport io.swagger.v3.oas.models.media.Schema;\nimport io.swagger.v3.oas.models.parameters.RequestBody;\nimport io.swagger.v3.oas.models.responses.ApiResponse;\nimport io.swagger.v3.oas.models.responses.ApiResponses;\nimport io.swagger.v3.oas.models.servers.Server;\nimport org.springdoc.core.customizers.OpenApiCustomizer;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\nimport java.math.BigDecimal;\nimport java.util.List;\nimport java.util.Map;\n\n@Configuration\npublic class OpenApiCustomizerConfig {\n\n    @Bean\n    public OpenApiCustomizer serverInfoCustomizer() {\n        return openApi -> {\n            // Add a server dynamically\n            openApi.getServers().add(0, new Server()\n                .url(\"https://canary.petclinic.io/v2\")\n                .description(\"Canary server (experimental)\"));\n\n            // Update the info description\n            Info info = openApi.getInfo();\n            if (info != null) {\n                info.setDescription(info.getDescription()\n                    + \"\\n\\n---\\n*Generated at: \" + java.time.Instant.now() + \"*\");\n            }\n        };\n    }\n\n    @Bean\n    public OpenApiCustomizer healthEndpointCustomizer() {\n        return openApi -> {\n            // Add a hidden health path to a custom group\n            var healthPath = new io.swagger.v3.oas.models.PathItem();\n            healthPath.setGet(new io.swagger.v3.oas.models.Operation()\n                .operationId(\"healthCheck\")\n                .summary(\"Health check endpoint\")\n                .tags(List.of(\"System\"))\n                .addTagsItem(\"Health\")\n                .responses(new ApiResponses()\n                    .addApiResponse(\"200\", new ApiResponse()\n                        .description(\"OK\")\n                        .content(new Content()\n                            .addMediaType(\"application/json\", new MediaType()\n                                .schema(new Schema<>().$ref(\"#/components/schemas/HealthResponse\")))))));\n\n            openApi.path(\"/health\", healthPath);\n        };\n    }\n\n    @Bean\n    public OpenApiCustomizer schemaCustomizer() {\n        return openApi -> {\n            var schemas = openApi.getComponents().getSchemas();\n            if (schemas == null) return;\n\n            // Add a shared \"Pagination\" schema used by multiple endpoints\n            schemas.put(\"PaginationInfo\", new Schema<>()\n                .type(\"object\")\n                .description(\"Pagination metadata\")\n                .addProperty(\"page\", new Schema<>().type(\"integer\").example(0))\n                .addProperty(\"size\", new Schema<>().type(\"integer\").example(20))\n                .addProperty(\"totalElements\", new Schema<>().type(\"integer\").example(150))\n                .addProperty(\"totalPages\", new Schema<>().type(\"integer\").example(8)));\n\n            // Add a deprecation notice to a schema\n            if (schemas.containsKey(\"PetV1\")) {\n                schemas.get(\"PetV1\").setDescription(\n                    schemas.get(\"PetV1\").getDescription()\n                        + \" **Deprecated**: Use Pet instead.\");\n            }\n        };\n    }\n\n    @Bean\n    public OpenApiCustomizer tagCustomizer() {\n        return openApi -> {\n            // Sort tags alphabetically\n            if (openApi.getTags() != null) {\n                openApi.getTags().sort((a, b) ->\n                    String.CASE_INSENSITIVE_ORDER.compare(a.getName(), b.getName()));\n            }\n\n            // Add a description to a tag if missing\n            openApi.getTags().forEach(tag -> {\n                if (tag.getDescription() == null || tag.getDescription().isBlank()) {\n                    tag.setDescription(\"Operations related to \" + tag.getName());\n                }\n            });\n        };\n    }\n\n    @Bean\n    public OpenApiCustomizer errorResponseCustomizer() {\n        return openApi -> {\n            // Register common error response schema\n            var schemas = openApi.getComponents().getSchemas();\n            if (schemas == null || !schemas.containsKey(\"ErrorResponse\")) {\n                schemas.put(\"ErrorResponse\", new Schema<>()\n                    .type(\"object\")\n                    .description(\"Standard error response\")\n                    .addProperty(\"status\", new Schema<>()\n                        .type(\"integer\").description(\"HTTP status code\").example(400))\n                    .addProperty(\"error\", new Schema<>()\n                        .type(\"string\").description(\"Error type\").example(\"Bad Request\"))\n                    .addProperty(\"message\", new Schema<>()\n                        .type(\"string\").description(\"Human-readable message\")\n                        .example(\"Validation failed for field 'name'\"))\n                    .addProperty(\"path\", new Schema<>()\n                        .type(\"string\").description(\"Request path\").example(\"/api/pets\"))\n                    .addProperty(\"timestamp\", new Schema<>()\n                        .type(\"string\").format(\"date-time\")\n                        .example(\"2026-03-15T10:30:00Z\")));\n            }\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-hiding-endpoints",
+      children: "15. Hiding Endpoints"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Three mechanisms for excluding endpoints from the spec."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.Hidden;\nimport io.swagger.v3.oas.annotations.Operation;\nimport io.swagger.v3.oas.annotations.Parameter;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api\")\npublic class HiddenEndpointsController {\n\n    // 1. @Hidden on the method\n    @Hidden\n    @GetMapping(\"/internal/cleanup\")\n    public ResponseEntity<Void> cleanup() {\n        return ResponseEntity.ok().build();\n    }\n\n    // 2. @Operation hidden = true\n    @GetMapping(\"/internal/metrics\")\n    @Operation(summary = \"DO NOT EXPOSE\", hidden = true)\n    public ResponseEntity<Metrics> getInternalMetrics() {\n        return ResponseEntity.ok(new Metrics());\n    }\n\n    // 3. @Parameter(hidden = true) — hides a specific parameter\n    @GetMapping(\"/pets\")\n    @Operation(summary = \"Search pets\")\n    public ResponseEntity<List<Pet>> search(\n            @RequestParam String q,\n            @Parameter(hidden = true)\n            @RequestParam(defaultValue = \"false\") boolean bypassCache,\n            @Parameter(hidden = true)\n            @RequestHeader(\"X-Debug\") String debugHeader) {\n\n        if (bypassCache) cacheService.evict();\n        return ResponseEntity.ok(petService.search(q));\n    }\n\n    // 4. Path-based exclusion via GroupedOpenApi\n    // See GroupedOpenApiConfig.pathsToExclude\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-swagger-ui-customization",
+      children: "16. Swagger UI Customization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml\nspringdoc:\n  api-docs:\n    path: /v3/api-docs\n    enabled: true\n  swagger-ui:\n    path: /swagger-ui.html\n    enabled: true\n    display-request-duration: true\n    display-operation-id: true\n    default-models-expand-depth: 2\n    default-model-expand-depth: 3\n    doc-expansion: list\n    filter: true\n    max-display-tags: 20\n    operations-sorter: method\n    tags-sorter: alpha\n    show-common-extensions: true\n    show-extensions: true\n    supported-submit-methods: get,put,post,delete,patch\n    syntax-highlight:\n      activated: true\n      theme: monokai\n    try-it-out-enabled: true\n    use-root-path: true\n    urls-primary-name: public\n    url: /v3/api-docs\n    layout: BaseLayout\n    deep-linking: true\n    default-model-rendering: example\n    confirm-dialog: true\n  cache:\n    disabled: true\n  show-actuator: false\n  model-and-view-allowed: false\n  paths-to-match: /api/**\n  packages-to-scan: com.petclinic\n  writer-with-order-by-keys: true\n  use-management-port: false\n  group-configs:\n    - group: public\n      display-name: Public API\n      paths-to-match: /api/public/**,/api/pets/**\n    - group: admin\n      display-name: Admin API\n      paths-to-match: /api/admin/**\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-properties",
+        children: "# application.properties alternative\nspringdoc.api-docs.path=/v3/api-docs\nspringdoc.api-docs.enabled=true\nspringdoc.swagger-ui.path=/swagger-ui.html\nspringdoc.swagger-ui.display-request-duration=true\nspringdoc.swagger-ui.display-operation-id=true\nspringdoc.swagger-ui.default-models-expand-depth=2\nspringdoc.swagger-ui.default-model-expand-depth=3\nspringdoc.swagger-ui.doc-expansion=list\nspringdoc.swagger-ui.filter=true\nspringdoc.swagger-ui.max-display-tags=20\nspringdoc.swagger-ui.operations-sorter=method\nspringdoc.swagger-ui.tags-sorter=alpha\nspringdoc.swagger-ui.show-common-extensions=true\nspringdoc.swagger-ui.show-extensions=true\nspringdoc.swagger-ui.syntax-highlight.activated=true\nspringdoc.swagger-ui.syntax-highlight.theme=monokai\nspringdoc.swagger-ui.try-it-out-enabled=true\nspringdoc.swagger-ui.use-root-path=true\nspringdoc.swagger-ui.urls-primary-name=public\nspringdoc.swagger-ui.deep-linking=true\nspringdoc.cache.disabled=true\nspringdoc.show-actuator=false\nspringdoc.paths-to-match=/api/**\nspringdoc.packages-to-scan=com.petclinic\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For fully custom Swagger UI branding, place files in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src/main/resources/static/"
+      }), " and use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "swagger-ui.config"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "springdoc:\n  swagger-ui:\n    urls:\n      - name: Public\n        url: /v3/api-docs/public\n      - name: Admin\n        url: /v3/api-docs/admin\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "You can also inject custom JavaScript or CSS:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springdoc.core.properties.SwaggerUiConfigParameters;\nimport org.springdoc.core.properties.SwaggerUiConfigProperties;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\n@Configuration\npublic class SwaggerUiBrandingConfig {\n\n    @Bean\n    public SwaggerUiConfigParameters swaggerUiConfigParameters() {\n        SwaggerUiConfigParameters params = new SwaggerUiConfigParameters(\n            new SwaggerUiConfigProperties());\n        params.setCustomSiteTitle(\"PetClinic API Docs\");\n        // Additional customization in application.yml\n        return params;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "17-complete-working-example",
+      children: "17. Complete Working Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.ExternalDocumentation;\nimport io.swagger.v3.oas.annotations.OpenAPIDefinition;\nimport io.swagger.v3.oas.annotations.enums.SecuritySchemeType;\nimport io.swagger.v3.oas.annotations.info.Contact;\nimport io.swagger.v3.oas.annotations.info.Info;\nimport io.swagger.v3.oas.annotations.info.License;\nimport io.swagger.v3.oas.annotations.security.SecurityScheme;\nimport io.swagger.v3.oas.annotations.servers.Server;\nimport io.swagger.v3.oas.annotations.tags.Tag;\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\n@OpenAPIDefinition(\n    info = @Info(\n        title = \"PetClinic API\",\n        version = \"2.0.0\",\n        description = \"Complete REST API for veterinary clinic management.\",\n        contact = @Contact(\n            name = \"API Support\",\n            email = \"support@petclinic.io\",\n            url = \"https://petclinic.io/support\"\n        ),\n        license = @License(\n            name = \"Apache 2.0\",\n            url = \"https://www.apache.org/licenses/LICENSE-2.0\"\n        ),\n        termsOfService = \"https://petclinic.io/terms\"\n    ),\n    servers = {\n        @Server(url = \"https://api.petclinic.io/v2\", description = \"Production\"),\n        @Server(url = \"https://staging-api.petclinic.io/v2\", description = \"Staging\"),\n        @Server(url = \"http://localhost:8080/api\", description = \"Local\")\n    },\n    externalDocs = @ExternalDocumentation(\n        url = \"https://wiki.petclinic.io/api\",\n        description = \"Full API wiki\"\n    ),\n    tags = {\n        @Tag(name = \"Pet Management\", description = \"CRUD for pets\"),\n        @Tag(name = \"Owner Management\", description = \"CRUD for owners\"),\n        @Tag(name = \"Medical Records\", description = \"Pet medical history\"),\n        @Tag(name = \"Appointments\", description = \"Schedule and manage appointments\"),\n        @Tag(name = \"Admin Operations\", description = \"Admin-only endpoints\")\n    }\n)\n@SecurityScheme(\n    name = \"BearerAuth\",\n    type = SecuritySchemeType.HTTP,\n    scheme = \"bearer\",\n    bearerFormat = \"JWT\",\n    description = \"JWT token obtained from /auth/login\"\n)\n@SecurityScheme(\n    name = \"OAuth2\",\n    type = SecuritySchemeType.OAUTH2,\n    description = \"OAuth2 authorization code flow\",\n    flows = @io.swagger.v3.oas.annotations.security.OAuthFlows(\n        authorizationCode = @io.swagger.v3.oas.annotations.security.OAuthFlow(\n            authorizationUrl = \"https://auth.petclinic.io/oauth2/authorize\",\n            tokenUrl = \"https://auth.petclinic.io/oauth2/token\",\n            scopes = {\n                @io.swagger.v3.oas.annotations.security.OAuthScope(\n                    name = \"pets:read\", description = \"Read pets\"),\n                @io.swagger.v3.oas.annotations.security.OAuthScope(\n                    name = \"pets:write\", description = \"Write pets\"),\n            }\n        )\n    )\n)\npublic class PetClinicApplication {\n\n    public static void main(String[] args) {\n        SpringApplication.run(PetClinicApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "18-testing-the-openapi-spec",
+      children: "18. Testing the OpenAPI Spec"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.web.servlet.MockMvc;\n\nimport static org.hamcrest.Matchers.hasItem;\nimport static org.hamcrest.Matchers.hasSize;\nimport static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;\n\n@SpringBootTest\n@AutoConfigureMockMvc\nclass OpenApiSpecTest {\n\n    @Autowired\n    private MockMvc mockMvc;\n\n    @Test\n    void openApiJsonIsValid() throws Exception {\n        mockMvc.perform(get(\"/v3/api-docs\")\n                .accept(\"application/json\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.openapi\").value(\"3.0.1\"))\n            .andExpect(jsonPath(\"$.info.title\").value(\"PetClinic API\"))\n            .andExpect(jsonPath(\"$.info.version\").value(\"2.0.0\"))\n            .andExpect(jsonPath(\"$.paths./api/pets\").exists())\n            .andExpect(jsonPath(\"$.paths./api/pets.get\").exists())\n            .andExpect(jsonPath(\"$.paths./api/pets.post\").exists())\n            .andExpect(jsonPath(\"$.paths./api/pets/{id}\").exists())\n            .andExpect(jsonPath(\"$.components.securitySchemes.BearerAuth\").exists())\n            .andExpect(jsonPath(\"$.servers\", hasSize(3)));\n    }\n\n    @Test\n    void groupedOpenApiEndpointsExist() throws Exception {\n        mockMvc.perform(get(\"/v3/api-docs/public\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.info.title\").value(\"Public PetClinic API\"));\n\n        mockMvc.perform(get(\"/v3/api-docs/admin\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.info.title\").value(\"Admin PetClinic API\"));\n    }\n\n    @Test\n    void swaggerUiLoads() throws Exception {\n        mockMvc.perform(get(\"/swagger-ui/index.html\"))\n            .andExpect(status().isOk())\n            .andExpect(header().string(\"Content-Type\",\n                org.hamcrest.Matchers.containsString(\"text/html\")));\n    }\n\n    @Test\n    void petEndpointHasExpectedAnnotations() throws Exception {\n        mockMvc.perform(get(\"/v3/api-docs\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.paths./api/pets.get.summary\")\n                .value(\"List all pets\"))\n            .andExpect(jsonPath(\"$.paths./api/pets.get.parameters[*].name\",\n                hasItem(\"page\")))\n            .andExpect(jsonPath(\"$.paths./api/pets.get.parameters[*].name\",\n                hasItem(\"size\")))\n            .andExpect(jsonPath(\"$.paths./api/pets.post.responses.201.description\")\n                .value(\"Pet created\"));\n    }\n\n    @Test\n    void hiddenEndpointsAreExcluded() throws Exception {\n        String spec = mockMvc.perform(get(\"/v3/api-docs\"))\n            .andReturn()\n            .getResponse()\n            .getContentAsString();\n\n        // Internal endpoints marked @Hidden should not appear\n        org.assertj.core.api.Assertions.assertThat(spec)\n            .doesNotContain(\"/api/internal/cleanup\")\n            .doesNotContain(\"/api/internal/metrics\");\n    }\n\n    @Test\n    void securitySchemesAreDocumented() throws Exception {\n        mockMvc.perform(get(\"/v3/api-docs\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.components.securitySchemes.BearerAuth.type\")\n                .value(\"http\"))\n            .andExpect(jsonPath(\"$.components.securitySchemes.BearerAuth.scheme\")\n                .value(\"bearer\"))\n            .andExpect(jsonPath(\"$.components.securitySchemes.OAuth2.type\")\n                .value(\"oauth2\"))\n            .andExpect(jsonPath(\"$.components.securitySchemes.OAuth2.flows.authorizationCode.authorizationUrl\")\n                .value(\"https://auth.petclinic.io/oauth2/authorize\"));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "19-application-properties-reference",
+      children: "19. Application Properties Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-properties",
+        children: "# ===== SpringDoc Core =====\nspringdoc.api-docs.path=/v3/api-docs\nspringdoc.api-docs.enabled=true\nspringdoc.packages-to-scan=com.petclinic\nspringdoc.paths-to-match=/api/**\nspringdoc.show-actuator=false\nspringdoc.model-and-view-allowed=false\nspringdoc.cache.disabled=true\nspringdoc.writer-with-order-by-keys=true\nspringdoc.use-management-port=false\n\n# ===== Swagger UI =====\nspringdoc.swagger-ui.path=/swagger-ui.html\nspringdoc.swagger-ui.enabled=true\nspringdoc.swagger-ui.display-request-duration=true\nspringdoc.swagger-ui.display-operation-id=true\nspringdoc.swagger-ui.default-models-expand-depth=2\nspringdoc.swagger-ui.doc-expansion=list\nspringdoc.swagger-ui.filter=true\nspringdoc.swagger-ui.operations-sorter=method\nspringdoc.swagger-ui.tags-sorter=alpha\nspringdoc.swagger-ui.try-it-out-enabled=true\nspringdoc.swagger-ui.deep-linking=true\nspringdoc.swagger-ui.syntax-highlight.activated=true\nspringdoc.swagger-ui.syntax-highlight.theme=monokai\n\n# ===== Grouped Configs =====\nspringdoc.group-configs[0].group=public\nspringdoc.group-configs[0].display-name=Public API\nspringdoc.group-configs[0].paths-to-match=/api/public/**,/api/pets/**\nspringdoc.group-configs[1].group=admin\nspringdoc.group-configs[1].display-name=Admin API\nspringdoc.group-configs[1].paths-to-match=/api/admin/**\n\n# ===== Cache =====\nspringdoc.cache.disabled=true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SpringDoc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-config OpenAPI 3.0 for Spring Boot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPIDefinition, GroupedOpenApi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REST API documentation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Swagger UI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interactive API explorer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Try-it-out feature"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Developer onboarding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPI Spec"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Machine-readable API contract"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON/YAML format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code generation, client SDKs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Endpoint-level documentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "summary, description, operationId"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detailed endpoint docs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ApiResponse"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Response documentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "responseCode, description, content"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error response documentation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "OpenAPI Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SpringDoc Annotation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "info"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenAPIDefinition(info = Info(...))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API metadata"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "servers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server annotation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Base URL configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "paths"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operation + RequestMapping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Endpoint documentation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "components"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Schema annotation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reusable model definitions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SecurityRequirement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auth scheme documentation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Internal API"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Public API"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Partner API"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security Scheme"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Basic auth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OAuth2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate Limits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not documented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+Header annotation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+Header annotation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which dependency adds OpenAPI support to a Spring Boot 3.x project?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) springfox-boot-starter"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) springdoc-openapi-starter-webmvc-ui"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) swagger-annotations"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) openapi-generator"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) springdoc-openapi-starter-webmvc-ui.** SpringDoc is the recommended library for Spring Boot 3.x OpenAPI integration.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What annotation documents an API response status and description?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Operation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) ApiResponse"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Schema"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Tag"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) ApiResponse.** ApiResponse documents the response code, description, and optional content for a specific HTTP status.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How do you group related endpoints in SpringDoc?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Tag annotation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Api grouping"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) GroupedOpenApi bean"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) RequestMapping"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) GroupedOpenApi bean.** Define GroupedOpenApi beans in Configuration to create logical API groups.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "ummary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SpringDoc"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Drop-in dependency; auto-configures ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "/v3/api-docs"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "/swagger-ui/index.html"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Describes endpoint behavior (summary, description, operationId, tags)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@ApiResponse"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Documents each response code with content, schema, and examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Schema"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Annotates model fields with description, example, allowableValues, etc."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Parameter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Documents query/path/header parameters with metadata"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Tag"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Groups related endpoints under a named section"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GroupedOpenApi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring bean that partitions the specification (public/admin/internal)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security Schemes"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Bearer JWT, OAuth2, API Key — defined via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Components"
+            }), " or annotations"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Content/@ExampleObject"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Provide structured request/response examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API Versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Info.version, URL path versioning, media-type or header-based"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HATEOAS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SpringDoc natively supports EntityModel/CollectionModel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OpenApiCustomizer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Programmatically modify the spec before serving"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Global Headers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use OperationCustomizer or OpenApiCustomizer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Meta-Annotations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compose @Operation + common responses into reusable annotations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hiding Endpoints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Hidden, @Operation(hidden=true), pathsToExclude"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-basic-integration",
+      children: "Exercise 1: Basic Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Add SpringDoc to an existing Spring Boot REST application. Verify that:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "/v3/api-docs"
+        }), " returns valid JSON"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "/swagger-ui/index.html"
+        }), " renders interactive docs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["All your ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@RestController"
+        }), " endpoints appear"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-annotate-a-controller",
+      children: "Exercise 2: Annotate a Controller"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Take the following controller and add proper ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Operation"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@ApiResponse"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Parameter"
+      }), " annotations:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@RestController\n@RequestMapping(\"/api/products\")\npublic class ProductController {\n\n    @GetMapping\n    public List<Product> listProducts(\n            @RequestParam(required = false) String category,\n            @RequestParam(defaultValue = \"0\") int page,\n            @RequestParam(defaultValue = \"name\") String sort) {\n        // ...\n    }\n\n    @PostMapping\n    public Product createProduct(@RequestBody CreateProductRequest request) {\n        // ...\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-schema-documentation",
+      children: "Exercise 3: Schema Documentation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Annotate a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Product"
+      }), " DTO with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Schema"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "id (Long, read-only)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "name (String, required, 1-200 chars)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "price (BigDecimal, positive, example 19.99)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "category (enum: ELECTRONICS, CLOTHING, FOOD)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "internalCode (hidden from docs)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-grouped-apis",
+      children: "Exercise 4: Grouped APIs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create three ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "GroupedOpenApi"
+      }), " beans:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "public-api"
+        }), " — paths ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/products/**"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/search/**"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "admin-api"
+        }), " — paths ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/admin/**"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "internal-api"
+        }), " — paths ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/internal/**"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each with a distinct title and description."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-security-scheme",
+      children: "Exercise 5: Security Scheme"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Configure:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A bearer JWT security scheme"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "An OAuth2 authorization code scheme"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Global security requirement"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "One endpoint that overrides global security (no auth required)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "One endpoint that requires both BearerAuth and ApiKey"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-6-custom-meta-annotation",
+      children: "Exercise 6: Custom Meta-Annotation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@AdminOperation"
+      }), " annotation that composes:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Operation"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SecurityRequirement(name = \"BearerAuth\", scopes = {\"admin\"})"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@ApiResponse"
+        }), " for 401, 403, 500 all using a shared ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ErrorResponse"
+        }), " schema"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-7-openapicustomizer",
+      children: "Exercise 7: OpenApiCustomizer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write an ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "OpenApiCustomizer"
+      }), " bean that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Adds a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "X-Clacks-Administrator"
+        }), " header to every response"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Registers a shared ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "PageMetadata"
+        }), " schema"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Removes all paths containing \"internal\" from the public group"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-8-versioning",
+      children: "Exercise 8: Versioning"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Implement header-based API versioning with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "X-API-Version"
+      }), ". The documentation should:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Show both v1 and v2 parameters"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Mark v1 endpoints as ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "deprecated = true"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Surface the current version in the Info description"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-9-swagger-ui-customization",
+      children: "Exercise 9: Swagger UI Customization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Configure Swagger UI to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sort operations by method (GET before POST, etc.)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Show the operation ID column"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Expand tags by default (list mode)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enable the search/filter bar"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Show response duration timers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the monokai syntax theme"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-10-testing-the-spec",
+      children: "Exercise 10: Testing the Spec"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MockMvc"
+      }), " test that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validates the OpenAPI JSON structure"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Confirms a specific endpoint appears with its summary"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Confirms a hidden endpoint does not appear"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asserts security schemes are present"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asserts the info title matches expected value"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "End of Chapter 17 — API Documentation with OpenAPI/Swagger"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

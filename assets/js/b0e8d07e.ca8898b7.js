@@ -1,0 +1,1670 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[37846],{
+
+/***/ 82928
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_system_design_07_message_queues_md_b0e_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-system-design-07-message-queues-md-b0e.json
+const site_docs_courses_system_design_07_message_queues_md_b0e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/system-design/07-message-queues","title":"Chapter 7: Message Queues and Event-Driven Architecture","description":"Previous 08 Microservices Apis","source":"@site/docs/courses/system-design/07-message-queues.md","sourceDirName":"courses/system-design","slug":"/system-design/07-message-queues","permalink":"/ai-engineering-journey/system-design/07-message-queues","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-message-queues","slug":"/system-design/07-message-queues","title":"Chapter 7: Message Queues and Event-Driven Architecture","sidebar_label":"Chapter 7: Message Queues and Event-Driven Architecture","sidebar_position":7},"sidebar":"course-system-design","previous":{"title":"Chapter 6: CAP Theorem and Distributed Consistency","permalink":"/ai-engineering-journey/system-design/06-distributed-consistency"},"next":{"title":"Chapter 8: Microservices and API Design","permalink":"/ai-engineering-journey/system-design/08-microservices-apis"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/system-design/07-message-queues.md
+
+
+const frontMatter = {
+	id: '07-message-queues',
+	slug: '/system-design/07-message-queues',
+	title: 'Chapter 7: Message Queues and Event-Driven Architecture',
+	sidebar_label: 'Chapter 7: Message Queues and Event-Driven Architecture',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 7: Message Queues and Event-Driven Architecture';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Synchronous vs Asynchronous Communication",
+  "id": "synchronous-vs-asynchronous-communication",
+  "level": 3
+}, {
+  "value": "Point-to-Point vs Publish-Subscribe",
+  "id": "point-to-point-vs-publish-subscribe",
+  "level": 3
+}, {
+  "value": "Apache Kafka",
+  "id": "apache-kafka",
+  "level": 3
+}, {
+  "value": "Topics and Partitions",
+  "id": "topics-and-partitions",
+  "level": 4
+}, {
+  "value": "Consumer Groups",
+  "id": "consumer-groups",
+  "level": 4
+}, {
+  "value": "ISR (In-Sync Replicas)",
+  "id": "isr-in-sync-replicas",
+  "level": 4
+}, {
+  "value": "RabbitMQ",
+  "id": "rabbitmq",
+  "level": 3
+}, {
+  "value": "Exchanges",
+  "id": "exchanges",
+  "level": 4
+}, {
+  "value": "Bindings",
+  "id": "bindings",
+  "level": 4
+}, {
+  "value": "Message Lifecycle",
+  "id": "message-lifecycle",
+  "level": 4
+}, {
+  "value": "AWS SQS and SNS",
+  "id": "aws-sqs-and-sns",
+  "level": 3
+}, {
+  "value": "Delivery Guarantees",
+  "id": "delivery-guarantees",
+  "level": 3
+}, {
+  "value": "At-Most-Once",
+  "id": "at-most-once",
+  "level": 4
+}, {
+  "value": "At-Least-Once",
+  "id": "at-least-once",
+  "level": 4
+}, {
+  "value": "Exactly-Once",
+  "id": "exactly-once",
+  "level": 4
+}, {
+  "value": "Kafka Partitioning and Ordering Guarantees",
+  "id": "kafka-partitioning-and-ordering-guarantees",
+  "level": 3
+}, {
+  "value": "Dead-Letter Queues",
+  "id": "dead-letter-queues",
+  "level": 3
+}, {
+  "value": "Event Sourcing",
+  "id": "event-sourcing",
+  "level": 3
+}, {
+  "value": "Advantages",
+  "id": "advantages",
+  "level": 4
+}, {
+  "value": "Rebuilding State",
+  "id": "rebuilding-state",
+  "level": 4
+}, {
+  "value": "Snapshotting",
+  "id": "snapshotting",
+  "level": 4
+}, {
+  "value": "Change Data Capture (CDC)",
+  "id": "change-data-capture-cdc",
+  "level": 3
+}, {
+  "value": "Backpressure",
+  "id": "backpressure",
+  "level": 3
+}, {
+  "value": "Priority Queues",
+  "id": "priority-queues",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: LinkedIn&#39;s Kafka Migration",
+  "id": "example-1-linkedins-kafka-migration",
+  "level": 3
+}, {
+  "value": "Example 2: Uber&#39;s Distributed Event Bus",
+  "id": "example-2-ubers-distributed-event-bus",
+  "level": 3
+}, {
+  "value": "Example 3: Transactional Outbox Pattern",
+  "id": "example-3-transactional-outbox-pattern",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript: Message Queue, Event Bus, and Outbox Pattern",
+  "id": "typescript-message-queue-event-bus-and-outbox-pattern",
+  "level": 3
+}, {
+  "value": "Implementation: Message Queues and Event Streaming",
+  "id": "implementation-message-queues-and-event-streaming",
+  "level": 3
+}, {
+  "value": "TypeScript: MessageQueue, KafkaProducer, and DeadLetterQueue",
+  "id": "typescript-messagequeue-kafkaproducer-and-deadletterqueue",
+  "level": 3
+}, {
+  "value": "Mermaid: Kafka vs RabbitMQ vs SQS Feature Comparison",
+  "id": "mermaid-kafka-vs-rabbitmq-vs-sqs-feature-comparison",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Case Study",
+  "id": "case-study",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-7-message-queues-and-event-driven-architecture",
+        children: "Chapter 7: Message Queues and Event-Driven Architecture"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/06-distributed-consistency",
+          children: "06 Distributed Consistency"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/system-design/08-microservices-apis",
+          children: "08 Microservices Apis"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Contrast synchronous and asynchronous communication patterns in distributed systems and identify when each is appropriate"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Differentiate point-to-point queues from publish-subscribe topics in terms of delivery semantics, fan-out, and coupling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design Kafka-based event pipelines with partitioned topics, consumer groups, and offset management"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze delivery guarantees (at-most-once, at-least-once, exactly-once) and their implementations at the producer, broker, and consumer levels"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement event sourcing patterns using an event store with state reconstruction and change data capture"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply backpressure handling strategies and priority queue patterns in real-time systems"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/07-message-queues/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/07-message-queues/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/07-message-queues/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/07-message-queues/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/system-design/07-message-queues/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/system-design/07-message-queues/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Message queue models, Kafka, RabbitMQ, delivery guarantees"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Publish-subscribe, point-to-point, push vs pull"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Delivery Semantics"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At-most-once, at-least-once, exactly-once"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Broker Comparison"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kafka, RabbitMQ, AWS SQS, Pulsar trade-offs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use Cases"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Async processing, event sourcing, stream processing, CDC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-World"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LinkedIn Kafka, Uber dispatch, Airbnb event bus"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation ? master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/07-message-queues.png",
+        alt: "Message Queue Architectures Flowchart"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "synchronous-vs-asynchronous-communication",
+      children: "Synchronous vs Asynchronous Communication"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it is frequently tested in system design interviews."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept ? it appears in nearly every system design interview. Understand both the how and the why."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Master this concept thoroughly ? it appears in nearly every system design interview.\nIn distributed systems, services communicate either synchronously or asynchronously."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Synchronous communication"
+      }), " blocks the caller until a response is received. HTTP/REST and gRPC are synchronous by default."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client ? HTTP POST ? Service A ? blocks ? Service B ? blocks ? Database\nClient ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? Response\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Asynchronous communication"
+      }), " decouples the sender and receiver through an intermediary (message broker). The sender publishes a message and continues immediately."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Client ? HTTP POST ? Service A ? Publish ? [Queue] ? Service B (eventually)\nClient ? ? ? ? 202 Accepted (immediate)\n                                         ? Service B processes in background\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Synchronous"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Asynchronous"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Coupling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tight — caller knows callee's location"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loose — only the broker is known"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sum of all service times"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Just the publish latency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Availability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires all services up"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Degrades gracefully"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error handling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Immediate failure notification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Needs retry/DLQ mechanisms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Observability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Natural trace context propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed tracing required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited by slowest service"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can buffer spikes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "point-to-point-vs-publish-subscribe",
+      children: "Point-to-Point vs Publish-Subscribe"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid over-engineering. Start simple, measure, then optimize."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Point-to-Point (Queue):"
+      }), " A message is consumed by exactly one consumer. Multiple consumers compete for messages — Kafka consumer groups implement this model."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Producer ? [Queue] ? Consumer A (takes message)\n                       Consumer B (takes next)\n                       Consumer C (idle)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Publish-Subscribe (Topic):"
+      }), " A message is delivered to all subscribers. Each subscriber gets every published message."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Producer ? [Topic] ? Subscriber A\n                     Subscriber B\n                     Subscriber C (all get the same message)\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Queue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Delivery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One consumer per message"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All subscribers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Message retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deleted after ack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retained for configured time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add consumers for parallelism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each subscriber scales independently"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Task distribution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event broadcasting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "apache-kafka",
+      children: "Apache Kafka"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always articulate trade-offs clearly ? interviewers value reasoning over the \"right\" answer."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Apache Kafka is a distributed event streaming platform organized as a commit log. Its architecture centers on topics, partitions, offsets, and consumer groups."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "topics-and-partitions",
+      children: "Topics and Partitions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "topic"
+      }), " is a logical channel for messages of a particular type. Each topic is divided into ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "partitions"
+      }), " — ordered, immutable sequences of messages."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Topic \"orders\":\n  Partition 0: [msg0, msg1, msg2, msg3, ...]\n  Partition 1: [msg0, msg1, msg2, msg3, ...]\n  Partition 2: [msg0, msg1, msg2, msg3, ...]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each message within a partition has a unique ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "offset"
+      }), " (sequential ID). Messages within a partition are strictly ordered — message at offset 10 was published before offset 11. There is no ordering guarantee across partitions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Partition assignment:"
+      }), " The producer chooses which partition to write to. Common strategies:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Round-robin:"
+        }), " Even distribution, no ordering guarantee"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Key-based:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "partition_id = hash(key) % num_partitions"
+        }), " — ensures all messages with the same key go to the same partition (and thus are ordered)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "consumer-groups",
+      children: "Consumer Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Consumers coordinate as a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "consumer group"
+      }), " to share the load of reading from a topic. Each partition is assigned to exactly one consumer within a group."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Topic with 4 partitions:\n  Partition 0 ? Consumer A\n  Partition 1 ? Consumer B\n  Partition 2 ? Consumer C\n  Partition 3 ? Consumer A (balanced, A handles 2 partitions)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If a consumer fails, its partitions are rebalanced to the remaining members. Rebalancing triggers a ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "stop-the-world"
+      }), " phase where no messages are consumed — this is the cost of the consumer group protocol."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Offset management:"
+      }), " Each consumer group tracks its committed offset per partition — the position of the last processed message. When a consumer restarts, it resumes from the committed offset."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Consumer group \"order-processor\", topic \"orders\", partition 0:\n  Committed offset: 42\n  Next read: offset 43\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "isr-in-sync-replicas",
+      children: "ISR (In-Sync Replicas)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each partition is replicated across multiple brokers. The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "leader"
+      }), " handles all reads and writes for the partition. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Followers"
+      }), " replicate the leader's log."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ISR set contains all followers that are fully caught up with the leader. A follower is in-sync if it has not fallen behind by more than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "replica.lag.time.max.ms"
+      }), " (default: 30s)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Partition with replication factor 3:\n  Leader: Broker 0 (handles reads/writes)\n  Follower: Broker 1 (in ISR)\n  Follower: Broker 2 (out of ISR — lagging by 45s ? removed from ISR)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "acks"
+        }), " producer setting:"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "acks=0:  Fire-and-forget. Producer does not wait for acknowledgment.\n         Highest throughput, possible data loss.\n\nacks=1:  Leader acknowledges after writing to its log.\n         Durable on the leader. If leader crashes before replication, data lost.\n\nacks=all (or -1): Leader waits for all ISR replicas to acknowledge.\n                  Strongest durability. Highest latency.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rabbitmq",
+      children: "RabbitMQ"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "RabbitMQ is a message broker implementing the AMQP 0-9-1 protocol. It centers on exchanges, queues, and bindings."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "exchanges",
+      children: "Exchanges"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A producer sends messages to an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "exchange"
+      }), ", which routes them to queues based on binding rules. RabbitMQ supports four exchange types:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Direct Exchange:\n  Routing key exact match. \"orders.create\" ? bound queue \"order_queue\"\n\nTopic Exchange:\n  Routing key pattern match. \"orders.*\" ? matches \"orders.create\", \"orders.update\"\n\nFanout Exchange:\n  Broadcast to all bound queues, ignoring routing key.\n  Ideal for events that all services should receive.\n\nHeaders Exchange:\n  Route based on header attributes instead of routing key.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bindings",
+      children: "Bindings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "binding"
+      }), " connects a queue to an exchange with an optional routing key pattern."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Create exchange and queue\nchannel.exchange_declare(exchange='orders', exchange_type='topic')\nchannel.queue_declare(queue='email_notifications')\n\n# Bind queue to exchange with routing pattern\nchannel.queue_bind(\n    exchange='orders',\n    queue='email_notifications',\n    routing_key='order.confirmed'\n)\n\n# Publish\nchannel.basic_publish(\n    exchange='orders',\n    routing_key='order.confirmed',\n    body=json.dumps(order_data)\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "message-lifecycle",
+      children: "Message Lifecycle"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Producer publishes to exchange"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Exchange routes to queues via bindings"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message sits in queue until a consumer picks it up"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Consumer acknowledges (acks) after processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Broker removes acknowledged message"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If consumer dies without ack, message is requeued"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "aws-sqs-and-sns",
+      children: "AWS SQS and SNS"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Amazon SQS (Simple Queue Service)"
+      }), " is a fully managed message queue with two types:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Standard:"
+        }), " High throughput (virtually unlimited), at-least-once delivery, best-effort ordering"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FIFO:"
+        }), " First-in-first-out, exactly-once processing, limited to 3000 TPS with batching"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "SQS Standard:\n  Producer ? SQS ? Consumer A\n                     Consumer B (may receive duplicate)\n\nSQS FIFO:\n  Producer (with MessageGroupId) ? SQS FIFO ? Consumer\n  Messages in the same MessageGroupId are delivered in order\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Amazon SNS (Simple Notification Service)"
+      }), " is a pub-sub messaging service. SNS pushes messages to subscribers, which can be SQS queues, Lambda functions, HTTP endpoints, email, or SMS."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "SNS Topic \"order_events\":\n  Subscriber: SQS queue (email service)\n  Subscriber: SQS queue (analytics service)\n  Subscriber: Lambda function (inventory update)\n  Subscriber: HTTP endpoint (legacy system)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SNS + SQS fan-out pattern"
+      }), " is the standard way to broadcast events in AWS:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Producer ? SNS Topic ? SQS Queue A ? Service A\n                       SQS Queue B ? Service B\n                       SQS Queue C ? Service C\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This combines SNS fan-out (each service gets all events) with SQS buffering (services can process at their own pace)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "delivery-guarantees",
+      children: "Delivery Guarantees"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "at-most-once",
+      children: "At-Most-Once"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Messages are delivered zero or one time. The producer does not retry on failure. This is the weakest guarantee but offers the lowest latency."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Producer ? sends message (no retry) ? Broker ? forwards to consumer (no retry)\nIf any step fails ? message is lost\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kafka:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "acks=0"
+      }), " with no retries from the producer."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Use case:"
+      }), " Metrics, monitoring data where losing occasional samples is acceptable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "at-least-once",
+      children: "At-Least-Once"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Messages are retried until acknowledged. A consumer may process the same message multiple times."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Producer ? sends ? retry on failure ? Broker ? forwards ? consumer acks ? done\nIf consumer crashes before ack ? message is redelivered ? processed twice\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kafka:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "acks=all"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "enable.idempotence=true"
+      }), " at the producer level. At the consumer level, messages are redelivered if the consumer fails before committing the offset."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Use case:"
+      }), " Must not lose data, can tolerate duplicates (or can deduplicate at the application level)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "exactly-once",
+      children: "Exactly-Once"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Messages are delivered exactly once, even in the presence of failures. This is the hardest guarantee to achieve in a distributed system."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exactly-once in Kafka (EOS):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Idempotent producer:"
+          }), " Each batch carries a unique producer ID (PID) and sequence number. The broker deduplicates based on this — if a batch is received twice with the same PID and sequence number, it is ignored."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Transactional writes:"
+          }), " The producer wraps multiple messages into a transaction. All messages in the transaction become visible atomically. The broker writes a ", (0,jsx_runtime.jsx)(_components.em, {
+            children: "commit marker"
+          }), " to the log."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Consumer isolation:"
+          }), " Consumers read only committed messages by setting ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "isolation.level=read_committed"
+          }), "."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Kafka exactly-once flow:\n  Producer ? BEGIN TRANSACTION ? write msg1 ? write msg2 ? COMMIT TRANSACTION\n  Broker: writes msg1, msg2, then commit marker\n  Consumer (read_committed): sees msg1, msg2 only after commit marker\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Limitation:"
+      }), " Exactly-once guarantees apply within a single Kafka cluster and single producer-consumer pair. Cross-system exactly-once (Kafka ? Database) requires the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "transactional outbox pattern"
+      }), " or idempotent consumers."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "kafka-partitioning-and-ordering-guarantees",
+      children: "Kafka Partitioning and Ordering Guarantees"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Ordering in Kafka is guaranteed ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "within a partition"
+      }), " only. Messages with the same key always go to the same partition, preserving their order."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Topic \"user-events\", partitioned by user_id:\n  Partition 0 (user_id % 3 = 0):\n    msg: user_3 login\n    msg: user_3 page_view\n    msg: user_3 logout\n    (All events for user_3 are in order)\n\n  Partition 1 (user_id % 3 = 1):\n    msg: user_1 login\n    msg: user_1 page_view\n    (User_1 events in order)\n\nThere is NO ordering guarantee between partition 0 and partition 1.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "If global ordering is required:"
+      }), " Use a single partition. This limits parallelism to 1 consumer. In practice, most systems need ordering within an entity (user, order) rather than global ordering."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dead-letter-queues",
+      children: "Dead-Letter Queues"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A dead-letter queue (DLQ) stores messages that cannot be processed successfully. Messages go to the DLQ after exceeding the retry limit."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Consumer ? processing fails ? retry_queue (with delay)\n             ? retry 1 (fails) ? retry 2 (fails) ? retry 3 (fails)\n             ? dead_letter_queue (manual inspection)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Common reasons for DLQ placement:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deserialization failure (malformed payload)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Downstream service unavailable (persistent)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Business logic violation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message exceeds time-to-live"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "DLQ analysis:"
+      }), " A growing DLQ indicates systemic issues. Monitor DLQ depth and alert when it exceeds thresholds. Tools like Kafka's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "kafkacat"
+      }), " or AWS SQS DLQ redrive allow re-processing after fixes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "event-sourcing",
+      children: "Event Sourcing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Event sourcing persists state changes as a sequence of events rather than storing the current state directly. The current state is derived by replaying events (projection)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Event Store (ordered sequence):\n  Event 1: AccountCreated(id=42, owner=\"Alice\")\n  Event 2: MoneyDeposited(account=42, amount=500)\n  Event 3: MoneyWithdrawn(account=42, amount=100)\n  Event 4: AccountFrozen(account=42)\n\nCurrent state (replay all events):\n  Account 42: balance=400, status=FROZEN\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages",
+      children: "Advantages"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complete audit log:"
+        }), " Every state change is recorded with full history"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Temporal queries:"
+        }), " \"What was the balance on March 15?\" (replay up to that point)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Debugging:"
+        }), " Reconstruct the exact state that led to a bug"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Alternative projections:"
+        }), " Build read models for different use cases from the same events"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rebuilding-state",
+      children: "Rebuilding State"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def rebuild_account_state(events):\n    account = None\n    for event in events:\n        if event.type == \"AccountCreated\":\n            account = Account(event.id, event.owner, 0)\n        elif event.type == \"MoneyDeposited\":\n            account.balance += event.amount\n        elif event.type == \"MoneyWithdrawn\":\n            account.balance -= event.amount\n        elif event.type == \"AccountFrozen\":\n            account.status = \"FROZEN\"\n    return account\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "snapshotting",
+      children: "Snapshotting"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Replaying all events from the beginning becomes expensive. Snapshots periodically save the current state. Rebuilding from a snapshot requires replaying only events after the snapshot."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Snapshot at event 1000:\n  Account 42: balance=250, status=ACTIVE\n\nRebuild after snapshot:\n  Read snapshot ? replay events 1001, 1002, 1003\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "change-data-capture-cdc",
+      children: "Change Data Capture (CDC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "CDC captures row-level changes in a database and streams them as events. Debezium is the most popular CDC platform."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "MySQL ? Debezium ? Kafka Topic \"db.orders.orders\"\n  Event: {\n    \"op\": \"c\",          // create\n    \"before\": null,\n    \"after\": {\n      \"id\": 42,\n      \"status\": \"CREATED\",\n      \"total\": 99.99\n    },\n    \"source\": {\n      \"db\": \"orders\",\n      \"table\": \"orders\",\n      \"ts_ms\": 1234567890\n    }\n  }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Debezium connectors:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MySQL/PostgreSQL: Reads binlog/WAL"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MongoDB: Reads oplog"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SQL Server: Reads CDC tables"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Oracle: Reads LogMiner or XStream"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Use Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Streaming data to search indexes (Elasticsearch)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Invalidating caches"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Populating analytics data warehouses"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Triggering microservice workflows"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "backpressure",
+      children: "Backpressure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Backpressure occurs when a consumer cannot process messages as fast as the producer publishes them. Without backpressure, the system degrades — queues grow unbounded, memory fills, and latency increases."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Strategies:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Blocking producer:"
+          }), " The consumer signals the producer to slow down (throttling at the protocol level). The producer blocks when the buffer is full."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Drop messages:"
+          }), " The system discards excess messages. Acceptable for metrics where freshness matters more than completeness."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Back-pressure via bounded queues:"
+          }), " The broker enforces a maximum queue size. Once full, new messages are rejected or old ones evicted."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive streams (Reactive Manifesto):"
+          }), " Protocol-level backpressure (e.g., RSocket, ReactiveX). The consumer tells the producer exactly how many more items it can handle."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// ReactiveX example — backpressure via request(n)\nObservable.range(1, 1000)\n    .subscribe(new Subscriber<Integer>() {\n        @Override\n        public void onStart() {\n            request(1);  // start with 1\n        }\n\n        @Override\n        public void onNext(Integer n) {\n            process(n);  // process\n            request(1);  // request next\n        }\n    });\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kafka backpressure:"
+      }), " Kafka handles backpressure through consumer polling. The consumer calls ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "poll(maxRecords)"
+      }), " — the broker sends at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "maxRecords"
+      }), " messages. The consumer controls the rate. If the consumer falls behind, messages accumulate on the broker (retained for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "retention.ms"
+      }), "). This provides natural backpressure — the consumer processes at its own speed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "priority-queues",
+      children: "Priority Queues"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A priority queue delivers higher-priority messages before lower-priority ones. Implementation approaches:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Separate queues per priority level:"
+        }), " Consumers drain higher-priority queues first."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Priority Queue Pattern:\n  High-priority queue ? consumer (drains this first)\n  Medium-priority queue ? consumer (drains this when high is empty)\n  Low-priority queue ? consumer (drains when above are empty)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Priority field in message:"
+          }), " Consumer sorts by priority before processing. Works for small batches but does not scale."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Dedicated broker feature:"
+          }), " RabbitMQ supports priority queues via the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "x-max-priority"
+          }), " argument."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# RabbitMQ priority queue\nchannel.queue_declare(\n    queue='task_queue',\n    arguments={'x-max-priority': 10}\n)\n\nchannel.basic_publish(\n    exchange='',\n    routing_key='task_queue',\n    body=message,\n    properties=pika.BasicProperties(\n        priority=5   # 0-10\n    )\n)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-linkedins-kafka-migration",
+      children: "Example 1: LinkedIn's Kafka Migration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "LinkedIn built Kafka to solve the problem of data integration across hundreds of services. Before Kafka, LinkedIn used point-to-point connections:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "LinkedIn before Kafka:\n  Service A ? direct HTTP ? Service B\n  Service A ? database poll ? Service C\n  Service A ? custom socket ? analytics\n  Each integration required custom code, different protocols\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kafka Architecture at LinkedIn:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Services ? Kafka Broker Cluster ? Multiple consumers:\n  ? Hadoop (batch analytics)\n  ? Espresso (real-time serving)\n  ? Search index\n  ? Monitoring dashboards\n  ? Downstream services\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key design decisions:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "100+ partitions per topic for parallelism"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Consumer groups for independent scaling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Retention-based storage (7 days by default)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Replication factor of 3 for durability"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Migration strategy:"
+      }), " Each integration was migrated one at a time. The old system and Kafka ran in parallel until the new pipeline was verified. LinkedIn reported a 10x throughput improvement and elimination of custom integration code."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Metrics after migration:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "7 million messages/second peak throughput"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "50 brokers in the largest cluster"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "p99 latency under 50ms"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-ubers-distributed-event-bus",
+      children: "Example 2: Uber's Distributed Event Bus"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Uber built its event bus (uForwarder) on Kafka to handle its microservice ecosystem."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Uber's topology:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Ringpop (consistent hashing) ? Kafka Cluster\n  Each ringpop node runs a uForwarder process\n  uForwarder writes to Kafka partitions\n\nServices publish to:\n  Topic: \"location_updates\" (100 partitions)\n    Partition 0: GPS data for California\n    Partition 1: GPS data for New York\n    ...\n\nConsumers:\n  Trip matching service\n  Pricing engine\n  Surge detection\n  Driver tracking\n  ETA predictions\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Partitioning strategy:"
+      }), " Uber partitions by geographical region (city/state). All events for a city go to the same partition, ensuring ordering for trip events."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Challenge:"
+      }), " The original Kafka deployment had a single Kafka cluster. When a broker failed, partitions were rebalanced across remaining brokers, causing load spikes. Uber mitigated this by:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pre-allocating more partitions than brokers for even distribution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Using dedicated Kafka clusters per use case (logs, events, metrics)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implementing rack-aware partition assignment"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    A[Rider App] --> B[API Gateway]\n    C[Driver App] --> B\n    B --> D[Location Service]\n    D --> E[uForwarder]\n    E --> F[Kafka: location_updates]\n    F --> G[Trip Matching Consumer]\n    F --> H[Pricing Consumer]\n    F --> I[Surge Detection Consumer]\n    F --> J[Analytics Consumer]\n    J --> K[HDFS]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-3-transactional-outbox-pattern",
+      children: "Example 3: Transactional Outbox Pattern"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The transactional outbox pattern ensures reliable message publication alongside database writes."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Sending a message to Kafka after updating a database is not atomic. The database write may succeed but the Kafka publish may fail (or vice versa)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Naive approach (not safe):\n  BEGIN TRANSACTION\n    INSERT INTO orders (id, amount) VALUES (42, 99.99)\n  COMMIT\n  kafka.publish(\"order_created\", event)  // if this crashes, message is lost\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Outbox pattern solution:"
+      }), " Write the event to an ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "outbox"
+      }), " table in the same database transaction. A separate process (CDC or poller) reads from the outbox table and publishes to Kafka."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Safe approach (outbox pattern):\n  BEGIN TRANSACTION\n    INSERT INTO orders (id, amount) VALUES (42, 99.99)\n    INSERT INTO outbox (event_type, payload) VALUES (\"order_created\", '{...}')\n  COMMIT\n  // Outbox publisher reads from outbox table and publishes to Kafka\n  // After successful Kafka publish, deletes the outbox row\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation with Debezium:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Database ? binlog ? Debezium ? Kafka Topic \"outbox.orders\" ? downstream services\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The outbox table can be compacted (tombstone after publish) or kept for auditing. This guarantees exactly-once delivery if the consumer is idempotent."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "sequenceDiagram\n    participant S as Service\n    participant DB as Database\n    participant CDC as Debezium CDC\n    participant K as Kafka\n    participant C as Consumer\n    S->>DB: BEGIN TX\n    S->>DB: INSERT order\n    S->>DB: INSERT outbox event\n    S->>DB: COMMIT TX\n    DB-->>CDC: Read binlog change\n    CDC->>K: Publish outbox event\n    K->>C: Deliver event\n    C->>DB: Delete outbox row (or mark processed)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core topic in Chapter 7: Message Queues and Event-Driven Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fundamental concept for system design"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential concept from Chapter 7: Message Queues and Event-Driven Architecture"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relevant across design scenarios"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requirements-driven decisions"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Options"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the primary difference between synchronous and asynchronous communication in distributed systems?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Synchronous is faster, B) Asynchronous decouples sender and receiver via a broker, C) Synchronous never fails, D) Asynchronous requires HTTP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B) Asynchronous decouples sender and receiver via a broker"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["In Kafka, what does the ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "acks=all"
+            }), " producer setting guarantee?"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Fire-and-forget, B) Leader acknowledges after writing to its log, C) Leader waits for all ISR replicas to acknowledge, D) No acknowledgment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C) Leader waits for all ISR replicas to acknowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which RabbitMQ exchange type broadcasts messages to all bound queues ignoring the routing key?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Direct, B) Topic, C) Fanout, D) Headers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C) Fanout"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What problem does the transactional outbox pattern solve?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Message ordering, B) The dual-write problem of atomically writing to DB and publishing to queue, C) Consumer group rebalancing, D) Partition assignment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B) The dual-write problem of atomically writing to DB and publishing to queue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the primary advantage of Kafka's pull-based consumption model?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A) Lower latency, B) Natural backpressure — the consumer controls the rate, C) Simpler broker implementation, D) Exactly-once delivery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B) Natural backpressure — the consumer controls the rate"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-message-queue-event-bus-and-outbox-pattern",
+      children: "TypeScript: Message Queue, Event Bus, and Outbox Pattern"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type MessageHandler = (msg: any) => Promise<void>;\n\nclass MessageBroker {\n  private queues = new Map<string, any[]>();\n  private subscribers = new Map<string, MessageHandler[]>();\n  private dlq = new Map<string, any[]>();\n\n  createQueue(name: string): void { if (!this.queues.has(name)) this.queues.set(name, []); }\n\n  publish(queue: string, message: any): void {\n    if (!this.queues.has(queue)) this.queues.set(queue, []);\n    this.queues.get(queue)!.push({ ...message, enqueuedAt: Date.now() });\n  }\n\n  subscribe(queue: string, handler: MessageHandler): void {\n    if (!this.subscribers.has(queue)) this.subscribers.set(queue, []);\n    this.subscribers.get(queue)!.push(handler);\n  }\n\n  async consume(queue: string): Promise<void> {\n    const msgs = this.queues.get(queue) ?? [];\n    const handlers = this.subscribers.get(queue) ?? [];\n    while (msgs.length > 0) {\n      const msg = msgs.shift()!;\n      let success = false;\n      for (const handler of handlers) {\n        try { await handler(msg); success = true; break; }\n        catch (e) { console.error(`Handler failed for msg ${msg.id}:`, e); }\n      }\n      if (!success) {\n        if (!this.dlq.has(queue)) this.dlq.set(queue, []);\n        this.dlq.get(queue)!.push(msg);\n      }\n    }\n  }\n\n  redlq(queue: string): void {\n    const dead = this.dlq.get(queue) ?? [];\n    this.dlq.set(queue, []);\n    for (const msg of dead) this.publish(queue, msg);\n  }\n}\n\nclass KafkaPartitioner {\n  private partitionCount: number;\n  constructor(partitions: number) { this.partitionCount = partitions; }\n\n  partition(key: string): number {\n    let h = 0;\n    for (let i = 0; i < key.length; i++) h = ((h << 5) - h + key.charCodeAt(i)) | 0;\n    return Math.abs(h) % this.partitionCount;\n  }\n}\n\nclass OutboxPublisher {\n  private outbox: { id: string; topic: string; payload: any; published: boolean }[] = [];\n\n  record(id: string, topic: string, payload: any): void {\n    this.outbox.push({ id, topic, payload, published: false });\n  }\n\n  async publishPending(broker: MessageBroker): Promise<void> {\n    for (const entry of this.outbox) {\n      if (!entry.published) {\n        broker.publish(entry.topic, { id: entry.id, ...entry.payload });\n        entry.published = true;\n      }\n    }\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "implementation-message-queues-and-event-streaming",
+      children: "Implementation: Message Queues and Event Streaming"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface Message { id: string; topic: string; payload: any; timestamp: number; offset: number; key: string; }\nclass MessageBroker {\n  private topics = new Map<string, Message[]>(); private consumerOffsets = new Map<string, Map<string, number>>();\n  private consumerGroups = new Map<string, string[]>();\n  createTopic(name: string, partitions = 1): void { this.topics.set(name, []); }\n  publish(topic: string, payload: any, key = \"\"): Message {\n    if (!this.topics.has(topic)) this.createTopic(topic);\n    const msg: Message = { id: `${topic}-${Date.now()}-${Math.random().toString(36).slice(2)}`, topic, payload, timestamp: Date.now(), offset: this.topics.get(topic)!.length, key };\n    this.topics.get(topic)!.push(msg); return msg; }\n  subscribe(groupId: string, topics: string[]): void { this.consumerGroups.set(groupId, topics); this.consumerOffsets.set(groupId, new Map()); for (const t of topics) this.consumerOffsets.get(groupId)!.set(t, 0); }\n  consume(groupId: string, topic: string, batchSize = 10): Message[] {\n    const offsets = this.consumerOffsets.get(groupId); if (!offsets) return [];\n    const queue = this.topics.get(topic); if (!queue) return [];\n    const offset = offsets.get(topic) || 0; const batch = queue.slice(offset, offset + batchSize);\n    offsets.set(topic, offset + batch.length); return batch; }\n  commitOffset(groupId: string, topic: string, offset: number): void { this.consumerOffsets.get(groupId)?.set(topic, offset); }\n}\nclass EventBus { private handlers = new Map<string, Set<(event: any) => void>>();\n  on(event: string, handler: (event: any) => void): void { if (!this.handlers.has(event)) this.handlers.set(event, new Set()); this.handlers.get(event)!.add(handler); }\n  emit(event: string, data: any): void { const handlers = this.handlers.get(event); if (handlers) for (const h of handlers) h(data); }\n  off(event: string, handler: (event: any) => void): void { this.handlers.get(event)?.delete(handler); }\n}\nclass DeadLetterQueue { private messages: Message[] = []; maxRetries = 3;\n  send(msg: Message, reason: string): void { console.log(`DLQ: ${msg.id} - ${reason}`); this.messages.push(msg); }\n  replay(broker: MessageBroker): void { for (const msg of this.messages) broker.publish(msg.topic, msg.payload, msg.key); this.messages = []; }\n}\nclass KafkaTopicPartition { partitionId: number; messages: Message[] = []; leader: string; replicas: string[] = [];\n  append(msg: Message): void { msg.offset = this.messages.length; this.messages.push(msg); }\n  read(offset: number, maxCount = 100): Message[] { return this.messages.slice(offset, offset + maxCount); } }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// message queues\n// distributed-systems-scalability implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'message queues', data: { topic: 'distributed-systems-scalability' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// message queues - additional TS implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\nprivate store: Map<string, CacheEntry> = new Map()\nconstructor(private defaultTTL: number = 60000) {}\nset(key: string, value: unknown, ttl?: number): void {\nthis.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n}\nget(key: string): unknown | undefined {\nconst entry = this.store.get(key)\nif (!entry) return undefined\nif (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\nreturn entry.value\n}\ndelete(key: string): boolean { return this.store.delete(key) }\nclear(): void { this.store.clear() }\nsize(): number { return this.store.size }\nkeys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\nprivate entries: string[] = []\nlog(level: string, msg: string, meta?: Record<string, unknown>): void {\nconst entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\nthis.entries.push(entry)\nconsole.log(entry)\n}\ninfo(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\nwarn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\nerror(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\ngetLogs(): string[] { return [...this.entries] }\nclear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\nlet hash = 0\nfor (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\nreturn Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\nconst cache = new Cache(5000)\ncache.set('key1', 'system-design demo')\nconst log = new Logger()\nlog.info('Cache demo started', { course: 'system-design', chapter: 'message queues' })\nconst v = cache.get(\"key1\")\nconsole.log('Cached:', v)\nconsole.log('Hash:', computeHash('system-design'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-messagequeue-kafkaproducer-and-deadletterqueue",
+      children: "TypeScript: MessageQueue, KafkaProducer, and DeadLetterQueue"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class MessageQueue {\n  private topics = new Map<string, { messages: any[]; subscribers: Map<string, Set<string>>; offsets: Map<string, number> }>();\n  private consumerGroups = new Map<string, string[]>();\n\n  createTopic(name: string): void {\n    if (!this.topics.has(name)) {\n      this.topics.set(name, { messages: [], subscribers: new Map(), offsets: new Map() });\n    }\n  }\n\n  publish(topic: string, message: any): number {\n    this.createTopic(topic);\n    const t = this.topics.get(topic)!;\n    const offset = t.messages.length;\n    t.messages.push({ ...message, offset, timestamp: Date.now() });\n    const subs = t.subscribers;\n    for (const [group, members] of this.consumerGroups) {\n      if (subs.has(group)) {\n        const memberSubs = subs.get(group)!;\n        const targetConsumer = [...memberSubs][offset % memberSubs.size];\n        if (targetConsumer) this.deliver(topic, group, targetConsumer, offset);\n      }\n    }\n    return offset;\n  }\n\n  subscribe(groupId: string, consumerId: string, topics: string[]): void {\n    this.consumerGroups.set(groupId, topics);\n    for (const t of topics) {\n      this.createTopic(t);\n      const topic = this.topics.get(t)!;\n      if (!topic.subscribers.has(groupId)) topic.subscribers.set(groupId, new Set());\n      topic.subscribers.get(groupId)!.add(consumerId);\n      if (!topic.offsets.has(`${groupId}:${consumerId}`)) topic.offsets.set(`${groupId}:${consumerId}`, 0);\n    }\n  }\n\n  private deliver(topic: string, group: string, consumer: string, offset: number): void {\n    const key = `${group}:${consumer}`;\n    const t = this.topics.get(topic)!;\n    t.offsets.set(key, offset + 1);\n  }\n\n  getOffset(topic: string, group: string, consumer: string): number {\n    return this.topics.get(topic)?.offsets.get(`${group}:${consumer}`) ?? 0;\n  }\n\n  getMessageCount(topic: string): number {\n    return this.topics.get(topic)?.messages.length ?? 0;\n  }\n}\n\nclass KafkaProducer {\n  private partitionCount: number;\n  private retryCount: number;\n  private acks: number;\n  private idempotent: boolean;\n  private sequenceNumber = 0;\n  private producerId: string;\n\n  constructor(config: { partitions: number; retries?: number; acks?: number; idempotent?: boolean }) {\n    this.partitionCount = config.partitions;\n    this.retryCount = config.retries ?? 3;\n    this.acks = config.acks ?? 1;\n    this.idempotent = config.idempotent ?? false;\n    this.producerId = `producer-${Date.now()}-${Math.random().toString(36).slice(2)}`;\n  }\n\n  selectPartition(key: string): number {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) hash = ((hash << 5) - hash + key.charCodeAt(i)) | 0;\n    return Math.abs(hash) % this.partitionCount;\n  }\n\n  async send(topic: string, key: string, value: any): Promise<{ success: boolean; offset?: number; error?: string }> {\n    const partition = this.selectPartition(key);\n    let attempt = 0;\n    while (attempt <= this.retryCount) {\n      try {\n        if (this.idempotent) this.sequenceNumber++;\n        const ack = await this.brokerWrite(topic, partition, key, value);\n        if (this.acks === 0) return { success: true };\n        if (this.acks === 1 && ack) return { success: true, offset: ack };\n        if (this.acks === 2 && ack && ack > 0) return { success: true, offset: ack };\n        return { success: true, offset: ack };\n      } catch (e: any) {\n        attempt++;\n        if (attempt > this.retryCount) return { success: false, error: e.message };\n        await new Promise(r => setTimeout(r, 100 * attempt));\n      }\n    }\n    return { success: false, error: \"Max retries exceeded\" };\n  }\n\n  private async brokerWrite(topic: string, partition: number, key: string, value: any): Promise<number> {\n    return Math.floor(Math.random() * 1000);\n  }\n}\n\nclass DeadLetterQueue {\n  private poisonMessages = new Map<string, Map<string, { message: any; retries: number; reason: string }>>();\n  private maxRetries: number;\n\n  constructor(maxRetries = 3) {\n    this.maxRetries = maxRetries;\n  }\n\n  detectPoison(topic: string, messageId: string, message: any, error: Error): boolean {\n    if (!this.poisonMessages.has(topic)) this.poisonMessages.set(topic, new Map());\n    const topicDLQ = this.poisonMessages.get(topic)!;\n    if (!topicDLQ.has(messageId)) {\n      topicDLQ.set(messageId, { message, retries: 0, reason: error.message });\n      return false;\n    }\n    const entry = topicDLQ.get(messageId)!;\n    entry.retries++;\n    entry.reason = error.message;\n    if (entry.retries >= this.maxRetries) return true;\n    return false;\n  }\n\n  routeToDLQ(topic: string, messageId: string, dlqTopic: string): void {\n    const topicDLQ = this.poisonMessages.get(topic);\n    if (!topicDLQ || !topicDLQ.has(messageId)) return;\n    const entry = topicDLQ.get(messageId)!;\n    console.log(`DLQ: Routing message ${messageId} from ${topic} to ${dlqTopic} after ${entry.retries} retries. Reason: ${entry.reason}`);\n    topicDLQ.delete(messageId);\n  }\n\n  getPoisonCount(topic: string): number {\n    return this.poisonMessages.get(topic)?.size ?? 0;\n  }\n\n  retryAll(topic: string): Map<string, any> {\n    const retryable = new Map<string, any>();\n    const topicDLQ = this.poisonMessages.get(topic);\n    if (!topicDLQ) return retryable;\n    for (const [id, entry] of topicDLQ) {\n      if (entry.retries < this.maxRetries) retryable.set(id, entry.message);\n    }\n    return retryable;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mermaid-kafka-vs-rabbitmq-vs-sqs-feature-comparison",
+      children: "Mermaid: Kafka vs RabbitMQ vs SQS Feature Comparison"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    classDef kafka fill:#e1f5fe,stroke:#0288d1,stroke-width:2px\n    classDef rabbit fill:#fce4ec,stroke:#c62828,stroke-width:2px\n    classDef sqs fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px\n    classDef feature fill:#fff3e0,stroke:#e65100,stroke-width:1px\n\n    subgraph \"Apache Kafka\"\n        K1[\"Commit Log Storage\"]:::kafka\n        K2[\"Pull-Based Consumption\"]:::kafka\n        K3[\"Partitioned Topics\"]:::kafka\n        K4[\"Consumer Groups\"]:::kafka\n        K5[\"Exactly-Once Semantics\"]:::kafka\n        K6[\"High Throughput<br/>1M+ msg/sec\"]:::kafka\n        K7[\"Disk-Based Retention\"]:::kafka\n    end\n\n    subgraph \"RabbitMQ\"\n        R1[\"Exchange/Queue Routing\"]:::rabbit\n        R2[\"Push-Based Delivery\"]:::rabbit\n        R3[\"AMQP 0-9-1 Protocol\"]:::rabbit\n        R4[\"Priority Queues\"]:::rabbit\n        R5[\"At-Most-Once / At-Least-Once\"]:::rabbit\n        R6[\"Moderate Throughput<br/>50K msg/sec\"]:::rabbit\n        R7[\"Memory-Based (optional disk)\"]:::rabbit\n    end\n\n    subgraph \"AWS SQS\"\n        S1[\"Fully Managed\"]:::sqs\n        S2[\"Pull-Based (long polling)\"]:::sqs\n        S3[\"Standard / FIFO Queues\"]:::sqs\n        S4[\"Dead-Letter Queue Built-in\"]:::sqs\n        S5[\"At-Least-Once / Exactly-Once\"]:::sqs\n        S6[\"Virtually Unlimited TPS\"]:::sqs\n        S7[\"Auto-Scaling\"]:::sqs\n    end\n\n    Comparison((Feature<br/>Comparison)):::feature\n    K1 -.-> Comparison\n    R1 -.-> Comparison\n    S1 -.-> Comparison\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Asynchronous communication decouples services via a broker"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use message queues for any inter-service communication that does not require an immediate synchronous response"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kafka's partitioned log provides ordered, durable storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Kafka when you need replayable event streams, audit logs, or change data capture pipelines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RabbitMQ's exchange/queue/binding model enables flexible routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use RabbitMQ when you need complex routing logic (direct, topic, fanout, headers)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "At-least-once delivery is the most practical default guarantee"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement idempotent consumers to handle duplicate messages safely"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Exactly-once semantics require coordination across producer, broker, and consumer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Kafka's idempotent producer + transactions for exactly-once within a single cluster"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dead-letter queues prevent message loss from poison messages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always configure DLQ with monitoring alerts to detect systemic processing failures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "The transactional outbox pattern solves the dual-write problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Debezium CDC or a dedicated outbox publisher to atomically write events alongside database transactions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "case-study",
+      children: "Case Study"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "E-Commerce Order Processing Pipeline"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A large e-commerce platform processes 50,000 orders per day. Each order triggers inventory checks, payment processing, shipping label generation, email notifications, and analytics events. The initial architecture used synchronous HTTP calls between services — when the inventory service slowed down during a flash sale, the entire order pipeline stalled, causing 30-second response times and checkout failures."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The team migrated to an event-driven architecture using Kafka. The Order Service writes events to a partitioned ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "orders"
+      }), " topic. Downstream services (Inventory, Payment, Shipping, Notification, Analytics) each run as independent consumer groups with their own offsets. The Inventory Service uses a key-based partition strategy (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "order_id % 50"
+      }), ") to ensure all events for a single order reach the same partition, preserving ordering. During flash sales, the pipeline processes 5,000 orders/minute sustained with p99 latency under 200ms — a 150x improvement over the synchronous approach."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A critical incident occurred when a malformed payload caused the Payment Service consumer to crash-loop. Without a DLQ, the consumer would have replayed the same poison message indefinitely. The team deployed a DeadLetterQueue with a retry policy (3 retries with exponential backoff) that routed the failing message to a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "orders-dlq"
+      }), " topic after exhausting retries. An alert on DLQ depth (threshold: 100 messages) notified the on-call engineer within 2 minutes. The payload was fixed, and the DLQ was replayed using offset-based reprocessing, resulting in zero data loss."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asynchronous communication decouples services via a message broker, improving resilience and allowing independent scaling at the cost of increased system complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kafka's partitioned commit log provides durable, ordered storage with consumer groups enabling parallel processing and rebalance tolerance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At-least-once delivery is the most practical guarantee for most systems; exactly-once requires idempotent producers and transactional coordination across broker and consumer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RabbitMQ's exchange/queue/binding model offers flexible routing (direct, topic, fanout, headers) for different message distribution patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Dead-letter queues provide a safety net for messages that cannot be processed, enabling redrive after issue resolution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Event sourcing stores all state changes as an ordered event sequence, enabling complete audit trails, temporal queries, and multiple projections from the same event stream"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Change data capture with Debezium bridges databases and event streams without application-level code changes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Backpressure must be explicitly managed — Kafka's consumer pull model provides natural rate limiting, while reactive streams implement protocol-level demand signaling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Priority queues enable time-critical processing by draining higher-priority messages first"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The transactional outbox pattern solves the dual-write problem by atomically writing events alongside business data in the same transaction"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Review Question 1"
+      }), "\n**Kafka consumer groups** assign partitions to consumers within a group — each partition is assigned to exactly one consumer. On failure, the group rebalances: partitions of the failed consumer are reassigned to remaining members (stop-the-world phase). **RabbitMQ competing consumers** all pull from the same queue — the broker delivers each message to exactly one consumer. On failure, unacknowledged messages are requeued and delivered to another consumer. Kafka's approach provides ordering within a partition; RabbitMQ's approach is simpler but provides no ordering guarantees across messages.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Review Question 2"
+      }), "\nWith `acks=1`, the message acknowledged by the leader is lost permanently if the leader crashes before replication and never recovers — the message existed only on that leader. With `acks=all`, the leader waits for all ISR replicas to acknowledge; the message survives on the replicas even if the original leader fails. In the scenario described, `acks=all` ensures the data is replicated to at least one follower before acknowledgment.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Review Question 3"
+      }), "\nThe dual-write problem occurs when a service writes to a database and then publishes a message to Kafka — if one operation succeeds and the other fails, the system is inconsistent. The transactional outbox pattern solves this by writing the event to an `outbox` table in the same database transaction as the business data. A separate process (CDC or poller) reads from the outbox and publishes to Kafka. If the outbox publisher crashes mid-publish, the unprocessed outbox rows remain and are picked up on restart (at-least-once delivery). The consumer must be idempotent to handle duplicate deliveries.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Review Question 4"
+      }), "\nExactly-once delivery between Kafka and an external database is impossible without additional coordination because Kafka and the database operate as independent systems with their own transaction boundaries. Kafka's exactly-once semantics apply within a single Kafka cluster (idempotent producer + transactions). Cross-system exactly-once requires the consumer to implement idempotent processing (e.g., tracking processed message IDs in a database table with a unique constraint) or use the transactional outbox pattern to atomically write both the business data and the consumption acknowledgment.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Application Problem 1: Food Delivery Kafka Topology"
+      }), "\n**Topics**: `orders` (10 partitions, key=order_id), `restaurant-orders` (5 partitions), `delivery-assignments` (5 partitions), `notifications` (3 partitions), `analytics-events` (10 partitions). **Consumer groups**: `order-processor` (subscribes to orders), `restaurant-service` (subscribes to restaurant-orders), `delivery-service` (subscribes to delivery-assignments), `notification-service` (subscribes to notifications), `analytics-ingester` (subscribes to analytics-events). Ordering guarantee: order_id as key ensures all events for one order go to the same partition, preserving order per order. Cross-order ordering is not required.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Application Problem 2: DLQ Redrive Strategy"
+      }), "\nTo process 540,000 DLQ messages without overwhelming: (a) Use a rate-limited consumer that processes 100 msg/sec with a sliding window, gradually increasing to 500 msg/sec as the system stabilizes. (b) Preserve original ordering by replaying within each partition — process all messages from partition 0 first, then partition 1, etc. Use `kafka-consumer-groups --reset-offsets --to-earliest` on the DLQ topic per partition. (c) Prevent duplicates by using idempotency keys: store processed notification IDs in a Redis set with 24h TTL. Producer config: `enable.idempotence=true`, `acks=all`, `retries=5`. Consumer config: `isolation.level=read_committed`, `auto.offset.reset=earliest`.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution for Application Problem 3: Priority Queue Implementation"
+      }), "\nUse three separate queues: critical (1 partition), high (2 partitions), low (5 partitions). Consumer logic: drain critical queue first until empty, then drain high queue for at most 100ms, then low queue for at most 100ms, then repeat. To prevent starvation, use an aging mechanism: each message gets a timestamp; if a Low message waits > 3.5 hours, it's promoted to the High queue. Capacity calculation: Critical (5% of 1000 tickets/hr = 50/hr = 0.014/sec) + High (15% = 150/hr = 0.042/sec) + Low (80% = 800/hr = 0.22/sec) = 0.28 tickets/sec avg. Peak capacity: 5x average = 1.4 tickets/sec minimum per consumer.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution: Financial Event Sourcing System"
+      }), "\n**1. Event Schema (Avro):** TradeExecuted {tradeId, buyOrderId, sellOrderId, symbol, quantity, price, timestamp}, AccountCredited {accountId, amount, tradeId, balanceAfter}, AccountDebited {accountId, amount, tradeId, balanceAfter}, OrderPlaced {orderId, accountId, type, quantity, price, timestamp}, SettlementCompleted {tradeId, settlementDate, status}. **2. Topology:** Topic `ledger-events` with 50 partitions, replication factor 3, retention 30 days, compaction enabled. Consumer groups: balance-projection, pnl-projection, risk-projection, audit-query. **3. Snapshotting:** Snapshot every 100,000 events per partition. Snapshot schema: {accountId, balance, sequenceNumber, timestamp}. Rebuild: load latest snapshot, replay events after snapshot sequence number. **4. Reconciliation:** Nightly job computes expected balances from event stream, compares with DB balances. Discrepancies traced by scanning the event stream for orphaned events (debits without matching credits). **5. Audit optimization:** Partition-level snapshots enable O(1) lookup by account ID. Sub-second queries achieved by indexing snapshots by account + timestamp range.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

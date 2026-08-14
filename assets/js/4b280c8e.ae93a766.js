@@ -1,0 +1,1886 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[34005],{
+
+/***/ 79589
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_33_customer_service_md_4b2_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-33-customer-service-md-4b2.json
+const site_docs_courses_laravel_33_customer_service_md_4b2_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/33-customer-service","title":"Chapter 33: Customer Service & Support Agents","description":"Previous Real Estate & Property — AI-Powered Real Estate Agents","source":"@site/docs/courses/laravel/33-customer-service.md","sourceDirName":"courses/laravel","slug":"/laravel/33-customer-service","permalink":"/ai-engineering-journey/laravel/33-customer-service","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":33,"frontMatter":{"id":"33-customer-service","slug":"/laravel/33-customer-service","title":"Chapter 33: Customer Service & Support Agents","sidebar_label":"Chapter 33: Customer Service & Support Agents","sidebar_position":33},"sidebar":"course-laravel","previous":{"title":"Chapter 32: Marketing & Advertising Agents","permalink":"/ai-engineering-journey/laravel/32-marketing"},"next":{"title":"Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents","permalink":"/ai-engineering-journey/laravel/34-real-estate"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/33-customer-service.md
+
+
+const frontMatter = {
+	id: '33-customer-service',
+	slug: '/laravel/33-customer-service',
+	title: 'Chapter 33: Customer Service & Support Agents',
+	sidebar_label: 'Chapter 33: Customer Service & Support Agents',
+	sidebar_position: 33
+};
+const contentTitle = 'Chapter 33: Customer Service & Support Agents';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "33.1 Customer Service Data Models",
+  "id": "331-customer-service-data-models",
+  "level": 3
+}, {
+  "value": "Migrations",
+  "id": "migrations",
+  "level": 4
+}, {
+  "value": "Eloquent Models",
+  "id": "eloquent-models",
+  "level": 4
+}, {
+  "value": "33.2 Ticket Triage &amp; Routing Agents",
+  "id": "332-ticket-triage--routing-agents",
+  "level": 3
+}, {
+  "value": "33.3 Sentiment Analysis Agents",
+  "id": "333-sentiment-analysis-agents",
+  "level": 3
+}, {
+  "value": "33.4 Knowledge Base RAG",
+  "id": "334-knowledge-base-rag",
+  "level": 3
+}, {
+  "value": "33.5 Escalation Automation",
+  "id": "335-escalation-automation",
+  "level": 3
+}, {
+  "value": "33.6 Multi-Channel Support Agents",
+  "id": "336-multi-channel-support-agents",
+  "level": 3
+}, {
+  "value": "33.7 Customer Satisfaction Tracking",
+  "id": "337-customer-satisfaction-tracking",
+  "level": 3
+}, {
+  "value": "33.8 Self-Service Portal Agents",
+  "id": "338-self-service-portal-agents",
+  "level": 3
+}, {
+  "value": "33.9 SLA Monitoring &amp; Reporting",
+  "id": "339-sla-monitoring--reporting",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-33-customer-service--support-agents",
+        children: "Chapter 33: Customer Service & Support Agents"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/32-marketing",
+          children: "Marketing & Advertising Agents"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/34-real-estate",
+          children: "Real Estate & Property — AI-Powered Real Estate Agents"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design customer service data models including tickets, messages, knowledge bases, satisfaction surveys, and SLA policies with Eloquent"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a TicketTriageAgent that classifies incoming tickets by intent, assigns priority, and routes to the correct team"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a SentimentAnalysisAgent that scores customer messages for emotional tone and triggers escalations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct a KnowledgeBaseAgent that retrieves relevant articles via vector search and generates contextual answers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deploy an EscalationAgent that monitors SLA breaches, sentiment thresholds, and complexity to trigger escalation chains"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create a MultiChannelAgent that normalizes email, chat, social media, and phone transcripts into unified support interactions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a SatisfactionAgent that dispatches post-resolution surveys and analyzes customer feedback trends"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a SelfServiceAgent that powers FAQ matching and guided troubleshooting flows"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Develop an SlaMonitoringAgent that tracks compliance metrics, generates reports, and alerts on breach patterns"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer service automation agents for ticketing, response, sentiment analysis, knowledge base, escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket triage, auto-response, sentiment detection, KB management, smart escalation, analytics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, queue systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer service automation agents for ticketing, response, sentiment analysis, knowledge base, escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket triage, auto-response, sentiment detection, KB management, smart escalation, analytics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, queue systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer service automation agents for ticketing, response, sentiment analysis, knowledge base, escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket triage, auto-response, sentiment detection, KB management, smart escalation, analytics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, queue systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer service automation agents for ticketing, response, sentiment analysis, knowledge base, escalation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket triage, auto-response, sentiment detection, KB management, smart escalation, analytics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, data models, agent implementations, AI integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, queue systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/33-customer-service.png",
+        alt: "Customer Service Domain"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "331-customer-service-data-models",
+      children: "33.1 Customer Service Data Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Customer service domains revolve around the ticket lifecycle: a customer submits an inquiry, agents collaborate to resolve it, knowledge base articles help both parties, and satisfaction surveys close the loop. SLA policies govern response and resolution time commitments."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "migrations",
+      children: "Migrations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('tickets', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('user_id')->constrained();\n            $table->string('subject');\n            $table->text('description');\n            $table->string('status')->default('open');\n            $table->string('priority')->default('medium');\n            $table->string('channel')->default('web');\n            $table->string('triage_intent')->nullable();\n            $table->string('assigned_team')->nullable();\n            $table->foreignId('assigned_agent_id')->nullable()->constrained('users');\n            $table->decimal('sentiment_score', 4, 2)->nullable();\n            $table->decimal('urgency_score', 4, 2)->nullable();\n            $table->timestamp('first_response_at')->nullable();\n            $table->timestamp('resolved_at')->nullable();\n            $table->json('ai_metadata')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('ticket_messages', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('ticket_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('user_id')->nullable()->constrained();\n            $table->text('body');\n            $table->boolean('is_internal')->default(false);\n            $table->string('channel')->nullable();\n            $table->json('attachments')->nullable();\n            $table->json('ai_analysis')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('knowledge_base_articles', function (Blueprint $table) {\n            $table->id();\n            $table->string('title');\n            $table->string('slug')->unique();\n            $table->text('content');\n            $table->text('excerpt')->nullable();\n            $table->json('keywords')->nullable();\n            $table->json('vector_embedding')->nullable();\n            $table->string('category');\n            $table->string('status')->default('published');\n            $table->integer('view_count')->default(0);\n            $table->integer('helpful_count')->default(0);\n            $table->integer('unhelpful_count')->default(0);\n            $table->foreignId('created_by')->constrained('users');\n            $table->timestamps();\n        });\n\n        Schema::create('customer_satisfaction_surveys', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('ticket_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('user_id')->constrained();\n            $table->tinyInteger('csat_score')->nullable();\n            $table->tinyInteger('fcr_score')->nullable();\n            $table->text('feedback')->nullable();\n            $table->json('ai_sentiment')->nullable();\n            $table->string('status')->default('pending');\n            $table->timestamp('sent_at')->nullable();\n            $table->timestamp('responded_at')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('sla_policies', function (Blueprint $table) {\n            $table->id();\n            $table->string('name');\n            $table->string('priority');\n            $table->integer('response_time_minutes');\n            $table->integer('resolution_time_minutes');\n            $table->json('escalation_chain')->nullable();\n            $table->json('business_hours')->nullable();\n            $table->boolean('is_active')->default(true);\n            $table->timestamps();\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('sla_policies');\n        Schema::dropIfExists('customer_satisfaction_surveys');\n        Schema::dropIfExists('knowledge_base_articles');\n        Schema::dropIfExists('ticket_messages');\n        Schema::dropIfExists('tickets');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "eloquent-models",
+      children: "Eloquent Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models\\Support;\n\nuse App\\Models\\User;\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\n\nclass Ticket extends Model\n{\n    protected $fillable = [\n        'user_id', 'subject', 'description', 'status', 'priority',\n        'channel', 'triage_intent', 'assigned_team', 'assigned_agent_id',\n        'sentiment_score', 'urgency_score', 'first_response_at',\n        'resolved_at', 'ai_metadata',\n    ];\n\n    protected $casts = [\n        'ai_metadata' => 'array',\n        'first_response_at' => 'datetime',\n        'resolved_at' => 'datetime',\n    ];\n\n    public function user(): BelongsTo\n    {\n        return $this->belongsTo(User::class);\n    }\n\n    public function messages(): HasMany\n    {\n        return $this->hasMany(TicketMessage::class);\n    }\n\n    public function satisfaction(): HasMany\n    {\n        return $this->hasMany(CustomerSatisfactionSurvey::class);\n    }\n\n    public function assignedAgent(): BelongsTo\n    {\n        return $this->belongsTo(User::class, 'assigned_agent_id');\n    }\n\n    public function scopeOpen($query)\n    {\n        return $query->whereIn('status', ['open', 'in_progress']);\n    }\n\n    public function scopeOverdue($query)\n    {\n        return $query->where('status', '!=', 'resolved')\n            ->where('created_at', '<', now()->subHours(24));\n    }\n}\n\nclass TicketMessage extends Model\n{\n    protected $fillable = [\n        'ticket_id', 'user_id', 'body', 'is_internal',\n        'channel', 'attachments', 'ai_analysis',\n    ];\n\n    protected $casts = [\n        'is_internal' => 'boolean',\n        'attachments' => 'array',\n        'ai_analysis' => 'array',\n    ];\n\n    public function ticket(): BelongsTo\n    {\n        return $this->belongsTo(Ticket::class);\n    }\n\n    public function user(): BelongsTo\n    {\n        return $this->belongsTo(User::class);\n    }\n}\n\nclass KnowledgeBaseArticle extends Model\n{\n    protected $fillable = [\n        'title', 'slug', 'content', 'excerpt', 'keywords',\n        'vector_embedding', 'category', 'status',\n        'view_count', 'helpful_count', 'unhelpful_count', 'created_by',\n    ];\n\n    protected $casts = [\n        'keywords' => 'array',\n        'vector_embedding' => 'array',\n    ];\n\n    public function author(): BelongsTo\n    {\n        return $this->belongsTo(User::class, 'created_by');\n    }\n\n    public function scopePublished($query)\n    {\n        return $query->where('status', 'published');\n    }\n\n    public function scopeByCategory($query, string $category)\n    {\n        return $query->where('category', $category);\n    }\n}\n\nclass CustomerSatisfactionSurvey extends Model\n{\n    protected $fillable = [\n        'ticket_id', 'user_id', 'csat_score', 'fcr_score',\n        'feedback', 'ai_sentiment', 'status',\n        'sent_at', 'responded_at',\n    ];\n\n    protected $casts = [\n        'ai_sentiment' => 'array',\n        'sent_at' => 'datetime',\n        'responded_at' => 'datetime',\n    ];\n\n    public function ticket(): BelongsTo\n    {\n        return $this->belongsTo(Ticket::class);\n    }\n\n    public function user(): BelongsTo\n    {\n        return $this->belongsTo(User::class);\n    }\n}\n\nclass SlaPolicy extends Model\n{\n    protected $fillable = [\n        'name', 'priority', 'response_time_minutes',\n        'resolution_time_minutes', 'escalation_chain',\n        'business_hours', 'is_active',\n    ];\n\n    protected $casts = [\n        'escalation_chain' => 'array',\n        'business_hours' => 'array',\n        'is_active' => 'boolean',\n    ];\n\n    public function isWithinBusinessHours(): bool\n    {\n        $hours = $this->business_hours;\n        if (!$hours) {\n            return true;\n        }\n\n        $now = now();\n        $day = strtolower($now->format('l'));\n\n        if (!isset($hours[$day])) {\n            return false;\n        }\n\n        $time = $now->format('H:i');\n\n        return $time >= $hours[$day]['start'] && $time <= $hours[$day]['end'];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "332-ticket-triage--routing-agents",
+      children: "33.2 Ticket Triage & Routing Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Every inbound support ticket needs rapid classification: what is the customer asking about, how urgent is it, and which team should handle it. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "TicketTriageAgent"
+      }), " uses an LLM to extract intent, compute a priority score, and map the result to a routing destination."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\Ticket;\nuse App\\Models\\User;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Str;\n\nclass TicketTriageAgent\n{\n    protected array $intentCategories = [\n        'billing' => ['refund', 'invoice', 'payment', 'charge', 'subscription'],\n        'technical' => ['error', 'bug', 'crash', 'not working', 'install'],\n        'account' => ['login', 'password', 'reset', 'access', 'permission'],\n        'feature_request' => ['suggestion', 'wishlist', 'new feature', 'improve'],\n        'general' => ['question', 'help', 'how to', 'guide', 'info'],\n    ];\n\n    protected array $teamRouting = [\n        'billing' => 'billing-team',\n        'technical' => 'engineering-support',\n        'account' => 'account-management',\n        'feature_request' => 'product-team',\n        'general' => 'customer-support',\n    ];\n\n    public function triage(Ticket $ticket): Ticket\n    {\n        $intent = $this->classifyIntent($ticket);\n        $priority = $this->assignPriority($ticket, $intent);\n        $team = $this->routeToTeam($intent);\n\n        $ticket->update([\n            'triage_intent' => $intent,\n            'priority' => $priority,\n            'assigned_team' => $team,\n            'ai_metadata' => array_merge($ticket->ai_metadata ?? [], [\n                'triage' => [\n                    'intent' => $intent,\n                    'priority' => $priority,\n                    'team' => $team,\n                    'triaged_at' => now()->toIso8601String(),\n                    'confidence' => 0.85,\n                ],\n            ]),\n        ]);\n\n        Log::info(\"Ticket #{$ticket->id} triaged\", [\n            'intent' => $intent,\n            'priority' => $priority,\n            'team' => $team,\n        ]);\n\n        return $ticket->fresh();\n    }\n\n    protected function classifyIntent(Ticket $ticket): string\n    {\n        $text = strtolower($ticket->subject . ' ' . $ticket->description);\n\n        $scores = [];\n\n        foreach ($this->intentCategories as $intent => $keywords) {\n            $score = 0;\n            foreach ($keywords as $keyword) {\n                $count = substr_count($text, $keyword);\n                $score += $count;\n            }\n            $scores[$intent] = $score;\n        }\n\n        arsort($scores);\n        $topIntent = array_key_first($scores);\n\n        return $scores[$topIntent] > 0 ? $topIntent : 'general';\n    }\n\n    protected function assignPriority(Ticket $ticket, string $intent): string\n    {\n        $text = strtolower($ticket->subject . ' ' . $ticket->description);\n\n        $urgentKeywords = ['urgent', 'emergency', 'critical', 'down', 'outage', 'blocked'];\n        $highKeywords = ['broken', 'payment failed', 'data loss', 'security'];\n\n        foreach ($urgentKeywords as $keyword) {\n            if (str_contains($text, $keyword)) {\n                return 'urgent';\n            }\n        }\n\n        foreach ($highKeywords as $keyword) {\n            if (str_contains($text, $keyword)) {\n                return 'high';\n            }\n        }\n\n        if ($intent === 'billing') {\n            return 'high';\n        }\n\n        if ($intent === 'feature_request') {\n            return 'low';\n        }\n\n        return 'medium';\n    }\n\n    protected function routeToTeam(string $intent): string\n    {\n        return $this->teamRouting[$intent] ?? 'customer-support';\n    }\n\n    public function batchTriage(iterable $tickets): int\n    {\n        $count = 0;\n        foreach ($tickets as $ticket) {\n            if ($ticket->status === 'open' && !$ticket->triage_intent) {\n                $this->triage($ticket);\n                $count++;\n            }\n        }\n        return $count;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "333-sentiment-analysis-agents",
+      children: "33.3 Sentiment Analysis Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Customer messages carry emotional signals that indicate satisfaction, frustration, or churn risk. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SentimentAnalysisAgent"
+      }), " scores each message and decides whether an escalation or empathetic response is needed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\Ticket;\nuse App\\Models\\Support\\TicketMessage;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass SentimentAnalysisAgent\n{\n    protected array $positiveLexicon = [\n        'great', 'awesome', 'thank', 'perfect', 'love', 'amazing',\n        'happy', 'satisfied', 'helpful', 'excellent', 'fantastic',\n    ];\n\n    protected array $negativeLexicon = [\n        'terrible', 'awful', 'frustrated', 'angry', 'disappointed',\n        'useless', 'horrible', 'worst', 'never', 'hate', 'unacceptable',\n        'ridiculous', 'infuriated', 'fed up', 'sick of',\n    ];\n\n    protected array $urgencyLexicon = [\n        'immediately', 'asap', 'right now', 'urgent', 'cannot wait',\n        'deadline', 'overdue', 'emergency', 'critical', 'stop everything',\n    ];\n\n    protected float $escalationThreshold = -0.4;\n    protected float $empatheticThreshold = 0.6;\n\n    public function analyzeMessage(TicketMessage $message): array\n    {\n        $text = strtolower($message->body);\n        $sentimentScore = $this->computeSentiment($text);\n        $urgencyScore = $this->computeUrgency($text);\n        $emotionVector = $this->detectEmotions($text);\n        $shouldEscalate = $sentimentScore < $this->escalationThreshold;\n        $needsEmpathy = $sentimentScore < $this->empatheticThreshold;\n\n        $analysis = [\n            'sentiment_score' => round($sentimentScore, 4),\n            'urgency_score' => round($urgencyScore, 4),\n            'emotion_vector' => $emotionVector,\n            'should_escalate' => $shouldEscalate,\n            'needs_empathy' => $needsEmpathy,\n            'analyzed_at' => now()->toIso8601String(),\n        ];\n\n        $message->update(['ai_analysis' => $analysis]);\n\n        if ($shouldEscalate) {\n            Log::warning(\"Negative sentiment detected on message #{$message->id}\", $analysis);\n        }\n\n        return $analysis;\n    }\n\n    public function analyzeTicket(Ticket $ticket): Ticket\n    {\n        $messages = $ticket->messages;\n        if ($messages->isEmpty()) {\n            return $ticket;\n        }\n\n        $scores = [];\n        foreach ($messages as $message) {\n            $analysis = $this->analyzeMessage($message);\n            $scores[] = $analysis['sentiment_score'];\n        }\n\n        $avgSentiment = count($scores) > 0 ? array_sum($scores) / count($scores) : 0;\n        $latestSentiment = end($scores);\n\n        $ticket->update([\n            'sentiment_score' => round($avgSentiment, 2),\n            'urgency_score' => round($this->computeTicketUrgency($ticket), 2),\n            'ai_metadata' => array_merge($ticket->ai_metadata ?? [], [\n                'sentiment' => [\n                    'average' => round($avgSentiment, 4),\n                    'latest' => round($latestSentiment, 4),\n                    'message_count' => count($scores),\n                    'trend' => $this->calculateTrend($scores),\n                ],\n            ]),\n        ]);\n\n        return $ticket->fresh();\n    }\n\n    protected function computeSentiment(string $text): float\n    {\n        $positiveCount = 0;\n        $negativeCount = 0;\n\n        $words = str_word_count($text, 1);\n\n        foreach ($words as $word) {\n            if (in_array($word, $this->positiveLexicon)) {\n                $positiveCount++;\n            }\n            if (in_array($word, $this->negativeLexicon)) {\n                $negativeCount++;\n            }\n        }\n\n        $total = $positiveCount + $negativeCount;\n\n        if ($total === 0) {\n            return 0.0;\n        }\n\n        return ($positiveCount - $negativeCount) / $total;\n    }\n\n    protected function computeUrgency(string $text): float\n    {\n        $matchCount = 0;\n        foreach ($this->urgencyLexicon as $phrase) {\n            if (str_contains($text, $phrase)) {\n                $matchCount++;\n            }\n        }\n\n        return min(1.0, $matchCount / 3);\n    }\n\n    protected function computeTicketUrgency(Ticket $ticket): float\n    {\n        $urgency = 0.0;\n\n        if ($ticket->status === 'open' && $ticket->created_at->diffInHours() > 24) {\n            $urgency += 0.3;\n        }\n\n        if ($ticket->first_response_at === null) {\n            $urgency += 0.2;\n        }\n\n        $messages = $ticket->messages;\n        if ($messages->count() > 5) {\n            $urgency += 0.2;\n        }\n\n        $latestSentiment = $messages->last()?->ai_analysis['sentiment_score'] ?? 0;\n        if ($latestSentiment < -0.3) {\n            $urgency += 0.3;\n        }\n\n        return min(1.0, $urgency);\n    }\n\n    protected function detectEmotions(string $text): array\n    {\n        $emotions = [\n            'anger' => 0.0,\n            'frustration' => 0.0,\n            'satisfaction' => 0.0,\n            'confusion' => 0.0,\n            'urgency' => 0.0,\n        ];\n\n        if (preg_match('/\\b(angry|furious|outraged|fuming)\\b/i', $text)) {\n            $emotions['anger'] = 0.8;\n        }\n\n        if (preg_match('/\\b(frustrated|annoying|fed up|sick of)\\b/i', $text)) {\n            $emotions['frustration'] = 0.7;\n        }\n\n        if (preg_match('/\\b(confused|unclear|dont understand|what does)\\b/i', $text)) {\n            $emotions['confusion'] = 0.6;\n        }\n\n        $urgency = $this->computeUrgency($text);\n        if ($urgency > 0.3) {\n            $emotions['urgency'] = $urgency;\n        }\n\n        return $emotions;\n    }\n\n    protected function calculateTrend(array $scores): string\n    {\n        if (count($scores) < 3) {\n            return 'insufficient_data';\n        }\n\n        $recent = array_slice($scores, -3);\n        $improving = $recent[2] > $recent[0];\n        $declining = $recent[2] < $recent[0];\n\n        if ($improving) {\n            return 'improving';\n        }\n        if ($declining) {\n            return 'declining';\n        }\n        return 'stable';\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "334-knowledge-base-rag",
+      children: "33.4 Knowledge Base RAG"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Retrieval-Augmented Generation agent searches knowledge base articles by vector similarity, then composes a contextual answer. This reduces agent lookup time and enables self-service accuracy."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\KnowledgeBaseArticle;\nuse App\\Models\\Support\\Ticket;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass KnowledgeBaseAgent\n{\n    protected string $embeddingModel = 'text-embedding-3-small';\n    protected int $maxResults = 5;\n    protected float $similarityThreshold = 0.72;\n\n    public function suggestArticles(string $query, int $limit = 3): Collection\n    {\n        $queryEmbedding = $this->embed($query);\n\n        $articles = KnowledgeBaseArticle::published()->get();\n\n        $scored = $articles->map(function ($article) use ($queryEmbedding) {\n            if (!$article->vector_embedding) {\n                $article->vector_embedding = $this->embed($article->content);\n                $article->saveQuietly();\n            }\n\n            $similarity = $this->cosineSimilarity($queryEmbedding, $article->vector_embedding);\n            $keywordBonus = $this->keywordMatchBonus($query, $article);\n\n            return (object) [\n                'article' => $article,\n                'score' => $similarity + $keywordBonus,\n            ];\n        });\n\n        return $scored\n            ->filter(fn ($item) => $item->score >= $this->similarityThreshold)\n            ->sortByDesc('score')\n            ->take($limit)\n            ->map(function ($item) {\n                return $item->article;\n            });\n    }\n\n    public function answerFromKnowledgeBase(Ticket $ticket): ?array\n    {\n        $query = $ticket->subject . ' ' . $ticket->description;\n\n        $articles = $this->suggestArticles($query);\n\n        if ($articles->isEmpty()) {\n            return null;\n        }\n\n        $suggestions = $articles->map(function ($article) {\n            return [\n                'id' => $article->id,\n                'title' => $article->title,\n                'excerpt' => $article->excerpt ?? Str::limit($article->content, 200),\n                'relevance_score' => $article->relevance_score ?? 0.85,\n                'url' => route('knowledge-base.show', $article->slug),\n            ];\n        });\n\n        $answer = $this->generateAnswer($query, $articles);\n\n        return [\n            'query' => $query,\n            'answer' => $answer,\n            'suggested_articles' => $suggestions->toArray(),\n            'article_count' => $articles->count(),\n        ];\n    }\n\n    public function generateAnswer(string $query, Collection $articles): string\n    {\n        if ($articles->isEmpty()) {\n            return 'I couldn\\'t find a matching article. Please rephrase or contact support.';\n        }\n\n        $topArticle = $articles->first();\n\n        $answer = \"Based on our knowledge base, here's what I found:\\n\\n\";\n        $answer .= \"**{$topArticle->title}**\\n\\n\";\n        $answer .= $topArticle->excerpt ?? Str::limit($topArticle->content, 300);\n\n        if ($articles->count() > 1) {\n            $answer .= \"\\n\\n**Additional resources:**\\n\";\n            $articles->skip(1)->each(function ($article) use (&$answer) {\n                $answer .= \"- {$article->title}\\n\";\n            });\n        }\n\n        return $answer;\n    }\n\n    public function logArticleView(KnowledgeBaseArticle $article): void\n    {\n        $article->increment('view_count');\n    }\n\n    public function logArticleFeedback(KnowledgeBaseArticle $article, bool $helpful): void\n    {\n        if ($helpful) {\n            $article->increment('helpful_count');\n        } else {\n            $article->increment('unhelpful_count');\n        }\n    }\n\n    protected function embed(string $text): array\n    {\n        $response = Http::withToken(config('services.openai.api_key'))\n            ->post('https://api.openai.com/v1/embeddings', [\n                'model' => $this->embeddingModel,\n                'input' => $text,\n            ]);\n\n        return $response->json('data.0.embedding');\n    }\n\n    protected function cosineSimilarity(array $a, array $b): float\n    {\n        $dotProduct = 0;\n        $magnitudeA = 0;\n        $magnitudeB = 0;\n\n        foreach ($a as $i => $value) {\n            $dotProduct += $value * ($b[$i] ?? 0);\n            $magnitudeA += $value * $value;\n            $magnitudeB += ($b[$i] ?? 0) * ($b[$i] ?? 0);\n        }\n\n        $magnitudeA = sqrt($magnitudeA);\n        $magnitudeB = sqrt($magnitudeB);\n\n        if ($magnitudeA === 0.0 || $magnitudeB === 0.0) {\n            return 0.0;\n        }\n\n        return $dotProduct / ($magnitudeA * $magnitudeB);\n    }\n\n    protected function keywordMatchBonus(string $query, KnowledgeBaseArticle $article): float\n    {\n        $queryWords = array_unique(str_word_count(strtolower($query), 1));\n        $titleWords = str_word_count(strtolower($article->title), 1);\n        $keywordList = $article->keywords ?? [];\n\n        $matches = 0;\n\n        foreach ($queryWords as $word) {\n            if (in_array($word, $titleWords)) {\n                $matches++;\n            }\n            if (in_array($word, $keywordList)) {\n                $matches += 2;\n            }\n        }\n\n        return $matches * 0.02;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "335-escalation-automation",
+      children: "33.5 Escalation Automation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Support organizations escalate tickets when SLAs are breached, sentiment deteriorates, or complexity exceeds frontline capability. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EscalationAgent"
+      }), " monitors these signals and walks the escalation chain."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\SlaPolicy;\nuse App\\Models\\Support\\Ticket;\nuse App\\Models\\User;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Notification;\n\nclass EscalationAgent\n{\n    protected array $escalationReasons = [\n        'sla_breach' => 'SLA response time has been breached',\n        'sentiment_critical' => 'Customer sentiment score is critically low',\n        'complexity_high' => 'Ticket complexity exceeds frontline capability',\n        'customer_request' => 'Customer has explicitly requested escalation',\n        'stalled_ticket' => 'Ticket has no activity for extended period',\n    ];\n\n    public function evaluateAndEscalate(Ticket $ticket): Ticket\n    {\n        $reasons = [];\n\n        if ($this->hasSlaBreach($ticket)) {\n            $reasons[] = 'sla_breach';\n        }\n\n        if ($this->hasCriticalSentiment($ticket)) {\n            $reasons[] = 'sentiment_critical';\n        }\n\n        if ($this->isStalled($ticket)) {\n            $reasons[] = 'stalled_ticket';\n        }\n\n        if (empty($reasons)) {\n            return $ticket;\n        }\n\n        return $this->escalate($ticket, $reasons);\n    }\n\n    protected function escalate(Ticket $ticket, array $reasons): Ticket\n    {\n        $slaPolicy = SlaPolicy::where('priority', $ticket->priority)\n            ->where('is_active', true)\n            ->first();\n\n        $escalationChain = $slaPolicy?->escalation_chain ?? [\n            ['level' => 1, 'role' => 'team_lead', 'notify' => true],\n            ['level' => 2, 'role' => 'manager', 'notify' => true],\n            ['level' => 3, 'role' => 'director', 'notify' => true],\n        ];\n\n        $currentLevel = $ticket->ai_metadata['escalation']['level'] ?? 0;\n        $nextLevel = $currentLevel + 1;\n\n        $nextStep = collect($escalationChain)->firstWhere('level', $nextLevel);\n\n        if (!$nextStep) {\n            return $ticket;\n        }\n\n        $ticket->update([\n            'priority' => $this->bumpPriority($ticket->priority),\n            'ai_metadata' => array_merge($ticket->ai_metadata ?? [], [\n                'escalation' => [\n                    'level' => $nextLevel,\n                    'reasons' => $reasons,\n                    'escalated_at' => now()->toIso8601String(),\n                    'target_role' => $nextStep['role'],\n                    'resolved_reasons' => array_intersect_key(\n                        $this->escalationReasons,\n                        array_flip($reasons)\n                    ),\n                ],\n            ]),\n        ]);\n\n        Log::alert(\"Ticket #{$ticket->id} escalated to level {$nextLevel}\", [\n            'reasons' => $reasons,\n            'target_role' => $nextStep['role'],\n        ]);\n\n        if ($nextStep['notify']) {\n            $this->notifyEscalation($ticket, $nextStep);\n        }\n\n        return $ticket->fresh();\n    }\n\n    protected function hasSlaBreach(Ticket $ticket): bool\n    {\n        if ($ticket->status === 'resolved') {\n            return false;\n        }\n\n        $slaPolicy = SlaPolicy::where('priority', $ticket->priority)\n            ->where('is_active', true)\n            ->first();\n\n        if (!$slaPolicy) {\n            return false;\n        }\n\n        $elapsedMinutes = $ticket->created_at->diffInMinutes(now());\n\n        if ($ticket->first_response_at === null) {\n            return $elapsedMinutes > $slaPolicy->response_time_minutes;\n        }\n\n        return $elapsedMinutes > $slaPolicy->resolution_time_minutes;\n    }\n\n    protected function hasCriticalSentiment(Ticket $ticket): bool\n    {\n        $sentiment = $ticket->sentiment_score;\n\n        if ($sentiment === null) {\n            return false;\n        }\n\n        return $sentiment < -0.5;\n    }\n\n    protected function isStalled(Ticket $ticket): bool\n    {\n        if ($ticket->status === 'resolved') {\n            return false;\n        }\n\n        $lastMessage = $ticket->messages()->latest()->first();\n        if (!$lastMessage) {\n            return $ticket->created_at->diffInHours(now()) > 48;\n        }\n\n        return $lastMessage->created_at->diffInHours(now()) > 24;\n    }\n\n    protected function bumpPriority(string $current): string\n    {\n        $levels = ['low' => 'medium', 'medium' => 'high', 'high' => 'urgent'];\n\n        return $levels[$current] ?? $current;\n    }\n\n    protected function notifyEscalation(Ticket $ticket, array $step): void\n    {\n        $targets = User::where('role', $step['role'])->get();\n\n        Notification::send($targets, new \\App\\Notifications\\Support\\TicketEscalated($ticket));\n    }\n\n    public function monitorAllOpen(): int\n    {\n        $escalated = 0;\n\n        Ticket::open()->chunk(100, function ($tickets) use (&$escalated) {\n            foreach ($tickets as $ticket) {\n                $result = $this->evaluateAndEscalate($ticket);\n                if ($result->wasChanged()) {\n                    $escalated++;\n                }\n            }\n        });\n\n        return $escalated;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "336-multi-channel-support-agents",
+      children: "33.6 Multi-Channel Support Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Customers reach support through email, live chat, social media, and phone. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MultiChannelAgent"
+      }), " normalizes inbound messages from every channel into a unified ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "TicketMessage"
+      }), ", then routes the ticket appropriately."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\Ticket;\nuse App\\Models\\Support\\TicketMessage;\nuse App\\Models\\User;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Str;\n\nclass MultiChannelAgent\n{\n    protected array $channelParsers = [\n        'email' => 'parseEmail',\n        'chat' => 'parseChat',\n        'social' => 'parseSocialMedia',\n        'phone' => 'parsePhoneTranscript',\n    ];\n\n    public function ingest(string $channel, array $rawData): TicketMessage\n    {\n        $parser = $this->channelParsers[$channel] ?? 'parseGeneric';\n        $normalized = $this->$parser($rawData);\n\n        $ticket = $this->resolveTicket($normalized, $channel);\n\n        $message = $ticket->messages()->create([\n            'user_id' => $normalized['user_id'],\n            'body' => $normalized['body'],\n            'channel' => $channel,\n            'attachments' => $normalized['attachments'] ?? [],\n            'is_internal' => false,\n            'ai_analysis' => [\n                'channel' => $channel,\n                'source_id' => $rawData['id'] ?? null,\n                'normalized_at' => now()->toIso8601String(),\n            ],\n        ]);\n\n        Log::info(\"Multi-channel message ingested\", [\n            'channel' => $channel,\n            'ticket_id' => $ticket->id,\n            'message_id' => $message->id,\n        ]);\n\n        return $message;\n    }\n\n    protected function parseEmail(array $data): array\n    {\n        return [\n            'user_id' => $this->resolveUserByEmail($data['from'] ?? ''),\n            'body' => $data['body'] ?? $data['text'] ?? '',\n            'subject' => $data['subject'] ?? '(No Subject)',\n            'attachments' => $data['attachments'] ?? [],\n            'source' => $data['message_id'] ?? null,\n        ];\n    }\n\n    protected function parseChat(array $data): array\n    {\n        return [\n            'user_id' => $data['user_id'] ?? $this->resolveAnonymousUser(),\n            'body' => $data['message'] ?? $data['text'] ?? '',\n            'subject' => $data['subject'] ?? 'Chat: ' . Str::limit($data['message'] ?? '', 50),\n            'attachments' => [],\n            'source' => $data['session_id'] ?? null,\n        ];\n    }\n\n    protected function parseSocialMedia(array $data): array\n    {\n        $platform = $data['platform'] ?? 'unknown';\n\n        $body = $data['text'] ?? $data['full_text'] ?? '';\n\n        if (isset($data['in_reply_to'])) {\n            $body = \"In reply to: {$data['in_reply_to']}\\n\\n{$body}\";\n        }\n\n        return [\n            'user_id' => $this->resolveUserBySocial($data['author_id'] ?? null, $platform),\n            'body' => $body,\n            'subject' => \"{$platform}: \" . Str::limit($body, 50),\n            'attachments' => $data['media_urls'] ?? [],\n            'source' => $data['post_id'] ?? null,\n        ];\n    }\n\n    protected function parsePhoneTranscript(array $data): array\n    {\n        $transcript = $data['transcript'] ?? '';\n        $duration = $data['duration_seconds'] ?? 0;\n        $summary = $data['ai_summary'] ?? '';\n\n        $body = \"Phone call transcript ({$duration}s)\\n\\n\";\n        if ($summary) {\n            $body .= \"AI Summary: {$summary}\\n\\n\";\n        }\n        $body .= \"--- Transcript ---\\n{$transcript}\";\n\n        return [\n            'user_id' => $data['user_id'] ?? $this->resolveUserByPhone($data['caller_number'] ?? ''),\n            'body' => $body,\n            'subject' => $data['subject'] ?? 'Phone: ' . Str::limit($summary ?: $transcript, 50),\n            'attachments' => $data['recordings'] ?? [],\n            'source' => $data['call_id'] ?? null,\n        ];\n    }\n\n    protected function parseGeneric(array $data): array\n    {\n        return [\n            'user_id' => $data['user_id'] ?? $this->resolveAnonymousUser(),\n            'body' => $data['body'] ?? $data['message'] ?? '',\n            'subject' => $data['subject'] ?? 'New message',\n            'attachments' => $data['attachments'] ?? [],\n            'source' => $data['source_id'] ?? null,\n        ];\n    }\n\n    protected function resolveTicket(array $normalized, string $channel): Ticket\n    {\n        $subjectHash = md5($normalized['subject']);\n\n        $existing = Ticket::where('user_id', $normalized['user_id'])\n            ->where('status', '!=', 'resolved')\n            ->whereRaw(\"JSON_UNQUOTE(JSON_EXTRACT(ai_metadata, '$.channel.subject_hash')) = ?\", [$subjectHash])\n            ->latest()\n            ->first();\n\n        if ($existing) {\n            return $existing;\n        }\n\n        return Ticket::create([\n            'user_id' => $normalized['user_id'],\n            'subject' => $normalized['subject'],\n            'description' => Str::limit($normalized['body'], 1000),\n            'status' => 'open',\n            'priority' => 'medium',\n            'channel' => $channel,\n            'ai_metadata' => [\n                'channel' => [\n                    'source' => $channel,\n                    'subject_hash' => $subjectHash,\n                    'first_contact' => now()->toIso8601String(),\n                ],\n            ],\n        ]);\n    }\n\n    protected function resolveUserByEmail(string $email): ?int\n    {\n        $user = User::where('email', $email)->first();\n        return $user?->id;\n    }\n\n    protected function resolveUserBySocial(?string $authorId, string $platform): ?int\n    {\n        return User::where(\"social_{$platform}_id\", $authorId)->first()?->id;\n    }\n\n    protected function resolveUserByPhone(string $number): ?int\n    {\n        return User::where('phone', $number)->first()?->id;\n    }\n\n    protected function resolveAnonymousUser(): ?int\n    {\n        return User::where('email', 'anonymous@support.local')->first()?->id;\n    }\n\n    public function generateUnifiedResponse(Ticket $ticket, string $responseBody): TicketMessage\n    {\n        return $ticket->messages()->create([\n            'user_id' => $ticket->assigned_agent_id,\n            'body' => $responseBody,\n            'channel' => $ticket->channel,\n            'is_internal' => false,\n            'ai_analysis' => [\n                'generated' => true,\n                'channel_adapted' => true,\n                'generated_at' => now()->toIso8601String(),\n            ],\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "337-customer-satisfaction-tracking",
+      children: "33.7 Customer Satisfaction Tracking"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Post-resolution surveys measure Customer Satisfaction Score (CSAT) and First Contact Resolution (FCR). The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SatisfactionAgent"
+      }), " dispatches surveys, analyzes feedback text, and reports trends."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\CustomerSatisfactionSurvey;\nuse App\\Models\\Support\\Ticket;\nuse App\\Models\\User;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass SatisfactionAgent\n{\n    protected int $surveyDelayHours = 24;\n\n    public function dispatchSurvey(Ticket $ticket): ?CustomerSatisfactionSurvey\n    {\n        if ($ticket->status !== 'resolved') {\n            return null;\n        }\n\n        if ($ticket->satisfaction()->where('status', 'pending')->exists()) {\n            return null;\n        }\n\n        $survey = $ticket->satisfaction()->create([\n            'user_id' => $ticket->user_id,\n            'status' => 'pending',\n            'sent_at' => now()->addHours($this->surveyDelayHours),\n        ]);\n\n        Log::info(\"Satisfaction survey dispatched\", [\n            'ticket_id' => $ticket->id,\n            'survey_id' => $survey->id,\n            'send_at' => $survey->sent_at,\n        ]);\n\n        return $survey;\n    }\n\n    public function recordResponse(\n        CustomerSatisfactionSurvey $survey,\n        int $csatScore,\n        ?int $fcrScore = null,\n        ?string $feedback = null\n    ): CustomerSatisfactionSurvey {\n        $data = [\n            'csat_score' => max(1, min(5, $csatScore)),\n            'fcr_score' => $fcrScore ? max(1, min(5, $fcrScore)) : null,\n            'feedback' => $feedback,\n            'status' => 'responded',\n            'responded_at' => now(),\n        ];\n\n        if ($feedback) {\n            $data['ai_sentiment'] = $this->analyzeFeedback($feedback);\n        }\n\n        $survey->update($data);\n\n        $survey->ticket->update([\n            'ai_metadata' => array_merge($survey->ticket->ai_metadata ?? [], [\n                'satisfaction' => [\n                    'csat' => $csatScore,\n                    'fcr' => $fcrScore,\n                    'responded_at' => now()->toIso8601String(),\n                ],\n            ]),\n        ]);\n\n        Log::info(\"Survey response recorded\", [\n            'survey_id' => $survey->id,\n            'csat' => $csatScore,\n            'fcr' => $fcrScore,\n        ]);\n\n        return $survey->fresh();\n    }\n\n    public function analyzeFeedback(string $feedback): array\n    {\n        $text = strtolower($feedback);\n\n        $positive = ['great', 'helpful', 'quick', 'friendly', 'excellent', 'solved'];\n        $negative = ['slow', 'rude', 'unhelpful', 'confusing', 'worse', 'ignored'];\n\n        $positiveCount = 0;\n        $negativeCount = 0;\n\n        foreach ($positive as $word) {\n            if (str_contains($text, $word)) {\n                $positiveCount++;\n            }\n        }\n\n        foreach ($negative as $word) {\n            if (str_contains($text, $word)) {\n                $negativeCount++;\n            }\n        }\n\n        $total = $positiveCount + $negativeCount;\n        $sentiment = $total > 0\n            ? ($positiveCount - $negativeCount) / $total\n            : 0.0;\n\n        return [\n            'sentiment' => round($sentiment, 4),\n            'positive_keywords' => $positiveCount,\n            'negative_keywords' => $negativeCount,\n            'length' => strlen($feedback),\n            'analyzed_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function getMonthlyStats(int $year, ?int $month = null): array\n    {\n        $query = CustomerSatisfactionSurvey::where('status', 'responded')\n            ->whereYear('responded_at', $year);\n\n        if ($month) {\n            $query->whereMonth('responded_at', $month);\n        }\n\n        $surveys = $query->get();\n\n        if ($surveys->isEmpty()) {\n            return [\n                'total_responses' => 0,\n                'average_csat' => 0,\n                'average_fcr' => 0,\n                'detractors' => 0,\n                'passives' => 0,\n                'promoters' => 0,\n            ];\n        }\n\n        $csatScores = $surveys->pluck('csat_score')->filter();\n        $fcrScores = $surveys->pluck('fcr_score')->filter();\n\n        $detractors = $surveys->filter(fn ($s) => $s->csat_score !== null && $s->csat_score <= 2)->count();\n        $passives = $surveys->filter(fn ($s) => $s->csat_score === 3)->count();\n        $promoters = $surveys->filter(fn ($s) => $s->csat_score !== null && $s->csat_score >= 4)->count();\n\n        return [\n            'total_responses' => $surveys->count(),\n            'average_csat' => $csatScores->isNotEmpty() ? round($csatScores->avg(), 2) : 0,\n            'average_fcr' => $fcrScores->isNotEmpty() ? round($fcrScores->avg(), 2) : 0,\n            'detractors' => $detractors,\n            'passives' => $passives,\n            'promoters' => $promoters,\n        ];\n    }\n\n    public function getTrendingTopics(Collection $surveys): array\n    {\n        $feedbackTexts = $surveys\n            ->filter(fn ($s) => $s->feedback !== null)\n            ->pluck('feedback')\n            ->implode(' ');\n\n        $words = str_word_count(strtolower($feedbackTexts), 1);\n        $stopWords = ['the', 'this', 'that', 'and', 'for', 'was', 'but', 'not', 'with', 'very', 'all'];\n\n        $wordCounts = [];\n        foreach ($words as $word) {\n            if (strlen($word) <= 3 || in_array($word, $stopWords)) {\n                continue;\n            }\n            $wordCounts[$word] = ($wordCounts[$word] ?? 0) + 1;\n        }\n\n        arsort($wordCounts);\n\n        return array_slice($wordCounts, 0, 20);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "338-self-service-portal-agents",
+      children: "33.8 Self-Service Portal Agents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Self-service reduces ticket volume by guiding customers to answers before they reach an agent. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SelfServiceAgent"
+      }), " matches FAQ queries, runs guided troubleshooting, and suggests relevant knowledge base articles."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\KnowledgeBaseArticle;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Str;\n\nclass SelfServiceAgent\n{\n    protected array $faqOverrides = [\n        'how to reset password' => 'password_reset',\n        'change my email' => 'email_change',\n        'cancel subscription' => 'cancellation',\n        'refund policy' => 'refund_policy',\n        'delete my account' => 'account_deletion',\n        'what are your hours' => 'business_hours',\n        'shipping time' => 'shipping_info',\n    ];\n\n    protected array $faqAnswers = [\n        'password_reset' => [\n            'title' => 'How to Reset Your Password',\n            'body' => \"1. Go to the login page and click \\\"Forgot Password\\\"\\n\"\n                . \"2. Enter your registered email address\\n\"\n                . \"3. Check your inbox for a password reset link (valid for 60 minutes)\\n\"\n                . \"4. Click the link and enter your new password\\n\"\n                . \"5. Confirm the change and log in with your new credentials\",\n            'category' => 'account',\n        ],\n        'cancellation' => [\n            'title' => 'Cancelling Your Subscription',\n            'body' => \"You can cancel your subscription from your account settings:\\n\\n\"\n                . \"1. Navigate to Settings > Billing > Subscription\\n\"\n                . \"2. Click \\\"Cancel Subscription\\\"\\n\"\n                . \"3. Select a reason for cancellation (optional)\\n\"\n                . \"4. Confirm cancellation\\n\\n\"\n                . \"Your access will continue until the end of the current billing period.\",\n            'category' => 'billing',\n        ],\n        'refund_policy' => [\n            'title' => 'Refund Policy',\n            'body' => \"We offer a 30-day money-back guarantee on all annual plans.\\n\\n\"\n                . \"Monthly plans are non-refundable, but you can cancel at any time.\\n\\n\"\n                . \"To request a refund, contact our billing team with your invoice number.\",\n            'category' => 'billing',\n        ],\n    ];\n\n    public function handleQuery(string $query): array\n    {\n        $normalized = strtolower(trim($query));\n\n        $faqMatch = $this->matchFaq($normalized);\n        if ($faqMatch) {\n            $answer = $this->faqAnswers[$faqMatch];\n\n            return [\n                'type' => 'faq',\n                'confidence' => 0.95,\n                'title' => $answer['title'],\n                'body' => $answer['body'],\n                'suggestions' => [],\n                'metadata' => [\n                    'faq_key' => $faqMatch,\n                    'category' => $answer['category'],\n                ],\n            ];\n        }\n\n        $articles = app(KnowledgeBaseAgent::class)->suggestArticles($query);\n\n        if ($articles->isNotEmpty()) {\n            $top = $articles->first();\n            return [\n                'type' => 'article',\n                'confidence' => 0.75,\n                'title' => $top->title,\n                'body' => $top->excerpt ?? Str::limit($top->content, 300),\n                'suggestions' => $articles->skip(1)->pluck('title')->toArray(),\n                'metadata' => [\n                    'article_id' => $top->id,\n                    'category' => $top->category,\n                ],\n            ];\n        }\n\n        return $this->fallbackResponse($query);\n    }\n\n    public function getTroubleshootingFlow(string $issue): ?array\n    {\n        $flows = [\n            'login' => [\n                'title' => 'Login Troubleshooting',\n                'steps' => [\n                    'Check your email address for typos',\n                    'Use the \"Forgot Password\" option to reset',\n                    'Clear your browser cache and cookies',\n                    'Try a different browser or incognito mode',\n                    'Disable VPN or ad-blocker temporarily',\n                ],\n            ],\n            'payment' => [\n                'title' => 'Payment Troubleshooting',\n                'steps' => [\n                    'Verify your card number and expiry date',\n                    'Ensure sufficient funds are available',\n                    'Try a different payment method',\n                    'Contact your bank to ensure no blocks',\n                    'Ensure billing address matches card statement',\n                ],\n            ],\n            'performance' => [\n                'title' => 'Performance Troubleshooting',\n                'steps' => [\n                    'Check your internet connection speed',\n                    'Clear browser cache and cookies',\n                    'Disable browser extensions one by one',\n                    'Update your browser to the latest version',\n                    'Try accessing from a different device or network',\n                ],\n            ],\n        ];\n\n        $match = $this->matchIssueToFlow($issue);\n\n        return $match ? $flows[$match] : null;\n    }\n\n    public function suggestArticles(string $query): Collection\n    {\n        return app(KnowledgeBaseAgent::class)->suggestArticles($query, 3);\n    }\n\n    public function logSearch(string $query, bool $resolved): void\n    {\n        $key = 'self_service:search_count:' . today()->toDateString();\n        Cache::increment($key);\n\n        $logKey = \"self_service:queries:\" . Str::slug($query);\n        Cache::put($logKey, [\n            'query' => $query,\n            'resolved' => $resolved,\n            'searched_at' => now()->toIso8601String(),\n        ], now()->addDays(30));\n    }\n\n    protected function matchFaq(string $query): ?string\n    {\n        foreach ($this->faqOverrides as $pattern => $key) {\n            if (str_contains($query, $pattern)) {\n                return $key;\n            }\n        }\n\n        return null;\n    }\n\n    protected function matchIssueToFlow(string $issue): ?string\n    {\n        $issue = strtolower($issue);\n\n        if (str_contains($issue, 'login') || str_contains($issue, 'password') || str_contains($issue, 'sign in')) {\n            return 'login';\n        }\n\n        if (str_contains($issue, 'payment') || str_contains($issue, 'card') || str_contains($issue, 'charge')) {\n            return 'payment';\n        }\n\n        if (str_contains($issue, 'slow') || str_contains($issue, 'lag') || str_contains($issue, 'performance')) {\n            return 'performance';\n        }\n\n        return null;\n    }\n\n    protected function fallbackResponse(string $query): array\n    {\n        return [\n            'type' => 'fallback',\n            'confidence' => 0.0,\n            'title' => 'I couldn\\'t find an answer',\n            'body' => \"I'm sorry, I couldn't find a matching article for your question. \"\n                . \"Would you like me to connect you with a support agent? \"\n                . \"In the meantime, try searching our knowledge base with different keywords.\",\n            'suggestions' => [\n                'Try rephrasing your question',\n                'Browse our knowledge base categories',\n                'Contact support for personalized help',\n            ],\n            'metadata' => [\n                'needs_agent' => true,\n            ],\n        ];\n    }\n\n    public function getAnalytics(): array\n    {\n        $resolvedCount = Cache::get('self_service:resolved_count', 0);\n        $totalSearches = 0;\n\n        $searchDate = today()->toDateString();\n        for ($i = 0; $i < 30; $i++) {\n            $date = now()->subDays($i)->toDateString();\n            $totalSearches += Cache::get(\"self_service:search_count:{$date}\", 0);\n        }\n\n        $resolutionRate = $totalSearches > 0\n            ? round(($resolvedCount / $totalSearches) * 100, 1)\n            : 0;\n\n        return [\n            'total_searches_30d' => $totalSearches,\n            'resolved_count' => $resolvedCount,\n            'resolution_rate' => $resolutionRate,\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "339-sla-monitoring--reporting",
+      children: "33.9 SLA Monitoring & Reporting"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["SLA compliance is a critical business metric. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SlaMonitoringAgent"
+      }), " tracks every ticket against its policy, generates real-time breach alerts, and produces periodic compliance reports."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\Support\\Agents;\n\nuse App\\Models\\Support\\SlaPolicy;\nuse App\\Models\\Support\\Ticket;\nuse Carbon\\CarbonInterval;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass SlaMonitoringAgent\n{\n    public function checkTicketCompliance(Ticket $ticket): array\n    {\n        $policy = SlaPolicy::where('priority', $ticket->priority)\n            ->where('is_active', true)\n            ->first();\n\n        if (!$policy) {\n            return [\n                'compliant' => true,\n                'policy' => null,\n                'message' => 'No matching SLA policy found',\n            ];\n        }\n\n        $elapsed = $ticket->created_at->diffInMinutes(now());\n        $responseBreach = $ticket->first_response_at === null\n            && $elapsed > $policy->response_time_minutes;\n\n        $resolutionBreach = $ticket->status !== 'resolved'\n            && $elapsed > $policy->resolution_time_minutes;\n\n        $responseRemaining = $ticket->first_response_at === null\n            ? max(0, $policy->response_time_minutes - $elapsed)\n            : null;\n\n        $resolutionRemaining = $ticket->status !== 'resolved'\n            ? max(0, $policy->resolution_time_minutes - $elapsed)\n            : null;\n\n        $status = 'compliant';\n        if ($resolutionBreach) {\n            $status = 'breached';\n        } elseif ($responseBreach) {\n            $status = 'response_overdue';\n        } elseif ($responseRemaining !== null && $responseRemaining < 30) {\n            $status = 'at_risk';\n        }\n\n        return [\n            'compliant' => $status === 'compliant',\n            'status' => $status,\n            'policy' => [\n                'id' => $policy->id,\n                'name' => $policy->name,\n                'response_sla' => $policy->response_time_minutes,\n                'resolution_sla' => $policy->resolution_time_minutes,\n            ],\n            'metrics' => [\n                'elapsed_minutes' => $elapsed,\n                'response_remaining_minutes' => $responseRemaining,\n                'resolution_remaining_minutes' => $resolutionRemaining,\n                'response_breached' => $responseBreach,\n                'resolution_breached' => $resolutionBreach,\n            ],\n        ];\n    }\n\n    public function generateBreachAlert(Ticket $ticket): array\n    {\n        $compliance = $this->checkTicketCompliance($ticket);\n\n        $alert = [\n            'ticket_id' => $ticket->id,\n            'subject' => $ticket->subject,\n            'priority' => $ticket->priority,\n            'customer_id' => $ticket->user_id,\n            'assigned_team' => $ticket->assigned_team,\n            'status' => $compliance['status'],\n            'breach_type' => null,\n            'triggered_at' => now()->toIso8601String(),\n        ];\n\n        if ($compliance['metrics']['response_breached']) {\n            $alert['breach_type'] = 'response_time';\n            $alert['severity'] = 'high';\n        }\n\n        if ($compliance['metrics']['resolution_breached']) {\n            $alert['breach_type'] = 'resolution_time';\n            $alert['severity'] = 'critical';\n        }\n\n        Log::warning(\"SLA breach detected\", $alert);\n\n        return $alert;\n    }\n\n    public function monitorActiveTickets(): array\n    {\n        $breaches = [];\n\n        Ticket::open()->chunk(100, function ($tickets) use (&$breaches) {\n            foreach ($tickets as $ticket) {\n                $compliance = $this->checkTicketCompliance($ticket);\n                if (!$compliance['compliant']) {\n                    $breaches[] = $this->generateBreachAlert($ticket);\n                }\n            }\n        });\n\n        return $breaches;\n    }\n\n    public function generateDailyReport(): array\n    {\n        $today = today();\n        $startOfDay = $today->copy()->startOfDay();\n        $endOfDay = $today->copy()->endOfDay();\n\n        $resolvedToday = Ticket::whereBetween('resolved_at', [$startOfDay, $endOfDay])->count();\n        $openedToday = Ticket::whereBetween('created_at', [$startOfDay, $endOfDay])->count();\n\n        $compliantCount = 0;\n        $breachCount = 0;\n        $totalActive = 0;\n\n        Ticket::open()->chunk(100, function ($tickets) use (&$compliantCount, &$breachCount, &$totalActive) {\n            foreach ($tickets as $ticket) {\n                $totalActive++;\n                $compliance = $this->checkTicketCompliance($ticket);\n                if ($compliance['compliant']) {\n                    $compliantCount++;\n                } else {\n                    $breachCount++;\n                }\n            }\n        });\n\n        $byPriority = Ticket::open()\n            ->selectRaw('priority, COUNT(*) as count')\n            ->groupBy('priority')\n            ->pluck('count', 'priority')\n            ->toArray();\n\n        $avgResponseTime = Ticket::whereNotNull('first_response_at')\n            ->whereDate('first_response_at', $today)\n            ->selectRaw('AVG(TIMESTAMPDIFF(MINUTE, created_at, first_response_at)) as avg')\n            ->value('avg');\n\n        return [\n            'date' => $today->toDateString(),\n            'summary' => [\n                'opened_today' => $openedToday,\n                'resolved_today' => $resolvedToday,\n                'active_tickets' => $totalActive,\n                'open_by_priority' => $byPriority,\n            ],\n            'sla_compliance' => [\n                'compliant_count' => $compliantCount,\n                'breach_count' => $breachCount,\n                'compliance_rate' => $totalActive > 0\n                    ? round(($compliantCount / $totalActive) * 100, 1)\n                    : 100.0,\n            ],\n            'performance' => [\n                'avg_response_time_minutes' => $avgResponseTime ? round($avgResponseTime, 1) : null,\n            ],\n        ];\n    }\n\n    public function generateWeeklyReport(): array\n    {\n        $startOfWeek = now()->startOfWeek();\n        $endOfWeek = now()->endOfWeek();\n\n        $dailyStats = [];\n        $date = $startOfWeek->copy();\n\n        while ($date->lte($endOfWeek)) {\n            $openCount = Ticket::whereDate('created_at', '<=', $date)\n                ->where(function ($q) use ($date) {\n                    $q->whereNull('resolved_at')\n                        ->orWhereDate('resolved_at', '>=', $date);\n                })->count();\n\n            $resolvedCount = Ticket::whereDate('resolved_at', $date)->count();\n\n            $dailyStats[$date->toDateString()] = [\n                'open' => $openCount,\n                'resolved' => $resolvedCount,\n            ];\n\n            $date->addDay();\n        }\n\n        $breachCount = Ticket::open()\n            ->where('created_at', '<', now()->subHours(48))\n            ->count();\n\n        $reopenedCount = Ticket::where('status', 'open')\n            ->whereNotNull('resolved_at')\n            ->where('resolved_at', '>', now()->subWeek())\n            ->count();\n\n        return [\n            'week' => $startOfWeek->toDateString() . ' to ' . $endOfWeek->toDateString(),\n            'daily_volume' => $dailyStats,\n            'reopened_tickets' => $reopenedCount,\n            'overdue_tickets' => $breachCount,\n            'generated_at' => now()->toIso8601String(),\n        ];\n    }\n\n    public function getTeamPerformance(?string $team = null): Collection\n    {\n        $query = Ticket::whereNotNull('assigned_team')\n            ->where('status', 'resolved');\n\n        if ($team) {\n            $query->where('assigned_team', $team);\n        }\n\n        return $query->selectRaw(\"\n                assigned_team,\n                COUNT(*) as total_resolved,\n                AVG(TIMESTAMPDIFF(MINUTE, created_at, resolved_at)) as avg_resolution_minutes,\n                AVG(sentiment_score) as avg_sentiment\n            \")\n            ->groupBy('assigned_team')\n            ->get()\n            ->map(function ($row) {\n                $row->avg_resolution_minutes = round($row->avg_resolution_minutes ?? 0, 1);\n                $row->avg_sentiment = round($row->avg_sentiment ?? 0, 2);\n                return $row;\n            });\n    }\n\n    public function cacheComplianceSnapshot(): void\n    {\n        $report = $this->generateDailyReport();\n\n        Cache::put('sla:compliance:snapshot', $report, now()->addHours(1));\n        Cache::put('sla:compliance:rate', $report['sla_compliance']['compliance_rate'], now()->addHours(1));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare customer service agents and their AI techniques."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Agent"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Primary Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AI Technique Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TicketTriageAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classify and route incoming tickets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM classification + priority scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AutoResponseAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate contextual replies to common issues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM prompt chaining with KB context"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SentimentAnalysisAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detect customer sentiment in real-time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM sentiment scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "KnowledgeBaseAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manage and suggest knowledge articles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector search + semantic matching"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EscalationAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart escalation based on urgency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule engine + AI urgency scoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for customer service agents and concepts."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CS Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket, Customer, KnowledgeBase, EscalationRule"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket Triage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Category + priority + department routing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Contextual replies with KB citations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sentiment Detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time score 0.0 to 1.0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart Escalation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLA-based + AI urgency detection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket Triage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated ticket routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Speed vs accuracy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer reply generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation vs human touch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sentiment Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer satisfaction tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time vs batch processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge Base"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-service content management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coverage vs maintenance cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart Escalation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority-based routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Speed vs appropriate assignment"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your understanding of customer service AI agents."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What does the TicketTriageAgent primarily do?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Respond to tickets automatically"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Classify and route incoming tickets to the right department"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Close resolved tickets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Generate reports"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Classify and route incoming tickets to the right department</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " How does the AutoResponseAgent generate replies?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Uses fixed templates"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) LLM prompt chaining with knowledge base context"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Copies previous replies"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Random selection"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) LLM prompt chaining with knowledge base context</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What sentiment range does the SentimentAnalysisAgent use?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) -1 to +1"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) 0.0 to 1.0"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) 1 to 10"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) A to F"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) 0.0 to 1.0</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " What does the EscalationAgent use to determine urgency?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Only ticket age"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) SLA-based rules + AI urgency scoring"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Customer name"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Random selection"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) SLA-based rules + AI urgency scoring</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare customer service agents and their AI techniques."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Agent"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Primary Function"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "AI Technique Used"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "TicketTriageAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Classify and route incoming tickets"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "LLM classification + priority scoring"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "AutoResponseAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Generate contextual replies to common issues"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "LLM prompt chaining with KB context"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "SentimentAnalysisAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Detect customer sentiment in real-time"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "LLM sentiment scoring"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "KnowledgeBaseAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Manage and suggest knowledge articles"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Vector search + semantic matching"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "EscalationAgent"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Smart escalation based on urgency"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Rule engine + AI urgency scoring"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for customer service agents and concepts."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "CS Models"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Ticket, Customer, KnowledgeBase, EscalationRule"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Ticket Triage"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Category + priority + department routing"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Auto-Response"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Contextual replies with KB citations"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Sentiment Detection"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Real-time score 0.0 to 1.0"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Smart Escalation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "SLA-based + AI urgency detection"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Ticket Triage"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Automated ticket routing"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Speed vs accuracy"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Auto-Response"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Customer reply generation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Automation vs human touch"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Sentiment Analysis"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Customer satisfaction tracking"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Real-time vs batch processing"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Knowledge Base"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Self-service content management"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coverage vs maintenance cost"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Smart Escalation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Priority-based routing"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Speed vs appropriate assignment"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your understanding of customer service AI agents."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " What does the TicketTriageAgent primarily do?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Respond to tickets automatically"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Classify and route incoming tickets to the right department"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Close resolved tickets"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Generate reports"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Classify and route incoming tickets to the right department</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " How does the AutoResponseAgent generate replies?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Uses fixed templates"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) LLM prompt chaining with knowledge base context"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Copies previous replies"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) Random selection"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) LLM prompt chaining with knowledge base context</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " What sentiment range does the SentimentAnalysisAgent use?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) -1 to +1"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) 0.0 to 1.0"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) 1 to 10"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) A to F"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) 0.0 to 1.0</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " What does the EscalationAgent use to determine urgency?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Only ticket age"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) SLA-based rules + AI urgency scoring"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Customer name"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Random selection"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) SLA-based rules + AI urgency scoring</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare customer service agents and their AI techniques."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Agent"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Primary Function"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "AI Technique Used"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "TicketTriageAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Classify and route incoming tickets"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LLM classification + priority scoring"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "AutoResponseAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Generate contextual replies to common issues"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LLM prompt chaining with KB context"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "SentimentAnalysisAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Detect customer sentiment in real-time"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "LLM sentiment scoring"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "KnowledgeBaseAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Manage and suggest knowledge articles"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Vector search + semantic matching"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "EscalationAgent"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Smart escalation based on urgency"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Rule engine + AI urgency scoring"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for customer service agents and concepts."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "CS Models"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Ticket, Customer, KnowledgeBase, EscalationRule"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Ticket Triage"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Category + priority + department routing"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Auto-Response"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Contextual replies with KB citations"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Sentiment Detection"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Real-time score 0.0 to 1.0"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Smart Escalation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "SLA-based + AI urgency detection"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Ticket Triage"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Automated ticket routing"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Speed vs accuracy"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Auto-Response"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Customer reply generation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Automation vs human touch"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Sentiment Analysis"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Customer satisfaction tracking"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Real-time vs batch processing"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Knowledge Base"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Self-service content management"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coverage vs maintenance cost"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Smart Escalation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Priority-based routing"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Speed vs appropriate assignment"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your understanding of customer service AI agents."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " What does the TicketTriageAgent primarily do?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Respond to tickets automatically"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Classify and route incoming tickets to the right department"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Close resolved tickets"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Generate reports"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Classify and route incoming tickets to the right department</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " How does the AutoResponseAgent generate replies?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Uses fixed templates"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) LLM prompt chaining with knowledge base context"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Copies previous replies"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) Random selection"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) LLM prompt chaining with knowledge base context</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " What sentiment range does the SentimentAnalysisAgent use?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) -1 to +1"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) 0.0 to 1.0"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) 1 to 10"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) A to F"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) 0.0 to 1.0</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " What does the EscalationAgent use to determine urgency?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Only ticket age"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) SLA-based rules + AI urgency scoring"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Customer name"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Random selection"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) SLA-based rules + AI urgency scoring</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare customer service agents and their AI techniques."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Agent"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Primary Function"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "AI Technique Used"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "TicketTriageAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Classify and route incoming tickets"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LLM classification + priority scoring"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "AutoResponseAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Generate contextual replies to common issues"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LLM prompt chaining with KB context"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "SentimentAnalysisAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Detect customer sentiment in real-time"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "LLM sentiment scoring"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "KnowledgeBaseAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Manage and suggest knowledge articles"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Vector search + semantic matching"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "EscalationAgent"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Smart escalation based on urgency"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Rule engine + AI urgency scoring"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for customer service agents and concepts."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "CS Models"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Ticket, Customer, KnowledgeBase, EscalationRule"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Ticket Triage"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Category + priority + department routing"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Auto-Response"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Contextual replies with KB citations"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Sentiment Detection"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Real-time score 0.0 to 1.0"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Smart Escalation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "SLA-based + AI urgency detection"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Ticket Triage"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Automated ticket routing"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Speed vs accuracy"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Auto-Response"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Customer reply generation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Automation vs human touch"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Sentiment Analysis"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Customer satisfaction tracking"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Real-time vs batch processing"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Knowledge Base"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Self-service content management"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coverage vs maintenance cost"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Smart Escalation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Priority-based routing"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Speed vs appropriate assignment"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your understanding of customer service AI agents."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " What does the TicketTriageAgent primarily do?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Respond to tickets automatically"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Classify and route incoming tickets to the right department"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Close resolved tickets"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Generate reports"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Classify and route incoming tickets to the right department</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " How does the AutoResponseAgent generate replies?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Uses fixed templates"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) LLM prompt chaining with knowledge base context"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Copies previous replies"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) Random selection"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) LLM prompt chaining with knowledge base context</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " What sentiment range does the SentimentAnalysisAgent use?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) -1 to +1"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) 0.0 to 1.0"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) 1 to 10"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) A to F"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) 0.0 to 1.0</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " What does the EscalationAgent use to determine urgency?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Only ticket age"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) SLA-based rules + AI urgency scoring"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Customer name"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Random selection"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) SLA-based rules + AI urgency scoring</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["This chapter built a complete AI-augmented customer service platform across nine layers. We started with data models that capture tickets, messages, knowledge articles, satisfaction surveys, and SLA policies. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "TicketTriageAgent"
+                                                                      }), " classifies incoming requests by intent and routes them to the right team automatically. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "SentimentAnalysisAgent"
+                                                                      }), " scores each message for emotional tone and flags critical interactions for escalation."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "KnowledgeBaseAgent"
+                                                                      }), " implements Retrieval-Augmented Generation → embedding articles into a vector space, computing cosine similarity against customer queries, and generating contextual answers. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "EscalationAgent"
+                                                                      }), " monitors SLA breaches, sentiment thresholds, and stalled tickets, then walks a configurable escalation chain. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "MultiChannelAgent"
+                                                                      }), " normalizes email, chat, social media, and phone transcript data into unified ticket messages regardless of source."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["Post-resolution, the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "SatisfactionAgent"
+                                                                      }), " dispatches surveys within a configurable delay, records CSAT and FCR scores, and analyzes feedback text for sentiment and trending topics. The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "SelfServiceAgent"
+                                                                      }), " powers FAQ matching, guided troubleshooting flows, and article suggestions before a ticket reaches an agent. Finally, the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "SlaMonitoringAgent"
+                                                                      }), " tracks compliance across all active tickets, generates breach alerts, and produces daily and weekly reports with team performance metrics."]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "exercises",
+                                                                      children: "Exercises"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Priority Escalation Ladder:"
+                                                                          }), " Extend ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "TicketTriageAgent"
+                                                                          }), " so that tickets with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "priority === 'urgent'"
+                                                                          }), " are immediately escalated to the senior support queue and a notification is dispatched to all team leads via a real-time broadcast."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Sentiment-Aware Routing:"
+                                                                          }), " Modify ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SentimentAnalysisAgent"
+                                                                          }), " so that when ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "sentiment_score < -0.6"
+                                                                          }), " and the ticket is assigned to a team, the agent reassigns it to a senior agent within the same team who has the highest satisfaction rating."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Multi-Language FAQ:"
+                                                                          }), " Extend ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SelfServiceAgent"
+                                                                          }), " to support English and Spanish FAQ matching. Create an array of translated patterns and answers, then detect the query language before selecting the matching FAQ set."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "SLA Business Hours:"
+                                                                          }), " Update ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SlaMonitoringAgent"
+                                                                          }), " so that SLA timer calculations exclude weekends and the business hours defined in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SlaPolicy.business_hours"
+                                                                          }), " JSON column. Only count minutes during active support windows."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Satisfaction Trends Dashboard:"
+                                                                          }), " Build an artisan command ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "support:report:csat-trends"
+                                                                          }), " that uses ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SatisfactionAgent::getMonthlyStats()"
+                                                                          }), " to output a 6-month rolling CSAT trend table to the console, including month-over-month change percentages."]
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,7951 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[65840],{
+
+/***/ 9896
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_c_programming_07_strings_md_dff_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-c-programming-07-strings-md-dff.json
+const site_docs_courses_c_programming_07_strings_md_dff_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/c-programming/07-strings","title":"Chapter 7: Strings","description":"Previous Functions","source":"@site/docs/courses/c-programming/07-strings.md","sourceDirName":"courses/c-programming","slug":"/c-programming/07-strings","permalink":"/ai-engineering-journey/c-programming/07-strings","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-strings","slug":"/c-programming/07-strings","title":"Chapter 7: Strings","sidebar_label":"Chapter 7: Strings","sidebar_position":7},"sidebar":"course-c-programming","previous":{"title":"Chapter 6: Arrays","permalink":"/ai-engineering-journey/c-programming/06-arrays"},"next":{"title":"Chapter 8: Functions","permalink":"/ai-engineering-journey/c-programming/08-functions"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/c-programming/07-strings.md
+
+
+const frontMatter = {
+	id: '07-strings',
+	slug: '/c-programming/07-strings',
+	title: 'Chapter 7: Strings',
+	sidebar_label: 'Chapter 7: Strings',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 7: Strings';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 3
+}, {
+  "value": "7.1 String as Character Array",
+  "id": "71-string-as-character-array",
+  "level": 2
+}, {
+  "value": "Real-World Analogy: Beads on a Necklace",
+  "id": "real-world-analogy-beads-on-a-necklace",
+  "level": 3
+}, {
+  "value": "What Is a String?",
+  "id": "what-is-a-string",
+  "level": 3
+}, {
+  "value": "How Null Termination Works",
+  "id": "how-null-termination-works",
+  "level": 3
+}, {
+  "value": "Numbered Steps to Create a String",
+  "id": "numbered-steps-to-create-a-string",
+  "level": 3
+}, {
+  "value": "Pseudocode for String Traversal",
+  "id": "pseudocode-for-string-traversal",
+  "level": 3
+}, {
+  "value": "Dry Run: strlen Traversal of &quot;Hello&quot;",
+  "id": "dry-run-strlen-traversal-of-hello",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "Advantages and Disadvantages",
+  "id": "advantages-and-disadvantages",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "7.2 String Literals",
+  "id": "72-string-literals",
+  "level": 2
+}, {
+  "value": "Real-World Analogy: Engraved Plaque vs. Whiteboard",
+  "id": "real-world-analogy-engraved-plaque-vs-whiteboard",
+  "level": 3
+}, {
+  "value": "String Literal Memory",
+  "id": "string-literal-memory",
+  "level": 3
+}, {
+  "value": "Numbered Steps for String Literal Behavior",
+  "id": "numbered-steps-for-string-literal-behavior",
+  "level": 3
+}, {
+  "value": "String Literal vs Char Array Comparison",
+  "id": "string-literal-vs-char-array-comparison",
+  "level": 3
+}, {
+  "value": "Pseudocode: String Initialization",
+  "id": "pseudocode-string-initialization",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-1",
+  "level": 3
+}, {
+  "value": "7.3 String Constants",
+  "id": "73-string-constants",
+  "level": 2
+}, {
+  "value": "Why Use const char * Instead of char *?",
+  "id": "why-use-const-char--instead-of-char-",
+  "level": 3
+}, {
+  "value": "7.4 String Input and Output",
+  "id": "74-string-input-and-output",
+  "level": 2
+}, {
+  "value": "7.4.1 <code>puts</code> - Simple Output",
+  "id": "741-puts---simple-output",
+  "level": 3
+}, {
+  "value": "7.4.2 <code>printf</code> with <code>%s</code>",
+  "id": "742-printf-with-s",
+  "level": 3
+}, {
+  "value": "7.4.3 <code>gets</code> - The Dangerous One",
+  "id": "743-gets---the-dangerous-one",
+  "level": 3
+}, {
+  "value": "7.4.4 <code>fgets</code> - Safe Line Input (Preferred)",
+  "id": "744-fgets---safe-line-input-preferred",
+  "level": 3
+}, {
+  "value": "7.4.5 <code>scanf</code> with <code>%s</code>",
+  "id": "745-scanf-with-s",
+  "level": 3
+}, {
+  "value": "Numbered Steps: Safe String Input",
+  "id": "numbered-steps-safe-string-input",
+  "level": 3
+}, {
+  "value": "Pseudocode: Safe Input",
+  "id": "pseudocode-safe-input",
+  "level": 3
+}, {
+  "value": "Dry Run: fgets with Buffer",
+  "id": "dry-run-fgets-with-buffer",
+  "level": 3
+}, {
+  "value": "Dry Run: fgets with Short Input",
+  "id": "dry-run-fgets-with-short-input",
+  "level": 3
+}, {
+  "value": "Edge Cases in String I/O",
+  "id": "edge-cases-in-string-io",
+  "level": 3
+}, {
+  "value": "gets vs fgets vs scanf: Comparison",
+  "id": "gets-vs-fgets-vs-scanf-comparison",
+  "level": 3
+}, {
+  "value": "Complexity Analysis for String I/O",
+  "id": "complexity-analysis-for-string-io",
+  "level": 3
+}, {
+  "value": "Advantages and Disadvantages of Each Input Method",
+  "id": "advantages-and-disadvantages-of-each-input-method",
+  "level": 3
+}, {
+  "value": "Best Practices for String I/O",
+  "id": "best-practices-for-string-io",
+  "level": 3
+}, {
+  "value": "7.5 The <code>&lt;string.h&gt;</code> Library",
+  "id": "75-the-stringh-library",
+  "level": 2
+}, {
+  "value": "7.5.1 <code>strlen</code> - String Length",
+  "id": "751-strlen---string-length",
+  "level": 3
+}, {
+  "value": "7.5.2 <code>strcpy</code> - String Copy",
+  "id": "752-strcpy---string-copy",
+  "level": 3
+}, {
+  "value": "7.5.3 <code>strncpy</code> - Bounded String Copy",
+  "id": "753-strncpy---bounded-string-copy",
+  "level": 3
+}, {
+  "value": "7.5.4 <code>strcat</code> - String Concatenation",
+  "id": "754-strcat---string-concatenation",
+  "level": 3
+}, {
+  "value": "7.5.5 <code>strncat</code> - Bounded String Concatenation",
+  "id": "755-strncat---bounded-string-concatenation",
+  "level": 3
+}, {
+  "value": "7.5.6 <code>strcmp</code> - String Comparison",
+  "id": "756-strcmp---string-comparison",
+  "level": 3
+}, {
+  "value": "7.5.7 <code>strncmp</code> - Bounded String Comparison",
+  "id": "757-strncmp---bounded-string-comparison",
+  "level": 3
+}, {
+  "value": "7.5.8 <code>strchr</code> - Find First Character",
+  "id": "758-strchr---find-first-character",
+  "level": 3
+}, {
+  "value": "7.5.9 <code>strrchr</code> - Find Last Character",
+  "id": "759-strrchr---find-last-character",
+  "level": 3
+}, {
+  "value": "7.5.10 <code>strstr</code> - Find Substring",
+  "id": "7510-strstr---find-substring",
+  "level": 3
+}, {
+  "value": "7.5.11 <code>strtok</code> - String Tokenization",
+  "id": "7511-strtok---string-tokenization",
+  "level": 3
+}, {
+  "value": "7.5.12 <code>sprintf</code> - String Formatting",
+  "id": "7512-sprintf---string-formatting",
+  "level": 3
+}, {
+  "value": "7.5.13 <code>snprintf</code> - Safe String Formatting",
+  "id": "7513-snprintf---safe-string-formatting",
+  "level": 3
+}, {
+  "value": "7.5.14 <code>sscanf</code> - String Parsing",
+  "id": "7514-sscanf---string-parsing",
+  "level": 3
+}, {
+  "value": "7.6 String to Number Conversion",
+  "id": "76-string-to-number-conversion",
+  "level": 2
+}, {
+  "value": "7.6.1 <code>atoi</code> - String to Integer",
+  "id": "761-atoi---string-to-integer",
+  "level": 3
+}, {
+  "value": "7.6.2 <code>atol</code> - String to Long",
+  "id": "762-atol---string-to-long",
+  "level": 3
+}, {
+  "value": "7.6.3 <code>atof</code> - String to Double",
+  "id": "763-atof---string-to-double",
+  "level": 3
+}, {
+  "value": "7.6.4 <code>strtol</code> - String to Long (with Error Detection)",
+  "id": "764-strtol---string-to-long-with-error-detection",
+  "level": 3
+}, {
+  "value": "7.6.5 <code>strtod</code> - String to Double (with Error Detection)",
+  "id": "765-strtod---string-to-double-with-error-detection",
+  "level": 3
+}, {
+  "value": "Comparison: atoi vs strtol vs sscanf",
+  "id": "comparison-atoi-vs-strtol-vs-sscanf",
+  "level": 3
+}, {
+  "value": "7.7 Array of Strings",
+  "id": "77-array-of-strings",
+  "level": 2
+}, {
+  "value": "7.7.1 Array of Character Pointers",
+  "id": "771-array-of-character-pointers",
+  "level": 3
+}, {
+  "value": "7.7.2 2D Char Array (Fixed Buffer per String)",
+  "id": "772-2d-char-array-fixed-buffer-per-string",
+  "level": 3
+}, {
+  "value": "7.7.3 Dynamic Array of Strings",
+  "id": "773-dynamic-array-of-strings",
+  "level": 3
+}, {
+  "value": "Comparison: Array of Strings Approaches",
+  "id": "comparison-array-of-strings-approaches",
+  "level": 3
+}, {
+  "value": "7.8 String Comparison Tables",
+  "id": "78-string-comparison-tables",
+  "level": 2
+}, {
+  "value": "7.8.1 String Input: gets vs fgets vs scanf",
+  "id": "781-string-input-gets-vs-fgets-vs-scanf",
+  "level": 3
+}, {
+  "value": "7.8.2 String Copy: strcpy vs strncpy vs snprintf",
+  "id": "782-string-copy-strcpy-vs-strncpy-vs-snprintf",
+  "level": 3
+}, {
+  "value": "7.8.3 String to Number: atoi vs strtol vs sscanf",
+  "id": "783-string-to-number-atoi-vs-strtol-vs-sscanf",
+  "level": 3
+}, {
+  "value": "7.8.4 String Literal vs Char Array",
+  "id": "784-string-literal-vs-char-array",
+  "level": 3
+}, {
+  "value": "7.9 Interview Corner",
+  "id": "79-interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: What is the difference between <code>char *s</code> and <code>char s[]</code>?",
+  "id": "q1-what-is-the-difference-between-char-s-and-char-s",
+  "level": 3
+}, {
+  "value": "Q2: Why is <code>gets</code> dangerous?",
+  "id": "q2-why-is-gets-dangerous",
+  "level": 3
+}, {
+  "value": "Q3: What is the N+1 problem (not SQL — string-related)?",
+  "id": "q3-what-is-the-n1-problem-not-sql--string-related",
+  "level": 3
+}, {
+  "value": "Q4: How would you implement <code>strlen</code> without using library functions?",
+  "id": "q4-how-would-you-implement-strlen-without-using-library-functions",
+  "level": 3
+}, {
+  "value": "Q5: What happens if you pass NULL to <code>strlen</code>?",
+  "id": "q5-what-happens-if-you-pass-null-to-strlen",
+  "level": 3
+}, {
+  "value": "Q6: How does <code>strtok</code> work internally? What are its limitations?",
+  "id": "q6-how-does-strtok-work-internally-what-are-its-limitations",
+  "level": 3
+}, {
+  "value": "Q7: What is the difference between <code>strcmp</code> and <code>strncmp</code>?",
+  "id": "q7-what-is-the-difference-between-strcmp-and-strncmp",
+  "level": 3
+}, {
+  "value": "Q8: Why would <code>snprintf(dest, n, &quot;%s&quot;, src)</code> be preferred over <code>strcpy</code>?",
+  "id": "q8-why-would-snprintfdest-n-s-src-be-preferred-over-strcpy",
+  "level": 3
+}, {
+  "value": "Q9: What is the output of <code>printf(&quot;%s&quot;, &quot;hello&quot; + 2)</code>?",
+  "id": "q9-what-is-the-output-of-printfs-hello--2",
+  "level": 3
+}, {
+  "value": "Q10: How does <code>sscanf(&quot;42&quot;, &quot;%d&quot;, &amp;x)</code> differ from <code>atoi(&quot;42&quot;)</code>?",
+  "id": "q10-how-does-sscanf42-d-x-differ-from-atoi42",
+  "level": 3
+}, {
+  "value": "Q11: What is the difference between <code>char a[10] = &quot;hello&quot;</code> and <code>char a[10]; a = &quot;hello&quot;</code>?",
+  "id": "q11-what-is-the-difference-between-char-a10--hello-and-char-a10-a--hello",
+  "level": 3
+}, {
+  "value": "Q12: Can you use <code>strlen</code> to determine if a string was truncated after <code>strncpy</code>?",
+  "id": "q12-can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy",
+  "level": 3
+}, {
+  "value": "Q13: How do you safely concatenate strings in C?",
+  "id": "q13-how-do-you-safely-concatenate-strings-in-c",
+  "level": 3
+}, {
+  "value": "Q14: What does <code>sizeof(&quot;hello&quot;)</code> evaluate to?",
+  "id": "q14-what-does-sizeofhello-evaluate-to",
+  "level": 3
+}, {
+  "value": "Q15: Implement a function that reverses a string in place.",
+  "id": "q15-implement-a-function-that-reverses-a-string-in-place",
+  "level": 3
+}, {
+  "value": "7.10 Applications in Real Systems",
+  "id": "710-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "7.10.1 String Parsing in Network Protocols",
+  "id": "7101-string-parsing-in-network-protocols",
+  "level": 3
+}, {
+  "value": "7.10.2 URL Query String Parsing",
+  "id": "7102-url-query-string-parsing",
+  "level": 3
+}, {
+  "value": "7.10.3 CSV File Parsing",
+  "id": "7103-csv-file-parsing",
+  "level": 3
+}, {
+  "value": "7.10.4 File Path Parsing (dirname/basename)",
+  "id": "7104-file-path-parsing-dirnamebasename",
+  "level": 3
+}, {
+  "value": "7.10.5 String Trimming (whitespace removal)",
+  "id": "7105-string-trimming-whitespace-removal",
+  "level": 3
+}, {
+  "value": "7.11 Summary and Exercises",
+  "id": "711-summary-and-exercises",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 3
+}, {
+  "value": "Common Pitfalls Checklist",
+  "id": "common-pitfalls-checklist",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-7-strings",
+        children: "Chapter 7: Strings"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/c-programming/06-arrays",
+          children: "Arrays"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/c-programming/08-functions",
+          children: "Functions"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish between string literals and character arrays"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Manipulate strings using the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "string.h"
+        }), " library functions with full awareness of bounds and null-termination"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Read and write strings safely using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fgets"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf"
+        }), ", and bounded functions"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Process strings character by character using pointer arithmetic and array indexing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand null-termination, buffer overflow risks, and reentrancy concerns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Convert between strings and numeric types safely"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recognize real-world applications of string processing in systems programming"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/c-programming/07-strings/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/c-programming/07-strings/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/c-programming/07-strings/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/c-programming/07-strings/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/c-programming/07-strings/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/c-programming/07-strings/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Before studying this chapter, you should be comfortable with:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Where Covered"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Arrays (declaration, indexing)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/c-programming/06-arrays",
+              children: "Chapter 6"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pointers (address-of, dereference)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/c-programming/09-pointers",
+              children: "Chapter 9"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Functions (declaration, return types)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/c-programming/08-functions",
+              children: "Chapter 8"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "typedef"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sizeof"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/c-programming/06-arrays",
+              children: "Chapter 6"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String Fundamentals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C strings are null-terminated char arrays"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["The null terminator ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "\\0"
+            }), " marks the end - every string buffer must have room for it"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String Literals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "String literals are read-only and stored in a static data segment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modifying a string literal is undefined behavior (segfault on most platforms)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String Functions"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strlen"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strcpy"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strcat"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strcmp"
+            }), " from ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "<string.h>"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strncpy"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strncat"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strncmp"
+            }), " for bounds-checked operations"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String Input/Output"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "gets"
+            }), " is dangerous and removed - use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets"
+            }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf"
+            }), " with width limit"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Always specify the buffer size in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets(buf, size, stdin)"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String to Number"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "atoi"
+            }), " is error-prone; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strtol"
+            }), " provides error detection"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Prefer ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strtol"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strtod"
+            }), " for production code"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Character Functions"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "<ctype.h>"
+            }), " provides ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "isalpha"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "isdigit"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "toupper"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "tolower"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "These functions handle locale-specific character classification"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[\"7.1 Char Arrays & Null Terminator\"] --> B[\"7.2 String Literals\"]\n    B --> C[\"7.3 String Constants\"]\n    C --> D[\"7.4 String I/O\"]\n    D --> E[\"7.5 String Functions\"]\n    E --> F[\"7.6 String to Number\"]\n    F --> G[\"7.7 Array of Strings\"]\n    G --> H[\"7.8 Comparison Tables\"]\n    H --> I[\"7.9 Interview Corner\"]\n    I --> J[\"7.10 Applications\"]\n    J --> K[\"Summary & Exercises\"]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "71-string-as-character-array",
+      children: "7.1 String as Character Array"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In C, a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "string"
+      }), " is a sequence of characters terminated by a null character (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ", ASCII value 0). There is no dedicated ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "string"
+      }), " type - strings are stored in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char"
+      }), " arrays."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-beads-on-a-necklace",
+      children: "Real-World Analogy: Beads on a Necklace"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Imagine a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "necklace"
+      }), " where each bead is a character. The necklace has a special ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "knot"
+      }), " (the null terminator ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ") that marks the end. To find the length of the beaded pattern, you count beads from the clasp until you reach the knot - but you do NOT count the knot itself."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Beads:  [H] [e] [l] [l] [o] [KNOT]\nIndex:   0   1   2   3   4    5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The knot tells you \"stop here.\" If you lose the knot, you will keep counting beads forever - this is exactly what happens when a C string lacks a null terminator. Every C string function relies on finding that knot. If the knot is missing, the function reads past the end of the array into unknown memory - undefined behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "what-is-a-string",
+      children: "What Is a String?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char greeting[] = \"Hello\";\n/* Memory: {'H','e','l','l','o','\\0'} - 6 bytes total */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Memory layout of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "greeting"
+        }), ":"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Address: 0x100  0x101  0x102  0x103  0x104  0x105\n        +------+------+------+------+------+------+\n        |  'H' |  'e' |  'l' |  'l' |  'o' | '\\0' |\n        +------+------+------+------+------+------+\nIndex:     0      1      2      3      4      5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The array has ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "6 elements"
+      }), " (indices 0-5), but the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "string length"
+      }), " is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "5"
+      }), " characters. The sixth byte is the null terminator - it is part of the array, not part of the string content."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-null-termination-works",
+      children: "How Null Termination Works"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The null character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " has integer value 0. It is distinct from the character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'0'"
+      }), " (ASCII 48). In memory, a zero byte is also the value used to terminate strings. This is why ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"\")"
+      }), " returns 0 - the first byte is already ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    printf(\"'\\\\0' has ASCII value: %d\\n\", '\\0');   /* 0 */\n    printf(\"'0' has ASCII value:  %d\\n\", '0');     /* 48 */\n    printf(\"Difference: %d\\n\", '\\0' - '0');        /* -48 */\n\n    char empty[] = \"\";\n    printf(\"Empty string size: %zu byte(s)\\n\", sizeof(empty)); /* 1 */\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0' has ASCII value: 0\n'0' has ASCII value:  48\nDifference: -48\nEmpty string size: 1 byte(s)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-to-create-a-string",
+      children: "Numbered Steps to Create a String"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Choose a storage location (stack, static, or heap).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Declare a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char"
+      }), " array with enough space for all characters plus one byte for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ".\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " Initialize each element. If using a string literal, the compiler auto-inserts ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ".\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " Use string functions - they all rely on the null terminator to know where the string ends.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5:"
+      }), " Ensure the null terminator is always present after any modification."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* Step 1-3: Declaration and initialization */\nchar name[20];                    /* Step 2: space for 19 chars + '\\0' */\nname[0] = 'J';                    /* Step 3: manual char-by-char */\nname[1] = 'o';\nname[2] = 'h';\nname[3] = 'n';\nname[4] = '\\0';                   /* MUST terminate manually */\n\n/* Shorthand - same result, compiler adds '\\0' */\nchar name2[] = \"John\";            /* auto-sized to 5 */\n\n/* Using %s specifier - relies on null terminator */\nprintf(\"Hello, %s\\n\", name2);     /* prints \"Hello, John\" */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-for-string-traversal",
+      children: "Pseudocode for String Traversal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION print_string(str):\n    i <- 0\n    WHILE str[i] != '\\0':\n        PRINT str[i]\n        i <- i + 1\n    END WHILE\n    PRINT newline\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-strlen-traversal-of-hello",
+      children: "Dry Run: strlen Traversal of \"Hello\""
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " function walks the array character by character until it finds ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". Here is a trace table for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"Hello\")"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "i"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "str[i]"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "str[i] != '\\0'"
+            }), "?"]
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Count"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increment count, advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increment count, advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increment count, advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increment count, advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'o'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increment count, advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stop"
+            }), " - return 5"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "5"
+      }), " (does not count the null terminator)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char str[] = \"Hello\";\n    size_t len = strlen(str);\n    printf(\"String: \\\"%s\\\"\\n\", str);\n    printf(\"Length: %zu\\n\", len);\n    printf(\"Array size (sizeof): %zu\\n\", sizeof(str));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "String: \"Hello\"\nLength: 5\nArray size (sizeof): 6\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "strlen"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Must scan every character until ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            }), " - no length prefix in C strings"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Access by index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Array indexing is constant-time pointer arithmetic: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "*(str + i)"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Copy by assignment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each character must be copied individually; no bulk-memory primitive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare strings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(min(m,n))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stops at first differing character; worst case compares both fully"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Null-terminate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single byte write to known position"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages-and-disadvantages",
+      children: "Advantages and Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Minimal overhead - only one extra byte for ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No built-in length field - O(n) to find length"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw memory access gives full control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to overflow, under-allocate, or lose the terminator"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache-friendly sequential access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No bounds checking - silent corruption"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interoperability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Universal - every C API uses this format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No Unicode handling - you must manage encoding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Flexibility"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Works with any memory region (stack/heap/static)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual memory management required for dynamic strings"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Missing null terminator:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char no_null[] = {'H', 'e', 'l', 'l', 'o'}; /* NO '\\0' */\nprintf(\"%s\", no_null); /* prints \"Hello\" + garbage until a random '\\0' in memory */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This is undefined behavior - ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "printf"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " will read past the array bounds until they find a zero byte somewhere in memory. The program might crash, print garbage, or appear to work correctly (until it doesn't)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Buffer too small for null terminator:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char buf[5] = \"Hello\"; /* WARNING: \"Hello\" needs 6 bytes including '\\0' */\n/* buf = {'H','e','l','l','o'} - NO null terminator! */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The compiler may or may not warn. The array holds exactly 5 chars - no room for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". This is a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "buffer overflow"
+      }), " waiting to happen."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Empty string:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char empty[] = \"\";       /* size 1: { '\\0' } */\nprintf(\"%zu\", strlen(empty)); /* prints 0 */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["An empty string is a single null terminator. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"\")"
+      }), " returns 0. This is perfectly valid."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "String with embedded null:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char embedded[] = \"Hi\\0There\";\nprintf(\"%zu\\n\", strlen(embedded)); /* prints 2 - stops at the embedded null */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["C strings cannot represent embedded null characters. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "printf"
+      }), " will stop at the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". For binary data with embedded nulls, use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "mem*"
+      }), " functions instead."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "72-string-literals",
+      children: "7.2 String Literals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-engraved-plaque-vs-whiteboard",
+      children: "Real-World Analogy: Engraved Plaque vs. Whiteboard"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "string literal"
+      }), " is like an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "engraved plaque"
+      }), " on a wall - the words are set in stone, permanent, and any attempt to change them would deface the monument."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "character array"
+      }), " is like a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "whiteboard"
+      }), " - you can write, erase, and rewrite freely."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Engraved Plaque (String Literal)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Whiteboard (Char Array)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Read-only memory (", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".rodata"
+            }), ")"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack / heap (writable)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can modify?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No - undefined behavior"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes - freely"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lifetime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Entire program"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scope-dependent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char *s = \"Fixed\";"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char s[] = \"Fixed\";"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "sizeof"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pointer size (4 or 8)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Array size (includes ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            }), ")"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "string-literal-memory",
+      children: "String Literal Memory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When you write:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char *str1 = \"Hello\";    /* Pointer to a literal in .rodata (read-only) */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The compiler places the characters ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'H','e','l','l','o','\\0'"
+      }), " in a read-only data section (often ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".rodata"
+      }), "). The variable ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "str1"
+      }), " is a pointer to the first byte of that region."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char str2[] = \"Hello\";    /* Mutable array on the stack */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The compiler allocates 6 bytes on the stack and copies the characters into them. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "str2"
+      }), " is an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "array"
+      }), ", not a pointer - it owns its data."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char *literal = \"Fixed\";   /* read-only */\n    char array[] = \"Fixed\";    /* mutable */\n\n    /* array[0] = 'M'; */     /* OK - would produce \"Mixed\" */\n    /* literal[0] = 'M'; */   /* UNDEFINED BEHAVIOR - segfault on most systems */\n\n    printf(\"literal points to: %s\\n\", literal);\n    printf(\"array contains:   %s\\n\", array);\n    printf(\"sizeof(literal):  %zu (pointer size)\\n\", sizeof(literal));\n    printf(\"sizeof(array):    %zu (6 bytes)\\n\", sizeof(array));\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "literal points to: Fixed\narray contains:   Fixed\nsizeof(literal):  8 (pointer size)\nsizeof(array):    6 (6 bytes)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-for-string-literal-behavior",
+      children: "Numbered Steps for String Literal Behavior"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Compiler encounters ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"Hello\""
+      }), " in source code.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Compiler allocates 6 bytes in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".rodata"
+      }), " section: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'H' 'e' 'l' 'l' 'o' '\\0'"
+      }), ".\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " If assigned to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s"
+      }), " receives the address of the first byte.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " If assigned to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char s[]"
+      }), ", compiler generates code to copy the bytes into the stack array at runtime.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5:"
+      }), " Any write through ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s"
+      }), " hits read-only memory -> segfault (undefined behavior)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "string-literal-vs-char-array-comparison",
+      children: "String Literal vs Char Array Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char *s = \"Hello\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char s[] = \"Hello\""
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Pointer in stack, chars in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".rodata"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All chars on the stack"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutable?"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " - modifying is UB"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " - can change characters"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "sizeof(s)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Size of pointer (4 or 8 bytes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Size of array (6 bytes)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "&s"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Address of the pointer variable"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Address of the first element (same as ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "s"
+            }), ")"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reassignable?"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Yes - ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "s"
+            }), " can point elsewhere"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["No - ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "s"
+            }), " is a fixed array name"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lifetime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Permanent (program duration)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic (block scope)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String interning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May share memory with identical literals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each instance has its own copy"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-string-initialization",
+      children: "Pseudocode: String Initialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION init_string():\n    // Method 1: literal pointer\n    ptr <- address_of_literal(\"Hello\")  // points to .rodata\n\n    // Method 2: array copy\n    array <- allocate(6)                // stack allocation\n    array[0] <- 'H'\n    array[1] <- 'e'\n    array[2] <- 'l'\n    array[3] <- 'l'\n    array[4] <- 'o'\n    array[5] <- '\\0'\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-1",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Modifying a string literal (undefined behavior):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char *p = \"hello\";\np[0] = 'H'; /* CRASH on many systems - undefined behavior */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["On most systems this causes a segmentation fault. On some embedded systems without memory protection, it might silently corrupt program data. Either way, it is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "never"
+      }), " safe."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "String interning:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char *a = \"hello\";\nchar *b = \"hello\";\nif (a == b) printf(\"Same address\\n\"); /* MAY print - compiler-dependent */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Compilers may \"intern\" identical string literals to save space. Never compare string literals with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "=="
+      }), "; always use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "String literal as function argument:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void process(char *s) { /* might modify s */ }\nprocess(\"constant\"); /* safe only if process() does NOT write through s */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Declare parameter as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "const char *s"
+      }), " if the function does not modify the string. This gives compile-time protection."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void safe_process(const char *s) {\n    /* s[0] = 'X'; */ /* COMPILER ERROR - const prevents modification */\n    printf(\"%s\\n\", s); /* reading is fine */\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "73-string-constants",
+      children: "7.3 String Constants"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A string constant is a string literal assigned to a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "const char *"
+      }), " pointer, which provides a degree of safety through the type system:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "const char *welcome = \"Welcome to C programming!\";\n/* welcome[0] = 'w'; */ /* COMPILER ERROR - const qualification prevents modification */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Although ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s = \"Hello\""
+      }), " already points to read-only memory, the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "const"
+      }), " qualifier adds a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "compile-time"
+      }), " guarantee:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Declaration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Runtime modification"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Compile-time protection"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char *s = \"Hello\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UB (may crash)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No warning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "const char *s = \"Hello\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UB (may crash)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compiler error"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    const char *months[] = {\n        \"January\", \"February\", \"March\", \"April\",\n        \"May\", \"June\", \"July\", \"August\",\n        \"September\", \"October\", \"November\", \"December\"\n    };\n\n    for (int i = 0; i < 12; i++) {\n        printf(\"Month %2d: %s\\n\", i + 1, months[i]);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Month  1: January\nMonth  2: February\nMonth  3: March\nMonth  4: April\nMonth  5: May\nMonth  6: June\nMonth  7: July\nMonth  8: August\nMonth  9: September\nMonth 10: October\nMonth 11: November\nMonth 12: December\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "why-use-const-char--instead-of-char-",
+      children: "Why Use const char * Instead of char *?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Self-documenting"
+        }), " - Readers know the function won't modify the string."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compiler enforcement"
+        }), " - Accidental writes produce compile errors, not runtime crashes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interoperability"
+        }), " - Many standard library functions (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmp"
+        }), ") take ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "const char *"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wider compatibility"
+        }), " - Allows passing string literals without warnings."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void good(const char *s) { /* can accept literals and arrays */ }\nvoid bad(char *s) { /* warns when passing literals */ }\n\ngood(\"literal\");  /* OK */\nbad(\"literal\");   /* warning: deprecated conversion */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "74-string-input-and-output",
+      children: "7.4 String Input and Output"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["String I/O is where many C programs first encounter buffer overflow vulnerabilities. Understanding the differences between ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "scanf"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "puts"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "printf"
+      }), " is essential for writing safe code."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "741-puts---simple-output",
+      children: ["7.4.1 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "puts"
+      }), " - Simple Output"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int puts(const char *s);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " A town crier who reads a scroll and then automatically rings a bell (adds a newline) when done."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    char msg[] = \"Hello, world!\";\n    puts(msg);          /* prints \"Hello, world!\" followed by newline */\n    puts(\"Another\");    /* directly from a literal */\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Hello, world!\nAnother\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "puts"
+      }), " automatically appends a newline. It returns a non-negative value on success, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EOF"
+      }), " on failure. It is simple and safe - no format string vulnerabilities."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "742-printf-with-s",
+      children: ["7.4.2 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "printf"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%s"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int printf(const char *format, ...);"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "printf(\"Name: %s\\n\", name);   /* prints until '\\0' */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%s"
+      }), " specifier expects a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "const char *"
+      }), ". It prints every character until it encounters ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Safety warning:"
+      }), " Never pass user-controlled data as the format string:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "printf(user_input);  /* DANGEROUS - format string vulnerability */\nprintf(\"%s\", user_input); /* SAFE - user data is an argument, not the format */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "743-gets---the-dangerous-one",
+      children: ["7.4.3 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), " - The Dangerous One"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *gets(char *buf);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Never use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "gets"
+        }), " in new code."]
+      }), " It was removed from the C11 standard."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char buf[10];\ngets(buf);   /* If user types more than 9 characters -> buffer overflow -> SECURITY HOLE */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), " has ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "no way to limit input size"
+      }), ". It reads until newline and writes past the buffer end. This function has been responsible for countless security vulnerabilities, including the famous Morris worm (1988)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Numbered steps of why gets is dangerous:\nStep 1: User types 100 characters.\nStep 2: gets reads them all, writing past the 10-byte buffer.\nStep 3: Overflow corrupts the stack - return address, local variables, saved registers.\nStep 4: Attacker crafts input to overwrite the return address.\nStep 5: Program \"returns\" to attacker-controlled code (shellcode).\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "744-fgets---safe-line-input-preferred",
+      children: ["7.4.4 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets"
+      }), " - Safe Line Input (Preferred)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *fgets(char *buf, int n, FILE *stream);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " A straw with a filter - no matter how much liquid is in the glass, the straw only lets through a fixed amount per sip. The rest stays in the glass for next time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char line[100];\n\n    printf(\"Enter a line: \");\n    if (fgets(line, sizeof(line), stdin)) {\n        /* fgets includes the newline - strip it */\n        line[strcspn(line, \"\\n\")] = '\\0';\n        printf(\"You entered: \\\"%s\\\"\\n\", line);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Sample run:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Enter a line: Hello, C language!\nYou entered: \"Hello, C language!\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets"
+      }), " reads at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "size - 1"
+      }), " characters (reserving one for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "). If a newline is encountered before the limit, it is included in the buffer. This is why we strip it with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcspn"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "745-scanf-with-s",
+      children: ["7.4.5 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "scanf"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%s"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int scanf(const char *format, ...);"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char word[50];\nprintf(\"Enter a word: \");\nscanf(\"%49s\", word);   /* width limit: 49 chars + '\\0' */\nprintf(\"You entered: %s\\n\", word);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Without width limit:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "scanf(\"%s\", word);     /* DANGEROUS: no limit - overflow on long input */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "scanf(\"%s\")"
+      }), " reads until whitespace (space, tab, newline). It appends ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " but ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "cannot protect against overflow"
+      }), " unless you specify a field width."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-safe-string-input",
+      children: "Numbered Steps: Safe String Input"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Declare a buffer with known size.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Determine the maximum input length (buffer size minus 1 for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ").\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " Call ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets(buf, sizeof(buf), stdin)"
+      }), " - it automatically limits input.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " Check return value - if ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "NULL"
+      }), ", input failed (EOF or error).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5:"
+      }), " Remove trailing newline using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcspn"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strchr"
+      }), ".\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 6:"
+      }), " Process the string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-safe-input",
+      children: "Pseudocode: Safe Input"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION safe_input(buf, size):\n    result <- fgets(buf, size, stdin)\n    IF result == NULL:\n        RETURN error\n    END IF\n    p <- strchr(buf, '\\n')    // find newline\n    IF p != NULL:\n        *p <- '\\0'            // remove it\n    END IF\n    RETURN success\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-fgets-with-buffer",
+      children: "Dry Run: fgets with Buffer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Input: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"Hello, World!\\n\""
+      }), " (14 chars + newline), buffer size = 10"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Buffer content"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Read count"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(empty)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Start"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "H"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'H'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "He"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'e'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hel"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'l'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hell"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'l'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'o'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello,"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read ','"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello, "
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read ' '"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello, W"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'W'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello, Wo"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Buffer full (size-1 = 9)"
+            }), " - stop"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hello, Wo\\0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Null-terminate, return"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " Buffer has ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"Hello, Wo\\0\""
+      }), ". The remaining ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"rld!\\n\""
+      }), " stays in stdin, which can cause bugs on subsequent reads."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-fgets-with-short-input",
+      children: "Dry Run: fgets with Short Input"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Input: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"Hi\\n\""
+      }), " (3 chars), buffer size = 10"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Buffer content"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Read count"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(empty)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Start"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "H"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'H'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hi"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read 'i'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hi\\n"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Read '\\n' - ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "newline encountered"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Hi\\n\\0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Null-terminate, return"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " Buffer has ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"Hi\\n\\0\""
+      }), " - the newline is included."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-in-string-io",
+      children: "Edge Cases in String I/O"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "fgets with empty input:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "fgets(buf, size, stdin); /* user just presses Enter */\n/* buf = \"\\n\\0\" - contains just newline */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "fgets with oversized input:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char buf[5];\nfgets(buf, 5, stdin);  /* user types \"abcdefgh\\n\" */\n/* buf = \"abc\\0\" - 4 chars + null, rest stays in stream */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The remaining ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"defgh\\n\""
+      }), " stays in stdin. The next read will get ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"defgh\\n\""
+      }), ". This is a common source of \"skipped input\" bugs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "scanf leaving newline:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "scanf(\"%d\", &num);  /* user types 42\\n - newline stays */\nfgets(buf, 100, stdin); /* immediately reads the leftover newline! */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Fix: consume the leftover newline with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "getchar()"
+      }), " or use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets"
+      }), " for all input and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf"
+      }), " to parse."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "scanf with multiple words:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char name[50];\nscanf(\"%s\", name);   /* user types \"John Smith\" */\n/* name = \"John\" - \"Smith\" stays in input buffer! */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "gets-vs-fgets-vs-scanf-comparison",
+      children: "gets vs fgets vs scanf: Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "gets(buf)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets(buf, n, stdin)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf(\"%s\", buf)"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bounds-safe?"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " - no limit"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " - reads at most ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "n-1"
+            }), " chars"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Only with width: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf(\"%49s\", buf)"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads spaces?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (until newline)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (until newline)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " - stops at whitespace"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Stores newline?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discards it"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Includes"
+            }), " it"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stops at it"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Null-terminates?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Removed in C11?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Typical use"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reading lines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reading tokens/words"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL on failure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL on failure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns number of items matched"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Leftover handling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May leave chars if buffer full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Leaves unread input in stream"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-for-string-io",
+      children: "Complexity Analysis for String I/O"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "puts(s)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes each character; n = string length"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "printf(\"%s\", s)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same - character-by-character output"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets(buf, n, s)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(min(n, input_len))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads until newline, limit, or EOF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf(\"%s\", buf)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(input_len)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads until whitespace, no built-in limit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "gets(buf)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(input_len)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Reads until newline - ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "unbounded"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages-and-disadvantages-of-each-input-method",
+      children: "Advantages and Disadvantages of Each Input Method"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bounds-safe, reads spaces, error detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Includes newline (needs stripping), leaves partial data on overflow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Formatted parsing, skips whitespace automatically"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No bounds check without width, stops at spaces, leaves newlines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "gets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple (was)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No bounds check, removed from C11, never use"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "best-practices-for-string-io",
+      children: "Best Practices for String I/O"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Always use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "fgets"
+          }), " for line input"]
+        }), " - it is the only safe, standard option."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always strip the trailing newline"
+        }), " from ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fgets"
+        }), " output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "sscanf"
+          }), " to parse"]
+        }), " already-read lines rather than ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "scanf"
+        }), " directly."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always specify width"
+        }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "scanf"
+        }), " if you must use it: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "scanf(\"%49s\", buf)"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Never, ever use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "gets"
+          }), "."]
+        }), " Even if your compiler still supports it, do not use it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Check return values"
+        }), " - ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fgets"
+        }), " returns NULL on error/EOF."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "75-the-stringh-library",
+      children: ["7.5 The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<string.h>"
+      }), " Library"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The C standard library provides a rich set of functions for string manipulation, all declared in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<string.h>"
+      }), ". Every function in this library assumes the input strings are null-terminated. Violating this assumption leads to undefined behavior."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "751-strlen---string-length",
+      children: ["7.5.1 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " - String Length"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "size_t strlen(const char *s);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Counting beads on a necklace until you hit the knot. You count the beads (characters) but stop at the knot (null terminator). The knot is not counted."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Returns the number of characters before the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start at the address ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize a counter to 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the current byte."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If it is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ", stop and return the counter."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Otherwise, increment the counter and advance to the next byte."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Repeat from step 3."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strlen(s):\n    count <- 0\n    WHILE s[count] != '\\0':\n        count <- count + 1\n    END WHILE\n    RETURN count\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char *strs[] = {\"\", \"C\", \"Hello\", \"Hello, World!\"};\n    size_t n = sizeof(strs) / sizeof(strs[0]);\n\n    for (size_t i = 0; i < n; i++) {\n        printf(\"strlen(\\\"%-15s\\\") = %2zu\\n\", strs[i], strlen(strs[i]));\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"\"              ) =  0\nstrlen(\"C\"             ) =  1\nstrlen(\"Hello\"         ) =  5\nstrlen(\"Hello, World!\" ) = 13\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strlen(\"\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "i"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "str[i]"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "str[i] != '\\0'"
+            }), "?"]
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stop immediately, return 0"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"\")"
+      }), " returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "0"
+      }), " - the first byte is the null terminator."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n) - must scan every character until ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ". C strings have no length prefix, so there is no way to know the length without scanning. This means calling ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen"
+        }), " in a loop condition (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "for (int i = 0; i < strlen(s); i++)"
+        }), ") turns an O(n) algorithm into O(n^2) because ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen"
+        }), " rescans every iteration."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1) - uses a single counter register."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(n)?"
+      }), " Because the string length is not stored anywhere. The only way to find the end is to examine each byte until the zero byte is found. This is a fundamental trade-off of C's null-terminated string design."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to implement and understand"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) cost for every length query"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Saves 4-8 bytes per string (vs Pascal's length-prefix)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No amortization - pay O(n) every call"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot overflow (read-only operation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No null terminator -> reads past buffer (UB)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Empty string ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"\""
+        }), ": returns 0 immediately (the first byte is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["No null terminator: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen"
+        }), " reads past the buffer boundary -> undefined behavior."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Very long string: O(n) cost can be significant in performance-critical loops. Cache locality helps since access is sequential."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "NULL"
+        }), " pointer: passing NULL to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen"
+        }), " causes a segmentation fault (undefined behavior). Always check for NULL before calling."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "752-strcpy---string-copy",
+      children: ["7.5.2 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcpy"
+      }), " - String Copy"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strcpy(char *dest, const char *src);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Copying text from one whiteboard to another, character by character, until you reach the end of the source text. You also draw a small dot (null terminator) at the end on the destination board. You do not check whether the destination board is big enough - if it is too small, you write on the wall beyond it."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Copies all characters from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " (including the null terminator) to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with index ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "i = 0"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Read ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src[i]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write it to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest[i]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src[i]"
+        }), " was ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ", stop."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Increment ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "i"
+        }), " and go to step 2."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Return the original ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " pointer."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strcpy(dest, src):\n    i <- 0\n    LOOP:\n        dest[i] <- src[i]\n        IF src[i] == '\\0':\n            BREAK\n        i <- i + 1\n    RETURN dest\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char src[] = \"Hello, World!\";\n    char dest[50];\n\n    strcpy(dest, src);\n    printf(\"Source:      \\\"%s\\\"\\n\", src);\n    printf(\"Destination: \\\"%s\\\"\\n\", dest);\n\n    /* strcpy returns the destination pointer - useful for chaining */\n    char dest2[50];\n    printf(\"Chained:     \\\"%s\\\"\\n\", strcpy(dest2, \"Chain\"));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Source:      \"Hello, World!\"\nDestination: \"Hello, World!\"\nChained:     \"Hello, World!\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strcpy(\"Hello\", dest)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "src[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dest[i] after copy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stop?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'o'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'o'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " - stop"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["After copy: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest = {'H','e','l','l','o','\\0', ...}"
+      }), ". The remaining bytes of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), " (if any) are untouched."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n) - copies each of the n characters from src to dest. Every character must be read and written once."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1) - no additional memory beyond the source and destination buffers."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(n)?"
+      }), " Each character in the source string (including the null terminator) must be individually copied. There is no memcpy-style optimization possible because we must check for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " at each position."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to use, well-known"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No bounds checking - silent overflow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tight inline loop, cache-friendly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can overwrite critical data if dest is too small"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return value"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns dest for chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dest must be at least strlen(src) + 1 bytes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Buffer overflow:"
+        }), " If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " is smaller than ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen(src) + 1"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcpy"
+        }), " writes past the end -> undefined behavior, potential crash, security vulnerability."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overlapping strings:"
+        }), " If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " overlap, behavior is undefined (use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "memmove"
+        }), " instead)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty src:"
+        }), " Copies just ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), " to dest[0] - 1 byte written."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NULL pointers:"
+        }), " Passing NULL for either argument -> crash (undefined behavior)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "753-strncpy---bounded-string-copy",
+      children: ["7.5.3 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " - Bounded String Copy"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strncpy(char *dest, const char *src, size_t n);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Copying text from one whiteboard to another, but you are only allowed to fill the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " slots on the destination board. If the source text is shorter than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), ", you fill the rest with dots (nulls). If it is longer, you stop at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters - but you might not place the final dot (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "), leaving the destination without a proper end marker."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Copies up to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), ". If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " is shorter than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), ", the remaining bytes in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), " are padded with nulls."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Critical warning:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " does ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "NOT"
+      }), " guarantee null-termination if ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(src) >= n"
+      }), ". Always manually null-terminate:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "strncpy(dest, src, sizeof(dest) - 1);\ndest[sizeof(dest) - 1] = '\\0';\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char dest[10];\n\n    /* Case 1: src fits */\n    strncpy(dest, \"Hi\", sizeof(dest) - 1);\n    dest[sizeof(dest) - 1] = '\\0';\n    printf(\"Case 1: \\\"%s\\\"\\n\", dest);\n\n    /* Case 2: src exceeds n - NOT null-terminated without manual fix */\n    char dest2[5];\n    strncpy(dest2, \"Hello, World!\", 4);\n    dest2[4] = '\\0';  /* CRITICAL */\n    printf(\"Case 2: \\\"%s\\\"\\n\", dest2);\n\n    /* Case 3: shorter src - pads with nulls */\n    char dest3[10];\n    strncpy(dest3, \"AB\", sizeof(dest3));\n    printf(\"Case 3: \");\n    for (int i = 0; i < 10; i++) {\n        printf(\"%02x \", (unsigned char)dest3[i]);\n    }\n    printf(\"\\n\");\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Case 1: \"Hi\"\nCase 2: \"Hell\"\nCase 3: 41 42 00 00 00 00 00 00 00 00\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strncpy(\"Hello\", dest, 4)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "src[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "n limit"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dest[i] after copy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stop?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 4 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 4 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 4 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 4 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i = 4 -> stop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["After copy: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest = {'H','e','l','l', ...} "
+      }), " - ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "no null terminator!"
+      }), " Checking dest[4] reveals the original byte, not ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". This is the classic ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " trap."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strncpy(\"Hi\", dest, 6)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "src[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "n limit"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dest[i] after copy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stop?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'i'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'i'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "src ended, but continue padding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Padding with null"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Padding with null"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "i < 6 (yes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Padding with null"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["After copy: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest = {'H','i','\\0','\\0','\\0','\\0'}"
+      }), " - null-padded."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n) - copies up to n characters. If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen(src) < n"
+        }), ", it also writes ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n - strlen(src)"
+        }), " null bytes (O(n) total). This zero-padding is wasteful for large n and short src."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why zero-padding makes it O(n) even for short strings:"
+      }), " Unlike a simple ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcpy"
+      }), " that stops at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " always writes exactly ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " bytes to dest. This means even copying ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"A\""
+      }), " into a 1000-byte buffer touches 1000 bytes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bounds"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes at most n bytes to dest"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Does not guarantee null-termination"
+            }), " - the biggest pitfall"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Padding"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Useful for fixed-width database fields"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wastes time writing nulls for short strings"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Portability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Part of C standard (unlike strlcpy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Awkward semantics - not a true bounded strcpy"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " >= ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), " chars long: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not"
+        }), " null-terminated. Always add ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest[n-1] = '\\0'"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " shorter than ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " is padded with nulls (wasteful for large ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), " and short ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "n = 0"
+        }), ": no bytes are copied (but this is unusual and likely a bug)."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Overlap: undefined behavior if src and dest overlap."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "754-strcat---string-concatenation",
+      children: ["7.5.4 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcat"
+      }), " - String Concatenation"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strcat(char *dest, const char *src);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " You have a train (dest) already on the tracks. You attach new train cars (src) to the end by finding the last car and coupling new ones after it. You never check if the track (buffer) is long enough for the extended train."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Appends a copy of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " to the end of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), ". The first character of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " overwrites the null terminator of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Find the null terminator in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " (walk until ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Copy characters from ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " to this position one by one."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Stop after copying ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), " from ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Return ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strcat(dest, src):\n    i <- strlen(dest)       // find end of dest\n    j <- 0\n    LOOP:\n        dest[i] <- src[j]\n        IF src[j] == '\\0':\n            BREAK\n        i <- i + 1\n        j <- j + 1\n    RETURN dest\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char path[256] = \"/home/user/\";\n    char filename[] = \"document.txt\";\n\n    strcat(path, filename);\n    printf(\"Full path: %s\\n\", path);\n    printf(\"Total length: %zu\\n\", strlen(path));\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Full path: /home/user/document.txt\nTotal length: 27\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strcat(\"Hello\", \" World\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "char copied"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dest content"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find end"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello\\0...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "strlen(\"Hello\") = 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "' '"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello ...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overwrites '\\0'"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'W'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello W...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'o'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello Wo...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'r'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello Wor...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello Worl...\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'d'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello World\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"Hello World\\0\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Done"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Final content: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest = \"Hello World\\0\""
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(m + n) where m = len(dest), n = len(src). Must walk the entire ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dest"
+        }), " to find its end (O(m)), then copy all of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " (O(n))."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(m + n)?"
+      }), " Two passes are required: first to locate the end of dest (strlen-equivalent O(m)), then to copy all of src (O(n)). This makes repeated ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcat"
+      }), " calls in a loop very expensive - O(k^2) for k concatenations because each call rescans the growing string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clear intent, widely understood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No bounds checking - overflow risk"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return value"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns dest for chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must pre-calculate total buffer space"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequential memory access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m+n) per call - quadratic if looped"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Critical warning:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcat"
+      }), " has ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "no bounds checking"
+      }), ". If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), " does not have enough space for both strings plus null terminator, it will overflow. Always ensure the total space is sufficient, or use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncat"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* DANGEROUS example */\nchar buf[10] = \"Hello\";\nstrcat(buf, \", world!\"); /* BUF[10] can only hold 9 chars + '\\0' */\n/* \"Hello, world!\" is 14 chars - overflows buf[10] by 5 bytes! */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Better approach - check space:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char buf[32] = \"Hello\";\nif (strlen(buf) + strlen(\", world!\") + 1 <= sizeof(buf)) {\n    strcat(buf, \", world!\");  /* safe - we checked */\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "755-strncat---bounded-string-concatenation",
+      children: ["7.5.5 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncat"
+      }), " - Bounded String Concatenation"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strncat(char *dest, const char *src, size_t n);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Same train analogy, but you are only allowed to attach at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " new cars. If the source train has more than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " cars, you only take the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " and then couple a special marker car (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Appends at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src"
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest"
+      }), ", then ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "always adds a null terminator"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Unlike ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strncpy"
+        })]
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncat"
+      }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "always null-terminates"
+      }), " the result."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char buf[32] = \"Prefix_\";\n    char *data = \"a_very_long_string_that_exceeds_buffer\";\n\n    /* Safe: append at most remaining space minus 1 */\n    size_t remaining = sizeof(buf) - strlen(buf) - 1;\n    strncat(buf, data, remaining);\n\n    printf(\"Result: \\\"%s\\\" (%zu chars)\\n\", buf, strlen(buf));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Result: \"Prefix_a_very_long_string_\" (25 chars)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strncat(\"AB\", \"CDEF\", 2)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["dest starts as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"AB\\0...\""
+      }), " (buffer has space). src = ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"CDEF\""
+      }), ", n = 2."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "src[j]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dest[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find end"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'A'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "strlen(\"AB\") = 2 -> start at i=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find end"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'B'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Find end"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Found end of dest"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'C'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'C'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Copy src[0], j=0 < n=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'D'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'D'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Copy src[1], j=1 < n=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Append"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "j=2 >= n=2, add null terminator"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Final: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dest = \"ABCD\\0...\""
+      }), " - always null-terminated."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(m + min(n, len(src))) - find end of dest (O(m)), copy up to n chars (O(min(n, len(src))))."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Null-termination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always null-terminates (unlike strncpy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Still caller's responsibility to check buffer size"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bounds"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Copies at most n chars from src"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Does not check dest capacity - overflow if remaining space < min(n, src_len) + 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Safer than strcat when used correctly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remaining space must be computed manually"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "n = 0"
+        }), ": nothing appended, dest unchanged, still null-terminated."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen(dest) + min(n, strlen(src)) + 1"
+        }), " exceeds buffer size -> overflow (caller must compute remaining space)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "src"
+        }), " shorter than ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), ": copies entire src including its null terminator (no padding like strncpy)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "756-strcmp---string-comparison",
+      children: ["7.5.6 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp"
+      }), " - String Comparison"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int strcmp(const char *s1, const char *s2);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Two people reading dictionaries side by side, comparing words letter by letter until they find a difference. If all letters match, the words are equal. If one dictionary runs out of pages (reaches ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "), that word is \"smaller.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Compares ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s1"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s2"
+      }), " lexicographically (by ASCII value). Returns:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "0"
+        }), " if the strings are identical"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Negative"
+        }), " if ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1 < s2"
+        }), " (first differing char in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1"
+        }), " has lower ASCII value)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Positive"
+        }), " if ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1 > s2"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with index ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "i = 0"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1[i] != s2[i]"
+        }), ", return ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1[i] - s2[i]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s1[i] == '\\0'"
+        }), ", both strings are equal - return 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Increment ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "i"
+        }), " and go to step 2."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strcmp(s1, s2):\n    i <- 0\n    LOOP:\n        IF s1[i] != s2[i]:\n            RETURN s1[i] - s2[i]\n        IF s1[i] == '\\0':\n            RETURN 0\n        i <- i + 1\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char input[50];\n    printf(\"Enter 'quit' to exit: \");\n\n    while (fgets(input, sizeof(input), stdin)) {\n        input[strcspn(input, \"\\n\")] = '\\0';\n\n        if (strcmp(input, \"quit\") == 0) {\n            printf(\"Goodbye!\\n\");\n            break;\n        } else if (strcmp(input, \"help\") == 0) {\n            printf(\"Available commands: quit, help, version\\n\");\n        } else if (strcmp(input, \"version\") == 0) {\n            printf(\"StringDemo v1.0\\n\");\n        } else {\n            printf(\"Unknown command: %s\\n\", input);\n        }\n        printf(\"Enter 'quit' to exit: \");\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Sample run:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Enter 'quit' to exit: help\nAvailable commands: quit, help, version\nEnter 'quit' to exit: version\nStringDemo v1.0\nEnter 'quit' to exit: quit\nGoodbye!\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strcmp(\"apple\", \"banana\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s1[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s2[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s1[i] == s2[i]?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ASCII diff"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            }), " (97)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'b'"
+            }), " (98)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["97 - 98 = ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })]
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "-1"
+      }), " (negative). \"apple\" < \"banana\"."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strcmp(\"cat\", \"cat\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s1[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s2[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Equal?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'t'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'t'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Both end"
+            }), " - return 0"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "0"
+      }), " (equal)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strcmp(\"cat\", \"catalog\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s1[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s2[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Equal?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'t'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'t'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            }), " (0) - ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            }), " (97) = ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-97"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "-97"
+      }), ". \"cat\" < \"catalog\" because it is a prefix (shorter = smaller). The null terminator (ASCII 0) is less than any printable character."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(min(len(s1), len(s2))) - stops at the first differing character or at the end of the shorter string. Best case O(1) (first chars differ), worst case O(min(m,n)) (strings are identical or one is a prefix)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(min(m, n))?"
+      }), " Comparison stops as soon as a difference is found. The worst case is when strings are equal up to the length of the shorter one, requiring every character of the shorter string to be compared."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Early exit on first difference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No locale-aware comparison (use strcoll)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns int for easy use in sorting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Case-sensitive only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read-only - cannot overflow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL pointers cause crash"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Comparing empty strings: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmp(\"\", \"\")"
+        }), " returns 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["One string is a prefix of the other: the shorter string is considered \"less than\" the longer one (because ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), " has ASCII value 0, which is less than any printable character)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Case sensitivity: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmp(\"Apple\", \"apple\")"
+        }), " returns non-zero because ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'A'"
+        }), " (65) != ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'a'"
+        }), " (97). Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcasecmp"
+        }), " (POSIX) or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmpi"
+        }), " (Windows) for case-insensitive comparison."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NULL pointers: undefined behavior - always check for NULL before comparing."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "757-strncmp---bounded-string-comparison",
+      children: ["7.5.7 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncmp"
+      }), " - Bounded String Comparison"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int strncmp(const char *s1, const char *s2, size_t n);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Same dictionary comparison, but you agree in advance to only compare the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " letters. If both words have the same first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " letters, they are considered equal for this comparison, regardless of what comes after."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Same as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp"
+      }), " but compares at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char *protocol = \"HTTP/1.1 200 OK\";\n\n    if (strncmp(protocol, \"HTTP/\", 5) == 0) {\n        printf(\"Protocol: HTTP\\n\");\n    } else if (strncmp(protocol, \"HTTPS\", 5) == 0) {\n        printf(\"Protocol: HTTPS\\n\");\n    }\n\n    /* Compare only first 3 chars */\n    printf(\"strncmp(\\\"abcde\\\", \\\"abcxy\\\", 3) = %d\\n\", strncmp(\"abcde\", \"abcxy\", 3));\n    printf(\"strncmp(\\\"abcde\\\", \\\"abcxy\\\", 4) = %d\\n\", strncmp(\"abcde\", \"abcxy\", 4));\n    printf(\"strncmp(\\\"abcde\\\", \\\"abcde\\\", 10) = %d\\n\", strncmp(\"abcde\", \"abcde\", 10));\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Protocol: HTTP\nstrncmp(\"abcde\", \"abcxy\", 3) = 0\nstrncmp(\"abcde\", \"abcxy\", 4) = -1\nstrncmp(\"abcde\", \"abcde\", 10) = 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strncmp(\"abcde\", \"abcxy\", 4)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s1[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s2[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Equal?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "i < n?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'b'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'b'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'d'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'x'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'d'"
+            }), " (100) - ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'x'"
+            }), " (120) = ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-20"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: returns ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "-20"
+      }), ". Even though only 4 chars were compared, the 4th char differed."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(min(n, len(s1), len(s2))) - stops when ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters have been compared, or when a difference or end of string is found."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Prefix checking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Perfect for protocol/header parsing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not useful for full string comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Won't read past n characters"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "n must be carefully chosen"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Early exit on difference or at n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More parameters to get wrong"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "n = 0"
+        }), ": returns 0 immediately (nothing to compare)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), " larger than both strings: behaves like ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmp"
+        }), " but stops at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NULL pointers: undefined behavior (no NULL check in the function)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "758-strchr---find-first-character",
+      children: ["7.5.8 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strchr"
+      }), " - Find First Character"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strchr(const char *s, int c);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Looking for a specific color bead in a necklace. You start from the clasp and examine each bead. The moment you find the color you want, you point at it and stop."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Returns a pointer to the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "first"
+      }), " occurrence of character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "c"
+      }), " in string ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s"
+      }), ", or NULL if not found. The character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "c"
+      }), " is passed as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int"
+      }), " but treated as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "unsigned char"
+      }), " for comparison."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start at the beginning of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the current character."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If it equals ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(unsigned char)c"
+        }), ", return a pointer to this position."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If it is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ", stop and return NULL."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advance to the next character and go to step 2."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strchr(s, c):\n    i <- 0\n    LOOP:\n        IF s[i] == (char)c:\n            RETURN &s[i]\n        IF s[i] == '\\0':\n            RETURN NULL\n        i <- i + 1\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char email[] = \"user@example.com\";\n    char *at_sign = strchr(email, '@');\n\n    if (at_sign) {\n        printf(\"Username: \");\n        /* Print characters from start up to (not including) '@' */\n        for (char *p = email; p < at_sign; p++) {\n            putchar(*p);\n        }\n        printf(\"\\n\");\n        printf(\"Domain:   %s\\n\", at_sign + 1);\n    }\n\n    /* Finding multiple occurrences */\n    char sentence[] = \"The cat in the hat\";\n    char *p = sentence;\n    int count = 0;\n    while ((p = strchr(p, 't')) != NULL) {\n        count++;\n        p++; /* advance past the found 't' */\n    }\n    printf(\"Found 't' %d times\\n\", count);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Username: user\nDomain:   example.com\nFound 't' 3 times\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strchr(\"Hello\", 'l')"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s[i] == 'l'?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s[i] == '\\0'?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Advance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return &s[2]"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: Returns pointer to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s[2]"
+      }), " (the first ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'l'"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) - linear scan until character is found or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " is reached."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Character not found: returns NULL."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Looking for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ": returns a pointer to the null terminator (the end of the string). This is valid - ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strchr(s, '\\0')"
+        }), " always returns ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "&s[strlen(s)]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "c"
+        }), " is passed as ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "int"
+        }), " but converted to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "unsigned char"
+        }), " for comparison. Passing a value outside ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "char"
+        }), " range is safe but compared as ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(unsigned char)c"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Empty string ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"\""
+        }), ": looking for any character returns NULL (except ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "NULL pointer: undefined behavior."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to find a single character"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only finds first occurrence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Usefulness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundation for parsing (finding delimiters)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Case-sensitive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return value"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns pointer for direct access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL requires check before dereference"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "759-strrchr---find-last-character",
+      children: ["7.5.9 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strrchr"
+      }), " - Find Last Character"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strrchr(const char *s, int c);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Looking for the last occurrence of a color in a necklace - you still start from the beginning, but you keep walking, remembering the position of every matching bead. Only at the knot do you report the last remembered position."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Returns a pointer to the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "last"
+      }), " occurrence of character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "c"
+      }), " in string ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s"
+      }), ", or NULL if not found."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start at the beginning of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "s"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Initialize ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "last = NULL"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the current character."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If it equals ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(unsigned char)c"
+        }), ", set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "last"
+        }), " to this position."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If it is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ", return ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "last"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advance and go to step 3."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strrchr(s, c):\n    last <- NULL\n    i <- 0\n    LOOP:\n        IF s[i] == (char)c:\n            last <- &s[i]\n        IF s[i] == '\\0':\n            RETURN last\n        i <- i + 1\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char path[] = \"/home/user/documents/report.pdf\";\n    char *last_dot = strrchr(path, '.');\n    char *last_slash = strrchr(path, '/');\n\n    if (last_dot) {\n        printf(\"Extension: %s\\n\", last_dot);\n    }\n    if (last_slash) {\n        printf(\"Filename:  %s\\n\", last_slash + 1);\n    }\n    /* Extract directory portion by null-terminating at last slash */\n    if (last_slash) {\n        *last_slash = '\\0';\n        printf(\"Directory: %s\\n\", path);\n        *last_slash = '/';  /* restore */\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Extension: .pdf\nFilename:  report.pdf\nDirectory: /home/user/documents\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strrchr(\"Hello\", 'l')"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "s[i] == 'l'?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "last"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'H'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'e'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "&s[2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Record position"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'l'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "&s[3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overwrite - this is later"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'o'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "&s[3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last remembered is still here"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "&s[3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return &s[3]"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: Returns pointer to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "s[3]"
+      }), " (the second/last ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'l'"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) - must scan the entire string to find the last occurrence."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      }), " Same as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strchr"
+      }), " - returns NULL if not found, can find ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), " (returns pointer to the null terminator itself)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "7510-strstr---find-substring",
+      children: ["7.5.10 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strstr"
+      }), " - Find Substring"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strstr(const char *haystack, const char *needle);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " Looking for a specific sequence of beads (a pattern) in a long necklace. You slide a template along the necklace, checking if the beads match the pattern at each position, until you find a match or reach the end."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Finds the first occurrence of substring ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "needle"
+      }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "haystack"
+      }), ". Returns a pointer to the beginning of the match, or NULL if ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "needle"
+      }), " is not found."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "needle"
+        }), " is empty, return ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "haystack"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["For each position ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "i"
+        }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "haystack"
+        }), " (starting from 0):\na. Try to match ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "needle"
+        }), " starting at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "haystack[i]"
+        }), ".\nb. For each character ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "j"
+        }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "needle"
+        }), ":\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "haystack[i+j] == '\\0'"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "needle[j] != '\\0'"
+            }), ": match failed."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "needle[j] == '\\0'"
+            }), ": full match found, return ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "&haystack[i]"
+            }), "."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "haystack[i+j] != needle[j]"
+            }), ": match failed, break."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If no match found after scanning all positions, return NULL."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strstr(haystack, needle):\n    IF needle[0] == '\\0':\n        RETURN haystack\n\n    i <- 0\n    WHILE haystack[i] != '\\0':\n        j <- 0\n        WHILE haystack[i+j] == needle[j]:\n            IF needle[j+1] == '\\0':\n                RETURN &haystack[i]\n            j <- j + 1\n        i <- i + 1\n    RETURN NULL\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char text[] = \"The quick brown fox jumps over the lazy dog\";\n    char *found = strstr(text, \"fox\");\n\n    if (found) {\n        printf(\"Found 'fox' at index: %td\\n\", found - text);\n        printf(\"From match onward: \\\"%s\\\"\\n\", found);\n\n        /* Count occurrences of \"the\" (case-sensitive) */\n        int count = 0;\n        char *p = text;\n        while ((p = strstr(p, \"the\")) != NULL) {\n            count++;\n            p += 3;  /* advance past \"the\" */\n        }\n        printf(\"Occurrences of 'the': %d\\n\", count);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Found 'fox' at index: 16\nFrom match onward: \"fox jumps over the lazy dog\"\nOccurrences of 'the': 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strstr(\"abcde\", \"cd\")"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "haystack = \"abcde\", needle = \"cd\""
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "haystack[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Try matching at i?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "haystack[i+j] vs needle[j]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Match?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            }), " - no"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fail at j=0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'b'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'b'"
+            }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            }), " - no"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fail at j=0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'c'"
+            }), " - yes"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "'d'"
+            }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'d'"
+            }), " - yes"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["needle[j+1] = '\\0' -> ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Match!"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: Returns ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "&haystack[2]"
+      }), " - pointer to \"cde\"."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Naive implementation:"
+        }), " O(n * m) where n is haystack length and m is needle length. Each position i tries up to m characters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Glibc implementation:"
+        }), " O(n + m) using two-way algorithm. In practice, the naive algorithm is used for small needles and the two-way algorithm for larger ones."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Empty needle (\"\"): returns ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "haystack"
+        }), " itself (C standard specifies this)."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Needle not found: returns NULL."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Needle longer than haystack: returns NULL after checking."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Needle same as haystack: returns haystack."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Overlapping matches: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strstr(\"aaa\", \"aa\")"
+        }), " returns pointer to the first \"aa\" (position 0)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "7511-strtok---string-tokenization",
+      children: ["7.5.11 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok"
+      }), " - String Tokenization"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *strtok(char *str, const char *delimiters);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " A string is like a sausage with ties (delimiters) at regular intervals. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok"
+      }), " cuts the sausage at each tie and hands you one segment at a time. On the first call, you hand it the whole sausage; on subsequent calls, you just say \"next\" and it moves to the next segment."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Important:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok"
+      }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "modifies"
+      }), " the input string by replacing delimiter characters with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". It also uses internal static state - it is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "not reentrant"
+      }), " (not thread-safe)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "First call"
+        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str != NULL"
+        }), "): Start at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str"
+        }), ". Skip leading delimiters. If we hit ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ", return NULL. Mark this position as the token start."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Scan forward until we find a delimiter character or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If we found a delimiter, replace it with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), " and save the next position in internal state."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return a pointer to the token start."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Subsequent calls"
+        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str == NULL"
+        }), "): Resume from the saved position. Repeat steps 1-4."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION strtok(str, delimiters):\n    STATIC next <- NULL\n\n    IF str != NULL:\n        next <- str\n    ELSE:\n        IF next == NULL:\n            RETURN NULL\n\n    // Skip leading delimiters\n    WHILE *next != '\\0' AND *next is in delimiters:\n        next <- next + 1\n\n    IF *next == '\\0':\n        RETURN NULL\n\n    // Found start of token\n    start <- next\n\n    // Find end of token\n    WHILE *next != '\\0' AND *next NOT in delimiters:\n        next <- next + 1\n\n    IF *next != '\\0':\n        *next <- '\\0'     // replace delimiter with null\n        next <- next + 1  // advance for next call\n\n    RETURN start\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char line[] = \"apple,banana,cherry,date,elderberry\";\n    char *token;\n    int count = 0;\n\n    /* First call: pass the string */\n    token = strtok(line, \",\");\n    while (token) {\n        count++;\n        printf(\"Token %d: \\\"%s\\\"\\n\", count, token);\n        /* Subsequent calls: pass NULL */\n        token = strtok(NULL, \",\");\n    }\n    printf(\"Total tokens: %d\\n\", count);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Token 1: \"apple\"\nToken 2: \"banana\"\nToken 3: \"cherry\"\nToken 4: \"date\"\nToken 5: \"elderberry\"\nTotal tokens: 5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strtok(\"apple,banana,cherry\", \",\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Call"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Internal ptr"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Return value"
+          }), (0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "line"
+            }), " content after call"]
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1st (", (0,jsx_runtime.jsx)(_components.code, {
+              children: "line"
+            }), ")"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Skip delimiters (none), find ',' at index 5, replace with '\\0', save pos 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"apple\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"apple\\0banana,cherry\""
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2nd (NULL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pos 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Skip delimiters, find ',' at index 12, replace with '\\0', save pos 13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"banana\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"apple\\0banana\\0cherry\""
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3rd (NULL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pos 13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No more delimiters, scan to '\\0', save NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"cherry\""
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"apple\\0banana\\0cherry\""
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4th (NULL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NULL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "The original string is permanently modified:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Before: \"apple,banana,cherry\"\nAfter:  \"apple\\0banana\\0cherry\"\n          ^     ^\n          |     +-- strtok's internal state advances through here\n          +-- tokens returned\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) total - each character is examined once across all calls. The function walks through the string linearly, replacing delimiters with nulls."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages and Disadvantages:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to split strings"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Not reentrant"
+            }), " - internal static state"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Efficiency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n), no extra memory"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Modifies input string"
+            }), " - must copy if original needed"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Flexibility"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple delimiters in one call"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consecutive delimiters treated as one (no empty tokens)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty tokens:"
+        }), " Consecutive delimiters are treated as a single delimiter (empty tokens are skipped). ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok(\"a,,b\", \",\")"
+        }), " produces ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"a\""
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"b\""
+        }), ", skipping the empty slot between commas."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "String of only delimiters:"
+        }), " First call returns NULL."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not reentrant:"
+        }), " Calling ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok"
+        }), " from within a loop that itself calls ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok"
+        }), " on a different string will corrupt state. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok_r"
+        }), " (POSIX) for reentrancy."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Modifies input:"
+        }), " The original string is permanently altered - make a copy if preservation is needed."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Leading delimiters:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok(\",,a,b\", \",\")"
+        }), " returns ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"a\""
+        }), " first (leading delimiters are skipped)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Thread safety:"
+        }), " Not safe in multi-threaded programs. Always use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok_r"
+        }), " (POSIX) or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok_s"
+        }), " (C11 Annex K / Windows)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "strtok_r - Reentrant Version (POSIX):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char line[] = \"apple,banana,cherry\";\nchar *saveptr;\nchar *token = strtok_r(line, \",\", &saveptr);\nwhile (token) {\n    printf(\"Token: %s\\n\", token);\n    token = strtok_r(NULL, \",\", &saveptr);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "7512-sprintf---string-formatting",
+      children: ["7.5.12 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sprintf"
+      }), " - String Formatting"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int sprintf(char *buf, const char *format, ...);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " You have a stencil (format string) with holes of specific shapes. You pour in arguments, and a perfectly formatted string comes out the other end into your buffer."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Formats data according to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "format"
+      }), " and writes the result to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "buf"
+      }), ", null-terminating the result. Returns the number of characters written (excluding the null terminator), or a negative value on error."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start writing at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "buf"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the format string character by character."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If the character is not ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'%'"
+        }), ", copy it to output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If the character is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'%'"
+        }), ", read the format specifier, convert the next argument, and write the formatted result."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["After all format characters are processed, write ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), " at the end."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Return the number of characters written (excluding ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "'\\0'"
+        }), ")."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    char buf[100];\n    int day = 15, month = 6, year = 2026;\n    float temp = 23.5f;\n    char city[] = \"New York\";\n\n    int n = sprintf(buf, \"Weather for %s on %02d/%02d/%04d: %.1f C\",\n                    city, month, day, year, temp);\n\n    printf(\"Formatted string: \\\"%s\\\"\\n\", buf);\n    printf(\"Characters written: %d (excl. null terminator)\\n\", n);\n    printf(\"Buffer size: %zu\\n\", sizeof(buf));\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Formatted string: \"Weather for New York on 06/15/2026: 23.5 C\"\nCharacters written: 46 (excl. null terminator)\nBuffer size: 100\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(k) where k is the length of the produced string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Buffer overflow:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sprintf"
+        }), " does not check bounds! If the output exceeds buffer size -> overflow. ", (0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Always use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "snprintf"
+          }), " instead."]
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return value can be used to detect truncation (compare with buffer size), but by then the damage is done."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Format string mismatches: if ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%d"
+        }), " is given a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "char *"
+        }), ", behavior is undefined."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "7513-snprintf---safe-string-formatting",
+      children: ["7.5.13 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "snprintf"
+      }), " - Safe String Formatting"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int snprintf(char *buf, size_t n, const char *format, ...);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " A funnel with a built-in overflow drain. No matter how much liquid you pour, only a fixed amount fits in the container below. The rest spills out the side drain - and you can measure how much spilled."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Same as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sprintf"
+      }), " but writes at most ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n - 1"
+      }), " characters, then null-terminates. Returns the number of characters that ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "would have"
+      }), " been written if ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " were unlimited (not including the null terminator)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This return value is powerful: if the return value >= ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), ", the output was truncated. You can detect this and react."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char buf[10];\n    int needed = snprintf(buf, sizeof(buf), \"Hello, %s!\", \"World\");\n\n    printf(\"Buffer content: \\\"%s\\\"\\n\", buf);\n    printf(\"Characters needed: %d\\n\", needed);\n\n    if ((size_t)needed >= sizeof(buf)) {\n        printf(\"TRUNCATION: Output was %d chars, buffer only holds %zu\\n\",\n               needed, sizeof(buf));\n    }\n\n    /* Safe concatenation using snprintf */\n    char path[32] = \"/home/\";\n    int remaining = sizeof(path) - strlen(path) - 1;\n    snprintf(path + strlen(path), remaining, \"%s\", \"documents\");\n    printf(\"Path after append: \\\"%s\\\"\\n\", path);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Buffer content: \"Hello, Wor\"\nCharacters needed: 13\nTRUNCATION: Output was 13 chars, buffer only holds 10\nPath after append: \"/home/documents\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps for safe snprintf idiom:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Determine buffer size ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Call ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf(buf, n, format, args)"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check the return value ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "r"
+        }), ":\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "r < 0"
+            }), ": error occurred."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "(size_t)r >= n"
+            }), ": output was truncated."]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Otherwise: full output written."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "buf"
+        }), " is always null-terminated (as long as ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "n > 0"
+        }), ")."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(k) where k is the length of the produced string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf"
+        }), " as a universal safe string builder:"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* Safe strcpy alternative */\nsnprintf(dest, dest_size, \"%s\", src);\n\n/* Safe strcat alternative */\nsnprintf(dest + strlen(dest), dest_size - strlen(dest), \"%s\", suffix);\n\n/* Safe number-to-string conversion */\nsnprintf(buf, sizeof(buf), \"%d\", value);\n\n/* Build complex formats safely */\nsnprintf(buf, sizeof(buf), \"%s=%s&%s=%d\", key1, val1, key2, val2);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "7514-sscanf---string-parsing",
+      children: ["7.5.14 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf"
+      }), " - String Parsing"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int sscanf(const char *str, const char *format, ...);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " You have a completed form (the string) and you carefully peel off each field, checking that each one matches the expected format."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Reads data from a string (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "str"
+      }), ") according to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "format"
+      }), ", storing extracted values into the provided pointer arguments. Returns the number of successful assignments, or EOF on failure."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the format string character by character."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["For each format specifier (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%d"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%s"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%f"
+        }), "):\na. Skip whitespace in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str"
+        }), " (most specifiers).\nb. Try to match the next characters in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str"
+        }), " against the specifier.\nc. If matched, store the converted value in the corresponding argument.\nd. If not matched, stop and return the count of successful assignments."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return the total number of assignments made."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    char data[] = \"John,Doe,30,175.5\";\n    char first[20], last[20];\n    int age;\n    float height;\n\n    int n = sscanf(data, \"%[^,],%[^,],%d,%f\",\n                   first, last, &age, &height);\n\n    if (n == 4) {\n        printf(\"First name: %s\\n\", first);\n        printf(\"Last name:  %s\\n\", last);\n        printf(\"Age:        %d\\n\", age);\n        printf(\"Height:     %.1f cm\\n\", height);\n    } else {\n        printf(\"Parsing error: only %d items matched\\n\", n);\n    }\n\n    /* Parsing multiple fields from a line */\n    char log[] = \"192.168.1.1 - - [15/Jun/2026:10:30:00] \\\"GET /index.html\\\" 200 2326\";\n    char ip[16], method[8], path[64], status[4];\n    int bytes;\n\n    n = sscanf(log, \"%15s - - [%*[^]]] \\\"%7s %63[^\\\"]\\\" %3s %d\",\n               ip, method, path, status, &bytes);\n    printf(\"Parsed %d fields\\n\", n);\n    printf(\"IP: %s, Method: %s, Path: %s, Status: %s, Bytes: %d\\n\",\n           ip, method, path, status, bytes);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "First name: John\nLast name:  Doe\nAge:        30\nHeight:     175.5 cm\nParsed 5 fields\nIP: 192.168.1.1, Method: GET, Path: /index.html, Status: 200, Bytes: 2326\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(k) where k is the length of the input string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Input does not match format: returns fewer matches than expected (check return value)."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Buffer overflow with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%s"
+        }), ": always use width specifier like ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%19s"
+        }), " for a 20-byte buffer."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Leading whitespace: most specifiers (except ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%c"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%[]"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "%n"
+        }), ") skip leading whitespace automatically."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "%[^,]"
+        }), " - scanset: matches any characters except comma (great for CSV parsing)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key format specifiers for sscanf:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Specifier"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Matches"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%d"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decimal integer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "42"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%f"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Floating point"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "3.14"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%s"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-whitespace string"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "hello"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%c"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single character"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "A"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%[^,]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All chars except comma"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "John"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%*d"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read but discard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Suppresses assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "%n"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Number of chars consumed so far"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "76-string-to-number-conversion",
+      children: "7.6 String to Number Conversion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["C provides several functions to convert string representations of numbers to their numeric types. These live in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<stdlib.h>"
+      }), " for integer conversions and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<stdlib.h>"
+      }), " (or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<math.h>"
+      }), " for compatibility) for floating-point conversions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " You receive a telegram that says \"42\" in text. You need to convert those written characters into a number you can do arithmetic with. The text \"42\" is two characters (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'4'"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'2'"
+      }), "); the number 42 is a binary value. The conversion functions translate one to the other."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "761-atoi---string-to-integer",
+      children: ["7.6.1 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi"
+      }), " - String to Integer"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int atoi(const char *str);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What it does:"
+      }), " Converts the initial portion of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "str"
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int"
+      }), ". Skips leading whitespace, processes an optional ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "+"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "-"
+      }), ", then reads decimal digits until a non-digit character is encountered."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skip all leading whitespace characters."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check for optional '+' or '-' sign."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Read digits one by one: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "result = result * 10 + digit"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Stop at the first non-digit character."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply the sign and return."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION atoi(str):\n    WHILE *str is whitespace:\n        str <- str + 1\n\n    sign <- 1\n    IF *str == '-':\n        sign <- -1\n        str <- str + 1\n    ELSE IF *str == '+':\n        str <- str + 1\n\n    result <- 0\n    WHILE *str >= '0' AND *str <= '9':\n        result <- result * 10 + (*str - '0')\n        str <- str + 1\n\n    RETURN result * sign\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    printf(\"atoi(\\\"42\\\"):       %d\\n\", atoi(\"42\"));\n    printf(\"atoi(\\\"  -123\\\"):   %d\\n\", atoi(\"  -123\"));\n    printf(\"atoi(\\\"   +456abc\\\"): %d\\n\", atoi(\"  +456abc\"));\n    printf(\"atoi(\\\"abc\\\"):      %d\\n\", atoi(\"abc\"));\n    printf(\"atoi(\\\"2147483647\\\"): %d\\n\", atoi(\"2147483647\"));\n    printf(\"atoi(\\\"9999999999\\\"): %d\\n\", atoi(\"9999999999\"));  /* overflow - undefined */\n\n    /* Calculate sum of numbers in comma-separated string */\n    char numbers[] = \"10,20,30,40,50\";\n    int sum = 0;\n    char *p = numbers;\n    while (*p) {\n        sum += atoi(p);\n        while (*p && *p != ',') p++;\n        if (*p == ',') p++;\n    }\n    printf(\"Sum: %d\\n\", sum);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi(\"42\"):       42\natoi(\"  -123\"):   -123\natoi(\"   +456abc\"): 456\natoi(\"abc\"):      0\natoi(\"2147483647\"): 2147483647\natoi(\"9999999999\"): -2147483648 (or some garbage — overflow is undefined)\nSum: 150\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: atoi(\"  -42abc\")"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current char"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "' '"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Whitespace, skip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "' '"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Whitespace, skip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'-'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Negative sign, sign=-1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'4'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Digit, result = 0*10+4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'2'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Digit, result = 4*10+2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-digit, stop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Return: 42 * (-1) = -42"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) where n is the length of the digit portion."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No digits found:"
+        }), " Returns 0 (ambiguous — is \"abc\" truly zero or an error?)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overflow:"
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Undefined behavior"
+        }), " if the converted value exceeds ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "INT_MAX"
+        }), " or falls below ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "INT_MIN"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty string or only whitespace:"
+        }), " Returns 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Leading zeros:"
+        }), " Handled naturally (0300 = 300)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Error detection:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "atoi"
+        }), " provides ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "zero"
+        }), " way to detect errors. ", (0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Prefer ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "strtol"
+          }), " for robust code."]
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "762-atol---string-to-long",
+      children: ["7.6.2 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atol"
+      }), " - String to Long"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Same as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi"
+      }), " but returns ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "long int"
+      }), ". Same error detection limitation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "long val = atol(\"1234567890\");\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "763-atof---string-to-double",
+      children: ["7.6.3 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atof"
+      }), " - String to Double"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "double atof(const char *str);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Converts string to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "double"
+      }), ". Handles decimal points, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "e"
+      }), "/", (0,jsx_runtime.jsx)(_components.code, {
+        children: "E"
+      }), " scientific notation. Same lack of error detection."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    printf(\"atof(\\\"3.14\\\"):       %.2f\\n\", atof(\"3.14\"));\n    printf(\"atof(\\\"  -2.5e3\\\"):   %.1f\\n\", atof(\"  -2.5e3\"));\n    printf(\"atof(\\\"1.23e-4\\\"):    %.6f\\n\", atof(\"1.23e-4\"));\n    printf(\"atof(\\\"abc\\\"):        %.1f\\n\", atof(\"abc\"));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "atof(\"3.14\"):       3.14\natof(\"  -2.5e3\"):   -2500.0\natof(\"1.23e-4\"):    0.000123\natof(\"abc\"):        0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "764-strtol---string-to-long-with-error-detection",
+      children: ["7.6.4 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtol"
+      }), " - String to Long (with Error Detection)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "long strtol(const char *str, char **endptr, int base);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["The safe alternative to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "atoi"
+        }), "."]
+      }), " Converts string to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "long"
+      }), " with full error detection, support for different bases (binary to base-36), and a pointer to where parsing stopped."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Parameters:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "str"
+        }), ": Input string."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "endptr"
+        }), ": If non-NULL, receives a pointer to the character where parsing stopped."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "base"
+        }), ": Numeric base (0 means auto-detect: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "0x"
+        }), " = hex, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "0"
+        }), " = octal, otherwise decimal)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Return value and error detection:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On success: the converted ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "long"
+        }), " value."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If no conversion: returns 0 and sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "*endptr == str"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On overflow: returns ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "LONG_MAX"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "LONG_MIN"
+        }), " and sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "errno"
+        }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ERANGE"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skip leading whitespace."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "+"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-"
+        }), " sign."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Based on ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "base"
+        }), " (or auto-detect if base = 0), interpret digits."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Stop at the first invalid digit."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "*endptr"
+        }), " to point to the stop position."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On overflow, set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "errno = ERANGE"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n#include <errno.h>\n\nint main(void) {\n    char *endptr;\n    long val;\n\n    /* Safe conversion with error detection */\n    const char *tests[] = {\"1234\", \"   -567\", \"0xFF\", \"0777\",\n                           \"  42abc\", \"99999999999999999999999\", \"abc\", \"   \"};\n\n    for (size_t i = 0; i < sizeof(tests) / sizeof(tests[0]); i++) {\n        errno = 0;  /* clear before conversion */\n        val = strtol(tests[i], &endptr, 0);\n\n        if (endptr == tests[i]) {\n            printf(\"strtol(\\\"%s\\\"): NO CONVERSION (no digits found)\\n\", tests[i]);\n        } else if (errno == ERANGE) {\n            printf(\"strtol(\\\"%s\\\"): OVERFLOW -> %ld\\n\", tests[i], val);\n        } else if (*endptr != '\\0') {\n            printf(\"strtol(\\\"%s\\\"): %ld (partial conversion, stopped at \\\"%s\\\")\\n\",\n                   tests[i], val, endptr);\n        } else {\n            printf(\"strtol(\\\"%s\\\"): %ld (full conversion)\\n\", tests[i], val);\n        }\n    }\n\n    /* Parsing CSV with trailing data using endptr */\n    char line[] = \"42,some text,3.14\";\n    val = strtol(line, &endptr, 10);\n    printf(\"\\nFirst field: %ld\\n\", val);\n    printf(\"Remaining: \\\"%s\\\"\\n\", endptr);  /* skip over ',' and remaining */\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtol(\"1234\"): 1234 (full conversion)\nstrtol(\"   -567\"): -567 (full conversion)\nstrtol(\"0xFF\"): 255 (full conversion)\nstrtol(\"0777\"): 511 (full conversion)\nstrtol(\"  42abc\"): 42 (partial conversion, stopped at \"abc\")\nstrtol(\"99999999999999999999999\"): OVERFLOW -> 2147483647\nstrtol(\"abc\"): NO CONVERSION (no digits found)\nstrtol(\"   \"): NO CONVERSION (no digits found)\n\nFirst field: 42\nRemaining: \",some text,3.14\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: strtol(\"   -42abc\", &endptr, 10)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current char"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "' '"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Whitespace, skip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "' '"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Whitespace, skip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'-'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Negative sign, sign=-1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'4'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Digit, result = 0*10+4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'2'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Digit, result = 4*10+2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "'a'"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not a digit in base 10, stop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: 42 * -1 = -42. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "*endptr"
+      }), " points to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'a'"
+      }), " in the original string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Base conversions with strtol:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    printf(\"Binary \\\"1010\\\":        %ld (base 2)\\n\", strtol(\"1010\", NULL, 2));\n    printf(\"Octal  \\\"177\\\":         %ld (base 8)\\n\", strtol(\"177\", NULL, 8));\n    printf(\"Decimal \\\"255\\\":        %ld (base 10)\\n\", strtol(\"255\", NULL, 10));\n    printf(\"Hex    \\\"FF\\\":          %ld (base 16)\\n\", strtol(\"FF\", NULL, 16));\n    printf(\"Base-36 \\\"hello\\\":       %ld (base 36)\\n\", strtol(\"hello\", NULL, 36));\n    printf(\"Auto   \\\"0xFF\\\":        %ld (auto, detects 0x prefix)\\n\", strtol(\"0xFF\", NULL, 0));\n    printf(\"Auto   \\\"0777\\\":        %ld (auto, detects leading 0)\\n\", strtol(\"0777\", NULL, 0));\n    printf(\"Auto   \\\"123\\\":         %ld (auto, defaults to decimal)\\n\", strtol(\"123\", NULL, 0));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Binary \"1010\":        10 (base 2)\nOctal  \"177\":         127 (base 8)\nDecimal \"255\":        255 (base 10)\nHex    \"FF\":          255 (base 16)\nBase-36 \"hello\":       29234652 (base 36)\nAuto   \"0xFF\":        255 (auto, detects 0x prefix)\nAuto   \"0777\":        511 (auto, detects leading 0)\nAuto   \"123\":         123 (auto, defaults to decimal)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related functions:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtoul"
+        }), ": unsigned long"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtoll"
+        }), ": long long (C99)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtoull"
+        }), ": unsigned long long (C99)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtod"
+        }), ": string to double"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtof"
+        }), ": string to float (C99)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "strtold"
+        }), ": string to long double (C99)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "765-strtod---string-to-double-with-error-detection",
+      children: ["7.6.5 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtod"
+      }), " - String to Double (with Error Detection)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prototype:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "double strtod(const char *str, char **endptr);"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Same error-handling pattern as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtol"
+      }), ", for floating-point conversion."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n#include <errno.h>\n\nint main(void) {\n    char *endptr;\n    double val;\n\n    const char *tests[] = {\"3.14159\", \"  -2.5e3\", \"inf\", \"nan\", \"abc\"};\n\n    for (size_t i = 0; i < sizeof(tests) / sizeof(tests[0]); i++) {\n        errno = 0;\n        val = strtod(tests[i], &endptr);\n        if (endptr == tests[i]) {\n            printf(\"strtod(\\\"%s\\\"): NO CONVERSION\\n\", tests[i]);\n        } else if (errno == ERANGE) {\n            printf(\"strtod(\\\"%s\\\"): OVERFLOW/UNDERFLOW -> %g\\n\", tests[i], val);\n        } else {\n            printf(\"strtod(\\\"%s\\\"): %g\\n\", tests[i], val);\n        }\n    }\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtod(\"3.14159\"): 3.14159\nstrtod(\"  -2.5e3\"): -2500\nstrtod(\"inf\"): inf\nstrtod(\"nan\"): nan\nstrtod(\"abc\"): NO CONVERSION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "comparison-atoi-vs-strtol-vs-sscanf",
+      children: "Comparison: atoi vs strtol vs sscanf"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "atoi"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "strtol"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "sscanf"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (returns 0 for both \"0\" and error)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full (endptr + errno)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partial (return value < expected count)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Base specification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decimal only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any base 2-36 (or auto-detect 0)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Decimal via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%d"
+            }), ", hex via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%x"
+            }), ", octal via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%o"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Overflow handling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Undefined behavior"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sets errno to ERANGE, returns LONG_MAX/LONG_MIN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Undefined behavior"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Trailing data detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Via endptr"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%n"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Whitespace skipping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread safety"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Safe (no static state)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Safe"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Safe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recommendation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Never use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use for all integer parsing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use for multi-field parsing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "77-array-of-strings",
+      children: "7.7 Array of Strings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy:"
+      }), " A filing cabinet. Each drawer (row) contains one file folder (string). You access folders by their drawer number."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In C, an \"array of strings\" is typically implemented as an array of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *"
+      }), " pointers, where each pointer points to a null-terminated string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "771-array-of-character-pointers",
+      children: "7.7.1 Array of Character Pointers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    /* Array of string literals (pointer-based) */\n    char *fruits[] = {\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"};\n    size_t count = sizeof(fruits) / sizeof(fruits[0]);\n\n    printf(\"Fruit basket (%zu items):\\n\", count);\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %zu. %s\\n\", i + 1, fruits[i]);\n    }\n\n    /* Sorting array of strings (bubble sort for illustration) */\n    char *sorted[] = {\"zebra\", \"apple\", \"monkey\", \"dog\", \"cat\"};\n    printf(\"\\nBefore sort:\\n\");\n    count = sizeof(sorted) / sizeof(sorted[0]);\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %s\\n\", sorted[i]);\n    }\n\n    /* Bubble sort */\n    for (size_t i = 0; i < count - 1; i++) {\n        for (size_t j = 0; j < count - i - 1; j++) {\n            if (strcmp(sorted[j], sorted[j + 1]) > 0) {\n                char *temp = sorted[j];\n                sorted[j] = sorted[j + 1];\n                sorted[j + 1] = temp;\n            }\n        }\n    }\n\n    printf(\"After sort:\\n\");\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %s\\n\", sorted[i]);\n    }\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Fruit basket (5 items):\n  1. apple\n  2. banana\n  3. cherry\n  4. date\n  5. elderberry\n\nBefore sort:\n  zebra\n  apple\n  monkey\n  dog\n  cat\nAfter sort:\n  apple\n  cat\n  dog\n  monkey\n  zebra\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Memory layout for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "char *fruits[]"
+        }), ":"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Memory (stack):\n  fruits[0] --> \"apple\\0\"    (in .rodata)\n  fruits[1] --> \"banana\\0\"   (in .rodata)\n  fruits[2] --> \"cherry\\0\"   (in .rodata)\n  fruits[3] --> \"date\\0\"     (in .rodata)\n  fruits[4] --> \"elderberry\\0\" (in .rodata)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "772-2d-char-array-fixed-buffer-per-string",
+      children: "7.7.2 2D Char Array (Fixed Buffer per String)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n\nint main(void) {\n    /* Fixed-size 2D array: 5 strings, max 31 chars each */\n    char names[5][32] = {\n        \"Alice\",\n        \"Bob\",\n        \"Charlie\",\n        \"Diana\",\n        \"Eve\"\n    };\n    size_t count = sizeof(names) / sizeof(names[0]);\n\n    printf(\"Names list:\\n\");\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %s (%zu chars)\\n\", names[i], strlen(names[i]));\n    }\n    printf(\"Memory per string: %zu bytes\\n\", sizeof(names[0]));\n\n    /* Modify a string in place */\n    strcpy(names[0], \"Alice Smith\");\n    printf(\"\\nAfter rename:\\n\");\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %s\\n\", names[i]);\n    }\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Names list:\n  Alice (5 chars)\n  Bob (3 chars)\n  Charlie (7 chars)\n  Diana (5 chars)\n  Eve (3 chars)\nMemory per string: 32 bytes\n\nAfter rename:\n  Alice Smith\n  Bob\n  Charlie\n  Diana\n  Eve\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Memory layout for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "char names[5][32]"
+        }), " (total 160 contiguous bytes):"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Address      Content\n0x1000-0x101F: \"Alice\\0\" + 26 unused bytes\n0x1020-0x103F: \"Bob\\0\"   + 28 unused bytes\n0x1040-0x105F: \"Charlie\\0\" + 24 unused bytes\n0x1060-0x107F: \"Diana\\0\"  + 26 unused bytes\n0x1080-0x109F: \"Eve\\0\"    + 28 unused bytes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "773-dynamic-array-of-strings",
+      children: "7.7.3 Dynamic Array of Strings"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main(void) {\n    /* Dynamic array: allocate when needed */\n    char **lines = NULL;\n    size_t capacity = 0;\n    size_t count = 0;\n\n    /* Input strings */\n    const char *input[] = {\"first line\", \"second line\", \"third line\"};\n    size_t input_count = sizeof(input) / sizeof(input[0]);\n\n    /* Append each string dynamically */\n    for (size_t i = 0; i < input_count; i++) {\n        if (count >= capacity) {\n            capacity = capacity == 0 ? 2 : capacity * 2;\n            char **temp = realloc(lines, capacity * sizeof(char *));\n            if (!temp) { perror(\"realloc\"); exit(1); }\n            lines = temp;\n        }\n\n        lines[count] = malloc(strlen(input[i]) + 1);\n        if (!lines[count]) { perror(\"malloc\"); exit(1); }\n        strcpy(lines[count], input[i]);\n        count++;\n    }\n\n    /* Print them */\n    printf(\"Dynamic string array (%zu items):\\n\", count);\n    for (size_t i = 0; i < count; i++) {\n        printf(\"  %zu: \\\"%s\\\"\\n\", i + 1, lines[i]);\n    }\n\n    /* Cleanup */\n    for (size_t i = 0; i < count; i++) {\n        free(lines[i]);\n    }\n    free(lines);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Dynamic string array (3 items):\n  1: \"first line\"\n  2: \"second line\"\n  3: \"third line\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "comparison-array-of-strings-approaches",
+      children: "Comparison: Array of Strings Approaches"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char *arr[]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char arr[N][M]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char **arr"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strings in read-only memory (literals) or elsewhere; arr holds pointers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Contiguous block on stack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Contiguous pointer array + individually allocated string buffers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Modifiable?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pointers modifiable; literals are not"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both rows and content modifiable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both rows and content modifiable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory waste"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (strings stored exactly)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wasted space for shorter strings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slight overhead for each malloc"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reallocation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can't resize rows; can swap pointers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can't resize rows at all"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full flexibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sorting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swap pointers (cheap, O(1))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swap entire rows (expensive, O(N))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swap pointers (cheap)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed list of known strings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed grid with uniform row size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unknown number/size at compile time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "78-string-comparison-tables",
+      children: "7.8 String Comparison Tables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "781-string-input-gets-vs-fgets-vs-scanf",
+      children: "7.8.1 String Input: gets vs fgets vs scanf"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "gets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "fgets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "scanf(\"%s\")"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Buffer safe?"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "NO"
+            }), " — no size limit"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes — takes buffer size"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "NO"
+            }), " — unless width specified like ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%19s"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reads spaces?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " — stops at whitespace"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Includes newline?"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Discards ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\n'"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Includes"
+            }), " ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\n'"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Null-terminates?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return value"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "char *"
+            }), " (NULL on EOF/error)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "char *"
+            }), " (NULL on EOF/error)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Number of items matched"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Standard"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removed in C11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C99+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C89+"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety verdict"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Never use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Always use for lines"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use with width for words"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* BAD — gets has no bounds checking */\nchar buf[10];\ngets(buf);  /* Input of 50 characters will overflow */\n\n/* GOOD — fgets with size limit */\nchar buf[10];\nif (fgets(buf, sizeof(buf), stdin)) {\n    buf[strcspn(buf, \"\\n\")] = '\\0';  /* remove newline if present */\n}\n\n/* OK — scanf with explicit width */\nchar buf[10];\nscanf(\"%9s\", buf);  /* read at most 9 chars + null terminator */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "782-string-copy-strcpy-vs-strncpy-vs-snprintf",
+      children: "7.8.2 String Copy: strcpy vs strncpy vs snprintf"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "strcpy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "strncpy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "snprintf"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bounds-checked?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partial — pads with nulls but doesn't null-terminate if source >= n"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " — always null-terminates"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Null-termination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only if strlen(src) < n — dangerous silent failure"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Always"
+            }), " (as long as n > 0)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast, simple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slower due to null-padding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slowest (format parsing overhead)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pads with nulls?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes — fills rest of buffer with '\\0'"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Return value"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "char *"
+            }), " (dest)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "char *"
+            }), " (dest)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Characters needed (detect truncation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Truncation detection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible (can check strlen but it's O(n))"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Easy"
+            }), " (ret >= n means truncation)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety verdict"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use only with known safe lengths"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Never use for strings — use strlcpy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for safe copy"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char src[] = \"hello world\";\nchar dst[6];\n\n/* BAD — overflow */\nstrcpy(dst, src);  /* writes 12 chars into 6-char buffer */\n\n/* BAD — no null termination if src >= n */\nstrncpy(dst, src, sizeof(dst));\n/* dst is NOT null-terminated! dst = {'h','e','l','l','o',' '} — garbage follows */\n\n/* GOOD */\nsnprintf(dst, sizeof(dst), \"%s\", src);\n/* dst = \"hello\\0\" — always safe, always null-terminated */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "783-string-to-number-atoi-vs-strtol-vs-sscanf",
+      children: "7.8.3 String to Number: atoi vs strtol vs sscanf"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "(See section 7.6.6 for the complete comparison table)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "784-string-literal-vs-char-array",
+      children: "7.8.4 String Literal vs Char Array"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char *s = \"hello\";"
+            })
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char s[] = \"hello\";"
+            })
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Pointer to string literal in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".rodata"
+            }), " (read-only)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Local array on stack initialized from literal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Modifiable?"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " — modifying causes undefined behavior (often segfault)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reassignable?"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Yes — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "s"
+            }), " can point to another string"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["No — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "s"
+            }), " is a fixed array, cannot be reassigned"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Pointer (4/8 bytes) + literal in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".rodata"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full array on stack (6 bytes for \"hello\" + '\\0')"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "sizeof(s)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Size of pointer (4 or 8)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Size of array (6)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "String literal sharing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May share the same literal with other pointers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Gets its own copy"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "char *p = \"hello\";\nchar a[] = \"hello\";\n\n/* Modifying: */\np[0] = 'H';  /* UNDEFINED BEHAVIOR — crash on most systems */\na[0] = 'H';  /* OK — a becomes \"Hello\" */\n\n/* Reassignment: */\np = \"world\"; /* OK */\na = \"world\"; /* COMPILE ERROR — array type not assignable */\n\n/* sizeof: */\nprintf(\"%zu\\n\", sizeof(p)); /* 8 (pointer size on 64-bit) */\nprintf(\"%zu\\n\", sizeof(a)); /* 6 (6 chars including null) */\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory layout:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Read-only memory (.rodata):\n  \"hello\" at address 0x4000\n\nStack (for char *p):\n  p = 0x4000   (pointer to read-only area)\n\nStack (for char a[]):\n  a = {'h','e','l','l','o','\\0'}  (copy on stack, writable)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "79-interview-corner",
+      children: "7.9 Interview Corner"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q1-what-is-the-difference-between-char-s-and-char-s",
+      children: ["Q1: What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char s[]"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s = \"hello\""
+      }), " creates a pointer to a string literal stored in read-only memory. Modifying ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "*s"
+      }), " causes undefined behavior. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char s[] = \"hello\""
+      }), " creates a local writable array initialized with a copy of the literal. The array can be modified safely but cannot be reassigned to point elsewhere. When you see ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char *s"
+      }), ", you must assume you cannot modify the content. See section 7.8.4 for full comparison."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q2-why-is-gets-dangerous",
+      children: ["Q2: Why is ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), " dangerous?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), " does not take a size parameter. If the input exceeds the buffer, the function writes past the end of the array, causing a buffer overflow. This is the classic vulnerability that enabled the Morris Worm (1988). ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "gets"
+      }), " was removed from the C11 standard. Always use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fgets"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "getline"
+      }), " (POSIX) with explicit size limits."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-what-is-the-n1-problem-not-sql--string-related",
+      children: "Q3: What is the N+1 problem (not SQL — string-related)?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " In the context of strings, the N+1 problem refers to allocating memory as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(s) + 1"
+      }), " to account for the null terminator. Many buffer overflows occur precisely because the +1 is forgotten. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " also has a related issue — it does not null-terminate if the source length >= the destination size, which is effectively an N+1 failure in reverse."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q4-how-would-you-implement-strlen-without-using-library-functions",
+      children: ["Q4: How would you implement ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " without using library functions?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* Iterative version */\nsize_t my_strlen(const char *s) {\n    const char *p = s;\n    while (*p) p++;\n    return (size_t)(p - s);\n}\n\n/* Pointer-arithmetic version (same as glibc) */\nsize_t my_strlen_fast(const char *s) {\n    const char *p = s;\n    while (*p++) ;\n    return (size_t)(p - s - 1);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q5-what-happens-if-you-pass-null-to-strlen",
+      children: ["Q5: What happens if you pass NULL to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Undefined behavior — typically a segmentation fault. C library functions generally do not check for NULL pointers for performance reasons. Always check for NULL before calling string functions on pointer arguments that may be invalid."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q6-how-does-strtok-work-internally-what-are-its-limitations",
+      children: ["Q6: How does ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok"
+      }), " work internally? What are its limitations?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok"
+      }), " maintains an internal static pointer to track the current position in the string across multiple calls. The first call receives the string to tokenize; subsequent calls pass NULL to continue. It modifies the original string by replacing delimiters with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), ". Limitations: (1) Not reentrant — can't interleave tokenization of two strings. (2) Not thread-safe. (3) Modifies the input string. (4) Skips empty tokens. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtok_r"
+      }), " (POSIX) for reentrancy."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q7-what-is-the-difference-between-strcmp-and-strncmp",
+      children: ["Q7: What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncmp"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp"
+      }), " compares until a difference or null terminator. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncmp"
+      }), " adds a maximum character count — it will stop after ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters even if neither string has ended. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncmp(\"abcde\", \"abc\", 3)"
+      }), " returns 0 (equal in the first 3 chars), while ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcmp(\"abcde\", \"abc\")"
+      }), " returns a positive value ('d' > '\\0')."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q8-why-would-snprintfdest-n-s-src-be-preferred-over-strcpy",
+      children: ["Q8: Why would ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "snprintf(dest, n, \"%s\", src)"
+      }), " be preferred over ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcpy"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "snprintf"
+      }), " (1) guarantees null-termination as long as n > 0, (2) takes the buffer size explicitly, (3) returns the number of characters that would have been written, allowing truncation detection. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcpy"
+      }), " provides none of these safety guarantees."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q9-what-is-the-output-of-printfs-hello--2",
+      children: ["Q9: What is the output of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "printf(\"%s\", \"hello\" + 2)"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"llo\""
+      }), ". Pointer arithmetic on the string literal shifts the pointer by 2 characters. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"hello\""
+      }), " is a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "const char *"
+      }), " pointing to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'h'"
+      }), ". Adding 2 points to the third character ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'l'"
+      }), ". So ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%s"
+      }), " prints from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'l'"
+      }), " onward: \"llo\"."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q10-how-does-sscanf42-d-x-differ-from-atoi42",
+      children: ["Q10: How does ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf(\"42\", \"%d\", &x)"
+      }), " differ from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi(\"42\")"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf"
+      }), " returns the number of successful assignments (1 on success), allowing partial error detection. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi"
+      }), " returns the integer value (0 on error — ambiguous). ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf"
+      }), " can also parse multiple fields simultaneously. However, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sscanf"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%d"
+      }), " gives no overflow protection (undefined behavior on overflow just like ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "atoi"
+      }), "). For full error detection, use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strtol"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q11-what-is-the-difference-between-char-a10--hello-and-char-a10-a--hello",
+      children: ["Q11: What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char a[10] = \"hello\""
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "char a[10]; a = \"hello\""
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " The first initializes the array with a copy of \"hello\". The second is a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "compile error"
+      }), " — array names are not modifiable lvalues. You can't assign to an array after declaration. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strcpy"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "snprintf"
+      }), " to copy string content into an existing array."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q12-can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy",
+      children: ["Q12: Can you use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen"
+      }), " to determine if a string was truncated after ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Partially, but it's unreliable. If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy(dst, src, n)"
+      }), " produces a string where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(dst) == n"
+      }), ", it means the source was at least ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "n"
+      }), " characters long — but since ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " only null-terminates when ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(src) < n"
+      }), ", the buffer may lack null termination precisely when the string is at maximum length. This is why ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strncpy"
+      }), " is considered dangerous. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlcpy"
+      }), " function (BSD, not standard C) addresses this by always null-terminating."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q13-how-do-you-safely-concatenate-strings-in-c",
+      children: "Q13: How do you safely concatenate strings in C?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "/* BAD — buffer overflow risk */\nstrcat(dest, src);     /* may overflow dest */\n\n/* GOOD — using snprintf */\nsnprintf(dest, dest_size, \"%s%s\", dest, src);\n/* OR */\nsize_t len = strlen(dest);\nsnprintf(dest + len, dest_size - len, \"%s\", src);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "q14-what-does-sizeofhello-evaluate-to",
+      children: ["Q14: What does ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sizeof(\"hello\")"
+      }), " evaluate to?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " 6 — the array size including the null terminator. Unlike ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strlen(\"hello\")"
+      }), " which returns 5, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sizeof"
+      }), " on a string literal returns the total number of bytes including the terminating ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "'\\0'"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q15-implement-a-function-that-reverses-a-string-in-place",
+      children: "Q15: Implement a function that reverses a string in place."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nvoid reverse(char *s) {\n    if (!s) return;\n    size_t len = strlen(s);\n    if (len == 0) return;\n    for (size_t i = 0; i < len / 2; i++) {\n        char temp = s[i];\n        s[i] = s[len - 1 - i];\n        s[len - 1 - i] = temp;\n    }\n}\n\n/* Recursive version */\nvoid reverse_recursive(char *s, size_t left, size_t right) {\n    if (left >= right) return;\n    char temp = s[left];\n    s[left] = s[right];\n    s[right] = temp;\n    reverse_recursive(s, left + 1, right - 1);\n}\n\nint main(void) {\n    char str[] = \"hello world\";\n    reverse(str);\n    printf(\"%s\\n\", str);                 /* \"dlrow olleh\" */\n    reverse_recursive(str, 0, strlen(str) - 1);\n    printf(\"%s\\n\", str);                 /* \"hello world\" */\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "710-applications-in-real-systems",
+      children: "7.10 Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7101-string-parsing-in-network-protocols",
+      children: "7.10.1 String Parsing in Network Protocols"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "HTTP request parsing relies on string operations at every level:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n\n/* Parse an HTTP request line: \"GET /path HTTP/1.1\" */\ntypedef struct {\n    char method[8];\n    char path[256];\n    char version[16];\n} http_request;\n\nint parse_http_request(const char *line, http_request *req) {\n    if (!line || !req) return -1;\n\n    /* Parse: METHOD SP PATH SP VERSION */\n    char copy[512];\n    snprintf(copy, sizeof(copy), \"%s\", line);\n\n    char *saveptr;\n    char *method = strtok_r(copy, \" \", &saveptr);\n    char *path = strtok_r(NULL, \" \", &saveptr);\n    char *version = strtok_r(NULL, \" \\r\\n\", &saveptr);\n\n    if (!method || !path || !version) return -1;\n\n    snprintf(req->method, sizeof(req->method), \"%s\", method);\n    snprintf(req->path, sizeof(req->path), \"%s\", path);\n    snprintf(req->version, sizeof(req->version), \"%s\", version);\n\n    return 0;\n}\n\nint main(void) {\n    const char *raw = \"GET /index.html HTTP/1.1\\r\\n\";\n    http_request req;\n\n    if (parse_http_request(raw, &req) == 0) {\n        printf(\"Method: %s\\n\", req.method);\n        printf(\"Path:   %s\\n\", req.path);\n        printf(\"Version: %s\\n\", req.version);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Method: GET\nPath:   /index.html\nVersion: HTTP/1.1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7102-url-query-string-parsing",
+      children: "7.10.2 URL Query String Parsing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n\n/* Parse URL query string: \"key1=val1&key2=val2&key3=val3\" */\ntypedef struct {\n    char key[32];\n    char value[64];\n} query_param;\n\nint parse_query_string(const char *qs, query_param *params, int max_params) {\n    if (!qs || !params || max_params <= 0) return 0;\n\n    char copy[512];\n    snprintf(copy, sizeof(copy), \"%s\", qs);\n\n    int count = 0;\n    char *saveptr1, *saveptr2;\n    char *token = strtok_r(copy, \"&\", &saveptr1);\n\n    while (token && count < max_params) {\n        char *eq = strchr(token, '=');\n        if (eq) {\n            *eq = '\\0';\n            snprintf(params[count].key, sizeof(params[count].key), \"%s\", token);\n            snprintf(params[count].value, sizeof(params[count].value), \"%s\", eq + 1);\n            count++;\n        }\n        token = strtok_r(NULL, \"&\", &saveptr1);\n    }\n\n    return count;\n}\n\nint main(void) {\n    const char *url = \"name=John&age=30&city=New+York&country=USA\";\n    query_param params[10];\n    int count = parse_query_string(url, params, 10);\n\n    printf(\"Query parameters:\\n\");\n    for (int i = 0; i < count; i++) {\n        printf(\"  %s = %s\\n\", params[i].key, params[i].value);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Query parameters:\n  name = John\n  age = 30\n  city = New+York\n  country = USA\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7103-csv-file-parsing",
+      children: "7.10.3 CSV File Parsing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n\n#define MAX_FIELDS 16\n#define MAX_LINE 1024\n\nint parse_csv_line(const char *line, char fields[][64], int max_fields) {\n    char copy[MAX_LINE];\n    snprintf(copy, sizeof(copy), \"%s\", line);\n\n    int count = 0;\n    char *saveptr;\n    char *token = strtok_r(copy, \",\", &saveptr);\n\n    while (token && count < max_fields) {\n        /* Trim leading/trailing whitespace from each field */\n        while (*token == ' ' || *token == '\\t') token++;\n        char *end = token + strlen(token) - 1;\n        while (end > token && (*end == ' ' || *end == '\\t')) end--;\n        *(end + 1) = '\\0';\n\n        snprintf(fields[count], 64, \"%s\", token);\n        count++;\n        token = strtok_r(NULL, \",\", &saveptr);\n    }\n\n    return count;\n}\n\nint main(void) {\n    const char *line = \"John Doe, 30, New York, Engineer, john@example.com\";\n    char fields[MAX_FIELDS][64];\n    int count = parse_csv_line(line, fields, MAX_FIELDS);\n\n    printf(\"CSV line: \\\"%s\\\"\\n\", line);\n    printf(\"Fields (%d):\\n\", count);\n    for (int i = 0; i < count; i++) {\n        printf(\"  [%d] \\\"%s\\\"\\n\", i, fields[i]);\n    }\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "CSV line: \"John Doe, 30, New York, Engineer, john@example.com\"\nFields (5):\n  [0] \"John Doe\"\n  [1] \"30\"\n  [2] \"New York\"\n  [3] \"Engineer\"\n  [4] \"john@example.com\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7104-file-path-parsing-dirnamebasename",
+      children: "7.10.4 File Path Parsing (dirname/basename)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n\nvoid split_path(const char *path, char *dir, size_t dir_size,\n                char *file, size_t file_size) {\n    char copy[256];\n    snprintf(copy, sizeof(copy), \"%s\", path);\n\n    char *last_slash = strrchr(copy, '/');\n    char *last_backslash = strrchr(copy, '\\\\');\n\n    /* Use whichever separator appears later (platform-agnostic) */\n    char *sep = (last_slash > last_backslash) ? last_slash : last_backslash;\n\n    if (sep) {\n        *sep = '\\0';\n        snprintf(dir, dir_size, \"%s\", copy);\n        snprintf(file, file_size, \"%s\", sep + 1);\n    } else {\n        snprintf(dir, dir_size, \".\");\n        snprintf(file, file_size, \"%s\", path);\n    }\n}\n\nint main(void) {\n    char dir[128], file[64];\n\n    split_path(\"/home/user/documents/report.pdf\", dir, sizeof(dir),\n               file, sizeof(file));\n    printf(\"Directory: %s\\n\", dir);\n    printf(\"Filename:  %s\\n\", file);\n\n    split_path(\"C:\\\\Users\\\\John\\\\file.txt\", dir, sizeof(dir),\n               file, sizeof(file));\n    printf(\"\\nWindows path:\\n\");\n    printf(\"Directory: %s\\n\", dir);\n    printf(\"Filename:  %s\\n\", file);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Directory: /home/user/documents\nFilename:  report.pdf\n\nWindows path:\nDirectory: C:\\Users\\John\nFilename:  file.txt\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7105-string-trimming-whitespace-removal",
+      children: "7.10.5 String Trimming (whitespace removal)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <string.h>\n#include <ctype.h>\n\n/* Trim leading whitespace */\nchar *ltrim(char *s) {\n    char *start = s;\n    while (*start && isspace((unsigned char)*start)) start++;\n    if (start != s) memmove(s, start, strlen(start) + 1);\n    return s;\n}\n\n/* Trim trailing whitespace */\nchar *rtrim(char *s) {\n    char *end = s + strlen(s);\n    while (end > s && isspace((unsigned char)*(end - 1))) end--;\n    *end = '\\0';\n    return s;\n}\n\n/* Trim both sides */\nchar *trim(char *s) {\n    return ltrim(rtrim(s));\n}\n\nint main(void) {\n    char str[] = \"   hello world   \\n\";\n    printf(\"Original: \\\"%s\\\"\\n\", str);\n    printf(\"Trimmed:  \\\"%s\\\"\\n\", trim(str));\n\n    char csv_field[] = \"  John Doe  \";\n    printf(\"CSV field trimmed: \\\"%s\\\"\\n\", trim(csv_field));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Original: \"   hello world\n\"\nTrimmed:  \"hello world\"\nCSV field trimmed: \"John Doe\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "711-summary-and-exercises",
+      children: "7.11 Summary and Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Strings in C are null-terminated char arrays."
+          }), " The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "'\\0'"
+          }), " terminator marks the end — every string function relies on it. Forgetting it causes buffer overflow and security vulnerabilities."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "String I/O:"
+          }), " Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "fgets"
+          }), " (not ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "gets"
+          }), "), use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "printf"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "%s"
+          }), " for output, use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "snprintf"
+          }), " with explicit buffer size for formatting."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Core string functions (strlen, strcpy, strcmp, strcat):"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strlen(s)"
+            }), " — O(n) count of characters before ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "'\\0'"
+            }), ". Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sizeof"
+            }), " only for actual array size."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strcpy(d, s)"
+            }), " — copies until null. ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Never use without size checking."
+            }), " Prefer ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "snprintf"
+            }), "."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strncpy(d, s, n)"
+            }), " — partially safe but does ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "not"
+            }), " guarantee null-termination. Dangerous."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strcmp(a, b)"
+            }), " — returns <0, 0, >0. ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "strncmp"
+            }), " adds length limit."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strcat(d, s)"
+            }), " — appends. ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Never use"
+            }), " — no bounds checking. Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "snprintf"
+            }), "."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "String search functions:"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strchr(s, c)"
+            }), " — find first occurrence of char."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strrchr(s, c)"
+            }), " — find last occurrence of char (must scan entire string)."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strstr(h, n)"
+            }), " — find first occurrence of substring."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "String splitting:"
+          }), " ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "strtok"
+          }), " is powerful but modifies the input and is not reentrant. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "strtok_r"
+          }), " (POSIX) for threaded environments."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "String formatting and parsing:"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "snprintf(buf, n, fmt, ...)"
+            }), " — ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "safe format-to-string."
+            }), " Always use."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "sprintf(buf, fmt, ...)"
+            }), " — ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "not safe."
+            }), " Always use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "snprintf"
+            }), " instead."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "sscanf(str, fmt, ...)"
+            }), " — parse string by format."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "strtol(str, &endptr, base)"
+            }), " — safe number conversion with error detection. Prefer over ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "atoi"
+            }), "."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Memory management:"
+          }), " Every ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "malloc"
+          }), "/", (0,jsx_runtime.jsx)(_components.code, {
+            children: "strdup"
+          }), " must have a corresponding ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "free"
+          }), ". Missing the +1 for the null terminator in allocations is the #1 string bug."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Array of strings:"
+          }), " Three approaches — pointer array (flexible, may point to read-only), 2D char array (fixed size, all modifiable), dynamic array (fully flexible, requires manual memory management)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Constant correctness:"
+          }), " If a function does not modify a string, declare the parameter as ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "const char *"
+          }), ". This allows passing literals and catches modification bugs at compile time."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "common-pitfalls-checklist",
+      children: "Common Pitfalls Checklist"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "There is a set of String Safety Rules that every C programmer should memorize:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always"
+        }), " allocate ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlen(s) + 1"
+        }), " bytes — never forget the +1."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always"
+        }), " use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf"
+        }), " over ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sprintf"
+        }), " — there is no excuse for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sprintf"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Never"
+        }), " use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "gets"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcpy"
+        }), " (without size check), or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcat"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Never"
+        }), " use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strncpy"
+        }), " for strings (it was designed for Unix directory entries, not strings). Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strlcpy"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Check"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtol"
+        }), " return value via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "endptr"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "errno"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Copy"
+        }), " the string before ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok"
+        }), " if you need the original."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok_r"
+        }), " instead of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strtok"
+        }), " in multithreaded code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Declare"
+        }), " string parameters as ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "const char *"
+        }), " when the function does not modify them."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Initialize"
+        }), " all char arrays: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "char buf[100] = {0};"
+        }), " or use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "= \"\""
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Never"
+        }), " compare string content with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "=="
+        }), " — that compares pointer addresses, not content. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strcmp"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 1: Reverse Words"
+      }), "\nWrite a function that reverses the order of words in a sentence without reversing the individual words. \"hello world\" → \"world hello\"."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 2: Character Frequency"
+      }), "\nWrite a function that counts the frequency of each character in a string and prints only those with non-zero counts."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 3: String Compression"
+      }), "\nImplement basic run-length encoding: \"aaabbcccc\" → \"a3b2c4\". If the compressed string is not shorter, return the original."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 4: Palindrome Checker"
+      }), "\nWrite a function that checks if a string is a palindrome, ignoring case and non-alphanumeric characters. \"A man, a plan, a canal: Panama\" should return true."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 5: strstr Implementation"
+      }), "\nImplement your own version of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "strstr"
+      }), " (substring search) without using library functions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 6: String Splitter"
+      }), "\nImplement a function ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "string_split"
+      }), " that splits a string by a delimiter into a dynamically allocated array of strings, similar to Python's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "str.split()"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 7: URL Decoder"
+      }), "\nImplement URL decoding: replace ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%20"
+      }), " with space, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "%3A"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ":"
+      }), ", etc. The input is a null-terminated string; modify it in place."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 8: Safe Tokenizer"
+      }), "\nWrite a thread-safe tokenizer that does not modify the input string. It should accept a string, a delimiter set, and a save pointer, and return the next token as a dynamically allocated copy."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 9: Wildcard Match"
+      }), "\nImplement wildcard pattern matching where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "?"
+      }), " matches any single character and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "*"
+      }), " matches any sequence of characters. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "is_match(\"hello\", \"h*lo\")"
+      }), " → true."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 10: Log Parser"
+      }), "\nWrite a function that parses a log file line in the format ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[2026-06-24 10:30:00] [INFO] [Main] User logged in"
+      }), " and extracts the timestamp, log level, module, and message into a struct."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Chapter 7: Strings in C"
+        }), " — End of chapter."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["This chapter covered the full depth of C string handling: character arrays, string literals, I/O functions, the complete ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "<string.h>"
+        }), " function family, safe formatting with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "snprintf"
+        }), ", number conversion with error detection, arrays of strings, interview questions, and real-world applications including HTTP parsing, URL parsing, CSV processing, and file path manipulation. The unifying theme: ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "the null terminator is the foundation — forget it at your peril."
+        })]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

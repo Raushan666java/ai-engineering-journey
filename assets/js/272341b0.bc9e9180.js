@@ -1,0 +1,1094 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[97796],{
+
+/***/ 77444
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_web_development_11_databases_web_md_272_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-web-development-11-databases-web-md-272.json
+const site_docs_courses_web_development_11_databases_web_md_272_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/web-development/11-databases-web","title":"Chapter 11: Databases in Web Applications","description":"Previous 12-deployment","source":"@site/docs/courses/web-development/11-databases-web.md","sourceDirName":"courses/web-development","slug":"/web-development/11-databases-web","permalink":"/ai-engineering-journey/web-development/11-databases-web","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"11-databases-web","slug":"/web-development/11-databases-web","title":"Chapter 11: Databases in Web Applications","sidebar_label":"Chapter 11: Databases in Web Applications","sidebar_position":11},"sidebar":"course-web-development","previous":{"title":"Chapter 10: Authentication and Authorization","permalink":"/ai-engineering-journey/web-development/10-auth"},"next":{"title":"Chapter 12: Deployment and DevOps","permalink":"/ai-engineering-journey/web-development/12-deployment"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/web-development/11-databases-web.md
+
+
+const frontMatter = {
+	id: '11-databases-web',
+	slug: '/web-development/11-databases-web',
+	title: 'Chapter 11: Databases in Web Applications',
+	sidebar_label: 'Chapter 11: Databases in Web Applications',
+	sidebar_position: 11
+};
+const contentTitle = 'Chapter 11: Databases in Web Applications';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "11.1 SQL vs NoSQL",
+  "id": "111-sql-vs-nosql",
+  "level": 2
+}, {
+  "value": "11.2 Prisma ORM Setup and Configuration",
+  "id": "112-prisma-orm-setup-and-configuration",
+  "level": 2
+}, {
+  "value": "CRUD with Prisma",
+  "id": "crud-with-prisma",
+  "level": 3
+}, {
+  "value": "CRUD with Prisma",
+  "id": "crud-with-prisma-1",
+  "level": 3
+}, {
+  "value": "11.3 Migrations",
+  "id": "113-migrations",
+  "level": 2
+}, {
+  "value": "11.4 Raw SQL with pg",
+  "id": "114-raw-sql-with-pg",
+  "level": 2
+}, {
+  "value": "11.5 Indexing for Performance",
+  "id": "115-indexing-for-performance",
+  "level": 2
+}, {
+  "value": "11.6 Solving the N+1 Problem",
+  "id": "116-solving-the-n1-problem",
+  "level": 2
+}, {
+  "value": "11.7 Redis Caching",
+  "id": "117-redis-caching",
+  "level": 2
+}, {
+  "value": "11.8 Transactions and Batch Operations",
+  "id": "118-transactions-and-batch-operations",
+  "level": 2
+}, {
+  "value": "Connection Pooling",
+  "id": "connection-pooling",
+  "level": 3
+}, {
+  "value": "Prisma Middleware and Logging",
+  "id": "prisma-middleware-and-logging",
+  "level": 3
+}, {
+  "value": "Database Migration Strategy",
+  "id": "database-migration-strategy",
+  "level": 3
+}, {
+  "value": "Query Performance Analysis",
+  "id": "query-performance-analysis",
+  "level": 3
+}, {
+  "value": "Read Replicas and Sharding",
+  "id": "read-replicas-and-sharding",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript: SQL Query Builder &amp; Connection Pool Simulator",
+  "id": "typescript-sql-query-builder--connection-pool-simulator",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: SQL Query Builder, Connection Pool Health, Migration Tracker",
+  "id": "typescript-implementation-sql-query-builder-connection-pool-health-migration-tracker",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Projects",
+  "id": "application-projects",
+  "level": 3
+}, {
+  "value": "Challenge Project",
+  "id": "challenge-project",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-11-databases-in-web-applications",
+        children: "Chapter 11: Databases in Web Applications"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/web-development/10-auth",
+          children: "10-auth"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/web-development/12-deployment",
+          children: "12-deployment"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " SQL databases suit structured relational data while NoSQL offers flexible schemas for unstructured data."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/web-development/11-databases-web/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/web-development/11-databases-web/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/web-development/11-databases-web/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/web-development/11-databases-web/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/web-development/11-databases-web/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/web-development/11-databases-web/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Prisma ORM provides type-safe database access with auto-generated queries and schema migrations."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL vs NoSQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL enforces schemas and relationships; NoSQL offers flexible documents"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use SQL for structured relational data, NoSQL for high-velocity unstructured or denormalized data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prisma ORM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type-safe query builder with auto-generated client and migrations"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Define models in schema.prisma, run ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "prisma generate"
+            }), " for the typed client"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Migrations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-controlled schema changes applied in order across environments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write descriptive migration names, test down migrations, never edit applied migrations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw SQL"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Parameterized queries with the ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "pg"
+            }), " library prevent injection"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Always use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "$1"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "$2"
+            }), " placeholders — never string interpolation for values"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Indexing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Database indexes speed up reads at the cost of write performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create composite indexes matching query filter/sort patterns, use partial indexes for filtered queries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "N+1 Problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fetching parent rows then querying children individually causes N extra queries"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Always eager-load relations with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "include"
+            }), " in Prisma or JOIN in raw SQL"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Redis Caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-memory key-value store reduces database load for frequent queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set TTLs appropriate to data freshness needs, invalidate cache on writes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Database migrations version-control schema changes and ensure consistent application across environments."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    A[SQL vs NoSQL]\n    B[Prisma Schema & Client]\n    A --> B\n    C[CRUD Operations]\n    B --> C\n    D[Migrations]\n    C --> D\n    E[Raw SQL with pg]\n    D --> E\n    F[Database Indexing]\n    E --> F\n    G[N+1 Problem Solutions]\n    F --> G\n    H[Redis Caching]\n    G --> H\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose between SQL and NoSQL databases for web applications"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use Prisma ORM for type-safe database access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design database schemas with proper relationships and indexes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write optimized SQL queries and avoid the N+1 problem"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement Redis caching for improved performance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handle database migrations in production"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "111-sql-vs-nosql",
+      children: "11.1 SQL vs NoSQL"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Parameterized queries with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pg"
+        }), " prevent SQL injection by separating query structure from user data."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/11-databases-web.png",
+        alt: "Databases for Web Mindmap"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// SQL: Structured data with relationships\nconst query = `\n  SELECT users.*, COUNT(posts.id) as post_count\n  FROM users\n  LEFT JOIN posts ON posts.user_id = users.id\n  WHERE users.active = true\n  GROUP BY users.id\n  ORDER BY post_count DESC\n`;\n\n// NoSQL: Flexible schema, denormalized data\nconst user = await db.collection(\"users\").findOne({ email });\nawait db.collection(\"posts\").insertOne({\n  userId: user._id,\n  title: \"My Post\",\n  tags: [\"web\", \"database\"],\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "112-prisma-orm-setup-and-configuration",
+      children: "11.2 Prisma ORM Setup and Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Initialize Prisma in an existing project\nnpm install @prisma/client\nnpm install prisma --save-dev\nnpx prisma init\n\n# This creates:\n# prisma/schema.prisma - Your data model\n# .env - Database connection string\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// prisma/seed.ts - Database seeding for development\nimport { PrismaClient } from \"@prisma/client\";\nimport bcrypt from \"bcryptjs\";\n\nconst prisma = new PrismaClient();\n\nasync function main() {\n  // Create users with posts\n  const alice = await prisma.user.upsert({\n    where: { email: \"alice@example.com\" },\n    update: {},\n    create: {\n      email: \"alice@example.com\",\n      name: \"Alice Johnson\",\n      passwordHash: await bcrypt.hash(\"password123\", 12),\n      posts: {\n        create: [\n          { title: \"Getting Started with Prisma\", published: true },\n          { title: \"Advanced Database Patterns\", published: true },\n          { title: \"Draft: Upcoming Features\", published: false },\n        ],\n      },\n    },\n  });\n\n  console.log(\"Seeded user:\", alice.email);\n}\n\nmain()\n  .catch((e) => { console.error(e); process.exit(1); })\n  .finally(() => prisma.$disconnect());\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "crud-with-prisma",
+      children: "CRUD with Prisma"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Proper indexing dramatically improves query performance with minimal write overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-prisma",
+        children: "generator client {\n  provider = \"prisma-client-js\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id    String @id @default(cuid())\n  email String @unique\n  name  String\n  posts Post[]\n}\n\nmodel Post {\n  id        String   @id @default(cuid())\n  title     String\n  content   String?\n  published Boolean  @default(false)\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n  author    User     @relation(fields: [authorId], references: [id])\n  authorId  String\n  tags      Tag[]\n}\n\nmodel Tag {\n  id    String @id @default(cuid())\n  name  String @unique\n  posts Post[]\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "crud-with-prisma-1",
+      children: "CRUD with Prisma"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { PrismaClient } from \"@prisma/client\";\n\nconst prisma = new PrismaClient();\n\n// Create\nconst user = await prisma.user.create({\n  data: { email: \"alice@example.com\", name: \"Alice\" },\n});\n\n// Read with relations\nconst userWithPosts = await prisma.user.findUnique({\n  where: { email: \"alice@example.com\" },\n  include: { posts: { include: { tags: true } } },\n});\n\n// Update\nconst updated = await prisma.post.update({\n  where: { id: \"postId\" },\n  data: { published: true },\n});\n\n// Delete\nawait prisma.post.delete({ where: { id: \"postId\" } });\n\n// Paginated query with filtering\nconst posts = await prisma.post.findMany({\n  where: { published: true, title: { contains: \"Web\" } },\n  orderBy: { createdAt: \"desc\" },\n  skip: 0,\n  take: 20,\n  include: { author: { select: { name: true, email: true } } },\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "113-migrations",
+      children: "11.3 Migrations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The N+1 problem is solved by eager-loading related data in a single query."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Create migration\nnpx prisma migrate dev --name add_user_role\n\n# Apply to production\nnpx prisma migrate deploy\n\n# Check migration status\nnpx prisma migrate status\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-prisma",
+        children: "// Migration file auto-generated by Prisma\nmodel User {\n  id    String @id @default(cuid())\n  email String @unique\n  name  String\n  role  String @default(\"MEMBER\") // New field\n  posts Post[]\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "114-raw-sql-with-pg",
+      children: "11.4 Raw SQL with pg"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Redis caching reduces database load by serving frequently accessed data from memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { Pool } from \"pg\";\n\nconst pool = new Pool({\n  connectionString: process.env.DATABASE_URL,\n});\n\n// Parameterized queries prevent SQL injection\nasync function getUserWithPosts(userId: string) {\n  const { rows } = await pool.query(\n    `\n    SELECT u.*, json_agg(\n      json_build_object('id', p.id, 'title', p.title)\n    ) FILTER (WHERE p.id IS NOT NULL) as posts\n    FROM users u\n    LEFT JOIN posts p ON p.author_id = u.id\n    WHERE u.id = $1\n    GROUP BY u.id\n    `,\n    [userId]\n  );\n  return rows[0];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "115-indexing-for-performance",
+      children: "11.5 Indexing for Performance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Single column index\nCREATE INDEX idx_posts_published ON posts(published);\n\n-- Composite index for common query patterns\nCREATE INDEX idx_posts_author_published ON posts(author_id, published);\n\n-- Partial index for filtered queries\nCREATE INDEX idx_posts_recent ON posts(created_at DESC)\nWHERE published = true AND created_at > NOW() - INTERVAL '30 days';\n\n-- Full-text search index\nCREATE INDEX idx_posts_search ON posts\nUSING GIN(to_tsvector('english', title || ' ' || content));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "116-solving-the-n1-problem",
+      children: "11.6 Solving the N+1 Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// BAD: N+1 queries - fetches author for each post individually\nconst posts = await prisma.post.findMany({ where: { published: true } });\nfor (const post of posts) {\n  const author = await prisma.user.findUnique({ where: { id: post.authorId } });\n  console.log(post.title, author.name);\n}\n\n// GOOD: Single query with eager loading\nconst postsWithAuthors = await prisma.post.findMany({\n  where: { published: true },\n  include: { author: true },\n});\n\n// For raw SQL batch loading\nconst posts = await pool.query(\"SELECT * FROM posts WHERE published = true\");\nconst authorIds = [...new Set(posts.rows.map((p) => p.author_id))];\nconst authors = await pool.query(\"SELECT * FROM users WHERE id = ANY($1)\", [authorIds]);\nconst authorMap = new Map(authors.rows.map((a) => [a.id, a]));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "117-redis-caching",
+      children: "11.7 Redis Caching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { createClient } from \"redis\";\n\nconst redis = createClient({ url: process.env.REDIS_URL });\nawait redis.connect();\n\n// Caching middleware\nasync function getCachedOrFetch<T>(\n  key: string,\n  fetchFn: () => Promise<T>,\n  ttlSeconds: number = 300\n): Promise<T> {\n  const cached = await redis.get(key);\n  if (cached) return JSON.parse(cached);\n\n  const data = await fetchFn();\n  await redis.setEx(key, ttlSeconds, JSON.stringify(data));\n  return data;\n}\n\n// Usage\napp.get(\"/api/posts\", async (req, res) => {\n  const posts = await getCachedOrFetch(\n    `posts:${req.query.page}`,\n    () => prisma.post.findMany({ skip, take: 20 }),\n    60\n  );\n  res.json({ data: posts });\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[!TIP]\nUse ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prisma.$transaction([])"
+        }), " for operations that must all succeed or all fail — it wraps multiple queries in a database transaction with automatic rollback."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "[!WARNING]\nNever edit an applied migration file. Always create a new migration for schema changes. Editing applied migrations leads to inconsistent database states across environments."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "[!REMEMBER]\nIndexes speed up SELECT but slow down INSERT/UPDATE/DELETE. Only index columns that are actually used in WHERE, JOIN, or ORDER BY clauses."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "118-transactions-and-batch-operations",
+      children: "11.8 Transactions and Batch Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Database transactions ensure atomicity — a group of operations either all succeed or all fail."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { PrismaClient } from \"@prisma/client\";\n\nconst prisma = new PrismaClient();\n\n// Transaction with rollback on failure\nasync function transferFunds(fromId: string, toId: string, amount: number) {\n  return prisma.$transaction(async (tx) => {\n    const fromAccount = await tx.account.findUniqueOrThrow({\n      where: { id: fromId },\n    });\n    if (fromAccount.balance < amount) {\n      throw new Error(\"Insufficient funds\");\n    }\n\n    await tx.account.update({\n      where: { id: fromId },\n      data: { balance: { decrement: amount } },\n    });\n\n    await tx.account.update({\n      where: { id: toId },\n      data: { balance: { increment: amount } },\n    });\n\n    return { success: true };\n  });\n}\n\n// Batch create with skipDuplicates\nawait prisma.user.createMany({\n  data: [\n    { email: \"a@test.com\", name: \"Alice\" },\n    { email: \"b@test.com\", name: \"Bob\" },\n    { email: \"a@test.com\", name: \"Alice Dup\" },\n  ],\n  skipDuplicates: true, // Skips conflicting records\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "connection-pooling",
+      children: "Connection Pooling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { Pool } from \"pg\";\n\nconst pool = new Pool({\n  connectionString: process.env.DATABASE_URL,\n  max: 20,                // Maximum connections in pool\n  idleTimeoutMillis: 30000, // Close idle connections after 30s\n  connectionTimeoutMillis: 5000, // Fail if can't connect in 5s\n});\n\n// Query using pool — automatically acquires and releases connections\nasync function getUsers() {\n  const client = await pool.connect();\n  try {\n    const { rows } = await client.query(\"SELECT * FROM users\");\n    return rows;\n  } finally {\n    client.release(); // Always release back to pool\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    A[Client Request] --> B[Prisma Client]\n    B --> C{Connection Pool}\n    C --> D[(PostgreSQL)]\n    C --> E[(PostgreSQL)]\n    C --> F[(PostgreSQL)]\n    B --> G[Redis Cache]\n    G -.-> B\n    B --> H[Response]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prisma-middleware-and-logging",
+      children: "Prisma Middleware and Logging"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Prisma middleware intercepts query operations for logging, caching, or modification."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { PrismaClient } from \"@prisma/client\";\n\nconst prisma = new PrismaClient();\n\n// Middleware: log all queries\nprisma.$use(async (params, next) => {\n  const before = Date.now();\n  const result = await next(params);\n  const after = Date.now();\n  console.log(`Query ${params.model}.${params.action} took ${after - before}ms`);\n  return result;\n});\n\n// Middleware: soft-delete filter\nprisma.$use(async (params, next) => {\n  if (params.model === \"Post\" && params.action === \"findMany\") {\n    if (!params.args) params.args = {};\n    if (!params.args.where) params.args.where = {};\n    params.args.where.deletedAt = null;\n  }\n  return next(params);\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "database-migration-strategy",
+      children: "Database Migration Strategy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    A[Schema Change] --> B[Create Migration]\n    B --> C[Review SQL]\n    C --> D[Apply to Staging]\n    D --> E[Run Tests]\n    E -->|Pass| F[Apply to Production]\n    E -->|Fail| G[Rollback]\n    G --> H[Fix Migration]\n    H --> B\n    F --> I[Verify]\n    I -->|Issue| J[Rollback Migration]\n    J --> B\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "query-performance-analysis",
+      children: "Query Performance Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EXPLAIN ANALYZE"
+      }), " to understand query execution plans."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Analyze a slow query\nEXPLAIN ANALYZE\nSELECT u.*, COUNT(p.id) as post_count\nFROM users u\nLEFT JOIN posts p ON p.author_id = u.id\nWHERE u.active = true\n  AND p.created_at > NOW() - INTERVAL '30 days'\nGROUP BY u.id\nORDER BY post_count DESC;\n\n-- Look for: Sequential scans on large tables, missing indexes\n-- Expected: Index Scan using idx_users_active, Index Scan using idx_posts_author_created\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "read-replicas-and-sharding",
+      children: "Read Replicas and Sharding"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For read-heavy workloads, offload queries to read replicas:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "const prisma = new PrismaClient({\n  datasources: {\n    db: {\n      url: process.env.READ_REPLICA_URL, // Read replica for queries\n    },\n  },\n});\n\n// Replica-aware configuration with separate clients\nconst writeClient = new PrismaClient({\n  datasources: { db: { url: process.env.DATABASE_URL } },\n});\n\nconst readClient = new PrismaClient({\n  datasources: { db: { url: process.env.READ_REPLICA_URL } },\n});\n\n// Route reads to replica, writes to primary\nexport async function getPosts() {\n  return readClient.post.findMany(); // Read replica\n}\n\nexport async function createPost(data: CreatePostInput) {\n  return writeClient.post.create({ data }); // Primary\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL vs NoSQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured schema, ACID, JOINs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexible schema, BASE, denormalized"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prisma vs Raw SQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type-safe, auto-generated, migrations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full control, maximum performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Index vs No Index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast reads, slower writes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Faster writes, sequential reads"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B-tree vs Hash Index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Range queries, ORDER BY"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exact match lookups only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Prisma ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "include"
+            }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "select"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eager-loads relations, all fields"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eager-loads with specific field selection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prisma Client"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "create()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "findUnique()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "findMany()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "update()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "delete()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "upsert()"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Migration Commands"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "prisma migrate dev"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "prisma migrate deploy"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "prisma migrate status"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL Join Types"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "INNER JOIN"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "LEFT JOIN"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "RIGHT JOIN"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "FULL OUTER JOIN"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "CROSS JOIN"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Index Types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B-tree, Hash, GiST, GIN, Partial, Composite, Covering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache Patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache-aside, Read-through, Write-through, Write-behind, Cache invalidation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Benefit"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E-commerce"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL with Prisma for products/orders/inventory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACID compliance for financial transactions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time Analytics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redis for leaderboards, session stores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sub-millisecond reads at scale"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Content Platform"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL with full-text search indexes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast article and tag queries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IoT Dashboard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TimescaleDB for time-series sensor data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Efficient range queries on timestamp data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Social Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL with GIN indexes for JSONB user profiles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexible schema evolution for user data"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Test your understanding with these quick questions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1. What is the N+1 problem in database queries?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Running N+1 different queries that should be one"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) A query that uses N+1 JOINs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) An index that spans N+1 columns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) A migration that fails on step N+1"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "A) The N+1 problem occurs when code fetches a list of N parent entities, then executes N additional queries to fetch related child entities — instead of one query with a JOIN."
+          })
+        }), "\n"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2. What is the primary advantage of Prisma ORM over raw SQL?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) It is faster than raw SQL"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) It provides type-safe queries with auto-completion and compile-time error checking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) It does not require a database"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) It automatically deploys migrations"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "B) Prisma generates a TypeScript client from the schema, giving compile-time type safety and auto-completion for all queries, migrations, and relations."
+          })
+        }), "\n"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3. Which index type is best for range queries (WHERE created_at > ?)?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Hash index"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) B-tree index"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) GIN index"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) GiST index"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "B) B-tree indexes support range queries, sorting, and pattern matching. Hash indexes only support exact equality comparisons."
+          })
+        }), "\n"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4. How should you invalidate a Redis cache when data is updated?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Delete the cache key and let the next read repopulate it"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Update the cache directly with the new data"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Restart the Redis server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Set the TTL to 0"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "A) Cache invalidation typically deletes (or updates) the cache key when the underlying data changes. The next read triggers a cache miss, fetches fresh data, and repopulates the cache."
+          })
+        }), "\n"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-sql-query-builder--connection-pool-simulator",
+      children: "TypeScript: SQL Query Builder & Connection Pool Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class SQLQueryBuilder {\n  private table: string;\n  private selects: string[] = [\"*\"];\n  private wheres: string[] = [];\n  private orders: string[] = [];\n  private limit?: number;\n  private joins: string[] = [];\n\n  constructor(table: string) { this.table = table; }\n  select(...cols: string[]): this { this.selects = cols; return this; }\n  where(condition: string, params?: any): this { this.wheres.push(condition); return this; }\n  orderBy(col: string, dir: \"ASC\" | \"DESC\" = \"ASC\"): this { this.orders.push(`${col} ${dir}`); return this; }\n  setLimit(n: number): this { this.limit = n; return this; }\n  join(table: string, on: string): this { this.joins.push(`JOIN ${table} ON ${on}`); return this; }\n\n  toSQL(): string {\n    let sql = `SELECT ${this.selects.join(\", \")} FROM ${this.table}`;\n    if (this.joins.length) sql += \" \" + this.joins.join(\" \");\n    if (this.wheres.length) sql += \" WHERE \" + this.wheres.join(\" AND \");\n    if (this.orders.length) sql += \" ORDER BY \" + this.orders.join(\", \");\n    if (this.limit !== undefined) sql += ` LIMIT ${this.limit}`;\n    return sql;\n  }\n}\n\nclass ConnectionPool {\n  private pool: number; private active = 0; private queue: Array<() => void> = [];\n  constructor(size: number) { this.pool = size; }\n  async acquire<T>(fn: () => Promise<T>): Promise<T> {\n    if (this.active >= this.pool) await new Promise<void>(r => this.queue.push(r));\n    this.active++;\n    try { return await fn(); }\n    finally { this.active--; if (this.queue.length) this.queue.shift()!(); }\n  }\n}\n\nclass CacheManager {\n  private store = new Map<string, { data: any; expiry: number }>();\n  get<T>(key: string): T | null {\n    const entry = this.store.get(key);\n    if (!entry || Date.now() > entry.expiry) { this.store.delete(key); return null; }\n    return entry.data as T;\n  }\n  set(key: string, data: any, ttlMs: number): void {\n    this.store.set(key, { data, expiry: Date.now() + ttlMs });\n  }\n}\n\nconst qb = new SQLQueryBuilder(\"users\").select(\"id\", \"name\").where(\"age > ?\", 18).orderBy(\"name\").setLimit(10);\nconsole.log(\"SQL:\", qb.toSQL());\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-implementation-sql-query-builder-connection-pool-health-migration-tracker",
+      children: "TypeScript Implementation: SQL Query Builder, Connection Pool Health, Migration Tracker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class SQLQueryBuilder {\n    private table: string;\n    private selectFields: string[] = [\"*\"];\n    private whereClauses: string[] = [];\n    private orderFields: string[] = [];\n    private groupFields: string[] = [];\n    private havingClauses: string[] = [];\n    private joins: string[] = [];\n    private limitCount: number | null = null;\n    private offsetCount: number | null = null;\n    private params: any[] = [];\n\n    constructor(table: string) { this.table = table; }\n\n    select(...fields: string[]): SQLQueryBuilder { this.selectFields = fields; return this; }\n\n    where(condition: string, ...values: any[]): SQLQueryBuilder {\n        this.whereClauses.push(condition);\n        this.params.push(...values);\n        return this;\n    }\n\n    andWhere(condition: string, ...values: any[]): SQLQueryBuilder {\n        return this.where(condition, ...values);\n    }\n\n    orWhere(condition: string, ...values: any[]): SQLQueryBuilder {\n        this.whereClauses.push(`(${condition})`);\n        this.params.push(...values);\n        return this;\n    }\n\n    join(table: string, on: string, type: \"INNER\" | \"LEFT\" | \"RIGHT\" = \"INNER\"): SQLQueryBuilder {\n        this.joins.push(`${type} JOIN ${table} ON ${on}`);\n        return this;\n    }\n\n    orderBy(field: string, dir: \"ASC\" | \"DESC\" = \"ASC\"): SQLQueryBuilder {\n        this.orderFields.push(`${field} ${dir}`);\n        return this;\n    }\n\n    groupBy(...fields: string[]): SQLQueryBuilder { this.groupFields.push(...fields); return this; }\n\n    having(condition: string): SQLQueryBuilder { this.havingClauses.push(condition); return this; }\n\n    setLimit(n: number): SQLQueryBuilder { this.limitCount = n; return this; }\n\n    setOffset(n: number): SQLQueryBuilder { this.offsetCount = n; return this; }\n\n    toSQL(): { query: string; params: any[] } {\n        let query = `SELECT ${this.selectFields.join(\", \")} FROM ${this.table}`;\n        if (this.joins.length > 0) query += ` ${this.joins.join(\" \")}`;\n        if (this.whereClauses.length > 0) query += ` WHERE ${this.whereClauses.map(c => `(${c})`).join(\" AND \")}`;\n        if (this.groupFields.length > 0) query += ` GROUP BY ${this.groupFields.join(\", \")}`;\n        if (this.havingClauses.length > 0) query += ` HAVING ${this.havingClauses.join(\" AND \")}`;\n        if (this.orderFields.length > 0) query += ` ORDER BY ${this.orderFields.join(\", \")}`;\n        if (this.limitCount !== null) query += ` LIMIT ${this.limitCount}`;\n        if (this.offsetCount !== null) query += ` OFFSET ${this.offsetCount}`;\n        return { query, params: this.params };\n    }\n\n    insert(fields: Record<string, any>): { query: string; params: any[] } {\n        const keys = Object.keys(fields);\n        const values = Object.values(fields);\n        const placeholders = values.map((_, i) => `$${i + 1}`);\n        return { query: `INSERT INTO ${this.table} (${keys.join(\", \")}) VALUES (${placeholders.join(\", \")})`, params: values };\n    }\n\n    update(fields: Record<string, any>): { query: string; params: any[] } {\n        const keys = Object.keys(fields);\n        const setClause = keys.map((k, i) => `${k} = $${i + 1}`).join(\", \");\n        const values = Object.values(fields);\n        const whereClause = this.whereClauses.length > 0 ? ` WHERE ${this.whereClauses.join(\" AND \")}` : \"\";\n        return { query: `UPDATE ${this.table} SET ${setClause}${whereClause}`, params: [...values, ...this.params] };\n    }\n\n    delete(): { query: string; params: any[] } {\n        const whereClause = this.whereClauses.length > 0 ? ` WHERE ${this.whereClauses.join(\" AND \")}` : \"\";\n        return { query: `DELETE FROM ${this.table}${whereClause}`, params: this.params };\n    }\n}\n\nclass ConnectionPoolHealthChecker {\n    private maxConnections: number;\n    private active: number = 0;\n    private waiting: number = 0;\n    private totalCreated: number = 0;\n    private totalErrors: number = 0;\n    private avgAcquireMs: number = 0;\n\n    constructor(maxConnections: number = 10) { this.maxConnections = maxConnections; }\n\n    acquire(): boolean {\n        if (this.active >= this.maxConnections) { this.waiting++; return false; }\n        this.active++; this.totalCreated++;\n        return true;\n    }\n\n    release(): void { this.active = Math.max(0, this.active - 1); }\n\n    health(): { healthy: boolean; usagePercent: number; active: number; waiting: number; totalCreated: number; errorRate: number } {\n        return {\n            healthy: this.active < this.maxConnections,\n            usagePercent: (this.active / this.maxConnections) * 100,\n            active: this.active,\n            waiting: this.waiting,\n            totalCreated: this.totalCreated,\n            errorRate: this.totalCreated > 0 ? this.totalErrors / this.totalCreated : 0\n        };\n    }\n\n    recordError(): void { this.totalErrors++; }\n\n    static thresholdAlert(health: { usagePercent: number }): string {\n        if (health.usagePercent > 90) return \"CRITICAL: Pool nearly exhausted\";\n        if (health.usagePercent > 75) return \"WARNING: Pool usage elevated\";\n        return \"OK: Pool healthy\";\n    }\n}\n\nclass MigrationVersionTracker {\n    private versions: { id: number; name: string; appliedAt: Date; checksum: string }[] = [];\n    private currentVersion: number = 0;\n\n    addMigration(name: string, sql: string): { id: number; sql: string } {\n        const id = ++this.currentVersion;\n        const checksum = sql.split(\"\").reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0).toString(16);\n        this.versions.push({ id, name, appliedAt: new Date(), checksum });\n        return { id, sql };\n    }\n\n    pending(targetVersion?: number): { id: number; name: string }[] {\n        const target = targetVersion || this.versions.length;\n        return this.versions.filter(v => v.id > this.currentVersion).slice(0, target - this.currentVersion);\n    }\n\n    rollback(toVersion: number): { rolledBack: string[] } {\n        const toRoll = this.versions.filter(v => v.id > toVersion).reverse();\n        this.currentVersion = toVersion;\n        return { rolledBack: toRoll.map(v => v.name) };\n    }\n\n    status(): { current: number; total: number; pending: number; migrations: { id: number; name: string; applied: string }[] } {\n        return {\n            current: this.currentVersion,\n            total: this.versions.length,\n            pending: this.versions.length - this.currentVersion,\n            migrations: this.versions.map(v => ({ id: v.id, name: v.name, applied: v.appliedAt.toISOString() }))\n        };\n    }\n}\n\n// Demo\nconst qb = new SQLQueryBuilder(\"users\").select(\"id\", \"name\", \"email\")\n    .where(\"age > ?\", 18).andWhere(\"status = ?\", \"active\")\n    .join(\"orders\", \"users.id = orders.user_id\", \"LEFT\")\n    .orderBy(\"name\").setLimit(10);\nconsole.log(\"SQL:\", qb.toSQL());\n\nconst pool = new ConnectionPoolHealthChecker(5);\npool.acquire(); pool.acquire(); pool.acquire();\nconsole.log(\"Pool health:\", ConnectionPoolHealthChecker.thresholdAlert(pool.health()));\n\nconst migrator = new MigrationVersionTracker();\nmigrator.addMigration(\"create_users\", \"CREATE TABLE users (id INT)\");\nmigrator.addMigration(\"add_email\", \"ALTER TABLE users ADD email TEXT\");\nconsole.log(\"Migration status:\", migrator.status().migrations.map(m => m.name).join(\", \"));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// databases web\n// fullstack-frontend-backend implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'databases web', data: { topic: 'fullstack-frontend-backend' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Databases are the persistence layer of web applications. Prisma ORM provides type-safe database access with auto-generated queries and migrations. SQL databases suit structured relational data, while NoSQL offers schema flexibility. Proper indexing, solving N+1 queries, and Redis caching are essential for performance at scale."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When would you choose a NoSQL database over SQL?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How do database indexes improve query performance?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the N+1 problem and how do you solve it?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-projects",
+      children: "Application Projects"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Add full-text search to a blog using PostgreSQL tsvector"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement a leaderboard feature using Redis sorted sets"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a database migration strategy with rollback support"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement a database transaction for transferring inventory between warehouse locations, ensuring stock consistency across multiple product tables."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a Prisma middleware that logs all slow queries (execution time > 100ms) with their parameters and duration."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Implement a database read-replica pattern where ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "GET"
+          }), " requests use a read replica and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "POST/PUT/DELETE"
+          }), " requests use the primary database, with automatic fallback if the replica is unavailable."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Create a migration rollback strategy with a script that can revert the last N migrations while preserving data integrity across all environments."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-project",
+      children: "Challenge Project"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build a database layer for an e-commerce platform with products, categories, inventory, orders, and users. Include composite indexes for reporting queries, Redis caching for product listings, migration scripts for schema changes, and a query analysis tool that identifies slow queries."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always use parameterized queries"
+        }), " — never interpolate user input into SQL strings, even in internal tools."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Model first, then migrate"
+        }), " — define your Prisma schema completely before generating the first migration to minimize schema drift."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Index with intent"
+        }), " — add indexes only for actual query patterns, not speculatively. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "EXPLAIN ANALYZE"
+        }), " to verify index usage."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cache judiciously"
+        }), " — cache only data that is expensive to compute and frequently read. Set TTLs and invalidate on writes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Batch in transactions"
+        }), " — wrap multi-row operations in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "$transaction"
+        }), " to ensure atomicity and improve throughput."]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

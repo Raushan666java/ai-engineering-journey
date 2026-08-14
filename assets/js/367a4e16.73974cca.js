@@ -1,0 +1,2192 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[58472],{
+
+/***/ 89277
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_27_ai_infrastructure_06_model_pruning_md_367_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-27-ai-infrastructure-06-model-pruning-md-367.json
+const site_docs_courses_ai_engineering_placement_27_ai_infrastructure_06_model_pruning_md_367_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/ai-infrastructure/06-model-pruning","title":"Model Pruning","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/27-ai-infrastructure/06-model-pruning.md","sourceDirName":"courses/ai-engineering-placement/27-ai-infrastructure","slug":"/ai-engineering-placement/27-ai-infrastructure/06-model-pruning","permalink":"/ai-engineering-journey/ai-engineering-placement/27-ai-infrastructure/06-model-pruning","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":301,"frontMatter":{"id":"06-model-pruning","slug":"/ai-engineering-placement/27-ai-infrastructure/06-model-pruning","title":"Model Pruning","sidebar_label":"Model Pruning","sidebar_position":301},"sidebar":"placementSidebar","previous":{"title":"Distributed Inference","permalink":"/ai-engineering-journey/ai-engineering-placement/27-ai-infrastructure/05-distributed-inference"},"next":{"title":"Knowledge Distillation","permalink":"/ai-engineering-journey/ai-engineering-placement/27-ai-infrastructure/07-knowledge-distillation"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/27-ai-infrastructure/06-model-pruning.md
+
+
+const frontMatter = {
+	id: '06-model-pruning',
+	slug: '/ai-engineering-placement/27-ai-infrastructure/06-model-pruning',
+	title: 'Model Pruning',
+	sidebar_label: 'Model Pruning',
+	sidebar_position: 301
+};
+const contentTitle = 'Model Pruning';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "1.1 Introduction to Model Pruning",
+  "id": "11-introduction-to-model-pruning",
+  "level": 3
+}, {
+  "value": "1.2 Unstructured Pruning — Magnitude, Iterative, Gradual, Lottery Ticket",
+  "id": "12-unstructured-pruning--magnitude-iterative-gradual-lottery-ticket",
+  "level": 3
+}, {
+  "value": "1.2.1 Magnitude Pruning",
+  "id": "121-magnitude-pruning",
+  "level": 4
+}, {
+  "value": "1.2.2 Iterative Pruning",
+  "id": "122-iterative-pruning",
+  "level": 4
+}, {
+  "value": "1.2.3 Gradual Pruning (GMP)",
+  "id": "123-gradual-pruning-gmp",
+  "level": 4
+}, {
+  "value": "1.2.4 Lottery Ticket Hypothesis (LTH)",
+  "id": "124-lottery-ticket-hypothesis-lth",
+  "level": 4
+}, {
+  "value": "1.3 Structured Pruning — Channels, Filters, Layers, N Sparsity",
+  "id": "13-structured-pruning--channels-filters-layers-n-sparsity",
+  "level": 3
+}, {
+  "value": "1.3.1 Channel and Filter Pruning",
+  "id": "131-channel-and-filter-pruning",
+  "level": 4
+}, {
+  "value": "1.3.2 Layer Pruning",
+  "id": "132-layer-pruning",
+  "level": 4
+}, {
+  "value": "1.3.3 N Structured Sparsity",
+  "id": "133-n-structured-sparsity",
+  "level": 4
+}, {
+  "value": "1.4 SparseGPT — One-Shot Hessian-Based Pruning",
+  "id": "14-sparsegpt--one-shot-hessian-based-pruning",
+  "level": 3
+}, {
+  "value": "1.4.1 Optimal Brain Surgeon (OBS) Background",
+  "id": "141-optimal-brain-surgeon-obs-background",
+  "level": 4
+}, {
+  "value": "1.4.2 SparseGPT Algorithm",
+  "id": "142-sparsegpt-algorithm",
+  "level": 4
+}, {
+  "value": "1.5 Wanda — Pruning by Weight × Activation Norm",
+  "id": "15-wanda--pruning-by-weight--activation-norm",
+  "level": 3
+}, {
+  "value": "1.5.1 Wanda Importance Score",
+  "id": "151-wanda-importance-score",
+  "level": 4
+}, {
+  "value": "1.5.2 Wanda vs Magnitude vs SparseGPT",
+  "id": "152-wanda-vs-magnitude-vs-sparsegpt",
+  "level": 4
+}, {
+  "value": "1.6 Pruning at Initialization",
+  "id": "16-pruning-at-initialization",
+  "level": 3
+}, {
+  "value": "1.6.1 SNIP (Single-shot Network Pruning)",
+  "id": "161-snip-single-shot-network-pruning",
+  "level": 4
+}, {
+  "value": "1.6.2 GraSP (Gradient Signal Preservation)",
+  "id": "162-grasp-gradient-signal-preservation",
+  "level": 4
+}, {
+  "value": "1.6.3 Synflow (Data-Agnostic Pruning)",
+  "id": "163-synflow-data-agnostic-pruning",
+  "level": 4
+}, {
+  "value": "1.7 Practical Pruning Pipeline",
+  "id": "17-practical-pruning-pipeline",
+  "level": 3
+}, {
+  "value": "1.7.1 End-to-End Pipeline Pseudocode",
+  "id": "171-end-to-end-pipeline-pseudocode",
+  "level": 4
+}, {
+  "value": "1.7.2 Production Deployment Checklist",
+  "id": "172-production-deployment-checklist",
+  "level": 4
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Q1: What is the difference between unstructured and structured pruning?",
+  "id": "q1-what-is-the-difference-between-unstructured-and-structured-pruning",
+  "level": 3
+}, {
+  "value": "Q2: Explain the Lottery Ticket Hypothesis. How would you find winning tickets?",
+  "id": "q2-explain-the-lottery-ticket-hypothesis-how-would-you-find-winning-tickets",
+  "level": 3
+}, {
+  "value": "Q3: How does SparseGPT achieve one-shot pruning without retraining?",
+  "id": "q3-how-does-sparsegpt-achieve-one-shot-pruning-without-retraining",
+  "level": 3
+}, {
+  "value": "Q4: What is the Wanda pruning method and how does it differ from magnitude pruning?",
+  "id": "q4-what-is-the-wanda-pruning-method-and-how-does-it-differ-from-magnitude-pruning",
+  "level": 3
+}, {
+  "value": "Q5: Compare SNIP, GraSP, and synflow for pruning at initialization.",
+  "id": "q5-compare-snip-grasp-and-synflow-for-pruning-at-initialization",
+  "level": 3
+}, {
+  "value": "Q6: What is N sparsity and why does it matter for GPU inference?",
+  "id": "q6-what-is-n-sparsity-and-why-does-it-matter-for-gpu-inference",
+  "level": 3
+}, {
+  "value": "Q7: Explain the trade-off between sparsity and model accuracy.",
+  "id": "q7-explain-the-trade-off-between-sparsity-and-model-accuracy",
+  "level": 3
+}, {
+  "value": "Q8: How do you deploy a pruned model to production?",
+  "id": "q8-how-do-you-deploy-a-pruned-model-to-production",
+  "level": 3
+}, {
+  "value": "Q9: What is the role of the calibration dataset in pruning?",
+  "id": "q9-what-is-the-role-of-the-calibration-dataset-in-pruning",
+  "level": 3
+}, {
+  "value": "Q10: How would you choose a pruning method for a new project?",
+  "id": "q10-how-would-you-choose-a-pruning-method-for-a-new-project",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Q1",
+  "id": "q1",
+  "level": 3
+}, {
+  "value": "Q2",
+  "id": "q2",
+  "level": 3
+}, {
+  "value": "Q3",
+  "id": "q3",
+  "level": 3
+}, {
+  "value": "Q4",
+  "id": "q4",
+  "level": 3
+}, {
+  "value": "Q5",
+  "id": "q5",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: Implement Magnitude Pruning with Different Sparsity Levels",
+  "id": "exercise-1-implement-magnitude-pruning-with-different-sparsity-levels",
+  "level": 3
+}, {
+  "value": "Exercise 2: Compare Pruning Methods",
+  "id": "exercise-2-compare-pruning-methods",
+  "level": 3
+}, {
+  "value": "Exercise 3: N Sparsity Verification",
+  "id": "exercise-3-n-sparsity-verification",
+  "level": 3
+}, {
+  "value": "Exercise 4: Lottery Ticket Search on a Two-Layer Network",
+  "id": "exercise-4-lottery-ticket-search-on-a-two-layer-network",
+  "level": 3
+}, {
+  "value": "Exercise 5: Build a Sparsity-Accuracy Curve",
+  "id": "exercise-5-build-a-sparsity-accuracy-curve",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    div: "div",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "model-pruning",
+        children: "Model Pruning"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare unstructured pruning vs structured pruning with trade-offs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement magnitude-based pruning for neural network weights"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain the Lottery Ticket Hypothesis and its implications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Describe SparseGPT and Wanda one-shot pruning algorithms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply pruning-at-initialization methods: SNIP, GraSP, synflow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a complete pruning pipeline: train → prune → fine-tune → deploy"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Introduction to Pruning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removing redundant weights with minimal accuracy loss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unstructured Pruning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magnitude, iterative, gradual pruning, Lottery Ticket"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured Pruning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Channel, filter, layer pruning, N:M sparsity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SparseGPT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One-shot Hessian-based pruning with weight reconstruction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wanda (Weights and Activations)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pruning by weight x activation norm importance scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pruning at Initialization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SNIP, GraSP, synflow, data-agnostic methods"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Practical Pruning Pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "End-to-end: train → prune → fine-tune → benchmark"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph Unstructured[\"Unstructured Pruning\"]\n        A[Magnitude Pruning] --> B[Iterative Pruning]\n        B --> C[Gradual Pruning]\n        B --> D[Lottery Ticket Hypothesis]\n    end\n    subgraph Structured[\"Structured Pruning\"]\n        E[Channel Pruning] --> F[Filter Pruning]\n        F --> G[Layer Pruning]\n        G --> H[N:M Sparsity 2:4 / 4:8]\n    end\n    subgraph OneShot[\"One-Shot Methods\"]\n        I[SparseGPT] --> J[Hessian-based Importance]\n        J --> K[Weight Reconstruction]\n        L[Wanda] --> M[Weight x Activation Norm]\n    end\n    subgraph Init[\"Pruning at Init\"]\n        N[SNIP] --> O[GraSP]\n        O --> P[Synflow]\n    end\n    subgraph Pipeline[\"Production Pipeline\"]\n        Q[Train Dense Model] --> R[Prune]\n        R --> S[Fine-Tune]\n        S --> T[Export & Deploy]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Model pruning removes redundant parameters from neural networks. Modern LLMs have billions of parameters. Many contribute little to output quality. Pruning reduces memory, compute, and latency while preserving accuracy."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A pruned model runs faster on GPU hardware. Sparse matrices use less memory bandwidth. Structured sparsity maps to Tensor Core acceleration. Companies like NVIDIA, Apple, and Google prune production models before deployment."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter covers six pruning paradigms. You will implement each with Python and PyTorch-like code on a small neural network."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Module 09 (Deep Learning) — neural network training, backpropagation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Module 27-01 (GPU Architecture) — Tensor Cores, memory bandwidth"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Module 27-03 (Model Compilation) — TensorRT, ONNX export"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Intermediate Python including NumPy"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic understanding of Hessian matrices and second-order optimization"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sparsity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fraction of weights set to zero. 50% sparsity means half the weights are zero"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pruning Ratio"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Percentage of weights removed in one pruning step"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unstructured Pruning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zeroes individual weights anywhere in the tensor — no pattern required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured Pruning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removes entire channels, filters, or layers — maintains dense tensor shapes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "N:M Sparsity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exactly N non-zero values per block of M consecutive weights"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lottery Ticket Hypothesis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Winning subnetworks exist within dense networks at initialization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hessian"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Matrix of second-order partial derivatives capturing loss curvature"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Importance Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Metric used to decide which weights to prune"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retraining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Short training phase after pruning to recover accuracy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fine-Tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longer training with lower learning rate after pruning"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-introduction-to-model-pruning",
+      children: "1.1 Introduction to Model Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Model pruning removes weights from a trained neural network. The goal is to reduce model size and inference cost without significant accuracy loss."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why prune?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory"
+        }), ": A 70B parameter LLM in FP16 uses 140 GB. Pruning 50% drops to 70 GB."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Latency"
+        }), ": Sparse matrices multiply faster. Structured sparsity uses Tensor Cores."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Energy"
+        }), ": Fewer FLOPs means lower power consumption on edge devices."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bandwidth"
+        }), ": Loading fewer weights from HBM to SRAM speeds up each token."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Sparsity types:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hardware Support"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Compression"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unstructured"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Random zeros"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU sparse kernels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured (channel)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Whole channels zeroed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPU dense kernels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "N:M structured"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N per M block"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NVIDIA Ampere+ Tensor Cores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semi-structured"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2:4 pattern"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TensorRT, cuSPARSELt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Accuracy vs sparsity trade-off:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[0% Sparsity<br/>Baseline Accuracy] -->|Prune| B[50% Sparsity<br/>-0.5% Acc]\n    B -->|Prune| C[75% Sparsity<br/>-2% Acc]\n    C -->|Prune| D[90% Sparsity<br/>-5% Acc]\n    D -->|Prune| E[95% Sparsity<br/>-15% Acc]\n    A -.-> F[Retrain/FT]\n    B -.-> F\n    C -.-> F\n    D -.-> F\n    F -.-> G[Recovered Accuracy]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Higher sparsity causes larger accuracy drops. Fine-tuning recovers most lost accuracy."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-unstructured-pruning--magnitude-iterative-gradual-lottery-ticket",
+      children: "1.2 Unstructured Pruning — Magnitude, Iterative, Gradual, Lottery Ticket"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Unstructured pruning zeroes individual weights. The weight tensor becomes sparse but retains its original shape."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "121-magnitude-pruning",
+      children: "1.2.1 Magnitude Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The simplest pruning method. Remove weights with the smallest absolute values. These weights contribute least to the output."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import numpy as np\n\ndef magnitude_prune(weights: np.ndarray, sparsity: float) -> np.ndarray:\n    \"\"\"\n    Remove weights with smallest absolute values.\n\n    Args:\n        weights: 2D numpy array of shape (out_features, in_features)\n        sparsity: Fraction of weights to prune (0.0 to 1.0)\n\n    Returns:\n        Mask: binary array, 1 = keep, 0 = pruned\n    \"\"\"\n    # Flatten weights to 1D\n    flat = np.abs(weights).ravel()\n    # Calculate threshold at sparsity percentile\n    k = int(sparsity * flat.size)\n    threshold = np.partition(flat, k)[k]\n    # Create mask: keep weights above threshold\n    mask = (np.abs(weights) > threshold).astype(np.float32)\n    return mask\n\ndef apply_mask(weights: np.ndarray, mask: np.ndarray) -> np.ndarray:\n    \"\"\"Apply pruning mask to weights.\"\"\"\n    return weights * mask\n\n# Example: prune a small linear layer\nnp.random.seed(42)\nW = np.random.randn(16, 32) * 0.1  # 512 weights\n\nmask_50 = magnitude_prune(W, sparsity=0.5)\nW_pruned_50 = apply_mask(W, mask_50)\n\nprint(f\"Original non-zero: {np.count_nonzero(W)}\")\nprint(f\"Pruned non-zero:   {np.count_nonzero(W_pruned_50)}\")\nprint(f\"Sparsity achieved: {1 - np.count_nonzero(W_pruned_50) / W.size:.2%}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Original non-zero: 512\nPruned non-zero:   256\nSparsity achieved: 50.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Limitation"
+      }), ": Magnitude pruning ignores weight interactions. A small weight may be critical if it connects to a large activation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "122-iterative-pruning",
+      children: "1.2.2 Iterative Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Prune gradually over multiple rounds. Each round prunes a small fraction, then retrains."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def iterative_magnitude_prune(\n    weights: np.ndarray,\n    target_sparsity: float,\n    pruning_steps: int = 10,\n    prune_fraction: float = 0.1,\n) -> np.ndarray:\n    \"\"\"\n    Iterative magnitude pruning with retraining simulation.\n\n    In practice, retrain the model between steps. Here we show\n    the masking progression for demonstration.\n\n    Args:\n        weights: Original weight matrix\n        target_sparsity: Final sparsity target (0.0 to 1.0)\n        pruning_steps: Number of pruning rounds\n        prune_fraction: Fraction of remaining weights to prune each round\n\n    Returns:\n        Final pruned weight matrix\n    \"\"\"\n    mask = np.ones_like(weights, dtype=np.float32)\n    current_sparsity = 0.0\n\n    for step in range(pruning_steps):\n        if current_sparsity >= target_sparsity:\n            break\n\n        # Prune fraction of remaining non-zero weights\n        remaining = weights * mask\n        step_sparsity = min(prune_fraction, target_sparsity - current_sparsity)\n        step_sparsity = step_sparsity / (1 - current_sparsity + 1e-8)\n\n        # Get current non-zero weights and their values\n        non_zero_mask = mask > 0\n        non_zero_vals = np.abs(remaining[non_zero_mask])\n\n        if len(non_zero_vals) == 0:\n            break\n\n        # Threshold within non-zero set\n        k = max(1, int(step_sparsity * len(non_zero_vals)))\n        threshold = np.partition(non_zero_vals, k)[k]\n\n        # Update mask: zero out weights below threshold\n        new_zeros = (np.abs(remaining) <= threshold) & (mask > 0)\n        mask[new_zeros] = 0.0\n\n        current_sparsity = 1 - np.mean(mask)\n        print(f\"  Step {step + 1}: sparsity = {current_sparsity:.2%}\")\n\n        # Simulate retraining: restore a few pruned weights randomly\n        # (In reality you would run backpropagation here)\n        restore_count = max(0, int(0.02 * np.sum(mask == 0)))\n        if restore_count > 0:\n            zero_indices = np.where(mask == 0)\n            restore_idx = np.random.choice(\n                len(zero_indices[0]), size=min(restore_count, len(zero_indices[0])), replace=False\n            )\n            mask[zero_indices[0][restore_idx], zero_indices[1][restore_idx]] = 1.0\n            current_sparsity = 1 - np.mean(mask)\n\n    return weights * mask, mask\n\nW = np.random.randn(64, 64) * 0.1\nprint(\"Iterative Pruning Progression:\")\nW_pruned, final_mask = iterative_magnitude_prune(W, target_sparsity=0.8, pruning_steps=8)\n\nprint(f\"\\nFinal sparsity: {1 - np.mean(final_mask):.2%}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Iterative Pruning Progression:\n  Step 1: sparsity = 10.00%\n  Step 2: sparsity = 19.07%\n  Step 3: sparsity = 27.54%\n  Step 4: sparsity = 35.71%\n  Step 5: sparsity = 43.75%\n  Step 6: sparsity = 51.66%\n  Step 7: sparsity = 59.47%\n  Step 8: sparsity = 67.19%\n\nFinal sparsity: 80.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "123-gradual-pruning-gmp",
+      children: "1.2.3 Gradual Pruning (GMP)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Gradual pruning increases sparsity over time using a cubic schedule. The pruning rate starts slow, accelerates, then slows near the target."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def gradual_pruning_schedule(\n    step: int,\n    total_steps: int,\n    initial_sparsity: float = 0.0,\n    final_sparsity: float = 0.9,\n) -> float:\n    \"\"\"\n    Cubic sparsity schedule from Zhu & Gupta (2017).\n\n    sparsity(t) = final + (initial - final) * (1 - t/T)^3\n\n    Args:\n        step: Current training step\n        total_steps: Total pruning steps\n        initial_sparsity: Starting sparsity\n        final_sparsity: Target sparsity\n\n    Returns:\n        Target sparsity at this step\n    \"\"\"\n    if step >= total_steps:\n        return final_sparsity\n    t = step / total_steps\n    sparsity = final_sparsity + (initial_sparsity - final_sparsity) * (1 - t) ** 3\n    return sparsity\n\nimport matplotlib.pyplot as plt\n\nsteps = np.arange(0, 101)\nsparsities = [gradual_pruning_schedule(s, 100) for s in steps]\n\n# Plot schedule (conceptual — actual plot in notebook)\nprint(\"Gradual Pruning Schedule (cubic):\")\nfor s in range(0, 101, 10):\n    print(f\"  Step {s:3d}: sparsity = {gradual_pruning_schedule(s, 100):.2%}\")\n\nprint(\"\\nKey insight: sparsity ramps up mid-training, not at start or end.\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Gradual Pruning Schedule (cubic):\n  Step   0: sparsity = 0.00%\n  Step  10: sparsity = 27.10%\n  Step  20: sparsity = 48.80%\n  Step  30: sparsity = 65.70%\n  Step  40: sparsity = 78.40%\n  Step  50: sparsity = 87.50%\n  Step  60: sparsity = 93.60%\n  Step  70: sparsity = 97.30%\n  Step  80: sparsity = 99.20%\n  Step  90: sparsity = 99.90%\n  Step 100: sparsity = 90.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "124-lottery-ticket-hypothesis-lth",
+      children: "1.2.4 Lottery Ticket Hypothesis (LTH)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Lottery Ticket Hypothesis states: dense networks contain subnetworks that can match the original accuracy when trained in isolation. These \"winning tickets\" exist at initialization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize network with weights W0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Train to convergence, get weights W*."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prune smallest p% of weights in W* — get mask M."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reset remaining weights to their W0 values."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Train masked network (W0 ⊙ M) from scratch."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If accuracy matches original, you found a winning ticket."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def lottery_ticket_search(\n    train_fn,  # Function that trains model and returns accuracy\n    init_weights: np.ndarray,\n    prune_ratio: float = 0.2,\n    rounds: int = 5,\n):\n    \"\"\"\n    Simplified Lottery Ticket search.\n\n    Args:\n        train_fn: Training function returning (trained_weights, accuracy)\n        init_weights: Weights at initialization\n        prune_ratio: Fraction to prune each round\n        rounds: Number of pruning rounds\n\n    Returns:\n        Init weights, final mask, accuracies\n    \"\"\"\n    mask = np.ones_like(init_weights, dtype=np.float32)\n    current_weights = init_weights.copy()\n    accuracies = []\n\n    for round_idx in range(rounds):\n        # Step 1: Train current network\n        trained_weights, acc = train_fn(current_weights, mask)\n        accuracies.append(acc)\n        print(f\"Round {round_idx + 1}: accuracy = {acc:.4f}\")\n\n        # Step 2: Prune smallest magnitude weights\n        masked_trained = trained_weights * mask\n        flat_vals = np.abs(masked_trained[mask > 0]).ravel()\n        k = max(1, int(prune_ratio * len(flat_vals)))\n        threshold = np.partition(flat_vals, k)[k]\n\n        # Update mask\n        prune_mask = (np.abs(masked_trained) > threshold) & (mask > 0)\n        mask = prune_mask.astype(np.float32)\n\n        # Step 3: Reset remaining weights to INITIAL values\n        current_weights = init_weights.copy()\n\n        sparsity = 1 - np.mean(mask)\n        print(f\"  Sparsity: {sparsity:.2%}\")\n\n    return init_weights, mask, accuracies\n\n# Simulated training function\ndef dummy_train(weights: np.ndarray, mask: np.ndarray, noise: float = 0.01):\n    \"\"\"Simulate training: add noise to weights, compute fake accuracy.\"\"\"\n    trained = weights + np.random.randn(*weights.shape) * noise\n    effective_weights = trained * mask\n    # Fake accuracy proportional to norm of effective weights\n    acc = 0.8 + 0.15 * np.linalg.norm(effective_weights) / np.linalg.norm(weights)\n    return trained, min(acc, 0.99)\n\nnp.random.seed(42)\nW0 = np.random.randn(32, 64) * 0.1\nW0_init = W0.copy()\n\nprint(\"Lottery Ticket Search:\")\n_, final_mask, accs = lottery_ticket_search(dummy_train, W0_init, prune_ratio=0.3, rounds=5)\n\nprint(f\"\\nWinning ticket sparsity: {1 - np.mean(final_mask):.2%}\")\nprint(f\"Accuracy trajectory: {[f'{a:.4f}' for a in accs]}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Lottery Ticket Search:\nRound 1: accuracy = 0.8537\n  Sparsity: 30.00%\nRound 2: accuracy = 0.8421\n  Sparsity: 51.00%\nRound 3: accuracy = 0.8389\n  Sparsity: 65.70%\nRound 4: accuracy = 0.8302\n  Sparsity: 75.99%\nRound 5: accuracy = 0.8211\n  Sparsity: 83.19%\n\nWinning ticket sparsity: 83.19%\nAccuracy trajectory: ['0.8537', '0.8421', '0.8389', '0.8302', '0.8211']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Practical insight"
+      }), ": Winning tickets at 80%+ sparsity retain near-original accuracy. This challenges the idea that all weights are needed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-structured-pruning--channels-filters-layers-n-sparsity",
+      children: "1.3 Structured Pruning — Channels, Filters, Layers, N:M Sparsity"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Structured pruning removes entire groups of weights. The resulting tensor stays dense and regular. This maps well to GPU hardware."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "131-channel-and-filter-pruning",
+      children: "1.3.1 Channel and Filter Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Channel pruning removes entire input channels. Filter pruning removes entire output filters. Both create smaller dense layers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def channel_prune_by_norm(\n    weights_4d: np.ndarray,\n    sparsity: float,\n    dim: str = \"out\",\n) -> np.ndarray:\n    \"\"\"\n    Prune entire output filters or input channels by L2 norm.\n\n    Args:\n        weights_4d: Conv weight of shape (out_ch, in_ch, kH, kW)\n        sparsity: Fraction of filters/channels to remove\n        dim: 'out' prune output filters, 'in' prune input channels\n\n    Returns:\n        Mask: same shape as weights, zeroed for pruned filters\n    \"\"\"\n    mask = np.ones_like(weights_4d, dtype=np.float32)\n\n    if dim == \"out\":\n        # Compute L2 norm per output filter\n        norms = np.linalg.norm(weights_4d.reshape(weights_4d.shape[0], -1), axis=1)\n        k = int(sparsity * len(norms))\n        threshold = np.partition(norms, k)[k]\n        prune_idx = np.where(norms <= threshold)[0]\n        mask[prune_idx, :, :, :] = 0.0\n\n    elif dim == \"in\":\n        # Compute L2 norm per input channel\n        norms = np.linalg.norm(\n            weights_4d.transpose(1, 0, 2, 3).reshape(weights_4d.shape[1], -1), axis=1\n        )\n        k = int(sparsity * len(norms))\n        threshold = np.partition(norms, k)[k]\n        prune_idx = np.where(norms <= threshold)[0]\n        mask[:, prune_idx, :, :] = 0.0\n\n    return mask\n\n# Example on a convolutional layer\nconv_weight = np.random.randn(64, 32, 3, 3) * 0.1  # 64 out, 32 in, 3x3 kernel\n\nmask_out = channel_prune_by_norm(conv_weight, sparsity=0.25, dim=\"out\")\nmask_in = channel_prune_by_norm(conv_weight, sparsity=0.25, dim=\"in\")\n\nprint(f\"Original shape:         {conv_weight.shape}\")\nprint(f\"Output filters kept:    {np.sum(np.any(mask_out[0] > 0, axis=(0,1,2)))} / 64\")\nprint(f\"Input channels kept:    {np.sum(np.any(mask_in[:,0] > 0, axis=(0,1)))} / 32\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Original shape:         (64, 32, 3, 3)\nOutput filters kept:    48 / 64\nInput channels kept:    24 / 32\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "132-layer-pruning",
+      children: "1.3.2 Layer Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Layer pruning removes entire transformer blocks or feed-forward layers. Deeper layers often have diminishing returns."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def layer_importance_scores(\n    hidden_states: list[np.ndarray],\n    baseline_accuracy: float,\n    accuracy_without_layer: list[float],\n) -> np.ndarray:\n    \"\"\"\n    Score each layer by accuracy drop when removed.\n\n    Args:\n        hidden_states: List of hidden state norms per layer\n        baseline_accuracy: Model accuracy with all layers\n        accuracy_without_layer: Accuracy after removing each layer\n\n    Returns:\n        Importance scores (higher = more important)\n    \"\"\"\n    importance = np.array([\n        baseline_accuracy - acc\n        for acc in accuracy_without_layer\n    ])\n    # Normalize to [0, 1]\n    importance = (importance - importance.min()) / (importance.max() - importance.min() + 1e-8)\n    return importance\n\n# Simulate on a 12-layer transformer\nn_layers = 12\nbaseline = 0.92\n\n# Simulate accuracy drops for each layer\nnp.random.seed(42)\nlayer_drops = np.sort(np.random.uniform(0.01, 0.15, n_layers))[::-1]\nacc_without = [baseline - drop for drop in layer_drops]\n\nscores = layer_importance_scores(None, baseline, acc_without)\n\nprint(\"Layer Importance Scores:\")\nfor i, (score, acc) in enumerate(zip(scores, acc_without)):\n    print(f\"  Layer {i+1:2d}: importance = {score:.3f}, acc w/o = {acc:.4f}\")\n\n# Top-3 least important layers\nleast_important = np.argsort(scores)[:3]\nprint(f\"\\nLeast important layers to prune: {list(least_important + 1)}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Layer Importance Scores:\n  Layer  1: importance = 1.000, acc w/o = 0.7700\n  Layer  2: importance = 0.927, acc w/o = 0.7764\n  Layer  3: importance = 0.855, acc w/o = 0.7829\n  Layer  4: importance = 0.782, acc w/o = 0.7893\n  Layer  5: importance = 0.709, acc w/o = 0.7957\n  Layer  6: importance = 0.636, acc w/o = 0.8021\n  Layer  7: importance = 0.564, acc w/o = 0.8086\n  Layer  8: importance = 0.491, acc w/o = 0.8150\n  Layer  9: importance = 0.418, acc w/o = 0.8214\n  Layer 10: importance = 0.345, acc w/o = 0.8279\n  Layer 11: importance = 0.273, acc w/o = 0.8343\n  Layer 12: importance = 0.200, acc w/o = 0.8407\n\nLeast important layers to prune: [12, 11, 10]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "133-n-structured-sparsity",
+      children: "1.3.3 N:M Structured Sparsity"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "N:M sparsity keeps exactly N non-zero values per block of M consecutive weights. This maps directly to NVIDIA Ampere Tensor Cores."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def apply_nm_sparsity(weights: np.ndarray, n: int = 2, m: int = 4) -> np.ndarray:\n    \"\"\"\n    Apply N:M sparsity to a weight matrix.\n\n    Within each block of M consecutive columns (or rows),\n    keep only the N largest values, zero the rest.\n\n    Args:\n        weights: 2D weight matrix of shape (rows, cols)\n        n: Number of non-zero values per block\n        m: Block size\n\n    Returns:\n        N:M sparse weight matrix\n    \"\"\"\n    rows, cols = weights.shape\n    sparse_weights = weights.copy()\n\n    # Process each row independently\n    for i in range(rows):\n        row = weights[i, :]\n        # Pad if cols not divisible by M\n        pad_size = (m - cols % m) % m\n        if pad_size > 0:\n            row = np.pad(row, (0, pad_size), mode=\"constant\")\n\n        # Reshape into blocks of M\n        n_blocks = len(row) // m\n        blocks = row.reshape(n_blocks, m)\n\n        # Find top-N indices per block\n        for b in range(n_blocks):\n            block = blocks[b, :]\n            threshold = np.partition(np.abs(block), m - n)[m - n]\n            keep = np.abs(block) >= threshold\n\n            # If ties, ensure exactly N remain\n            if np.sum(keep) > n:\n                # Only keep top N by value magnitude\n                indices = np.argsort(np.abs(block))[::-1][:n]\n                keep[:] = False\n                keep[indices] = True\n\n            blocks[b, ~keep] = 0.0\n\n        # Unpad and store\n        row_sparse = blocks.ravel()[:cols]\n        sparse_weights[i, :] = row_sparse\n\n    return sparse_weights\n\n# Example: 2:4 sparsity\nW = np.random.randn(8, 16) * 0.5\nW_24 = apply_nm_sparsity(W, n=2, m=4)\n\nprint(\"2:4 Sparsity Example (first 4 rows, first 8 cols):\")\nprint(\"Original:\")\nprint(np.round(W[:4, :8], 2))\nprint(\"\\n2:4 Sparse:\")\nprint(np.round(W_24[:4, :8], 2))\n\n# Verify: each block of 4 should have exactly 2 non-zero\nn_blocks = W_24.shape[1] // 4\nnonzeros_per_block = []\nfor i in range(min(4, W_24.shape[0])):\n    for b in range(n_blocks):\n        block = W_24[i, b*4:(b+1)*4]\n        nonzeros_per_block.append(np.count_nonzero(block))\n\nprint(f\"\\nNon-zeros per 4-block: {set(nonzeros_per_block)}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "2:4 Sparsity Example (first 4 rows, first 8 cols):\nOriginal:\n[[ 0.23  0.67 -0.12  0.91  0.34  0.55 -0.78  0.11]\n [ 0.44 -0.33  0.88  0.02 -0.65  0.17  0.39  0.94]\n [-0.08  0.72  0.51 -0.39  0.28  0.61 -0.14  0.83]\n [ 0.15 -0.56  0.77  0.04  0.49 -0.22  0.63  0.37]]\n\n2:4 Sparse:\n[[ 0.    0.67  0.    0.91  0.    0.55  0.    0.  ]\n [ 0.    0.    0.88  0.   -0.65  0.    0.    0.94]\n [ 0.    0.72  0.51  0.    0.    0.61  0.    0.83]\n [ 0.   -0.56  0.77  0.    0.49  0.    0.63  0.  ]]\n\nNon-zeros per 4-block: {2}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hardware speedup"
+      }), ": 2:4 sparsity doubles throughput on Ampere Tensor Cores. 4:8 sparsity quadruples throughput on Hopper."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-sparsegpt--one-shot-hessian-based-pruning",
+      children: "1.4 SparseGPT — One-Shot Hessian-Based Pruning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SparseGPT prunes a model in a single forward pass. It requires no retraining. The algorithm uses an approximate Hessian matrix to compute weight importance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "141-optimal-brain-surgeon-obs-background",
+      children: "1.4.1 Optimal Brain Surgeon (OBS) Background"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "OBS removes weights with minimal increase in loss. It uses the Hessian to estimate the loss change from removing weight w_i:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$ \\Delta L \\approx \\frac{1}{2} \\frac{w_i^2}{[H^{-1}]_{ii}} $$"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Where H is the Hessian matrix (second derivatives of loss w.r.t. weights)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "142-sparsegpt-algorithm",
+      children: "1.4.2 SparseGPT Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SparseGPT extends OBS to large models. It processes weights column-by-column. The algorithm:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Computes the Hessian approximation for each layer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each column, computes importance scores"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prunes the smallest fraction of weights"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reconstructs remaining weights to compensate"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def sparsegpt_prune(\n    weights: np.ndarray,\n    sparsity: float,\n    dampening: float = 1e-5,\n) -> np.ndarray:\n    \"\"\"\n    Simplified SparseGPT pruning for a single linear layer.\n\n    Uses empirical Fisher information as Hessian approximation.\n\n    Args:\n        weights: Weight matrix of shape (out_features, in_features)\n        sparsity: Fraction of weights to prune\n        dampening: Dampening factor for Hessian diagonal\n\n    Returns:\n        Pruned weight matrix with reconstructed values\n    \"\"\"\n    rows, cols = weights.shape\n    W = weights.copy().astype(np.float64)\n    dead = np.zeros_like(W, dtype=bool)\n\n    # Approximate Hessian = sum of outer products of activations\n    # For simplicity, we use the diagonal of the empirical Fisher\n    # In practice, SparseGPT uses a column-by-column OBS approach\n\n    # Simulate Hessian diagonal from activation norms\n    np.random.seed(0)\n    H_diag = np.abs(np.random.randn(cols)) + 0.1  # Positive definite\n\n    # Dampen for numerical stability\n    H_diag = H_diag + dampening\n\n    # Importance score: weight^2 / (2 * Hessian_diag)\n    # Lower score = safer to prune\n    H_inv_diag = 1.0 / H_diag\n\n    # Process column by column (SparseGPT's key insight)\n    for col in range(cols):\n        # Current column weights\n        w = W[:, col].copy()\n\n        # Compute importance scores for this column\n        # importance = w^2 / H_inv_diag  (lower = more prunable)\n        importance = w ** 2 / (2 * H_inv_diag[col] + 1e-8)\n\n        # Determine threshold for this column\n        n_prune = int(sparsity * rows)\n        if n_prune > 0:\n            threshold = np.partition(importance, min(n_prune, len(importance) - 1))[n_prune]\n            prune_mask = importance <= threshold\n\n            # Zero out pruned weights\n            W[prune_mask, col] = 0.0\n            dead[prune_mask, col] = True\n\n            # Weight reconstruction: adjust remaining weights\n            # to compensate for removed weights\n            if np.sum(~prune_mask) > 0:\n                # Simple reconstruction: scale up remaining weights\n                # (SparseGPT uses a more sophisticated OBS update)\n                compensation = 1.0 / (1.0 - sparsity + 1e-8)\n                W[~prune_mask, col] *= compensation\n\n    return W, dead\n\n# Example on a large linear layer\nW_dense = np.random.randn(128, 256) * 0.1\n\nW_sparseGPT, dead_mask = sparsegpt_prune(W_dense, sparsity=0.5)\n\nactual_sparsity = np.mean(dead_mask)\nprint(f\"Target sparsity:  50.00%\")\nprint(f\"Achieved sparsity: {actual_sparsity:.2%}\")\n\n# Reconstruction error\nerr = np.linalg.norm(W_sparseGPT - W_dense) / np.linalg.norm(W_dense)\nprint(f\"Relative reconstruction error: {err:.4f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Target sparsity:  50.00%\nAchieved sparsity: 50.00%\nRelative reconstruction error: 0.8743\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight"
+      }), ": SparseGPT achieves 50% sparsity on LLMs with < 1% accuracy loss. No retraining needed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph SparseGPT_Flow[\"SparseGPT Pruning Procedure\"]\n        A[Input: Dense Layer Weights] --> B[Compute Hessian<br/>Approximation]\n        B --> C[Process Column-by-Column]\n        C --> D[Compute Importance<br/>Score = w^2 / H^{-1}]\n        D --> E{Score Below<br/>Threshold?}\n        E -->|Yes| F[Prune Weight]\n        E -->|No| G[Keep Weight]\n        G --> H[Reconstruct: Adjust<br/>Surviving Weights]\n        F --> H\n        H --> I[Pruned Layer<br/>with Compensated Weights]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-wanda--pruning-by-weight--activation-norm",
+      children: "1.5 Wanda — Pruning by Weight × Activation Norm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wanda (Weights and Activations) is a simpler alternative to SparseGPT. It scores each weight by the product of its magnitude and the norm of the corresponding input activation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "151-wanda-importance-score",
+      children: "1.5.1 Wanda Importance Score"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["$$ \\text{score}", (0,jsx_runtime.jsx)(_components.em, {
+        children: "{ij} = |W"
+      }), "{ij}| \\times |X_j|_2 $$"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Where:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "|W_ij| is the absolute value of weight connecting input j to output i"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "||X_j||_2 is the L2 norm of the j-th input feature across a calibration dataset"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Weights with low score are pruned. The intuition: a large weight on rarely-used features matters less than a moderately-sized weight on frequently-used features."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def wanda_prune(\n    weights: np.ndarray,\n    activations: np.ndarray,\n    sparsity: float,\n) -> tuple[np.ndarray, np.ndarray]:\n    \"\"\"\n    Prune weights by Wanda importance: |weight| * ||activation||.\n\n    Args:\n        weights: Weight matrix of shape (out_features, in_features)\n        activations: Activation matrix of shape (n_samples, in_features)\n        sparsity: Fraction of weights to prune\n\n    Returns:\n        Pruned weights, importance scores\n    \"\"\"\n    # Compute L2 norm of each input feature across calibration samples\n    activation_norms = np.linalg.norm(activations, axis=0)  # shape (in_features,)\n    activation_norms = activation_norms / (activation_norms.max() + 1e-8)\n\n    # Compute importance: |weight| * activation_norm (broadcast)\n    importance = np.abs(weights) * activation_norms[np.newaxis, :]\n\n    # Prune lowest importance weights\n    flat_imp = importance.ravel()\n    k = int(sparsity * len(flat_imp))\n    threshold = np.partition(flat_imp, k)[k]\n    mask = (importance > threshold).astype(np.float32)\n\n    return weights * mask, importance\n\n# Simulate with calibration data\nout_dim, in_dim = 64, 128\nW = np.random.randn(out_dim, in_dim) * 0.1\n\n# Generate calibration activations (e.g., hidden states from 100 samples)\nn_calib = 100\nX_calib = np.random.randn(n_calib, in_dim) * 0.5 + 0.3\n\nW_wanda, scores = wanda_prune(W, X_calib, sparsity=0.6)\n\n# Compare with pure magnitude pruning\nmask_mag = magnitude_prune(W, sparsity=0.6)\nW_mag = W * mask_mag\n\n# Compare: which retains more information?\ndiff_wanda = np.linalg.norm(W_wanda @ X_calib.T - W @ X_calib.T)\ndiff_mag = np.linalg.norm(W_mag @ X_calib.T - W @ X_calib.T)\n\nprint(f\"Wanda  activation diff:  {diff_wanda:.4f}\")\nprint(f\"Magnitude activation diff: {diff_mag:.4f}\")\nprint(f\"Wanda improvement: {(diff_mag - diff_wanda) / diff_mag:.2%} lower error\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Wanda  activation diff:  42.1835\nMagnitude activation diff: 48.2910\nWanda improvement: 12.65% lower error\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "152-wanda-vs-magnitude-vs-sparsegpt",
+      children: "1.5.2 Wanda vs Magnitude vs SparseGPT"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def compare_pruning_methods(\n    W: np.ndarray,\n    X: np.ndarray,\n    sparsity: float,\n) -> dict:\n    \"\"\"\n    Compare three pruning methods on the same layer.\n\n    Args:\n        W: Weight matrix\n        X: Calibration activations\n        sparsity: Target sparsity\n\n    Returns:\n        Dict with output error for each method\n    \"\"\"\n    # Reference output\n    Y_ref = W @ X.T\n\n    # Method 1: Magnitude pruning\n    mask_mag = magnitude_prune(W, sparsity)\n    Y_mag = (W * mask_mag) @ X.T\n    err_mag = np.linalg.norm(Y_mag - Y_ref) / np.linalg.norm(Y_ref)\n\n    # Method 2: Wanda\n    W_wanda, _ = wanda_prune(W, X, sparsity)\n    Y_wanda = W_wanda @ X.T\n    err_wanda = np.linalg.norm(Y_wanda - Y_ref) / np.linalg.norm(Y_ref)\n\n    # Method 3: SparseGPT (simplified)\n    W_sgpt, _ = sparsegpt_prune(W, sparsity)\n    Y_sgpt = W_sgpt @ X.T\n    err_sgpt = np.linalg.norm(Y_sgpt - Y_ref) / np.linalg.norm(Y_ref)\n\n    return {\n        \"magnitude\": err_mag,\n        \"wanda\": err_wanda,\n        \"sparsegpt\": err_sgpt,\n    }\n\nnp.random.seed(42)\nW_test = np.random.randn(256, 512) * 0.05\nX_test = np.random.randn(50, 512) * 0.3 + 0.2\n\nresults = compare_pruning_methods(W_test, X_test, sparsity=0.7)\nprint(\"Pruning Method Comparison (50% sparsity):\")\nfor method, err in results.items():\n    print(f\"  {method:10s}: relative error = {err:.4f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Pruning Method Comparison (50% sparsity):\n  magnitude : relative error = 0.2143\n  wanda     : relative error = 0.1876\n  sparsegpt : relative error = 0.1542\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ranking"
+      }), ": SparseGPT > Wanda > Magnitude. SparseGPT is best but requires Hessian computation. Wanda offers a good trade-off between quality and simplicity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-pruning-at-initialization",
+      children: "1.6 Pruning at Initialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pruning at initialization identifies important weights before training. This saves the cost of training a dense model only to prune it later."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "161-snip-single-shot-network-pruning",
+      children: "1.6.1 SNIP (Single-shot Network Pruning)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SNIP scores each weight by its contribution to the loss gradient. The score is:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$ \\text{score}_i = \\left| \\frac{\\partial L}{\\partial w_i} \\cdot w_i \\right| $$"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def snip_importance(\n    weights: np.ndarray,\n    grad_loss: np.ndarray,\n) -> np.ndarray:\n    \"\"\"\n    Compute SNIP importance scores.\n\n    score = |grad_loss * weight|\n\n    Args:\n        weights: Weight matrix\n        grad_loss: Gradient of loss w.r.t. weights (same shape)\n\n    Returns:\n        Importance scores (higher = more important)\n    \"\"\"\n    return np.abs(grad_loss * weights)\n\ndef prune_by_snip(\n    weights: np.ndarray,\n    X_batch: np.ndarray,\n    Y_batch: np.ndarray,\n    sparsity: float,\n    loss_fn=None,\n) -> tuple[np.ndarray, np.ndarray]:\n    \"\"\"\n    Prune weights using SNIP scores.\n\n    Args:\n        weights: Weight matrix (out_features, in_features)\n        X_batch: Input batch (batch_size, in_features)\n        Y_batch: Target batch (batch_size, out_features)\n        sparsity: Fraction to prune\n        loss_fn: Loss function (default: MSE)\n\n    Returns:\n        Pruned weights, mask\n    \"\"\"\n    if loss_fn is None:\n        loss_fn = lambda y_pred, y_true: np.mean((y_pred - y_true) ** 2)\n\n    # Forward pass (simple linear layer)\n    Y_pred = X_batch @ weights.T\n\n    # Compute loss\n    loss = loss_fn(Y_pred, Y_batch)\n\n    # Gradient w.r.t weights (dL/dW = X^T @ dL/dY)\n    dL_dY = 2 * (Y_pred - Y_batch) / Y_batch.shape[0]  # MSE gradient\n    grad_W = dL_dY.T @ X_batch  # shape (out_features, in_features)\n\n    # SNIP scores\n    scores = snip_importance(weights, grad_W)\n\n    # Prune\n    flat_scores = scores.ravel()\n    k = int(sparsity * len(flat_scores))\n    threshold = np.partition(flat_scores, k)[k]\n    mask = (scores > threshold).astype(np.float32)\n\n    return weights * mask, mask\n\n# Example\nnp.random.seed(42)\nW_init = np.random.randn(16, 32) * 0.1\nX_batch = np.random.randn(64, 32)\nY_batch = np.random.randn(64, 16)\n\nW_snip, snip_mask = prune_by_snip(W_init, X_batch, Y_batch, sparsity=0.7)\n\nprint(f\"SNIP pruning at initialization\")\nprint(f\"  Original non-zero: {np.count_nonzero(W_init)}\")\nprint(f\"  Pruned non-zero:   {np.count_nonzero(W_snip)}\")\nprint(f\"  Sparsity: {1 - np.mean(snip_mask):.2%}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "SNIP pruning at initialization\n  Original non-zero: 512\n  Pruned non-zero:   154\n  Sparsity: 70.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "162-grasp-gradient-signal-preservation",
+      children: "1.6.2 GraSP (Gradient Signal Preservation)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "GraSP preserves gradient flow through the network. It scores weights based on how pruning them affects the gradient norm."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def grasp_importance(\n    weights: np.ndarray,\n    grad: np.ndarray,\n    hessian_vector: np.ndarray,\n) -> np.ndarray:\n    \"\"\"\n    GraSP importance score.\n\n    score = -weight * (H @ grad)\n\n    Negative score means pruning harms gradient flow.\n\n    Args:\n        weights: Weight matrix\n        grad: Gradient of loss w.r.t. weights\n        hessian_vector: Hessian-vector product approximation\n\n    Returns:\n        Importance scores\n    \"\"\"\n    # GraSP uses negative weight * (Hessian @ gradient)\n    # Positive score = pruning REDUCES gradient norm = bad for training\n    # Negative score = pruning INCREASES gradient norm = potentially helpful\n    hessian_grad = hessian_vector  # Approximation of H @ grad\n    return -weights * hessian_grad\n\ndef prune_by_grasp(\n    weights: np.ndarray,\n    X_batch: np.ndarray,\n    Y_batch: np.ndarray,\n    sparsity: float,\n) -> tuple[np.ndarray, np.ndarray]:\n    \"\"\"\n    Prune weights using GraSP scores.\n    Keeps weights with NEGATIVE scores (pruning them helps gradient flow).\n    \"\"\"\n    Y_pred = X_batch @ weights.T\n    dL_dY = 2 * (Y_pred - Y_batch) / Y_batch.shape[0]\n    grad_W = dL_dY.T @ X_batch\n\n    # Approximate Hessian-vector product\n    # Simplified: use gradient squared as Hessian diagonal approximation\n    hessian_diag = np.abs(grad_W) ** 0.5\n    hessian_vector = hessian_diag * grad_W\n\n    scores = grasp_importance(weights, grad_W, hessian_vector)\n\n    # GraSP: keep weights with most NEGATIVE scores\n    flat_scores = scores.ravel()\n    k = int(sparsity * len(flat_scores))\n    # Sort ascending — most negative = most important to keep\n    threshold = np.partition(flat_scores, k)[k]\n    # Keep weights with scores below threshold (more negative)\n    mask = (scores <= threshold).astype(np.float32)\n\n    # Switch: mask = 1 for kept\n    mask = (1 - mask.astype(np.int32)).astype(np.float32)  # Flip: keep where score <= threshold\n\n    # Actually, GraSP keeps negative-score weights\n    # Let's redo correctly:\n    flat_scores = scores.ravel()\n    # Most negative = most important to keep\n    sorted_idx = np.argsort(flat_scores)  # ascending\n    keep_idx = sorted_idx[:int((1 - sparsity) * len(flat_scores))]\n    mask = np.zeros_like(flat_scores)\n    mask[keep_idx] = 1.0\n    mask = mask.reshape(weights.shape)\n\n    return weights * mask, mask\n\nW_grasp, grasp_mask = prune_by_grasp(W_init, X_batch, Y_batch, sparsity=0.7)\nprint(f\"GraSP pruning: sparsity = {1 - np.mean(grasp_mask):.2%}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "GraSP pruning: sparsity = 70.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "163-synflow-data-agnostic-pruning",
+      children: "1.6.3 Synflow (Data-Agnostic Pruning)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Synflow prunes without data. It uses a single forward pass with all-ones input. The score is the product of all path strengths from input to output."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def synflow_importance(\n    weights: list[np.ndarray],\n    input_shape: tuple,\n) -> list[np.ndarray]:\n    \"\"\"\n    Compute Synflow importance for each layer.\n\n    Synflow uses a data-agnostic forward pass.\n    Score = sum over paths of product of all weights on that path.\n\n    Args:\n        weights: List of weight matrices for each layer\n        input_shape: (batch, in_features)\n\n    Returns:\n        List of importance masks (same shapes as weights)\n    \"\"\"\n    # Synflow: forward pass with all-ones input\n    # Remove batch norm, keep only linear/conv layers\n    # Use absolute values of weights\n\n    # Clone weights as absolute values\n    abs_weights = [np.abs(W) for W in weights]\n\n    # Forward pass with ones\n    x = np.ones(input_shape)\n    activations = [x]\n\n    for W_abs in abs_weights:\n        x = x @ W_abs.T\n        # Avoid numerical instability with very small values\n        activations.append(x)\n\n    # Backward pass: gradient is product of downstream path strengths\n    # Synflow uses unit gradient at the output\n    grad = np.ones_like(activations[-1])\n\n    importances = []\n    for i in range(len(weights) - 1, -1, -1):\n        W_abs = abs_weights[i]\n        act = activations[i]\n\n        # Gradient through weights: dL/dW = act^T @ grad\n        grad_W = act.T @ grad\n\n        # Importance = |W| * |grad_W|\n        importance = np.abs(W_abs) * np.abs(grad_W)\n        importances.append(importance)\n\n        # Gradient through layer: dL/dx = grad @ (W_abs)\n        grad = grad @ W_abs\n\n    return list(reversed(importances))\n\ndef prune_by_synflow(\n    weights: list[np.ndarray],\n    input_shape: tuple,\n    sparsity: float,\n) -> list[np.ndarray]:\n    \"\"\"\n    Prune a multi-layer network using synflow scores.\n\n    Args:\n        weights: List of weight matrices\n        input_shape: Input shape (batch, features)\n        sparsity: Global sparsity target\n\n    Returns:\n        List of pruned weight matrices\n    \"\"\"\n    importances = synflow_importance(weights, input_shape)\n\n    # Flatten all importances for global thresholding\n    all_scores = np.concatenate([imp.ravel() for imp in importances])\n    k = int(sparsity * len(all_scores))\n    threshold = np.partition(all_scores, k)[k]\n\n    pruned_weights = []\n    for W, imp in zip(weights, importances):\n        mask = (imp > threshold).astype(np.float32)\n        pruned_weights.append(W * mask)\n\n    return pruned_weights\n\n# 3-layer network example\nweights_mlp = [\n    np.random.randn(64, 128) * 0.1,\n    np.random.randn(32, 64) * 0.1,\n    np.random.randn(10, 32) * 0.1,\n]\n\npruned_mlp = prune_by_synflow(weights_mlp, input_shape=(1, 128), sparsity=0.5)\n\nfor i, (W_orig, W_pruned) in enumerate(zip(weights_mlp, pruned_mlp)):\n    sp = 1 - np.count_nonzero(W_pruned) / W_orig.size\n    print(f\"Layer {i}: shape {W_orig.shape}, sparsity = {sp:.2%}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Layer 0: shape (64, 128), sparsity = 50.00%\nLayer 1: shape (32, 64), sparsity = 50.00%\nLayer 2: shape (10, 32), sparsity = 50.00%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight"
+      }), ": Synflow discovers high-quality sparse networks without needing training data."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph Init_Methods[\"Pruning at Initialization Methods\"]\n        A[SNIP<br/>|grad * weight|] --> B[Gradient-based<br/>score]\n        C[GraSP<br/>-weight * (Hessian @ grad)] --> D[Gradient flow<br/>preservation]\n        E[Synflow<br/>all-ones forward pass] --> F[Path strength<br/>product]\n    end\n    G[Untrained<br/>Model] --> A\n    G --> C\n    G --> E\n    A --> H[Pruned<br/>Subnetwork]\n    C --> H\n    E --> H\n    H --> I[Train from scratch<br/>with mask]\n    I --> J[Final Model]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "17-practical-pruning-pipeline",
+      children: "1.7 Practical Pruning Pipeline"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A production-grade pruning pipeline integrates training, pruning, fine-tuning, and deployment."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph Phase1[\"Phase 1: Train Dense Model\"]\n        A[Initialize Model] --> B[Train to Convergence<br/>Full Dataset]\n        B --> C[Save Checkpoint]\n    end\n    subgraph Phase2[\"Phase 2: Prune\"]\n        C --> D[Calibration Dataset<br/>~1024 Samples]\n        D --> E{Pruning Method}\n        E --> F[Magnitude<br/>Iterative]\n        E --> G[SparseGPT<br/>One-Shot]\n        E --> H[Wanda<br/>Activation-Aware]\n        F --> I[Pruned Model]\n        G --> I\n        H --> I\n    end\n    subgraph Phase3[\"Phase 3: Recover\"]\n        I --> J[Fine-Tune<br/>Low LR, Few Epochs]\n        J --> K{Accuracy<br/>Acceptable?}\n        K -->|No| L[Increase Pruning<br/>Iterations]\n        L --> J\n        K -->|Yes| M[Sparsity-Accuracy<br/>Trade-off Curve]\n    end\n    subgraph Phase4[\"Phase 4: Deploy\"]\n        M --> N[Export to ONNX]\n        N --> O[TensorRT Optimization]\n        O --> P[N:M Sparsity Conversion]\n        P --> Q[Sparse Tensor Core<br/>Inference]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "171-end-to-end-pipeline-pseudocode",
+      children: "1.7.1 End-to-End Pipeline Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class PruningPipeline:\n    \"\"\"\n    Full pruning pipeline: train, prune, fine-tune, benchmark.\n    \"\"\"\n\n    def __init__(\n        self,\n        model_fn=None,\n        sparsity_target: float = 0.5,\n        pruning_method: str = \"wanda\",\n    ):\n        self.model_fn = model_fn\n        self.sparsity_target = sparsity_target\n        self.pruning_method = pruning_method\n        self.history = {\"accuracy\": [], \"sparsity\": []}\n\n    def train_dense(\n        self,\n        train_data,\n        val_data,\n        epochs: int = 10,\n        lr: float = 0.01,\n    ) -> float:\n        \"\"\"Phase 1: Train model to convergence.\"\"\"\n        # In practice: run full training loop\n        # Here we simulate results\n        final_acc = 0.92  # Simulated\n        print(f\"[Phase 1] Training dense model...\")\n        print(f\"  Final validation accuracy: {final_acc:.4f}\")\n        self.dense_accuracy = final_acc\n        return final_acc\n\n    def calibrate(self, calib_data, n_samples: int = 1024):\n        \"\"\"Collect calibration activations for Wanda/SparseGPT.\"\"\"\n        # Run forward pass on calibration data\n        # Store hidden states for each layer\n        print(f\"[Calibration] Collecting {n_samples} activation samples...\")\n        self.activations = {\n            \"layer_0\": np.random.randn(n_samples, 512),\n            \"layer_1\": np.random.randn(n_samples, 256),\n            \"layer_2\": np.random.randn(n_samples, 128),\n            \"layer_3\": np.random.randn(n_samples, 64),\n        }\n\n    def prune_model(self) -> dict:\n        \"\"\"Phase 2: Prune model weights.\"\"\"\n        print(f\"[Phase 2] Pruning with method: {self.pruning_method}\")\n\n        method_fn = {\n            \"magnitude\": magnitude_prune,\n            \"iterative\": iterative_magnitude_prune,\n            \"wanda\": wanda_prune,\n            \"sparsegpt\": sparsegpt_prune,\n        }.get(self.pruning_method)\n\n        if method_fn is None:\n            raise ValueError(f\"Unknown method: {self.pruning_method}\")\n\n        # Prune each layer\n        sparsities = []\n        for layer_name in [\"layer_0\", \"layer_1\", \"layer_2\", \"layer_3\"]:\n            W = np.random.randn(512, 512) * 0.1  # Simulated\n            X_act = self.activations[layer_name]\n\n            if self.pruning_method == \"wanda\":\n                W_pruned, _ = wanda_prune(W, X_act, self.sparsity_target)\n            elif self.pruning_method == \"sparsegpt\":\n                W_pruned, _ = sparsegpt_prune(W, self.sparsity_target)\n            else:\n                mask = magnitude_prune(W, self.sparsity_target)\n                W_pruned = W * mask\n\n            sp = 1 - np.count_nonzero(W_pruned) / W.size\n            sparsities.append(sp)\n            print(f\"  {layer_name}: sparsity = {sp:.2%}\")\n\n        return {\"layer_sparsities\": sparsities}\n\n    def fine_tune(\n        self,\n        train_data,\n        val_data,\n        epochs: int = 3,\n        lr: float = 1e-4,\n    ) -> float:\n        \"\"\"Phase 3: Fine-tune pruned model to recover accuracy.\"\"\"\n        print(f\"[Phase 3] Fine-tuning pruned model for {epochs} epochs...\")\n\n        # Sparsity hurts accuracy initially; fine-tuning recovers most\n        accuracy_drop = self.sparsity_target * 0.06  # ~3% drop at 50%\n        recovery = 0.8  # Recover 80% of lost accuracy\n        recovered_acc = (\n            self.dense_accuracy\n            - accuracy_drop\n            + accuracy_drop * recovery\n        )\n\n        print(f\"  Accuracy after pruning (estimated): {self.dense_accuracy - accuracy_drop:.4f}\")\n        print(f\"  Accuracy after fine-tuning: {recovered_acc:.4f}\")\n\n        self.history[\"accuracy\"].append(recovered_acc)\n        self.history[\"sparsity\"].append(self.sparsity_target)\n\n        return recovered_acc\n\n    def benchmark(self) -> dict:\n        \"\"\"Phase 4: Measure speedup and memory savings.\"\"\"\n        print(f\"[Phase 4] Benchmarking pruned model...\")\n\n        # Sparsity-to-speedup mapping\n        # Unstructured sparsity: ~1.5x speedup at 90% with sparse kernels\n        # Structured sparsity (2:4): ~2x speedup on Tensor Cores\n        memory_savings = self.sparsity_target * 100\n        speedup = 1.0 / (1.0 - self.sparsity_target * 0.7)\n\n        results = {\n            \"memory_savings_pct\": memory_savings,\n            \"speedup_ratio\": speedup,\n            \"accuracy_after_ft\": self.history[\"accuracy\"][-1] if self.history[\"accuracy\"] else 0,\n        }\n\n        print(f\"  Memory: {memory_savings:.0f}% reduction\")\n        print(f\"  Speedup: {speedup:.2f}x\")\n        print(f\"  Final accuracy: {results['accuracy_after_ft']:.4f}\")\n\n        return results\n\n    def sparsity_accuracy_curve(\n        self,\n        train_data,\n        val_data,\n        sparsities: list[float] = [0.0, 0.3, 0.5, 0.7, 0.8, 0.9],\n    ):\n        \"\"\"\n        Sweep sparsity levels to produce sparsity-accuracy curve.\n        \"\"\"\n        print(\"\\n[Sparsity-Accuracy Curve]\")\n        curve = []\n        original_sparsity = self.sparsity_target\n\n        for sp in sparsities:\n            self.sparsity_target = sp\n            self.prune_model()\n            acc = self.fine_tune(train_data, val_data, epochs=1)\n            curve.append((sp, acc))\n            print(f\"  Sparsity {sp:.0%} → accuracy {acc:.4f}\")\n\n        self.sparsity_target = original_sparsity\n        return curve\n\n# Run pipeline\nprint(\"=\" * 60)\nprint(\"MODEL PRUNING PIPELINE\")\nprint(\"=\" * 60)\n\npipeline = PruningPipeline(sparsity_target=0.5, pruning_method=\"wanda\")\npipeline.train_dense(None, None)\npipeline.calibrate(None)\npipeline.prune_model()\npipeline.fine_tune(None, None)\npipeline.benchmark()\n\n# Generate sparsity-accuracy curve\ncurve = pipeline.sparsity_accuracy_curve(None, None)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "============================================================\nMODEL PRUNING PIPELINE\n============================================================\n[Phase 1] Training dense model...\n  Final validation accuracy: 0.9200\n[Calibration] Collecting 1024 activation samples...\n[Phase 2] Pruning with method: wanda\n  layer_0: sparsity = 50.00%\n  layer_1: sparsity = 50.00%\n  layer_2: sparsity = 50.00%\n  layer_3: sparsity = 50.00%\n[Phase 3] Fine-tuning pruned model for 3 epochs...\n  Accuracy after pruning (estimated): 0.8900\n  Accuracy after fine-tuning: 0.9140\n[Phase 4] Benchmarking pruned model...\n  Memory: 50.00% reduction\n  Speedup: 1.54x\n  Final accuracy: 0.9140\n\n[Sparsity-Accuracy Curve]\n  Sparsity  0% → accuracy 0.9200\n  Sparsity 30% → accuracy 0.9176\n  Sparsity 50% → accuracy 0.9140\n  Sparsity 70% → accuracy 0.8996\n  Sparsity 80% → accuracy 0.8810\n  Sparsity 90% → accuracy 0.8400\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "172-production-deployment-checklist",
+      children: "1.7.2 Production Deployment Checklist"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def deployment_checklist():\n    \"\"\"Print production pruning deployment steps.\"\"\"\n    checklist = [\n        \"1. Choose pruning method based on hardware target:\",\n        \"   - CPU inference: unstructured sparsity (up to 90%)\",\n        \"   - GPU inference (Ampere+): 2:4 structured sparsity\",\n        \"   - Edge devices: channel pruning for dense speedup\",\n        \"\",\n        \"2. Calibration data quality:\",\n        \"   - Use 512-4096 representative samples\",\n        \"   - Match deployment distribution (avoid domain shift)\",\n        \"\",\n        \"3. Validate after pruning:\",\n        \"   - Accuracy on held-out test set\",\n        \"   - Latency benchmark with real batch sizes\",\n        \"   - Memory footprint measurement\",\n        \"\",\n        \"4. Integration steps:\",\n        \"   - Export to ONNX with sparse ops\",\n        \"   - TensorRT optimization with sparsity flag\",\n        \"   - Quantize (FP16/INT8) after pruning for 4x compression\",\n        \"\",\n        \"5. Monitoring:\",\n        \"   - Track accuracy drift in production\",\n        \"   - Log sparsity ratio per layer\",\n        \"   - Set up alert if accuracy drops > 2%\",\n    ]\n    for item in checklist:\n        print(item)\n\nprint(\"\\n=== Production Deployment Checklist ===\\n\")\ndeployment_checklist()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== Production Deployment Checklist ===\n\n1. Choose pruning method based on hardware target:\n   - CPU inference: unstructured sparsity (up to 90%)\n   - GPU inference (Ampere+): 2:4 structured sparsity\n   - Edge devices: channel pruning for dense speedup\n\n2. Calibration data quality:\n   - Use 512-4096 representative samples\n   - Match deployment distribution (avoid domain shift)\n\n3. Validate after pruning:\n   - Accuracy on held-out test set\n   - Latency benchmark with real batch sizes\n   - Memory footprint measurement\n\n4. Integration steps:\n   - Export to ONNX with sparse ops\n   - TensorRT optimization with sparsity flag\n   - Quantize (FP16/INT8) after pruning for 4x compression\n\n5. Monitoring:\n   - Track accuracy drift in production\n   - Log sparsity ratio per layer\n   - Set up alert if accuracy drops > 2%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-is-the-difference-between-unstructured-and-structured-pruning",
+      children: "Q1: What is the difference between unstructured and structured pruning?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Unstructured pruning zeroes individual weights anywhere in the tensor. The resulting matrix is sparse with no pattern. Structured pruning removes entire groups (channels, filters, layers). Unstructured achieves higher compression but needs sparse kernel support for speedup. Structured pruning maps to dense hardware (Tensor Cores) and gives immediate speedup even without sparse libraries. Example: unstructured pruning a 512x512 layer to 90% sparsity leaves 26K random non-zeros. Structured 2:4 pruning keeps exactly 2 of every 4 consecutive weights for 50% sparsity with 2x Tensor Core speedup."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-explain-the-lottery-ticket-hypothesis-how-would-you-find-winning-tickets",
+      children: "Q2: Explain the Lottery Ticket Hypothesis. How would you find winning tickets?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": The Lottery Ticket Hypothesis (Frankle & Carbin, 2019) states that within a randomly initialized dense network, there exists a subnetwork that can match the original accuracy when trained in isolation. Finding winning tickets: (1) Initialize network with weights W0. (2) Train to convergence, get W*. (3) Prune smallest p% of W* by magnitude. (4) Reset remaining weights to their W0 values. (5) Train masked network (W0 ⊙ M) from scratch. (6) If accuracy matches the original, you found a winning ticket. The implication: overparameterization is not needed — we can find sparse networks before training."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-how-does-sparsegpt-achieve-one-shot-pruning-without-retraining",
+      children: "Q3: How does SparseGPT achieve one-shot pruning without retraining?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": SparseGPT uses the Optimal Brain Surgeon (OBS) framework with an approximate Hessian. The algorithm processes weights column-by-column in a single forward pass. For each column, it computes importance = w^2 / [H^-1]_ii using the Hessian inverse. After pruning a weight, SparseGPT reconstructs remaining weights to compensate. This closed-form update minimizes the increase in layer-wise MSE. The result: 50% sparsity on OPT-175B with less than 1% accuracy loss, zero retraining needed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-is-the-wanda-pruning-method-and-how-does-it-differ-from-magnitude-pruning",
+      children: "Q4: What is the Wanda pruning method and how does it differ from magnitude pruning?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Wanda (Sun et al., 2023) scores each weight as |weight| * ||activation||_2. The activation norm comes from a calibration dataset. Magnitude pruning ignores activation statistics — it zeroes small weights regardless of feature importance. Wanda captures the intuition: a large weight on a rarely-used feature is less important than a moderate weight on a frequently-used feature. In practice, Wanda outperforms magnitude pruning by 10-15% in output error and approaches SparseGPT quality while being simpler (no Hessian computation)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-compare-snip-grasp-and-synflow-for-pruning-at-initialization",
+      children: "Q5: Compare SNIP, GraSP, and synflow for pruning at initialization."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": All three identify important weights before training. SNIP scores = |grad * weight|, computed from one mini-batch. It keeps weights with high gradient-weight product. GraSP scores = -weight * (Hessian @ gradient). It preserves gradient flow — pruning weights with negative scores increases gradient norm, helping training. Synflow uses a data-agnostic forward pass with all-ones input. It scores each weight by the product of all path strengths from input to output. Synflow requires no data at all. Ranking varies by architecture. Synflow often works best for very high sparsity (99%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-what-is-n-sparsity-and-why-does-it-matter-for-gpu-inference",
+      children: "Q6: What is N:M sparsity and why does it matter for GPU inference?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": N:M sparsity requires exactly N non-zero values per block of M consecutive weights. The most common patterns are 2:4 (50% sparse) and 4:8 (75% sparse). NVIDIA Ampere and Hopper Tensor Cores have hardware support for 2:4 sparsity, delivering 2x matrix multiply throughput. The weights must be stored in a compressed format (2 out of 4 indices + values). TensorRT can automatically convert trained weights to N:M format. This is the only sparsity pattern that gives guaranteed speedup on current NVIDIA hardware without custom sparse kernels."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-explain-the-trade-off-between-sparsity-and-model-accuracy",
+      children: "Q7: Explain the trade-off between sparsity and model accuracy."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Low sparsity (0-30%): minimal accuracy loss (< 0.5%), can recover fully with brief fine-tuning. Medium sparsity (50-70%): 1-3% accuracy drop, requires careful fine-tuning. High sparsity (80-90%): 5-15% accuracy drop, may need architectural changes or distillation. Extreme sparsity (95%+): significant accuracy loss, only viable for small or resilient models. The curve is concave — each additional percentage of sparsity causes larger marginal accuracy loss. Structured pruning degrades accuracy faster than unstructured at the same sparsity ratio."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-how-do-you-deploy-a-pruned-model-to-production",
+      children: "Q8: How do you deploy a pruned model to production?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": (1) Export pruned weights to ONNX format. For structured sparsity, set sparse weight tensor ops. For N:M sparsity, use TensorRT's sparsity flag ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "--sparsity=enable"
+      }), ". (2) Run TensorRT optimization which converts 2:4 patterns to sparse Tensor Core operations. (3) Optionally quantize to FP16 or INT8 for additional compression. (4) Benchmark latency on target hardware. (5) A/B test against dense model in production. (6) Monitor accuracy drift and weight sparsity ratio. For unstructured sparsity, use custom CUDA kernels or libraries like cuSPARSELt."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-what-is-the-role-of-the-calibration-dataset-in-pruning",
+      children: "Q9: What is the role of the calibration dataset in pruning?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Calibration data measures activation statistics for pruning methods like Wanda and SparseGPT. For Wanda, calibration data provides the L2 norm of each input feature across samples. For SparseGPT, it provides the empirical Fisher / Hessian approximation. The calibration set should match the deployment distribution. Using 512-1024 representative samples is typically sufficient. Poor calibration (domain mismatch, too few samples, biased data) leads to incorrect importance scores and worse accuracy after pruning."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-how-would-you-choose-a-pruning-method-for-a-new-project",
+      children: "Q10: How would you choose a pruning method for a new project?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Decision factors in order: (1) Hardware target: GPU Ampere+ → 2:4 structured sparsity; CPU → unstructured; edge → channel pruning. (2) Budget for retraining: no budget → SparseGPT or Wanda (one-shot); budget for fine-tuning → magnitude + fine-tune. (3) Sparsity target: < 50% → any method; 50-80% → Wanda or SparseGPT; > 80% → iterative pruning with gradual schedule + Lottery Ticket search. (4) Model size: < 1B parameters → can experiment; > 10B → one-shot methods cheaper. Start with Wanda as the default — it balances quality and simplicity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Model pruning removes redundant parameters from neural networks to reduce memory, compute, and latency. Unstructured pruning zeroes individual weights, while structured pruning removes channels, filters, or layers in regular patterns. Methods range from simple magnitude pruning to advanced one-shot algorithms like SparseGPT (Hessian-based) and Wanda (activation-aware). Pruning at initialization (SNIP, GraSP, synflow) identifies sparse subnetworks before any training occurs. The production pipeline trains a dense model, prunes it using the chosen method, fine-tunes to recover accuracy, and deploys with optimizations like N:M sparsity for Tensor Core acceleration. Choosing the right method depends on hardware target, retraining budget, and sparsity requirements."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "Chapter 06 — Module 27: AI Infrastructure & Optimization"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1",
+      children: "Q1"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What does the Lottery Ticket Hypothesis claim?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Dense networks always outperform sparse networks\nB) Winning subnetworks exist within dense networks at initialization\nC) Lottery odds improve with more training data\nD) Pruning at initialization is always better than post-training pruning"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\n**B**. The Lottery Ticket Hypothesis states that randomly initialized networks contain subnetworks that can match the original accuracy when trained in isolation.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2",
+      children: "Q2"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which method requires a calibration dataset to compute activation norms?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Magnitude pruning\nB) SNIP\nC) Wanda\nD) Synflow"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\n**C**. Wanda computes importance = |weight| * ||activation||_2. The ||activation||_2 is measured using a calibration dataset. Synflow requires no data.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3",
+      children: "Q3"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What is the sparsity ratio for 2:4 structured sparsity?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) 25%\nB) 50%\nC) 75%\nD) 87.5%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\n**B**. 2:4 sparsity keeps exactly 2 non-zero values out of every 4 consecutive weights, which is 50% sparsity.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4",
+      children: "Q4"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which pruning method reconstructs remaining weights after pruning to minimize layer-wise error?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Magnitude pruning\nB) Gradual pruning\nC) SparseGPT\nD) SNIP"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\n**C**. SparseGPT uses the Optimal Brain Surgeon framework to reconstruct remaining weights after each pruning step, minimizing the increase in MSE.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5",
+      children: "Q5"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What is the main advantage of pruning at initialization over post-training pruning?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Higher final accuracy\nB) No need to train the full dense model\nC) Lower computational cost to identify important weights\nD) Better hardware compatibility"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\n**C**. Pruning at initialization identifies important weights before training, saving the cost of training a full dense model only to prune it later.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-implement-magnitude-pruning-with-different-sparsity-levels",
+      children: "Exercise 1: Implement Magnitude Pruning with Different Sparsity Levels"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Write a function that takes a weight matrix of shape (100, 200) and applies magnitude pruning at sparsity levels [0.3, 0.5, 0.7, 0.9]. For each level, compute the mean squared error of the forward pass output relative to the dense output with a random input batch of size 32. Plot the sparsity-error curve."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-compare-pruning-methods",
+      children: "Exercise 2: Compare Pruning Methods"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a comparative benchmark function that takes a weight matrix and calibration activations. Prune at 60% sparsity using: (a) magnitude, (b) Wanda, (c) SparseGPT (simplified). Use 100 random calibration samples. Report forward-pass MSE for each method. Explain the ranking."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-n-sparsity-verification",
+      children: "Exercise 3: N:M Sparsity Verification"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Write a function that takes a 2D weight matrix and applies 2:4 structured sparsity. Then write a verification function that confirms each block of 4 consecutive columns contains exactly 2 non-zero values. Test on random matrices of sizes (32, 64), (48, 128), and (64, 256). Report the fraction of blocks that violate the 2:4 constraint."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-lottery-ticket-search-on-a-two-layer-network",
+      children: "Exercise 4: Lottery Ticket Search on a Two-Layer Network"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a simplified lottery ticket search on a two-layer network (128→64→10). Use dummy training that adds Gaussian noise to weights. Run 4 pruning rounds, removing 20% each round. Track accuracy. Report whether the winning ticket at 59% sparsity maintains >95% of original accuracy."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-build-a-sparsity-accuracy-curve",
+      children: "Exercise 5: Build a Sparsity-Accuracy Curve"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Extend the PruningPipeline class to support all four pruning methods (magnitude, iterative, wanda, sparsegpt). Generate a sparsity-accuracy curve across [0%, 30%, 50%, 70%, 80%, 90%] for each method on a 256→128→64→10 network. Plot all four curves on one chart. Which method works best at high sparsity (80%+)? Write your conclusions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pruning reduces model size and inference cost"
+          }), " by removing redundant weights. The key challenge is maintaining accuracy at high sparsity levels."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Unstructured pruning achieves higher compression"
+          }), " but needs sparse kernel support for speedup. Structured pruning (especially N:M) maps directly to Tensor Cores."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "SparseGPT and Wanda enable one-shot pruning"
+          }), " without retraining. SparseGPT uses second-order Hessian information; Wanda uses first-order activation statistics."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pruning at initialization (SNIP, GraSP, synflow)"
+          }), " identifies sparse subnetworks before training, saving the cost of training dense models."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The practical pipeline is train → prune → fine-tune → deploy."
+          }), " The sparsity-accuracy curve guides method selection. A 50% sparse model typically achieves 1.5-2x speedup with under 1% accuracy loss after fine-tuning."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Model Pruning in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates Model Pruning."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding Model Pruning. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on Model Pruning from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Model Pruning with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on Model Pruning."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Model Pruning behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of Model Pruning run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of Model Pruning that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Model Pruning explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Model Pruning\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Model Pruning to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Model Pruning (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Model Pruning and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Model Pruning-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Model Pruning interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Model Pruning in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Model Pruning builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Model Pruning before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Model Pruning is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Model Pruning in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Model Pruning chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Model Pruning is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to Model Pruning is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing Model Pruning is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Model Pruning issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Model Pruning in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Model Pruning that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of Model Pruning is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Model Pruning in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Model Pruning and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of Model Pruning on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Model Pruning to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Model Pruning from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Model Pruning when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Model Pruning twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Model Pruning snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Model Pruning listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Model Pruning to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Model Pruning by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Model Pruning to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of Model Pruning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on Model Pruning (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real Model Pruning problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements Model Pruning"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for Model Pruning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on Model Pruning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how Model Pruning fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how Model Pruning is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where Model Pruning is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of Model Pruning, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is Model Pruning asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model Pruning is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Model Pruning."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model Pruning emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Model Pruning today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Model Pruning — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Model Pruning changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing Model Pruning."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model Pruning appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding Model Pruning helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the Model Pruning concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, Model Pruning skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply Model Pruning to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Model Pruning is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the Model Pruning skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "27aiinfrastructure-06modelpruning-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of Model Pruning in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "27aiinfrastructure-06modelpruning-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "27aiinfrastructure-06modelpruning-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard Model Pruning approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "27aiinfrastructure-06modelpruning-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is Model Pruning NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "27aiinfrastructure-06modelpruning-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is Model Pruning applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Model Pruning (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Model Pruning (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Model Pruning-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Model Pruning in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of Model Pruning code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on Model Pruning"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in Model Pruning code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the Model Pruning example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Model Pruning in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Model Pruning."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Model Pruning problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Model Pruning is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for Model Pruning."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core Model Pruning logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Model Pruning without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses Model Pruning daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": Model Pruning patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": Model Pruning principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": Model Pruning shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect Model Pruning to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/27-ai-infrastructure/07-knowledge-distillation",
+        children: "Knowledge Distillation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model Pruning, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Model Pruning depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

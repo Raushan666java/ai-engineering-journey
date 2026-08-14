@@ -1,0 +1,2217 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[30179],{
+
+/***/ 34893
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_20_portfolio_branding_01_github_profile_optimization_md_7b7_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-20-portfolio-branding-01-github-profile-optimization-md-7b7.json
+const site_docs_courses_ai_engineering_placement_20_portfolio_branding_01_github_profile_optimization_md_7b7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/portfolio-branding/01-github-profile-optimization","title":"GitHub Profile Optimization","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization.md","sourceDirName":"courses/ai-engineering-placement/20-portfolio-branding","slug":"/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization","permalink":"/ai-engineering-journey/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":223,"frontMatter":{"id":"01-github-profile-optimization","slug":"/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization","title":"GitHub Profile Optimization","sidebar_label":"GitHub Profile Optimization","sidebar_position":223},"sidebar":"placementSidebar","previous":{"title":"20 — Portfolio & Personal Branding","permalink":"/ai-engineering-journey/ai-engineering-placement/20-portfolio-branding"},"next":{"title":"Repository Structure","permalink":"/ai-engineering-journey/ai-engineering-placement/20-portfolio-branding/02-repository-structure"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization.md
+
+
+const frontMatter = {
+	id: '01-github-profile-optimization',
+	slug: '/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization',
+	title: 'GitHub Profile Optimization',
+	sidebar_label: 'GitHub Profile Optimization',
+	sidebar_position: 223
+};
+const contentTitle = 'GitHub Profile Optimization';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Profile README Structure",
+  "id": "profile-readme-structure",
+  "level": 2
+}, {
+  "value": "1.1 Profile README",
+  "id": "11-profile-readme",
+  "level": 2
+}, {
+  "value": "1.2 Pinned Repositories",
+  "id": "12-pinned-repositories",
+  "level": 2
+}, {
+  "value": "1.3 Contribution Graph",
+  "id": "13-contribution-graph",
+  "level": 2
+}, {
+  "value": "1.4 Badges &amp; Metrics",
+  "id": "14-badges--metrics",
+  "level": 2
+}, {
+  "value": "1.5 Personal Branding",
+  "id": "15-personal-branding",
+  "level": 2
+}, {
+  "value": "1.6 Networking",
+  "id": "16-networking",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Q&amp;A",
+  "id": "qa",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 3
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 3
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 3
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse-1",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank-1",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions-1",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions-1",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "github-profile-optimization",
+        children: "GitHub Profile Optimization"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a professional GitHub profile README"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Curate pinned repositories that showcase your best work"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimize contribution graph with consistent activity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add profile badges, stats, and metrics widgets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement a personal brand across your GitHub presence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network through GitHub by contributing and engaging"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your portfolio is your proof of skills. GitHub profiles, technical blogs, and LinkedIn optimization help you stand out. This module covers personal branding for AI engineers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic programming knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of data structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding github profile optimization is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how github profile optimization works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Profile README"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Personal introduction, skills, links"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pinned Repositories"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Curating your 6 best projects"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Contribution Graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistency, green squares, daily commits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Badges & Metrics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GitHub stats, tech stack, visitor counts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Personal Branding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Username, bio, consistent messaging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Networking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Following, starring, engaging with community"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "profile-readme-structure",
+      children: "Profile README Structure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    A[Profile README] --> B[Header: Name + Tagline]\n    A --> C[About Me]\n    A --> D[Skills & Technologies]\n    A --> E[Stats Widgets]\n    A --> F[Pinned Repos]\n    A --> G[GitHub Stats]\n    A --> H[Contact & Social]\n    A --> I[Fun Section / Blog Posts]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-profile-readme",
+      children: "1.1 Profile README"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your GitHub profile README is the first thing recruiters see. It should quickly communicate who you are, what you build, and what you're looking for."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# profile_readme_generator.py\n\n## A tool to generate your GitHub profile README\n\ndef generate_profile_readme(name: str, tagline: str, about: str,\n                             skills: list, social_links: dict,\n                             blog_posts: list = None) -> str:\n    \"\"\"Generate a markdown profile README.\"\"\"\n\n    skills_badges = \" \".join(\n        f\"![{skill}](https://img.shields.io/badge/{skill}-informational?style=flat)\"\n        for skill in skills\n    )\n\n    social_badges = \"\"\n    if \"linkedin\" in social_links:\n        social_badges += f\"[![LinkedIn](https://img.shields.io/badge/LinkedIn-{social_links['linkedin']})](https://linkedin.com/in/{social_links['linkedin']}) \"\n    if \"twitter\" in social_links:\n        social_badges += f\"[![Twitter](https://img.shields.io/badge/Twitter-{social_links['twitter']})](https://twitter.com/{social_links['twitter']}) \"\n    if \"website\" in social_links:\n        social_badges += f\"[![Website](https://img.shields.io/badge/Website-{social_links['website']})]({social_links['website']}) \"\n\n    readme = f\"\"\"# Hi there, I'm {name}! 👋\n\n{tagline}\n\n## 🚀 About Me\n{about}\n\n## 🛠️ Skills\n{skills_badges}\n\n## 📊 GitHub Stats\n![GitHub Stats](https://github-readme-stats.vercel.app/api?username={social_links.get('github', '')}&show_icons=true&theme=radical)\n\n![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username={social_links.get('github', '')}&layout=compact)\n\n## 📫 Connect With Me\n{social_badges}\n\"\"\"\n    if blog_posts:\n        readme += \"\\n## 📝 Latest Blog Posts\\n\"\n        for post in blog_posts[:5]:\n            readme += f\"- [{post['title']}]({post['url']})\\n\"\n\n    return readme\n\ndef generate_profile_readme_file():\n    \"\"\"Example: Generate a complete profile README.\"\"\"\n    readme = generate_profile_readme(\n        name=\"Your Name\",\n        tagline=\"AI/ML Engineer | Building Intelligent Systems\",\n        about=\"I build production ML systems and love open source. Currently working on LLM-powered applications.\",\n        skills=[\"Python\", \"PyTorch\", \"FastAPI\", \"Docker\", \"Kubernetes\", \"AWS\", \"TensorFlow\", \"TypeScript\"],\n        social_links={\n            \"github\": \"yourusername\",\n            \"linkedin\": \"yourusername\",\n            \"twitter\": \"yourhandle\",\n            \"website\": \"https://yourwebsite.com\",\n        },\n        blog_posts=[\n            {\"title\": \"Building Production RAG Systems\", \"url\": \"https://blog.com/rag\"},\n            {\"title\": \"A Complete Guide to MLOps\", \"url\": \"https://blog.com/mlops\"},\n        ]\n    )\n    with open(\"PROFILE.md\", \"w\") as f:\n        f.write(readme)\n    return readme\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-pinned-repositories",
+      children: "1.2 Pinned Repositories"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your 6 pinned repos should represent your best, most impressive work. Each should have a great README, clear description, and active maintenance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class PinnedRepo:\n    \"\"\"Schema for a pinned repository.\"\"\"\n\n    def __init__(self, name: str, description: str, tech_stack: list,\n                 stars: int = 0, is_original: bool = True):\n        self.name = name\n        self.description = description\n        self.tech_stack = tech_stack\n        self.stars = stars\n        self.is_original = is_original\n\n    def readme_quality_score(self) -> int:\n        score = 0\n        checks = [\n            len(self.description) > 50,\n            len(self.tech_stack) >= 2,\n            self.stars > 10,\n        ]\n        return sum(checks) * 33\n\nclass PinnedRepoSelector:\n    \"\"\"Select and recommend which repos to pin.\"\"\"\n\n    def __init__(self, repos: list):\n        self.repos = repos\n\n    def rank_for_pinning(self) -> list:\n        def score(repo):\n            s = 0\n            s += min(repo.stars / 10, 30)\n            s += repo.readme_quality_score()\n            s += 20 if repo.is_original else 0\n            if len(repo.tech_stack) >= 3:\n                s += 15\n            return s\n\n        return sorted(self.repos, key=score, reverse=True)\n\n    def recommend_pins(self, n: int = 6) -> list:\n        ranked = self.rank_for_pinning()\n        diversity = self._ensure_category_diversity(ranked)\n        return diversity[:n]\n\n    def _ensure_category_diversity(self, repos: list) -> list:\n        categories = {\n            \"ML/AI\": [],\n            \"Backend\": [],\n            \"Full Stack\": [],\n            \"DevOps\": [],\n            \"Data\": [],\n            \"Tools\": [],\n        }\n        for repo in repos:\n            for cat_keywords in categories:\n                if any(kw in repo.tech_stack for kw in cat_keywords.split(\"/\")):\n                    categories[cat_keywords].append(repo)\n                    break\n\n        result = []\n        for cat in categories:\n            if categories[cat]:\n                result.append(categories[cat][0])\n                categories[cat] = categories[cat][1:]\n        for cat in categories:\n            result.extend(categories[cat])\n        return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-contribution-graph",
+      children: "1.3 Contribution Graph"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A consistent contribution graph signals dedication. Aim for small commits daily rather than large bursts."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from datetime import datetime, timedelta\nimport random\n\nclass ContributionTracker:\n    \"\"\"Track and plan GitHub contributions.\"\"\"\n\n    def __init__(self, username: str):\n        self.username = username\n        self.contributions = {}\n        self.goal_per_day = 1\n\n    def plan_contributions(self, days: int = 90) -> dict:\n        \"\"\"Plan contributions for the next N days.\"\"\"\n        today = datetime.now()\n        plan = {}\n        for i in range(days):\n            date = today + timedelta(days=i)\n            if date.weekday() < 5:\n                plan[date.date().isoformat()] = random.randint(1, 3)\n            else:\n                plan[date.date().isoformat()] = random.randint(0, 1)\n        return plan\n\n    def streak_days(self) -> int:\n        \"\"\"Count current contribution streak.\"\"\"\n        streak = 0\n        today = datetime.now().date()\n        for i in range(365):\n            check = today - timedelta(days=i)\n            if self.contributions.get(check.isoformat(), 0) > 0:\n                streak += 1\n            else:\n                break\n        return streak\n\n    def contribution_heatmap(self) -> dict:\n        \"\"\"Generate data for contribution heatmap visualization.\"\"\"\n        heatmap = {}\n        for i in range(365):\n            date = (datetime.now() - timedelta(days=i)).date()\n            count = self.contributions.get(date.isoformat(), 0)\n            week = date.isocalendar()[1]\n            if week not in heatmap:\n                heatmap[week] = {}\n            heatmap[week][date.weekday()] = count\n        return heatmap\n\nclass CommitScheduler:\n    \"\"\"Schedule regular commits for contribution consistency.\"\"\"\n\n    def __init__(self, repo_path: str):\n        self.repo_path = repo_path\n\n    def create_daily_commit(self, content: str, filename: str = \"daily-log.md\"):\n        \"\"\"Create a small daily commit to maintain streak.\"\"\"\n        import os\n        filepath = os.path.join(self.repo_path, filename)\n        with open(filepath, \"a\") as f:\n            f.write(f\"\\n- {datetime.now().isoformat()}: {content}\")\n        os.system(f\"cd {self.repo_path} && git add . && git commit -m 'Daily update: {content[:50]}' && git push\")\n\n    def schedule_commits(self, plan: dict):\n        \"\"\"Schedule commits according to a plan.\"\"\"\n        for date_str, count in plan.items():\n            print(f\"Schedule {count} commits for {date_str}\")\n\nclass ContributionQuality:\n    \"\"\"Evaluate the quality of contributions.\"\"\"\n\n    @staticmethod\n    def score_contribution(commit_message: str, files_changed: int,\n                           lines_added: int) -> int:\n        score = 0\n        if len(commit_message) > 15:\n            score += 20\n        if files_changed > 0:\n            score += 10\n        if 10 <= lines_added <= 200:\n            score += 30\n        elif lines_added > 200:\n            score += 10\n        return score\n\n    @staticmethod\n    def meaningful_contribution(description: str) -> bool:\n        keywords = [\"feature\", \"fix\", \"refactor\", \"optimize\", \"document\",\n                     \"add\", \"update\", \"improve\", \"implement\"]\n        return any(kw in description.lower() for kw in keywords)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-badges--metrics",
+      children: "1.4 Badges & Metrics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Dynamic badges and stats widgets add professionalism to your profile."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class BadgeGenerator:\n    \"\"\"Generate shields.io badges for GitHub profile.\"\"\"\n\n    @staticmethod\n    def skill_badge(skill_name: str, color: str = \"blue\") -> str:\n        return f\"https://img.shields.io/badge/{skill_name.replace(' ', '%20')}-{color}?style=for-the-badge&logo={skill_name.lower()}\"\n\n    @staticmethod\n    def social_badge(platform: str, username: str) -> str:\n        return f\"https://img.shields.io/badge/{platform}-{username}-blue?style=social&logo={platform.lower()}\"\n\n    @staticmethod\n    def metrics_badge(label: str, value: str, color: str = \"green\") -> str:\n        return f\"https://img.shields.io/badge/{label}-{value}-{color}\"\n\nclass ProfileMetrics:\n    \"\"\"Aggregate profile metrics from GitHub API.\"\"\"\n\n    def __init__(self, username: str):\n        self.username = username\n\n    def fetch_stats(self) -> dict:\n        return {\n            \"total_repos\": 25,\n            \"total_stars\": 150,\n            \"total_forks\": 45,\n            \"total_contributions\": 1200,\n            \"longest_streak\": 45,\n            \"current_streak\": 12,\n        }\n\n    def visitor_badge(self) -> str:\n        return f\"https://visitor-badge.glitch.me/badge?page_id={self.username}.{self.username}\"\n\nclass ProfileReadmeTemplates:\n    \"\"\"Profile README template library.\"\"\"\n\n    @staticmethod\n    def minimal():\n        return \"\"\"# Hi, I'm [Name] 👋\n\nI build things with code.\n\n- 🔭 Currently working on [project]\n- 🌱 Learning [technology]\n- 👯 Looking to collaborate on [area]\n- 📫 Reach me at: [email]\n\n![Stats](https://github-readme-stats.vercel.app/api?username=user)\"\"\"\n\n    @staticmethod\n    def technical():\n        return \"\"\"# Hi, I'm [Name] 🚀\n\n[Tagline]\n\n## About\n[2-3 sentences about your focus]\n\n## Tech Stack\n[Badges here]\n\n## 📈 GitHub Stats\n[Stats cards here]\n\n## — Links\n[Social badges here]\"\"\"\n\n    @staticmethod\n    def creative():\n        return \"\"\"# [Name]\n\n*[Tagline]*\n\n---\n\n[ASCII art or creative intro]\n\n---\n\n### What I Do\n[Description with emojis]\n\n### Tech I Use\n[Fun tech badges]\n\n### Latest [Blog/Projects]\n[Dynamic content]\n\n---\n\n> *\"[Personal motto]\"*\n\"\"\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "15-personal-branding",
+      children: "1.5 Personal Branding"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your GitHub presence is part of your personal brand. Consistency across username, bio, and visual elements builds recognition."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class PersonalBrand:\n    \"\"\"Define and maintain your personal brand.\"\"\"\n\n    def __init__(self, name: str, tagline: str, username: str):\n        self.name = name\n        self.tagline = tagline\n        self.username = username\n        self.brand_colors = [\"#2b3137\", \"#586069\", \"#0366d6\"]\n        self.brand_voice = \"professional\"\n\n    def check_consistency(self, platforms: dict) -> dict:\n        results = {}\n        for platform, data in platforms.items():\n            score = 0\n            if data.get(\"bio\", \"\").startswith(self.tagline[:20]):\n                score += 30\n            if data.get(\"username\") == self.username:\n                score += 40\n            if data.get(\"avatar_url\") == f\"https://github.com/{self.username}.png\":\n                score += 30\n            results[platform] = score\n        return results\n\nclass BioGenerator:\n    \"\"\"Generate consistent bios across platforms.\"\"\"\n\n    def __init__(self, role: str, skills: list, location: str):\n        self.role = role\n        self.skills = skills\n        self.location = location\n\n    def short_bio(self) -> str:\n        skills_str = \", \".join(self.skills[:3])\n        return f\"{self.role} | {skills_str} | {self.location}\"\n\n    def medium_bio(self) -> str:\n        skills_str = \", \".join(self.skills[:5])\n        return f\"{self.role} | Building with {skills_str} | Open source enthusiast | {self.location}\"\n\n    def long_bio(self) -> str:\n        return f\"{self.role} passionate about building production-ready AI systems. Skilled in {', '.join(self.skills)}. Open source contributor and technical writer. Currently exploring LLMs and RAG systems. Based in {self.location}.\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "16-networking",
+      children: "1.6 Networking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "GitHub is a social network. Engaging with others' projects builds your reputation and network."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class GitHubNetworker:\n    \"\"\"Strategies for building your GitHub network.\"\"\"\n\n    def __init__(self, username: str):\n        self.username = username\n        self.daily_actions = []\n\n    def suggest_daily_actions(self) -> list:\n        return [\n            \"Star 3 interesting repos in your field\",\n            \"Follow 2 active developers in AI/ML\",\n            \"Comment on 1 open issue with helpful insight\",\n            \"Submit 1 small PR (docs, bug fix)\",\n            \"Review 1 open PR in a project you use\",\n        ]\n\n    def engagement_score(self, stars: int, forks: int,\n                          followers: int, following: int) -> float:\n        base = stars + forks * 2 + followers * 3\n        reciprocity = min(following / max(followers, 1), 1.0)\n        return base * (0.7 + 0.3 * reciprocity)\n\n    def find_projects_to_contribute(self, interests: list) -> list:\n        return [\n            {\"name\": \"fastapi/fastapi\", \"good_first_issues\": 5},\n            {\"name\": \"langchain-ai/langchain\", \"good_first_issues\": 8},\n            {\"name\": \"pytorch/pytorch\", \"good_first_issues\": 12},\n        ]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your GitHub profile is your developer resume. A well-crafted profile README, curated pinned repos, and a consistent contribution graph create a strong first impression. Badges and.\nstats widgets add visual polish. Maintaining a consistent brand across platforms builds recognition. Active engagement through starring, following, and contributing grows your network organically. The key is consistency — daily small contributions compound into a professional profile that attracts recruiters and.\ncollaborators."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implementation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Write a profile README that tells your story"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Include who you are, your skills, and what you're building"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pin 6 diverse repos showcasing your best work"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mix original projects, contributions, and demos"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Commit something daily to maintain your streak"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Even a documentation fix or a small update counts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Add GitHub Stats and Top Languages badges"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use vercel.app for auto-updating stats"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use consistent username and bio across platforms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same handle on GitHub, LinkedIn, Twitter"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Engage with 3-5 repos weekly via stars, issues, or PRs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Builds your network and discoverability"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "qa",
+      children: "Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q1",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "What should I include in my GitHub profile README?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Profile README best practices."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "An effective profile README includes: (1) A header with your name and tagline. (2) A brief \"About Me\" section (2-3 sentences). (3) Your tech stack as badges. (4) GitHub Stats and Top Languages cards. (5) Pinned repositories highlight. (6) Links to your blog, LinkedIn, and Twitter. (7) Optional: latest blog posts, a \"Currently Working On\" section, or a fun element (quote, GIF). Keep it concise — recruiters spend ~30 seconds scanning your profile."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q2",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "How do I maintain a consistent GitHub contribution graph?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Building the green squares."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Strategies: (1) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Commit daily"
+          }), " — even small commits count. Maintain a daily-log repo where you append notes. (2) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Automate with GitHub Actions"
+          }), " — schedule daily tasks that generate commits. (3) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Work on active projects"
+          }), " — regular work naturally produces commits. (4) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Contribute to open source"
+          }), " — review PRs, fix docs, address issues. (5) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Use meaningful git history"
+          }), " — break large features into atomic commits rather than one massive push. Consistency matters more than volume — 1 commit per day beats 20 commits in a single day."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q3",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "Which repositories should I pin to my profile?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Curating your best work."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Choose 6 repos that demonstrate range and quality: (1) Your best original project (most stars or most technically impressive). (2) A project that showcases your primary skill (e.g., an ML model, a full-stack app). (3) A contribution to a popular open-source project (shows collaboration skills). (4) A project with great documentation and testing. (5) A smaller completed project (shows follow-through). (6) A demo or experimental project that shows curiosity. Aim for diversity in tech stack — don't pin 6 Python projects if you also know TypeScript."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q4",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "What badges and stats should I add to my profile?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Profile widgets and visual elements."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Recommended widgets: (1) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "GitHub Stats Card"
+          }), " — shows stars, commits, PRs, issues. (2) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Top Languages"
+          }), " — language breakdown by repo bytes. (3) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visitor Counter"
+          }), " — shows profile traffic (optional). (4) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Tech Stack Badges"
+          }), " — shields.io badges for your skills. (5) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "WakaTime Stats"
+          }), " — coding activity metrics (if you use WakaTime). (6) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Streak Stats"
+          }), " — contribution streak counter. Avoid overcrowding — pick 3-4 widgets that best represent you. GitHub Readme Stats (vercel.app) provides the most popular cards."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q5",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "How do I build my GitHub following organically?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Growing your developer network."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Organic growth strategies: (1) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Create valuable content"
+          }), " — well-documented projects with clear READMEs attract users. (2) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Contribute to popular projects"
+          }), " — your name appears in commit history visible to thousands. (3) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Engage authentically"
+          }), " — leave helpful comments on issues, review PRs thoroughly. (4) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Share your work"
+          }), " — post your projects on Reddit, Hacker News, Twitter with \"built with\" tags. (5) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Be consistent"
+          }), " — regular activity keeps your profile visible in feeds. (6) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Follow relevant people"
+          }), " — follow engineers at companies you admire; some will follow back."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q6",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "Should I use a separate GitHub account for work and personal?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Account separation strategy."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Pros of separate accounts: clean separation of work and personal projects, professional security. Cons: split contribution graph, harder to build a single brand. ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Recommendation:"
+          }), " Use one account for everything. Recruiters want to see your work contributions too — they demonstrate real-world experience. If your employer requires separation, use your personal email for personal repos and work email for work repos within the same account. Only maintain a separate account if you have a specific reason (contractor restrictions, very different professional identities)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "How often should I update my GitHub profile?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Profile maintenance cadence."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Profile maintenance: (1) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Profile README"
+          }), " — update quarterly or when you learn major new skills. (2) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pinned repos"
+          }), " — rotate when you complete a significant new project. (3) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Bio"
+          }), " — update when your role or focus changes. (4) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Daily"
+          }), " — commit at least once per day (even small). (5) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Weekly"
+          }), " — star interesting repos, follow new people. (6) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Monthly"
+          }), " — review and archive old repos, update READMEs. A stale profile (6+ months without updates) suggests inactivity, which recruiters notice."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "port-s01-q8",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        className: "tp-qa-question",
+        children: "What makes a repository stand out to recruiters?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+        className: "tp-qa-context",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "Repo quality signals."
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Recruiter-friendly repos have: (1) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Great README"
+          }), " — what, why, how to use, architecture diagram, demo GIF. (2) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Clean code"
+          }), " — consistent style, proper naming, type hints. (3) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Tests"
+          }), " — unit, integration, and CI badge showing passing status. (4) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Documentation"
+          }), " — API docs, setup instructions, contribution guide. (5) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Active maintenance"
+          }), " — recent commits, responded-to issues. (6) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "CI/CD pipeline"
+          }), " — GitHub Actions, test coverage badge. (7) ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "License"
+          }), " — MIT or Apache-2.0 shows professionalism. A repo with all seven signals is essentially a mini portfolio piece."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-actions",
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: How do recruiters evaluate a GitHub profile during technical screening?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Recruiters and hiring managers typically scan a GitHub profile in 30-60 seconds. They look at: (1) Profile README — does it clearly communicate who you are and.\nwhat you build? (2) Pinned repositories — are the 6 pinned repos diverse and high-quality? (3) Contribution graph — is it consistently green (daily commits over months) or.\nsparse? (4) Code quality in top repos — clean code, tests, documentation, CI badges. (5) Open source contributions — stars, forks,.\nPRs to other projects. (6) Bio and links — does it link to LinkedIn, portfolio, and resume? A strong profile signals engineering professionalism: consistent activity,.\nwell-maintained repos, and clear communication. A stale or empty profile raises red flags about the candidate's passion for engineering."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: What makes a GitHub profile README stand out to hiring managers?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "An outstanding profile README includes: (1) A concise header with name, role, and a compelling tagline — not just \"Software Engineer\" but.\n\"AI Engineer building LLM-powered products.\" (2) Tech stack badges showing proficiency levels — using shields.io with categorized skills (Languages, Frameworks, Tools,.\nCloud). (3) GitHub Stats card — auto-updating stats from github-readme-stats. (4) A \"Currently working on\" section showing active projects. (5) Links to blog,.\nportfolio, LinkedIn, and Twitter. (6) Optional personality elements — a quote, a weekly Wakatime coding stats card, or a joke about your tech stack. Keep it scannable — use headings,.\nbullet points, and emojis sparingly. The goal is to give a complete picture of who you are as an engineer in the 10 seconds most visitors will spend."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: How do you maintain a consistent contribution streak on GitHub?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Maintaining a daily contribution streak requires strategy: (1) Commit small fixes — a documentation typo, a README improvement, or a single test counts as a contribution. (2) Automate where possible — scheduled GitHub Actions that update data files (e.g.,.\npulling latest blog posts, updating Wakatime stats). (3) Break large features into small commits — instead of one large commit, commit working increments daily. (4) Use the \"git commit --allow-empty\" trick sparingly — it creates a commit but.\ndoesn't add value; use it only when you have no other options. (5) Contribute to open source — fixing a typo in someone else's docs counts and.\nbuilds your network. (6) Plan for weekends and vacations — pre-commit or schedule commits using cron + GitHub API. The streak itself isn't the goal — the habit of daily coding practice is what matters."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: How do you choose which repositories to pin on your GitHub profile?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Pinned repos are the first thing visitors see — choose strategically: (1) Show diversity — include an original project (something you built from scratch),.\na contribution to a popular open-source project, and a project demonstrating your primary technical skills. (2) Lead with your best — your best-rated (by stars,.\nquality) or most relevant to your target role should be first. (3) Show different aspects — one data science project, one full-stack app,.\none AI/ML project, one DevOps/infra project, one library/tool, and one documentation site. (4) Keep fresh — rotate pins when you complete a significant new project. (5) Each pinned repo must have: a good README,.\nCI badge, tests, and a demo (if applicable). A pinned repo without a README or tests sends a negative signal. Update pinned repos at least quarterly."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: How do you use GitHub Actions in your profile to showcase CI/CD skills?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "GitHub Actions demonstrate DevOps maturity: (1) CI workflows — set up automated testing (pytest), linting (ruff), and type checking (mypy) on every PR. (2) Coverage reporting — add Codecov or.\nCoveralls integration with a badge in the README. (3) Scheduled workflows — a weekly workflow that updates your profile README with latest blog posts or.\nWakatime stats. (4) Deployment — CD workflow that deploys to cloud (AWS/GCP/Azure) on push to main. (5) Multi-platform testing — test on Ubuntu,.\nWindows, and macOS with matrix builds. (6) Docker build — automatic build and push to Docker Hub or GitHub Container Registry. Each workflow file in `.github/workflows/` should have a clear purpose and.\nbe well-commented. Having 3-5 active workflows across your repos signals that you understand production software engineering beyond just writing code."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: How do you create a GitHub profile README that updates automatically?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "# .github/workflows/update-profile.yml\nname: Update Profile README\non:\n  schedule: [{ cron: '0 0 * * 1' }]  # Weekly on Monday\n  workflow_dispatch:  # Manual trigger\njobs:\n  update:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-node@v4\n      - run: npm install && npm run generate-readme\n      - run: |\n          git config user.name \"github-actions[bot]\"\n          git config user.email \"github-actions[bot]@users.noreply.github.com\"\n          git add README.md\n          git commit -m \"docs: auto-update profile README\"\n          git push"
+          })
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "An auto-updating profile README uses a scheduled GitHub Action to run a script that fetches dynamic data (latest blog posts, Wakatime stats,.\nGitHub stats, recent activity) and regenerates the README. The script can be a JavaScript/Python file that: (1) Fetches posts from Dev.to or.\nyour blog RSS feed. (2) Gets Wakatime coding stats via API. (3) Retrieves latest GitHub activity via GraphQL API. (4) Assembles the README from templates. The action commits and.\npushes changes automatically. This keeps your profile fresh without manual updates."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q7: How do you handle branding consistency across GitHub, LinkedIn, and portfolio?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Brand consistency signals professionalism: (1) Username — use the same handle across all platforms (github.com/yourname, linkedin.com/in/yourname, yourname.com). If your desired username is taken,.\nadd a consistent prefix/suffix. (2) Avatar — use the same professional headshot or logo across all platforms. (3) Bio tagline — consistent one-line description: \"AI Engineer | ML & NLP | Building LLM Products.\" The same line should appear on GitHub bio,.\nLinkedIn headline, and portfolio hero. (4) Color scheme — use consistent colors in GitHub badges, portfolio design, and presentation templates. (5) Links — every profile should link to the others (GitHub → LinkedIn → Portfolio → Twitter). Conduct a quarterly brand.\naudit: visit all your profiles side-by-side and check for inconsistencies in name, bio, avatar, and links. Fix any platform that lags behind."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q8: How do you use GitHub sponsors or donations on your profile?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "GitHub Sponsors can be used on your profile even if you don't expect significant donations: (1) Enable Sponsors — link a Stripe account or.\nPayPal. (2) Add the sponsor button to your profile README: `[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-pink)](https://github.com/sponsors/yourname)`. (3) Use sponsor tiers — \"Coffee\" ($3/mo), \"Supporter\" ($10/mo), \"Champion\" ($50/mo) with tier-specific perks (early access,.\nfeature requests, name in README). (4) Even if you don't earn from it, the sponsor button signals you understand the open source economy and.\nvalue community support. (5) For active projects, consider GitHub Sponsors for sustainable maintenance. Many engineers use sponsors to fund their open source work,.\nwhich looks great on a resume as it demonstrates community building and project leadership."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q9: How do you organize a monorepo vs. multiple repos for your portfolio projects?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Organization strategy: (1) Monorepo — use a single repo with subdirectories for small projects if you want to demonstrate consistent coding style across projects. Example structure: `portfolio/{project1,.\nproject2, project3}/`. Best for showcasing breadth with consistent tooling. (2) Multi-repo — separate repos for each project, each with its own README,.\nCI/CD, and documentation. Best for depth — each repo can be a self-contained showcase. (3) Template approach — create a project template repo with your standard setup (Docker,.\nCI, linting, testing configs) and use it as a starting point for all projects. This demonstrates software engineering best practices. (4) Recommendation — use multi-repo for.\nsignificant projects (each with 500+ commits) and a monorepo for smaller utilities and experiments. The pinned repos on your profile should link to individual repos for.\nmaximum impact."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf01-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q10: How do you measure the impact of your GitHub profile optimization?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Track these metrics before and after optimization: (1) Profile views — GitHub's traffic analytics shows unique visitors and views over 14 days. Expect 50-200 views/week for.\nan active profile. (2) Follower growth — track followers gained per month after optimization. (3) Repo stars — monitor stars on pinned repos. A good README can increase stars by 2-5—. (4) Contribution graph consistency — percentage of days with commits. Target >70% for.\na strong signal. (5) Recruiter outreach — track inbound messages mentioning your GitHub. This is the most important metric. (6) Profile README engagement — if you have a visitor.\ncounter badge, track daily visitors. (7) Connection requests — from people who mention \"saw your GitHub profile.\" Aim for a 20% increase in profile views and.\n2-3— increase in relevant recruiter messages within 3 months of optimization."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": What is the primary purpose of a GitHub profile README?\na) Store project documentation\nb) Showcase skills, projects, and personality to visitors\nc) Replace a personal website\nd) Automate CI/CD pipelines"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf-01-q1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "The profile README is the first thing visitors see — it showcases skills, pinned repos, and personal brand."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": Which GitHub Stats card shows streak data?\na) GitHub Readme Stats\nb) Streak Stats\nc) GitHub Streak Stats\nd) Commit Streak"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf-01-q2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "GitHub Streak Stats (streak-stats.demolab.com) shows commit streak data."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": What is the recommended layout for a profile README?\na) Single paragraph\nb) Multi-section with About, Tech Stack, Stats, Links\nc) Only a logo\nd) List of repositories"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf-01-q3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "A multi-section layout with About Me, Tech Stack, GitHub Stats, pinned repos, and Connect links is recommended."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": How many pinned repositories can a GitHub profile display?\na) 3\nb) 4\nc) 6\nd) 8"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf-01-q4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "GitHub allows up to 6 pinned repositories on a profile."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": Which badge service is commonly used in GitHub profiles?\na) Badge.io\nb) Shields.io\nc) Badgr\nd) Open Badges"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "pf-01-q5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Shields.io is the most popular badge service for GitHub profiles, offering static and dynamic badges."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "T/F 1"
+      }), ": This topic is fundamental to AI engineering.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": True — Understanding portfolio branding is essential for building production AI systems."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "T/F 2"
+      }), ": The concepts in this chapter are only used in interviews.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": False — These concepts are used daily in real-world AI engineering work."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "T/F 3"
+      }), ": Time/space complexity analysis applies to portfolio branding.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": True — Every algorithm and system has performance characteristics to analyze."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "T/F 4"
+      }), ": portfolio branding concepts are independent of each other.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": False — Most concepts build on each other and are interconnected."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "T/F 5"
+      }), ": Real-world applications often combine multiple concepts from this chapter.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": True — Production systems use combinations of these fundamental concepts."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FIB 1"
+      }), ": The key concept in this chapter is ________.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": [Review the chapter's Learning Objectives for the specific answer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FIB 2"
+      }), ": In portfolio branding, the time complexity of the basic operation is ________.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": [Depends on the specific operation — check the Theory section]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario 1"
+      }), ": How would you apply the concepts from this chapter in a real AI engineering project?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": [Think about how the specific topic applies to: data processing pipelines, model training infrastructure, production systems, or interview scenarios]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output 1"
+      }), ": What is the time complexity of the main algorithm discussed in this chapter?\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": [Check the Theory section for the specific complexity analysis]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Not understanding the fundamental concepts before applying them"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Skipping edge cases in implementation"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Not analyzing time/space complexity"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Forgetting to handle null/empty inputs"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Not practicing enough problems to build pattern recognition1. ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Profile README"
+          }), ": Generate your profile README. Include name, tagline, about, skills badges, GitHub stats, and social links. Commit it to a new repo named ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "username/username"
+          }), ". Preview how it renders."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pinned Repo Audit"
+          }), ": Review your existing repos. Score each on: README quality, testing, docs, stars, and recency. Select the top 6. Pin them. What was the weakest area across your repos?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Contribution Plan"
+          }), ": Create a 90-day contribution plan. Schedule daily commits (docs, small features, fixes). Track your streak. At the end, compare your contribution graph before and after. Did your network grow?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Badge System"
+          }), ": Add 10 skill badges, GitHub stats card, top languages card, and visitor counter to your profile README. Ensure badges link to relevant tools/skills."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Brand Consistency Audit"
+          }), ": Check your username, bio, avatar, and tagline across GitHub, LinkedIn, Twitter, and your portfolio website. Score each platform on consistency (1-10). Fix the lowest-scoring platform."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Open Source Contribution"
+          }), ": Find a project with \"good first issue\" label. Submit a meaningful PR (code, test, or documentation). Track its progress. How many days from submission to merge?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Profile Analytics"
+          }), ": Set up a visitor badge on your profile. After 1 week, analyze: total visits, unique visitors (approximate), peak traffic days. Correlate with your posting/contribution activity."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Repository Makeover"
+          }), ": Pick your most-starred repo. Improve: README (add demo GIF, architecture diagram), add tests, set up CI, add license. Measure star growth over the followi"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of GitHub Profile Optimization in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates GitHub Profile Optimization."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding GitHub Profile Optimization. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on GitHub Profile Optimization from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare GitHub Profile Optimization with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on GitHub Profile Optimization."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does GitHub Profile Optimization behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of GitHub Profile Optimization run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of GitHub Profile Optimization that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name GitHub Profile Optimization explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using GitHub Profile Optimization\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies GitHub Profile Optimization to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside GitHub Profile Optimization (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of GitHub Profile Optimization and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a GitHub Profile Optimization-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic GitHub Profile Optimization interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply GitHub Profile Optimization in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse-1",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " GitHub Profile Optimization builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for GitHub Profile Optimization before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for GitHub Profile Optimization is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for GitHub Profile Optimization in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the GitHub Profile Optimization chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank-1",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers GitHub Profile Optimization is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to GitHub Profile Optimization is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing GitHub Profile Optimization is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug GitHub Profile Optimization issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to GitHub Profile Optimization in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions-1",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving GitHub Profile Optimization that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of GitHub Profile Optimization is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain GitHub Profile Optimization in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for GitHub Profile Optimization and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions-1",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of GitHub Profile Optimization on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain GitHub Profile Optimization to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of GitHub Profile Optimization from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered GitHub Profile Optimization when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining GitHub Profile Optimization twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own GitHub Profile Optimization snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of GitHub Profile Optimization listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link GitHub Profile Optimization to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of GitHub Profile Optimization by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain GitHub Profile Optimization to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of GitHub Profile Optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on GitHub Profile Optimization (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real GitHub Profile Optimization problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements GitHub Profile Optimization"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for GitHub Profile Optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on GitHub Profile Optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how GitHub Profile Optimization fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how GitHub Profile Optimization is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where GitHub Profile Optimization is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of GitHub Profile Optimization, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is GitHub Profile Optimization asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub Profile Optimization is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with GitHub Profile Optimization."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub Profile Optimization emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for GitHub Profile Optimization today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about GitHub Profile Optimization — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around GitHub Profile Optimization changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing GitHub Profile Optimization."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub Profile Optimization appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding GitHub Profile Optimization helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the GitHub Profile Optimization concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, GitHub Profile Optimization skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply GitHub Profile Optimization to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GitHub Profile Optimization is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the GitHub Profile Optimization skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "20portfoliobranding-01githubprofileoptimization-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of GitHub Profile Optimization in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "20portfoliobranding-01githubprofileoptimization-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "20portfoliobranding-01githubprofileoptimization-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard GitHub Profile Optimization approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "20portfoliobranding-01githubprofileoptimization-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is GitHub Profile Optimization NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "20portfoliobranding-01githubprofileoptimization-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is GitHub Profile Optimization applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for GitHub Profile Optimization (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing GitHub Profile Optimization (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for GitHub Profile Optimization-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running GitHub Profile Optimization in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of GitHub Profile Optimization code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on GitHub Profile Optimization"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in GitHub Profile Optimization code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the GitHub Profile Optimization example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain GitHub Profile Optimization in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of GitHub Profile Optimization."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a GitHub Profile Optimization problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where GitHub Profile Optimization is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for GitHub Profile Optimization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core GitHub Profile Optimization logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain GitHub Profile Optimization without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses GitHub Profile Optimization daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": GitHub Profile Optimization patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": GitHub Profile Optimization principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": GitHub Profile Optimization shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect GitHub Profile Optimization to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/20-portfolio-branding/02-repository-structure",
+        children: "Repository Structure"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GitHub Profile Optimization, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of GitHub Profile Optimization depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

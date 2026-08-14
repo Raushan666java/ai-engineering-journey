@@ -1,0 +1,5545 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[63817],{
+
+/***/ 63914
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_algorithms_10_dp_trees_grids_md_8b3_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-algorithms-10-dp-trees-grids-md-8b3.json
+const site_docs_courses_algorithms_10_dp_trees_grids_md_8b3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/algorithms/10-dp-trees-grids","title":"Chapter 10: Trees, Grids & Dynamic Programming","description":"Prerequisites Dynamic Programming — Sequences — DP recurrences for chain structures | Next Shortest Paths & MST — Graph algorithms with DP foundations","source":"@site/docs/courses/algorithms/10-dp-trees-grids.md","sourceDirName":"courses/algorithms","slug":"/algorithms/10-dp-trees-grids","permalink":"/ai-engineering-journey/algorithms/10-dp-trees-grids","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"10-dp-trees-grids","slug":"/algorithms/10-dp-trees-grids","title":"Chapter 10: Trees, Grids & Dynamic Programming","sidebar_label":"Chapter 10: Trees, Grids & Dynamic Programming","sidebar_position":10},"sidebar":"course-algorithms","previous":{"title":"Chapter 9: Dynamic Programming — Sequences","permalink":"/ai-engineering-journey/algorithms/09-dp-sequences"},"next":{"title":"Chapter 11: Graph Shortest Paths","permalink":"/ai-engineering-journey/algorithms/11-graph-shortest"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/algorithms/10-dp-trees-grids.md
+
+
+const frontMatter = {
+	id: '10-dp-trees-grids',
+	slug: '/algorithms/10-dp-trees-grids',
+	title: 'Chapter 10: Trees, Grids & Dynamic Programming',
+	sidebar_label: 'Chapter 10: Trees, Grids & Dynamic Programming',
+	sidebar_position: 10
+};
+const contentTitle = 'Chapter 10: Trees, Grids & Dynamic Programming';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Why Trees and Grids Matter",
+  "id": "why-trees-and-grids-matter",
+  "level": 2
+}, {
+  "value": "Part 1: Trees — Fundamentals",
+  "id": "part-1-trees--fundamentals",
+  "level": 2
+}, {
+  "value": "What is a Tree?",
+  "id": "what-is-a-tree",
+  "level": 3
+}, {
+  "value": "Tree Terminology",
+  "id": "tree-terminology",
+  "level": 3
+}, {
+  "value": "Binary Tree Traversals",
+  "id": "binary-tree-traversals",
+  "level": 3
+}, {
+  "value": "1. Inorder Traversal (Left → Root → Right)",
+  "id": "1-inorder-traversal-left--root--right",
+  "level": 4
+}, {
+  "value": "2. Preorder Traversal (Root → Left → Right)",
+  "id": "2-preorder-traversal-root--left--right",
+  "level": 4
+}, {
+  "value": "3. Postorder Traversal (Left → Right → Root)",
+  "id": "3-postorder-traversal-left--right--root",
+  "level": 4
+}, {
+  "value": "4. Level-Order Traversal (BFS)",
+  "id": "4-level-order-traversal-bfs",
+  "level": 4
+}, {
+  "value": "Binary Search Tree (BST) Operations",
+  "id": "binary-search-tree-bst-operations",
+  "level": 3
+}, {
+  "value": "BST Search",
+  "id": "bst-search",
+  "level": 4
+}, {
+  "value": "BST Insert",
+  "id": "bst-insert",
+  "level": 4
+}, {
+  "value": "BST Delete",
+  "id": "bst-delete",
+  "level": 4
+}, {
+  "value": "Segment Tree",
+  "id": "segment-tree",
+  "level": 3
+}, {
+  "value": "Fenwick Tree (Binary Indexed Tree)",
+  "id": "fenwick-tree-binary-indexed-tree",
+  "level": 3
+}, {
+  "value": "Part 2: Grids — Fundamentals",
+  "id": "part-2-grids--fundamentals",
+  "level": 2
+}, {
+  "value": "What is a Grid?",
+  "id": "what-is-a-grid",
+  "level": 3
+}, {
+  "value": "Grid Traversal: DFS and BFS on a Matrix",
+  "id": "grid-traversal-dfs-and-bfs-on-a-matrix",
+  "level": 3
+}, {
+  "value": "DFS on Grid",
+  "id": "dfs-on-grid",
+  "level": 4
+}, {
+  "value": "BFS on Grid",
+  "id": "bfs-on-grid",
+  "level": 4
+}, {
+  "value": "Part 3: Dynamic Programming on Trees",
+  "id": "part-3-dynamic-programming-on-trees",
+  "level": 2
+}, {
+  "value": "10.1 DP on Trees",
+  "id": "101-dp-on-trees",
+  "level": 3
+}, {
+  "value": "10.1.1 Tree Diameter",
+  "id": "1011-tree-diameter",
+  "level": 4
+}, {
+  "value": "10.1.2 Maximum Path Sum (Binary Tree)",
+  "id": "1012-maximum-path-sum-binary-tree",
+  "level": 4
+}, {
+  "value": "10.1.3 Tree DP with States (House Robber III)",
+  "id": "1013-tree-dp-with-states-house-robber-iii",
+  "level": 4
+}, {
+  "value": "Part 4: Dynamic Programming on Grids",
+  "id": "part-4-dynamic-programming-on-grids",
+  "level": 2
+}, {
+  "value": "10.2 DP on Grids",
+  "id": "102-dp-on-grids",
+  "level": 3
+}, {
+  "value": "10.2.1 Unique Paths",
+  "id": "1021-unique-paths",
+  "level": 4
+}, {
+  "value": "10.2.2 Minimum Path Sum",
+  "id": "1022-minimum-path-sum",
+  "level": 4
+}, {
+  "value": "10.2.3 DP with Obstacles",
+  "id": "1023-dp-with-obstacles",
+  "level": 4
+}, {
+  "value": "Part 5: DP with Bitmasking",
+  "id": "part-5-dp-with-bitmasking",
+  "level": 2
+}, {
+  "value": "10.3 DP with Bitmasking",
+  "id": "103-dp-with-bitmasking",
+  "level": 3
+}, {
+  "value": "10.3.1 Traveling Salesman Problem (TSP)",
+  "id": "1031-traveling-salesman-problem-tsp",
+  "level": 4
+}, {
+  "value": "10.3.2 Hamiltonian Path",
+  "id": "1032-hamiltonian-path",
+  "level": 4
+}, {
+  "value": "Tree vs Grid — Comparison Table",
+  "id": "tree-vs-grid--comparison-table",
+  "level": 2
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 2
+}, {
+  "value": "1. Lowest Common Ancestor (LCA)",
+  "id": "1-lowest-common-ancestor-lca",
+  "level": 3
+}, {
+  "value": "2. Diameter of Binary Tree",
+  "id": "2-diameter-of-binary-tree",
+  "level": 3
+}, {
+  "value": "3. Grid Unique Paths with Obstacles",
+  "id": "3-grid-unique-paths-with-obstacles",
+  "level": 3
+}, {
+  "value": "4. Number of Islands",
+  "id": "4-number-of-islands",
+  "level": 3
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "File System Indexing (Trees)",
+  "id": "file-system-indexing-trees",
+  "level": 3
+}, {
+  "value": "Game Maps (Grid Pathfinding)",
+  "id": "game-maps-grid-pathfinding",
+  "level": 3
+}, {
+  "value": "Compiler AST (Trees)",
+  "id": "compiler-ast-trees",
+  "level": 3
+}, {
+  "value": "Image Processing (Grids)",
+  "id": "image-processing-grids",
+  "level": 3
+}, {
+  "value": "Robotics (Grids)",
+  "id": "robotics-grids",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 3
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 3
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-10-trees-grids--dynamic-programming",
+        children: "Chapter 10: Trees, Grids & Dynamic Programming"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/algorithms/09-dp-sequences",
+          children: "Chapter 9: Dynamic Programming — Sequences"
+        }), " — DP recurrences for chain structures | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/algorithms/11-graph-shortest",
+          children: "Chapter 11: Shortest Paths & MST"
+        }), " — Graph algorithms with DP foundations"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement and analyze binary tree traversals (inorder, preorder, postorder, level-order)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Perform BST operations (search, insert, delete) and understand their complexity."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build and query segment trees and Fenwick trees for range queries."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Traverse grids using DFS and BFS for path-finding problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve DP problems on trees: tree diameter, maximum path sum, tree DP with states."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve DP problems on grids: unique paths, minimum path sum, DP with obstacles."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply DP with bitmasking for state-space problems (traveling salesman, Hamiltonian paths)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "why-trees-and-grids-matter",
+      children: "Why Trees and Grids Matter"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trees"
+      }), " are everywhere in computing. Your computer's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "file system"
+      }), " is a tree — each folder branches into subfolders and files. When you type ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ls -R"
+      }), ", you are performing a depth-first traversal of a tree. When you search for a program in your Start Menu, you are walking a tree. The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Document Object Model (DOM)"
+      }), " that renders every web page is a tree. Compilers parse source code into an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Abstract Syntax Tree (AST)"
+      }), " before generating machine code. Social networks recommend friends using tree-like ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hierarchical clustering"
+      }), ". Every time you see a hierarchy, you are looking at a tree."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Grids"
+      }), " are how computers see the world. Every ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "digital image"
+      }), " is a grid of pixels. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Satellite imagery"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "medical MRI scans"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "game maps"
+      }), " are all grids. When your GPS calculates a route, it is running path-finding on a grid representation of the road network. When a robot vacuums your floor, it traverses a grid of your room. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Spreadsheets"
+      }), " are grids. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Convolutional neural networks (CNNs)"
+      }), " that power computer vision slide windows across image grids. Understanding grid algorithms is understanding how computers process visual and spatial data."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Trees and grids together form the backbone of ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "90% of DSA interview problems"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "countless real-world systems"
+      }), ". Mastering them is non-negotiable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-1-trees--fundamentals",
+      children: "Part 1: Trees — Fundamentals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "what-is-a-tree",
+      children: "What is a Tree?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "tree"
+      }), " is a hierarchical data structure consisting of nodes connected by edges, with the following properties:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["A single ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "root"
+        }), " node with no parent."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Every node has zero or more ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "child"
+        }), " nodes."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No cycles exist (it is an acyclic connected graph)."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["In a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "binary tree"
+        }), ", each node has at most two children: left and right."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "        1 ← root\n       / \\\n      2   3\n     / \\   \\\n    4   5   6\n           /\n          7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tree-terminology",
+      children: "Tree Terminology"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Root"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Topmost node with no parent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Leaf"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node with no children (4, 5, 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Parent"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct ancestor of a node (2 is parent of 4, 5)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Child"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct descendant of a node"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Subtree"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A node and all its descendants"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Height"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest path from root to a leaf (edges)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Depth"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distance from root to a node (edges)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Level"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All nodes at the same depth"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "binary-tree-traversals",
+      children: "Binary Tree Traversals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Traversals visit every node in a specific order — the order determines the algorithm's behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1-inorder-traversal-left--root--right",
+      children: "1. Inorder Traversal (Left → Root → Right)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Reading a dictionary in alphabetical order — you read the left page first, then the current page, then the right page. In a BST, inorder traversal gives sorted output."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the left subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Visit the current node."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the right subtree."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "INORDER(node):\n    if node == null: return\n    INORDER(node.left)\n    visit(node)\n    INORDER(node.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Tree = [1, 2, 3, 4, 5]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "        1\n       / \\\n      2   3\n     / \\\n    4   5\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Call Stack"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Visited"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.left=null, visit 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.right=null, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5.left=null, visit 5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5.right=null, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5, 1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5, 1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.left=null, visit 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5, 1, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.right=null, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 2, 5, 1, 3]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "4, 2, 5, 1, 3"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "struct Node {\n    int data;\n    Node* left;\n    Node* right;\n    Node(int val) : data(val), left(nullptr), right(nullptr) {}\n};\n\nvoid inorder(Node* root) {\n    if (root == nullptr) return;\n    inorder(root->left);\n    cout << root->data << \" \";\n    inorder(root->right);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def inorder(root):\n    if root is None:\n        return\n    inorder(root.left)\n    print(root.data, end=\" \")\n    inorder(root.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void inorder(Node root) {\n    if (root == null) return;\n    inorder(root.left);\n    System.out.print(root.data + \" \");\n    inorder(root.right);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n) — every node is visited exactly once."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(h) where h is tree height — recursion stack depth. Worst case O(n) for a skewed tree."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Naturally produces sorted order in BSTs; simple recursive implementation.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Recursive stack may overflow for deep trees; iterative version requires explicit stack."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " Empty tree — returns immediately. Single node — visits and returns."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "2-preorder-traversal-root--left--right",
+      children: "2. Preorder Traversal (Root → Left → Right)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Copying a directory structure — you create the current folder first, then recursively copy subfolders. Used by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "cp -R"
+      }), " internally."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Visit the current node."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the left subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the right subtree."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PREORDER(node):\n    if node == null: return\n    visit(node)\n    PREORDER(node.left)\n    PREORDER(node.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Same tree [1, 2, 3, 4, 5]"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Call Stack"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Visited"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 1, go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 2, go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.left=null, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 5, 3]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1, 2, 4, 5, 3"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "void preorder(Node* root) {\n    if (root == nullptr) return;\n    cout << root->data << \" \";\n    preorder(root->left);\n    preorder(root->right);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def preorder(root):\n    if root is None: return\n    print(root.data, end=\" \")\n    preorder(root.left)\n    preorder(root.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void preorder(Node root) {\n    if (root == null) return;\n    System.out.print(root.data + \" \");\n    preorder(root.left);\n    preorder(root.right);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) time, O(h) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Creates a copy of the tree; root is visited first — useful for serialization.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Does not give sorted order; same recursion depth concerns."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " Skewed tree degenerates to linked-list traversal with O(n) stack space."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "3-postorder-traversal-left--right--root",
+      children: "3. Postorder Traversal (Left → Right → Root)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Deleting a directory — you must delete all files inside before removing the folder. Used by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "rm -rf"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the left subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively traverse the right subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Visit the current node."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "POSTORDER(node):\n    if node == null: return\n    POSTORDER(node.left)\n    POSTORDER(node.right)\n    visit(node)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Same tree"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Call Stack"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Visited"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.left=null, go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 4, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5.left=null, go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 5, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.left=null, go right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 3, return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5, 2, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5, 2, 3, 1]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "4, 5, 2, 3, 1"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "void postorder(Node* root) {\n    if (root == nullptr) return;\n    postorder(root->left);\n    postorder(root->right);\n    cout << root->data << \" \";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def postorder(root):\n    if root is None: return\n    postorder(root.left)\n    postorder(root.right)\n    print(root.data, end=\" \")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void postorder(Node root) {\n    if (root == null) return;\n    postorder(root.left);\n    postorder(root.right);\n    System.out.print(root.data + \" \");\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) time, O(h) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Children processed before parent — essential for tree deletion and tree DP.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Root is last — cannot be used for search-based operations."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " Perfect binary tree — balanced recursion stack of O(log n)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "4-level-order-traversal-bfs",
+      children: "4. Level-Order Traversal (BFS)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Broadcasting a message through a company hierarchy — the CEO tells VPs, who tell directors, who tell managers — everyone on the same level is informed at the same time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize a queue with the root node."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "While queue is not empty:\na. Dequeue front node.\nb. Visit the node.\nc. Enqueue its left child (if exists).\nd. Enqueue its right child (if exists)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "LEVEL_ORDER(root):\n    if root == null: return\n    queue = [root]\n    while queue is not empty:\n        node = queue.dequeue()\n        visit(node)\n        if node.left != null: queue.enqueue(node.left)\n        if node.right != null: queue.enqueue(node.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Same tree"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Queue (front → back)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dequeue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Visited"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2, 3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3, 4, 5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 3, 4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 3, 4, 5]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "1, 2, 3, 4, 5"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <queue>\nvoid levelOrder(Node* root) {\n    if (root == nullptr) return;\n    queue<Node*> q;\n    q.push(root);\n    while (!q.empty()) {\n        Node* curr = q.front(); q.pop();\n        cout << curr->data << \" \";\n        if (curr->left) q.push(curr->left);\n        if (curr->right) q.push(curr->right);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from collections import deque\ndef level_order(root):\n    if root is None: return\n    q = deque([root])\n    while q:\n        curr = q.popleft()\n        print(curr.data, end=\" \")\n        if curr.left: q.append(curr.left)\n        if curr.right: q.append(curr.right)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void levelOrder(Node root) {\n    if (root == null) return;\n    Queue<Node> q = new LinkedList<>();\n    q.add(root);\n    while (!q.isEmpty()) {\n        Node curr = q.poll();\n        System.out.print(curr.data + \" \");\n        if (curr.left != null) q.add(curr.left);\n        if (curr.right != null) q.add(curr.right);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time:"
+        }), " O(n) — each node enters and leaves the queue once."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(n) — queue holds at most one level's worth of nodes. Worst case O(n) for a complete tree's bottom level."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Finds shortest path in unweighted trees; no recursion stack overflow.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Uses more memory than recursive traversals for deep trees."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " Skewed tree — queue holds at most 1 node. Empty tree — immediate return."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "binary-search-tree-bst-operations",
+      children: "Binary Search Tree (BST) Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A BST is a binary tree where for every node: all values in the left subtree are less, and all values in the right subtree are greater."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "        50\n       /  \\\n      30   70\n     / \\   / \\\n    20 40 60 80\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A phonebook — to find \"Smith\", you open to the middle. If you're past S, go backward; if before S, go forward. Each comparison eliminates half the remaining book."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bst-search",
+      children: "BST Search"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start at the root."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If current node is null, return false (not found)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If current node's value equals target, return true."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If target < current node's value, search left subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Else search right subtree."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BST_SEARCH(root, key):\n    if root == null: return false\n    if root.data == key: return true\n    if key < root.data: return BST_SEARCH(root.left, key)\n    else: return BST_SEARCH(root.right, key)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Search for 60 in the BST above"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Comparison"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60 > 50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60 < 70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60 == 60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Found!"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "bool searchBST(Node* root, int key) {\n    if (root == nullptr) return false;\n    if (root->data == key) return true;\n    if (key < root->data) return searchBST(root->left, key);\n    return searchBST(root->right, key);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def search_bst(root, key):\n    if root is None: return False\n    if root.data == key: return True\n    if key < root.data: return search_bst(root.left, key)\n    return search_bst(root.right, key)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "boolean searchBST(Node root, int key) {\n    if (root == null) return false;\n    if (root.data == key) return true;\n    if (key < root.data) return searchBST(root.left, key);\n    return searchBST(root.right, key);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(h) time, O(h) space. Balanced BST: O(log n). Skewed BST: O(n)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bst-insert",
+      children: "BST Insert"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If tree is empty, create a new node and return it as root."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If key < current node's value, recursively insert into left subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If key > current node's value, recursively insert into right subtree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return the unchanged node pointer."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BST_INSERT(root, key):\n    if root == null: return new Node(key)\n    if key < root.data:\n        root.left = BST_INSERT(root.left, key)\n    else if key > root.data:\n        root.right = BST_INSERT(root.right, key)\n    return root\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Insert 55 into the BST"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Comparison"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55 > 50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55 < 70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55 < 60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Go left"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "null"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Insert 55 as left child of 60"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["After: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "50 → 70 → 60 → 55"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "Node* insertBST(Node* root, int key) {\n    if (root == nullptr) return new Node(key);\n    if (key < root->data)\n        root->left = insertBST(root->left, key);\n    else if (key > root->data)\n        root->right = insertBST(root->right, key);\n    return root;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def insert_bst(root, key):\n    if root is None: return Node(key)\n    if key < root.data:\n        root.left = insert_bst(root.left, key)\n    elif key > root.data:\n        root.right = insert_bst(root.right, key)\n    return root\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "Node insertBST(Node root, int key) {\n    if (root == null) return new Node(key);\n    if (key < root.data)\n        root.left = insertBST(root.left, key);\n    else if (key > root.data)\n        root.right = insertBST(root.right, key);\n    return root;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(h) time, O(h) space."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bst-delete",
+      children: "BST Delete"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Three cases:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Leaf node:"
+        }), " Simply remove it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Node with one child:"
+        }), " Replace node with its child."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Node with two children:"
+        }), " Find inorder successor (smallest in right subtree), copy its value, delete successor."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Base case: if root is null, return null."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively find the node to delete."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply the appropriate case above."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BST_DELETE(root, key):\n    if root == null: return null\n    if key < root.data:\n        root.left = BST_DELETE(root.left, key)\n    else if key > root.data:\n        root.right = BST_DELETE(root.right, key)\n    else:  // found node to delete\n        if root.left == null:  // case 1 & 2\n            return root.right\n        if root.right == null:  // case 2\n            return root.left\n        // case 3: two children\n        succ = MIN_VALUE(root.right)\n        root.data = succ.data\n        root.right = BST_DELETE(root.right, succ.data)\n    return root\n\nMIN_VALUE(root):\n    while root.left != null: root = root.left\n    return root\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Delete 50 (root with two children)"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Found target (case 3)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find inorder successor: go right → 70, then left → 60 (no left child)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Copy 60's value into 50"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Delete 60 from right subtree (60 is leaf — case 1)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After: root becomes 60"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "        60\n       /  \\\n      30   70\n     / \\    \\\n    20 40    80\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "Node* deleteBST(Node* root, int key) {\n    if (root == nullptr) return nullptr;\n    if (key < root->data)\n        root->left = deleteBST(root->left, key);\n    else if (key > root->data)\n        root->right = deleteBST(root->right, key);\n    else {\n        if (root->left == nullptr) {\n            Node* temp = root->right;\n            delete root;\n            return temp;\n        }\n        if (root->right == nullptr) {\n            Node* temp = root->left;\n            delete root;\n            return temp;\n        }\n        Node* succ = root->right;\n        while (succ->left != nullptr) succ = succ->left;\n        root->data = succ->data;\n        root->right = deleteBST(root->right, succ->data);\n    }\n    return root;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def delete_bst(root, key):\n    if root is None: return None\n    if key < root.data:\n        root.left = delete_bst(root.left, key)\n    elif key > root.data:\n        root.right = delete_bst(root.right, key)\n    else:\n        if root.left is None: return root.right\n        if root.right is None: return root.left\n        succ = root.right\n        while succ.left: succ = succ.left\n        root.data = succ.data\n        root.right = delete_bst(root.right, succ.data)\n    return root\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "Node deleteBST(Node root, int key) {\n    if (root == null) return null;\n    if (key < root.data)\n        root.left = deleteBST(root.left, key);\n    else if (key > root.data)\n        root.right = deleteBST(root.right, key);\n    else {\n        if (root.left == null) return root.right;\n        if (root.right == null) return root.left;\n        Node succ = root.right;\n        while (succ.left != null) succ = succ.left;\n        root.data = succ.data;\n        root.right = deleteBST(root.right, succ.data);\n    }\n    return root;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(h) time, O(h) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages of BST:"
+      }), " Sorted data at all times; efficient search/insert/delete in balanced trees.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Degrades to O(n) with unbalanced data; does not support range queries efficiently (use segment tree for that)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " Deleting root — handled by case 3. Deleting from empty tree — returns null. Duplicate keys — typically ignored or stored in left/right by convention."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "segment-tree",
+      children: "Segment Tree"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " An organization's expense report breakdown — instead of summing all receipts each time, the accounting department keeps precomputed subtotals by department, by team, by project. A query for \"total expenses from departments A–C\" just adds three subtotals instead of scanning every receipt."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "segment tree"
+      }), " is a binary tree that stores interval/segment information. It enables answering range queries (sum, min, max) and updating elements in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "O(log n)"
+      }), " time."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Structure:"
+      }), " For an array of size n, the segment tree has ~4n nodes. Leaf nodes store array elements. Internal nodes store the aggregated value (sum/min/max) of their children."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Build):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the segment has one element (leaf), store that element."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively build left and right halves."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Internal node stores the fusion of left and right children."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Query):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the query range fully covers the current segment, return this node's value."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If there is no overlap, return identity (0 for sum, INF for min, -INF for max)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If partial overlap, recurse on both children and combine results."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Update):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If leaf node, update its value."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Else, recurse on the relevant child."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recompute current node's value from children."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BUILD(node, start, end):\n    if start == end:\n        tree[node] = arr[start]\n    else:\n        mid = (start + end) / 2\n        BUILD(2*node, start, mid)\n        BUILD(2*node+1, mid+1, end)\n        tree[node] = tree[2*node] + tree[2*node+1]\n\nQUERY(node, start, end, l, r):\n    if r < start OR end < l: return 0       // no overlap\n    if l <= start AND end <= r: return tree[node]  // full overlap\n    mid = (start + end) / 2\n    leftSum = QUERY(2*node, start, mid, l, r)\n    rightSum = QUERY(2*node+1, mid+1, end, l, r)\n    return leftSum + rightSum\n\nUPDATE(node, start, end, idx, val):\n    if start == end:\n        tree[node] = val\n    else:\n        mid = (start + end) / 2\n        if idx <= mid: UPDATE(2*node, start, mid, idx, val)\n        else: UPDATE(2*node+1, mid+1, end, idx, val)\n        tree[node] = tree[2*node] + tree[2*node+1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Build segment tree for arr = [1, 3, 5, 7]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Tree structure (0-indexed, node 1 = root):\n\nLevel 0:            [1,3,5,7] sum=16 (node 1)\n                   /            \\\nLevel 1:    [1,3] sum=4         [5,7] sum=12 (nodes 2, 3)\n            /     \\              /      \\\nLevel 2:  [1]     [3]        [5]       [7] (nodes 4, 5, 6, 7)\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Range"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Children"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0-3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 (left), 3 (right)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0-1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 (left), 5 (right)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2-3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 (left), 7 (right)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0-0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1-1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[2-2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3-3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Query sum [1-2]:"
+      }), " Start at root (1). Partial overlap → go to node 2 (range [0-1], partial) and node 3 (range [2-3], partial). Node 2: partial → go to node 4 ([0-0], no overlap → 0) and node 5 ([1-1], full overlap → 3). Node 3: partial → go to node 6 ([2-2], full overlap → 5) and node 7 ([3-3], no overlap → 0). Result = 3 + 5 = 8."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class SegmentTree {\n    vector<int> tree, arr;\n    int n;\npublic:\n    SegmentTree(vector<int>& input) : arr(input), n(input.size()) {\n        tree.resize(4 * n);\n        build(1, 0, n - 1);\n    }\n    void build(int node, int start, int end) {\n        if (start == end) { tree[node] = arr[start]; return; }\n        int mid = (start + end) / 2;\n        build(node * 2, start, mid);\n        build(node * 2 + 1, mid + 1, end);\n        tree[node] = tree[node * 2] + tree[node * 2 + 1];\n    }\n    int query(int l, int r) { return query(1, 0, n - 1, l, r); }\n    int query(int node, int start, int end, int l, int r) {\n        if (r < start || end < l) return 0;\n        if (l <= start && end <= r) return tree[node];\n        int mid = (start + end) / 2;\n        return query(node * 2, start, mid, l, r) +\n               query(node * 2 + 1, mid + 1, end, l, r);\n    }\n    void update(int idx, int val) { update(1, 0, n - 1, idx, val); }\n    void update(int node, int start, int end, int idx, int val) {\n        if (start == end) { tree[node] = val; return; }\n        int mid = (start + end) / 2;\n        if (idx <= mid) update(node * 2, start, mid, idx, val);\n        else update(node * 2 + 1, mid + 1, end, idx, val);\n        tree[node] = tree[node * 2] + tree[node * 2 + 1];\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class SegmentTree:\n    def __init__(self, arr):\n        self.n = len(arr)\n        self.tree = [0] * (4 * self.n)\n        self._build(arr, 1, 0, self.n - 1)\n\n    def _build(self, arr, node, start, end):\n        if start == end:\n            self.tree[node] = arr[start]\n            return\n        mid = (start + end) // 2\n        self._build(arr, node * 2, start, mid)\n        self._build(arr, node * 2 + 1, mid + 1, end)\n        self.tree[node] = self.tree[node * 2] + self.tree[node * 2 + 1]\n\n    def query(self, l, r):\n        return self._query(1, 0, self.n - 1, l, r)\n\n    def _query(self, node, start, end, l, r):\n        if r < start or end < l: return 0\n        if l <= start and end <= r: return self.tree[node]\n        mid = (start + end) // 2\n        return (self._query(node * 2, start, mid, l, r) +\n                self._query(node * 2 + 1, mid + 1, end, l, r))\n\n    def update(self, idx, val):\n        self._update(1, 0, self.n - 1, idx, val)\n\n    def _update(self, node, start, end, idx, val):\n        if start == end:\n            self.tree[node] = val\n            return\n        mid = (start + end) // 2\n        if idx <= mid:\n            self._update(node * 2, start, mid, idx, val)\n        else:\n            self._update(node * 2 + 1, mid + 1, end, idx, val)\n        self.tree[node] = self.tree[node * 2] + self.tree[node * 2 + 1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class SegmentTree {\n    int[] tree, arr;\n    int n;\n\n    SegmentTree(int[] input) {\n        arr = input; n = input.length;\n        tree = new int[4 * n];\n        build(1, 0, n - 1);\n    }\n\n    void build(int node, int start, int end) {\n        if (start == end) { tree[node] = arr[start]; return; }\n        int mid = (start + end) / 2;\n        build(node * 2, start, mid);\n        build(node * 2 + 1, mid + 1, end);\n        tree[node] = tree[node * 2] + tree[node * 2 + 1];\n    }\n\n    int query(int l, int r) { return query(1, 0, n - 1, l, r); }\n\n    int query(int node, int start, int end, int l, int r) {\n        if (r < start || end < l) return 0;\n        if (l <= start && end <= r) return tree[node];\n        int mid = (start + end) / 2;\n        return query(node * 2, start, mid, l, r) +\n               query(node * 2 + 1, mid + 1, end, l, r);\n    }\n\n    void update(int idx, int val) { update(1, 0, n - 1, idx, val); }\n\n    void update(int node, int start, int end, int idx, int val) {\n        if (start == end) { tree[node] = val; return; }\n        int mid = (start + end) / 2;\n        if (idx <= mid) update(node * 2, start, mid, idx, val);\n        else update(node * 2 + 1, mid + 1, end, idx, val);\n        tree[node] = tree[node * 2] + tree[node * 2 + 1];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Build:"
+        }), " O(n) — each node is computed once, total ~2n nodes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Query:"
+        }), " O(log n) — at most 4 nodes per level are visited."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Update:"
+        }), " O(log n) — one path from root to leaf."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(log n) for query?"
+      }), " Each query splits the range until full coverage or no overlap. The levels of the tree = log n. At each level, at most 2 nodes are partially overlapped. Thus ~4 log n node visits."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Fast range queries with point updates; versatile (sum, min, max, gcd).\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Complex to implement; 4n memory overhead; lazy propagation needed for range updates."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " n = 0 → empty tree. n = 1 → tree has 1 leaf. Query on invalid range (l > r) → undefined."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "fenwick-tree-binary-indexed-tree",
+      children: "Fenwick Tree (Binary Indexed Tree)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A library's book counter — instead of recounting all shelves every time, each librarian keeps a running count for their section. The head librarian combines a few section counts to answer \"how many books on shelves 1–15?\" without scanning every shelf."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fenwick Tree"
+      }), " is a simpler alternative to the segment tree for ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "prefix sum queries and point updates"
+      }), ". It uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "O(n)"
+      }), " space and has simpler implementation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Core Idea:"
+      }), " Each index i stores the sum of a range ending at i. The range length is determined by the least significant set bit (LSB): ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "i & -i"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Build):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize BIT array of size n+1 (1-indexed) with zeros."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["For each element arr[i], call ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "update(i, arr[i])"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Query Prefix Sum):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize sum = 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "While i > 0: sum += BIT[i], i -= i & -i."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return sum."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Range Sum):"
+      }), "\nSum(l, r) = prefixSum(r) - prefixSum(l-1)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps (Point Update):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "While i <= n: BIT[i] += delta, i += i & -i."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BUILD(arr, n):\n    BIT = array of size n+1 initialized to 0\n    for i = 1 to n:\n        BIT[i] += arr[i-1]    // convert to 1-indexed\n        j = i + (i & -i)\n        if j <= n: BIT[j] += BIT[i]\n\nPREFIX_SUM(i):\n    sum = 0\n    while i > 0:\n        sum += BIT[i]\n        i -= i & -i\n    return sum\n\nRANGE_SUM(l, r):\n    return PREFIX_SUM(r) - PREFIX_SUM(l-1)\n\nUPDATE(i, delta):\n    while i <= n:\n        BIT[i] += delta\n        i += i & -i\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Build Fenwick tree for arr = [1, 3, 5, 7]"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Index"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "arr[i]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Binary"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "i & -i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "BIT[i] stores sum of range"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "001"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1] → 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "010"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1-2] → 1+3 = 4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "011"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3] → 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1-4] → 1+3+5+7 = 16"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BIT array: [0, 1, 4, 5, 16] (index 0 unused)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Query prefix sum up to index 3:"
+      }), " i=3 → sum += BIT[3]=5 → i=3-1=2 → sum += BIT[2]=4 → i=2-2=0. Sum = 5+4 = 9. Correct: 1+3+5 = 9."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Update index 2 by +2 (arr[2] becomes 5):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "i=2: BIT[2] += 2 (4→6), i += 2 (i=4)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "i=4: BIT[4] += 2 (16→18), i += 4 (i=8), done"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BIT becomes: [0, 1, 6, 5, 18]"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class FenwickTree {\n    vector<int> bit;\n    int n;\npublic:\n    FenwickTree(int size) : n(size), bit(size + 1, 0) {}\n    FenwickTree(vector<int>& arr) : n(arr.size()), bit(arr.size() + 1, 0) {\n        for (int i = 0; i < n; ++i) update(i + 1, arr[i]);\n    }\n    void update(int idx, int delta) {\n        while (idx <= n) { bit[idx] += delta; idx += idx & -idx; }\n    }\n    int prefixSum(int idx) {\n        int sum = 0;\n        while (idx > 0) { sum += bit[idx]; idx -= idx & -idx; }\n        return sum;\n    }\n    int rangeSum(int l, int r) { return prefixSum(r) - prefixSum(l - 1); }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class FenwickTree:\n    def __init__(self, arr=None, n=0):\n        if arr is not None:\n            self.n = len(arr)\n            self.bit = [0] * (self.n + 1)\n            for i, val in enumerate(arr, 1):\n                self.update(i, val)\n        else:\n            self.n = n\n            self.bit = [0] * (n + 1)\n\n    def update(self, idx, delta):\n        while idx <= self.n:\n            self.bit[idx] += delta\n            idx += idx & -idx\n\n    def prefix_sum(self, idx):\n        s = 0\n        while idx > 0:\n            s += self.bit[idx]\n            idx -= idx & -idx\n        return s\n\n    def range_sum(self, l, r):\n        return self.prefix_sum(r) - self.prefix_sum(l - 1)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class FenwickTree {\n    int[] bit;\n    int n;\n\n    FenwickTree(int size) {\n        n = size;\n        bit = new int[n + 1];\n    }\n\n    FenwickTree(int[] arr) {\n        n = arr.length;\n        bit = new int[n + 1];\n        for (int i = 0; i < n; i++) update(i + 1, arr[i]);\n    }\n\n    void update(int idx, int delta) {\n        while (idx <= n) { bit[idx] += delta; idx += idx & -idx; }\n    }\n\n    int prefixSum(int idx) {\n        int sum = 0;\n        while (idx > 0) { sum += bit[idx]; idx -= idx & -idx; }\n        return sum;\n    }\n\n    int rangeSum(int l, int r) { return prefixSum(r) - prefixSum(l - 1); }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Build:"
+        }), " O(n log n) naively, O(n) with optimized construction."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Query:"
+        }), " O(log n) — at most log n steps since each step clears the LSB."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Update:"
+        }), " O(log n)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space:"
+        }), " O(n)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why update works:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "idx += idx & -idx"
+      }), " jumps from a node to its parent in the BIT tree. The LSB gives the range size. For idx=3 (011), LSB=1 → parent=4 (100). For idx=4 (100), LSB=4 → parent=8 (1000). This linking creates a tree where each node covers a power-of-2 sized range."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Simpler than segment tree; lower constant factor; less memory.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Only works for prefix-sum operations; cannot handle range updates without modification; requires 1-indexed array."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      }), " n = 0 → empty. Query at index 0 → returns 0. Negative delta values for decrements."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-2-grids--fundamentals",
+      children: "Part 2: Grids — Fundamentals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "what-is-a-grid",
+      children: "What is a Grid?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "grid"
+      }), " is a 2D matrix of cells, where each cell has coordinates (row, column). Grids represent spatial data — images, maps, game boards."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "(0,0)  (0,1)  (0,2)\n(1,0)  (1,1)  (1,2)\n(2,0)  (2,1)  (2,2)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " An image is a grid of pixels. Each pixel has an RGB value. Filters (like blur) process neighbors in the grid."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "grid-traversal-dfs-and-bfs-on-a-matrix",
+      children: "Grid Traversal: DFS and BFS on a Matrix"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy (DFS):"
+      }), " Exploring a maze — you take each path as far as it goes before backtracking. You mark visited corridors with chalk.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy (BFS):"
+      }), " Flood fill in a paint program — the color spreads outward in concentric rings from where you click."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dfs-on-grid",
+      children: "DFS on Grid"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start at a given cell (r, c)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mark it as visited."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each of the 4 directions (up, down, left, right):\na. Compute new cell (nr, nc).\nb. If (nr, nc) is within bounds and not visited, recursively DFS(nr, nc)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "DFS_GRID(grid, visited, r, c):\n    if out_of_bounds(r, c) OR visited[r][c] OR grid[r][c] == BLOCKED:\n        return\n    visited[r][c] = true\n    process(grid[r][c])\n    for each (dr, dc) in [(0,1), (1,0), (0,-1), (-1,0)]:\n        DFS_GRID(grid, visited, r+dr, c+dc)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " 3×3 grid, start at (0,0)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Grid:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1 2 3\n4 5 6\n7 8 9\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Visited Set"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stack"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{(0,0)}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{(0,0),(0,1)}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0),(0,1)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{(0,0),(0,1),(0,2)}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0),(0,1),(0,2)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No unvisited neighbor at (0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0),(0,1)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{(0,0),(0,1),(0,2),(1,1)}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0),(1,1)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Order will depend on neighbor iteration order. With right-first: 1, 2, 3, 6, 9, 8, 5, 4, 7."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "void dfsGrid(vector<vector<int>>& grid, vector<vector<bool>>& vis,\n             int r, int c) {\n    int m = grid.size(), n = grid[0].size();\n    if (r < 0 || r >= m || c < 0 || c >= n || vis[r][c]) return;\n    vis[r][c] = true;\n    cout << grid[r][c] << \" \";\n    int dirs[4][2] = {{0,1}, {1,0}, {0,-1}, {-1,0}};\n    for (auto& d : dirs)\n        dfsGrid(grid, vis, r + d[0], c + d[1]);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def dfs_grid(grid, vis, r, c):\n    m, n = len(grid), len(grid[0])\n    if r < 0 or r >= m or c < 0 or c >= n or vis[r][c]:\n        return\n    vis[r][c] = True\n    print(grid[r][c], end=\" \")\n    for dr, dc in [(0,1), (1,0), (0,-1), (-1,0)]:\n        dfs_grid(grid, vis, r + dr, c + dc)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void dfsGrid(int[][] grid, boolean[][] vis, int r, int c) {\n    int m = grid.length, n = grid[0].length;\n    if (r < 0 || r >= m || c < 0 || c >= n || vis[r][c]) return;\n    vis[r][c] = true;\n    System.out.print(grid[r][c] + \" \");\n    int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};\n    for (int[] d : dirs)\n        dfsGrid(grid, vis, r + d[0], c + d[1]);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m × n) — every cell visited at most once. Space O(m × n) for visited array + recursion stack."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bfs-on-grid",
+      children: "BFS on Grid"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start at given cell, enqueue it, mark visited."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "While queue not empty:\na. Dequeue cell.\nb. Process it.\nc. For each unvisited neighbor, enqueue and mark visited."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "BFS_GRID(grid, start_r, start_c):\n    queue = [(start_r, start_c)]\n    visited[start_r][start_c] = true\n    while queue is not empty:\n        (r, c) = queue.dequeue()\n        process(grid[r][c])\n        for each (dr, dc) in directions:\n            nr, nc = r+dr, c+dc\n            if in_bounds(nr, nc) AND not visited AND not blocked:\n                visited[nr][nc] = true\n                queue.enqueue((nr, nc))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " 3×3 grid, start at (0,0)"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Queue (front → back)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dequeue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Processed"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,0)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,1), (1,0)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(1,0), (0,2), (1,1)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(0,2), (1,1), (2,0)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(1,1), (2,0), (1,2)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(2,0), (1,2), (2,1)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3, 5]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(1,2), (2,1), (2,2)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3, 5, 7]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(2,1), (2,2)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3, 5, 7, 6]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[(2,2)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3, 5, 7, 6, 8]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 4, 3, 5, 7, 6, 8, 9]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BFS order (if right-then-down): 1, 2, 4, 3, 5, 7, 6, 8, 9 — spreads level by level."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "void bfsGrid(vector<vector<int>>& grid, int sr, int sc) {\n    int m = grid.size(), n = grid[0].size();\n    vector<vector<bool>> vis(m, vector<bool>(n, false));\n    queue<pair<int,int>> q;\n    q.push({sr, sc});\n    vis[sr][sc] = true;\n    int dirs[4][2] = {{0,1}, {1,0}, {0,-1}, {-1,0}};\n    while (!q.empty()) {\n        auto [r, c] = q.front(); q.pop();\n        cout << grid[r][c] << \" \";\n        for (auto& d : dirs) {\n            int nr = r + d[0], nc = c + d[1];\n            if (nr >= 0 && nr < m && nc >= 0 && nc < n && !vis[nr][nc]) {\n                vis[nr][nc] = true;\n                q.push({nr, nc});\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from collections import deque\ndef bfs_grid(grid, sr, sc):\n    m, n = len(grid), len(grid[0])\n    vis = [[False] * n for _ in range(m)]\n    q = deque([(sr, sc)])\n    vis[sr][sc] = True\n    while q:\n        r, c = q.popleft()\n        print(grid[r][c], end=\" \")\n        for dr, dc in [(0,1), (1,0), (0,-1), (-1,0)]:\n            nr, nc = r + dr, c + dc\n            if 0 <= nr < m and 0 <= nc < n and not vis[nr][nc]:\n                vis[nr][nc] = True\n                q.append((nr, nc))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "void bfsGrid(int[][] grid, int sr, int sc) {\n    int m = grid.length, n = grid[0].length;\n    boolean[][] vis = new boolean[m][n];\n    Queue<int[]> q = new LinkedList<>();\n    q.add(new int[]{sr, sc});\n    vis[sr][sc] = true;\n    int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};\n    while (!q.isEmpty()) {\n        int[] cur = q.poll();\n        int r = cur[0], c = cur[1];\n        System.out.print(grid[r][c] + \" \");\n        for (int[] d : dirs) {\n            int nr = r + d[0], nc = c + d[1];\n            if (nr >= 0 && nr < m && nc >= 0 && nc < n && !vis[nr][nc]) {\n                vis[nr][nc] = true;\n                q.add(new int[]{nr, nc});\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m × n) time and space."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DFS vs BFS on Grids:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DFS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "BFS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Order"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depth-first, go as far as possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Level-by-level, like ripples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Structure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack (recursion)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Queue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shortest Path"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (finds any path)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (finds shortest)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(depth) — better for deep narrow spaces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(width) — better for wide shallow spaces"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Topological sort, cycle detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shortest path, flood fill"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases for Grid Traversal:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×1 grid:"
+        }), " Single cell, visited immediately. Both DFS and BFS process it and stop."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×n grid:"
+        }), " Degenerates to a line. DFS recurses n deep. BFS processes in order."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty grid (0×0):"
+        }), " No operations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "All blocked cells:"
+        }), " No movement possible, only start cell is visited."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Grid with obstacles:"
+        }), " Both algorithms naturally handle blocked cells by skipping them."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-3-dynamic-programming-on-trees",
+      children: "Part 3: Dynamic Programming on Trees"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "101-dp-on-trees",
+      children: "10.1 DP on Trees"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Trees are naturally recursive: each node can be processed after its children are processed (post-order traversal). Tree DP typically defines a state ( dp[u] ) representing the optimal value for the subtree rooted at ( u )."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Company profit calculation — each department reports its profit to its division head, who combines division reports for the regional head, who combines for the CEO. The CEO never visits every employee; reports are aggregated upward."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1011-tree-diameter",
+      children: "10.1.1 Tree Diameter"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the longest path between any two nodes in an undirected tree."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " For each node, compute the longest and second-longest path from that node to any leaf in its subtree. The diameter is the maximum over nodes of (longest + second-longest)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Perform DFS from any node (say 0)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each node, compute the top 2 heights of its children's subtrees."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Update global max with (max1 + max2)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return max1 + 1 as the height from this node upward."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "TREE_DIAMETER(n, adj):\n    visited = boolean array of size n\n    diameter = 0\n    function dfs(u):\n        visited[u] = true\n        max1 = 0, max2 = 0\n        for v in adj[u]:\n            if not visited[v]:\n                height = dfs(v)\n                if height > max1:\n                    max2 = max1\n                    max1 = height\n                else if height > max2:\n                    max2 = height\n        diameter = max(diameter, max1 + max2)\n        return max1 + 1\n    dfs(0)\n    return diameter\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tree:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "    1\n   / \\\n  2   3\n / \\   \\\n4   5   6\n        /\n       7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Adjacency: 1:[2,3], 2:[1,4,5], 3:[1,6], 4:[2], 5:[2], 6:[3,7], 7:[6]"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "max1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "max2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "diameter"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 4, leaf → return 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 4, height=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0, 1+0)=1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 5, leaf → return 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 5, height=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(1, 1+1)=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return max1+1 = 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 2, height=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(2, 2+0)=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dfs(7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visit 7, leaf → return 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 7, height=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 6, height=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(2, 2+0)=2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back from 3, height=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(2, 2+3)=5"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diameter = 5"
+      }), " (path: 4-2-1-3-6-7, exactly 5 edges)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int treeDiameter(vector<vector<int>>& adj) {\n    int n = adj.size(), diameter = 0;\n    vector<bool> vis(n, false);\n    function<int(int)> dfs = [&](int u) -> int {\n        vis[u] = true;\n        int max1 = 0, max2 = 0;\n        for (int v : adj[u]) {\n            if (!vis[v]) {\n                int h = dfs(v);\n                if (h > max1) { max2 = max1; max1 = h; }\n                else if (h > max2) max2 = h;\n            }\n        }\n        diameter = max(diameter, max1 + max2);\n        return max1 + 1;\n    };\n    dfs(0);\n    return diameter;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def tree_diameter(adj):\n    n = len(adj)\n    visited = [False] * n\n    diameter = 0\n\n    def dfs(u):\n        nonlocal diameter\n        visited[u] = True\n        max1 = max2 = 0\n        for v in adj[u]:\n            if not visited[v]:\n                h = dfs(v)\n                if h > max1:\n                    max2 = max1\n                    max1 = h\n                elif h > max2:\n                    max2 = h\n        diameter = max(diameter, max1 + max2)\n        return max1 + 1\n\n    dfs(0)\n    return diameter\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int diameter = 0;\nint treeDiameter(List<List<Integer>> adj) {\n    boolean[] vis = new boolean[adj.size()];\n    dfs(adj, vis, 0);\n    return diameter;\n}\nint dfs(List<List<Integer>> adj, boolean[] vis, int u) {\n    vis[u] = true;\n    int max1 = 0, max2 = 0;\n    for (int v : adj.get(u)) {\n        if (!vis[v]) {\n            int h = dfs(adj, vis, v);\n            if (h > max1) { max2 = max1; max1 = h; }\n            else if (h > max2) max2 = h;\n        }\n    }\n    diameter = Math.max(diameter, max1 + max2);\n    return max1 + 1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) time — each edge is traversed twice. O(h) space for recursion stack."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(n)?"
+      }), " Each node is visited once in DFS. At each node, we check its adjacency list. Total edge examinations = O(n) for a tree (n-1 edges × 2 passes = ∞ but bounded by 2n)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Single DFS pass, elegant recursive formulation.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Recursion may overflow for deep trees (mitigated by iterative DFS)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single node:"
+        }), " max1=max2=0, diameter=0. Correct."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Two nodes:"
+        }), " height of leaf=1, max1=1, max2=0, diameter=1. Correct."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Star tree (1 center with n-1 leaves):"
+        }), " Center gets max1=1, max2=1, diameter=2."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1012-maximum-path-sum-binary-tree",
+      children: "10.1.2 Maximum Path Sum (Binary Tree)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a binary tree with integer values (possibly negative), find the maximum sum along any path."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " For each node, compute:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "leftGain"
+        }), ": max sum from left child going downward (0 if negative)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "rightGain"
+        }), ": max sum from right child going downward (0 if negative)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "currentSum = node.val + leftGain + rightGain"
+        }), " — potential answer."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Return ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "node.val + max(leftGain, rightGain)"
+        }), " — the max single-branch path going up."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "MAX_PATH_SUM(node):\n    if node is null: return 0\n    leftGain = max(0, MAX_PATH_SUM(node.left))\n    rightGain = max(0, MAX_PATH_SUM(node.right))\n    currentSum = node.val + leftGain + rightGain\n    globalMax = max(globalMax, currentSum)\n    return node.val + max(leftGain, rightGain)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Tree with values"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "    -10\n    / \\\n   9  20\n      / \\\n     15  7\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "leftGain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "rightGain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "currentSum"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "globalMax"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Return"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 (null)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 (null)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0,15)=15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0,7)=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20+15+7=42"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20+max(15,7)=35"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0,9)=9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0,35)=35"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-10+9+35=34"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-10+max(9,35)=25"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Maximum path sum = 42"
+      }), " (path: 15 → 20 → 7)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int maxPathSum(TreeNode* root) {\n    int globalMax = INT_MIN;\n    function<int(TreeNode*)> dfs = [&](TreeNode* node) -> int {\n        if (!node) return 0;\n        int leftGain = max(0, dfs(node->left));\n        int rightGain = max(0, dfs(node->right));\n        globalMax = max(globalMax, node->val + leftGain + rightGain);\n        return node->val + max(leftGain, rightGain);\n    };\n    dfs(root);\n    return globalMax;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def max_path_sum(root):\n    global_max = float('-inf')\n\n    def dfs(node):\n        nonlocal global_max\n        if node is None: return 0\n        left_gain = max(0, dfs(node.left))\n        right_gain = max(0, dfs(node.right))\n        global_max = max(global_max, node.val + left_gain + right_gain)\n        return node.val + max(left_gain, right_gain)\n\n    dfs(root)\n    return global_max\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int globalMax = Integer.MIN_VALUE;\nint maxPathSum(TreeNode root) {\n    dfs(root);\n    return globalMax;\n}\nint dfs(TreeNode node) {\n    if (node == null) return 0;\n    int leftGain = Math.max(0, dfs(node.left));\n    int rightGain = Math.max(0, dfs(node.right));\n    globalMax = Math.max(globalMax, node.val + leftGain + rightGain);\n    return node.val + Math.max(leftGain, rightGain);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) — each node visited once. O(h) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Elegant recursive approach with minimal state.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Assumes binary tree (not n-ary)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "All negative values:"
+        }), " max(0, child) ensures we ignore negative children. A single node will be the answer."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single node:"
+        }), " Returns its value."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linear tree (skewed):"
+        }), " Works correctly, max1/max2 pattern handles one-sided paths."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1013-tree-dp-with-states-house-robber-iii",
+      children: "10.1.3 Tree DP with States (House Robber III)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a binary tree, select a set of nodes such that no two adjacent nodes are selected, maximizing the sum of values."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A bank security system where you cannot arm two adjacent floors at the same time (they share electrical wiring). Each floor has a value. Maximize coverage without triggering alarms."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "State:"
+      }), " For each node, compute two values:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "( dp[u][0] ): maximum sum for the subtree when ( u ) is NOT selected."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "( dp[u][1] ): maximum sum for the subtree when ( u ) IS selected."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Recurrence:"
+      }), "\n[\n\\begin{aligned}\ndp[u][0] &= \\sum_{v \\in \\text{children}(u)} \\max(dp[v][0], dp[v][1]) \\\ndp[u][1] &= \\text{val}(u) + \\sum_{v \\in \\text{children}(u)} dp[v][0]\n\\end{aligned}\n]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If node is null, return [0, 0]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recursively compute left pair and right pair."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "notRob = max(left[0], left[1]) + max(right[0], right[1])"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "rob = node.val + left[0] + right[0]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return [notRob, rob]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ROB(root):\n    if root == null: return [0, 0]\n    left = ROB(root.left)\n    right = ROB(root.right)\n    notRob = max(left[0], left[1]) + max(right[0], right[1])\n    rob = root.val + left[0] + right[0]\n    return [notRob, rob]\n\nAnswer: max(ROB(root)[0], ROB(root)[1])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "    3\n   / \\\n  2   3\n   \\   \\\n    3   1\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "left"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "right"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "notRob"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "rob"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Return"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3 (leaf)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0+0=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3+0+0=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1 (leaf)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0+0=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+0+0=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0, 1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(0,3)+0=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+0+0=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3 (right)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0+max(0,1)=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3+0+0=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3 (root)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "max(3,2)+max(1,3)=3+3=6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3+3+1=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[6, 7]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Answer = max(6, 7) = 7 (rob root=3 + left child's child=3 + right child's child=1)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "pair<int,int> robSub(TreeNode* node) {\n    if (!node) return {0, 0};\n    auto left = robSub(node->left);\n    auto right = robSub(node->right);\n    int notRob = max(left.first, left.second) + max(right.first, right.second);\n    int rob = node->val + left.first + right.first;\n    return {notRob, rob};\n}\nint rob(TreeNode* root) {\n    auto res = robSub(root);\n    return max(res.first, res.second);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def rob(root):\n    def dfs(node):\n        if node is None: return (0, 0)\n        left = dfs(node.left)\n        right = dfs(node.right)\n        not_rob = max(left) + max(right)\n        rob = node.val + left[0] + right[0]\n        return (not_rob, rob)\n\n    result = dfs(root)\n    return max(result)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int[] robSub(TreeNode node) {\n    if (node == null) return new int[]{0, 0};\n    int[] left = robSub(node.left);\n    int[] right = robSub(node.right);\n    int notRob = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);\n    int rob = node.val + left[0] + right[0];\n    return new int[]{notRob, rob};\n}\nint rob(TreeNode root) {\n    int[] res = robSub(root);\n    return Math.max(res[0], res[1]);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) time — each node visited once. O(h) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Elegant two-state DP that naturally fits tree structure.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Only works for the specific constraint of \"no adjacent nodes.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Empty tree:"
+        }), " Returns 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single node:"
+        }), " notRob=0, rob=val, answer=val."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tree with all equal values:"
+        }), " Still works, but answer is val × floor((height+1)/2)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Tree DP always uses post-order DFS — compute children's DP values before the parent's. For the diameter, track the top 2 heights at each node. For state-based problems like House Robber, use dp[u][selected] / dp[u][not_selected] pairs."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " In tree DP, the global answer may merge values from different subtrees (as in diameter = max1 + max2). Track a global variable alongside the per-node return value."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "One-Sentence Takeaway:"
+      }), " Tree DP combines post-order DFS recursion with per-node states, solving problems like tree diameter and maximum path sum in O(n) time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-4-dynamic-programming-on-grids",
+      children: "Part 4: Dynamic Programming on Grids"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "102-dp-on-grids",
+      children: "10.2 DP on Grids"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Grid DP involves traversing a 2D array from one corner to another, making moves (right, down, diagonal). The DP state represents the value at position (i, j)."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A warehouse robot moving from the receiving dock to the shipping bay, always moving right or down (never backward). Each cell has a handling cost. The DP finds the cheapest route without the robot needing to backtrack."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1021-unique-paths",
+      children: "10.2.1 Unique Paths"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Count the number of ways to travel from the top-left corner to the bottom-right corner of an m × n grid, moving only right or down."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Recurrence:"
+      }), "\n[\ndp[i][j] = dp[i-1][j] + dp[i][j-1]\n]\nwith ( dp[0][", (0,jsx_runtime.jsx)(_components.em, {
+        children: "] = dp["
+      }), "][0] = 1 )."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Optimal Substructure Proof:"
+      }), " Any path to (i,j) arrives either from above (i-1,j) or from the left (i,j-1). The number of ways to reach (i,j) is the sum of ways to reach its two predecessors. No other paths exist since moves are only right/down."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create dp[m][n] initialized to 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fill first row and first column with 1 (only one way to reach them)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For i from 1 to m-1, for j from 1 to n-1:\ndp[i][j] = dp[i-1][j] + dp[i][j-1]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return dp[m-1][n-1]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " 3×3 grid (m=3, n=3)"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "dp"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=2"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+1=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+1=3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+1=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3+3=6"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "6 unique paths"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int uniquePaths(int m, int n) {\n    vector<vector<int>> dp(m, vector<int>(n, 1));\n    for (int i = 1; i < m; ++i)\n        for (int j = 1; j < n; ++j)\n            dp[i][j] = dp[i-1][j] + dp[i][j-1];\n    return dp[m-1][n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def unique_paths(m, n):\n    dp = [[1] * n for _ in range(m)]\n    for i in range(1, m):\n        for j in range(1, n):\n            dp[i][j] = dp[i-1][j] + dp[i][j-1]\n    return dp[m-1][n-1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int uniquePaths(int m, int n) {\n    int[][] dp = new int[m][n];\n    for (int i = 0; i < m; i++) dp[i][0] = 1;\n    for (int j = 0; j < n; j++) dp[0][j] = 1;\n    for (int i = 1; i < m; i++)\n        for (int j = 1; j < n; j++)\n            dp[i][j] = dp[i-1][j] + dp[i][j-1];\n    return dp[m-1][n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space-Optimized Version:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int uniquePaths(int m, int n) {\n    vector<int> dp(n, 1);\n    for (int i = 1; i < m; ++i)\n        for (int j = 1; j < n; ++j)\n            dp[j] += dp[j-1];\n    return dp[n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m×n) time, O(n) space (optimized)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why DP works here:"
+      }), " The problem has overlapping subproblems — the number of ways to reach (i,j) depends on two subproblems that themselves depend on smaller subproblems. A combinatorial solution also exists: C(m+n-2, m-1)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Simple recurrence; easily modifiable for obstacles.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Space can be high without optimization; only handles right/down moves."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×1 grid:"
+        }), " Only 1 way (already there)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×n or m×1 grid:"
+        }), " Only 1 way (straight line)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Large m,n:"
+        }), " dp values overflow — use long long."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1022-minimum-path-sum",
+      children: "10.2.2 Minimum Path Sum"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an m × n grid of non-negative integers, find the minimum sum along a path from top-left to bottom-right (moving only right or down)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Recurrence:"
+      }), "\n[\ndp[i][j] = \\text{grid}[i][j] + \\min(dp[i-1][j], dp[i][j-1])\n]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize dp[0][0] = grid[0][0]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fill first row: dp[0][j] = grid[0][j] + dp[0][j-1] (can only come from left)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fill first column: dp[i][0] = grid[i][0] + dp[i-1][0] (can only come from above)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For i from 1 to m-1, for j from 1 to n-1:\ndp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return dp[m-1][n-1]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Grid = [[1,3,1],[1,5,1],[4,2,1]]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Initial grid:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "1"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DP table:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i\\j"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j=2"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+3=4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4+1=5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+1=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+min(4,2)=4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4+min(5,4)=8"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "i=2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+4=6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6+min(4,6)=8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8+min(8,6)=9"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wait, let me recalculate more carefully:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "dp[0][0] = 1\ndp[0][1] = 3 + dp[0][0] = 3 + 1 = 4\ndp[0][2] = 1 + dp[0][1] = 1 + 4 = 5\ndp[1][0] = 1 + dp[0][0] = 1 + 1 = 2\ndp[1][1] = 5 + min(dp[0][1], dp[1][0]) = 5 + min(4, 2) = 5 + 2 = 7\ndp[1][2] = 1 + min(dp[0][2], dp[1][1]) = 1 + min(5, 7) = 1 + 5 = 6\ndp[2][0] = 4 + dp[1][0] = 4 + 2 = 6\ndp[2][1] = 2 + min(dp[1][1], dp[2][0]) = 2 + min(7, 6) = 2 + 6 = 8\ndp[2][2] = 1 + min(dp[1][2], dp[2][1]) = 1 + min(6, 8) = 1 + 6 = 7"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Final dp:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "5"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "7"
+      }), " (path: 1→1→5→1→1 or 1→3→1→1→1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Let me verify: 1→3→1→1→1 = 7, yes. And 1→1→5→1→1 = 8, not minimal. 1→1→4→2→1 = 9, even worse. So 7 is correct."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Path: (0,0)→(0,1)→(0,2)→(1,2)→(2,2) = 1+3+1+1+1 = 7."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int minPathSum(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    vector<vector<int>> dp(m, vector<int>(n, 0));\n    dp[0][0] = grid[0][0];\n    for (int j = 1; j < n; ++j) dp[0][j] = grid[0][j] + dp[0][j-1];\n    for (int i = 1; i < m; ++i) dp[i][0] = grid[i][0] + dp[i-1][0];\n    for (int i = 1; i < m; ++i)\n        for (int j = 1; j < n; ++j)\n            dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1]);\n    return dp[m-1][n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def min_path_sum(grid):\n    m, n = len(grid), len(grid[0])\n    dp = [[0] * n for _ in range(m)]\n    dp[0][0] = grid[0][0]\n    for j in range(1, n): dp[0][j] = grid[0][j] + dp[0][j-1]\n    for i in range(1, m): dp[i][0] = grid[i][0] + dp[i-1][0]\n    for i in range(1, m):\n        for j in range(1, n):\n            dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])\n    return dp[m-1][n-1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int minPathSum(int[][] grid) {\n    int m = grid.length, n = grid[0].length;\n    int[][] dp = new int[m][n];\n    dp[0][0] = grid[0][0];\n    for (int j = 1; j < n; j++) dp[0][j] = grid[0][j] + dp[0][j-1];\n    for (int i = 1; i < m; i++) dp[i][0] = grid[i][0] + dp[i-1][0];\n    for (int i = 1; i < m; i++)\n        for (int j = 1; j < n; j++)\n            dp[i][j] = grid[i][j] + Math.min(dp[i-1][j], dp[i][j-1]);\n    return dp[m-1][n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space-Optimized (1D array):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int minPathSum(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    vector<int> dp(n, 0);\n    dp[0] = grid[0][0];\n    for (int j = 1; j < n; ++j) dp[j] = grid[0][j] + dp[j-1];\n    for (int i = 1; i < m; ++i) {\n        dp[0] += grid[i][0];\n        for (int j = 1; j < n; ++j)\n            dp[j] = grid[i][j] + min(dp[j], dp[j-1]);\n    }\n    return dp[n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(1) space optimization works:"
+      }), " dp[i][j] only depends on dp[i-1][j] (current dp[j]) and dp[i][j-1] (dp[j-1]). A single row array suffices because:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When computing dp[j], dp[j] still holds the previous row's dp[i-1][j]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "dp[j-1] has already been updated to dp[i][j-1] in the current row."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m×n) time, O(1) additional space (optimized)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Classic shortest-path DP pattern; easily extendable.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Only works for non-negative weights (greedy overlaps with DP for non-negative)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×1 grid:"
+        }), " Returns grid[0][0]."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single row:"
+        }), " Only horizontal moves possible."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single column:"
+        }), " Only vertical moves possible."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1023-dp-with-obstacles",
+      children: "10.2.3 DP with Obstacles"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an m × n grid of non-negative integers where some cells are blocked (value = 1), find the number of paths from top-left to bottom-right avoiding blocked cells."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Recurrence:"
+      }), "\n[\ndp[i][j] = \\begin{cases}\n0 & \\text{if } \\text{grid}[i][j] = 1 \\\ndp[i-1][j] + dp[i][j-1] & \\text{otherwise}\n\\end{cases}\n]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If start cell is blocked, return 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize dp[0][0] = 1."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For first row: if grid[0][j] = 1, dp[0][j] = 0 else dp[0][j] = dp[0][j-1]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For first column: if grid[i][0] = 1, dp[i][0] = 0 else dp[i][0] = dp[i-1][0]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For all other cells: if grid[i][j] = 1, dp[i][j] = 0 else dp[i][j] = dp[i-1][j] + dp[i][j-1]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Return dp[m-1][n-1]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "UNIQUE_PATHS_OBSTACLES(grid):\n    m = rows(grid), n = cols(grid)\n    if grid[0][0] == 1: return 0\n    dp = array of size n, initialized to 0\n    dp[0] = 1\n    for i = 0 to m-1:\n        for j = 0 to n-1:\n            if grid[i][j] == 1:\n                dp[j] = 0\n            else if j > 0:\n                dp[j] += dp[j-1]\n    return dp[n-1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " Grid with obstacle at (1,1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "   0    1    2\n0 [0]  [0]  [0]\n1 [0]  [1]  [0]\n2 [0]  [0]  [0]\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "i"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "j"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "grid[i][j]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dp (before)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "dp (after)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,0]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,0]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,0,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,1,2]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2 paths"
+      }), " (right→down→down→right avoiding obstacle, and down→right→down→right avoiding obstacle)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int uniquePathsWithObstacles(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    if (grid[0][0] == 1) return 0;\n    vector<long> dp(n, 0);\n    dp[0] = 1;\n    for (int i = 0; i < m; ++i) {\n        for (int j = 0; j < n; ++j) {\n            if (grid[i][j] == 1) dp[j] = 0;\n            else if (j > 0) dp[j] += dp[j-1];\n        }\n    }\n    return (int)dp[n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def unique_paths_with_obstacles(grid):\n    m, n = len(grid), len(grid[0])\n    if grid[0][0] == 1: return 0\n    dp = [0] * n\n    dp[0] = 1\n    for i in range(m):\n        for j in range(n):\n            if grid[i][j] == 1:\n                dp[j] = 0\n            elif j > 0:\n                dp[j] += dp[j-1]\n    return dp[n-1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int uniquePathsWithObstacles(int[][] grid) {\n    int m = grid.length, n = grid[0].length;\n    if (grid[0][0] == 1) return 0;\n    int[] dp = new int[n];\n    dp[0] = 1;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] == 1) dp[j] = 0;\n            else if (j > 0) dp[j] += dp[j-1];\n        }\n    }\n    return dp[n-1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m×n) time, O(n) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why this works:"
+      }), " The recurrence is identical to unique paths, except obstacles act as sinks — no paths can pass through them, so dp[i][j]=0. The first row/column handling ensures that any obstacle blocks all subsequent cells in that row/column from having any paths."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Start blocked:"
+        }), " Return 0 (no paths possible)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "End blocked:"
+        }), " Return 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "All cells blocked:"
+        }), " Return 0."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1×1 grid with no obstacle:"
+        }), " Return 1."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Grid DP can often be space-optimized to 1D — since dp[i][j] only depends on dp[i-1][j] and dp[i][j-1], you only need one array."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Don't forget to handle the base row (i=0) and column (j=0) separately — they only have one way to be reached (all rights or all downs)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "One-Sentence Takeaway:"
+      }), " Grid DP uses the recurrence dp[i][j] = f(dp[i-1][j], dp[i][j-1]) for path counting and optimization problems on 2D grids."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-5-dp-with-bitmasking",
+      children: "Part 5: DP with Bitmasking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "103-dp-with-bitmasking",
+      children: "10.3 DP with Bitmasking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DP with bitmasking is used for problems where we need to track subsets of elements. The state is a bitmask representing a set, and the transition adds or removes elements from the set."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A delivery driver planning the shortest route to visit 15 customers. Instead of trying all 15! permutations (~1.3 trillion), DP with bitmasking groups states by \"which customers visited so far\" — reducing the search space dramatically."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1031-traveling-salesman-problem-tsp",
+      children: "10.3.1 Traveling Salesman Problem (TSP)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given n cities and distances d[i][j], find the shortest tour that visits every city exactly once and returns to the start."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "State:"
+      }), " dp[mask][v] = minimum cost to visit the set of cities represented by mask and end at city v."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Recurrence:"
+      }), "\n[\ndp[mask][v] = \\min_{u \\in mask, u \\neq v} (dp[mask \\setminus {v}][u] + d[u][v])\n]"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Base case: dp[1 << 0][0] = 0."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize dp[1][0] = 0, all others = INF."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For mask from 1 to (1<<n)-1:\nFor each u in mask:\nIf dp[mask][u] is INF, skip.\nFor each v not in mask:\nnewMask = mask | (1 << v)\ndp[newMask][v] = min(dp[newMask][v], dp[mask][u] + dist[u][v])"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Answer = min over v of dp[fullMask][v] + dist[v][0]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run:"
+      }), " 4 cities with distances:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {}), (0,jsx_runtime.jsx)(_components.th, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "3"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "35"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "35"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "dp table (only showing computed states):"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "mask"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "u=0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "u=1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "u=2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "u=3"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0001 (1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∞"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∞"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∞"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0011 (3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10 (0→1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0101 (5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 (0→2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1001 (9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 (0→3)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0111 (7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "min(15+35,15+10)=25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Computing dp[0111][1]: mask=0011 (cities {0,1}), u=1, add v=2:\ndp[0011][1] + dist[1][2] = 10 + 35 = 45\nAlso: mask=0101 (cities {0,2}), u=2, add v=1:\ndp[0101][2] + dist[2][1] = 15 + 35 = 50\nAlso: mask=0011, u=0, add v=2: dp[0011][0] doesn't exist (not valid)\nSo dp[0111][1] = 45"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Full computation eventually gives answer = 80 (tour 0→1→3→2→0 = 10+25+30+15 = 80)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int tsp(vector<vector<int>>& dist) {\n    int n = dist.size(), fullMask = (1 << n) - 1;\n    vector<vector<int>> dp(1 << n, vector<int>(n, INT_MAX));\n    dp[1][0] = 0;\n    for (int mask = 1; mask < (1 << n); ++mask) {\n        for (int u = 0; u < n; ++u) {\n            if (!(mask & (1 << u))) continue;\n            if (dp[mask][u] == INT_MAX) continue;\n            for (int v = 0; v < n; ++v) {\n                if (mask & (1 << v)) continue;\n                int newMask = mask | (1 << v);\n                dp[newMask][v] = min(dp[newMask][v],\n                                     dp[mask][u] + dist[u][v]);\n            }\n        }\n    }\n    int ans = INT_MAX;\n    for (int v = 1; v < n; ++v)\n        if (dp[fullMask][v] != INT_MAX)\n            ans = min(ans, dp[fullMask][v] + dist[v][0]);\n    return ans;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def tsp(dist):\n    n = len(dist)\n    full_mask = (1 << n) - 1\n    dp = [[float('inf')] * n for _ in range(1 << n)]\n    dp[1][0] = 0\n    for mask in range(1, 1 << n):\n        for u in range(n):\n            if not (mask & (1 << u)): continue\n            if dp[mask][u] == float('inf'): continue\n            for v in range(n):\n                if mask & (1 << v): continue\n                new_mask = mask | (1 << v)\n                dp[new_mask][v] = min(dp[new_mask][v],\n                                      dp[mask][u] + dist[u][v])\n    ans = float('inf')\n    for v in range(1, n):\n        ans = min(ans, dp[full_mask][v] + dist[v][0])\n    return ans\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "int tsp(int[][] dist) {\n    int n = dist.length, fullMask = (1 << n) - 1;\n    int[][] dp = new int[1 << n][n];\n    for (int[] row : dp) Arrays.fill(row, Integer.MAX_VALUE / 2);\n    dp[1][0] = 0;\n    for (int mask = 1; mask < (1 << n); mask++) {\n        for (int u = 0; u < n; u++) {\n            if ((mask & (1 << u)) == 0) continue;\n            if (dp[mask][u] == Integer.MAX_VALUE / 2) continue;\n            for (int v = 0; v < n; v++) {\n                if ((mask & (1 << v)) != 0) continue;\n                int newMask = mask | (1 << v);\n                dp[newMask][v] = Math.min(dp[newMask][v],\n                                          dp[mask][u] + dist[u][v]);\n            }\n        }\n    }\n    int ans = Integer.MAX_VALUE / 2;\n    for (int v = 1; v < n; v++)\n        ans = Math.min(ans, dp[fullMask][v] + dist[v][0]);\n    return ans;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n²·2ⁿ) time — 2ⁿ masks × n states per mask × n transitions. O(n·2ⁿ) space."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(n²·2ⁿ) is better than O(n!):"
+      }), " For n=20: O(n!) ≈ 2.4×10¹⁸, O(n²·2ⁿ) ≈ 4×10⁸ — a 10 billion× improvement. This is the fundamental advantage of DP with bitmasking."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages:"
+      }), " Exponential improvement over brute force; generalizes to many subset problems.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Disadvantages:"
+      }), " Still exponential — limited to n ≤ 20 for practical use."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "n = 1: Only one city, answer = 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "n = 0: Undefined (no cities)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asymmetric distances: Works as-is (dist[u][v] ≠ dist[v][u])."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1032-hamiltonian-path",
+      children: "10.3.2 Hamiltonian Path"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Hamiltonian path visits every vertex exactly once (no return to start). The DP formulation is identical to TSP without the return-to-start requirement."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "State:"
+      }), " dp[mask][v] = minimum cost to visit set mask and end at v."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " min over v of dp[fullMask][v]."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " DP with bitmasking has O(n²·2ⁿ) complexity — feasible for n ≤ 20. For larger n, use branch-and-bound or approximation algorithms."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always initialize dp[1 << start][start] = 0. The mask represents which cities have been visited, not the tour order. Extract the visited bit by checking (mask >> v) & 1."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "One-Sentence Takeaway:"
+      }), " Bitmask DP solves TSP in O(n²·2ⁿ) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tree-vs-grid--comparison-table",
+      children: "Tree vs Grid — Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trees"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Grids"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Structure"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hierarchical, connected acyclic graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rectilinear 2D matrix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Traversal"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pre/in/post/level-order, DFS naturally"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row-major, DFS, BFS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DP Dependency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Children → parent (post-order)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Top-left → bottom-right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "State Dimension"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subtree root"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(row, column)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h) recursion, O(1) aux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn) tables, O(n) optimized"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Typical Moves"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Left/right child"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right/down (sometimes all 4 directions)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Graph Property"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No cycles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Many cycles (cells form a lattice)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-World Parallel"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File systems, org charts, AST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Digital images, game maps, spreadsheets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recurrence Pattern"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine children at parent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dp[i-1][j] + dp[i][j-1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Edge Cases"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Empty, single node, skewed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1×1, single row/col, obstacles"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "These problems are among the most frequently asked in FAANG/MAANG interviews."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-lowest-common-ancestor-lca",
+      children: "1. Lowest Common Ancestor (LCA)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a binary tree and two nodes p, q, find their lowest common ancestor (the deepest node that has both as descendants)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach (Recursive):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If current node is null or equals p or q, return it."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recurse on left and right subtrees."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If both left and right return non-null, current node is LCA."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Otherwise return the non-null side."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\n    if (!root || root == p || root == q) return root;\n    TreeNode* left = lowestCommonAncestor(root->left, p, q);\n    TreeNode* right = lowestCommonAncestor(root->right, p, q);\n    if (left && right) return root;\n    return left ? left : right;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) time, O(h) space."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-diameter-of-binary-tree",
+      children: "2. Diameter of Binary Tree"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Same as 10.1.1 but for any binary tree (not necessarily rooted at 0). See the full derivation above."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "3-grid-unique-paths-with-obstacles",
+      children: "3. Grid Unique Paths with Obstacles"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Same as 10.2.3. Common follow-up: \"What if you can move in all 4 directions?\" → Use BFS/DFS with visited tracking (not DP, moves can cycle)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "4-number-of-islands",
+      children: "4. Number of Islands"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a 2D grid of '1's (land) and '0's (water), count the number of islands (connected groups of '1's connected horizontally or vertically)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " DFS/BFS from each unvisited '1', marking all reachable '1's as visited. Each DFS/BFS start = one island."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int numIslands(vector<vector<char>>& grid) {\n    int m = grid.size(), n = grid[0].size(), count = 0;\n    function<void(int,int)> dfs = [&](int r, int c) {\n        if (r < 0 || r >= m || c < 0 || c >= n || grid[r][c] == '0') return;\n        grid[r][c] = '0';  // sink the island\n        dfs(r+1, c); dfs(r-1, c); dfs(r, c+1); dfs(r, c-1);\n    };\n    for (int i = 0; i < m; ++i)\n        for (int j = 0; j < n; ++j)\n            if (grid[i][j] == '1') { ++count; dfs(i, j); }\n    return count;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(m×n) time — each cell visited once. O(m×n) worst-case recursion."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Tip:"
+      }), " When asked \"Number of Islands\", always ask: \"Can I modify the input grid?\" If not, use a separate visited array."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-indexing-trees",
+      children: "File System Indexing (Trees)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Every OS uses a tree-based file system. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "find / -name \"*.txt\""
+      }), " performs a tree traversal. File system indexers (like Spotlight, Everything) maintain precomputed trees with metadata for instant search. The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "B-tree"
+      }), " and variants are the cornerstone of database indexing (MySQL, PostgreSQL, MongoDB)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "game-maps-grid-pathfinding",
+      children: "Game Maps (Grid Pathfinding)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In game development, the game world is divided into a grid (tile map). Pathfinding algorithms (A*, Dijkstra) run on this grid:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Civilization"
+        }), " uses hexagonal grids for turn-based movement."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Minecraft"
+        }), " uses a 3D block grid (chunks of 16×16×256 blocks)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pac-Man"
+        }), " has a 28×31 grid of pellets."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google Maps"
+        }), " converts road networks into grid representations for route calculation."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "compiler-ast-trees",
+      children: "Compiler AST (Trees)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Every compiler parses source code into an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Abstract Syntax Tree"
+      }), " (AST):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "if (x > 0) { y = x + 1; }\n\n    IfStatement\n    /         \\\n  >           Block\n / \\             |\nx  0        Assignment\n               /   \\\n              y    +\n                   / \\\n                  x   1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The compiler traverses this AST to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check syntax (tree validation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optimize code (constant folding on subtrees)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generate machine code (post-order traversal emits instructions)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linting tools (ESLint, PyLint) and formatters (Prettier) also work on ASTs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "image-processing-grids",
+      children: "Image Processing (Grids)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every image filter is a grid operation:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Blur"
+        }), " averages each pixel with its 3×3 neighbors."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge detection"
+        }), " (Sobel operator) convolves the grid with specific kernels."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Seam carving"
+        }), " (content-aware image resizing) uses DP on the image grid to find minimal-energy seams."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "robotics-grids",
+      children: "Robotics (Grids)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maps the room onto a grid (SLAM algorithm)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plans a coverage path (grid traversal)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Avoids obstacles (grid cells marked blocked)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Returns to the dock (shortest path on the grid)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree Traversals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Order determines application (inorder→sorted, postorder→delete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Choose traversal based on parent-child dependency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BST Operations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary search property halves search space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) if balanced, O(n) if skewed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Segment Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precomputed segment aggregates enable O(log n) range queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4n memory, great for dynamic range queries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fenwick Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LSB-based indexing simplifies prefix sums"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simpler, lighter, but range-sum only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DFS/BFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DFS uses stack, BFS uses queue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BFS finds shortest path, DFS uses less memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-order DFS combines child results"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parent depends on its subtrees — visit children first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree Diameter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Farthest node from farthest node"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two-pass DFS or DP tracking top-2 heights"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dp[i][j] = f(dp[i-1][j], dp[i][j-1])"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Path problems: right+down simplifies to 2D recurrence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DP with Obstacles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Skip blocked cells"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same recurrence but dp[i][j] = 0 when blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DP with Bitmask"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dp[mask][v] = min cost ending at v"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State = visited set + current node — classic TSP"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Trees & Grids] --> B[Trees]\n    A --> C[Grids]\n    A --> D[Tree DP]\n    A --> E[Grid DP]\n    A --> F[Bitmask DP]\n    B --> G[Traversals]\n    B --> H[BST Ops]\n    B --> I[Segment Tree]\n    B --> J[Fenwick Tree]\n    C --> K[DFS on Grid]\n    C --> L[BFS on Grid]\n    D --> M[Tree Diameter]\n    D --> N[Max Path Sum]\n    D --> O[House Robber]\n    E --> P[Unique Paths]\n    E --> Q[Min Path Sum]\n    E --> R[Obstacles]\n    F --> S[TSP]\n    F --> T[Hamiltonian]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch10-dp-trees-grids.png",
+        alt: "Trees Grids DP Diagram"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "State Representation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Traversal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Transition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree Traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node pointer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursive/iterative"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Left/right child"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BST Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node pointer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root-to-leaf"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare & branch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Segment Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node interval"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Split at mid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DFS/BFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(r,c) coordinates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack/queue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-direction neighbors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subtree root"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-order DFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine children → parent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Position (i,j)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row-major iteration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right/down from neighbors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bitmask DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(mask, last vertex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mask enumeration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add vertex to mask"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²·2ⁿ)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Inorder Traversal"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Left → Root → Right; gives sorted order in BST"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Preorder Traversal"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root → Left → Right; used for tree copy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Postorder Traversal"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Left → Right → Root; used for tree deletion & DP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Level-Order"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BFS with queue; finds shortest path in trees"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BST Search"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h): compare key, go left if smaller, right if larger"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BST Insert"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h): find leaf position, attach new node"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BST Delete"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h): 3 cases (leaf, 1 child, 2 children with successor)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Segment Tree"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) range queries, O(log n) point updates, O(n) build"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fenwick Tree"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) prefix sum, O(n) space, simpler than segment tree"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Grid DFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack-based, goes deep first, uses less memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Grid BFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Queue-based, level-order, finds shortest path in unweighted"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Tree DP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-order traversal, combine child results at parent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Tree Diameter"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Track top-2 heights at each node, answer = max1 + max2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Grid DP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dp[i][j] depends only on top/left neighbors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Grid Optimization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can reduce to 1D array for space"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bitmask DP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State = visited set (mask) + current endpoint"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bitmask Limits"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "n ≤ 20 for feasible O(n²·2ⁿ) runtime"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DSA Interviews"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Competitive Programming"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Real-World"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree Traversals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very common — every tree problem needs traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard boilerplate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File system indexing, AST traversal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BST Ops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common — search, sorted iteration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data structure problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Database indexing (B-tree family)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Segment Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Less common — seen in harder problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Range query problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stock price range queries, interval scheduling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fenwick Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Occasional — alternative to segment tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prefix sum problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Frequency counting, inversion count"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very common — island counting, maze solving"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid path problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Image segmentation, maze solving"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid BFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very common — shortest path, word ladder"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shortest path in grid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPS routing, game pathfinding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common — diameter, path sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree DP contests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network routing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very common — path counting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid traversal problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Robotics path planning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bitmask DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Occasionally — TSP variants"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subset DP problems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logistics optimization"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Inorder traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node pointer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BST search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node pointer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(h)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Range sum query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Segment tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interval"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prefix sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fenwick tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid island count"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(r,c) coordinates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree diameter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-order DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Top-2 heights"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Max path sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-order DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single-branch max sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "House robber tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State per node DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Selected/not selected"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unique paths"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Count of ways"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Min path sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Min cost to (i,j)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TSP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bitmask DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(mask, last vertex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²2ⁿ)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hamiltonian path"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bitmask DP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(mask, last vertex)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²2ⁿ)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What traversal does tree DP always use?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Pre-order"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) In-order"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Post-order"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Level-order"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nC) Post-order — children must be processed before their parent since dp[parent] depends on dp[children].\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " What is the time complexity of the DP solution for TSP?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) O(n²)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) O(n³)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) O(n²·2ⁿ)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) O(2ⁿ)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nC) O(n²·2ⁿ) — there are n·2ⁿ states (mask × endpoint) and O(n) transitions per state.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " In the unique paths DP, how many ways reach cell (i,j)?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) dp[i-1][j] + dp[i][j-1]"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) dp[i-1][j] · dp[i][j-1]"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) dp[i-1][j-1] + 1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) max(dp[i-1][j], dp[i][j-1]) + 1"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nA) dp[i][j] = dp[i-1][j] + dp[i][j-1] — you can arrive from above or from the left.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " Which BST delete case requires finding the inorder successor?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Leaf node"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Node with left child only"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Node with right child only"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Node with two children"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nD) When a node has two children, the inorder successor (smallest in right subtree) replaces it.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " What is the worst-case space complexity of a segment tree for an array of size n?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) O(n)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) O(4n)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) O(log n)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) O(n²)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB) O(4n) — a segment tree needs ~4n nodes for an array of size n.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why does tree DP typically use post-order traversal?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain how bitmasking represents subsets. How many states does TSP require?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Can DP on grids be extended to allow diagonal moves? Modify the recurrence."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between a segment tree and a Fenwick tree? When would you use each?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain why BFS on a grid finds the shortest path but DFS does not."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why does BST search degrade to O(n) in the worst case? How can this be prevented?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement the House Robber III problem on a binary tree."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the minimum path sum problem on a 5×5 grid with obstacles at positions (1,2) and (3,4)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement TSP for 10 cities with random distances. Compare the DP result with brute force."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given a grid with 0/1 values, find the largest square submatrix of all 1s using DP."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a segment tree for an array [2, 5, 1, 8, 3, 7] and query the sum of range [1, 4]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a Fenwick tree and use it to count inversions in an array."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given a 10×10 grid, count the number of ways to go from (0,0) to (9,9) moving right or down."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "14",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Design a DP algorithm for the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "maximum sum BST in a binary tree"
+        }), ": given a binary tree, find the subtree that is a BST with the maximum sum. Analyze the complexity."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "LeetCode 329: Longest Increasing Path in a Matrix"
+        }), " using DFS + memoization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Solve ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "LeetCode 968: Binary Tree Cameras"
+        }), " using tree DP with 3 states (covered by parent, covered by self, covered by child)."]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

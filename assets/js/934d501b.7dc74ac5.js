@@ -1,0 +1,1548 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[81913],{
+
+/***/ 96125
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_31_spring_boot_test_md_934_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-31-spring-boot-test-md-934.json
+const site_docs_courses_java_31_spring_boot_test_md_934_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/31-spring-boot-test","title":"Spring Boot Testing","description":"Previous Testcontainers","source":"@site/docs/courses/java/31-spring-boot-test.md","sourceDirName":"courses/java","slug":"/java/31-spring-boot-test","permalink":"/ai-engineering-journey/java/31-spring-boot-test","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":31,"frontMatter":{"id":"31-spring-boot-test","slug":"/java/31-spring-boot-test","title":"Spring Boot Testing","sidebar_label":"Spring Boot Testing","sidebar_position":31},"sidebar":"course-java","previous":{"title":"Mockito & Mocking Frameworks","permalink":"/ai-engineering-journey/java/30-mockito"},"next":{"title":"Testcontainers & Integration Testing","permalink":"/ai-engineering-journey/java/32-testcontainers"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/31-spring-boot-test.md
+
+
+const frontMatter = {
+	id: '31-spring-boot-test',
+	slug: '/java/31-spring-boot-test',
+	title: 'Spring Boot Testing',
+	sidebar_label: 'Spring Boot Testing',
+	sidebar_position: 31
+};
+const contentTitle = 'Spring Boot Testing';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Table of Contents",
+  "id": "table-of-contents",
+  "level": 2
+}, {
+  "value": "1. @SpringBootTest — Full Context Testing",
+  "id": "1-springboottest--full-context-testing",
+  "level": 2
+}, {
+  "value": "1.1 Custom Context Configuration",
+  "id": "11-custom-context-configuration",
+  "level": 3
+}, {
+  "value": "1.2 Context Caching",
+  "id": "12-context-caching",
+  "level": 3
+}, {
+  "value": "2. Web Environment Modes",
+  "id": "2-web-environment-modes",
+  "level": 2
+}, {
+  "value": "2.1 LocalServerPort",
+  "id": "21-localserverport",
+  "level": 3
+}, {
+  "value": "3. TestRestTemplate",
+  "id": "3-testresttemplate",
+  "level": 2
+}, {
+  "value": "3.1 Basic REST Template Operations",
+  "id": "31-basic-rest-template-operations",
+  "level": 3
+}, {
+  "value": "3.2 TestRestTemplate with Basic Auth",
+  "id": "32-testresttemplate-with-basic-auth",
+  "level": 3
+}, {
+  "value": "4. WebTestClient",
+  "id": "4-webtestclient",
+  "level": 2
+}, {
+  "value": "4.1 Basic WebTestClient Usage",
+  "id": "41-basic-webtestclient-usage",
+  "level": 3
+}, {
+  "value": "4.2 WebTestClient with JSON Path",
+  "id": "42-webtestclient-with-json-path",
+  "level": 3
+}, {
+  "value": "4.3 WebTestClient for WebFlux",
+  "id": "43-webtestclient-for-webflux",
+  "level": 3
+}, {
+  "value": "5. Slicing Tests",
+  "id": "5-slicing-tests",
+  "level": 2
+}, {
+  "value": "5.1 @WebMvcTest — Testing Controllers Only",
+  "id": "51-webmvctest--testing-controllers-only",
+  "level": 3
+}, {
+  "value": "5.2 @DataJpaTest — Testing Repositories Only",
+  "id": "52-datajpatest--testing-repositories-only",
+  "level": 3
+}, {
+  "value": "5.3 @JsonTest — Testing Serialization",
+  "id": "53-jsontest--testing-serialization",
+  "level": 3
+}, {
+  "value": "5.4 @RestClientTest — Testing REST Clients",
+  "id": "54-restclienttest--testing-rest-clients",
+  "level": 3
+}, {
+  "value": "5.5 @DataMongoTest",
+  "id": "55-datamongotest",
+  "level": 3
+}, {
+  "value": "5.6 @DataRedisTest",
+  "id": "56-dataredistest",
+  "level": 3
+}, {
+  "value": "5.7 @DataLdapTest",
+  "id": "57-dataldaptest",
+  "level": 3
+}, {
+  "value": "5.8 @DataNeo4jTest",
+  "id": "58-dataneo4jtest",
+  "level": 3
+}, {
+  "value": "6. MockBean and SpyBean",
+  "id": "6-mockbean-and-spybean",
+  "level": 2
+}, {
+  "value": "6.1 @MockBean",
+  "id": "61-mockbean",
+  "level": 3
+}, {
+  "value": "6.2 @SpyBean",
+  "id": "62-spybean",
+  "level": 3
+}, {
+  "value": "6.3 DirtiesContext — Resetting Between Tests",
+  "id": "63-dirtiescontext--resetting-between-tests",
+  "level": 3
+}, {
+  "value": "7. Test Configuration",
+  "id": "7-test-configuration",
+  "level": 2
+}, {
+  "value": "7.1 @TestConfiguration",
+  "id": "71-testconfiguration",
+  "level": 3
+}, {
+  "value": "7.2 @TestPropertySource",
+  "id": "72-testpropertysource",
+  "level": 3
+}, {
+  "value": "7.3 @DynamicPropertySource",
+  "id": "73-dynamicpropertysource",
+  "level": 3
+}, {
+  "value": "7.4 @ActiveProfiles",
+  "id": "74-activeprofiles",
+  "level": 3
+}, {
+  "value": "7.5 Test Slice Auto-Configuration",
+  "id": "75-test-slice-auto-configuration",
+  "level": 3
+}, {
+  "value": "8. Output Capture",
+  "id": "8-output-capture",
+  "level": 2
+}, {
+  "value": "8.1 @OutputCaptureExtension",
+  "id": "81-outputcaptureextension",
+  "level": 3
+}, {
+  "value": "8.2 Using OutputCapture in @SpringBootTest",
+  "id": "82-using-outputcapture-in-springboottest",
+  "level": 3
+}, {
+  "value": "9. Summary",
+  "id": "9-summary",
+  "level": 2
+}, {
+  "value": "10. Exercises",
+  "id": "10-exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: Full Context Test",
+  "id": "exercise-1-full-context-test",
+  "level": 3
+}, {
+  "value": "Exercise 2: MockMvc Controller Test",
+  "id": "exercise-2-mockmvc-controller-test",
+  "level": 3
+}, {
+  "value": "Exercise 3: DataJpa Repository Test",
+  "id": "exercise-3-datajpa-repository-test",
+  "level": 3
+}, {
+  "value": "Exercise 4: JSON Test",
+  "id": "exercise-4-json-test",
+  "level": 3
+}, {
+  "value": "Exercise 5: RestClientTest",
+  "id": "exercise-5-restclienttest",
+  "level": 3
+}, {
+  "value": "Exercise 6: DynamicPropertySource with Testcontainers",
+  "id": "exercise-6-dynamicpropertysource-with-testcontainers",
+  "level": 3
+}, {
+  "value": "Exercise 7: ActiveProfiles",
+  "id": "exercise-7-activeprofiles",
+  "level": 3
+}, {
+  "value": "Exercise 8: Output Capture",
+  "id": "exercise-8-output-capture",
+  "level": 3
+}, {
+  "value": "Exercise 9: DataMongoTest",
+  "id": "exercise-9-datamongotest",
+  "level": 3
+}, {
+  "value": "Exercise 10: Complete Integration Test Suite",
+  "id": "exercise-10-complete-integration-test-suite",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "spring-boot-testing",
+        children: "Spring Boot Testing"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/30-mockito",
+          children: "Mockito"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/32-testcontainers",
+          children: "Testcontainers"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spring Boot provides first-class support for testing at every level of the application: unit tests with mocked slices, integration tests with the full application context, and end-to-end tests via HTTP clients. The testing layer builds on JUnit 5 and Mockito, adding Spring-specific annotations, test slices, and utilities that simplify wiring, configuration, and verification of Spring-managed components."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Add this dependency:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-test</artifactId>\n    <scope>test</scope>\n</dependency>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This single starter pulls in JUnit 5, Mockito, AssertJ, Hamcrest, JSON Assert, and the Spring Test framework."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/ch31-spring-boot-test.png",
+        alt: "Spring Boot Testing"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/31-spring-boot-test/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/31-spring-boot-test/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/31-spring-boot-test/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/31-spring-boot-test/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/31-spring-boot-test/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/31-spring-boot-test/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Bootstrap a full Spring application context for integration testing using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Configure the web environment (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MOCK"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RANDOM_PORT"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "DEFINED_PORT"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "NONE"
+        }), ") and choose the appropriate mode for each test scenario"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write integration tests using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TestRestTemplate"
+        }), " for REST endpoints and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "WebTestClient"
+        }), " for WebFlux"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Apply test slices (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@WebMvcTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataJpaTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@JsonTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@RestClientTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@WebFluxTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataMongoTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataRedisTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataLdapTest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataNeo4jTest"
+        }), ") to load only the necessary Spring configuration"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Replace real Spring beans with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@MockBean"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpyBean"
+        }), " for focused slice tests"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Configure test-specific properties using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@TestPropertySource"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DynamicPropertySource"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@ActiveProfiles"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Capture application output with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@OutputCaptureExtension"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring Boot Testing → full integration test support"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@SpringBootTest"
+            }), " loads the full application context"]
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Test Slices → focused test contexts for specific layers"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@WebMvcTest"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@DataJpaTest"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@JsonTest"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TestConfiguration → override beans for testing"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@TestConfiguration"
+            }), " + ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Bean"
+            }), " for test-specific wiring"]
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[Spring Boot Testing] --> B[@SpringBootTest]\n    A --> C[Test Slices]\n    A --> D[Utilities]\n    B --> B1[Full context]\n    B --> B2[WebEnvironment modes]\n    C --> C1[@WebMvcTest]\n    C --> C2[@DataJpaTest]\n    C --> C3[@JsonTest]\n    D --> D1[TestRestTemplate]\n    D --> D2[TestPropertyValues]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Difference"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@SpringBootTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full application context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slowest, most comprehensive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@WebMvcTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web layer only (controllers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast, mocks services"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@DataJpaTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JPA/DB layer only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast, in-memory DB, rolls back transactions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@JsonTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON serialization only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fastest slice, auto-configures Jackson/Gson"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Element"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@SpringBootTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full integration test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@SpringBootTest(webEnvironment = RANDOM_PORT)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@AutoConfigureMockMvc"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-configures MockMvc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "mockMvc.perform(get(\"/api\"))"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "TestRestTemplate"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration test HTTP client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "restTemplate.getForEntity(url, String.class)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Sql"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loads SQL scripts before/after test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Sql(\"/test-data.sql\")"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "REST API Testing"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@SpringBootTest"
+            }), " + TestRestTemplate"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full HTTP integration test with random port"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Repository Testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "@DataJpaTest"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Validate JPA queries against embedded database"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Controller Security"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@WebMvcTest"
+            }), " + Security"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test authorization rules in isolation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which annotation loads the full application context for integration tests? ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the fastest Spring Boot test slice? ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@JsonTest"
+        }), " → only tests JSON serialization"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How do you make ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MockMvc"
+        }), " available in a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@WebMvcTest"
+        }), "? ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " It is auto-configured; inject via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Autowired"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "table-of-contents",
+      children: "Table of Contents"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#1-springboottest--full-context-testing",
+          children: "@SpringBootTest — Full Context Testing"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#2-web-environment-modes",
+          children: "Web Environment Modes"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#3-testresttemplate",
+          children: "TestRestTemplate"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#4-webtestclient",
+          children: "WebTestClient"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#5-slicing-tests",
+          children: "Slicing Tests"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#6-mockbean-and-spybean",
+          children: "MockBean and SpyBean"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#7-test-configuration",
+          children: "Test Configuration"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#8-output-capture",
+          children: "Output Capture"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#9-summary",
+          children: "Summary"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#10-exercises",
+          children: "Exercises"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-springboottest--full-context-testing",
+      children: "1. @SpringBootTest — Full Context Testing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " starts the full Spring application context — all beans, auto-configuration, and external configuration — just as if the application were running normally."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.fullcontext;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.context.ApplicationContext;\n\nimport javax.sql.DataSource;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @SpringBootTest loads the complete application context.\n * By default it searches for a @SpringBootApplication class\n * in the current package and its ancestors.\n */\n@SpringBootTest\nclass ApplicationContextTest {\n\n    @Autowired\n    private ApplicationContext applicationContext;\n\n    @Test\n    void contextLoads() {\n        assertThat(applicationContext).isNotNull();\n    }\n\n    @Test\n    void allExpectedBeansArePresent() {\n        assertThat(applicationContext.containsBean(\"dataSource\")).isTrue();\n        assertThat(applicationContext.containsBean(\"entityManagerFactory\")).isTrue();\n        assertThat(applicationContext.containsBean(\"transactionManager\")).isTrue();\n    }\n\n    @Test\n    void customBeansAreRegistered() {\n        assertThat(applicationContext.getBeanNamesForType(GreetingService.class))\n            .containsExactly(\"greetingService\");\n    }\n}\n\n// ---- Production Code ----\n\n@Service\nclass GreetingService {\n\n    private final GreetingRepository repository;\n\n    GreetingService(GreetingRepository repository) {\n        this.repository = repository;\n    }\n\n    String greet(String name) {\n        return \"Hello, \" + name + \"!\" + (repository.isSpecial(name) ? \" You're special!\" : \"\");\n    }\n}\n\ninterface GreetingRepository {\n    boolean isSpecial(String name);\n}\n\n@SpringBootApplication\nclass TestApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(TestApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-custom-context-configuration",
+      children: "1.1 Custom Context Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.fullcontext;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.context.SpringBootTest.WebEnvironment;\nimport org.springframework.test.context.ContextConfiguration;\n\n/**\n * Use @ContextConfiguration to specify explicit configuration classes\n * instead of relying on automatic @SpringBootApplication discovery.\n */\n@SpringBootTest(webEnvironment = WebEnvironment.NONE)\n@ContextConfiguration(classes = {TestDatabaseConfig.class, GreetingService.class})\nclass CustomContextTest {\n\n    @Autowired\n    private GreetingService greetingService;\n\n    @Test\n    void customContext() {\n        assertThat(greetingService).isNotNull();\n    }\n}\n\n@Configuration\nclass TestDatabaseConfig {\n\n    @Bean\n    DataSource dataSource() {\n        return new org.springframework.jdbc.datasource.DriverManagerDataSource(\n            \"jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1\");\n    }\n\n    @Bean\n    GreetingRepository greetingRepository() {\n        return name -> name.equals(\"admin\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-context-caching",
+      children: "1.2 Context Caching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.fullcontext;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.context.ApplicationContext;\n\n/**\n * Spring caches the application context between tests.\n * If two tests use the same configuration, the context is reused.\n * A context is identified by its @SpringBootTest properties,\n * @ActiveProfiles, @ContextConfiguration classes, and command-line args.\n *\n * Context caching dramatically reduces test execution time\n * in large test suites. Contexts are evicted by:\n * - @DirtiesContext\n * - Different @ActiveProfiles\n * - Different property values\n * - Different test slice annotations\n */\n@SpringBootTest\nclass ContextCachingTest {\n\n    @Autowired\n    private ApplicationContext ctx;\n\n    @Test\n    void testA() {\n        // Uses the same context as testB\n    }\n\n    @Test\n    void testB() {\n        // Shares context with testA\n    }\n}\n\n@SpringBootTest\n@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)\nclass DirtyContextTest {\n\n    @Autowired\n    private ApplicationContext ctx;\n\n    @Test\n    void eachTestGetsFreshContext() {\n        // Every test method gets a brand-new ApplicationContext\n    }\n\n    @Test\n    void freshContextAgain() {\n        // Seed data, mocks, etc. are reset\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[!TIP]\nUse test slices like ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@WebMvcTest"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataJpaTest"
+        }), " instead of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest"
+        }), " for faster, more focused tests."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[!WARNING]\nAvoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest"
+        }), " in unit tests → it starts the full context and dramatically slows down your test suite."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-web-environment-modes",
+      children: "2. Web Environment Modes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest(webEnvironment = ...)"
+      }), " controls how the web server is started:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "MOCK"
+        }), " — loads a mock web environment (MockMvc), no real server"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "RANDOM_PORT"
+        }), " — starts the real server on a random available port"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "DEFINED_PORT"
+        }), " — starts the real server on the configured port"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "NONE"
+        }), " — loads the context without any web environment"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.webenv;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.web.client.TestRestTemplate;\nimport org.springframework.boot.test.web.server.LocalServerPort;\nimport org.springframework.boot.test.mock.mockito.MockBean;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.mockito.Mockito.when;\n\n/**\n * MOCK — starts a mock Servlet environment without a real server.\n * This is the default. Use @AutoConfigureMockMvc to inject MockMvc.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)\nclass MockWebEnvironmentTest {\n\n    @Autowired\n    private org.springframework.test.web.servlet.MockMvc mockMvc;\n\n    @MockBean\n    private GreetingService greetingService;\n\n    @Test\n    void mockMvcWorks() throws Exception {\n        when(greetingService.greet(\"Alice\")).thenReturn(\"Hello, Alice!\");\n\n        var request = org.springframework.test.web.servlet.request.MockMvcRequestBuilders\n            .get(\"/greet?name=Alice\");\n        mockMvc.perform(request)\n            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers\n                .status().isOk())\n            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers\n                .content().string(\"Hello, Alice!\"));\n    }\n}\n\n/**\n * RANDOM_PORT — real server on a random port. Use TestRestTemplate\n * or WebTestClient as the HTTP client.\n */\n@SpringBootTest(\n    webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT\n)\nclass RandomPortTest {\n\n    @LocalServerPort\n    private int port;\n\n    @Autowired\n    private TestRestTemplate restTemplate;\n\n    @MockBean\n    private GreetingService greetingService;\n\n    @Test\n    void realServerResponds() {\n        when(greetingService.greet(\"Bob\")).thenReturn(\"Hi, Bob!\");\n\n        String response = restTemplate.getForObject(\n            \"http://localhost:\" + port + \"/greet?name=Bob\",\n            String.class\n        );\n\n        assertThat(response).isEqualTo(\"Hi, Bob!\");\n    }\n\n    @Test\n    void testRestTemplateInjectsPortAutomatically() {\n        when(greetingService.greet(\"Carol\")).thenReturn(\"Hello Carol\");\n\n        // TestRestTemplate configured with RANDOM_PORT auto-resolves\n        // relative URLs without needing LocalServerPort\n        String response = restTemplate.getForObject(\n            \"/greet?name=Carol\", String.class);\n        assertThat(response).isEqualTo(\"Hello Carol\");\n    }\n}\n\n/**\n * DEFINED_PORT — real server on the configured port (e.g., server.port=8080).\n * Use caution in CI — port conflicts cause failures.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)\nclass DefinedPortTest {\n\n    @Autowired\n    private TestRestTemplate restTemplate;\n\n    @Test\n    void usesConfiguredPort() {\n        // Uses server.port from application.properties (or 8080 default)\n        String response = restTemplate.getForObject(\n            \"/greet?name=Dave\", String.class);\n        assertThat(response).contains(\"Dave\");\n    }\n}\n\n/**\n * NONE — no web environment at all. Use for testing services,\n * repositories, and non-web components in a full context.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)\nclass NoWebEnvironmentTest {\n\n    @Autowired\n    private GreetingService greetingService;\n\n    @MockBean\n    private GreetingRepository greetingRepository;\n\n    @Test\n    void serviceLayerOnly() {\n        when(greetingRepository.isSpecial(\"Eve\")).thenReturn(true);\n\n        String result = greetingService.greet(\"Eve\");\n\n        assertThat(result).contains(\"special\");\n    }\n}\n\n@RestController\nclass GreetingController {\n\n    private final GreetingService greetingService;\n\n    GreetingController(GreetingService greetingService) {\n        this.greetingService = greetingService;\n    }\n\n    @GetMapping(\"/greet\")\n    String greet(@RequestParam String name) {\n        return greetingService.greet(name);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-localserverport",
+      children: "2.1 LocalServerPort"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.webenv;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.web.server.LocalServerPort;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @LocalServerPort injects the actual port the server started on.\n * Essential when using RANDOM_PORT mode.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)\nclass LocalServerPortTest {\n\n    @LocalServerPort\n    private int port;\n\n    @Test\n    void portIsInjected() {\n        assertThat(port).isGreaterThan(0);\n        System.out.println(\"Server running on port: \" + port);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-testresttemplate",
+      children: "3. TestRestTemplate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "TestRestTemplate"
+      }), " is a convenience wrapper around Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "RestTemplate"
+      }), ", pre-configured for integration testing. It is automatically available when using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "RANDOM_PORT"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DEFINED_PORT"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-basic-rest-template-operations",
+      children: "3.1 Basic REST Template Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testresttemplate;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.web.client.TestRestTemplate;\nimport org.springframework.http.*;\n\nimport java.util.Map;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)\nclass TestRestTemplateTest {\n\n    @Autowired\n    private TestRestTemplate restTemplate;\n\n    @Test\n    void getForEntity() {\n        ResponseEntity<String> response = restTemplate.getForEntity(\n            \"/greet?name=Alice\", String.class);\n\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);\n        assertThat(response.getBody()).contains(\"Alice\");\n    }\n\n    @Test\n    void getForEntityWithHeaders() {\n        HttpHeaders headers = new HttpHeaders();\n        headers.set(\"Accept\", \"application/json\");\n        HttpEntity<Void> entity = new HttpEntity<>(headers);\n\n        ResponseEntity<String> response = restTemplate.exchange(\n            \"/greet?name=Bob\",\n            HttpMethod.GET,\n            entity,\n            String.class\n        );\n\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);\n    }\n\n    @Test\n    void postForEntity() {\n        var newGreeting = new GreetingRequest(\"Carol\", \"formal\");\n\n        ResponseEntity<GreetingResponse> response = restTemplate.postForEntity(\n            \"/greet/custom\",\n            newGreeting,\n            GreetingResponse.class\n        );\n\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);\n        assertThat(response.getBody().message()).contains(\"Carol\");\n    }\n\n    @Test\n    void exchangeWithCustomHeaders() {\n        HttpHeaders headers = new HttpHeaders();\n        headers.setContentType(MediaType.APPLICATION_JSON);\n        headers.setBearerAuth(\"test-token\");\n\n        var body = new GreetingRequest(\"Dave\", \"casual\");\n        HttpEntity<GreetingRequest> request = new HttpEntity<>(body, headers);\n\n        ResponseEntity<GreetingResponse> response = restTemplate.exchange(\n            \"/greet/custom\",\n            HttpMethod.POST,\n            request,\n            GreetingResponse.class\n        );\n\n        assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();\n    }\n\n    @Test\n    void getForObject() {\n        String response = restTemplate.getForObject(\n            \"/greet?name=Eve\", String.class);\n        assertThat(response).contains(\"Eve\");\n    }\n\n    @Test\n    void postForObject() {\n        var request = new GreetingRequest(\"Frank\", \"polite\");\n        GreetingResponse response = restTemplate.postForObject(\n            \"/greet/custom\", request, GreetingResponse.class);\n        assertThat(response.message()).contains(\"Frank\");\n    }\n\n    @Test\n    void deleteRequest() {\n        restTemplate.delete(\"/greet/42\");\n        // No body expected — verify via subsequent GET or service mock\n    }\n\n    @Test\n    void putRequest() {\n        var update = new GreetingRequest(\"Grace\", \"updated\");\n        restTemplate.put(\"/greet/42\", update);\n    }\n\n    @Test\n    void errorHandling() {\n        ResponseEntity<String> response = restTemplate.getForEntity(\n            \"/greet?name=\", String.class);\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);\n    }\n}\n\nrecord GreetingRequest(String name, String style) {}\nrecord GreetingResponse(String message) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-testresttemplate-with-basic-auth",
+      children: "3.2 TestRestTemplate with Basic Auth"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testresttemplate;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.web.client.TestRestTemplate;\nimport org.springframework.http.*;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)\nclass AuthenticatedRestTemplateTest {\n\n    @Test\n    void withBasicAuth() {\n        // TestRestTemplate supports basic auth out of the box\n        TestRestTemplate authTemplate = new TestRestTemplate(\n            \"admin\", \"password\");\n\n        ResponseEntity<String> response = authTemplate.getForEntity(\n            \"/admin/dashboard\", String.class);\n\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);\n    }\n\n    @Test\n    void withoutAuth() {\n        var restTemplate = new TestRestTemplate();\n\n        ResponseEntity<String> response = restTemplate.getForEntity(\n            \"/admin/dashboard\", String.class);\n\n        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);\n    }\n\n    @Test\n    void customHttpClient() {\n        // TestRestTemplate can be configured with a custom HttpClient\n        // for advanced scenarios (SSL, proxies, connection pooling)\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-webtestclient",
+      children: "4. WebTestClient"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "WebTestClient"
+      }), " is a reactive HTTP client designed for testing WebFlux endpoints. It also works with MVC endpoints when used with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@AutoConfigureWebTestClient"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-basic-webtestclient-usage",
+      children: "4.1 Basic WebTestClient Usage"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.webtestclient;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.web.reactive.server.WebTestClient;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * WebTestClient works with both WebFlux and MVC applications.\n * It provides a fluent DSL for defining requests and assertions.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)\n@AutoConfigureWebTestClient\nclass WebTestClientTest {\n\n    @Autowired\n    private WebTestClient webTestClient;\n\n    @Test\n    void getRequest() {\n        webTestClient.get()\n            .uri(\"/greet?name=Alice\")\n            .exchange()\n            .expectStatus().isOk()\n            .expectBody(String.class)\n            .value(body -> assertThat(body).contains(\"Alice\"));\n    }\n\n    @Test\n    void postRequest() {\n        var request = new GreetingRequest(\"Bob\", \"formal\");\n\n        webTestClient.post()\n            .uri(\"/greet/custom\")\n            .bodyValue(request)\n            .exchange()\n            .expectStatus().isCreated()\n            .expectBody(GreetingResponse.class)\n            .value(response -> assertThat(response.message()).contains(\"Bob\"));\n    }\n\n    @Test\n    void getWithQueryParams() {\n        webTestClient.get()\n            .uri(uriBuilder -> uriBuilder\n                .path(\"/greet\")\n                .queryParam(\"name\", \"Carol\")\n                .queryParam(\"style\", \"polite\")\n                .build())\n            .exchange()\n            .expectStatus().isOk();\n    }\n\n    @Test\n    void getWithHeaders() {\n        webTestClient.get()\n            .uri(\"/greet?name=Dave\")\n            .header(\"Accept-Language\", \"fr-FR\")\n            .exchange()\n            .expectStatus().isOk();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-webtestclient-with-json-path",
+      children: "4.2 WebTestClient with JSON Path"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.webtestclient;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.web.reactive.server.WebTestClient;\n\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)\n@AutoConfigureWebTestClient\nclass WebTestClientJsonTest {\n\n    @Autowired\n    private WebTestClient webTestClient;\n\n    @Test\n    void jsonPathAssertions() {\n        webTestClient.get()\n            .uri(\"/api/users/1\")\n            .exchange()\n            .expectStatus().isOk()\n            .expectBody()\n            .jsonPath(\"$.id\").isEqualTo(1)\n            .jsonPath(\"$.name\").isEqualTo(\"Alice\")\n            .jsonPath(\"$.email\").isEqualTo(\"alice@example.com\")\n            .jsonPath(\"$.roles\").isArray()\n            .jsonPath(\"$.roles.length()\").isEqualTo(2);\n    }\n\n    @Test\n    void jsonPathListAssertions() {\n        webTestClient.get()\n            .uri(\"/api/users\")\n            .exchange()\n            .expectStatus().isOk()\n            .expectBody()\n            .jsonPath(\"$\").isArray()\n            .jsonPath(\"$[0].name\").isEqualTo(\"Alice\")\n            .jsonPath(\"$[1].name\").isEqualTo(\"Bob\");\n    }\n\n    @Test\n    void postWithJsonPath() {\n        var newUser = new CreateUserRequest(\"Charlie\", \"charlie@example.com\");\n\n        webTestClient.post()\n            .uri(\"/api/users\")\n            .bodyValue(newUser)\n            .exchange()\n            .expectStatus().isCreated()\n            .expectBody()\n            .jsonPath(\"$.name\").isEqualTo(\"Charlie\")\n            .jsonPath(\"$.id\").isNumber();\n    }\n}\n\nrecord CreateUserRequest(String name, String email) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-webtestclient-for-webflux",
+      children: "4.3 WebTestClient for WebFlux"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.webtestclient;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;\nimport org.springframework.test.web.reactive.server.WebTestClient;\n\n/**\n * @WebFluxTest is the reactive equivalent of @WebMvcTest.\n * It loads only WebFlux controllers and related infrastructure.\n */\n@WebFluxTest(controllers = ReactiveGreetingController.class)\nclass WebFluxTestClientTest {\n\n    @Autowired\n    private WebTestClient webTestClient;\n\n    @Test\n    void reactiveEndpoint() {\n        webTestClient.get()\n            .uri(\"/reactive/greet?name=Dave\")\n            .exchange()\n            .expectStatus().isOk()\n            .expectBody(String.class)\n            .isEqualTo(\"Hello, Dave!\");\n    }\n}\n\n@RestController\nclass ReactiveGreetingController {\n\n    @GetMapping(\"/reactive/greet\")\n    String greet(@RequestParam String name) {\n        return \"Hello, \" + name + \"!\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "5-slicing-tests",
+      children: "5. Slicing Tests"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Test slices load only a subset of the application context — just the beans needed for a specific layer. This makes slice tests faster and more focused than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "51-webmvctest--testing-controllers-only",
+      children: "5.1 @WebMvcTest — Testing Controllers Only"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;\nimport org.springframework.boot.test.mock.mockito.MockBean;\nimport org.springframework.test.web.servlet.MockMvc;\n\nimport static org.mockito.ArgumentMatchers.anyString;\nimport static org.mockito.BDDMockito.given;\nimport static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;\n\n/**\n * @WebMvcTest auto-configures MockMvc and only scans\n * @Controller, @ControllerAdvice, and WebMvc-related beans.\n * Services, repositories, and other beans are NOT loaded.\n */\n@WebMvcTest(UserController.class)\nclass WebMvcSliceTest {\n\n    @Autowired\n    private MockMvc mockMvc;\n\n    @MockBean\n    private UserService userService;\n\n    @Test\n    void getUserReturnsOk() throws Exception {\n        User user = new User(1L, \"Alice\", \"alice@example.com\");\n        given(userService.findById(1L)).willReturn(java.util.Optional.of(user));\n\n        mockMvc.perform(get(\"/api/users/1\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.name\").value(\"Alice\"))\n            .andExpect(jsonPath(\"$.email\").value(\"alice@example.com\"));\n    }\n\n    @Test\n    void getUserReturns404() throws Exception {\n        given(userService.findById(99L)).willReturn(java.util.Optional.empty());\n\n        mockMvc.perform(get(\"/api/users/99\"))\n            .andExpect(status().isNotFound());\n    }\n\n    @Test\n    void createUser() throws Exception {\n        given(userService.create(anyString(), anyString()))\n            .willReturn(new User(2L, \"Bob\", \"bob@example.com\"));\n\n        String json = \"\"\"\n            {\"name\": \"Bob\", \"email\": \"bob@example.com\"}\n            \"\"\";\n\n        mockMvc.perform(post(\"/api/users\")\n                .contentType(\"application/json\")\n                .content(json))\n            .andExpect(status().isCreated())\n            .andExpect(jsonPath(\"$.name\").value(\"Bob\"));\n    }\n\n    @Test\n    void validationFailure() throws Exception {\n        String json = \"\"\"\n            {\"name\": \"\", \"email\": \"invalid\"}\n            \"\"\";\n\n        mockMvc.perform(post(\"/api/users\")\n                .contentType(\"application/json\")\n                .content(json))\n            .andExpect(status().isBadRequest())\n            .andExpect(jsonPath(\"$.errors\").exists());\n    }\n}\n\n@RestController\n@RequestMapping(\"/api/users\")\nclass UserController {\n\n    private final UserService userService;\n\n    UserController(UserService userService) {\n        this.userService = userService;\n    }\n\n    @GetMapping(\"/{id}\")\n    ResponseEntity<User> getUser(@PathVariable Long id) {\n        return userService.findById(id)\n            .map(ResponseEntity::ok)\n            .orElse(ResponseEntity.notFound().build());\n    }\n\n    @PostMapping\n    ResponseEntity<User> createUser(@Valid @RequestBody CreateUserDto dto) {\n        User user = userService.create(dto.name(), dto.email());\n        return ResponseEntity.status(HttpStatus.CREATED).body(user);\n    }\n}\n\nrecord User(Long id, String name, String email) {}\nrecord CreateUserDto(String name, @Email String email) {}\n\ninterface UserService {\n    java.util.Optional<User> findById(Long id);\n    User create(String name, String email);\n}\n\n@ControllerAdvice\nclass GlobalExceptionHandler {\n\n    @ExceptionHandler(MethodArgumentNotValidException.class)\n    ResponseEntity<Map<String, Object>> handleValidation(\n            MethodArgumentNotValidException ex) {\n        Map<String, Object> errors = new java.util.HashMap<>();\n        errors.put(\"errors\", ex.getBindingResult().getFieldErrors()\n            .stream().map(fe -> Map.of(fe.getField(), fe.getDefaultMessage()))\n            .toList());\n        return ResponseEntity.badRequest().body(errors);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "52-datajpatest--testing-repositories-only",
+      children: "5.2 @DataJpaTest — Testing Repositories Only"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;\nimport org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;\nimport org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;\n\nimport java.util.List;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @DataJpaTest configures an in-memory database (H2 by default),\n * scans @Entity classes, and configures JPA repositories.\n * It does NOT load services, controllers, or other beans.\n *\n * Transactions are rolled back after each test by default.\n */\n@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY)\nclass DataJpaSliceTest {\n\n    @Autowired\n    private TestEntityManager entityManager;\n\n    @Autowired\n    private UserRepository userRepository;\n\n    @Test\n    void findByName() {\n        UserEntity saved = entityManager.persistAndFlush(\n            new UserEntity(null, \"Alice\", \"alice@example.com\"));\n\n        java.util.Optional<UserEntity> found = userRepository.findByEmail(\"alice@example.com\");\n\n        assertThat(found).isPresent();\n        assertThat(found.get().getName()).isEqualTo(\"Alice\");\n    }\n\n    @Test\n    void findAllByActive() {\n        entityManager.persist(new UserEntity(null, \"User1\", \"u1@x.com\"));\n        entityManager.persist(new UserEntity(null, \"User2\", \"u2@x.com\"));\n        entityManager.flush();\n\n        List<UserEntity> all = userRepository.findAll();\n        assertThat(all).hasSize(2);\n    }\n\n    @Test\n    void customQuery() {\n        entityManager.persistAndFlush(new UserEntity(null, \"Bob\", \"bob@x.com\"));\n\n        List<UserEntity> results = userRepository.searchByName(\"Bob\");\n        assertThat(results).hasSize(1);\n    }\n\n    @Test\n    void transactionRollback() {\n        // Each test is rolled back — no data leaks between tests\n        userRepository.save(new UserEntity(null, \"Temp\", \"temp@x.com\"));\n        assertThat(userRepository.count()).isEqualTo(1);\n    }\n\n    @Test\n    void testEntityManager() {\n        UserEntity user = new UserEntity(null, \"Carol\", \"carol@x.com\");\n        UserEntity managed = entityManager.persistFlushFind(user);\n\n        assertThat(managed.getId()).isNotNull();\n        assertThat(managed.getEmail()).isEqualTo(\"carol@x.com\");\n    }\n}\n\n@Entity\n@Table(name = \"users\")\nclass UserEntity {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    private String name;\n    private String email;\n\n    public UserEntity() {}\n\n    public UserEntity(Long id, String name, String email) {\n        this.id = id;\n        this.name = name;\n        this.email = email;\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n    public String getName() { return name; }\n    public void setName(String name) { this.name = name; }\n    public String getEmail() { return email; }\n    public void setEmail(String email) { this.email = email; }\n}\n\ninterface UserRepository extends JpaRepository<UserEntity, Long> {\n    java.util.Optional<UserEntity> findByEmail(String email);\n\n    @Query(\"SELECT u FROM UserEntity u WHERE u.name LIKE %:name%\")\n    List<UserEntity> searchByName(@Param(\"name\") String name);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "53-jsontest--testing-serialization",
+      children: "5.3 @JsonTest — Testing Serialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.json.JsonTest;\nimport org.springframework.boot.test.json.JacksonTester;\nimport org.springframework.boot.test.json.JsonContent;\n\nimport java.time.LocalDate;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @JsonTest auto-configures Jackson (or Gson) and provides\n * JacksonTester for testing JSON serialization/deserialization.\n * It does NOT load any other beans.\n */\n@JsonTest\nclass JsonSliceTest {\n\n    @Autowired\n    private JacksonTester<UserDto> json;\n\n    @Test\n    void serializeUserDto() throws Exception {\n        UserDto user = new UserDto(\n            1L,\n            \"Alice\",\n            \"alice@example.com\",\n            LocalDate.of(2024, 1, 15)\n        );\n\n        JsonContent<UserDto> content = json.write(user);\n\n        assertThat(content).hasJsonPathNumberValue(\"$.id\");\n        assertThat(content).hasJsonPathStringValue(\"$.name\");\n        assertThat(content).extractingJsonPathStringValue(\"$.name\")\n            .isEqualTo(\"Alice\");\n        assertThat(content).extractingJsonPathStringValue(\"$.email\")\n            .isEqualTo(\"alice@example.com\");\n        assertThat(content).hasJsonPathStringValue(\"$.createdAt\");\n    }\n\n    @Test\n    void deserializeUserDto() throws Exception {\n        String jsonContent = \"\"\"\n            {\n                \"id\": 2,\n                \"name\": \"Bob\",\n                \"email\": \"bob@example.com\",\n                \"createdAt\": \"2024-06-01\"\n            }\n            \"\"\";\n\n        UserDto user = json.parseObject(jsonContent);\n\n        assertThat(user.id()).isEqualTo(2L);\n        assertThat(user.name()).isEqualTo(\"Bob\");\n        assertThat(user.email()).isEqualTo(\"bob@example.com\");\n        assertThat(user.createdAt()).isEqualTo(LocalDate.of(2024, 6, 1));\n    }\n\n    @Test\n    void nullFieldsAreOmitted() throws Exception {\n        UserDto user = new UserDto(null, null, \"test@x.com\", null);\n\n        JsonContent<UserDto> content = json.write(user);\n\n        assertThat(content).doesNotHaveJsonPath(\"$.id\");\n        assertThat(content).hasJsonPathStringValue(\"$.email\");\n    }\n}\n\nrecord UserDto(Long id, String name, String email, LocalDate createdAt) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "54-restclienttest--testing-rest-clients",
+      children: "5.4 @RestClientTest — Testing REST Clients"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.client.RestClientTest;\nimport org.springframework.http.MediaType;\nimport org.springframework.test.web.client.MockRestServiceServer;\n\nimport static org.springframework.test.web.client.match.MockRestRequestMatchers.*;\nimport static org.springframework.test.web.client.response.MockRestResponseCreators.*;\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @RestClientTest auto-configures a MockRestServiceServer bound to\n * the specified REST client bean. It is used for testing classes\n * that use RestTemplate to call external APIs.\n */\n@RestClientTest(UserApiClient.class)\nclass RestClientSliceTest {\n\n    @Autowired\n    private UserApiClient client;\n\n    @Autowired\n    private MockRestServiceServer server;\n\n    @Test\n    void getUserById() {\n        server.expect(requestTo(\"/api/users/1\"))\n            .andExpect(method(org.springframework.http.HttpMethod.GET))\n            .andRespond(withSuccess(\"\"\"\n                {\"id\":1,\"name\":\"Alice\",\"email\":\"alice@example.com\"}\n                \"\"\", MediaType.APPLICATION_JSON));\n\n        UserDto user = client.findById(1L);\n\n        assertThat(user.name()).isEqualTo(\"Alice\");\n        server.verify();\n    }\n\n    @Test\n    void getUsers() {\n        server.expect(requestTo(\"/api/users\"))\n            .andExpect(method(org.springframework.http.HttpMethod.GET))\n            .andRespond(withSuccess(\"\"\"\n                [{\"id\":1,\"name\":\"Alice\",\"email\":\"a@x.com\"},\n                  {\"id\":2,\"name\":\"Bob\",\"email\":\"b@x.com\"}]\n                \"\"\", MediaType.APPLICATION_JSON));\n\n        var users = client.findAll();\n\n        assertThat(users).hasSize(2);\n        server.verify();\n    }\n\n    @Test\n    void serverError() {\n        server.expect(requestTo(\"/api/users/999\"))\n            .andRespond(withServerError());\n\n        java.util.Optional<UserDto> result = client.findByIdOptional(999L);\n        assertThat(result).isEmpty();\n    }\n\n    @Test\n    void createUser() {\n        server.expect(requestTo(\"/api/users\"))\n            .andExpect(method(org.springframework.http.HttpMethod.POST))\n            .andRespond(withCreatedEntity(\n                org.springframework.web.util.UriComponentsBuilder\n                    .fromUriString(\"/api/users/3\").build().toUri()));\n\n        Long id = client.create(\"Carol\", \"carol@x.com\");\n        assertThat(id).isEqualTo(3L);\n        server.verify();\n    }\n}\n\nclass UserApiClient {\n\n    private final RestTemplate restTemplate;\n    private final String baseUrl = \"https://api.example.com\";\n\n    UserApiClient(RestTemplateBuilder builder) {\n        this.restTemplate = builder.rootUri(baseUrl).build();\n    }\n\n    UserDto findById(Long id) {\n        return restTemplate.getForObject(\"/api/users/{id}\", UserDto.class, id);\n    }\n\n    List<UserDto> findAll() {\n        return java.util.Arrays.asList(\n            restTemplate.getForObject(\"/api/users\", UserDto[].class));\n    }\n\n    java.util.Optional<UserDto> findByIdOptional(Long id) {\n        try {\n            return java.util.Optional.ofNullable(findById(id));\n        } catch (Exception e) {\n            return java.util.Optional.empty();\n        }\n    }\n\n    Long create(String name, String email) {\n        var response = restTemplate.postForEntity(\n            \"/api/users\",\n            new CreateUserDto(name, email),\n            Void.class\n        );\n        String location = response.getHeaders().getLocation().toString();\n        return Long.parseLong(location.substring(location.lastIndexOf('/') + 1));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "55-datamongotest",
+      children: "5.5 @DataMongoTest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;\nimport org.springframework.data.mongodb.core.MongoTemplate;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @DataMongoTest configures an embedded MongoDB instance,\n * scans @Document classes, and auto-configures MongoRepository beans.\n */\n@DataMongoTest\nclass MongoSliceTest {\n\n    @Autowired\n    private MongoTemplate mongoTemplate;\n\n    @Autowired\n    private ProductRepository productRepository;\n\n    @Test\n    void saveAndFind() {\n        ProductEntity product = new ProductEntity(\"Laptop\", \"Electronics\", 999.99);\n        ProductEntity saved = productRepository.save(product);\n\n        assertThat(saved.getId()).isNotNull();\n\n        ProductEntity found = productRepository.findById(saved.getId()).orElseThrow();\n        assertThat(found.getName()).isEqualTo(\"Laptop\");\n    }\n\n    @Test\n    void findByCategory() {\n        mongoTemplate.save(new ProductEntity(\"Phone\", \"Electronics\", 699.99));\n        mongoTemplate.save(new ProductEntity(\"Book\", \"Education\", 14.99));\n\n        var results = productRepository.findByCategory(\"Electronics\");\n        assertThat(results).hasSize(1);\n    }\n}\n\n@Document(collection = \"products\")\nclass ProductEntity {\n\n    @Id\n    private String id;\n    private String name;\n    private String category;\n    private double price;\n\n    public ProductEntity() {}\n\n    public ProductEntity(String name, String category, double price) {\n        this.name = name;\n        this.category = category;\n        this.price = price;\n    }\n\n    public String getId() { return id; }\n    public void setId(String id) { this.id = id; }\n    public String getName() { return name; }\n    public String getCategory() { return category; }\n    public double getPrice() { return price; }\n}\n\ninterface ProductRepository extends MongoRepository<ProductEntity, String> {\n    List<ProductEntity> findByCategory(String category);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "56-dataredistest",
+      children: "5.6 @DataRedisTest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.redis.DataRedisTest;\nimport org.springframework.data.redis.core.RedisTemplate;\n\n/**\n * @DataRedisTest configures an embedded Redis server,\n * scans @RedisHash classes, and auto-configures Redis repositories.\n */\n@DataRedisTest\nclass RedisSliceTest {\n\n    @Autowired\n    private RedisTemplate<String, String> redisTemplate;\n\n    @Autowired\n    private SessionRepository sessionRepository;\n\n    @Test\n    void saveAndRetrieve() {\n        Session session = new Session(\"sess-1\", \"alice\", java.time.Instant.now());\n        sessionRepository.save(session);\n\n        Session found = sessionRepository.findById(\"sess-1\").orElseThrow();\n        assertThat(found.getUserId()).isEqualTo(\"alice\");\n    }\n\n    @Test\n    void deleteSession() {\n        Session session = new Session(\"sess-2\", \"bob\", java.time.Instant.now());\n        sessionRepository.save(session);\n\n        sessionRepository.deleteById(\"sess-2\");\n        assertThat(sessionRepository.findById(\"sess-2\")).isEmpty();\n    }\n}\n\n@RedisHash(\"sessions\")\nclass Session {\n\n    @Id\n    private String id;\n    private String userId;\n    private java.time.Instant createdAt;\n\n    public Session() {}\n\n    public Session(String id, String userId, java.time.Instant createdAt) {\n        this.id = id;\n        this.userId = userId;\n        this.createdAt = createdAt;\n    }\n\n    public String getId() { return id; }\n    public String getUserId() { return userId; }\n    public java.time.Instant getCreatedAt() { return createdAt; }\n}\n\ninterface SessionRepository extends org.springframework.data.repository.CrudRepository<Session, String> {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "57-dataldaptest",
+      children: "5.7 @DataLdapTest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.ldap.DataLdapTest;\nimport org.springframework.ldap.core.LdapTemplate;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @DataLdapTest configures an embedded LDAP server,\n * scans @Entry classes, and configures LDAP repositories.\n */\n@DataLdapTest\nclass LdapSliceTest {\n\n    @Autowired\n    private LdapTemplate ldapTemplate;\n\n    @Test\n    void ldapContextLoads() {\n        assertThat(ldapTemplate).isNotNull();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "58-dataneo4jtest",
+      children: "5.8 @DataNeo4jTest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.slices;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.neo4j.DataNeo4jTest;\n\n/**\n * @DataNeo4jTest configures an embedded Neo4j instance and\n * scans @Node classes and Neo4j repositories.\n */\n@DataNeo4jTest\nclass Neo4jSliceTest {\n\n    @Autowired\n    private PersonRepository personRepository;\n\n    @Test\n    void contextLoads() {\n        assertThat(personRepository).isNotNull();\n    }\n}\n\n@Node(\"Person\")\nclass PersonNode {\n\n    @Id\n    private Long id;\n    private String name;\n\n    public PersonNode() {}\n\n    public PersonNode(Long id, String name) {\n        this.id = id;\n        this.name = name;\n    }\n\n    public String getName() { return name; }\n}\n\ninterface PersonRepository extends org.springframework.data.neo4j.repository.Neo4jRepository<PersonNode, Long> {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-mockbean-and-spybean",
+      children: "6. MockBean and SpyBean"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@MockBean"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpyBean"
+      }), " add mocks or spies to the Spring ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ApplicationContext"
+      }), ". Any bean of the matching type in the context is replaced by the mock."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-mockbean",
+      children: "6.1 @MockBean"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.mockbean;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.mock.mockito.MockBean;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.mockito.ArgumentMatchers.*;\nimport static org.mockito.Mockito.*;\n\n/**\n * @MockBean creates a Mockito mock and registers it in the\n * Spring ApplicationContext, replacing any existing bean of\n * the same type.\n *\n * The mock is RESET after each test method — stubs and\n * interaction data are cleared automatically.\n */\n@SpringBootTest\nclass MockBeanTest {\n\n    @Autowired\n    private OrderService orderService;\n\n    @MockBean\n    private PaymentGateway paymentGateway;\n\n    @MockBean\n    private InventoryClient inventoryClient;\n\n    @MockBean\n    private NotificationService notificationService;\n\n    @Test\n    void successfulOrder() {\n        // Given\n        when(inventoryClient.checkStock(\"LAPTOP\", 1)).thenReturn(true);\n        when(paymentGateway.charge(anyString(), eq(999.99))).thenReturn(true);\n\n        // When\n        OrderResult result = orderService.placeOrder(\n            new OrderRequest(\"LAPTOP\", 1, \"card-123\"));\n\n        // Then\n        assertThat(result.success()).isTrue();\n        verify(paymentGateway).charge(\"card-123\", 999.99);\n        verify(inventoryClient).reserve(\"LAPTOP\", 1);\n        verify(notificationService).sendOrderConfirmation(anyString());\n    }\n\n    @Test\n    void outOfStock() {\n        // Given\n        when(inventoryClient.checkStock(\"LAPTOP\", 1)).thenReturn(false);\n\n        // When\n        OrderResult result = orderService.placeOrder(\n            new OrderRequest(\"LAPTOP\", 1, \"card-123\"));\n\n        // Then\n        assertThat(result.success()).isFalse();\n        assertThat(result.error()).contains(\"Out of stock\");\n\n        verify(paymentGateway, never()).charge(anyString(), anyDouble());\n        verify(notificationService, never()).sendOrderConfirmation(anyString());\n    }\n\n    @Test\n    void paymentDeclined() {\n        // Given\n        when(inventoryClient.checkStock(\"LAPTOP\", 1)).thenReturn(true);\n        when(paymentGateway.charge(anyString(), eq(999.99))).thenReturn(false);\n\n        // When\n        OrderResult result = orderService.placeOrder(\n            new OrderRequest(\"LAPTOP\", 1, \"card-123\"));\n\n        // Then\n        assertThat(result.success()).isFalse();\n        assertThat(result.error()).contains(\"Payment declined\");\n\n        // Verify inventory was reserved but rolled back\n        verify(inventoryClient).reserve(\"LAPTOP\", 1);\n        verify(notificationService).sendPaymentFailed(\"card-123\");\n    }\n}\n\n@Service\nclass OrderService {\n\n    private final PaymentGateway paymentGateway;\n    private final InventoryClient inventoryClient;\n    private final NotificationService notificationService;\n\n    OrderService(PaymentGateway paymentGateway, InventoryClient inventoryClient,\n                 NotificationService notificationService) {\n        this.paymentGateway = paymentGateway;\n        this.inventoryClient = inventoryClient;\n        this.notificationService = notificationService;\n    }\n\n    OrderResult placeOrder(OrderRequest request) {\n        if (!inventoryClient.checkStock(request.productCode(), request.quantity())) {\n            return new OrderResult(false, \"Out of stock: \" + request.productCode());\n        }\n\n        double total = 999.99; // simplified\n        inventoryClient.reserve(request.productCode(), request.quantity());\n\n        if (!paymentGateway.charge(request.paymentToken(), total)) {\n            notificationService.sendPaymentFailed(request.paymentToken());\n            return new OrderResult(false, \"Payment declined\");\n        }\n\n        notificationService.sendOrderConfirmation(\"order-\" + System.currentTimeMillis());\n        return new OrderResult(true, null);\n    }\n}\n\nrecord OrderRequest(String productCode, int quantity, String paymentToken) {}\nrecord OrderResult(boolean success, String error) {}\n\ninterface PaymentGateway {\n    boolean charge(String token, double amount);\n}\n\ninterface InventoryClient {\n    boolean checkStock(String productCode, int quantity);\n    void reserve(String productCode, int quantity);\n}\n\ninterface NotificationService {\n    void sendOrderConfirmation(String orderId);\n    void sendPaymentFailed(String token);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-spybean",
+      children: "6.2 @SpyBean"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.mockbean;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.mock.mockito.SpyBean;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.mockito.Mockito.*;\n\n/**\n * @SpyBean wraps a real bean in a Mockito spy.\n * Real methods are called by default, but specific methods\n * can be stubbed using doReturn/when.\n */\n@SpringBootTest\nclass SpyBeanTest {\n\n    @Autowired\n    private AuditService auditService;\n\n    @SpyBean\n    private AuditLogger auditLogger;\n\n    @Test\n    void spyPreservesRealBehaviour() {\n        // The real auditLogger.log() is called\n        auditService.recordEvent(\"user-login\", \"alice\");\n\n        verify(auditLogger).log(anyString());\n    }\n\n    @Test\n    void spyWithStubbedMethod() {\n        doThrow(new RuntimeException(\"Audit system unavailable\"))\n            .when(auditLogger).log(contains(\"CRITICAL\"));\n\n        // Non-critical logs still work through the real method\n        auditService.recordEvent(\"INFO\", \"normal event\");\n\n        // Critical logs throw because we stubbed log()\n        org.junit.jupiter.api.Assertions.assertThrows(RuntimeException.class,\n            () -> auditService.recordEvent(\"CRITICAL\", \"server error\"));\n    }\n\n    @Test\n    void spyVerifyInteractions() {\n        auditService.recordEvent(\"login\", \"bob\");\n        auditService.recordEvent(\"logout\", \"bob\");\n\n        verify(auditLogger, times(2)).log(anyString());\n    }\n}\n\n@Service\nclass AuditService {\n\n    private final AuditLogger auditLogger;\n\n    AuditService(AuditLogger auditLogger) {\n        this.auditLogger = auditLogger;\n    }\n\n    void recordEvent(String level, String message) {\n        auditLogger.log(\"[\" + level + \"] \" + message);\n    }\n}\n\n@Component\nclass AuditLogger {\n\n    void log(String message) {\n        // Real implementation writes to a database or file\n        System.out.println(\"AUDIT: \" + message);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-dirtiescontext--resetting-between-tests",
+      children: "6.3 DirtiesContext — Resetting Between Tests"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.mockbean;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.mock.mockito.MockBean;\nimport org.springframework.test.annotation.DirtiesContext;\n\nimport static org.mockito.Mockito.when;\n\n/**\n * Normally, @MockBean mocks are reset after each test method.\n * However, if a test modifies the context in ways that affect\n * other beans (e.g., replacing a bean entirely, or using\n * a different configuration), use @DirtiesContext to force\n * context recreation.\n */\n@SpringBootTest\n@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)\nclass DirtiesContextTest {\n\n    @MockBean\n    private ConfigService configService;\n\n    @Test\n    void testOne() {\n        when(configService.get(\"feature-flag\")).thenReturn(\"enabled\");\n    }\n\n    @Test\n    void testTwo() {\n        // configService mock is fresh — no leftover stubs\n        // Even without @DirtiesContext, @MockBean is reset automatically\n        // This annotation is only needed for edge cases involving\n        // bean definitions or singleton bean state\n    }\n}\n\ninterface ConfigService {\n    String get(String key);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-test-configuration",
+      children: "7. Test Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-testconfiguration",
+      children: "7.1 @TestConfiguration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testconfig;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.context.TestConfiguration;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Primary;\nimport org.springframework.test.context.ContextConfiguration;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @TestConfiguration defines additional beans or overrides\n * for the test context. Unlike @Configuration, it is NOT\n * picked up by component scanning — it must be imported\n * explicitly or defined as an inner class.\n */\n@SpringBootTest\n@ContextConfiguration(classes = TestConfig.class)\nclass TestConfigurationTest {\n\n    @Autowired\n    private RateLimiter rateLimiter;\n\n    @Autowired\n    private CacheManager cacheManager;\n\n    @Test\n    void testBeansAreLoaded() {\n        assertThat(rateLimiter).isNotNull();\n        assertThat(cacheManager).isNotNull();\n    }\n}\n\n@TestConfiguration\nclass TestConfig {\n\n    @Bean\n    @Primary\n    RateLimiter testRateLimiter() {\n        return new RateLimiter(1000); // high limit for tests\n    }\n\n    @Bean\n    CacheManager testCacheManager() {\n        return new CacheManager(50); // small cache for tests\n    }\n}\n\nclass RateLimiter {\n\n    private final int maxRequests;\n\n    RateLimiter(int maxRequests) {\n        this.maxRequests = maxRequests;\n    }\n\n    boolean allowRequest() {\n        return maxRequests > 0;\n    }\n\n    int getMaxRequests() { return maxRequests; }\n}\n\nclass CacheManager {\n\n    private final int maxSize;\n\n    CacheManager(int maxSize) {\n        this.maxSize = maxSize;\n    }\n\n    int getMaxSize() { return maxSize; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-testpropertysource",
+      children: "7.2 @TestPropertySource"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testconfig;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.context.TestPropertySource;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @TestPropertySource adds specific property values to the test\n * Environment. These take precedence over application.properties\n * and can be overridden by @DynamicPropertySource.\n */\n@SpringBootTest\n@TestPropertySource(properties = {\n    \"app.feature.payments=true\",\n    \"app.feature.notifications=false\",\n    \"app.limit=100\"\n})\nclass TestPropertySourceTest {\n\n    @Value(\"${app.feature.payments}\")\n    private boolean paymentsEnabled;\n\n    @Value(\"${app.feature.notifications}\")\n    private boolean notificationsEnabled;\n\n    @Value(\"${app.limit}\")\n    private int limit;\n\n    @Test\n    void propertiesAreSet() {\n        assertThat(paymentsEnabled).isTrue();\n        assertThat(notificationsEnabled).isFalse();\n        assertThat(limit).isEqualTo(100);\n    }\n}\n\n/**\n * Properties from @TestPropertySource can be loaded from files.\n */\n@SpringBootTest\n@TestPropertySource(locations = \"/test-config.properties\")\nclass FileBasedPropertyTest {\n\n    @Value(\"${test.server.url}\")\n    private String serverUrl;\n\n    @Test\n    void propertyFromFile() {\n        assertThat(serverUrl).isEqualTo(\"http://localhost:9999\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-dynamicpropertysource",
+      children: "7.3 @DynamicPropertySource"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testconfig;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.context.DynamicPropertyRegistry;\nimport org.springframework.test.context.DynamicPropertySource;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @DynamicPropertySource is used when property values must be\n * determined at runtime — for example, the port of a test\n * container (Testcontainers), or the URL of a random resource.\n *\n * The method must be static and accept a DynamicPropertyRegistry.\n */\n@SpringBootTest\nclass DynamicPropertySourceTest {\n\n    private static int redisPort = 6379; // In real usage, from Testcontainers\n\n    @Value(\"${redis.host}\")\n    private String redisHost;\n\n    @Value(\"${redis.port}\")\n    private int port;\n\n    @DynamicPropertySource\n    static void configureProperties(DynamicPropertyRegistry registry) {\n        registry.add(\"redis.host\", () -> \"localhost\");\n        registry.add(\"redis.port\", () -> String.valueOf(redisPort));\n        registry.add(\"app.test-timeout\", () -> \"5000\");\n    }\n\n    @Test\n    void dynamicPropertiesAreSet() {\n        assertThat(redisHost).isEqualTo(\"localhost\");\n        assertThat(port).isEqualTo(6379);\n    }\n}\n\n/**\n * Realistic example with Testcontainers integration.\n *\n * @DynamicPropertySource is the standard way to inject\n * Testcontainers connection parameters into the Spring context.\n */\n@SpringBootTest\n@Testcontainers\nclass PostgresDynamicPropertyTest {\n\n    @Container\n    static PostgreSQLContainer<?> postgres =\n        new PostgreSQLContainer<>(\"postgres:15-alpine\");\n\n    @DynamicPropertySource\n    static void configureDatabase(DynamicPropertyRegistry registry) {\n        registry.add(\"spring.datasource.url\", postgres::getJdbcUrl);\n        registry.add(\"spring.datasource.username\", postgres::getUsername);\n        registry.add(\"spring.datasource.password\", postgres::getPassword);\n    }\n\n    @Autowired\n    private javax.sql.DataSource dataSource;\n\n    @Test\n    void connectsToTestcontainersDb() throws Exception {\n        try (var conn = dataSource.getConnection()) {\n            assertThat(conn.isValid(2)).isTrue();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-activeprofiles",
+      children: "7.4 @ActiveProfiles"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testconfig;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.core.env.Environment;\nimport org.springframework.test.context.ActiveProfiles;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @ActiveProfiles activates the specified bean definition profiles\n * for the test context. Beans annotated with @Profile(\"test\")\n * are loaded; those with @Profile(\"!test\") are excluded.\n */\n@SpringBootTest\n@ActiveProfiles(\"test\")\nclass ActiveProfilesTest {\n\n    @Autowired\n    private Environment env;\n\n    @Autowired\n    private DataInitializer dataInitializer;\n\n    @Test\n    void testProfileIsActive() {\n        assertThat(env.getActiveProfiles()).contains(\"test\");\n    }\n\n    @Test\n    void testBeansAreLoaded() {\n        assertThat(dataInitializer).isNotNull();\n    }\n}\n\n@Profile(\"test\")\n@Component\nclass DataInitializer {\n\n    private final DataSource dataSource;\n\n    DataInitializer(DataSource dataSource) {\n        this.dataSource = dataSource;\n    }\n\n    @PostConstruct\n    void init() {\n        System.out.println(\"Loading test data...\");\n    }\n}\n\n@Profile(\"!test\")\n@Component\nclass ProductionInitializer {\n    // Only loaded when \"test\" is NOT active\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "75-test-slice-auto-configuration",
+      children: "7.5 Test Slice Auto-Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.testconfig;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.autoconfigure.ImportAutoConfiguration;\nimport org.springframework.boot.test.autoconfigure.OverrideAutoConfiguration;\nimport org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;\nimport org.springframework.boot.test.autoconfigure.filter.TypeExcludeFilters;\nimport org.springframework.boot.test.context.SpringBootTestContextBootstrapper;\nimport org.springframework.test.context.BootstrapWith;\n\n/**\n * Each test slice annotation is itself composed of meta-annotations\n * that configure auto-configuration, filtering, and type exclusion.\n *\n * For example, @WebMvcTest is composed of:\n *\n * @BootstrapWith(SpringBootTestContextBootstrapper.class)\n * @OverrideAutoConfiguration(enabled = false)\n * @TypeExcludeFilters(WebMvcTypeExcludeFilter.class)\n * @AutoConfigureCache\n * @AutoConfigureMockMvc\n * @AutoConfigureWebClient\n * @ImportAutoConfiguration\n *\n * Understanding the composition helps when creating custom\n * test slices or combining multiple slices.\n */\nclass SliceCompositionTest {\n\n    @Test\n    void sliceAnnotationsAreMetaAnnotated() {\n        // This test documents that slice annotations are\n        // composed of smaller building blocks\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[!NOTE]\nInner ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@TestConfiguration"
+        }), " classes override beans from the main config; use them to replace real services with mocks."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-output-capture",
+      children: "8. Output Capture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "81-outputcaptureextension",
+      children: "8.1 @OutputCaptureExtension"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.output;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.springframework.boot.test.system.CapturedOutput;\nimport org.springframework.boot.test.system.OutputCaptureExtension;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * @OutputCaptureExtension captures all System.out and System.err\n * output during the test. Injected via CapturedOutput parameter.\n */\n@ExtendWith(OutputCaptureExtension.class)\nclass OutputCaptureTest {\n\n    @Test\n    void captureStdout(CapturedOutput output) {\n        System.out.println(\"Hello, test!\");\n\n        assertThat(output).contains(\"Hello\");\n        assertThat(output).contains(\"test\");\n    }\n\n    @Test\n    void captureStderr(CapturedOutput output) {\n        System.err.println(\"ERROR: something went wrong\");\n\n        assertThat(output).contains(\"ERROR\");\n        assertThat(output).contains(\"went wrong\");\n    }\n\n    @Test\n    void captureLoggedOutput(CapturedOutput output) {\n        // If SLF4J is configured to log to console,\n        // log messages are also captured\n        org.slf4j.LoggerFactory.getLogger(\"test\").info(\"Log message\");\n\n        assertThat(output).contains(\"Log message\");\n    }\n\n    @Test\n    void outputIsIsolated(CapturedOutput output) {\n        // Output from previous tests does NOT leak into this one\n        assertThat(output).doesNotContain(\"Hello, test!\");\n    }\n\n    @Test\n    void multipleLines(CapturedOutput output) {\n        System.out.println(\"Line 1\");\n        System.out.println(\"Line 2\");\n        System.out.println(\"Line 3\");\n\n        String all = output.getAll();\n        assertThat(all).contains(\"Line 1\\nLine 2\\nLine 3\");\n    }\n\n    @Test\n    void outputWithoutAnnotation(CapturedOutput output) {\n        // Without @ExtendWith(OutputCaptureExtension.class),\n        // CapturedOutput parameter injection would fail.\n        // The annotation must be present at the class or method level.\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "82-using-outputcapture-in-springboottest",
+      children: "8.2 Using OutputCapture in @SpringBootTest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package springboot.output;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.boot.test.system.CapturedOutput;\nimport org.springframework.boot.test.system.OutputCaptureExtension;\nimport org.springframework.boot.test.mock.mockito.MockBean;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\n/**\n * OutputCapture works with Spring Boot integration tests too.\n */\n@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)\nclass SpringBootOutputCaptureTest {\n\n    @Autowired\n    private GreetingService greetingService;\n\n    @Test\n    void serviceLogsOutput(CapturedOutput output) {\n        greetingService.greet(\"Alice\");\n\n        assertThat(output).contains(\"Greeting Alice\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-summary",
+      children: "9. Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This chapter covered the complete Spring Boot testing framework, from full-context integration tests with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " to focused slice tests that load only the beans needed for a specific layer."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " was introduced as the primary annotation for loading the full application context. The four web environment modes — ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MOCK"
+      }), " (simulated web environment with MockMvc), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "RANDOM_PORT"
+      }), " (real server on a dynamic port), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DEFINED_PORT"
+      }), " (real server on a fixed port), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "NONE"
+      }), " (no web environment) — were demonstrated with concrete examples. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@LocalServerPort"
+      }), " annotation was shown for accessing the dynamically assigned port."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "TestRestTemplate"
+      }), " was covered in detail with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "getForEntity"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "postForEntity"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "exchange"
+      }), " with custom headers and request bodies, and basic authentication support. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WebTestClient"
+      }), " provided a reactive alternative with its fluent DSL, JSON Path assertions, and compatibility with both WebFlux and MVC applications."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Test slices were the major focus: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@WebMvcTest"
+      }), " for controllers with MockMvc, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataJpaTest"
+      }), " for JPA repositories with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "TestEntityManager"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@JsonTest"
+      }), " for JSON serialization with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "JacksonTester"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@RestClientTest"
+      }), " for REST clients with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MockRestServiceServer"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@WebFluxTest"
+      }), " for reactive controllers, and the full family of data slices (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataMongoTest"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataRedisTest"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataLdapTest"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataNeo4jTest"
+      }), ")."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@MockBean"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpyBean"
+      }), " were shown for introducing mock objects into the Spring context, replacing real beans with controlled doubles. The automatic reset of mocks between tests and the use of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DirtiesContext"
+      }), " for managing context state were explained."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Test configuration options included ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@TestConfiguration"
+      }), " for defining test-specific beans, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@TestPropertySource"
+      }), " for inline and file-based property overrides, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DynamicPropertySource"
+      }), " for runtime-determined properties (with a Testcontainers example), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@ActiveProfiles"
+      }), " for activating Spring profiles in tests."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Finally, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@OutputCaptureExtension"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CapturedOutput"
+      }), " was demonstrated for capturing and asserting on stdout, stderr, and logged output during test execution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-exercises",
+      children: "10. Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-full-context-test",
+      children: "Exercise 1: Full Context Test"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PaymentService"
+      }), " that coordinates ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "FraudDetection"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "BankGateway"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ReceiptService"
+      }), ". Write a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RANDOM_PORT"
+        }), " web environment"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TestRestTemplate"
+        }), " to verify the REST endpoint"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@MockBean"
+        }), " for all three dependencies"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tests successful payment, fraud rejection, and bank failure"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-mockmvc-controller-test",
+      children: "Exercise 2: MockMvc Controller Test"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ProductController"
+      }), " with CRUD endpoints. Write ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@WebMvcTest"
+      }), " tests that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "GET /api/products/{id}"
+        }), " returns 200 and 404"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "POST /api/products"
+        }), " with valid and invalid JSON bodies"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "DELETE /api/products/{id}"
+        }), " returns 204"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify that validation errors return structured error responses"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@MockBean"
+        }), " for the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ProductService"
+        }), " dependency"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-datajpa-repository-test",
+      children: "Exercise 3: DataJpa Repository Test"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CustomerRepository"
+      }), " extending ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "JpaRepository"
+      }), " with custom queries:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "findByLastName(String lastName)"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "findByEmail(String email)"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@Query"
+        }), " that finds customers by the first letter of their last name"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@Modifying"
+        }), " query to activate a customer"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataJpaTest"
+      }), " tests that verify each query."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-json-test",
+      children: "Exercise 4: JSON Test"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Transaction"
+      }), " record with fields: id, amount, currency, timestamp, status, description. Write ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@JsonTest"
+      }), " tests that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Serialise a Transaction and assert JSON Path values"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deserialise a JSON string and assert record fields"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test null field handling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test date/time format consistency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test currency enum serialisation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-restclienttest",
+      children: "Exercise 5: RestClientTest"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WeatherApiClient"
+      }), " that calls an external weather API using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "RestTemplate"
+      }), ". Write ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@RestClientTest"
+      }), " tests that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mock a successful response and verify the client parses it correctly"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Mock a 404 and verify the client returns ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Optional.empty()"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mock a timeout and verify the client handles it gracefully"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify the correct URL and HTTP method are used"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify request headers (e.g., API key, Accept header)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-6-dynamicpropertysource-with-testcontainers",
+      children: "Exercise 6: DynamicPropertySource with Testcontainers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Set up a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " that uses Testcontainers to start a PostgreSQL container. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DynamicPropertySource"
+      }), " to inject the datasource URL, username, and password. Write a test that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verifies the database connection works"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Saves and retrieves an entity using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "JpaRepository"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verifies the correct PostgreSQL version is running"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-7-activeprofiles",
+      children: "Exercise 7: ActiveProfiles"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create three profile-specific configurations:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@Profile(\"dev\")"
+        }), " — uses H2 in-memory database, verbose logging"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@Profile(\"test\")"
+        }), " — uses H2, minimal logging, mock mail server"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@Profile(\"prod\")"
+        }), " — uses PostgreSQL, WARN logging, real mail server"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@SpringBootTest"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@ActiveProfiles(\"test\")"
+      }), " that verifies the correct beans are injected."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-8-output-capture",
+      children: "Exercise 8: Output Capture"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "LoggingService"
+      }), " that logs messages at INFO, WARN, and ERROR levels. Test with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@OutputCaptureExtension"
+      }), " that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "INFO messages appear in the captured output"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ERROR messages appear in both the output and the error stream"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The log message format matches a regex pattern"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log output is isolated between test methods"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-9-datamongotest",
+      children: "Exercise 9: DataMongoTest"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MovieRepository"
+      }), " extending ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MongoRepository"
+      }), " with methods:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "findByDirector(String director)"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "findByReleaseYearBetween(int from, int to)"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "findByTitleContainingIgnoreCase(String keyword)"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@DataMongoTest"
+      }), " tests that verify each method. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MongoTemplate"
+      }), " for direct document operations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-10-complete-integration-test-suite",
+      children: "Exercise 10: Complete Integration Test Suite"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a complete test suite for a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "BlogController"
+      }), " with the following test types:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@WebMvcTest"
+        }), " — test controller validation, error handling, response format"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@DataJpaTest"
+        }), " — test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "PostRepository"
+        }), " queries, pagination, and sorting"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@JsonTest"
+        }), " — test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "PostDto"
+        }), " serialization with comments, tags, and timestamps"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@RestClientTest"
+        }), " — test ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ExternalCommentClient"
+        }), " that fetches comments from an external service"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest(RANDOM_PORT)"
+        }), " — end-to-end test with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TestRestTemplate"
+        }), " using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@MockBean"
+        }), " for external dependencies"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@SpringBootTest"
+        }), " with Testcontainers — test the full stack with a real PostgreSQL database"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "@OutputCaptureExtension"
+        }), " — verify that blog operations log the correct audit trail"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

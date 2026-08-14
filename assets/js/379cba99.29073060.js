@@ -1,0 +1,1329 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[38948],{
+
+/***/ 21989
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_python_programming_10_lambda_md_379_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-python-programming-10-lambda-md-379.json
+const site_docs_courses_python_programming_10_lambda_md_379_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/python-programming/10-lambda","title":"Chapter 10: Lambda and Functional Programming","description":"Previous Modules and Packages","source":"@site/docs/courses/python-programming/10-lambda.md","sourceDirName":"courses/python-programming","slug":"/python-programming/10-lambda","permalink":"/ai-engineering-journey/python-programming/10-lambda","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"10-lambda","slug":"/python-programming/10-lambda","title":"Chapter 10: Lambda and Functional Programming","sidebar_label":"Chapter 10: Lambda and Functional Programming","sidebar_position":10},"sidebar":"course-python-programming","previous":{"title":"Chapter 9: Functions","permalink":"/ai-engineering-journey/python-programming/09-functions"},"next":{"title":"Chapter 11: Modules and Packages","permalink":"/ai-engineering-journey/python-programming/11-modules"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/python-programming/10-lambda.md
+
+
+const frontMatter = {
+	id: '10-lambda',
+	slug: '/python-programming/10-lambda',
+	title: 'Chapter 10: Lambda and Functional Programming',
+	sidebar_label: 'Chapter 10: Lambda and Functional Programming',
+	sidebar_position: 10
+};
+const contentTitle = 'Chapter 10: Lambda and Functional Programming';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "10.1 Lambda Functions",
+  "id": "101-lambda-functions",
+  "level": 2
+}, {
+  "value": "10.2 map()",
+  "id": "102-map",
+  "level": 2
+}, {
+  "value": "10.3 filter()",
+  "id": "103-filter",
+  "level": 2
+}, {
+  "value": "10.4 reduce()",
+  "id": "104-reduce",
+  "level": 2
+}, {
+  "value": "10.5 functools.partial",
+  "id": "105-functoolspartial",
+  "level": 2
+}, {
+  "value": "10.6 The operator Module",
+  "id": "106-the-operator-module",
+  "level": 2
+}, {
+  "value": "10.7 Function Composition",
+  "id": "107-function-composition",
+  "level": 2
+}, {
+  "value": "10.8 When to Use Functional Constructs",
+  "id": "108-when-to-use-functional-constructs",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel",
+  "level": 2
+}, {
+  "value": "Arrow Functions vs Python Lambdas",
+  "id": "arrow-functions-vs-python-lambdas",
+  "level": 3
+}, {
+  "value": "Functional Programming vs Pythonic Style",
+  "id": "functional-programming-vs-pythonic-style",
+  "level": 3
+}, {
+  "value": "Advanced Partial Application",
+  "id": "advanced-partial-application",
+  "level": 3
+}, {
+  "value": "Performance: Lambda vs Named Function",
+  "id": "performance-lambda-vs-named-function",
+  "level": 3
+}, {
+  "value": "Lambda Pitfalls",
+  "id": "lambda-pitfalls",
+  "level": 3
+}, {
+  "value": "TypeScript Functional Composition Patterns",
+  "id": "typescript-functional-composition-patterns",
+  "level": 3
+}, {
+  "value": "TypeScript Currying &amp; Advanced Functional Patterns",
+  "id": "typescript-currying--advanced-functional-patterns",
+  "level": 3
+}, {
+  "value": "TypeScript Utilities",
+  "id": "typescript-utilities",
+  "level": 3
+}, {
+  "value": "TypeScript Functional Programming in Depth",
+  "id": "typescript-functional-programming-in-depth",
+  "level": 3
+}, {
+  "value": "TypeScript Advanced Functional Patterns",
+  "id": "typescript-advanced-functional-patterns",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-10-lambda-and-functional-programming",
+        children: "Chapter 10: Lambda and Functional Programming"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/09-functions",
+          children: "Functions"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/11-modules",
+          children: "Modules and Packages"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write lambda functions for concise inline operations"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "map"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "filter"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce"
+        }), " for functional data processing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create partial functions with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "functools.partial"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Apply the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "operator"
+        }), " module for common operations"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compose functions and build functional pipelines"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/10-lambda/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/10-lambda/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/10-lambda/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/10-lambda/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/10-lambda/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/10-lambda/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/10-lambda.png",
+        alt: "Lambda and Functional Programming"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.1 Lambda Functions"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Lambdas are anonymous single-expression functions — use them where ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "def"
+            }), " is overkill."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.2 map()"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "map()"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "filter()"
+            }), " are lazy; list comprehensions often read better."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.3 filter()"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "reduce()"
+            }), " cumulatively applies a binary function — explicit loops are often clearer."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.4 reduce()"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "partial()"
+            }), " fixes arguments; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "operator"
+            }), " module replaces common lambdas for speed."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.5 functools.partial"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Function composition chains transformations; Python supports both left-to-right (pipe) and right-to-left (compose)."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.6 The operator Module"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.7 Function Composition"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.8 When to Use Functional Constructs"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    S0[Lambda Functions]\n    S1[map()]\n    S2[filter()]\n    S3[reduce()]\n    S4[functools.partial]\n    S5[The operator Module]\n    S6[Function Composition]\n    S7[When to Use Functional Constructs]\n    S0 --> S1\n    S1 --> S2\n    S2 --> S3\n    S3 --> S4\n    S4 --> S5\n    S5 --> S6\n    S6 --> S7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "101-lambda-functions",
+      children: "10.1 Lambda Functions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Lambdas are anonymous single-expression functions — use them where ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "def"
+        }), " is overkill."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A lambda is an anonymous function defined with the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "lambda"
+      }), " keyword:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "lambda arguments: expression\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "It can only contain a single expression (no statements):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "square = lambda x: x ** 2\nprint(square(5))            # 25\n\nadd = lambda a, b: a + b\nprint(add(3, 4))            # 7\n\nmultiline = lambda x, y, z: (x + y) * z\nprint(multiline(2, 3, 4))   # 20\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Lambdas are most useful where a function is needed temporarily:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "pairs = [(1, \"banana\"), (3, \"apple\"), (2, \"cherry\")]\npairs.sort(key=lambda pair: pair[1])  # sort by the string element\nprint(pairs)  # [(3, 'apple'), (1, 'banana'), (2, 'cherry')]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Equivalent named function:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def sort_key(pair):\n    return pair[1]\n\npairs.sort(key=sort_key)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use a lambda when the function logic is simple and only needed once. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "def"
+      }), " for anything complex or reused."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "102-map",
+      children: "10.2 map()"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "map()"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "filter()"
+        }), " are lazy; list comprehensions often read better.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " List comprehensions are often more readable than map/filter — use the functional form only when it improves clarity."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "map()"
+      }), " applies a function to every element of an iterable:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "numbers = [1, 2, 3, 4, 5]\nsquared = list(map(lambda x: x ** 2, numbers))\nprint(squared)  # [1, 4, 9, 16, 25]\n\n# Multiple iterables\na = [1, 2, 3]\nb = [10, 20, 30]\nsummed = list(map(lambda x, y: x + y, a, b))\nprint(summed)  # [11, 22, 33]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "map()"
+      }), " is lazy → it returns an iterator. Wrap with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "list()"
+      }), " to materialise:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "result = map(str, [1, 2, 3])\nprint(result)         # <map object at 0x...>\nprint(list(result))   # ['1', '2', '3']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["List comprehensions are often more readable than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "map()"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# These are equivalent:\nsquares1 = list(map(lambda x: x ** 2, range(10)))\nsquares2 = [x ** 2 for x in range(10)]\n\nprint(squares1 == squares2)  # True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "103-filter",
+      children: "10.3 filter()"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce()"
+        }), " cumulatively applies a binary function — explicit loops are often clearer."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "filter()"
+      }), " keeps elements for which the function returns truthy:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "numbers = [1, 2, 3, 4, 5, 6]\nevens = list(filter(lambda x: x % 2 == 0, numbers))\nprint(evens)  # [2, 4, 6]\n\n# Filter out None values\nvalues = [0, None, 1, \"\", \"hello\", [], [1], False]\ntruthy = list(filter(None, values))  # passing None as function keeps truthy\nprint(truthy)  # [1, 'hello', [1]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Again, a comprehension is often clearer:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "evens2 = [x for x in numbers if x % 2 == 0]\nprint(evens == evens2)  # True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "104-reduce",
+      children: "10.4 reduce()"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "partial()"
+        }), " fixes arguments; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "operator"
+        }), " module replaces common lambdas for speed."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "reduce()"
+      }), " applies a binary function cumulatively, reducing the iterable to a single value:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from functools import reduce\n\nnumbers = [1, 2, 3, 4, 5]\ntotal = reduce(lambda a, b: a + b, numbers)\nprint(total)  # 15\n\n# With initial value\ntotal_with_init = reduce(lambda a, b: a + b, numbers, 100)\nprint(total_with_init)  # 115\n\n# Factorial\nfactorial = reduce(lambda a, b: a * b, range(1, 6))\nprint(factorial)  # 120\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Tracing ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "reduce(lambda a, b: a + b, [1, 2, 3, 4])"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "a=1, b=2"
+        }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "3"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "a=3, b=3"
+        }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "6"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "a=6, b=4"
+        }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "10"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["With ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "functools.reduce"
+      }), ", the function must take two arguments. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "reduce"
+      }), " is powerful but less readable than explicit loops for many cases:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# reduce\nmax_val = reduce(lambda a, b: a if a > b else b, [3, 1, 4, 1, 5, 9])\nprint(max_val)  # 9\n\n# equivalent loop\nmax_val = float(\"-inf\")\nfor x in [3, 1, 4, 1, 5, 9]:\n    if x > max_val:\n        max_val = x\nprint(max_val)  # 9\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "105-functoolspartial",
+      children: "10.5 functools.partial"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Function composition chains transformations; Python supports both left-to-right (pipe) and right-to-left (compose)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "partial"
+      }), " fixes some arguments of a function, creating a new callable:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from functools import partial\n\ndef power(base, exponent):\n    return base ** exponent\n\nsquare = partial(power, exponent=2)\ncube = partial(power, exponent=3)\n\nprint(square(5))  # 25\nprint(cube(3))    # 27\n\n# Real-world: decimal with fixed precision\nfrom decimal import Decimal, ROUND_HALF_UP\nround_decimal = partial(Decimal.quantize, exp=Decimal(\"0.01\"), rounding=ROUND_HALF_UP)\n# Not quite right → partial on bound method needs care. Better:\ndef round_to_2dp(value):\n    return Decimal(value).quantize(Decimal(\"0.01\"), rounding=ROUND_HALF_UP)\n\n# Fixed argument for configuration\ndef connect(host, port, timeout, retries):\n    print(f\"Connecting to {host}:{port} (timeout={timeout}, retries={retries})\")\n\nconnect_local = partial(connect, host=\"localhost\", timeout=5, retries=3)\nconnect_local(port=8080)   # Connecting to localhost:8080 (timeout=5, retries=3)\nconnect_local(port=5432)   # Connecting to localhost:5432 (timeout=5, retries=3)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "106-the-operator-module",
+      children: "10.6 The operator Module"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "operator"
+      }), " module provides function equivalents of built-in operators:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from operator import add, mul, itemgetter, attrgetter, methodcaller\n\n# Instead of lambda a, b: a + b\nprint(add(3, 4))    # 7\nprint(mul(5, 6))    # 30\n\n# itemgetter → instead of lambda x: x[0]\npeople = [(\"Alice\", 30), (\"Bob\", 25), (\"Charlie\", 35)]\nsorted_by_age = sorted(people, key=itemgetter(1))\nprint(sorted_by_age)  # [('Bob', 25), ('Alice', 30), ('Charlie', 35)]\n\n# Multiple indices\npoints = [(3, 4, 5), (1, 2, 3), (6, 7, 8)]\nprint(itemgetter(0, 2)(points[0]))  # (3, 5)\n\n# attrgetter → instead of lambda x: x.attribute\nfrom collections import namedtuple\nPerson = namedtuple(\"Person\", \"name age\")\npeople2 = [Person(\"Alice\", 30), Person(\"Bob\", 25), Person(\"Charlie\", 35)]\nnames = list(map(attrgetter(\"name\"), people2))\nprint(names)  # ['Alice', 'Bob', 'Charlie']\n\n# methodcaller\ns = \"hello world\"\nupper = methodcaller(\"upper\")\nprint(upper(s))  # HELLO WORLD\nsplit = methodcaller(\"split\", \" \")\nprint(split(s))  # ['hello', 'world']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "107-function-composition",
+      children: "10.7 Function Composition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Function composition chains functions: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "compose(f, g)(x) = f(g(x))"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def compose(*funcs):\n    \"\"\"Compose functions right-to-left.\"\"\"\n    def composed(arg):\n        result = arg\n        for func in reversed(funcs):\n            result = func(result)\n        return result\n    return composed\n\ndef add_one(x): return x + 1\ndef double(x): return x * 2\ndef square(x): return x ** 2\n\npipeline = compose(square, double, add_one)\nprint(pipeline(3))  # square(double(add_one(3))) = square(double(4)) = square(8) = 64\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A left-to-right pipeline (like Unix pipes):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def pipe(arg, *funcs):\n    \"\"\"Apply functions left-to-right.\"\"\"\n    result = arg\n    for func in funcs:\n        result = func(result)\n    return result\n\nprint(pipe(3, add_one, double, square))  # ((3+1)*2)^2 = 64\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This pattern becomes powerful when combined with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "partial"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from functools import partial, reduce\n\ndef process_data(data):\n    pipeline = [\n        partial(map, str.upper),\n        partial(filter, lambda s: len(s) > 2),\n        partial(map, lambda s: f\"[{s}]\"),\n        list,\n    ]\n    return reduce(lambda d, f: f(d), pipeline, data)\n\nresult = process_data([\"a\", \"hello\", \"bc\", \"world\"])\nprint(result)  # ['[HELLO]', '[WORLD]']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "108-when-to-use-functional-constructs",
+      children: "10.8 When to Use Functional Constructs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Construct"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Preferable Alternative"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "lambda"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple one-expression function"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "def"
+            }), " for multi-line"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "map()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transform iterable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "List comprehension"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "filter()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Select from iterable"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["List comprehension with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "if"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "reduce()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cumulative operation"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Explicit loop or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sum()"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "partial"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix function arguments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lambda with default args"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "operator"
+            }), " functions"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Avoid inline lambdas in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sorted"
+            }), ", etc."]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lambda or itemgetter"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Python is a multi-paradigm language. Use functional constructs when they improve readability; use imperative style when it does."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Approach"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Functional"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Imperative"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Style"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "map/filter/reduce"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "for loop + if"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Immutable, no side effects"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutable variables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Readability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concise for simple ops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clear for complex logic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparable (lazy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparable"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "square = lambda x: x ** 2\nlist(map(str.upper, [\"a\",\"b\"]))\nlist(filter(None, [0, 1, None, 2]))\nfrom functools import reduce\nreduce(lambda a,b: a+b, [1,2,3,4])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Area"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Relevant Section"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Science"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "map() for feature transforms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Web Dev"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "filter() for request validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DevOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "reduce() for log aggregation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "partial() for config presets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.5"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What is the main limitation of lambda?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "no return value"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["single expression only ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "no parameters"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "slow execution"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " Are map() and filter() eager or lazy?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "eager"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["lazy ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "depends on Python version"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "both"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " What does reduce() do?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "filters elements"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "maps a function"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["cumulatively applies binary function ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "sorts elements"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " What does functools.partial do?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "splits a function"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["fixes some function arguments ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "creates lambdas"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "decorates functions"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " Which operator import is equivalent to lambda a,b: a+b?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "operator.mul"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["operator.add ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "operator.concat"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "operator.sum"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-parallel",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["TypeScript uses arrow functions ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(args) => expr"
+      }), " as the direct equivalent of Python lambdas:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript arrow functions (equivalent to Python lambdas)\nconst square = (x: number): number => x * x;\nconst add = (a: number, b: number): number => a + b;\n\n// map equivalent (Python: map(lambda x: x*2, nums))\nconst nums: number[] = [1, 2, 3, 4, 5];\nconst doubled = nums.map(x => x * 2);  // [2, 4, 6, 8, 10]\n\n// filter equivalent (Python: filter(lambda x: x > 2, nums))\nconst big = nums.filter(x => x > 2);   // [3, 4, 5]\n\n// reduce equivalent (Python: reduce(lambda a, b: a + b, nums))\nconst sum = nums.reduce((acc, x) => acc + x, 0);  // 15\n\n// partial application via bind and closures\nfunction multiply(a: number, b: number): number {\n  return a * b;\n}\nconst doubleTS = multiply.bind(null, 2);\nconsole.log(doubleTS(5));  // 10\n\n// Curried closure (like partial)\nconst multiplyBy = (a: number) => (b: number) => a * b;\nconst triple = multiplyBy(3);\nconsole.log(triple(7));  // 21\n\n// Method reference equivalent\ntype Op = (a: number, b: number) => number;\nconst ops: Record<string, Op> = {\n  add: (a, b) => a + b,\n  mul: (a, b) => a * b\n};\nconsole.log(ops[\"add\"](3, 4));  // 7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "arrow-functions-vs-python-lambdas",
+      children: "Arrow Functions vs Python Lambdas"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Python lambda"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TypeScript Arrow"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Syntax"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "lambda x: expr"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "x => expr"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple params"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "lambda a,b: expr"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "(a,b) => expr"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Statements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single expression only"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Expression or block ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "{}"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "this"
+            }), " binding"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (lexical)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Lexical ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "this"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Typing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No type annotations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full type support"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Common use"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "map"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "filter"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "reduce"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: ".map()"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".filter()"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".reduce()"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "functional-programming-vs-pythonic-style",
+      children: "Functional Programming vs Pythonic Style"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Python is not a purely functional language, so idiomatic Python often prefers alternatives:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Lambda style vs Pythonic style\n\n# 1. Sorting with complex keys\ndata = [(\"Alice\", 30), (\"Bob\", 25), (\"Charlie\", 35)]\n\n# Lambda approach\nsorted_by_age = sorted(data, key=lambda x: x[1])\n\n# operator approach (preferred for simple attribute access)\nfrom operator import itemgetter\nsorted_by_age = sorted(data, key=itemgetter(1))\n\n# 2. Conditional logic\nnums = [1, 2, 3, 4, 5, 6]\n\n# Lambda approach\nresult = list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, nums))\n\n# Comprehension approach (more readable)\nresult = [x * 2 if x % 2 == 0 else x * 3 for x in nums]\n\n# 3. Multiple aggregations\nrecords = [{\"sales\": 100}, {\"sales\": 200}, {\"sales\": 150}]\n\n# Functional approach\nfrom functools import reduce\ntotal = reduce(lambda acc, r: acc + r[\"sales\"], records, 0)\n\n# Comprehension approach (more pythonic)\ntotal = sum(r[\"sales\"] for r in records)\n\n# 4. Data transformation pipeline\n# Lambda pipeline\npipeline = lambda data: list(\n    map(lambda x: x.upper(),\n        filter(lambda x: len(x) > 3, data))\n)\n\n# Comprehension pipeline\npipeline = [x.upper() for x in data if len(x) > 3]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced-partial-application",
+      children: "Advanced Partial Application"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Partial with keyword arguments\nfrom functools import partial\n\ndef log_message(level: str, source: str, message: str) -> str:\n    return f\"[{level.upper()}] [{source}] {message}\"\n\ninfo_logger = partial(log_message, \"info\", \"app\")\nerror_logger = partial(log_message, \"error\", \"app\")\n\nprint(info_logger(\"Server started\"))      # [INFO] [app] Server started\nprint(error_logger(\"Connection failed\"))  # [ERROR] [app] Connection failed\n\n# Partial as callback factory\ndef make_request(url: str, method: str = \"GET\", timeout: int = 30):\n    return f\"{method} {url} (timeout={timeout}s)\"\n\nget_api = partial(make_request, method=\"GET\", timeout=10)\npost_api = partial(make_request, method=\"POST\", timeout=30)\nprint(get_api(\"https://api.example.com/users\"))\n# GET https://api.example.com/users (timeout=10s)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "performance-lambda-vs-named-function",
+      children: "Performance: Lambda vs Named Function"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import timeit\n\n# Lambda\nlambda_time = timeit.timeit(\n    'list(map(lambda x: x * 2, range(1000)))',\n    number=10000\n)\n\n# List comprehension\ncomp_time = timeit.timeit(\n    '[x * 2 for x in range(1000)]',\n    number=10000\n)\n\n# Named function\ndef double(x):\n    return x * 2\n\nnamed_time = timeit.timeit(\n    'list(map(double, range(1000)))',\n    globals={'double': double},\n    number=10000\n)\n\nprint(f\"Lambda:   {lambda_time:.3f}s\")\nprint(f\"Comprehension: {comp_time:.3f}s\")\nprint(f\"Named:    {named_time:.3f}s\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["List comprehensions are typically faster than ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "map"
+      }), " with lambdas because they avoid function call overhead. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "map"
+      }), " with a built-in function (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "map(str.upper, items)"
+      }), ") can be faster than the equivalent comprehension. Always profile when performance matters."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lambda-pitfalls",
+      children: "Lambda Pitfalls"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Pitfall 1: Late binding in closures\nfuncs = [lambda: i for i in range(5)]\nprint([f() for f in funcs])  # [4, 4, 4, 4] not [0, 1, 2, 3, 4]\n\n# Fix: capture value at creation time\nfuncs = [lambda i=i: i for i in range(5)]\nprint([f() for f in funcs])  # [0, 1, 2, 3, 4]\n\n# Pitfall 2: Overusing lambda when def is clearer\n# Hard to read:\nprocess = lambda items: list(\n    filter(lambda x: x > 0,\n        map(lambda x: x.strip().lower(), items))\n)\n\n# Better as named function:\ndef process(items):\n    result = []\n    for item in items:\n        cleaned = item.strip().lower()\n        if cleaned:\n            result.append(cleaned)\n    return result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Chapter 10: TypeScript Arrow Function Equivalents (Python lambdas)\n// Python: lambda x: x * 2\nconst double = (x: number): number => x * 2;\nconsole.log(double(5));  // 10\n\n// Python: sorted(lst, key=lambda x: x[1])\nconst pairs: [string, number][] = [[\"b\", 3], [\"a\", 1], [\"c\", 2]];\npairs.sort((a, b) => a[1] - b[1]);\nconsole.log(pairs);  // [[\"a\", 1], [\"c\", 2], [\"b\", 3]]\n\n// Python: map(lambda x: x.upper(), items)\nconst words: string[] = [\"hello\", \"world\"];\nconst uppercased: string[] = words.map((w) => w.toUpperCase());\nconsole.log(uppercased);  // [\"HELLO\", \"WORLD\"]\n\n// Python: filter(lambda x: x > 0, numbers)\nconst nums: number[] = [-1, 0, 3, -2, 5];\nconst positive: number[] = nums.filter((n) => n > 0);\nconsole.log(positive);  // [3, 5]\n\n// Python: reduce(lambda a, b: a + b, numbers)\nconst sum: number = nums.reduce((acc, n) => acc + n, 0);\n\n// Python: functools.partial → TypeScript: .bind() or closure\nconst multiply = (a: number, b: number): number => a * b;\nconst double2 = (x: number): number => multiply(2, x);\nconsole.log(double2(5));  // 10\n\n// Python: operator.itemgetter(1) → TypeScript: destructuring\nconst getSecond = <T,>(_: unknown, index: number, arr: T[]): T => arr[index];\n// More idiomatic: destructure in callback\npairs.forEach(([key, val]) => console.log(key, val));\n\n// Python: lambda limitations (single expression) — same for arrow functions\n// But TypeScript arrow functions can have blocks:\nconst safeDivide = (a: number, b: number): number => {\n  if (b === 0) throw new Error(\"Division by zero\");\n  return a / b;\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-functional-composition-patterns",
+      children: "TypeScript Functional Composition Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Python: multiple lambdas composed → TypeScript: pipes\nconst add = (x: number) => (y: number) => x + y;\nconst multiply = (x: number) => (y: number) => x * y;\n\n// Function composition: (f ∘ g)(x) = f(g(x))\nfunction compose<T>(...fns: ((x: T) => T)[]): (x: T) => T {\n  return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);\n}\n\nconst addThenMultiply = compose(add(2), multiply(3));\nconsole.log(addThenMultiply(5));  // (5 * 3) + 2 = 17\n\n// Python: partial() → TypeScript: arrow function binding\nconst pow = (base: number, exp: number): number => base ** exp;\nconst square = (x: number): number => pow(x, 2);\nconst cube = (x: number): number => pow(x, 3);\nconsole.log(square(4), cube(4));  // 16, 64\n\n// Python: operator functions → TypeScript: explicit functions\nconst gt = (a: number) => (b: number) => b > a;\nconst greaterThan5 = gt(5);\n[1, 6, 3, 8].filter(greaterThan5);  // [6, 8]\n\n// Python: reduce with lambda → TypeScript: reduce with arrow\nconst numbers: number[] = [1, 2, 3, 4, 5];\nconst product = numbers.reduce((a, b) => a * b, 1);\nconsole.log(product);  // 120\n\n// Python: sorted with key=lambda → TypeScript: sort with comparator\ntype Person = { name: string; age: number };\nconst people: Person[] = [\n  { name: \"Alice\", age: 30 },\n  { name: \"Bob\", age: 25 },\n  { name: \"Charlie\", age: 35 },\n];\npeople.sort((a, b) => a.age - b.age);  // sort by age ascending\nconsole.log(people.map((p) => p.name));  // [\"Bob\", \"Alice\", \"Charlie\"]\n\n// Python: map and filter with lambda → TypeScript: chained array methods\nconst result = [1, 2, 3, 4, 5, 6]\n  .filter((x) => x % 2 === 0)\n  .map((x) => x ** 2);\nconsole.log(result);  // [4, 16, 36]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-currying--advanced-functional-patterns",
+      children: "TypeScript Currying & Advanced Functional Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Python: currying with lambda → TypeScript: curried arrow functions\nconst curriedAdd = (a: number) => (b: number) => (c: number) => a + b + c;\nconsole.log(curriedAdd(1)(2)(3));  // 6\n// Python equivalent: lambda a: lambda b: lambda c: a + b + c\n\n// Python: functools.compose → TypeScript: pipe function\nfunction pipe<T>(...fns: Array<(arg: T) => T>): (arg: T) => T {\n  return (x: T) => fns.reduce((acc, fn) => fn(acc), x);\n}\nconst trim = (s: string) => s.trim();\nconst lower = (s: string) => s.toLowerCase();\nconst truncate = (s: string) => s.slice(0, 10);\nconst clean = pipe(trim, lower, truncate);\nconsole.log(clean(\"  HELLO WORLD  \"));  // \"hello worl\"\n\n// Python: filter(None, items) → TypeScript: Boolean constructor\nconst mixed2 = [0, 1, \"\", \"hello\", null, undefined, false, 42];\nconst truthy = mixed2.filter(Boolean);\nconsole.log(truthy);  // [1, \"hello\", 42]\n\n// Python: sorted with lambda and operator.attrgetter\ntype Task = { name: string; priority: number; due: Date };\nconst tasks: Task[] = [\n  { name: \"Fix bug\", priority: 1, due: new Date(\"2026-01-15\") },\n  { name: \"Add feature\", priority: 2, due: new Date(\"2026-02-01\") },\n];\ntasks.sort((a, b) => a.priority - b.priority || a.due.getTime() - b.due.getTime());\n\n// Python: functools.partial for callback binding\nfunction fetchApi(endpoint: string, params: Record<string, string>): Promise<Response> {\n  const url = new URL(endpoint);\n  Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));\n  return fetch(url.toString());\n}\nconst fetchUsers = (params: Record<string, string>) => fetchApi(\"/api/users\", params);\nconst fetchProducts = (params: Record<string, string>) => fetchApi(\"/api/products\", params);\n\n// Python: map with multiple iterables → TypeScript: Function.apply or zip\nfunction elementWise<T>(a: T[], b: T[], fn: (x: T, y: T) => T): T[] {\n  return a.map((val, i) => fn(val, b[i]));\n}\nconsole.log(elementWise([1, 2, 3], [4, 5, 6], (x, y) => x + y));  // [5, 7, 9]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-utilities",
+      children: "TypeScript Utilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Function Pipeline Composer (Python pipe pattern) ===\nclass Pipeline<T> {\n  private fns: Array<(x: T) => T> = [];\n  add(fn: (x: T) => T): this { this.fns.push(fn); return this; }\n  execute(initial: T): T { return this.fns.reduce((acc, fn) => fn(acc), initial); }\n}\nconst pipe = new Pipeline<number>();\npipe.add((x) => x * 2).add((x) => x + 1).add((x) => Math.abs(x));\nconsole.log(pipe.execute(-5)); // |(-5*2)+1| = 9\n\n// === Compose (right-to-left) and Pipe (left-to-right) ===\nfunction compose<T>(...fns: Array<(x: T) => T>): (x: T) => T {\n  return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);\n}\nfunction piped<T>(...fns: Array<(x: T) => T>): (x: T) => T {\n  return (x: T) => fns.reduce((acc, fn) => fn(acc), x);\n}\nconst add1 = (x: number) => x + 1;\nconst double = (x: number) => x * 2;\nconst square = (x: number) => x * x;\nconst comp = compose(add1, double, square); // square(double(add1(x)))\nconst p = piped(add1, double, square);      // square(double(add1(x)))\nconsole.log(comp(5), p(5)); // square(double(6)) = 144, same\n\n// === Partial Applier (functools.partial) ===\ntype Fn = (...args: any[]) => any;\nfunction partial2<T extends Fn>(fn: T, ...bound: Parameters<T>): (...rest: Parameters<T>) => ReturnType<T> {\n  return (...rest: Parameters<T>) => fn(...bound, ...rest);\n}\nconst greet = (greeting: string, name: string) => `${greeting}, ${name}!`;\nconst sayHello = partial2(greet, \"Hello\");\nconsole.log(sayHello(\"Alice\")); // Hello, Alice!\n\n// === Map / Filter / Reduce as Python-style ===\nfunction pyMap<T, U>(arr: T[], fn: (x: T) => U): U[] { return arr.map(fn); }\nfunction pyFilter<T>(arr: T[], fn: (x: T) => boolean): T[] { return arr.filter(fn); }\nfunction pyReduce<T, U>(arr: T[], fn: (acc: U, x: T, i: number) => U, init: U): U {\n  return arr.reduce(fn, init);\n}\nconst nums = [1, 2, 3, 4, 5];\nconsole.log(pyMap(pyFilter(nums, (x) => x % 2 === 1), (x) => x * x)); // [1, 9, 25]\n\n// === Lambda Cache (memoize for closures) ===\nfunction memoize<T extends (...args: any[]) => any>(fn: T): T {\n  const cache = new Map<string, ReturnType<T>>();\n  return ((...args: Parameters<T>) => {\n    const key = JSON.stringify(args);\n    if (!cache.has(key)) cache.set(key, fn(...args));\n    return cache.get(key);\n  }) as T;\n}\nconst fib = memoize((n: number): number => n <= 1 ? n : fib(n - 1) + fib(n - 2));\nconsole.log(fib(40)); // 102334155 (fast due to memoization)\n\n// === Throttle / Debounce (functional utilities) ===\nfunction debounce<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {\n  let timer: ReturnType<typeof setTimeout>;\n  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };\n}\nfunction throttle<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {\n  let last = 0;\n  return (...args) => { const now = Date.now(); if (now - last >= ms) { last = now; fn(...args); } };\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-functional-programming-in-depth",
+      children: "TypeScript Functional Programming in Depth"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Pure Function Utilities ===\nconst identity = <T>(x: T): T => x;\nconst constant = <T>(x: T) => () => x;\nconst apply = <T, R>(fn: (x: T) => R) => (x: T): R => fn(x);\n\n// === Point-free Style ===\ntype UnaryFn<T, R> = (x: T) => R;\nconst compose2 = <T, R>(...fns: UnaryFn<any, any>[]): UnaryFn<T, R> =>\n  (x: T) => fns.reduceRight((acc, fn) => fn(acc), x) as R;\nconst pipe3 = <T, R>(...fns: UnaryFn<any, any>[]): UnaryFn<T, R> =>\n  (x: T) => fns.reduce((acc, fn) => fn(acc), x) as R;\n\n// === Either Monad ===\nclass Either<E, A> {\n  private constructor(private left?: E, private right?: A) {}\n  static left<E, A>(value: E): Either<E, A> { return new Either<E, A>(value, undefined); }\n  static right<E, A>(value: A): Either<E, A> { return new Either<E, A>(undefined, value); }\n  isLeft(): boolean { return this.left !== undefined; }\n  isRight(): boolean { return this.right !== undefined; }\n  map<B>(fn: (a: A) => B): Either<E, B> {\n    return this.isRight() ? Either.right(fn(this.right!)) : Either.left(this.left!);\n  }\n  flatMap<B>(fn: (a: A) => Either<E, B>): Either<E, B> {\n    return this.isRight() ? fn(this.right!) : Either.left(this.left!);\n  }\n  fold<B>(leftFn: (e: E) => B, rightFn: (a: A) => B): B {\n    return this.isRight() ? rightFn(this.right!) : leftFn(this.left!);\n  }\n}\nfunction safeDivide(a: number, b: number): Either<string, number> {\n  return b === 0 ? Either.left(\"Division by zero\") : Either.right(a / b);\n}\nconst divResult = safeDivide(10, 2).map(x => x * 3).fold(\n  err => `Error: ${err}`,\n  val => `Result: ${val}`\n);\nconsole.log(divResult); // \"Result: 15\"\n\n// === Task/Future Monad ===\nclass Task<A> {\n  constructor(private run: () => Promise<A>) {}\n  static of<A>(value: A): Task<A> { return new Task(() => Promise.resolve(value)); }\n  map<B>(fn: (a: A) => B): Task<B> { return new Task(() => this.run().then(fn)); }\n  chain<B>(fn: (a: A) => Task<B>): Task<B> { return new Task(() => this.run().then(a => fn(a).run())); }\n  async execute(): Promise<A> { return this.run(); }\n}\nconst task = Task.of(5).map(x => x * 2).chain(x => Task.of(x + 1));\ntask.execute().then(console.log); // 11\n\n// === Transducer Pattern ===\ntype Reducer<A, B> = (acc: A, val: B) => A;\ntype Transducer<A, B, C> = (next: Reducer<A, C>) => Reducer<A, B>;\nfunction mapping<A, B, C>(fn: (x: B) => C): Transducer<A, B, C> {\n  return (next: Reducer<A, C>) => (acc: A, val: B) => next(acc, fn(val));\n}\nfunction filtering<A, B>(pred: (x: B) => boolean): Transducer<A, B, B> {\n  return (next: Reducer<A, B>) => (acc: A, val: B) => pred(val) ? next(acc, val) : acc;\n}\nfunction transduce<A, B, C>(xf: Transducer<A, B, C>, reducer: Reducer<A, C>, initial: A, input: B[]): A {\n  const tr = xf(reducer);\n  return input.reduce(tr, initial);\n}\nconst isEven2 = (x: number) => x % 2 === 0;\nconst double3 = (x: number) => x * 2;\nconst sum3 = (acc: number, val: number) => acc + val;\nconst result2 = transduce(mapping(double3), sum3, 0, [1, 2, 3, 4, 5, 6]);\nconsole.log(result2); // 42 (2+4+6+8+10+12)\n\n// === Applicative Functor ===\nclass ApplicativeBox<T> {\n  constructor(private value: T) {}\n  static of<T>(v: T): ApplicativeBox<T> { return new ApplicativeBox(v); }\n  map<R>(fn: (x: T) => R): ApplicativeBox<R> { return new ApplicativeBox(fn(this.value)); }\n  ap<R>(fn: ApplicativeBox<(x: T) => R>): ApplicativeBox<R> { return new ApplicativeBox(fn.value(this.value)); }\n}\nconst addNums = (a: number) => (b: number) => a + b;\nconst apResult = ApplicativeBox.of(3).map(addNums).ap(ApplicativeBox.of(4));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-advanced-functional-patterns",
+      children: "TypeScript Advanced Functional Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Function Composition Pipeline ===\ntype Fn<T, R> = (x: T) => R;\nconst compose = <T, R>(...fns: Fn<any, any>[]): Fn<T, R> =>\n  (x: T) => fns.reduceRight((acc, fn) => fn(acc), x) as R;\nconst pipe2 = <T, R>(...fns: Fn<any, any>[]): Fn<T, R> =>\n  (x: T) => fns.reduce((acc, fn) => fn(acc), x) as R;\n\nconst double2 = (x: number) => x * 2;\nconst increment = (x: number) => x + 1;\nconst toString = (x: number) => String(x);\nconst processNumber = compose(String, double2, increment);\nconsole.log(processNumber(5)); // \"12\"\n\n// === Currying ===\nconst curry2 = <A, B, R>(fn: (a: A, b: B) => R) => (a: A) => (b: B) => fn(a, b);\nconst add2 = curry2((a: number, b: number) => a + b);\nconst add5 = add2(5);\nconsole.log(add5(3)); // 8\n\n// === Functor Pattern ===\ninterface Functor<T> { map<R>(fn: (x: T) => R): Functor<R> }\nclass Box<T> implements Functor<T> {\n  constructor(private value: T) {}\n  map<R>(fn: (x: T) => R): Box<R> { return new Box(fn(this.value)); }\n  fold<R>(fn: (x: T) => R): R { return fn(this.value); }\n}\nconst result = new Box(5).map(x => x * 2).map(x => x + 1).fold(x => `Value: ${x}`);\nconsole.log(result); // \"Value: 11\"\n\n// === Monad Pattern ===\nclass Maybe<T> {\n  private constructor(private value: T | null) {}\n  static just<T>(v: T): Maybe<T> { return new Maybe(v); }\n  static nothing<T>(): Maybe<T> { return new Maybe<T>(null); }\n  map<R>(fn: (x: T) => R): Maybe<R> {\n    return this.value === null ? Maybe.nothing() : Maybe.just(fn(this.value));\n  }\n  flatMap<R>(fn: (x: T) => Maybe<R>): Maybe<R> {\n    return this.value === null ? Maybe.nothing() : fn(this.value);\n  }\n  getOrElse(defaultVal: T): T { return this.value ?? defaultVal; }\n}\nconst safeDiv = (a: number, b: number): Maybe<number> =>\n  b === 0 ? Maybe.nothing() : Maybe.just(a / b);\nconsole.log(safeDiv(10, 2).map(x => x * 3).getOrElse(0)); // 15\n\n// === Partial Application ===\nconst partial2 = <T extends unknown[], R>(fn: (...args: T) => R, ...args: Partial<T>) =>\n  (...rest: T) => fn(...args, ...rest) as R;\n\n// === Throttle / Debounce ===\nfunction debounce<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {\n  let timer: ReturnType<typeof setTimeout>;\n  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };\n}\nfunction throttle<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {\n  let last = 0;\n  return (...args) => { const now = Date.now(); if (now - last >= ms) { last = now; fn(...args); } };\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Lambdas are anonymous, single-expression functions."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "map()"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "filter()"
+        }), " are lazy; list comprehensions often replace both."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce()"
+        }), " accumulates values cumulatively."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "partial()"
+        }), " fixes function arguments."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "operator"
+        }), " module provides function forms of built-in operations."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Function composition chains transformations."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What are the limitations of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "lambda"
+        }), " compared to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "def"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How does ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "map()"
+        }), " differ from a list comprehension?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What does ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce(lambda a, b: a if a > b else b, numbers)"
+        }), " compute?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When would you use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "operator.itemgetter"
+        }), " instead of a lambda?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "compose(f, g)(x)"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pipe(x, f, g)"
+        }), "?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "map"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "filter"
+        }), " to: given a list of strings, convert to uppercase and keep only those that start with a vowel. Then write the same with list comprehensions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce"
+        }), " to compute the product of all numbers in a list. Then implement ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flatten"
+        }), " using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce"
+        }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "reduce(operator.add, [[1, 2], [3, 4], [5, 6]], [])"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "multiply_by(n)"
+        }), " function using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "partial"
+        }), ". Then use it with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "map"
+        }), " to multiply every element of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "[1, 2, 3, 4, 5]"
+        }), " by 3, 5, and 10 in three separate calls."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Implement a simple query pipeline for a list of dictionaries representing employee records. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "partial"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "map"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "filter"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "reduce"
+      }), " to build composable query operations: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "select(fields)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "where(predicate)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "order_by(key, reverse)"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "aggregate(func)"
+      }), ". The pipeline should process data lazily where possible and support chaining: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "query(data) | select([\"name\", \"salary\"]) | where(lambda r: r[\"salary\"] > 50000) | order_by(\"salary\")"
+      }), "."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

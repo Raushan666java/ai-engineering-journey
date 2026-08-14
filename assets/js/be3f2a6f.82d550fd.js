@@ -1,0 +1,2607 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[2608],{
+
+/***/ 11489
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_06_performance_md_be3_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-06-performance-md-be3.json
+const site_docs_courses_java_06_performance_md_be3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/06-performance","title":"Performance Tuning & Profiling","description":"Previous Maven Deep Dive","source":"@site/docs/courses/java/06-performance.md","sourceDirName":"courses/java","slug":"/java/06-performance","permalink":"/ai-engineering-journey/java/06-performance","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"06-performance","slug":"/java/06-performance","title":"Performance Tuning & Profiling","sidebar_label":"Performance Tuning & Profiling","sidebar_position":6},"sidebar":"course-java","previous":{"title":"Functional Programming in Practice","permalink":"/ai-engineering-journey/java/05-functional-deep"},"next":{"title":"Maven Deep Dive","permalink":"/ai-engineering-journey/java/07-maven"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/06-performance.md
+
+
+const frontMatter = {
+	id: '06-performance',
+	slug: '/java/06-performance',
+	title: 'Performance Tuning & Profiling',
+	sidebar_label: 'Performance Tuning & Profiling',
+	sidebar_position: 6
+};
+const contentTitle = 'Performance Tuning & Profiling';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1. Profiling Tools",
+  "id": "1-profiling-tools",
+  "level": 2
+}, {
+  "value": "1.1 Java Mission Control &amp; Flight Recorder",
+  "id": "11-java-mission-control--flight-recorder",
+  "level": 3
+}, {
+  "value": "1.2 JProfiler",
+  "id": "12-jprofiler",
+  "level": 3
+}, {
+  "value": "1.3 YourKit",
+  "id": "13-yourkit",
+  "level": 3
+}, {
+  "value": "1.4 VisualVM",
+  "id": "14-visualvm",
+  "level": 3
+}, {
+  "value": "1.5 async-profiler",
+  "id": "15-async-profiler",
+  "level": 3
+}, {
+  "value": "1.6 IntelliJ Profiler",
+  "id": "16-intellij-profiler",
+  "level": 3
+}, {
+  "value": "2. Heap Analysis with MAT",
+  "id": "2-heap-analysis-with-mat",
+  "level": 2
+}, {
+  "value": "2.1 Capturing a Heap Dump",
+  "id": "21-capturing-a-heap-dump",
+  "level": 3
+}, {
+  "value": "2.2 Dominator Tree",
+  "id": "22-dominator-tree",
+  "level": 3
+}, {
+  "value": "2.3 Leak Suspect Report",
+  "id": "23-leak-suspect-report",
+  "level": 3
+}, {
+  "value": "2.4 Shallow vs Retained Heap",
+  "id": "24-shallow-vs-retained-heap",
+  "level": 3
+}, {
+  "value": "2.5 OQL → Object Query Language",
+  "id": "25-oql--object-query-language",
+  "level": 3
+}, {
+  "value": "2.6 Eclipse MAT Advanced: JOverflow",
+  "id": "26-eclipse-mat-advanced-joverflow",
+  "level": 3
+}, {
+  "value": "3. Thread Dump Analysis",
+  "id": "3-thread-dump-analysis",
+  "level": 2
+}, {
+  "value": "3.1 Capturing Thread Dumps",
+  "id": "31-capturing-thread-dumps",
+  "level": 3
+}, {
+  "value": "3.2 Thread States in Dumps",
+  "id": "32-thread-states-in-dumps",
+  "level": 3
+}, {
+  "value": "3.3 Deadlock Detection",
+  "id": "33-deadlock-detection",
+  "level": 3
+}, {
+  "value": "3.4 CPU Hotspots from Thread Stacks",
+  "id": "34-cpu-hotspots-from-thread-stacks",
+  "level": 3
+}, {
+  "value": "3.5 Thread Dump Analyzers (fastthread.io, etc.)",
+  "id": "35-thread-dump-analyzers-fastthreadio-etc",
+  "level": 3
+}, {
+  "value": "4. GC Analysis",
+  "id": "4-gc-analysis",
+  "level": 2
+}, {
+  "value": "4.1 Enabling GC Logging",
+  "id": "41-enabling-gc-logging",
+  "level": 3
+}, {
+  "value": "4.2 Reading GC Logs",
+  "id": "42-reading-gc-logs",
+  "level": 3
+}, {
+  "value": "4.3 GCeasy &amp; GCViewer",
+  "id": "43-gceasy--gcviewer",
+  "level": 3
+}, {
+  "value": "3.4 Allocation Rate &amp; Promotion Rate",
+  "id": "34-allocation-rate--promotion-rate",
+  "level": 3
+}, {
+  "value": "3.5 GC Frequency Tuning",
+  "id": "35-gc-frequency-tuning",
+  "level": 3
+}, {
+  "value": "5. JMH Benchmarking",
+  "id": "5-jmh-benchmarking",
+  "level": 2
+}, {
+  "value": "5.1 Basic JMH Setup",
+  "id": "51-basic-jmh-setup",
+  "level": 3
+}, {
+  "value": "5.2 Your First @Benchmark",
+  "id": "52-your-first-benchmark",
+  "level": 3
+}, {
+  "value": "5.3 @BenchmarkMode",
+  "id": "53-benchmarkmode",
+  "level": 3
+}, {
+  "value": "5.4 @State",
+  "id": "54-state",
+  "level": 3
+}, {
+  "value": "5.5 @Warmup, @Measurement, @Fork",
+  "id": "55-warmup-measurement-fork",
+  "level": 3
+}, {
+  "value": "5.6 Blackhole",
+  "id": "56-blackhole",
+  "level": 3
+}, {
+  "value": "5.7 Compiler Control",
+  "id": "57-compiler-control",
+  "level": 3
+}, {
+  "value": "5.8 Profilers in JMH",
+  "id": "58-profilers-in-jmh",
+  "level": 3
+}, {
+  "value": "5.9 Proper Benchmark Writing Rules",
+  "id": "59-proper-benchmark-writing-rules",
+  "level": 3
+}, {
+  "value": "6. Performance Anti-Patterns",
+  "id": "6-performance-anti-patterns",
+  "level": 2
+}, {
+  "value": "6.1 Unnecessary Object Creation",
+  "id": "61-unnecessary-object-creation",
+  "level": 3
+}, {
+  "value": "6.2 Excessive Synchronization",
+  "id": "62-excessive-synchronization",
+  "level": 3
+}, {
+  "value": "6.3 Connection Pool Leaks",
+  "id": "63-connection-pool-leaks",
+  "level": 3
+}, {
+  "value": "6.4 N+1 Queries (Hibernate)",
+  "id": "64-n1-queries-hibernate",
+  "level": 3
+}, {
+  "value": "6.5 Memory Leaks",
+  "id": "65-memory-leaks",
+  "level": 3
+}, {
+  "value": "7. Code Optimization",
+  "id": "7-code-optimization",
+  "level": 2
+}, {
+  "value": "7.1 JIT Warmup",
+  "id": "71-jit-warmup",
+  "level": 3
+}, {
+  "value": "7.2 Inlining",
+  "id": "72-inlining",
+  "level": 3
+}, {
+  "value": "7.3 Dead Code Elimination (DCE)",
+  "id": "73-dead-code-elimination-dce",
+  "level": 3
+}, {
+  "value": "7.4 Loop Unrolling",
+  "id": "74-loop-unrolling",
+  "level": 3
+}, {
+  "value": "7.5 Intrinsics",
+  "id": "75-intrinsics",
+  "level": 3
+}, {
+  "value": "7.6 Branch Prediction",
+  "id": "76-branch-prediction",
+  "level": 3
+}, {
+  "value": "7.7 False Sharing (@Contended)",
+  "id": "77-false-sharing-contended",
+  "level": 3
+}, {
+  "value": "8. JVM Tuning",
+  "id": "8-jvm-tuning",
+  "level": 2
+}, {
+  "value": "8.1 Heap Sizing",
+  "id": "81-heap-sizing",
+  "level": 3
+}, {
+  "value": "8.2 GC Selection &amp; Tuning",
+  "id": "82-gc-selection--tuning",
+  "level": 3
+}, {
+  "value": "8.3 Additional JVM Tuning Flags",
+  "id": "83-additional-jvm-tuning-flags",
+  "level": 3
+}, {
+  "value": "9. Spring Boot Performance",
+  "id": "9-spring-boot-performance",
+  "level": 2
+}, {
+  "value": "9.1 Lazy Initialization",
+  "id": "91-lazy-initialization",
+  "level": 3
+}, {
+  "value": "9.2 Connection Pool Tuning",
+  "id": "92-connection-pool-tuning",
+  "level": 3
+}, {
+  "value": "9.3 AOT Processing",
+  "id": "93-aot-processing",
+  "level": 3
+}, {
+  "value": "9.4 Graceful Shutdown",
+  "id": "94-graceful-shutdown",
+  "level": 3
+}, {
+  "value": "9.5 Virtual Threads",
+  "id": "95-virtual-threads",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "performance-tuning--profiling",
+        children: "Performance Tuning & Profiling"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/05-functional-deep",
+          children: "Functional Programming in Practice"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/07-maven",
+          children: "Maven Deep Dive"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Performance is a feature. In production Java applications, performance problems manifest as high latency, low throughput, excessive CPU, memory leaks, and cascading failures. Solving them requires a systematic approach: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "measure"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "identify the bottleneck"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "fix"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "verify"
+      }), ". This chapter covers the tools, techniques, and JVM internals you need to diagnose and eliminate performance problems in Java and Spring Boot applications."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The chapter is organized into nine sections. Sections 1--4 cover ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "diagnostic tools"
+      }), ": profilers, heap analyzers, thread dump analysis, and GC log analysis. Section 5 covers ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "benchmarking with JMH"
+      }), ". Sections 6--8 cover ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "anti-patterns, code-level optimizations, and JVM tuning"
+      }), ". Section 9 covers ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Spring-Boot-specific performance"
+      }), " techniques."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/06-performance/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/06-performance/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/06-performance/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/06-performance/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/06-performance/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/06-performance/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use Java Mission Control (JMC) with Flight Recorder to capture and analyze JVM events"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profile CPU and memory with async-profiler, VisualVM, JProfiler, YourKit, and IntelliJ profiler"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze heap dumps with Eclipse MAT: dominator tree, leak suspect report, GC roots, OQL"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand shallow heap vs retained heap and interpret the results"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Capture and analyze thread dumps via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "jstack"
+        }), " to detect deadlocks, contention, and CPU hotspots"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read JVM GC logs and evaluate GC pause times, allocation rates, and promotion rates"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write correct microbenchmarks with JMH including ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Benchmark"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@State"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Blackhole"
+        }), ", and profiler integration"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify and fix common performance anti-patterns: auto-boxing loops, string concatenation in loops, excessive synchronization, N+1 queries, connection pool leaks, and unintentional object retention"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply JVM tuning flags for heap sizing, GC selection, and memory layout"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure Spring Boot for better startup and runtime performance via lazy initialization, connection pool tuning, AOT, graceful shutdown, and virtual threads"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Profiling Tools"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JFR, async-profiler, VisualVM, MAT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always start with JFR — <1% overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heap Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAT dominator tree, leak suspect, OQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retained heap reveals true memory cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread Dumps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "jstack analysis for deadlocks and contention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Look for BLOCKED threads and lock owners"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GC Log Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pause time, allocation rate, promotion rate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GC tuning is a trade-off: throughput vs latency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JMH Benchmarking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Annotation-based microbenchmarks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Warmup, Blackhole, and dead code elimination matter"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Profiling Tools] --> B[Heap Analysis]\n    B --> C[Thread Dump Analysis]\n    C --> D[GC Log Analysis]\n    D --> E[JMH Benchmarking]\n    E --> F[Anti-Patterns]\n    F --> G[Code Optimization]\n    G --> H[JVM Tuning]\n    H --> I[Spring Boot Performance]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Never tune without metrics. Guessing which GC to use or which flag to set without JFR or GC logs is cargo-cult optimization. Always measure first."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-profiling-tools",
+      children: "1. Profiling Tools"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/06-performance.png",
+        alt: "Performance Tuning Workflow"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A profiler observes a running application and reports where it spends CPU time, allocates memory, or blocks on locks. Different profilers trade off precision, overhead, and ease of use."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-java-mission-control--flight-recorder",
+      children: "1.1 Java Mission Control & Flight Recorder"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["JDK Flight Recorder (JFR) is a low-overhead event-recording engine built into the JVM. Java Mission Control (JMC) is the GUI for browsing JFR recordings. JFR is the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "first tool you should reach for"
+      }), " in production because its overhead is typically under 1%."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import jdk.jfr.*;\nimport jdk.jfr.consumer.RecordingFile;\nimport java.io.IOException;\nimport java.nio.file.Path;\nimport java.util.List;\n\n// Custom JFR event → you can define your own events\n@Label(\"Database Query\")\n@Description(\"Duration of a database query\")\n@Category({\"Application\", \"Database\"})\npublic class DatabaseQueryEvent extends Event {\n\n    @Label(\"Query\")\n    @Description(\"The SQL query string\")\n    private String query;\n\n    @Label(\"Rows Returned\")\n    private int rows;\n\n    public void setQuery(String query) {\n        this.query = query;\n    }\n\n    public void setRows(int rows) {\n        this.rows = rows;\n    }\n}\n\n// Usage of custom JFR event\nclass DatabaseService {\n\n    public List<User> findUsersByStatus(String status) {\n        DatabaseQueryEvent event = new DatabaseQueryEvent();\n        event.setQuery(\"SELECT * FROM users WHERE status = ?\");\n        event.begin();\n\n        try {\n            // simulate query execution\n            Thread.sleep(50);\n            List<User> results = List.of(new User(1, \"alice\"));\n            event.setRows(results.size());\n            return results;\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n            return List.of();\n        } finally {\n            event.commit();\n        }\n    }\n}\n\n// Programmatic JFR recording\nclass JfrRecorder {\n\n    public static void main(String[] args) throws Exception {\n        // Start a recording with custom settings\n        Recording recording = new Recording();\n        recording.setName(\"My Recording\");\n        recording.setMaxSize(100L * 1024 * 1024); // 100 MB\n        recording.setMaxAge(Duration.ofMinutes(60));\n\n        // Enable events with custom threshold\n        Configuration config = Configuration.getConfiguration(\"default\");\n        recording.setSettings(config.getSettings());\n        recording.start();\n\n        // Run the workload\n        DatabaseService service = new DatabaseService();\n        for (int i = 0; i < 100; i++) {\n            service.findUsersByStatus(\"active\");\n        }\n\n        recording.stop();\n\n        // Dump to file → can be opened in JMC\n        Path dumpPath = Path.of(\"my-recording.jfr\");\n        recording.dump(dumpPath);\n        System.out.println(\"Recording dumped to \" + dumpPath.toAbsolutePath());\n\n        // Read back and print events\n        try (RecordingFile reader = new RecordingFile(dumpPath)) {\n            while (reader.hasMoreEvents()) {\n                RecordedEvent ev = reader.readEvent();\n                if (ev.getEventType().getName().contains(\"DatabaseQuery\")) {\n                    System.out.printf(\"Query: %s, Duration: %d ms%n\",\n                        ev.getString(\"query\"),\n                        ev.getDuration().toMillis());\n                }\n            }\n        }\n    }\n}\n\nrecord User(int id, String name) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key JFR events"
+      }), " you inspect in JMC:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Events"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GC Phase Pause, Allocation Stall, GarbageCollection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compilation, Code Cache Full, OSR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Threading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread Park, Thread Sleep, Java Monitor Blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File Read/Write, Socket Read/Write"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Exceptions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java Exception Throw"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Start an on-demand recording from command line instead of code:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Start recording on a running JVM (PID 12345) for 60 seconds\njcmd 12345 JFR.start name=hotspot recording=60s filename=hotspot.jfr\n\n# Dump without stopping\njcmd 12345 JFR.dump name=hotspot filename=hotspot-dump.jfr\n\n# Check status\njcmd 12345 JFR.check\n\n# Stop\njcmd 12345 JFR.stop name=hotspot\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-jprofiler",
+      children: "1.2 JProfiler"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["JProfiler is a commercial profiler with a rich GUI for CPU, memory, thread, and JDBC profiling. It supports ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "offline profiling"
+      }), " via heap dumps and saved snapshots and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "live attach"
+      }), " to local and remote JVMs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// JProfiler-specific telemetry via JDBC probe → no code changes needed\n// JProfiler intercepts JDBC driver calls and shows:\n//   - Slowest queries\n//   - Hotspot call trees for query execution\n//   - Connection open/close patterns\n//   - PreparedStatement cache behavior\n\n// To detect connection leaks, JProfiler tracks:\n//   - Connection acquired but never closed\n//   - Statements not closed after use\n//   - ResultSets left open\n\n// →→→ Demonstration of a \"connection leak\" that JProfiler detects →→→\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.Statement;\n\nclass ConnectionLeakSimulator {\n\n    private static final String URL = \"jdbc:h2:mem:test\";\n\n    public static void main(String[] args) throws Exception {\n        // Setup in-memory table\n        try (Connection c = DriverManager.getConnection(URL);\n             Statement s = c.createStatement()) {\n            s.execute(\"CREATE TABLE IF NOT EXISTS items (id INT PRIMARY KEY, name VARCHAR(100))\");\n        }\n\n        // Simulate a leak: Connection never closed\n        for (int i = 0; i < 100; i++) {\n            leakyQuery(i);\n        }\n\n        System.out.println(\"Done → check JProfiler for unclosed connections\");\n    }\n\n    static void leakyQuery(int id) throws Exception {\n        Connection conn = DriverManager.getConnection(URL);\n        Statement stmt = conn.createStatement();\n        ResultSet rs = stmt.executeQuery(\"SELECT name FROM items WHERE id = \" + id);\n        if (rs.next()) {\n            System.out.println(\"Found: \" + rs.getString(1));\n        }\n        // conn.close() never called → leak!\n        // stmt.close() never called\n        // rs.close() never called\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-yourkit",
+      children: "1.3 YourKit"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["YourKit is another commercial profiler similar to JProfiler. It provides ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "offline CPU and memory snapshots"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "allocation profiling"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "thread analysis"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "YourKit's distinguishing features:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory probes"
+        }), " show which methods allocate the most objects"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Object explorer"
+        }), " lets you inspect the reference graph of any live object"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "String duplication"
+        }), " detector shows how much memory is wasted by identical strings"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// YourKit can detect duplicate strings → useful for large collections\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Random;\n\nclass StringDuplicationSimulator {\n\n    private static final String[] FIRST_NAMES = {\"Alice\", \"Bob\", \"Charlie\", \"Diana\"};\n    private static final String[] LAST_NAMES = {\"Smith\", \"Jones\", \"Brown\", \"Taylor\"};\n    private static final Random RNG = new Random(42);\n\n    public static void main(String[] args) {\n        // Each iteration creates brand-new String objects via concatenation.\n        // Even with identical values, the JVM does NOT automatically intern them.\n        List<String> names = new ArrayList<>();\n        for (int i = 0; i < 1_000_000; i++) {\n            String first = FIRST_NAMES[RNG.nextInt(FIRST_NAMES.length)];\n            String last = LAST_NAMES[RNG.nextInt(LAST_NAMES.length)];\n            names.add(first + \" \" + last);\n        }\n\n        // After 1M inserts, many strings are duplicated.\n        // YourKit's string duplication probe would show massive waste.\n        System.out.println(\"Size: \" + names.size());\n\n        // With String.intern() or -XX:+UseStringDeduplication the GC can\n        // collapse duplicates. The dedup probe makes this visible.\n        Runtime rt = Runtime.getRuntime();\n        long used = (rt.totalMemory() - rt.freeMemory()) / 1_000_000;\n        System.out.println(\"Approx MB used: \" + used);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-visualvm",
+      children: "1.4 VisualVM"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "VisualVM is a free, open-source profiler bundled with older JDK distributions. For JDK 9+, download it separately from visualvm.github.io."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// VisualVM excels at real-time monitoring:\n//   - Heap and metaspace usage over time\n//   - Thread activity (live threads, daemon threads)\n//   - CPU sampling: which methods consume CPU\n//   - Heap dump browsing (similar to MAT but lighter)\n\n// →→→ CPU hotspot simulation that VisualVM makes visible →→→\nclass CpuHotspotSimulator {\n\n    public static void main(String[] args) throws Exception {\n        System.out.println(\"Start profiling with VisualVM now...\");\n        Thread.sleep(10_000);\n        System.out.println(\"Running workload...\");\n\n        long result = 0;\n        for (int i = 0; i < 5; i++) {\n            result += expensiveComputation();\n        }\n        System.out.println(\"Result: \" + result);\n        Thread.sleep(5_000);\n        System.out.println(\"Done → check VisualVM hot spots\");\n    }\n\n    static long expensiveComputation() {\n        long sum = 0;\n        for (int i = 0; i < 1_000_000; i++) {\n            sum += i * i / (i + 1);\n        }\n        // An obvious CPU hotspot\n        for (int i = 0; i < 500_000; i++) {\n            sum += Math.log(i + 1) * Math.sqrt(i + 1);\n        }\n        return sum;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["VisualVM's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Sampler"
+      }), " tab shows methods sorted by self time. The method ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CpuHotspotSimulator.expensiveComputation"
+      }), " appears at the top. Double-clicking reveals the call tree and line-level hot spots."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-async-profiler",
+      children: "1.5 async-profiler"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["async-profiler (github.com/async-profiler/async-profiler) uses Linux ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "perf_events"
+      }), " to collect stack traces with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "zero safepoint bias"
+      }), ". It is the most accurate CPU profiler for Java and also supports allocation profiling, wall-clock profiling, and Java execution samples."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# CPU profiling for 30 seconds, output as flamegraph HTML\n./profiler.sh -d 30 -f cpu-flamegraph.html <PID>\n\n# Allocation profiling: track which methods allocate most memory\n./profiler.sh -d 30 -e alloc -f alloc-flamegraph.html <PID>\n\n# Wall-clock profiling: includes blocking, I/O, and sleeping threads\n./profiler.sh -d 30 -e wall -f wall-flamegraph.html <PID>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// async-profiler can be embedded programmatically via Jattach\n// or through the AsyncProfiler API (available as a JAR):\n\n// import one.profiler.AsyncProfiler;\n// import one.profiler.AsyncProfilerLoader;\n\nclass AsyncProfilerDemo {\n\n    public static void main(String[] args) throws Exception {\n        // AsyncProfiler api = AsyncProfilerLoader.load();\n        // api.start(\"event=cpu,file=cpu.html,width=1600\");\n        // workload();\n        // api.stop();\n\n        // If the library is not available, run via command line:\n        // ./profiler.sh -d 10 -s -f profile.svg <PID>\n\n        System.out.println(\"Run with: ./profiler.sh -d 10 -e cpu -f profile.svg $(jps | grep AsyncProfilerDemo | awk '{print $1}')\");\n        workload();\n    }\n\n    static void workload() {\n        double sum = 0;\n        for (int i = 0; i < 10_000_000; i++) {\n            sum += Math.sin(i * Math.PI / 180_000.0);\n        }\n        System.out.println(\"Sum: \" + sum);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Flame graphs"
+      }), " produced by async-profiler show stack frames as rectangles. The wider a frame, the more CPU time it consumed. The left-to-right order is alphabetical. Clicking a frame zooms into its callees."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-intellij-profiler",
+      children: "1.6 IntelliJ Profiler"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "IntelliJ IDEA Ultimate includes an embedded async-profiler-based profiler. It integrates CPU and memory profiling into the IDE's run/debug configuration."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// To use IntelliJ's profiler:\n// 1. Run → Profile <class> (or right-click in gutter)\n// 2. IntelliJ attaches async-profiler automatically\n// 3. CPU flame graph opens in the Profiler tool window\n// 4. Click a method to jump to its source\n\n// Memory profiling shows allocations per method/line.\n// →→→ Memory allocation hotspot →→→\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.UUID;\n\nclass IntelliJProfilerDemo {\n\n    public static void main(String[] args) {\n        // Run this with \"Profile...\" action in IntelliJ\n        Map<String, UserProfile> cache = new HashMap<>();\n\n        for (int i = 0; i < 500_000; i++) {\n            String id = UUID.randomUUID().toString();\n            cache.put(id, new UserProfile(id, \"User_\" + i, i % 100));\n        }\n\n        // IntelliJ shows the HashMap.put allocation as the top memory consumer\n        System.out.println(\"Cache size: \" + cache.size());\n    }\n}\n\nrecord UserProfile(String id, String name, int age) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["IntelliJ also offers an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "object count view"
+      }), " that lists every class and its instance count. This is invaluable for finding unexpected object proliferation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-heap-analysis-with-mat",
+      children: "2. Heap Analysis with MAT"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When the JVM runs out of memory or you suspect a memory leak, a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "heap dump"
+      }), " captures the complete state of the Java heap: every live object, its fields, and its reference chain. Eclipse Memory Analyzer (MAT) is the gold standard for analyzing heap dumps."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-capturing-a-heap-dump",
+      children: "2.1 Capturing a Heap Dump"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Method 1: jcmd (JDK 8+)\n// jcmd <PID> GC.heap_dump /path/to/heapdump.hprof\n\n// Method 2: jmap\n// jmap -dump:live,format=b,file=heapdump.hprof <PID>\n\n// Method 3: Programmatically (with JVM option)\n// -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/path/to/dumps/\n\n// Method 4: At runtime with HotSpotDiagnosticMXBean\nimport com.sun.management.HotSpotDiagnosticMXBean;\nimport java.lang.management.ManagementFactory;\n\nclass HeapDumpCreator {\n\n    public static void dumpHeap(String filePath, boolean live) throws Exception {\n        HotSpotDiagnosticMXBean bean = ManagementFactory\n            .getPlatformMXBean(HotSpotDiagnosticMXBean.class);\n        bean.dumpHeap(filePath, live);\n        System.out.println(\"Heap dump written to: \" + filePath);\n    }\n\n    public static void main(String[] args) throws Exception {\n        // Create some data before dumping\n        var map = new java.util.HashMap<String, int[]>();\n        for (int i = 0; i < 10_000; i++) {\n            map.put(\"key-\" + i, new int[1_000]);\n        }\n        dumpHeap(\"manual-dump.hprof\", true);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-dominator-tree",
+      children: "2.2 Dominator Tree"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The dominator tree is MAT's most important view. It shows the retained object set for each object → every object that would be garbage collected when that object is collected."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\n// This class produces a heap structure visible in the dominator tree\nclass DominatorTreeExample {\n\n    public static void main(String[] args) {\n        Department eng = new Department(\"Engineering\");\n        Department sales = new Department(\"Sales\");\n\n        for (int i = 0; i < 10_000; i++) {\n            Employee e = new Employee(\"emp-\" + i, 50_000 + i * 1000);\n            eng.addEmployee(e);\n        }\n\n        // The \"eng\" Department object dominates all 10,000 Employee objects.\n        // In MAT's dominator tree, eng appears at the top with\n        // retained heap = sum of all Employee objects.\n        // \"sales\" with 0 employees has minimal retained heap.\n\n        System.out.println(\"Engineering dept has \" + eng.getEmployees().size() + \" employees\");\n        // Keep references alive\n        Thread.currentThread().setName(\"dominator-demo-main\");\n        try { Thread.sleep(300_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n}\n\nclass Department {\n    private final String name;\n    private final List<Employee> employees = new ArrayList<>();\n\n    Department(String name) { this.name = name; }\n    void addEmployee(Employee e) { employees.add(e); }\n    List<Employee> getEmployees() { return employees; }\n}\n\nclass Employee {\n    private final String id;\n    private final double salary;\n\n    Employee(String id, double salary) {\n        this.id = id;\n        this.salary = salary;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reading the dominator tree"
+      }), " in MAT:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Open the heap dump → ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dominator Tree"
+        }), " view"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Objects are sorted by ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Retained Heap"
+        }), " (largest first)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Expand a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Department"
+        }), " instance to see all dominated ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Employee"
+        }), " instances"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Right-click → ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Path to GC Roots"
+        }), " → ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "exclude weak/soft references"
+        }), " to see why an object is alive"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-leak-suspect-report",
+      children: "2.3 Leak Suspect Report"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["MAT's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Leak Suspect Report"
+      }), " automatically identifies the objects most likely causing a memory leak."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\n\n// A classic memory leak pattern: static collection that grows unbounded\nclass LeakSuspectSimulator {\n\n    // STATIC → never eligible for GC\n    private static final List<byte[]> CACHE = new ArrayList<>();\n\n    public static void main(String[] args) throws Exception {\n        System.out.println(\"Running leak suspect simulation...\");\n\n        // Each iteration adds 1 MB that can never be freed\n        int mb = 0;\n        while (mb < 500) {\n            CACHE.add(new byte[1_024 * 1_024]); // 1 MB\n            mb++;\n            if (mb % 50 == 0) {\n                System.out.println(\"Allocated \" + mb + \" MB\");\n                Thread.sleep(100);\n            }\n        }\n\n        // Generate a heap dump for analysis\n        // jcmd <PID> GC.heap_dump leak-suspect.hprof\n        System.out.println(\"Ready for heap dump. PID: \" + ProcessHandle.current().pid());\n        Thread.sleep(60_000);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MAT's leak suspect report would produce something like:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Problem Suspect 1\n   The class java.util.ArrayList loaded by <system class loader>\n   occupies 500,000,480 (95.2%) bytes.\n   The memory is accumulated in one instance of ArrayList\n   referenced by LeakSuspectSimulator.CACHE.\n\n   Keywords: java.util.ArrayList, LeakSuspectSimulator\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "24-shallow-vs-retained-heap",
+      children: "2.4 Shallow vs Retained Heap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding the distinction is critical:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Measure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shallow heap"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Memory consumed by one object's header + fields. For an ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "int[]"
+            }), " of 100 elements, shallow = header (16 bytes) + 100 Ã— 4 = 416 bytes."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retained heap"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Shallow heap of the object PLUS shallow heap of every object ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "only reachable through this object"
+            }), ". The total memory freed when this object is GC'd."]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\n\nclass ShallowVsRetained {\n\n    public static void main(String[] args) {\n        // Each LargeData object retains many other objects\n\n        Node root = new Node(\"root\");\n        for (int i = 0; i < 100; i++) {\n            Node child = new Node(\"child-\" + i);\n            root.addChild(child);\n            for (int j = 0; j < 50; j++) {\n                child.addChild(new Node(\"leaf-\" + i + \"-\" + j));\n            }\n        }\n\n        // Shallow heap of root: ~24 bytes (header + fields)\n        // Retained heap of root: shallow + all 1 + 100 + 5,000 Node objects\n        // If root becomes unreachable, ALL children are freed.\n\n        System.out.println(\"Tree built with root and 5,100 child nodes\");\n        try { Thread.sleep(300_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n}\n\nclass Node {\n    private final String name;\n    private final List<Node> children = new ArrayList<>();\n\n    Node(String name) { this.name = name; }\n    void addChild(Node child) { children.add(child); }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In MAT, the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Retained Heap column"
+      }), " on the dominator tree shows the true cost of each object. A seemingly small ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "HashMap"
+      }), " can have a huge retained heap if it references millions of entries."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "25-oql--object-query-language",
+      children: "2.5 OQL → Object Query Language"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MAT includes an OQL (Object Query Language) console for SQL-like queries against the heap."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Example heap structures for OQL queries\nimport java.util.ArrayList;\nimport java.util.List;\n\nclass OqlExample {\n\n    public static void main(String[] args) {\n        List<Order> orders = new ArrayList<>();\n        for (int i = 0; i < 10_000; i++) {\n            orders.add(new Order(\"ORD-\" + i, i * 100.0, \"PENDING\"));\n        }\n        // Leak: some orders are stuck in PENDING status and never removed\n        // OQL can find them:\n        System.out.println(\"10,000 orders created, many PENDING\");\n        try { Thread.sleep(300_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n}\n\nrecord Order(String id, double amount, String status) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Useful OQL queries"
+      }), " to run in MAT:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Find all String instances longer than 100 characters\nSELECT s FROM java.lang.String s WHERE s.value.length > 100\n\n// Find all arrays of bytes larger than 1 MB\nSELECT a FROM byte[] a WHERE a.length > 1_048_576\n\n// Count instances of a specific class\nSELECT COUNT(*) FROM com.example.OqlExample$Order\n\n// Find char[] arrays retained by HashMap$Node\nSELECT * FROM char[] c\n  WHERE c.elementData.@referencedIn = \"java.util.HashMap$Node\"\n\n// Group objects by their class and count\nSELECT clazz, COUNT(*) AS cnt\n  FROM OBJECTS OBJECTS o\n  GROUP BY clazz = o.@usedAs(\"class\")\n  ORDER BY cnt DESC\n\n// Find objects with a specific field value\nSELECT * FROM com.example.Order o WHERE o.status = \"PENDING\"\n\n// Find GC root path for the largest char[] array\nSELECT * FROM OBJECTS\n  dominators(OBJECTS (SELECT o FROM char[] o ORDER BY o.length DESC LIMIT 1))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "26-eclipse-mat-advanced-joverflow",
+      children: "2.6 Eclipse MAT Advanced: JOverflow"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["JOverflow is a lesser-known tool that combines heap analysis with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "outage pattern detection"
+      }), ". While MAT shows the static state, JOverflow (and tools like it) look for:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Thread-local storage leaks"
+        }), ": web applications where threads are reused but ThreadLocal values are not cleared"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Classloader leaks"
+        }), ": redeployed web applications where the old classloader is retained"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reference chains"
+        }), ": analysis of why collections grow unbounded"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.HashMap;\nimport java.util.Map;\n\n// A pattern that JOverflow detects well: ThreadLocal leak in a thread pool\nclass ThreadLocalLeak {\n\n    // Static ThreadLocal → the value is retained as long as the thread is alive\n    private static final ThreadLocal<Map<String, Object>> USER_SESSION =\n        ThreadLocal.withInitial(HashMap::new);\n\n    public static void main(String[] args) throws Exception {\n        // Simulate web requests on pooled threads\n        for (int i = 0; i < 100; i++) {\n            handleRequest(\"user-\" + i);\n        }\n\n        // In a real app, the thread pool threads never die.\n        // Each thread's ThreadLocal map accumulates data from every request it handled.\n        System.out.println(\"ThreadLocal leak simulated\");\n        try { Thread.sleep(300_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n\n    static void handleRequest(String user) {\n        Map<String, Object> session = USER_SESSION.get();\n        session.put(\"lastAccess\", System.nanoTime());\n        session.put(\"user\", user);\n        session.put(\"largeData\", new byte[100_000]); // accumulates across requests!\n        // NEVER removed → memory leak\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-thread-dump-analysis",
+      children: "3. Thread Dump Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "thread dump"
+      }), " is a snapshot of every thread's stack trace at a given moment. It reveals deadlocks, lock contention, and threads stuck in unexpected states."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-capturing-thread-dumps",
+      children: "3.1 Capturing Thread Dumps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Method 1: jstack\njstack -l <PID> > threaddump.txt\n\n# Method 2: jcmd\njcmd <PID> Thread.print > threaddump.txt\n\n# Method 3: kill -3 (Linux)\nkill -3 <PID>  # printed to stdout of the JVM process\n\n# Method 4: Programmatic\n# Use ThreadMXBean to generate a thread dump from code\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.lang.management.ManagementFactory;\nimport java.lang.management.ThreadInfo;\nimport java.lang.management.ThreadMXBean;\nimport java.util.Map;\n\nclass ProgrammaticThreadDump {\n\n    public static void main(String[] args) {\n        // Simulate threads in various states\n        Thread deadlock1 = new Thread(new DeadlockCandidate(1, 2), \"Worker-1\");\n        Thread deadlock2 = new Thread(new DeadlockCandidate(2, 1), \"Worker-2\");\n        deadlock1.start();\n        deadlock2.start();\n\n        // Dump after brief delay\n        try { Thread.sleep(500); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n\n        System.out.println(\"=== PROGRAMMATIC THREAD DUMP ===\");\n        ThreadMXBean bean = ManagementFactory.getThreadMXBean();\n\n        // Detect deadlocks\n        long[] deadlockedThreads = bean.findDeadlockedThreads();\n        if (deadlockedThreads != null) {\n            System.out.println(\"DEADLOCK DETECTED! Thread IDs: \");\n            for (long id : deadlockedThreads) {\n                System.out.println(\"  - \" + id);\n            }\n        }\n\n        // Print all thread dumps\n        Map<Thread, StackTraceElement[]> allStacks = Thread.getAllStackTraces();\n        for (Map.Entry<Thread, StackTraceElement[]> entry : allStacks.entrySet()) {\n            Thread t = entry.getKey();\n            System.out.printf(\"\\n\\\"%s\\\" #%d priority=%d state=%s%n\",\n                t.getName(), t.threadId(), t.getPriority(), t.getState());\n\n            for (StackTraceElement frame : entry.getValue()) {\n                System.out.println(\"\\tat \" + frame);\n            }\n            System.out.println();\n        }\n\n        System.exit(0);\n    }\n}\n\nclass DeadlockCandidate implements Runnable {\n    private final int firstLock;\n    private final int secondLock;\n    private static final Object LOCK_1 = new Object();\n    private static final Object LOCK_2 = new Object();\n\n    DeadlockCandidate(int first, int second) {\n        this.firstLock = first;\n        this.secondLock = second;\n    }\n\n    @Override\n    public void run() {\n        Object lockA = firstLock == 1 ? LOCK_1 : LOCK_2;\n        Object lockB = secondLock == 1 ? LOCK_1 : LOCK_2;\n\n        synchronized (lockA) {\n            System.out.println(Thread.currentThread().getName() + \" acquired lock \" + firstLock);\n            try { Thread.sleep(100); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n\n            synchronized (lockB) {\n                System.out.println(Thread.currentThread().getName() + \" acquired lock \" + secondLock);\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-thread-states-in-dumps",
+      children: "3.2 Thread States in Dumps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every thread in a dump shows its state. The key states are:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "RUNNABLE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Executing on the CPU (or waiting for CPU scheduling). Also includes threads waiting for I/O (socket read, file read)."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "BLOCKED"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Waiting for a monitor lock → another thread holds the lock. ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "High BLOCKED count = contention"
+            }), "."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "WAITING"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Waiting indefinitely via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Object.wait()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "LockSupport.park()"
+            }), ", or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Thread.join()"
+            }), " with no timeout."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "TIMED_WAITING"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Waiting with a timeout via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Thread.sleep()"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Object.wait(ms)"
+            }), ", or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "LockSupport.parkNanos()"
+            }), "."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "TERMINATED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread has finished execution. Rare in dumps."
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Demonstration of threads in different states\nimport java.util.concurrent.locks.Lock;\nimport java.util.concurrent.locks.ReentrantLock;\n\nclass ThreadStateDemo {\n\n    private static final Object MONITOR = new Object();\n    private static final Lock REENTRANT = new ReentrantLock();\n\n    public static void main(String[] args) throws Exception {\n        // Thread 1: RUNNABLE → computing\n        Thread t1 = new Thread(() -> {\n            long sum = 0;\n            for (int i = 0; i < 1_000_000_000; i++) {\n                sum += i;\n            }\n            System.out.println(\"T1 done: \" + sum);\n        }, \"CPU-Worker\");\n\n        // Thread 2: RUNNABLE (waiting for socket read → also \"RUNNABLE\")\n        Thread t2 = new Thread(() -> {\n            try {\n                // Reading from a socket that has no data → thread is \"RUNNABLE\" in dump\n                var socket = new java.net.ServerSocket(0);\n                System.out.println(\"T2 listening on port \" + socket.getLocalPort());\n                socket.accept(); // blocks here, state = RUNNABLE\n            } catch (Exception e) { /* expected */ }\n        }, \"IO-Worker\");\n\n        // Thread 3: BLOCKED → waiting for monitor held by T4\n        Thread t3 = new Thread(() -> {\n            synchronized (MONITOR) {\n                System.out.println(\"T3 inside monitor\");\n                try { Thread.sleep(50_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n            }\n        }, \"Monitor-Holder\");\n\n        // Thread 4: BLOCKED → cannot enter synchronized block held by T3\n        Thread t4 = new Thread(() -> {\n            synchronized (MONITOR) {\n                System.out.println(\"T4 inside monitor (never reached)\");\n            }\n        }, \"Monitor-Waiter\");\n\n        // Thread 5, 6: WAITING via LockSupport.park\n        Thread t5 = new Thread(() -> {\n            REENTRANT.lock();\n            try {\n                System.out.println(\"T5 holds reentrant lock\");\n                try { Thread.sleep(50_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n            } finally {\n                REENTRANT.unlock();\n            }\n        }, \"Lock-Holder\");\n\n        Thread t6 = new Thread(() -> {\n            REENTRANT.lock(); // blocks until T5 unlocks\n            try {\n                System.out.println(\"T6 acquired reentrant lock\");\n            } finally {\n                REENTRANT.unlock();\n            }\n        }, \"Lock-Waiter\");\n\n        // Thread 7: TIMED_WAITING → sleeping\n        Thread t7 = new Thread(() -> {\n            try { Thread.sleep(120_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n        }, \"Sleepy\");\n\n        t1.start(); t2.start(); t3.start(); t4.start(); t5.start(); t6.start(); t7.start();\n        Thread.sleep(1_000);\n\n        System.out.println(\"Thread dump captured. Run: jstack <PID>\");\n        System.out.println(\"Or press Enter for programmatic dump...\");\n        System.in.read();\n        System.exit(0);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "33-deadlock-detection",
+      children: "3.3 Deadlock Detection"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "jstack -l <PID>"
+      }), " automatically detects deadlocks and prints them at the end of the dump:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Found one Java-level deadlock:\n=============================\n\"Worker-1\":\n  waiting to lock monitor 0x0000000012345678 (object 0x000000076b8c5d40, a java.lang.Object),\n  which is held by \"Worker-2\"\n\"Worker-2\":\n  waiting to lock monitor 0x0000000012345679 (object 0x000000076b8c5d30, a java.lang.Object),\n  which is held by \"Worker-1\"\n\nJava stack information for the threads listed above:\n===================================================\n\"Worker-1\":\n        at DeadlockCandidate.run(ThreadDumpAnalysis.java:45)\n        - waiting to lock <0x000000076b8c5d40> (a java.lang.Object)\n        - locked <0x000000076b8c5d30> (a java.lang.Object)\n\"Worker-2\":\n        at DeadlockCandidate.run(ThreadDumpAnalysis.java:45)\n        - waiting to lock <0x000000076b8c5d30> (a java.lang.Object)\n        - locked <0x000000076b8c5d40> (a java.lang.Object)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "34-cpu-hotspots-from-thread-stacks",
+      children: "3.4 CPU Hotspots from Thread Stacks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Thread dumps capture ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "where the thread is executing right now"
+      }), ". By taking ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "multiple thread dumps"
+      }), " (e.g., 5 dumps spaced 3 seconds apart) and finding stack frames that appear in all of them, you locate CPU hotspots."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\n\nclass CpuHotspotDemo {\n\n    public static void main(String[] args) {\n        List<String> items = new ArrayList<>();\n\n        // This method will appear in every thread dump\n        Thread worker = new Thread(() -> {\n            while (true) {\n                for (int i = 0; i < 10_000; i++) {\n                    items.add(\"Item-\" + i);\n                }\n                items.clear();\n            }\n        }, \"Hotspot-Worker\");\n\n        worker.setDaemon(true);\n        worker.start();\n\n        System.out.println(\"Worker thread started. Take 5 thread dumps with:\");\n        System.out.println(\"  for i in 1 2 3 4 5; do jstack \" + ProcessHandle.current().pid()\n            + \" >> dump.txt; sleep 3; done\");\n        System.out.println(\"Analyze: grep 'CpuHotspotDemo' dump.txt | sort | uniq -c | sort -nr\");\n\n        try { Thread.sleep(120_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The heuristic: if a stack frame appears in 4 out of 5 dumps, that method is likely consuming most of the CPU. Tools like ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "fastthread.io"
+      }), " automate this analysis."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "35-thread-dump-analyzers-fastthreadio-etc",
+      children: "3.5 Thread Dump Analyzers (fastthread.io, etc.)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Manual thread dump analysis is tedious. Online analyzers parse and summarize dumps:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "fastthread.io"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Groups duplicate stacks, highlights deadlocks, computes CPU \"cost\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "jstack.review"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread state aggregation, stuck thread detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ThreadLogic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop analyzer with pattern recognition"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// What fastthread.io shows after uploading dump.txt:\n//\n// THREAD COUNT BY STATE:\n//   RUNNABLE:      23\n//   BLOCKED:        4   ← high contention!\n//   WAITING:        7\n//   TIMED_WAITING:  3\n//\n// TOP BLOCKED THREADS:\n//   \"http-nio-8080-exec-4\" BLOCKED on java.util.HashMap\n//     at java.util.HashMap.putVal(HashMap.java:631)\n//     - waiting to lock <0x000000076b8c5d40> (a HashMap$Node[])\n//\n// CPU HOTSPOTS (appearing in 4/5 dumps):\n//   com.example.CpuHotspotDemo.lambda$main$0(CPUHotspotDemo.java:15)\n//   java.util.ArrayList.add(ArrayList.java:519)\n//\n// STUCK THREADS (state unchanged across 5 dumps):\n//   \"AsyncLogger-1\" WAITING at jdk.internal.misc.Unsafe.park(Native Method)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The typical drill for thread dump analysis:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Collect ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "5 thread dumps"
+        }), " over 15 seconds"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Upload to fastthread.io (or equivalent)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "BLOCKED"
+        }), " count → if > 10% of threads, you have contention"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "deadlock"
+        }), " section"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "CPU hotspots"
+        }), " → frames appearing in 80%+ of dumps"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "stuck threads"
+        }), " → same stack in every dump, usually waiting on I/O or locks"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-gc-analysis",
+      children: "4. GC Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Garbage collection pauses are the single largest source of latency spikes in Java applications. Understanding GC logs is essential."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-enabling-gc-logging",
+      children: "4.1 Enabling GC Logging"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# JDK 8 style\n-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:gc.log\n\n# JDK 11+ unified logging (recommended)\n-Xlog:gc*=info:file=gc.log:utctime,uptimemillis,pID,tags:filecount=5,filesize=20m\n\n# More verbose for detailed analysis\n-Xlog:gc*=debug:file=gc-detailed.log:utctime,uptimemillis,pID,tags:filecount=5,filesize=50m\n\n# Minimal but sufficient for GCeasy/GCViewer\n-Xlog:gc*:file=gc.log:time,level,tags:filecount=5,filesize=20m\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-reading-gc-logs",
+      children: "4.2 Reading GC Logs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// →→→ Application whose GC behavior we will analyze →→→\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Random;\n\nclass GcLogExample {\n\n    private static final Random RNG = new Random(42);\n    private static final List<byte[]> KEEP_ALIVE = new ArrayList<>();\n\n    public static void main(String[] args) {\n        System.out.println(\"Run with GC logging enabled.\");\n        System.out.println(\"VM args: -Xlog:gc*=info:file=gc.log:time,level,tags -Xms256m -Xmx256m -XX:+UseG1GC\");\n\n        // Allocate and discard in bursts to trigger GC\n        for (int round = 0; round < 20; round++) {\n            List<byte[]> batch = new ArrayList<>();\n            for (int i = 0; i < 200; i++) {\n                batch.add(new byte[100_000]); // 100 KB each = ~20 MB per round\n            }\n            System.out.printf(\"Round %d: allocated %d objects, size approx %d MB%n\",\n                round, batch.size(), (batch.size() * 100_000) / 1_000_000);\n\n            // Keep some objects alive to simulate \"promotion\"\n            if (round % 5 == 0) {\n                KEEP_ALIVE.add(new byte[500_000]);\n            }\n        }\n        System.out.println(\"Done. Check gc.log for pause times.\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A sample GC log entry (G1GC):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "[2025-06-12T10:30:15.123+0000] GC(42) Pause Young (Normal) (G1 Evacuation Pause)\n   -> 204.123: [GC pause (G1 Evacuation Pause) (young)\n   -> 204.123: [Parallel Time: 85.6 ms, GC Workers: 4]\n   -> 204.123: [GC Worker Start (ms): Min: 204123.0, Avg: 204123.1, Max: 204123.2, Diff: 0.2]\n   -> 204.208: [Ext Root Scanning (ms): 3.2]\n   -> 204.208: [Update RS (ms): 12.4]\n   -> 204.208: [Scan RS (ms): 8.1]\n   -> 204.208: [Code Root Scanning (ms): 1.2]\n   -> 204.208: [Object Copy (ms): 55.7]\n   -> 204.208: [Termination (ms): 4.8]\n   -> 204.208: [GC Worker End (ms): Min: 204208.5, Avg: 204208.6, Max: 204208.7, Diff: 0.2]\n   -> 204.208: [GC Worker Other (ms): 0.2]\n   -> 204.208: [Clear CT: 0.5 ms]\n   -> 204.208: [Other: 3.1 ms]\n   -> 204.211: [Eden: 128.0 MB(128.0 MB)->0.0 MB(112.0 MB) Survivors: 16.0 MB->16.0 MB Heap: 196.5 MB(256.0 MB)->68.5 MB(256.0 MB)]\n   -> 204.211: [Times: user=0.25 sys=0.01, real=0.09 secs]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-gceasy--gcviewer",
+      children: "4.3 GCeasy & GCViewer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "GCeasy"
+      }), " (gceasy.io) and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "GCViewer"
+      }), " parse GC logs and produce interactive reports:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// What GCeasy reports for the GC log above:\n\n// KEY METRICS\n// ─────────────────────────────────────────\n// Total Pause Time:           3.42 sec\n// Avg Pause Time:             85.5 ms\n// Max Pause Time:             420 ms     ← spike!\n// Throughput:                 98.3%\n// GC Count:                   40\n// Allocation Rate:            245 MB/sec ← high\n// Promotion Rate:             12 MB/sec\n// Avg Live Heap After GC:     85 MB\n// Survivor Ratio:             6.25%\n// Peak Heap After Full GC:    212 MB\n\n// RECOMMENDATIONS:\n//   - Max pause exceeds target: increase -XX:MaxGCPauseMillis=50\n//   - High allocation rate: investigate method allocateObjects()\n//   - Survivor overflow: try -XX:SurvivorRatio=4 (reduces tenure waste)\n//   - Consider ZGC if pause times must stay < 10ms\n\n// KEY GC PHASES PAUSE BREAKDOWN:\n//   1. Object Copy:    55.7 ms (65%)  ← moving objects between regions\n//   2. Update RS:      12.4 ms (15%)  ← updating remembered sets\n//   3. Scan RS:         8.1 ms (9%)   ← scanning remembered sets\n//   4. Ext Root Scanning: 3.2 ms (4%)\n//   5. Termination:     4.8 ms (6%)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "34-allocation-rate--promotion-rate",
+      children: "3.4 Allocation Rate & Promotion Rate"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "High allocation rate causes frequent young GC. High promotion rate means objects are tenuring prematurely, causing concurrent-mark phases in G1 or full GC in Parallel/Serial collectors."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Programmatic access to GC metrics via GarbageCollectorMXBean\nimport java.lang.management.GarbageCollectorMXBean;\nimport java.lang.management.ManagementFactory;\nimport java.util.List;\n\nclass AllocationRateMonitor {\n\n    public static void main(String[] args) throws Exception {\n        List<GarbageCollectorMXBean> gcBeans =\n            ManagementFactory.getGarbageCollectorMXBeans();\n\n        System.out.println(\"GC Beans:\");\n        for (GarbageCollectorMXBean bean : gcBeans) {\n            System.out.printf(\"  %s: %d collections, %d ms total%n\",\n                bean.getName(),\n                bean.getCollectionCount(),\n                bean.getCollectionTime());\n        }\n\n        // Start allocation-heavy workload\n        System.out.println(\"\\nStarting allocation burst...\");\n        long startTime = System.nanoTime();\n        long startGcTime = totalGcTime(gcBeans);\n        long startCount = totalGcCount(gcBeans);\n\n        allocateBurst();\n\n        long endTime = System.nanoTime();\n        long endGcTime = totalGcTime(gcBeans);\n        long endCount = totalGcCount(gcBeans);\n\n        double elapsedSec = (endTime - startTime) / 1_000_000_000.0;\n        System.out.printf(\"\\nWorkload ran for %.2f seconds%n\", elapsedSec);\n        System.out.printf(\"GC count: %d → %d (%d collections)%n\",\n            startCount, endCount, endCount - startCount);\n        System.out.printf(\"GC time: %d ms → %d ms (%d ms total pause)%n\",\n            startGcTime, endGcTime, endGcTime - startGcTime);\n        System.out.printf(\"Throughput: %.1f%%%n\",\n            (1.0 - (endGcTime - startGcTime) / (elapsedSec * 1000.0)) * 100.0);\n    }\n\n    static void allocateBurst() {\n        List<byte[]> garbage = new java.util.ArrayList<>();\n        for (int i = 0; i < 5_000; i++) {\n            garbage.add(new byte[10_000]);\n            if (i % 100 == 0) {\n                // Let some objects escape\n                System.out.print(\".\");\n            }\n        }\n        System.out.println();\n    }\n\n    static long totalGcTime(List<GarbageCollectorMXBean> beans) {\n        return beans.stream().mapToLong(GarbageCollectorMXBean::getCollectionTime).sum();\n    }\n\n    static long totalGcCount(List<GarbageCollectorMXBean> beans) {\n        return beans.stream().mapToLong(GarbageCollectorMXBean::getCollectionCount).sum();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "35-gc-frequency-tuning",
+      children: "3.5 GC Frequency Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The relationship between allocation rate, heap size, and GC frequency:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Young GC frequency = allocation rate / young generation size\n\nExample:\n  Allocation rate = 500 MB/sec\n  Young gen = 100 MB\n  → Young GC every 200 ms (5 pauses/sec)\n\nFix: Increase young gen or reduce allocation rate.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\n\nclass GcFrequencyTuning {\n\n    public static void main(String[] args) {\n        // Simulate application with variable allocation rates\n        // Use -Xms1g -Xmx1g -XX:+UseG1GC -Xlog:gc*:file=gc-tuning.log:time\n\n        List<byte[]> sessionData = new ArrayList<>();\n\n        // Phase 1: Low allocation\n        System.out.println(\"Phase 1: Low allocation...\");\n        for (int i = 0; i < 1_000; i++) {\n            sessionData.add(new byte[1024]); // 1 KB each\n        }\n        sessionData.clear();\n\n        // Phase 2: High allocation burst\n        System.out.println(\"Phase 2: High allocation burst...\");\n        List<byte[]> burst = new ArrayList<>();\n        for (int i = 0; i < 50_000; i++) {\n            burst.add(new byte[10_000]); // 500 MB total\n        }\n\n        // Phase 3: Retain many objects to cause promotion\n        System.out.println(\"Phase 3: Retaining objects...\");\n        List<byte[]> retained = new ArrayList<>();\n        for (int i = 0; i < 5_000; i++) {\n            retained.add(new byte[10_000]); // 50 MB retained\n        }\n\n        System.out.println(\"Check gc-tuning.log for pause frequency changes between phases\");\n        try { Thread.sleep(30_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key tuning knobs"
+      }), " for GC frequency:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Flag"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effect"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "-Xms"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-Xmx"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Total heap size. Larger heap = fewer GCs but longer pauses."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-XX:NewRatio"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ratio of old/young. Default 2 (old:young = 2:1). Increase for more young space."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-XX:SurvivorRatio"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ratio of Eden/Survivor. Default 8 (Eden:S0:S1 = 8:1:1)."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-XX:MaxGCPauseMillis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Target max pause (G1GC). Default 200 ms."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-XX:ParallelGCThreads"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Number of threads for parallel phases."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "-XX:ConcGCThreads"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Number of threads for concurrent phases (G1, ZGC)."
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "5-jmh-benchmarking",
+      children: "5. JMH Benchmarking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Java Microbenchmark Harness (JMH) is the standard framework for writing correct microbenchmarks. Without JMH, the JIT compiler optimizations (like dead code elimination, loop unrolling, constant folding) produce misleading results."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "51-basic-jmh-setup",
+      children: "5.1 Basic JMH Setup"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Add to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "pom.xml"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<dependency>\n    <groupId>org.openjdk.jmh</groupId>\n    <artifactId>jmh-core</artifactId>\n    <version>1.37</version>\n    <scope>test</scope>\n</dependency>\n<dependency>\n    <groupId>org.openjdk.jmh</groupId>\n    <artifactId>jmh-generator-annprocess</artifactId>\n    <version>1.37</version>\n    <scope>test</scope>\n</dependency>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Or use the Maven archetype:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "mvn archetype:generate \\\n  -DinteractiveMode=false \\\n  -DarchetypeGroupId=org.openjdk.jmh \\\n  -DarchetypeArtifactId=jmh-java-benchmark-archetype \\\n  -DgroupId=com.example \\\n  -DartifactId=benchmarks \\\n  -Dversion=1.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "52-your-first-benchmark",
+      children: "5.2 Your First @Benchmark"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.openjdk.jmh.annotations.*;\nimport org.openjdk.jmh.infra.Blackhole;\nimport org.openjdk.jmh.runner.Runner;\nimport org.openjdk.jmh.runner.options.Options;\nimport org.openjdk.jmh.runner.options.OptionsBuilder;\nimport java.util.concurrent.TimeUnit;\n\n@BenchmarkMode(Mode.Throughput)\n@OutputTimeUnit(TimeUnit.SECONDS)\n@State(Scope.Thread)\npublic class StringConcatBenchmark {\n\n    private String a = \"Hello\";\n    private String b = \"World\";\n    private String c = \"Java\";\n    private String d = \"JMH\";\n    private int iterations = 1000;\n\n    // →→→ BAD: String concatenation in loop →→→\n    @Benchmark\n    public String stringConcat(Blackhole bh) {\n        String result = \"\";\n        for (int i = 0; i < iterations; i++) {\n            result += a + b + c;  // creates new StringBuilder each iteration!\n        }\n        return result;\n    }\n\n    // →→→ GOOD: explicit StringBuilder →→→\n    @Benchmark\n    public String stringBuilder(Blackhole bh) {\n        StringBuilder sb = new StringBuilder(iterations * 30);\n        for (int i = 0; i < iterations; i++) {\n            sb.append(a).append(b).append(c);\n        }\n        return sb.toString();\n    }\n\n    // →→→ GOOD: single StringBuilder per call →→→\n    @Benchmark\n    public String stringBuffer(Blackhole bh) {\n        StringBuffer sb = new StringBuffer(iterations * 30);\n        for (int i = 0; i < iterations; i++) {\n            sb.append(a).append(b).append(c);\n        }\n        return sb.toString();\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(StringConcatBenchmark.class.getSimpleName())\n            .warmupIterations(3)\n            .measurementIterations(5)\n            .forks(2)\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "53-benchmarkmode",
+      children: "5.3 @BenchmarkMode"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Measures"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Mode.Throughput"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operations per unit time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capacity planning, comparing impls"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Mode.AverageTime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Average time per operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency-sensitive code"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Mode.SampleTime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distribution of times (max, p99, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency outliers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Mode.SingleShotTime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time of a single invocation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cold-start benchmarks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Mode.All"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All of the above"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive analysis"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@BenchmarkMode(Mode.SampleTime)\n@OutputTimeUnit(TimeUnit.MICROSECONDS)\n@State(Scope.Thread)\npublic class ListBenchmark {\n\n    @Param({\"10\", \"100\", \"1000\"})\n    public int size;\n\n    private List<Integer> arrayList;\n    private List<Integer> linkedList;\n\n    @Setup(Level.Trial)\n    public void setup() {\n        arrayList = new java.util.ArrayList<>();\n        linkedList = new java.util.LinkedList<>();\n        for (int i = 0; i < size; i++) {\n            arrayList.add(i);\n            linkedList.add(i);\n        }\n    }\n\n    @Benchmark\n    public int arrayListGet() {\n        return arrayList.get(size / 2); // O(1) → fast\n    }\n\n    @Benchmark\n    public int linkedListGet() {\n        return linkedList.get(size / 2); // O(n) → slow\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(ListBenchmark.class.getSimpleName())\n            .warmupIterations(3)\n            .measurementIterations(5)\n            .forks(1)\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "54-state",
+      children: "5.4 @State"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@State"
+      }), " defines scope of benchmark state:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scope"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Shared Across"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread Safety"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Scope.Thread"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One instance per benchmark thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No synchronization needed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Scope.Benchmark"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared across all threads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be thread-safe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Scope.Group"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared within a thread group"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be thread-safe"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.openjdk.jmh.annotations.*;\nimport java.util.concurrent.ConcurrentHashMap;\nimport java.util.concurrent.atomic.AtomicLong;\n\n@State(Scope.Benchmark) // Shared across all threads → need thread safety\npublic class SharedStateBenchmark {\n\n    // Thread-safe: ConcurrentHashMap handles concurrent access\n    private final ConcurrentHashMap<String, AtomicLong> counter = new ConcurrentHashMap<>();\n\n    @Setup(Level.Trial)\n    public void setup() {\n        counter.clear();\n        counter.put(\"hits\", new AtomicLong(0));\n    }\n\n    @Benchmark\n    @Group(\"concurrent\")\n    @GroupThreads(4)\n    public long increment() {\n        return counter.get(\"hits\").incrementAndGet();\n    }\n\n    @Benchmark\n    @Group(\"concurrent\")\n    @GroupThreads(1)\n    public long read() {\n        return counter.get(\"hits\").get();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "55-warmup-measurement-fork",
+      children: "5.5 @Warmup, @Measurement, @Fork"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@BenchmarkMode(Mode.AverageTime)\n@OutputTimeUnit(TimeUnit.NANOSECONDS)\n@State(Scope.Thread)\npublic class MathBenchmark {\n\n    @Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)\n    @Measurement(iterations = 10, time = 500, timeUnit = TimeUnit.MILLISECONDS)\n    @Fork(value = 3, warmups = 1)\n    @Benchmark\n    public double sqrt() {\n        return Math.sqrt(12345.6789);\n    }\n\n    @Benchmark\n    @Fork(value = 1)\n    @Warmup(iterations = 2)\n    @Measurement(iterations = 3)\n    public double log() {\n        return Math.log(12345.6789);\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(MathBenchmark.class.getSimpleName())\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Guidelines"
+      }), " for warmup/measurement:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warmup"
+        }), ": 5--10 iterations of 1--10 seconds each. Watch the warmup graph → steady state should be reached before measurement begins."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Measurement"
+        }), ": 5--10 iterations of 1--10 seconds. More iterations reduce noise."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Forks"
+        }), ": 3--5 forks to account for JVM warmup randomization. Each fork runs the benchmark in a fresh JVM."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Total time"
+        }), ": 3 forks Ã— (5 warmup + 5 measurement) Ã— 2 sec = 60 seconds minimum per benchmark method."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "56-blackhole",
+      children: "5.6 Blackhole"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "Blackhole.consumeCPU()"
+      }), " prevents the JIT from optimizing away a computation. Use it when you want to measure the cost of generating a value but don't want the JIT to eliminate the call because the result is unused."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.openjdk.jmh.infra.Blackhole;\n\n@BenchmarkMode(Mode.AverageTime)\n@OutputTimeUnit(TimeUnit.NANOSECONDS)\n@State(Scope.Thread)\npublic class BlackholeExample {\n\n    private int a = 17;\n    private int b = 42;\n\n    // →→→ WRONG: JIT sees result is unused, eliminates computation →→→\n    @Benchmark\n    public void wrong() {\n        a + b;  // Dead Code Elimination → this becomes a no-op!\n    }\n\n    // →→→ CORRECT: Blackhole consumes the result →→→\n    @Benchmark\n    public void correct(Blackhole bh) {\n        bh.consume(a + b);\n    }\n\n    // →→→ Consume multiple results →→→\n    @Benchmark\n    public void multipleResults(Blackhole bh) {\n        bh.consume(a * b);\n        bh.consume(a + b);\n        bh.consume(a - b);\n    }\n\n    // →→→ ConsumeCPU for measuring overhead →→→\n    @Benchmark\n    public void consumeCpu(Blackhole bh) {\n        // Consumes approximately 1000 cycles of CPU work\n        // Useful as a \"noise floor\" measurement\n        bh.consumeCPU(1000);\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(BlackholeExample.class.getSimpleName())\n            .warmupIterations(3)\n            .measurementIterations(5)\n            .forks(1)\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "57-compiler-control",
+      children: "5.7 Compiler Control"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["JMH provides ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@CompilerControl"
+      }), " to influence JIT decisions:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.openjdk.jmh.annotations.*;\nimport org.openjdk.jmh.infra.Blackhole;\n\n@State(Scope.Thread)\npublic class CompilerControlExample {\n\n    // →→→ DONT_INLINE: force the call to NOT be inlined →→→\n    @Benchmark\n    @CompilerControl(CompilerControl.Mode.DONT_INLINE)\n    public void measureWithExclude(Blackhole bh) {\n        bh.consume(compute());\n    }\n\n    // →→→ INLINE: force the call to be inlined →→→\n    @Benchmark\n    @CompilerControl(CompilerControl.Mode.INLINE)\n    public void measureWithInline(Blackhole bh) {\n        bh.consume(compute());\n    }\n\n    // →→→ EXCLUDE: never JIT compile this method →→→\n    @Benchmark\n    @CompilerControl(CompilerControl.Mode.EXCLUDE)\n    public void measureInterpreted(Blackhole bh) {\n        bh.consume(compute());\n    }\n\n    private int compute() {\n        int sum = 0;\n        for (int i = 0; i < 100; i++) {\n            sum += i * i;\n        }\n        return sum;\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(CompilerControlExample.class.getSimpleName())\n            .warmupIterations(3)\n            .measurementIterations(3)\n            .forks(1)\n            .jvmArgs(\"-XX:+PrintCompilation\")\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "58-profilers-in-jmh",
+      children: "5.8 Profilers in JMH"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "JMH can attach profilers during the benchmark run:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Run with built-in profilers\njava -jar benchmarks.jar -prof gc          # GC behavior per benchmark\njava -jar benchmarks.jar -prof stack       # Stack sampling (like async-profiler)\njava -jar benchmarks.jar -prof perf        # Linux perf events\njava -jar benchmarks.jar -prof perfasm     # Assembly level profiling\njava -jar benchmarks.jar -prof cl          # Classloader profiling\njava -jar benchmarks.jar -prof comp        # JIT compiler profiling\njava -jar benchmarks.jar -prof dtraceasm   # DTrace assembly\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// JVM args for profiling can be added via @Fork jvmArgs\n@Fork(value = 1, jvmArgs = {\n    \"-XX:+PrintCompilation\",\n    \"-XX:+UnlockDiagnosticVMOptions\",\n    \"-XX:+PrintInlining\"\n})\n@Benchmark\npublic void profiledBenchmark(Blackhole bh) {\n    bh.consume(Math.pow(2.0, 10.0));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "59-proper-benchmark-writing-rules",
+      children: "5.9 Proper Benchmark Writing Rules"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.openjdk.jmh.annotations.*;\nimport org.openjdk.jmh.infra.Blackhole;\nimport java.util.concurrent.TimeUnit;\n\n@BenchmarkMode(Mode.AverageTime)\n@OutputTimeUnit(TimeUnit.NANOSECONDS)\n@State(Scope.Thread)\npublic class ProperBenchmarkRules {\n\n    // RULE 1: return value or consume in Blackhole\n    @Benchmark\n    public int rule1_returnValue() {\n        return 1 + 1;\n    }\n\n    // RULE 2: setup state in @Setup, not in benchmark method\n    private int[] data;\n\n    @Setup\n    public void rule2_setup() {\n        data = new int[1_000_000];\n        for (int i = 0; i < data.length; i++) {\n            data[i] = i;\n        }\n    }\n\n    @Benchmark\n    public long rule2_sumArray() {\n        long sum = 0;\n        for (int v : data) sum += v;\n        return sum;\n    }\n\n    // RULE 3: avoid constant folding → use fields, not literals\n    private final int multiplier = 42;\n\n    @Benchmark\n    public int rule3_dynamicInput(Blackhole bh) {\n        // multiplier is NOT a compile-time constant for the JIT across forks\n        return data[multiplier] * multiplier;\n    }\n\n    // RULE 4: use @Param for size scaling\n    @Param({\"100\", \"1000\", \"10000\"})\n    public int arraySize;\n\n    private int[] sizedArray;\n\n    @Setup\n    public void rule4_setupParams() {\n        sizedArray = new int[arraySize];\n        for (int i = 0; i < sizedArray.length; i++) {\n            sizedArray[i] = i;\n        }\n    }\n\n    @Benchmark\n    public double rule4_average() {\n        long sum = 0;\n        for (int v : sizedArray) sum += v;\n        return (double) sum / sizedArray.length;\n    }\n\n    // RULE 5: include a baseline method\n    @Benchmark\n    public void rule5_baseline(Blackhole bh) {\n        // Measures the cost of the benchmark harness itself\n        bh.consume(0);\n    }\n\n    // RULE 6: test both competitors fairly → same setup\n    @Benchmark\n    public int rule6_hashMapGet() {\n        return 0; // would look up in HashMap in real test\n    }\n\n    @Benchmark\n    public int rule6_enumMapGet() {\n        return 0; // would look up in EnumMap in real test\n    }\n\n    public static void main(String[] args) throws Exception {\n        Options opt = new OptionsBuilder()\n            .include(ProperBenchmarkRules.class.getSimpleName())\n            .warmupIterations(3)\n            .measurementIterations(5)\n            .forks(2)\n            .build();\n        new Runner(opt).run();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Critical rules summary:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Never write loops inside a benchmark"
+        }), " to get more \"iterations\". That's what JMH's ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Measurement"
+        }), " does."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always return a value or consume via Blackhole"
+        }), ". If you don't, DCE removes your entire benchmark."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@State"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Setup"
+          })]
+        }), " to prepare data. Never prepare data inside the benchmark method."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Param"
+          })]
+        }), " for size or configuration → not hardcoded values."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always include a baseline"
+        }), ". ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "bh.consume(0)"
+        }), " tells you the framework overhead."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Run with multiple forks"
+        }), ". A single JVM fork may have already JIT-compiled code, hiding warmup issues."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Check the JMH output for \"HOT\" methods"
+        }), " and ensure they are not compiled on first invocation."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-performance-anti-patterns",
+      children: "6. Performance Anti-Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This section catalogs the most common performance problems in Java and Spring Boot applications."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-unnecessary-object-creation",
+      children: "6.1 Unnecessary Object Creation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.concurrent.TimeUnit;\nimport java.util.stream.IntStream;\n\n@BenchmarkMode(Mode.Throughput)\n@OutputTimeUnit(TimeUnit.SECONDS)\n@State(Scope.Thread)\npublic class ObjectCreationAntiPatterns {\n\n    // →→→ ANTI-PATTERN 1: Auto-boxing in loops →→→\n    @Benchmark\n    public long autoBoxing() {\n        Long sum = 0L;              // Long (boxed) → each += creates a new Long\n        for (int i = 0; i < 1_000_000; i++) {\n            sum += i;               // i is auto-boxed, sum is unboxed, result re-boxed\n        }\n        return sum;\n    }\n\n    @Benchmark\n    public long primitiveSum() {\n        long sum = 0L;              // primitive long → no allocation\n        for (int i = 0; i < 1_000_000; i++) {\n            sum += i;\n        }\n        return sum;\n    }\n\n    // →→→ ANTI-PATTERN 2: String concat in loop →→→\n    @Benchmark\n    public String stringConcatInLoop() {\n        String s = \"\";\n        for (int i = 0; i < 1000; i++) {\n            s += i;                 // Each iteration: new StringBuilder(), append, toString()\n        }\n        return s;\n    }\n\n    @Benchmark\n    public String stringBuilderInLoop() {\n        StringBuilder sb = new StringBuilder(5000);\n        for (int i = 0; i < 1000; i++) {\n            sb.append(i);\n        }\n        return sb.toString();\n    }\n\n    // →→→ ANTI-PATTERN 3: Creating expensive objects in hot path →→→\n    private static final java.util.regex.Pattern EMAIL_PATTERN =\n        java.util.regex.Pattern.compile(\"^[A-Za-z0-9+_.-]+@(.+)$\");\n\n    @Benchmark\n    public boolean patternCompiledEachTime() {\n        // Pattern.compile() is expensive → do this once as static final\n        return java.util.regex.Pattern\n            .compile(\"^[A-Za-z0-9+_.-]+@(.+)$\")\n            .matcher(\"test@example.com\")\n            .matches();\n    }\n\n    @Benchmark\n    public boolean patternReused() {\n        return EMAIL_PATTERN.matcher(\"test@example.com\").matches();\n    }\n\n    // →→→ ANTI-PATTERN 4: Stream overhead for simple operations →→→\n    @Benchmark\n    public int streamMax() {\n        return IntStream.range(0, 1000)\n            .filter(i -> i % 2 == 0)\n            .max()\n            .orElse(-1);\n    }\n\n    @Benchmark\n    public int plainLoopMax() {\n        int max = -1;\n        for (int i = 0; i < 1000; i++) {\n            if (i % 2 == 0 && i > max) {\n                max = i;\n            }\n        }\n        return max;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-excessive-synchronization",
+      children: "6.2 Excessive Synchronization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\nimport java.util.concurrent.*;\nimport java.util.concurrent.atomic.*;\nimport java.util.stream.*;\n\n@BenchmarkMode(Mode.Throughput)\n@OutputTimeUnit(TimeUnit.SECONDS)\n@State(Scope.Benchmark)\npublic class SynchronizationAntiPatterns {\n\n    // →→→ ANTI-PATTERN: Overly coarse synchronization →→→\n    private final Map<String, int[]> synchronizedMap = new HashMap<>();\n\n    public synchronized void addSync(String key, int[] value) {\n        // Entire method synchronized → blocks all readers too\n        synchronizedMap.put(key, value);\n    }\n\n    public synchronized int[] getSync(String key) {\n        return synchronizedMap.get(key);\n    }\n\n    @Benchmark\n    public void coarseSyncWrite() {\n        addSync(\"key-\" + ThreadLocalRandom.current().nextInt(100), new int[10]);\n    }\n\n    // →→→ BETTER: ConcurrentHashMap →→→\n    private final Map<String, int[]> concurrentMap = new ConcurrentHashMap<>();\n\n    @Benchmark\n    public void concurrentMapWrite() {\n        concurrentMap.put(\"key-\" + ThreadLocalRandom.current().nextInt(100), new int[10]);\n    }\n\n    // →→→ ANTI-PATTERN: Synchronized when atomic is enough →→→\n    private int syncCounter = 0;\n\n    public synchronized int incrementSync() {\n        return ++syncCounter;\n    }\n\n    @Benchmark\n    public int synchronizedCounter() {\n        return incrementSync();\n    }\n\n    // →→→ BETTER: AtomicInteger →→→\n    private final AtomicInteger atomicCounter = new AtomicInteger(0);\n\n    @Benchmark\n    public int atomicCounter() {\n        return atomicCounter.incrementAndGet();\n    }\n\n    // →→→ ANTI-PATTERN: Synchronized wrapper on single-threaded code →→→\n    private final List<String> syncList = Collections.synchronizedList(new ArrayList<>());\n\n    @Benchmark\n    public void synchronizedList() {\n        syncList.add(\"item\");\n    }\n\n    // →→→ BETTER: Plain ArrayList when single-threaded →→→\n    private final List<String> plainList = new ArrayList<>();\n\n    @Benchmark\n    public void plainList() {\n        plainList.add(\"item\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-connection-pool-leaks",
+      children: "6.3 Connection Pool Leaks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import com.zaxxer.hikari.HikariConfig;\nimport com.zaxxer.hikari.HikariDataSource;\nimport java.sql.Connection;\nimport java.sql.PreparedStatement;\nimport java.sql.ResultSet;\nimport java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\nimport java.util.concurrent.TimeUnit;\n\nclass ConnectionPoolLeak {\n\n    public static void main(String[] args) throws Exception {\n        HikariConfig config = new HikariConfig();\n        config.setJdbcUrl(\"jdbc:h2:mem:leakdb\");\n        config.setMaximumPoolSize(10);\n        config.setMinimumIdle(2);\n        config.setConnectionTimeout(5000);\n        config.setLeakDetectionThreshold(10_000); // Logs warning if connection is held >10s\n\n        HikariDataSource ds = new HikariDataSource(config);\n\n        // Setup table\n        try (Connection c = ds.getConnection();\n             PreparedStatement ps = c.prepareStatement(\n                 \"CREATE TABLE IF NOT EXISTS users (id INT PRIMARY KEY, name VARCHAR(100))\")) {\n            ps.execute();\n        }\n\n        System.out.println(\"Connection pool size: \" + ds.getMaximumPoolSize());\n        System.out.println(\"Leak detection threshold: \" + ds.getLeakDetectionThreshold() + \" ms\");\n\n        // →→→ Simulate connection leak →→→\n        ExecutorService executor = Executors.newFixedThreadPool(15);\n        for (int i = 0; i < 50; i++) {\n            final int userId = i;\n            executor.submit(() -> {\n                try {\n                    // Get connection but NEVER return it\n                    Connection conn = ds.getConnection();\n                    PreparedStatement ps = conn.prepareStatement(\n                        \"SELECT COUNT(*) FROM users WHERE id = ?\");\n                    ps.setInt(1, userId);\n                    ResultSet rs = ps.executeQuery();\n                    if (rs.next()) {\n                        System.out.printf(\"User %d count: %d%n\", userId, rs.getInt(1));\n                    }\n                    // conn.close() NOT called → leak!\n                    // ps.close() NOT called\n                    // rs.close() NOT called\n                } catch (Exception e) {\n                    System.err.println(\"Error: \" + e.getMessage());\n                }\n            });\n        }\n\n        executor.shutdown();\n        executor.awaitTermination(5, TimeUnit.SECONDS);\n\n        System.out.println(\"\\n--- Pool Status ---\");\n        System.out.println(\"Active connections: \" + ds.getHikariPoolMXBean().getActiveConnections());\n        System.out.println(\"Idle connections: \" + ds.getHikariPoolMXBean().getIdleConnections());\n        System.out.println(\"Total connections: \" + ds.getHikariPoolMXBean().getTotalConnections());\n        System.out.println(\"Threads waiting: \" + ds.getHikariPoolMXBean().getThreadsAwaitingConnection());\n\n        // HikariCP's leak detection log:\n        // \"Connection leak detection triggered: connection com.zaxxer.hikari.pool.ProxyConnection@xxx\n        //  has been active for 10003 ms, stack trace: ...\"\n\n        ds.close();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "64-n1-queries-hibernate",
+      children: "6.4 N+1 Queries (Hibernate)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import jakarta.persistence.*;\nimport java.util.List;\n\n// →→→ ENTITY DEFINITIONS →→→\n@Entity\n@Table(name = \"authors\")\nclass Author {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    private String name;\n\n    @OneToMany(mappedBy = \"author\", fetch = FetchType.LAZY)\n    private List<Book> books;\n\n    public Author() {}\n    public Author(String name) { this.name = name; }\n\n    public Long getId() { return id; }\n    public String getName() { return name; }\n    public List<Book> getBooks() { return books; }\n}\n\n@Entity\n@Table(name = \"books\")\nclass Book {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    private String title;\n\n    @ManyToOne(fetch = FetchType.LAZY)\n    @JoinColumn(name = \"author_id\")\n    private Author author;\n\n    public Book() {}\n    public Book(String title, Author author) {\n        this.title = title;\n        this.author = author;\n    }\n\n    public Long getId() { return id; }\n    public String getTitle() { return title; }\n    public Author getAuthor() { return author; }\n}\n\n// →→→ N+1 DEMONSTRATION →→→\n@org.springframework.stereotype.Service\nclass BookService {\n\n    private final AuthorRepository authorRepository;\n    private final BookRepository bookRepository;\n\n    public BookService(AuthorRepository authorRepository, BookRepository bookRepository) {\n        this.authorRepository = authorRepository;\n        this.bookRepository = bookRepository;\n    }\n\n    // →→→ N+1: 1 query for authors + N queries for books →→→\n    @Transactional(readOnly = true)\n    public void printAuthorBooksNPlus1() {\n        List<Author> authors = authorRepository.findAll(); // 1 query\n\n        for (Author author : authors) {\n            // Each iteration triggers a lazy load: N queries!\n            List<Book> books = author.getBooks();\n            System.out.printf(\"%s wrote %d books%n\", author.getName(), books.size());\n        }\n        // Total: 1 + N queries → disastrous with 1000 authors\n    }\n\n    // →→→ FIX: JOIN FETCH →→→\n    @Query(\"SELECT DISTINCT a FROM Author a LEFT JOIN FETCH a.books\")\n    List<Author> findAllWithBooks() {\n        return authorRepository.findAllWithBooks();\n    }\n\n    @Transactional(readOnly = true)\n    public void printAuthorBooksJoinFetch() {\n        List<Author> authors = findAllWithBooks(); // 1 query with JOIN\n        for (Author author : authors) {\n            // books already loaded → no additional queries\n            System.out.printf(\"%s wrote %d books%n\", author.getName(), author.getBooks().size());\n        }\n        // Total: 1 query\n    }\n\n    // →→→ FIX: @EntityGraph →→→\n    @EntityGraph(attributePaths = \"books\")\n    @Query(\"SELECT a FROM Author a\")\n    List<Author> findAllWithEntityGraph();\n\n    // →→→ FIX: batch fetching →→→\n    // application.properties:\n    // spring.jpa.properties.hibernate.default_batch_fetch_size=20\n}\n\ninterface AuthorRepository extends org.springframework.data.jpa.repository.JpaRepository<Author, Long> {\n    @Query(\"SELECT DISTINCT a FROM Author a LEFT JOIN FETCH a.books\")\n    List<Author> findAllWithBooks();\n\n    @EntityGraph(attributePaths = \"books\")\n    @Query(\"SELECT a FROM Author a\")\n    List<Author> findAllWithEntityGraph();\n}\n\ninterface BookRepository extends org.springframework.data.jpa.repository.JpaRepository<Book, Long> {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "65-memory-leaks",
+      children: "6.5 Memory Leaks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\nimport java.util.concurrent.*;\n\n// →→→ LEAK 1: Static collection →→→\nclass StaticCollectionLeak {\n    // Never cleared → grows indefinitely\n    private static final List<byte[]> GLOBAL_CACHE = new ArrayList<>();\n\n    public void processRequest(byte[] data) {\n        GLOBAL_CACHE.add(data); // accumulates forever\n    }\n}\n\n// →→→ LEAK 2: Unregistered listener/callback →→→\ninterface ChangeListener {\n    void onChange();\n}\n\nclass EventSource {\n    private final List<ChangeListener> listeners = new CopyOnWriteArrayList<>();\n\n    public void register(ChangeListener listener) {\n        listeners.add(listener);\n    }\n\n    public void unregister(ChangeListener listener) {\n        listeners.remove(listener); // never called → leak\n    }\n}\n\nclass LeakyComponent {\n    private final EventSource eventSource;\n\n    LeakyComponent(EventSource source) {\n        this.eventSource = source;\n        // Registers a listener but never unregisters\n        eventSource.register(() -> System.out.println(\"Changed\"));\n    }\n}\n\n// →→→ LEAK 3: ThreadLocal not cleared →→→\nclass ThreadLocalLeakExample {\n    private static final ThreadLocal<Map<String, Object>> REQUEST_CONTEXT =\n        ThreadLocal.withInitial(HashMap::new);\n\n    public static void handleRequest(String requestId) {\n        Map<String, Object> ctx = REQUEST_CONTEXT.get();\n        ctx.put(\"requestId\", requestId);\n        ctx.put(\"largePayload\", new byte[100_000]); // accumulates\n\n        // Process request...\n\n        // BUG: never calls REQUEST_CONTEXT.remove()\n        // When thread returns to pool, context survives\n    }\n}\n\n// →→→ LEAK 4: HashMap with mutable keys →→→\nclass MutableKeyLeak {\n    public static void main(String[] args) {\n        Map<MutableKey, String> map = new HashMap<>();\n\n        MutableKey key = new MutableKey(\"original\");\n        map.put(key, \"value1\");\n\n        // Mutate the key after insertion\n        key.setName(\"modified\");\n\n        // Now we CANNOT retrieve the value\n        System.out.println(map.get(key)); // null\n\n        // And we CANNOT remove it → the bucket is wrong\n        map.remove(key);\n\n        // The entry is leaked → unreachable but still in the map\n        System.out.println(\"Map size: \" + map.size()); // still 1!\n    }\n}\n\nclass MutableKey {\n    private String name;\n\n    MutableKey(String name) { this.name = name; }\n    void setName(String name) { this.name = name; }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n        MutableKey that = (MutableKey) o;\n        return Objects.equals(name, that.name);\n    }\n\n    @Override\n    public int hashCode() {\n        return Objects.hashCode(name);\n    }\n}\n\n// →→→ LEAK 5: Inner class holding outer reference →→→\nclass OuterWithLeak {\n    private final byte[] expensiveData = new byte[1_000_000];\n\n    class Inner {\n        void doSomething() {\n            System.out.println(\"Inner: \" + expensiveData.length);\n            // Inner holds implicit reference to Outer.\n            // If Inner is passed around, Outer (and its 1 MB data) cannot be GC'd.\n        }\n    }\n\n    public Inner createInner() {\n        return new Inner();\n    }\n}\n\n// →→→ FIXES →→→\nclass LeakPrevention {\n\n    // Fix 1: Use WeakHashMap for caches\n    private final Map<Object, byte[]> weakCache = new WeakHashMap<>();\n\n    // Fix 2: Bounded cache with eviction\n    private final Map<String, byte[]> boundedCache =\n        new LinkedHashMap<>() {\n            @Override\n            protected boolean removeEldestEntry(Map.Entry<String, byte[]> eldest) {\n                return size() > 1000; // auto-evict oldest when > 1000 entries\n            }\n        };\n\n    // Fix 3: Always clear ThreadLocal\n    public void safeHandleRequest() {\n        try {\n            Map<String, Object> ctx = RequestContextHolder.get();\n            // use context...\n        } finally {\n            RequestContextHolder.clear(); // always called\n        }\n    }\n\n    // Fix 4: Use static inner class (no outer reference)\n    static class SafeInner {\n        void doSomething() {\n            // No implicit reference to outer class\n        }\n    }\n}\n\nclass RequestContextHolder {\n    private static final ThreadLocal<Map<String, Object>> CONTEXT =\n        ThreadLocal.withInitial(HashMap::new);\n\n    public static Map<String, Object> get() { return CONTEXT.get(); }\n    public static void clear() { CONTEXT.remove(); }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-code-optimization",
+      children: "7. Code Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding JIT compiler behavior helps you write code that the JVM can optimize aggressively."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-jit-warmup",
+      children: "7.1 JIT Warmup"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The JVM starts interpreting bytecode. Methods that execute frequently (the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hot"
+      }), " threshold, default 10,000 invocations) are compiled to native code by the C1 compiler. Methods that are even hotter are recompiled by C2 with more aggressive optimizations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// →→→ Observing JIT warmup →→→\n// Run with: -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions\n\nclass JitWarmupDemo {\n\n    // Method that becomes hot after ~10K invocations\n    static long compute(int iterations) {\n        long sum = 0;\n        for (int i = 0; i < iterations; i++) {\n            sum += i * i;\n        }\n        return sum;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Warming up...\");\n\n        // Phase 1: Interpreted (first few thousand calls)\n        for (int i = 0; i < 50_000; i++) {\n            compute(100);\n        }\n\n        System.out.println(\"Warmup complete. Method should be JIT-compiled by now.\");\n\n        // Phase 2: Fully compiled\n        long start = System.nanoTime();\n        long result = compute(100);\n        long end = System.nanoTime();\n\n        System.out.printf(\"Result: %d, Time: %.2f Âµs%n\", result, (end - start) / 1000.0);\n\n        // Repeat to see stable timings after compilation\n        for (int i = 0; i < 10; i++) {\n            start = System.nanoTime();\n            compute(100);\n            end = System.nanoTime();\n            System.out.printf(\"Run %d: %.2f Âµs%n\", i, (end - start) / 1000.0);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Warmup strategies"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.concurrent.CountDownLatch;\n\nclass WarmupStrategies {\n\n    // Strategy 1: Explicit warmup in main() before benchmark\n    static class ExplicitWarmup {\n        static void warmup() {\n            for (int i = 0; i < 20_000; i++) {\n                compute(i);\n            }\n        }\n        static int compute(int x) {\n            return x * x + 2 * x + 1;\n        }\n    }\n\n    // Strategy 2: Warmup on a background thread during startup\n    static class BackgroundWarmup {\n        static volatile boolean warm = false;\n\n        static void startWarmup() {\n            Thread warmupThread = new Thread(() -> {\n                for (int i = 0; i < 50_000; i++) {\n                    Math.sin(i * 0.001);\n                    Math.cos(i * 0.001);\n                }\n                warm = true;\n            }, \"warmup-thread\");\n            warmupThread.setDaemon(true);\n            warmupThread.start();\n        }\n    }\n\n    // Strategy 3: Use @Warmup in JMH (recommended)\n    // JMH handles this automatically → it runs warmup iterations\n    // and verifies that JIT compilation has stabilized before\n    // recording measurements.\n\n    public static void main(String[] args) throws Exception {\n        ExplicitWarmup.warmup();\n        int result = ExplicitWarmup.compute(5);\n        System.out.println(\"Explicit warmup result: \" + result);\n\n        BackgroundWarmup.startWarmup();\n        Thread.sleep(2000);\n        System.out.println(\"Background warmup done: \" + BackgroundWarmup.warm);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-inlining",
+      children: "7.2 Inlining"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Inlining replaces a method call with the method body, eliminating call overhead and enabling further optimizations. The JIT inlines aggressively → methods smaller than 325 bytes of bytecode (default ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "-XX:MaxInlineSize=325"
+      }), ") and call sites with high frequency."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// →→→ Methods the JIT will inline →→→\nclass InlineExample {\n\n    // Small, hot: WILL be inlined (13 bytes bytecode)\n    static int add(int a, int b) {\n        return a + b;\n    }\n\n    // Larger but still hot: WILL be inlined if MaxInlineSize allows\n    static int compute(int base) {\n        int result = 0;\n        for (int i = 0; i < 10; i++) {\n            result += base * i;\n        }\n        return result;\n    }\n\n    // →→→ Methods the JIT will NOT inline →→→\n    // Large method: will NOT be inlined by default\n    static int largeMethod(int input) {\n        int a = input * 2;\n        int b = a + 10;\n        int c = b / 3;\n        int d = c * c;\n        int e = d - a;\n        int f = e + b;\n        int g = f * input;\n        int h = g / 2;\n        int i = h + a;\n        int j = i - b;\n        int k = j * c;\n        int l = k / 4;\n        int m = l + d;\n        // ... imagine 100+ more lines ...\n        return m;\n    }\n\n    // Recursive: inlining is limited to a few levels\n    static int factorial(int n) {\n        if (n <= 1) return 1;\n        return n * factorial(n - 1); // inlined up to -XX:MaxInlineLevel=9 depth\n    }\n\n    public static void main(String[] args) {\n        // Run with: -XX:+PrintInlining -XX:+UnlockDiagnosticVMOptions\n        int sum = 0;\n        for (int i = 0; i < 100_000; i++) {\n            sum += add(i, 1);\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // The PrintInlining output shows:\n        //   InlineExample.add (3 bytes)   inline (hot)\n        //   InlineExample.compute (18 bytes)   inline (hot)\n        //   InlineExample.largeMethod (200 bytes)   too big\n        //   InlineExample.factorial (N bytes)   recursive inlining is too deep\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-dead-code-elimination-dce",
+      children: "7.3 Dead Code Elimination (DCE)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The JIT can eliminate code whose results are never used. This is why JMH uses ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Blackhole"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class DeadCodeElimination {\n\n    public static void main(String[] args) {\n        long start = System.nanoTime();\n\n        // This computation will be ELIMINATED entirely\n        // because the result is never used.\n        long result = 0;\n        for (int i = 0; i < 100_000_000; i++) {\n            result += i * i;\n        }\n\n        long end = System.nanoTime();\n\n        // The loop above may execute in 1-2 ms because\n        // the JIT can prove 'result' is never used and removes it!\n        System.out.printf(\"Time: %.2f ms%n\", (end - start) / 1_000_000.0);\n\n        // →→→ Now compare: prevent DCE by using result →→→\n        long start2 = System.nanoTime();\n\n        long result2 = 0;\n        for (int i = 0; i < 100_000_000; i++) {\n            result2 += i * i;\n        }\n        // If we print the result, DCE is prevented:\n        System.out.println(\"Result2: \" + result2);\n\n        long end2 = System.nanoTime();\n        System.out.printf(\"Time with usage: %.2f ms%n\", (end2 - start2) / 1_000_000.0);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How DCE applies to Spring Boot"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.stereotype.Service;\n\n@Service\nclass DceAwareService {\n\n    // If this bean is never injected anywhere,\n    // Spring can still instantiate it for @Autowired injection points.\n    // But if there is NO injection point at all,\n    // the AOT engine eliminates it during AOT processing.\n\n    private final ExpensiveDependency expensiveDep;\n\n    public DceAwareService(ExpensiveDependency expensiveDep) {\n        this.expensiveDep = expensiveDep;\n    }\n\n    // Unused method → Spring AOT may skip its instantiation\n    public String unusedMethod() {\n        return expensiveDep.compute();\n    }\n}\n\nclass ExpensiveDependency {\n    public String compute() {\n        try { Thread.sleep(1000); } catch (InterruptedException e) {}\n        return \"expensive\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-loop-unrolling",
+      children: "7.4 Loop Unrolling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The JIT unrolls loops to reduce branch overhead and expose instruction-level parallelism."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class LoopUnrolling {\n\n    // →→→ JIT unrolls small, countable loops →→→\n    static int sumArray(int[] arr) {\n        int sum = 0;\n        // Loop with 4 constant-length iterations → fully unrolled\n        for (int i = 0; i < 4; i++) {\n            sum += arr[i];  // becomes: sum = arr[0] + arr[1] + arr[2] + arr[3];\n        }\n        return sum;\n    }\n\n    // →→→ Partial unrolling for larger loops →→→\n    static int sumLargeArray(int[] arr) {\n        int sum = 0;\n        // For variable-length loops, JIT may unroll in chunks of 4-8\n        for (int i = 0; i < arr.length; i++) {\n            sum += arr[i];\n            // Might become:\n            // for (; i < arr.length - 7; i += 8) {\n            //     sum += arr[i] + arr[i+1] + arr[i+2] + arr[i+3]\n            //          + arr[i+4] + arr[i+5] + arr[i+6] + arr[i+7];\n            // }\n            // for (; i < arr.length; i++) {\n            //     sum += arr[i];\n            // }\n        }\n        return sum;\n    }\n\n    // →→→ Manual unrolling for hot paths →→→\n    static int sumManuallyUnrolled(int[] arr) {\n        int sum = 0;\n        int i = 0;\n        int len = arr.length;\n\n        // Process 8 elements per iteration\n        for (; i + 7 < len; i += 8) {\n            sum += arr[i] + arr[i+1] + arr[i+2] + arr[i+3]\n                 + arr[i+4] + arr[i+5] + arr[i+6] + arr[i+7];\n        }\n\n        // Handle remaining elements\n        for (; i < len; i++) {\n            sum += arr[i];\n        }\n        return sum;\n    }\n\n    public static void main(String[] args) {\n        int[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n\n        System.out.println(\"Sum array (unrolled): \" + sumArray(data));\n        System.out.println(\"Sum large: \" + sumLargeArray(data));\n        System.out.println(\"Manual unroll: \" + sumManuallyUnrolled(data));\n\n        // Run with: -XX:+PrintOptoAssembly (debug VM only)\n        // or: -XX:+PrintIdeal -XX:+UnlockDiagnosticVMOptions\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "75-intrinsics",
+      children: "7.5 Intrinsics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Intrinsics are methods that the JIT recognizes and replaces with hand-written machine code → usually a CPU instruction."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class IntrinsicsExample {\n\n    public static void main(String[] args) {\n        // →→→ Math intrinsics →→→\n        // These are intrinsified on most platforms:\n        double sin = Math.sin(1.5);\n        double cos = Math.cos(1.5);\n        double sqrt = Math.sqrt(2.0);\n        double log = Math.log(100.0);\n        double pow = Math.pow(2.0, 10.0);\n        double abs = Math.abs(-42.0);\n        long max = Math.max(100L, 200L);\n\n        // →→→ Array copy intrinsic →→→\n        int[] src = {1, 2, 3, 4, 5};\n        int[] dst = new int[5];\n        System.arraycopy(src, 0, dst, 0, 5);\n        // This becomes a single memmove() call → very fast\n\n        // →→→ Object intrinsics →→→\n        // Object.getClass() is intrinsified\n        Class<?> clazz = \"hello\".getClass();\n\n        // →→→ Unsafe intrinsics (used internally by JDK) →→→\n        // Unsafe.compareAndSwapObject, Unsafe.putOrderedObject, etc.\n        // These become single CPU instructions (CMPXCHG on x86)\n\n        System.out.printf(\"sin=%.3f cos=%.3f sqrt=%.3f log=%.3f pow=%.0f%n\",\n            sin, cos, sqrt, log, pow);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How to check if a method is intrinsic"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Run with: -XX:+PrintIntrinsics -XX:+UnlockDiagnosticVMOptions\n// Output looks like:\n//   @ 8   java.lang.Math::sin (14 bytes)   intrinsified\n\nclass IntrinsicChecker {\n\n    static void checkIntrinsic() {\n        double x = Math.sin(1.0); // intrinsic on x86_64 → FSIN instruction\n    }\n\n    public static void main(String[] args) {\n        // Warmup\n        for (int i = 0; i < 50_000; i++) {\n            checkIntrinsic();\n        }\n        System.out.println(\"Check -XX:+PrintIntrinsics output\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "76-branch-prediction",
+      children: "7.6 Branch Prediction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern CPUs predict branch outcomes. A mispredicted branch costs 10--20 cycles. Code that is unpredictable hurts performance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\n\nclass BranchPrediction {\n\n    public static void main(String[] args) {\n        int size = 100_000;\n        int[] sorted = new Random(42).ints(size, 0, 100).toArray();\n        int[] unsorted = sorted.clone();\n\n        Arrays.sort(sorted);\n\n        // →→→ Predictable branch: sorted data →→→\n        long start = System.nanoTime();\n        long sum1 = countAboveThreshold(sorted, 50);\n        long end = System.nanoTime();\n        System.out.printf(\"Sorted (predictable): %d, time=%.2f ms%n\",\n            sum1, (end - start) / 1_000_000.0);\n\n        // →→→ Unpredictable branch: unsorted data →→→\n        start = System.nanoTime();\n        long sum2 = countAboveThreshold(unsorted, 50);\n        end = System.nanoTime();\n        System.out.printf(\"Unsorted (unpredictable): %d, time=%.2f ms%n\",\n            sum2, (end - start) / 1_000_000.0);\n\n        // The unsorted version can be 2-4x slower due to branch mispredictions.\n        // The difference shrinks on modern CPUs with large branch predictor tables.\n    }\n\n    static long countAboveThreshold(int[] data, int threshold) {\n        long count = 0;\n        for (int v : data) {\n            if (v > threshold) { // The branch\n                count++;\n            }\n        }\n        return count;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigating branch mispredictions"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "class BranchPredictionMitigation {\n\n    // Use branchless patterns where possible\n    static long countAboveThresholdBranchless(int[] data, int threshold) {\n        long count = 0;\n        for (int v : data) {\n            // Branchless: the conditional is a bit operation\n            // (v - threshold) >> 31 gives -1 if v < threshold, 0 otherwise\n            // Then ~(x) gives 0 or -1. Adding increments only when above.\n            count += (v > threshold) ? 1 : 0;\n        }\n        // The JIT can use CMOV (conditional move) for the ternary,\n        // which avoids a branch entirely on x86.\n        return count;\n    }\n\n    // For boolean-heavy logic, prefer bitwise operations:\n    static boolean isInRange(int value, int min, int max) {\n        // Branch version:\n        // return value >= min && value <= max;\n\n        // Branchless version (for hot paths):\n        return (value - min) | (max - value) >= 0;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "77-false-sharing-contended",
+      children: "7.7 False Sharing (@Contended)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "False sharing occurs when two threads write to different fields that share the same CPU cache line (typically 64 bytes). The CPU cache coherence protocol forces the line to ping-pong between cores, destroying performance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.concurrent.CountDownLatch;\n\nclass FalseSharingDemo {\n\n    // →→→ FALSE SHARING: fields on same cache line →→→\n    static class SharedCounters {\n        volatile long counter1 = 0; // occupies bytes 0-7\n        volatile long counter2 = 0; // bytes 8-15 → SAME CACHE LINE!\n        // Padding would be needed:\n        // volatile long p1, p2, p3, p4, p5, p6, p7; // fill to byte 64\n    }\n\n    // →→→ FIX: @Contended (JDK 8+) or manual padding →→→\n    @jdk.internal.vm.annotation.Contended\n    static class PaddedCounters {\n        volatile long counter1 = 0;\n        // @Contented adds padding to isolate this field on its own cache line\n        volatile long counter2 = 0;\n    }\n\n    // →→→ Manual padding (works on all JDK versions) →→→\n    static class ManualPaddedCounters {\n        volatile long counter1 = 0;\n        // 7 unused longs push counter2 to a different cache line\n        volatile long p1, p2, p3, p4, p5, p6, p7;\n        volatile long counter2 = 0;\n    }\n\n    public static void runTest(Object counters, boolean useShared) throws Exception {\n        int threadCount = 2;\n        int iterations = 100_000_000;\n        CountDownLatch latch = new CountDownLatch(threadCount);\n        long start = System.nanoTime();\n\n        Runnable task = () -> {\n            for (int i = 0; i < iterations; i++) {\n                if (useShared) {\n                    ((SharedCounters) counters).counter1++;\n                } else {\n                    ((PaddedCounters) counters).counter1++;\n                }\n            }\n            latch.countDown();\n        };\n\n        Runnable task2 = () -> {\n            for (int i = 0; i < iterations; i++) {\n                if (useShared) {\n                    ((SharedCounters) counters).counter2++;\n                } else {\n                    ((PaddedCounters) counters).counter2++;\n                }\n            }\n            latch.countDown();\n        };\n\n        Thread t1 = new Thread(task, \"Writer-1\");\n        Thread t2 = new Thread(task2, \"Writer-2\");\n        t1.start();\n        t2.start();\n        latch.await();\n\n        long end = System.nanoTime();\n        String type = useShared ? \"FALSE SHARING\" : \"PADDED (no false sharing)\";\n        System.out.printf(\"[%s] Time: %.2f ms%n\", type, (end - start) / 1_000_000.0);\n    }\n\n    public static void main(String[] args) throws Exception {\n        // Run with: -XX:-RestrictContended (JDK 8+) to enable @Contended\n        // Without @Contended, the padded version is ~4x faster.\n\n        SharedCounters shared = new SharedCounters();\n        PaddedCounters padded = new PaddedCounters();\n\n        // Warmup\n        runTest(shared, true);\n        runTest(padded, false);\n\n        System.out.println(\"\\n--- Main test ---\");\n        runTest(shared, true);  // slower\n        runTest(padded, false); // faster\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to think about false sharing"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["High-frequency writes to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "volatile"
+        }), " fields by different threads"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Atomic counters (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AtomicLong"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AtomicInteger"
+        }), ") in arrays → adjacent elements share cache lines"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "Exchanger"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Exchanger"
+        }), " internal slots, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ThreadPoolExecutor"
+        }), " worker counts"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ring buffers (LMAX Disruptor style)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-jvm-tuning",
+      children: "8. JVM Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "JVM flags control memory allocation, garbage collection, compilation, and runtime behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "81-heap-sizing",
+      children: "8.1 Heap Sizing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Minimum and maximum heap size (set equal to avoid resizing)\n-Xms4g -Xmx4g\n\n# Young generation size (absolute)\n-Xmn1g\n\n# Ratio of old/young (default 2 → old:young = 2:1)\n-XX:NewRatio=3\n\n# Survivor space ratio (default 8 → Eden:S0:S1 = 8:1:1)\n-XX:SurvivorRatio=6\n\n# Max metaspace (class metadata) → avoid metaspace GC\n-XX:MaxMetaspaceSize=512m\n\n# Initial metaspace → prevent growth-induced GC\n-XX:MetaspaceSize=256m\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Programmatic heap configuration verification\nimport java.lang.management.MemoryMXBean;\nimport java.lang.management.ManagementFactory;\nimport java.lang.management.MemoryUsage;\n\nclass HeapConfig {\n\n    public static void main(String[] args) {\n        MemoryMXBean mem = ManagementFactory.getMemoryMXBean();\n\n        MemoryUsage heap = mem.getHeapMemoryUsage();\n        MemoryUsage nonHeap = mem.getNonHeapMemoryUsage();\n\n        System.out.println(\"=== HEAP ===\");\n        System.out.printf(\"Initial: %.2f MB%n\", heap.getInit() / 1_000_000.0);\n        System.out.printf(\"Used: %.2f MB%n\", heap.getUsed() / 1_000_000.0);\n        System.out.printf(\"Committed: %.2f MB%n\", heap.getCommitted() / 1_000_000.0);\n        System.out.printf(\"Max: %.2f MB%n\", heap.getMax() / 1_000_000.0);\n\n        System.out.println(\"\\n=== NON-HEAP (Metaspace) ===\");\n        System.out.printf(\"Initial: %.2f MB%n\", nonHeap.getInit() / 1_000_000.0);\n        System.out.printf(\"Used: %.2f MB%n\", nonHeap.getUsed() / 1_000_000.0);\n        System.out.printf(\"Committed: %.2f MB%n\", nonHeap.getCommitted() / 1_000_000.0);\n        System.out.printf(\"Max: %.2f MB%n\", nonHeap.getMax() / 1_000_000.0);\n\n        // Useful for verifying -Xms/-Xmx are correctly applied\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "82-gc-selection--tuning",
+      children: "8.2 GC Selection & Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# G1GC (default since JDK 9) → balanced throughput and latency\n-XX:+UseG1GC\n-XX:MaxGCPauseMillis=100         # Target max pause (default 200 ms)\n-XX:G1HeapRegionSize=4m           # Region size (1-32 MB, default based on heap)\n-XX:G1NewSizePercent=5            # Initial young gen % (default 5%)\n-XX:G1MaxNewSizePercent=60        # Max young gen % (default 60%)\n-XX:G1HeapWastePercent=5          # Waste threshold for mixed GC (default 5%)\n\n# ZGC (JDK 15+ GA, JDK 21+ production-ready) → sub-millisecond pauses\n-XX:+UseZGC\n-XX:ZAllocationSpikeTolerance=2.0 # Tolerate allocation spikes\n-Xmx16g\n# ZGC works best with at least 2-4 GB heap\n\n# Parallel GC (throughput-oriented)\n-XX:+UseParallelGC\n-XX:ParallelGCThreads=8           # Default: CPU cores\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// GC comparison framework\nclass GcComparison {\n\n    public static void main(String[] args) {\n        // Run with different GCs and compare:\n        // G1GC:   -XX:+UseG1GC -Xmx1g -Xlog:gc*:file=gc-g1.log\n        // ZGC:    -XX:+UseZGC -Xmx1g -Xlog:gc*:file=gc-zgc.log\n        // ParGC:  -XX:+UseParallelGC -Xmx1g -Xlog:gc*:file=gc-par.log\n\n        System.out.println(\"Running allocation workload for GC comparison...\");\n        System.out.println(\"JVM: \" + System.getProperty(\"java.version\"));\n        System.out.println(\"GC:  \" + getGCName());\n\n        // Mixed workload: allocations + retention\n        var retained = new java.util.ArrayList<byte[]>();\n        var rng = new java.util.Random(42);\n\n        for (int round = 0; round < 50; round++) {\n            // Allocate 10 MB of short-lived objects\n            for (int i = 0; i < 100; i++) {\n                var tmp = new byte[100_000];\n                tmp[rng.nextInt(100_000)] = (byte) round; // prevent DCE\n            }\n\n            // Retain some objects\n            if (round % 3 == 0) {\n                retained.add(new byte[200_000]);\n            }\n\n            System.out.printf(\"Round %d: retained %d objects%n\", round, retained.size());\n        }\n\n        System.out.println(\"Done. Compare pause times across GC logs.\");\n    }\n\n    static String getGCName() {\n        for (var bean : ManagementFactory.getGarbageCollectorMXBeans()) {\n            return bean.getName();\n        }\n        return \"unknown\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "83-additional-jvm-tuning-flags",
+      children: "8.3 Additional JVM Tuning Flags"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# →→→ String Deduplication (G1GC only) →→→\n# Deduplicates identical String values in the heap (saves 10-30% on string-heavy apps)\n-XX:+UseStringDeduplication\n\n# →→→ Always PreTouch →→→\n# Commit all heap memory at startup instead of lazily.\n# Eliminates pause during first GC when the OS page-faults memory.\n-XX:+AlwaysPreTouch\n\n# →→→ Compiler Threads →→→\n# More compiler threads = faster warmup, more CPU during startup\n-XX:CICompilerCount=4\n\n# →→→ Reserved Code Cache →→→\n# Ensure code cache doesn't fill up (which disables JIT)\n-XX:ReservedCodeCacheSize=256m\n-XX:InitialCodeCacheSize=64m\n\n# →→→ Optimize String Concat →→→\n# String concatenation optimization (default on since JDK 9)\n-XX:+OptimizeStringConcat\n\n# →→→ Tiered Compilation →→→\n# Default on. Can be disabled for faster startup (but slower peak perf)\n-XX:-TieredCompilation\n\n# →→→ Thread Stack Size →→→\n-XX:ThreadStackSize=256k\n\n# →→→ Direct Memory →→→\n-XX:MaxDirectMemorySize=256m\n\n# →→→ Heap Dump on OOM →→→\n-XX:+HeapDumpOnOutOfMemoryError\n-XX:HeapDumpPath=/var/log/app/heapdumps/\n\n# →→→ Exit on OOM →→→\n-XX:+ExitOnOutOfMemoryError\n\n# →→→ GC Time Ratio →→→\n# Target that GC time should not exceed 1% of total time (default 99)\n-XX:GCTimeRatio=19  # GC time should be < 5% (99 → 1%)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Demonstration of AlwaysPreTouch effect\nclass PreTouchDemo {\n\n    public static void main(String[] args) throws Exception {\n        // Run WITHOUT -XX:+AlwaysPreTouch:\n        //   java PreTouchDemo\n        // Run WITH -XX:+AlwaysPreTouch:\n        //   java -XX:+AlwaysPreTouch -Xms2g -Xmx2g PreTouchDemo\n\n        Runtime rt = Runtime.getRuntime();\n        long maxMemory = rt.maxMemory() / 1_000_000;\n        System.out.printf(\"Max heap: %d MB%n\", maxMemory);\n\n        // With AlwaysPreTouch, the rss (resident set size) equals max heap immediately.\n        // Without it, the initial RSS is small and grows as pages are faulted in.\n\n        Runtime.getRuntime().exec(\"tasklist /fi \\\"PID eq \" + ProcessHandle.current().pid() + \"\\\"\")\n            .inputReader()\n            .lines()\n            .filter(l -> l.contains(\"java\"))\n            .forEach(System.out::println);\n\n        // Allocate memory to force page faults\n        byte[][] pages = new byte[100][];\n        for (int i = 0; i < pages.length; i++) {\n            pages[i] = new byte[10_000_000]; // 10 MB each\n            System.out.printf(\"Allocated %d MB%n\", (i + 1) * 10);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-spring-boot-performance",
+      children: "9. Spring Boot Performance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spring Boot convenience comes with an overhead. This section covers the tuning knobs available."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "91-lazy-initialization",
+      children: "9.1 Lazy Initialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By default, Spring Boot creates all singleton beans at startup. Lazy initialization defers bean creation until first use."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Lazy;\nimport org.springframework.stereotype.Service;\n\n// →→→ Option 1: Global lazy initialization →→→\n// application.properties:\n//   spring.main.lazy-initialization=true\n\n// →→→ Option 2: Per-bean lazy initialization →→→\n@Service\n@Lazy\nclass ExpensiveService {\n\n    public ExpensiveService() {\n        System.out.println(\"ExpensiveService created → deferred until first use\");\n        // Simulate expensive setup\n        try { Thread.sleep(2000); } catch (InterruptedException e) {}\n    }\n\n    public String process() {\n        return \"processed\";\n    }\n}\n\n@Service\nclass NormalService {\n\n    public NormalService() {\n        System.out.println(\"NormalService created at startup → eager\");\n    }\n}\n\n@SpringBootApplication\nclass LazyInitDemo {\n\n    public static void main(String[] args) {\n        SpringApplication app = new SpringApplication(LazyInitDemo.class);\n        app.setLazyInitialization(true); // same as spring.main.lazy-initialization=true\n        var ctx = app.run(args);\n\n        System.out.println(\"Application started\");\n\n        // ExpensiveService is not created yet...\n        var svc = ctx.getBean(ExpensiveService.class);\n        System.out.println(\"Service result: \" + svc.process());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use lazy initialization"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Recommendation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Development"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always → faster startup time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only if startup time matters and services are hit uniformly"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-traffic services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good → infrequently used endpoints skip startup cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High-traffic services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not recommended → first request pays full initialization tax"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "92-connection-pool-tuning",
+      children: "9.2 Connection Pool Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "HikariCP is Spring Boot's default connection pool. Tuning it is the single highest-impact per-database optimization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml → HikariCP tuning\nspring:\n  datasource:\n    hikari:\n      # Core pool settings\n      maximum-pool-size: 20\n      minimum-idle: 5\n      connection-timeout: 5000     # Max ms to wait for a connection\n      idle-timeout: 300000         # 5 min → remove idle connections\n      max-lifetime: 1800000        # 30 min → max connection age\n\n      # Performance settings\n      pool-name: AppPool\n      auto-commit: false           # Let transaction manager manage commits\n      connection-test-query: SELECT 1  # Only if driver doesn't support isValid()\n      validation-timeout: 3000\n\n      # Leak detection\n      leak-detection-threshold: 10000  # 10 sec → warn if connection held too long\n\n      # Prepared statement cache (if driver supports it)\n      data-source-properties:\n        cachePrepStmts: true\n        prepStmtCacheSize: 250\n        prepStmtCacheSqlLimit: 2048\n        useServerPrepStmts: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import com.zaxxer.hikari.HikariConfig;\nimport com.zaxxer.hikari.HikariDataSource;\nimport javax.sql.DataSource;\nimport java.sql.Connection;\nimport java.sql.PreparedStatement;\n\nclass HikariTuning {\n\n    public static DataSource createOptimizedDataSource() {\n        HikariConfig config = new HikariConfig();\n\n        // Database\n        config.setJdbcUrl(\"jdbc:postgresql://localhost:5432/appdb\");\n        config.setUsername(\"appuser\");\n        config.setPassword(\"apppass\");\n        config.setDriverClassName(\"org.postgresql.Driver\");\n\n        // Pool sizing\n        config.setMaximumPoolSize(20);\n        config.setMinimumIdle(5);\n\n        // The formula for max pool size:\n        //   maxPoolSize = (coreCount * 2) + effectiveSpindleCount\n        // For a typical 4-core DB server with 16-core app server:\n        //   maxPoolSize = (4 * 2) + 1 = 9  (per app instance)\n        // Start conservative and increase while monitoring:\n        //   - If connections are 100% utilized, increase\n        //   - If DB CPU is low but queries are slow, pool is too small\n        //   - If DB CPU is high, pool may be too large\n\n        config.addDataSourceProperty(\"cachePrepStmts\", \"true\");\n        config.addDataSourceProperty(\"prepStmtCacheSize\", \"250\");\n        config.addDataSourceProperty(\"prepStmtCacheSqlLimit\", \"2048\");\n        config.addDataSourceProperty(\"useServerPrepStmts\", \"true\");\n\n        // These reduce per-connection overhead by caching prepared statements\n        // across the connection's lifetime → can improve throughput by 20-40%.\n\n        config.setAutoCommit(false); // Let Spring manage transactions\n        config.setTransactionIsolation(\"TRANSACTION_READ_COMMITTED\");\n\n        config.setLeakDetectionThreshold(10_000);\n        config.setConnectionTimeout(5_000);\n        config.setMaxLifetime(1_800_000); // 30 min → rotate connections to avoid DB-side drops\n        config.setIdleTimeout(300_000);   // 5 min\n\n        return new HikariDataSource(config);\n    }\n\n    // Monitoring pool health\n    public static void logPoolStatus(HikariDataSource ds) {\n        var mx = ds.getHikariPoolMXBean();\n        System.out.printf(\"Pool: %s | Active: %d | Idle: %d | Wait: %d | Total: %d%n\",\n            ds.getPoolName(),\n            mx.getActiveConnections(),\n            mx.getIdleConnections(),\n            mx.getThreadsAwaitingConnection(),\n            mx.getTotalConnections());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "93-aot-processing",
+      children: "9.3 AOT Processing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spring Boot 3.x introduced Ahead-of-Time (AOT) processing for GraalVM native images and optimized startup."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.aot.hint.annotation.Reflective;\nimport org.springframework.aot.hint.annotation.ImportRuntimeHints;\nimport org.springframework.aot.hint.RuntimeHints;\nimport org.springframework.aot.hint.RuntimeHintsRegistrar;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.core.io.ClassPathResource;\n\n// →→→ AOT hints →→→\n// In a native image, reflection must be declared at build time.\n// AOT processing analyzes your code and generates these hints automatically,\n// but for edge cases you register them manually.\n\n@Configuration\n@ImportRuntimeHints(MyRuntimeHints.class)\nclass AotConfiguration {\n\n    // Spring AOT will analyze this class at build time and\n    // generate the necessary reflection configuration.\n}\n\nclass MyRuntimeHints implements RuntimeHintsRegistrar {\n\n    @Override\n    public void registerHints(RuntimeHints hints, ClassLoader classLoader) {\n        // Register a class for reflection\n        hints.reflection().registerType(SomeDynamicClass.class,\n            memberCategory ->\n                memberCategory.withPublicConstructors()\n                    .withPublicMethods()\n                    .withPublicFields());\n\n        // Register a resource that must be available at runtime\n        hints.resources().registerResource(\n            new ClassPathResource(\"dynamic-config.json\"));\n\n        // Register a serialization type\n        hints.serialization().registerType(SomeSerializableClass.class);\n    }\n}\n\nclass SomeDynamicClass {\n    public String name;\n    public String getName() { return name; }\n    public void setName(String name) { this.name = name; }\n}\n\nclass SomeSerializableClass implements java.io.Serializable {\n    private String data;\n}\n\n// →→→ Building with AOT →→→\n// Maven:\n//   mvn spring-boot:process-aot\n//   mvn package -Pnative\n//\n// Gradle:\n//   ./gradlew processAot\n//   ./gradlew nativeCompile\n//\n// AOT processing analyzes:\n//   - @Configuration classes and @Bean methods\n//   - @Component, @Service, @Repository beans\n//   - Reflection in @EventListener, @Autowired, etc.\n//   - Property bindings from @ConfigurationProperties\n//   - Spring Data JPA repositories\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "94-graceful-shutdown",
+      children: "9.4 Graceful Shutdown"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Graceful shutdown allows in-flight requests to complete before the application stops."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml\nserver:\n  shutdown: graceful\n\nspring:\n  lifecycle:\n    timeout-per-shutdown-phase: 30s  # Max wait for active requests\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;\nimport org.springframework.boot.web.server.WebServerFactoryCustomizer;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.stereotype.Service;\n\nimport jakarta.annotation.PreDestroy;\nimport java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\nimport java.util.concurrent.TimeUnit;\n\n@SpringBootApplication\nclass GracefulShutdownDemo {\n\n    public static void main(String[] args) {\n        SpringApplication app = new SpringApplication(GracefulShutdownDemo.class);\n        app.run(args);\n    }\n\n    @Bean\n    public WebServerFactoryCustomizer<TomcatServletWebServerFactory> tomcatCustomizer() {\n        return factory -> {\n            factory.addConnectorCustomizers(connector -> {\n                // Wait up to 30 seconds for active requests\n                connector.setProperty(\"connectionTimeout\", \"30000\");\n            });\n        };\n    }\n}\n\n@Service\nclass LongRunningTaskService {\n\n    private final ExecutorService executor = Executors.newFixedThreadPool(4);\n\n    public void processAsync() {\n        executor.submit(() -> {\n            try {\n                Thread.sleep(10_000);\n                System.out.println(\"Task completed\");\n            } catch (InterruptedException e) {\n                Thread.currentThread().interrupt();\n                System.out.println(\"Task interrupted during shutdown\");\n            }\n        });\n    }\n\n    @PreDestroy\n    public void shutdown() {\n        System.out.println(\"Shutting down executor gracefully...\");\n        executor.shutdown();\n        try {\n            if (!executor.awaitTermination(30, TimeUnit.SECONDS)) {\n                executor.shutdownNow();\n            }\n        } catch (InterruptedException e) {\n            executor.shutdownNow();\n            Thread.currentThread().interrupt();\n        }\n        System.out.println(\"Executor shut down\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "95-virtual-threads",
+      children: "9.5 Virtual Threads"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Virtual threads (Project Loom, JDK 21+) dramatically reduce the overhead of thread-per-request models."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.boot.web.embedded.tomcat.TomcatProtocolHandlerCustomizer;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\nimport java.util.concurrent.Executors;\n\n@SpringBootApplication\nclass VirtualThreadDemo {\n\n    public static void main(String[] args) {\n        SpringApplication.run(VirtualThreadDemo.class, args);\n    }\n\n    // →→→ Enable virtual threads for Tomcat →→→\n    @Bean\n    public TomcatProtocolHandlerCustomizer<?> protocolHandlerVirtualThreadExecutor() {\n        return handler -> {\n            handler.setExecutor(Executors.newVirtualThreadPerTaskExecutor());\n        };\n    }\n\n    // Or simpler: set in application.properties\n    //   spring.threads.virtual.enabled=true\n}\n\n@RestController\nclass VirtualThreadController {\n\n    private final BlockingService service;\n\n    VirtualThreadController(BlockingService service) {\n        this.service = service;\n    }\n\n    @GetMapping(\"/blocking\")\n    public String blocking() {\n        // On platform threads: this blocks a 1 MB OS thread\n        // On virtual threads: this blocks a ~2 KB carrier mount\n        return service.fetchFromExternalService();\n    }\n\n    @GetMapping(\"/parallel\")\n    public int parallel() throws Exception {\n        // Virtual threads make parallel blocking calls much cheaper\n        var task1 = new java.util.concurrent.FutureTask<>(() -> service.fetchFromExternalService());\n        var task2 = new java.util.concurrent.FutureTask<>(() -> service.fetchFromExternalService());\n        var task3 = new java.util.concurrent.FutureTask<>(() -> service.fetchFromExternalService());\n\n        Thread.ofVirtual().start(task1).join();\n        Thread.ofVirtual().start(task2).join();\n        Thread.ofVirtual().start(task3).join();\n\n        return task1.get().length() + task2.get().length() + task3.get().length();\n    }\n}\n\n@Service\nclass BlockingService {\n\n    public String fetchFromExternalService() {\n        try {\n            // Simulate blocking I/O → database call, HTTP call, etc.\n            Thread.sleep(500);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n        }\n        return \"result from \" + Thread.currentThread().getName();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtual thread caveats"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.concurrent.*;\nimport java.util.concurrent.locks.ReentrantLock;\n\nclass VirtualThreadPitfalls {\n\n    // →→→ PITFALL 1: Pinned threads →→→\n    // Virtual threads \"pin\" to their carrier thread when:\n    //   - Inside a synchronized block (the main cause)\n    //   - Executing native code or JNI\n\n    private static final Object MONITOR = new Object();\n\n    static void blockPinned() throws Exception {\n        // synchronized causes pinning → virtual thread can't be unmounted\n        synchronized (MONITOR) {\n            Thread.sleep(1000); // carrier thread is blocked!\n        }\n    }\n\n    // Fix: use ReentrantLock instead of synchronized for virtual threads\n    private static final Lock REENTRANT_LOCK = new ReentrantLock();\n\n    static void blockNotPinned() throws Exception {\n        REENTRANT_LOCK.lock();\n        try {\n            Thread.sleep(1000); // virtual thread unmounts → carrier is free\n        } finally {\n            REENTRANT_LOCK.unlock();\n        }\n    }\n\n    // →→→ PITFALL 2: ThreadLocal with massive data →→→\n    // ThreadLocal works with virtual threads, but each virtual thread\n    // has its own copy. With millions of virtual threads, ThreadLocal\n    // data multiplies.\n\n    private static final ThreadLocal<byte[]> LARGE_CONTEXT =\n        ThreadLocal.withInitial(() -> new byte[100_000]);\n\n    // →→→ PITFALL 3: Pool of virtual threads is pointless →→→\n    // Virtual threads should NOT be pooled. Create new ones cheaply.\n    // Pooling adds overhead for zero benefit.\n\n    // BAD:\n    static final ExecutorService POOLED_VIRTUAL = Executors.newFixedThreadPool(100, Thread.ofVirtual().factory());\n\n    // GOOD: create per-task\n    static void doWork(Runnable task) {\n        Thread.startVirtualThread(task);\n    }\n\n    // →→→ PITFALL 4: Thread pool wrapping →→→\n    // Wrapping a virtual thread executor in a bounded pool\n    // defeats the purpose → you get the overhead of pooling\n    // with a fixed limit on parallelism.\n\n    // BAD:\n    static final ExecutorService boundedVirtual = Executors.newThreadPerTaskExecutor(\n        Thread.ofVirtual().factory()\n    ); // Actually this is OK → newThreadPerTaskExecutor is unbounded\n\n    // →→→ PITFALL 5: Semaphore is your new friend →→→\n    // With unlimited virtual threads, you need Semaphore to limit\n    // external resource access (DB connections, sockets, etc.)\n\n    private static final Semaphore DB_CONNECTIONS = new Semaphore(10);\n\n    static void limitedDbAccess() throws Exception {\n        DB_CONNECTIONS.acquire();\n        try {\n            // access database → at most 10 concurrent virtual threads\n        } finally {\n            DB_CONNECTIONS.release();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JFR/JMC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in event recording and analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<1% overhead, production-safe"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First-choice diagnostic tool"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "async-profiler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sampling CPU/memory profiler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack traces with safepoint bias avoidance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU hotspot identification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MAT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heap dump analyzer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dominator tree, leak suspect, OQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory leak root cause analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JMH"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microbenchmark harness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Benchmark, Blackhole, warmup forks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precise method-level performance measurement"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Tools & Techniques"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU Profiling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "async-profiler, JFR, VisualVM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "async-profiler handles safepoint bias"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory Analysis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAT, jmap, jhat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dominator tree shows biggest retained objects"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Thread Analysis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "jstack, ThreadMXBean, JMC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-column thread dump: blocked, waiting, running"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "GC Analysis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GC logs, GCViewer, G1GC -Xlog:gc*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key metrics: pause time, allocation rate, promoted bytes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Benchmarking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JMH with @Benchmark, @State, Blackhole"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always include warmup and avoid constant folding"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Apps"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Batch Jobs"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Low-Latency"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Microservices"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JFR Profiling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transaction latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU hotspots"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed tracing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heap Dump Analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OOM investigation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large data leaks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory leak detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container OOMKilled"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JMH"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical path benchmarks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Library performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GC Tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Steady throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large heap tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sub-ms pause goals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container heap sizing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which tool has the lowest overhead for production profiling?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) async-profiler"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) JFR (JDK Flight Recorder)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) VisualVM"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) MAT"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) JFR (JDK Flight Recorder).** JFR has <1% overhead and is designed for continuous production use.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["In Eclipse MAT, what does the Dominator Tree show?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) The call stack for each thread"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Which objects keep others alive — the dominator path to the GC root"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) The JVM heap configuration"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) GC log summary"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) Which objects keep others alive — the dominator path to the GC root.** The dominator tree simplifies heap analysis by showing the smallest set of objects that retain the largest amount of memory.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the purpose of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Blackhole"
+        }), " in JMH?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) To consume the return value of a benchmark to prevent dead code elimination"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) To measure memory allocation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) To simulate a slow I/O operation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) To profile CPU usage"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**A) To consume the return value of a benchmark to prevent dead code elimination.** Without Blackhole, the JIT may optimize away the code being benchmarked if the result is unused.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which GC metric is most important for latency-sensitive applications?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Throughput"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Pause time"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Heap size"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Allocation rate"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) Pause time.** For latency-sensitive applications, stop-the-world pause times directly impact response time SLAs.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Profiling tools"
+        }), " range from built-in (JFR/JMC, VisualVM, jstack, jcmd) to commercial (JProfiler, YourKit) to specialized (async-profiler for flame graphs, IntelliJ profiler for IDE integration). Start with JFR for production profiling → its overhead is under 1%."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Heap analysis"
+        }), " with Eclipse MAT focuses on the dominator tree, leak suspect reports, and OQL. Understand shallow vs retained heap to identify true memory cost."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Thread dump analysis"
+        }), " reveals deadlocks, contention (BLOCKED threads), and CPU hotspots when you analyze multiple dumps. Online tools like fastthread.io automate the pattern recognition."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GC log analysis"
+        }), " measures pause time, allocation rate, and promotion rate. Tools like GCeasy and GCViewer parse GC logs and provide tuning recommendations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JMH"
+        }), " is essential for correct microbenchmarking. Key elements: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Benchmark"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@State"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Blackhole"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Warmup"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Measurement"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Fork"
+        }), ", and profiler integration via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-prof"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Anti-patterns"
+        }), " include auto-boxing in loops, string concatenation in loops, excessive synchronization (prefer ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ConcurrentHashMap"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AtomicInteger"
+        }), "), connection pool leaks, N+1 queries in Hibernate, and memory leaks from static collections, unregistered listeners, mutable keys in HashMap, and ThreadLocal not cleared."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Code optimization"
+        }), " relies on JIT behavior: warmup, inlining, loop unrolling, intrinsics, and branch prediction. Understand that the JIT is your ally → write clear code and let it optimize, with targeted manual optimizations only in confirmed hot paths."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JVM tuning"
+        }), " covers heap sizing (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-Xms"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-Xmx"
+        }), "), GC selection (G1GC for general use, ZGC for sub-millisecond pauses), and flags like ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-XX:+AlwaysPreTouch"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-XX:+UseStringDeduplication"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-XX:+HeapDumpOnOutOfMemoryError"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spring Boot performance"
+        }), " tuning includes lazy initialization, HikariCP connection pool tuning, AOT processing for native images, graceful shutdown with timeout, and virtual threads (JDK 21+) for high-concurrency blocking I/O."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "jstack"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "jcmd"
+          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "kill -3"
+          }), " for capturing thread dumps? Which method allows you to specify a filename directly?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Explain the difference between shallow heap and retained heap. Give an example of an object with large retained heap but small shallow heap."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the purpose of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Blackhole"
+          }), " in JMH? What happens if you write a JMH benchmark method that returns ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "void"
+          }), " without using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Blackhole"
+          }), "?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which GC log phase typically accounts for the longest pause time in G1GC: Object Copy, Update RS, or Ext Root Scanning? Why?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is false sharing (cache line ping-pong) and how does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@jdk.internal.vm.annotation.Contended"
+          }), " fix it?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Why does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "synchronized"
+          }), " block cause virtual thread pinning? What is the alternative?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "-XX:+AlwaysPreTouch"
+          }), " do and when should you use it?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In the context of Hibernate, what is the N+1 queries problem? List three ways to fix it."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the effect of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "spring.main.lazy-initialization=true"
+          }), " on startup time, memory usage, and first-request latency?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given the following code, identify all performance anti-patterns and rewrite it efficiently:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\nimport java.util.regex.Pattern;\n\nclass BadCode {\n    private static Map<String, Object> cache = new HashMap<>();\n\n    public static String processUsers(List<String> userIds) {\n        String result = \"\";\n        for (int i = 0; i < userIds.size(); i++) {\n            String id = userIds.get(i);\n            if (Pattern.compile(\"\\\\d+\").matcher(id).matches()) {\n                result += fetchUser(id);\n            }\n        }\n        return result;\n    }\n\n    private static String fetchUser(String id) {\n        Integer count = 0;\n        for (Integer i = 0; i < 100; i++) {\n            count += i;\n        }\n        cache.put(id, count);\n        return id + \":\" + count;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You have a Spring Boot application with the following configuration:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "32 GB heap, 8-core server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PostgreSQL database on a separate 4-core server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "200 concurrent users"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average query takes 50 ms"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Calculate the minimum ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "maximum-pool-size"
+      }), " using the formula ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "poolSize = cores * 2 + spindle"
+      }), ". Then explain what happens if you set it to 100."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "12",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a JVM flag set (command line) for a latency-sensitive trading application with the following requirements:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sub-10 ms GC pauses"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "16 GB heap"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "8-core server"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application creates many intermediate strings"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Must detect and preserve heap dumps on OOM"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "13",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given the following performance test results from JMH, interpret the data and recommend changes:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Benchmark                              Mode  Cnt   Score    Error  Units\nStringConcat.stringConcat             thrpt    5   12.4 Â±  2.1  ops/s\nStringConcat.stringBuilder            thrpt    5  842.3 Â± 34.2  ops/s\nStringConcat.stringBuffer             thrpt    5  721.5 Â± 28.9  ops/s\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Benchmark                        Mode  Cnt     Score    Error  Units\nListBenchmark.arrayListGet      thrpt    5  8421.3 Â± 212.4  ops/s\nListBenchmark.linkedListGet     thrpt    5   832.1 Â±  67.3  ops/s\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "14",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze the following GC log segment and identify potential issues:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "2025-06-12T10:30:15.123+0000 GC(42) Pause Young (Normal) (G1 Evacuation Pause)\n  Eden: 512.0M(512.0M)->0.0B(480.0M)\n  Survivors: 32.0M->48.0M\n  Heap: 980.0M(2048.0M)->468.0M(2048.0M)\n  [Parallel Time: 245.6 ms]\n  [Object Copy: 201.3 ms]\n\n2025-06-12T10:30:15.423+0000 GC(43) Pause Young (Normal) (G1 Evacuation Pause)\n  Eden: 480.0M(480.0M)->0.0B(448.0M)\n  Survivors: 48.0M->64.0M\n  Heap: 950.0M(2048.0M)->492.0M(2048.0M)\n  [Parallel Time: 238.9 ms]\n  [Object Copy: 195.7 ms]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "15",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory Leak Investigation"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Given the following Spring Boot service, identify the memory leak and fix it. Then write a JMH benchmark that proves your fix reduces allocation rate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.stereotype.Service;\nimport jakarta.annotation.PostConstruct;\nimport java.util.*;\n\n@Service\nclass LeakyCache {\n    private final Map<String, SessionData> sessions = new HashMap<>();\n    private final Random rng = new Random();\n\n    @PostConstruct\n    public void init() {\n        // Simulates periodic session creation\n        new Timer(true).scheduleAtFixedRate(new TimerTask() {\n            @Override\n            public void run() {\n                for (int i = 0; i < 100; i++) {\n                    String sessionId = UUID.randomUUID().toString();\n                    byte[] payload = new byte[10_000];\n                    rng.nextBytes(payload);\n                    sessions.put(sessionId, new SessionData(sessionId, payload));\n                }\n                // Sessions are never removed → leak\n            }\n        }, 0, 5000);\n    }\n}\n\nrecord SessionData(String sessionId, byte[] payload) {}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Requirements:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fix the leak by adding time-based eviction (remove sessions older than 5 minutes)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a JMH benchmark that compares the allocation rate of the leaky vs fixed version"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use the JMH GC profiler (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-prof gc"
+        }), ") to measure allocation rate"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Thread Dump Analysis"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following thread dumps were captured during a production incident. Analyze and diagnose:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Dump 1 at 10:00:00:\n\"http-nio-8080-exec-1\" #23 BLOCKED\n   at java.util.HashMap.putVal(HashMap.java:631)\n   - waiting to lock <0x000000076b8c5d40> (a HashMap$Node[])\n   at java.util.HashMap.put(HashMap.java:611)\n   at com.example.InMemoryCache.put(Cache.java:25)\n\n\"http-nio-8080-exec-2\" #24 BLOCKED\n   at java.util.HashMap.putVal(HashMap.java:631)\n   - waiting to lock <0x000000076b8c5d40> (a HashMap$Node[])\n   at java.util.HashMap.put(HashMap.java:611)\n   at com.example.InMemoryCache.put(Cache.java:25)\n\n\"http-nio-8080-exec-3\" #25 RUNNABLE\n   at java.net.SocketInputStream.socketRead0(Native Method)\n   at com.example.SlowService.callExternalAPI(Service.java:42)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Dump 2 at 10:00:03:\n\"http-nio-8080-exec-1\" #23 BLOCKED\n   at java.util.HashMap.putVal(HashMap.java:631)\n   - waiting to lock <0x000000076b8c5d40>\n\"http-nio-8080-exec-2\" #24 BLOCKED\n   at java.util.HashMap.putVal(HashMap.java:631)\n   - waiting to lock <0x000000076b8c5d40>\n\"http-nio-8080-exec-3\" #25 RUNNABLE\n   - same as dump 1\n\"http-nio-8080-exec-4\" #26 BLOCKED\n   at java.util.HashMap.putVal(HashMap.java:631)\n   - waiting to lock <0x000000076b8c5d40>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Diagnose the problem, propose a fix, and explain how you would prevent it from recurring."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "17",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Build a Performance Dashboard"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a Spring Boot Actuator endpoint (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/actuator/perf"
+      }), ") that exposes:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Current heap usage (used, committed, max)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GC count and total pause time per GC type"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread counts (active, daemon, peak)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Connection pool statistics (active, idle, pending)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["CPU load (available via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "OperatingSystemMXBean"
+        }), ")"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Then write a JMH benchmark that measures the overhead of calling this endpoint under concurrency."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "18",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "GC Optimization Case Study"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Spring Boot application with G1GC on 4 GB heap shows:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average young GC pause: 180 ms (target: 100 ms)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average allocation rate: 800 MB/sec"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Survivor overflow after every 3rd GC"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Full GC every 2 hours (target: never)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Design a JVM flag configuration that addresses each issue. Explain the trade-offs of each change and how you would verify the improvements."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "19",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtual Thread Migration"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Given the following code that uses a fixed thread pool, migrate it to virtual threads and identify any pitfalls:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "@Service\nclass LegacyService {\n    private final ExecutorService executor = Executors.newFixedThreadPool(50);\n    private final Semaphore dbSemaphore = new Semaphore(10);\n    private final Object lock = new Object();\n    private int counter = 0;\n\n    public CompletableFuture<String> process(String input) {\n        return CompletableFuture.supplyAsync(() -> {\n            synchronized (lock) {\n                counter++;\n            }\n            try {\n                dbSemaphore.acquire();\n                // call database\n                return \"processed: \" + input;\n            } catch (Exception e) {\n                throw new RuntimeException(e);\n            } finally {\n                dbSemaphore.release();\n                synchronized (lock) {\n                    counter--;\n                }\n            }\n        }, executor);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "20",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "End-to-End Profiling Lab"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Set up a complete profiling exercise:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a Spring Boot application with a REST endpoint that:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Parses a large CSV file (100,000+ rows)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Groups records by a key"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Computes aggregates"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Stores results in a database"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Flood the endpoint with 100 concurrent requests using Apache JMeter or Gatling"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "While under load:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Capture a JFR recording (60 seconds)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Capture 5 thread dumps (3 seconds apart)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Capture a heap dump"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Analyze:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Open JFR in JMC → find the hottest methods"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Upload thread dumps to fastthread.io → identify contention"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Open heap dump in MAT → run leak suspect report"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Based on findings, apply 3 optimizations. Re-run and show the improvement."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Write a report documenting each step, the tools used, the findings, and the quantified improvement."
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

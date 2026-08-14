@@ -1,0 +1,5590 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[98914],{
+
+/***/ 9493
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_database_management_systems_07_normalization_md_1b9_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-database-management-systems-07-normalization-md-1b9.json
+const site_docs_courses_database_management_systems_07_normalization_md_1b9_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/database-management-systems/07-normalization","title":"Chapter 7: Normalization in Database Management Systems","description":"Previous Advanced SQL | Next Higher Normal Forms and Denormalization","source":"@site/docs/courses/database-management-systems/07-normalization.md","sourceDirName":"courses/database-management-systems","slug":"/database-management-systems/07-normalization","permalink":"/ai-engineering-journey/database-management-systems/07-normalization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-normalization","slug":"/database-management-systems/07-normalization","title":"Chapter 7: Normalization in Database Management Systems","sidebar_label":"Chapter 7: Normalization in Database Management Systems","sidebar_position":7},"sidebar":"course-database-management-systems","previous":{"title":"Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables","permalink":"/ai-engineering-journey/database-management-systems/06-sql-advanced"},"next":{"title":"Chapter 8: Higher Normal Forms and Denormalization","permalink":"/ai-engineering-journey/database-management-systems/08-higher-nf"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/database-management-systems/07-normalization.md
+
+
+const frontMatter = {
+	id: '07-normalization',
+	slug: '/database-management-systems/07-normalization',
+	title: 'Chapter 7: Normalization in Database Management Systems',
+	sidebar_label: 'Chapter 7: Normalization in Database Management Systems',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 7: Normalization in Database Management Systems';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "7.1 The Problem: Anomalies in Unnormalized Data",
+  "id": "71-the-problem-anomalies-in-unnormalized-data",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: The Address Book",
+  "id": "real-world-analogy-the-address-book",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition",
+  "level": 4
+}, {
+  "value": "Anomalies Comparison Table",
+  "id": "anomalies-comparison-table",
+  "level": 4
+}, {
+  "value": "7.2 Functional Dependencies",
+  "id": "72-functional-dependencies",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Recipe Ingredients",
+  "id": "real-world-analogy-recipe-ingredients",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-1",
+  "level": 4
+}, {
+  "value": "Trivial vs Non-Trivial FDs",
+  "id": "trivial-vs-non-trivial-fds",
+  "level": 4
+}, {
+  "value": "Types of Functional Dependencies",
+  "id": "types-of-functional-dependencies",
+  "level": 4
+}, {
+  "value": "7.3 Armstrong&#39;s Axioms (FD Inference Rules)",
+  "id": "73-armstrongs-axioms-fd-inference-rules",
+  "level": 3
+}, {
+  "value": "FD Inference Rules Table",
+  "id": "fd-inference-rules-table",
+  "level": 4
+}, {
+  "value": "Derived Rules from Armstrong&#39;s Axioms",
+  "id": "derived-rules-from-armstrongs-axioms",
+  "level": 4
+}, {
+  "value": "Step-by-Step Proof of Derived Rules",
+  "id": "step-by-step-proof-of-derived-rules",
+  "level": 4
+}, {
+  "value": "Edge Cases in Armstrong&#39;s Axioms",
+  "id": "edge-cases-in-armstrongs-axioms",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of Armstrong&#39;s Axioms Application",
+  "id": "complexity-analysis-of-armstrongs-axioms-application",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of Armstrong&#39;s Axioms",
+  "id": "advantages-and-disadvantages-of-armstrongs-axioms",
+  "level": 4
+}, {
+  "value": "7.4 Attribute Closure",
+  "id": "74-attribute-closure",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Finding Connections",
+  "id": "real-world-analogy-finding-connections",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-2",
+  "level": 4
+}, {
+  "value": "Closure Algorithm — Step-by-Step",
+  "id": "closure-algorithm--step-by-step",
+  "level": 4
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode",
+  "level": 4
+}, {
+  "value": "Detailed Trace Table — Example 1",
+  "id": "detailed-trace-table--example-1",
+  "level": 4
+}, {
+  "value": "Detailed Trace Table — Example 2",
+  "id": "detailed-trace-table--example-2",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of Attribute Closure",
+  "id": "complexity-analysis-of-attribute-closure",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of Attribute Closure",
+  "id": "advantages-and-disadvantages-of-attribute-closure",
+  "level": 4
+}, {
+  "value": "Edge Cases in Attribute Closure",
+  "id": "edge-cases-in-attribute-closure",
+  "level": 4
+}, {
+  "value": "7.5 Finding Candidate Keys from Functional Dependencies",
+  "id": "75-finding-candidate-keys-from-functional-dependencies",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Minimal ID Card",
+  "id": "real-world-analogy-minimal-id-card",
+  "level": 4
+}, {
+  "value": "Systematic Method for Finding Candidate Keys",
+  "id": "systematic-method-for-finding-candidate-keys",
+  "level": 4
+}, {
+  "value": "Pseudocode for Finding All Candidate Keys",
+  "id": "pseudocode-for-finding-all-candidate-keys",
+  "level": 4
+}, {
+  "value": "Detailed Dry Run — Finding Candidate Keys",
+  "id": "detailed-dry-run--finding-candidate-keys",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of Candidate Key Finding",
+  "id": "complexity-analysis-of-candidate-key-finding",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages",
+  "id": "advantages-and-disadvantages",
+  "level": 4
+}, {
+  "value": "7.6 First Normal Form (1NF)",
+  "id": "76-first-normal-form-1nf",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: One Fact Per Cell",
+  "id": "real-world-analogy-one-fact-per-cell",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-3",
+  "level": 4
+}, {
+  "value": "Step-by-Step Process to Achieve 1NF",
+  "id": "step-by-step-process-to-achieve-1nf",
+  "level": 4
+}, {
+  "value": "Problem (not in 1NF):",
+  "id": "problem-not-in-1nf",
+  "level": 4
+}, {
+  "value": "Fix: Two strategies",
+  "id": "fix-two-strategies",
+  "level": 4
+}, {
+  "value": "Dry Run: Converting to 1NF",
+  "id": "dry-run-converting-to-1nf",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of 1NF",
+  "id": "complexity-analysis-of-1nf",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of 1NF",
+  "id": "advantages-and-disadvantages-of-1nf",
+  "level": 4
+}, {
+  "value": "Edge Cases in 1NF",
+  "id": "edge-cases-in-1nf",
+  "level": 4
+}, {
+  "value": "7.7 Second Normal Form (2NF)",
+  "id": "77-second-normal-form-2nf",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Library Catalog",
+  "id": "real-world-analogy-library-catalog",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-4",
+  "level": 4
+}, {
+  "value": "Step-by-Step Process to Achieve 2NF",
+  "id": "step-by-step-process-to-achieve-2nf",
+  "level": 4
+}, {
+  "value": "Pseudocode for 2NF Check and Decomposition",
+  "id": "pseudocode-for-2nf-check-and-decomposition",
+  "level": 4
+}, {
+  "value": "Detailed Example",
+  "id": "detailed-example",
+  "level": 4
+}, {
+  "value": "Dry Run Trace — Complete 2NF Decomposition",
+  "id": "dry-run-trace--complete-2nf-decomposition",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of 2NF",
+  "id": "complexity-analysis-of-2nf",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of 2NF",
+  "id": "advantages-and-disadvantages-of-2nf",
+  "level": 4
+}, {
+  "value": "Edge Cases in 2NF",
+  "id": "edge-cases-in-2nf",
+  "level": 4
+}, {
+  "value": "7.8 Third Normal Form (3NF)",
+  "id": "78-third-normal-form-3nf",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: The Department Office",
+  "id": "real-world-analogy-the-department-office",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-5",
+  "level": 4
+}, {
+  "value": "Step-by-Step Process to Achieve 3NF",
+  "id": "step-by-step-process-to-achieve-3nf",
+  "level": 4
+}, {
+  "value": "Pseudocode for 3NF Synthesis Algorithm",
+  "id": "pseudocode-for-3nf-synthesis-algorithm",
+  "level": 4
+}, {
+  "value": "Detailed Dry Run — 3NF Decomposition",
+  "id": "detailed-dry-run--3nf-decomposition",
+  "level": 4
+}, {
+  "value": "Full Walkthrough: ORDER_DETAIL Normalization",
+  "id": "full-walkthrough-order_detail-normalization",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of 3NF",
+  "id": "complexity-analysis-of-3nf",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of 3NF",
+  "id": "advantages-and-disadvantages-of-3nf",
+  "level": 4
+}, {
+  "value": "Edge Cases in 3NF",
+  "id": "edge-cases-in-3nf",
+  "level": 4
+}, {
+  "value": "7.9 Boyce-Codd Normal Form (BCNF)",
+  "id": "79-boyce-codd-normal-form-bcnf",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: The One-Subject Teacher Rule",
+  "id": "real-world-analogy-the-one-subject-teacher-rule",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-6",
+  "level": 4
+}, {
+  "value": "BCNF vs 3NF Comparison Table",
+  "id": "bcnf-vs-3nf-comparison-table",
+  "level": 4
+}, {
+  "value": "Step-by-Step BCNF Decomposition Algorithm",
+  "id": "step-by-step-bcnf-decomposition-algorithm",
+  "level": 4
+}, {
+  "value": "Pseudocode for BCNF Decomposition",
+  "id": "pseudocode-for-bcnf-decomposition",
+  "level": 4
+}, {
+  "value": "Detailed Dry Run — BCNF Decomposition",
+  "id": "detailed-dry-run--bcnf-decomposition",
+  "level": 4
+}, {
+  "value": "Detailed Example Where 3NF Works But BCNF Does Not",
+  "id": "detailed-example-where-3nf-works-but-bcnf-does-not",
+  "level": 4
+}, {
+  "value": "Lossless Join Check for BCNF Decomposition",
+  "id": "lossless-join-check-for-bcnf-decomposition",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of BCNF",
+  "id": "complexity-analysis-of-bcnf",
+  "level": 4
+}, {
+  "value": "Advantages and Disadvantages of BCNF",
+  "id": "advantages-and-disadvantages-of-bcnf",
+  "level": 4
+}, {
+  "value": "Edge Cases in BCNF",
+  "id": "edge-cases-in-bcnf",
+  "level": 4
+}, {
+  "value": "7.10 Lossless Join Decomposition",
+  "id": "710-lossless-join-decomposition",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Puzzle Pieces",
+  "id": "real-world-analogy-puzzle-pieces",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-7",
+  "level": 4
+}, {
+  "value": "Lossless vs Lossy Decomposition",
+  "id": "lossless-vs-lossy-decomposition",
+  "level": 4
+}, {
+  "value": "Chase Test for Lossless Decomposition",
+  "id": "chase-test-for-lossless-decomposition",
+  "level": 4
+}, {
+  "value": "Detailed Example — Lossless vs Lossy Join",
+  "id": "detailed-example--lossless-vs-lossy-join",
+  "level": 4
+}, {
+  "value": "Testing Lossless Decomposition Algorithm",
+  "id": "testing-lossless-decomposition-algorithm",
+  "level": 4
+}, {
+  "value": "7.11 Dependency Preservation",
+  "id": "711-dependency-preservation",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: Local Enforcement",
+  "id": "real-world-analogy-local-enforcement",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition-8",
+  "level": 4
+}, {
+  "value": "Example — Non-Dependency-Preserving Decomposition",
+  "id": "example--non-dependency-preserving-decomposition",
+  "level": 4
+}, {
+  "value": "Algorithm to Check Dependency Preservation",
+  "id": "algorithm-to-check-dependency-preservation",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of Decomposition Properties",
+  "id": "complexity-analysis-of-decomposition-properties",
+  "level": 4
+}, {
+  "value": "7.12 C++ Implementation — FD Closure Calculator",
+  "id": "712-c-implementation--fd-closure-calculator",
+  "level": 3
+}, {
+  "value": "7.13 C++ Implementation — BCNF Decomposition",
+  "id": "713-c-implementation--bcnf-decomposition",
+  "level": 3
+}, {
+  "value": "7.14 Python Implementation — Attribute Closure and Normalization Checker",
+  "id": "714-python-implementation--attribute-closure-and-normalization-checker",
+  "level": 3
+}, {
+  "value": "7.15 Python Implementation — 3NF Synthesis",
+  "id": "715-python-implementation--3nf-synthesis",
+  "level": 3
+}, {
+  "value": "7.16 Python Implementation — BCNF Decomposition",
+  "id": "716-python-implementation--bcnf-decomposition",
+  "level": 3
+}, {
+  "value": "7.17 Python Implementation — Normalization Analyzer",
+  "id": "717-python-implementation--normalization-analyzer",
+  "level": 3
+}, {
+  "value": "7.18 Multiple Candidate Keys in Normalization",
+  "id": "718-multiple-candidate-keys-in-normalization",
+  "level": 3
+}, {
+  "value": "Real-World Scenario",
+  "id": "real-world-scenario",
+  "level": 4
+}, {
+  "value": "Practical Implications",
+  "id": "practical-implications",
+  "level": 4
+}, {
+  "value": "Example — Overlapping Keys Affecting BCNF",
+  "id": "example--overlapping-keys-affecting-bcnf",
+  "level": 4
+}, {
+  "value": "7.19 Interview Corner",
+  "id": "719-interview-corner",
+  "level": 3
+}, {
+  "value": "Q1: What is the difference between 3NF and BCNF?",
+  "id": "q1-what-is-the-difference-between-3nf-and-bcnf",
+  "level": 4
+}, {
+  "value": "Q2: FD vs Multi-Valued Dependency (MVD)",
+  "id": "q2-fd-vs-multi-valued-dependency-mvd",
+  "level": 4
+}, {
+  "value": "Q3: Denormalization — when and why?",
+  "id": "q3-denormalization--when-and-why",
+  "level": 4
+}, {
+  "value": "Q4: Normalization trade-offs",
+  "id": "q4-normalization-trade-offs",
+  "level": 4
+}, {
+  "value": "Q5: Lossless vs lossy decomposition",
+  "id": "q5-lossless-vs-lossy-decomposition",
+  "level": 4
+}, {
+  "value": "Q6: Finding candidate keys from FDs",
+  "id": "q6-finding-candidate-keys-from-fds",
+  "level": 4
+}, {
+  "value": "Q7: Can a relation be in 3NF but not BCNF?",
+  "id": "q7-can-a-relation-be-in-3nf-but-not-bcnf",
+  "level": 4
+}, {
+  "value": "Q8: Explain the 3NF synthesis algorithm",
+  "id": "q8-explain-the-3nf-synthesis-algorithm",
+  "level": 4
+}, {
+  "value": "Q9: Why is BCNF decomposition not dependency-preserving?",
+  "id": "q9-why-is-bcnf-decomposition-not-dependency-preserving",
+  "level": 4
+}, {
+  "value": "Q10: What is the difference between minimal cover and canonical cover?",
+  "id": "q10-what-is-the-difference-between-minimal-cover-and-canonical-cover",
+  "level": 4
+}, {
+  "value": "7.20 Applications in Real Database Systems",
+  "id": "720-applications-in-real-database-systems",
+  "level": 3
+}, {
+  "value": "MySQL Normalization Practices",
+  "id": "mysql-normalization-practices",
+  "level": 4
+}, {
+  "value": "PostgreSQL Normalization Practices",
+  "id": "postgresql-normalization-practices",
+  "level": 4
+}, {
+  "value": "Real-World Normalization Anti-Patterns",
+  "id": "real-world-normalization-anti-patterns",
+  "level": 4
+}, {
+  "value": "7.21 Normal Forms Comparison Summary",
+  "id": "721-normal-forms-comparison-summary",
+  "level": 3
+}, {
+  "value": "Decision Flow for Normalization Level",
+  "id": "decision-flow-for-normalization-level",
+  "level": 4
+}, {
+  "value": "7.22 Chapter Quiz",
+  "id": "722-chapter-quiz",
+  "level": 3
+}, {
+  "value": "7.23 Exercises",
+  "id": "723-exercises",
+  "level": 3
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 4
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 4
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 4
+}, {
+  "value": "7.24 Quick Reference Cards",
+  "id": "724-quick-reference-cards",
+  "level": 3
+}, {
+  "value": "Armstrong&#39;s Axioms Quick Reference",
+  "id": "armstrongs-axioms-quick-reference",
+  "level": 4
+}, {
+  "value": "Normal Form Check Quick Reference",
+  "id": "normal-form-check-quick-reference",
+  "level": 4
+}, {
+  "value": "Decomposition Properties Quick Reference",
+  "id": "decomposition-properties-quick-reference",
+  "level": 4
+}, {
+  "value": "Attribute Closure Quick Reference",
+  "id": "attribute-closure-quick-reference",
+  "level": 4
+}, {
+  "value": "7.25 TypeScript Functional Dependency Analyzer",
+  "id": "725-typescript-functional-dependency-analyzer",
+  "level": 3
+}, {
+  "value": "Additional Chapter Quiz Questions",
+  "id": "additional-chapter-quiz-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 3
+}, {
+  "value": "One-Sentence Takeaways",
+  "id": "one-sentence-takeaways",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-7-normalization-in-database-management-systems",
+        children: "Chapter 7: Normalization in Database Management Systems"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/database-management-systems/06-sql-advanced",
+          children: "Chapter 6: Advanced SQL"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/database-management-systems/08-higher-nf",
+          children: "Chapter 8: Higher Normal Forms and Denormalization"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify and eliminate data redundancy and anomalies (insertion, update, deletion)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define functional dependencies and compute attribute closures step-by-step"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Find candidate keys from functional dependencies using closure algorithm"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Decompose relations to 1NF, 2NF, 3NF, and BCNF with full traceability"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply Armstrong's axioms to derive implied functional dependencies"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand lossless join decomposition and dependency preservation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Determine when normalization has gone far enough and when denormalization is justified"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement normalization algorithms in C++ and Python"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handle edge cases: trivial FDs, redundant FDs, circular dependencies, multi-valued dependencies"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/07-normalization/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/07-normalization/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/07-normalization/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/07-normalization/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/database-management-systems/07-normalization/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/database-management-systems/07-normalization/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Functional Dependencies"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y means X determines Y — the foundation of all normalization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find all FDs first; normalization follows automatically"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic columns, no repeating groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every cell holds one value; every row is unique"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No partial dependency on a composite key"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every non-key attribute depends on the whole key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No transitive dependency on non-key attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every non-key attribute depends on nothing but the key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BCNF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every determinant must be a candidate key"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BCNF removes remaining anomalies but may lose dependency preservation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lossless Decomposition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Joining decomposed tables recovers original rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common attribute must be a key in at least one component"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency Preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All FDs enforceable without joins"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each FD's attributes must appear together in some component"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Functional Dependencies] --> B[1NF: Atomic Values]\n    B --> C[2NF: Full Key Dependency]\n    C --> D[3NF: No Transitive Dependency]\n    D --> E[BCNF: Every Determinant a Key]\n    E --> F[Decomposition: Lossless & Dependency-Preserving]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Normalization systematically removes data redundancy by decomposing tables through 1NF -> 2NF -> 3NF -> BCNF — think of it as \"each column depends on the key, the whole key, and nothing but the key.\""]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch07-normalization.png",
+        alt: "Normalization Flowchart"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-the-problem-anomalies-in-unnormalized-data",
+      children: "7.1 The Problem: Anomalies in Unnormalized Data"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-the-address-book",
+      children: "Real-World Analogy: The Address Book"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Imagine a single paper address book where you write a person's name, phone number, and every address they have ever lived at in one row. If they move, you must erase and rewrite. If you tear out the last row for a friend who moved away, you lose their name and phone number too. If you want to add a new address for someone who isn't yet in the book, you cannot — each row needs a name. This is exactly the problem unnormalized databases face."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Now imagine separate pages: one for people (name, phone), one for addresses (person_id, address, move-in-date). When someone moves, you add one row to the addresses page. When they leave, you keep their name. No rewriting, no lost data. This is normalization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Consider a poorly designed table for a university database:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "STUDENT_COURSE(student_id, student_name, course_id, course_name, instructor, grade, instructor_office)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This single table stores all information about students, courses, instructors, and grades in one place. It suffers from four interrelated problems:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "anomalies-comparison-table",
+      children: "Anomalies Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Anomaly Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example in STUDENT_COURSE"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Consequence"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Insertion Anomaly"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot insert a fact because the primary key requires another fact that is missing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding course CS102 requires a student_id — but no student is enrolled yet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "New entities cannot be recorded independently"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deletion Anomaly"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deleting one fact unintentionally deletes another unrelated fact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deleting the last enrollment in DBMS removes the course and instructor info permanently"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unintended data loss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Update Anomaly"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Changing a fact requires updating multiple rows; inconsistency if any are missed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dr. Smith moves to Room 201 — all 50 DBMS rows must be updated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data inconsistency and maintenance overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The same fact is stored repeatedly across multiple rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Instructor name and office repeat for every student in each course"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wasted storage + causes update anomaly"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Insertion Anomaly — Detailed:"
+      }), " We cannot add a new course (CS102, \"Data Structures\") unless a student enrolls in it. The primary key is (student_id, course_id), so we would need a student_id, which we do not have for a new course. This forces a dummy or null student_id, violating entity integrity."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Update Anomaly — Detailed:"
+      }), " If \"Dr. Smith\" (instructor for \"DBMS\") moves to office \"Room 201,\" we must update every row where Dr. Smith teaches. If there are 50 students in DBMS, we must update 50 rows. A single missed update creates inconsistency — some rows say Room 101, others say Room 201. How do we know which is correct?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deletion Anomaly — Detailed:"
+      }), " If the last student drops \"DBMS\" and we delete their enrollment row, we lose the information that \"DBMS\" is taught by \"Dr. Smith\" in \"Room 101.\" The course and instructor information is gone forever — collateral damage from removing a student enrollment."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Redundancy — Quantified:"
+      }), " The instructor name and office are repeated for every student in each course. With 50 students per course and 100 courses, instructor info appears 5000 times when it should appear 100 times. This wastes space, slows queries, and causes the update anomaly."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Normalization"
+      }), " is a systematic, theory-backed process of decomposing tables to eliminate these anomalies while preserving all information. It is not optional — it is a foundational discipline of relational database design."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-functional-dependencies",
+      children: "7.2 Functional Dependencies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-recipe-ingredients",
+      children: "Real-World Analogy: Recipe Ingredients"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Think of a recipe: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dish_name -> ingredients, cooking_time, difficulty"
+      }), ". If you know the dish name, you uniquely know the ingredients and cooking time. This is a functional dependency (FD) — the dish name ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "functionally determines"
+      }), " the ingredients."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Now suppose two different recipes produce the same dish (e.g., two ways to make pasta carbonara). Then ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dish_name -> ingredients"
+      }), " is FALSE — the same dish name gives different ingredients. FDs are constraints that must hold for ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "every possible"
+      }), " instance of the relation, not just the current data."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Another analogy: Social Security Number -> Person Name. In a correctly maintained database, knowing the SSN uniquely identifies the person. But ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "person_name -> SSN"
+      }), " would NOT hold because multiple people can share the same name."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-1",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "functional dependency"
+      }), " (FD) is a constraint between two sets of attributes. We write X -> Y (read \"X determines Y\") meaning that if two tuples have the same value for X, they must have the same value for Y."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Formally:"
+      }), " A functional dependency X -> Y holds in relation R if, for any two tuples t1 and t2 in R:\n", (0,jsx_runtime.jsx)(_components.code, {
+        children: "t1[X] = t2[X] => t1[Y] = t2[Y]"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "If this condition fails for any two tuples, the FD does NOT hold."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example:"
+      }), " In STUDENT(student_id, name, address, major):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> name"
+        }), " (each student ID has exactly one name)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> address"
+        }), " (each student ID has exactly one address)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> major"
+        }), " (each student ID has exactly one major)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["But ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "major -> student_id"
+        }), " does NOT hold (multiple students can have the same major)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "trivial-vs-non-trivial-fds",
+      children: "Trivial vs Non-Trivial FDs"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Trivial"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right side is a subset of the left side"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "{A, B} -> A"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "X -> X"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Non-Trivial"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right side has at least one attribute not in left side"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "student_id -> name"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Completely Non-Trivial"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right side and left side share no attributes"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "A -> B"
+            }), " (if A and B are disjoint)"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trivial Functional Dependencies — Details:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> student_id"
+        }), " (trivial — always true)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id, name -> student_id"
+        }), " (trivial — right side subset of left)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> name"
+        }), " (non-trivial)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> student_id, name"
+        }), " (trivial even though it includes name? Actually ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id, name"
+        }), " is not a subset of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "{student_id}"
+        }), ", so NO — this is non-trivial because ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "name"
+        }), " is not in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "{student_id}"
+        }), ". But ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "{student_id, name} -> {student_id}"
+        }), " IS trivial.)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Case — Trivial FDs in Closure:"
+      }), " When computing closure, trivial FDs are always true but never add new attributes. They are noise in the computation — we skip them because they contribute nothing."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "types-of-functional-dependencies",
+      children: "Types of Functional Dependencies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Full FD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y and removing any attribute from X breaks the dependency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(student_id, course_id) -> grade (need BOTH)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Partial FD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y where a proper subset of X also determines Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(student_id, course_id) -> student_name (student_id alone determines name)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transitive FD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y and Y -> Z, giving X -> Z indirectly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "employee_id -> department_id -> department_location"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Trivial FD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y is a subset of X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B} -> A"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-armstrongs-axioms-fd-inference-rules",
+      children: "7.3 Armstrong's Axioms (FD Inference Rules)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "fd-inference-rules-table",
+      children: "FD Inference Rules Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Armstrong's axioms are a complete and sound set of inference rules for deriving all implied functional dependencies from a given set. \"Sound\" means they only generate valid FDs. \"Complete\" means they can generate ALL valid FDs."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formal Statement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reflexivity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If Y subset of X, then X -> Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B} -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subset determines itself — obvious but formally necessary"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Augmentation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If X -> Y, then XZ -> YZ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If A -> B, then AC -> BC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding the same attributes to both sides preserves dependency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transitivity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If X -> Y and Y -> Z, then X -> Z"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If A -> B and B -> C, then A -> C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FDs chain together"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "derived-rules-from-armstrongs-axioms",
+      children: "Derived Rules from Armstrong's Axioms"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Derivation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formal Statement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Union"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "From 2 + 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If X -> Y and X -> Z, then X -> YZ"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Decomposition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "From 1 + 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If X -> YZ, then X -> Y and X -> Z"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pseudo-transitivity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "From 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If X -> Y and YZ -> W, then XZ -> W"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "step-by-step-proof-of-derived-rules",
+      children: "Step-by-Step Proof of Derived Rules"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof of Union Rule (if X -> Y and X -> Z, then X -> YZ):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given: X -> Y"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given: X -> Z"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Augment X -> Y with X: X -> XY (using augmentation: if X -> Y then XX -> XY, i.e., X -> XY)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Augment X -> Z with Y: XY -> YZ (using augmentation: if X -> Z then XY -> YZ)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply transitivity to 3 and 4: X -> XY and XY -> YZ => X -> YZ"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof of Decomposition Rule (if X -> YZ, then X -> Y and X -> Z):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given: X -> YZ"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reflexivity: YZ -> Y (Y subset of YZ)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transitivity: X -> YZ and YZ -> Y => X -> Y"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Similarly: YZ -> Z (reflexivity)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transitivity: X -> YZ and YZ -> Z => X -> Z"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-armstrongs-axioms",
+      children: "Edge Cases in Armstrong's Axioms"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Redundant FDs:"
+      }), " An FD is redundant if it can be derived from the other FDs. For example, given {A -> B, B -> C, A -> C}, the FD A -> C is redundant because it follows from A -> B and B -> C via transitivity."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Circular Dependencies:"
+      }), " FDs like {A -> B, B -> C, C -> A} create a cycle. In this case, A, B, and C are all candidate keys — each determines all others through the chain."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Empty Left Side:"
+      }), " Is {} -> Y valid? This means \"every tuple has the same Y value\" — a constant constraint. For example, {} -> gender would mean all employees have the same gender. This is rare but valid."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-armstrongs-axioms-application",
+      children: "Complexity Analysis of Armstrong's Axioms Application"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying reflexivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) per attribute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple subset check"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying augmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) per FD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding attributes to both sides"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying transitivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "^2) worst case"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Computing full closure F+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "* n) per iteration"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-armstrongs-axioms",
+      children: "Advantages and Disadvantages of Armstrong's Axioms"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage: Soundness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every derived FD is guaranteed to hold — no false positives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage: Completeness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All implied FDs can be derived — no false negatives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage: Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only 3 rules to remember — easy to apply manually"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage: No Direction"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Axioms do not tell you WHICH FDs to apply or in what order"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage: Termination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual application can be tedious for large FD sets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage: Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Derived set F+ can be exponentially larger than original F"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-attribute-closure",
+      children: "7.4 Attribute Closure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-finding-connections",
+      children: "Real-World Analogy: Finding Connections"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Attribute closure is like finding all people you can reach in a social network starting from a given person. Starting with X, you follow every \"X determines Y\" edge to reach new people (attributes). Then from those new people, you follow more edges. You stop when no new people can be reached."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-2",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "closure"
+      }), " of a set of attributes X under a set of FDs F (denoted X+) is the set of all attributes that are functionally determined by X. Finding X+ is the fundamental operation for:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Determining if X is a superkey (X+ contains all attributes)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Finding candidate keys"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checking if an FD X -> Y holds (Y is subset of X+)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Normalization"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "closure-algorithm--step-by-step",
+      children: "Closure Algorithm — Step-by-Step"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm:"
+      }), " ComputeXPlus(X, F)"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "closure = X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initialize with the starting attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For each FD Y -> Z in F:"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scan all FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If Y is subset of closure:"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check if left side is already known"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "closure = closure union Z"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add right side attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeat steps 2-4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep scanning until no changes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Final set of determined attributes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION ComputeClosure(X, F):\n    closure = X\n    WHILE (closure changes):\n        FOR each FD (Y -> Z) in F:\n            IF Y is subset of closure:\n                closure = closure UNION Z\n    RETURN closure\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-trace-table--example-1",
+      children: "Detailed Trace Table — Example 1"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(A, B, C, D, E) and FDs: {A -> BC, CD -> E, B -> D, E -> A}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute A+:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (before)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FD Checked"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Y subset of closure?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Attributes Added"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (after)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> BC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={A} subset of {A}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B, C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CD -> E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={C,D} subset of {A,B,C}: NO (D missing)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={B} subset of {A,B,C}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={E} subset of {A,B,C,D}: NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> BC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — already in closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CD -> E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={C,D} subset of {A,B,C,D}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — already in closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — already in closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(all)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No new FDs apply"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result: A+ = {A, B, C, D, E}"
+      }), " (all attributes — A is a superkey)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute B+:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (before)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FD Checked"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Y subset of closure?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Attributes Added"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (after)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> BC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={A} subset of {B}: NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CD -> E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={C,D} subset of {B}: NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={B} subset of {B}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={E} subset of {B,D}: NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(all)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No new FDs apply"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{B, D}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result: B+ = {B, D}"
+      }), " (not a superkey)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-trace-table--example-2",
+      children: "Detailed Trace Table — Example 2"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(A, B, C, D, E, F) and FDs: {AB -> C, C -> D, D -> E, B -> F, E -> A}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute AB+:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (before)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FD Checked"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Y subset of closure?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Added"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "closure (after)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AB -> C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={A,B} subset of {A,B}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C -> D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={C} subset of {A,B,C}: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D -> E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={D} subset: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y={B} subset: YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A, B, C, D, E, F}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A,B,C,D,E,F}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — A already in closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A,B,C,D,E,F}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A,B,C,D,E,F}"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(all)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No new attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{A,B,C,D,E,F}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result: AB+ = {A, B, C, D, E, F}"
+      }), " (AB is a superkey, actually a candidate key)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-attribute-closure",
+      children: "Complexity Analysis of Attribute Closure"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Worst-case time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best-case time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Need to store closure set of at most n attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Number of iterations"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At most n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each iteration adds at least one attribute (or stops)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(|F| * n^2)?"
+      }), " In the worst case, each iteration adds exactly one attribute, requiring n iterations. Each iteration scans all |F| FDs, and checking subset takes O(n). So total is O(|F| * n^2)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-attribute-closure",
+      children: "Advantages and Disadvantages of Attribute Closure"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Algorithmic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple iterative algorithm — always terminates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Deterministic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same input always produces same output"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Foundational"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Used for key finding, FD checking, normalization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Redundancy in F"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redundant FDs cause unnecessary iterations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: No optimization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The naive algorithm checks ALL FDs every iteration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Subset check cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Checking Y subset of closure takes O(n) per FD"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-attribute-closure",
+      children: "Edge Cases in Attribute Closure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Empty Attribute Set:"
+      }), " Computing {} closure — start with empty set. Only FDs with empty left side (constant constraints) will add attributes. Result is typically {} unless there are constant constraints."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trivial FDs in Computation:"
+      }), " FDs like A -> A never change the closure but waste an iteration. In practice, skip trivial FDs."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Redundant FDs:"
+      }), " Given F = {A -> B, B -> C, A -> C}, the FD A -> C is redundant. Computing A+ with {A -> B, B -> C} still gives {A, B, C}, so A -> C is never needed for closure computation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Circular Dependencies:"
+      }), " F = {A -> B, B -> C, C -> A}. Compute A+: A -> B adds B; B -> C adds C; C -> A adds nothing new. A+ = {A, B, C}. All three are candidate keys."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "75-finding-candidate-keys-from-functional-dependencies",
+      children: "7.5 Finding Candidate Keys from Functional Dependencies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-minimal-id-card",
+      children: "Real-World Analogy: Minimal ID Card"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A candidate key is like the minimal set of ID documents you need to uniquely identify a person. If a passport alone works, you do not need passport + driver's license. If neither passport nor license alone works (some people have neither), you might need name + birthdate + address. The candidate key is the minimal \"sufficient identifier.\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "systematic-method-for-finding-candidate-keys",
+      children: "Systematic Method for Finding Candidate Keys"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Classify all attributes into four categories:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LH (Left-only)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Appears only on left side of FDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be in every candidate key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RH (Right-only)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Appears only on right side of FDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never in any candidate key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LR (Both sides)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Appears on both left and right"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May or may not be in candidate keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "N (Neither)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never appears in any FD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be in every candidate key"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Start with the mandatory attributes (LH + N). Compute their closure."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " If the closure contains all attributes, this is a candidate key. Done."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " If not, add attributes from LR one at a time, then combinations, computing closure each time."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5:"
+      }), " A candidate key is minimal — remove any attribute that is not essential."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-for-finding-all-candidate-keys",
+      children: "Pseudocode for Finding All Candidate Keys"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION FindCandidateKeys(R, F):\n    attrs = set of all attributes in R\n    LH = attributes only on left side of FDs in F\n    RH = attributes only on right side of FDs in F\n    LR = attributes on both sides\n    N = attrs - (LH union RH union LR)\n    \n    mandatory = LH union N\n    optional = LR\n    \n    keys = empty set\n    closure = ComputeClosure(mandatory, F)\n    IF closure == attrs:\n        keys.add(mandatory)\n        RETURN keys\n    \n    FOR each subset S of optional (size 1 to |optional|):\n        test = mandatory union S\n        IF no proper subset of test is already a key:\n            closure = ComputeClosure(test, F)\n            IF closure == attrs:\n                keys.add(test)\n                Remove supersets of test from keys\n    \n    RETURN keys\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-dry-run--finding-candidate-keys",
+      children: "Detailed Dry Run — Finding Candidate Keys"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(A, B, C, D, E, F) with FDs: {A -> B, C -> D, D -> E, B -> F}"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Attribute"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Classification"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Reason"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> B (left) but no FD has A on right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> B (right), B -> F (left)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LH"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C -> D (left only) — never on right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C -> D (right), D -> E (left)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RH"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D -> E (right only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RH"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> F (right only)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "LH = {C}, RH = {E, F}, LR = {A, B, D}, N = {}"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " mandatory = LH union N = {C}\nCompute closure(C+) with F:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start: {C}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C -> D: add D => {C, D}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D -> E: add E => {C, D, E}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No more FDs apply"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C+ = {C, D, E} (does NOT contain A, B, F)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " Try adding one attribute from LR = {A, B, D}:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Try C + A = {A, C}: A+ from A -> B adds B; B -> F adds F. Already have C, D, E. => {A, B, C, D, E, F} = ALL. So {A, C} is a candidate key!"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Try C + B = {B, C}: B -> F adds F. C -> D adds D. D -> E adds E. => {B, C, D, E, F}. Missing A. Not a key."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Try C + D = {C, D}: C -> D (already). D -> E adds E => {C, D, E}. Missing A, B, F. Not a key."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " Check minimality of {A, C}:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Remove A: {C}+ = {C, D, E} — not a key. A is needed."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Remove C: {A}+ = {A, B, F} — not a key. C is needed."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "{A, C} is minimal and complete. Candidate keys: {A, C}"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-candidate-key-finding",
+      children: "Complexity Analysis of Candidate Key Finding"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Worst case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(2^"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Number of keys"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to C(n, floor(n/2))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theoretically exponential in worst case"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Practical limit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why exponential?"
+      }), " LR attributes create a subset enumeration problem. In the worst case (e.g., F = {A -> B, B -> C, ..., Y -> Z}), every attribute is in LR and the number of candidate keys is exponential. In practice, real schemas have small LR sets."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages",
+      children: "Advantages and Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Systematic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete enumeration guarantees finding all keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Minimality check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in elimination of non-minimal keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Exponential"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Worst-case subset enumeration is expensive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Complex implementation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Managing superset elimination is tricky"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "76-first-normal-form-1nf",
+      children: "7.6 First Normal Form (1NF)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-one-fact-per-cell",
+      children: "Real-World Analogy: One Fact Per Cell"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Think of a spreadsheet where a cell should contain exactly one value. If a \"courses\" column contains \"CS101, CS102, CS201\" as a comma-separated string, you cannot sort by course, join on course, or efficiently search for a course. 1NF says: one value per cell, period."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-3",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A relation is in 1NF if:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Every attribute value is atomic (indivisible)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No repeating groups or arrays"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Every row is unique (there is a primary key)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "step-by-step-process-to-achieve-1nf",
+      children: "Step-by-Step Process to Achieve 1NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify non-atomic attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "courses = {CS101, CS102, CS201}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Choose strategy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flatten OR create separate table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3a"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flatten: create one row per value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One row per student per course"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Separate table: move repeating attribute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STUDENT(id, name), ENROLLMENT(id, course)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "problem-not-in-1nf",
+      children: "Problem (not in 1NF):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "STUDENT(id, name, courses)\n1 | Alice | {CS101, CS102, CS201}\n2 | Bob   | {CS101}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "fix-two-strategies",
+      children: "Fix: Two strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Strategy A: Flatten (simple, introduces redundancy)\nCREATE TABLE student_course (\n    id INTEGER,\n    name VARCHAR(100),\n    course_code VARCHAR(10),\n    PRIMARY KEY (id, course_code)\n);\n-- 1 | Alice | CS101\n-- 1 | Alice | CS102  (Alice's name repeats!)\n\n-- Strategy B: Separate tables (better, avoids redundancy)\nCREATE TABLE student (\n    id INTEGER PRIMARY KEY,\n    name VARCHAR(100)\n);\n\nCREATE TABLE enrollment (\n    student_id INTEGER,\n    course_code VARCHAR(10),\n    PRIMARY KEY (student_id, course_code),\n    FOREIGN KEY (student_id) REFERENCES student(id)\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Note:"
+      }), " The flattened version has redundancy (Alice's name repeats) but is in 1NF. Higher normal forms address this redundancy. Strategy B is preferred because it already anticipates 2NF."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-converting-to-1nf",
+      children: "Dry Run: Converting to 1NF"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Before (not in 1NF):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "student_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "courses"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{CS101, CS102}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{CS101}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Identify non-atomic attribute: courses (a set, not atomic)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Apply flattening:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "student_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "course_code"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CS101"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CS102"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CS101"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " Primary key = (student_id, course_code). Now in 1NF."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-1nf",
+      children: "Complexity Analysis of 1NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time to flatten"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k * n) where k = max repeating group size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each non-atomic value produces k rows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Result size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sum of all repeating group sizes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Could be much larger than original"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m * d) where m = rows, d = duplicated attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Name repeats across rows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-1nf",
+      children: "Advantages and Disadvantages of 1NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Foundation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enables relational operations (join, project, select)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clear, unambiguous rule: one value per cell"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flattening introduces data repetition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Composite PK"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Creates composite primary keys (introduces partial dependencies)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-1nf",
+      children: "Edge Cases in 1NF"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multi-valued Attributes:"
+      }), " An employee may have multiple phone numbers. Option A: flatten (one row per phone). Option B: separate PHONE table. Both satisfy 1NF but option B is better for 2NF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Composite Attributes:"
+      }), " An \"address\" attribute containing street, city, zip as a structured type. Is this atomic? In SQL, a structured type like ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "address(street, city, zip)"
+      }), " might be considered atomic for the DB, but not for normalization purposes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "NULL Values:"
+      }), " NULL is atomic (it is a single value). A column allowing NULL does not violate 1NF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Large Objects (BLOB/CLOB):"
+      }), " These are stored as single values (the handle is atomic), so they satisfy 1NF. The DBMS stores the content externally, but the column value itself is a single reference."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "77-second-normal-form-2nf",
+      children: "7.7 Second Normal Form (2NF)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-library-catalog",
+      children: "Real-World Analogy: Library Catalog"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Imagine a library catalog that stores (shelf_id, book_title, author_name, section_name). The shelf_id + book_title tells you the exact spot. But author_name depends only on book_title — it repeats on every shelf where that book sits. 2NF says: if your key is composite (shelf_id + book_title), every non-key column must depend on the WHOLE key, not just part of it. Author_name depends on book_title alone — that is a partial dependency. Move it out."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-4",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A relation is in 2NF if:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "It is in 1NF"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Every non-key attribute is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "fully functionally dependent"
+        }), " on the entire primary key (no partial dependencies)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Partial dependency:"
+      }), " A non-key attribute depends on only part of a composite primary key. This occurs ONLY when the primary key is composite (at least 2 attributes)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "step-by-step-process-to-achieve-2nf",
+      children: "Step-by-Step Process to Achieve 2NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensure the relation is in 1NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All values atomic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify the primary key (composite)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(student_id, course_id)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find all non-key attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "student_name, grade, course_name"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For each non-key attribute, check if it depends on the WHOLE key or PART of it"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "student_name depends on student_id alone (partial)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remove partial dependencies: create separate tables for each partial dependency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STUDENT(student_id, student_name), COURSE(course_id, course_name)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep only full dependencies in the original table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ENROLLMENT(student_id, course_id, grade)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-for-2nf-check-and-decomposition",
+      children: "Pseudocode for 2NF Check and Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION Check2NF(R, key, F):\n    IF R is NOT in 1NF: return False\n    \n    FOR each non-key attribute A in R:\n        FOR each proper subset K' of key:\n            IF K' -> A holds (A in ComputeClosure(K', F)):\n                RETURN False  // partial dependency found\n    RETURN True\n\nFUNCTION DecomposeTo2NF(R, key, F):\n    result = {R}\n    FOR each non-key attribute A in R:\n        FOR each proper subset K' of key:\n            IF K' -> A holds:\n                // Create new table for K' union A\n                R_new = (K' union A) with key = K'\n                result.add(R_new)\n                // Remove A from original\n                R = R - {A}\n    result.replace(R_original with R_minus_partials)\n    RETURN result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-example",
+      children: "Detailed Example"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(student_id, course_id, student_name, grade, course_name)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Primary key:"
+      }), " (student_id, course_id)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "FDs identified:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id -> student_name"
+        }), " (partial dependency — depends on part of PK)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "course_id -> course_name"
+        }), " (partial dependency)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "student_id, course_id -> grade"
+        }), " (full dependency — depends on whole PK)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Checking 2NF:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Non-key Attribute"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Depends on Which Key Part?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Partial?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Verdict"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "student_name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "student_id (proper subset)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — violates 2NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must remove"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "grade"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(student_id, course_id) — whole key"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO — full dependency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "course_name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "course_id (proper subset)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — violates 2NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must remove"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decomposition:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R1(student_id, student_name, address, major) — PK: student_id\nR2(course_id, course_name, credits) — PK: course_id\nR3(student_id, course_id, grade) — PK: (student_id, course_id)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace--complete-2nf-decomposition",
+      children: "Dry Run Trace — Complete 2NF Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Initial data:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "student_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "course_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "student_name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "grade"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "course_name"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DBMS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C102"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DBMS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Partial dependencies:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "student_id -> student_name: Alice repeats for S1 twice → update anomaly if she changes name"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "course_id -> course_name: DBMS repeats twice → update anomaly if course name changes"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "After decomposition into 2NF:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R1: STUDENT"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "student_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "student_name"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alice"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bob"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R2: COURSE"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "course_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "course_name"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DBMS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C102"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R3: ENROLLMENT"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "student_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "course_id"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "grade"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C102"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C101"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Anomalies resolved:"
+      }), " Alice's name is stored once. DBMS is stored once. No update anomalies for name changes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-2nf",
+      children: "Complexity Analysis of 2NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Checking 2NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k *"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Number of subsets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2^m - 2 where m = key size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exponential in key size, but keys are typically small (2-3 attributes)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Decomposition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k * n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removing partial dependencies is linear in attributes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-2nf",
+      children: "Advantages and Disadvantages of 2NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Eliminates partial redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No more repeating student names in enrollment rows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Practical"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most important for junction tables (M:N relationships)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Only applies to composite keys"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relations with single-attribute PK are automatically in 2NF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Does not address transitive dependencies"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must normalize further to 3NF"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-2nf",
+      children: "Edge Cases in 2NF"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Single-Attribute Primary Key:"
+      }), " If the primary key is a single attribute, there can be NO partial dependencies (a single attribute has no proper subsets). The relation is automatically in 2NF if it is in 1NF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multiple Candidate Keys:"
+      }), " If there are multiple candidate keys (some single, some composite), check partial dependencies against ALL candidate keys, not just the chosen primary key."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "All-Key Relation:"
+      }), " If ALL attributes form the key (no non-key attributes), the relation is automatically in 2NF, 3NF, and BCNF because there are no non-key attributes to have partial dependencies."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "78-third-normal-form-3nf",
+      children: "7.8 Third Normal Form (3NF)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-the-department-office",
+      children: "Real-World Analogy: The Department Office"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "An employee record stores (emp_id, dept_id, dept_location). The emp_id tells you dept_id. The dept_id tells you dept_location. So emp_id indirectly tells you dept_location — through dept_id. The problem: if the department moves to a new location, you must update every employee row. 3NF says: a non-key column must not determine another non-key column. Break this into (emp_id, dept_id) and (dept_id, dept_location)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-5",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A relation is in 3NF if:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "It is in 2NF"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["No non-key attribute is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "transitively dependent"
+        }), " on the primary key (no transitive dependencies)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transitive dependency:"
+      }), " For attributes X, Y, Z: if X -> Y and Y -> Z, then X -> Z is a transitive dependency. This violates 3NF if:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Y is not a candidate key (or part of a candidate key)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Z is a non-key attribute"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Relaxed 3NF condition:"
+      }), " A relation is in 3NF if for every non-trivial FD X -> A:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "X is a superkey, OR"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A is part of some candidate key (prime attribute)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This relaxed condition is what makes 3NF achievable while BCNF may not be."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "step-by-step-process-to-achieve-3nf",
+      children: "Step-by-Step Process to Achieve 3NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensure the relation is in 2NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Already decomposed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify all FDs between non-key attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "customer_id -> customer_name"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For each such FD X -> Y: check if X is a candidate key"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Is customer_id a key? NO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If not, this is a transitive dependency: PK -> X -> Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "order_id -> customer_id -> customer_name"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose: create separate table for (X, Y)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CUSTOMER(customer_id, customer_name)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remove Y from the original table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remove customer_name from ORDER"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-for-3nf-synthesis-algorithm",
+      children: "Pseudocode for 3NF Synthesis Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION Synthesize3NF(R, F):\n    // Step 1: Find minimal cover of F\n    G = MinimalCover(F)\n    \n    // Step 2: Create relations for each FD\n    schemas = empty set\n    FOR each FD X -> Y in G:\n        found = False\n        FOR each schema S in schemas:\n            IF X union Y is subset of S:\n                found = True\n                BREAK\n        IF not found:\n            schemas.add(X union Y)\n    \n    // Step 3: Ensure at least one schema contains a candidate key\n    keys = FindCandidateKeys(R, F)\n    has_key = False\n    FOR each schema S in schemas:\n        FOR each key K in keys:\n            IF K is subset of S:\n                has_key = True\n                BREAK\n    \n    IF not has_key:\n        schemas.add(K)  // Add a candidate key as a relation\n    \n    // Step 4: Remove redundant schemas\n    Remove subsets from schemas\n    \n    RETURN schemas\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-dry-run--3nf-decomposition",
+      children: "Detailed Dry Run — 3NF Decomposition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(order_id, order_date, customer_id, customer_name)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FDs:"
+      }), " {order_id -> order_date, customer_id; customer_id -> customer_name}"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1: Check 2NF."
+      }), " Single-attribute PK (order_id), so automatically in 2NF."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2: Identify transitive dependency."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "order_id -> customer_id (from FDs)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "customer_id -> customer_name (from FDs)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Therefore order_id -> customer_name transitively (order_id -> customer_id -> customer_name)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "customer_id is NOT a candidate key"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "customer_name is a non-key attribute"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This violates 3NF"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decomposition:"
+      }), "\nR1(order_id, order_date, customer_id) — PK: order_id\nR2(customer_id, customer_name) — PK: customer_id"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "full-walkthrough-order_detail-normalization",
+      children: "Full Walkthrough: ORDER_DETAIL Normalization"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Schema:"
+      }), " ORDER_DETAIL(order_id, order_date, customer_id, customer_name, product_id, product_name, quantity, price)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1: Identify FDs"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "order_id -> order_date, customer_id, customer_name"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "customer_id -> customer_name"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "product_id -> product_name"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "order_id, product_id -> quantity, price"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2: Find candidate key"
+      }), "\nCandidate key: (order_id, product_id)\nProof: (order_id, product_id)+ = {order_id, order_date, customer_id, customer_name, product_id, product_name, quantity, price}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3: Check 1NF — PASS (all values atomic)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4: Check 2NF (partial dependencies)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "FD"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Is it Partial?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "order_id -> order_date"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on part of PK (order_id only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "order_id -> customer_id"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on part of PK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "order_id -> customer_name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on part of PK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "product_id -> product_name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on part of PK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "(order_id, product_id) -> quantity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full dependency on whole PK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "(order_id, product_id) -> price"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full dependency on whole PK"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decompose to 2NF:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- R1: ORDER\nCREATE TABLE order_header (\n    order_id INTEGER PRIMARY KEY,\n    order_date DATE NOT NULL,\n    customer_id INTEGER NOT NULL,\n    customer_name VARCHAR(100) NOT NULL\n);\n\n-- R2: PRODUCT\nCREATE TABLE product (\n    product_id INTEGER PRIMARY KEY,\n    product_name VARCHAR(200) NOT NULL\n);\n\n-- R3: ORDER_LINE\nCREATE TABLE order_line (\n    order_id INTEGER,\n    product_id INTEGER,\n    quantity INTEGER NOT NULL,\n    price DECIMAL(10,2) NOT NULL,\n    PRIMARY KEY (order_id, product_id)\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5: Check 3NF (transitive dependencies)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R1 (order_header): customer_id -> customer_name. Since customer_id is NOT a candidate key, this transitive dependency violates 3NF."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decompose to 3NF:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- R1: ORDER (now without customer_name)\nCREATE TABLE order_header (\n    order_id INTEGER PRIMARY KEY,\n    order_date DATE NOT NULL,\n    customer_id INTEGER NOT NULL\n);\n\n-- R1b: CUSTOMER (new)\nCREATE TABLE customer (\n    customer_id INTEGER PRIMARY KEY,\n    customer_name VARCHAR(100) NOT NULL\n);\n\n-- R2: PRODUCT (unchanged)\nCREATE TABLE product (\n    product_id INTEGER PRIMARY KEY,\n    product_name VARCHAR(200) NOT NULL\n);\n\n-- R3: ORDER_LINE (unchanged)\nCREATE TABLE order_line (\n    order_id INTEGER,\n    product_id INTEGER,\n    quantity INTEGER NOT NULL,\n    price DECIMAL(10,2) NOT NULL,\n    PRIMARY KEY (order_id, product_id)\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 6: Check BCNF"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "product_id -> product_name in PRODUCT: product_id IS the key. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "order_id -> customer_id, order_date in order_header: order_id IS the key. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "customer_id -> customer_name in CUSTOMER: customer_id IS the key. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This schema is in BCNF."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-3nf",
+      children: "Complexity Analysis of 3NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Minimal cover"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Synthesis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(2^"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Overall 3NF synthesis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-3nf",
+      children: "Advantages and Disadvantages of 3NF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Dependency preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3NF synthesis ALWAYS produces dependency-preserving decomposition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Lossless join"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding a key relation guarantees lossless join"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Practical"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3NF is sufficient for most real-world applications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: May have redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some redundancy remains that BCNF removes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Complex algorithm"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal cover computation requires careful implementation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-3nf",
+      children: "Edge Cases in 3NF"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "All-Key Relation:"
+      }), " If every attribute is part of some candidate key (all prime attributes), the relation is automatically in 3NF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multiple Candidate Keys with Overlap:"
+      }), " Consider R(A, B, C) with FDs {AB -> C, C -> B}. Candidate keys: {A, B} and {A, C}. The FD C -> B has left side C (not a superkey), but B is prime (part of candidate key AB). So this is in 3NF but NOT in BCNF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transitive Dependency Through a Key:"
+      }), " If Y is a candidate key, then X -> Y -> Z is NOT a 3NF violation because Y being a key means the transitive dependency is acceptable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "79-boyce-codd-normal-form-bcnf",
+      children: "7.9 Boyce-Codd Normal Form (BCNF)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-the-one-subject-teacher-rule",
+      children: "Real-World Analogy: The One-Subject Teacher Rule"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A school has: (student_id, teacher_id, subject). Rules: each teacher teaches one subject (teacher_id -> subject). Each student has one teacher per subject (student_id, subject -> teacher_id). The key is (student_id, subject). But teacher_id -> subject violates BCNF because teacher_id is not a superkey. The fix: (teacher_id, subject) and (student_id, teacher_id). But now (student_id, subject -> teacher_id) is lost — you cannot enforce it without a join."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-6",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BCNF is a stronger version of 3NF. A relation is in BCNF if:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "It is in 3NF"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["For every non-trivial FD X -> Y, X must be a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "superkey"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BCNF eliminates all redundancy based on functional dependencies. Some relations in 3NF are not in BCNF."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bcnf-vs-3nf-comparison-table",
+      children: "BCNF vs 3NF Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "3NF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "BCNF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Condition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For every FD X -> A: X is superkey OR A is prime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For every FD X -> A: X is superkey"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some redundancy possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No redundancy from FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALWAYS guaranteed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May lose dependencies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lossless join"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guaranteed (with key relation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guaranteed (by construction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Practicality"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Achievable for all schemas"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May be impossible to achieve while preserving FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default for most applications"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When data integrity is critical and performance allows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example violation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C -> B where B is prime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "teacher_id -> subject (teacher_id not a key)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "step-by-step-bcnf-decomposition-algorithm",
+      children: "Step-by-Step BCNF Decomposition Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Algorithm:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check if R is in BCNF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For each FD X -> Y, is X a superkey?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find violating FD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pick an FD where X is NOT a superkey"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose R into R1 and R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1 = (X union Y), R2 = (R - (Y - X))"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursively check R1 and R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeat steps 1-3 until all are BCNF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Done"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All relations are in BCNF"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-for-bcnf-decomposition",
+      children: "Pseudocode for BCNF Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION DecomposeBCNF(R, F):\n    IF R is in BCNF:\n        RETURN {R}\n    \n    // Find a violating FD\n    FOR each FD X -> Y in F:\n        IF X is NOT a superkey in R:\n            // Decompose\n            R1 = (X union Y)\n            R2 = (R - (Y - X))  // R minus Y, keep X\n            F1 = ProjectFDs(R1, F)\n            F2 = ProjectFDs(R2, F)\n            result1 = DecomposeBCNF(R1, F1)\n            result2 = DecomposeBCNF(R2, F2)\n            RETURN result1 union result2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-dry-run--bcnf-decomposition",
+      children: "Detailed Dry Run — BCNF Decomposition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(student_id, course_id, instructor_name)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FDs:"
+      }), " {course_id -> instructor_name, (student_id, course_id) -> instructor_name}"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1:"
+      }), " Candidate keys: (student_id, course_id)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2:"
+      }), " Check BCNF:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "course_id -> instructor_name: Is course_id a superkey? NO (course_id+ = {course_id, instructor_name} — does not contain student_id). VIOLATION."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3:"
+      }), " Decompose using violating FD course_id -> instructor_name:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "R1 = {course_id, instructor_name} — PK: course_id"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "R2 = {student_id, course_id} — PK: (student_id, course_id)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4:"
+      }), " Check R1: FD course_id -> instructor_name. Left side IS the key. BCNF OK."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5:"
+      }), " Check R2: No non-trivial FDs. BCNF OK."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 6:"
+      }), " Result: R1(course_id, instructor_name), R2(student_id, course_id)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FD student_id, course_id -> instructor_name is LOST."
+      }), " Cannot be checked without joining R1 and R2. This is the classic BCNF trade-off."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-example-where-3nf-works-but-bcnf-does-not",
+      children: "Detailed Example Where 3NF Works But BCNF Does Not"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Given:"
+      }), " R(A, B, C) with FDs {AB -> C, C -> B}"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Candidate keys:"
+      }), " {A, B}, {A, C}"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Is this in 3NF?"
+      }), " Check C -> B:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Is C a superkey? C+ = {C, B} — does NOT contain A. NO."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Is B prime? YES (B is in candidate key {A, B})."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Since B is prime, C -> B satisfies the 3NF relaxation. In 3NF."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Is this in BCNF?"
+      }), " Check C -> B:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Is C a superkey? NO (C+ = {C, B})."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF violation."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "BCNF decomposition:"
+      }), "\nUsing C -> B: R1(C, B), R2(A, C)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "R1 key: C. FD: C -> B. BCNF OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "R2 key: {A, C}. No FDs except trivial. BCNF OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "FD AB -> C is LOST."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decision:"
+      }), " Keep in 3NF to preserve AB -> C. Accept the minor redundancy."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "lossless-join-check-for-bcnf-decomposition",
+      children: "Lossless Join Check for BCNF Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For decomposition of R into R1(X union Y) and R2(R - (Y - X)):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Common attributes: X (the left side of the violating FD)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R1, X -> Y is known to hold (it is the violating FD)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Therefore X is a key for R1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Since the common attribute X is a key in R1, the decomposition is LOSSESS"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "BCNF decomposition by this method ALWAYS produces lossless joins."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-bcnf",
+      children: "Complexity Analysis of BCNF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BCNF check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BCNF decomposition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Number of relations"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Termination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always terminates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each decomposition reduces the attribute set"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages-and-disadvantages-of-bcnf",
+      children: "Advantages and Disadvantages of BCNF"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Complete elimination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All redundancy from FDs is removed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A: Clean design"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every determinant is a candidate key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: May lose FDs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some FDs may become unenforceable without joins"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Complex"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decomposition may produce many small tables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D: Not always needed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3NF is sufficient for most practical cases"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-bcnf",
+      children: "Edge Cases in BCNF"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "All-Attribute Key:"
+      }), " If every attribute is part of every candidate key (all prime), the relation is automatically in BCNF."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multiple Overlapping Candidate Keys:"
+      }), " When candidate keys overlap, the 3NF relaxation may keep a relation in 3NF that is not in BCNF. This is the classic C -> B with prime B case."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "BCNF Not Achievable:"
+      }), " Some relations cannot be decomposed into BCNF without losing FDs. In this case, stop at 3NF."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "710-lossless-join-decomposition",
+      children: "7.10 Lossless Join Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-puzzle-pieces",
+      children: "Real-World Analogy: Puzzle Pieces"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A lossless decomposition is like cutting a photograph into puzzle pieces — when you put them back together, you get the original photograph, nothing more and nothing less. A lossy decomposition is like shredding — you cannot reconstruct the original."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-7",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A decomposition of R into R1 and R2 is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lossless"
+      }), " (or non-additive) if joining R1 and R2 always produces the original R — no spurious tuples, no missing tuples."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Formally:"
+      }), " For every instance r of R: r = π_R1(r) ⋈ π_R2(r)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "lossless-vs-lossy-decomposition",
+      children: "Lossless vs Lossy Decomposition"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Lossless"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Lossy"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Join result"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exactly the original tuples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More tuples than original (spurious)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Information"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All information preserved"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Information lost or created"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Test"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common attribute is a key in at least one component"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common attribute is not a key in either component"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1(A,B), R2(B,C) where B -> C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1(emp_id, dept), R2(dept, mgr) where dept -> mgr does NOT hold"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Acceptable?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "YES — required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NO — must be avoided"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "chase-test-for-lossless-decomposition",
+      children: "Chase Test for Lossless Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For decomposition into n relations, use the chase:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create a table with one row per decomposed relation and one column per attribute"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Put distinguished symbols (a1, a2, ...) in cells where the relation contains the attribute"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Put labeled symbols (b11, b12, ...) elsewhere"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply FDs: if two rows agree on left side, make their right sides equal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If any row becomes all distinguished symbols, the decomposition is lossless"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-example--lossless-vs-lossy-join",
+      children: "Detailed Example — Lossless vs Lossy Join"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lossless example:"
+      }), "\nR(employee_id, department, manager) with FD: department -> manager"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Decompose to: R1(employee_id, department), R2(department, manager)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "R1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R1 ⋈ R2"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E1, Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales, Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E1, Sales, Alice"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E2, Eng"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eng, Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E2, Eng, Bob"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Join produces exactly the original. Common attribute (department) is a key in R2. LOSSLESS."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lossy example:"
+      }), "\nR(employee_id, department, manager) with NO departments having multiple managers (assume department -> manager does NOT hold strictly)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Decompose to: R1(employee_id, department), R2(department, manager)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "R1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R1 ⋈ R2 (spurious!)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E1, Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales, Alice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E1, Sales, Alice"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E2, Sales"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sales, Bob"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E1, Sales, Bob"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E2, Sales, Alice"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "E2, Sales, Bob"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The join produces 4 rows instead of 2! This is LOSSY because department is NOT a key in either component."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "testing-lossless-decomposition-algorithm",
+      children: "Testing Lossless Decomposition Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION IsLossless(R, decomposition, F):\n    // For binary decomposition\n    IF len(decomposition) == 2:\n        R1, R2 = decomposition\n        common = R1 intersect R2\n        IF common is empty:\n            RETURN False\n        // Check if common -> R1 or common -> R2\n        IF common is a superkey in R1 OR common is a superkey in R2:\n            RETURN True\n        ELSE:\n            RETURN False\n    // For n-ary decomposition, use chase\n    ELSE:\n        RETURN ChaseTest(R, decomposition, F)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "711-dependency-preservation",
+      children: "7.11 Dependency Preservation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-local-enforcement",
+      children: "Real-World Analogy: Local Enforcement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Dependency preservation is like traffic laws that can be enforced by local police in each town, versus laws that require a federal investigation spanning multiple states. If you can check each FD within a single table, enforcement is cheap. If an FD spans multiple tables, enforcement requires expensive joins."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition-8",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A decomposition is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "dependency-preserving"
+      }), " if all FDs in the closure F+ can be checked on the decomposed relations individually, WITHOUT joining them."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Formally:"
+      }), " For decomposition ρ = {R1, R2, ..., Rn} and FD set F:\nThe projection of F onto Ri is: π_Ri(F) = {X -> Y in F+ | X union Y is subset of Ri}\nThe decomposition preserves F if (π_R1(F) union π_R2(F) union ... union π_Rn(F))+ = F+"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "example--non-dependency-preserving-decomposition",
+      children: "Example — Non-Dependency-Preserving Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R(A, B, C) with FDs: {A -> B, B -> C}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wrong decomposition: R1(A, B), R2(A, C)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R1: check A -> B. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R2: only attribute A is common. B -> C CANNOT be checked because B is not in R2."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B -> C is LOST. This is NOT dependency-preserving."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Correct decomposition: R1(A, B), R2(B, C)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R1: check A -> B. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In R2: check B -> C. OK."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All FDs preserved. This IS dependency-preserving."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "algorithm-to-check-dependency-preservation",
+      children: "Algorithm to Check Dependency Preservation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION IsDependencyPreserving(R, decomposition, F):\n    FOR each FD X -> Y in F:\n        closure_X_in_decomp = X\n        WHILE closure_X_in_decomp changes:\n            FOR each relation Ri in decomposition:\n                // Compute (closure_X_in_decomp intersect Ri)+ under F\n                // Then intersect with Ri\n                t = ComputeClosure(closure_X_in_decomp intersect Ri, F) intersect Ri\n                closure_X_in_decomp = closure_X_in_decomp union t\n        IF Y is NOT subset of closure_X_in_decomp:\n            RETURN False  // FD X -> Y is lost\n    RETURN True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-decomposition-properties",
+      children: "Complexity Analysis of Decomposition Properties"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lossless (binary)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lossless (chase)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k *"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Both properties"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guaranteed by 3NF synthesis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The synthesis algorithm produces both"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "712-c-implementation--fd-closure-calculator",
+      children: "7.12 C++ Implementation — FD Closure Calculator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <set>\n#include <map>\n#include <algorithm>\n#include <string>\n#include <sstream>\n\nusing namespace std;\n\nvector<string> split(const string& s, char delim) {\n    vector<string> tokens;\n    stringstream ss(s);\n    string token;\n    while (getline(ss, token, delim)) {\n        tokens.push_back(token);\n    }\n    return tokens;\n}\n\nstring trim(const string& s) {\n    int start = 0, end = s.length() - 1;\n    while (start <= end && isspace(s[start])) start++;\n    while (end >= start && isspace(s[end])) end--;\n    return s.substr(start, end - start + 1);\n}\n\nset<string> parseAttributes(const string& s) {\n    set<string> attrs;\n    vector<string> parts = split(s, ',');\n    for (string p : parts) {\n        string t = trim(p);\n        if (!t.empty()) attrs.insert(t);\n    }\n    return attrs;\n}\n\nstruct FD {\n    set<string> lhs;\n    set<string> rhs;\n};\n\nbool isSubset(const set<string>& A, const set<string>& B) {\n    return includes(B.begin(), B.end(), A.begin(), A.end());\n}\n\nstring setToString(const set<string>& s) {\n    string result;\n    for (auto it = s.begin(); it != s.end(); ++it) {\n        if (it != s.begin()) result += \", \";\n        result += *it;\n    }\n    return result;\n}\n\nset<string> computeClosure(set<string> X, const vector<FD>& F) {\n    set<string> closure = X;\n    bool changed = true;\n    while (changed) {\n        changed = false;\n        for (const FD& fd : F) {\n            if (isSubset(fd.lhs, closure)) {\n                for (const string& attr : fd.rhs) {\n                    if (closure.find(attr) == closure.end()) {\n                        closure.insert(attr);\n                        changed = true;\n                    }\n                }\n            }\n        }\n    }\n    return closure;\n}\n\nbool isSuperkey(set<string> X, const set<string>& allAttrs, const vector<FD>& F) {\n    set<string> closure = computeClosure(X, F);\n    return isSubset(allAttrs, closure);\n}\n\nvector<set<string>> findCandidateKeys(const set<string>& allAttrs, const vector<FD>& F) {\n    set<string> lhsAttrs, rhsAttrs;\n    for (const FD& fd : F) {\n        lhsAttrs.insert(fd.lhs.begin(), fd.lhs.end());\n        rhsAttrs.insert(fd.rhs.begin(), fd.rhs.end());\n    }\n\n    set<string> leftOnly, rightOnly, both, neither;\n    for (const string& a : allAttrs) {\n        bool inL = lhsAttrs.find(a) != lhsAttrs.end();\n        bool inR = rhsAttrs.find(a) != rhsAttrs.end();\n        if (inL && !inR) leftOnly.insert(a);\n        else if (!inL && inR) rightOnly.insert(a);\n        else if (inL && inR) both.insert(a);\n        else neither.insert(a);\n    }\n\n    set<string> mandatory = leftOnly;\n    mandatory.insert(neither.begin(), neither.end());\n\n    vector<string> optional(both.begin(), both.end());\n    vector<set<string>> keys;\n\n    set<string> closure = computeClosure(mandatory, F);\n    if (isSubset(allAttrs, closure)) {\n        keys.push_back(mandatory);\n        return keys;\n    }\n\n    int n = optional.size();\n    for (int r = 1; r <= n; r++) {\n        vector<bool> bitmask(n, false);\n        fill(bitmask.end() - r, bitmask.end(), true);\n        do {\n            set<string> test = mandatory;\n            for (int i = 0; i < n; i++) {\n                if (bitmask[i]) test.insert(optional[i]);\n            }\n            bool isSuperset = false;\n            for (const auto& k : keys) {\n                if (includes(test.begin(), test.end(), k.begin(), k.end())) {\n                    isSuperset = true; break;\n                }\n            }\n            if (isSuperset) continue;\n            closure = computeClosure(test, F);\n            if (isSubset(allAttrs, closure)) {\n                keys.push_back(test);\n            }\n        } while (next_permutation(bitmask.begin(), bitmask.end()));\n    }\n\n    vector<set<string>> minimal;\n    for (const auto& k : keys) {\n        bool hasSubset = false;\n        for (const auto& other : keys) {\n            if (&k != &other && isSubset(other, k)) {\n                hasSubset = true; break;\n            }\n        }\n        if (!hasSubset) minimal.push_back(k);\n    }\n    return minimal;\n}\n\nint main() {\n    set<string> allAttrs = parseAttributes(\"A, B, C, D, E\");\n    \n    vector<FD> F;\n    FD fd1; fd1.lhs = parseAttributes(\"A\"); fd1.rhs = parseAttributes(\"B, C\"); F.push_back(fd1);\n    FD fd2; fd2.lhs = parseAttributes(\"C, D\"); fd2.rhs = parseAttributes(\"E\"); F.push_back(fd2);\n    FD fd3; fd3.lhs = parseAttributes(\"B\"); fd3.rhs = parseAttributes(\"D\"); F.push_back(fd3);\n    FD fd4; fd4.lhs = parseAttributes(\"E\"); fd4.rhs = parseAttributes(\"A\"); F.push_back(fd4);\n    \n    set<string> A = parseAttributes(\"A\");\n    set<string> closureA = computeClosure(A, F);\n    cout << \"A+ = {\" << setToString(closureA) << \"}\" << endl;\n    \n    set<string> Bset = parseAttributes(\"B\");\n    set<string> closureB = computeClosure(Bset, F);\n    cout << \"B+ = {\" << setToString(closureB) << \"}\" << endl;\n    \n    auto keys = findCandidateKeys(allAttrs, F);\n    cout << \"Candidate keys:\" << endl;\n    for (const auto& k : keys) {\n        cout << \"  {\" << setToString(k) << \"}\" << endl;\n    }\n    \n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "A+ = {A, B, C, D, E}\nB+ = {B, D}\nCandidate keys:\n  {A}\n  {E}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "713-c-implementation--bcnf-decomposition",
+      children: "7.13 C++ Implementation — BCNF Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <set>\n#include <map>\n#include <algorithm>\n#include <string>\n#include <sstream>\n\nusing namespace std;\n\nstruct Schema {\n    set<string> attrs;\n    vector<FD> fds;\n    string name;\n};\n\nvector<FD> projectFDs(const set<string>& allAttrs, const set<string>& subAttrs, \n                       const vector<FD>& F) {\n    vector<FD> projected;\n    for (const FD& fd : F) {\n        set<string> all = fd.lhs;\n        all.insert(fd.rhs.begin(), fd.rhs.end());\n        if (isSubset(all, subAttrs)) {\n            projected.push_back(fd);\n        }\n    }\n    return projected;\n}\n\nvector<Schema> bcnfDecompose(Schema R, const set<string>& allAttrs) {\n    for (const FD& fd : R.fds) {\n        if (fd.lhs == fd.rhs) continue;\n        if (!isSuperkey(fd.lhs, R.attrs, R.fds)) {\n            Schema R1, R2;\n            R1.attrs = fd.lhs;\n            R1.attrs.insert(fd.rhs.begin(), fd.rhs.end());\n            R2.attrs = R.attrs;\n            for (const string& attr : fd.rhs) {\n                if (fd.lhs.find(attr) == fd.lhs.end()) {\n                    R2.attrs.erase(attr);\n                }\n            }\n            \n            R1.fds = projectFDs(R.attrs, R1.attrs, R.fds);\n            R2.fds = projectFDs(R.attrs, R2.attrs, R.fds);\n            \n            cout << \"Decomposing \" << R.name << \" using FD {\" \n                 << setToString(fd.lhs) << \" -> \" << setToString(fd.rhs) << \"}\" << endl;\n            cout << \"  R1: {\" << setToString(R1.attrs) << \"}\" << endl;\n            cout << \"  R2: {\" << setToString(R2.attrs) << \"}\" << endl;\n            \n            vector<Schema> result1 = bcnfDecompose(R1, allAttrs);\n            vector<Schema> result2 = bcnfDecompose(R2, allAttrs);\n            \n            vector<Schema> result;\n            result.insert(result.end(), result1.begin(), result1.end());\n            result.insert(result.end(), result2.begin(), result2.end());\n            return result;\n        }\n    }\n    cout << R.name << \" is in BCNF.\" << endl;\n    return {R};\n}\n\nint main() {\n    set<string> allAttrs = parseAttributes(\"student_id, course_id, instructor_name\");\n    \n    vector<FD> F;\n    FD fd1; fd1.lhs = parseAttributes(\"course_id\"); \n    fd1.rhs = parseAttributes(\"instructor_name\"); F.push_back(fd1);\n    \n    Schema R;\n    R.attrs = allAttrs;\n    R.fds = F;\n    R.name = \"R\";\n    \n    cout << \"BCNF Decomposition:\" << endl;\n    vector<Schema> result = bcnfDecompose(R, allAttrs);\n    \n    for (size_t i = 0; i < result.size(); i++) {\n        cout << \"R\" << (i+1) << \": {\" << setToString(result[i].attrs) << \"} -> BCNF\" << endl;\n    }\n    \n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "714-python-implementation--attribute-closure-and-normalization-checker",
+      children: "7.14 Python Implementation — Attribute Closure and Normalization Checker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nNormalization Toolkit — Attribute Closure and Normalization Checker\n\"\"\"\n\nfrom typing import Set, List, Tuple, Dict\nfrom itertools import combinations\n\n\nclass FunctionalDependency:\n    \"\"\"Represents an FD: lhs -> rhs\"\"\"\n    def __init__(self, lhs: Set[str], rhs: Set[str]):\n        self.lhs = frozenset(lhs)\n        self.rhs = frozenset(rhs)\n    \n    def __str__(self):\n        return f\"{set(self.lhs)} -> {set(self.rhs)}\"\n    \n    def __repr__(self):\n        return self.__str__()\n    \n    def __eq__(self, other):\n        return self.lhs == other.lhs and self.rhs == other.rhs\n    \n    def __hash__(self):\n        return hash((self.lhs, self.rhs))\n\n\ndef compute_closure(X: Set[str], fds: List[FunctionalDependency]) -> Set[str]:\n    \"\"\"\n    Compute attribute closure of X under FDs.\n    \n    Time: O(|F| * n^2) worst case, O(|F| * n) best case\n    Space: O(n)\n    \n    WHY this complexity:\n    - Each iteration scans all |F| FDs\n    - Each FD check (subset test) takes O(n) in worst case\n    - At most n iterations (each adds at least 1 new attribute to a set of size n)\n    - Total: O(|F| * n * n) = O(|F| * n^2)\n    \n    WHY n iterations maximum:\n    - Closure starts with |X| attributes and grows monotonically\n    - It cannot exceed |R| = n attributes\n    - Each iteration adds at least 1 attribute (or terminates)\n    - Therefore at most n iterations\n    \"\"\"\n    closure = set(X)\n    changed = True\n    iteration = 0\n    \n    while changed:\n        changed = False\n        iteration += 1\n        print(f\"  Iteration {iteration}: closure = {closure}\")\n        \n        for fd in fds:\n            if fd.lhs.issubset(closure):\n                new_attrs = fd.rhs - closure\n                if new_attrs:\n                    print(f\"    FD {fd} applies: adding {new_attrs}\")\n                    closure.update(new_attrs)\n                    changed = True\n    \n    return closure\n\n\ndef find_candidate_keys(attrs: Set[str], fds: List[FunctionalDependency]) -> List[Set[str]]:\n    \"\"\"\n    Find all candidate keys using attribute classification.\n    \n    Time: O(2^|LR| * |F| * n) worst case\n    Space: O(2^|LR|) worst case for key storage\n    \n    WHY exponential:\n    - Attributes in LR (both sides) must be tested in combinations\n    - In worst case, all n attributes are in LR\n    - Must test up to 2^n subsets\n    - Each test requires closure computation: O(|F| * n^2)\n    - Total: O(2^n * |F| * n^2)\n    \n    WHY it is acceptable in practice:\n    - Real schemas have small LR sets (typically 2-5 attributes)\n    - Database schemas rarely exceed 30-50 attributes\n    \"\"\"\n    # Classify attributes\n    lhs_attrs = set()\n    rhs_attrs = set()\n    \n    for fd in fds:\n        lhs_attrs.update(fd.lhs)\n        rhs_attrs.update(fd.rhs)\n    \n    left_only = lhs_attrs - rhs_attrs\n    right_only = rhs_attrs - lhs_attrs\n    both = lhs_attrs & rhs_attrs\n    neither = attrs - lhs_attrs - rhs_attrs\n    \n    print(f\"  Left-only (must be in key): {left_only}\")\n    print(f\"  Right-only (never in key): {right_only}\")\n    print(f\"  Both sides: {both}\")\n    print(f\"  Neither (must be in key): {neither}\")\n    \n    mandatory = left_only | neither\n    optional = list(both)\n    \n    closure = compute_closure(mandatory, fds)\n    if closure == attrs:\n        return [mandatory]\n    \n    keys = []\n    for r in range(1, len(optional) + 1):\n        for combo in combinations(optional, r):\n            test = mandatory | set(combo)\n            if any(key.issubset(test) for key in keys):\n                continue\n            closure = compute_closure(test, fds)\n            if closure == attrs:\n                print(f\"  Candidate key found: {test}\")\n                keys.append(test)\n    \n    # Remove supersets\n    minimal_keys = []\n    for key in keys:\n        if not any(k != key and k.issubset(key) for k in keys):\n            minimal_keys.append(key)\n    \n    return minimal_keys\n\n\ndef check_normal_form(attrs: Set[str], fds: List[FunctionalDependency], \n                      candidate_keys: List[Set[str]]) -> str:\n    \"\"\"\n    Determine the highest normal form.\n    Returns '1NF', '2NF', '3NF', or 'BCNF'.\n    \"\"\"\n    if not candidate_keys:\n        return \"1NF\"\n    \n    prime_attrs = set().union(*candidate_keys) if candidate_keys else set()\n    \n    # BCNF check\n    for fd in fds:\n        if fd.rhs.issubset(fd.lhs):\n            continue\n        is_superkey = any(fd.lhs.issuperset(key) for key in candidate_keys)\n        if not is_superkey:\n            break\n    else:\n        return \"BCNF\"\n    \n    # 3NF check\n    for fd in fds:\n        if fd.rhs.issubset(fd.lhs):\n            continue\n        is_superkey = any(fd.lhs.issuperset(key) for key in candidate_keys)\n        if is_superkey:\n            continue\n        for attr in fd.rhs:\n            if attr not in prime_attrs:\n                return \"3NF\"\n    \n    # 2NF check: partial dependency on composite keys\n    for fd in fds:\n        if fd.rhs.issubset(fd.lhs):\n            continue\n        if len(fd.lhs) == 1:\n            continue\n        for r in range(1, len(fd.lhs)):\n            for subset in combinations(fd.lhs, r):\n                closure = compute_closure(set(subset), fds)\n                if fd.rhs.issubset(closure):\n                    return \"2NF\"\n    \n    return \"3NF\"\n\n\n# Example usage\nif __name__ == \"__main__\":\n    print(\"=\" * 60)\n    print(\"EXAMPLE 1: Attribute Closure\")\n    print(\"=\" * 60)\n    \n    attrs = {\"A\", \"B\", \"C\", \"D\", \"E\"}\n    fds = [\n        FunctionalDependency({\"A\"}, {\"B\", \"C\"}),\n        FunctionalDependency({\"C\", \"D\"}, {\"E\"}),\n        FunctionalDependency({\"B\"}, {\"D\"}),\n        FunctionalDependency({\"E\"}, {\"A\"}),\n    ]\n    \n    print(\"FDs:\", fds)\n    print(\"\\nComputing A+:\")\n    closure_a = compute_closure({\"A\"}, fds)\n    print(f\"\\nA+ = {closure_a}\")\n    \n    print(\"\\nComputing B+:\")\n    closure_b = compute_closure({\"B\"}, fds)\n    print(f\"\\nB+ = {closure_b}\")\n    \n    # Find candidate keys\n    print(\"\\n\" + \"=\" * 60)\n    print(\"EXAMPLE 2: Finding Candidate Keys\")\n    print(\"=\" * 60)\n    keys = find_candidate_keys(attrs, fds)\n    print(f\"\\nCandidate keys: {keys}\")\n    \n    # Normal form\n    nf = check_normal_form(attrs, fds, keys)\n    print(f\"Highest normal form: {nf}\")\n    \n    # BCNF violation\n    print(\"\\n\" + \"=\" * 60)\n    print(\"EXAMPLE 3: BCNF Violation\")\n    print(\"=\" * 60)\n    attrs2 = {\"student_id\", \"course_id\", \"instructor_name\"}\n    fds2 = [FunctionalDependency({\"course_id\"}, {\"instructor_name\"})]\n    keys2 = find_candidate_keys(attrs2, fds2)\n    nf2 = check_normal_form(attrs2, fds2, keys2)\n    print(f\"Normal form: {nf2}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "715-python-implementation--3nf-synthesis",
+      children: "7.15 Python Implementation — 3NF Synthesis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\n3NF Synthesis Algorithm — produces lossless, dependency-preserving 3NF decomposition\n\"\"\"\n\ndef minimize_fds(fds: List[FunctionalDependency]) -> List[FunctionalDependency]:\n    \"\"\"Compute minimal cover.\"\"\"\n    # Step 1: Single RHS\n    result = []\n    for fd in fds:\n        if len(fd.rhs) > 1:\n            for attr in fd.rhs:\n                result.append(FunctionalDependency(fd.lhs, {attr}))\n        else:\n            result.append(fd)\n    \n    # Step 2: Remove redundant LHS attributes\n    for i, fd in enumerate(result):\n        if len(fd.lhs) <= 1:\n            continue\n        for attr in list(fd.lhs):\n            test_lhs = set(fd.lhs) - {attr}\n            if test_lhs:\n                closure = compute_closure(test_lhs, result)\n                if fd.rhs.issubset(closure):\n                    result[i] = FunctionalDependency(frozenset(test_lhs), fd.rhs)\n                    break\n    \n    # Step 3: Remove redundant FDs\n    minimal = []\n    for i, fd in enumerate(result):\n        without = result[:i] + result[i+1:]\n        closure = compute_closure(fd.lhs, without)\n        if not fd.rhs.issubset(closure):\n            minimal.append(fd)\n    \n    return minimal\n\n\ndef synthesize_3nf(attrs: Set[str], fds: List[FunctionalDependency]) -> List[Set[str]]:\n    \"\"\"\n    3NF Synthesis Algorithm.\n    Returns a lossless, dependency-preserving decomposition.\n    \n    Complexity: O(|F|^2 * n) for minimal cover + O(2^|LR| * |F| * n) for keys\n    \"\"\"\n    print(\"Step 1: Minimal cover...\")\n    G = minimize_fds(fds)\n    print(f\"  Minimal cover: {G}\")\n    \n    print(\"\\nStep 2: Group by LHS...\")\n    groups: Dict[frozenset, Set[str]] = {}\n    for fd in G:\n        key = fd.lhs\n        if key in groups:\n            groups[key].update(fd.rhs)\n        else:\n            groups[key] = set(fd.rhs)\n    \n    schemas = [set(lhs) | rhs for lhs, rhs in groups.items()]\n    print(f\"  Schemas from FDs: {schemas}\")\n    \n    print(\"\\nStep 3: Add candidate key if needed...\")\n    keys = find_candidate_keys(attrs, fds)\n    has_key = any(any(key.issubset(s) for s in schemas) for key in keys)\n    if not has_key and keys:\n        schemas.append(set(keys[0]))\n        print(f\"  Added key relation: {keys[0]}\")\n    \n    print(\"\\nStep 4: Remove redundant schemas...\")\n    redundant = set()\n    for i, s1 in enumerate(schemas):\n        for j, s2 in enumerate(schemas):\n            if i != j and s1.issubset(s2):\n                redundant.add(i)\n                break\n    \n    final = [s for i, s in enumerate(schemas) if i not in redundant]\n    return final\n\n\nif __name__ == \"__main__\":\n    print(\"3NF SYNTHESIS\")\n    print(\"=\" * 60)\n    \n    attrs = {\"order_id\", \"order_date\", \"customer_id\", \"customer_name\", \n             \"product_id\", \"product_name\", \"quantity\", \"price\"}\n    fds = [\n        FunctionalDependency({\"order_id\"}, {\"order_date\", \"customer_id\", \"customer_name\"}),\n        FunctionalDependency({\"customer_id\"}, {\"customer_name\"}),\n        FunctionalDependency({\"product_id\"}, {\"product_name\"}),\n        FunctionalDependency({\"order_id\", \"product_id\"}, {\"quantity\", \"price\"}),\n    ]\n    \n    schemas = synthesize_3nf(attrs, fds)\n    print(f\"\\nFinal 3NF decomposition: {schemas}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "716-python-implementation--bcnf-decomposition",
+      children: "7.16 Python Implementation — BCNF Decomposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nBCNF Decomposition Algorithm\n\"\"\"\n\ndef project_fds(all_attrs: Set[str], sub_attrs: Set[str], \n                fds: List[FunctionalDependency]) -> List[FunctionalDependency]:\n    \"\"\"Project FDs onto a subset of attributes.\"\"\"\n    return [\n        fd for fd in fds \n        if fd.lhs.union(fd.rhs).issubset(sub_attrs)\n    ]\n\n\ndef bcnf_decompose(attrs: Set[str], fds: List[FunctionalDependency], \n                   name: str = \"R\") -> List[Tuple[Set[str], str]]:\n    \"\"\"\n    Recursive BCNF decomposition.\n    \n    Complexity: O(|F| * n * |F|) per decomposition level\n    WHY: Each level checks all FDs for superkey (closure computation)\n    \n    Termination: Each decomposition reduces the attribute set\n    Maximum depth: |attrs| (worst case: one attribute removed per level)\n    \"\"\"\n    keys = find_candidate_keys(attrs, fds)\n    nf = check_normal_form(attrs, fds, keys)\n    \n    if nf == \"BCNF\":\n        return [(attrs, name)]\n    \n    for fd in fds:\n        if fd.rhs.issubset(fd.lhs):\n            continue\n        is_superkey = any(fd.lhs.issuperset(key) for key in keys)\n        if not is_superkey:\n            X = set(fd.lhs)\n            Y = set(fd.rhs)\n            \n            R1_attrs = X | Y\n            R2_attrs = set(attrs) - Y\n            \n            print(f\"  Violating FD: {fd}\")\n            print(f\"  Decompose: {name} -> ({','.join(sorted(R1_attrs))}), ({','.join(sorted(R2_attrs))})\")\n            \n            R1_fds = project_fds(attrs, R1_attrs, fds)\n            R2_fds = project_fds(attrs, R2_attrs, fds)\n            \n            result = []\n            result.extend(bcnf_decompose(R1_attrs, R1_fds, f\"{name}1\"))\n            result.extend(bcnf_decompose(R2_attrs, R2_fds, f\"{name}2\"))\n            return result\n    \n    return [(attrs, name)]\n\n\nif __name__ == \"__main__\":\n    print(\"BCNF DECOMPOSITION\")\n    print(\"=\" * 60)\n    \n    attrs = {\"student_id\", \"course_id\", \"instructor_name\"}\n    fds = [FunctionalDependency({\"course_id\"}, {\"instructor_name\"})]\n    \n    result = bcnf_decompose(attrs, fds)\n    print(f\"\\nBCNF decomposition:\")\n    for rs, rn in result:\n        print(f\"  {rn}: {{{','.join(sorted(rs))}}}\")\n    \n    # More complex example\n    print(\"\\nComplex example: R(A,B,C,D,E) with {AB->C, C->D, D->E}\")\n    attrs2 = {\"A\", \"B\", \"C\", \"D\", \"E\"}\n    fds2 = [\n        FunctionalDependency({\"A\", \"B\"}, {\"C\"}),\n        FunctionalDependency({\"C\"}, {\"D\"}),\n        FunctionalDependency({\"D\"}, {\"E\"}),\n    ]\n    \n    result2 = bcnf_decompose(attrs2, fds2)\n    print(f\"BCNF decomposition:\")\n    for rs, rn in result2:\n        print(f\"  {rn}: {{{','.join(sorted(rs))}}}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "717-python-implementation--normalization-analyzer",
+      children: "7.17 Python Implementation — Normalization Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nComprehensive Schema Analyzer\n\"\"\"\n\nclass SchemaAnalyzer:\n    \"\"\"Analyze a schema: normal form, violations, recommendations.\"\"\"\n    \n    def __init__(self, name: str, attrs: Set[str], fds: List[FunctionalDependency]):\n        self.name = name\n        self.attrs = attrs\n        self.fds = fds\n        self.candidate_keys = find_candidate_keys(attrs, fds)\n        self._analyze()\n    \n    def _analyze(self):\n        self.normal_form = check_normal_form(self.attrs, self.fds, self.candidate_keys)\n        self.violations = self._find_violations()\n        self.prime_attrs = set().union(*self.candidate_keys) if self.candidate_keys else set()\n        self.non_prime_attrs = self.attrs - self.prime_attrs\n    \n    def _find_violations(self) -> List[str]:\n        violations = []\n        keys = self.candidate_keys\n        non_prime = self.non_prime_attrs\n        \n        for fd in self.fds:\n            if fd.rhs.issubset(fd.lhs):\n                continue\n            is_superkey = any(fd.lhs.issuperset(key) for key in keys)\n            if not is_superkey:\n                attr_status = []\n                for a in fd.rhs:\n                    if a in self.prime_attrs:\n                        attr_status.append(f\"{a}(prime)\")\n                    else:\n                        attr_status.append(f\"{a}(non-prime)\")\n                violations.append(\n                    f\"BCNF: {fd} — LHS {set(fd.lhs)} not a superkey, \"\n                    f\"RHS includes non-prime: {attr_status}\"\n                )\n        \n        if self.normal_form == \"3NF\":\n            for fd in self.fds:\n                if fd.rhs.issubset(fd.lhs):\n                    continue\n                is_superkey = any(fd.lhs.issuperset(key) for key in keys)\n                if not is_superkey:\n                    for attr in fd.rhs:\n                        if attr not in self.prime_attrs:\n                            violations.append(\n                                f\"Would-be BCNF: {fd} — but in 3NF because \"\n                                f\"RHS {attr} would need to be prime\"\n                            )\n        \n        return violations\n    \n    def report(self) -> str:\n        lines = [f\"{'='*60}\"]\n        lines.append(f\"SCHEMA ANALYSIS: {self.name}\")\n        lines.append(f\"{'='*60}\")\n        lines.append(f\"Attributes ({len(self.attrs)}): {sorted(self.attrs)}\")\n        lines.append(f\"Non-trivial FDs ({len(self.fds)}):\")\n        for fd in self.fds:\n            if not fd.rhs.issubset(fd.lhs):\n                lines.append(f\"  {fd}\")\n        lines.append(f\"Candidate keys: {[sorted(k) for k in self.candidate_keys]}\")\n        lines.append(f\"Prime attributes: {sorted(self.prime_attrs)}\")\n        lines.append(f\"Non-prime attributes: {sorted(self.non_prime_attrs)}\")\n        lines.append(f\"\")\n        lines.append(f\">>> Highest Normal Form: {self.normal_form} <<<\")\n        lines.append(f\"\")\n        \n        if self.violations:\n            lines.append(\"Issues:\")\n            for v in self.violations:\n                lines.append(f\"  - {v}\")\n        else:\n            lines.append(\"No violations — schema is fully normalized.\")\n        \n        lines.append(\"\")\n        lines.append(\"Recommendations:\")\n        if self.normal_form == \"BCNF\":\n            lines.append(\"  Schema fully normalized. No changes needed.\")\n        elif self.normal_form == \"3NF\":\n            lines.append(\"  In 3NF. Review if BCNF is needed (may lose FDs).\")\n        elif self.normal_form == \"2NF\":\n            lines.append(\"  Has partial dependencies. Decompose to 3NF.\")\n        else:\n            lines.append(\"  Significant redundancy. Normalize to at least 3NF.\")\n        \n        return \"\\n\".join(lines)\n\n\nif __name__ == \"__main__\":\n    analyzer = SchemaAnalyzer(\n        \"StudentCourse\",\n        {\"student_id\", \"course_id\", \"instructor_name\"},\n        [FunctionalDependency({\"course_id\"}, {\"instructor_name\"})]\n    )\n    print(analyzer.report())\n    \n    print(\"\\n\")\n    \n    analyzer2 = SchemaAnalyzer(\n        \"WellNormalized\",\n        {\"A\", \"B\", \"C\", \"D\"},\n        [FunctionalDependency({\"A\"}, {\"B\", \"C\", \"D\"})]\n    )\n    print(analyzer2.report())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "718-multiple-candidate-keys-in-normalization",
+      children: "7.18 Multiple Candidate Keys in Normalization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-scenario",
+      children: "Real-World Scenario"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Consider R(ssn, student_id, name, address, major) where both ssn and student_id uniquely identify a student. FDs:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ssn -> name, address, major"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "student_id -> name, address, major"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Both ssn and student_id are candidate keys. When normalizing:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check partial dependencies against ALL candidate keys, not just the chosen PK"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The 3NF relaxed condition considers any prime attribute (member of ANY candidate key)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF check must pass for ALL non-trivial FDs"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "practical-implications",
+      children: "Practical Implications"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effect on Normalization"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Two single-attribute keys"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both are candidate keys; no partial dependencies possible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "One composite, one single"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single-attribute key is automatically a superkey"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Two overlapping composite keys"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check partial dependencies against BOTH keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrogate key as PK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Natural keys must remain as UNIQUE constraints"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "example--overlapping-keys-affecting-bcnf",
+      children: "Example — Overlapping Keys Affecting BCNF"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R(A, B, C) with FDs {AB -> C, C -> B}:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Candidate keys: {A, B}, {A, C}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF for C -> B: Is C a superkey? C+ = {C, B} — no A. NOT a superkey."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BUT B is prime (in key AB). So 3NF holds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF would decompose, losing AB -> C."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Handling multiple candidate keys\nCREATE TABLE employee (\n    ssn VARCHAR(11) PRIMARY KEY,\n    employee_id INTEGER UNIQUE NOT NULL,\n    name VARCHAR(100) NOT NULL,\n    email VARCHAR(200) UNIQUE NOT NULL,\n    department_id INTEGER\n);\n-- ssn, employee_id, email are all candidate keys\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "719-interview-corner",
+      children: "7.19 Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q1-what-is-the-difference-between-3nf-and-bcnf",
+      children: "Q1: What is the difference between 3NF and BCNF?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "3NF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "BCNF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Condition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For FD X -> A: X superkey OR A is prime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For FD X -> A: X must be a superkey"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some redundancy possible with prime RHS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No redundancy from FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALWAYS guaranteed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May lose FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Algorithm"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synthesis (minimal cover + grouping)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decomposition (split on violating FD)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to prefer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default — preserves all constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-integrity systems willing to sacrifice FDs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-world frequency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most common target"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Used where data integrity is paramount"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"BCNF is stricter than 3NF: it requires every non-trivial FD's left side to be a superkey. 3NF relaxes this when the right side is a prime attribute. The tradeoff: BCNF may lose dependency preservation. I target BCNF but accept 3NF when BCNF would lose important constraints.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q2-fd-vs-multi-valued-dependency-mvd",
+      children: "Q2: FD vs Multi-Valued Dependency (MVD)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FD (X -> Y)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MVD (X ->> Y)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Meaning"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One X value determines exactly one Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One X determines a SET of Y values (independent of other attributes)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Notation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X ->> Y"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "student_id -> name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "employee_id ->> skill"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Normal form"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1NF-BCNF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4NF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Constraint type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Functional (one-to-one mapping)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-valued (set-valued)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Redundancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeated values across rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeated sets across rows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resolution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose per BCNF/3NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose per 4NF"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"An FD X -> Y means each X has exactly one Y. An MVD X ->> Y means each X has a set of Y values independent of other attributes. Example: employee with multiple skills AND multiple languages creates an MVD (each combination repeats). FDs are handled by BCNF/3NF; MVDs require 4NF.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q3-denormalization--when-and-why",
+      children: "Q3: Denormalization — when and why?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Denormalization intentionally adds redundancy for performance. Use it when:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read-heavy workloads: many JOINs slow queries"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pre-computed aggregates: running totals queried frequently"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Caching: customer name in order table avoids a JOIN"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sharding: redundancy enables data locality"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The principle: normalize first, then denormalize with purpose. Document WHY and manage consistency via application logic or triggers.\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q4-normalization-trade-offs",
+      children: "Q4: Normalization trade-offs"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Pro"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Con"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Eliminates update anomalies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More JOINs = slower reads"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduces storage redundancy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Insert/update touch multiple tables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforces data integrity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex queries for reporting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "One fact, one place"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May require app-level joins"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Adaptable to changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Over-normalization rarely needed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Relational theory foundation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance tuning harder"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Normalization optimizes for write integrity; denormalization optimizes for read performance. Start normalized, profile, denormalize only where measured bottlenecks exist.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q5-lossless-vs-lossy-decomposition",
+      children: "Q5: Lossless vs lossy decomposition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Lossless decomposition guarantees joining the tables recovers exactly the original rows — no spurious tuples. Lossy creates phantom rows. The test: if the common attribute is a key in at least one component, the join is lossless. Lossless is mandatory — lossy decompositions corrupt data.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q6-finding-candidate-keys-from-fds",
+      children: "Q6: Finding candidate keys from FDs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Classify attributes: left-only (must be in every key), right-only (never in any key), both-sides (may or may not be), neither (must be in every key). Compute closure of mandatory (left-only + neither). If it covers all attributes, done. Otherwise, add 'both' attributes one at a time, then in combinations, computing closure each time. Minimal sets that cover all attributes are candidate keys.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q7-can-a-relation-be-in-3nf-but-not-bcnf",
+      children: "Q7: Can a relation be in 3NF but not BCNF?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Yes. The classic example: R(A, B, C) with {AB -> C, C -> B}. Keys: {A,B}, {A,C}. FD C -> B — C is not a superkey, but B is prime. 3NF allows it; BCNF does not. The 3NF relaxation for prime RHS attributes is exactly what makes this possible.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q8-explain-the-3nf-synthesis-algorithm",
+      children: "Q8: Explain the 3NF synthesis algorithm"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"Four steps: (1) Compute minimal cover — decompose RHS, remove redundant LHS attributes, remove redundant FDs. (2) Group FDs by left-hand side, creating a schema with LHS union RHS for each group. (3) If no schema contains a candidate key, add one. (4) Remove redundant schemas that are subsets of others. The result is lossless and dependency-preserving.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q9-why-is-bcnf-decomposition-not-dependency-preserving",
+      children: "Q9: Why is BCNF decomposition not dependency-preserving?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"BCNF decomposition splits relations on violating FDs. After splitting, an FD whose attributes span multiple decomposed relations cannot be enforced locally. Example: R(student_id, course_id, instructor) with course_id -> instructor. After decomposing to R1(course_id, instructor) and R2(student_id, course_id), the FD (student_id, course_id) -> instructor is lost — it requires a join to enforce.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q10-what-is-the-difference-between-minimal-cover-and-canonical-cover",
+      children: "Q10: What is the difference between minimal cover and canonical cover?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interview Answer:"
+      }), " \"A minimal cover is a minimal set of FDs that implies the original set. Conditions: every RHS is a single attribute, no LHS attribute is redundant, no FD is redundant. A canonical cover is essentially the same concept — the terms are often used interchangeably. The minimal cover is the starting point for 3NF synthesis.\""]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "720-applications-in-real-database-systems",
+      children: "7.20 Applications in Real Database Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mysql-normalization-practices",
+      children: "MySQL Normalization Practices"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- E-commerce database normalized to 3NF\n\nCREATE TABLE customer (\n    customer_id INT PRIMARY KEY AUTO_INCREMENT,\n    email VARCHAR(255) NOT NULL UNIQUE,\n    first_name VARCHAR(100) NOT NULL,\n    last_name VARCHAR(100) NOT NULL,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n    -- 1NF: atomic cols, 2NF: single PK, 3NF: no transitive deps\n);\n\nCREATE TABLE product (\n    product_id INT PRIMARY KEY AUTO_INCREMENT,\n    product_name VARCHAR(200) NOT NULL,\n    unit_price DECIMAL(10,2) NOT NULL,\n    category_id INT NOT NULL,\n    FOREIGN KEY (category_id) REFERENCES category(category_id)\n    -- BCNF: product_id is a superkey, every determinant is a key\n);\n\nCREATE TABLE orders (\n    order_id INT PRIMARY KEY AUTO_INCREMENT,\n    customer_id INT NOT NULL,\n    order_date DATE NOT NULL,\n    total_amount DECIMAL(12,2) NOT NULL,\n    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)\n    -- 3NF: customer_name NOT stored here (transitive: order->customer->name)\n);\n\nCREATE TABLE order_item (\n    order_id INT NOT NULL,\n    product_id INT NOT NULL,\n    quantity INT NOT NULL,\n    unit_price DECIMAL(10,2) NOT NULL,\n    PRIMARY KEY (order_id, product_id),\n    FOREIGN KEY (order_id) REFERENCES orders(order_id),\n    FOREIGN KEY (product_id) REFERENCES product(product_id)\n    -- 2NF: quantity depends on whole composite key\n    -- 3NF: no transitive dependencies\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "MySQL-Specific Considerations:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact on Normalization"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AUTO_INCREMENT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrogate keys — natural candidate keys need UNIQUE constraints"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "InnoDB FK constraints"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical for maintaining decomposition integrity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Composite indexes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(order_id, product_id) indexes support composite PK efficiently"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Query optimizer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handles 3-4 table JOINs well; beyond that consider denormalization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PARTITIONING"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May benefit from denormalized columns for partition pruning"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "postgresql-normalization-practices",
+      children: "PostgreSQL Normalization Practices"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- PostgreSQL: normalized schema with advanced features\n\nCREATE DOMAIN us_phone AS VARCHAR(20)\n    CHECK (VALUE ~ '^\\+1[0-9]{10}$');\n\nCREATE TABLE customer (\n    customer_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n    ssn VARCHAR(11) UNIQUE NOT NULL,\n    phone us_phone NOT NULL,\n    name TEXT NOT NULL,\n    CONSTRAINT ssn_format CHECK (ssn ~ '^\\d{3}-\\d{2}-\\d{4}$')\n);\n\n-- Partial indexes reduce need for denormalization\nCREATE INDEX idx_customer_name ON customer(name);\nCREATE INDEX idx_order_customer ON orders(customer_id) INCLUDE (order_date);\n\n-- Materialized views for denormalized reporting\nCREATE MATERIALIZED VIEW customer_order_summary AS\nSELECT \n    c.customer_id,\n    c.name,\n    COUNT(o.order_id) AS total_orders,\n    SUM(o.total_amount) AS lifetime_value,\n    MAX(o.order_date) AS last_order_date\nFROM customer c\nLEFT JOIN orders o ON c.customer_id = o.customer_id\nGROUP BY c.customer_id, c.name;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "PostgreSQL-Specific Considerations:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact on Normalization"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "GENERATED AS IDENTITY"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrogate key generation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DOMAIN types"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce atomicity at type level — stronger 1NF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CHECK constraints"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Validate attribute format"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Partial/covering indexes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduce JOIN cost — less need for denormalization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Materialized views"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Denormalized views without sacrificing normalized base tables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EXCLUDE constraints"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce constraints beyond FDs (no overlapping time periods)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-normalization-anti-patterns",
+      children: "Real-World Normalization Anti-Patterns"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Anti-Pattern"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Normalization Issue"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EAV (Entity-Attribute-Value)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Attributes as rows instead of columns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Violates 1NF, complex queries, no FD enforcement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "JSON/JSONB overuse"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Related data in single JSON column"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot enforce FDs, loses relational integrity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Too many small tables"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every M:N relationship normalized individually"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Excessive JOINs hurt query performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Over-normalization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Normalizing to 5NF/6NF unnecessarily"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Schema complexity with minimal practical benefit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ignoring natural keys"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrogate keys without UNIQUE on natural keys"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Missed candidate keys, potential duplicate data"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "721-normal-forms-comparison-summary",
+      children: "7.21 Normal Forms Comparison Summary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Normal Form"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Condition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Eliminates"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "May Still Have"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic values, no repeating groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-valued attributes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All other redundancy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flatten or separate table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k*n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1NF + no partial dependencies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partial dependency redundancy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transitive dependencies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose on partial FDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k*"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3NF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2NF + no transitive deps of non-key attrs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most FD redundancy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-key determinant with prime RHS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synthesis from minimal cover"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BCNF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every determinant is a superkey"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALL redundancy from FDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MVD redundancy (needs 4NF)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decompose on violating FDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "decision-flow-for-normalization-level",
+      children: "Decision Flow for Normalization Level"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Is every value atomic? ───NO───> Apply 1NF\n       │\n      YES\n       │\nIs the key single-attr? ───NO───> Check partial dependencies\n       │                              │\n      YES                        Has partial FDs?\n       │                         YES───> Decompose to 2NF\n       │                           │\n       │                          NO\n       │                           │\n       │                           ▼\n       │                    Check transitive deps on non-key attrs\n       │                              │\n       │                     Has transitive? ──YES──> Decompose to 3NF\n       │                              │\n       │                             NO\n       │                              │\n       │                              ▼\n       │                     Check FDs where LHS is not superkey\n       │                              │\n       │                     Any violation? ──YES──> Consider BCNF (may lose FDs)\n       │                              │\n       │                             NO\n       │                              │\n       ▼                              ▼\nCheck MVDs (4NF) ──> Schema is BCNF ✓ (or 3NF if BCNF not possible)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "722-chapter-quiz",
+      children: "7.22 Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "An update anomaly occurs when:\na) A query returns incorrect results\nb) The same fact stored in multiple rows must be updated in all of them\nc) A transaction fails to commit\nd) An index becomes corrupted"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A functional dependency X -> Y means:\na) Every value of X maps to multiple values of Y\nb) If two tuples have the same X, they must have the same Y\nc) X is the primary key\nd) Y determines X"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A relation is in 2NF if:\na) It is in 1NF and has no composite keys\nb) It is in 1NF and has no partial dependencies\nc) It is in 1NF and has no transitive dependencies\nd) Every attribute is atomic"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which normal form requires every FD left side to be a superkey?\na) 1NF\nb) 2NF\nc) 3NF\nd) BCNF"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A lossless decomposition means:\na) No data is lost during a system crash\nb) Joining the decomposed tables yields the original relation\nc) All FDs are preserved\nd) The decomposition has minimal tables"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Armstrong's transitivity rule states:\na) If X -> Y and Y -> Z, then X -> Z\nb) If X -> Y, then XZ -> YZ\nc) If Y subset of X, then X -> Y\nd) If X -> Y and X -> Z, then X -> YZ"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The attribute closure of a candidate key:\na) Contains only the key attributes\nb) Contains all attributes of the relation\nc) Is always empty\nd) Contains only non-key attributes"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In practice, why might you stop at 3NF instead of BCNF?\na) BCNF is harder to implement in SQL\nb) BCNF may lose dependency preservation\nc) 3NF always has better performance\nd) 3NF requires fewer tables"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which Armstrong axiom allows deriving X -> YZ from X -> Y and X -> Z?\na) Reflexivity\nb) Augmentation\nc) Transitivity\nd) Union"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the closure of {B} given FDs {A -> B, B -> C, C -> D}?\na) {B}\nb) {B, C}\nc) {B, C, D}\nd) {A, B, C, D}"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 1-b, 2-b, 3-b, 4-d, 5-b, 6-a, 7-b, 8-b, 9-d, 10-c"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "723-exercises",
+      children: "7.23 Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given R(A, B, C, D) with FDs {A -> B, B -> C, C -> D}:\na) Find A+, B+, C+\nb) What are the candidate keys?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Define insertion, deletion, and update anomalies. Give a real-world example of each."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the difference between partial dependency and transitive dependency?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Explain why R(student_id, course_id, instructor, instructor_office) with FDs {student_id, course_id -> instructor, instructor -> instructor_office} violates BCNF."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given ORDER(order_id, customer_name, product_name, quantity, order_date) with FDs {order_id -> customer_name, order_date; order_id, product_name -> quantity}:\na) Find the candidate key.\nb) Identify partial dependencies.\nc) Decompose to 2NF.\nd) Check if the decomposition is in 3NF."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "For R(A, B, C, D, E) with FDs {AB -> C, C -> D, D -> E}:\na) Find all candidate keys.\nb) Is the relation in 2NF? Justify.\nc) Decompose to 3NF."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is a lossless decomposition? Give an example of lossless and lossy."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Consider R(student_id, course_id, semester, grade, instructor, instructor_rating) with FDs {student_id, course_id, semester -> grade; course_id -> instructor; instructor -> instructor_rating}:\na) Find candidate keys.\nb) Normalize to BCNF.\nc) Which FDs are lost?\nd) Would you accept 3NF instead? Why?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given R(P, Q, R, S, T) with FDs {PQ -> R, PR -> S, Q -> T}:\na) Find the minimal cover\nb) Find candidate keys\nc) Decompose to 3NF using synthesis\nd) Check if result is also in BCNF"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove using Armstrong's axioms: If X -> Y and YZ -> W, then XZ -> W."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Design a MOVIE RENTAL database. Start with a universal relation (movie title, genre, director, actor, customer name, rental date, return date, price). Identify FDs and normalize to 3NF. Write CREATE TABLE statements."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "724-quick-reference-cards",
+      children: "7.24 Quick Reference Cards"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "armstrongs-axioms-quick-reference",
+      children: "Armstrong's Axioms Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Premise"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Conclusion"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reflexivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Y subset of X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Augmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XZ -> YZ"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transitivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y, Y -> Z"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Z"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Union"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y, X -> Z"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> YZ"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decomposition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> YZ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y, X -> Z"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pseudo-transitivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X -> Y, YZ -> W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XZ -> W"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "normal-form-check-quick-reference",
+      children: "Normal Form Check Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "NF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Requirement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "How to Test"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic values, key defined"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No arrays or composite values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1NF + full key dependency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each non-key attr depends on entire composite key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3NF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2NF + no transitive non-key deps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For every FD X->A: X is superkey OR A is prime"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BCNF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every FD left side is a superkey"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For every FD X->A: compute X+, check if it covers all"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "decomposition-properties-quick-reference",
+      children: "Decomposition Properties Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "How to Test"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lossless Join"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Join recovers original rows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common attr is key in at least one component"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dependency Preservation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FDs enforceable on components"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each FD's attrs appear together in some component"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Both"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guaranteed by 3NF synthesis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use synthesis algorithm"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "attribute-closure-quick-reference",
+      children: "Attribute Closure Quick Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Algorithm:\n1. closure = X\n2. For each FD Y -> Z: if Y subset closure: closure = closure union Z\n3. Repeat step 2 until no change\n4. Return closure\n\nUsage:\n- Superkey test: X is superkey if X+ = all attributes\n- Candidate key: X is minimal superkey\n- FD test: X -> Y holds if Y subset of X+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "725-typescript-functional-dependency-analyzer",
+      children: "7.25 TypeScript Functional Dependency Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The TypeScript implementation below computes attribute closure, finds candidate keys, checks normal forms, and suggests decompositions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// ============================================================\n// Functional Dependency Analyzer — TypeScript\n// ============================================================\n\ntype AttributeSet = Set<string>;\ntype FunctionalDependency = { lhs: AttributeSet; rhs: AttributeSet };\n\nclass FDAnalyzer {\n  private attributes: AttributeSet;\n  private fds: FunctionalDependency[];\n\n  constructor(attributes: string[], fds: Array<[string[], string[]]>) {\n    this.attributes = new Set(attributes);\n    this.fds = fds.map(([l, r]) => ({ lhs: new Set(l), rhs: new Set(r) }));\n  }\n\n  // Compute closure of a set of attributes\n  closure(attrs: string[]): Set<string> {\n    const result = new Set(attrs);\n    let changed = true;\n    while (changed) {\n      changed = false;\n      for (const fd of this.fds) {\n        if (this.isSubset(fd.lhs, result)) {\n          for (const attr of fd.rhs) {\n            if (!result.has(attr)) { result.add(attr); changed = true; }\n          }\n        }\n      }\n    }\n    return result;\n  }\n\n  private isSubset(sub: Set<string>, sup: Set<string>): boolean {\n    for (const item of sub) { if (!sup.has(item)) return false; }\n    return true;\n  }\n\n  // Find all candidate keys\n  findCandidateKeys(): string[][] {\n    const allAttrs = this.attributes;\n    // Classify attributes\n    const leftOnly = new Set<string>();\n    const rightOnly = new Set<string>();\n    const bothSides = new Set<string>();\n    const neither = new Set<string>();\n\n    for (const attr of allAttrs) {\n      let onLeft = false, onRight = false;\n      for (const fd of this.fds) {\n        if (fd.lhs.has(attr)) onLeft = true;\n        if (fd.rhs.has(attr)) onRight = true;\n      }\n      if (onLeft && !onRight) leftOnly.add(attr);\n      else if (!onLeft && onRight) rightOnly.add(attr);\n      else if (onLeft && onRight) bothSides.add(attr);\n      else neither.add(attr);\n    }\n\n    // Attributes that must be in every key\n    const mandatory = new Set([...leftOnly, ...neither]);\n    const mandatoryClosure = this.closure([...mandatory]);\n\n    const keys: string[][] = [];\n    if (this.isSubset(allAttrs, mandatoryClosure)) {\n      keys.push([...mandatory]);\n      return keys;\n    }\n\n    // Try adding both-sides attributes one by one and in combinations\n    const bothArray = [...bothSides];\n    const combinations: string[][] = [];\n    for (let k = 1; k <= bothArray.length; k++) {\n      this.generateCombinations(bothArray, k, 0, [], combinations);\n    }\n    for (const combo of combinations) {\n      const candidate = new Set([...mandatory, ...combo]);\n      const cClosure = this.closure([...candidate]);\n      if (this.isSubset(allAttrs, cClosure)) {\n        // Check minimality\n        let isMinimal = true;\n        for (const key of keys) {\n          if (this.isSubset(new Set(key), candidate)) { isMinimal = false; break; }\n        }\n        if (isMinimal) keys.push([...candidate]);\n      }\n    }\n    return keys;\n  }\n\n  private generateCombinations(arr: string[], k: number, start: number, current: string[], result: string[][]): void {\n    if (current.length === k) { result.push([...current]); return; }\n    for (let i = start; i < arr.length; i++) {\n      current.push(arr[i]);\n      this.generateCombinations(arr, k, i + 1, current, result);\n      current.pop();\n    }\n  }\n\n  // Check normal form\n  checkNormalForm(): string {\n    const keys = this.findCandidateKeys();\n    if (keys.length === 0) return 'NONE';\n\n    // Check BCNF first\n    for (const fd of this.fds) {\n      if (this.isSubset(fd.rhs, fd.lhs)) continue; // Trivial\n      let isSuperkey = false;\n      for (const key of keys) {\n        if (this.isSubset(new Set(key), fd.lhs)) { isSuperkey = true; break; }\n      }\n      if (!isSuperkey) {\n        // Check if 3NF: RHS attributes must be prime\n        let allPrime = true;\n        for (const attr of fd.rhs) {\n          let isPrime = false;\n          for (const key of keys) {\n            if (key.includes(attr)) { isPrime = true; break; }\n          }\n          if (!isPrime) { allPrime = false; break; }\n        }\n        if (!allPrime) {\n          return '1NF (violates BCNF and 3NF — FD ' + this.fdToString(fd) + ' has non-prime RHS and LHS not a superkey)';\n        }\n      }\n    }\n    // Check 3NF violation\n    for (const fd of this.fds) {\n      if (this.isSubset(fd.rhs, fd.lhs)) continue;\n      let isSuperkey = false;\n      for (const key of keys) {\n        if (this.isSubset(new Set(key), fd.lhs)) { isSuperkey = true; break; }\n      }\n      if (!isSuperkey) {\n        return '3NF (BCNF violated by FD ' + this.fdToString(fd) + ' but RHS is prime — 3NF holds)';\n      }\n    }\n    return 'BCNF';\n  }\n\n  private fdToString(fd: FunctionalDependency): string {\n    return '[' + [...fd.lhs].join(',') + '] -> [' + [...fd.rhs].join(',') + ']';\n  }\n\n  printReport(): void {\n    console.log('=== FD Analyzer Report ===');\n    console.log('Attributes: ' + [...this.attributes].join(', '));\n    console.log('FDs:');\n    for (const fd of this.fds) {\n      console.log('  ' + this.fdToString(fd));\n    }\n    const keys = this.findCandidateKeys();\n    console.log('Candidate keys: ' + keys.map(k => '[' + k.join(',') + ']').join(', '));\n    console.log('Normal form: ' + this.checkNormalForm());\n  }\n}\n\n// Demo\nconst analyzer = new FDAnalyzer(\n  ['A', 'B', 'C', 'D', 'E'],\n  [['A', 'B'], ['B', 'C'], ['C', 'D'], ['D', 'E']]\n);\nanalyzer.printReport();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-chapter-quiz-questions",
+      children: "Additional Chapter Quiz Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given R(A, B, C, D) with FDs {A -> B, B -> C, C -> D}, what is A+?\na) {A}\nb) {A, B}\nc) {A, B, C}\nd) {A, B, C, D}"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A relation with a single-attribute primary key is automatically in:\na) 1NF\nb) 2NF\nc) 3NF\nd) BCNF"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The 3NF synthesis algorithm is guaranteed to produce a decomposition that is:\na) Dependency-preserving and lossless\nb) Dependency-preserving and lossy\nc) Lossless but not dependency-preserving\nd) Neither lossless nor dependency-preserving"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Denormalization is appropriate when:\na) Writing is more frequent than reading\nb) Measured read performance is a bottleneck\nc) Storage cost is the primary concern\nd) Data integrity is the highest priority"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A lossy decomposition occurs when:\na) Some tuples are lost during decomposition\nb) Joining the decomposed tables produces spurious tuples\nc) Decomposition creates duplicate tuples\nd) The decomposition has too many tables"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 11-d, 12-b, 13-a, 14-b, 15-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "12",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given R(A, B, C, D, E, F) with FDs {AB -> C, C -> D, D -> E, E -> F, F -> AB}:\na) Find all candidate keys.\nb) What normal form is this in?\nc) If not BCNF, decompose to BCNF and identify lost FDs."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a TypeScript function that takes a set of FDs and a proposed decomposition, and tests whether the decomposition is lossless (chase algorithm)."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Functional dependencies are fundamental constraints expressing that X determines Y. They are the mathematical foundation of all normalization."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete inference system for deriving implied FDs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Attribute closure (X+) finds all attributes determined by X — the single most useful tool for normalization. Used to find keys, check FDs, and verify normal forms."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Candidate keys are minimal superkeys. Found by classifying attributes (left-only, right-only, both, neither) and testing subsets."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1NF eliminates non-atomic values and repeating groups — prerequisite for all relational operations."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "2NF eliminates partial dependencies on composite keys — relevant only for tables with composite primary keys."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "3NF eliminates transitive dependencies on non-key attributes — removes most practical redundancy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF requires every FD left side to be a superkey — the strongest form based on FDs but may lose dependency preservation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Lossless decomposition guarantees data recoverability — mandatory for all decompositions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Dependency preservation ensures FDs can be enforced locally — 3NF synthesis guarantees both lossless join AND dependency preservation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The 3NF synthesis algorithm (minimal cover, group by LHS, add key, remove redundants) is the standard approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BCNF is ideal but 3NF is practical — in real systems, we target BCNF but accept 3NF when BCNF would lose important constraints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Denormalization is intentional redundancy for performance — apply only after profiling demonstrates a bottleneck."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In MySQL and PostgreSQL, use FK constraints, unique constraints, and materialized views to manage the normalization/performance tradeoff."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "one-sentence-takeaways",
+      children: "One-Sentence Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.1:"
+        }), " Unnormalized tables suffer from insertion, update, and deletion anomalies caused by data redundancy — the address book analogy illustrates why separation of concerns matters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.2:"
+        }), " Functional dependencies (X -> Y) are constraints that one set of attributes uniquely determines another — like recipe ingredients uniquely determined by dish name."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.3:"
+        }), " Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete FD inference system — all six rules derive from just these three."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.4:"
+        }), " Attribute closure (X+) finds all attributes determined by X — the key tool for finding keys, checking FDs, and normalization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.5:"
+        }), " Candidate keys are minimal superkeys — found by classifying attributes into four categories and testing closure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.6:"
+        }), " 1NF requires atomic attribute values and no repeating groups — enables all relational operations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.7:"
+        }), " 2NF eliminates partial dependencies — non-key attributes must depend on the entire composite key."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.8:"
+        }), " 3NF eliminates transitive dependencies — a non-key attribute must not determine another non-key attribute."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.9:"
+        }), " BCNF requires every FD left side to be a superkey — stronger than 3NF but may lose dependency preservation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.10:"
+        }), " Lossless decomposition guarantees JOIN recovers original rows — tested by checking if the common attribute is a key in one component."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.11:"
+        }), " Dependency preservation means all FDs enforceable on decomposed tables without JOINs — 3NF synthesis guarantees this."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.12-7.17:"
+        }), " C++ and Python implementations automate closure, key finding, 3NF/BCNF decomposition, and schema analysis."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.18:"
+        }), " Multiple candidate keys affect normalization — partial dependencies must be checked against ALL candidate keys."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.19:"
+        }), " Interview knowledge: BCNF vs 3NF tradeoffs, FD vs MVD, denormalization timing, normalization costs and benefits."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "7.20:"
+        }), " MySQL and PostgreSQL each provide features (constraints, indexes, materialized views) that support normalized designs while managing performance."]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

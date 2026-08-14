@@ -1,0 +1,3197 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[33713],{
+
+/***/ 17213
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_24_transactions_md_684_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-24-transactions-md-684.json
+const site_docs_courses_java_24_transactions_md_684_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/24-transactions","title":"Transaction Management","description":"Transactions are the bedrock of reliable data processing. A transaction groups multiple operations into a single unit of work that either succeeds completely (commit) or fails entirely (rollback), preserving data integrity even under concurrent access, hardware failures, and application crashes.","source":"@site/docs/courses/java/24-transactions.md","sourceDirName":"courses/java","slug":"/java/24-transactions","permalink":"/ai-engineering-journey/java/24-transactions","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":24,"frontMatter":{"id":"24-transactions","slug":"/java/24-transactions","title":"Transaction Management","sidebar_label":"Transaction Management","sidebar_position":24},"sidebar":"course-java","previous":{"title":"Spring Data for NoSQL","permalink":"/ai-engineering-journey/java/23-nosql"},"next":{"title":"Authentication & Authorization","permalink":"/ai-engineering-journey/java/25-auth-authz"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/24-transactions.md
+
+
+const frontMatter = {
+	id: '24-transactions',
+	slug: '/java/24-transactions',
+	title: 'Transaction Management',
+	sidebar_label: 'Transaction Management',
+	sidebar_position: 24
+};
+const contentTitle = 'Transaction Management';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "@Transactional — Declarative Transactions",
+  "id": "transactional--declarative-transactions",
+  "level": 2
+}, {
+  "value": "Basic Usage",
+  "id": "basic-usage",
+  "level": 3
+}, {
+  "value": "How @Transactional Works",
+  "id": "how-transactional-works",
+  "level": 3
+}, {
+  "value": "Propagation Behaviors",
+  "id": "propagation-behaviors",
+  "level": 3
+}, {
+  "value": "REQUIRES_NEW In-Depth",
+  "id": "requires_new-in-depth",
+  "level": 3
+}, {
+  "value": "NESTED Behavior with Savepoints",
+  "id": "nested-behavior-with-savepoints",
+  "level": 3
+}, {
+  "value": "Isolation Levels",
+  "id": "isolation-levels",
+  "level": 3
+}, {
+  "value": "rollbackFor and noRollbackFor",
+  "id": "rollbackfor-and-norollbackfor",
+  "level": 3
+}, {
+  "value": "readOnly Flag",
+  "id": "readonly-flag",
+  "level": 3
+}, {
+  "value": "timeout",
+  "id": "timeout",
+  "level": 3
+}, {
+  "value": "Complete @Transactional Example",
+  "id": "complete-transactional-example",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "TransactionTemplate — Programmatic Transactions",
+  "id": "transactiontemplate--programmatic-transactions",
+  "level": 2
+}, {
+  "value": "Basic TransactionTemplate",
+  "id": "basic-transactiontemplate",
+  "level": 3
+}, {
+  "value": "TransactionCallback with Return Value",
+  "id": "transactioncallback-with-return-value",
+  "level": 3
+}, {
+  "value": "Lambda Syntax",
+  "id": "lambda-syntax",
+  "level": 3
+}, {
+  "value": "Per-Item Transactions with TransactionTemplate",
+  "id": "per-item-transactions-with-transactiontemplate",
+  "level": 3
+}, {
+  "value": "Dynamic Transaction Attributes",
+  "id": "dynamic-transaction-attributes",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "PlatformTransactionManager Hierarchy",
+  "id": "platformtransactionmanager-hierarchy",
+  "level": 2
+}, {
+  "value": "Interface Hierarchy",
+  "id": "interface-hierarchy",
+  "level": 3
+}, {
+  "value": "DataSourceTransactionManager",
+  "id": "datasourcetransactionmanager",
+  "level": 3
+}, {
+  "value": "JpaTransactionManager",
+  "id": "jpatransactionmanager",
+  "level": 3
+}, {
+  "value": "JtaTransactionManager",
+  "id": "jtatransactionmanager",
+  "level": 3
+}, {
+  "value": "ChainedTransactionManager",
+  "id": "chainedtransactionmanager",
+  "level": 3
+}, {
+  "value": "Custom PlatformTransactionManager",
+  "id": "custom-platformtransactionmanager",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Transaction Synchronization",
+  "id": "transaction-synchronization",
+  "level": 2
+}, {
+  "value": "@TransactionalEventListener",
+  "id": "transactionaleventlistener",
+  "level": 3
+}, {
+  "value": "TransactionSynchronizationManager",
+  "id": "transactionsynchronizationmanager",
+  "level": 3
+}, {
+  "value": "Registering Synchronization from @Transactional Methods",
+  "id": "registering-synchronization-from-transactional-methods",
+  "level": 3
+}, {
+  "value": "Resource Binding",
+  "id": "resource-binding",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-4",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-4",
+  "level": 2
+}, {
+  "value": "Declarative vs Programmatic Transactions",
+  "id": "declarative-vs-programmatic-transactions",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-5",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-5",
+  "level": 2
+}, {
+  "value": "Distributed Transactions",
+  "id": "distributed-transactions",
+  "level": 2
+}, {
+  "value": "JTA and the Two-Phase Commit Protocol",
+  "id": "jta-and-the-two-phase-commit-protocol",
+  "level": 3
+}, {
+  "value": "Atomikos Configuration",
+  "id": "atomikos-configuration",
+  "level": 3
+}, {
+  "value": "Narayana Configuration",
+  "id": "narayana-configuration",
+  "level": 3
+}, {
+  "value": "Limitations of 2PC / XA",
+  "id": "limitations-of-2pc--xa",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-6",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-6",
+  "level": 2
+}, {
+  "value": "Saga Pattern",
+  "id": "saga-pattern",
+  "level": 2
+}, {
+  "value": "Choreography Saga",
+  "id": "choreography-saga",
+  "level": 3
+}, {
+  "value": "Orchestration Saga",
+  "id": "orchestration-saga",
+  "level": 3
+}, {
+  "value": "Saga with Kafka",
+  "id": "saga-with-kafka",
+  "level": 3
+}, {
+  "value": "Compensating Transaction Pattern",
+  "id": "compensating-transaction-pattern",
+  "level": 3
+}, {
+  "value": "Eventuate Tram",
+  "id": "eventuate-tram",
+  "level": 3
+}, {
+  "value": "Axon Saga",
+  "id": "axon-saga",
+  "level": 3
+}, {
+  "value": "Saga with REST Callbacks",
+  "id": "saga-with-rest-callbacks",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-7",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-7",
+  "level": 2
+}, {
+  "value": "Pessimistic Locking",
+  "id": "pessimistic-locking",
+  "level": 2
+}, {
+  "value": "@Lock Annotations",
+  "id": "lock-annotations",
+  "level": 3
+}, {
+  "value": "Lock Modes",
+  "id": "lock-modes",
+  "level": 3
+}, {
+  "value": "Pessimistic Locking in a Service",
+  "id": "pessimistic-locking-in-a-service",
+  "level": 3
+}, {
+  "value": "Lock Timeout",
+  "id": "lock-timeout",
+  "level": 3
+}, {
+  "value": "Deadlock Handling",
+  "id": "deadlock-handling",
+  "level": 3
+}, {
+  "value": "Deadlock Prevention Strategy",
+  "id": "deadlock-prevention-strategy",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-8",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-8",
+  "level": 2
+}, {
+  "value": "Optimistic Locking",
+  "id": "optimistic-locking",
+  "level": 2
+}, {
+  "value": "@Version",
+  "id": "version",
+  "level": 3
+}, {
+  "value": "How Version Checking Works",
+  "id": "how-version-checking-works",
+  "level": 3
+}, {
+  "value": "OptimisticLockException Handling",
+  "id": "optimisticlockexception-handling",
+  "level": 3
+}, {
+  "value": "Retry Pattern for Optimistic Locking",
+  "id": "retry-pattern-for-optimistic-locking",
+  "level": 3
+}, {
+  "value": "Version Management in REST Controllers",
+  "id": "version-management-in-rest-controllers",
+  "level": 3
+}, {
+  "value": "Optimistic vs Pessimistic Comparison",
+  "id": "optimistic-vs-pessimistic-comparison",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-9",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-9",
+  "level": 2
+}, {
+  "value": "Transaction Configuration",
+  "id": "transaction-configuration",
+  "level": 2
+}, {
+  "value": "Enabling Transaction Management",
+  "id": "enabling-transaction-management",
+  "level": 3
+}, {
+  "value": "Custom Transaction Attributes with @Transactional",
+  "id": "custom-transaction-attributes-with-transactional",
+  "level": 3
+}, {
+  "value": "Transaction Configuration with Properties",
+  "id": "transaction-configuration-with-properties",
+  "level": 3
+}, {
+  "value": "Transaction Template with Custom Configuration",
+  "id": "transaction-template-with-custom-configuration",
+  "level": 3
+}, {
+  "value": "Multi-DataSource Transaction Configuration",
+  "id": "multi-datasource-transaction-configuration",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-10",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-10",
+  "level": 2
+}, {
+  "value": "Entity and Repository Definitions",
+  "id": "entity-and-repository-definitions",
+  "level": 2
+}, {
+  "value": "Application Entry Point",
+  "id": "application-entry-point",
+  "level": 3
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-11",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-11",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-12",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-12",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "transaction-management",
+        children: "Transaction Management"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Transactions are the bedrock of reliable data processing. A transaction groups multiple operations into a single unit of work that either succeeds completely (commit) or fails entirely (rollback), preserving data integrity even under concurrent access, hardware failures, and application crashes."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring's transaction management abstracts over JDBC, JPA, JTA, and even non-relational stores behind a consistent programming model. You declare transactional boundaries declaratively with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), ", control propagation and isolation declaratively, and plug in any ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlatformTransactionManager"
+      }), " without changing your business logic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This chapter covers the entire transaction landscape: from simple local transactions with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), " through programmatic control with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "TransactionTemplate"
+      }), ", to distributed sagas across microservices."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter you should be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/24-transactions/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/24-transactions/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/24-transactions/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/24-transactions/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/24-transactions/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/24-transactions/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Configure and use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Transactional"
+        }), " with all seven propagation behaviors and five isolation levels"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Control rollback behavior with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "rollbackFor"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "noRollbackFor"
+        }), ", the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "readOnly"
+        }), " flag, and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "timeout"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Manage transactions programmatically using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TransactionTemplate"
+        }), " with callbacks"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Understand the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "PlatformTransactionManager"
+        }), " hierarchy and choose the right implementation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Synchronize transaction lifecycle events with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@TransactionalEventListener"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TransactionSynchronizationManager"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Decide between declarative and programmatic transaction management for a given scenario"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement distributed transactions with JTA, Atomikos, and the two-phase commit protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design and implement the Saga pattern with choreography and orchestration approaches"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Apply pessimistic locking with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Lock"
+        }), " annotations and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SELECT ... FOR UPDATE"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement optimistic locking with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Version"
+        }), " and retry logic"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "transactional--declarative-transactions",
+      children: "@Transactional — Declarative Transactions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/24-transactions.png",
+        alt: "Transaction Management Flow"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), " is the cornerstone of Spring's transaction management. When placed on a method or class, it wraps execution in a transactional boundary managed by a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlatformTransactionManager"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic-usage",
+      children: "Basic Usage"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class PaymentService {\n\n    private final AccountRepository accountRepository;\n    private final LedgerRepository ledgerRepository;\n\n    public PaymentService(AccountRepository accountRepository,\n                          LedgerRepository ledgerRepository) {\n        this.accountRepository = accountRepository;\n        this.ledgerRepository = ledgerRepository;\n    }\n\n    @Transactional\n    public void transfer(Long fromAccountId, Long toAccountId, BigDecimal amount) {\n        Account from = accountRepository.findById(fromAccountId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Source account not found\"));\n        Account to = accountRepository.findById(toAccountId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Target account not found\"));\n\n        from.debit(amount);\n        to.credit(amount);\n\n        accountRepository.save(from);\n        accountRepository.save(to);\n\n        ledgerRepository.logTransfer(fromAccountId, toAccountId, amount);\n    }\n\n    @Transactional(readOnly = true)\n    public BigDecimal getBalance(Long accountId) {\n        return accountRepository.findById(accountId)\n            .map(Account::getBalance)\n            .orElse(BigDecimal.ZERO);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-transactional-works",
+      children: "How @Transactional Works"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring creates a proxy around the target bean. When a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), " method is invoked, the proxy:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checks whether a transaction already exists or creates a new one"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Invokes the target method"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Commits if the method returns normally"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rolls back if a runtime exception (or specified checked exception) is thrown"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class ProxyDemoService {\n\n    @Transactional\n    public void doWork() {\n        // This method runs inside a transaction\n    }\n\n    public void callInternal() {\n        // BEWARE: Self-invocation bypasses the proxy!\n        // No transaction will be created here:\n        this.doWork();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To fix self-invocation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class SelfInvocationFix {\n\n    @Autowired\n    private ApplicationContext context;\n\n    @Transactional\n    public void doWork() {\n        // actual transactional work\n    }\n\n    public void callInternal() {\n        // Get the proxy from the context\n        SelfInvocationFix proxy = context.getBean(SelfInvocationFix.class);\n        proxy.doWork(); // Now @Transactional is effective\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "propagation-behaviors",
+      children: "Propagation Behaviors"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Propagation defines how transactions relate to each other when a transactional method calls another transactional method."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "REQUIRED"
+            }), " (default)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Join existing transaction; create new if none exists"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "REQUIRES_NEW"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Suspend existing transaction; create new always"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "NESTED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute within nested transaction (savepoint) if exists; create new otherwise"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MANDATORY"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fail if no existing transaction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SUPPORTS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Join if exists; execute non-transactionally otherwise"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "NOT_SUPPORTED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Suspend existing transaction; execute non-transactionally"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "NEVER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fail if a transaction exists"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\n/**\n * Demonstrates all seven propagation behaviors.\n */\n@Service\npublic class PropagationDemoService {\n\n    private final AuditLogRepository auditLogRepository;\n    private final NotificationService notificationService;\n\n    public PropagationDemoService(AuditLogRepository auditLogRepository,\n                                   NotificationService notificationService) {\n        this.auditLogRepository = auditLogRepository;\n        this.notificationService = notificationService;\n    }\n\n    @Transactional\n    public void parentOperation() {\n        // This runs within a transaction (REQUIRED by default)\n\n        childRequired();      // joins the same transaction\n        childRequiresNew();   // suspends parent, creates new, resumes parent\n        childNested();        // creates a savepoint within parent\n    }\n\n    @Transactional(propagation = Propagation.REQUIRED)\n    public void childRequired() {\n        // Joins the caller's transaction.\n        // If caller has none, creates one.\n        auditLogRepository.save(new AuditLog(\"required child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.REQUIRES_NEW)\n    public void childRequiresNew() {\n        // Suspends the caller's transaction and creates a brand new one.\n        // The new transaction commits independently — even if the parent\n        // rolls back, this child's work is already committed.\n        auditLogRepository.save(new AuditLog(\"requires_new child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.NESTED)\n    public void childNested() {\n        // Creates a JDBC savepoint within the parent transaction.\n        // If this child rolls back, the parent can continue.\n        // If the parent rolls back, the child goes with it.\n        auditLogRepository.save(new AuditLog(\"nested child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.MANDATORY)\n    public void childMandatory() {\n        // Throws IllegalTransactionStateException if no transaction exists.\n        auditLogRepository.save(new AuditLog(\"mandatory child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.SUPPORTS)\n    public void childSupports() {\n        // Joins if a transaction exists; runs without if none.\n        auditLogRepository.save(new AuditLog(\"supports child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.NOT_SUPPORTED)\n    public void childNotSupported() {\n        // Suspends any existing transaction; runs without transaction.\n        auditLogRepository.save(new AuditLog(\"not_supported child executed\"));\n    }\n\n    @Transactional(propagation = Propagation.NEVER)\n    public void childNever() {\n        // Throws IllegalTransactionStateException if a transaction exists.\n        auditLogRepository.save(new AuditLog(\"never child executed\"));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "requires_new-in-depth",
+      children: "REQUIRES_NEW In-Depth"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "REQUIRES_NEW"
+      }), " is used, the parent transaction is suspended. The child starts a new physical transaction, commits independently, and then the parent resumes. If the child succeeds but the parent fails, the child's work persists. This is critical for audit logging, where you must record an operation even if the business operation fails."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class AuditService {\n\n    private final AuditLogRepository auditLogRepository;\n\n    public AuditService(AuditLogRepository auditLogRepository) {\n        this.auditLogRepository = auditLogRepository;\n    }\n\n    @Transactional(propagation = Propagation.REQUIRES_NEW)\n    public void logAction(String action, String performedBy, String details) {\n        AuditLog log = new AuditLog(action, performedBy, details);\n        auditLogRepository.save(log);\n        // This commit is independent of the caller's transaction\n    }\n\n    @Transactional(propagation = Propagation.REQUIRES_NEW)\n    public void logFailure(String action, String performedBy, Throwable error) {\n        AuditLog log = new AuditLog(\n            action + \"_FAILED\",\n            performedBy,\n            error.getMessage()\n        );\n        auditLogRepository.save(log);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "nested-behavior-with-savepoints",
+      children: "NESTED Behavior with Savepoints"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "NESTED"
+      }), " uses JDBC savepoints to create a sub-transaction within the parent. The nested transaction can roll back independently via a savepoint, without affecting the parent. However, if the parent rolls back, the nested transaction rolls back too."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class BulkImportService {\n\n    private final ItemRepository itemRepository;\n\n    public BulkImportService(ItemRepository itemRepository) {\n        this.itemRepository = itemRepository;\n    }\n\n    @Transactional\n    public void bulkImport(List<ImportRow> rows) {\n        for (int i = 0; i < rows.size(); i++) {\n            try {\n                importSingleRow(rows.get(i));\n            } catch (Exception e) {\n                // Only this row's changes are rolled back\n                System.err.println(\"Row \" + i + \" failed, continuing with next\");\n            }\n        }\n    }\n\n    @Transactional(propagation = Propagation.NESTED)\n    public void importSingleRow(ImportRow row) {\n        Item item = new Item(row.getName(), row.getPrice());\n        itemRepository.save(item);\n        // If this throws, only this row's savepoint is rolled back\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "isolation-levels",
+      children: "Isolation Levels"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Isolation controls how transaction changes are visible to other concurrent transactions. The SQL standard defines four levels, each preventing a different set of phenomena:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Isolation Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dirty Read"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Non-Repeatable Read"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Phantom Read"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "READ_UNCOMMITTED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "READ_COMMITTED"
+            }), " (default in most databases)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "REPEATABLE_READ"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SERIALIZABLE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevented"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Isolation;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class InventoryService {\n\n    private final InventoryRepository inventoryRepository;\n\n    public InventoryService(InventoryRepository inventoryRepository) {\n        this.inventoryRepository = inventoryRepository;\n    }\n\n    @Transactional(isolation = Isolation.READ_COMMITTED)\n    public int getStockLevel(Long productId) {\n        // Default in PostgreSQL, Oracle, SQL Server\n        // Guarantees no dirty reads\n        return inventoryRepository.getStock(productId);\n    }\n\n    @Transactional(isolation = Isolation.REPEATABLE_READ)\n    public void verifyAndDeductStock(Long productId, int quantity) {\n        // Prevents non-repeatable reads:\n        // If we read twice in this transaction, we see the same value\n        int stock = inventoryRepository.getStock(productId);\n        if (stock < quantity) {\n            throw new InsufficientStockException(productId, quantity, stock);\n        }\n        inventoryRepository.deductStock(productId, quantity);\n    }\n\n    @Transactional(isolation = Isolation.SERIALIZABLE)\n    public void allocateInventory(Long orderId, List<OrderLine> lines) {\n        // Strictest level: prevents phantoms and all anomalies\n        // Use sparingly — throughput suffers significantly\n        for (OrderLine line : lines) {\n            int stock = inventoryRepository.getStock(line.getProductId());\n            if (stock >= line.getQuantity()) {\n                inventoryRepository.deductStock(\n                    line.getProductId(), line.getQuantity());\n                inventoryRepository.createAllocation(\n                    orderId, line.getProductId(), line.getQuantity());\n            }\n        }\n    }\n\n    @Transactional(isolation = Isolation.READ_UNCOMMITTED)\n    public int approximateStockLevel(Long productId) {\n        // Allows dirty reads — fastest but least safe\n        return inventoryRepository.getStock(productId);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rollbackfor-and-norollbackfor",
+      children: "rollbackFor and noRollbackFor"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["By default, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), " rolls back on runtime (unchecked) exceptions and does NOT roll back on checked exceptions. Override this with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "rollbackFor"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "noRollbackFor"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class RollbackControlService {\n\n    private final OrderRepository orderRepository;\n\n    public RollbackControlService(OrderRepository orderRepository) {\n        this.orderRepository = orderRepository;\n    }\n\n    @Transactional(rollbackFor = InsufficientStockException.class)\n    public void placeOrder(Order order) throws InsufficientStockException {\n        // Will roll back on InsufficientStockException even though it's checked\n        orderRepository.save(order);\n    }\n\n    @Transactional(noRollbackFor = PaymentDeclinedException.class)\n    public void processPayment(Payment payment) {\n        // Will NOT roll back on PaymentDeclinedException (runtime)\n        // Useful when you want to save the failed payment record\n        paymentRepository.save(payment);\n    }\n\n    @Transactional(rollbackFor = {SQLException.class, DataIntegrityViolationException.class},\n                   noRollbackFor = BusinessValidationException.class)\n    public void complexRollbackRules(Entity entity) {\n        // Custom combination\n    }\n\n    @Transactional(rollbackForClassName = {\"java.sql.SQLException\"},\n                   noRollbackForClassName = {\"com.course.tx.OptimisticLockException\"})\n    public void rollbackByClassName() {\n        // Class name strings — useful when the exception class isn't on the classpath\n        // at compile time\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "readonly-flag",
+      children: "readOnly Flag"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "readOnly"
+      }), " attribute has different effects depending on the underlying ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlatformTransactionManager"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hibernate/JPA"
+        }), ": Sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "FlushMode.MANUAL"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "clear()"
+        }), " after reads, avoiding dirty checking overhead. May also set the JDBC connection to read-only (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Connection.setReadOnly(true)"
+        }), ") which some databases optimize."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JDBC"
+        }), ": Sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "connection.setReadOnly(true)"
+        }), ", which some databases use for query optimization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MongoDB"
+        }), ": No effect"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NoSQL generally"
+        }), ": May be ignored"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class ReadOnlyDemoService {\n\n    private final AccountRepository accountRepository;\n    private final TransactionRepository transactionRepository;\n\n    public ReadOnlyDemoService(AccountRepository accountRepository,\n                                TransactionRepository transactionRepository) {\n        this.accountRepository = accountRepository;\n        this.transactionRepository = transactionRepository;\n    }\n\n    @Transactional(readOnly = true)\n    public AccountSummary getAccountSummary(Long accountId) {\n        // Hibernate skips dirty checking — no flush at commit\n        // Database may optimize query path\n        Account account = accountRepository.findById(accountId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Account not found\"));\n        List<Transaction> recentTxns = transactionRepository\n            .findTop10ByAccountIdOrderByDateDesc(accountId);\n        return new AccountSummary(account, recentTxns);\n    }\n\n    @Transactional(readOnly = true)\n    public List<Account> findAccountsByCustomer(String customerId) {\n        return accountRepository.findByCustomerId(customerId);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "timeout",
+      children: "timeout"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "timeout"
+      }), " attribute sets the maximum seconds a transaction may run. Exceeding the timeout causes a transaction rollback."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class TimeoutDemoService {\n\n    private final BatchProcessor batchProcessor;\n\n    public TimeoutDemoService(BatchProcessor batchProcessor) {\n        this.batchProcessor = batchProcessor;\n    }\n\n    @Transactional(timeout = 30)\n    public void processWithTimeout() {\n        // Must complete within 30 seconds or transaction rolls back\n        batchProcessor.execute();\n    }\n\n    @Transactional(timeout = 5)\n    public void quickOperation() {\n        // Tight timeout for fast operations\n        batchProcessor.quickTask();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complete-transactional-example",
+      children: "Complete @Transactional Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Isolation;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.math.BigDecimal;\n\n@Service\npublic class OrderFulfillmentService {\n\n    private final PaymentService paymentService;\n    private final InventoryService inventoryService;\n    private final ShippingService shippingService;\n    private final AuditService auditService;\n\n    public OrderFulfillmentService(PaymentService paymentService,\n                                    InventoryService inventoryService,\n                                    ShippingService shippingService,\n                                    AuditService auditService) {\n        this.paymentService = paymentService;\n        this.inventoryService = inventoryService;\n        this.shippingService = shippingService;\n        this.auditService = auditService;\n    }\n\n    @Transactional(\n        propagation = Propagation.REQUIRED,\n        isolation = Isolation.REPEATABLE_READ,\n        rollbackFor = {PaymentFailedException.class, InventoryShortageException.class},\n        noRollbackFor = {NotificationFailureException.class},\n        timeout = 60,\n        readOnly = false\n    )\n    public Order fulfillOrder(Order order) {\n        // 1. Process payment (in this transaction)\n        paymentService.processPayment(order.getPayment());\n\n        // 2. Reserve inventory (in this transaction)\n        for (OrderLine line : order.getLines()) {\n            inventoryService.reserve(line.getProductId(), line.getQuantity());\n        }\n\n        // 3. Create shipping label (in this transaction)\n        ShippingLabel label = shippingService.createLabel(order);\n\n        order.setStatus(\"FULFILLED\");\n        order.setShippingLabel(label);\n\n        // 4. Log audit independently — uses REQUIRES_NEW\n        // This persists even if the main transaction rolls back\n        auditService.logAction(\n            \"ORDER_FULFILLED\",\n            order.getCustomerId(),\n            \"Order \" + order.getId() + \" fulfilled\"\n        );\n\n        return order;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "transactiontemplate--programmatic-transactions",
+      children: "TransactionTemplate — Programmatic Transactions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When you need fine-grained control over transaction boundaries — for example, looping with per-item transactions or conditionally committing — use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "TransactionTemplate"
+      }), " instead of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Transactional"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic-transactiontemplate",
+      children: "Basic TransactionTemplate"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.PlatformTransactionManager;\nimport org.springframework.transaction.TransactionDefinition;\nimport org.springframework.transaction.TransactionStatus;\nimport org.springframework.transaction.support.TransactionCallback;\nimport org.springframework.transaction.support.TransactionTemplate;\n\n@Service\npublic class TransactionTemplateService {\n\n    private final TransactionTemplate transactionTemplate;\n\n    public TransactionTemplateService(PlatformTransactionManager transactionManager) {\n        this.transactionTemplate = new TransactionTemplate(transactionManager);\n        this.transactionTemplate.setPropagationBehavior(\n            TransactionDefinition.PROPAGATION_REQUIRED);\n        this.transactionTemplate.setIsolationLevel(\n            TransactionDefinition.ISOLATION_READ_COMMITTED);\n        this.transactionTemplate.setTimeout(30);\n        this.transactionTemplate.setReadOnly(false);\n    }\n\n    public Order executeInTransaction(Order order) {\n        return transactionTemplate.execute(new TransactionCallback<Order>() {\n            @Override\n            public Order doInTransaction(TransactionStatus status) {\n                try {\n                    // All operations here are within one transaction\n                    orderRepository.save(order);\n                    inventoryService.reserve(order.getLines());\n                    return order;\n                } catch (Exception e) {\n                    // Roll back explicitly\n                    status.setRollbackOnly();\n                    throw new RuntimeException(\"Transaction failed\", e);\n                }\n            }\n        });\n    }\n\n    public void executeWithoutResult(List<Order> orders) {\n        transactionTemplate.execute(new TransactionCallbackWithoutResult() {\n            @Override\n            protected void doInTransactionWithoutResult(TransactionStatus status) {\n                for (Order order : orders) {\n                    if (order.getAmount().compareTo(BigDecimal.ZERO) < 0) {\n                        // Mark this transaction for rollback\n                        status.setRollbackOnly();\n                        return;\n                    }\n                    orderRepository.save(order);\n                }\n            }\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "transactioncallback-with-return-value",
+      children: "TransactionCallback with Return Value"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.TransactionStatus;\nimport org.springframework.transaction.support.TransactionCallback;\nimport org.springframework.transaction.support.TransactionTemplate;\n\nimport java.math.BigDecimal;\n\n@Service\npublic class TransactionCallbackService {\n\n    private final TransactionTemplate transactionTemplate;\n    private final AccountRepository accountRepository;\n\n    public TransactionCallbackService(TransactionTemplate transactionTemplate,\n                                       AccountRepository accountRepository) {\n        this.transactionTemplate = transactionTemplate;\n        this.accountRepository = accountRepository;\n    }\n\n    public BigDecimal transferWithResult(Long fromId, Long toId, BigDecimal amount) {\n        return transactionTemplate.execute(new TransactionCallback<BigDecimal>() {\n            @Override\n            public BigDecimal doInTransaction(TransactionStatus status) {\n                Account from = accountRepository.findById(fromId)\n                    .orElseThrow(() -> new IllegalArgumentException(\"Account not found\"));\n\n                Account to = accountRepository.findById(toId)\n                    .orElseThrow(() -> new IllegalArgumentException(\"Account not found\"));\n\n                if (from.getBalance().compareTo(amount) < 0) {\n                    status.setRollbackOnly();\n                    throw new InsufficientBalanceException(fromId, amount);\n                }\n\n                from.setBalance(from.getBalance().subtract(amount));\n                to.setBalance(to.getBalance().add(amount));\n\n                accountRepository.save(from);\n                accountRepository.save(to);\n\n                return from.getBalance();\n            }\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lambda-syntax",
+      children: "Lambda Syntax"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TransactionTemplate supports lambda syntax for concise code:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\n\n@Service\npublic class LambdaTransactionService {\n\n    private final TransactionTemplate transactionTemplate;\n    private final AccountRepository accountRepository;\n\n    public LambdaTransactionService(TransactionTemplate transactionTemplate,\n                                     AccountRepository accountRepository) {\n        this.transactionTemplate = transactionTemplate;\n        this.accountRepository = accountRepository;\n    }\n\n    public void transferLambda(Long fromId, Long toId, BigDecimal amount) {\n        transactionTemplate.executeWithoutResult(status -> {\n            Account from = accountRepository.findById(fromId)\n                .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n            Account to = accountRepository.findById(toId)\n                .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n            from.setBalance(from.getBalance().subtract(amount));\n            to.setBalance(to.getBalance().add(amount));\n\n            accountRepository.save(from);\n            accountRepository.save(to);\n        });\n    }\n\n    public String createWithLambda(String name) {\n        return transactionTemplate.execute(status -> {\n            Account account = new Account(name);\n            accountRepository.save(account);\n            return account.getId().toString();\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "per-item-transactions-with-transactiontemplate",
+      children: "Per-Item Transactions with TransactionTemplate"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A common pattern: process each item in its own transaction so a single failure does not roll back other items:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.TransactionStatus;\nimport org.springframework.transaction.support.TransactionCallbackWithoutResult;\nimport org.springframework.transaction.support.TransactionTemplate;\n\nimport java.util.List;\n\n@Service\npublic class PerItemTransactionService {\n\n    private final TransactionTemplate transactionTemplate;\n    private final ItemRepository itemRepository;\n\n    public PerItemTransactionService(TransactionTemplate transactionTemplate,\n                                      ItemRepository itemRepository) {\n        this.transactionTemplate = transactionTemplate;\n        this.itemRepository = itemRepository;\n    }\n\n    public void processItemsIndividually(List<ImportRow> items) {\n        int successCount = 0;\n        int failureCount = 0;\n\n        for (ImportRow item : items) {\n            try {\n                transactionTemplate.execute(new TransactionCallbackWithoutResult() {\n                    @Override\n                    protected void doInTransactionWithoutResult(TransactionStatus status) {\n                        Item entity = new Item(item.getName(), item.getPrice());\n                        itemRepository.save(entity);\n                    }\n                });\n                successCount++;\n            } catch (Exception e) {\n                failureCount++;\n                System.err.println(\"Failed to import item: \" + item.getName());\n            }\n        }\n\n        System.out.println(\"Import complete: \" + successCount + \" succeeded, \"\n            + failureCount + \" failed\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dynamic-transaction-attributes",
+      children: "Dynamic Transaction Attributes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.PlatformTransactionManager;\nimport org.springframework.transaction.TransactionDefinition;\nimport org.springframework.transaction.TransactionStatus;\nimport org.springframework.transaction.support.DefaultTransactionDefinition;\nimport org.springframework.transaction.support.TransactionTemplate;\n\n@Service\npublic class DynamicTransactionService {\n\n    private final PlatformTransactionManager transactionManager;\n    private final AccountRepository accountRepository;\n\n    public DynamicTransactionService(PlatformTransactionManager transactionManager,\n                                      AccountRepository accountRepository) {\n        this.transactionManager = transactionManager;\n        this.accountRepository = accountRepository;\n    }\n\n    public void executeWithDynamicAttributes(String operationType, Runnable work) {\n        DefaultTransactionDefinition def = new DefaultTransactionDefinition();\n\n        switch (operationType) {\n            case \"READ_ONLY\" -> {\n                def.setReadOnly(true);\n                def.setIsolationLevel(TransactionDefinition.ISOLATION_READ_COMMITTED);\n            }\n            case \"CRITICAL_WRITE\" -> {\n                def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);\n                def.setIsolationLevel(TransactionDefinition.ISOLATION_SERIALIZABLE);\n                def.setTimeout(10);\n            }\n            case \"AUDIT_LOG\" -> {\n                def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRES_NEW);\n                def.setTimeout(5);\n            }\n            default -> {\n                def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);\n                def.setIsolationLevel(TransactionDefinition.ISOLATION_READ_COMMITTED);\n            }\n        }\n\n        TransactionStatus status = transactionManager.getTransaction(def);\n        try {\n            work.run();\n            transactionManager.commit(status);\n        } catch (RuntimeException e) {\n            transactionManager.rollback(status);\n            throw e;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "platformtransactionmanager-hierarchy",
+      children: "PlatformTransactionManager Hierarchy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlatformTransactionManager"
+      }), " is the strategy interface that all transaction management builds on."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interface-hierarchy",
+      children: "Interface Hierarchy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlatformTransactionManager\n├── AbstractPlatformTransactionManager\n│   ├── DataSourceTransactionManager    (JDBC / single DataSource)\n│   ├── JpaTransactionManager           (JPA / EntityManager)\n│   ├── JtaTransactionManager          (JTA / application server)\n│   └── HibernateTransactionManager    (Hibernate 5, legacy)\n├── ReactiveTransactionManager\n│   └── ReactiveTransactionAdapter\n└── ChainedTransactionManager          (multiple resources)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "datasourcetransactionmanager",
+      children: "DataSourceTransactionManager"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Manages transactions on a plain JDBC ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DataSource"
+      }), ". The simplest implementation — does not support savepoints, but is lightweight and fast."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.jdbc.datasource.DataSourceTransactionManager;\n\nimport javax.sql.DataSource;\n\n@Configuration\npublic class DataSourceTxConfig {\n\n    @Bean\n    public DataSourceTransactionManager transactionManager(DataSource dataSource) {\n        DataSourceTransactionManager tm = new DataSourceTransactionManager(dataSource);\n        tm.setDefaultTimeout(30);\n        tm.setRollbackOnCommitFailure(true);\n        return tm;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "jpatransactionmanager",
+      children: "JpaTransactionManager"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Wraps a JPA ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EntityManagerFactory"
+      }), ". Supports nested transactions via JDBC savepoints when JPA is backed by a JDBC resource."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport jakarta.persistence.EntityManagerFactory;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.orm.jpa.JpaTransactionManager;\n\n@Configuration\npublic class JpaTxConfig {\n\n    @Bean\n    public JpaTransactionManager transactionManager(EntityManagerFactory emf) {\n        JpaTransactionManager tm = new JpaTransactionManager(emf);\n        tm.setNestedTransactionAllowed(true);\n        return tm;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "jtatransactionmanager",
+      children: "JtaTransactionManager"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Delegates to the Jakarta Transaction API (JTA) implementation provided by the application server (WebSphere, WebLogic, JBoss) or a standalone provider (Atomikos, Narayana, Bitronix)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.transaction.jta.JtaTransactionManager;\n\nimport jakarta.transaction.TransactionManager;\nimport jakarta.transaction.UserTransaction;\n\n@Configuration\npublic class JtaTxConfig {\n\n    @Bean\n    public JtaTransactionManager transactionManager(\n            UserTransaction userTransaction,\n            TransactionManager transactionManager) {\n\n        JtaTransactionManager tm = new JtaTransactionManager();\n        tm.setUserTransaction(userTransaction);\n        tm.setTransactionManager(transactionManager);\n        tm.setAllowCustomIsolationLevels(true);\n        return tm;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chainedtransactionmanager",
+      children: "ChainedTransactionManager"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ChainedTransactionManager"
+      }), " (deprecated in recent Spring versions; use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "org.springframework.data.transaction.ChainedTransactionManager"
+      }), " from Spring Data) commits and rolls back multiple transaction managers in order. Use it when you need to coordinate across heterogeneous resources — for example, a JPA repository and a MongoDB repository in the same transactional method."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.data.transaction.ChainedTransactionManager;\nimport org.springframework.orm.jpa.JpaTransactionManager;\nimport org.springframework.jdbc.datasource.DataSourceTransactionManager;\n\nimport jakarta.persistence.EntityManagerFactory;\nimport javax.sql.DataSource;\n\n@Configuration\npublic class ChainedTxConfig {\n\n    @Bean\n    public ChainedTransactionManager chainedTransactionManager(\n            EntityManagerFactory emf, DataSource dataSource) {\n\n        JpaTransactionManager jpaTm = new JpaTransactionManager(emf);\n        DataSourceTransactionManager dsTm = new DataSourceTransactionManager(dataSource);\n\n        // Commits: jpaTm first, then dsTm\n        // Rollback: dsTm first, then jpaTm\n        return new ChainedTransactionManager(jpaTm, dsTm);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "custom-platformtransactionmanager",
+      children: "Custom PlatformTransactionManager"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.transaction.*;\nimport org.springframework.transaction.support.AbstractPlatformTransactionManager;\nimport org.springframework.transaction.support.DefaultTransactionStatus;\nimport org.springframework.transaction.support.TransactionSynchronizationManager;\n\npublic class CustomTransactionManager extends AbstractPlatformTransactionManager {\n\n    private final TransactionStore transactionStore;\n\n    public CustomTransactionManager(TransactionStore transactionStore) {\n        this.transactionStore = transactionStore;\n        setNestedTransactionAllowed(true);\n        setDefaultTimeout(30);\n    }\n\n    @Override\n    protected Object doGetTransaction() throws TransactionException {\n        CustomTransactionObject txObject = new CustomTransactionObject();\n        txObject.setHasTransaction(TransactionSynchronizationManager\n            .hasResource(transactionStore));\n        return txObject;\n    }\n\n    @Override\n    protected void doBegin(Object transaction, TransactionDefinition definition)\n            throws TransactionException {\n        CustomTransactionObject txObject = (CustomTransactionObject) transaction;\n        txObject.setBeginTime(System.currentTimeMillis());\n        txObject.setReadOnly(definition.isReadOnly());\n        txObject.setTimeout(definition.getTimeout());\n        TransactionSynchronizationManager.bindResource(\n            transactionStore, txObject);\n    }\n\n    @Override\n    protected void doCommit(DefaultTransactionStatus status)\n            throws TransactionException {\n        CustomTransactionObject txObject = (CustomTransactionObject) status.getTransaction();\n        transactionStore.commit(txObject);\n        TransactionSynchronizationManager.unbindResource(transactionStore);\n    }\n\n    @Override\n    protected void doRollback(DefaultTransactionStatus status)\n            throws TransactionException {\n        CustomTransactionObject txObject = (CustomTransactionObject) status.getTransaction();\n        transactionStore.rollback(txObject);\n        TransactionSynchronizationManager.unbindResource(transactionStore);\n    }\n\n    static class CustomTransactionObject {\n        private boolean hasTransaction;\n        private long beginTime;\n        private boolean readOnly;\n        private int timeout;\n\n        public boolean isHasTransaction() { return hasTransaction; }\n        public void setHasTransaction(boolean hasTransaction) {\n            this.hasTransaction = hasTransaction;\n        }\n\n        public long getBeginTime() { return beginTime; }\n        public void setBeginTime(long beginTime) { this.beginTime = beginTime; }\n\n        public boolean isReadOnly() { return readOnly; }\n        public void setReadOnly(boolean readOnly) { this.readOnly = readOnly; }\n\n        public int getTimeout() { return timeout; }\n        public void setTimeout(int timeout) { this.timeout = timeout; }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "transaction-synchronization",
+      children: "Transaction Synchronization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spring's transaction synchronization allows you to register callbacks that execute at specific points in the transaction lifecycle."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "transactionaleventlistener",
+      children: "@TransactionalEventListener"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "@TransactionalEventListener"
+      }), " fires an event handler only at a specific transaction phase."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.event.EventListener;\nimport org.springframework.scheduling.annotation.Async;\nimport org.springframework.stereotype.Component;\nimport org.springframework.transaction.event.TransactionPhase;\nimport org.springframework.transaction.event.TransactionalEventListener;\n\n@Component\npublic class OrderEventListeners {\n\n    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)\n    public void onOrderConfirmed(OrderConfirmedEvent event) {\n        // Only fires after the transaction commits successfully\n        emailService.sendConfirmation(event.getOrderId());\n        analyticsService.trackOrder(event.getOrderId());\n    }\n\n    @TransactionalEventListener(phase = TransactionPhase.AFTER_ROLLBACK)\n    public void onOrderFailed(OrderConfirmedEvent event) {\n        // Only fires after the transaction rolls back\n        notificationService.alertFailure(event.getOrderId());\n    }\n\n    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMPLETION)\n    public void onOrderComplete(OrderConfirmedEvent event) {\n        // Fires after both commit and rollback\n        auditService.logCompletion(event.getOrderId());\n    }\n\n    @TransactionalEventListener(phase = TransactionPhase.BEFORE_COMMIT)\n    public void beforeCommit(OrderConfirmedEvent event) {\n        // Fires just before the transaction commits\n        validationService.finalCheck(event.getOrderId());\n    }\n\n    @Async\n    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)\n    public void asyncEmailNotification(OrderConfirmedEvent event) {\n        // Non-blocking: sends email asynchronously after commit\n        emailService.sendHtmlEmail(event.getOrderId());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "transactionsynchronizationmanager",
+      children: "TransactionSynchronizationManager"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "TransactionSynchronizationManager"
+      }), " provides access to the current transaction's context. Use it for registering resources and checking transaction state."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.support.TransactionSynchronization;\nimport org.springframework.transaction.support.TransactionSynchronizationManager;\n\n@Service\npublic class TransactionContextService {\n\n    public void workWithTransactionContext() {\n        // Check if we are in a transaction\n        boolean inTransaction = TransactionSynchronizationManager.isActualTransactionActive();\n        boolean readOnly = TransactionSynchronizationManager.isCurrentTransactionReadOnly();\n\n        System.out.println(\"In transaction: \" + inTransaction + \", readOnly: \" + readOnly);\n\n        // Get the current transaction name\n        String txName = TransactionSynchronizationManager.getCurrentTransactionName();\n        System.out.println(\"Transaction name: \" + txName);\n\n        // Register a synchronization\n        if (inTransaction) {\n            TransactionSynchronizationManager.registerSynchronization(\n                new TransactionSynchronization() {\n\n                    @Override\n                    public void beforeCommit(boolean readOnly) {\n                        System.out.println(\"Before commit (readOnly=\" + readOnly + \")\");\n                    }\n\n                    @Override\n                    public void afterCommit() {\n                        System.out.println(\"After commit\");\n                    }\n\n                    @Override\n                    public void beforeCompletion() {\n                        System.out.println(\"Before completion\");\n                    }\n\n                    @Override\n                    public void afterCompletion(int status) {\n                        String statusStr = switch (status) {\n                            case STATUS_COMMITTED -> \"COMMITTED\";\n                            case STATUS_ROLLED_BACK -> \"ROLLED_BACK\";\n                            case STATUS_UNKNOWN -> \"UNKNOWN\";\n                            default -> \"?\";\n                        };\n                        System.out.println(\"After completion: \" + statusStr);\n                    }\n\n                    @Override\n                    public void flush() {\n                        System.out.println(\"Flush requested\");\n                    }\n                }\n            );\n        }\n    }\n\n    public String getCurrentTransactionInfo() {\n        boolean active = TransactionSynchronizationManager.isActualTransactionActive();\n        String name = TransactionSynchronizationManager.getCurrentTransactionName();\n        boolean readOnly = TransactionSynchronizationManager.isCurrentTransactionReadOnly();\n        int timeout = TransactionSynchronizationManager.getCurrentTransactionIsolationLevel();\n\n        return String.format(\n            \"Active: %b, Name: %s, ReadOnly: %b, Isolation: %d\",\n            active, name, readOnly, timeout\n        );\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "registering-synchronization-from-transactional-methods",
+      children: "Registering Synchronization from @Transactional Methods"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport org.springframework.transaction.support.TransactionSynchronization;\nimport org.springframework.transaction.support.TransactionSynchronizationManager;\n\n@Service\npublic class SynchronizationRegistrationService {\n\n    @Transactional\n    public void performOperation(String data) {\n        // Core business logic\n        repository.save(data);\n\n        // Register callback that runs after commit\n        TransactionSynchronizationManager.registerSynchronization(\n            new TransactionSynchronization() {\n                @Override\n                public void afterCommit() {\n                    // Guaranteed to run only if this transaction commits\n                    cacheService.evict(data);\n                    messageBroker.send(\"DataUpdated\", data);\n                }\n            }\n        );\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resource-binding",
+      children: "Resource Binding"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "TransactionSynchronizationManager"
+      }), " also manages resource binding — associating a JDBC ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Connection"
+      }), " or JPA ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EntityManager"
+      }), " with the current thread."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.jdbc.datasource.DataSourceUtils;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.support.TransactionSynchronizationManager;\n\nimport javax.sql.DataSource;\nimport java.sql.Connection;\n\n@Service\npublic class ResourceBindingService {\n\n    private final DataSource dataSource;\n\n    public ResourceBindingService(DataSource dataSource) {\n        this.dataSource = dataSource;\n    }\n\n    public void demonstrateResourceBinding() {\n        // Check if a Connection is already bound to this transaction\n        boolean hasResource = TransactionSynchronizationManager.hasResource(dataSource);\n\n        if (!hasResource) {\n            // Get connection through DataSourceUtils (participates in transaction)\n            Connection connection = DataSourceUtils.getConnection(dataSource);\n            // The connection is now bound to the current transaction\n            TransactionSynchronizationManager.bindResource(dataSource, connection);\n        }\n\n        // Later in the same transaction:\n        Connection sameConnection = (Connection)\n            TransactionSynchronizationManager.getResource(dataSource);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-4",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-4",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "declarative-vs-programmatic-transactions",
+      children: "Declarative vs Programmatic Transactions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Both approaches have their place. Choose based on the complexity and nature of your transaction boundaries."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Declarative (@Transactional)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Programmatic (TransactionTemplate)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Boilerplate"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal — single annotation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More code per method"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Readability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High — transaction scope is visible at a glance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate — logic interleaved with transaction code"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Control"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coarse — applies to entire method"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fine-grained — per-item, conditional commit/rollback"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Self-invocation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bypassed (proxy limitation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Works correctly"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dynamic attributes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed at compile time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can change per invocation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Exception handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative via rollbackFor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full try/catch/retry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Testing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration tests with Spring context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easier to unit test the callback logic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple CRUD, service-layer boundaries, consistent behavior across calls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Batch processing, per-item transactions, conditional rollback, retry logic"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport org.springframework.transaction.support.TransactionTemplate;\n\nimport java.math.BigDecimal;\nimport java.util.List;\n\n@Service\npublic class ComparisonService {\n\n    private final AccountRepository accountRepository;\n    private final TransactionTemplate transactionTemplate;\n\n    public ComparisonService(AccountRepository accountRepository,\n                              TransactionTemplate transactionTemplate) {\n        this.accountRepository = accountRepository;\n        this.transactionTemplate = transactionTemplate;\n    }\n\n    // Declarative — best for simple whole-method transactions\n    @Transactional\n    public void transferDeclarative(Long fromId, Long toId, BigDecimal amount) {\n        Account from = accountRepository.findById(fromId).orElseThrow();\n        Account to = accountRepository.findById(toId).orElseThrow();\n        from.debit(amount);\n        to.credit(amount);\n        accountRepository.save(from);\n        accountRepository.save(to);\n    }\n\n    // Programmatic — best when you need per-item transaction boundaries\n    public void batchTransferDeclarative(List<TransferRequest> requests) {\n        // BEWARE: One transaction for ALL transfers\n        // One failure rolls back EVERYTHING\n        for (TransferRequest req : requests) {\n            transferDeclarative(req.fromId(), req.toId(), req.amount());\n        }\n    }\n\n    // Programmatic — each transfer is an independent transaction\n    public void batchTransferProgrammatic(List<TransferRequest> requests) {\n        for (TransferRequest req : requests) {\n            transactionTemplate.execute(status -> {\n                try {\n                    Account from = accountRepository.findById(req.fromId()).orElseThrow();\n                    Account to = accountRepository.findById(req.toId()).orElseThrow();\n                    from.debit(req.amount());\n                    to.credit(req.amount());\n                    accountRepository.save(from);\n                    accountRepository.save(to);\n                    return null;\n                } catch (Exception e) {\n                    status.setRollbackOnly();\n                    throw e;\n                }\n            });\n        }\n    }\n\n    // Programmatic — conditional commit/rollback\n    public void conditionalProcess(List<TransferRequest> requests) {\n        transactionTemplate.execute(status -> {\n            int processed = 0;\n            for (TransferRequest req : requests) {\n                if (req.amount().compareTo(BigDecimal.valueOf(10000)) > 0) {\n                    // Skip this transfer but continue with others\n                    continue;\n                }\n                if (req.amount().compareTo(BigDecimal.ZERO) <= 0) {\n                    // Invalid — roll back everything\n                    status.setRollbackOnly();\n                    throw new IllegalArgumentException(\"Invalid amount: \" + req.amount());\n                }\n                Account from = accountRepository.findById(req.fromId()).orElseThrow();\n                Account to = accountRepository.findById(req.toId()).orElseThrow();\n                from.debit(req.amount());\n                to.credit(req.amount());\n                accountRepository.save(from);\n                accountRepository.save(to);\n                processed++;\n            }\n            return processed;\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-5",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-5",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "distributed-transactions",
+      children: "Distributed Transactions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When an operation spans multiple databases, message brokers, or services, a local transaction is insufficient. Distributed transaction coordination is required."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "jta-and-the-two-phase-commit-protocol",
+      children: "JTA and the Two-Phase Commit Protocol"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "JTA (Jakarta Transaction API) coordinates transactions across multiple XA resources using the two-phase commit (2PC) protocol:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 1 (Prepare):"
+      }), " The transaction manager asks each resource manager to prepare for commit. Each resource writes its changes to durable storage and votes \"ready\" or \"abort.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 2 (Commit/Rollback):"
+      }), " If all vote \"ready,\" the coordinator sends a commit. If any votes \"abort,\" the coordinator sends a rollback."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.distributed;\n\nimport jakarta.transaction.*;\nimport org.springframework.stereotype.Service;\n\n@Service\npublic class JtaDemoService {\n\n    private final UserTransaction userTransaction;\n    private final OrderRepository orderRepository;\n    private final InventoryRepository inventoryRepository;\n    private final BillingRepository billingRepository;\n\n    public JtaDemoService(UserTransaction userTransaction,\n                           OrderRepository orderRepository,\n                           InventoryRepository inventoryRepository,\n                           BillingRepository billingRepository) {\n        this.userTransaction = userTransaction;\n        this.orderRepository = orderRepository;\n        this.inventoryRepository = inventoryRepository;\n        this.billingRepository = billingRepository;\n    }\n\n    public void createOrderWithJta(Order order, Payment payment) {\n        try {\n            userTransaction.begin();\n\n            orderRepository.save(order);\n            inventoryRepository.deductStock(order.getProductId(), order.getQuantity());\n            billingRepository.charge(payment);\n\n            userTransaction.commit();\n        } catch (Exception e) {\n            try {\n                userTransaction.rollback();\n            } catch (SystemException se) {\n                throw new RuntimeException(\"Rollback failed\", se);\n            }\n            throw new RuntimeException(\"Order creation failed\", e);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "atomikos-configuration",
+      children: "Atomikos Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Atomikos is a popular standalone JTA transaction manager for Spring applications."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.distributed;\n\nimport com.atomikos.icatch.jta.UserTransactionImp;\nimport com.atomikos.icatch.jta.JtaTransactionManager;\nimport com.atomikos.jdbc.AtomikosDataSourceBean;\nimport org.postgresql.xa.PGXADataSource;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.context.annotation.DependsOn;\nimport org.springframework.transaction.jta.JtaTransactionManager;\n\nimport jakarta.transaction.TransactionManager;\nimport jakarta.transaction.UserTransaction;\nimport java.util.Properties;\n\n@Configuration\npublic class AtomikosConfig {\n\n    @Bean(initMethod = \"init\", destroyMethod = \"close\")\n    public AtomikosDataSourceBean dataSourceA() {\n        PGXADataSource pgXaDs = new PGXADataSource();\n        pgXaDs.setUrl(\"jdbc:postgresql://localhost:5432/db_a\");\n        pgXaDs.setUser(\"user\");\n        pgXaDs.setPassword(\"password\");\n\n        AtomikosDataSourceBean ds = new AtomikosDataSourceBean();\n        ds.setUniqueResourceName(\"XA_DS_A\");\n        ds.setXaDataSource(pgXaDs);\n        ds.setMaxPoolSize(10);\n        ds.setBorrowConnectionTimeout(30);\n        return ds;\n    }\n\n    @Bean(initMethod = \"init\", destroyMethod = \"close\")\n    public AtomikosDataSourceBean dataSourceB() {\n        PGXADataSource pgXaDs = new PGXADataSource();\n        pgXaDs.setUrl(\"jdbc:postgresql://localhost:5432/db_b\");\n        pgXaDs.setUser(\"user\");\n        pgXaDs.setPassword(\"password\");\n\n        AtomikosDataSourceBean ds = new AtomikosDataSourceBean();\n        ds.setUniqueResourceName(\"XA_DS_B\");\n        ds.setXaDataSource(pgXaDs);\n        ds.setMaxPoolSize(10);\n        ds.setBorrowConnectionTimeout(30);\n        return ds;\n    }\n\n    @Bean\n    public UserTransaction userTransaction() {\n        UserTransactionImp ut = new UserTransactionImp();\n        ut.setTransactionTimeout(60);\n        return ut;\n    }\n\n    @Bean\n    public TransactionManager atomikosTransactionManager() {\n        com.atomikos.icatch.jta.UserTransactionManager utm =\n            new com.atomikos.icatch.jta.UserTransactionManager();\n        utm.setForceShutdown(false);\n        return utm;\n    }\n\n    @Bean\n    @DependsOn({\"userTransaction\", \"atomikosTransactionManager\"})\n    public JtaTransactionManager transactionManager(\n            UserTransaction userTransaction,\n            TransactionManager atomikosTransactionManager) {\n\n        JtaTransactionManager tm = new JtaTransactionManager();\n        tm.setUserTransaction(userTransaction);\n        tm.setTransactionManager(atomikosTransactionManager);\n        tm.setAllowCustomIsolationLevels(true);\n        return tm;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "narayana-configuration",
+      children: "Narayana Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Narayana is JBoss's transaction manager, also available standalone."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.distributed;\n\nimport com.arjuna.ats.jbossatx.jta.RecoveryManagerService;\nimport com.arjuna.ats.jta.common.JTAEnvironmentBean;\nimport com.arjuna.ats.jta.common.jtaPropertyManager;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.transaction.jta.JtaTransactionManager;\n\n@Configuration\npublic class NarayanaConfig {\n\n    @Bean\n    public JtaTransactionManager transactionManager() {\n        jtaPropertyManager.getJTAEnvironmentBean()\n            .setTransactionManagerClassName(\n                \"com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionManagerImple\");\n\n        return new JtaTransactionManager();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "limitations-of-2pc--xa",
+      children: "Limitations of 2PC / XA"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Latency"
+        }), ": The prepare phase requires an extra round-trip to all participants."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Blocking"
+        }), ": If the coordinator crashes after prepare, participants hold locks until recovery."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scalability"
+        }), ": The coordinator is a single point of failure and a throughput bottleneck."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Support"
+        }), ": Not all databases and message brokers support XA. NoSQL databases generally do not."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity"
+        }), ": Recovery managers, transaction logs, and heuristic outcomes (ambiguous commits) add operational burden."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not suitable for microservices"
+        }), ": 2PC does not span network boundaries well — services must share the same transaction manager."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-6",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-6",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "saga-pattern",
+      children: "Saga Pattern"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Saga pattern manages distributed transactions across microservices without 2PC. Each service performs its local transaction and publishes an event or message. If a step fails, previous steps execute compensating transactions to undo their effects."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "choreography-saga",
+      children: "Choreography Saga"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each service publishes events that trigger the next service's action. No central coordinator."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.choreography;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n/**\n * Choreography-based Saga for order fulfillment.\n *\n * Flow:\n *   1. Order Service: create order (PENDING)\n *   2. Inventory Service: reserve items  →  fail → Order Service: CANCEL order\n *   3. Payment Service: charge card      →  fail → Inventory: release items\n *   4. Shipping Service: create label    →  fail → Payment: refund\n */\n@Service\npublic class OrderSagaOrchestrator {\n\n    private final EventPublisher eventPublisher;\n\n    public OrderSagaOrchestrator(EventPublisher eventPublisher) {\n        this.eventPublisher = eventPublisher;\n    }\n\n    @Transactional\n    public void createOrder(Order order) {\n        order.setStatus(\"PENDING\");\n        orderRepository.save(order);\n        eventPublisher.publish(new OrderCreatedEvent(order.getId(), order.getItems()));\n    }\n\n    public void onInventoryReserved(InventoryReservedEvent event) {\n        orderRepository.findById(event.getOrderId()).ifPresent(order -> {\n            order.setStatus(\"INVENTORY_RESERVED\");\n            orderRepository.save(order);\n            eventPublisher.publish(\n                new PaymentRequestEvent(order.getId(), order.getTotal()));\n        });\n    }\n\n    public void onPaymentProcessed(PaymentProcessedEvent event) {\n        orderRepository.findById(event.getOrderId()).ifPresent(order -> {\n            order.setStatus(\"PAYMENT_PROCESSED\");\n            orderRepository.save(order);\n            eventPublisher.publish(\n                new ShippingRequestEvent(order.getId(), order.getAddress()));\n        });\n    }\n\n    // Compensating: release inventory if payment fails\n    public void onPaymentFailed(PaymentFailedEvent event) {\n        orderRepository.findById(event.getOrderId()).ifPresent(order -> {\n            order.setStatus(\"PAYMENT_FAILED\");\n            orderRepository.save(order);\n            eventPublisher.publish(\n                new ReleaseInventoryEvent(order.getId(), order.getItems()));\n        });\n    }\n\n    // Compensating: refund payment if shipping fails\n    public void onShippingFailed(ShippingFailedEvent event) {\n        orderRepository.findById(event.getOrderId()).ifPresent(order -> {\n            order.setStatus(\"SHIPPING_FAILED\");\n            orderRepository.save(order);\n            eventPublisher.publish(\n                new RefundPaymentEvent(order.getId(), order.getTotal()));\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.choreography;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class InventorySagaService {\n\n    private final InventoryRepository inventoryRepository;\n    private final EventPublisher eventPublisher;\n\n    public InventorySagaService(InventoryRepository inventoryRepository,\n                                 EventPublisher eventPublisher) {\n        this.inventoryRepository = inventoryRepository;\n        this.eventPublisher = eventPublisher;\n    }\n\n    @Transactional(propagation = Propagation.REQUIRES_NEW)\n    public void handleOrderCreated(OrderCreatedEvent event) {\n        try {\n            for (OrderItem item : event.getItems()) {\n                inventoryRepository.reserve(item.getProductId(), item.getQuantity());\n            }\n            eventPublisher.publish(\n                new InventoryReservedEvent(event.getOrderId()));\n        } catch (Exception e) {\n            eventPublisher.publish(\n                new InventoryReservationFailedEvent(event.getOrderId(), e.getMessage()));\n        }\n    }\n\n    @Transactional(propagation = Propagation.REQUIRES_NEW)\n    public void handleReleaseInventory(ReleaseInventoryEvent event) {\n        for (OrderItem item : event.getItems()) {\n            inventoryRepository.release(item.getProductId(), item.getQuantity());\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "orchestration-saga",
+      children: "Orchestration Saga"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A central Saga Coordinator sends commands to each service and handles failures."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.orchestration;\n\nimport org.springframework.stereotype.Service;\n\n/**\n * Orchestration-based Saga.\n *\n * A central OrderSagaCoordinator sends commands to each service\n * and invokes compensating actions on failure.\n */\n@Service\npublic class OrderSagaCoordinator {\n\n    private final InventoryClient inventoryClient;\n    private final PaymentClient paymentClient;\n    private final ShippingClient shippingClient;\n    private final SagaLogRepository sagaLogRepository;\n\n    public OrderSagaCoordinator(InventoryClient inventoryClient,\n                                 PaymentClient paymentClient,\n                                 ShippingClient shippingClient,\n                                 SagaLogRepository sagaLogRepository) {\n        this.inventoryClient = inventoryClient;\n        this.paymentClient = paymentClient;\n        this.shippingClient = shippingClient;\n        this.sagaLogRepository = sagaLogRepository;\n    }\n\n    public void executeSaga(CreateOrderCommand command) {\n        String sagaId = java.util.UUID.randomUUID().toString();\n        sagaLogRepository.save(new SagaLog(sagaId, \"STARTED\", command.getOrderId()));\n\n        try {\n            // Step 1: Reserve inventory\n            InventoryResponse inventoryResponse = inventoryClient.reserve(\n                sagaId, command.getOrderId(), command.getItems());\n\n            sagaLogRepository.save(\n                new SagaLog(sagaId, \"INVENTORY_RESERVED\", command.getOrderId()));\n\n            // Step 2: Process payment\n            PaymentResponse paymentResponse = paymentClient.charge(\n                sagaId, command.getOrderId(), command.getTotal());\n\n            sagaLogRepository.save(\n                new SagaLog(sagaId, \"PAYMENT_PROCESSED\", command.getOrderId()));\n\n            // Step 3: Create shipment\n            ShippingResponse shippingResponse = shippingClient.ship(\n                sagaId, command.getOrderId(), command.getAddress());\n\n            sagaLogRepository.save(\n                new SagaLog(sagaId, \"SHIPPED\", command.getOrderId()));\n\n            sagaLogRepository.save(\n                new SagaLog(sagaId, \"COMPLETED\", command.getOrderId()));\n\n        } catch (Exception e) {\n            sagaLogRepository.save(\n                new SagaLog(command.getOrderId(), \"FAILED\", e.getMessage()));\n            compensate(sagaId, command);\n        }\n    }\n\n    private void compensate(String sagaId, CreateOrderCommand command) {\n        // Execute compensating actions in reverse order\n        try {\n            shippingClient.cancel(sagaId, command.getOrderId());\n        } catch (Exception e) {\n            // Log and continue — best effort compensation\n        }\n\n        try {\n            paymentClient.refund(sagaId, command.getOrderId(), command.getTotal());\n        } catch (Exception e) {\n            // Log and continue\n        }\n\n        try {\n            inventoryClient.release(sagaId, command.getOrderId(), command.getItems());\n        } catch (Exception e) {\n            // Log and continue\n        }\n\n        sagaLogRepository.save(\n            new SagaLog(sagaId, \"COMPENSATED\", command.getOrderId()));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "saga-with-kafka",
+      children: "Saga with Kafka"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Using Kafka for saga event communication provides durability, ordering guarantees, and replayability."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.kafka;\n\nimport org.apache.kafka.clients.admin.NewTopic;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.kafka.annotation.KafkaListener;\nimport org.springframework.kafka.core.KafkaTemplate;\nimport org.springframework.stereotype.Service;\n\n@Configuration\npublic class KafkaSagaConfig {\n\n    @Bean\n    public NewTopic orderCommands() {\n        return new NewTopic(\"saga.order.commands\", 3, (short) 1);\n    }\n\n    @Bean\n    public NewTopic inventoryEvents() {\n        return new NewTopic(\"saga.inventory.events\", 3, (short) 1);\n    }\n\n    @Bean\n    public NewTopic paymentEvents() {\n        return new NewTopic(\"saga.payment.events\", 3, (short) 1);\n    }\n\n    @Bean\n    public NewTopic shippingEvents() {\n        return new NewTopic(\"saga.shipping.events\", 3, (short) 1);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.kafka;\n\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport org.apache.kafka.clients.consumer.ConsumerRecord;\nimport org.springframework.kafka.annotation.KafkaListener;\nimport org.springframework.kafka.core.KafkaTemplate;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Map;\n\n@Service\npublic class KafkaSagaCoordinator {\n\n    private final KafkaTemplate<String, String> kafkaTemplate;\n    private final ObjectMapper objectMapper;\n    private final SagaStateRepository stateRepository;\n\n    public KafkaSagaCoordinator(KafkaTemplate<String, String> kafkaTemplate,\n                                 ObjectMapper objectMapper,\n                                 SagaStateRepository stateRepository) {\n        this.kafkaTemplate = kafkaTemplate;\n        this.objectMapper = objectMapper;\n        this.stateRepository = stateRepository;\n    }\n\n    public void startSaga(CreateOrderCommand command) {\n        SagaState state = new SagaState(\n            command.getOrderId(),\n            \"ORDER_CREATED\",\n            command\n        );\n        stateRepository.save(state);\n        kafkaTemplate.send(\"saga.order.commands\", command.getOrderId(),\n            toJson(new ReserveInventoryCommand(command.getOrderId(), command.getItems())));\n    }\n\n    @KafkaListener(topics = \"saga.inventory.events\")\n    public void onInventoryEvent(ConsumerRecord<String, String> record) {\n        InventoryEvent event = fromJson(record.value(), InventoryEvent.class);\n        SagaState state = stateRepository.findById(record.key()).orElse(null);\n\n        if (event.isSuccess()) {\n            state.setStatus(\"INVENTORY_RESERVED\");\n            stateRepository.save(state);\n            kafkaTemplate.send(\"saga.order.commands\", record.key(),\n                toJson(new ProcessPaymentCommand(\n                    state.getOrderId(), state.getCommand().getTotal())));\n        } else {\n            kafkaTemplate.send(\"saga.order.commands\", record.key(),\n                toJson(new CompensateOrderCommand(state.getOrderId(), \"INVENTORY_FAILED\")));\n        }\n    }\n\n    @KafkaListener(topics = \"saga.payment.events\")\n    public void onPaymentEvent(ConsumerRecord<String, String> record) {\n        PaymentEvent event = fromJson(record.value(), PaymentEvent.class);\n        SagaState state = stateRepository.findById(record.key()).orElse(null);\n\n        if (event.isSuccess()) {\n            state.setStatus(\"PAYMENT_PROCESSED\");\n            stateRepository.save(state);\n            kafkaTemplate.send(\"saga.order.commands\", record.key(),\n                toJson(new CreateShipmentCommand(\n                    state.getOrderId(), state.getCommand().getAddress())));\n        } else {\n            kafkaTemplate.send(\"saga.order.commands\", record.key(),\n                toJson(new CompensateOrderCommand(\n                    state.getOrderId(), \"PAYMENT_FAILED\")));\n        }\n    }\n\n    @KafkaListener(topics = \"saga.shipping.events\")\n    public void onShippingEvent(ConsumerRecord<String, String> record) {\n        ShippingEvent event = fromJson(record.value(), ShippingEvent.class);\n        SagaState state = stateRepository.findById(record.key()).orElse(null);\n\n        if (event.isSuccess()) {\n            state.setStatus(\"COMPLETED\");\n            stateRepository.save(state);\n        } else {\n            kafkaTemplate.send(\"saga.order.commands\", record.key(),\n                toJson(new CompensateOrderCommand(\n                    state.getOrderId(), \"SHIPPING_FAILED\")));\n        }\n    }\n\n    @KafkaListener(topics = \"saga.order.commands\")\n    public void onCompensation(ConsumerRecord<String, String> record) {\n        CompensateOrderCommand cmd = fromJson(record.value(), CompensateOrderCommand.class);\n        if (cmd != null) {\n            handleCompensation(cmd);\n        }\n    }\n\n    private void handleCompensation(CompensateOrderCommand cmd) {\n        SagaState state = stateRepository.findById(cmd.getOrderId()).orElse(null);\n        if (state == null) return;\n\n        String currentStatus = state.getStatus();\n\n        if (\"PAYMENT_PROCESSED\".equals(currentStatus)) {\n            kafkaTemplate.send(\"saga.order.commands\", cmd.getOrderId(),\n                toJson(new RefundPaymentCommand(cmd.getOrderId(), 0)));\n        }\n        if (\"INVENTORY_RESERVED\".equals(currentStatus)\n            || \"PAYMENT_PROCESSED\".equals(currentStatus)) {\n            kafkaTemplate.send(\"saga.order.commands\", cmd.getOrderId(),\n                toJson(new ReleaseInventoryCommand(cmd.getOrderId())));\n        }\n\n        state.setStatus(\"COMPENSATED\");\n        stateRepository.save(state);\n    }\n\n    private String toJson(Object obj) {\n        try {\n            return objectMapper.writeValueAsString(obj);\n        } catch (Exception e) {\n            throw new RuntimeException(\"Serialization error\", e);\n        }\n    }\n\n    private <T> T fromJson(String json, Class<T> type) {\n        try {\n            return objectMapper.readValue(json, type);\n        } catch (Exception e) {\n            return null;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "compensating-transaction-pattern",
+      children: "Compensating Transaction Pattern"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each saga step must have a compensating action:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Forward Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Compensating Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Create order"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "INSERT INTO orders (PENDING)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "UPDATE orders SET status = CANCELLED"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reserve inventory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "UPDATE inventory SET reserved = reserved + qty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "UPDATE inventory SET reserved = reserved - qty"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Charge payment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "INSERT INTO payments (AUTHORIZED)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "INSERT INTO refunds (FULL_REFUND)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Create shipment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "INSERT INTO shipments (CREATED)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "UPDATE shipments SET status = CANCELLED"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class CompensatingActionService {\n\n    private final OrderRepository orderRepository;\n    private final InventoryRepository inventoryRepository;\n    private final PaymentGateway paymentGateway;\n\n    public CompensatingActionService(OrderRepository orderRepository,\n                                      InventoryRepository inventoryRepository,\n                                      PaymentGateway paymentGateway) {\n        this.orderRepository = orderRepository;\n        this.inventoryRepository = inventoryRepository;\n        this.paymentGateway = paymentGateway;\n    }\n\n    @Transactional\n    public void createOrderAndReserve(Order order) {\n        order.setStatus(\"PENDING\");\n        orderRepository.save(order);\n        inventoryRepository.reserve(order.getItems());\n    }\n\n    @Transactional\n    public void compensateCreateOrderAndReserve(Order order) {\n        // Undo the inventory reservation\n        inventoryRepository.release(order.getItems());\n        // Cancel the order\n        order.setStatus(\"CANCELLED\");\n        orderRepository.save(order);\n    }\n\n    public boolean chargePayment(String orderId, BigDecimal amount) {\n        try {\n            paymentGateway.charge(orderId, amount);\n            return true;\n        } catch (Exception e) {\n            return false;\n        }\n    }\n\n    public boolean refundPayment(String orderId, BigDecimal amount) {\n        try {\n            paymentGateway.refund(orderId, amount);\n            return true;\n        } catch (Exception e) {\n            return false;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "eventuate-tram",
+      children: "Eventuate Tram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Eventuate Tram is a microservice saga framework that uses message-based coordination."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Dependency: io.eventuate.tram:eventuate-tram-core\n\npackage com.course.tx.saga.eventuate;\n\nimport io.eventuate.tram.commands.common.Command;\nimport io.eventuate.tram.sagas.orchestration.SagaDefinition;\nimport io.eventuate.tram.sagas.simpledsl.SimpleSaga;\n\npublic class OrderFulfillmentSaga implements SimpleSaga<OrderSagaData> {\n\n    private final SagaDefinition<OrderSagaData> sagaDefinition;\n\n    public OrderFulfillmentSaga() {\n        this.sagaDefinition = step()\n            .invokeParticipant(this::reserveInventory)\n            .withCompensation(this::releaseInventory)\n            .step()\n            .invokeParticipant(this::processPayment)\n            .withCompensation(this::refundPayment)\n            .step()\n            .invokeParticipant(this::createShipment)\n            .build();\n    }\n\n    @Override\n    public SagaDefinition<OrderSagaData> getSagaDefinition() {\n        return sagaDefinition;\n    }\n\n    private Command reserveInventory(OrderSagaData data) {\n        return new ReserveInventoryCommand(data.getOrderId(), data.getItems());\n    }\n\n    private Command releaseInventory(OrderSagaData data) {\n        return new ReleaseInventoryCommand(data.getOrderId(), data.getItems());\n    }\n\n    private Command processPayment(OrderSagaData data) {\n        return new ProcessPaymentCommand(data.getOrderId(), data.getTotal());\n    }\n\n    private Command refundPayment(OrderSagaData data) {\n        return new RefundPaymentCommand(data.getOrderId(), data.getTotal());\n    }\n\n    private Command createShipment(OrderSagaData data) {\n        return new CreateShipmentCommand(data.getOrderId(), data.getAddress());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "axon-saga",
+      children: "Axon Saga"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Axon Framework provides saga orchestration as a first-class concept."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.axon;\n\nimport org.axonframework.commandhandling.gateway.CommandGateway;\nimport org.axonframework.modelling.saga.SagaEventHandler;\nimport org.axonframework.modelling.saga.SagaLifecycle;\nimport org.axonframework.modelling.saga.StartSaga;\nimport org.axonframework.spring.stereotype.Saga;\n\n@Saga\npublic class OrderSaga {\n\n    private String orderId;\n    private boolean inventoryReserved;\n    private boolean paymentProcessed;\n    private boolean shipmentCreated;\n\n    @StartSaga\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(OrderCreatedEvent event, CommandGateway commandGateway) {\n        this.orderId = event.getOrderId();\n        SagaLifecycle.associateWith(\"orderId\", event.getOrderId());\n\n        commandGateway.send(new ReserveInventoryCommand(\n            event.getOrderId(), event.getItems()));\n    }\n\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(InventoryReservedEvent event, CommandGateway commandGateway) {\n        this.inventoryReserved = true;\n        commandGateway.send(new ProcessPaymentCommand(\n            event.getOrderId(), event.getTotal()));\n    }\n\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(PaymentProcessedEvent event, CommandGateway commandGateway) {\n        this.paymentProcessed = true;\n        commandGateway.send(new CreateShipmentCommand(\n            event.getOrderId(), event.getAddress()));\n    }\n\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(ShipmentCreatedEvent event) {\n        this.shipmentCreated = true;\n        SagaLifecycle.end();\n    }\n\n    // Compensating handlers\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(PaymentFailedEvent event, CommandGateway commandGateway) {\n        if (inventoryReserved) {\n            commandGateway.send(new ReleaseInventoryCommand(\n                event.getOrderId(), event.getItems()));\n        }\n        SagaLifecycle.end();\n    }\n\n    @SagaEventHandler(associationProperty = \"orderId\")\n    public void handle(InventoryReservationFailedEvent event, CommandGateway commandGateway) {\n        SagaLifecycle.end();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "saga-with-rest-callbacks",
+      children: "Saga with REST Callbacks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When a message broker is unavailable, saga coordination can use REST callbacks."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.saga.rest;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.client.RestTemplate;\n\nimport java.util.concurrent.CompletableFuture;\nimport java.util.concurrent.ConcurrentHashMap;\n\n@Service\npublic class RestSagaCoordinator {\n\n    private final RestTemplate restTemplate;\n    private final ConcurrentHashMap<String, SagaState> sagaStates = new ConcurrentHashMap<>();\n\n    public RestSagaCoordinator(RestTemplate restTemplate) {\n        this.restTemplate = restTemplate;\n    }\n\n    public CompletableFuture<SagaResult> startSaga(SagaRequest request) {\n        CompletableFuture<SagaResult> future = new CompletableFuture<>();\n        SagaState state = new SagaState(\n            request.getOrderId(),\n            request,\n            future\n        );\n        sagaStates.put(request.getOrderId(), state);\n\n        // Step 1: Call inventory service\n        try {\n            InventoryResponse invResp = restTemplate.postForObject(\n                \"http://inventory-service/api/reserve\",\n                new InventoryRequest(request.getOrderId(), request.getItems()),\n                InventoryResponse.class\n            );\n\n            if (invResp != null && invResp.isSuccess()) {\n                // Step 2: Call payment service\n                PaymentResponse payResp = restTemplate.postForObject(\n                    \"http://payment-service/api/charge\",\n                    new PaymentRequest(request.getOrderId(), request.getTotal()),\n                    PaymentResponse.class\n                );\n\n                if (payResp != null && payResp.isSuccess()) {\n                    // Step 3: Call shipping service\n                    ShippingResponse shipResp = restTemplate.postForObject(\n                        \"http://shipping-service/api/ship\",\n                        new ShippingRequest(request.getOrderId(), request.getAddress()),\n                        ShippingResponse.class\n                    );\n\n                    if (shipResp != null && shipResp.isSuccess()) {\n                        future.complete(new SagaResult(request.getOrderId(), \"COMPLETED\"));\n                    } else {\n                        compensate(request.getOrderId());\n                        future.complete(new SagaResult(request.getOrderId(), \"SHIPPING_FAILED\"));\n                    }\n                } else {\n                    compensate(request.getOrderId());\n                    future.complete(new SagaResult(request.getOrderId(), \"PAYMENT_FAILED\"));\n                }\n            } else {\n                future.complete(new SagaResult(request.getOrderId(), \"INVENTORY_FAILED\"));\n            }\n        } catch (Exception e) {\n            compensate(request.getOrderId());\n            future.completeExceptionally(e);\n        }\n\n        return future;\n    }\n\n    private void compensate(String orderId) {\n        SagaState state = sagaStates.get(orderId);\n        if (state == null) return;\n\n        // Compensate in reverse order\n        try {\n            restTemplate.postForObject(\n                \"http://shipping-service/api/cancel\",\n                new CancelRequest(orderId),\n                Void.class);\n        } catch (Exception e) { /* best effort */ }\n\n        try {\n            restTemplate.postForObject(\n                \"http://payment-service/api/refund\",\n                new RefundRequest(orderId, state.getRequest().getTotal()),\n                Void.class);\n        } catch (Exception e) { /* best effort */ }\n\n        try {\n            restTemplate.postForObject(\n                \"http://inventory-service/api/release\",\n                new ReleaseRequest(orderId, state.getRequest().getItems()),\n                Void.class);\n        } catch (Exception e) { /* best effort */ }\n    }\n\n    private record SagaState(String orderId, SagaRequest request,\n                              CompletableFuture<SagaResult> future) {}\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-7",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-7",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "pessimistic-locking",
+      children: "Pessimistic Locking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pessimistic locking acquires a database lock on the data before any operation, preventing other transactions from modifying or reading the locked data. Use it when conflicts are frequent and the cost of retries is high."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lock-annotations",
+      children: "@Lock Annotations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring Data JPA provides ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Lock"
+      }), " for repository methods:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport jakarta.persistence.LockModeType;\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.data.jpa.repository.Lock;\nimport org.springframework.data.jpapaRepository.QueryHints;\nimport org.springframework.data.jpa.repository.Query;\nimport org.springframework.stereotype.Repository;\n\nimport java.util.Optional;\n\n@Repository\npublic interface AccountLockingRepository extends JpaRepository<Account, Long> {\n\n    @Lock(LockModeType.PESSIMISTIC_WRITE)\n    @Query(\"select a from Account a where a.id = :id\")\n    Optional<Account> findByIdWithPessimisticWriteLock(Long id);\n\n    @Lock(LockModeType.PESSIMISTIC_READ)\n    @Query(\"select a from Account a where a.id = :id\")\n    Optional<Account> findByIdWithPessimisticReadLock(Long id);\n\n    @Lock(LockModeType.PESSIMISTIC_FORCE_INCREMENT)\n    @Query(\"select a from Account a where a.id = :id\")\n    Optional<Account> findByIdWithPessimisticForceIncrement(Long id);\n\n    @Lock(LockModeType.PESSIMISTIC_WRITE)\n    @QueryHints({@QueryHint(name = \"jakarta.persistence.lock.timeout\", value = \"3000\")})\n    @Query(\"select a from Account a where a.id = :id\")\n    Optional<Account> findByIdWithLockTimeout(Long id);\n\n    @Lock(LockModeType.PESSIMISTIC_WRITE)\n    @Query(\"select a from Account a where a.balance > :minBalance\")\n    List<Account> findAccountsWithBalanceAbove(BigDecimal minBalance);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lock-modes",
+      children: "Lock Modes"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Lock Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SQL (PostgreSQL)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "PESSIMISTIC_READ"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT ... FOR SHARE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared lock — others can read but not write"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "PESSIMISTIC_WRITE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT ... FOR UPDATE"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exclusive lock — no other transaction can read or write"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "PESSIMISTIC_FORCE_INCREMENT"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT ... FOR UPDATE"
+            }), " + ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Version"
+            }), " increment"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Like WRITE but also increments the version column"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pessimistic-locking-in-a-service",
+      children: "Pessimistic Locking in a Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.math.BigDecimal;\n\n@Service\npublic class PessimisticLockingService {\n\n    private final AccountLockingRepository accountRepository;\n\n    public PessimisticLockingService(AccountLockingRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @Transactional\n    public void transferWithPessimisticLock(Long fromId, Long toId, BigDecimal amount) {\n        // These SELECT ... FOR UPDATE queries acquire row-level locks\n        Account from = accountRepository.findByIdWithPessimisticWriteLock(fromId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Source not found\"));\n\n        Account to = accountRepository.findByIdWithPessimisticWriteLock(toId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Target not found\"));\n\n        if (from.getBalance().compareTo(amount) < 0) {\n            throw new InsufficientBalanceException(fromId, amount);\n        }\n\n        from.setBalance(from.getBalance().subtract(amount));\n        to.setBalance(to.getBalance().add(amount));\n\n        accountRepository.save(from);\n        accountRepository.save(to);\n    }\n\n    @Transactional\n    public BigDecimal readWithSharedLock(Long accountId) {\n        // SELECT ... FOR SHARE — allows other shared locks\n        // but blocks exclusive locks\n        Account account = accountRepository.findByIdWithPessimisticReadLock(accountId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n        return account.getBalance();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "lock-timeout",
+      children: "Lock Timeout"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Configure how long a transaction waits to acquire a lock before giving up:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport jakarta.persistence.LockTimeoutException;\n\n@Service\npublic class LockTimeoutService {\n\n    private final AccountLockingRepository accountRepository;\n\n    public LockTimeoutService(AccountLockingRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @Transactional\n    public void transferWithTimeout(Long fromId, Long toId, BigDecimal amount) {\n        try {\n            // Uses @QueryHint timeout = 3000ms (3 seconds)\n            Account from = accountRepository.findByIdWithLockTimeout(fromId)\n                .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n            Account to = accountRepository.findByIdWithLockTimeout(toId)\n                .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n            from.debit(amount);\n            to.credit(amount);\n            accountRepository.save(from);\n            accountRepository.save(to);\n\n        } catch (LockTimeoutException e) {\n            // Could not acquire lock within 3 seconds\n            throw new ConcurrentOperationException(\"Transaction timed out acquiring lock\", e);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-handling",
+      children: "Deadlock Handling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Deadlocks occur when two transactions each hold a lock the other needs. Databases detect deadlocks automatically and roll back one transaction (the \"victim\"). Your code must retry."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport org.springframework.dao.DeadlockLoserDataAccessException;\nimport org.springframework.retry.annotation.Backoff;\nimport org.springframework.retry.annotation.Retryable;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.math.BigDecimal;\n\n@Service\npublic class DeadlockResilientService {\n\n    private final AccountLockingRepository accountRepository;\n\n    public DeadlockResilientService(AccountLockingRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @Retryable(\n        value = {DeadlockLoserDataAccessException.class,\n                 CannotAcquireLockException.class},\n        maxAttempts = 3,\n        backoff = @Backoff(delay = 100, multiplier = 2, maxDelay = 1000)\n    )\n    @Transactional\n    public void transferWithRetry(Long fromId, Long toId, BigDecimal amount) {\n        Account from = accountRepository.findByIdWithPessimisticWriteLock(fromId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n        Account to = accountRepository.findByIdWithPessimisticWriteLock(toId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n        from.debit(amount);\n        to.credit(amount);\n        accountRepository.save(from);\n        accountRepository.save(to);\n    }\n\n    // Manual retry without Spring Retry\n    @Transactional\n    public void transferWithManualRetry(Long fromId, Long toId, BigDecimal amount) {\n        int maxRetries = 3;\n        int retryDelay = 100;\n\n        for (int attempt = 1; attempt <= maxRetries; attempt++) {\n            try {\n                Account from = accountRepository.findByIdWithPessimisticWriteLock(fromId)\n                    .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n                Account to = accountRepository.findByIdWithPessimisticWriteLock(toId)\n                    .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n                from.debit(amount);\n                to.credit(amount);\n                accountRepository.save(from);\n                accountRepository.save(to);\n                return; // Success\n            } catch (DeadlockLoserDataAccessException e) {\n                if (attempt == maxRetries) {\n                    throw e; // Last attempt failed\n                }\n                try {\n                    Thread.sleep(retryDelay * (long) Math.pow(2, attempt - 1));\n                } catch (InterruptedException ie) {\n                    Thread.currentThread().interrupt();\n                    throw new RuntimeException(\"Retry interrupted\", ie);\n                }\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-prevention-strategy",
+      children: "Deadlock Prevention Strategy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport org.springframework.stereotype.Service;\n\n/**\n * Deadlock prevention: always acquire locks in the same order.\n * If all transactions lock accounts in ascending order of ID,\n * deadlocks are structurally impossible.\n */\n@Service\npublic class OrderedLockingService {\n\n    private final AccountLockingRepository accountRepository;\n\n    public OrderedLockingService(AccountLockingRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    public void safeTransfer(Long accountA, Long accountB, BigDecimal amount) {\n        // Always lock smaller ID first\n        Long first = Math.min(accountA, accountB);\n        Long second = Math.max(accountA, accountB);\n\n        Account firstAccount = accountRepository.findByIdWithPessimisticWriteLock(first)\n            .orElseThrow(() -> new IllegalArgumentException(\"Account not found: \" + first));\n\n        Account secondAccount = accountRepository.findByIdWithPessimisticWriteLock(second)\n            .orElseThrow(() -> new IllegalArgumentException(\"Account not found: \" + second));\n\n        if (accountA < accountB) {\n            firstAccount.debit(amount);\n            secondAccount.credit(amount);\n        } else {\n            secondAccount.debit(amount);\n            firstAccount.credit(amount);\n        }\n\n        accountRepository.save(firstAccount);\n        accountRepository.save(secondAccount);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-8",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-8",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimistic-locking",
+      children: "Optimistic Locking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Optimistic locking assumes conflicts are rare. Instead of acquiring locks upfront, it detects conflicts at commit time using a version column."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "version",
+      children: "@Version"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Add a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@Version"
+      }), " field to your entity. JPA increments it on every update and checks it on every commit."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport jakarta.persistence.*;\n\n@Entity\n@Table(name = \"accounts\")\npublic class Account {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    private String ownerName;\n\n    private BigDecimal balance;\n\n    @Version\n    private Long version;\n\n    public Account() {}\n\n    public Account(String ownerName, BigDecimal balance) {\n        this.ownerName = ownerName;\n        this.balance = balance;\n        this.version = 0L;\n    }\n\n    public void debit(BigDecimal amount) {\n        if (this.balance.compareTo(amount) < 0) {\n            throw new InsufficientBalanceException(this.id, amount);\n        }\n        this.balance = this.balance.subtract(amount);\n    }\n\n    public void credit(BigDecimal amount) {\n        this.balance = this.balance.add(amount);\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getOwnerName() { return ownerName; }\n    public void setOwnerName(String ownerName) { this.ownerName = ownerName; }\n\n    public BigDecimal getBalance() { return balance; }\n    public void setBalance(BigDecimal balance) { this.balance = balance; }\n\n    public Long getVersion() { return version; }\n    public void setVersion(Long version) { this.version = version; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-version-checking-works",
+      children: "How Version Checking Works"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Initial read:\nSELECT id, balance, version FROM accounts WHERE id = 1;\n-- Result: id=1, balance=100.00, version=5\n\n-- Update (JPA generates this):\nUPDATE accounts SET balance = 90.00, version = 6\nWHERE id = 1 AND version = 5;\n\n-- If another transaction updated the row between our read and write,\n-- the version will have changed. The WHERE version=5 matches zero rows,\n-- and JPA throws OptimisticLockException.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "optimisticlockexception-handling",
+      children: "OptimisticLockException Handling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport jakarta.persistence.OptimisticLockException;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.math.BigDecimal;\n\n@Service\npublic class OptimisticLockingService {\n\n    private final AccountRepository accountRepository;\n\n    public OptimisticLockingService(AccountRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @Transactional\n    public void transfer(Long fromId, Long toId, BigDecimal amount) {\n        Account from = accountRepository.findById(fromId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n        Account to = accountRepository.findById(toId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n        from.debit(amount);\n        to.credit(amount);\n\n        // On save, Hibernate checks the version column.\n        // If another thread modified the same entity, this throws\n        // OptimisticLockException (or StaleStateException in Hibernate)\n        accountRepository.save(from);\n        accountRepository.save(to);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "retry-pattern-for-optimistic-locking",
+      children: "Retry Pattern for Optimistic Locking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport jakarta.persistence.OptimisticLockException;\nimport org.hibernate.StaleStateException;\nimport org.springframework.dao.OptimisticLockingFailureException;\nimport org.springframework.retry.annotation.Backoff;\nimport org.springframework.retry.annotation.Retryable;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.math.BigDecimal;\nimport java.util.function.Supplier;\n\n@Service\npublic class RetryOptimisticLockingService {\n\n    private final AccountRepository accountRepository;\n\n    public RetryOptimisticLockingService(AccountRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @Retryable(\n        value = {OptimisticLockException.class,\n                 StaleStateException.class,\n                 OptimisticLockingFailureException.class},\n        maxAttempts = 5,\n        backoff = @Backoff(delay = 50, multiplier = 2, maxDelay = 500)\n    )\n    @Transactional\n    public void transferWithRetry(Long fromId, Long toId, BigDecimal amount) {\n        Account from = accountRepository.findById(fromId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n        Account to = accountRepository.findById(toId)\n            .orElseThrow(() -> new IllegalArgumentException(\"Not found\"));\n\n        from.debit(amount);\n        to.credit(amount);\n        accountRepository.save(from);\n        accountRepository.save(to);\n    }\n\n    // Generic retry utility\n    public <T> T withOptimisticRetry(Supplier<T> operation) {\n        int maxAttempts = 5;\n        int baseDelay = 50;\n\n        for (int attempt = 1; attempt <= maxAttempts; attempt++) {\n            try {\n                return operation.get();\n            } catch (OptimisticLockException | StaleStateException\n                     | OptimisticLockingFailureException e) {\n                if (attempt == maxAttempts) {\n                    throw e;\n                }\n                try {\n                    Thread.sleep(baseDelay * (long) Math.pow(2, attempt - 1));\n                } catch (InterruptedException ie) {\n                    Thread.currentThread().interrupt();\n                    throw new RuntimeException(\"Retry interrupted\", ie);\n                }\n            }\n        }\n        throw new RuntimeException(\"Should not reach here\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "version-management-in-rest-controllers",
+      children: "Version Management in REST Controllers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx.locking;\n\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/accounts\")\npublic class AccountController {\n\n    private final AccountRepository accountRepository;\n\n    public AccountController(AccountRepository accountRepository) {\n        this.accountRepository = accountRepository;\n    }\n\n    @PutMapping(\"/{id}\")\n    public ResponseEntity<Account> updateAccount(\n            @PathVariable Long id,\n            @RequestBody AccountUpdateRequest request) {\n\n        return accountRepository.findById(id)\n            .map(account -> {\n                // The client sends the version they last read\n                if (!account.getVersion().equals(request.getVersion())) {\n                    return ResponseEntity.status(409).build();\n                }\n                account.setOwnerName(request.getOwnerName());\n                Account saved = accountRepository.save(account);\n                return ResponseEntity.ok(saved);\n            })\n            .orElse(ResponseEntity.notFound().build());\n    }\n\n    @PutMapping(\"/{id}/balance\")\n    public ResponseEntity<Account> updateBalance(\n            @PathVariable Long id,\n            @RequestBody BalanceUpdateRequest request) {\n\n        return accountRepository.findById(id)\n            .map(account -> {\n                try {\n                    account.setBalance(request.getNewBalance());\n                    Account saved = accountRepository.save(account);\n                    return ResponseEntity.ok(saved);\n                } catch (OptimisticLockException e) {\n                    return ResponseEntity.status(409)\n                        .header(\"X-Conflict\", \"Version conflict, retry\")\n                        .build();\n                }\n            })\n            .orElse(ResponseEntity.notFound().build());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "optimistic-vs-pessimistic-comparison",
+      children: "Optimistic vs Pessimistic Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pessimistic Locking"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lock acquisition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At commit time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At read time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low contention, read-heavy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High contention, write-heavy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Throughput"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher (no lock overhead)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lower (locks serialize access)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlocks"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible (no locks held)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible (retry required)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Retry required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (version conflict)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (deadlock victim)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stale data duration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Window between read and commit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No stale reads (locked)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version increment on every write"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock management in database"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Database support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Universal (version column)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Requires ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SELECT ... FOR UPDATE"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-9",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-9",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "transaction-configuration",
+      children: "Transaction Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "enabling-transaction-management",
+      children: "Enabling Transaction Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.transaction.annotation.EnableTransactionManagement;\n\n@Configuration\n@EnableTransactionManagement\n// @EnableTransactionManagement(order = 0) — custom order for advisors\n// @EnableTransactionManagement(mode = AdviceMode.ASPECTJ) — use AspectJ instead of proxies\npublic class TransactionConfig {\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "custom-transaction-attributes-with-transactional",
+      children: "Custom Transaction Attributes with @Transactional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.core.annotation.AliasFor;\nimport org.springframework.transaction.annotation.Isolation;\nimport org.springframework.transaction.annotation.Propagation;\nimport org.springframework.transaction.annotation.Transactional;\n\nimport java.lang.annotation.*;\n\n@Target({ElementType.METHOD, ElementType.TYPE})\n@Retention(RetentionPolicy.RUNTIME)\n@Inherited\n@Documented\n@Transactional(\n    propagation = Propagation.REQUIRED,\n    isolation = Isolation.REPEATABLE_READ,\n    timeout = 30,\n    rollbackFor = DataIntegrityException.class,\n    readOnly = false\n)\npublic @interface CustomTransactional {\n\n    @AliasFor(annotation = Transactional.class, attribute = \"readOnly\")\n    boolean readOnly() default false;\n\n    @AliasFor(annotation = Transactional.class, attribute = \"timeout\")\n    int timeout() default 30;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "transaction-configuration-with-properties",
+      children: "Transaction Configuration with Properties"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml\nspring:\n  transaction:\n    default-timeout: 30\n    rollback-on-commit-failure: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "transaction-template-with-custom-configuration",
+      children: "Transaction Template with Custom Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.transaction.PlatformTransactionManager;\nimport org.springframework.transaction.TransactionDefinition;\nimport org.springframework.transaction.support.TransactionTemplate;\n\n@Configuration\npublic class TransactionTemplateConfig {\n\n    @Bean\n    public TransactionTemplate transactionTemplate(\n            PlatformTransactionManager transactionManager) {\n        TransactionTemplate template = new TransactionTemplate(transactionManager);\n        template.setPropagationBehaviorName(\n            \"PROPAGATION_REQUIRED\");\n        template.setIsolationLevel(\n            TransactionDefinition.ISOLATION_READ_COMMITTED);\n        template.setTimeout(30);\n        template.setReadOnly(false);\n        template.setName(\"app-tx-template\");\n        return template;\n    }\n\n    @Bean\n    public TransactionTemplate readOnlyTransactionTemplate(\n            PlatformTransactionManager transactionManager) {\n        TransactionTemplate template = new TransactionTemplate(transactionManager);\n        template.setReadOnly(true);\n        template.setTimeout(10);\n        template.setName(\"readonly-tx-template\");\n        return template;\n    }\n\n    @Bean\n    public TransactionTemplate requiresNewTransactionTemplate(\n            PlatformTransactionManager transactionManager) {\n        TransactionTemplate template = new TransactionTemplate(transactionManager);\n        template.setPropagationBehavior(\n            TransactionDefinition.PROPAGATION_REQUIRES_NEW);\n        template.setTimeout(5);\n        template.setName(\"requires-new-tx-template\");\n        return template;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "multi-datasource-transaction-configuration",
+      children: "Multi-DataSource Transaction Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.beans.factory.annotation.Qualifier;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.context.annotation.Primary;\nimport org.springframework.jdbc.datasource.DataSourceTransactionManager;\nimport org.springframework.orm.jpa.JpaTransactionManager;\nimport org.springframework.transaction.PlatformTransactionManager;\n\nimport jakarta.persistence.EntityManagerFactory;\nimport javax.sql.DataSource;\n\n@Configuration\npublic class MultiDataSourceTxConfig {\n\n    @Primary\n    @Bean\n    public PlatformTransactionManager primaryTransactionManager(\n            @Qualifier(\"primaryDataSource\") DataSource dataSource) {\n        return new DataSourceTransactionManager(dataSource);\n    }\n\n    @Bean\n    public PlatformTransactionManager reportingTransactionManager(\n            @Qualifier(\"reportingDataSource\") DataSource dataSource) {\n        return new DataSourceTransactionManager(dataSource);\n    }\n\n    @Bean\n    public PlatformTransactionManager jpaTransactionManager(\n            @Qualifier(\"jpaEntityManagerFactory\") EntityManagerFactory emf) {\n        return new JpaTransactionManager(emf);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.beans.factory.annotation.Qualifier;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\n@Service\npublic class MultiDataSourceService {\n\n    private final OrderRepository orderRepository;\n    private final ReportRepository reportRepository;\n\n    public MultiDataSourceService(\n            OrderRepository orderRepository,\n            @Qualifier(\"reportingRepository\") ReportRepository reportRepository) {\n        this.orderRepository = orderRepository;\n        this.reportRepository = reportRepository;\n    }\n\n    @Transactional(\"primaryTransactionManager\")\n    public void saveOrder(Order order) {\n        orderRepository.save(order);\n    }\n\n    @Transactional(\"reportingTransactionManager\")\n    public void generateReport() {\n        reportRepository.runReport();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-10",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-10",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "entity-and-repository-definitions",
+      children: "Entity and Repository Definitions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The domain classes used across the examples:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport jakarta.persistence.*;\nimport java.math.BigDecimal;\nimport java.time.LocalDateTime;\n\n@Entity\n@Table(name = \"accounts\")\npublic class Account {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @Column(nullable = false)\n    private String ownerName;\n\n    @Column(nullable = false, precision = 19, scale = 2)\n    private BigDecimal balance;\n\n    @Version\n    private Long version;\n\n    @Column(nullable = false)\n    private LocalDateTime createdAt;\n\n    @Column(nullable = false)\n    private LocalDateTime updatedAt;\n\n    public Account() {}\n\n    public Account(String ownerName, BigDecimal balance) {\n        this.ownerName = ownerName;\n        this.balance = balance;\n        this.version = 0L;\n        this.createdAt = LocalDateTime.now();\n        this.updatedAt = LocalDateTime.now();\n    }\n\n    public void debit(BigDecimal amount) {\n        if (balance.compareTo(amount) < 0) {\n            throw new InsufficientBalanceException(id, amount);\n        }\n        this.balance = balance.subtract(amount);\n        this.updatedAt = LocalDateTime.now();\n    }\n\n    public void credit(BigDecimal amount) {\n        this.balance = balance.add(amount);\n        this.updatedAt = LocalDateTime.now();\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getOwnerName() { return ownerName; }\n    public void setOwnerName(String ownerName) { this.ownerName = ownerName; }\n\n    public BigDecimal getBalance() { return balance; }\n    public void setBalance(BigDecimal balance) { this.balance = balance; }\n\n    public Long getVersion() { return version; }\n    public void setVersion(Long version) { this.version = version; }\n\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n\n    public LocalDateTime getUpdatedAt() { return updatedAt; }\n    public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\nimport java.math.BigDecimal;\nimport java.util.List;\n\n@Repository\npublic interface AccountRepository extends JpaRepository<Account, Long> {\n\n    List<Account> findByOwnerName(String ownerName);\n\n    List<Account> findByBalanceGreaterThan(BigDecimal threshold);\n\n    long countByBalanceLessThan(BigDecimal threshold);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport jakarta.persistence.*;\nimport java.math.BigDecimal;\nimport java.time.LocalDateTime;\n\n@Entity\n@Table(name = \"orders\")\npublic class Order {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @Column(nullable = false)\n    private String customerId;\n\n    @Column(nullable = false, precision = 19, scale = 2)\n    private BigDecimal amount;\n\n    @Column(nullable = false)\n    private String status;\n\n    @Column(nullable = false)\n    private LocalDateTime createdAt;\n\n    public Order() {}\n\n    public Order(String customerId, BigDecimal amount) {\n        this.customerId = customerId;\n        this.amount = amount;\n        this.status = \"PENDING\";\n        this.createdAt = LocalDateTime.now();\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getCustomerId() { return customerId; }\n    public void setCustomerId(String customerId) { this.customerId = customerId; }\n\n    public BigDecimal getAmount() { return amount; }\n    public void setAmount(BigDecimal amount) { this.amount = amount; }\n\n    public String getStatus() { return status; }\n    public void setStatus(String status) { this.status = status; }\n\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\nimport java.util.List;\n\n@Repository\npublic interface OrderRepository extends JpaRepository<Order, Long> {\n\n    List<Order> findByCustomerId(String customerId);\n\n    List<Order> findByStatus(String status);\n\n    long countByStatus(String status);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport jakarta.persistence.*;\nimport java.time.LocalDateTime;\n\n@Entity\n@Table(name = \"audit_logs\")\npublic class AuditLog {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @Column(nullable = false)\n    private String action;\n\n    @Column(nullable = false)\n    private String performedBy;\n\n    @Column(length = 4000)\n    private String details;\n\n    @Column(nullable = false)\n    private LocalDateTime createdAt;\n\n    public AuditLog() {}\n\n    public AuditLog(String action, String performedBy, String details) {\n        this.action = action;\n        this.performedBy = performedBy;\n        this.details = details;\n        this.createdAt = LocalDateTime.now();\n    }\n\n    public AuditLog(String action) {\n        this.action = action;\n        this.performedBy = \"system\";\n        this.createdAt = LocalDateTime.now();\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getAction() { return action; }\n    public void setAction(String action) { this.action = action; }\n\n    public String getPerformedBy() { return performedBy; }\n    public void setPerformedBy(String performedBy) { this.performedBy = performedBy; }\n\n    public String getDetails() { return details; }\n    public void setDetails(String details) { this.details = details; }\n\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\n@Repository\npublic interface AuditLogRepository extends JpaRepository<AuditLog, Long> {\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\npublic class InsufficientBalanceException extends RuntimeException {\n\n    private final Long accountId;\n    private final BigDecimal requested;\n    private final BigDecimal available;\n\n    public InsufficientBalanceException(Long accountId, BigDecimal requested) {\n        super(\"Insufficient balance in account \" + accountId\n            + \": requested \" + requested);\n        this.accountId = accountId;\n        this.requested = requested;\n        this.available = null;\n    }\n\n    public Long getAccountId() { return accountId; }\n    public BigDecimal getRequested() { return requested; }\n    public BigDecimal getAvailable() { return available; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\npublic class ConcurrentOperationException extends RuntimeException {\n    public ConcurrentOperationException(String message, Throwable cause) {\n        super(message, cause);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-entry-point",
+      children: "Application Entry Point"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tx;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.retry.annotation.EnableRetry;\n\n@SpringBootApplication\n@EnableRetry\npublic class TransactionCourseApplication {\n\n    public static void main(String[] args) {\n        SpringApplication.run(TransactionCourseApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-11",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-11",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "@Transactional"
+          }), ": Declarative transaction management with seven propagation levels (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REQUIRED"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REQUIRES_NEW"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "NESTED"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "MANDATORY"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SUPPORTS"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "NOT_SUPPORTED"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "NEVER"
+          }), ") and five isolation levels (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "READ_UNCOMMITTED"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "READ_COMMITTED"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REPEATABLE_READ"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SERIALIZABLE"
+          }), "). Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "rollbackFor"
+          }), "/", (0,jsx_runtime.jsx)(_components.code, {
+            children: "noRollbackFor"
+          }), " to control rollback behavior, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "readOnly"
+          }), " for optimization hints, and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "timeout"
+          }), " for maximum execution duration."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "TransactionTemplate"
+          }), ": Programmatic transaction management with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TransactionCallback"
+          }), " (with return value) and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TransactionCallbackWithoutResult"
+          }), ". Use when you need per-item transactions, conditional commit/rollback, or dynamic transaction attributes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "PlatformTransactionManager hierarchy"
+          }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DataSourceTransactionManager"
+          }), " for JDBC, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "JpaTransactionManager"
+          }), " for JPA, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "JtaTransactionManager"
+          }), " for distributed XA transactions, and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ChainedTransactionManager"
+          }), " for coordinating multiple resources."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Transaction synchronization"
+          }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@TransactionalEventListener"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AFTER_COMMIT"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AFTER_ROLLBACK"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AFTER_COMPLETION"
+          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "BEFORE_COMMIT"
+          }), " phases. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TransactionSynchronizationManager"
+          }), " provides thread-bound transaction context and resource management."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Declarative vs programmatic"
+          }), ": Declarative is cleaner and sufficient for most service-layer boundaries. Programmatic is necessary when you need fine-grained control, per-item transactions, or dynamic configuration."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Distributed transactions"
+          }), ": JTA with 2PC provides strong consistency across multiple databases but has significant latency, blocking, and complexity trade-offs. The Saga pattern (choreography or orchestration) provides eventual consistency with compensating transactions and is more suitable for microservices."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pessimistic locking"
+          }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Lock(PESSIMISTIC_WRITE/PESSIMISTIC_READ/PESSIMISTIC_FORCE_INCREMENT)"
+          }), " acquires database locks at read time. Use for high-contention scenarios with retry logic for deadlock victims. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SELECT ... FOR UPDATE"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SELECT ... FOR SHARE"
+          }), " are the underlying SQL mechanisms."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Optimistic locking"
+          }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Version"
+          }), " column increments on every update, with conflict detection at commit time throws ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "OptimisticLockException"
+          }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "StaleStateException"
+          }), ". Use for low-contention scenarios with retry patterns. Always retry with exponential backoff."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-12",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@Transactional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Declarative transaction demarcation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use propagation, isolation, rollbackFor attributes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required, RequiresNew, Nested"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REQUIRED is default; RequiresNew for independent units"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation Levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_UNCOMMITTED to SERIALIZABLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "READ_COMMITTED balances safety and performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimistic Locking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-based conflict detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "@Version on a numeric/timestamp column"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed Tx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTA, 2PC, Saga patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2PC for short XA; Saga for long-running workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-12",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[@Transactional] --> B[Propagation]\n    B --> C[Isolation Levels]\n    C --> D[Rollback Rules]\n    D --> E[Programmatic Tx]\n    E --> F[Distributed Tx]\n    F --> G[Saga Pattern]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Explain the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REQUIRED"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REQUIRES_NEW"
+          }), " propagation. Give a concrete scenario where you would use each."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the purpose of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "readOnly = true"
+          }), " on ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Transactional"
+          }), "? Does it actually prevent writes?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["How does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "NESTED"
+          }), " propagation differ from ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "REQUIRES_NEW"
+          }), "? Which one commits independently?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What happens when ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Transactional"
+          }), " is placed on a private method? Why?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Explain the four standard isolation levels and which concurrency phenomena each prevents."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "rollbackFor = SomeException.class"
+          }), " and throwing a runtime exception?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["When would you choose ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TransactionTemplate"
+          }), " over ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Transactional"
+          }), "?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Describe the two-phase commit protocol. What are its failure modes?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Compare choreography-based sagas with orchestration-based sagas. What are the trade-offs?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["How does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Version"
+          }), " in JPA implement optimistic locking? What happens when a version conflict is detected?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is a deadlock? How can you prevent it in a pessimistic locking scenario?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Explain the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PESSIMISTIC_READ"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PESSIMISTIC_WRITE"
+          }), " locking."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Bank Transfer Service"
+          }), ": Implement a complete bank transfer service with:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "@Transactional"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "REPEATABLE_READ"
+            }), " isolation"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pessimistic write locking on both accounts"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Proper deadlock handling with retry"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Audit logging with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "REQUIRES_NEW"
+            }), " propagation"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Balance validation before transfer"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Email notification via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@TransactionalEventListener(AFTER_COMMIT)"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Bulk Order Importer"
+          }), ": Build a batch import processor that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Reads 1000+ orders from a CSV file"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Imports each order in its own transaction (use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "TransactionTemplate"
+            }), ")"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Skips invalid rows without rolling back valid ones"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Logs each failure with details"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Returns a summary of successes and failures"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Uses per-item transaction boundaries to maximize throughput"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Inventory Reservation System"
+          }), ": Implement a distributed inventory service with:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Optimistic locking on inventory quantities via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Version"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Retry with exponential backoff on ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "OptimisticLockException"
+            })]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Dedicated endpoint that returns the current version to clients"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Version-based conflict detection in REST API responses (HTTP 409)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Integration tests that verify concurrent reservation behavior"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Saga-Based Order Processing"
+          }), ": Design and implement a complete saga for order fulfillment:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Step 1: Order Service creates order in PENDING state"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Step 2: Inventory Service reserves stock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Step 3: Payment Service charges the customer"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Step 4: Shipping Service creates a shipment"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Compensating actions for each step"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implement with both choreography (events) and orchestration (coordinator) patterns"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Distributed Transaction Coordinator"
+          }), ": Build a custom distributed transaction coordinator that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Manages transactions across a PostgreSQL database and a MongoDB replica set"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implements a simplified two-phase commit protocol"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Maintains a transaction log for recovery"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handles prepare failures with automatic rollback"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Provides a REST API to inspect ongoing and completed transactions"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implements timeout-based abort for stuck transactions"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Multi-Phase Saga with Axon"
+          }), ": Implement an Axon Framework saga for a travel booking system:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Book flight → Reserve hotel → Rent car → Confirm all"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Each step is a separate microservice with its own database"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Compensating actions: cancel flight, release hotel, cancel car"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handle partial failures — if car rental fails, cancel both flight and hotel"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implement timeout handling — if any step takes longer than 30 seconds, compensate"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Add monitoring: saga state, step status, and compensating action history"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Concurrent Auction System"
+          }), ": Build a real-time bidding system that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Uses optimistic locking for bids"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Uses pessimistic locking for payment processing"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implements a distributed lock on auction closing via Redis"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handles concurrent bids with retry logic"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Prevents deadlocks with ordered resource acquisition"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Provides a real-time leaderboard using Redis sorted sets"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Ensures exactly-once payment processing using idempotency keys"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Transaction Monitor"
+          }), ": Build a Spring Boot Actuator extension that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Exposes real-time transaction metrics via a custom Actuator endpoint"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tracks active transaction count, commit rate, rollback rate"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Monitors average transaction duration"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Identifies transactions running longer than a threshold"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Provides an endpoint to inspect currently active transactions"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Logs slow transactions with stack traces for debugging"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Integrates with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "TransactionSynchronizationManager"
+            }), " and AOP"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Chained Transaction Manager for Heterogeneous Stores"
+          }), ": Implement a custom transaction coordinator that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Coordinates transactions across PostgreSQL (JPA), MongoDB, and a REST API"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Uses the Saga pattern internally with compensating actions"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Provides ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Transactional"
+            }), " compatibility with a custom annotation"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Works with Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "PlatformTransactionManager"
+            }), " abstraction"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handles partial failures gracefully with automatic compensation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Provides configurable consistency levels (strong vs eventual per participant)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Includes a recovery mechanism for failed compensations"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

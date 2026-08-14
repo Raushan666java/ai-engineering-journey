@@ -1,0 +1,1316 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[1019],{
+
+/***/ 90737
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_07_api_development_md_241_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-07-api-development-md-241.json
+const site_docs_courses_laravel_07_api_development_md_241_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/07-api-development","title":"Chapter 7: API Development & Integration","description":"Previous Broadcasting, Events & Real-Time Features","source":"@site/docs/courses/laravel/07-api-development.md","sourceDirName":"courses/laravel","slug":"/laravel/07-api-development","permalink":"/ai-engineering-journey/laravel/07-api-development","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-api-development","slug":"/laravel/07-api-development","title":"Chapter 7: API Development & Integration","sidebar_label":"Chapter 7: API Development & Integration","sidebar_position":7},"sidebar":"course-laravel","previous":{"title":"Chapter 6: Queues, Jobs, Notifications & Mail","permalink":"/ai-engineering-journey/laravel/06-queues-notifications"},"next":{"title":"Chapter 8: Broadcasting, Events & Real-Time Features","permalink":"/ai-engineering-journey/laravel/08-broadcasting-realtime"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/07-api-development.md
+
+
+const frontMatter = {
+	id: '07-api-development',
+	slug: '/laravel/07-api-development',
+	title: 'Chapter 7: API Development & Integration',
+	sidebar_label: 'Chapter 7: API Development & Integration',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 7: API Development & Integration';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "RESTful API Design",
+  "id": "restful-api-design",
+  "level": 3
+}, {
+  "value": "Resource Controllers",
+  "id": "resource-controllers",
+  "level": 3
+}, {
+  "value": "API Resources &amp; Collections",
+  "id": "api-resources--collections",
+  "level": 3
+}, {
+  "value": "JSON Resources (Laravel 13)",
+  "id": "json-resources-laravel-13",
+  "level": 3
+}, {
+  "value": "Sanctum Token Authentication",
+  "id": "sanctum-token-authentication",
+  "level": 3
+}, {
+  "value": "API Versioning",
+  "id": "api-versioning",
+  "level": 3
+}, {
+  "value": "Rate Limiting",
+  "id": "rate-limiting",
+  "level": 3
+}, {
+  "value": "Response Formatting",
+  "id": "response-formatting",
+  "level": 3
+}, {
+  "value": "Pagination for APIs",
+  "id": "pagination-for-apis",
+  "level": 3
+}, {
+  "value": "Error Handling",
+  "id": "error-handling",
+  "level": 3
+}, {
+  "value": "GraphQL with Lighthouse",
+  "id": "graphql-with-lighthouse",
+  "level": 3
+}, {
+  "value": "API Resource Class for the Blog",
+  "id": "api-resource-class-for-the-blog",
+  "level": 3
+}, {
+  "value": "Full Blog Controller",
+  "id": "full-blog-controller",
+  "level": 3
+}, {
+  "value": "Rate Limiter Configuration",
+  "id": "rate-limiter-configuration",
+  "level": 3
+}, {
+  "value": "Route Registration",
+  "id": "route-registration",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference — HTTP Status Codes",
+  "id": "quick-reference--http-status-codes",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-7-api-development--integration",
+        children: "Chapter 7: API Development & Integration"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "./06-queues-notifications",
+          children: "Queues, Jobs, Notifications & Mail"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "./08-broadcasting-realtime",
+          children: "Broadcasting, Events & Real-Time Features"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design RESTful APIs following resource-oriented conventions and proper HTTP verb usage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement resource controllers and map CRUD operations to standard route methods"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transform Eloquent models into JSON responses using API Resources and the new JSON:API specification"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Authenticate and authorize API consumers using Laravel Sanctum with token abilities and expiry"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply API versioning strategies, rate limiting, response formatting, and error handling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Integrate GraphQL endpoints using the Lighthouse package"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/07-api-development/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/07-api-development/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/07-api-development/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/07-api-development/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/07-api-development/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/07-api-development/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RESTful Design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP verbs, status codes, HATEOAS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource Controllers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "apiResource, nested, shallow nesting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API Resources"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JsonResource, conditional attributes, pagination"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON:API"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native support in Laravel 13"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sanctum Auth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Token creation, abilities, expiry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "URI, header, query parameter strategies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate Limiting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limiters, throttle middleware"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error Handling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exception rendering, custom exceptions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GraphQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lighthouse schema-first integration"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[RESTful Design] --> B[Resource Controllers]\n    B --> C[API Resources]\n    C --> D[JSON:API]\n    D --> E[Sanctum Auth]\n    E --> F[Versioning]\n    F --> G[Rate Limiting]\n    G --> H[Error Handling]\n    G --> I[GraphQL]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " RESTful APIs treat server data as resources accessed through standard HTTP verbs with consistent status codes."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/07-api-development.png",
+        alt: "API Development Flow"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "restful-api-design",
+      children: "RESTful API Design"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " API endpoints represent nouns (resources) not verbs (actions), with GET/POST/PUT/PATCH/DELETE mapping to CRUD operations."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["REST treats server data as resources accessed through a uniform interface. API endpoints represent ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nouns"
+      }), " (resources), not ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "verbs"
+      }), " (actions):"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "HTTP Verb"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Endpoint"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "List all users"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "POST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create a new user"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/users/{id}"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Show a specific user"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PUT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "/users/{id}"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full user update"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.\n| PATCH     | ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/users/{id}"
+        }), "  | Partial user update  |\n| DELETE    | ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/users/{id}"
+        }), "  | Delete a user        |"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "GET"
+      }), " is idempotent and safe. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "POST"
+      }), " creates new resources (non-idempotent). ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "PUT"
+      }), " replaces an entire resource (idempotent). ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "PATCH"
+      }), " applies partial modifications. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DELETE"
+      }), " removes a resource (idempotent)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Consistent status codes: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 422 (Validation Error), 429 (Too Many Requests), 500 (Server Error)."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "HATEOAS"
+      }), " includes links in responses telling clients what actions are available next:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-json",
+        children: "{\n    \"data\": { \"id\": 1, \"title\": \"Hello World\" },\n    \"links\": {\n        \"self\": \"/api/posts/1\",\n        \"comments\": \"/api/posts/1/comments\"\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resource-controllers",
+      children: "Resource Controllers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "php artisan make:controller PhotoController --resource\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Registers eight routes: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "index"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "create"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "store"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "show"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "edit"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "update"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "destroy"
+      }), ". For APIs, use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "apiResource"
+      }), " to exclude ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "create"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "edit"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::apiResource('photos', PhotoController::class);\n// Registers: index, store, show, update, destroy\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Nested resources:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::apiResource('photos.comments', PhotoCommentController::class);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Shallow nesting prevents deeply nested URIs:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::apiResource('photos.comments', CommentController::class)->shallow();\n// Produces: /photos/{photo}/comments and /comments/{comment}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "api-resources--collections",
+      children: "API Resources & Collections"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " API Resources transform Eloquent models into JSON with conditional attributes, relationship inclusion, and automatic pagination metadata."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "php artisan make:resource UserResource\n\n> **Pro Tip:** Use `$this->whenLoaded('relation')` in API Resources to conditionally include relationships only when they've been eager loaded. This prevents silent N+1 queries from accidental resource usage.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class UserResource extends JsonResource\n{\n    public function toArray(Request $request): array\n    {\n        return [\n            'id' => $this->id,\n            'name' => $this->name,\n            'email' => $this->email,\n            'joined_at' => $this->created_at->toISOString(),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In a controller:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "public function index(): ResourceCollection\n{\n    return UserResource::collection(User::paginate(20));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Conditional attributes:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "'is_admin' => $this->when($request->user()?->isAdmin(), $this->is_admin),\n'bio' => $this->whenNotNull($this->bio),\n'recent_posts' => PostResource::collection($this->whenLoaded('recentPosts')),\n'merged' => $this->mergeWhen($this->isSpecial(), ['badge' => true]),\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Pagination metadata is automatically included in JSON responses with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "links"
+      }), " (first, last, prev, next) and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "meta"
+      }), " (current_page, per_page, total)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "json-resources-laravel-13",
+      children: "JSON:API Resources (Laravel 13)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Laravel 13's native JSON:API support provides structured resources with relationship inclusion (?include) and sparse fieldsets (?fields)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Laravel 13 introduces native support for the JSON:API specification. Generate resources with:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "php artisan make:resource ArticleResource --jsonapi\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class ArticleResource extends JsonApiResource\n{\n    public function toAttributes(Request $request): array\n    {\n        return ['title' => $this->title, 'body' => $this->body];\n    }\n\n    public function toRelationships(Request $request): array\n    {\n        return [\n            'author' => fn() => UserResource::make($this->author),\n            'comments' => fn() => CommentResource::collection(\n                $this->whenLoaded('comments')\n            ),\n        ];\n    }\n\n    public function toLinks(Request $request): array\n    {\n        return ['self' => route('articles.show', $this)];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Relationship inclusion via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "include"
+      }), " parameter: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "GET /api/articles?include=author,comments"
+      }), ". Sparse fieldsets via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fields"
+      }), " parameter: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "GET /api/articles?fields[articles]=title,body"
+      }), ". Response headers must include ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Content-Type: application/vnd.api+json"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sanctum-token-authentication",
+      children: "Sanctum Token Authentication"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Sanctum provides token authentication with typed abilities, configurable expiry, and straightforward revocation."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Add ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "HasApiTokens"
+      }), " trait to User model:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "use Laravel\\Sanctum\\HasApiTokens;\n\nclass User extends Authenticatable\n{\n    use HasApiTokens;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Token creation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "$token = $user->createToken('api-token', ['posts:read', 'posts:write']);\nreturn $token->plainTextToken;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Check abilities:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "if ($request->user()->tokenCan('posts:write')) { ... }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Token expiry:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "$token->accessToken->expires_at = Carbon::now()->addDays(30);\n$token->accessToken->save();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Revocation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "$user->tokens()->where('id', $tokenId)->delete();\n$request->user()->currentAccessToken()->delete();\n$user->tokens()->delete(); // Revoke all\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Protect routes:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::middleware('auth:sanctum')->group(function () {\n    Route::apiResource('posts', PostController::class);\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "api-versioning",
+      children: "API Versioning"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " URI versioning is the simplest approach, while header-based versioning keeps URLs clean but requires more client configuration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "URI versioning:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::prefix('v1')->group(function () {\n    Route::apiResource('users', V1\\UserController::class);\n});\nRoute::prefix('v2')->group(function () {\n    Route::apiResource('users', V2\\UserController::class);\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Header versioning"
+      }), " inspects the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Accept"
+      }), " header. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Query parameter versioning"
+      }), " uses ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "?version=2"
+      }), ". URI versioning is the simplest and most common approach."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rate-limiting",
+      children: "Rate Limiting"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Rate limiting via RateLimiter::for() and the throttle middleware protects API endpoints from abuse and brute-force attacks."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Define limiters in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AppServiceProvider"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "RateLimiter::for('api', function (Request $request) {\n\n> **Warning:** Always differentiate rate limits between authenticated and unauthenticated users. Authenticated users should get higher limits (e.g., 100/min) than guests (e.g., 30/min) to prevent IP-based shared limits from affecting legitimate users.\n    return Limit::perMinute(60)\n        ->by($request->user()?->id ?: $request->ip());\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Apply with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "throttle"
+      }), " middleware:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Route::middleware('throttle:api')->group(function () { ... });\nRoute::middleware('throttle:5,1')->post('/upload', ...);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["RateLimiter methods: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "hit($key, $decay)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tooManyAttempts($key, $max)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "availableIn($key)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "clear($key)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "attempt($key, $cb)"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "response-formatting",
+      children: "Response Formatting"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Define response macros:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Response::macro('api', function (mixed $data, string $message = '', int $status = 200) {\n    return response()->json([\n        'success' => $status < 400, 'message' => $message, 'data' => $data,\n    ], $status);\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pagination-for-apis",
+      children: "Pagination for APIs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Post::paginate(20);       // LengthAwarePaginator → knows total pages\nPost::simplePaginate(20); // Only \"next\" and \"prev\"\nPost::cursorPaginate(20); // Cursor-based for large datasets\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cursor pagination avoids the COUNT query and is stable with new insertions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "error-handling",
+      children: "Error Handling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// bootstrap/app.php\n->withExceptions(function (Exceptions $exceptions) {\n    $exceptions->render(function (NotFoundHttpException $e, Request $request) {\n        if ($request->is('api/*')) {\n            return response()->json(['message' => 'Resource not found'], 404);\n        }\n    });\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Custom exception classes:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class PostCreationException extends Exception\n{\n    public function render(Request $request): JsonResponse\n    {\n        return response()->json(['error' => 'PostCreationError', 'message' => $this->getMessage()], 422);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "graphql-with-lighthouse",
+      children: "GraphQL with Lighthouse"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Install: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "composer require nuwave/lighthouse"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Define schema in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "graphql/schema.graphql"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-graphql",
+        children: "type Query {\n    posts: [Post!]! @paginate\n    post(id: ID! @eq): Post @find\n}\n\ntype Mutation {\n    createPost(title: String!, body: String!): Post! @create\n    deletePost(id: ID!): Post @delete @can(ability: \"delete\", find: \"id\")\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Key directives: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@paginate"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@find"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@create"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@update"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@delete"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@can"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@rules"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@hasMany"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@belongsTo"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "api-resource-class-for-the-blog",
+      children: "API Resource Class for the Blog"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "namespace App\\Http\\Resources\\v1;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Http\\Resources\\Json\\JsonResource;\n\nclass PostResource extends JsonResource\n{\n    public function toArray(Request $request): array\n    {\n        return [\n            'id' => $this->id,\n            'title' => $this->title,\n            'body' => $this->body,\n            'author' => new UserResource($this->whenLoaded('author')),\n            'tags' => TagResource::collection($this->whenLoaded('tags')),\n            'comments_count' => $this->when($this->comments_count !== null, $this->comments_count),\n            'created_at' => $this->created_at->toISOString(),\n            'updated_at' => $this->updated_at->toISOString(),\n            'links' => [\n                'self' => route('api.v1.posts.show', $this),\n                'comments' => route('api.v1.posts.comments.index', $this),\n            ],\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "full-blog-controller",
+      children: "Full Blog Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "namespace App\\Http\\Controllers\\Api\\v1;\n\nuse App\\Http\\Controllers\\Controller;\nuse App\\Http\\Resources\\v1\\PostResource;\nuse App\\Models\\Post;\nuse Illuminate\\Http\\JsonResponse;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Http\\Resources\\Json\\ResourceCollection;\n\nclass PostController extends Controller\n{\n    public function __construct()\n    {\n        $this->authorizeResource(Post::class, 'post');\n    }\n\n    public function index(Request $request): ResourceCollection\n    {\n        if (!$request->user()->tokenCan('posts:read')) {\n            abort(403, 'Missing ability: posts:read');\n        }\n\n        $posts = Post::with(['author', 'tags'])\n            ->paginate($request->input('per_page', 15));\n\n        return PostResource::collection($posts);\n    }\n\n    public function store(Request $request): JsonResponse\n    {\n        if (!$request->user()->tokenCan('posts:write')) {\n            abort(403, 'Missing ability: posts:write');\n        }\n\n        $validated = $request->validate([\n            'title' => 'required|max:255',\n            'body' => 'required',\n            'tags' => 'array',\n            'tags.*' => 'exists:tags,id',\n        ]);\n\n        $post = $request->user()->posts()->create($validated);\n\n        if (!empty($validated['tags'])) {\n            $post->tags()->sync($validated['tags']);\n        }\n\n        return response()->json([\n            'message' => 'Post created',\n            'data' => new PostResource($post->load(['author', 'tags'])),\n        ], 201);\n    }\n\n    public function show(Post $post): PostResource\n    {\n        $post->load(['author', 'comments.author', 'tags']);\n        return new PostResource($post);\n    }\n\n    public function update(Request $request, Post $post): JsonResponse\n    {\n        $this->authorize('update', $post);\n\n        $validated = $request->validate([\n            'title' => 'sometimes|max:255',\n            'body' => 'sometimes',\n            'tags' => 'sometimes|array',\n            'tags.*' => 'exists:tags,id',\n        ]);\n\n        $post->update($validated);\n\n        if ($request->has('tags')) {\n            $post->tags()->sync($validated['tags'] ?? []);\n        }\n\n        return response()->json([\n            'message' => 'Post updated',\n            'data' => new PostResource($post->fresh(['author', 'tags'])),\n        ]);\n    }\n\n    public function destroy(Post $post): JsonResponse\n    {\n        $this->authorize('delete', $post);\n        $post->delete();\n        return response()->json(null, 204);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rate-limiter-configuration",
+      children: "Rate Limiter Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "use Illuminate\\Cache\\RateLimiting\\Limit;\nuse Illuminate\\Support\\Facades\\RateLimiter;\n\nRateLimiter::for('api', function (Request $request) {\n    $userId = $request->user()?->id;\n\n    return $userId\n        ? Limit::perMinute(100)->by($userId)\n        : Limit::perMinute(30)->by($request->ip());\n});\n\nRateLimiter::for('auth', function (Request $request) {\n    return Limit::perMinute(5)->by($request->ip());\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "route-registration",
+      children: "Route Registration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// routes/api.php\nuse App\\Http\\Controllers\\Api\\v1\\AuthController;\nuse App\\Http\\Controllers\\Api\\v1\\PostController;\nuse App\\Http\\Controllers\\Api\\v1\\CommentController;\n\nRoute::prefix('v1')->group(function () {\n    Route::middleware('throttle:auth')->group(function () {\n        Route::post('/register', [AuthController::class, 'register']);\n        Route::post('/login', [AuthController::class, 'login']);\n    });\n\n    Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {\n        Route::post('/logout', [AuthController::class, 'logout']);\n        Route::apiResource('posts', PostController::class);\n        Route::apiResource('posts.comments', CommentController::class)->shallow();\n    });\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "REST"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "GraphQL"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Fetching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed response structure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-specified fields"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Over-fetching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eliminated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Endpoints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple (one per resource)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single endpoint"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "URI/header required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Schema evolution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP caching (ETag, Last-Modified)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex (per-query)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tooling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swagger/OpenAPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GraphiQL, Apollo DevTools"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference--http-status-codes",
+      children: "Quick Reference — HTTP Status Codes"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Code"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "200"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Successful GET, PUT, PATCH"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "201"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Created"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Successful POST (new resource)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "204"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No Content"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Successful DELETE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "400"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bad Request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Malformed request body"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "401"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unauthorized"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Missing/invalid authentication"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "403"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forbidden"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authenticated but not authorized"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "404"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not Found"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource does not exist"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "422"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unprocessable Entity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Validation failure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "429"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Too Many Requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate limit exceeded"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Internal Server Error"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unexpected server error"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Blog API"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "E-Commerce API"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SaaS API"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sanctum tokens"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sanctum + OAuth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sanctum + API keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "v1 URI prefix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "v1 \\u2192 v2 header"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "v2 URI prefix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pagination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cursor-based"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LengthAware 20/page"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cursor 50/page"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate Limit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60/min auth, 20/min guest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100/min auth, 10/min guest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tiered by plan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error Format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON:API errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom error codes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RFC 7807 Problem Details"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1. Which artisan command generates the correct routes for an API-only resource?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) Route::resource()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) Route::apiResource()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) Route::restResource()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) Route::jsonResource()"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2. What does Sanctum's tokenCan() method check?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) Token expiration date"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) Token ability/permission"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) Token creation time"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) Token IP restriction"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "3. Which pagination method avoids the COUNT query and is stable with new insertions?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) paginate()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) simplePaginate()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) cursorPaginate()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) lengthAwarePaginate()"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "4. What is the purpose of $this->whenLoaded() in an API Resource?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) Load a relationship lazily"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) Conditionally include data when relation is loaded"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) Eager load a relationship"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) Filter relationship results"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers: 1-b, 2-b, 3-c, 4-b"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RESTful APIs treat server resources as nouns accessed via standard HTTP verbs with consistent status codes"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Resource controllers map directly to CRUD operations; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "apiResource"
+        }), " excludes web-only routes"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "API Resources transform Eloquent models into JSON with conditional attributes and pagination metadata"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Laravel 13 introduces native JSON:API resources with relationship inclusion and sparse fieldsets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sanctum provides token authentication with abilities, expiration, and straightforward revocation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "API versioning strategies include URI prefixes, Accept headers, and query parameters"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Rate limiting via the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RateLimiter"
+        }), " facade and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "throttle"
+        }), " middleware protects endpoints from abuse"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "GraphQL with Lighthouse offers a schema-first approach with powerful directives"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the difference between PUT and PATCH in RESTful APIs. When would you use each?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the purpose of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "apiResource()"
+        }), " compared to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "resource()"
+        }), "? Which routes does each register?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How do JSON:API resources differ from standard API Resources in Laravel 13?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What strategies can you use to version an API? Describe the trade-offs of each."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain how Sanctum token abilities work and how to check them in a controller."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Build a Product Catalog API"
+          }), ": Create a RESTful API with Sanctum auth, role-based token abilities (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "admin"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "manager"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "viewer"
+          }), "), and rate limiting that differentiates authenticated from unauthenticated users."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Implement JSON:API with Sparse Fieldsets"
+          }), ": Build a JSON:API endpoint for an ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Order"
+          }), " resource supporting ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "include"
+          }), " (order items, customer) and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "fields"
+          }), " for sparse fieldsets."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Versioned API Migration"
+          }), ": Design a v1-to-v2 migration with URI versioning, nested resources in v2, and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Deprecation"
+          }), " headers on v1 responses."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Build a Full-Stack Blog Platform API"
+      }), ": Implement a complete API with JSON:API compliance, three user roles with granular Sanctum abilities, URI versioning (v1/v2), per-endpoint rate limiting, a GraphQL endpoint duplicating REST functionality, custom error format with correlation IDs, HATEOAS links on all resources, and cursor-based pagination."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

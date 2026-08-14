@@ -1,0 +1,3085 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[22399],{
+
+/***/ 8579
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_ai_ml_fundamentals_md_a13_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-ai-ml-fundamentals-md-a13.json
+const site_docs_courses_laravel_ai_ml_fundamentals_md_a13_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/ai-ml-fundamentals","title":"Chapter P6: AI/ML Fundamentals & Laravel Integration","description":"---","source":"@site/docs/courses/laravel/ai-ml-fundamentals.md","sourceDirName":"courses/laravel","slug":"/laravel/ai-ml-fundamentals","permalink":"/ai-engineering-journey/laravel/ai-ml-fundamentals","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":55,"frontMatter":{"id":"ai-ml-fundamentals","slug":"/laravel/ai-ml-fundamentals","title":"Chapter P6: AI/ML Fundamentals & Laravel Integration","sidebar_label":"Chapter P6: AI/ML Fundamentals & Laravel Integration","sidebar_position":55},"sidebar":"course-laravel","previous":{"title":"Chapter 54: AI/ML Interview Q&A","permalink":"/ai-engineering-journey/laravel/54-interview-ai-ml"},"next":{"title":"CSS Fundamentals","permalink":"/ai-engineering-journey/laravel/css-basics"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/ai-ml-fundamentals.md
+
+
+const frontMatter = {
+	id: 'ai-ml-fundamentals',
+	slug: '/laravel/ai-ml-fundamentals',
+	title: 'Chapter P6: AI/ML Fundamentals & Laravel Integration',
+	sidebar_label: 'Chapter P6: AI/ML Fundamentals & Laravel Integration',
+	sidebar_position: 55
+};
+const contentTitle = 'Chapter P6: AI/ML Fundamentals & Laravel Integration';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "1. Machine Learning Fundamentals",
+  "id": "1-machine-learning-fundamentals",
+  "level": 3
+}, {
+  "value": "Supervised Learning",
+  "id": "supervised-learning",
+  "level": 4
+}, {
+  "value": "Unsupervised Learning",
+  "id": "unsupervised-learning",
+  "level": 4
+}, {
+  "value": "Reinforcement Learning",
+  "id": "reinforcement-learning",
+  "level": 4
+}, {
+  "value": "Training, Validation, and Test Split",
+  "id": "training-validation-and-test-split",
+  "level": 4
+}, {
+  "value": "The Bias-Variance Tradeoff",
+  "id": "the-bias-variance-tradeoff",
+  "level": 4
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 4
+}, {
+  "value": "2. Classical ML with PHP-ML",
+  "id": "2-classical-ml-with-php-ml",
+  "level": 3
+}, {
+  "value": "Installation",
+  "id": "installation",
+  "level": 4
+}, {
+  "value": "2.1 Regression — Linear Regression",
+  "id": "21-regression--linear-regression",
+  "level": 4
+}, {
+  "value": "2.2 Classification — Naive Bayes",
+  "id": "22-classification--naive-bayes",
+  "level": 4
+}, {
+  "value": "2.3 Classification — Support Vector Machines (SVM)",
+  "id": "23-classification--support-vector-machines-svm",
+  "level": 4
+}, {
+  "value": "2.4 Classification — K-Nearest Neighbors",
+  "id": "24-classification--k-nearest-neighbors",
+  "level": 4
+}, {
+  "value": "2.5 Clustering — K-Means",
+  "id": "25-clustering--k-means",
+  "level": 4
+}, {
+  "value": "2.6 Clustering — DBSCAN",
+  "id": "26-clustering--dbscan",
+  "level": 4
+}, {
+  "value": "2.7 Association Learning — Apriori",
+  "id": "27-association-learning--apriori",
+  "level": 4
+}, {
+  "value": "2.8 Dataset Management",
+  "id": "28-dataset-management",
+  "level": 4
+}, {
+  "value": "2.9 Cross-Validation",
+  "id": "29-cross-validation",
+  "level": 4
+}, {
+  "value": "2.10 Model Persistence",
+  "id": "210-model-persistence",
+  "level": 4
+}, {
+  "value": "2.11 Confusion Matrix",
+  "id": "211-confusion-matrix",
+  "level": 4
+}, {
+  "value": "3. Advanced ML with Rubix ML",
+  "id": "3-advanced-ml-with-rubix-ml",
+  "level": 3
+}, {
+  "value": "Installation",
+  "id": "installation-1",
+  "level": 4
+}, {
+  "value": "3.1 Datasets",
+  "id": "31-datasets",
+  "level": 4
+}, {
+  "value": "3.2 Preprocessing",
+  "id": "32-preprocessing",
+  "level": 4
+}, {
+  "value": "3.3 Regression with Rubix ML",
+  "id": "33-regression-with-rubix-ml",
+  "level": 4
+}, {
+  "value": "3.4 Classification — LogisticRegression",
+  "id": "34-classification--logisticregression",
+  "level": 4
+}, {
+  "value": "3.5 Neural Networks — Multilayer Perceptron",
+  "id": "35-neural-networks--multilayer-perceptron",
+  "level": 4
+}, {
+  "value": "3.6 Random Forest",
+  "id": "36-random-forest",
+  "level": 4
+}, {
+  "value": "3.7 Cross-Validation and Hyperparameter Tuning",
+  "id": "37-cross-validation-and-hyperparameter-tuning",
+  "level": 4
+}, {
+  "value": "3.8 Model Persistence (RBX Format)",
+  "id": "38-model-persistence-rbx-format",
+  "level": 4
+}, {
+  "value": "3.9 Anomaly Detection",
+  "id": "39-anomaly-detection",
+  "level": 4
+}, {
+  "value": "4. Natural Language Processing in PHP",
+  "id": "4-natural-language-processing-in-php",
+  "level": 3
+}, {
+  "value": "4.1 Tokenization",
+  "id": "41-tokenization",
+  "level": 4
+}, {
+  "value": "4.2 Stop Words",
+  "id": "42-stop-words",
+  "level": 4
+}, {
+  "value": "4.3 TF-IDF Vectorization",
+  "id": "43-tf-idf-vectorization",
+  "level": 4
+}, {
+  "value": "4.4 Word Frequency Analysis",
+  "id": "44-word-frequency-analysis",
+  "level": 4
+}, {
+  "value": "4.5 Sentiment Analysis Pipeline",
+  "id": "45-sentiment-analysis-pipeline",
+  "level": 4
+}, {
+  "value": "4.6 Stemming",
+  "id": "46-stemming",
+  "level": 4
+}, {
+  "value": "5. ML Model Workflow in Laravel",
+  "id": "5-ml-model-workflow-in-laravel",
+  "level": 3
+}, {
+  "value": "5.1 Artisan Commands for Training",
+  "id": "51-artisan-commands-for-training",
+  "level": 4
+}, {
+  "value": "5.2 Scheduling Retraining",
+  "id": "52-scheduling-retraining",
+  "level": 4
+}, {
+  "value": "5.3 Model Versioning",
+  "id": "53-model-versioning",
+  "level": 4
+}, {
+  "value": "5.4 A/B Testing Models in Production",
+  "id": "54-ab-testing-models-in-production",
+  "level": 4
+}, {
+  "value": "5.5 Feature Stores with MySQL/Redis",
+  "id": "55-feature-stores-with-mysqlredis",
+  "level": 4
+}, {
+  "value": "6. Laravel AI SDK + Classical ML Integration",
+  "id": "6-laravel-ai-sdk--classical-ml-integration",
+  "level": 3
+}, {
+  "value": "6.1 ML Tool for AI Agents",
+  "id": "61-ml-tool-for-ai-agents",
+  "level": 4
+}, {
+  "value": "6.2 Hybrid Prediction + Explanation Endpoint",
+  "id": "62-hybrid-prediction--explanation-endpoint",
+  "level": 4
+}, {
+  "value": "6.3 ML Predictions as Context for Agent Reasoning",
+  "id": "63-ml-predictions-as-context-for-agent-reasoning",
+  "level": 4
+}, {
+  "value": "6.4 Combining Structured ML Output with LLM Reasoning",
+  "id": "64-combining-structured-ml-output-with-llm-reasoning",
+  "level": 4
+}, {
+  "value": "7. Feature Engineering Pipelines",
+  "id": "7-feature-engineering-pipelines",
+  "level": 3
+}, {
+  "value": "7.1 Data Collection",
+  "id": "71-data-collection",
+  "level": 4
+}, {
+  "value": "7.2 Data Cleaning (Nulls, Outliers)",
+  "id": "72-data-cleaning-nulls-outliers",
+  "level": 4
+}, {
+  "value": "7.3 Feature Transformation",
+  "id": "73-feature-transformation",
+  "level": 4
+}, {
+  "value": "7.4 Feature Selection (Correlation, Importance)",
+  "id": "74-feature-selection-correlation-importance",
+  "level": 4
+}, {
+  "value": "7.5 Batch Processing with Laravel Queues",
+  "id": "75-batch-processing-with-laravel-queues",
+  "level": 4
+}, {
+  "value": "8. Model Evaluation &amp; MLOps Basics",
+  "id": "8-model-evaluation--mlops-basics",
+  "level": 3
+}, {
+  "value": "8.1 Experiment Tracking",
+  "id": "81-experiment-tracking",
+  "level": 4
+}, {
+  "value": "8.2 Model Registry",
+  "id": "82-model-registry",
+  "level": 4
+}, {
+  "value": "8.3 Feature Drift Detection",
+  "id": "83-feature-drift-detection",
+  "level": 4
+}, {
+  "value": "8.4 Concept Drift Detection",
+  "id": "84-concept-drift-detection",
+  "level": 4
+}, {
+  "value": "8.5 Automated Retraining Triggers",
+  "id": "85-automated-retraining-triggers",
+  "level": 4
+}, {
+  "value": "8.6 Deployment Strategies",
+  "id": "86-deployment-strategies",
+  "level": 4
+}, {
+  "value": "8.7 Monitoring Model Performance with Laravel Pulse",
+  "id": "87-monitoring-model-performance-with-laravel-pulse",
+  "level": 4
+}, {
+  "value": "8.8 Metric Configuration for Laravel Pulse",
+  "id": "88-metric-configuration-for-laravel-pulse",
+  "level": 4
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-p6-aiml-fundamentals--laravel-integration",
+        children: "Chapter P6: AI/ML Fundamentals & Laravel Integration"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish between supervised, unsupervised, and reinforcement learning paradigms and their appropriate use cases"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the bias-variance tradeoff, overfitting vs. underfitting, and the role of training/testing/validation splits"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement regression, classification, clustering, and association learning using PHP-ML with real datasets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build and evaluate neural network classifiers and anomaly detectors using Rubix ML pipelines"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct text processing pipelines including tokenization, TF-IDF vectorization, and sentiment analysis in PHP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design Artisan command pipelines for training, persisting, versioning, and scheduling model retraining"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create hybrid endpoints that combine structured ML predictions with LLM reasoning via Laravel AI SDK tools"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineer feature pipelines with Laravel queues for cleaning, transforming, and selecting features at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply MLOps practices including experiment tracking, model registry, drift detection, and deployment strategies"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, code examples, Laravel integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, basic statistics"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, code examples, Laravel integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, basic statistics"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, code examples, Laravel integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, basic statistics"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, code examples, Laravel integration patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, basic statistics"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png",
+        alt: "AI and ML Fundamentals"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-machine-learning-fundamentals",
+      children: "1. Machine Learning Fundamentals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data without being explicitly programmed for every decision rule. Rather than writing if-else logic to detect spam, you feed the system thousands of labeled emails and let the algorithm infer the boundary between spam and legitimate mail."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "supervised-learning",
+      children: "Supervised Learning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Supervised learning uses a labeled dataset where each example has an input vector ( X ) and a known output ( y ). The algorithm learns a mapping function ( f: X \\to y )."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Regression"
+      }), " predicts a continuous value. A model that estimates house price from square footage is a regression problem."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Classification"
+      }), " predicts a discrete class label. An email is either spam or not spam; a handwritten digit is one of ten categories."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Conceptual: supervised learning pseudocode\n$dataset = [\n    ['sqft' => 1400, 'bedrooms' => 3, 'price' => 320000],\n    ['sqft' => 1800, 'bedrooms' => 4, 'price' => 410000],\n    ['sqft' => 950,  'bedrooms' => 2, 'price' => 210000],\n];\n\n// The algorithm learns: price ≈ f(sqft, bedrooms)\n// After training: predict(1200, 3) → 285000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "unsupervised-learning",
+      children: "Unsupervised Learning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Unsupervised learning has no labels. The algorithm finds hidden structure in the data — clusters of similar customers, groups of related news articles, or anomalous transactions that deviate from the norm."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Conceptual: clustering discovers groups without labels\n$customers = [\n    ['age' => 24, 'annual_income' => 45000, 'spending_score' => 72],\n    ['age' => 55, 'annual_income' => 92000, 'spending_score' => 18],\n    ['age' => 31, 'annual_income' => 61000, 'spending_score' => 88],\n];\n\n// Algorithm assigns each to cluster 0, 1, or 2\n// Cluster 0: \"young high-spenders\", Cluster 1: \"older low-spenders\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "reinforcement-learning",
+      children: "Reinforcement Learning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "An agent learns by interacting with an environment, receiving rewards or penalties for actions. Used in game-playing AI, robotics, and dynamic pricing. PHP implementations exist but are rare; this paradigm typically runs in Python with TensorFlow or PyTorch and is consumed via API."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "training-validation-and-test-split",
+      children: "Training, Validation, and Test Split"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every ML project begins by partitioning available data into three disjoint sets:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Split"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Typical Size"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Training"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The model sees this data and adjusts its internal parameters"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60–80%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Used to tune hyperparameters and select between model variants"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10–20%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Held back until the final evaluation. Measures real generalization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10–20%"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "use Phpml\\Dataset\\Demo\\IrisDataset;\nuse Phpml\\CrossValidation\\RandomSplit;\n\n$dataset = new IrisDataset();\n$split = new RandomSplit($dataset, 0.7, true);\n\n$trainingSamples = $split->getTrainSamples();   // 105 samples\n$trainingLabels   = $split->getTrainLabels();\n$testSamples      = $split->getTestSamples();    // 45 samples\n$testLabels        = $split->getTestLabels();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A model that scores 99% on training but 60% on test is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "overfitting"
+      }), " — it memorized the training data instead of learning general patterns. A model that scores 60% on both is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "underfitting"
+      }), " — it is too simple to capture the underlying structure."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "the-bias-variance-tradeoff",
+      children: "The Bias-Variance Tradeoff"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bias"
+      }), " is the error introduced by approximating a complex reality with a simplistic model. A linear regression on a sinusoidal dataset has high bias — it simply cannot curve."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Variance"
+      }), " is the error introduced by the model's sensitivity to small fluctuations in the training set. A deep decision tree that carves perfect boundaries around every training point has high variance — re-train it on a slightly different set and the boundaries shift wildly."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "                 Underfitting    |    Balanced    |    Overfitting\n                 (High Bias)     |                 |   (High Variance)\n                                |                 |\n    Training Error    75%        |      10%        |      0.1%\n    Test Error        78%        |      12%        |      42%\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The goal is to find the sweet spot where both bias and variance are low. Increasing model complexity reduces bias but increases variance. Regularization, cross-validation, and more training data all help manage this tradeoff."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Classification Metrics"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Metric"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formula"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(TP + TN) / (TP + TN + FP + FN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Balanced classes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Precision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TP / (TP + FP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimize false positives (spam detection)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TP / (TP + FN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimize false negatives (cancer screening)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "F1 Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 Ã→ (Precision Ã→ Recall) / (Precision + Recall)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Imbalanced classes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "use Phpml\\Metric\\ClassificationReport;\nuse Phpml\\Metric\\ConfusionMatrix;\n\n$actualLabels = [1, 0, 1, 1, 0, 0, 1, 0];\n$predictedLabels = [1, 0, 0, 1, 0, 0, 1, 1];\n\n$report = new ClassificationReport($actualLabels, $predictedLabels);\n$precision = $report->getPrecision();  // [0 => 0.67, 1 => 1.0]\n$recall    = $report->getRecall();     // [0 => 0.67, 1 => 1.0]\n$f1        = $report->getF1score();    // [0 => 0.67, 1 => 1.0]\n$accuracy  = $report->getAccuracy();   // 0.75\n\n$matrix = ConfusionMatrix::compute($actualLabels, $predictedLabels, [0, 1]);\n// [[2, 1],  // class 0: 2 true negative, 1 false positive\n//  [0, 4]]  // class 1: 0 false negative, 4 true positive\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Regression Metrics"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Metric"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formula"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Interpretation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MAE (Mean Absolute Error)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1/n) Σ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yᵢ − ŷᵢ"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MSE (Mean Squared Error)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1/n) Σ (yᵢ − ŷᵢ)²"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Penalizes large errors more heavily"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RMSE (Root Mean Squared Error)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "√MSE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interpretable in original units, penalizes outliers"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "use Phpml\\Metric\\Regression;\n\n$actual = [320000, 410000, 210000, 550000, 375000];\n$predicted = [310000, 395000, 225000, 530000, 380000];\n\n$mae  = Regression::meanAbsoluteError($actual, $predicted);\n$mse  = Regression::meanSquaredError($actual, $predicted);\n$rmse = sqrt($mse);\n$r2   = Regression::r2Score($actual, $predicted);\n\necho \"MAE:  $\" . number_format($mae, 2);   // MAE:  $12,000.00\necho \"RMSE: $\" . number_format($rmse, 2);  // RMSE: $14,577.38\necho \"R²:   \" . number_format($r2, 4);     // R²:   0.9681\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The R² score ranges from negative infinity to 1. A value of 1 means perfect prediction. A value of 0 means the model performs no better than predicting the mean. Negative values indicate the model is worse than the mean baseline."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-classical-ml-with-php-ml",
+      children: "2. Classical ML with PHP-ML"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "PHP-ML is the most widely used machine learning library for PHP. It provides implementations of the most common algorithms with a clean, unified API."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "installation",
+      children: "Installation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "composer require php-ai/php-ml\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "21-regression--linear-regression",
+      children: "2.1 Regression — Linear Regression"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linear regression models the relationship between input features and a continuous target as a linear combination:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ŷ = w₀ + w₁x₁ + w₂x₂ + ... + wₙxₙ\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The algorithm finds the weights ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "w"
+      }), " that minimize the sum of squared residuals — the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ordinary least squares"
+      }), " (OLS) solution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Regression\\LeastSquares;\nuse Phpml\\ModelManager;\n\n// Training data: [square_feet, bedrooms, age] → price\n$samples = [\n    [1400, 3, 5],\n    [1800, 4, 2],\n    [950,  2, 15],\n    [2200, 5, 1],\n    [1200, 3, 8],\n    [1600, 3, 3],\n];\n$targets = [320000, 410000, 210000, 550000, 285000, 375000];\n\n$regression = new LeastSquares();\n$regression->train($samples, $targets);\n\n$predictedPrice = $regression->predict([1500, 3, 4]);\necho \"Predicted price: \\$\" . number_format($predictedPrice);\n\n// Persist the trained model\n$modelManager = new ModelManager();\n$modelManager->saveToFile($regression, storage_path('models/housing.model'));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "LeastSquares"
+      }), " class solves the normal equation analytically using matrix operations. It works well when the relationship is approximately linear and features are not highly correlated (multicollinearity inflates variance)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "22-classification--naive-bayes",
+      children: "2.2 Classification — Naive Bayes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Naive Bayes applies Bayes' theorem with the \"naive\" assumption that features are conditionally independent given the class. Despite this unrealistic assumption, it performs well on text classification, spam filtering, and sentiment analysis."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Classification\\NaiveBayes;\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\n\n$samples = [\n    'low price amazing quality',\n    'cheap product great value',\n    'terrible waste of money',\n    'worst purchase ever regret',\n    'fantastic love this product',\n    'horrible broke immediately',\n];\n\n$labels = ['positive', 'positive', 'negative', 'negative', 'positive', 'negative'];\n\n// Convert text to numerical feature vectors\n$tokenizer = new WhitespaceTokenizer();\n$vectorizer = new TokenCountVectorizer($tokenizer);\n$vectorizer->fit($samples);\n$vectorizer->transform($samples);\n\n$transformer = new TfIdfTransformer();\n$transformer->fit($samples);\n$transformer->transform($samples);\n\n$classifier = new NaiveBayes();\n$classifier->train($samples, $labels);\n\n$testSample = ['incredible quality fantastic product'];\n$vectorizer->transform($testSample);\n$transformer->transform($testSample);\n\n$prediction = $classifier->predict($testSample[0]);\n$probs      = $classifier->predictProbability($testSample[0]);\n\necho \"Prediction: {$prediction}\";              // positive\necho \"Confidence: \" . round(max($probs), 4);    // 0.9213\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "23-classification--support-vector-machines-svm",
+      children: "2.3 Classification — Support Vector Machines (SVM)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SVM finds the hyperplane that maximizes the margin between classes. It works well in high-dimensional spaces and is effective for text classification and image recognition."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Classification\\SVC;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n// Iris dataset: sepal_length, sepal_width, petal_length, petal_width → species\n$samples = [\n    [5.1, 3.5, 1.4, 0.2],\n    [4.9, 3.0, 1.4, 0.2],\n    [7.0, 3.2, 4.7, 1.4],\n    [6.4, 3.2, 4.5, 1.5],\n    [6.3, 3.3, 6.0, 2.5],\n    [5.8, 2.7, 5.1, 1.9],\n];\n$labels = ['setosa', 'setosa', 'versicolor', 'versicolor', 'virginica', 'virginica'];\n\n$classifier = new SVC(\n    kernel: Kernel::RBF,    // Radial Basis Function — handles non-linear boundaries\n    degree: 3,              // Polynomial degree (ignored for RBF)\n    cost: 1000.0,           // Penalty parameter — higher = less tolerance for misclassification\n    shrinking: true,\n    tolerance: 0.001,\n    cacheSize: 200\n);\n\n$classifier->train($samples, $labels);\n\n$test = [[5.9, 3.0, 4.2, 1.5]];\n$prediction = $classifier->predict($test[0]);\necho \"Predicted species: {$prediction}\";  // versicolor\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "cost"
+      }), " parameter controls the tradeoff between a smooth decision boundary and classifying every training point correctly. High cost values risk overfitting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "24-classification--k-nearest-neighbors",
+      children: "2.4 Classification — K-Nearest Neighbors"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "KNN is a lazy learner that stores all training data and classifies new points by majority vote among their k nearest neighbors."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Classification\\KNearestNeighbors;\n\n$samples = [\n    [1, 1], [1, 2], [2, 1], [2, 2],  // Class A\n    [5, 5], [5, 6], [6, 5], [6, 6],  // Class B\n];\n$labels = ['A', 'A', 'A', 'A', 'B', 'B', 'B', 'B'];\n\n$classifier = new KNearestNeighbors($k = 3);\n$classifier->train($samples, $labels);\n\necho $classifier->predict([1.5, 1.5]);   // A (surrounded by A's)\necho $classifier->predict([5.5, 5.5]);   // B\necho $classifier->predict([3.0, 3.0]);   // A or B? Depends on nearest 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "KNN requires no training time (it simply stores the data) but prediction time scales linearly with the dataset size. Feature scaling is critical — if one feature ranges from 1–10 and another from 1–1000, the distance calculation is dominated by the larger feature."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "25-clustering--k-means",
+      children: "2.5 Clustering — K-Means"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "K-Means partitions data into K clusters, each represented by the centroid of its members."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Clustering\\KMeans;\n\n// Customer segments: [age, annual_income, spending_score]\n$customers = [\n    [25, 39000, 78], [42, 82000, 22], [31, 61000, 91],\n    [55, 105000, 15], [28, 48000, 85], [36, 72000, 65],\n    [48, 95000, 30], [22, 28000, 95], [60, 115000, 10],\n    [33, 68000, 72], [45, 88000, 40], [27, 42000, 88],\n];\n\n$kmeans = new KMeans(3);  // 3 clusters — high-spenders, mid-range, low-spenders\n$clusters = $kmeans->cluster($customers);\n\nforeach ($clusters as $index => $members) {\n    echo \"Cluster {$index}: \" . count($members) . \" customers\\n\";\n    foreach ($members as $member) {\n        echo \"  Age: {$member[0]}, Income: {$member[1]}, Score: {$member[2]}\\n\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["K-Means requires the number of clusters to be specified upfront. The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "elbow method"
+      }), " helps choose K: run K-Means with K = 1 through 10, plot the within-cluster sum of squares, and look for the \"elbow\" where adding more clusters yields diminishing returns."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "26-clustering--dbscan",
+      children: "2.6 Clustering — DBSCAN"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DBSCAN does not require specifying the number of clusters. It groups points that are closely packed together and marks points in low-density regions as outliers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Clustering\\DBSCAN;\n\n$points = [\n    [1, 1], [1, 2], [2, 1], [2, 2],     // Dense cluster A\n    [10, 10], [10, 11], [11, 10],         // Dense cluster B\n    [50, 50],                              // Outlier\n];\n\n$dbscan = new DBSCAN($epsilon = 3, $minSamples = 3);\n$clusters = $dbscan->cluster($points);\n\n// Cluster 0: 4 points, Cluster 1: 3 points, [50,50] is noise (unclustered)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "$epsilon"
+      }), " is the maximum distance between two points to be considered neighbors. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "$minSamples"
+      }), " is the minimum number of points to form a dense region. DBSCAN is excellent for geospatial data, anomaly detection, and any domain where clusters have arbitrary shapes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "27-association-learning--apriori",
+      children: "2.7 Association Learning — Apriori"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Apriori algorithm discovers association rules in transactional data. It identifies items that frequently appear together — \"customers who bought X also bought Y.\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Association\\Apriori;\n\n$transactions = [\n    ['milk', 'bread', 'eggs'],\n    ['milk', 'bread', 'butter'],\n    ['beer', 'bread', 'eggs'],\n    ['milk', 'beer', 'bread', 'butter'],\n    ['beer', 'eggs', 'chips'],\n];\n\n$apriori = new Apriori(\n    support: 0.4,  // Itemset appears in at least 40% of transactions\n    confidence: 0.7 // Rule holds in at least 70% of applicable cases\n);\n\n$apriori->train($transactions, []);\n\n$rules = $apriori->getRules();\nforeach ($rules as $rule) {\n    $antecedent = implode(', ', $rule['antecedent']);\n    $consequent = implode(', ', $rule['consequent']);\n    $support = $rule['support'];\n    $confidence = $rule['confidence'];\n    echo \"{$antecedent} → {$consequent} (support: {$support}, confidence: {$confidence})\\n\";\n}\n\n// Example output:\n// bread → milk (support: 0.6, confidence: 0.75)\n// milk, bread → butter (support: 0.4, confidence: 0.67)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "28-dataset-management",
+      children: "2.8 Dataset Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "PHP-ML provides structured Dataset classes and cross-validation utilities."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Dataset\\CsvDataset;\nuse Phpml\\Dataset\\ArrayDataset;\nuse Phpml\\CrossValidation\\RandomSplit;\nuse Phpml\\CrossValidation\\StratifiedRandomSplit;\nuse Phpml\\CrossValidation\\Split;\n\n// Load from CSV\n$dataset = new CsvDataset(\n    filename: storage_path('ml-data/housing.csv'),\n    samplesColumn: 3,  // Number of feature columns before the label\n    headingRow: true   // First row is headers — skip it\n);\n\n// Create from arrays\n$samples = [[1, 2], [3, 4], [5, 6]];\n$labels = ['a', 'b', 'c'];\n$arrayDataset = new ArrayDataset($samples, $labels);\n\n// Random split (70/30)\n$split = new RandomSplit($dataset, 0.7);\n\n// Stratified split — preserves class proportions in both sets\n$stratified = new StratifiedRandomSplit($dataset, 0.7);\n\necho \"Train samples: \" . count($split->getTrainSamples());     // 70% of total\necho \"Test samples:  \" . count($split->getTestSamples());      // 30% of total\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "StratifiedRandomSplit"
+      }), " ensures that if your dataset has 80% class A and 20% class B, both training and test sets maintain that ratio. This is essential for imbalanced datasets."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "29-cross-validation",
+      children: "2.9 Cross-Validation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cross-validation evaluates model performance by training and testing on multiple folds, reducing the variance of the performance estimate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\CrossValidation\\RandomSplit;\nuse Phpml\\Classification\\NaiveBayes;\nuse Phpml\\Metric\\Accuracy;\n\n$dataset = new CsvDataset('emails.csv', 5000, true);\n$split = new RandomSplit($dataset, 0.7);\n\n$classifier = new NaiveBayes();\n$classifier->train($split->getTrainSamples(), $split->getTrainLabels());\n\n$predicted = $classifier->predict($split->getTestSamples());\n$accuracy = Accuracy::score($split->getTestLabels(), $predicted);\n\necho \"Accuracy: \" . number_format($accuracy * 100, 2) . \"%\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For k-fold cross-validation (more robust than a single split):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\CrossValidation\\KFold;\n\n$dataset = new ArrayDataset($samples, $labels);\n$kFold = new KFold($dataset, $folds = 5);\n\n$scores = [];\nforeach ($kFold as $index => [$train, $test]) {\n    $classifier = new NaiveBayes();\n    $classifier->train($train->getSamples(), $train->getLabels());\n\n    $predicted = $classifier->predict($test->getSamples());\n    $scores[] = Accuracy::score($test->getLabels(), $predicted);\n}\n\n$meanAccuracy = array_sum($scores) / count($scores);\n$stdDev = sqrt(array_sum(array_map(fn($s) => ($s - $meanAccuracy) ** 2, $scores)) / count($scores));\n\necho \"Mean accuracy: \" . number_format($meanAccuracy * 100, 2) . \"%\\n\";\necho \"Std deviation: \" . number_format($stdDev * 100, 2) . \"%\\n\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "210-model-persistence",
+      children: "2.10 Model Persistence"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Save and reload trained models without retraining."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\ModelManager;\nuse Phpml\\Classification\\NaiveBayes;\n\n$manager = new ModelManager();\n\n// Save\n$manager->saveToFile($classifier, storage_path('models/spam-detector.model'));\n\n// Load\n$restored = $manager->restoreFromFile(storage_path('models/spam-detector.model'));\n$prediction = $restored->predict($newEmailVector);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "211-confusion-matrix",
+      children: "2.11 Confusion Matrix"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Metric\\ConfusionMatrix;\n\n$actual    = [1, 0, 1, 1, 0, 0, 1, 0, 1, 0];\n$predicted = [1, 0, 0, 1, 0, 1, 1, 0, 0, 0];\n\n$matrix = ConfusionMatrix::compute($actual, $predicted, [1, 0]);\n\n// $matrix[actualClass][predictedClass]\n$tp = $matrix[1][1]; // True positives\n$tn = $matrix[0][0]; // True negatives\n$fp = $matrix[0][1]; // False positives\n$fn = $matrix[1][0]; // False negatives\n\necho \"TP: $tp, TN: $tn, FP: $fp, FN: $fn\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "3-advanced-ml-with-rubix-ml",
+      children: "3. Advanced ML with Rubix ML"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Rubix ML is a more modern, feature-rich machine learning library for PHP. It introduces pipelines, transformers, neural networks, and an ecosystem of specialized learners."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "installation-1",
+      children: "Installation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "composer require rubix/ml\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Rubix ML requires the PHP extension ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ext-tensor"
+      }), " for optimal performance on matrix operations, but it can fall back to pure PHP implementations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "31-datasets",
+      children: "3.1 Datasets"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Datasets\\Labeled;\nuse Rubix\\ML\\Datasets\\Unlabeled;\nuse Rubix\\ML\\Extractors\\CSV;\n\n// Labeled dataset: samples with known labels\n$dataset = new Labeled(\n    samples: [\n        [5.1, 3.5, 1.4, 0.2],\n        [4.9, 3.0, 1.4, 0.2],\n        [7.0, 3.2, 4.7, 1.4],\n    ],\n    labels: ['setosa', 'setosa', 'versicolor']\n);\n\n// Load from CSV\n$dataset = Labeled::fromIterator(new CSV('iris.csv', header: true));\n\n// Unlabeled dataset: for predictions on new data\n$unlabeled = new Unlabeled([\n    [5.5, 2.8, 4.0, 1.2],\n    [6.2, 3.1, 5.0, 2.1],\n]);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "32-preprocessing",
+      children: "3.2 Preprocessing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Transformers prepare raw data for learning. Rubix ML chains them in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "pipelines"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Transformers\\MinMaxScaler;\nuse Rubix\\ML\\Transformers\\OneHotEncoder;\nuse Rubix\\ML\\Transformers\\MissingDataImputer;\nuse Rubix\\ML\\Transformers\\NumericStringConverter;\nuse Rubix\\ML\\Pipeline;\n\n$dataset = new Labeled($samples, $labels);\n\n// StandardScaler: z-score normalization (mean=0, std=1)\n$scaler = new StandardScaler(true); // true = center (subtract mean)\n$scaler->fit($dataset);\n$scaler->transform($dataset);\n// After transform: each feature has mean ~0 and standard deviation ~1\n\n// MinMaxScaler: scale to a bounded range [0, 1]\n$minMax = new MinMaxScaler(0.0, 1.0);\n$minMax->fit($dataset);\n$minMax->transform($dataset);\n\n// OneHotEncoder: convert categorical strings to binary vectors\n$encoder = new OneHotEncoder();\n$datasetWithCategories = new Labeled(\n    [['red', 'large'], ['blue', 'small'], ['red', 'medium']],\n    ['A', 'B', 'A']\n);\n$encoder->fit($datasetWithCategories);\n$encoder->transform($datasetWithCategories);\n// After: [\"red\", \"large\"] → [1.0, 0.0, 1.0, 0.0, 0.0]\n//         [\"blue\", \"small\"] → [0.0, 1.0, 0.0, 0.0, 1.0]\n\n// MissingDataImputer: fill null values with strategic defaults\n$imputer = new MissingDataImputer('?', new StandardScaler());\n// Replaces '?' with the mean of the column\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "33-regression-with-rubix-ml",
+      children: "3.3 Regression with Rubix ML"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Learners\\Regression\\Ridge;\nuse Rubix\\ML\\Learners\\Regression\\RegressionTree;\nuse Rubix\\ML\\Learners\\Regression\\KDNeighborsRegressor;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\nuse Rubix\\ML\\Datasets\\Labeled;\nuse Rubix\\ML\\CrossValidation\\Metrics\\RMSE;\nuse Rubix\\ML\\CrossValidation\\Metrics\\MAE;\n\n$samples = [\n    [1400, 3, 5], [1800, 4, 2], [950, 2, 15],\n    [2200, 5, 1], [1200, 3, 8], [1600, 3, 3],\n];\n$labels = [320000, 410000, 210000, 550000, 285000, 375000];\n\n$dataset = new Labeled($samples, $labels);\n\n// Ridge Regression — linear model with L2 regularization\n$estimator = new Pipeline([\n    new StandardScaler(),\n], new Ridge(alpha: 1.0));\n\n$estimator->train($dataset);\n\n$predictions = $estimator->predict(new Unlabeled([\n    [1500, 3, 4],\n    [2000, 4, 6],\n]));\n\n$rmse = (new RMSE())->score($predictions, [300000, 400000]);\necho \"RMSE: $rmse\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "34-classification--logisticregression",
+      children: "3.4 Classification — LogisticRegression"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Classifiers\\LogisticRegression;\nuse Rubix\\ML\\NeuralNet\\Optimizers\\Adam;\nuse Rubix\\ML\\NeuralNet\\CostFunctions\\CrossEntropy;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\n\n$samples = [\n    [5.1, 3.5, 1.4, 0.2], [4.9, 3.0, 1.4, 0.2],\n    [7.0, 3.2, 4.7, 1.4], [6.4, 3.2, 4.5, 1.5],\n    [6.3, 3.3, 6.0, 2.5], [5.8, 2.7, 5.1, 1.9],\n];\n$labels = [0, 0, 1, 1, 2, 2];  // Encode classes as integers\n\n$estimator = new Pipeline([\n    new StandardScaler(),\n], new LogisticRegression(\n    optimizer: new Adam(0.01),\n    costFn: new CrossEntropy(),\n    epochs: 100,\n    batchSize: 3\n));\n\n$estimator->train(new Labeled($samples, $labels));\n\n$predictions = $estimator->predict(new Unlabeled([\n    [5.9, 3.0, 4.2, 1.5],\n]));\n\necho \"Predicted class: {$predictions[0]}\"; // 1 (versicolor)\n\n// Probability estimates\n$probabilities = $estimator->proba(new Unlabeled([\n    [5.9, 3.0, 4.2, 1.5],\n]));\nprint_r($probabilities[0]);\n// [0 => 0.02, 1 => 0.91, 2 => 0.07] — 91% confidence in class 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "35-neural-networks--multilayer-perceptron",
+      children: "3.5 Neural Networks — Multilayer Perceptron"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A Multilayer Perceptron (MLP) is a feedforward neural network with one or more hidden layers. Rubix ML's MLP classifier supports configurable layers, activation functions, optimizers, and regularization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Classifiers\\MultilayerPerceptron;\nuse Rubix\\ML\\NeuralNet\\Layers\\Dense;\nuse Rubix\\ML\\NeuralNet\\Layers\\Dropout;\nuse Rubix\\ML\\NeuralNet\\Layers\\Activation;\nuse Rubix\\ML\\NeuralNet\\ActivationFunctions\\ReLU;\nuse Rubix\\ML\\NeuralNet\\ActivationFunctions\\Softmax;\nuse Rubix\\ML\\NeuralNet\\Optimizers\\Adam;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\nuse Rubix\\ML\\Datasets\\Labeled;\nuse Rubix\\ML\\Datasets\\Unlabeled;\n\n$dataset = new Labeled($samples, $labels);\n\n$estimator = new Pipeline([\n    new StandardScaler(),\n], new MultilayerPerceptron([\n    new Dense(100),       // Hidden layer with 100 neurons\n    new Activation(new ReLU()),\n    new Dropout(0.2),     // Drop 20% of neurons during training (prevents overfitting)\n    new Dense(50),\n    new Activation(new ReLU()),\n    new Dense(3),          // Output layer: 3 classes\n    new Activation(new Softmax()),\n], optimizer: new Adam(0.001), epochs: 200, batchSize: 16));\n\n$estimator->train($dataset);\n\n$predictions = $estimator->predict(new Unlabeled($testSamples));\n$probabilities = $estimator->proba(new Unlabeled($testSamples));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The architecture above has 4 → 100 → 50 → 3 neurons. Dropout randomly disables 20% of neurons each training iteration, forcing the network to learn redundant representations and reducing overfitting."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "36-random-forest",
+      children: "3.6 Random Forest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Random Forest combines many decision trees trained on random subsets of data and features. It is robust, handles non-linear relationships, and provides feature importance scores."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Classifiers\\RandomForest;\nuse Rubix\\ML\\Classifiers\\ClassificationTree;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\n\n$estimator = new Pipeline([\n    new StandardScaler(),\n], new RandomForest(\n    base: new ClassificationTree(maxHeight: 20, minSamples: 3),\n    estimators: 100,       // 100 trees in the forest\n    ratio: 0.1,            // Each tree sees 10% of the training data (bootstrap sample)\n    substitute: 0.2        // Feature subsampling ratio\n));\n\n$estimator->train(new Labeled($samples, $labels));\n\n$importance = $estimator->featureImportances();\n// ['feature_0' => 0.35, 'feature_1' => 0.12, 'feature_2' => 0.40, 'feature_3' => 0.13]\n// Higher = more important for prediction\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "37-cross-validation-and-hyperparameter-tuning",
+      children: "3.7 Cross-Validation and Hyperparameter Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\CrossValidation\\KFold;\nuse Rubix\\ML\\CrossValidation\\Metrics\\Accuracy;\nuse Rubix\\ML\\Classifiers\\KNearestNeighbors;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\n\n$dataset = Labeled::fromIterator(new CSV('iris.csv', header: true));\n\n$validator = new KFold(5);\n$metric = new Accuracy();\n\n$estimator = new Pipeline([\n    new StandardScaler(),\n], new KNearestNeighbors(3));\n\n$scores = $validator->test($estimator, $dataset, $metric);\n\necho \"Mean accuracy: \" . number_format($scores->mean() * 100, 2) . \"%\\n\";\necho \"Std dev:      \" . number_format($scores->std() * 100, 2) . \"%\\n\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hyperparameter tuning"
+      }), " using grid search:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\GridSearch;\nuse Rubix\\ML\\Classifiers\\KNearestNeighbors;\nuse Rubix\\ML\\Classifiers\\SoftmaxClassifier;\nuse Rubix\\ML\\CrossValidation\\Metrics\\Accuracy;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\n\n$params = [\n    KNearestNeighbors::K => [1, 3, 5, 7, 10],\n    KNearestNeighbors::WEIGHTS => ['uniform', 'distance'],\n];\n\n$estimator = new GridSearch(\n    base: new Pipeline([\n        new StandardScaler(),\n    ], new KNearestNeighbors()),\n    params: $params,\n    metric: new Accuracy(),\n    validator: new KFold(5)\n);\n\n$estimator->train($dataset);\n\necho \"Best params: \" . json_encode($estimator->best());\n// {\"k\": 5, \"weights\": \"distance\"}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "38-model-persistence-rbx-format",
+      children: "3.8 Model Persistence (RBX Format)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\Persisters\\Filesystem;\nuse Rubix\\ML\\Persisters\\Serialized;\nuse Rubix\\ML\\Serializers\\RBX;\n\n$serializer = new RBX();\n\n// Save\n$serializer->serialize($estimator, new Filesystem(storage_path('models/iris.rbx')));\n\n// Load\n$restored = $serializer->deserialize(new Filesystem(storage_path('models/iris.rbx')));\n$prediction = $restored->predict(new Unlabeled([[5.9, 3.0, 4.2, 1.5]]));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "39-anomaly-detection",
+      children: "3.9 Anomaly Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Rubix ML provides specialized learners for detecting outliers and anomalies."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Rubix\\ML\\AnomalyDetectors\\IsolationForest;\nuse Rubix\\ML\\AnomalyDetectors\\LocalOutlierFactor;\nuse Rubix\\ML\\Transformers\\StandardScaler;\nuse Rubix\\ML\\Pipeline;\n\n// Isolation Forest: isolates anomalies by randomly partitioning the feature space\n$detector = new Pipeline([\n    new StandardScaler(),\n], new IsolationForest(\n    estimators: 100,\n    contamination: 0.05  // Expected proportion of outliers in the dataset\n));\n$detector->train(new Labeled($samples, $labels));\n\n// predict() returns 1 for normal, -1 for anomaly\n$anomalies = $detector->predict(new Unlabeled($testSamples));\n\n// Local Outlier Factor: compares local density of a point to its neighbors\n$lof = new Pipeline([\n    new StandardScaler(),\n], new LocalOutlierFactor(\n    k: 20,               // Number of nearest neighbors\n    contamination: 0.1\n));\n$lof->train($dataset);\n$outlierFlags = $lof->predict(new Unlabeled($testSamples));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "4-natural-language-processing-in-php",
+      children: "4. Natural Language Processing in PHP"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Natural Language Processing (NLP) enables machines to understand, interpret, and generate human language. While PHP is not the dominant language for NLP research, PHP-ML provides practical tools for text classification, sentiment analysis, and feature extraction."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "41-tokenization",
+      children: "4.1 Tokenization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tokenization splits text into individual tokens (words, phrases, or n-grams)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\nuse Phpml\\Tokenization\\WordTokenizer;\nuse Phpml\\Tokenization\\NGramTokenizer;\nuse Phpml\\Tokenization\\SkipGramTokenizer;\n\n$text = \"The quick brown fox jumps over the lazy dog\";\n\n// WhitespaceTokenizer: split on whitespace\n$tokenizer = new WhitespaceTokenizer();\nprint_r($tokenizer->tokenize($text));\n// ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']\n\n// WordTokenizer: splits on non-word characters (more robust)\n$wordTokenizer = new WordTokenizer();\nprint_r($wordTokenizer->tokenize($text));\n// ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']\n\n// NGramTokenizer: produces sequences of N tokens\n$nGramTokenizer = new NGramTokenizer(2, 3); // min 2, max 3\nprint_r($nGramTokenizer->tokenize($text));\n// ['The quick', 'quick brown', ..., 'The quick brown', 'quick brown fox', ...]\n\n// SkipGramTokenizer: like n-grams but with gaps\n$skipGram = new SkipGramTokenizer(3, 2);  // 3-grams with max 2 skips\nprint_r($skipGram->tokenize($text));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "42-stop-words",
+      children: "4.2 Stop Words"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Stop words are common words (the, a, is, at) that carry little semantic meaning. Removing them reduces noise and improves model performance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\FeatureExtraction\\StopWords\\English;\n\n$samples = [\n    'the product is amazing and I love it',\n    'this is a terrible waste of money',\n    'I really like this fantastic product',\n];\n\n$tokenizer = new WhitespaceTokenizer();\n$vectorizer = new TokenCountVectorizer($tokenizer, new English());\n$vectorizer->fit($samples);\n$vectorizer->transform($samples);\n\nforeach ($samples as $sample) {\n    echo \"[\" . implode(\", \", $sample) . \"]\\n\";\n}\n// 'the product is amazing and I love it'\n// → After removing stop words: [product, amazing, love]\n// 'this is a terrible waste of money'\n// → After: [terrible, waste, money]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "43-tf-idf-vectorization",
+      children: "4.3 TF-IDF Vectorization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TF-IDF (Term Frequency — Inverse Document Frequency) assigns higher weight to words that are frequent in a specific document but rare across all documents."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\n\n$samples = [\n    'low price amazing quality',\n    'cheap product great value',\n    'terrible waste of money',\n    'fantastic love this product',\n];\n\n$tokenizer = new WhitespaceTokenizer();\n$vectorizer = new TokenCountVectorizer($tokenizer);\n$vectorizer->fit($samples);\n$vectorizer->transform($samples);\n\n$transformer = new TfIdfTransformer();\n$transformer->fit($samples);\n$transformer->transform($samples);\n\n// Each sample is now a TF-IDF weighted vector\n// Common words like \"product\" get lower weight than distinctive words like \"terrible\"\nforeach ($samples as $i => $vector) {\n    echo \"Document {$i}: \";\n    foreach ($vector as $word => $weight) {\n        echo \"{$word}=\" . round($weight, 4) . \" \";\n    }\n    echo \"\\n\";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "44-word-frequency-analysis",
+      children: "4.4 Word Frequency Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\n\n$documents = [\n    'laravel is the best PHP framework for building web applications',\n    'rubix ml provides machine learning tools for PHP developers',\n    'php ml is a library for machine learning in php',\n    'laravel ai sdk integrates language models into php applications',\n];\n\n$tokenizer = new WhitespaceTokenizer();\n$vectorizer = new TokenCountVectorizer($tokenizer);\n$vectorizer->fit($documents);\n$vectorizer->transform($documents);\n\n$vocabulary = $vectorizer->getVocabulary();\n$frequencies = array_count_values(array_merge(...$documents));\narsort($frequencies);\n\necho \"Total vocabulary size: \" . count($vocabulary) . \"\\n\";\necho \"Top 10 most frequent words:\\n\";\n$i = 0;\nforeach ($frequencies as $word => $count) {\n    if ($i++ >= 10) break;\n    echo \"  {$word}: {$count}\\n\";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "45-sentiment-analysis-pipeline",
+      children: "4.5 Sentiment Analysis Pipeline"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Complete sentiment analysis pipeline combining PHP-ML components."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Classification\\NaiveBayes;\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\nuse Phpml\\ModelManager;\n\nclass SentimentAnalyzer\n{\n    private NaiveBayes $classifier;\n    private TokenCountVectorizer $vectorizer;\n    private TfIdfTransformer $transformer;\n    private ?string $modelPath;\n\n    public function __construct(?string $modelPath = null)\n    {\n        $this->modelPath = $modelPath;\n        $this->vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());\n        $this->transformer = new TfIdfTransformer();\n        $this->classifier = new NaiveBayes();\n    }\n\n    public function train(array $texts, array $labels): void\n    {\n        $samples = $texts;\n\n        $this->vectorizer->fit($samples);\n        $this->vectorizer->transform($samples);\n\n        $this->transformer->fit($samples);\n        $this->transformer->transform($samples);\n\n        $this->classifier->train($samples, $labels);\n\n        if ($this->modelPath) {\n            $manager = new ModelManager();\n            $manager->saveToFile($this->classifier, $this->modelPath . '_classifier.model');\n        }\n    }\n\n    public function predict(string $text): array\n    {\n        $sample = [$text];\n\n        $this->vectorizer->transform($sample);\n        $this->transformer->transform($sample);\n\n        $label = $this->classifier->predict($sample[0]);\n        $probabilities = $this->classifier->predictProbability($sample[0]);\n\n        return [\n            'label' => $label,\n            'confidence' => max($probabilities),\n            'probabilities' => $probabilities,\n        ];\n    }\n\n    public static function fromFile(string $modelPath): self\n    {\n        $instance = new self($modelPath);\n        $manager = new ModelManager();\n        $instance->classifier = $manager->restoreFromFile($modelPath . '_classifier.model');\n        return $instance;\n    }\n}\n\n// Usage\n$analyzer = new SentimentAnalyzer(storage_path('models/sentiment'));\n\n$analyzer->train(\n    [\n        'I love this product it is amazing',\n        'Absolutely fantastic quality and value',\n        'Terrible worst purchase I ever made',\n        'Complete waste of money do not buy',\n        'Really happy with my purchase excellent',\n        'Disappointed poor quality broke quickly',\n    ],\n    ['positive', 'positive', 'negative', 'negative', 'positive', 'negative']\n);\n\n$result = $analyzer->predict('This is incredible quality I am thrilled');\necho \"Sentiment: {$result['label']}\\n\";\necho \"Confidence: \" . round($result['confidence'], 4) . \"\\n\";\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "46-stemming",
+      children: "4.6 Stemming"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Stemming reduces words to their root form (running → run, better → better, walked → walk). PHP-ML provides a Porter Stemmer implementation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Phpml\\Tokenization\\WordTokenizer;\n\nclass SimpleStemmer\n{\n    private static array $suffixes = [\n        'ing' => '', 'ed' => '', 'ly' => '', 'es' => '',\n        's' => '', 'ment' => '', 'tion' => '', 'ness' => '',\n        'able' => '', 'ible' => '', 'er' => '', 'est' => '',\n    ];\n\n    public static function stem(string $word): string\n    {\n        $lower = strtolower($word);\n\n        foreach (self::$suffixes as $suffix => $replacement) {\n            if (strlen($lower) > 4 && str_ends_with($lower, $suffix)) {\n                $lower = substr($lower, 0, -strlen($suffix)) . $replacement;\n                break;\n            }\n        }\n\n        // Handle double consonants at end (running → run)\n        if (strlen($lower) > 3) {\n            $last = substr($lower, -1);\n            $secondLast = substr($lower, -2, 1);\n            if ($last === $secondLast && in_array($last, ['b', 'd', 'g', 'l', 'm', 'n', 'p', 'r', 't'])) {\n                $lower = substr($lower, 0, -1);\n            }\n        }\n\n        return $lower;\n    }\n\n    public static function stemText(string $text): string\n    {\n        $tokenizer = new WordTokenizer();\n        $words = $tokenizer->tokenize($text);\n        $stemmed = array_map([self::class, 'stem'], $words);\n        return implode(' ', $stemmed);\n    }\n}\n\necho SimpleStemmer::stem('running');   // run\necho SimpleStemmer::stem('quickly');   // quick\necho SimpleStemmer::stem('better');    // better (irregular, unchanged)\necho SimpleStemmer::stem('studies');   // studi\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "5-ml-model-workflow-in-laravel",
+      children: "5. ML Model Workflow in Laravel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Integrating ML models into a Laravel application requires a structured workflow for training, storing, versioning, and deploying models."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "51-artisan-commands-for-training",
+      children: "5.1 Artisan Commands for Training"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create dedicated Artisan commands for each training pipeline:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Console\\Commands;\n\nuse Illuminate\\Console\\Command;\nuse Phpml\\Classification\\NaiveBayes;\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\nuse Phpml\\ModelManager;\nuse App\\Models\\TrainingData;\nuse SplFileObject;\n\nclass TrainSentimentModel extends Command\n{\n    protected $signature = 'ml:train-sentiment\n        {--source= : Path to CSV training data}\n        {--version=1.0 : Model version tag}\n        {--force : Retrain even if model exists}';\n\n    protected $description = 'Train sentiment analysis model from labeled data';\n\n    public function handle(): int\n    {\n        $modelPath = storage_path(\"models/sentiment/v{$this->option('version')}\");\n        $modelFile = \"{$modelPath}_classifier.model\";\n\n        if (file_exists($modelFile) && !$this->option('force')) {\n            $this->warn(\"Model version {$this->option('version')} already exists. Use --force to retrain.\");\n            return Command::FAILURE;\n        }\n\n        $this->info('Loading training data...');\n        [$texts, $labels] = $this->loadData($this->option('source'));\n\n        $this->info(\"Training on \" . count($texts) . \" samples...\");\n\n        $vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());\n        $transformer = new TfIdfTransformer();\n        $classifier = new NaiveBayes();\n\n        $samples = $texts;\n        $vectorizer->fit($samples);\n        $vectorizer->transform($samples);\n        $transformer->fit($samples);\n        $transformer->transform($samples);\n        $classifier->train($samples, $labels);\n\n        if (!is_dir(dirname($modelPath))) {\n            mkdir(dirname($modelPath), 0755, true);\n        }\n\n        $manager = new ModelManager();\n        $manager->saveToFile($classifier, $modelFile);\n\n        // Save vectorizer and transformer state for inference\n        file_put_contents(\n            \"{$modelPath}_pipeline.json\",\n            json_encode([\n                'version' => $this->option('version'),\n                'trained_at' => now()->toIso8601String(),\n                'samples' => count($texts),\n                'vocabulary' => $vectorizer->getVocabulary(),\n                'classes' => array_unique($labels),\n            ])\n        );\n\n        $this->info(\"Model saved to {$modelFile}\");\n        $this->info(\"Training complete. Version: {$this->option('version')}\");\n\n        return Command::SUCCESS;\n    }\n\n    private function loadData(?string $source): array\n    {\n        if ($source && file_exists($source)) {\n            $file = new SplFileObject($source);\n            $file->setFlags(SplFileObject::READ_CSV | SplFileObject::SKIP_EMPTY);\n            $texts = [];\n            $labels = [];\n            foreach ($file as $row) {\n                if (count($row) >= 2) {\n                    $texts[] = $row[0];\n                    $labels[] = strtolower(trim($row[1]));\n                }\n            }\n            return [$texts, $labels];\n        }\n\n        // Fallback: load from database\n        $records = TrainingData::where('type', 'sentiment')->where('used', false)->get();\n        return [$records->pluck('text')->toArray(), $records->pluck('label')->toArray()];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "52-scheduling-retraining",
+      children: "5.2 Scheduling Retraining"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Laravel's task scheduler runs model retraining on a regular cadence."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Console;\n\nuse Illuminate\\Console\\Scheduling\\Schedule;\nuse Illuminate\\Foundation\\Console\\Kernel as ConsoleKernel;\n\nclass Kernel extends ConsoleKernel\n{\n    protected function schedule(Schedule $schedule): void\n    {\n        // Retrain sentiment model weekly with new labeled data\n        $schedule->command('ml:train-sentiment --force --version=weekly-{date}')\n            ->weekly()\n            ->mondays()\n            ->at('03:00')\n            ->withoutOverlapping()\n            ->sendOutputTo(storage_path('logs/ml-training.log'))\n            ->emailOutputTo('ml-team@example.com');\n\n        // Retrain recommendation model daily\n        $schedule->command('ml:train-recommender --force')\n            ->dailyAt('02:00')\n            ->withoutOverlapping(60)\n            ->onSuccess(fn() => info('Recommender model updated successfully'))\n            ->onFailure(fn() => notify(new ModelTrainingFailed('recommender')));\n\n        // Evaluate all production models every Sunday\n        $schedule->command('ml:evaluate-models')\n            ->weekly()\n            ->sundays()\n            ->at('05:00');\n\n        // Check for data drift in features\n        $schedule->command('ml:check-drift')\n            ->hourly()\n            ->withoutOverlapping();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "53-model-versioning",
+      children: "5.3 Model Versioning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Maintain a model registry database table for version tracking."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('model_registry', function (Blueprint $table) {\n            $table->id();\n            $table->string('name');                    // sentiment, recommender, etc.\n            $table->string('version');                  // 1.0, 2.0, weekly-2025-03-10\n            $table->string('algorithm');                // NaiveBayes, RandomForest\n            $table->json('metrics')->nullable();         // {\"accuracy\": 0.94, \"f1\": 0.93}\n            $table->json('parameters')->nullable();      // {\"alpha\": 1.0, \"kernel\": \"rbf\"}\n            $table->string('status');                    // staging, production, archived\n            $table->string('file_path');                 // Relative path in storage\n            $table->integer('training_samples')->default(0);\n            $table->string('training_duration')->nullable();\n            $table->foreignId('trained_by_user_id')->nullable()->constrained('users');\n            $table->timestamp('trained_at')->nullable();\n            $table->timestamps();\n\n            $table->unique(['name', 'version']);\n            $table->index(['name', 'status']);\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('model_registry');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Register a model after training:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services;\n\nuse App\\Models\\ModelRegistry;\nuse Illuminate\\Support\\Facades\\Storage;\n\nclass ModelRegistryService\n{\n    public function register(\n        string $name,\n        string $version,\n        string $algorithm,\n        array $metrics,\n        array $parameters,\n        string $filePath,\n        int $trainingSamples,\n    ): ModelRegistry {\n        return ModelRegistry::create([\n            'name' => $name,\n            'version' => $version,\n            'algorithm' => $algorithm,\n            'metrics' => $metrics,\n            'parameters' => $parameters,\n            'status' => 'staging',\n            'file_path' => $filePath,\n            'training_samples' => $trainingSamples,\n            'trained_at' => now(),\n        ]);\n    }\n\n    public function promoteToProduction(string $name, string $version): void\n    {\n        // Demote current production\n        ModelRegistry::where('name', $name)\n            ->where('status', 'production')\n            ->update(['status' => 'archived']);\n\n        // Promote new version\n        ModelRegistry::where('name', $name)\n            ->where('version', $version)\n            ->update(['status' => 'production']);\n    }\n\n    public function getProductionModel(string $name): ?ModelRegistry\n    {\n        return ModelRegistry::where('name', $name)\n            ->where('status', 'production')\n            ->latest('trained_at')\n            ->first();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "54-ab-testing-models-in-production",
+      children: "5.4 A/B Testing Models in Production"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Compare two model versions live with a traffic split."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Api;\n\nuse App\\Models\\ModelRegistry;\nuse App\\Services\\SentimentService;\nuse Illuminate\\Http\\JsonResponse;\n\nclass SentimentController extends Controller\n{\n    public function __construct(\n        private SentimentService $sentimentService\n    ) {}\n\n    public function analyze(Request $request): JsonResponse\n    {\n        $data = $request->validate(['text' => 'required|string|max:5000']);\n\n        // A/B test: 20% of traffic sees version 2.0, 80% sees 1.0\n        $useV2 = random_int(1, 100) <= 20;\n\n        $modelVersion = $useV2 ? '2.0' : '1.0';\n\n        $result = $this->sentimentService->analyze(\n            $data['text'],\n            $modelVersion\n        );\n\n        // Log which model handled this request for later comparison\n        Log::channel('ml-abtest')->info('Sentiment prediction', [\n            'model' => $modelVersion,\n            'text_hash' => md5($data['text']),\n            'prediction' => $result['label'],\n            'confidence' => $result['confidence'],\n            'user_id' => $request->user()?->id,\n        ]);\n\n        return response()->json([\n            'sentiment' => $result['label'],\n            'confidence' => $result['confidence'],\n            'model_version' => $modelVersion,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "55-feature-stores-with-mysqlredis",
+      children: "5.5 Feature Stores with MySQL/Redis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A feature store provides a centralized repository of pre-computed features."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services;\n\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Redis;\n\nclass FeatureStore\n{\n    private const CACHE_PREFIX = 'features:';\n    private const CACHE_TTL = 3600; // 1 hour\n\n    public function computeAndStore(int $userId): array\n    {\n        $features = DB::transaction(function () use ($userId) {\n            $user = DB::table('users')->find($userId);\n            $orders = DB::table('orders')->where('user_id', $userId);\n            $reviews = DB::table('reviews')->where('user_id', $userId);\n\n            $totalOrders = (clone $orders)->count();\n            $totalSpent = (clone $orders)->sum('total');\n            $avgOrderValue = $totalOrders > 0 ? $totalSpent / $totalOrders : 0;\n            $daysSinceLastOrder = (clone $orders)\n                ->max('created_at')\n                ? now()->diffInDays((clone $orders)->max('created_at'))\n                : 999;\n\n            $negativeReviews = (clone $reviews)\n                ->where('rating', '<=', 2)\n                ->count();\n            $totalReviews = (clone $reviews)->count();\n            $negativeReviewRatio = $totalReviews > 0\n                ? $negativeReviews / $totalReviews\n                : 0;\n\n            return [\n                'total_orders' => $totalOrders,\n                'total_spent' => $totalSpent,\n                'avg_order_value' => $avgOrderValue,\n                'days_since_last_order' => $daysSinceLastOrder,\n                'negative_review_ratio' => $negativeReviewRatio,\n                'account_age_days' => now()->diffInDays($user->created_at),\n                'is_active_subscriber' => $user->subscribed_at ? 1 : 0,\n            ];\n        });\n\n        // Store in Redis for low-latency access\n        Redis::hmset(self::CACHE_PREFIX . $userId, $features);\n        Redis::expire(self::CACHE_PREFIX . $userId, self::CACHE_TTL);\n\n        // Store historical snapshot in MySQL for training data\n        DB::table('feature_snapshots')->insert([\n            'user_id' => $userId,\n            'features' => json_encode($features),\n            'snapshot_at' => now(),\n        ]);\n\n        return $features;\n    }\n\n    public function get(int $userId): ?array\n    {\n        $cached = Redis::hgetall(self::CACHE_PREFIX . $userId);\n        if (!empty($cached)) {\n            return array_map(fn($v) => is_numeric($v) ? (float) $v : $v, $cached);\n        }\n\n        return null;\n    }\n\n    public function getBatch(array $userIds): array\n    {\n        $pipe = Redis::pipeline();\n        foreach ($userIds as $id) {\n            $pipe->hgetall(self::CACHE_PREFIX . $id);\n        }\n        $results = $pipe->execute();\n\n        $features = [];\n        foreach ($userIds as $i => $id) {\n            if (!empty($results[$i])) {\n                $features[$id] = array_map(\n                    fn($v) => is_numeric($v) ? (float) $v : $v,\n                    $results[$i]\n                );\n            }\n        }\n        return $features;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6-laravel-ai-sdk--classical-ml-integration",
+      children: "6. Laravel AI SDK + Classical ML Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The most powerful pattern in modern Laravel applications is combining classical ML predictions with LLM reasoning. The ML model outputs structured predictions; the LLM explains them in natural language, considers business context, and takes actions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "61-ml-tool-for-ai-agents",
+      children: "6.1 ML Tool for AI Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create a custom tool that wraps a Rubix ML classifier and exposes it to AI agents."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Tools;\n\nuse Illuminate\\Contracts\\JsonSchema\\JsonSchema;\nuse Laravel\\Ai\\Contracts\\Tool;\nuse Laravel\\Ai\\Tools\\Request;\nuse Rubix\\ML\\Serializers\\RBX;\nuse Rubix\\ML\\Persisters\\Filesystem;\nuse Rubix\\ML\\Datasets\\Unlabeled;\nuse Stringable;\n\nclass SentimentAnalysisTool implements Tool\n{\n    private static ?\\Rubix\\ML\\Pipeline $model = null;\n\n    public function description(): Stringable|string\n    {\n        return 'Analyzes the sentiment of text as positive or negative. ' .\n               'Returns the predicted label and confidence score. ' .\n               'Use this when you need to determine the emotional tone of user feedback, reviews, or messages.';\n    }\n\n    public function schema(JsonSchema $schema): array\n    {\n        return [\n            'text' => $schema->string()\n                ->required()\n                ->maxLength(5000)\n                ->description('The text to analyze for sentiment'),\n        ];\n    }\n\n    public function handle(Request $request): Stringable|string\n    {\n        $text = $request['text'];\n\n        $model = $this->loadModel();\n\n        $prediction = $model->predict(new Unlabeled([[$text]]));\n        $probabilities = $model->proba(new Unlabeled([[$text]]));\n\n        $label = $prediction[0];\n        $confidence = max($probabilities[0]);\n\n        return json_encode([\n            'sentiment' => $label === 1 ? 'positive' : 'negative',\n            'confidence' => round($confidence, 4),\n            'positive_probability' => round($probabilities[0][1] ?? 0, 4),\n            'negative_probability' => round($probabilities[0][0] ?? 0, 4),\n        ]);\n    }\n\n    private function loadModel(): \\Rubix\\ML\\Pipeline\n    {\n        if (self::$model === null) {\n            $serializer = new RBX();\n            self::$model = $serializer->deserialize(\n                new Filesystem(storage_path('models/sentiment_v2.rbx'))\n            );\n        }\n        return self::$model;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "62-hybrid-prediction--explanation-endpoint",
+      children: "6.2 Hybrid Prediction + Explanation Endpoint"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Api;\n\nuse App\\Services\\CustomerChurnService;\nuse Illuminate\\Http\\JsonResponse;\nuse Laravel\\Ai\\Facades\\AI;\n\nclass ChurnPredictionController extends Controller\n{\n    public function __construct(\n        private CustomerChurnService $churnService\n    ) {}\n\n    public function predict(Request $request): JsonResponse\n    {\n        $data = $request->validate([\n            'customer_id' => 'required|exists:customers,id',\n        ]);\n\n        // Step 1: Compute features\n        $features = $this->churnService->computeFeatures($data['customer_id']);\n\n        // Step 2: Get classical ML prediction\n        $mlResult = $this->churnService->predictChurn($features);\n\n        // Step 3: Use LLM to generate a human-readable explanation\n        $explanation = AI::agent('analyst')\n            ->instructions(\n                'You are a customer retention analyst. Given ML prediction results ' .\n                'and customer features, explain WHY the model made this prediction and ' .\n                'recommend specific retention actions. Be concise and data-driven.'\n            )\n            ->prompt(json_encode([\n                'ml_prediction' => $mlResult,\n                'customer_features' => $features,\n                'customer_id' => $data['customer_id'],\n            ]))\n            ->generate();\n\n        // Step 4: Log the hybrid inference\n        $this->churnService->logPrediction(\n            customerId: $data['customer_id'],\n            mlResult: $mlResult,\n            explanation: $explanation,\n        );\n\n        return response()->json([\n            'churn_risk' => $mlResult['risk_level'],\n            'probability' => $mlResult['probability'],\n            'contributing_factors' => $mlResult['top_features'],\n            'ai_explanation' => $explanation,\n            'recommended_actions' => $mlResult['actions'],\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "63-ml-predictions-as-context-for-agent-reasoning",
+      children: "6.3 ML Predictions as Context for Agent Reasoning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Feed multiple ML model outputs into a single agent for holistic decision-making."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services;\n\nuse Laravel\\Ai\\Facades\\AI;\nuse App\\Models\\Order;\nuse App\\Models\\Customer;\n\nclass IntelligentOrderRoutingService\n{\n    public function routeOrder(Order $order): array\n    {\n        $customer = $order->customer;\n\n        // Collect predictions from multiple ML models in parallel\n        $fraudScore = $this->predictFraud($order);\n        $sentiment = $this->analyzeSentiment($customer->recentFeedback());\n        $churnRisk = $this->predictChurn($customer);\n        $lifetimeValue = $this->predictLTV($customer);\n\n        // Feed all predictions into an LLM agent for decision-making\n        $decision = AI::agent('order-router')\n            ->instructions(\n                'You are an order routing agent. Based on ML predictions about this ' .\n                'order and customer, decide how to route the order. ' .\n                'Options: \"auto_approve\", \"manual_review\", \"flag_for_fraud_team\", ' .\n                '\"escalate_to_manager\". Consider fraud risk, customer sentiment, ' .\n                'churn risk, and lifetime value in your decision.'\n            )\n            ->prompt(json_encode([\n                'order_id' => $order->id,\n                'amount' => $order->total,\n                'is_new_customer' => $customer->orders_count <= 1,\n                'predictions' => [\n                    'fraud_score' => $fraudScore,\n                    'customer_sentiment' => $sentiment,\n                    'churn_risk_percent' => $churnRisk,\n                    'predicted_ltv' => $lifetimeValue,\n                ],\n            ]))\n            ->generate();\n\n        $parsedDecision = json_decode($decision, true);\n\n        // Execute the decision\n        match ($parsedDecision['action'] ?? 'manual_review') {\n            'auto_approve' => $this->approve($order),\n            'manual_review' => $this->queueReview($order),\n            'flag_for_fraud_team' => $this->flagFraud($order, $parsedDecision),\n            'escalate_to_manager' => $this->escalate($order, $parsedDecision),\n        };\n\n        return [\n            'action' => $parsedDecision['action'],\n            'rationale' => $parsedDecision['rationale'] ?? '',\n            'ml_signals' => $parsedDecision['signals_used'] ?? [],\n        ];\n    }\n\n    private function predictFraud(Order $order): array\n    {\n        $features = [\n            $order->total,\n            $order->items()->count(),\n            $order->is_express_shipping ? 1 : 0,\n            $order->billing_address_id === $order->shipping_address_id ? 0 : 1,\n            $order->customer->orders_count,\n            $order->customer->failed_payments_count,\n        ];\n\n        $model = $this->loadModel('fraud-detection.rbx');\n        $prediction = $model->predict(new Unlabeled([$features]));\n\n        return [\n            'is_fraudulent' => $prediction[0] === 1,\n            'score' => $model->proba(new Unlabeled([$features]))[0][1],\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "64-combining-structured-ml-output-with-llm-reasoning",
+      children: "6.4 Combining Structured ML Output with LLM Reasoning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services;\n\nuse Laravel\\Ai\\Facades\\AI;\nuse Phpml\\Association\\Apriori;\nuse Phpml\\ModelManager;\n\nclass ProductRecommendationService\n{\n    public function getRecommendations(int $userId, array $cartItems): array\n    {\n        // Classical ML: association rule mining on purchase history\n        $rules = $this->getAssociationRules($cartItems);\n\n        // Classical ML: collaborative filtering (user-based similarity)\n        $similarUsers = $this->findSimilarUsers($userId);\n\n        // Classical ML: content-based filtering (product features)\n        $contentBased = $this->contentBasedRecommendations($cartItems);\n\n        // LLM synthesizes all signals into a final recommendation with explanations\n        $recommendation = AI::agent('recommender')\n            ->instructions(\n                'You are a product recommendation engine. Given association rules, ' .\n                'similar user purchases, and content-based matches, synthesize a ' .\n                'ranked list of 5 product recommendations. For each, explain why ' .\n                'it is recommended using natural language. Consider: ' .\n                '1. Products frequently bought together with items in the cart ' .\n                '2. Products purchased by similar customers ' .\n                '3. Products with matching attributes to cart items ' .\n                'Return JSON with: product_id, name, reason, confidence_score'\n            )\n            ->prompt(json_encode([\n                'cart_items' => $cartItems,\n                'association_rules' => $rules,\n                'similar_users_purchases' => $similarUsers,\n                'content_based_matches' => $contentBased,\n            ]))\n            ->generate();\n\n        return json_decode($recommendation, true);\n    }\n\n    private function getAssociationRules(array $cartItems): array\n    {\n        $manager = new ModelManager();\n        $apriori = $manager->restoreFromFile(\n            storage_path('models/apriori-purchases.model')\n        );\n\n        $rules = $apriori->getRules();\n        $relevant = [];\n\n        foreach ($rules as $rule) {\n            $antecedent = $rule['antecedent'];\n            if (!empty(array_intersect($antecedent, $cartItems))) {\n                $relevant[] = [\n                    'if_bought' => $antecedent,\n                    'recommend' => $rule['consequent'],\n                    'confidence' => $rule['confidence'],\n                    'support' => $rule['support'],\n                ];\n            }\n        }\n\n        // Sort by confidence descending\n        usort($relevant, fn($a, $b) => $b['confidence'] <=> $a['confidence']);\n\n        return array_slice($relevant, 0, 10);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7-feature-engineering-pipelines",
+      children: "7. Feature Engineering Pipelines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Features are the raw material of machine learning. Well-engineered features often matter more than the choice of algorithm."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "71-data-collection",
+      children: "7.1 Data Collection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\FeatureEngineering;\n\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\LazyCollection;\n\nclass DataCollector\n{\n    public function collectUserFeatures(int $batchSize = 1000): LazyCollection\n    {\n        return DB::table('users')\n            ->join('orders', 'users.id', '=', 'orders.user_id')\n            ->join('order_items', 'orders.id', '=', 'order_items.order_id')\n            ->join('products', 'order_items.product_id', '=', 'products.id')\n            ->leftJoin('reviews', 'order_items.id', '=', 'reviewable_id')\n            ->leftJoin('user_sessions', 'users.id', '=', 'user_sessions.user_id')\n            ->select([\n                'users.id as user_id',\n                'users.created_at as user_created_at',\n                'users.is_subscribed',\n                DB::raw('COUNT(DISTINCT orders.id) as total_orders'),\n                DB::raw('COALESCE(SUM(orders.total), 0) as total_spent'),\n                DB::raw('COALESCE(AVG(order_items.quantity), 0) as avg_items_per_order'),\n                DB::raw('COALESCE(AVG(orders.total), 0) as avg_order_value'),\n                DB::raw('COALESCE(MAX(orders.created_at), users.created_at) as last_order_date'),\n                DB::raw('COUNT(DISTINCT products.category_id) as distinct_categories'),\n                DB::raw('COALESCE(AVG(reviews.rating), 0) as avg_rating'),\n                DB::raw('COUNT(DISTINCT user_sessions.id) as session_count'),\n            ])\n            ->groupBy('users.id', 'users.created_at', 'users.is_subscribed')\n            ->lazy($batchSize);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "72-data-cleaning-nulls-outliers",
+      children: "7.2 Data Cleaning (Nulls, Outliers)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\FeatureEngineering;\n\nuse Illuminate\\Support\\Collection;\n\nclass DataCleaner\n{\n    public function handleNulls(Collection $data, array $strategies): Collection\n    {\n        return $data->map(function ($row) use ($strategies) {\n            foreach ($strategies as $column => $strategy) {\n                if (is_null($row->$column) || $row->$column === '') {\n                    $row->$column = match ($strategy) {\n                        'mean' => $this->columnMean($data, $column),\n                        'median' => $this->columnMedian($data, $column),\n                        'zero' => 0,\n                        'mode' => $this->columnMode($data, $column),\n                        'drop' => null,\n                        default => $strategy,\n                    };\n                }\n            }\n            return $row;\n        })->reject(fn($row) => in_array(null, (array) $row, true));\n    }\n\n    public function removeOutliersIQR(Collection $data, array $columns, float $multiplier = 1.5): Collection\n    {\n        return $data->filter(function ($row) use ($columns, $multiplier) {\n            foreach ($columns as $col) {\n                $values = $data->pluck($col)->sort()->values();\n                $count = $values->count();\n                $q1 = $values->get((int) ($count * 0.25));\n                $q3 = $values->get((int) ($count * 0.75));\n                $iqr = $q3 - $q1;\n                $lower = $q1 - $multiplier * $iqr;\n                $upper = $q3 + $multiplier * $iqr;\n\n                if ($row->$col < $lower || $row->$col > $upper) {\n                    return false;\n                }\n            }\n            return true;\n        });\n    }\n\n    public function capOutliers(Collection $data, array $columns, float $percentile = 0.99): Collection\n    {\n        return $data->map(function ($row) use ($columns, $percentile, $data) {\n            foreach ($columns as $col) {\n                $values = $data->pluck($col)->sort()->values();\n                $index = (int) ($values->count() * $percentile);\n                $cap = $values->get($index);\n                if ($row->$col > $cap) {\n                    $row->$col = $cap;\n                }\n            }\n            return $row;\n        });\n    }\n\n    private function columnMean(Collection $data, string $column): float\n    {\n        return $data->pluck($column)->filter()->average();\n    }\n\n    private function columnMedian(Collection $data, string $column): float\n    {\n        $values = $data->pluck($column)->filter()->sort()->values();\n        $mid = (int) ($values->count() / 2);\n        return $values->count() % 2 === 0\n            ? ($values->get($mid - 1) + $values->get($mid)) / 2\n            : $values->get($mid);\n    }\n\n    private function columnMode(Collection $data, string $column): mixed\n    {\n        return $data->pluck($column)->filter()->mode()[0] ?? 0;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "73-feature-transformation",
+      children: "7.3 Feature Transformation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\FeatureEngineering;\n\nuse Illuminate\\Support\\Collection;\n\nclass FeatureTransformer\n{\n    public function scaleMinMax(Collection $data, array $columns): Collection\n    {\n        $mins = [];\n        $maxs = [];\n\n        foreach ($columns as $col) {\n            $mins[$col] = $data->min($col);\n            $maxs[$col] = $data->max($col);\n        }\n\n        return $data->map(function ($row) use ($columns, $mins, $maxs) {\n            foreach ($columns as $col) {\n                $range = $maxs[$col] - $mins[$col];\n                $row->$col = $range > 0\n                    ? ($row->$col - $mins[$col]) / $range\n                    : 0;\n            }\n            return $row;\n        });\n    }\n\n    public function scaleStandard(Collection $data, array $columns): Collection\n    {\n        $means = [];\n        $stds = [];\n\n        foreach ($columns as $col) {\n            $values = $data->pluck($col);\n            $means[$col] = $values->average();\n            $stds[$col] = sqrt(\n                $values->sum(fn($v) => ($v - $means[$col]) ** 2) / max($values->count() - 1, 1)\n            );\n        }\n\n        return $data->map(function ($row) use ($columns, $means, $stds) {\n            foreach ($columns as $col) {\n                $row->$col = $stds[$col] > 0\n                    ? ($row->$col - $means[$col]) / $stds[$col]\n                    : 0;\n            }\n            return $row;\n        });\n    }\n\n    public function logTransform(Collection $data, array $columns): Collection\n    {\n        return $data->map(function ($row) use ($columns) {\n            foreach ($columns as $col) {\n                $row->$col = log(max($row->$col, 0) + 1);\n            }\n            return $row;\n        });\n    }\n\n    public function oneHotEncode(Collection $data, string $column): Collection\n    {\n        $categories = $data->pluck($column)->unique()->values();\n\n        return $data->map(function ($row) use ($column, $categories) {\n            foreach ($categories as $cat) {\n                $safeName = str_replace([' ', '-', '.'], '_', \"{$column}_{$cat}\");\n                $row->$safeName = $row->$column === $cat ? 1 : 0;\n            }\n            unset($row->$column);\n            return $row;\n        });\n    }\n\n    public function createInteractionTerms(\n        Collection $data,\n        string $col1,\n        string $col2,\n        string $newName = null\n    ): Collection {\n        $name = $newName ?? \"{$col1}_x_{$col2}\";\n\n        return $data->map(function ($row) use ($col1, $col2, $name) {\n            $row->$name = $row->$col1 * $row->$col2;\n            return $row;\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "74-feature-selection-correlation-importance",
+      children: "7.4 Feature Selection (Correlation, Importance)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\FeatureEngineering;\n\nuse Illuminate\\Support\\Collection;\n\nclass FeatureSelector\n{\n    public function byCorrelation(Collection $data, string $target, float $threshold = 0.1): array\n    {\n        $features = $data->first() ? array_keys(get_object_vars($data->first())) : [];\n        $features = array_diff($features, [$target]);\n\n        $selected = [];\n\n        foreach ($features as $feature) {\n            $correlation = $this->pearsonCorrelation(\n                $data->pluck($feature)->toArray(),\n                $data->pluck($target)->toArray()\n            );\n\n            if (abs($correlation) >= $threshold) {\n                $selected[$feature] = $correlation;\n            }\n        }\n\n        arsort($selected);\n        return $selected;\n    }\n\n    public function byVariance(Collection $data, float $threshold = 0.01): array\n    {\n        $features = $data->first() ? array_keys(get_object_vars($data->first())) : [];\n\n        $selected = [];\n        foreach ($features as $feature) {\n            $values = $data->pluck($feature)->toArray();\n            $mean = array_sum($values) / count($values);\n            $variance = array_sum(array_map(fn($v) => ($v - $mean) ** 2, $values)) / count($values);\n\n            if ($variance >= $threshold) {\n                $selected[$feature] = $variance;\n            }\n        }\n\n        arsort($selected);\n        return $selected;\n    }\n\n    public function byMutualInformation(Collection $data, string $target, int $topK = 10): array\n    {\n        $features = $data->first() ? array_keys(get_object_vars($data->first())) : [];\n        $features = array_diff($features, [$target]);\n\n        $targetValues = $data->pluck($target)->toArray();\n        $targetEntropy = $this->entropy($targetValues);\n\n        $scores = [];\n\n        foreach ($features as $feature) {\n            $featureValues = $data->pluck($feature)->toArray();\n            $jointEntropy = $this->jointEntropy($featureValues, $targetValues);\n            $mi = $targetEntropy + $this->entropy($featureValues) - $jointEntropy;\n            $scores[$feature] = $mi;\n        }\n\n        arsort($scores);\n        return array_slice($scores, 0, $topK);\n    }\n\n    private function pearsonCorrelation(array $x, array $y): float\n    {\n        $n = count($x);\n        $meanX = array_sum($x) / $n;\n        $meanY = array_sum($y) / $n;\n\n        $numerator = 0;\n        $denomX = 0;\n        $denomY = 0;\n\n        for ($i = 0; $i < $n; $i++) {\n            $dx = $x[$i] - $meanX;\n            $dy = $y[$i] - $meanY;\n            $numerator += $dx * $dy;\n            $denomX += $dx * $dx;\n            $denomY += $dy * $dy;\n        }\n\n        $denominator = sqrt($denomX * $denomY);\n        return $denominator > 0 ? $numerator / $denominator : 0;\n    }\n\n    private function entropy(array $values): float\n    {\n        $n = count($values);\n        $counts = array_count_values($values);\n        $entropy = 0;\n\n        foreach ($counts as $count) {\n            $p = $count / $n;\n            $entropy -= $p * log($p);\n        }\n\n        return $entropy;\n    }\n\n    private function jointEntropy(array $x, array $y): float\n    {\n        $n = count($x);\n        $pairs = array_map(fn($a, $b) => \"{$a}:{$b}\", $x, $y);\n        $counts = array_count_values($pairs);\n        $entropy = 0;\n\n        foreach ($counts as $count) {\n            $p = $count / $n;\n            $entropy -= $p * log($p);\n        }\n\n        return $entropy;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "75-batch-processing-with-laravel-queues",
+      children: "7.5 Batch Processing with Laravel Queues"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Process feature engineering at scale using Laravel queue jobs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Jobs;\n\nuse App\\Services\\FeatureEngineering\\FeatureStore;\nuse Illuminate\\Contracts\\Queue\\ShouldQueue;\nuse Illuminate\\Foundation\\Queue\\Queueable;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass ComputeUserFeaturesJob implements ShouldQueue\n{\n    use Queueable;\n\n    public function __construct(\n        private readonly int $userId,\n        private readonly bool $storeHistorical = true\n    ) {}\n\n    public function handle(FeatureStore $featureStore): void\n    {\n        try {\n            $features = $featureStore->computeAndStore(\n                userId: $this->userId,\n                storeHistorical: $this->storeHistorical\n            );\n\n            Log::channel('ml-features')->info('Features computed', [\n                'user_id' => $this->userId,\n                'feature_count' => count($features),\n            ]);\n        } catch (\\Throwable $e) {\n            Log::channel('ml-features')->error('Feature computation failed', [\n                'user_id' => $this->userId,\n                'error' => $e->getMessage(),\n            ]);\n\n            $this->release(30); // Retry in 30 seconds\n        }\n    }\n\n    public function tags(): array\n    {\n        return ['feature-engineering', \"user:{$this->userId}\"];\n    }\n}\n\nclass BatchFeatureEngineeringJob implements ShouldQueue\n{\n    use Queueable;\n\n    public function __construct(\n        private readonly array $userIds,\n        private readonly int $batchSize = 100\n    ) {}\n\n    public function handle(): void\n    {\n        foreach (array_chunk($this->userIds, $this->batchSize) as $batch) {\n            foreach ($batch as $userId) {\n                ComputeUserFeaturesJob::dispatch($userId);\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Dispatch feature computation from a controller:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Api;\n\nuse App\\Jobs\\ComputeUserFeaturesJob;\nuse App\\Jobs\\BatchFeatureEngineeringJob;\nuse App\\Models\\User;\nuse Illuminate\\Http\\JsonResponse;\n\nclass FeatureController extends Controller\n{\n    public function computeForUser(int $userId): JsonResponse\n    {\n        ComputeUserFeaturesJob::dispatch($userId);\n\n        return response()->json(['message' => 'Feature computation queued']);\n    }\n\n    public function recomputeAll(): JsonResponse\n    {\n        $userIds = User::pluck('id')->toArray();\n\n        BatchFeatureEngineeringJob::dispatch($userIds);\n\n        return response()->json([\n            'message' => 'Batch feature engineering queued',\n            'users' => count($userIds),\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "8-model-evaluation--mlops-basics",
+      children: "8. Model Evaluation & MLOps Basics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MLOps (Machine Learning Operations) brings DevOps principles to ML workflows — experiment tracking, model registry, drift monitoring, and safe deployment strategies."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "81-experiment-tracking",
+      children: "8.1 Experiment Tracking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse App\\Models\\MlExperiment;\nuse Illuminate\\Support\\Facades\\Log;\nuse Symfony\\Component\\Stopwatch\\Stopwatch;\n\nclass ExperimentTracker\n{\n    private array $parameters = [];\n    private array $metrics = [];\n    private array $tags = [];\n    private ?Stopwatch $stopwatch = null;\n    private ?string $runId = null;\n\n    public function startRun(string $experimentName, array $parameters = []): string\n    {\n        $this->runId = (string) str()->uuid();\n        $this->parameters = $parameters;\n        $this->metrics = [];\n        $this->tags = [\n            'started_at' => now()->toIso8601String(),\n            'php_version' => PHP_VERSION,\n        ];\n\n        $this->stopwatch = new Stopwatch();\n        $this->stopwatch->start($this->runId);\n\n        MlExperiment::create([\n            'run_id' => $this->runId,\n            'experiment_name' => $experimentName,\n            'parameters' => $parameters,\n            'tags' => $this->tags,\n            'status' => 'running',\n        ]);\n\n        Log::channel('ml-experiments')->info(\"Experiment started: {$experimentName}\", [\n            'run_id' => $this->runId,\n        ]);\n\n        return $this->runId;\n    }\n\n    public function logMetric(string $key, float $value): void\n    {\n        $this->metrics[$key] = $value;\n\n        if ($this->runId) {\n            MlExperiment::where('run_id', $this->runId)\n                ->update(['metrics' => $this->metrics]);\n        }\n    }\n\n    public function logMetrics(array $metrics): void\n    {\n        foreach ($metrics as $key => $value) {\n            $this->metrics[$key] = $value;\n        }\n\n        if ($this->runId) {\n            MlExperiment::where('run_id', $this->runId)\n                ->update(['metrics' => $this->metrics]);\n        }\n    }\n\n    public function endRun(string $status = 'completed'): void\n    {\n        if (!$this->stopwatch || !$this->runId) {\n            return;\n        }\n\n        $event = $this->stopwatch->stop($this->runId);\n        $duration = $event->getDuration() / 1000; // milliseconds → seconds\n\n        MlExperiment::where('run_id', $this->runId)->update([\n            'status' => $status,\n            'duration_seconds' => $duration,\n            'completed_at' => now(),\n        ]);\n\n        Log::channel('ml-experiments')->info(\"Experiment ended: {$status}\", [\n            'run_id' => $this->runId,\n            'duration' => $duration,\n            'metrics' => $this->metrics,\n        ]);\n    }\n\n    public function getBestRun(string $experimentName, string $metric, string $mode = 'max'): ?MlExperiment\n    {\n        $query = MlExperiment::where('experiment_name', $experimentName)\n            ->where('status', 'completed');\n\n        return $mode === 'max'\n            ? $query->orderByRaw(\"JSON_UNQUOTE(JSON_EXTRACT(metrics, '$.{$metric}')) DESC\")->first()\n            : $query->orderByRaw(\"JSON_UNQUOTE(JSON_EXTRACT(metrics, '$.{$metric}')) ASC\")->first();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Migrations for experiment tracking:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('ml_experiments', function (Blueprint $table) {\n            $table->id();\n            $table->uuid('run_id')->unique();\n            $table->string('experiment_name');\n            $table->json('parameters');\n            $table->json('metrics')->nullable();\n            $table->json('tags')->nullable();\n            $table->string('status'); // running, completed, failed\n            $table->float('duration_seconds')->nullable();\n            $table->timestamp('completed_at')->nullable();\n            $table->timestamps();\n\n            $table->index('experiment_name');\n            $table->index('status');\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('ml_experiments');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "82-model-registry",
+      children: "8.2 Model Registry"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Support\\Facades\\Storage;\n\nclass ModelRegistry extends Model\n{\n    protected $table = 'model_registry';\n\n    protected $fillable = [\n        'name',\n        'version',\n        'algorithm',\n        'metrics',\n        'parameters',\n        'status',\n        'file_path',\n        'training_samples',\n        'training_duration',\n        'trained_by_user_id',\n        'trained_at',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'metrics' => 'array',\n            'parameters' => 'array',\n            'trained_at' => 'datetime',\n        ];\n    }\n\n    public function getFullPath(): string\n    {\n        return Storage::disk('ml-models')->path($this->file_path);\n    }\n\n    public function promote(): void\n    {\n        static::where('name', $this->name)\n            ->where('status', 'production')\n            ->update(['status' => 'archived']);\n\n        $this->update(['status' => 'production']);\n    }\n\n    public function archive(): void\n    {\n        $this->update(['status' => 'archived']);\n    }\n\n    public function scopeProduction(Builder $query, string $name): Builder\n    {\n        return $query->where('name', $name)->where('status', 'production');\n    }\n\n    public function scopeStaging(Builder $query, string $name): Builder\n    {\n        return $query->where('name', $name)->where('status', 'staging');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "83-feature-drift-detection",
+      children: "8.3 Feature Drift Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass DriftDetector\n{\n    private float $alertThreshold = 0.05; // 5% drift triggers alert\n    private int $windowSize = 1000;        // Number of recent predictions to analyze\n\n    public function checkFeatureDrift(string $modelName, array $currentFeatures): array\n    {\n        $baseline = $this->getBaselineStatistics($modelName);\n        $driftReport = [];\n\n        foreach ($currentFeatures as $feature => $value) {\n            if (!isset($baseline[$feature])) {\n                continue;\n            }\n\n            $stat = $baseline[$feature];\n            $drift = match ($stat['type']) {\n                'numeric' => $this->numericDrift($value, $stat),\n                'categorical' => $this->categoricalDrift($value, $stat),\n                default => 0,\n            };\n\n            if ($drift > $this->alertThreshold) {\n                $driftReport[$feature] = [\n                    'drift_score' => $drift,\n                    'current_value' => $value,\n                    'baseline_mean' => $stat['mean'] ?? null,\n                    'baseline_std' => $stat['std'] ?? null,\n                    'severity' => $drift > 0.1 ? 'high' : ($drift > 0.05 ? 'medium' : 'low'),\n                ];\n            }\n        }\n\n        if (!empty($driftReport)) {\n            Log::channel('ml-drift')->warning('Feature drift detected', [\n                'model' => $modelName,\n                'drifted_features' => $driftReport,\n            ]);\n        }\n\n        return $driftReport;\n    }\n\n    private function numericDrift(float $value, array $baseline): float\n    {\n        if ($baseline['std'] == 0) {\n            return $value === $baseline['mean'] ? 0 : 1;\n        }\n\n        $zScore = abs($value - $baseline['mean']) / $baseline['std'];\n        return min($zScore / 3, 1.0); // Normalize: 3+ std deviations = 1.0\n    }\n\n    private function categoricalDrift(string $value, array $baseline): float\n    {\n        $expectedFreq = $baseline['frequencies'][$value] ?? 0;\n        $baselineTotal = array_sum($baseline['frequencies']);\n\n        if ($baselineTotal === 0) return 1;\n\n        $expectedProb = $expectedFreq / $baselineTotal;\n        return 1 - $expectedProb;\n    }\n\n    private function getBaselineStatistics(string $modelName): array\n    {\n        $baseline = DB::table('feature_baselines')\n            ->where('model_name', $modelName)\n            ->latest('computed_at')\n            ->first();\n\n        return $baseline ? json_decode($baseline->statistics, true) : [];\n    }\n\n    public function computeBaseline(string $modelName): void\n    {\n        $recentFeatures = DB::table('feature_snapshots')\n            ->where('model_name', $modelName)\n            ->latest('snapshot_at')\n            ->limit($this->windowSize)\n            ->get();\n\n        if ($recentFeatures->isEmpty()) {\n            return;\n        }\n\n        $statistics = [];\n        foreach ($recentFeatures as $snapshot) {\n            $features = json_decode($snapshot->features, true);\n            foreach ($features as $feature => $value) {\n                if (!isset($statistics[$feature])) {\n                    $statistics[$feature] = ['values' => [], 'type' => is_numeric($value) ? 'numeric' : 'categorical'];\n                }\n                $statistics[$feature]['values'][] = $value;\n            }\n        }\n\n        $computed = [];\n        foreach ($statistics as $feature => $info) {\n            $values = $info['values'];\n            if ($info['type'] === 'numeric') {\n                $mean = array_sum($values) / count($values);\n                $variance = array_sum(array_map(fn($v) => ($v - $mean) ** 2, $values)) / count($values);\n                $computed[$feature] = [\n                    'type' => 'numeric',\n                    'mean' => $mean,\n                    'std' => sqrt($variance),\n                    'min' => min($values),\n                    'max' => max($values),\n                ];\n            } else {\n                $frequencies = array_count_values($values);\n                $computed[$feature] = [\n                    'type' => 'categorical',\n                    'frequencies' => $frequencies,\n                    'unique_count' => count($frequencies),\n                ];\n            }\n        }\n\n        DB::table('feature_baselines')->insert([\n            'model_name' => $modelName,\n            'statistics' => json_encode($computed),\n            'sample_count' => count($recentFeatures),\n            'computed_at' => now(),\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "84-concept-drift-detection",
+      children: "8.4 Concept Drift Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse App\\Models\\ModelRegistry;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass ConceptDriftDetector\n{\n    public function checkConceptDrift(string $modelName, array $predictions, array $groundTruths = []): array\n    {\n        if (empty($groundTruths)) {\n            $groundTruths = $this->getDelayedGroundTruths($modelName, $predictions);\n        }\n\n        if (empty($groundTruths) || empty($predictions)) {\n            return ['drift_detected' => false, 'reason' => 'insufficient_data'];\n        }\n\n        $correct = 0;\n        $total = min(count($predictions), count($groundTruths));\n\n        for ($i = 0; $i < $total; $i++) {\n            if ($predictions[$i]['predicted_label'] === $groundTruths[$i]['actual_label']) {\n                $correct++;\n            }\n        }\n\n        $accuracy = $correct / max($total, 1);\n\n        // Compare against moving window of previous accuracies\n        $recentAccuracy = $this->getRecentAccuracy($modelName);\n\n        $driftScore = $recentAccuracy ? ($recentAccuracy - $accuracy) / $recentAccuracy : 0;\n\n        $result = [\n            'drift_detected' => $driftScore > 0.1,  // 10% accuracy drop = drift\n            'current_accuracy' => $accuracy,\n            'baseline_accuracy' => $recentAccuracy,\n            'drift_score' => $driftScore,\n            'sample_size' => $total,\n        ];\n\n        if ($result['drift_detected']) {\n            Log::channel('ml-drift')->warning('Concept drift detected', [\n                'model' => $modelName,\n                'accuracy_drop' => $driftScore,\n            ]);\n        }\n\n        return $result;\n    }\n\n    private function getRecentAccuracy(string $modelName): ?float\n    {\n        $row = DB::table('model_performance_log')\n            ->where('model_name', $modelName)\n            ->orderBy('logged_at', 'desc')\n            ->first();\n\n        return $row?->accuracy;\n    }\n\n    private function getDelayedGroundTruths(string $modelName, array $predictions): array\n    {\n        // Fetch actual outcomes from business events\n        $predictionIds = array_column($predictions, 'prediction_id');\n\n        return DB::table('prediction_outcomes')\n            ->whereIn('prediction_id', $predictionIds)\n            ->select('prediction_id', 'actual_label')\n            ->get()\n            ->toArray();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "85-automated-retraining-triggers",
+      children: "8.5 Automated Retraining Triggers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse App\\Jobs\\TrainModelJob;\nuse App\\Models\\ModelRegistry;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass AutoRetrainer\n{\n    public function __construct(\n        private DriftDetector $driftDetector,\n        private ConceptDriftDetector $conceptDriftDetector,\n    ) {}\n\n    public function evaluateAndRetrain(string $modelName): array\n    {\n        $model = ModelRegistry::production($modelName)->first();\n\n        if (!$model) {\n            return ['action' => 'no_production_model', 'model' => $modelName];\n        }\n\n        $actions = [];\n\n        // Check feature drift\n        $featureDrift = $this->driftDetector->checkFeatureDrift(\n            $modelName,\n            $this->getCurrentFeatureDistribution($modelName)\n        );\n\n        if (!empty($featureDrift)) {\n            $actions[] = 'feature_drift_detected';\n        }\n\n        // Check concept drift\n        $recentPredictions = $this->getRecentPredictions($modelName);\n        $conceptDrift = $this->conceptDriftDetector->checkConceptDrift(\n            $modelName,\n            $recentPredictions\n        );\n\n        if ($conceptDrift['drift_detected']) {\n            $actions[] = 'concept_drift_detected';\n        }\n\n        // Check time-based retraining window\n        $daysSinceTraining = now()->diffInDays($model->trained_at);\n        if ($daysSinceTraining >= 30) {\n            $actions[] = 'retraining_window_exceeded';\n        }\n\n        // Check for new training data\n        $newSamples = $this->countNewTrainingSamples($modelName, $model->trained_at);\n        if ($newSamples > 10000) {\n            $actions[] = 'sufficient_new_data';\n        }\n\n        // Decide whether to retrain\n        $shouldRetrain = count($actions) >= 2\n            || in_array('concept_drift_detected', $actions)\n            || ($daysSinceTraining >= 30 && $newSamples > 1000);\n\n        if ($shouldRetrain) {\n            $newVersion = $this->bumpVersion($modelName);\n\n            TrainModelJob::dispatch($modelName, $newVersion);\n\n            Log::channel('ml-ops')->info('Auto-retraining triggered', [\n                'model' => $modelName,\n                'current_version' => $model->version,\n                'new_version' => $newVersion,\n                'reasons' => $actions,\n            ]);\n\n            return [\n                'action' => 'retraining_initiated',\n                'current_version' => $model->version,\n                'new_version' => $newVersion,\n                'reasons' => $actions,\n            ];\n        }\n\n        return [\n            'action' => 'no_retraining_needed',\n            'reasons' => $actions,\n        ];\n    }\n\n    private function bumpVersion(string $modelName): string\n    {\n        $latest = ModelRegistry::where('name', $modelName)\n            ->latest('trained_at')\n            ->first();\n\n        if (!$latest) {\n            return '1.0.0';\n        }\n\n        $parts = explode('.', $latest->version);\n        $parts[count($parts) - 1] = (int) ($parts[count($parts) - 1] ?? 0) + 1;\n\n        return implode('.', $parts);\n    }\n\n    private function getCurrentFeatureDistribution(string $modelName): array\n    {\n        return DB::table('feature_snapshots')\n            ->where('model_name', $modelName)\n            ->latest('snapshot_at')\n            ->limit(1000)\n            ->get()\n            ->reduce(function ($carry, $snapshot) {\n                $features = json_decode($snapshot->features, true) ?? [];\n                foreach ($features as $key => $value) {\n                    if (!isset($carry[$key])) $carry[$key] = $value;\n                }\n                return $carry;\n            }, []);\n    }\n\n    private function getRecentPredictions(string $modelName): array\n    {\n        return DB::table('prediction_log')\n            ->where('model_name', $modelName)\n            ->latest('created_at')\n            ->limit(500)\n            ->get(['prediction_id', 'predicted_label'])\n            ->toArray();\n    }\n\n    private function countNewTrainingSamples(string $modelName, $since): int\n    {\n        return DB::table('training_data')\n            ->where('model_name', $modelName)\n            ->where('created_at', '>', $since)\n            ->count();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "86-deployment-strategies",
+      children: "8.6 Deployment Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse App\\Models\\ModelRegistry;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass ModelDeployer\n{\n    /**\n     * Shadow deployment: deploy the new model alongside production\n     * but only log its predictions. No user impact.\n     */\n    public function deployShadow(ModelRegistry $newModel): void\n    {\n        $newModel->update(['status' => 'shadow']);\n\n        Log::channel('ml-ops')->info('Model deployed as shadow', [\n            'model' => $newModel->name,\n            'version' => $newModel->version,\n        ]);\n    }\n\n    /**\n     * Promote shadow to canary: route 5% of traffic to the new model.\n     * Monitor metrics before expanding.\n     */\n    public function promoteToCanary(ModelRegistry $model, int $trafficPercent = 5): void\n    {\n        $model->update([\n            'status' => 'canary',\n            'parameters' => array_merge($model->parameters ?? [], [\n                'canary_traffic_percent' => $trafficPercent,\n            ]),\n        ]);\n\n        Log::channel('ml-ops')->info('Model promoted to canary', [\n            'model' => $model->name,\n            'version' => $model->version,\n            'traffic_percent' => $trafficPercent,\n        ]);\n    }\n\n    /**\n     * Blue-green: instant switch with immediate rollback capability.\n     */\n    public function blueGreenDeploy(ModelRegistry $newModel): void\n    {\n        $production = ModelRegistry::production($newModel->name)->first();\n\n        // Mark the new model as the \"blue\" (active) deployment\n        $newModel->update(['status' => 'production']);\n\n        // The previous production becomes \"green\" (standby)\n        if ($production) {\n            $production->update(['status' => 'green']);\n        }\n\n        Log::channel('ml-ops')->info('Blue-green deployment complete', [\n            'model' => $newModel->name,\n            'blue_version' => $newModel->version,\n            'green_version' => $production?->version,\n        ]);\n    }\n\n    /**\n     * Rollback: switch back to the previous version.\n     */\n    public function rollback(string $modelName): ?ModelRegistry\n    {\n        $current = ModelRegistry::production($modelName)->first();\n        $previous = ModelRegistry::where('name', $modelName)\n            ->whereIn('status', ['green', 'archived'])\n            ->latest('trained_at')\n            ->first();\n\n        if (!$previous) {\n            Log::channel('ml-ops')->warning('Rollback failed — no previous model', [\n                'model' => $modelName,\n            ]);\n            return null;\n        }\n\n        if ($current) {\n            $current->update(['status' => 'archived']);\n        }\n\n        $previous->update(['status' => 'production']);\n\n        Log::channel('ml-ops')->warning('Model rolled back', [\n            'model' => $modelName,\n            'from_version' => $current?->version,\n            'to_version' => $previous->version,\n        ]);\n\n        return $previous;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "87-monitoring-model-performance-with-laravel-pulse",
+      children: "8.7 Monitoring Model Performance with Laravel Pulse"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create a custom Pulse recorder for ML model metrics:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Services\\MlOps;\n\nuse Illuminate\\Support\\Facades\\DB;\nuse Laravel\\Pulse\\Recorders\\Concerns\\Sampling;\n\nclass MlPerformanceRecorder\n{\n    use Sampling;\n\n    public function record(array $prediction, array $outcome): void\n    {\n        if (!$this->shouldSample()) {\n            return;\n        }\n\n        $correct = $prediction['predicted_label'] === ($outcome['actual_label'] ?? null) ? 1 : 0;\n\n        DB::table('model_performance_log')->insert([\n            'model_name' => $prediction['model_name'],\n            'model_version' => $prediction['model_version'],\n            'prediction_id' => $prediction['prediction_id'],\n            'predicted_label' => $prediction['predicted_label'],\n            'actual_label' => $outcome['actual_label'] ?? null,\n            'confidence' => $prediction['confidence'],\n            'correct' => $correct,\n            'latency_ms' => $prediction['latency_ms'],\n            'logged_at' => now(),\n        ]);\n    }\n\n    public function computeAggregates(string $modelName, string $interval = '1 hour'): array\n    {\n        $since = now()->sub($interval);\n\n        $stats = DB::table('model_performance_log')\n            ->where('model_name', $modelName)\n            ->where('logged_at', '>=', $since)\n            ->selectRaw('\n                COUNT(*) as total_predictions,\n                SUM(correct) as correct_predictions,\n                AVG(confidence) as avg_confidence,\n                AVG(latency_ms) as avg_latency_ms,\n                AVG(CASE WHEN correct = 1 THEN confidence END) as avg_confidence_when_correct,\n                AVG(CASE WHEN correct = 0 THEN confidence END) as avg_confidence_when_wrong\n            ')\n            ->first();\n\n        return [\n            'model' => $modelName,\n            'interval' => $interval,\n            'total_predictions' => (int) $stats->total_predictions,\n            'accuracy' => $stats->total_predictions > 0\n                ? $stats->correct_predictions / $stats->total_predictions\n                : 0,\n            'avg_confidence' => (float) $stats->avg_confidence,\n            'avg_latency_ms' => (float) $stats->avg_latency_ms,\n            'calibration_error' => $this->calibrationError(\n                $stats->avg_confidence_when_correct,\n                $stats->avg_confidence_when_wrong\n            ),\n        ];\n    }\n\n    private function calibrationError(?float $correctConf, ?float $wrongConf): float\n    {\n        if ($correctConf === null || $wrongConf === null) {\n            return 0;\n        }\n        // Well-calibrated: high confidence when correct, low when wrong\n        return $correctConf - $wrongConf;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "88-metric-configuration-for-laravel-pulse",
+      children: "8.8 Metric Configuration for Laravel Pulse"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\n// config/pulse.php — ML-specific Pulse configuration\n\nreturn [\n    'recorders' => [\n        // ... existing recorders ...\n\n        \\App\\Services\\MlOps\\MlPerformanceRecorder::class => [\n            'enabled' => env('PULSE_ML_RECORDER_ENABLED', true),\n            'sample_rate' => env('PULSE_ML_SAMPLE_RATE', 0.1),\n        ],\n    ],\n];\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Custom Pulse card for the dashboard:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-blade",
+        children: "{{-- resources/views/vendor/pulse/cards/ml-model-performance.blade.php --}}\n<x-pulse::card :cols=\"$cols\" :rows=\"$rows\" :class=\"$class\">\n    <x-pulse::card-header name=\"ML Model Performance\">\n        <x-slot:icon>\n            <x-pulse::icons.box />\n        </x-slot:icon>\n    </x-pulse::card-header>\n\n    <x-pulse::scroll>\n        <div class=\"grid grid-cols-2 gap-4 p-4\">\n            @foreach($models as $model)\n                <div class=\"rounded-lg border p-3\">\n                    <div class=\"font-medium text-sm\">{{ $model['name'] }} v{{ $model['version'] }}</div>\n                    <div class=\"mt-2 space-y-1 text-xs\">\n                        <div class=\"flex justify-between\">\n                            <span>Accuracy</span>\n                            <span class=\"font-mono\">{{ number_format($model['accuracy'] * 100, 1) }}%</span>\n                        </div>\n                        <div class=\"flex justify-between\">\n                            <span>Avg Latency</span>\n                            <span class=\"font-mono\">{{ number_format($model['avg_latency_ms'], 1) }}ms</span>\n                        </div>\n                        <div class=\"flex justify-between\">\n                            <span>Predictions (1h)</span>\n                            <span class=\"font-mono\">{{ number_format($model['total_predictions']) }}</span>\n                        </div>\n                    </div>\n                </div>\n            @endforeach\n        </div>\n    </x-pulse::scroll>\n</x-pulse::card>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare key AI/ML concepts for Laravel integration."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Feature"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised Learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predict from labeled data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classification + regression"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unsupervised Learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discover patterns in unlabeled data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clustering + dimensionality reduction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reinforcement Learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learn through interaction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reward-based optimization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Overfitting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model too complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High variance, poor generalization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Underfitting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model too simple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High bias, poor performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Transfer Learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reuse pre-trained models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Faster training with less data"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Start with supervised learning for structured data before exploring deep learning. Most Laravel ML use cases are well-served by tree-based models."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for AI/ML fundamentals."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ML Types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised, Unsupervised, Reinforcement, Semi-supervised"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP-ML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classification, Regression, Clustering, Association learning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rubix ML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipelines, Neural Networks, Anomaly Detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Laravel AI SDK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agents, Tools, Embeddings, RAG, MCP, Media"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MLOps Concepts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Experiment tracking, model registry, drift detection, deployment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NLP Pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tokenization, TF-IDF, word embeddings, sentiment analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One-hot encoding, scaling, PCA, feature selection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " ML models in production can drift. Implement monitoring for feature drift and retrain on a schedule, not just when accuracy drops."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ML Paradigm Selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Problem type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Labeled data vs unsupervised approach"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Model Selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy needs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity vs interpretability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data preparation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Domain expertise vs automated methods"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Model Deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance vs resource usage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MLOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model lifecycle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation vs infrastructure complexity"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always split your data into training, validation, and test sets. Never tune hyperparameters using test set results."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your AI/ML fundamentals knowledge."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " Which ML type uses labeled training data?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Unsupervised learning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Supervised learning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Reinforcement learning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Semi-supervised learning"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Supervised learning</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " What indicates model overfitting?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Poor performance on both train and test"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) High training accuracy but poor test accuracy"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Equal train and test performance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Perfect test accuracy"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) High training accuracy but poor test accuracy</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " Which PHP library provides ML pipelines and neural network support?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) PHP-ML"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Rubix ML"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Laravel AI SDK"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) TensorFlow PHP"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) Rubix ML</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " What does RAG stand for in the Laravel AI SDK?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Rapid Application Generation"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) Retrieval-Augmented Generation"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Real-time Algorithm Grid"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Random Access Generator"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) Retrieval-Augmented Generation</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare key AI/ML concepts for Laravel integration."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Purpose"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Feature"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supervised Learning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Predict from labeled data"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Classification + regression"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Unsupervised Learning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Discover patterns in unlabeled data"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Clustering + dimensionality reduction"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Reinforcement Learning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Learn through interaction"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Reward-based optimization"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Overfitting"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Model too complex"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "High variance, poor generalization"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Underfitting"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Model too simple"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "High bias, poor performance"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Transfer Learning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Reuse pre-trained models"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Faster training with less data"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for AI/ML fundamentals."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "ML Types"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supervised, Unsupervised, Reinforcement, Semi-supervised"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Evaluation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "PHP-ML"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Classification, Regression, Clustering, Association learning"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Rubix ML"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Pipelines, Neural Networks, Anomaly Detection"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Laravel AI SDK"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Agents, Tools, Embeddings, RAG, MCP, Media"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "MLOps Concepts"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Experiment tracking, model registry, drift detection, deployment"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "NLP Pipeline"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Tokenization, TF-IDF, word embeddings, sentiment analysis"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Feature Engineering"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "One-hot encoding, scaling, PCA, feature selection"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "ML Paradigm Selection"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Problem type"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Labeled data vs unsupervised approach"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Model Selection"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Accuracy needs"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Complexity vs interpretability"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Feature Engineering"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Data preparation"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Domain expertise vs automated methods"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Model Deployment"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Production"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Performance vs resource usage"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "MLOps"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Model lifecycle"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Automation vs infrastructure complexity"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your AI/ML fundamentals knowledge."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " Which ML type uses labeled training data?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Unsupervised learning"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Supervised learning"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Reinforcement learning"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Semi-supervised learning"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Supervised learning</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " What indicates model overfitting?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Poor performance on both train and test"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) High training accuracy but poor test accuracy"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Equal train and test performance"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) Perfect test accuracy"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) High training accuracy but poor test accuracy</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " Which PHP library provides ML pipelines and neural network support?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) PHP-ML"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) Rubix ML"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) Laravel AI SDK"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) TensorFlow PHP"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) Rubix ML</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " What does RAG stand for in the Laravel AI SDK?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Rapid Application Generation"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) Retrieval-Augmented Generation"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Real-time Algorithm Grid"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Random Access Generator"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) Retrieval-Augmented Generation</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare key AI/ML concepts for Laravel integration."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Purpose"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Feature"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supervised Learning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Predict from labeled data"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Classification + regression"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Unsupervised Learning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Discover patterns in unlabeled data"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Clustering + dimensionality reduction"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Reinforcement Learning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Learn through interaction"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Reward-based optimization"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Overfitting"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Model too complex"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "High variance, poor generalization"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Underfitting"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Model too simple"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "High bias, poor performance"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Transfer Learning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Reuse pre-trained models"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Faster training with less data"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for AI/ML fundamentals."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "ML Types"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supervised, Unsupervised, Reinforcement, Semi-supervised"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Evaluation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "PHP-ML"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Classification, Regression, Clustering, Association learning"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Rubix ML"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Pipelines, Neural Networks, Anomaly Detection"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Laravel AI SDK"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Agents, Tools, Embeddings, RAG, MCP, Media"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "MLOps Concepts"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Experiment tracking, model registry, drift detection, deployment"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "NLP Pipeline"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Tokenization, TF-IDF, word embeddings, sentiment analysis"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Feature Engineering"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "One-hot encoding, scaling, PCA, feature selection"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "ML Paradigm Selection"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Problem type"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Labeled data vs unsupervised approach"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Model Selection"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Accuracy needs"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Complexity vs interpretability"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Feature Engineering"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Data preparation"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Domain expertise vs automated methods"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Model Deployment"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Production"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Performance vs resource usage"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "MLOps"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Model lifecycle"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Automation vs infrastructure complexity"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your AI/ML fundamentals knowledge."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " Which ML type uses labeled training data?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Unsupervised learning"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Supervised learning"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Reinforcement learning"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Semi-supervised learning"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Supervised learning</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " What indicates model overfitting?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Poor performance on both train and test"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) High training accuracy but poor test accuracy"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Equal train and test performance"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) Perfect test accuracy"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) High training accuracy but poor test accuracy</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " Which PHP library provides ML pipelines and neural network support?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) PHP-ML"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) Rubix ML"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) Laravel AI SDK"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) TensorFlow PHP"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) Rubix ML</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " What does RAG stand for in the Laravel AI SDK?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Rapid Application Generation"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) Retrieval-Augmented Generation"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Real-time Algorithm Grid"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Random Access Generator"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) Retrieval-Augmented Generation</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare key AI/ML concepts for Laravel integration."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Purpose"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Feature"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supervised Learning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Predict from labeled data"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Classification + regression"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Unsupervised Learning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Discover patterns in unlabeled data"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Clustering + dimensionality reduction"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Reinforcement Learning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Learn through interaction"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Reward-based optimization"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Overfitting"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Model too complex"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "High variance, poor generalization"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Underfitting"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Model too simple"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "High bias, poor performance"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Transfer Learning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Reuse pre-trained models"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Faster training with less data"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for AI/ML fundamentals."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "ML Types"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supervised, Unsupervised, Reinforcement, Semi-supervised"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Evaluation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "PHP-ML"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Classification, Regression, Clustering, Association learning"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Rubix ML"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Pipelines, Neural Networks, Anomaly Detection"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Laravel AI SDK"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Agents, Tools, Embeddings, RAG, MCP, Media"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "MLOps Concepts"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Experiment tracking, model registry, drift detection, deployment"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "NLP Pipeline"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Tokenization, TF-IDF, word embeddings, sentiment analysis"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Feature Engineering"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "One-hot encoding, scaling, PCA, feature selection"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "ML Paradigm Selection"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Problem type"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Labeled data vs unsupervised approach"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Model Selection"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Accuracy needs"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Complexity vs interpretability"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Feature Engineering"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Data preparation"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Domain expertise vs automated methods"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Model Deployment"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Production"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Performance vs resource usage"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "MLOps"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Model lifecycle"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Automation vs infrastructure complexity"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your AI/ML fundamentals knowledge."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " Which ML type uses labeled training data?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Unsupervised learning"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Supervised learning"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Reinforcement learning"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Semi-supervised learning"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Supervised learning</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " What indicates model overfitting?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Poor performance on both train and test"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) High training accuracy but poor test accuracy"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Equal train and test performance"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) Perfect test accuracy"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) High training accuracy but poor test accuracy</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " Which PHP library provides ML pipelines and neural network support?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) PHP-ML"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Rubix ML"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) Laravel AI SDK"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) TensorFlow PHP"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Rubix ML</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " What does RAG stand for in the Laravel AI SDK?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Rapid Application Generation"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) Retrieval-Augmented Generation"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Real-time Algorithm Grid"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Random Access Generator"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) Retrieval-Augmented Generation</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "This chapter introduced the complete pipeline for integrating machine learning into Laravel applications, spanning both classical ML algorithms and modern LLM-based AI."
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Machine Learning Fundamentals"
+                                                                      }), ": We established the three paradigms — supervised learning (regression and classification with labeled data), unsupervised learning (clustering and association discovery without labels), and reinforcement learning (agent-environment interaction). The training/validation/test split, bias-variance tradeoff, and evaluation metrics (accuracy, precision, recall, F1, RMSE, MAE, R²) form the theoretical foundation for every ML project."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Classical ML with PHP-ML"
+                                                                      }), ": PHP-ML provides accessible implementations of the most important algorithms — LeastSquares regression, Naive Bayes classification, SVM with configurable kernels, K-Nearest Neighbors, K-Means and DBSCAN clustering, and Apriori association learning. Dataset management with CSV loading, random and stratified splitting, k-fold cross-validation, and model persistence via the ModelManager complete the workflow."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Advanced ML with Rubix ML"
+                                                                      }), ": Rubix ML introduces pipelines, transformers (StandardScaler, MinMaxScaler, OneHotEncoder, MissingDataImputer), and more sophisticated learners including LogisticRegression with Adam optimization, MultilayerPerceptron with configurable hidden layers and dropout regularization, Random Forest with feature importance scoring, and anomaly detectors (IsolationForest, LocalOutlierFactor). RBX serialization provides production-grade model persistence."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Natural Language Processing"
+                                                                      }), ": PHP-ML's tokenizers (Whitespace, Word, N-Gram, SkipGram), stop word removal, TF-IDF vectorization, and the Porter Stemmer enable building text classification and sentiment analysis pipelines entirely in PHP."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Laravel ML Workflow"
+                                                                      }), ": Artisan commands encapsulate training pipelines. The scheduler enables periodic retraining. A model registry database table tracks versioning. A/B testing splits traffic between model versions. Feature stores in Redis and MySQL provide low-latency feature access."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Hybrid AI Integration"
+                                                                      }), ": Classical ML models exposed as Laravel AI SDK tools give LLM agents direct access to structured predictions. The agent can call a churn model, receive probability scores, and synthesize natural-language explanations with business recommendations — combining the reliability of statistical models with the reasoning flexibility of large language models."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Feature Engineering"
+                                                                      }), ": Complete data pipelines for collection, cleaning (null handling, IQR outlier removal, capping), transformation (min-max scaling, standard scaling, log transform, one-hot encoding, interaction terms), feature selection (correlation, variance, mutual information), and batch queue processing prepare production data for training."]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "MLOps"
+                                                                      }), ": Experiment tracking logs every training run with parameters and metrics. The model registry manages staging, production, shadow, canary, and green versions. Feature drift and concept drift detectors trigger automatic retraining. Deployment strategies (shadow → canary → blue-green) with immediate rollback capability ensure safe model updates."]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "exercises",
+                                                                      children: "Exercises"
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "review-questions",
+                                                                      children: "Review Questions"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "What is the difference between supervised and unsupervised learning? Give two examples of each from a Laravel e-commerce application."
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Explain the bias-variance tradeoff. How does increasing the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "cost"
+                                                                          }), " parameter in an SVM affect bias and variance?"]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "Why is it essential to keep the test set separate from the training set? What happens if you use test set performance to tune hyperparameters?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "Compare PHP-ML's Naive Bayes with Rubix ML's LogisticRegression. When would you choose one over the other?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "What is the purpose of a pipeline in Rubix ML? How does it simplify the training and prediction workflow?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "Explain the difference between TF-IDF and simple token count vectorization. Why does TF-IDF often produce better classification results?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "How would you structure a Laravel Artisan command that trains a model weekly and logs results to a database table?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "Describe the flow of a hybrid prediction endpoint that combines a Rubix ML classifier with an LLM agent explanation. What are the advantages of this approach?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "What is feature drift and how does it differ from concept drift? Give a concrete example of each."
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "Compare shadow deployment, canary deployment, and blue-green deployment. When would you use each strategy?"
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "application-problems",
+                                                                      children: "Application Problems"
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Problem 1: Sentiment Analysis Pipeline"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Build a complete sentiment analysis system using PHP-ML that:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Loads a CSV dataset with two columns: ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "text"
+                                                                        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "label"
+                                                                        })]
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Tokenizes text, removes stop words, and applies TF-IDF transformation"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Trains a Naive Bayes classifier"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Evaluates with a confusion matrix and F1 score"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Persists the trained model and pipeline state"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Provides a Laravel Artisan command for training and a controller method for prediction"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Problem 2: Customer Churn Predictor with Rubix ML"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Create a customer churn prediction service using Rubix ML that:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Defines a feature set (total orders, avg order value, days since last order, negative review ratio, account age, subscription status)"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Trains a LogisticRegression model with StandardScaler in a pipeline"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Uses 5-fold cross-validation and reports mean accuracy and standard deviation"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Saves the model in RBX format"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Exposes the model as a Laravel AI SDK tool so an agent can predict churn and explain the result"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implements feature drift monitoring on the model's input distribution"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Problem 3: Product Recommendation Engine"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Implement a hybrid recommendation engine that:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Uses Apriori association learning (PHP-ML) to find products frequently bought together"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Stores association rules in the database and refreshes them daily via the Laravel scheduler"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Creates a Laravel AI SDK tool that retrieves association rules for a given cart"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Builds an agent that takes cart contents, fetches association rules, and produces ranked natural-language recommendations"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Logs recommendation performance (click-through rate, conversion rate) for MLOps monitoring"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Problem 4: Model Registry and Deployment"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Implement a complete model lifecycle management system:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Create the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "model_registry"
+                                                                        }), " migration and model"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Build an Artisan command ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ml:register"
+                                                                        }), " that saves a trained model and registers it"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Build an Artisan command ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ml:promote"
+                                                                        }), " that moves a model from staging to production"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ModelDeployer"
+                                                                        }), " service with shadow, canary (5% traffic), and blue-green strategies"]
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Create a rollback mechanism that switches back to the previous production model"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Add Pulse monitoring cards showing accuracy, latency, and prediction volume per model"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "challenge-problems",
+                                                                      children: "Challenge Problems"
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Challenge 1: Multi-Model Fraud Detection System"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Build a fraud detection system that combines multiple ML models with LLM reasoning:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Train three models: an IsolationForest anomaly detector (Rubix ML), a LogisticRegression classifier (Rubix ML), and an SVM classifier (PHP-ML)"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Create a Laravel AI SDK tool that runs all three models on an order and returns their predictions"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Build an agent that receives the three predictions, resolves conflicts, and produces a final fraud decision with explanation"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implement a human-in-the-loop pattern: low-confidence predictions trigger a notification to the fraud team"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Track model performance (precision, recall, false positive rate) per model and overall system accuracy"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implement automated retraining when fraud patterns shift (concept drift)"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Challenge 2: Real-Time Feature Engineering Pipeline"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Design a real-time feature engineering system:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Use Laravel queues to process feature computation asynchronously"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implement a Redis-backed feature store with TTL-based cache invalidation"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Build a CDC (Change Data Capture) pattern using Eloquent model events to trigger feature recomputation when user data changes"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Create a batch feature engineering job that recomputes features for all active users nightly"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implement feature validation (null checks, range checks, distribution checks) before features enter the store"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Add a feature importance analysis that runs weekly and recommends feature removal or addition"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Challenge 3: Self-Optimizing Prediction System"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Build a system that automatically improves its own predictions:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Two models serve predictions simultaneously (A/B test with 50/50 split)"
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["An ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "MlPerformanceRecorder"
+                                                                        }), " logs every prediction and its eventual outcome"]
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "A weekly evaluation job compares the models on accuracy, calibration (confidence calibration curve), latency, and coverage"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "The better-performing model automatically gets 60% traffic next week; the underperformer gets 40%"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "If a model's accuracy drops more than 5% below its baseline, trigger an alert and rollback"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "If both models degrade simultaneously, suspect data or concept drift and alert the ML team"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Generate a weekly report with model comparison charts and drift analysis"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Challenge 4: LLM-Augmented Recommendation with Feedback Loop"
+                                                                      })
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Create a recommendation system that learns from user feedback:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Train a PHP-ML K-Means clustering model on user purchase history to create customer segments"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Train a Rubix ML Random Forest to predict product preferences within each segment"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Create an LLM agent that receives customer segment, predicted preferences, and real-time context (season, inventory, promotions) to generate personalized recommendations"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Track user engagement with each recommendation (click, add-to-cart, purchase, ignore)"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Feed engagement data back as training data for the next model retraining cycle"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Implement a bandit algorithm: the system explores new recommendations 10% of the time and exploits known preferences 90% of the time"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "Monitor for recommendation feedback loops (the system only recommends what users have already bought) and apply exploration noise when detected"
+                                                                      }), "\n"]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

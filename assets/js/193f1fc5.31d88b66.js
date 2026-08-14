@@ -1,0 +1,1539 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[97267],{
+
+/***/ 94315
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_discrete_mathematics_11_algebra_md_193_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-discrete-mathematics-11-algebra-md-193.json
+const site_docs_courses_discrete_mathematics_11_algebra_md_193_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/discrete-mathematics/11-algebra","title":"Chapter 11: Algebraic Structures","description":"Previous Trees | Next Boolean Algebra","source":"@site/docs/courses/discrete-mathematics/11-algebra.md","sourceDirName":"courses/discrete-mathematics","slug":"/discrete-mathematics/11-algebra","permalink":"/ai-engineering-journey/discrete-mathematics/11-algebra","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"11-algebra","slug":"/discrete-mathematics/11-algebra","title":"Chapter 11: Algebraic Structures","sidebar_label":"Chapter 11: Algebraic Structures","sidebar_position":11},"sidebar":"course-discrete-mathematics","previous":{"title":"Chapter 10: Trees","permalink":"/ai-engineering-journey/discrete-mathematics/10-trees"},"next":{"title":"Chapter 12: Boolean Algebra","permalink":"/ai-engineering-journey/discrete-mathematics/12-boolean"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/discrete-mathematics/11-algebra.md
+
+
+const frontMatter = {
+	id: '11-algebra',
+	slug: '/discrete-mathematics/11-algebra',
+	title: 'Chapter 11: Algebraic Structures',
+	sidebar_label: 'Chapter 11: Algebraic Structures',
+	sidebar_position: 11
+};
+const contentTitle = 'Chapter 11: Algebraic Structures';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "11.1 Binary Operations",
+  "id": "111-binary-operations",
+  "level": 3
+}, {
+  "value": "11.2 Semigroups and Monoids",
+  "id": "112-semigroups-and-monoids",
+  "level": 3
+}, {
+  "value": "11.3 Groups",
+  "id": "113-groups",
+  "level": 3
+}, {
+  "value": "11.4 Examples of Groups",
+  "id": "114-examples-of-groups",
+  "level": 3
+}, {
+  "value": "11.5 Cyclic Groups",
+  "id": "115-cyclic-groups",
+  "level": 3
+}, {
+  "value": "11.6 Permutation Groups",
+  "id": "116-permutation-groups",
+  "level": 3
+}, {
+  "value": "11.7 Rings and Fields",
+  "id": "117-rings-and-fields",
+  "level": 3
+}, {
+  "value": "11.8 Homomorphisms and Isomorphisms",
+  "id": "118-homomorphisms-and-isomorphisms",
+  "level": 3
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "11.9 Direct Sums and Product Groups",
+  "id": "119-direct-sums-and-product-groups",
+  "level": 3
+}, {
+  "value": "11.10 The Classification of Finite Fields",
+  "id": "1110-the-classification-of-finite-fields",
+  "level": 3
+}, {
+  "value": "TypeScript Implementations",
+  "id": "typescript-implementations",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "11.6 Group Actions and Applications",
+  "id": "116-group-actions-and-applications",
+  "level": 3
+}, {
+  "value": "11.7 Rings and Fields in Depth",
+  "id": "117-rings-and-fields-in-depth",
+  "level": 3
+}, {
+  "value": "11.8 Group Homomorphisms and Isomorphism Theorems",
+  "id": "118-group-homomorphisms-and-isomorphism-theorems",
+  "level": 3
+}, {
+  "value": "11.9 Algebraic Structures in Cryptography",
+  "id": "119-algebraic-structures-in-cryptography",
+  "level": 3
+}, {
+  "value": "11.10 Cayley Tables and Subgroup Lattices",
+  "id": "1110-cayley-tables-and-subgroup-lattices",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-11-algebraic-structures",
+        children: "Chapter 11: Algebraic Structures"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/discrete-mathematics/10-trees",
+          children: "Chapter 10: Trees"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/discrete-mathematics/12-boolean",
+          children: "Chapter 12: Boolean Algebra"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After completing this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/discrete-mathematics/11-algebra/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/discrete-mathematics/11-algebra/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/discrete-mathematics/11-algebra/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/discrete-mathematics/11-algebra/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/discrete-mathematics/11-algebra/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/discrete-mathematics/11-algebra/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define binary operations and identify their properties (closure, associativity, commutativity, identity, inverses)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recognize groups, semigroups, monoids, rings, and fields"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply group axioms and prove basic group properties"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand subgroups, cyclic groups, and permutation groups"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish between homomorphisms and isomorphisms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model cryptographic and combinatorial problems using group theory"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary Operations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combines two elements to produce a third"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Properties (closure, associative, commutative) define the structure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semigroups & Monoids"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Associativity (semigroup) + identity (monoid)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strings under concatenation form a monoid"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Associativity, identity, inverses, closure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Symmetries, rotations, permutations form groups"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Abelian Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Groups where the operation is commutative"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Addition mod $n$ is an abelian group"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cyclic Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generated by a single element"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$(\\mathbb{Z}_n, +)$ is cyclic; generator must be coprime to $n$"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two operations: addition (group) and multiplication (semigroup)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$\\mathbb{Z}$, $\\mathbb{Z}_n$, polynomial rings"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fields"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every non-zero element has a multiplicative inverse"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$\\mathbb{Q}$, $\\mathbb{R}$, $\\mathbb{C}$, $\\mathbb{Z}_p$ for prime $p$"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Homomorphism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Preserves the operation between structures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundation for structure comparison and coding theory"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Binary Operation] --> B[Properties]\n    B --> C[Closure]\n    B --> D[Associativity]\n    B --> E[Commutativity]\n    B --> F[Identity]\n    B --> G[Inverse]\n    A --> H[Algebraic Structures]\n    H --> I[Semigroup]\n    I --> J[Monoid]\n    J --> K[Group]\n    K --> L[Abelian Group]\n    K --> M[Cyclic Group]\n    K --> N[Permutation Group]\n    H --> O[Ring]\n    O --> P[Integral Domain]\n    P --> Q[Field]\n    H --> R[Homomorphism]\n    R --> S[Isomorphism]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-binary-operations",
+      children: "11.1 Binary Operations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "binary operation"
+      }), " on a set $S$ is a function $* : S \\times S \\rightarrow S$. For $a, b \\in S$, $a * b$ denotes the result."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Properties:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Closure:"
+        }), " $a * b \\in S$ for all $a, b \\in S$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Associativity:"
+        }), " $(a * b) * c = a * (b * c)$ for all $a, b, c \\in S$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Commutativity:"
+        }), " $a * b = b * a$ for all $a, b \\in S$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identity:"
+        }), " There exists $e \\in S$ such that $a * e = e * a = a$ for all $a \\in S$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inverse:"
+        }), " For each $a \\in S$, there exists $b \\in S$ such that $a * b = b * a = e$."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A binary operation combines two elements; the properties it satisfies define the type of algebraic structure."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-semigroups-and-monoids",
+      children: "11.2 Semigroups and Monoids"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Semigroup:"
+      }), " A set $S$ with an associative binary operation $*$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Example: $(\\mathbb{Z}^+, +)$ is a semigroup."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Example: Strings under concatenation form a semigroup."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Monoid:"
+      }), " A semigroup with an identity element."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Example: Strings under concatenation with the empty string $\\epsilon$ as identity."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Example: $(\\mathbb{Z}, +)$ with identity 0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Example: $(\\mathbb{Z}, \\times)$ with identity 1."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A semigroup requires associativity; a monoid adds an identity element."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-groups",
+      children: "11.3 Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "group"
+      }), " $(G, ", (0,jsx_runtime.jsx)(_components.em, {
+        children: ")$ is a set $G$ with a binary operation $"
+      }), "$ satisfying:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Closure:"
+        }), " $a * b \\in G$ for all $a, b$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Associativity:"
+        }), " $(a * b) * c = a * (b * c)$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identity:"
+        }), " There exists $e \\in G$ with $a * e = e * a = a$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inverse:"
+        }), " For each $a$, there exists $a^{-1}$ with $a * a^{-1} = a^{-1} * a = e$."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.1 (Uniqueness)."
+      }), " The identity element is unique. Each element has a unique inverse."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.2 (Cancellation laws)."
+      }), " In any group:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If $a * b = a * c$, then $b = c$ (left cancellation)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If $b * a = c * a$, then $b = c$ (right cancellation)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Abelian group:"
+      }), " A group where $*$ is commutative."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Order of a group:"
+      }), " $|G|$, the number of elements."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Order of an element:"
+      }), " The smallest positive integer $n$ such that $a^n = e$ (where $a^n$ means $a * a * \\cdots * a$, $n$ times)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.3 (Subgroup criterion)."
+      }), " A non-empty subset $H \\subseteq G$ is a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "subgroup"
+      }), " ($H \\leq G$) if and only if $a, b \\in H \\implies a * b^{-1} \\in H$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A group is a set with an associative operation that has an identity and inverses; groups are the central objects of algebraic study."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "114-examples-of-groups",
+      children: "11.4 Examples of Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "$(\\mathbb{Z}, +)$:"
+      }), " Integers under addition. Identity 0. Inverse of $n$ is $-n$. Infinite abelian group."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "$(\\mathbb{Z}_n, +)$:"
+      }), " Integers modulo $n$ under addition modulo $n$. Identity 0. Order $n$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "$(\\mathbb{Z}_n^\\times, \\cdot)$:"
+      }), " Units modulo $n$ under multiplication. Elements coprime to $n$. Order $\\phi(n)$ (Euler's totient). Example: $\\mathbb{Z}_7^\\times = {1,2,3,4,5,6}$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symmetric group $S_n$:"
+      }), " Permutations of $n$ elements under composition. Order $n!$. Not abelian for $n \\geq 3$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dihedral group $D_n$:"
+      }), " Symmetries of a regular $n$-gon (rotations and reflections). Order $2n$."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Cayley table for Z_4\nconst Z4: number[] = [0, 1, 2, 3];\nfunction addMod4(a: number, b: number): number {\n  return (a + b) % 4;\n}\n\n// Cayley table for permutation group S_3\ntype Permutation = [number, number, number];\nfunction compose(p1: Permutation, p2: Permutation): Permutation {\n  return [p1[p2[0]], p1[p2[1]], p1[p2[2]]] as Permutation;\n}\n\nconst identity: Permutation = [0, 1, 2];\nconst swap: Permutation = [1, 0, 2];\n// compose(swap, swap) = identity\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Common groups include integers under addition ($\\mathbb{Z}_n$), units modulo $n$ ($\\mathbb{Z}_n^\\times$), permutations ($S_n$), and symmetries ($D_n$)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "115-cyclic-groups",
+      children: "11.5 Cyclic Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A group $G$ is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "cyclic"
+      }), " if there exists an element $g \\in G$ (a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "generator"
+      }), ") such that every element of $G$ equals $g^k$ for some integer $k$. In additive notation: every element equals $k \\cdot g$."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.4 (Structure of cyclic groups)."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Every cyclic group is abelian."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Every subgroup of a cyclic group is cyclic."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A finite cyclic group of order $n$ is isomorphic to $(\\mathbb{Z}_n, +)$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "An infinite cyclic group is isomorphic to $(\\mathbb{Z}, +)$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.5 (Generators of $\\mathbb{Z}_n$)."
+      }), " An element $k \\in \\mathbb{Z}_n$ generates $\\mathbb{Z}_n$ under addition if and only if $\\gcd(k, n) = 1$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.6 (Subgroups of $\\mathbb{Z}_n$)."
+      }), " For each positive divisor $d$ of $n$, there is exactly one subgroup of $\\mathbb{Z}_n$ of order $d$, generated by $n/d$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A cyclic group is generated by a single element; all cyclic groups of order $n$ are isomorphic to $\\mathbb{Z}_n$, and $\\mathbb{Z}_n$ has one subgroup per divisor of $n$."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "116-permutation-groups",
+      children: "11.6 Permutation Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "permutation"
+      }), " of a set $X$ is a bijection $f: X \\rightarrow X$. The set of all permutations of $X$ forms the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "symmetric group"
+      }), " $S_X$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cycle notation:"
+      }), " $(a_1;a_2;\\dots;a_k)$ means $a_1 \\rightarrow a_2 \\rightarrow \\dots \\rightarrow a_k \\rightarrow a_1$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transposition:"
+      }), " A 2-cycle $(a;b)$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.7 (Cycle decomposition)."
+      }), " Every permutation can be written uniquely as a product of disjoint cycles (up to order of cycles)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.8 (Parity)."
+      }), " Every permutation is either even (product of an even number of transpositions) or odd. The alternating group $A_n$ consists of all even permutations in $S_n$, $|A_n| = n!/2$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Permutations are bijections on a set; every permutation decomposes into disjoint cycles, and the parity (even/odd) is well-defined."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "117-rings-and-fields",
+      children: "11.7 Rings and Fields"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ring"
+      }), " $(R, +, \\cdot)$: A set with two operations such that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$(R, +)$ is an abelian group."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$(R, \\cdot)$ is a semigroup (associative, not necessarily commutative)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distributive: $a(b+c) = ab + ac$ and $(a+b)c = ac + bc$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Examples of rings:"
+      }), " $\\mathbb{Z}$ (the integers), $\\mathbb{Z}_n$ (integers mod $n$), $M_n(\\mathbb{R})$ ($n \\times n$ matrices)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Commutative ring:"
+      }), " Multiplication is commutative."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Integral domain:"
+      }), " A commutative ring where $ab = 0$ implies $a = 0$ or $b = 0$ (no zero divisors)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Field:"
+      }), " A commutative ring where every non-zero element has a multiplicative inverse."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Examples: $\\mathbb{Q}$, $\\mathbb{R}$, $\\mathbb{C}$, $\\mathbb{Z}_p$ (for prime $p$)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.9 (Finite fields)."
+      }), " A finite field exists for every prime power $p^n$. All finite fields of the same order are isomorphic. $\\mathbb{Z}_p$ is a field if and only if $p$ is prime."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Modular arithmetic in Z_p (a field for prime p)\nclass Zp {\n  constructor(public readonly p: number) {\n    if (!isPrime(p)) throw new Error(\"p must be prime for Z_p to be a field\");\n  }\n\n  add(a: number, b: number): number { return (a + b) % this.p; }\n  multiply(a: number, b: number): number { return (a * b) % this.p; }\n\n  inverse(a: number): number {\n    // Using extended Euclidean algorithm\n    let t = 0, newt = 1, r = this.p, newr = a;\n    while (newr !== 0) {\n      const q = Math.floor(r / newr);\n      [t, newt] = [newt, t - q * newt];\n      [r, newr] = [newr, r - q * newr];\n    }\n    return ((t % this.p) + this.p) % this.p;\n  }\n}\n\nfunction isPrime(n: number): boolean {\n  if (n < 2) return false;\n  for (let i = 2; i * i <= n; i++) if (n % i === 0) return false;\n  return true;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A ring has addition and multiplication; a field adds multiplicative inverses (making division possible); finite fields exist exactly for prime power orders."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "118-homomorphisms-and-isomorphisms",
+      children: "11.8 Homomorphisms and Isomorphisms"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Group homomorphism:"
+      }), " $\\phi: G \\rightarrow H$ such that $\\phi(a * b) = \\phi(a) \\cdot \\phi(b)$ for all $a, b \\in G$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Kernel:"
+      }), " $\\ker(\\phi) = {g \\in G \\mid \\phi(g) = e_H}$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Image:"
+      }), " $\\text{im}(\\phi) = {h \\in H \\mid \\exists g \\in G, \\phi(g) = h}$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.10 (Properties of homomorphisms)."
+      }), " For any homomorphism $\\phi$:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\phi(e_G) = e_H$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\phi(a^{-1}) = \\phi(a)^{-1}$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\ker(\\phi)$ is a subgroup of $G$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\text{im}(\\phi)$ is a subgroup of $H$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\phi$ is injective iff $\\ker(\\phi) = {e_G}$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Isomorphism:"
+      }), " A bijective homomorphism. $G \\cong H$ means $G$ and $H$ are isomorphic (structurally identical)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.11 (Cayley's theorem)."
+      }), " Every group is isomorphic to a subgroup of a symmetric group $S_n$ for some $n$."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Structure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Associative"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Identity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Inverses"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Commutative"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semigroup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maybe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monoid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maybe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Group"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maybe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Abelian Group"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (both)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (add)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (add)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add: ?, Mul: maybe"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Field"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (both)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (both)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (both, except 0 in mul)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "? (both)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cryptography"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Coding Theory"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Physics"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Computer Science"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RSA, DH key exchange"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error-correcting codes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Symmetry groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Permutation algorithms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Finite Fields"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AES (GF(2^8))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reed-Solomon codes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quantum mechanics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC, hash functions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cyclic Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diffie-Hellman, ElGamal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cyclic codes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rotational symmetry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pseudorandom generation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Homomorphic encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Polynomial codes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Matrix operations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Permutation Groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Particle physics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sorting networks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which property does NOT hold for a group?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Associativity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Identity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Commutativity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Inverses"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**C)** Groups do not require commutativity; only abelian groups do."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the order of the symmetric group $S_4$?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) 4"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) 12"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) 24"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) 120"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**C)** $|S_n| = n! = 4! = 24$."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The set $\\mathbb{Z}_n$ under addition modulo $n$ is:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) A field"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) A group"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) A ring but not a group"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) A semigroup but not a group"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** $(\\mathbb{Z}_n, +)$ is an abelian group (and a ring, but \"group\" is the most fundamental correct answer)."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which is NOT a field?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) $\\mathbb{Z}_5$"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) $\\mathbb{Z}_6$"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) $\\mathbb{R}$"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) $\\mathbb{Q}$"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** $\\mathbb{Z}_6$ is not a field because 6 is not prime ? 2 and 3 have no multiplicative inverse."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A homomorphism is injective if and only if:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Its image is the whole codomain"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Its kernel is trivial"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) It is surjective"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) The groups are finite"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** $\\ker(\\phi) = \\{e_G\\}$ is equivalent to injectivity of a homomorphism."
+          })
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.1"
+      }), " (Group verification). $(\\mathbb{Z}, -)$ under subtraction: closure holds, but $(a - b) - c \\neq a - (b - c)$ in general, so not associative. Not a group."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.2"
+      }), " (Semigroup vs. monoid). The set of positive integers under addition is a semigroup (associative) but not a monoid (no identity ? 0 is not positive). Adding 0 makes it a monoid."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.3"
+      }), " ($\\mathbb{Z}_5^\\times$). Units modulo 5: ${1,2,3,4}$. Multiplication table: $2 \\cdot 3 = 6 \\equiv 1 \\pmod{5}$, so $2^{-1} = 3$. This is a cyclic group of order 4, generated by 2: $2^1=2, 2^2=4, 2^3=3, 2^4=1$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.4"
+      }), " (Cyclic group $\\mathbb{Z}_6$). Generators: $\\gcd(k,6)=1$ ? $1$ and $5$ are generators. Subgroups: for each divisor of 6 (1, 2, 3, 6): $\\langle 0 \\rangle = {0}$, $\\langle 3 \\rangle = {0,3}$, $\\langle 2 \\rangle = {0,2,4}$, and the whole group."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findGenerators(n: number): number[] {\n  const generators: number[] = [];\n  for (let k = 1; k < n; k++) {\n    if (gcd(k, n) === 1) generators.push(k);\n  }\n  return generators;\n}\n\nfunction gcd(a: number, b: number): number {\n  return b === 0 ? a : gcd(b, a % b);\n}\n\nconsole.log(findGenerators(10)); // [1, 3, 7, 9]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.5"
+      }), " (Permutation in cycle notation). Permutation $\\sigma = (1;3;4)(2;5)$ in $S_5$: sends $1 \\rightarrow 3$, $3 \\rightarrow 4$, $4 \\rightarrow 1$, $2 \\rightarrow 5$, $5 \\rightarrow 2$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.6"
+      }), " (Ring $\\mathbb{Z}_6$). $\\mathbb{Z}_6$ is a commutative ring with identity 1. Zero divisors: $2 \\cdot 3 = 0$ but $2 \\neq 0$, $3 \\neq 0$. Not an integral domain."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.7"
+      }), " (Field $\\mathbb{Z}_7$). Every non-zero element in $\\mathbb{Z}_7$ has an inverse: $1^{-1}=1$, $2^{-1}=4$, $3^{-1}=5$, $4^{-1}=2$, $5^{-1}=3$, $6^{-1}=6$. This is a field."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.8"
+      }), " (Homomorphism). $\\phi: \\mathbb{Z} \\rightarrow \\mathbb{Z}_n$ defined by $\\phi(k) = k \\bmod n$ is a group homomorphism: $\\phi(a+b) = (a+b) \\bmod n = (a \\bmod n + b \\bmod n) \\bmod n = \\phi(a) + \\phi(b)$. Kernel: ${n \\cdot k \\mid k \\in \\mathbb{Z}}$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.9"
+      }), " (Isomorphism). $\\mathbb{Z}_2$ under addition and ${1,-1}$ under multiplication are isomorphic via $\\phi(0) = 1$, $\\phi(1) = -1$."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.th, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example 11.10"
+            }), " (Cayley table for $\\mathbb{Z}_4$). $+$"]
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "0 1 2 3"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 1 2 3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 2 3 0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 3 0 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 0 1 2"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "119-direct-sums-and-product-groups",
+      children: "11.9 Direct Sums and Product Groups"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "direct product"
+      }), " of groups $G$ and $H$ is $G \\times H = {(g,h) \\mid g \\in G, h \\in H}$ with componentwise operation: $(g_1, h_1) * (g_2, h_2) = (g_1 * g_2, h_1 * h_2)$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.12 (Order of direct product)."
+      }), " $|G \\times H| = |G| \\cdot |H|$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.13 (Chinese Remainder Theorem for Groups)."
+      }), " If $\\gcd(m,n) = 1$, then $\\mathbb{Z}_{mn} \\cong \\mathbb{Z}_m \\times \\mathbb{Z}_n$. This is the algebraic version of the CRT from number theory."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1110-the-classification-of-finite-fields",
+      children: "11.10 The Classification of Finite Fields"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.14 (Existence and uniqueness of finite fields)."
+      }), " For every prime $p$ and positive integer $n$, there exists a finite field of order $p^n$ (denoted $\\text{GF}(p^n)$ or $\\mathbb{F}_{p^n}$). All finite fields of the same order are isomorphic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.15 (Subfield criterion)."
+      }), " $\\mathbb{F}", (0,jsx_runtime.jsx)(_components.em, {
+        children: "{p^m}$ is a subfield of $\\mathbb{F}"
+      }), "{p^n}$ if and only if $m \\mid n$."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Finite fields are widely used in cryptography (AES uses $\\text{GF}(2^8)$), coding theory (Reed-Solomon codes), and computer algebra."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-implementations",
+      children: "TypeScript Implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// --- Group Operation Table Generator ---\nfunction groupTable(elements: number[], op: (a: number, b: number) => number): number[][] {\n  return elements.map(a => elements.map(b => op(a, b)));\n}\nconst mod5Add = (a: number, b: number) => (a + b) % 5;\nconst Z5 = [0, 1, 2, 3, 4];\nconst table = groupTable(Z5, mod5Add);\nconsole.log('Z5 addition table:');\ntable.forEach((row, i) => console.log(`${Z5[i]}: ${row.join(' ')}`));\n// 0: 0 1 2 3 4\n// 1: 1 2 3 4 0\n// ...\n\n// --- Closure, Associativity, Identity, Inverses Checker ---\nfunction isGroup(set: number[], op: (a: number, b: number) => number): boolean {\n  // Closure and associativity are checked on the operation\n  for (const a of set) for (const b of set) if (!set.includes(op(a, b))) return false;\n  // Identity\n  let identity = -1;\n  for (const e of set) if (set.every(x => op(x, e) === x && op(e, x) === x)) { identity = e; break; }\n  if (identity === -1) return false;\n  // Inverses\n  for (const a of set) if (!set.some(b => op(a, b) === identity && op(b, a) === identity)) return false;\n  return true;\n}\nconsole.log('Z5 under mod-add is group:', isGroup(Z5, mod5Add)); // true\n\n// --- Cyclic Group Checker & Generator Finder ---\nfunction findGenerators(set: number[], op: (a: number, b: number) => number): number[] {\n  const n = set.length;\n  return set.filter(g => {\n    const generated = new Set<number>();\n    let current = g;\n    for (let i = 0; i < n; i++) {\n      generated.add(current);\n      current = op(current, g);\n    }\n    return generated.size === n;\n  });\n}\nconst Z7star = [1, 2, 3, 4, 5, 6];\nconst mod7Mul = (a: number, b: number) => (a * b) % 7;\nconsole.log('Generators of Z7?:', findGenerators(Z7star, mod7Mul)); // [3,5]\n\n// --- Subgroup Finder ---\nfunction findSubgroups(set: number[], op: (a: number, b: number) => number): number[][] {\n  const subsets: number[][] = [[]];\n  for (const e of set) {\n    const len = subsets.length;\n    for (let i = 0; i < len; i++) subsets.push([...subsets[i], e]);\n  }\n  return subsets.filter(s => s.length > 0 && isGroup(s, op));\n}\nconst Z4 = [0, 1, 2, 3];\nconst subgroups = findSubgroups(Z4, mod5Add); // mod5Add won't work here, but using mod4Add:\nconst mod4Add = (a: number, b: number) => (a + b) % 4;\nconsole.log('Subgroups of Z4:', findSubgroups(Z4, mod4Add).map(s => s.sort()));\n\n// --- Permutation Group (S3) ---\nfunction composePerm(p: number[], q: number[]): number[] {\n  return p.map(x => q[x]);\n}\nconst id = [0, 1, 2];\nconst t12 = [1, 0, 2]; // swap 0 and 1\nconst result = composePerm(id, t12);\nconsole.log('Identity ? (1 2):', result); // [1,0,2]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "console.log('Group check (Z5?):', isGroup(multTable_mod5x));\nconsole.log('Abelian:', isAbelian(multTable_mod5x));\nconsole.log('Identity of Z5?:', findIdentity(multTable_mod5x));\nconsole.log('Inverses:', multTable_mod5x.map((r, i) => `${i}: ${findInverse(multTable_mod5x, i)}`).join(', '));\n\n// --- Subgroup Checker ---\nfunction isSubgroup(groupTable: number[][], subset: number[]): boolean {\n  const identity = findIdentity(groupTable);\n  if (!subset.includes(identity)) return false;\n  for (const a of subset) {\n    const inv = findInverse(groupTable, a);\n    if (!subset.includes(inv)) return false;\n    for (const b of subset)\n      if (!subset.includes(groupTable[a][b])) return false;\n  }\n  return true;\n}\nconsole.log('\\n{1,4} subgroup of Z5?:', isSubgroup(multTable_mod5x, [1, 4]));\nconsole.log('{1,2,4} subgroup of Z5?:', isSubgroup(multTable_mod5x, [1, 2, 4]));\n\n// --- Ring Property Checker ---\nfunction isRing(addTable: number[][], mulTable: number[][], set: number[]): boolean {\n  const addAssoc = set.every(a => set.every(b => set.every(c =>\n    addTable[addTable[a][b]][c] === addTable[a][addTable[b][c]])));\n  const addComm = set.every(a => set.every(b => addTable[a][b] === addTable[b][a]));\n  const identity = addTable.some((r, i) => set.every(a => addTable[a][i] === a));\n  const mulAssoc = set.every(a => set.every(b => set.every(c =>\n    mulTable[mulTable[a][b]][c] === mulTable[a][mulTable[b][c]])));\n  const distrib = set.every(a => set.every(b => set.every(c =>\n    mulTable[a][addTable[b][c]] === addTable[mulTable[a][b]][mulTable[a][c]])));\n  return addAssoc && addComm && identity !== false && mulAssoc && distrib;\n}\nconst Z4_add = [[0,1,2,3],[1,2,3,0],[2,3,0,1],[3,0,1,2]];\nconst Z4_mul = [[0,0,0,0],[0,1,2,3],[0,2,0,2],[0,3,2,1]];\nconsole.log('\\nZ4 is a ring:', isRing(Z4_add, Z4_mul, [0,1,2,3]));\n\n// --- Field Checker ---\nfunction isField(addTable: number[][], mulTable: number[][], set: number[]): boolean {\n  if (!isRing(addTable, mulTable, set)) return false;\n  const zero = addTable.findIndex((r, i) => set.every(a => addTable[a][i] === a));\n  const nonzero = set.filter(x => x !== zero);\n  const mulInv = nonzero.every(a => nonzero.some(b => mulTable[a][b] === set[nonzero[0]]));\n  return mulInv;\n}\nconst F5_add = Array.from({length:5}, (_,i) => Array.from({length:5}, (_,j) => (i+j)%5));\nconst F5_mul = Array.from({length:5}, (_,i) => Array.from({length:5}, (_,j) => (i*j)%5));\nconsole.log('Z5 is a field:', isField(F5_add, F5_mul, [0,1,2,3,4]));\n\n// --- Group Homomorphism Checker ---\nfunction isHomomorphism(f: (x: number) => number, opG: (a: number, b: number) => number, opH: (a: number, b: number) => number, domain: number[]): boolean {\n  return domain.every(a => domain.every(b => f(opG(a, b)) === opH(f(a), f(b))));\n}\nconst addMod6 = (a: number, b: number) => (a + b) % 6;\nconst addMod3 = (a: number, b: number) => (a + b) % 3;\nconst fMod = (x: number) => x % 3;\nconsole.log('\\nf(x)=x mod 3 is homomorphism Z6?Z3:', isHomomorphism(fMod, addMod6, addMod3, [0,1,2,3,4,5]));\n\n// --- Cayley Table Pretty Printer ---\nfunction printCayley(table: number[][], label: string): void {\n  console.log(`\\n${label}:`);\n  console.log('  ' + table.map((_, i) => i).join(' '));\n  table.forEach((row, i) => console.log(i + ' ' + row.join(' ')));\n}\nprintCayley(multTable_mod5x, 'Cayley Table of Z5?');\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// algebra\n// sets-graphs-probability implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'algebra', data: { topic: 'sets-graphs-probability' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// algebra - additional TS implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\nprivate store: Map<string, CacheEntry> = new Map()\nconstructor(private defaultTTL: number = 60000) {}\nset(key: string, value: unknown, ttl?: number): void {\nthis.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n}\nget(key: string): unknown | undefined {\nconst entry = this.store.get(key)\nif (!entry) return undefined\nif (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\nreturn entry.value\n}\ndelete(key: string): boolean { return this.store.delete(key) }\nclear(): void { this.store.clear() }\nsize(): number { return this.store.size }\nkeys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\nprivate entries: string[] = []\nlog(level: string, msg: string, meta?: Record<string, unknown>): void {\nconst entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\nthis.entries.push(entry)\nconsole.log(entry)\n}\ninfo(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\nwarn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\nerror(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\ngetLogs(): string[] { return [...this.entries] }\nclear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\nlet hash = 0\nfor (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\nreturn Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\nconst cache = new Cache(5000)\ncache.set('key1', 'discrete-math demo')\nconst log = new Logger()\nlog.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'algebra' })\nconst v = cache.get(\"key1\")\nconsole.log('Cached:', v)\nconsole.log('Hash:', computeHash('discrete-math'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Binary operations combine two elements; properties define the algebraic structure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Semigroup: associative. Monoid: semigroup + identity. Group: monoid + inverses."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Important groups: $\\mathbb{Z}_n$, $\\mathbb{Z}_n^\\times$, $S_n$, $D_n$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cyclic groups are generated by one element; every cyclic group is isomorphic to $\\mathbb{Z}_n$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rings have two operations; fields add multiplicative inverses beyond rings."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Homomorphisms preserve structure; isomorphisms indicate structural identity."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Group = symmetries"
+        }), " ? whenever you think about rotations, permutations, or reversible transformations, you are working in a group."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fields enable division"
+        }), " ? the difference between a ring and a field is that fields let you divide."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "$\\mathbb{Z}_p$ is a field when $p$ is prime"
+        }), " ? this is the foundation of modern cryptography."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cyclic = one generator"
+        }), " ? finding a generator enables efficient computation in the group."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Homomorphism preserves the operation"
+        }), " ? always check $\\phi(a*b) = \\phi(a) \\cdot \\phi(b)$."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "116-group-actions-and-applications",
+      children: "11.6 Group Actions and Applications"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "group action"
+      }), " is a formal way for a group to act on a set. A group $G$ acts on a set $X$ if there is a map $\\cdot : G \\times X \\to X$ satisfying:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$e \\cdot x = x$ for all $x \\in X$ (identity)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$(g_1 g_2) \\cdot x = g_1 \\cdot (g_2 \\cdot x)$ for all $g_1, g_2 \\in G$, $x \\in X$ (compatibility)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type GroupAction<T> = (g: (x: T) => T, x: T) => T;\n\nfunction checkGroupAction<T>(\n  elements: T[],\n  identity: (x: T) => T,\n  compose: (f: (x: T) => T, g: (x: T) => T) => (x: T) => T,\n  action: GroupAction<T>,\n  xs: T[]\n): boolean {\n  for (const x of xs) {\n    if (action(identity, x) !== x) return false;\n  }\n  return true;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Orbit-Stabilizer Theorem."
+      }), " For a group $G$ acting on $X$:\n$$|\\text{Orb}(x)| \\cdot |\\text{Stab}(x)| = |G|$$"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "where $\\text{Orb}(x) = {g \\cdot x : g \\in G}$ and $\\text{Stab}(x) = {g \\in G : g \\cdot x = x}$."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "117-rings-and-fields-in-depth",
+      children: "11.7 Rings and Fields in Depth"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition 11.11 (Ring)."
+      }), " A set $R$ with two binary operations $+$ and $\\cdot$ such that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$(R, +)$ is an abelian group."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$(R, \\cdot)$ is a semigroup."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multiplication distributes over addition: $a(b+c) = ab + ac$ and $(b+c)a = ba + ca$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition 11.12 (Integral Domain)."
+      }), " A commutative ring with $1 \\neq 0$ and no zero divisors ($ab = 0 \\implies a = 0$ or $b = 0$)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition 11.13 (Field)."
+      }), " A commutative ring where every nonzero element has a multiplicative inverse."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface Ring<T> {\n  add: (a: T, b: T) => T;\n  mul: (a: T, b: T) => T;\n  zero: T;\n  one: T;\n  neg: (a: T) => T;\n  equals: (a: T, b: T) => boolean;\n}\n\nfunction isIntegralDomain<T>(R: Ring<T>, elements: T[]): boolean {\n  for (const a of elements) {\n    for (const b of elements) {\n      if (R.equals(R.mul(a, b), R.zero)) {\n        if (!R.equals(a, R.zero) && !R.equals(b, R.zero)) return false;\n      }\n    }\n  }\n  return true;\n}\n\nfunction isField<T>(R: Ring<T>, elements: T[]): boolean {\n  if (!isIntegralDomain(R, elements)) return false;\n  for (const a of elements) {\n    if (R.equals(a, R.zero)) continue;\n    let hasInverse = false;\n    for (const b of elements) {\n      if (R.equals(R.mul(a, b), R.one)) { hasInverse = true; break; }\n    }\n    if (!hasInverse) return false;\n  }\n  return true;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.7"
+      }), " (Ring classification)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}$ is an integral domain but not a field."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}_p$ ($p$ prime) is a field."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}_6$ is not an integral domain: $2 \\cdot 3 = 0$ with $2, 3 \\neq 0$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{R}[x]$ (polynomials over reals) is an integral domain but not a field."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$M_2(\\mathbb{R})$ (2x2 matrices) is a non-commutative ring with zero divisors."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "118-group-homomorphisms-and-isomorphism-theorems",
+      children: "11.8 Group Homomorphisms and Isomorphism Theorems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem 11.4 (First Isomorphism Theorem)."
+      }), " If $\\phi: G \\to H$ is a homomorphism, then $G / \\ker(\\phi) \\cong \\text{Im}(\\phi)$."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function isHomomorphism<T, U>(\n  G: T[],\n  opG: (a: T, b: T) => T,\n  H: U[],\n  opH: (a: U, b: U) => U,\n  phi: (x: T) => U\n): boolean {\n  for (const a of G) {\n    for (const b of G) {\n      const lhs = phi(opG(a, b));\n      const rhs = opH(phi(a), phi(b));\n      if (lhs !== rhs) return false;\n    }\n  }\n  return true;\n}\n\n// Example: determinant is a homomorphism from GL_n(R) to (R\\{0}, *)\n// det(AB) = det(A) * det(B)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "119-algebraic-structures-in-cryptography",
+      children: "11.9 Algebraic Structures in Cryptography"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diffie-Hellman key exchange"
+      }), " relies on the cyclic group $\\mathbb{Z}_p^\\times$:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Public: prime $p$, generator $g$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Alice: picks $a$, sends $g^a \\bmod p$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bob: picks $b$, sends $g^b \\bmod p$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Shared secret: $g^{ab} \\bmod p$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function diffieHellman(p: number, g: number, a: number, b: number) {\n  const A = Math.pow(g, a) % p;\n  const B = Math.pow(g, b) % p;\n  const secretA = Math.pow(B, a) % p;\n  const secretB = Math.pow(A, b) % p;\n  return { A, B, secretA, secretB, match: secretA === secretB };\n}\nconsole.log(diffieHellman(23, 5, 6, 15)); // shared secret = 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "RSA encryption"
+      }), " uses the ring $\\mathbb{Z}_n$ where $n = pq$:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Public key: $(n, e)$, private key: $d$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Encrypt: $c = m^e \\bmod n$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Decrypt: $m = c^d \\bmod n$."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function rsaEncrypt(m: number, e: number, n: number): number {\n  return Math.pow(m, e) % n;\n}\n\nfunction rsaDecrypt(c: number, d: number, n: number): number {\n  return Math.pow(c, d) % n;\n}\n\n// p=11, q=13, n=143, phi=120, e=7, d=103\n// encrypt(42, 7, 143) = 81, decrypt(81, 103, 143) = 42\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Group G] --> B[Abelian?]\n    B -->|Yes| C[Ring with +]\n    A --> D[Non-Abelian]\n    C --> E[Multiplicative<br/>Identity?]\n    E -->|Yes| F[Ring with 1]\n    E -->|No| G[Ring without 1]\n    F --> H[Zero<br/>Divisors?]\n    H -->|No| I[Integral Domain]\n    H -->|Yes| G\n    I --> J[Inverses?]\n    J -->|Yes| K[Field]\n    J -->|No| I\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1110-cayley-tables-and-subgroup-lattices",
+      children: "11.10 Cayley Tables and Subgroup Lattices"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function cayleyTable(elements: number[], op: (a: number, b: number) => number): number[][] {\n  const n = elements.length;\n  const table: number[][] = [];\n  for (let i = 0; i < n; i++) {\n    table[i] = [];\n    for (let j = 0; j < n; j++) {\n      table[i][j] = op(elements[i], elements[j]);\n    }\n  }\n  return table;\n}\n\n// Cayley table for Z_4 under addition mod 4\nconst Z4 = [0, 1, 2, 3];\nconst addMod4 = (a: number, b: number) => (a + b) % 4;\nconsole.table(cayleyTable(Z4, addMod4));\n// +-----------------+\n// ?   ? 0 1 2 3     ?\n// +---+-------------?\n// ? 0 ? 0 1 2 3     ?\n// ? 1 ? 1 2 3 0     ?\n// ? 2 ? 2 3 0 1     ?\n// ? 3 ? 3 0 1 2     ?\n// +-----------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.8"
+      }), " (Permutation group $S_3$). $S_3$ has 6 elements: identity, three 2-cycles (transpositions), and two 3-cycles. Subgroups: ${e}$, 3 subgroups of order 2, one subgroup of order 3 ($A_3$)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.9"
+      }), " (Group of units $\\mathbb{Z}_n^\\times$). The elements coprime to $n$ form a multiplicative group."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}_5^\\times = {1, 2, 3, 4}$ of order 4."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}_8^\\times = {1, 3, 5, 7}$ ? each element is its own inverse."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$\\mathbb{Z}_9^\\times = {1, 2, 4, 5, 7, 8}$ of order 6 (isomorphic to $\\mathbb{Z}_6$)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 11.10"
+      }), " (Lagrange's theorem application). $S_4$ has order $4! = 24$. Any subgroup of $S_4$ must have order dividing 24. Possible orders: 1, 2, 3, 4, 6, 8, 12, 24. $A_4$ (alternating group) has order 12."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof 11.5"
+      }), " (Every subgroup of a cyclic group is cyclic)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.em, {
+        children: "Proof."
+      }), " Let $G = \\langle g \\rangle$ be cyclic with $|G| = n$ (or infinite). Let $H \\leq G$ be a subgroup. If $H = {e}$, it is trivial cyclic. Otherwise, let $k$ be the smallest positive integer such that $g^k \\in H$. We claim $H = \\langle g^k \\rangle$. Take any $h = g^m \\in H$. Write $m = qk + r$ with $0 \\leq r < k$. Then $g^r = g^{m - qk} = h \\cdot (g^k)^{-q} \\in H$. Minimality of $k$ forces $r = 0$, so $m = qk$ and $h = (g^k)^q \\in \\langle g^k \\rangle$. $\\square$"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Let $G = {1, -1, i, -i}$ under multiplication. Show $G$ is a group. Is it cyclic?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove: The intersection of two subgroups is a subgroup."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Determine whether $\\mathbb{Z}_{10}$ under addition and multiplication modulo 10 is a ring, integral domain, or field."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Write a TypeScript function ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "isGroup<T>"
+          }), " that checks closure, associativity, identity, and inverses for a finite set under a binary operation."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove that every cyclic group is abelian."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between a semigroup and a monoid?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name four properties that define a group."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the order of $S_5$?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Is $\\mathbb{Z}_4$ a field? Explain."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What does it mean for a homomorphism to be an isomorphism?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove that $(\\mathbb{Z}, +)$ is an abelian group."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Determine the generators of $\\mathbb{Z}_{12}$."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write the Cayley table for $\\mathbb{Z}_3^\\times$ under multiplication."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Show that every subgroup of a cyclic group is cyclic."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove: If $\\phi: G \\rightarrow H$ is a homomorphism, then $\\ker(\\phi)$ is a subgroup of $G$."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Classify the structure of $(\\mathbb{Z}_4, +, \\cdot)$ ? is it a ring? integral domain? field?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a TypeScript function that generates the Cayley table for $\\mathbb{Z}_n$."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "13",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove that every finite group of prime order is cyclic."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Prove: $(\\mathbb{Z}_p, +, \\cdot)$ is a field if and only if $p$ is prime."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Let $G$ be a group. Prove that the map $\\phi: G \\rightarrow G$ defined by $\\phi(g) = g^{-1}$ is an automorphism (isomorphism from $G$ to $G$) if and only if $G$ is abelian."
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

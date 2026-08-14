@@ -1,0 +1,1647 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[71150],{
+
+/***/ 41746
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_46_r_2_dbc_md_39a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-46-r-2-dbc-md-39a.json
+const site_docs_courses_java_46_r_2_dbc_md_39a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/46-r2dbc","title":"Chapter 46: R2DBC & Reactive Data Access","description":"Previous Spring AI","source":"@site/docs/courses/java/46-r2dbc.md","sourceDirName":"courses/java","slug":"/java/46-r2dbc","permalink":"/ai-engineering-journey/java/46-r2dbc","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":46,"frontMatter":{"id":"46-r2dbc","slug":"/java/46-r2dbc","title":"Chapter 46: R2DBC & Reactive Data Access","sidebar_label":"Chapter 46: R2DBC & Reactive Data Access","sidebar_position":46},"sidebar":"course-java","previous":{"title":"Chapter 45: Spring WebFlux","permalink":"/ai-engineering-journey/java/45-webflux"},"next":{"title":"Spring AI","permalink":"/ai-engineering-journey/java/47-spring-ai"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/46-r2dbc.md
+
+
+const frontMatter = {
+	id: '46-r2dbc',
+	slug: '/java/46-r2dbc',
+	title: 'Chapter 46: R2DBC & Reactive Data Access',
+	sidebar_label: 'Chapter 46: R2DBC & Reactive Data Access',
+	sidebar_position: 46
+};
+const contentTitle = 'Chapter 46: R2DBC & Reactive Data Access';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1. What Is R2DBC?",
+  "id": "1-what-is-r2dbc",
+  "level": 2
+}, {
+  "value": "1.1 The Problem with JDBC",
+  "id": "11-the-problem-with-jdbc",
+  "level": 3
+}, {
+  "value": "1.2 R2DBC Specification",
+  "id": "12-r2dbc-specification",
+  "level": 3
+}, {
+  "value": "1.3 R2DBC Drivers",
+  "id": "13-r2dbc-drivers",
+  "level": 3
+}, {
+  "value": "2. Project Setup",
+  "id": "2-project-setup",
+  "level": 2
+}, {
+  "value": "2.1 Maven Dependencies",
+  "id": "21-maven-dependencies",
+  "level": 3
+}, {
+  "value": "2.2 Application Configuration",
+  "id": "22-application-configuration",
+  "level": 3
+}, {
+  "value": "2.3 SQL Schema Migrations (Flyway)",
+  "id": "23-sql-schema-migrations-flyway",
+  "level": 3
+}, {
+  "value": "2.4 Application Entry Point",
+  "id": "24-application-entry-point",
+  "level": 3
+}, {
+  "value": "3. Entity Mapping",
+  "id": "3-entity-mapping",
+  "level": 2
+}, {
+  "value": "3.1 Basic Entities",
+  "id": "31-basic-entities",
+  "level": 3
+}, {
+  "value": "3.2 Entity with Relationships",
+  "id": "32-entity-with-relationships",
+  "level": 3
+}, {
+  "value": "3.3 Custom Converters",
+  "id": "33-custom-converters",
+  "level": 3
+}, {
+  "value": "4. Reactive Repositories",
+  "id": "4-reactive-repositories",
+  "level": 2
+}, {
+  "value": "4.1 R2dbcRepository Interface",
+  "id": "41-r2dbcrepository-interface",
+  "level": 3
+}, {
+  "value": "4.2 Customer Repository",
+  "id": "42-customer-repository",
+  "level": 3
+}, {
+  "value": "4.3 Order Repository with Joins",
+  "id": "43-order-repository-with-joins",
+  "level": 3
+}, {
+  "value": "4.4 Order Item Repository",
+  "id": "44-order-item-repository",
+  "level": 3
+}, {
+  "value": "5. Database Client (Low-Level)",
+  "id": "5-database-client-low-level",
+  "level": 2
+}, {
+  "value": "6. Reactive Transactions",
+  "id": "6-reactive-transactions",
+  "level": 2
+}, {
+  "value": "6.1 Declarative Transactions with @Transactional",
+  "id": "61-declarative-transactions-with-transactional",
+  "level": 3
+}, {
+  "value": "6.2 Transaction Configuration",
+  "id": "62-transaction-configuration",
+  "level": 3
+}, {
+  "value": "7. Testing R2DBC",
+  "id": "7-testing-r2dbc",
+  "level": 2
+}, {
+  "value": "7.1 DataR2dbcTest with H2",
+  "id": "71-datar2dbctest-with-h2",
+  "level": 3
+}, {
+  "value": "7.2 Testcontainers with PostgreSQL",
+  "id": "72-testcontainers-with-postgresql",
+  "level": 3
+}, {
+  "value": "7.3 Testing Transactions",
+  "id": "73-testing-transactions",
+  "level": 3
+}, {
+  "value": "8. Auditing",
+  "id": "8-auditing",
+  "level": 2
+}, {
+  "value": "9. Performance Tuning",
+  "id": "9-performance-tuning",
+  "level": 2
+}, {
+  "value": "9.1 Connection Pool Optimization",
+  "id": "91-connection-pool-optimization",
+  "level": 3
+}, {
+  "value": "9.2 Batch Operations",
+  "id": "92-batch-operations",
+  "level": 3
+}, {
+  "value": "9.3 Indexing and Query Optimization",
+  "id": "93-indexing-and-query-optimization",
+  "level": 3
+}, {
+  "value": "9.4 Performance Comparison: R2DBC vs JPA",
+  "id": "94-performance-comparison-r2dbc-vs-jpa",
+  "level": 3
+}, {
+  "value": "10. R2DBC vs JPA Comparison",
+  "id": "10-r2dbc-vs-jpa-comparison",
+  "level": 2
+}, {
+  "value": "When to Use Each",
+  "id": "when-to-use-each",
+  "level": 3
+}, {
+  "value": "11. Advanced Patterns",
+  "id": "11-advanced-patterns",
+  "level": 2
+}, {
+  "value": "11.1 Pageable Support",
+  "id": "111-pageable-support",
+  "level": 3
+}, {
+  "value": "11.2 Entity Callbacks",
+  "id": "112-entity-callbacks",
+  "level": 3
+}, {
+  "value": "11.3 Reactive Auditing with Spring Data",
+  "id": "113-reactive-auditing-with-spring-data",
+  "level": 3
+}, {
+  "value": "11.4 Schema Initialization with SQL Scripts",
+  "id": "114-schema-initialization-with-sql-scripts",
+  "level": 3
+}, {
+  "value": "11.5 Complete WebFlux + R2DBC Controller",
+  "id": "115-complete-webflux--r2dbc-controller",
+  "level": 3
+}, {
+  "value": "12. Complete Reactive WebFlux + R2DBC Application",
+  "id": "12-complete-reactive-webflux--r2dbc-application",
+  "level": 2
+}, {
+  "value": "12.1 Main Application",
+  "id": "121-main-application",
+  "level": 3
+}, {
+  "value": "12.2 Application Properties",
+  "id": "122-application-properties",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-46-r2dbc--reactive-data-access",
+        children: "Chapter 46: R2DBC & Reactive Data Access"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/45-webflux",
+          children: "Spring WebFlux"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/47-spring-ai",
+          children: "Spring AI"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/46-r2dbc/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/46-r2dbc/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/46-r2dbc/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/46-r2dbc/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/46-r2dbc/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/46-r2dbc/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Core Concepts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundational understanding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-world application"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Implementation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code-first approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Working examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Best Practices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avoid common pitfalls"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Concepts] --> B[Setup/Configuration]\n    B --> C[Implementation]\n    C --> D[Testing]\n    D --> E[Best Practices]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After completing this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the R2DBC specification and how it differs from JDBC"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure Spring Data R2DBC with PostgreSQL, MySQL, H2, and other databases"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Define reactive repositories using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ReactiveCrudRepository"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "R2dbcRepository"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write reactive queries using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Query"
+        }), " annotations and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Querydsl"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Criteria"
+        }), " APIs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement reactive transactions with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Transactional"
+        }), " and programmatic control"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Manage relationships with entities, embedded objects, and custom converters"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Migrate from JPA/Hibernate to R2DBC and understand the trade-offs"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Test reactive data access with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "DataR2dbcTest"
+        }), ", Testcontainers, and StepVerifier"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optimize R2DBC performance with connection pooling, batching, and indexing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a complete reactive data layer for a realistic application"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-what-is-r2dbc",
+      children: "1. What Is R2DBC?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Test with production-like configurations → dev setups often hide issues that surface under real load."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/46-r2dbc.png",
+        alt: "R2DBC - Reactive Data Access Architecture"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-the-problem-with-jdbc",
+      children: "1.1 The Problem with JDBC"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["JDBC (Java Database Connectivity) is inherently blocking. Every ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ResultSet.next()"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PreparedStatement.executeQuery()"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Connection.commit()"
+      }), " blocks the calling thread until the database responds. In a reactive application, blocking an event-loop thread defeats the purpose of non-blocking I/O."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// JDBC → blocks the calling thread\nResultSet rs = stmt.executeQuery(\"SELECT * FROM products\");\nwhile (rs.next()) {               // Blocking\n    String name = rs.getString(\"name\");  // Blocking\n    products.add(new Product(name));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R2DBC (Reactive Relational Database Connectivity) solves this by providing a fully reactive, non-blocking API for database access. It was created by the Spring team led by Mark Paluch and became an official specification under the R2DBC umbrella."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-r2dbc-specification",
+      children: "1.2 R2DBC Specification"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R2DBC defines four SPI interfaces:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Interface"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "ConnectionFactory"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Creates reactive connections (analogous to JDBC ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "DataSource"
+            }), ")"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Connection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A reactive database connection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Statement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A reactive statement (parameters, execution)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Result"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A reactive result set (rows, row counts, generated keys)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["All operations return ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Publisher<T>"
+      }), " (typically ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Flux"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Mono"
+      }), "), enabling end-to-end reactive data flow from database to HTTP response."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-r2dbc-drivers",
+      children: "1.3 R2DBC Drivers"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Database"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Driver Dependency"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "io.r2dbc:r2dbc-postgresql"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MySQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "io.asyncer:r2dbc-mysql"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "H2"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "io.r2dbc:r2dbc-h2"
+            }), " (in-memory/test)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Microsoft SQL Server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "io.r2dbc:r2dbc-mssql"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MariaDB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "org.mariadb:r2dbc-mariadb"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Oracle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "com.oracle.database.r2dbc:oracle-r2dbc"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-project-setup",
+      children: "2. Project Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-maven-dependencies",
+      children: "2.1 Maven Dependencies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0\n         http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n\n    <parent>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-parent</artifactId>\n        <version>3.2.0</version>\n        <relativePath/>\n    </parent>\n\n    <groupId>com.r2dbc</groupId>\n    <artifactId>r2dbc-demo</artifactId>\n    <version>1.0.0</version>\n    <name>R2DBC Demo</name>\n\n    <properties>\n        <java.version>21</java.version>\n    </properties>\n\n    <dependencies>\n        <!-- WebFlux (reactive web) -->\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-webflux</artifactId>\n        </dependency>\n\n        <!-- Spring Data R2DBC -->\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-r2dbc</artifactId>\n        </dependency>\n\n        <!-- R2DBC PostgreSQL driver -->\n        <dependency>\n            <groupId>org.postgresql</groupId>\n            <artifactId>r2dbc-postgresql</artifactId>\n        </dependency>\n\n        <!-- R2DBC H2 driver (for testing) -->\n        <dependency>\n            <groupId>io.r2dbc</groupId>\n            <artifactId>r2dbc-h2</artifactId>\n            <scope>test</scope>\n        </dependency>\n\n        <!-- Reactive validation -->\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-validation</artifactId>\n        </dependency>\n\n        <!-- Testcontainers for R2DBC -->\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n        <dependency>\n            <groupId>io.projectreactor</groupId>\n            <artifactId>reactor-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n        <dependency>\n            <groupId>org.testcontainers</groupId>\n            <artifactId>testcontainers</artifactId>\n            <scope>test</scope>\n        </dependency>\n        <dependency>\n            <groupId>org.testcontainers</groupId>\n            <artifactId>postgresql</artifactId>\n            <scope>test</scope>\n        </dependency>\n        <dependency>\n            <groupId>org.testcontainers</groupId>\n            <artifactId>r2dbc</artifactId>\n            <scope>test</scope>\n        </dependency>\n\n        <!-- Flyway for R2DBC (reactive migrations) -->\n        <dependency>\n            <groupId>org.flywaydb</groupId>\n            <artifactId>flyway-core</artifactId>\n        </dependency>\n    </dependencies>\n\n    <build>\n        <plugins>\n            <plugin>\n                <groupId>org.springframework.boot</groupId>\n                <artifactId>spring-boot-maven-plugin</artifactId>\n            </plugin>\n        </plugins>\n    </build>\n</project>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-application-configuration",
+      children: "2.2 Application Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# src/main/resources/application.yml\n\n> **Previous:** [Spring WebFlux](./45-webflux.md) | **Next:** [Spring AI](./47-spring-ai.md)\nspring:\n  r2dbc:\n    url: r2dbc:postgresql://localhost:5432/reactivedb\n    username: postgres\n    password: postgres\n    pool:\n      initial-size: 5\n      max-size: 20\n      max-idle-time: 30m\n      max-life-time: 60m\n      max-acquire-time: 5s\n      max-create-connection-time: 5s\n\n  # Flyway migrations (reactive-aware)\n  flyway:\n    url: jdbc:postgresql://localhost:5432/reactivedb\n    user: postgres\n    password: postgres\n    enabled: true\n    locations: classpath:db/migration\n\nlogging:\n  level:\n    org.springframework.data.r2dbc: DEBUG\n    io.r2dbc.postgresql.QUERY: DEBUG\n    io.r2dbc.postgresql.PARAM: DEBUG\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-sql-schema-migrations-flyway",
+      children: "2.3 SQL Schema Migrations (Flyway)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- src/main/resources/db/migration/V1__init_schema.sql\nCREATE TABLE IF NOT EXISTS products (\n    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    name        VARCHAR(255) NOT NULL,\n    category    VARCHAR(100) NOT NULL,\n    price       DECIMAL(10, 2) NOT NULL,\n    quantity    INTEGER NOT NULL DEFAULT 0,\n    created_at  TIMESTAMP NOT NULL DEFAULT NOW(),\n    version     INTEGER NOT NULL DEFAULT 0\n);\n\nCREATE TABLE IF NOT EXISTS customers (\n    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    name        VARCHAR(255) NOT NULL,\n    email       VARCHAR(255) UNIQUE NOT NULL,\n    tier        VARCHAR(20) NOT NULL DEFAULT 'REGULAR',\n    created_at  TIMESTAMP NOT NULL DEFAULT NOW()\n);\n\nCREATE TABLE IF NOT EXISTS orders (\n    id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    customer_id   UUID NOT NULL REFERENCES customers(id),\n    status        VARCHAR(20) NOT NULL DEFAULT 'PENDING',\n    total         DECIMAL(12, 2) NOT NULL DEFAULT 0,\n    created_at    TIMESTAMP NOT NULL DEFAULT NOW(),\n    version       INTEGER NOT NULL DEFAULT 0\n);\n\nCREATE TABLE IF NOT EXISTS order_items (\n    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_id    UUID NOT NULL REFERENCES orders(id),\n    product_id  UUID NOT NULL REFERENCES products(id),\n    quantity    INTEGER NOT NULL,\n    unit_price  DECIMAL(10, 2) NOT NULL\n);\n\nCREATE INDEX idx_products_category ON products(category);\nCREATE INDEX idx_orders_customer ON orders(customer_id);\nCREATE INDEX idx_orders_status ON orders(status);\nCREATE INDEX idx_order_items_order ON order_items(order_id);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "24-application-entry-point",
+      children: "2.4 Application Entry Point"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.data.r2dbc.config.EnableR2dbcAuditing;\nimport org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;\n\n@SpringBootApplication\n@EnableR2dbcRepositories\n@EnableR2dbcAuditing\npublic class R2dbcApplication {\n\n    public static void main(String[] args) {\n        SpringApplication.run(R2dbcApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-entity-mapping",
+      children: "3. Entity Mapping"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-basic-entities",
+      children: "3.1 Basic Entities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.model;\n\nimport org.springframework.data.annotation.*;\nimport org.springframework.data.domain.Persistable;\nimport org.springframework.data.relational.core.mapping.Column;\nimport org.springframework.data.relational.core.mapping.Table;\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@Table(\"products\")\npublic class Product implements Persistable<UUID> {\n\n    @Id\n    private UUID id;\n\n    @Column(\"name\")\n    private String name;\n\n    @Column(\"category\")\n    private String category;\n\n    @Column(\"price\")\n    private double price;\n\n    @Column(\"quantity\")\n    private int quantity;\n\n    @Column(\"created_at\")\n    private LocalDateTime createdAt;\n\n    @Version\n    @Column(\"version\")\n    private Integer version;\n\n    @Transient\n    private boolean isNew = false;\n\n    public Product() {}\n\n    public Product(String name, String category, double price, int quantity) {\n        this.name = name;\n        this.category = category;\n        this.price = price;\n        this.quantity = quantity;\n        this.createdAt = LocalDateTime.now();\n        this.isNew = true;\n    }\n\n    // Getters\n    public UUID getId() { return id; }\n    public String getName() { return name; }\n    public String getCategory() { return category; }\n    public double getPrice() { return price; }\n    public int getQuantity() { return quantity; }\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public Integer getVersion() { return version; }\n\n    // Setters\n    public void setId(UUID id) { this.id = id; }\n    public void setName(String name) { this.name = name; }\n    public void setCategory(String category) { this.category = category; }\n    public void setPrice(double price) { this.price = price; }\n    public void setQuantity(int quantity) { this.quantity = quantity; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n    public void setVersion(Integer version) { this.version = version; }\n\n    @Override\n    public boolean isNew() {\n        return isNew || id == null;\n    }\n\n    public Product withNew(boolean isNew) {\n        this.isNew = isNew;\n        return this;\n    }\n\n    @Override\n    public String toString() {\n        return \"Product{id=\" + id + \", name='\" + name + \"', category='\" + category +\n            \"', price=\" + price + \", quantity=\" + quantity + \"}\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-entity-with-relationships",
+      children: "3.2 Entity with Relationships"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In R2DBC, relationships are not managed automatically like JPA. You write explicit queries."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.model;\n\nimport org.springframework.data.annotation.*;\nimport org.springframework.data.domain.Persistable;\nimport org.springframework.data.relational.core.mapping.Column;\nimport org.springframework.data.relational.core.mapping.Table;\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@Table(\"customers\")\npublic class Customer implements Persistable<UUID> {\n\n    @Id\n    private UUID id;\n\n    @Column(\"name\")\n    private String name;\n\n    @Column(\"email\")\n    private String email;\n\n    @Column(\"tier\")\n    private String tier;\n\n    @Column(\"created_at\")\n    private LocalDateTime createdAt;\n\n    @Transient\n    private boolean isNew = false;\n\n    public Customer() {}\n\n    public Customer(String name, String email, String tier) {\n        this.name = name;\n        this.email = email;\n        this.tier = tier;\n        this.createdAt = LocalDateTime.now();\n        this.isNew = true;\n    }\n\n    public UUID getId() { return id; }\n    public String getName() { return name; }\n    public String getEmail() { return email; }\n    public String getTier() { return tier; }\n    public LocalDateTime getCreatedAt() { return createdAt; }\n\n    public void setId(UUID id) { this.id = id; }\n    public void setName(String name) { this.name = name; }\n    public void setEmail(String email) { this.email = email; }\n    public void setTier(String tier) { this.tier = tier; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n\n    @Override\n    public boolean isNew() { return isNew || id == null; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.model;\n\nimport org.springframework.data.annotation.*;\nimport org.springframework.data.domain.Persistable;\nimport org.springframework.data.relational.core.mapping.Column;\nimport org.springframework.data.relational.core.mapping.Table;\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@Table(\"orders\")\npublic class Order implements Persistable<UUID> {\n\n    @Id\n    private UUID id;\n\n    @Column(\"customer_id\")\n    private UUID customerId;\n\n    @Column(\"status\")\n    private String status;\n\n    @Column(\"total\")\n    private double total;\n\n    @Column(\"created_at\")\n    private LocalDateTime createdAt;\n\n    @Version\n    private Integer version;\n\n    @Transient\n    private boolean isNew = false;\n\n    // Transient → not persisted, populated by query\n    @Transient\n    private Customer customer;\n\n    @Transient\n    private java.util.List<OrderItem> items;\n\n    public Order() {}\n\n    public Order(UUID customerId, String status) {\n        this.customerId = customerId;\n        this.status = status;\n        this.total = 0.0;\n        this.createdAt = LocalDateTime.now();\n        this.isNew = true;\n    }\n\n    public UUID getId() { return id; }\n    public UUID getCustomerId() { return customerId; }\n    public String getStatus() { return status; }\n    public double getTotal() { return total; }\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public Integer getVersion() { return version; }\n    public Customer getCustomer() { return customer; }\n    public java.util.List<OrderItem> getItems() { return items; }\n\n    public void setId(UUID id) { this.id = id; }\n    public void setCustomerId(UUID customerId) { this.customerId = customerId; }\n    public void setStatus(String status) { this.status = status; }\n    public void setTotal(double total) { this.total = total; }\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n    public void setVersion(Integer version) { this.version = version; }\n    public void setCustomer(Customer customer) { this.customer = customer; }\n    public void setItems(java.util.List<OrderItem> items) { this.items = items; }\n\n    @Override\n    public boolean isNew() { return isNew || id == null; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.model;\n\nimport org.springframework.data.annotation.Id;\nimport org.springframework.data.relational.core.mapping.Column;\nimport org.springframework.data.relational.core.mapping.Table;\nimport java.util.UUID;\n\n@Table(\"order_items\")\npublic class OrderItem {\n\n    @Id\n    private UUID id;\n\n    @Column(\"order_id\")\n    private UUID orderId;\n\n    @Column(\"product_id\")\n    private UUID productId;\n\n    @Column(\"quantity\")\n    private int quantity;\n\n    @Column(\"unit_price\")\n    private double unitPrice;\n\n    public OrderItem() {}\n\n    public OrderItem(UUID orderId, UUID productId, int quantity, double unitPrice) {\n        this.orderId = orderId;\n        this.productId = productId;\n        this.quantity = quantity;\n        this.unitPrice = unitPrice;\n    }\n\n    public UUID getId() { return id; }\n    public UUID getOrderId() { return orderId; }\n    public UUID getProductId() { return productId; }\n    public int getQuantity() { return quantity; }\n    public double getUnitPrice() { return unitPrice; }\n\n    public void setId(UUID id) { this.id = id; }\n    public void setOrderId(UUID orderId) { this.orderId = orderId; }\n    public void setProductId(UUID productId) { this.productId = productId; }\n    public void setQuantity(int quantity) { this.quantity = quantity; }\n    public void setUnitPrice(double unitPrice) { this.unitPrice = unitPrice; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "33-custom-converters",
+      children: "3.3 Custom Converters"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.config;\n\nimport com.r2dbc.demo.model.Product;\nimport io.r2dbc.spi.Row;\nimport org.springframework.core.convert.converter.Converter;\nimport org.springframework.data.convert.ReadingConverter;\nimport org.springframework.data.convert.WritingConverter;\nimport org.springframework.data.r2dbc.convert.R2dbcCustomConversions;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport java.time.LocalDateTime;\nimport java.util.List;\nimport java.util.UUID;\n\n@Configuration\npublic class R2dbcConverterConfig {\n\n    @Bean\n    public R2dbcCustomConversions r2dbcCustomConversions() {\n        return new R2dbcCustomConversions(List.of(\n            new ProductRowConverter(),\n            new UuidToStringConverter(),\n            new StringToUuidConverter()\n        ));\n    }\n\n    @ReadingConverter\n    static class ProductRowConverter implements Converter<Row, Product> {\n        @Override\n        public Product convert(Row source) {\n            Product p = new Product();\n            p.setId(source.get(\"id\", UUID.class));\n            p.setName(source.get(\"name\", String.class));\n            p.setCategory(source.get(\"category\", String.class));\n            p.setPrice(source.get(\"price\", Double.class));\n            p.setQuantity(source.get(\"quantity\", Integer.class));\n            p.setCreatedAt(source.get(\"created_at\", LocalDateTime.class));\n            p.setVersion(source.get(\"version\", Integer.class));\n            return p;\n        }\n    }\n\n    @WritingConverter\n    static class UuidToStringConverter implements Converter<UUID, String> {\n        @Override\n        public String convert(UUID source) {\n            return source.toString();\n        }\n    }\n\n    @ReadingConverter\n    static class StringToUuidConverter implements Converter<String, UUID> {\n        @Override\n        public UUID convert(String source) {\n            return UUID.fromString(source);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-reactive-repositories",
+      children: "4. Reactive Repositories"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-r2dbcrepository-interface",
+      children: "4.1 R2dbcRepository Interface"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.Product;\nimport org.springframework.data.r2dbc.repository.Query;\nimport org.springframework.data.r2dbc.repository.R2dbcRepository;\nimport org.springframework.data.repository.query.Param;\nimport org.springframework.stereotype.Repository;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\n\n@Repository\npublic interface ProductRepository extends R2dbcRepository<Product, UUID> {\n\n    // Derived query methods\n    Flux<Product> findByCategory(String category);\n\n    Flux<Product> findByNameContainingIgnoreCase(String name);\n\n    Flux<Product> findByPriceBetween(double min, double max);\n\n    Flux<Product> findByQuantityLessThan(int threshold);\n\n    Mono<Long> countByCategory(String category);\n\n    // Custom @Query with native SQL\n    @Query(\"SELECT * FROM products WHERE category = :category ORDER BY price DESC LIMIT :limit\")\n    Flux<Product> findTopByCategory(@Param(\"category\") String category,\n                                     @Param(\"limit\") int limit);\n\n    @Query(\"SELECT * FROM products WHERE price > :minPrice AND quantity > 0 ORDER BY price ASC\")\n    Flux<Product> findAvailableAbovePrice(@Param(\"minPrice\") double minPrice);\n\n    @Query(\"SELECT COALESCE(AVG(price), 0) FROM products WHERE category = :category\")\n    Mono<Double> averagePriceByCategory(@Param(\"category\") String category);\n\n    @Query(\"SELECT * FROM products WHERE LOWER(name) LIKE LOWER(CONCAT('%', :search, '%'))\")\n    Flux<Product> searchByName(@Param(\"search\") String search);\n\n    @Query(\"UPDATE products SET quantity = quantity - :amount WHERE id = :id AND quantity >= :amount\")\n    Mono<Integer> deductStock(@Param(\"id\") UUID id, @Param(\"amount\") int amount);\n\n    @Query(\"UPDATE products SET quantity = quantity + :amount WHERE id = :id\")\n    Mono<Integer> addStock(@Param(\"id\") UUID id, @Param(\"amount\") int amount);\n\n    @Query(\"SELECT EXISTS(SELECT 1 FROM products WHERE id = :id AND quantity >= :amount)\")\n    Mono<Boolean> hasEnoughStock(@Param(\"id\") UUID id, @Param(\"amount\") int amount);\n\n    // Aggregation queries\n    @Query(\"\"\"\n        SELECT category, COUNT(*) as count, AVG(price) as avg_price,\n               SUM(quantity) as total_stock\n        FROM products GROUP BY category ORDER BY category\n        \"\"\")\n    Flux<CategorySummary> categorySummaries();\n\n    // DTO projection\n    interface CategorySummary {\n        String getCategory();\n        Long getCount();\n        Double getAvgPrice();\n        Long getTotalStock();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-customer-repository",
+      children: "4.2 Customer Repository"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.Customer;\nimport org.springframework.data.r2dbc.repository.Query;\nimport org.springframework.data.r2dbc.repository.R2dbcRepository;\nimport org.springframework.data.repository.query.Param;\nimport org.springframework.stereotype.Repository;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\n\n@Repository\npublic interface CustomerRepository extends R2dbcRepository<Customer, UUID> {\n\n    Mono<Customer> findByEmail(String email);\n\n    @Query(\"SELECT * FROM customers WHERE LOWER(name) LIKE LOWER(CONCAT('%', :search, '%'))\")\n    Flux<Customer> searchByName(@Param(\"search\") String search);\n\n    @Query(\"SELECT tier, COUNT(*) as count FROM customers GROUP BY tier\")\n    Flux<TierCount> tierCounts();\n\n    interface TierCount {\n        String getTier();\n        Long getCount();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-order-repository-with-joins",
+      children: "4.3 Order Repository with Joins"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.Order;\nimport com.r2dbc.demo.model.OrderItem;\nimport io.r2dbc.spi.Row;\nimport io.r2dbc.spi.RowMetadata;\nimport org.springframework.data.r2dbc.repository.Query;\nimport org.springframework.data.r2dbc.repository.R2dbcRepository;\nimport org.springframework.data.repository.query.Param;\nimport org.springframework.stereotype.Repository;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\nimport java.util.function.BiFunction;\n\n@Repository\npublic interface OrderRepository extends R2dbcRepository<Order, UUID> {\n\n    Flux<Order> findByCustomerIdOrderByCreatedAtDesc(UUID customerId);\n\n    Flux<Order> findByStatus(String status);\n\n    @Query(\"SELECT COUNT(*) FROM orders WHERE status = :status\")\n    Mono<Long> countByStatus(@Param(\"status\") String status);\n\n    // Join query returning flat rows\n    @Query(\"\"\"\n        SELECT o.*, c.name as customer_name, c.email as customer_email\n        FROM orders o\n        JOIN customers c ON o.customer_id = c.id\n        WHERE o.id = :id\n        \"\"\")\n    Mono<OrderWithCustomer> findOrderWithCustomer(@Param(\"id\") UUID id);\n\n    @Query(\"\"\"\n        SELECT oi.*, p.name as product_name, p.category as product_category\n        FROM order_items oi\n        JOIN products p ON oi.product_id = p.id\n        WHERE oi.order_id = :orderId\n        \"\"\")\n    Flux<OrderItemWithProduct> findItemsWithProduct(@Param(\"orderId\") UUID orderId);\n\n    // Aggregate query\n    @Query(\"\"\"\n        SELECT DATE(created_at) as day, COUNT(*) as order_count,\n               SUM(total) as revenue\n        FROM orders\n        WHERE created_at >= :since\n        GROUP BY DATE(created_at)\n        ORDER BY day DESC\n        \"\"\")\n    Flux<DailyOrderSummary> dailySummaries(@Param(\"since\") java.time.LocalDateTime since);\n}\n\n// Projection interfaces\ninterface OrderWithCustomer {\n    UUID getId();\n    UUID getCustomerId();\n    String getStatus();\n    double getTotal();\n    java.time.LocalDateTime getCreatedAt();\n    String getCustomerName();\n    String getCustomerEmail();\n}\n\ninterface OrderItemWithProduct {\n    UUID getId();\n    UUID getOrderId();\n    UUID getProductId();\n    int getQuantity();\n    double getUnitPrice();\n    String getProductName();\n    String getProductCategory();\n}\n\ninterface DailyOrderSummary {\n    java.time.LocalDate getDay();\n    Long getOrderCount();\n    Double getRevenue();\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "44-order-item-repository",
+      children: "4.4 Order Item Repository"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.OrderItem;\nimport org.springframework.data.r2dbc.repository.Query;\nimport org.springframework.data.r2dbc.repository.R2dbcRepository;\nimport org.springframework.data.repository.query.Param;\nimport org.springframework.stereotype.Repository;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\n\n@Repository\npublic interface OrderItemRepository extends R2dbcRepository<OrderItem, UUID> {\n\n    Flux<OrderItem> findByOrderId(UUID orderId);\n\n    @Query(\"SELECT SUM(oi.quantity * oi.unit_price) FROM order_items oi WHERE oi.order_id = :orderId\")\n    Mono<Double> calculateOrderTotal(@Param(\"orderId\") UUID orderId);\n\n    @Query(\"DELETE FROM order_items WHERE order_id = :orderId\")\n    Mono<Integer> deleteByOrderId(@Param(\"orderId\") UUID orderId);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "5-database-client-low-level",
+      children: "5. Database Client (Low-Level)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For situations where repositories are not sufficient, you can use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DatabaseClient"
+      }), " directly."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.client;\n\nimport com.r2dbc.demo.model.Product;\nimport org.springframework.r2dbc.core.DatabaseClient;\nimport org.springframework.stereotype.Component;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@Component\npublic class ProductDatabaseClient {\n\n    private final DatabaseClient client;\n\n    public ProductDatabaseClient(DatabaseClient client) {\n        this.client = client;\n    }\n\n    // Manual mapping with RowMapper\n    public Flux<Product> findAll() {\n        return client.sql(\"SELECT * FROM products ORDER BY name\")\n            .map((row, metadata) -> mapProduct(row))\n            .all();\n    }\n\n    public Mono<Product> findById(UUID id) {\n        return client.sql(\"SELECT * FROM products WHERE id = :id\")\n            .bind(\"id\", id)\n            .map((row, metadata) -> mapProduct(row))\n            .one();\n    }\n\n    public Mono<Product> save(Product product) {\n        if (product.getId() == null) {\n            return insert(product);\n        }\n        return update(product);\n    }\n\n    private Mono<Product> insert(Product product) {\n        return client.sql(\"\"\"\n                INSERT INTO products (id, name, category, price, quantity, created_at)\n                VALUES (:id, :name, :category, :price, :quantity, :createdAt)\n                RETURNING *\n                \"\"\")\n            .bind(\"id\", UUID.randomUUID())\n            .bind(\"name\", product.getName())\n            .bind(\"category\", product.getCategory())\n            .bind(\"price\", product.getPrice())\n            .bind(\"quantity\", product.getQuantity())\n            .bind(\"createdAt\", LocalDateTime.now())\n            .map((row, metadata) -> mapProduct(row))\n            .one();\n    }\n\n    private Mono<Product> update(Product product) {\n        return client.sql(\"\"\"\n                UPDATE products SET name = :name, category = :category,\n                price = :price, quantity = :quantity\n                WHERE id = :id\n                RETURNING *\n                \"\"\")\n            .bind(\"id\", product.getId())\n            .bind(\"name\", product.getName())\n            .bind(\"category\", product.getCategory())\n            .bind(\"price\", product.getPrice())\n            .bind(\"quantity\", product.getQuantity())\n            .map((row, metadata) -> mapProduct(row))\n            .one();\n    }\n\n    public Mono<Integer> deleteById(UUID id) {\n        return client.sql(\"DELETE FROM products WHERE id = :id\")\n            .bind(\"id\", id)\n            .fetch()\n            .rowsUpdated();\n    }\n\n    public Flux<Product> search(String searchTerm, int limit, int offset) {\n        return client.sql(\"\"\"\n                SELECT * FROM products\n                WHERE LOWER(name) LIKE LOWER(CONCAT('%', :search, '%'))\n                ORDER BY name\n                LIMIT :limit OFFSET :offset\n                \"\"\")\n            .bind(\"search\", searchTerm)\n            .bind(\"limit\", limit)\n            .bind(\"offset\", offset)\n            .map((row, metadata) -> mapProduct(row))\n            .all();\n    }\n\n    public Mono<Long> count() {\n        return client.sql(\"SELECT COUNT(*) FROM products\")\n            .map((row, metadata) -> row.get(0, Long.class))\n            .one();\n    }\n\n    public Mono<Integer> updatePricesByCategory(String category, double percentage) {\n        return client.sql(\"\"\"\n                UPDATE products\n                SET price = price * (1 + :percentage / 100.0)\n                WHERE category = :category\n                \"\"\")\n            .bind(\"category\", category)\n            .bind(\"percentage\", percentage)\n            .fetch()\n            .rowsUpdated();\n    }\n\n    public Flux<Product> findLowStockWithSupplierInfo(int threshold) {\n        return client.sql(\"\"\"\n                SELECT p.*, s.name as supplier_name, s.contact_email\n                FROM products p\n                LEFT JOIN suppliers s ON p.supplier_id = s.id\n                WHERE p.quantity < :threshold\n                ORDER BY p.quantity ASC\n                \"\"\")\n            .bind(\"threshold\", threshold)\n            .map((row, metadata) -> {\n                Product p = mapProduct(row);\n                // Could set additional transient fields here\n                return p;\n            })\n            .all();\n    }\n\n    private Product mapProduct(Row row) {\n        Product p = new Product();\n        p.setId(row.get(\"id\", UUID.class));\n        p.setName(row.get(\"name\", String.class));\n        p.setCategory(row.get(\"category\", String.class));\n        p.setPrice(row.get(\"price\", Double.class));\n        p.setQuantity(row.get(\"quantity\", Integer.class));\n        p.setCreatedAt(row.get(\"created_at\", LocalDateTime.class));\n        p.setVersion(row.get(\"version\", Integer.class));\n        return p;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-reactive-transactions",
+      children: "6. Reactive Transactions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-declarative-transactions-with-transactional",
+      children: "6.1 Declarative Transactions with @Transactional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.service;\n\nimport com.r2dbc.demo.model.Order;\nimport com.r2dbc.demo.model.OrderItem;\nimport com.r2dbc.demo.model.Product;\nimport com.r2dbc.demo.repository.*;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport org.springframework.transaction.reactive.TransactionalOperator;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\n\n@Service\npublic class OrderService {\n\n    private final OrderRepository orderRepository;\n    private final OrderItemRepository orderItemRepository;\n    private final ProductRepository productRepository;\n    private final CustomerRepository customerRepository;\n    private final TransactionalOperator transactionalOperator;\n\n    public OrderService(OrderRepository orderRepository,\n                        OrderItemRepository orderItemRepository,\n                        ProductRepository productRepository,\n                        CustomerRepository customerRepository,\n                        TransactionalOperator transactionalOperator) {\n        this.orderRepository = orderRepository;\n        this.orderItemRepository = orderItemRepository;\n        this.productRepository = productRepository;\n        this.customerRepository = customerRepository;\n        this.transactionalOperator = transactionalOperator;\n    }\n\n    // Declarative transaction → whole method is transactional\n    @Transactional\n    public Mono<Order> createOrder(UUID customerId, java.util.List<OrderItemRequest> items) {\n        return customerRepository.findById(customerId)\n            .switchIfEmpty(Mono.error(\n                new IllegalArgumentException(\"Customer not found: \" + customerId)))\n            .flatMap(customer -> {\n                Order order = new Order(customerId, \"PENDING\");\n                return orderRepository.save(order);\n            })\n            .flatMap(order -> {\n                // Create all line items and calculate total\n                Flux<OrderItem> orderItems = Flux.fromIterable(items)\n                    .flatMap(req -> productRepository.findById(req.productId)\n                        .switchIfEmpty(Mono.error(\n                            new IllegalArgumentException(\"Product not found: \" + req.productId)))\n                        .flatMap(product -> {\n                            if (product.getQuantity() < req.quantity) {\n                                return Mono.error(new IllegalArgumentException(\n                                    \"Insufficient stock for product: \" + product.getName()));\n                            }\n                            OrderItem item = new OrderItem(\n                                order.getId(), req.productId, req.quantity, product.getPrice());\n                            return orderItemRepository.save(item)\n                                .then(productRepository.deductStock(req.productId, req.quantity)\n                                    .thenReturn(item));\n                        }));\n\n                return orderItems.collectList()\n                    .flatMap(savedItems -> {\n                        double total = savedItems.stream()\n                            .mapToDouble(i -> i.getQuantity() * i.getUnitPrice())\n                            .sum();\n                        order.setTotal(total);\n                        return orderRepository.save(order);\n                    });\n            });\n    }\n\n    // TransactionalOperator → programmatic transaction boundaries\n    public Mono<Order> createOrderProgrammatic(UUID customerId,\n                                                java.util.List<OrderItemRequest> items) {\n        return transactionalOperator.execute(status ->\n            customerRepository.findById(customerId)\n                .switchIfEmpty(Mono.error(\n                    new IllegalArgumentException(\"Customer not found\")))\n                .flatMap(customer -> {\n                    Order order = new Order(customerId, \"PENDING\");\n                    return orderRepository.save(order);\n                })\n                .flatMap(order -> Flux.fromIterable(items)\n                    .flatMap(req -> productRepository.findById(req.productId)\n                        .flatMap(product -> {\n                            if (product.getQuantity() < req.quantity) {\n                                return Mono.error(new IllegalArgumentException(\n                                    \"Insufficient stock\"));\n                            }\n                            OrderItem item = new OrderItem(\n                                order.getId(), req.productId, req.quantity, product.getPrice());\n                            return orderItemRepository.save(item)\n                                .then(productRepository.deductStock(req.productId, req.quantity)\n                                    .thenReturn(item));\n                        }))\n                    .collectList()\n                    .flatMap(savedItems -> {\n                        double total = savedItems.stream()\n                            .mapToDouble(i -> i.getQuantity() * i.getUnitPrice())\n                            .sum();\n                        order.setTotal(total);\n                        return orderRepository.save(order);\n                    })\n                )\n        ).then();\n    }\n\n    @Transactional\n    public Mono<Order> cancelOrder(UUID orderId) {\n        return orderRepository.findById(orderId)\n            .switchIfEmpty(Mono.error(\n                new IllegalArgumentException(\"Order not found: \" + orderId)))\n            .flatMap(order -> {\n                if (\"CANCELLED\".equals(order.getStatus())) {\n                    return Mono.error(\n                        new IllegalStateException(\"Order already cancelled\"));\n                }\n                order.setStatus(\"CANCELLED\");\n                return orderItemRepository.findByOrderId(orderId)\n                    .flatMap(item -> productRepository.addStock(\n                        item.getProductId(), item.getQuantity()))\n                    .then(orderRepository.save(order));\n            });\n    }\n\n    @Transactional(readOnly = true)\n    public Mono<Order> getOrderWithDetails(UUID orderId) {\n        return orderRepository.findOrderWithCustomer(orderId)\n            .switchIfEmpty(Mono.error(\n                new IllegalArgumentException(\"Order not found: \" + orderId)))\n            .flatMap(oc -> orderRepository.findById(oc.getId())\n                .flatMap(order -> orderItemRepository.findByOrderId(orderId)\n                    .collectList()\n                    .map(items -> {\n                        order.setItems(items);\n                        return order;\n                    })));\n    }\n\n    @Transactional(readOnly = true)\n    public Flux<Order> getCustomerOrders(UUID customerId) {\n        return orderRepository.findByCustomerIdOrderByCreatedAtDesc(customerId);\n    }\n\n    public record OrderItemRequest(UUID productId, int quantity) {}\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-transaction-configuration",
+      children: "6.2 Transaction Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.r2dbc.connection.R2dbcTransactionManager;\nimport org.springframework.transaction.ReactiveTransactionManager;\nimport org.springframework.transaction.annotation.EnableTransactionManagement;\nimport org.springframework.transaction.reactive.TransactionalOperator;\nimport io.r2dbc.spi.ConnectionFactory;\n\n@Configuration\n@EnableTransactionManagement\npublic class TransactionConfig {\n\n    @Bean\n    public ReactiveTransactionManager transactionManager(ConnectionFactory cf) {\n        return new R2dbcTransactionManager(cf);\n    }\n\n    @Bean\n    public TransactionalOperator transactionalOperator(\n            ReactiveTransactionManager tm) {\n        return TransactionalOperator.create(tm);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-testing-r2dbc",
+      children: "7. Testing R2DBC"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-datar2dbctest-with-h2",
+      children: "7.1 DataR2dbcTest with H2"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.config.R2dbcConverterConfig;\nimport com.r2dbc.demo.model.Product;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTest;\nimport org.springframework.context.annotation.Import;\nimport org.springframework.test.context.DynamicPropertyRegistry;\nimport org.springframework.test.context.DynamicPropertySource;\nimport reactor.test.StepVerifier;\nimport java.util.UUID;\n\n@DataR2dbcTest\n@Import(R2dbcConverterConfig.class)\nclass ProductRepositoryTest {\n\n    @Autowired\n    private ProductRepository productRepository;\n\n    private Product sampleProduct;\n\n    @BeforeEach\n    void setUp() {\n        productRepository.deleteAll().block();\n        sampleProduct = productRepository.save(\n            new Product(\"Test Product\", \"Electronics\", 99.99, 50)\n        ).block();\n    }\n\n    @Test\n    void findAll_shouldReturnAllProducts() {\n        StepVerifier.create(productRepository.findAll())\n            .expectNextMatches(p -> p.getName().equals(\"Test Product\"))\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findById_shouldReturnProduct() {\n        StepVerifier.create(productRepository.findById(sampleProduct.getId()))\n            .expectNextMatches(p -> p.getPrice() == 99.99)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findById_notFound_shouldReturnEmpty() {\n        StepVerifier.create(productRepository.findById(UUID.randomUUID()))\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findByCategory_shouldFilter() {\n        productRepository.save(new Product(\"Laptop\", \"Electronics\", 1200.0, 10)).block();\n        productRepository.save(new Product(\"Book\", \"Education\", 29.99, 100)).block();\n\n        StepVerifier.create(productRepository.findByCategory(\"Electronics\"))\n            .expectNextMatches(p -> p.getCategory().equals(\"Electronics\"))\n            .expectNextMatches(p -> p.getCategory().equals(\"Electronics\"))\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findByNameContainingIgnoreCase_shouldSearch() {\n        StepVerifier.create(productRepository.findByNameContainingIgnoreCase(\"test\"))\n            .expectNextMatches(p -> p.getName().toLowerCase().contains(\"test\"))\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findByPriceBetween_shouldFilter() {\n        productRepository.save(new Product(\"Cheap\", \"A\", 5.0, 10)).block();\n        productRepository.save(new Product(\"Expensive\", \"B\", 500.0, 10)).block();\n\n        StepVerifier.create(productRepository.findByPriceBetween(50.0, 200.0))\n            .expectNextMatches(p -> p.getPrice() >= 50.0 && p.getPrice() <= 200.0)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void findByQuantityLessThan_shouldFindLowStock() {\n        productRepository.save(new Product(\"Low\", \"A\", 10.0, 3)).block();\n        productRepository.save(new Product(\"High\", \"B\", 10.0, 100)).block();\n\n        StepVerifier.create(productRepository.findByQuantityLessThan(10))\n            .expectNextMatches(p -> p.getQuantity() < 10)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void countByCategory_shouldReturnCount() {\n        productRepository.save(new Product(\"Item1\", \"Books\", 10.0, 1)).block();\n        productRepository.save(new Product(\"Item2\", \"Books\", 20.0, 2)).block();\n\n        StepVerifier.create(productRepository.countByCategory(\"Books\"))\n            .expectNext(2L)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void customQuery_shouldWork() {\n        productRepository.save(new Product(\"Alpha\", \"A\", 100.0, 10)).block();\n        productRepository.save(new Product(\"Beta\", \"A\", 50.0, 10)).block();\n        productRepository.save(new Product(\"Gamma\", \"A\", 200.0, 10)).block();\n\n        StepVerifier.create(productRepository.findTopByCategory(\"A\", 2))\n            .expectNextMatches(p -> p.getPrice() == 200.0)\n            .expectNextMatches(p -> p.getPrice() == 100.0)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void deductStock_shouldReduceQuantity() {\n        UUID id = sampleProduct.getId();\n\n        StepVerizer.create(productRepository.deductStock(id, 10))\n            .expectNext(1)\n            .expectComplete()\n            .verify();\n\n        StepVerifier.create(productRepository.findById(id))\n            .expectNextMatches(p -> p.getQuantity() == 40)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void hasEnoughStock_shouldCheck() {\n        StepVerifier.create(productRepository.hasEnoughStock(sampleProduct.getId(), 10))\n            .expectNext(true)\n            .expectComplete()\n            .verify();\n\n        StepVerifier.create(productRepository.hasEnoughStock(sampleProduct.getId(), 999))\n            .expectNext(false)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void categorySummaries_shouldAggregate() {\n        productRepository.save(new Product(\"A1\", \"CatX\", 100.0, 10)).block();\n        productRepository.save(new Product(\"A2\", \"CatX\", 200.0, 20)).block();\n        productRepository.save(new Product(\"B1\", \"CatY\", 50.0, 5)).block();\n\n        StepVerifier.create(productRepository.categorySummaries())\n            .expectNextMatches(s -> s.getCategory().equals(\"CatX\")\n                && s.getCount() == 2\n                && s.getAvgPrice() == 150.0\n                && s.getTotalStock() == 30)\n            .expectNextMatches(s -> s.getCategory().equals(\"CatY\")\n                && s.getCount() == 1)\n            .expectComplete()\n            .verify();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-testcontainers-with-postgresql",
+      children: "7.2 Testcontainers with PostgreSQL"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.Product;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTest;\nimport org.springframework.boot.testcontainers.service.connection.ServiceConnection;\nimport org.springframework.test.context.DynamicPropertyRegistry;\nimport org.springframework.test.context.DynamicPropertySource;\nimport org.testcontainers.containers.PostgreSQLContainer;\nimport org.testcontainers.junit.jupiter.Container;\nimport org.testcontainers.junit.jupiter.Testcontainers;\nimport reactor.test.StepVerifier;\n\n@DataR2dbcTest\n@Testcontainers\nclass ProductRepositoryTestcontainersTest {\n\n    @Container\n    @ServiceConnection\n    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(\"postgres:16\")\n        .withDatabaseName(\"testdb\")\n        .withUsername(\"test\")\n        .withPassword(\"test\");\n\n    @Autowired\n    private ProductRepository productRepository;\n\n    @BeforeEach\n    void setUp() {\n        productRepository.deleteAll().block();\n    }\n\n    @Test\n    void shouldWorkWithRealPostgres() {\n        productRepository.save(new Product(\"RealDB Product\", \"Test\", 100.0, 50))\n            .as(StepVerifier::create)\n            .expectNextMatches(p -> p.getId() != null)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void transactionCommitTest() {\n        productRepository.save(new Product(\"Item1\", \"A\", 10.0, 5)).block();\n        productRepository.save(new Product(\"Item2\", \"A\", 20.0, 10)).block();\n\n        StepVerifier.create(productRepository.countByCategory(\"A\"))\n            .expectNext(2L)\n            .expectComplete()\n            .verify();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-testing-transactions",
+      children: "7.3 Testing Transactions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.service;\n\nimport com.r2dbc.demo.model.Product;\nimport com.r2dbc.demo.repository.OrderItemRepository;\nimport com.r2dbc.demo.repository.OrderRepository;\nimport com.r2dbc.demo.repository.ProductRepository;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.transaction.reactive.TransactionalOperator;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport reactor.test.StepVerifier;\nimport java.util.List;\nimport java.util.UUID;\n\n@SpringBootTest\nclass OrderServiceTransactionTest {\n\n    @Autowired\n    private OrderService orderService;\n\n    @Autowired\n    private ProductRepository productRepository;\n\n    @Autowired\n    private OrderRepository orderRepository;\n\n    @Autowired\n    private OrderItemRepository orderItemRepository;\n\n    @Autowired\n    private TransactionalOperator transactionalOperator;\n\n    private UUID customerId;\n    private UUID productId;\n\n    @BeforeEach\n    void setUp() {\n        transactionalOperator.execute(status ->\n            orderItemRepository.deleteAll()\n                .then(orderRepository.deleteAll())\n                .then(productRepository.deleteAll())\n        ).then().block();\n\n        customerId = UUID.randomUUID();\n        productId = UUID.randomUUID();\n\n        // Insert test customer and product using DatabaseClient directly\n    }\n\n    @Test\n    void createOrder_shouldSucceed() {\n        productRepository.save(new Product(\"Test Item\", \"A\", 50.0, 10))\n            .flatMap(product -> {\n                var request = List.of(\n                    new OrderService.OrderItemRequest(product.getId(), 2)\n                );\n                return orderService.createOrder(customerId, request);\n            })\n            .as(StepVerifier::create)\n            .expectNextMatches(order -> order.getStatus().equals(\"PENDING\")\n                && order.getTotal() == 100.0)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void createOrder_insufficientStock_shouldRollback() {\n        productRepository.save(new Product(\"Low Stock\", \"A\", 50.0, 1))\n            .flatMap(product -> {\n                var request = List.of(\n                    new OrderService.OrderItemRequest(product.getId(), 999)\n                );\n                return orderService.createOrder(customerId, request);\n            })\n            .as(StepVerifier::create)\n            .expectError(IllegalArgumentException.class)\n            .verify();\n\n        // Verify no orders were created (transaction rolled back)\n        StepVerifier.create(orderRepository.count())\n            .expectNext(0L)\n            .expectComplete()\n            .verify();\n    }\n\n    @Test\n    void cancelOrder_shouldRestoreStock() {\n        productRepository.save(new Product(\"Cancel Test\", \"A\", 30.0, 5))\n            .flatMap(product -> {\n                var request = List.of(\n                    new OrderService.OrderItemRequest(product.getId(), 3)\n                );\n                return orderService.createOrder(customerId, request)\n                    .flatMap(order -> orderService.cancelOrder(order.getId())\n                        .thenReturn(product.getId()));\n            })\n            .flatMap(pid -> productRepository.findById(pid))\n            .as(StepVerifier::create)\n            .expectNextMatches(p -> p.getQuantity() == 5) // Stock restored\n            .expectComplete()\n            .verify();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-auditing",
+      children: "8. Auditing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.model;\n\nimport org.springframework.data.annotation.CreatedDate;\nimport org.springframework.data.annotation.LastModifiedDate;\nimport org.springframework.data.annotation.Version;\nimport org.springframework.data.relational.core.mapping.Column;\nimport java.time.LocalDateTime;\n\n// Mixin for entities that need auditing\npublic abstract class AuditableEntity {\n\n    @CreatedDate\n    @Column(\"created_at\")\n    private LocalDateTime createdAt;\n\n    @LastModifiedDate\n    @Column(\"updated_at\")\n    private LocalDateTime updatedAt;\n\n    @Version\n    @Column(\"version\")\n    private Integer version;\n\n    public LocalDateTime getCreatedAt() { return createdAt; }\n    public LocalDateTime getUpdatedAt() { return updatedAt; }\n    public Integer getVersion() { return version; }\n\n    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }\n    public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }\n    public void setVersion(Integer version) { this.version = version; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-performance-tuning",
+      children: "9. Performance Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "91-connection-pool-optimization",
+      children: "9.1 Connection Pool Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml\n\n> **Previous:** [Spring WebFlux](./45-webflux.md) | **Next:** [Spring AI](./47-spring-ai.md)\nspring:\n  r2dbc:\n    pool:\n      initial-size: 10\n      max-size: 50\n      max-idle-time: 30m\n      max-life-time: 60m\n      max-acquire-time: 3s\n      max-create-connection-time: 3s\n      # Validation\n      validation-query: SELECT 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "92-batch-operations",
+      children: "9.2 Batch Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.service;\n\nimport com.r2dbc.demo.model.Product;\nimport org.springframework.r2dbc.core.DatabaseClient;\nimport org.springframework.stereotype.Service;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport reactor.core.scheduler.Schedulers;\nimport java.util.List;\n\n@Service\npublic class BatchService {\n\n    private final DatabaseClient client;\n\n    public BatchService(DatabaseClient client) {\n        this.client = client;\n    }\n\n    // Batch insert using multiple bind values\n    public Flux<Product> batchInsert(List<Product> products) {\n        return Flux.fromIterable(products)\n            .flatMap(product ->\n                client.sql(\"\"\"\n                    INSERT INTO products (id, name, category, price, quantity, created_at)\n                    VALUES (:id, :name, :category, :price, :quantity, :createdAt)\n                    RETURNING *\n                    \"\"\")\n                .bind(\"id\", java.util.UUID.randomUUID())\n                .bind(\"name\", product.getName())\n                .bind(\"category\", product.getCategory())\n                .bind(\"price\", product.getPrice())\n                .bind(\"quantity\", product.getQuantity())\n                .bind(\"createdAt\", java.time.LocalDateTime.now())\n                .map((row, metadata) -> mapProduct(row))\n                .one(),\n                50 // Concurrency limit\n            );\n    }\n\n    // Bulk update using IN clause\n    public Mono<Integer> updatePricesByCategoryBulk(String category, double newPrice) {\n        return client.sql(\"UPDATE products SET price = :price WHERE category = :category\")\n            .bind(\"price\", newPrice)\n            .bind(\"category\", category)\n            .fetch()\n            .rowsUpdated();\n    }\n\n    // Using SQL batch statement\n    public Mono<Integer> batchUpdatePrices(List<java.util.UUID> ids, double multiplier) {\n        // R2DBC doesn't support JDBC batch natively, but you can use flatMap\n        return Flux.fromIterable(ids)\n            .flatMap(id ->\n                client.sql(\"UPDATE products SET price = price * :mult WHERE id = :id\")\n                    .bind(\"mult\", multiplier)\n                    .bind(\"id\", id)\n                    .fetch()\n                    .rowsUpdated(),\n                10\n            )\n            .reduce(0, Integer::sum);\n    }\n\n    private Product mapProduct(io.r2dbc.spi.Row row) {\n        Product p = new Product();\n        p.setId(row.get(\"id\", java.util.UUID.class));\n        p.setName(row.get(\"name\", String.class));\n        p.setCategory(row.get(\"category\", String.class));\n        p.setPrice(row.get(\"price\", Double.class));\n        p.setQuantity(row.get(\"quantity\", Integer.class));\n        p.setCreatedAt(row.get(\"created_at\", java.time.LocalDateTime.class));\n        p.setVersion(row.get(\"version\", Integer.class));\n        return p;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "93-indexing-and-query-optimization",
+      children: "9.3 Indexing and Query Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- Key indexes for performance\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_products_category ON products(category);\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_products_name_trgm ON products USING gin (name gin_trgm_ops);\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_orders_customer_status ON orders(customer_id, status);\nCREATE INDEX CONCURRENTLY IF NOT EXISTS idx_order_items_product ON order_items(product_id);\n\n-- Materialized view for dashboard queries\nCREATE MATERIALIZED VIEW IF NOT EXISTS product_category_stats AS\nSELECT\n    category,\n    COUNT(*) as product_count,\n    AVG(price) as avg_price,\n    SUM(quantity) as total_stock,\n    MIN(price) as min_price,\n    MAX(price) as max_price\nFROM products\nGROUP BY category;\n\nCREATE UNIQUE INDEX IF NOT EXISTS idx_category_stats ON product_category_stats(category);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "94-performance-comparison-r2dbc-vs-jpa",
+      children: "9.4 Performance Comparison: R2DBC vs JPA"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.performance;\n\nimport org.springframework.r2dbc.core.DatabaseClient;\nimport org.springframework.stereotype.Component;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport reactor.core.scheduler.Schedulers;\nimport java.time.Duration;\nimport java.time.Instant;\nimport java.util.UUID;\n\n@Component\npublic class PerformanceComparison {\n\n    private final DatabaseClient client;\n\n    public PerformanceComparison(DatabaseClient client) {\n        this.client = client;\n    }\n\n    // R2DBC: fully reactive query\n    public Flux<Product> r2dbcFindAll() {\n        return client.sql(\"SELECT * FROM products\")\n            .map((row, metadata) -> mapProduct(row))\n            .all();\n    }\n\n    // R2DBC: paginated query\n    public Flux<Product> r2dbcFindPaginated(int page, int size) {\n        return client.sql(\"SELECT * FROM products ORDER BY name LIMIT :size OFFSET :offset\")\n            .bind(\"size\", size)\n            .bind(\"offset\", page * size)\n            .map((row, metadata) -> mapProduct(row))\n            .all();\n    }\n\n    // R2DBC: count query\n    public Mono<Long> r2dbcCount() {\n        return client.sql(\"SELECT COUNT(*) FROM products\")\n            .map((row, metadata) -> row.get(0, Long.class))\n            .one();\n    }\n\n    // Benchmark: measure throughput for concurrent reads\n    public Mono<String> benchmarkConcurrentReads(int concurrency) {\n        Instant start = Instant.now();\n\n        return Flux.range(0, concurrency)\n            .flatMap(i -> r2dbcCount(), 20)\n            .then(Mono.fromCallable(() -> {\n                long elapsed = Duration.between(start, Instant.now()).toMillis();\n                return \"R2DBC: \" + concurrency + \" concurrent reads in \" + elapsed + \"ms\";\n            }));\n    }\n\n    // Benchmark: measure insert performance\n    public Mono<String> benchmarkInserts(int count) {\n        Instant start = Instant.now();\n\n        return Flux.range(0, count)\n            .flatMap(i ->\n                client.sql(\"\"\"\n                    INSERT INTO products (id, name, category, price, quantity, created_at)\n                    VALUES (:id, :name, :cat, :price, :qty, NOW())\n                    \"\"\")\n                .bind(\"id\", UUID.randomUUID())\n                .bind(\"name\", \"Benchmark Product \" + i)\n                .bind(\"cat\", \"Benchmark\")\n                .bind(\"price\", Math.random() * 1000)\n                .bind(\"qty\", (int) (Math.random() * 100))\n                .fetch()\n                .rowsUpdated(),\n                50\n            )\n            .reduce(0, Integer::sum)\n            .map(total -> {\n                long elapsed = Duration.between(start, Instant.now()).toMillis();\n                return \"R2DBC: Inserted \" + total + \" records in \" + elapsed + \"ms (\" +\n                    (total * 1000L / elapsed) + \" records/sec)\";\n            });\n    }\n\n    private com.r2dbc.demo.model.Product mapProduct(io.r2dbc.spi.Row row) {\n        com.r2dbc.demo.model.Product p = new com.r2dbc.demo.model.Product();\n        p.setId(row.get(\"id\", UUID.class));\n        p.setName(row.get(\"name\", String.class));\n        p.setCategory(row.get(\"category\", String.class));\n        p.setPrice(row.get(\"price\", Double.class));\n        p.setQuantity(row.get(\"quantity\", Integer.class));\n        p.setCreatedAt(row.get(\"created_at\", java.time.LocalDateTime.class));\n        return p;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-r2dbc-vs-jpa-comparison",
+      children: "10. R2DBC vs JPA Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "JPA / Hibernate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R2DBC"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O Model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Blocking (JDBC)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-blocking (Reactive Streams)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Relationship Mapping"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic (@OneToMany, @ManyToOne)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual (explicit queries)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lazy Loading"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in (proxies)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not supported"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "N+1 Problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common, needs optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible (you write the queries)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cascade Operations"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic (cascade types)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Persistence Context"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First-level cache, dirty checking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (stateless)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Change Tracking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual (save explicitly)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maturity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very mature (20+ years)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maturing (adopted in Spring Boot 2.x+)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead from proxies & caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct SQL, less overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Curve"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Steep (mapping details)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (SQL skills directly transfer)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Thread Model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One thread per connection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event loop (high concurrency)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "when-to-use-each",
+      children: "When to Use Each"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Choose JPA when:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You have complex domain models with many relationships and cascade operations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Change tracking and automatic dirty checking save significant code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You need second-level caching across transactions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Your team is experienced with JPA and can handle its complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The application has low-to-moderate concurrency and blocking is acceptable"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Choose R2DBC when:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You need end-to-end reactive from HTTP to database"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You have high concurrency requirements (many simultaneous connections)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You prefer explicit SQL control over ORM magic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Your data model is relatively flat or you don't mind writing joins manually"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You want to avoid the N+1 problem and unpredictable Hibernate queries"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You are building WebFlux or gateway applications"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-advanced-patterns",
+      children: "11. Advanced Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-pageable-support",
+      children: "11.1 Pageable Support"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.repository;\n\nimport com.r2dbc.demo.model.Product;\nimport org.springframework.data.domain.Pageable;\nimport org.springframework.data.r2dbc.repository.Query;\nimport org.springframework.data.r2dbc.repository.R2dbcRepository;\nimport org.springframework.data.repository.reactive.ReactiveSortingAndPageableRepository;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.util.UUID;\n\npublic interface PaginatedProductRepository\n        extends ReactiveSortingAndPageableRepository<Product, UUID> {\n\n    Flux<Product> findByCategory(String category, Pageable pageable);\n\n    Flux<Product> findAllByOrderByPriceDesc(Pageable pageable);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-entity-callbacks",
+      children: "11.2 Entity Callbacks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.config;\n\nimport com.r2dbc.demo.model.Product;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.data.r2dbc.mapping.event.BeforeConvertCallback;\nimport org.springframework.data.relational.core.sql.SqlIdentifier;\nimport org.springframework.stereotype.Component;\nimport reactor.core.publisher.Mono;\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@Component\nclass ProductBeforeConvertCallback implements BeforeConvertCallback<Product> {\n\n    @Override\n    public Mono<Product> onBeforeConvert(Product entity, SqlIdentifier table) {\n        if (entity.getId() == null) {\n            entity.setId(UUID.randomUUID());\n        }\n        if (entity.getCreatedAt() == null) {\n            entity.setCreatedAt(LocalDateTime.now());\n        }\n        return Mono.just(entity);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-reactive-auditing-with-spring-data",
+      children: "11.3 Reactive Auditing with Spring Data"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.data.domain.ReactiveAuditorAware;\nimport org.springframework.data.r2dbc.config.EnableR2dbcAuditing;\nimport reactor.core.publisher.Mono;\n\n@Configuration\n@EnableR2dbcAuditing\npublic class R2dbcAuditingConfig {\n\n    @Bean\n    public ReactiveAuditorAware<String> auditorAware() {\n        return () -> Mono.just(\"system\"); // Replace with SecurityContext\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "114-schema-initialization-with-sql-scripts",
+      children: "11.4 Schema Initialization with SQL Scripts"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "spring:\n  r2dbc:\n    init:\n      mode: always\n      schema-locations: classpath:schema.sql\n      data-locations: classpath:data.sql\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- src/main/resources/schema.sql\nCREATE TABLE IF NOT EXISTS products (\n    id UUID DEFAULT RANDOM_UUID() PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    category VARCHAR(100) NOT NULL,\n    price DECIMAL(10,2) NOT NULL,\n    quantity INTEGER NOT NULL DEFAULT 0,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    version INTEGER DEFAULT 0\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-sql",
+        children: "-- src/main/resources/data.sql\nINSERT INTO products (name, category, price, quantity) VALUES\n('Sample Product', 'Demo', 49.99, 100);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "115-complete-webflux--r2dbc-controller",
+      children: "11.5 Complete WebFlux + R2DBC Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo.controller;\n\nimport com.r2dbc.demo.model.Product;\nimport com.r2dbc.demo.repository.ProductRepository;\nimport jakarta.validation.Valid;\nimport org.springframework.data.domain.PageRequest;\nimport org.springframework.data.domain.Sort;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport reactor.core.publisher.Flux;\nimport reactor.core.publisher.Mono;\nimport java.time.Duration;\nimport java.util.UUID;\n\n@RestController\n@RequestMapping(\"/api/v2/products\")\npublic class ProductR2dbcController {\n\n    private final ProductRepository productRepository;\n\n    public ProductR2dbcController(ProductRepository productRepository) {\n        this.productRepository = productRepository;\n    }\n\n    @GetMapping\n    public Flux<Product> getAll(\n            @RequestParam(defaultValue = \"0\") int page,\n            @RequestParam(defaultValue = \"20\") int size) {\n        return productRepository.findAll()\n            .skip((long) page * size)\n            .take(size);\n    }\n\n    @GetMapping(\"/{id}\")\n    public Mono<ResponseEntity<Product>> getById(@PathVariable UUID id) {\n        return productRepository.findById(id)\n            .map(ResponseEntity::ok)\n            .defaultIfEmpty(ResponseEntity.notFound().build());\n    }\n\n    @PostMapping\n    @ResponseStatus(HttpStatus.CREATED)\n    public Mono<Product> create(@Valid @RequestBody Product product) {\n        return productRepository.save(product);\n    }\n\n    @PutMapping(\"/{id}\")\n    public Mono<ResponseEntity<Product>> update(\n            @PathVariable UUID id,\n            @Valid @RequestBody Product product) {\n        return productRepository.findById(id)\n            .flatMap(existing -> {\n                existing.setName(product.getName());\n                existing.setCategory(product.getCategory());\n                existing.setPrice(product.getPrice());\n                existing.setQuantity(product.getQuantity());\n                return productRepository.save(existing);\n            })\n            .map(ResponseEntity::ok)\n            .defaultIfEmpty(ResponseEntity.notFound().build());\n    }\n\n    @DeleteMapping(\"/{id}\")\n    public Mono<ResponseEntity<Void>> delete(@PathVariable UUID id) {\n        return productRepository.findById(id)\n            .flatMap(existing -> productRepository.delete(existing)\n                .then(Mono.just(ResponseEntity.noContent().<Void>build())))\n            .defaultIfEmpty(ResponseEntity.notFound().build());\n    }\n\n    @GetMapping(\"/category/{category}\")\n    public Flux<Product> byCategory(@PathVariable String category) {\n        return productRepository.findByCategory(category);\n    }\n\n    @GetMapping(\"/search\")\n    public Flux<Product> search(@RequestParam String q) {\n        return productRepository.searchByName(q);\n    }\n\n    @GetMapping(\"/stats\")\n    public Mono<ProductRepository.CategorySummary> stats() {\n        return productRepository.categorySummaries().next();\n    }\n\n    @GetMapping(\"/low-stock\")\n    public Flux<Product> lowStock(@RequestParam(defaultValue = \"10\") int threshold) {\n        return productRepository.findByQuantityLessThan(threshold);\n    }\n\n    @PostMapping(\"/batch\")\n    public Flux<Product> batchCreate(@RequestBody Flux<Product> products) {\n        return productRepository.saveAll(products);\n    }\n\n    @GetMapping(\"/stream\")\n    public Flux<Product> stream() {\n        return productRepository.findAll()\n            .delayElements(Duration.ofSeconds(1));\n    }\n\n    @GetMapping(\"/count\")\n    public Mono<Long> count() {\n        return productRepository.count();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-complete-reactive-webflux--r2dbc-application",
+      children: "12. Complete Reactive WebFlux + R2DBC Application"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "121-main-application",
+      children: "12.1 Main Application"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.r2dbc.demo;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.data.r2dbc.config.EnableR2dbcAuditing;\n\n@SpringBootApplication\n@EnableR2dbcAuditing\npublic class ReactiveDataApplication {\n\n    public static void main(String[] args) {\n        SpringApplication.run(ReactiveDataApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "122-application-properties",
+      children: "12.2 Application Properties"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "spring:\n  application:\n    name: r2dbc-demo\n  r2dbc:\n    url: r2dbc:postgresql://localhost:5432/reactivedb\n    username: postgres\n    password: postgres\n    pool:\n      initial-size: 10\n      max-size: 40\n      max-idle-time: 30m\n      max-life-time: 60m\n      max-acquire-time: 5s\n  flyway:\n    url: jdbc:postgresql://localhost:5432/reactivedb\n    user: postgres\n    password: postgres\n    enabled: true\n  jackson:\n    serialization:\n      write-dates-as-timestamps: false\n    default-property-inclusion: non_null\n\nserver:\n  port: 8080\n\nlogging:\n  level:\n    org.springframework.data.r2dbc: DEBUG\n    io.r2dbc.postgresql.QUERY: DEBUG\n    io.r2dbc.postgresql.PARAM: TRACE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Commands/APIs"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Setup"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required dependencies and configuration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify versions match"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Implementation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core code patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test edge cases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Testing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification methods"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cover success and failure paths"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern C"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Small application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High-throughput API"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Event-driven"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the primary benefit of this chapter's main topic?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Improved performance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Better developer productivity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Enhanced reliability"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) All of the above"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which approach is recommended for production deployments?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) The simplest solution"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) The most feature-rich option"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) The one with best operational characteristics"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Whatever the team knows best"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When should you consider this pattern?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) For every project regardless of size"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) When complexity justifies the overhead"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Only in legacy systems"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Never → it is outdated"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter covered Spring Data R2DBC and reactive data access comprehensively:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "R2DBC specification"
+          }), " provides fully non-blocking database access with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ConnectionFactory"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Connection"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Statement"
+          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Result"
+          }), " interfaces, supporting PostgreSQL, MySQL, H2, MSSQL, MariaDB, and Oracle."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Spring Data R2DBC"
+          }), " builds on R2DBC with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "R2dbcRepository"
+          }), ", derived query methods, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Query"
+          }), " annotations, and DTO projections."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Entity mapping"
+          }), " in R2DBC is simpler than JPA → no lazy loading, no persistence context, no automatic relationship mapping. You write explicit queries for joins and aggregates."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "DatabaseClient"
+          }), " provides lower-level SQL access with bind parameters and custom row mapping for complex queries, batch operations, and pagination."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive transactions"
+          }), " use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@Transactional"
+          }), " on service methods or ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TransactionalOperator"
+          }), " for programmatic transaction boundaries, with rollback on errors."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Testing"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@DataR2dbcTest"
+          }), ", H2 in-memory database, and Testcontainers with PostgreSQL provides comprehensive verification of repository and service behavior."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Performance"
+          }), " considerations include connection pool sizing, batch operations, proper indexing, and understanding when to choose R2DBC over JPA."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The choice between R2DBC and JPA"
+          }), " depends on whether you need end-to-end reactive, how complex your domain model is, and your team's familiarity with SQL vs ORM."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is R2DBC and how does it differ from JDBC at the protocol level?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why doesn't R2DBC support lazy loading and relationship mapping like JPA?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How does ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@Transactional"
+        }), " work in a reactive context? What is the role of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "TransactionalOperator"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What are the trade-offs between ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "R2dbcRepository"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "DatabaseClient"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When should you choose R2DBC over JPA/Hibernate for a new project?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Basic CRUD Repository"
+          }), ": Create an R2DBC entity and repository for a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Category"
+          }), " table with id, name, description, and parent_category_id fields. Implement CRUD operations and a custom query that returns the category tree."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pagination and Sorting"
+          }), ": Build a paginated product listing endpoint that supports sorting by name, price, or date. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Pageable"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Sort"
+          }), " and return a custom response with total count, page number, and page size."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Transactional Order Processing"
+          }), ": Implement a transactional service that creates an order with multiple items, deducts stock, and calculates totals. Ensure rollback on any failure and test with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "StepVerifier"
+          }), "."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "DatabaseClient Report"
+          }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DatabaseClient"
+          }), " to build a sales report query that joins orders, customers, and order_items. Return a DTO with order date, customer name, product count, and total value."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive Migration"
+          }), ": Take an existing JPA entity with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "@OneToMany"
+          }), " relationships and convert it to R2DBC entities with explicit repository join queries. Document the differences in code patterns."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive Inventory Management System"
+          }), ": Build a complete inventory management system with R2DBC that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Manages products, warehouses, and stock levels"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Supports multi-warehouse inventory reservations"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implements optimistic locking for concurrent stock updates"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Provides real-time stock movement tracking"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Generates daily inventory valuation reports via materialized views"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Full test coverage with Testcontainers"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive E-Commerce Data Layer"
+          }), ": Implement the full data layer for an e-commerce platform:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Product catalog with categories, tags, and variants"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Customer profiles with addresses and preferences"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Shopping cart with merge on login"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Order processing with Saga pattern (inventory → payment → shipping)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Review and rating system with aggregation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Admin dashboards with real-time metrics"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "All endpoints exposed via WebFlux controllers"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "R2DBC Performance Benchmark"
+          }), ": Build a benchmarking framework that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Compares R2DBC vs JPA performance for read, write, and mixed workloads"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tests with varying concurrency levels (10, 50, 100, 500)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Measures throughput (ops/sec) and latency (p50, p95, p99)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tests with simple queries, joins, and aggregations"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Generates a performance report with charts"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Reactive Multi-Tenant Data Layer"
+          }), ": Implement multi-tenancy with R2DBC that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Uses schema-per-tenant strategy"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Dynamically resolves the tenant from the request context"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Provides ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "TenantAwareR2dbcRepository"
+            }), " base class"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implements tenant-scoped migrations with Flyway"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handles connection pooling per tenant"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tests tenant isolation with concurrent requests"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Real-Time Stock Ticker with R2DBC + SSE"
+          }), ": Build a real-time stock ticker application:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Ingest stock price updates via RSocket or WebSocket"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Persist to PostgreSQL via R2DBC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Push price updates to clients via SSE"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Support time-series queries (last N ticks, OHLC aggregation)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implement user watchlists with threshold alerts"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Handle backpressure from slow consumers"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "End-to-end test with StepVerifier and testcontainers"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

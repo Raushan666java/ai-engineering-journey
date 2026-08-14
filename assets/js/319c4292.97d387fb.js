@@ -1,0 +1,2008 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[17184],{
+
+/***/ 96718
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_coding_problems_06_graphs_md_319_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-coding-problems-06-graphs-md-319.json
+const site_docs_courses_coding_problems_06_graphs_md_319_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/coding-problems/06-graphs","title":"Chapter 06: Graphs","description":"Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find.","source":"@site/docs/courses/coding-problems/06-graphs.md","sourceDirName":"courses/coding-problems","slug":"/coding-problems/06-graphs","permalink":"/ai-engineering-journey/coding-problems/06-graphs","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"06-graphs","slug":"/coding-problems/06-graphs","title":"Chapter 06: Graphs","sidebar_label":"Chapter 06: Graphs","sidebar_position":6},"sidebar":"course-coding-problems","previous":{"title":"Chapter 05: Trees","permalink":"/ai-engineering-journey/coding-problems/05-trees"},"next":{"title":"Chapter 07: Dynamic Programming","permalink":"/ai-engineering-journey/coding-problems/07-dynamic-programming"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/coding-problems/06-graphs.md
+
+
+const frontMatter = {
+	id: '06-graphs',
+	slug: '/coding-problems/06-graphs',
+	title: 'Chapter 06: Graphs',
+	sidebar_label: 'Chapter 06: Graphs',
+	sidebar_position: 6
+};
+const contentTitle = 'Chapter 06: Graphs';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Problem Classification Flow",
+  "id": "problem-classification-flow",
+  "level": 2
+}, {
+  "value": "Graph Algorithm Patterns",
+  "id": "graph-algorithm-patterns",
+  "level": 2
+}, {
+  "value": "Complexity Comparison",
+  "id": "complexity-comparison",
+  "level": 2
+}, {
+  "value": "Easy Problems (5)",
+  "id": "easy-problems-5",
+  "level": 2
+}, {
+  "value": "Problem 1: Find if Path Exists in Graph",
+  "id": "problem-1-find-if-path-exists-in-graph",
+  "level": 3
+}, {
+  "value": "Problem 2: Find Center of Star Graph",
+  "id": "problem-2-find-center-of-star-graph",
+  "level": 3
+}, {
+  "value": "Problem 3: Flood Fill",
+  "id": "problem-3-flood-fill",
+  "level": 3
+}, {
+  "value": "Problem 4: Island Perimeter",
+  "id": "problem-4-island-perimeter",
+  "level": 3
+}, {
+  "value": "Problem 5: Find the Town Judge",
+  "id": "problem-5-find-the-town-judge",
+  "level": 3
+}, {
+  "value": "Medium Problems (14)",
+  "id": "medium-problems-14",
+  "level": 2
+}, {
+  "value": "Problem 6: Number of Islands",
+  "id": "problem-6-number-of-islands",
+  "level": 3
+}, {
+  "value": "Problem 7: Clone Graph",
+  "id": "problem-7-clone-graph",
+  "level": 3
+}, {
+  "value": "Problem 8: Course Schedule",
+  "id": "problem-8-course-schedule",
+  "level": 3
+}, {
+  "value": "Problem 9: Course Schedule II",
+  "id": "problem-9-course-schedule-ii",
+  "level": 3
+}, {
+  "value": "Problem 10: Word Ladder",
+  "id": "problem-10-word-ladder",
+  "level": 3
+}, {
+  "value": "Problem 11: Pacific Atlantic Water Flow",
+  "id": "problem-11-pacific-atlantic-water-flow",
+  "level": 3
+}, {
+  "value": "Problem 12: Rotting Oranges",
+  "id": "problem-12-rotting-oranges",
+  "level": 3
+}, {
+  "value": "Problem 13: Graph Valid Tree",
+  "id": "problem-13-graph-valid-tree",
+  "level": 3
+}, {
+  "value": "Problem 14: Surrounded Regions",
+  "id": "problem-14-surrounded-regions",
+  "level": 3
+}, {
+  "value": "Problem 15: Number of Connected Components in a Graph",
+  "id": "problem-15-number-of-connected-components-in-a-graph",
+  "level": 3
+}, {
+  "value": "Problem 16: Detect Cycle in Directed Graph",
+  "id": "problem-16-detect-cycle-in-directed-graph",
+  "level": 3
+}, {
+  "value": "Problem 17: Evaluate Division",
+  "id": "problem-17-evaluate-division",
+  "level": 3
+}, {
+  "value": "Problem 18: Minesweeper",
+  "id": "problem-18-minesweeper",
+  "level": 3
+}, {
+  "value": "Problem 19: Shortest Path in Binary Matrix",
+  "id": "problem-19-shortest-path-in-binary-matrix",
+  "level": 3
+}, {
+  "value": "Hard Problems (6)",
+  "id": "hard-problems-6",
+  "level": 2
+}, {
+  "value": "Problem 20: Alien Dictionary",
+  "id": "problem-20-alien-dictionary",
+  "level": 3
+}, {
+  "value": "Problem 21: Minimum Height Trees",
+  "id": "problem-21-minimum-height-trees",
+  "level": 3
+}, {
+  "value": "Problem 22: Cheapest Flights Within K Stops",
+  "id": "problem-22-cheapest-flights-within-k-stops",
+  "level": 3
+}, {
+  "value": "Problem 23: Word Ladder II",
+  "id": "problem-23-word-ladder-ii",
+  "level": 3
+}, {
+  "value": "Problem 24: Longest Increasing Path in a Matrix",
+  "id": "problem-24-longest-increasing-path-in-a-matrix",
+  "level": 3
+}, {
+  "value": "Problem 25: Bus Routes",
+  "id": "problem-25-bus-routes",
+  "level": 3
+}, {
+  "value": "Summary Table",
+  "id": "summary-table",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-06-graphs",
+        children: "Chapter 06: Graphs"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Master BFS and DFS traversal on graphs with adjacency lists"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand and implement topological sorting for directed acyclic graphs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply shortest path algorithms: Dijkstra, Bellman-Ford, Floyd-Warshall"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement Union-Find (Disjoint Set) for connectivity problems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect cycles in directed and undirected graphs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Model real-world problems as graph traversal challenges"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "problem-classification-flow",
+      children: "Problem Classification Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[Graph Problem] --> B{Type?}\n    B -->|Directed| C{Cycle?}\n    C -->|Yes| D[DFS with visited states / Topological]\n    C -->|No| E[BFS / Shortest Path]\n    \n    B -->|Undirected| F{Connectivity?}\n    F -->|Yes| G[Union-Find / BFS / DFS]\n    F -->|No| H[Number of Islands type]\n    \n    B -->|Weighted| I{Shortest Path?}\n    I -->|All positive| J[Dijkstra]\n    I -->|Has negatives| K[Bellman-Ford]\n    I -->|All pairs| L[Floyd-Warshall]\n    \n    B -->|Matrix Grid| M[BFS / DFS flood fill]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "graph-algorithm-patterns",
+      children: "Graph Algorithm Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "mindmap\n  root((Graph Patterns))\n    Traversal\n      DFS → stack/recursion\n      BFS → queue (shortest path)\n      Bidirectional BFS\n    Shortest Path\n      Dijkstra\n      Bellman-Ford\n      Floyd-Warshall\n      SPFA\n    Union-Find\n      Quick find\n      Union by rank\n      Path compression\n    Topological Sort\n      Kahn's algorithm\n      DFS-based\n    Strongly Connected\n      Tarjan's\n      Kosaraju's\n    Minimum Spanning Tree\n      Kruskal (Union-Find)\n      Prim (Priority Queue)\n    Bipartite\n      Graph coloring\n      BFS/DFS check\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "complexity-comparison",
+      children: "Complexity Comparison"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "xychart-beta\n    title \"Graph Algorithm Trade-offs\"\n    x-axis [\"BFS/DFS\", \"Dijkstra\", \"Bellman-Ford\", \"Floyd-Warshall\", \"Kruskal\", \"Prim\"]\n    y-axis \"Time Complexity (log scale)\" 0 --> 100\n    bar [10, 40, 50, 90, 35, 40]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "easy-problems-5",
+      children: "Easy Problems (5)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-1-find-if-path-exists-in-graph",
+      children: "Problem 1: Find if Path Exists in Graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, BFS, Union-Find]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " There is a bi-directional graph with n vertices. Edges are given as a 2D array. Determine if there's a path from source to destination."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 2 × 10⁵"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "0 ≤ edges.length ≤ 2 × 10⁵"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BFS/DFS from source. Or use Union-Find for efficiency."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function validPath(n: number, edges: number[][], source: number, destination: number): boolean {\n  const graph: Map<number, number[]> = new Map();\n  for (let i = 0; i < n; i++) graph.set(i, []);\n  for (const [u, v] of edges) {\n    graph.get(u)!.push(v);\n    graph.get(v)!.push(u);\n  }\n\n  const visited = new Set<number>();\n  const queue = [source];\n  visited.add(source);\n\n  while (queue.length > 0) {\n    const node = queue.shift()!;\n    if (node === destination) return true;\n    for (const neighbor of graph.get(node)!) {\n      if (!visited.has(neighbor)) {\n        visited.add(neighbor);\n        queue.push(neighbor);\n      }\n    }\n  }\n\n  return false;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(validPath(3, [[0,1],[1,2],[2,0]], 0, 2)); // true\nconsole.log(validPath(6, [[0,1],[0,2],[3,5],[5,4],[4,3]], 0, 5)); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-2-find-center-of-star-graph",
+      children: "Problem 2: Find Center of Star Graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " A star graph has one center node connected to all others. Find the center given edges."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: edges = [[1,2],[2,3],[4,2]]\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findCenter(edges: number[][]): number {\n  return edges[0][0] === edges[1][0] || edges[0][0] === edges[1][1]\n    ? edges[0][0]\n    : edges[0][1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findCenter([[1,2],[2,3],[4,2]])); // 2\nconsole.log(findCenter([[1,2],[5,1],[1,3],[1,4]])); // 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(1)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-3-flood-fill",
+      children: "Problem 3: Flood Fill"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS, BFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Replace all connected pixels of the same starting color with a new color."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2\nOutput: [[2,2,2],[2,2,0],[2,0,1]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "m == image.length, n == image[0].length"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ m, n ≤ 50"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {\n  const originalColor = image[sr][sc];\n  if (originalColor === color) return image;\n\n  const dfs = (r: number, c: number) => {\n    if (r < 0 || r >= image.length || c < 0 || c >= image[0].length ||\n        image[r][c] !== originalColor) return;\n\n    image[r][c] = color;\n    dfs(r + 1, c);\n    dfs(r - 1, c);\n    dfs(r, c + 1);\n    dfs(r, c - 1);\n  };\n\n  dfs(sr, sc);\n  return image;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2));\n// [[2,2,2],[2,2,0],[2,0,1]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n) worst case recursion"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-4-island-perimeter",
+      children: "Problem 4: Island Perimeter"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a grid where 1 = land, 0 = water, compute the perimeter of the island."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]\nOutput: 16\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function islandPerimeter(grid: number[][]): number {\n  let perimeter = 0;\n\n  for (let r = 0; r < grid.length; r++) {\n    for (let c = 0; c < grid[0].length; c++) {\n      if (grid[r][c] === 1) {\n        perimeter += 4;\n        if (r > 0 && grid[r - 1][c] === 1) perimeter -= 2;\n        if (c > 0 && grid[r][c - 1] === 1) perimeter -= 2;\n      }\n    }\n  }\n\n  return perimeter;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(islandPerimeter([\n  [0,1,0,0],\n  [1,1,1,0],\n  [0,1,0,0],\n  [1,1,0,0]\n])); // 16\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-5-find-the-town-judge",
+      children: "Problem 5: Find the Town Judge"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " In a town of n people, the town judge trusts nobody and everyone trusts the judge. Find the judge or return -1."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 2, trust = [[1,2]]\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 1000"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findJudge(n: number, trust: number[][]): number {\n  const indegree = new Array(n + 1).fill(0);\n  const outdegree = new Array(n + 1).fill(0);\n\n  for (const [a, b] of trust) {\n    outdegree[a]++;\n    indegree[b]++;\n  }\n\n  for (let i = 1; i <= n; i++) {\n    if (indegree[i] === n - 1 && outdegree[i] === 0) return i;\n  }\n\n  return -1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findJudge(2, [[1,2]])); // 2\nconsole.log(findJudge(3, [[1,3],[2,3]])); // 3\nconsole.log(findJudge(3, [[1,3],[2,3],[3,1]])); // -1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + t)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "medium-problems-14",
+      children: "Medium Problems (14)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-6-number-of-islands",
+      children: "Problem 6: Number of Islands"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS, BFS, Union-Find]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a 2D grid of '1's (land) and '0's (water), count the number of islands."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: grid = [\n  [\"1\",\"1\",\"1\",\"1\",\"0\"],\n  [\"1\",\"1\",\"0\",\"1\",\"0\"],\n  [\"1\",\"1\",\"0\",\"0\",\"0\"],\n  [\"0\",\"0\",\"0\",\"0\",\"0\"]\n]\nOutput: 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "m, n ≤ 300"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DFS from each unvisited land cell, marking visited."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function numIslands(grid: string[][]): number {\n  let count = 0;\n\n  const dfs = (r: number, c: number) => {\n    if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length || grid[r][c] === '0') return;\n    grid[r][c] = '0';\n    dfs(r + 1, c);\n    dfs(r - 1, c);\n    dfs(r, c + 1);\n    dfs(r, c - 1);\n  };\n\n  for (let r = 0; r < grid.length; r++) {\n    for (let c = 0; c < grid[0].length; c++) {\n      if (grid[r][c] === '1') {\n        count++;\n        dfs(r, c);\n      }\n    }\n  }\n\n  return count;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(numIslands([\n  [\"1\",\"1\",\"1\",\"1\",\"0\"],\n  [\"1\",\"1\",\"0\",\"1\",\"0\"],\n  [\"1\",\"1\",\"0\",\"0\",\"0\"],\n  [\"0\",\"0\",\"0\",\"0\",\"0\"]\n])); // 1\n\nconsole.log(numIslands([\n  [\"1\",\"1\",\"0\",\"0\",\"0\"],\n  [\"1\",\"1\",\"0\",\"0\",\"0\"],\n  [\"0\",\"0\",\"1\",\"0\",\"0\"],\n  [\"0\",\"0\",\"0\",\"1\",\"1\"]\n])); // 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n) worst case recursion"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-7-clone-graph",
+      children: "Problem 7: Clone Graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, BFS, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: adjList = [[2,4],[1,3],[2,4],[1,3]]\nOutput: [[2,4],[1,3],[2,4],[1,3]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ nodes ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class GraphNode {\n  val: number;\n  neighbors: GraphNode[];\n  constructor(val?: number, neighbors?: GraphNode[]) {\n    this.val = val ?? 0;\n    this.neighbors = neighbors ?? [];\n  }\n}\n\nfunction cloneGraph(node: GraphNode | null): GraphNode | null {\n  if (!node) return null;\n\n  const map = new Map<GraphNode, GraphNode>();\n\n  const dfs = (n: GraphNode): GraphNode => {\n    if (map.has(n)) return map.get(n)!;\n\n    const clone = new GraphNode(n.val);\n    map.set(n, clone);\n\n    for (const neighbor of n.neighbors) {\n      clone.neighbors.push(dfs(neighbor));\n    }\n\n    return clone;\n  };\n\n  return dfs(node);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "const n1 = new GraphNode(1);\nconst n2 = new GraphNode(2);\nconst n3 = new GraphNode(3);\nconst n4 = new GraphNode(4);\nn1.neighbors = [n2, n4];\nn2.neighbors = [n1, n3];\nn3.neighbors = [n2, n4];\nn4.neighbors = [n1, n3];\n\nconst cloned = cloneGraph(n1);\nconsole.log(cloned?.val); // 1\nconsole.log(cloned?.neighbors.length); // 2\nconsole.log(cloned !== n1); // true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-8-course-schedule",
+      children: "Problem 8: Course Schedule"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, BFS, Topological Sort]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " There are n courses labeled 0 to n-1. Given prerequisites [a, b] meaning b must be taken before a, determine if it's possible to finish all courses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: numCourses = 2, prerequisites = [[1,0]]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 2000"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect cycle in directed graph. Use Kahn's algorithm (BFS) or DFS with visited states."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function canFinish(numCourses: number, prerequisites: number[][]): boolean {\n  const graph: number[][] = Array.from({ length: numCourses }, () => []);\n  const indegree = new Array(numCourses).fill(0);\n\n  for (const [course, prereq] of prerequisites) {\n    graph[prereq].push(course);\n    indegree[course]++;\n  }\n\n  const queue: number[] = [];\n  for (let i = 0; i < numCourses; i++) {\n    if (indegree[i] === 0) queue.push(i);\n  }\n\n  let completed = 0;\n  while (queue.length > 0) {\n    const course = queue.shift()!;\n    completed++;\n    for (const neighbor of graph[course]) {\n      indegree[neighbor]--;\n      if (indegree[neighbor] === 0) queue.push(neighbor);\n    }\n  }\n\n  return completed === numCourses;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(canFinish(2, [[1,0]])); // true\nconsole.log(canFinish(2, [[1,0],[0,1]])); // false\nconsole.log(canFinish(5, [[1,0],[2,1],[3,2],[4,3]])); // true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-9-course-schedule-ii",
+      children: "Problem 9: Course Schedule II"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Topological Sort]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Return the ordering of courses to take to finish all courses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]\nOutput: [0,2,1,3] or [0,1,2,3]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findOrder(numCourses: number, prerequisites: number[][]): number[] {\n  const graph: number[][] = Array.from({ length: numCourses }, () => []);\n  const indegree = new Array(numCourses).fill(0);\n\n  for (const [course, prereq] of prerequisites) {\n    graph[prereq].push(course);\n    indegree[course]++;\n  }\n\n  const queue: number[] = [];\n  for (let i = 0; i < numCourses; i++) {\n    if (indegree[i] === 0) queue.push(i);\n  }\n\n  const order: number[] = [];\n  while (queue.length > 0) {\n    const course = queue.shift()!;\n    order.push(course);\n    for (const neighbor of graph[course]) {\n      indegree[neighbor]--;\n      if (indegree[neighbor] === 0) queue.push(neighbor);\n    }\n  }\n\n  return order.length === numCourses ? order : [];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findOrder(4, [[1,0],[2,0],[3,1],[3,2]])); // [0, 1, 2, 3] or [0, 2, 1, 3]\nconsole.log(findOrder(2, [[1,0],[0,1]])); // []\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-10-word-ladder",
+      children: "Problem 10: Word Ladder"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord where each step changes one letter and each intermediate word is in the wordList."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\nOutput: 5\nExplanation: \"hit\" → \"hot\" → \"dot\" → \"dog\" → \"cog\" (5 steps)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ word length ≤ 10"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "wordList length ≤ 5000"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BFS on graph where nodes are words, edges exist if words differ by one letter."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {\n  const wordSet = new Set(wordList);\n  if (!wordSet.has(endWord)) return 0;\n\n  const queue: [string, number] = [beginWord, 1];\n  const visited = new Set<string>();\n  visited.add(beginWord);\n\n  while (queue.length > 0) {\n    const [word, steps] = queue.shift()!;\n    if (word === endWord) return steps;\n\n    for (let i = 0; i < word.length; i++) {\n      for (let ch = 97; ch <= 122; ch++) {\n        const newWord = word.substring(0, i) + String.fromCharCode(ch) + word.substring(i + 1);\n        if (wordSet.has(newWord) && !visited.has(newWord)) {\n          visited.add(newWord);\n          queue.push([newWord, steps + 1]);\n        }\n      }\n    }\n  }\n\n  return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(ladderLength(\"hit\", \"cog\", [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"])); // 5\nconsole.log(ladderLength(\"hit\", \"cog\", [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"])); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × L × 26) where L = word length\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-11-pacific-atlantic-water-flow",
+      children: "Problem 11: Pacific Atlantic Water Flow"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS, BFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a matrix of heights, find cells where water can flow to both Pacific (top/left) and Atlantic (bottom/right) oceans. Water flows to equal or lower height neighbors."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]\nOutput: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ m, n ≤ 200"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function pacificAtlantic(heights: number[][]): number[][] {\n  const m = heights.length;\n  const n = heights[0].length;\n  const pacific = Array.from({ length: m }, () => new Array(n).fill(false));\n  const atlantic = Array.from({ length: m }, () => new Array(n).fill(false));\n\n  const dfs = (r: number, c: number, ocean: boolean[][], prevHeight: number) => {\n    if (r < 0 || r >= m || c < 0 || c >= n || ocean[r][c] || heights[r][c] < prevHeight) return;\n    ocean[r][c] = true;\n    dfs(r + 1, c, ocean, heights[r][c]);\n    dfs(r - 1, c, ocean, heights[r][c]);\n    dfs(r, c + 1, ocean, heights[r][c]);\n    dfs(r, c - 1, ocean, heights[r][c]);\n  };\n\n  for (let i = 0; i < m; i++) {\n    dfs(i, 0, pacific, -Infinity);\n    dfs(i, n - 1, atlantic, -Infinity);\n  }\n  for (let j = 0; j < n; j++) {\n    dfs(0, j, pacific, -Infinity);\n    dfs(m - 1, j, atlantic, -Infinity);\n  }\n\n  const result: number[][] = [];\n  for (let i = 0; i < m; i++) {\n    for (let j = 0; j < n; j++) {\n      if (pacific[i][j] && atlantic[i][j]) result.push([i, j]);\n    }\n  }\n\n  return result;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-12-rotting-oranges",
+      children: "Problem 12: Rotting Oranges"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Matrix]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a grid where 0=empty, 1=fresh, 2=rotten, every minute any fresh orange adjacent to a rotten one becomes rotten. Return minimum minutes until no fresh orange remains, or -1."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: grid = [[2,1,1],[1,1,0],[0,1,1]]\nOutput: 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function orangesRotting(grid: number[][]): number {\n  const m = grid.length;\n  const n = grid[0].length;\n  const queue: [number, number, number][] = [];\n  let fresh = 0;\n\n  for (let r = 0; r < m; r++) {\n    for (let c = 0; c < n; c++) {\n      if (grid[r][c] === 2) queue.push([r, c, 0]);\n      if (grid[r][c] === 1) fresh++;\n    }\n  }\n\n  let maxMinutes = 0;\n  const dirs = [[0,1],[0,-1],[1,0],[-1,0]];\n\n  while (queue.length > 0) {\n    const [r, c, minutes] = queue.shift()!;\n    maxMinutes = Math.max(maxMinutes, minutes);\n\n    for (const [dr, dc] of dirs) {\n      const nr = r + dr;\n      const nc = c + dc;\n      if (nr >= 0 && nr < m && nc >= 0 && nc < n && grid[nr][nc] === 1) {\n        grid[nr][nc] = 2;\n        fresh--;\n        queue.push([nr, nc, minutes + 1]);\n      }\n    }\n  }\n\n  return fresh === 0 ? maxMinutes : -1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(orangesRotting([[2,1,1],[1,1,0],[0,1,1]])); // 4\nconsole.log(orangesRotting([[0,2]])); // 0\nconsole.log(orangesRotting([[2,1,1],[0,1,1],[1,0,1]])); // -1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-13-graph-valid-tree",
+      children: "Problem 13: Graph Valid Tree"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, BFS, Union-Find]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given n nodes and edges, check if the graph forms a valid tree (connected and no cycles)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 2000"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function validTree(n: number, edges: number[][]): boolean {\n  if (edges.length !== n - 1) return false;\n\n  const graph: number[][] = Array.from({ length: n }, () => []);\n  for (const [u, v] of edges) {\n    graph[u].push(v);\n    graph[v].push(u);\n  }\n\n  const visited = new Set<number>();\n  const stack = [0];\n  visited.add(0);\n\n  while (stack.length > 0) {\n    const node = stack.pop()!;\n    for (const neighbor of graph[node]) {\n      if (!visited.has(neighbor)) {\n        visited.add(neighbor);\n        stack.push(neighbor);\n      }\n    }\n  }\n\n  return visited.size === n;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(validTree(5, [[0,1],[0,2],[0,3],[1,4]])); // true\nconsole.log(validTree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-14-surrounded-regions",
+      children: "Problem 14: Surrounded Regions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS, BFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Capture all 'O's that are surrounded by 'X's (change to 'X'). Any 'O' on the border remains."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]\nOutput: [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function solve(board: string[][]): void {\n  const m = board.length;\n  const n = board[0].length;\n\n  const dfs = (r: number, c: number) => {\n    if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] !== 'O') return;\n    board[r][c] = '#';\n    dfs(r + 1, c);\n    dfs(r - 1, c);\n    dfs(r, c + 1);\n    dfs(r, c - 1);\n  };\n\n  for (let i = 0; i < m; i++) {\n    dfs(i, 0);\n    dfs(i, n - 1);\n  }\n  for (let j = 0; j < n; j++) {\n    dfs(0, j);\n    dfs(m - 1, j);\n  }\n\n  for (let r = 0; r < m; r++) {\n    for (let c = 0; c < n; c++) {\n      if (board[r][c] === 'O') board[r][c] = 'X';\n      if (board[r][c] === '#') board[r][c] = 'O';\n    }\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "const board = [\n  [\"X\",\"X\",\"X\",\"X\"],\n  [\"X\",\"O\",\"O\",\"X\"],\n  [\"X\",\"X\",\"O\",\"X\"],\n  [\"X\",\"O\",\"X\",\"X\"]\n];\nsolve(board);\nconsole.log(board);\n// [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-15-number-of-connected-components-in-a-graph",
+      children: "Problem 15: Number of Connected Components in a Graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Union-Find, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Count the number of connected components in an undirected graph."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 5, edges = [[0,1],[1,2],[3,4]]\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DFS:"
+        }), " Visited set + traversal from each unvisited node."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Union-Find:"
+        }), " Union all edges, count unique roots."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function countComponents(n: number, edges: number[][]): number {\n  const graph: number[][] = Array.from({ length: n }, () => []);\n  for (const [u, v] of edges) {\n    graph[u].push(v);\n    graph[v].push(u);\n  }\n\n  const visited = new Array(n).fill(false);\n  let components = 0;\n\n  const dfs = (node: number) => {\n    visited[node] = true;\n    for (const neighbor of graph[node]) {\n      if (!visited[neighbor]) dfs(neighbor);\n    }\n  };\n\n  for (let i = 0; i < n; i++) {\n    if (!visited[i]) {\n      components++;\n      dfs(i);\n    }\n  }\n\n  return components;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(countComponents(5, [[0,1],[1,2],[3,4]])); // 2\nconsole.log(countComponents(5, [[0,1],[1,2],[2,3],[3,4]])); // 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-16-detect-cycle-in-directed-graph",
+      children: "Problem 16: Detect Cycle in Directed Graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, Topological Sort]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a directed graph, return true if it contains a cycle."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 4, edges = [[0,1],[1,2],[2,0],[1,3]]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function hasCycle(n: number, edges: number[][]): boolean {\n  const graph: number[][] = Array.from({ length: n }, () => []);\n  for (const [u, v] of edges) graph[u].push(v);\n\n  const state = new Array(n).fill(0); // 0=unvisited, 1=visiting, 2=visited\n\n  const dfs = (node: number): boolean => {\n    if (state[node] === 1) return true;\n    if (state[node] === 2) return false;\n\n    state[node] = 1;\n    for (const neighbor of graph[node]) {\n      if (dfs(neighbor)) return true;\n    }\n    state[node] = 2;\n    return false;\n  };\n\n  for (let i = 0; i < n; i++) {\n    if (dfs(i)) return true;\n  }\n\n  return false;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(hasCycle(4, [[0,1],[1,2],[2,0],[1,3]])); // true\nconsole.log(hasCycle(4, [[0,1],[1,2],[1,3]])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-17-evaluate-division",
+      children: "Problem 17: Evaluate Division"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, Union-Find]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given equations like a/b = 2.0, find results of queries like a/c."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: equations = [[\"a\",\"b\"],[\"b\",\"c\"]], values = [2.0,3.0],\n       queries = [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]\nOutput: [6.0,0.5,-1.0,1.0,-1.0]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function calcEquation(\n  equations: string[][],\n  values: number[],\n  queries: string[][]\n): number[] {\n  const graph = new Map<string, Map<string, number>>();\n\n  for (let i = 0; i < equations.length; i++) {\n    const [a, b] = equations[i];\n    const val = values[i];\n\n    if (!graph.has(a)) graph.set(a, new Map());\n    if (!graph.has(b)) graph.set(b, new Map());\n    graph.get(a)!.set(b, val);\n    graph.get(b)!.set(a, 1 / val);\n  }\n\n  const dfs = (start: string, end: string, visited: Set<string>): number => {\n    if (!graph.has(start) || !graph.has(end)) return -1;\n    if (start === end) return 1;\n\n    visited.add(start);\n    for (const [neighbor, weight] of graph.get(start)!) {\n      if (!visited.has(neighbor)) {\n        const result = dfs(neighbor, end, visited);\n        if (result !== -1) return weight * result;\n      }\n    }\n\n    return -1;\n  };\n\n  return queries.map(([a, b]) => dfs(a, b, new Set()));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(calcEquation(\n  [[\"a\",\"b\"],[\"b\",\"c\"]],\n  [2.0, 3.0],\n  [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]\n));\n// [6.0, 0.5, -1.0, 1.0, -1.0]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × q) where n = equations, q = queries\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-18-minesweeper",
+      children: "Problem 18: Minesweeper"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, DFS, BFS, Matrix]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Implement Minesweeper click logic: if unrevealed mine → game over; if empty → reveal all adjacent empties; if number → reveal just that cell."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: board = [[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"M\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]], click = [3,0]\nOutput: [[\"B\",\"1\",\"E\",\"1\",\"B\"],[\"B\",\"1\",\"M\",\"1\",\"B\"],[\"B\",\"1\",\"1\",\"1\",\"B\"],[\"B\",\"B\",\"B\",\"B\",\"B\"]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function updateBoard(board: string[][], click: number[]): string[][] {\n  const [r, c] = click;\n  const m = board.length;\n  const n = board[0].length;\n\n  if (board[r][c] === 'M') {\n    board[r][c] = 'X';\n    return board;\n  }\n\n  const countMines = (row: number, col: number): number => {\n    let count = 0;\n    for (let dr = -1; dr <= 1; dr++) {\n      for (let dc = -1; dc <= 1; dc++) {\n        const nr = row + dr;\n        const nc = col + dc;\n        if (nr >= 0 && nr < m && nc >= 0 && nc < n && board[nr][nc] === 'M') count++;\n      }\n    }\n    return count;\n  };\n\n  const dfs = (row: number, col: number) => {\n    if (row < 0 || row >= m || col < 0 || col >= n || board[row][col] !== 'E') return;\n\n    const mines = countMines(row, col);\n    if (mines > 0) {\n      board[row][col] = mines.toString();\n    } else {\n      board[row][col] = 'B';\n      for (let dr = -1; dr <= 1; dr++) {\n        for (let dc = -1; dc <= 1; dc++) {\n          dfs(row + dr, col + dc);\n        }\n      }\n    }\n  };\n\n  dfs(r, c);\n  return board;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-19-shortest-path-in-binary-matrix",
+      children: "Problem 19: Shortest Path in Binary Matrix"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Matrix]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the shortest clear path from top-left to bottom-right in a binary matrix (0 = clear, 1 = blocked). 8-directional movement."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: grid = [[0,1],[1,0]]\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function shortestPathBinaryMatrix(grid: number[][]): number {\n  const n = grid.length;\n  if (grid[0][0] === 1 || grid[n-1][n-1] === 1) return -1;\n\n  const queue: [number, number, number][] = [[0, 0, 1]];\n  const visited = new Set<string>();\n  visited.add('0,0');\n\n  const dirs = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];\n\n  while (queue.length > 0) {\n    const [r, c, dist] = queue.shift()!;\n    if (r === n - 1 && c === n - 1) return dist;\n\n    for (const [dr, dc] of dirs) {\n      const nr = r + dr;\n      const nc = c + dc;\n      const key = `${nr},${nc}`;\n      if (nr >= 0 && nr < n && nc >= 0 && nc < n && grid[nr][nc] === 0 && !visited.has(key)) {\n        visited.add(key);\n        queue.push([nr, nc, dist + 1]);\n      }\n    }\n  }\n\n  return -1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(shortestPathBinaryMatrix([[0,1],[1,0]])); // 2\nconsole.log(shortestPathBinaryMatrix([[0,0,0],[1,1,0],[1,1,0]])); // 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n²)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n²)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "hard-problems-6",
+      children: "Hard Problems (6)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-20-alien-dictionary",
+      children: "Problem 20: Alien Dictionary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Topological Sort, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given sorted words from an alien language, find the order of characters."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]\nOutput: \"wertf\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ words.length ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function alienOrder(words: string[]): string {\n  const graph = new Map<string, string[]>();\n  const indegree = new Map<string, number>();\n\n  for (const word of words) {\n    for (const ch of word) {\n      if (!graph.has(ch)) graph.set(ch, []);\n      if (!indegree.has(ch)) indegree.set(ch, 0);\n    }\n  }\n\n  for (let i = 0; i < words.length - 1; i++) {\n    const w1 = words[i];\n    const w2 = words[i + 1];\n    const minLen = Math.min(w1.length, w2.length);\n\n    if (w1.length > w2.length && w1.startsWith(w2)) return '';\n\n    for (let j = 0; j < minLen; j++) {\n      if (w1[j] !== w2[j]) {\n        graph.get(w1[j])!.push(w2[j]);\n        indegree.set(w2[j], indegree.get(w2[j])! + 1);\n        break;\n      }\n    }\n  }\n\n  const queue: string[] = [];\n  for (const [ch, deg] of indegree) {\n    if (deg === 0) queue.push(ch);\n  }\n\n  let result = '';\n  while (queue.length > 0) {\n    const ch = queue.shift()!;\n    result += ch;\n    for (const neighbor of graph.get(ch)!) {\n      indegree.set(neighbor, indegree.get(neighbor)! - 1);\n      if (indegree.get(neighbor) === 0) queue.push(neighbor);\n    }\n  }\n\n  return result.length === indegree.size ? result : '';\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(alienOrder([\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"])); // \"wertf\"\nconsole.log(alienOrder([\"z\",\"x\",\"z\"])); // \"\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × L) where L = avg word length\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1) (26 characters)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-21-minimum-height-trees",
+      children: "Problem 21: Minimum Height Trees"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Topological Sort]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find all root labels of MHTs (minimum height trees) for an undirected tree."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 4, edges = [[1,0],[1,2],[1,3]]\nOutput: [1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 2 × 10⁴"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findMinHeightTrees(n: number, edges: number[][]): number[] {\n  if (n === 1) return [0];\n\n  const graph: Set<number>[] = Array.from({ length: n }, () => new Set());\n  for (const [u, v] of edges) {\n    graph[u].add(v);\n    graph[v].add(u);\n  }\n\n  let leaves: number[] = [];\n  for (let i = 0; i < n; i++) {\n    if (graph[i].size === 1) leaves.push(i);\n  }\n\n  let remaining = n;\n  while (remaining > 2) {\n    remaining -= leaves.length;\n    const newLeaves: number[] = [];\n\n    for (const leaf of leaves) {\n      const neighbor = graph[leaf].values().next().value;\n      graph[neighbor].delete(leaf);\n      if (graph[neighbor].size === 1) newLeaves.push(neighbor);\n    }\n\n    leaves = newLeaves;\n  }\n\n  return leaves;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findMinHeightTrees(4, [[1,0],[1,2],[1,3]])); // [1]\nconsole.log(findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])); // [3, 4]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-22-cheapest-flights-within-k-stops",
+      children: "Problem 22: Cheapest Flights Within K Stops"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Dijkstra, DP]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the cheapest price from src to dst with at most k stops."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1\nOutput: 700\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {\n  const graph: [number, number][][] = Array.from({ length: n }, () => []);\n  for (const [from, to, price] of flights) {\n    graph[from].push([to, price]);\n  }\n\n  const dist = new Array(n).fill(Infinity);\n  dist[src] = 0;\n\n  const queue: [number, number, number][] = [[src, 0, 0]]; // node, price, stops\n\n  while (queue.length > 0) {\n    const [node, price, stops] = queue.shift()!;\n\n    if (stops > k) continue;\n\n    for (const [neighbor, cost] of graph[node]) {\n      const newPrice = price + cost;\n      if (newPrice < dist[neighbor]) {\n        dist[neighbor] = newPrice;\n        queue.push([neighbor, newPrice, stops + 1]);\n      }\n    }\n\n    queue.sort((a, b) => a[1] - b[1]);\n  }\n\n  return dist[dst] === Infinity ? -1 : dist[dst];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findCheapestPrice(4,\n  [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]],\n  0, 3, 1\n)); // 700\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n + e × k)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n + e)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-23-word-ladder-ii",
+      children: "Problem 23: Word Ladder II"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Backtracking]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find all shortest transformation sequences from beginWord to endWord."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\nOutput: [[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findLadders(beginWord: string, endWord: string, wordList: string[]): string[][] {\n  const wordSet = new Set(wordList);\n  if (!wordSet.has(endWord)) return [];\n\n  const graph = new Map<string, string[]>();\n  const distance = new Map<string, number>();\n  const result: string[][] = [];\n\n  const queue: string[] = [beginWord];\n  distance.set(beginWord, 0);\n\n  while (queue.length > 0) {\n    const word = queue.shift()!;\n    if (word === endWord) break;\n\n    for (let i = 0; i < word.length; i++) {\n      for (let ch = 97; ch <= 122; ch++) {\n        const newWord = word.substring(0, i) + String.fromCharCode(ch) + word.substring(i + 1);\n        if (wordSet.has(newWord)) {\n          if (!distance.has(newWord)) {\n            distance.set(newWord, distance.get(word)! + 1);\n            queue.push(newWord);\n          }\n          if (distance.get(newWord) === distance.get(word)! + 1) {\n            if (!graph.has(word)) graph.set(word, []);\n            graph.get(word)!.push(newWord);\n          }\n        }\n      }\n    }\n  }\n\n  const backtrack = (word: string, path: string[]) => {\n    if (word === endWord) {\n      result.push([...path]);\n      return;\n    }\n    for (const neighbor of graph.get(word) || []) {\n      path.push(neighbor);\n      backtrack(neighbor, path);\n      path.pop();\n    }\n  };\n\n  if (distance.has(endWord)) {\n    backtrack(beginWord, [beginWord]);\n  }\n\n  return result;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × L × 26)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n × L)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-24-longest-increasing-path-in-a-matrix",
+      children: "Problem 24: Longest Increasing Path in a Matrix"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, Matrix, DFS, DP, Topological Sort]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the length of the longest increasing path in a matrix (4-directional)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]\nOutput: 4\nExplanation: [1, 2, 6, 9]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ m, n ≤ 200"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function longestIncreasingPath(matrix: number[][]): number {\n  const m = matrix.length;\n  const n = matrix[0].length;\n  const memo: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));\n  let maxLen = 0;\n\n  const dfs = (r: number, c: number, prevVal: number): number => {\n    if (r < 0 || r >= m || c < 0 || c >= n || matrix[r][c] <= prevVal) return 0;\n    if (memo[r][c] > 0) return memo[r][c];\n\n    const val = matrix[r][c];\n    const up = dfs(r - 1, c, val);\n    const down = dfs(r + 1, c, val);\n    const left = dfs(r, c - 1, val);\n    const right = dfs(r, c + 1, val);\n\n    memo[r][c] = 1 + Math.max(up, down, left, right);\n    return memo[r][c];\n  };\n\n  for (let r = 0; r < m; r++) {\n    for (let c = 0; c < n; c++) {\n      maxLen = Math.max(maxLen, dfs(r, c, -Infinity));\n    }\n  }\n\n  return maxLen;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(longestIncreasingPath([[9,9,4],[6,6,8],[2,1,1]])); // 4\nconsole.log(longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]])); // 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-25-bus-routes",
+      children: "Problem 25: Bus Routes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Graph, BFS, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given routes (list of bus stops), find the minimum number of buses needed to travel from source to target."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ routes.length ≤ 500"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function numBusesToDestination(routes: number[][], source: number, target: number): number {\n  if (source === target) return 0;\n\n  const stopToRoutes = new Map<number, number[]>();\n  for (let i = 0; i < routes.length; i++) {\n    for (const stop of routes[i]) {\n      if (!stopToRoutes.has(stop)) stopToRoutes.set(stop, []);\n      stopToRoutes.get(stop)!.push(i);\n    }\n  }\n\n  const visitedRoutes = new Set<number>();\n  const visitedStops = new Set<number>();\n  const queue: [number, number][] = [[source, 0]];\n  visitedStops.add(source);\n\n  while (queue.length > 0) {\n    const [stop, buses] = queue.shift()!;\n    if (stop === target) return buses;\n\n    for (const routeIdx of stopToRoutes.get(stop) || []) {\n      if (visitedRoutes.has(routeIdx)) continue;\n      visitedRoutes.add(routeIdx);\n\n      for (const nextStop of routes[routeIdx]) {\n        if (!visitedStops.has(nextStop)) {\n          visitedStops.add(nextStop);\n          queue.push([nextStop, buses + 1]);\n        }\n      }\n    }\n  }\n\n  return -1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(routes × stops)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(routes × stops)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary-table",
+      children: "Summary Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Difficulty"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Companies"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find if Path Exists"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find Center of Star"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flood Fill"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Island Perimeter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Find Town Judge"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+t)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Number of Islands"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clone Graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Course Schedule"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Course Schedule II"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Word Ladder"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×L×26)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pacific Atlantic Water Flow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rotting Oranges"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Graph Valid Tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrounded Regions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connected Components"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detect Cycle Directed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluate Division"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×q)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minesweeper"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shortest Path Binary Matrix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alien Dictionary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×L)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "21"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimum Height Trees"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cheapest Flights K Stops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e×k)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n+e)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "23"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Word Ladder II"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×L×26)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×L)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest Increasing Path"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bus Routes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(r×s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(r×s)"
+          })]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

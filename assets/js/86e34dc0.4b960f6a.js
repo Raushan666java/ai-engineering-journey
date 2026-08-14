@@ -1,0 +1,2808 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[98288],{
+
+/***/ 6884
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_21_interview_preparation_10_resume_and_portfolio_review_md_86e_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-21-interview-preparation-10-resume-and-portfolio-review-md-86e.json
+const site_docs_courses_ai_engineering_placement_21_interview_preparation_10_resume_and_portfolio_review_md_86e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/interview-preparation/10-resume-and-portfolio-review","title":"Resume & Portfolio Review","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review.md","sourceDirName":"courses/ai-engineering-placement/21-interview-preparation","slug":"/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":239,"frontMatter":{"id":"10-resume-and-portfolio-review","slug":"/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review","title":"Resume & Portfolio Review","sidebar_label":"Resume & Portfolio Review","sidebar_position":239},"sidebar":"placementSidebar","previous":{"title":"Behavioral STAR Interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/09-behavioral-star-interview"},"next":{"title":"Salary Negotiation","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/11-salary-negotiation"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review.md
+
+
+const frontMatter = {
+	id: '10-resume-and-portfolio-review',
+	slug: '/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review',
+	title: 'Resume & Portfolio Review',
+	sidebar_label: 'Resume & Portfolio Review',
+	sidebar_position: 239
+};
+const contentTitle = 'Resume & Portfolio Review';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "10.1 ATS Optimization",
+  "id": "101-ats-optimization",
+  "level": 2
+}, {
+  "value": "10.2 Bullet Points",
+  "id": "102-bullet-points",
+  "level": 2
+}, {
+  "value": "10.3 Resume Structure",
+  "id": "103-resume-structure",
+  "level": 2
+}, {
+  "value": "10.4 LinkedIn Profile",
+  "id": "104-linkedin-profile",
+  "level": 2
+}, {
+  "value": "10.5 Portfolio Website",
+  "id": "105-portfolio-website",
+  "level": 2
+}, {
+  "value": "10.6 Project Presentation",
+  "id": "106-project-presentation",
+  "level": 2
+}, {
+  "value": "Tech Stack",
+  "id": "tech-stack",
+  "level": 2
+}, {
+  "value": "Features",
+  "id": "features",
+  "level": 2
+}, {
+  "value": "Getting Started",
+  "id": "getting-started",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 3
+}, {
+  "value": "Installation",
+  "id": "installation",
+  "level": 3
+}, {
+  "value": "Configuration",
+  "id": "configuration",
+  "level": 3
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "API Documentation",
+  "id": "api-documentation",
+  "level": 2
+}, {
+  "value": "Performance",
+  "id": "performance",
+  "level": 2
+}, {
+  "value": "Testing",
+  "id": "testing",
+  "level": 2
+}, {
+  "value": "Deployment",
+  "id": "deployment",
+  "level": 2
+}, {
+  "value": "Related",
+  "id": "related",
+  "level": 2
+}, {
+  "value": "Project quality checklist",
+  "id": "project-quality-checklist",
+  "level": 2
+}, {
+  "value": "10.8 Tailoring Strategy",
+  "id": "108-tailoring-strategy",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "resume--portfolio-review",
+        children: "Resume & Portfolio Review"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimize your resume for ATS (Applicant Tracking Systems)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Structure your resume with impact-driven bullet points"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design an effective portfolio website that showcases your work"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write a powerful LinkedIn profile that attracts recruiters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Present projects, open-source contributions, and technical writing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tailor your resume and portfolio for specific roles and companies"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ATS Optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keywords, formatting, file types, section headers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bullet Points"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impact-driven writing, CAR method, quantifying achievements"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume Structure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sections, order, length, spacing, font choices"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LinkedIn Profile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Headline, summary, experience, recommendations, SEO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Portfolio Website"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Project showcase, blog, architecture, tech stack"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Project Presentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "README, demo, tech choices, architecture docs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open Source & Writing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Contributions, blog posts, talks, community presence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tailoring Strategy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role-specific resumes, cover letters, company research"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[ATS Optimization] --> B[Bullet Points]\n    B --> C[Resume Structure]\n    C --> D[LinkedIn Profile]\n    D --> E[Portfolio Website]\n    E --> F[Project Presentation]\n    F --> G[Open Source & Writing]\n    G --> H[Tailoring Strategy]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "101-ats-optimization",
+      children: "10.1 ATS Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Applicant Tracking Systems parse resumes before humans see them. If your resume isn't ATS-friendly, it may never reach a recruiter."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Keywords"
+      }), ": Include keywords from the job description naturally in your resume. Common keywords for AI/backend roles: Python, distributed systems, REST APIs, microservices, AWS, Docker, Kubernetes, PostgreSQL, Redis, machine learning, CI/CD, Terraform, Kafka."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Formatting rules"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use standard section headers: \"Experience\", \"Education\", \"Skills\", \"Projects\""
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No tables, columns, or multi-column layouts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No images, icons, or graphics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use standard fonts (Arial, Calibri, Times New Roman)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Save as .docx or .pdf (use text-based, not scanned)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use bullet points (standard round dots, not custom characters)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## ATS keyword matching tool\nimport re\n\ndef analyze_ats_score(resume_text: str, job_description: str) -> dict:\n    resume_lower = resume_text.lower()\n    jd_lower = job_description.lower()\n\n    # Extract keywords from job description (capitalized words, technical terms)\n    tech_keywords = set()\n    for word in re.findall(r'\\b[A-Za-z#+.]+\\b', jd_lower):\n        if any(c.isupper() for c in word) or word in RESUME_KEYWORDS:\n            tech_keywords.add(word.lower())\n\n    # Core technical keywords (comprehensive list)\n    core_keywords = {\n        \"python\", \"typescript\", \"java\", \"go\", \"rust\", \"c++\",\n        \"aws\", \"gcp\", \"azure\", \"docker\", \"kubernetes\", \"terraform\",\n        \"postgresql\", \"mysql\", \"mongodb\", \"redis\", \"dynamodb\",\n        \"kafka\", \"rabbitmq\", \"elasticsearch\",\n        \"fastapi\", \"flask\", \"django\", \"spring\", \"express\",\n        \"react\", \"angular\", \"vue\",\n        \"machine learning\", \"deep learning\", \"nlp\", \"llm\", \"rag\",\n        \"pytorch\", \"tensorflow\", \"scikit-learn\",\n        \"ci/cd\", \"jenkins\", \"github actions\", \"gitlab ci\",\n        \"sql\", \"nosql\", \"rest\", \"graphql\", \"grpc\",\n    }\n\n    matched = {kw for kw in core_keywords if kw in resume_lower}\n    job_keywords = {kw for kw in core_keywords if kw in jd_lower}\n    missing = job_keywords - matched\n\n    score = len(matched) / max(len(job_keywords), 1) * 100\n\n    return {\n        \"ats_score\": round(score, 1),\n        \"matched_keywords\": sorted(matched),\n        \"missing_keywords\": sorted(missing),\n        \"suggestions\": [\n            f\"Add keyword: {kw}\" for kw in sorted(missing)[:10]\n        ],\n    }\n\n## Usage\nresume = \"Senior Backend Engineer with 6 years of Python experience...\"\njob = \"We're looking for a Backend Engineer with Python, AWS, and PostgreSQL skills...\"\nresult = analyze_ats_score(resume, job)\nprint(f\"ATS Score: {result['ats_score']}%\")\nprint(f\"Missing: {result['missing_keywords']}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ATS tests"
+      }), ": Paste your resume into a plain text file (Notepad) to see how a parser reads it. If sections are jumbled or text is missing, reformat. Run through jobscan.co or similar ATS simulators."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "102-bullet-points",
+      children: "10.2 Bullet Points"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every bullet point should demonstrate impact. Use the CAR method: Challenge → Action → Result."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Weak"
+      }), ": \"Worked on the payment system\"\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Strong"
+      }), ": \"Redesigned the payment processing pipeline using Python and Kafka, reducing failed transactions by 40% and saving $200K/year in chargebacks\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Formula"
+      }), ": [Action verb] [what you did] using [tech/tools], resulting in [quantified impact]."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Powerful action verbs"
+      }), ": Designed, Architected, Led, Optimized, Implemented, Migrated, Automated, Reduced, Improved, Built, Delivered, Spearheaded, Transformed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Bullet point generator\ndef improve_bullet_point(weak: str, verb: str, tech: str, metric: str) -> str:\n    return f\"{verb} {weak.lower().lstrip('worked on ')} using {tech}, {metric}\"\n\n## Examples\nweak_bullets = [\n    \"Worked on the recommendation system\",\n    \"Helped with database migrations\",\n    \"Was responsible for CI/CD pipeline\",\n    \"Participated in code reviews\",\n    \"Fixed bugs in the API\",\n]\n\nimprovements = [\n    improve_bullet_point(weak_bullets[0], \"Built\", \"Python, Spark, and collaborative filtering\",\n                         \"improving recommendation accuracy by 25% and increasing user engagement by 15%\"),\n    improve_bullet_point(weak_bullets[1], \"Led\", \"zero-downtime migration strategies\",\n                         \"migrating 50M+ records across 12 services with zero customer impact\"),\n    improve_bullet_point(weak_bullets[2], \"Designed and implemented\", \"GitHub Actions, Docker, and Terraform\",\n                         \"reducing deployment time from 45 minutes to 8 minutes\"),\n    improve_bullet_point(weak_bullets[3], \"Established\", \"code review best practices across a 6-person team\",\n                         \"reducing production bugs by 60% and cutting review cycle time in half\"),\n    improve_bullet_point(weak_bullets[4], \"Optimized\", \"async processing and caching strategies\",\n                         \"reducing API p99 latency from 2.3s to 320ms\"),\n]\n\nfor i, (weak, strong) in enumerate(zip(weak_bullets, improvements)):\n    print(f\"Before: {weak}\")\n    print(f\"After:  {strong}\\n\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Quantification rules"
+      }), ": Use specific numbers when possible (seconds, percentages, dollars). Use estimated ranges if exact numbers aren't known (\"reduced costs by ~30%\"). Compare to a baseline (\"cut latency from 2s to 300ms\"). Include scale (\"served 10M API requests/day\")."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "103-resume-structure",
+      children: "10.3 Resume Structure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A well-structured resume guides the reader's eye and highlights the most important information."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Standard sections (in order)"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Contact"
+        }), ": Name, phone, email, LinkedIn, GitHub, portfolio URL. No full address (city/state is sufficient)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Summary"
+        }), " (optional, 2-3 lines): For experienced candidates. \"Backend Engineer with 6+ years of experience building scalable distributed systems. Proficient in Python, Go, and cloud infrastructure. Led teams of 3-5 engineers.\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Technical Skills"
+        }), ": Categorized (Languages, Frameworks, Databases, Cloud, Tools). Group by proficiency level if needed."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Experience"
+        }), ": Reverse chronological. Company, role, dates, location. 3-5 bullet points per role. Focus on most recent 2-3 roles."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Projects"
+        }), ": 2-3 significant projects. Name, description, tech stack, impact/outcome."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Education"
+        }), ": Degree, school, year. GPA if impressive (3.5+). Relevant coursework."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Additional"
+        }), ": Publications, talks, open source, certifications, languages."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Resume section validation\ndef validate_resume_sections(resume_sections: dict) -> list[str]:\n    issues = []\n    required = [\"contact\", \"experience\"]\n    recommended = [\"skills\", \"education\"]\n    nice_to_have = [\"summary\", \"projects\", \"certifications\"]\n\n    for section in required:\n        if section not in resume_sections:\n            issues.append(f\"MISSING REQUIRED: {section}\")\n\n    for section in recommended:\n        if section not in resume_sections:\n            issues.append(f\"MISSING RECOMMENDED: {section}\")\n\n    # Check for common issues\n    if \"experience\" in resume_sections:\n        exp = resume_sections[\"experience\"]\n        issues.extend(_check_experience(exp))\n\n    if \"projects\" in resume_sections:\n        proj = resume_sections[\"projects\"]\n        issues.extend(_check_projects(proj))\n\n    return issues\n\ndef _check_experience(exp: list) -> list[str]:\n    issues = []\n    for role in exp:\n        if len(role.get(\"bullets\", [])) < 3:\n            issues.append(f\"Role '{role.get('title')}' has fewer than 3 bullet points\")\n        for bullet in role.get(\"bullets\", []):\n            if not any(c.isdigit() for c in bullet):\n                issues.append(f\"Bullet may lack quantifiable impact: '{bullet[:50]}...'\")\n    return issues\n\ndef _check_projects(proj: list) -> list[str]:\n    issues = []\n    for p in proj:\n        if not p.get(\"url\"):\n            issues.append(f\"Project '{p.get('name')}' lacks GitHub/demo URL\")\n        if not p.get(\"tech_stack\"):\n            issues.append(f\"Project '{p.get('name')}' missing tech stack\")\n    return issues\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Length guidelines"
+      }), ": <5 years experience: 1 page. 5-10 years: 1-2 pages. 10+ years: 2 pages max. Recruiters spend 6-7 seconds scanning a resume — put the most important information at the top."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "104-linkedin-profile",
+      children: "10.4 LinkedIn Profile"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "LinkedIn is where recruiters find you. An optimized profile dramatically increases inbound opportunities."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Headline"
+      }), ": Don't just list your title. Include what you do and key skills. \"Senior Backend Engineer | Python, Go, Distributed Systems, AWS | Building Scalable AI Infrastructure\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "About section"
+      }), ": 3-4 short paragraphs telling your story. First paragraph: who you are and what you do. Second: key achievements and impact. Third: what you're looking for. Include relevant keywords naturally."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Experience"
+      }), ": Mirror your resume but expand slightly. Use the same strong bullet points. Have colleagues write recommendations (2-3 recommendations = significantly higher engagement)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## LinkedIn profile optimizer\ndef optimize_linkedin_sections(sections: dict) -> dict:\n    suggestions = {}\n\n    # Headline\n    headline = sections.get(\"headline\", \"\")\n    if len(headline.split(\"|\")) < 2:\n        suggestions[\"headline\"] = \"Add role + key skills + what you build with separators\"\n    if not any(tech in headline.lower() for tech in [\"python\", \"go\", \"aws\", \"ml\", \"ai\"]):\n        suggestions[\"headline_tech\"] = \"Consider adding key technologies to your headline\"\n\n    # About\n    about = sections.get(\"about\", \"\")\n    if len(about) < 200:\n        suggestions[\"about\"] = \"Expand About section to 3-4 paragraphs\"\n    if not about.strip().endswith((\"?\", \".\", \"!\")):\n        suggestions[\"about_end\"] = \"End with a clear call-to-action\"\n\n    # Skills\n    skills = sections.get(\"skills\", [])\n    if len(skills) < 10:\n        suggestions[\"skills\"] = \"Add more skills (aim for 15-20 relevant ones)\"\n\n    # Recommendations\n    recommendations = sections.get(\"recommendations\", 0)\n    if recommendations < 2:\n        suggestions[\"recommendations\"] = \"Request 2-3 recommendations from colleagues\"\n\n    return suggestions\n\n## Skills to add (backend/AI focus)\nRECOMMENDED_LINKEDIN_SKILLS = [\n    \"Python\", \"Go\", \"TypeScript\",\n    \"Amazon Web Services (AWS)\", \"Docker\", \"Kubernetes\",\n    \"PostgreSQL\", \"Redis\", \"MongoDB\",\n    \"REST APIs\", \"GraphQL\", \"gRPC\",\n    \"Microservices\", \"Distributed Systems\",\n    \"Machine Learning\", \"Deep Learning\",\n    \"System Design\", \"Software Architecture\",\n    \"CI/CD\", \"Terraform\", \"Git\",\n    \"Apache Kafka\", \"Elasticsearch\",\n]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "LinkedIn SEO tips"
+      }), ": Set your location to a tech hub (San Francisco Bay Area, New York, Seattle, Austin, London). Keep your profile set to \"Open to Work\" (visible only to recruiters). Post or.\nshare technical content weekly. Engage with others' posts (meaningful comments, not just likes). Connect with recruiters at target companies."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "105-portfolio-website",
+      children: "10.5 Portfolio Website"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A portfolio website showcases your work, personality, and technical skills. It's often the first thing a technical interviewer will check."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Essential pages"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Home"
+        }), ": Brief intro, key skills, call-to-action (contact or view projects)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "About"
+        }), ": Extended background, interests, what you're looking for"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Projects"
+        }), ": 3-5 featured projects with descriptions, tech stacks, and live/demo links"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Blog"
+        }), " (optional): Technical writing shows depth of knowledge and communication skills"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Contact"
+        }), ": Email, social links, contact form"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Portfolio project card template\ndef project_card(name: str, description: str, tech_stack: list[str], highlights: list[str],\n                 github_url: str = None, live_url: str = None, image_url: str = None) -> str:\n    tech_badges = \" \".join(f'<span class=\"tech-badge\">{t}</span>' for t in tech_stack)\n    highlights_list = \"\\n\".join(f\"<li>{h}</li>\" for h in highlights)\n\n    return f\"\"\"\n<div class=\"project-card\">\n    {\"<img src='\" + image_url + \"' alt='\" + name + \"'>\" if image_url else \"\"}\n    <h3>{name}</h3>\n    <p>{description}</p>\n    <div class=\"tech-stack\">{tech_badges}</div>\n    <ul>{highlights_list}</ul>\n    <div class=\"links\">\n        {\"<a href='\" + github_url + \"' target='_blank'>GitHub</a>\" if github_url else \"\"}\n        {\"<a href='\" + live_url + \"' target='_blank'>Live Demo</a>\" if live_url else \"\"}\n    </div>\n</div>\"\"\"\n\n## Example\nprint(project_card(\n    name=\"RAG-Powered Documentation Search\",\n    description=\"Enterprise documentation search system using Retrieval-Augmented Generation. Indexes 10K+ documents and provides natural language answers with source citations.\",\n    tech_stack=[\"Python\", \"FastAPI\", \"LangChain\", \"ChromaDB\", \"OpenAI\", \"Docker\"],\n    highlights=[\n        \"Answers 95% of queries within 2 seconds\",\n        \"Reduced support ticket volume by 40%\",\n        \"Handles 500+ concurrent users with p99 latency <500ms\",\n    ],\n    github_url=\"https://github.com/username/rag-docs\",\n    live_url=\"https://demo.example.com\",\n))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Technical implementation"
+      }), ": Use a static site generator (Next.js, Hugo, Astro) for performance. Deploy via Vercel, Netlify, or GitHub Pages. Add Google Analytics (or Plausible) for traffic tracking. Include a link to your GitHub and LinkedIn."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Design principles"
+      }), ": Clean and minimal. Fast loading (<2 seconds). Mobile-responsive. Good contrast and readability. Consistent typography. Don't use heavy frameworks that slow down your site."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "106-project-presentation",
+      children: "10.6 Project Presentation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "How you present your projects matters as much as the project itself. A well-documented project shows professionalism and attention to detail."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "GitHub README"
+      }), ": Your README is the entry point. Include: project name and one-line description, detailed description with screenshots, tech stack, architecture diagram (Mermaid), setup instructions, API documentation (if applicable), and contribution guidelines."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## README template\nREADME_TEMPLATE = \"\"\"# {project_name}\n\n{one_line_description}\n\n## Overview\n\n{2-3 paragraph description of what the project does and why it matters}\n\n## Architecture\n\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    A[Client] --> B[API Gateway]\n    B --> C[Service 1]\n    B --> D[Service 2]\n    C --> E[(Database)]\n    D --> F[(Cache)]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tech-stack",
+      children: "Tech Stack"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Backend"
+        }), ": {tech_stack_backend}"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Frontend"
+        }), ": {tech_stack_frontend}"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Database"
+        }), ": {tech_stack_db}"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Infrastructure"
+        }), ": {tech_stack_infra}"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "features",
+      children: "Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "{feature_1}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "{feature_2}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "{feature_3}"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "getting-started",
+      children: "Getting Started"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python 3.11+, Docker, PostgreSQL"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "installation",
+      children: "Installation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "git clone https://github.com/{username}/{repo}\ncd {repo}\ndocker-compose up\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "configuration",
+      children: "Configuration"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Copy ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".env.example"
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".env"
+      }), " and fill in the required values."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding resume and portfolio review is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how resume and portfolio review works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "api-documentation",
+      children: "API Documentation"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Endpoint"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/api/v1/resource"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "List resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "POST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/api/v1/resource"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create resource"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/api/v1/resource/:id"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Get resource by ID"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "performance",
+      children: "Performance"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "p50 latency: 50ms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "p99 latency: 200ms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Throughput: 1000 req/s per instance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Uptime: 99.95%"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "testing",
+      children: "Testing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "pytest tests/ --cov=src --cov-report=term-missing\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "deployment",
+      children: "Deployment"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Deployed on AWS ECS with Terraform. CI/CD via GitHub Actions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related",
+      children: "Related"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Blog post about this project"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Related project 1\n\"\"\""
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "project-quality-checklist",
+      children: "Project quality checklist"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def project_quality_score(project: dict) -> dict:\nscore = 0\nchecks = []"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "# README\nif project.get(\"has_readme\"):\n    score += 15\n    checks.append(\"README present\")\nif project.get(\"has_setup_instructions\"):\n    score += 10\n    checks.append(\"Setup instructions\")\nif project.get(\"has_screenshots\"):\n    score += 10\n    checks.append(\"Screenshots\")\n\n# Code quality\nif project.get(\"has_tests\"):\n    score += 15\n    checks.append(\"Tests\")\nif project.get(\"has_type_hints\"):\n    score += 10\n    checks.append(\"Type hints\")\nif project.get(\"has_linting\"):\n    score += 5\n    checks.append(\"Linting configured\")\n\n# Deployment\nif project.get(\"has_demo\"):\n    score += 15\n    checks.append(\"Live demo\")\nif project.get(\"has_ci_cd\"):\n    score += 10\n    checks.append(\"CI/CD pipeline\")\n\n# Documentation\nif project.get(\"has_api_docs\"):\n    score += 10\n    checks.append(\"API documentation\")\nif project.get(\"has_architecture_diagram\"):\n    score += 10\n    checks.append(\"Architecture diagram\")\n\nreturn {\"score\": score, \"checks\": checks, \"max\": 100}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text",
+        children: "\n**Demo best practices**: Deploy to a free tier (Railway, Render, Fly.io). Include test credentials in the README. Add a demo video (Loom) for complex workflows. Make the demo self-contained (no local setup required).\n\n---\n\n## 10.7 Open Source & Writing\n\nOpen source contributions and technical writing demonstrate community engagement, collaboration, and communication skills.\n\n**Open source contributions**: Start with documentation improvements (easiest to get accepted). Fix bugs in libraries you use. Add tests or examples. Contribute to projects aligned with your interests. Consistent small contributions are better than one large PR that never merges.\n\n**Types of contributions**: Bug fixes, feature implementation, documentation, tests, code reviews, issue triage, community support (answering questions).\n\n**Technical blogging**: Shows communication skills and depth of knowledge. Topics: how you solved a specific problem, architecture decisions, comparisons of technologies, tutorials, case studies.\n\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Blog post topic generator\ndef generate_blog_topics(skills: list[str], experiences: list[str]) -> list[str]:\n    topics = []\n\n    # Performance/optimization stories\n    for exp in experiences:\n        if any(w in exp.lower() for w in [\"optimized\", \"reduced\", \"improved\", \"migrated\"]):\n            topics.append(f\"How I optimized {exp}\")\n\n    # Architecture decisions\n    for skill in skills:\n        topics.extend([\n            f\"Comparing {skill} vs alternatives: when to use which\",\n            f\"Building production-ready systems with {skill}\",\n            f\"Common mistakes with {skill} and how to avoid them\",\n        ])\n\n    # Tutorials\n    topics.extend([\n        \"Building a RAG system from scratch in Python\",\n        \"Dockerizing a FastAPI application for production\",\n        \"Setting up CI/CD with GitHub Actions for a Python project\",\n        \"A complete guide to system design interviews\",\n    ])\n\n    return topics[:15]\n\n## Example\nskills = [\"FastAPI\", \"LangChain\", \"PostgreSQL\", \"Docker\", \"Redis\"]\nexperiences = [\"Optimized API latency by 86%\", \"Migrated monolith to microservices\"]\ntopics = generate_blog_topics(skills, experiences)\nfor topic in topics:\n    print(f\"- {topic}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Where to publish"
+      }), ": Medium (built-in audience), Dev.to (developer community), Hashnode (custom domain), Substack (newsletter), or your own blog (full control). Cross-post to LinkedIn for additional reach. Consistency matters more than perfection — aim for one post every 2-4 weeks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "108-tailoring-strategy",
+      children: "10.8 Tailoring Strategy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A generic resume sent to every company is less effective than a tailored one. Customization shows genuine interest and increases match rate."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Company research"
+      }), ": Read the job description (highlight requirements and keywords). Research the company's tech stack (engineering blog, GitHub, StackShare). Understand their product and business model."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Customization approach"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Skills section"
+        }), ": Reorder to emphasize skills the job requires. Add missing keywords if you have the experience."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Experience"
+        }), ": Reorder bullet points to highlight relevant achievements. Add context that connects to the specific role."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Projects"
+        }), ": Include projects most relevant to the role. Add a \"Relevant Experience\" section if changing domains."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Resume tailoring tool\ndef tailor_resume(base_resume: dict, job_description: str) -> dict:\n    jd_lower = job_description.lower()\n    tailored = {\"experience\": [], \"skills\": [], \"projects\": []}\n\n    # Prioritize skills mentioned in the job description\n    for skill in base_resume.get(\"skills\", []):\n        priority = 1 if skill.lower() in jd_lower else 0\n        tailored[\"skills\"].append({\"name\": skill, \"priority\": priority})\n    tailored[\"skills\"].sort(key=lambda s: s[\"priority\"], reverse=True)\n\n    # Select and order experience based on relevance\n    for exp in base_resume.get(\"experience\", []):\n        relevance = sum(1 for kw in jd_lower.split() if kw in exp.get(\"description\", \"\").lower())\n        tailored[\"experience\"].append({**exp, \"relevance\": relevance})\n    tailored[\"experience\"].sort(key=lambda e: e[\"relevance\"], reverse=True)\n\n    # Select projects matching job keywords\n    for proj in base_resume.get(\"projects\", []):\n        tech_text = \" \".join(proj.get(\"tech_stack\", [])).lower()\n        if any(tech in jd_lower for tech in tech_text.split()):\n            tailored[\"projects\"].append(proj)\n\n    return tailored\n\n## Cover letter generator\ndef generate_cover_letter(role: str, company: str, your_skills: list[str],\n                          company_tech: list[str], specific_reason: str) -> str:\n    return f\"\"\"Dear Hiring Manager,\n\nI'm excited to apply for the {role} position at {company}.\n\nMy background includes {', '.join(your_skills[:3])}, which directly maps to the requirements in your job description. I've built similar systems at scale — for example, [specific achievement].\n\nI'm particularly drawn to {company} because {specific_reason}. The opportunity to work with {', '.join(company_tech[:3])} aligns perfectly with my expertise and career goals.\n\nI'd love to discuss how my experience with [key skill] can help {company} achieve [specific company goal].\n\nBest regards,\n[Your Name]\"\"\"\n\n## Example\nprint(generate_cover_letter(\n    role=\"Senior Backend Engineer\",\n    company=\"AI Platform Co.\",\n    your_skills=[\"distributed systems\", \"Python\", \"Kubernetes\", \"machine learning infrastructure\"],\n    company_tech=[\"Go\", \"Kafka\", \"PyTorch\", \"Kubernetes\"],\n    specific_reason=\"your focus on building real-time ML infrastructure that serves millions of predictions per second\"\n))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Application tracking"
+      }), ": Use a spreadsheet to track applications — company, role, date applied, follow-up date, status, notes. Apply to 10-15 companies in parallel. Follow up after 1 week if no response."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ATS optimization: standard formatting, keywords from job description, .docx or text-based PDF"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bullet points: Challenge → Action → Result with quantified metrics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume structure: contact → summary → skills → experience → projects → education"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LinkedIn: keyword-rich headline, expanded About section, 15-20 skills, 2-3 recommendations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Portfolio: clean design, 3-5 featured projects with README, live demos, and architecture docs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Project presentation: detailed README, setup instructions, API docs, tests, CI/CD, screenshots"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Open source: start with docs and small bug fixes, consistent contributions, blog about what you learn"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tailoring: customize for each role, highlight relevant experience, track applications"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Do This"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoid This"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ATS screening"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use standard formatting + job description keywords"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tables, columns, images"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Most recent job"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 detailed bullet points with metrics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generic responsibilities"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Career change"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highlight transferable skills, add projects"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying with unchanged resume"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No professional experience"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong projects, open source, certifications"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Leaving resume empty"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LinkedIn profile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom headline, detailed experience, posts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same title as everyone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Portfolio projects"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Live demo + README + architecture diagram"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unfinished or abandoned projects"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying to many roles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Track applications, tailor per company"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sending the same resume everywhere"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: Should my resume be one page or two pages?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Guideline by experience level"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "0-5 years"
+            }), ": 1 page. You likely don't have enough experience to fill 2 pages without padding."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "5-10 years"
+            }), ": 1-2 pages. If you can fit everything relevant on 1 page, keep it at 1. If you have significant achievements across multiple roles, 2 pages is fine."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "10+ years"
+            }), ": 2 pages max. Focus on the most recent 10-12 years. Earlier roles can be summarized without bullet points."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Key rule"
+          }), ": Every line should add value. If you have a 2-page resume, ask yourself: \"Would the recruiter miss this line if I removed it?\" If the answer is no, remove it."]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Recruiters spend 6-7 seconds scanning a resume. Put your most impressive achievements at the top. If your resume is 2 pages, make sure the first page alone would make someone want to interview you."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: How do I list technical skills on my resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Group by category"
+          }), " for readability:"]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "Languages: Python, Go, TypeScript, SQL\nFrameworks: FastAPI, LangChain, PyTorch\nDatabases: PostgreSQL, Redis, MongoDB, Elasticsearch\nCloud & DevOps: AWS (ECS, RDS, Lambda), Docker, Kubernetes, Terraform\nTools: Kafka, Git, GitHub Actions, Datadog, Prometheus"
+          })
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do not use skill bars or rating scales"
+          }), " (e.g., \"Python: 4/5 stars\"). These are subjective and waste space. The recruiter will evaluate your proficiency from your experience descriptions and interview performance."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Include 15-20 skills"
+          }), ". List the most relevant skills first. If a skill is critical to the job you're applying for, make sure it appears both in your skills section AND in your experience bullet points."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Honesty policy"
+          }), ": Only list skills you could discuss fluently in an interview. If you'd struggle to answer a question about it, don't list it."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: How do I quantify my achievements if I don't have exact numbers?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Strategy 1 — Relative measures"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Significantly improved system reliability\" → better, but still vague"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Reduced deployment time from 45 minutes to under 10 minutes\" → strong"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Strategy 2 — Approximations"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Served approximately 10M API requests per day\""
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Managed a fleet of 50+ microservices\""
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Led a team of 5-8 engineers\""
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Strategy 3 — Use available data"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "GitHub: commits, PRs merged, lines of code"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Monitoring: latency, error rates, uptime"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Team metrics: deployment frequency, lead time, MTTR"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Strategy 4 — Business impact"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Reduced customer support tickets related to [feature] by 30%\""
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Enabled $500K annual run-rate feature through [work]\""
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "\"Reduced infrastructure costs by 25% through optimization\""
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["If you truly have no numbers, focus on the ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "scope"
+          }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "complexity"
+          }), " of what you built."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: What should I include in my portfolio projects?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["You need ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "3-5 strong projects"
+          }), ". Each should demonstrate different skills:"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.table, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.tbody, {
+            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.th, {
+                children: "Project Type"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "What It Shows"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "Example"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Full-stack app"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "End-to-end development, API design, frontend-backend integration"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Task manager with FastAPI + React"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "System design"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Architecture, scalability, distributed systems"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "URL shortener, chat system, rate limiter"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "ML/AI project"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Data pipeline, model training, deployment"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "RAG-powered search, recommendation system"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Tool/library"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "API design, testing, documentation, packaging"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Python library for [specific purpose]"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Open source contribution"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Collaboration, code quality, community process"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Significant PR to a popular project"
+              })]
+            }), "\n    "]
+          })]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "For each project, include"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Clear README with description and setup instructions"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Architecture diagram (Mermaid)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Live demo or screenshots"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tests and CI/CD"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tech stack badges"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Quality over quantity. One well-documented, deployed project is better than 5 incomplete ones."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: How do I optimize my LinkedIn profile for recruiter searches?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Headline"
+          }), ": Include role + skills + differentiator. \"Senior Backend Engineer | Python, Go, AWS, Kubernetes | Building Distributed Systems\""]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "About section"
+          }), ": 3-4 paragraphs. First paragraph: who you are and key skills. Second: major achievements with metrics. Third: what you're looking for. Use relevant keywords throughout."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Skills section"
+          }), ": Add 15-20 skills relevant to your target role. Endorse others to get endorsements in return. Keep skills ordered by relevance."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Experience"
+          }), ": Write 3-5 bullet points per role using the same impact-driven format as your resume."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Activity"
+          }), ": Post or share technical content 1-2 times per week. Comment meaningfully on others' posts. This increases your profile visibility significantly."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Settings"
+          }), ": Set #OpentoWork (visible to recruiters only). Turn on \"Creator mode\" if you post regularly. Keep your location set to a major tech hub."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Recommendations"
+          }), ": Request 2-3 from colleagues, managers, or clients. Write recommendations for others to encourage reciprocity."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: How should I format my GitHub profile?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Profile README"
+          }), " (special repo named after your username): Create a profile README that introduces you. Include: a short bio, tech stack badges, pinned repositories, GitHub stats widget, and links to LinkedIn/portfolio/blog."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pinned repositories"
+          }), ": Pin your best 6 projects. These should be your most complete, well-documented, and relevant projects. Unpin old or incomplete work."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Repository quality"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Clear README with description, architecture, setup, and demo"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Consistent commit history (not just 2 large commits)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Meaningful commit messages"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Issue and PR templates"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "License file (MIT is standard)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: ".gitignore for the appropriate language"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "CI/CD badge (GitHub Actions)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Code coverage badge"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Contribution graph"
+          }), ": Consistent contributions are a strong signal. Even small daily commits (documentation, refactoring, tests) show engagement. Enable \"Include Private Contributions\" on your profile."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q7: Should I include a photo on my resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "For US/UK/Canada/Australia"
+          }), ": NO. Including a photo can lead to unconscious bias, and hiring managers will remove it anyway. It also wastes valuable resume space."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "For some European/Asian countries"
+          }), ": YES, it's sometimes expected (Germany, France, Japan, China). Research the norms for the specific country and company."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "For tech companies globally"
+          }), ": Generally no photo. Tech hiring is focused on skills and experience, not appearance."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "What to include instead"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "LinkedIn URL (your photo is there if they want to see it)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "GitHub URL"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Portfolio URL"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "If you're unsure, don't include a photo. It's never a negative to omit one in a tech context."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q8: How do I handle employment gaps on my resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Short gaps (1-3 months)"
+          }), ": Don't call attention to them. List years only (not months) for each role. The gap is unlikely to be noticed."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Medium gaps (3-12 months)"
+          }), ": Be prepared to discuss positively. \"I took time to travel,\" \"I was working on a personal project,\" \"I was upskilling through courses.\" Frame it as intentional and.\nproductive. If you were laid off, say \"My position was eliminated in a company restructuring\" — this is not your fault."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Long gaps (12+ months)"
+          }), ": Be transparent but positive. If you were learning new skills, freelancing, building projects, or dealing with personal/health matters, state it honestly. Show what you did during the gap that keeps your skills current."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Formatting"
+          }), ": Use a \"Career Break\" or \"Independent Projects\" section to account for the time. List relevant activities (courses, freelance work, open source contributions, personal projects)."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The key"
+          }), ": Show that you used the time productively and that your skills are current regardless of the employment gap."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q9: What's the best way to present open source contributions?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Open source contributions can be presented in several ways:"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "On your resume"
+          }), ": Add a \"Open Source\" or \"Contributions\" section near the end. List 2-3 significant contributions with project name, description, and what you contributed (feature, bug fix, documentation)."]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "Open Source:\n- LangChain (Python) — Added support for custom embedding model caching, reducing API calls by 60%. [PR #1234]\n- FastAPI — Contributed WebSocket documentation and examples. [PR #567]"
+          })
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "On your GitHub profile"
+          }), ": Pin repos you've contributed to. Show consistent activity across multiple projects. Star and fork interesting projects."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "In interviews"
+          }), ": When discussing collaboration and code quality, reference your open source experience. \"When contributing to LangChain, I learned the importance of [specific practice].\""]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Getting started"
+          }), ": Look for \"good first issue\" labels. Start with documentation improvements. Fix bugs you encounter in libraries you use. Write tests for projects with low coverage."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q10: How do I write a resume when changing careers (e.g., from testing to backend)?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Focus on transferable skills"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Testing → Backend: \"Wrote automated test frameworks in Python\" shows coding ability. \"Developed CI/CD pipelines\" shows DevOps knowledge."
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Highlight: problem-solving, coding, automation, debugging, communication, working with developers"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Structure"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Summary"
+            }), ": \"Backend Engineer transitioning from QA Engineering with strong Python, automation, and CI/CD experience. Built production-ready APIs and test frameworks.\""]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Technical Skills"
+            }), ": List backend-relevant skills prominently (Python, APIs, databases), even if you learned them outside work."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Projects"
+            }), ": Create 2-3 strong backend projects (API, database, deployment). This is critical for career changers."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Experience"
+            }), ": Emphasize coding-heavy aspects of QA roles. Frame test automation as \"writing maintainable Python.\""]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The most important thing"
+          }), ": Build and deploy real projects. A deployed portfolio project is worth more than any certification."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q11",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q11: Should I include a summary section on my resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When to include a summary"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You have 5+ years of experience and want to tell a cohesive story"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You're changing careers and need to frame your background"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You're applying for a role that combines multiple disciplines"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You want to emphasize specific achievements upfront"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When NOT to include a summary"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You have less than 3 years of experience (use the space for achievements)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Your summary is generic and doesn't add value (\"Hardworking engineer seeking challenging role...\")"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "You need the space for more bullet points"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Good summary example"
+          }), " (2 lines): \"Backend Engineer with 6+ years of experience building scalable distributed systems in Python and Go. Designed systems handling 10M+ daily requests. Led teams of 3-5 engineers delivering critical payment infrastructure.\""]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "3 lines max. Put it at the top, after your contact info and before skills. Make every word count."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q12",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q12: What's the best file format for submitting a resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "PDF"
+          }), ": Best choice for most situations. Consistent formatting across all devices and operating systems. Use a text-based PDF (not a scanned image). Test that text can be selected and copied from the PDF — that's how ATS systems read it."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "DOCX"
+          }), ": Preferred by some ATS systems. More parsable than PDF in some cases. If the job posting specifically requests DOCX, use it. Otherwise, PDF is fine."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Never use"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "PNG/JPG (images cannot be parsed by ATS)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pages (Mac only — can't be opened on Windows/ATS)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Scanned PDF (image-based, not text-based)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "HTML (not standard for applications)"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Test your PDF"
+          }), ": Open your PDF and Ctrl+A (select all). If the text is selectable and in the correct order, it's ATS-friendly. If it selects images or jumbled text, the PDF was created incorrectly."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Naming convention"
+          }), ": \"FirstName_LastName_Resume.pdf\" — don't use \"resume_v5_final_updated.pdf\"."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q13",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q13: How do I prepare for a portfolio review in an interview?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Some companies (especially startups) may ask you to walk through your portfolio or a specific project. Prepare like this:"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Choose 2 projects to present in depth"
+            }), " — one that shows technical depth, one that shows breadth"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Prepare a 5-minute walkthrough"
+            }), " for each:\n        ", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n          ", (0,jsx_runtime.jsx)(_components.li, {
+                children: "What problem does it solve? (1 min)"
+              }), "\n          ", (0,jsx_runtime.jsx)(_components.li, {
+                children: "What architecture did you choose and why? (1.5 min)"
+              }), "\n          ", (0,jsx_runtime.jsx)(_components.li, {
+                children: "What was the hardest technical challenge? (1.5 min)"
+              }), "\n          ", (0,jsx_runtime.jsx)(_components.li, {
+                children: "What would you improve? (1 min)"
+              }), "\n        "]
+            }), "\n      "]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Know your code"
+            }), ": Be ready to explain any design decision. They might ask you to live-code a change or extension."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Discuss tradeoffs"
+            }), ": \"I chose PostgreSQL over MongoDB because...\" shows maturity."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Be humble about it"
+            }), ": \"This was my first attempt at a distributed system. In retrospect, I'd...\" shows growth mindset."]
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q14",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q14: How often should I update my resume and portfolio?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Continuous maintenance"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Add new achievements as they happen (don't rely on memory 2 years later)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Update your portfolio when you complete a significant project"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Write a blog post when you solve a difficult problem (fresh content for both resume and portfolio)"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Quarterly review"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Remove outdated bullet points (older than 3-4 years)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Replace weaker achievements with stronger ones"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Update skills section (add new technologies, remove ones you no longer use)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Check for ATS keywords and formatting issues"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Before applying"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Tailor for the specific role"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Get feedback from 1-2 peers"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Run through an ATS checker"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Verify all links work (GitHub, portfolio, demos)"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pro tip"
+          }), ": Keep a \"brag document\" — a running list of your achievements, metrics, and positive feedback. Update it weekly. When it's time to update your resume, you'll have everything you need."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-q15",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q15: Should I include non-technical work experience on my resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "If you're early in your career (0-3 years experience)"
+          }), ": Yes, include it if it demonstrates transferable skills. Retail or service work shows communication, problem-solving, and teamwork. Frame it appropriately: \"Retail Associate at Target — resolved customer issues, trained 3 new hires, managed inventory for $500K+ product line.\""]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "If you're mid-career (3-10 years)"
+          }), ": Only include non-technical roles if they're recent or highly relevant. If you have 5+ years of engineering experience, your non-technical jobs from 8 years ago are no longer relevant."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "If you're changing careers"
+          }), ": Absolutely include it, but frame it around transferable skills. A teacher transitioning to engineering should highlight: \"Created structured curriculum for 100+ students\" → project management skills. \"Debugged technical issues with classroom technology\" → technical problem-solving."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "General rule"
+          }), ": Include if it adds value. If it's filler, cut it. Your resume should show a clear career trajectory toward your target role."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": What is the most important factor for ATS optimization?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Fancy formatting\nb) Keywords from the job description\nc) Color scheme\nd) Font choice"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Keywords from the job description"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "ATS systems primarily match keywords from the job description against your resume. Standard formatting matters secondarily for parseability."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": How long do recruiters typically spend scanning a resume?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 30 seconds\nb) 6-7 seconds\nc) 2 minutes\nd) 15 seconds"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) 6-7 seconds"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Studies show recruiters spend 6-7 seconds on an initial scan, making it critical to highlight the most important information prominently."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": What is the CAR method for writing bullet points?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Challenge, Action, Result\nb) Context, Achievement, Reward\nc) Code, Analysis, Review\nd) Create, Assess, Report"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: a) Challenge, Action, Result"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "CAR (Challenge, Action, Result) structures bullet points to show the problem, your contribution, and the quantifiable outcome."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": What file format is best for ATS-friendly resumes?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) PNG\nb) Scanned PDF\nc) Text-based PDF or DOCX\nd) HTML"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c) Text-based PDF or DOCX"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Text-based PDFs (where text can be selected and copied) and DOCX files are the most ATS-friendly formats."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": How many strong portfolio projects should you aim for?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 1-2\nb) 3-5\nc) 8-10\nd) 15+"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s10-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) 3-5"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "3-5 well-documented, deployed projects showing different skills (full-stack, system design, ML) is the ideal range."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Take your current resume and run it through an ATS checker (jobscan.co or similar). Note the score and missing keywords. Update your resume to incorporate the missing keywords naturally."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Rewrite 5 bullet points on your resume using the CAR method. Each should have: a challenge/context, specific action you took, and quantifiable result."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Create a GitHub profile README for your username. Include a bio, tech stack badges, pinned repositories, and GitHub stats. Use shields.io for badges."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Do a LinkedIn audit: optimize your headline, About section, skills, and experience. Ask 2 colleagues for recommendations. Post 1 technical article or update."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Build a portfolio website from scratch (Next.js, Hugo, or plain HTML/CSS). Include: home page, projects page (3+ projects with descriptions and links), about page, and contact section. Deploy it (Vercel, Netlify, GitHub Pages). Submit the URL for review."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not practicing enough problems to build pattern recognition"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Resume & Portfolio Review in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates Resume & Portfolio Review."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding Resume & Portfolio Review. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on Resume & Portfolio Review from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Resume & Portfolio Review with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on Resume & Portfolio Review."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Resume & Portfolio Review behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of Resume & Portfolio Review run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of Resume & Portfolio Review that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Resume & Portfolio Review explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Resume & Portfolio Review\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Resume & Portfolio Review to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Resume & Portfolio Review (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Resume & Portfolio Review and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Resume & Portfolio Review-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Resume & Portfolio Review interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Resume & Portfolio Review in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Resume & Portfolio Review builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Resume & Portfolio Review before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Resume & Portfolio Review is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Resume & Portfolio Review in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Resume & Portfolio Review chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Resume & Portfolio Review is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to Resume & Portfolio Review is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing Resume & Portfolio Review is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Resume & Portfolio Review issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Resume & Portfolio Review in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Resume & Portfolio Review that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of Resume & Portfolio Review is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Resume & Portfolio Review in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Resume & Portfolio Review and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of Resume & Portfolio Review on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Resume & Portfolio Review to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Resume & Portfolio Review from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Resume & Portfolio Review when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Resume & Portfolio Review twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Resume & Portfolio Review snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Resume & Portfolio Review listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Resume & Portfolio Review to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Resume & Portfolio Review by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Resume & Portfolio Review to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of Resume & Portfolio Review"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on Resume & Portfolio Review (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real Resume & Portfolio Review problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements Resume & Portfolio Review"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for Resume & Portfolio Review"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on Resume & Portfolio Review"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how Resume & Portfolio Review fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how Resume & Portfolio Review is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where Resume & Portfolio Review is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of Resume & Portfolio Review, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is Resume & Portfolio Review asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume & Portfolio Review is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Resume & Portfolio Review."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume & Portfolio Review emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Resume & Portfolio Review today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Resume & Portfolio Review — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Resume & Portfolio Review changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing Resume & Portfolio Review."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume & Portfolio Review appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding Resume & Portfolio Review helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the Resume & Portfolio Review concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, Resume & Portfolio Review skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply Resume & Portfolio Review to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Resume & Portfolio Review is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the Resume & Portfolio Review skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-10resumeandportfolioreview-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most important factor for ATS optimization?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) Keywords from the job description"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-10resumeandportfolioreview-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How long do recruiters typically spend scanning a resume?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) 6-7 seconds"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-10resumeandportfolioreview-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the CAR method for writing bullet points?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "a) Challenge, Action, Result"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-10resumeandportfolioreview-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What file format is best for ATS-friendly resumes?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "c) Text-based PDF or DOCX"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-10resumeandportfolioreview-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How many strong portfolio projects should you aim for?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) 3-5"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Resume & Portfolio Review (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Resume & Portfolio Review (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Resume & Portfolio Review-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Resume & Portfolio Review in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of Resume & Portfolio Review code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on Resume & Portfolio Review"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in Resume & Portfolio Review code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the Resume & Portfolio Review example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Resume & Portfolio Review in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Resume & Portfolio Review."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Resume & Portfolio Review problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Resume & Portfolio Review is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for Resume & Portfolio Review."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core Resume & Portfolio Review logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Resume & Portfolio Review without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses Resume & Portfolio Review daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": Resume & Portfolio Review patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": Resume & Portfolio Review principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": Resume & Portfolio Review shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect Resume & Portfolio Review to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/11-salary-negotiation",
+        children: "Salary Negotiation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume & Portfolio Review, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Resume & Portfolio Review depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

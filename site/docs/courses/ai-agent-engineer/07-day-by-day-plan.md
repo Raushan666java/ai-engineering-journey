@@ -786,6 +786,7 @@ Implement idempotency by requiring an `Idempotency-Key` header on POST endpoints
 Run through all 6 days' exercises again from scratch, timing yourself. If anything takes more than 30 minutes, note it for extra practice. Verify all Phase 0 checkpoint items.
 
 
+```typescript
 interface ContainerConfig { image: string; port: number; env: Record&lt;string,string&gt;; volumes: string[]; replicas: number }
 class DockerConfigBuilder {
   private config: Partial&lt;ContainerConfig&gt; = {}
@@ -809,4 +810,5 @@ class K8sDeployment {
   }
 }
 export { ContainerConfig, DockerConfigBuilder, K8sDeployment }
+```
 ## Quick Reference: Time Commitment

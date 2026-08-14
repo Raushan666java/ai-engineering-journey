@@ -685,6 +685,7 @@ Deploy Prometheus + Grafana alongside your RAG demo using docker-compose. Add th
 ---
 
 
+```typescript
 interface RetryConfig { maxRetries: number; baseDelay: number; maxDelay: number }
 class RetryMiddleware {
   constructor(private config: RetryConfig = {maxRetries:3,baseDelay:1000,maxDelay:10000}) {}
@@ -721,6 +722,7 @@ class RateLimiter {
   private sleep(ms:number): Promise&lt;void&gt; { return new Promise(r=>setTimeout(r,ms)) }
 }
 export { RetryMiddleware, CircuitBreaker, RateLimiter }
+```
 ## Phase 4 Done Checkpoint
 
 Before moving to Phase 5, you should be able to:

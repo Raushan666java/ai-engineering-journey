@@ -1067,6 +1067,7 @@ def safe_completion(user_input: str, system_prompt: str) -> str:
 ---
 
 
+```typescript
 interface TestResult { name: string; passed: boolean; score: number; details: string }
 class AIEvaluator {
   constructor(private llm: (prompt:string)=>Promise&lt;string&gt;) {}
@@ -1092,6 +1093,7 @@ class TestSuite {
   }
 }
 export { AIEvaluator, TestSuite }
+```
 ## Exercises
 
 1. **Prompt pattern comparison:** Pick a problem (e.g., "Explain the difference between supervised and unsupervised learning"). Write prompts using zero-shot, few-shot CoT, and self-consistency CoT. Compare output quality.

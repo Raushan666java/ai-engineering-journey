@@ -932,7 +932,7 @@ Add input + output guardrails to your RAG demo query endpoint. Test with a promp
 
 ---
 
-
+```typescript
 interface Tool { name: string; description: string; execute: (args:Record&lt;string,unknown&gt;) => Promise&lt;string&gt; }
 interface Message { role: "system"|"user"|"assistant"; content: string }
 interface AgentConfig { model: string; maxTokens: number; temperature: number }
@@ -967,6 +967,7 @@ class Planner {
   plan(goal: string): string[] { return goal.split(". ").map(s => s.trim()).filter(Boolean) }
 }
 export { Agent, AgentConfig, Tool, Message, Planner }
+```
 ## Phase 2 Done Checkpoint
 
 Before moving to Phase 3, you should be able to:

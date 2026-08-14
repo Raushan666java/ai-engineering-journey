@@ -780,6 +780,7 @@ Before declaring yourself ready to apply:
 ---
 
 
+```typescript
 interface EvalCase { input: string; expected: string; actual?: string; score?: number }
 interface EvalResult { case: EvalCase; passed: boolean; score: number; durationMs: number }
 interface Scorer { score(expected: string, actual: string): number }
@@ -811,6 +812,7 @@ class RegressionDetector {
   }
 }
 export { EvalCase, EvalResult, EvalRunner, ExactMatchScorer, FuzzyScorer, LLMAsJudgeScorer, RegressionDetector }
+```
 ## Final Words
 
 You already run production systems on Hetzner with ChromaDB, FastAPI, LangGraph, and MCP. The gap isn't technical — it's that the output is scattered across a course repo and personal infra, not packaged as a portfolio.

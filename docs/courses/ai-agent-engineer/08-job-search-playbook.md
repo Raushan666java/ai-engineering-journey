@@ -747,6 +747,7 @@ I'd love to be considered.
 ---
 
 
+```typescript
 interface LogEntry { timestamp: string; level: "info"|"warn"|"error"|"debug"; message: string; metadata?: Record&lt;string,unknown&gt; }
 interface Span { id: string; parentId?: string; name: string; startTime: number; endTime?: number; tags: Record&lt;string,string&gt; }
 interface Metric { name: string; value: number; tags: Record&lt;string,string&gt;; timestamp: number }
@@ -784,6 +785,7 @@ class MetricsCollector {
   }
 }
 export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
+```
 ## 10. Quick Reference
 
 ### Daily checklist (during job search)

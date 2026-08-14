@@ -1092,6 +1092,7 @@ Add at least 1 resource and 1 prompt template to your MCP memory server. Test wi
 ---
 
 
+```typescript
 interface PromptTemplate { name: string; template: string; variables: string[]; version: string }
 class PromptEngine {
   private templates: Map&lt;string,PromptTemplate&gt; = new Map()
@@ -1120,6 +1121,7 @@ class ChatComposer {
   }
 }
 export { PromptTemplate, PromptEngine, ChatComposer }
+```
 ## Phase 3 Done Checkpoint
 
 Before moving to Phase 4, you should be able to:

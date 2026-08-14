@@ -1025,6 +1025,7 @@ if result:
 ---
 
 
+```typescript
 interface QueryPlan { steps: Array&lt;{type:"retrieve"|"decompose"|"synthesize";query:string;deps:string[]}&gt; }
 class MultiHopRAG {
   constructor(private llm: (p:string)=>Promise&lt;string&gt;, private retriever: (q:string)=>Promise&lt;string[]&gt;) {}
@@ -1050,6 +1051,7 @@ class FusionRetriever {
   }
 }
 export { MultiHopRAG, QueryPlan, FusionRetriever }
+```
 ## Exercises
 
 1. **Trace instrumentation:** Add tracing to your LangGraph agent using the custom Tracer class. Run 5 agent requests and export the trace report.

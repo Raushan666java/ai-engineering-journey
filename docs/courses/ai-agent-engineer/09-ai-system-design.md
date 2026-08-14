@@ -1081,6 +1081,7 @@ class AIGateway:
 ---
 
 
+```typescript
 interface SanitizeResult { cleaned: string; removed: string[]; warnings: string[] }
 class InputSanitizer {
   stripHTML(input: string): string { return input.replace(/<[^>]*>/g, "") }
@@ -1120,6 +1121,7 @@ class PromptInjectionGuard {
   }
 }
 export { InputSanitizer, PIIDetector, PromptInjectionGuard }
+```
 ## Exercises
 
 1. **Cost model:** Build a spreadsheet or Python script that estimates daily cost for a RAG system at 10K, 100K, and 1M queries/day. Identify the top-3 cost drivers.

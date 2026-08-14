@@ -936,6 +936,7 @@ print(f"Winner: {report['recommendation']}")
 ---
 
 
+```typescript
 interface ProjectScaffold { name: string; files: Array&lt;{path:string;content:string}&gt; }
 class ProjectGenerator {
   generateAIDemo(name: string): ProjectScaffold {
@@ -955,6 +956,7 @@ class ProjectGenerator {
   }
 }
 export { ProjectGenerator, ProjectScaffold }
+```
 ## Exercises
 
 1. **Unit test suite:** Write unit tests for your LangGraph agent covering: correct tool selection, state transitions, error states, and edge cases (empty input, missing state keys).

@@ -912,6 +912,7 @@ Add a `phone_number` column to your bookings table. Create a migration with `--a
 ---
 
 
+```typescript
 interface Document { id: string; content: string; metadata: Record&lt;string,unknown&gt;; embedding?: number[] }
 interface Chunk { text: string; tokens: number }
 class Chunker { constructor(private maxTokens: number = 512) {}
@@ -948,6 +949,7 @@ class RAGPipeline {
   private async embed(text: string): Promise&lt;number[]&gt; { return text.split("").map(c => c.charCodeAt(0)/255) }
 }
 export { Chunker, VectorStore, RAGPipeline, cosineSimilarity }
+```
 ## Phase 1 Done Checkpoint
 
 Before moving to Phase 2, you should be able to:

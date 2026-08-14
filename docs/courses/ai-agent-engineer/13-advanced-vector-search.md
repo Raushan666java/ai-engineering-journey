@@ -1144,6 +1144,7 @@ class VectorDBMigrator:
 ---
 
 
+```typescript
 interface Task { id: string; description: string; status: "pending"|"running"|"done"|"failed"; dependencies: string[]; result?: string }
 class Orchestrator {
   private tasks: Map&lt;string,Task&gt; = new Map()
@@ -1170,6 +1171,7 @@ class Decomposer {
   }
 }
 export { Orchestrator, Task, Decomposer }
+```
 ## Exercises
 
 1. **Hybrid search**: Implement hybrid search (BM25 + dense vector + RRF) on your RAG pipeline. Measure recall@10 improvement over pure vector search.

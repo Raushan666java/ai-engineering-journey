@@ -10,7 +10,7 @@ sidebar_position: 19
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
 > 18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
-> *Deployed: commit `23502cfa3`*
+> *Deployed: commit `9d13a69208`*
 
 ---
 

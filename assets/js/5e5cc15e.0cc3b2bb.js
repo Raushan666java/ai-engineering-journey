@@ -1,0 +1,7204 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[77803],{
+
+/***/ 8643
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_18_case_studies_md_5e5_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-18-case-studies-md-5e5.json
+const site_docs_courses_operating_systems_18_case_studies_md_5e5_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/18-case-studies","title":"Chapter 18: Case Studies in Operating Systems","description":"<< Virtualization and Cloud Computing","source":"@site/docs/courses/operating-systems/18-case-studies.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/18-case-studies","permalink":"/ai-engineering-journey/operating-systems/18-case-studies","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":18,"frontMatter":{"id":"18-case-studies","slug":"/operating-systems/18-case-studies","title":"Chapter 18: Case Studies in Operating Systems","sidebar_label":"Chapter 18: Case Studies in Operating Systems","sidebar_position":18},"sidebar":"course-operating-systems","previous":{"title":"Chapter 17: Virtualization","permalink":"/ai-engineering-journey/operating-systems/17-virtualization"},"next":{"title":"Operating Systems — A Comprehensive Textbook","permalink":"/ai-engineering-journey/operating-systems"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/18-case-studies.md
+
+
+const frontMatter = {
+	id: '18-case-studies',
+	slug: '/operating-systems/18-case-studies',
+	title: 'Chapter 18: Case Studies in Operating Systems',
+	sidebar_label: 'Chapter 18: Case Studies in Operating Systems',
+	sidebar_position: 18
+};
+const contentTitle = 'Chapter 18: Case Studies in Operating Systems';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Windows NT Architecture",
+  "id": "windows-nt-architecture",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: Windows vs Others",
+  "id": "ad-table-windows-vs-others",
+  "level": 3
+}, {
+  "value": "Linux Kernel Architecture",
+  "id": "linux-kernel-architecture",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-1",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-1",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model-1",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management-1",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system-1",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model-1",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling-1",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features-1",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: Linux vs Others",
+  "id": "ad-table-linux-vs-others",
+  "level": 3
+}, {
+  "value": "macOS XNU Kernel",
+  "id": "macos-xnu-kernel",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-2",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-2",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model-2",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management-2",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system-2",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model-2",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling-2",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features-2",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-2",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: macOS vs Others",
+  "id": "ad-table-macos-vs-others",
+  "level": 3
+}, {
+  "value": "Android OS Architecture",
+  "id": "android-os-architecture",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-3",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-3",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model-3",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management-3",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system-3",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model-3",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling-3",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features-3",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-3",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: Android vs Others",
+  "id": "ad-table-android-vs-others",
+  "level": 3
+}, {
+  "value": "iOS Architecture",
+  "id": "ios-architecture",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-4",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-4",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model-4",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management-4",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system-4",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model-4",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling-4",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features-4",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-4",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: iOS vs Others",
+  "id": "ad-table-ios-vs-others",
+  "level": 3
+}, {
+  "value": "RTOS: FreeRTOS and VxWorks",
+  "id": "rtos-freertos-and-vxworks",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-5",
+  "level": 3
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-5",
+  "level": 3
+}, {
+  "value": "Process and Thread Model",
+  "id": "process-and-thread-model-5",
+  "level": 3
+}, {
+  "value": "Memory Management",
+  "id": "memory-management-5",
+  "level": 3
+}, {
+  "value": "File System",
+  "id": "file-system-5",
+  "level": 3
+}, {
+  "value": "Security Model",
+  "id": "security-model-5",
+  "level": 3
+}, {
+  "value": "Scheduling",
+  "id": "scheduling-5",
+  "level": 3
+}, {
+  "value": "Unique Features",
+  "id": "unique-features-5",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-5",
+  "level": 3
+}, {
+  "value": "A&amp;D Table: RTOS vs GPOS",
+  "id": "ad-table-rtos-vs-gpos",
+  "level": 3
+}, {
+  "value": "FreeBSD",
+  "id": "freebsd",
+  "level": 2
+}, {
+  "value": "Overview and History",
+  "id": "overview-and-history-6",
+  "level": 3
+}, {
+  "value": "Architecture",
+  "id": "architecture",
+  "level": 3
+}, {
+  "value": "FreeBSD Key Features",
+  "id": "freebsd-key-features",
+  "level": 3
+}, {
+  "value": "FreeBSD Jails",
+  "id": "freebsd-jails",
+  "level": 4
+}, {
+  "value": "FreeBSD vs Linux Comparison",
+  "id": "freebsd-vs-linux-comparison",
+  "level": 3
+}, {
+  "value": "Minix and Microkernels",
+  "id": "minix-and-microkernels",
+  "level": 2
+}, {
+  "value": "Minix",
+  "id": "minix",
+  "level": 3
+}, {
+  "value": "seL4 → Formally Verified Microkernel",
+  "id": "sel4--formally-verified-microkernel",
+  "level": 3
+}, {
+  "value": "OS Comparison Tables",
+  "id": "os-comparison-tables",
+  "level": 2
+}, {
+  "value": "All-OS Comparison (6 OS × 15 Criteria)",
+  "id": "all-os-comparison-6-os--15-criteria",
+  "level": 3
+}, {
+  "value": "Desktop OS Comparison: Linux vs Windows vs macOS",
+  "id": "desktop-os-comparison-linux-vs-windows-vs-macos",
+  "level": 3
+}, {
+  "value": "Mobile OS Comparison: Android vs iOS",
+  "id": "mobile-os-comparison-android-vs-ios",
+  "level": 3
+}, {
+  "value": "RTOS vs GPOS Comparison",
+  "id": "rtos-vs-gpos-comparison",
+  "level": 3
+}, {
+  "value": "RTOS vs GPOS Selection Guide",
+  "id": "rtos-vs-gpos-selection-guide",
+  "level": 4
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 2
+}, {
+  "value": "Which OS for Which Task?",
+  "id": "which-os-for-which-task",
+  "level": 3
+}, {
+  "value": "RTOS vs GPOS Selection: Detailed Decision Tree",
+  "id": "rtos-vs-gpos-selection-detailed-decision-tree",
+  "level": 3
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "AWS (Amazon Web Services)",
+  "id": "aws-amazon-web-services",
+  "level": 3
+}, {
+  "value": "Microsoft Azure",
+  "id": "microsoft-azure",
+  "level": 3
+}, {
+  "value": "Google Cloud Platform (GCP)",
+  "id": "google-cloud-platform-gcp",
+  "level": 3
+}, {
+  "value": "Tesla",
+  "id": "tesla",
+  "level": 3
+}, {
+  "value": "SpaceX",
+  "id": "spacex",
+  "level": 3
+}, {
+  "value": "iOS in iPhones",
+  "id": "ios-in-iphones",
+  "level": 3
+}, {
+  "value": "Other Notable Deployments",
+  "id": "other-notable-deployments",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript Implementation — OS Architecture Comparison Framework",
+  "id": "typescript-implementation--os-architecture-comparison-framework",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 3
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 3
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-18-case-studies-in-operating-systems",
+        children: "Chapter 18: Case Studies in Operating Systems"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/17-virtualization",
+          children: "Virtualization and Cloud Computing"
+        })]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare Windows, Linux, macOS, Android, iOS, and RTOS kernel architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze each OS's approach to processes, threads, and scheduling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare memory management strategies across all six operating systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand the macOS XNU kernel and its hybrid architecture"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe FreeBSD's design contributions to modern operating systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explore the architecture of real-time operating systems (FreeRTOS, VxWorks)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand Android's Linux-based architecture with Binder IPC and ART runtime"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze iOS's XNU-based architecture with sandboxing and secure enclave"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Learn the principles of microkernel design through Minix and seL4"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply knowledge of OS internals to real-world system selection decisions"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Windows NT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid kernel; NT kernel + HAL + executive; Win32/POSIX/OS2 subsystems; priority-driven scheduler"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Linux"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules; CFS/EEVDF scheduler; VFS; loadable kernel modules; used in 96% of top servers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "macOS/XNU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid: Mach microkernel + BSD + I/O Kit; Mach message IPC; Apple Silicon unified memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Android"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux-based with Binder IPC; ART runtime; ashmem/ION; Treble/HAL architecture"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "iOS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XNU-based with sandboxing; Secure Enclave; Apple Silicon; prepacked trust cache"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FreeRTOS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard real-time; small footprint (~6-12 KB); task-based; tickless idle; used in ESP32, Arduino"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VxWorks"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard real-time; DO-178C certified; POSIX-compliant; used in SpaceX, Mars rovers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FreeBSD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + POSIX; ZFS, pf firewall, jails; permissive BSD license"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Minix/seL4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "True microkernel; seL4 formally verified with Isabelle/HOL; no kernel bugs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Windows NT] --> B[Linux Kernel]\n    A --> C[macOS XNU]\n    B --> D[FreeBSD]\n    B --> E[Android]\n    C --> F[iOS]\n    E --> F\n    D --> G[RTOS: FreeRTOS / VxWorks]\n    G --> H[Minix & seL4 Microkernels]\n    H --> I[OS Comparison Tables]\n    I --> J[Interview Corner]\n    J --> K[Applications in Real Systems]\n    K --> L[Quiz & Exercises]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/18-case-studies.png",
+        alt: "OS Case Studies"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "windows-nt-architecture",
+      children: "Windows NT Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows NT (New Technology) was designed by David Cutler, formerly of DEC's VAX/VMS team. First released in 1993 as Windows NT 3.1, it was built from scratch as a portable, secure, preemptive-multitasking operating system. The design goals were: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "portability"
+      }), " (run on multiple CPU architectures), ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "security"
+      }), " (meet C2-level certification), ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "reliability"
+      }), " (protected subsystems), ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "POSIX compliance"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "extensibility"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "NT originally ran on x86, MIPS, Alpha AXP, and later PowerPC, Itanium, and ARM. Today's Windows 10/11 and Windows Server are direct descendants. The kernel has evolved through versions: NT 4.0 moved graphics into kernel (improved performance, reduced stability), Windows 2000 added Active Directory, Windows XP merged consumer/NT lines, Vista added WDDM driver model, Windows 8 added Metro/Modern UI, and Windows 11 added VBS (Virtualization-Based Security) and Pluton security processor support."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": Windows NT is like a luxury cruise ship → it has multiple decks (layers), specialized departments (executive subsystems), a control bridge (kernel), and a hull that isolates passengers from the water (HAL abstracts hardware). Adding new engines is modular, but the ship is heavy and requires significant fuel (resources)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Windows NT Hybrid Kernel Architecture\n================================================================================\n|  USER MODE                                                                   |\n|  +------------------+  +------------------+  +------------------+            |\n|  | System Processes |  | Service Processes|  | User Applications|            |\n|  | (winlogon, smss, |  | (svchost.exe,    |  | (chrome.exe,     |            |\n|  |  csrss.exe)      |  |  spoolsv.exe,    |  |  notepad.exe,    |            |\n|  |                  |  |  services.exe)   |  |  msedge.exe)     |            |\n|  +------------------+  +------------------+  +------------------+            |\n|  +-----------------------------------------------------------------------+  |\n|  | Subsystem DLLs: ntdll.dll, kernel32.dll, user32.dll, gdi32.dll        |  |\n|  | Environment Subsystems: Win32 (main), POSIX (deprecated), OS/2 (gone) |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  KERNEL MODE                                                                 |\n|  +-----------------------------------------------------------------------+  |\n|  | System Service Dispatch Handler (syscall entry: KiSystemService)       |  |\n|  +-----------------------------------------------------------------------+  |\n|  | Windows Executive Layer                                                |  |\n|  | +----------+ +----------+ +----------+ +----------+ +------------+    |  |\n|  | | I/O Mgr  | | Proc Mgr | | Memory   | | Cache    | | Security   |    |  |\n|  | | (IopXxx) | | (PspXxx) | | Mgr      | | Mgr      | | RefMon    |    |  |\n|  | |          | |          | | (MmXxx)  | | (CcXxx)  | | (SeXxx)   |    |  |\n|  | +----------+ +----------+ +----------+ +----------+ +------------+    |  |\n|  | +----------+ +----------+ +----------+ +----------+                   |  |\n|  | | Obj Mgr  | | Plug&Play| | Power Mgr| | Config   |                   |  |\n|  | | (ObXxx)  | | (PpXxx)  | | (PoXxx)  | | Mgr      |                   |  |\n|  | +----------+ +----------+ +----------+ | (CmXxx)  |                   |  |\n|  |                                          +----------+                   |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Windows Kernel (core): scheduler (KiXxx), IRQL handling, sync prims,  |  |\n|  | traps/faults/NMI/interrupt dispatch, multiprocessor synchronization   |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Device Drivers: WDM (WMI-compliant), WDF (KMDF + UMDF),             |  |\n|  | file system drivers (NTFS.sys), filter drivers, miniport drivers     |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Hardware Abstraction Layer (HAL): CPU arch abstraction, interrupt     |  |\n|  | routing, DMA, timer, bus (PCI/AGP/USB) abstraction                    |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  x86/x64/ARM64 CPU, RAM, PCIe bus, ACPI timers, APIC, IOMMU                |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Process Structure"
+      }), ": Every Windows process is represented by an EPROCESS block (kernel) and a corresponding PEB (Process Environment Block, user mode)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Key fields of EPROCESS:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kernel process block (KPROCESS): scheduling information"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Process ID (PID) and parent PID"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Virtual address space descriptor (VAD tree)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handle table pointer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Security access token (SID-based)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Working set information"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Exception port for debugging"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Thread Structure"
+      }), ": Each thread has an ETHREAD block (kernel) and TEB (Thread Environment Block, user mode)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Key fields of ETHREAD:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kernel thread block (KTHREAD): scheduling state, priority, quantum"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread ID (TID)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Stack pointers (kernel-mode and user-mode stacks)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TLS (Thread-Local Storage) slots"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Impersonation token (when serving another user)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pending I/O request list"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fiber"
+      }), ": A lightweight unit of scheduling within a thread. Fibers share the thread's stack and must explicitly switch via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SwitchToFiber()"
+      }), ". Used for cooperative multitasking within a single thread."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Windows process and thread creation\n#include <windows.h>\n#include <stdio.h>\n\nDWORD WINAPI worker_thread(LPVOID arg) {\n    int id = *(int*)arg;\n    printf(\"Thread %d running on CPU\\n\", id);\n    return 0;\n}\n\nint main() {\n    HANDLE hProcess = GetCurrentProcess();\n    DWORD pid = GetProcessId(hProcess);\n    printf(\"Process ID: %lu\\n\", pid);\n\n    // Create 4 worker threads\n    HANDLE threads[4];\n    int ids[4] = {1, 2, 3, 4};\n    for (int i = 0; i < 4; i++) {\n        threads[i] = CreateThread(\n            NULL,                    // default security\n            0,                       // default stack size\n            worker_thread,           // thread function\n            &ids[i],                 // argument\n            0,                       // creation flags (0 = run immediately)\n            NULL                     // thread ID (optional)\n        );\n        if (!threads[i]) {\n            printf(\"CreateThread failed: %lu\\n\", GetLastError());\n            return 1;\n        }\n    }\n    WaitForMultipleObjects(4, threads, TRUE, INFINITE);\n    for (int i = 0; i < 4; i++) CloseHandle(threads[i]);\n    printf(\"All threads completed.\\n\");\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "UMS (User-Mode Scheduling)"
+      }), ": Windows 7+ feature allowing applications to schedule their own threads without kernel transitions, reducing context-switch overhead."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows uses a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "demand-paged virtual memory"
+      }), " system with a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "working-set model"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "per-process address space isolation"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtual Address Space Layout (x64)"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: " 0xFFFF`FFFF`FFFF`FFFF  +--------------------------+\n                         | Kernel space             |\n                         | - Executive/HAL          |\n                         | - Win32k.sys (GUI)       |\n                         | - Page tables            |\n 0xFFFF`F800`0000`0000  +--------------------------+\n                         | System PTEs / hyperspace |\n 0xFFFF`0800`0000`0000  +--------------------------+\n                         | Session space            |\n 0xFFFF`0000`0000`0000  +--------------------------+\n                         | (64 TB gap)              |\n 0x0000`0800`0000`0000  +--------------------------+\n                         | Page-file-backed (apps)  |\n 0x0000`0700`0000`0000  +--------------------------+\n                         | Mapped files / DLLs      |\n 0x0000`0600`0000`0000  +--------------------------+\n                         | Heap, stacks             |\n 0x0000`0500`0000`0000  +--------------------------+\n                         | Executable image (.exe)  |\n 0x0000`0000`0000`0000  +--------------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Working Set Management"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each process has minimum and maximum working set sizes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pages are evicted from the working set using FIFO-like strategy (not LRU)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Evicted pages go to standby list (can be reactivated)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Modified pages go to modified list, then written to page file"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Free list holds truly free pages, zeroed list holds security-cleared pages"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Balance Set Manager (system thread, runs every ~1s) adjusts working sets across all processes"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory Manager Components"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MmXxx"
+        }), ": Virtual memory management, page fault handling"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Working set manager"
+        }), ": Adjusts process working sets"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Modified page writer"
+        }), ": Flushes dirty pages to disk"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mapped page writer"
+        }), ": Flushes memory-mapped files"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PFN database"
+        }), ": Tracks physical page frame state"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Windows memory mapping example\n#include <windows.h>\n#include <stdio.h>\n\nint main() {\n    // Create a file mapping object\n    HANDLE hMap = CreateFileMapping(\n        INVALID_HANDLE_VALUE,   // system paging file (no backing file)\n        NULL,                   // default security\n        PAGE_READWRITE,         // protection\n        0,                      // high-size\n        4096,                   // low-size (4 KB)\n        L\"SharedMemory\"         // name for cross-process access\n    );\n    if (!hMap) {\n        printf(\"CreateFileMapping failed: %lu\\n\", GetLastError());\n        return 1;\n    }\n\n    // Map view into process address space\n    LPVOID pView = MapViewOfFile(\n        hMap,\n        FILE_MAP_ALL_ACCESS,    // full access\n        0, 0,                   // offset\n        0                       // map entire view\n    );\n    if (!pView) {\n        printf(\"MapViewOfFile failed: %lu\\n\", GetLastError());\n        CloseHandle(hMap);\n        return 1;\n    }\n\n    // Write to shared memory\n    strcpy((char*)pView, \"Hello from Windows shared memory!\");\n    printf(\"Wrote: %s\\n\", (char*)pView);\n\n    UnmapViewOfFile(pView);\n    CloseHandle(hMap);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "NTFS"
+      }), " (New Technology File System) is the primary file system:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Master File Table ($MFT)"
+        }), ": Core database with one record per file/directory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "B-tree directory indexing"
+        }), ": Fast file lookup in large directories"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Journaling"
+        }), ": $LogFile ensures metadata consistency after crashes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Alternate Data Streams (ADS)"
+        }), ": Multiple data streams per file (used for Zone.Identifier, resource forks)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compression"
+        }), ": LZNT1 algorithm, transparent at the file-system level"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Encryption"
+        }), ": EFS (Encrypting File System) at the file level"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hard links, symbolic links, junctions, mount points"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sparse files"
+        }), ": Efficient storage of files with large zero-filled regions"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Volume Shadow Copy"
+        }), ": Block-level snapshots for backup"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ReFS"
+      }), " (Resilient File System, Windows Server 2012+): Integrity streams, automatic corruption detection and repair, large volume support (up to 4.7 EB)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// NTFS alternate data stream\n// From command line: echo \"hidden text\" > file.txt:secret.txt\n// C program to demonstrate ADS existence\n#include <windows.h>\n#include <stdio.h>\n\nint main() {\n    // Write to an alternate data stream\n    HANDLE hFile = CreateFile(\n        L\"test.txt:hidden\",\n        GENERIC_WRITE,\n        0, NULL, CREATE_ALWAYS,\n        FILE_ATTRIBUTE_NORMAL, NULL\n    );\n    if (hFile == INVALID_HANDLE_VALUE) {\n        printf(\"ADS create failed: %lu\\n\", GetLastError());\n        return 1;\n    }\n    const char* msg = \"This is hidden in an ADS!\";\n    DWORD written;\n    WriteFile(hFile, msg, strlen(msg), &written, NULL);\n    CloseHandle(hFile);\n    printf(\"Wrote %lu bytes to ADS 'test.txt:hidden'\\n\", written);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Security Access Token"
+        }), ": Every process and thread carries a token with SID (user, groups), privileges, integrity level"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Integrity Levels"
+        }), " (Mandatory Integrity Control): Untrusted (0), Low (1, Internet), Medium (2, standard user), High (3, admin), System (4)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ACL-based"
+        }), ": DACL (discretionary) controls access; SACL (system) controls auditing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AccessCheck"
+        }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SeAccessCheck()"
+        }), " validates access against ACL using token"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UAC (User Account Control)"
+        }), ": Admin processes get split token; consent UI required for admin operations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure Kernel (VBS)"
+        }), ": Windows 10+ runs a separate, smaller secure kernel inside a virtualized environment (Hyper-V) to protect credentials (Credential Guard) and code integrity (Device Guard)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BitLocker"
+        }), ": Full-disk encryption with TPM + PIN + recovery key"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Windows Defender / Microsoft Defender"
+        }), ": Built-in anti-malware, exploit guard, controlled folder access"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Windows integrity level check\n#include <windows.h>\n#include <stdio.h>\n#include <securitybaseapi.h>\n\nint main() {\n    HANDLE hToken;\n    if (!OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &hToken)) {\n        printf(\"OpenProcessToken failed: %lu\\n\", GetLastError());\n        return 1;\n    }\n\n    DWORD size = 0;\n    GetTokenInformation(hToken, TokenIntegrityLevel, NULL, 0, &size);\n    PTOKEN_MANDATORY_LABEL pLabel = (PTOKEN_MANDATORY_LABEL)malloc(size);\n    if (GetTokenInformation(hToken, TokenIntegrityLevel, pLabel, size, &size)) {\n        DWORD il = *GetSidSubAuthority(pLabel->Label.Sid,\n                     *GetSidSubAuthorityCount(pLabel->Label.Sid) - 1);\n        printf(\"Integrity Level: %lu (\", il);\n        if (il == 0x0000) printf(\"Untrusted\");\n        else if (il == 0x1000) printf(\"Low\");\n        else if (il == 0x2000) printf(\"Medium\");\n        else if (il == 0x3000) printf(\"High\");\n        else if (il == 0x4000) printf(\"System\");\n        else printf(\"Unknown\");\n        printf(\")\\n\");\n    }\n    free(pLabel);\n    CloseHandle(hToken);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows implements a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "priority-driven preemptive scheduler"
+      }), " with 32 priority levels (0–31)."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Priority Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Assignment"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Boost Behavior"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero page thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System idle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never boosted"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1–15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic class"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority boosted on I/O completion, GUI input"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16–31"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time class"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No automatic boosting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scheduling policies"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Priority boosts: Thread receives +6 for foreground window, +2 for I/O completion, +8 for GUI input"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Quantum (default): 2 clock intervals (~30ms) on client SKUs, 12 (~180ms) on server SKUs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Quantum decay: After quantum expires, thread is moved to end of priority queue"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Priority decay: Boosted threads decay by 1 level per quantum until returning to base"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CPU affinity"
+        }), ": Threads can be pinned to specific CPUs via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SetThreadAffinityMask()"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key rules"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A thread at priority 16 always preempts a thread at priority 15"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "At DISPATCH_LEVEL IRQL, no thread scheduling occurs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Idle thread runs priority 0 (zero page thread)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Windows thread priority and affinity\n#include <windows.h>\n#include <stdio.h>\n\nint main() {\n    HANDLE hThread = GetCurrentThread();\n\n    // Set thread priority to above normal\n    if (!SetThreadPriority(hThread, THREAD_PRIORITY_ABOVE_NORMAL))\n        printf(\"SetThreadPriority failed: %lu\\n\", GetLastError());\n\n    // Bind to CPU 0\n    DWORD_PTR affinity = 1; // CPU 0 only\n    if (!SetThreadAffinityMask(hThread, affinity))\n        printf(\"SetThreadAffinityMask failed: %lu\\n\", GetLastError());\n\n    int priority = GetThreadPriority(hThread);\n    printf(\"Thread priority: %d\\n\", priority);\n    printf(\"Processor number: %d\\n\", GetCurrentProcessorNumber());\n\n    // Reset affinity\n    SetThreadAffinityMask(hThread, (DWORD_PTR)-1);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Win32 Subsystem"
+        }), ": Main environment subsystem; csrss.exe + win32k.sys provide GUI, console, window management"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Registry"
+        }), ": Hierarchical database (hives) for system/application configuration; keys loaded at boot (SYSTEM, SOFTWARE, SAM, SECURITY, DEFAULT, NTUSER.DAT)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ALPC (Advanced Local Procedure Call)"
+        }), ": Optimized IPC for client-server communication within the OS"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "COM (Component Object Model)"
+        }), ": Language-neutral binary interface standard for inter-process communication"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WSL (Windows Subsystem for Linux)"
+        }), ": Runs Linux ELF binaries natively via lxss.sys driver and pico processes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Driver Verifier"
+        }), ": Runtime driver correctness checker used in testing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ReadyBoost"
+        }), ": Uses USB flash as cache to improve disk performance"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SuperFetch (SysMain)"
+        }), ": Preloads frequently used applications into memory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Windows Sandbox"
+        }), ": Isolated, disposable desktop environment for running untrusted applications"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtualization-Based Security (VBS)"
+        }), ": Hardware-isolated secure world for Credential Guard, Device Guard"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-2 µs (user thread), ~5-10 µs (cross-process)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "System call entry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 cycles (syscall instruction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) where n = handle count, typically 200-1000 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page fault handling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100 ns-10 ms (soft vs hard fault, disk I/O)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory allocation (kernel)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) via look-aside lists"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Registry lookup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) via B-tree"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread wakeup latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20 µs (depends on priority, CPU load)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ALPC message round-trip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3-5 µs on same machine"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-windows-vs-others",
+      children: "A&D Table: Windows vs Others"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (Mach+BSD)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GUI integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep (win32k in kernel)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (X11/Wayland user-space)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Aqua in user-space (WindowServer)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WDM/WDF (signed required)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel + modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (C++, devices matched via probe/match)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIC + ACL + VBS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC/MAC (SELinux, AppArmor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP + Sandbox + AMFI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ecosystem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop/enterprise dominant"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server/cloud dominant"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Creative/professional"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Portability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "x86/x64/ARM (modern)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any arch (x86, ARM, RISC-V, MIPS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple Silicon only (modern)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Excellent server, heavy desktop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best-in-class scaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimized for Apple hardware"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory footprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large (1.5-3 GB idle)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Small-moderate (200-800 MB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (800 MB-1.5 GB)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority + boost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS/EEVDF (fair)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-level feedback + QoS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "linux-kernel-architecture",
+      children: "Linux Kernel Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-1",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux was created by Linus Torvalds in 1991 as a Unix-like kernel for x86. It was inspired by Minix but with a monolithic design (following the Unix tradition). Licensed under GPLv2, it became the centerpiece of the GNU/Linux operating system."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The kernel has grown from 10,000 lines (v0.01, 1991) to over 28 million lines (v6.x, 2025). Major subsystems include: scheduler (CFS → EEVDF in v6.6), memory manager (VMA, page cache, SLUB), VFS (ext4, XFS, btrfs), networking (TCP/IP stack, netfilter), device drivers (>60% of codebase), and architecture support (x86, ARM, RISC-V, MIPS, s390, etc.)."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key historical milestones"
+      }), ": SMP support (v2.0, 1996), loadable modules (v2.0), O(1) scheduler (v2.6, 2003), CFS scheduler (v2.6.23, 2007), cgroups and namespaces (v2.6.24, 2008), live patching (v3.20, 2015), PREEMPT_RT merged (v6.2, 2023), Rust language support (v6.1, 2022), EEVDF scheduler (v6.6, 2023)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": Linux is like a city's public infrastructure → anyone can contribute to its construction (open source), it's modular (you can add parks/bridges as needed), it runs everything from small apartments (IoT devices) to massive skyscrapers (supercomputers), and the community maintains standards (LKML, coding style) that keep the city running."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-1",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Linux Monolithic Kernel Architecture\n================================================================================\n|  USER SPACE                                                                  |\n|  +----------+  +----------+  +----------+  +----------+                      |\n|  | Shell    |  | Web      |  | Database |  | Compiler |                      |\n|  | (bash)   |  | Server   |  | (MySQL)  |  | (gcc)    |                      |\n|  +----------+  +----------+  +----------+  +----------+                      |\n|  +-----------------------------------------------------------------------+  |\n|  | glibc / musl / uclibc (C library → user-space syscall interface)       |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  KERNEL SPACE                                                                |\n|  +-----------------------------------------------------------------------+  |\n|  | System Call Interface (arch/x86/entry/syscall_64.c → syscall table)    |  |\n|  +-----------------------------------------------------------------------+  |\n|  +----------+ +----------+ +----------+ +----------+ +----------+         |  |\n|  | VFS      | | Scheduler| | Memory   | | Network  | | Signal   |         |  |\n|  | (ext4,   | | (EEVDF/  | | Mgr      | | Stack    | | Dispatch |         |  |\n|  |  btrfs,  | |  CFS)    | | (MMU,    | | (TCP/IP, | +----------+         |  |\n|  |  XFS,    | +----------+ |  VMA,    | |  netfilter|                     |  |\n|  |  FUSE)   |              |  page    | +----------+                      |  |\n|  +----------+              |  cache)  |                                    |  |\n|  +----------+ +----------+ +----------+                                     |  |\n|  | Device   | | File     | | Kernel Modules (loadable .ko)                 |  |\n|  | Drivers  | | Systems  | | (drivers, filesystems, network protocols)    |  |\n|  +----------+ +----------+ +----------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Architecture-specific code: x86, arm64, riscv, loongarch → entry,      |  |\n|  | MMU setup, interrupt controllers (APIC/GIC), page table management    |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | RCU (Read-Copy-Update) → lockless synchronization for read-mostly     |  |\n|  | data structures (runs in interrupt context, grace period tracking)     |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  x86/x64, ARM/ARM64, RISC-V, MIPS, s390, PowerPC, LoongArch                |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model-1",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In Linux, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "processes"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "threads"
+      }), " are both represented by the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task_struct"
+      }), " structure in the kernel. Threads are essentially processes that share certain resources (address space, file descriptors, signal handlers)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "task_struct"
+        }), " key fields"]
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "state"
+        }), ": TASK_RUNNING, TASK_INTERRUPTIBLE, TASK_UNINTERRUPTIBLE, TASK_STOPPED, TASK_TRACED, EXIT_ZOMBIE, EXIT_DEAD"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "pid"
+        }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tgid"
+        }), ": Thread ID / Thread Group ID (PID for the main thread)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "comm"
+        }), ": Executable name (16 chars)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "thread_info"
+        }), ": Low-level architecture-specific thread data (stored on the kernel stack)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "mm"
+        }), ": Memory descriptor pointer (NULL for kernel threads; shared for threads in a process)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "fs"
+        }), ": Filesystem context (umask, root, pwd)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "files"
+        }), ": Open file descriptor table"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "signal"
+        }), ": Signal handlers and pending signals"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "sched_info"
+        }), ": Scheduling class, priority, vruntime (for CFS/EEVDF)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "cgroups"
+        }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "nsproxy"
+        }), ": Control groups and namespace information"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Thread creation paths"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "clone()"
+        }), ": General-purpose → fine-grained control of resource sharing via flags"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "fork()"
+        }), ": Creates a new process (copy-on-write address space)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "vfork()"
+        }), ": Parent blocks until child execs (no address space copy)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Linux process and thread creation with clone()\n#define _GNU_SOURCE\n#include <sched.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\n#define STACK_SIZE (1024 * 1024)\n\nint child_func(void* arg) {\n    printf(\"Child: PID=%d TID=%d\\n\", getpid(), gettid());\n    return 0;\n}\n\nint main() {\n    // Allocate stack for child\n    void* stack = malloc(STACK_SIZE);\n    if (!stack) { perror(\"malloc\"); return 1; }\n\n    // Clone → share address space (= thread behavior)\n    pid_t tid = clone(child_func, stack + STACK_SIZE,\n                      CLONE_VM | CLONE_SIGHAND | CLONE_FILES, NULL);\n    if (tid == -1) { perror(\"clone\"); free(stack); return 1; }\n\n    printf(\"Parent: PID=%d, child TID=%d\\n\", getpid(), tid);\n    waitpid(tid, NULL, 0);\n    free(stack);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Python equivalent: Linux process creation\nimport os\nimport threading\nimport multiprocessing\n\n# Thread\ndef worker(name):\n    print(f\"Thread {name}: PID={os.getpid()} TID={threading.get_ident()}\")\n\nfor i in range(3):\n    t = threading.Thread(target=worker, args=(i,))\n    t.start()\n\n# Process (separate address space)\ndef proc_worker():\n    print(f\"Process: PID={os.getpid()} PPID={os.getppid()}\")\n\np = multiprocessing.Process(target=proc_worker)\np.start()\np.join()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management-1",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Linux uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "demand-paging"
+      }), " with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "copy-on-write"
+      }), " and the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Buddy allocator"
+      }), " for physical pages, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SLUB"
+      }), " for kernel objects, and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "VMA"
+      }), " for process address space management."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtual Address Space (x86_64)"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: " 0xFFFFFFFFFFFFFFFF  +--------------------------+\n                      | Kernel space              |\n                      | - Direct mapping          |\n                      |   (PAGE_OFFSET, ~64 TB)   |\n                      | - vmalloc region          |\n                      | - Module region           |\n                      | - Fixmap area             |\n 0xFFFF800000000000  +--------------------------+\n                      | (canonical gap)           |\n 0x00007FFFFFFFFFFFFF +--------------------------+\n                      | User space                |\n                      | - Stack (grows down)      |\n                      | - Memory mapping region   |\n                      |   (shared libs, mmap)     |\n                      | - Heap (brk)              |\n                      | - BSS                     |\n                      | - Data segment            |\n                      | - Text segment            |\n 0x0000000000400000  +--------------------------+\n                      | (guard page / NULL)       |\n 0x0000000000000000  +--------------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Page Fault Handling"
+      }), " (numbered steps):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CPU encounters inaccessible page, triggers page fault exception"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "do_page_fault()"
+        }), " determines fault type (major/minor/protection)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Address is looked up in the VMA tree (red-black tree)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If VMA found: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "handle_mm_fault()"
+        }), " allocates page table if needed"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Minor fault"
+        }), ": Page is already in memory (shared/swap cache); map it"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Major fault"
+        }), ": Read page from disk (swap file or file system)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Update page table, return to user space"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Instruction restarts transparently"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Linux memory mapping (mmap)\n#include <sys/mman.h>\n#include <stdio.h>\n#include <unistd.h>\n#include <string.h>\n\nint main() {\n    size_t size = 4096;\n\n    // Allocate 4 KB anonymous shared memory\n    void* ptr = mmap(NULL, size,\n                     PROT_READ | PROT_WRITE,\n                     MAP_PRIVATE | MAP_ANONYMOUS,\n                     -1, 0);\n    if (ptr == MAP_FAILED) {\n        perror(\"mmap\");\n        return 1;\n    }\n\n    strcpy((char*)ptr, \"Hello from Linux mmap!\");\n    printf(\"Mapped at %p: %s\\n\", ptr, (char*)ptr);\n\n    // Lock pages in RAM to prevent swapping\n    if (mlock(ptr, size) == -1)\n        perror(\"mlock\");\n    else\n        printf(\"Pages locked in RAM\\n\");\n\n    // Get memory mapping info\n    // (parse /proc/self/maps programmatically)\n    munlock(ptr, size);\n    munmap(ptr, size);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Python: memory-mapped files\nimport mmap\nimport os\n\nwith open('/tmp/test.dat', 'wb') as f:\n    f.write(b'\\x00' * 4096)\n\nwith open('/tmp/test.dat', 'r+b') as f:\n    mm = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_WRITE)\n    mm[:16] = b'Linux mmap demo'\n    print(f\"Mapped: {mm[:16]}\")\n    mm.close()\n\nos.unlink('/tmp/test.dat')\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SLUB Allocator"
+      }), ": Replaces SLAB; per-CPU caches for fast allocation of kernel objects. Maintains lists of partially-filled, full, and empty slabs. Object allocation: O(1) from per-CPU cache."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-1",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VFS (Virtual File System)"
+      }), " abstracts all concrete file systems:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Application (open, read, write, stat)\n    |\n    v\nVFS layer (sys_read, vfs_read)\n    |\n    v\nFile system-specific operations (ext4_readpage, btrfs_readpage)\n    |                          |\n    v                          v\nBlock layer (submit_bio)   Page cache\n    |\n    v\nI/O scheduler (cfq, deadline, noop)\n    |\n    v\nDevice driver (sd_mod, ahci, nvme)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Major file systems"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ext4"
+        }), ": Journaled, backward-compatible, 16 TB max file, 1 EB max volume, extent-based allocation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "XFS"
+        }), ": High-performance, scalable (8 EB max), B+tree allocator, delayed allocation, online defrag"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "btrfs"
+        }), ": Copy-on-write, snapshots, subvolumes, checksums, compression (zstd, lzo), RAID"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FUSE"
+        }), " (Filesystem in Userspace): Allows unprivileged users to implement file systems in user space (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "libfuse"
+        }), ")"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Linux file system monitoring with inotify\n#include <sys/inotify.h>\n#include <stdio.h>\n#include <unistd.h>\n\nint main() {\n    int fd = inotify_init();\n    if (fd < 0) { perror(\"inotify_init\"); return 1; }\n\n    int wd = inotify_add_watch(fd, \"/tmp\",\n                IN_CREATE | IN_DELETE | IN_MODIFY);\n    if (wd < 0) { perror(\"inotify_add_watch\"); return 1; }\n\n    printf(\"Watching /tmp for changes...\\n\");\n    char buf[4096];\n    while (1) {\n        ssize_t len = read(fd, buf, sizeof(buf));\n        struct inotify_event* ev = (struct inotify_event*)buf;\n        printf(\"Event on: %s (mask=%x)\\n\", ev->name, ev->mask);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model-1",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DAC (Discretionary Access Control)"
+        }), ": Traditional Unix rwx permissions + ACLs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MAC (Mandatory Access Control)"
+        }), ": SELinux (NSA), AppArmor (Canonical) → security modules via LSM"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linux Security Module (LSM)"
+        }), ": Hook framework for security modules (SELinux, AppArmor, Smack, Tomoyo)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Capabilities"
+        }), ": Break root privilege into 40+ independent capabilities (CAP_NET_ADMIN, CAP_SYS_ADMIN, etc.)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Namespaces"
+        }), ": Isolate global resources: mount, PID, net, IPC, UTS, user, cgroup, time"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "cgroups"
+        }), ": Resource limiting, accounting, prioritization (v2 merged in 4.5, unified hierarchy)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "seccomp"
+        }), ": Restrict available system calls for sandboxing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IMA/EVM"
+        }), ": Integrity measurement and verification at runtime"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kernel lockdown"
+        }), " (v5.4+): Restricts kernel features when in lockdown mode (prevents kexec, module loading with unsigned keys)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Capability query example\n#include <stdio.h>\n#include <unistd.h>\n#include <sys/capability.h>\n\nint main() {\n    // Check if we have NET_RAW capability\n    cap_t caps = cap_get_proc();\n    if (!caps) { perror(\"cap_get_proc\"); return 1; }\n\n    cap_flag_value_t value;\n    cap_get_flag(caps, CAP_NET_RAW, CAP_EFFECTIVE, &value);\n    printf(\"CAP_NET_RAW: %s\\n\", value == CAP_SET ? \"YES\" : \"NO\");\n\n    cap_free(caps);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling-1",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Linux historically used CFS (Completely Fair Scheduler, v2.6.23–v6.5), replaced by ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "EEVDF"
+      }), " (Earliest Eligible Virtual Deadline First) in v6.6 (2023)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "CFS (legacy, v2.6.23–v6.5)"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Uses a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "red-black tree"
+        }), " of tasks ordered by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "vruntime"
+        }), " (virtual runtime)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Picks leftmost node (smallest vruntime) → task with the most \"unfair\" scheduling deficit"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Calculates time slice = ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "targeted_latency / nr_running"
+        }), " (typically 6–24 ms)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "nice values"
+        }), " map to weight: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "vruntime += (NICE_0_LOAD / weight) * actual_runtime"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Group scheduling: CFS can schedule task groups (cgroups) fairly"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "**EEVDF (v6.6+, current) **:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Uses the deadline-based model: each task is assigned a virtual deadline"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Selects the earliest eligible virtual deadline → accounts for both past service and future deadlines"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Better latency isolation for interactive tasks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "More deterministic behavior under heterogeneous workloads (big.LITTLE)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scheduling classes"
+      }), " (in priority order):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stop"
+        }), ": Highest priority, preempts everything (SMP hotplug, stop_machine)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deadline"
+        }), ": SCHED_DEADLINE → fixed-priority EDF with CBS (Constant Bandwidth Server)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "RT"
+        }), ": SCHED_FIFO / SCHED_RR → real-time, priority-driven"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fair"
+        }), ": CFS/EEVDF → SCHED_NORMAL (default), SCHED_BATCH"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Idle"
+        }), ": SCHED_IDLE → runs only when nothing else is ready"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Linux scheduling policy and priority\n#define _GNU_SOURCE\n#include <sched.h>\n#include <stdio.h>\n#include <unistd.h>\n\nint main() {\n    struct sched_param param;\n    int policy;\n\n    // Get current scheduling\n    sched_getparam(0, &param);\n    policy = sched_getscheduler(0);\n\n    printf(\"Current PID: %d\\n\", getpid());\n    printf(\"Current priority: %d\\n\", param.sched_priority);\n    printf(\"Policy: %d (\", policy);\n    switch (policy) {\n        case SCHED_OTHER: printf(\"SCHED_OTHER → normal\"); break;\n        case SCHED_FIFO: printf(\"SCHED_FIFO → real-time\"); break;\n        case SCHED_RR: printf(\"SCHED_RR → round-robin RT\"); break;\n        case SCHED_BATCH: printf(\"SCHED_BATCH\"); break;\n        case SCHED_IDLE: printf(\"SCHED_IDLE\"); break;\n        default: printf(\"unknown\");\n    }\n    printf(\")\\n\");\n\n    // Set FIFO real-time (requires root)\n    // param.sched_priority = 50;\n    // if (sched_setscheduler(0, SCHED_FIFO, &param))\n    //     perror(\"sched_setscheduler (expected: need root)\");\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features-1",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BPF (Berkeley Packet Filter, extended)"
+        }), ": In-kernel virtual machine for safe, programmable packet processing, tracing, and performance monitoring. BCC and bpftrace use BPF for dynamic instrumentation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "eBPF"
+        }), ": Extends BPF to run sandboxed programs in kernel without modifying kernel source; used for networking (XDP, tc), observability, security (Cilium, Falco)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kernel Same-page Merging (KSM)"
+        }), ": Deduplicates identical memory pages (used in KVM virtualization)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fsnotify + fanotify"
+        }), ": File system event monitoring (fanotify for container-aware monitoring)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "io_uring"
+        }), ": Asynchronous I/O framework with shared submission/completion queues, zero-copy between user/kernel"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Namespaces + cgroups"
+        }), ": Foundation for Docker/Podman containerization"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "KVM"
+        }), ": Kernel-based Virtual Machine → turns Linux into a hypervisor"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transparent Huge Pages (THP)"
+        }), ": Automatically use 2 MB huge pages for performance"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Live Patching (kpatch/kgraft)"
+        }), ": Apply security patches without reboot"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OOM Killer"
+        }), ": When memory is exhausted, selects and kills a process based on ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "oom_score"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~0.5-3 µs (same process), ~3-10 µs (cross-process)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "System call entry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-300 cycles (syscall instruction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process creation (fork)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) copy-on-write (page tables + task_struct clone)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page fault (minor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-500 ns (page already in memory)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page fault (major)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-15 ms (includes disk I/O)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VMA lookup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) via red-black tree"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS/EEVDF task selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log n) via rb-tree pick"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SLUB allocation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) per-CPU cache"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RCU read-side"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-5 ns (no locking)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "io_uring submission"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-400 ns per I/O operation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-linux-vs-others",
+      children: "A&D Table: Linux vs Others"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic (Linux fork + Android patches)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open (GPLv2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open (AOSP, GPLv2/Apache2)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User-base"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Servers, cloud, embedded"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop, enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile (87% global market share)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MMU-based, THP, KSM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Working-set, VAD tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sparse memory, ashmem, LMK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EEVDF/CFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority + boosts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS + cgroups + cpusets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel, module-loaded"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WDM/WDF signed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (HIDL/AIDL), vendor modules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC + MAC (SELinux/AA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL + VBS + MIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux (enforcing) + permissions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ecosystem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web, cloud, supercomputers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Gaming, enterprise, desktop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile apps (Java/Kotlin)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "macos-xnu-kernel",
+      children: "macOS XNU Kernel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-2",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "XNU (X is Not Unix) is Apple's hybrid kernel, combining the Mach microkernel (from CMU) with a FreeBSD monolithic kernel component and Apple's I/O Kit driver framework. It powers macOS, iOS, iPadOS, tvOS, and watchOS."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The history: Apple acquired NeXT in 1997 for $429 million, bringing Steve Jobs back and bringing the NeXTSTEP operating system (based on Mach + BSD). The resulting kernel, XNU, was released as open source (Apple Public Source License) in 2000. Major milestones: Intel transition (2006, x86 support added), iOS launch (2007, ARM support), Apple Silicon transition (2020, ARM64 with unified memory), macOS 11 Big Sur (2020, kernel extension deprecation towards DriverKit)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "XNU is approximately 2.5 million lines of code, with ~1.5M from the BSD layer, ~800K from Mach, and ~200K from I/O Kit."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": macOS XNU is like a corporate merger → Mach (the startup with innovative ideas about messaging) was acquired by BSD (the established company with solid processes). The combined entity (XNU Inc.) kept the startup's communication infrastructure (Mach IPC) while integrating BSD's mature departments (file systems, networking, process management). I/O Kit is the HR department that standardized device driver hiring (probe/match)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-2",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "macOS XNU Hybrid Kernel Architecture\n================================================================================\n|  USER SPACE (Darwin user-land)                                              |\n|  +------------------+  +------------------+  +------------------+           |\n|  | Aqua Window      |  | User-space BSD   |  | AppKit / UIKit   |           |\n|  | Server           |  | (fork, exec,     |  | (GUI frameworks) |           |\n|  | (Quartz Compos.) |  |  signals, ptrace)|  +------------------+           |\n|  +------------------+  +------------------+                                   |\n|  +----------+ +----------+ +----------+ +----------+ +----------+            |\n|  | Mach     | | BSD      | | libSystem | | IOKit    | | Other    |            |\n|  | tasks/   | | processes| | (libc     | | (user    | | libraries|            |\n|  | threads  | | (PID)    | |  + pthread| |  side    | | (CF, ObjC)|           |\n|  +----------+ +----------+ +----------+ +----------+ +----------+            |\n================================================================================\n|  XNU KERNEL (kernel_task)                                                    |\n|  +-----------------------------------------------------------------------+  |\n|  | BSD Layer: Processes, POSIX signals, file systems, VFS, sockets,      |  |\n|  | kqueues, POSIX threads (through pthread_workqueue syscalls),          |  |\n|  | process groups, session management, security policies (kauth)         |  |\n|  | Dedicated BSD subsystem: net, vfs, kern, uipc, bsd/security           |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Mach Layer: Tasks, threads, IPC (messages, ports, mach_msg),         |  |\n|  | virtual memory (mach_vm, copy-on-write, pmap), scheduler (multi-level|  |\n|  | feedback + QoS), clock/timer services, host/processor abstractions    |  |\n|  | Core primitives: task = resource container, thread = execution unit,  |  |\n|  | port = communication channel, message = IPC unit                     |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | I/O Kit: Object-oriented (C++) device driver framework. Classes:     |  |\n|  | IOService (base), IOUserClient, IOFilterInterruptEventSource.        |  |\n|  | Device matching via personality dictionaries and probing. Power       |  |\n|  | management through IOPowerManagement. DriverKit (macOS 11+) runs     |  |\n|  | drivers in user space for better stability.                           |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | SanBOX: Entitlements-based sandbox profile. Seatbelt.kext enforces   |  |\n|  | sandbox rules via MACF (Mandatory Access Control Framework).          |  |\n|  | AMFI (Apple Mobile File Integrity): Code signing enforcement.        |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  Apple Silicon (M-series ARM64) or Intel x86_64 → ACPI, GIC/APIC,          |\n|  DART (IOMMU), SEP (Secure Enclave Processor), ANE (Apple Neural Engine)   |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model-2",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mach Task"
+      }), ": A task is a container for resources (address space, ports, threads). Analogous to a process. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task_t"
+      }), " in kernel. Task creation: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task_create()"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mach Thread"
+      }), ": The unit of execution. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "thread_t"
+      }), " in kernel. Thread creation: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "thread_create()"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "BSD Process"
+      }), ": For POSIX compatibility, BSD wraps Mach tasks with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct proc"
+      }), " (BSD process structure containing PID, credentials, signal state, etc.). Each BSD process corresponds to a Mach task."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "1:1 threading model"
+      }), ": Each POSIX thread (pthread) maps to a kernel Mach thread. This is similar to Linux's NPTL."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// macOS: Mach thread and pthread demo\n#include <pthread.h>\n#include <mach/mach.h>\n#include <mach/thread_act.h>\n#include <stdio.h>\n#include <unistd.h>\n\nvoid* thread_func(void* arg) {\n    // Get Mach thread port\n    thread_t mythread = mach_thread_self();\n    printf(\"Thread (pthread=%p, mach_port=%d) running\\n\",\n           (void*)pthread_self(), mythread);\n    mach_port_deallocate(mach_task_self(), mythread);\n    return NULL;\n}\n\nint main() {\n    pthread_t threads[3];\n    for (int i = 0; i < 3; i++)\n        pthread_create(&threads[i], NULL, thread_func, NULL);\n    for (int i = 0; i < 3; i++)\n        pthread_join(threads[i], NULL);\n\n    // Get Mach task info\n    struct task_basic_info info;\n    mach_msg_type_number_t count = TASK_BASIC_INFO_COUNT;\n    task_info(mach_task_self(), TASK_BASIC_INFO,\n              (task_info_t)&info, &count);\n    printf(\"Task: suspend_count=%d, virtual_size=%lld KB, \"\n           \"resident_size=%lld KB\\n\",\n           info.suspend_count,\n           info.virtual_size / 1024,\n           info.resident_size / 1024);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management-2",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mach VM"
+      }), " architecture:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Copy-on-write as the fundamental primitive (all page copies are COW until modified)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "pmap (physical map) handles page table management per architecture"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zones: Mach zone allocator for fixed-size kernel objects (similar to SLAB)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "mach_vm_allocate"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "mach_vm_deallocate"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "mach_vm_protect"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Apple Silicon Unified Memory"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CPU and GPU share the same physical memory (no separate VRAM)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Memory controller dynamically allocates bandwidth per component"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory Pressure"
+        }), " notifications: kernel signals processes when memory constrained"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compressed Memory"
+        }), " (since Mavericks, 10.9): Inactive pages are compressed (WKdm algorithm) instead of paging to SSD, reducing swap I/O"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// macOS: Mach VM allocation\n#include <mach/mach.h>\n#include <stdio.h>\n\nint main() {\n    mach_vm_address_t addr;\n    mach_vm_size_t size = 4096;\n\n    // Allocate memory via Mach VM\n    kern_return_t kr = mach_vm_allocate(\n        mach_task_self(), &addr, size, VM_FLAGS_ANYWHERE);\n    if (kr != KERN_SUCCESS) {\n        printf(\"mach_vm_allocate failed: %d\\n\", kr);\n        return 1;\n    }\n    printf(\"Mach VM allocated at 0x%llx (%lld bytes)\\n\", addr, size);\n\n    // Write data\n    memcpy((void*)addr, \"Hello from Mach VM!\", 19);\n\n    // Get memory statistics\n    struct vm_statistics64 stats;\n    mach_msg_type_number_t count = HOST_VM_INFO64_COUNT;\n    host_statistics64(mach_host_self(), HOST_VM_INFO64,\n                      (host_info64_t)&stats, &count);\n    printf(\"Pages: active=%d, inactive=%d, wired=%d, free=%d, \"\n           \"compressor=%d\\n\",\n           stats.active_count, stats.inactive_count,\n           stats.wired_count, stats.free_count,\n           stats.compressor_page_count);\n\n    mach_vm_deallocate(mach_task_self(), addr, size);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory Pressure Steps"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Memory Pressure Monitor (kernel thread) tracks free memory and compressor usage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When crossing pressure thresholds (critical → warning → normal), kernel broadcasts memory pressure notifications"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Applications respond by freeing caches, releasing memory via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "vm_pressure_monitor"
+        }), " on macOS"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "memorystatus"
+        }), " (on iOS) kills jetsam candidate processes in priority order"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compressor compresses pages that haven't been accessed → WKdm algorithm averages 2-3x compression ratio"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If compression fails, swap to disk (SSD-backed)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-2",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "APFS"
+      }), " (Apple File System, 2017+, replaces HFS+):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Copy-on-write metadata"
+        }), ": Snapshots are instantaneous space-efficient clones"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space sharing"
+        }), ": Multiple volumes share the same free space"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Strong encryption"
+        }), ": Per-file encryption keys with XTS-AES (data) and AES-CBC (metadata)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Atomic safe-save"
+        }), ": Copy-on-write ensures files are never corrupted during write"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sparse files"
+        }), ": Efficient handling of empty ranges"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Clones"
+        }), ": Same-file multiple references point to the same extents"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Snapshots"
+        }), ": APFS snaps are readonly point-in-time file system states (used by Time Machine)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// macOS: File clone detection (APFS)\n#include <stdio.h>\n#include <sys/attr.h>\n#include <unistd.h>\n#include <fcntl.h>\n\nint main() {\n    // Create original file\n    int fd = open(\"original.txt\", O_CREAT | O_RDWR, 0644);\n    write(fd, \"APFS clone demo\", 15);\n    close(fd);\n\n    // Clone using clonefile()\n    int ret = clonefile(\"original.txt\", \"clone.txt\", 0);\n    if (ret == 0) {\n        printf(\"APFS clone created successfully (COW shared extents)\\n\");\n        // Both files share same physical blocks until one is modified\n    } else {\n        perror(\"clonefile\");\n    }\n    unlink(\"clone.txt\");\n    unlink(\"original.txt\");\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model-2",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SIP (System Integrity Protection)"
+        }), ": Root-level restrictions → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/System"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/usr/bin"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/sbin"
+        }), " cannot be modified even by root; kernel extensions must be signed"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sandboxing"
+        }), " (Seatbelt): App Store apps are sandboxed with per-entitlement resource access. Kernel extension ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Sandbox.kext"
+        }), " enforces profiles"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hardened Runtime"
+        }), ": Code signing + runtime integrity checks + library validation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Gatekeeper"
+        }), ": Verifies app code signature and notarization before launch"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FileVault 2"
+        }), ": Full-disk XTS-AES-128 encryption, integrated with T2/Secure Enclave"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure Enclave Processor (SEP)"
+        }), ": ARM Cortex-A7 coprocessor in Apple Silicon, handles biometric keys (Touch ID, Face ID), cryptographic operations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AMFI (Apple Mobile File Integrity)"
+        }), ": Enforces code signing trust cache at kernel level"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "macOS 11+ System Extensions"
+        }), ": Replace kernel extensions (kexts) with user-space extensions for better security isolation"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// macOS: sandbox entitlement check\n// (Requires sandbox entitlement; run unsandboxed to demonstrate)\n#include <sandbox.h>\n#include <stdio.h>\n\nint main() {\n    char* profile = \"(version 1)\\n(deny network-outbound)\";\n    sandbox_profile_t sb_profile;\n    sandbox_flags_t sb_flags;\n\n    if (sandbox_compile_string(profile, &sb_profile, &sb_flags) == 0) {\n        printf(\"Sandbox profile compiled\\n\");\n        // Apply (sandbox self)\n        if (sandbox_apply(sb_profile) == 0) {\n            printf(\"Sandbox applied - socket() will now fail\\n\");\n        }\n        sandbox_free_profile(sb_profile);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling-2",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["macOS uses a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multi-Level Feedback Queue (MLFQ)"
+      }), " scheduler with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Quality of Service (QoS)"
+      }), " classes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "QoS Classes"
+      }), " (from highest to lowest priority):"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "QoS Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Used By"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Properties"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_USER_INTERACTIVE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User Interactive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Main thread of UI apps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highest priority, responds instantly"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_USER_INITIATED"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User Initiated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User-triggered tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High priority, short duration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_DEFAULT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General purpose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default priority"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_UTILITY"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Utility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Long-running tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Background, energy-efficient"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_BACKGROUND"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Background"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prefetch, maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lowest priority, throttle networking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QOS_CLASS_MAINTENANCE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Below background"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key scheduling characteristics"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Preemptive, priority-based with decay (priority aging to prevent starvation)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Thread is assigned a Mach ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "priority"
+        }), " (0-127, higher = more urgent)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sched_traditional"
+        }), ": 4-level priority bucket scheme (64 real-time, 32 for kernel, 16-31 for user, 0-15 default)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Energy-aware scheduling"
+        }), ": Prefers high-efficiency cores (E-cores) on Apple Silicon for non-interactive work"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Timer coalescing"
+        }), ": Aligns timers to reduce CPU wake-ups"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// macOS: QoS thread class\n#include <pthread.h>\n#include <stdio.h>\n\nvoid* background_work(void* arg) {\n    // This thread runs at background QoS automatically\n    printf(\"Background thread pool ID: %p\\n\", (void*)pthread_self());\n    return NULL;\n}\n\nint main() {\n    pthread_t bg_thread;\n\n    // Configure thread with background QoS\n    pthread_attr_t attr;\n    pthread_attr_init(&attr);\n    pthread_attr_set_qos_class_np(&attr, QOS_CLASS_BACKGROUND, 0);\n\n    pthread_create(&bg_thread, &attr, background_work, NULL);\n    pthread_join(bg_thread, NULL);\n    pthread_attr_destroy(&attr);\n\n    printf(\"Main thread QoS: %d\\n\",\n           pthread_get_qos_class_np(pthread_self(), NULL));\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features-2",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Grand Central Dispatch (GCD)"
+        }), ": Thread pool abstraction with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dispatch_async"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dispatch_queue"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "dispatch_group"
+        }), ". Manages thread creation and QoS automatically"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O Kit"
+        }), ": Object-oriented (C++) driver framework with probe/match device discovery, power management"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DriverKit"
+        }), ": User-space driver framework (macOS 11+), replaces kernel extensions for class-compliant USB, serial, audio, network interfaces"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OpenCL / Metal GPU Compute"
+        }), ": Integrated graphics stack through Metal, ANE for ML"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Handoff / Continuity (Apple ecosystem)"
+        }), ": App state transfer via Bluetooth LE and iCloud"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Time Machine"
+        }), ": APFS snapshot-based backup"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Rosetta 2"
+        }), ": x86 binary translation to ARM64 on Apple Silicon"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DART (Device Address Resolution Table)"
+        }), ": IOMMU for Apple Silicon, isolates device DMA access"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Power management"
+        }), ": Per-core DVFS, E-core only for background tasks, low-power sleep states (S0i3 equivalent on Apple Silicon)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Seatbelt sandbox"
+        }), ": Mandatory access control (MAC) profile-based sandboxing (kauth + Sandbox.kext)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-2",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch (thread)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-3 µs (user thread)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "mach_msg round-trip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3-5 µs (local IPC)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory allocation (Mach zone)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) from per-CPU zone caches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Page fault (minor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Task creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) where n = port count + thread count"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "System call entry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-400 cycles (syscall on Apple Silicon)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QoS thread dispatch (GCD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-10 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox policy check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-200 ns (cached result)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-macos-vs-others",
+      children: "A&D Table: macOS vs Others"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (Mach+BSD+IOKit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (NT)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC mechanism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach messages + shared memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipes, sockets, shared memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALPC, COM, shared memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (C++ object-oriented)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel C (probe/init)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WDM/WDF (C/C++)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GPU integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep (Metal, unified memory)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vendor-driven (NVIDIA/AMD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DirectX + WDDM driver model"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP + sandbox + entitlements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC/MAC (SELinux/AppArmor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL + VBS + MIC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Development model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source (kernel only, APSL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source (GPLv2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary (closed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple Silicon only (modern)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any hardware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "x86/x64/ARM surface"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "UI framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Aqua (Quartz Compositor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wayland/X11 (optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Win32 + UWP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time capability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (soft RT via QoS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PREEMPT_RT (available)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows RT (limited)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel stability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IOKit drivers in kernel (microkernel insp.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Module crash = kernel crash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver crash = BSOD"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ecosystem lock-in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS/iOS exclusive (unified)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud/server dominant"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop/enterprise"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "android-os-architecture",
+      children: "Android OS Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-3",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Android is an open-source mobile operating system based on a modified Linux kernel. It was initially developed by Android Inc. (founded by Andy Rubin, Rich Miner, Nick Sears, and Chris White) and acquired by Google in 2005 for $50 million. The first commercial version (Android 1.0, API 1) launched on the HTC Dream (T-Mobile G1) in September 2008."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Android versions and milestones"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 1.5 Cupcake (2009): On-screen keyboard, widgets, copy-paste"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 2.2 Froyo (2010): JIT compiler, USB tethering, Flash support"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 4.0 Ice Cream Sandwich (2011): Holo theme, unified phone/tablet"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 5.0 Lollipop (2014): ART runtime (replaced Dalvik), Material Design"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 8.0 Oreo (2017): Project Treble (HAL interface), background limits"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 10 (2019): Full gesture navigation, dark theme, scoped storage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 12 (2021): Material You design language, privacy dashboard"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 14 (2023): Satellite connectivity support, credential manager API"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android 16 (2025): continued refinements in AI, foldables, privacy"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Architecture layers"
+      }), ": Android is organized into 5 layers from bottom to top: Linux kernel, Hardware Abstraction Layer (HAL), Android Runtime (ART) + native C/C++ libraries, Java API Framework, and System Apps."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": Android is like a modular kitchen → the Linux kernel is the foundation (counters, plumbing), HAL is the standard appliance connections (power outlets, gas lines), ART is the stove (cooks the Android apps), the Java framework is the pantry (ingredients available to every cook), and each manufacturer (Samsung, Xiaomi, etc.) adds their own spice rack (custom UI, features)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-3",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Android OS Architecture\n================================================================================\n|  SYSTEM APPS                                                                 |\n|  +--------+ +---------+ +--------+ +---------+ +--------+                    |\n|  | Dialer  | | Camera  | | Chrome | | Gmail   | | Play   |                    |\n|  |         | |         | |        | |         | | Store  |                    |\n|  +--------+ +---------+ +--------+ +---------+ +--------+                    |\n|  +-----------------------------------------------------------------------+  |\n|  | JAVA API FRAMEWORK                                                      |  |\n|  | +---------+ +---------+ +---------+ +---------+ +---------+            |  |\n|  | | Activity| | Window  | | Package | | Content | | Resource|            |  |\n|  | | Manager | | Manager | | Manager | | Provider| | Manager |            |  |\n|  | +---------+ +---------+ +---------+ +---------+ +---------+            |  |\n|  | +---------+ +---------+ +---------+ +---------+                        |  |\n|  | | View    | | Location| | Teleph. | | Notific.|                        |  |\n|  | | System  | | Manager | | Manager | | Manager |                        |  |\n|  | +---------+ +---------+ +---------+ +---------+                        |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  ANDROID RUNTIME & NATIVE C/C++ LIBRARIES                                    |\n|  +-------------------+  +------------------------------------------------+  |\n|  | ART (Android      |  | Native Libraries (C/C++)                         |  |\n|  | Runtime):         |  | +------+ +------+ +------+ +------+ +------+  |  |\n|  | - AOT compilation |  | | libc | | libc | | Media| | Web  | | SSL   |  |  |\n|  | - JIT with        |  | | (bion| | (icu) | | Frame| | Kit  | | (bori|  |  |\n|  |   profile-guided  |  | |  ic)  | |       | | work | |      | | ngssl|  |  |\n|  |   optimization    |  | +------+ +------+ +------+ +------+ +------+  |  |\n|  | - Garbage         |  | +------+ +------+ +------+                     |  |\n|  |   collection      |  | | Vulka| | Open | | SQLit|                     |  |\n|  | - Pre-optimized   |  | | n    | | GL ES| | e    |                     |  |\n|  |   .odex files     |  | +------+ +------+ +------+                     |  |\n|  +-------------------+  +------------------------------------------------+  |\n================================================================================\n|  HARDWARE ABSTRACTION LAYER (HAL) → Project Treble (Android 8+)              |\n|  +--------+ +--------+ +---------+ +---------+ +--------+ +--------+      |\n|  | Camera | | Audio  | | Sensors | | Bluetooth| | GPS    | | Wi-Fi  |      |\n|  | HAL     | | HAL    | | HAL     | | HAL      | | HAL    | | HAL    |      |\n|  +--------+ +--------+ +---------+ +---------+ +--------+ +--------+      |\n|  Interfaces defined via HIDL (legacy) or AIDL (modern)                    |\n================================================================================\n|  LINUX KERNEL (heavily modified)                                            |\n|  +------------------+  +------------------+  +------------------+           |\n|  | Android-specific |  | Standard Linux   |  | Power Management |           |\n|  | Patches:         |  | Subsystems:      |  | + Wakelocks      |           |\n|  | + Binder (IPC)   |  | + VFS            |  | + Suspend/resume |           |\n|  | + ashmem         |  | + CFS scheduler  |  | + Low-memory     |           |\n|  | + ION memory     |  | + Network stack  |  |   killer (LMK)   |           |\n|  | + dma-buf        |  | + File systems   |  | + EAS (Energy    |           |\n|  |                 |  |   (ext4,f2fs)    |  |   Aware Sched)   |           |\n|  +------------------+  +------------------+  +------------------+           |\n================================================================================\n|  HARDWARE                                                                   |\n|  ARM64 (primary), x86 (legacy), RISC-V (experimental) → SoC: Qualcomm,     |\n|  MediaTek, Samsung Exynos, Google Tensor                                   |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model-3",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Android uses Linux processes and threads at the kernel level, with additional constraints:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Application Process Model"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each Android app runs as a separate Linux process (isolated via UID and PID namespace)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each process has its own Dalvik/ART virtual machine"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apps are sandboxed: each runs as a unique Unix user ID (UID)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zygote"
+        }), " process: all apps are forked from Zygote (a pre-loaded process with ART framework classes already loaded). This dramatically reduces startup time and memory usage."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zygote-based App Launch"
+      }), " (numbered steps):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "User taps app icon in the launcher"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Launcher sends intent to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ActivityManagerService"
+        }), " (AMS) in system_server"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AMS checks if the process already exists"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If not, AMS sends a socket request to Zygote to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fork()"
+        }), " a new process"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zygote forks itself, inheriting pre-loaded ART framework classes and resources"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Child process initializes: sets UID, loads the app's APK, creates ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ActivityThread"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "ActivityThread.main()"
+        }), " runs the UI thread (main/UI thread)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["AMS delivers ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "onCreate()"
+        }), " lifecycle callback to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ActivityThread"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "App is now running and visible to user"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Android: Process and thread boundaries\nimport android.app.Activity;\nimport android.os.Bundle;\nimport android.os.Process;\nimport android.os.Looper;\nimport android.util.Log;\n\npublic class MainActivity extends Activity {\n    private static final String TAG = \"OSCaseStudy\";\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n\n        // Process info\n        Log.d(TAG, \"PID: \" + Process.myPid());\n        Log.d(TAG, \"UID: \" + Process.myUid());\n        Log.d(TAG, \"TID: \" + Process.myTid());\n        Log.d(TAG, \"Is main thread? \" +\n              (Looper.myLooper() == Looper.getMainLooper()));\n        Log.d(TAG, \"Thread name: \" + Thread.currentThread().getName());\n\n        // Background thread\n        new Thread(() -> {\n            android.os.Process.setThreadPriority(\n                android.os.Process.THREAD_PRIORITY_BACKGROUND);\n            Log.d(TAG, \"Background thread TID: \" + Process.myTid());\n            Log.d(TAG, \"Thread priority: \" +\n                  android.os.Process.getThreadPriority(Process.myTid()));\n        }).start();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Thread Types in Android"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Main/UI Thread"
+        }), ": Runs event loop (Looper + Handler). Never block this."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Binder Threads"
+        }), ": Thread pool managed by Binder driver for IPC"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "HandlerThread"
+        }), ": A thread with its own Looper for sequential processing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AsyncTask"
+        }), " (deprecated in API 30): Lightweight background task"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kernel threads"
+        }), ": kworker, kswapd, binder, etc."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Binder IPC"
+      }), ": The core Android IPC mechanism → a character driver (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/dev/binder"
+      }), "). Binder uses a client-server model: proxy objects in client process communicate via Binder driver to stub objects in server process. Each Binder transaction carries a calling PID/UID for security."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// AIDL (Android Interface Definition Language) → Binder IPC\n// IMyService.aidl\n// interface IMyService {\n//     int add(int a, int b);\n//     String getMessage();\n// }\n\n// Service implementation (server side)\nimport android.app.Service;\nimport android.content.Intent;\nimport android.os.IBinder;\nimport android.os.RemoteException;\nimport android.util.Log;\n\npublic class MyService extends Service {\n    private static final String TAG = \"MyService\";\n\n    private final IMyService.Stub binder = new IMyService.Stub() {\n        @Override\n        public int add(int a, int b) throws RemoteException {\n            Log.d(TAG, \"add() called from PID: \" + getCallingPid());\n            return a + b;\n        }\n\n        @Override\n        public String getMessage() throws RemoteException {\n            Log.d(TAG, \"getMessage() called from PID: \" + getCallingPid());\n            return \"Hello via Binder IPC!\";\n        }\n    };\n\n    @Override\n    public IBinder onBind(Intent intent) { return binder; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management-3",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Android's memory management adds several components on top of Linux's MM:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Components"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ashmem"
+        }), " (Android Shared Memory): Anonymous shared memory allocator, reference-counted. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/dev/ashmem"
+        }), ". Used for passing large data (bitmaps) between processes via Binder. Deprecated in favor of ION/dma-buf."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ION"
+        }), ": Contiguous and non-contiguous memory allocator from CMA (Contiguous Memory Allocator). Used by GPU, display, camera, video codecs. Replaces ashmem for device-specific allocations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "dma-buf"
+        }), ": Buffer sharing framework between kernel drivers and between kernel and userspace"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Low Memory Killer (LMK)"
+        }), ": Replaces Linux OOM killer. Kills processes based on ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "oom_adj"
+        }), " score and system-wide memory pressure thresholds"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "LMKD"
+        }), " (Android 11+): User-space low-memory daemon that communicates with kernel via PSI (Pressure Stall Information) → more proactive than LMK"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sparse Memory"
+        }), ": Virtual address space is not fully backed by physical pages; only used pages consume RAM"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Process States and LMKD Operations"
+      }), " (numbered steps):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PSI monitor in LMKD detects mounting memory pressure (thrashing)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["LMKD classifies running processes by \"importance\" (ADJ level):\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ADJ_FOREGROUND_APP"
+            }), " (0-6): Current app visible to user"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ADJ_PERCEPTIBLE"
+            }), " (7-10): Foreground service"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ADJ_BACKUP_APP"
+            }), " (11-19): Backup processes"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ADJ_CACHED_APP_MIN"
+            }), " (900): Empty cached processes"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When pressure crosses minfree thresholds, LMKD sends ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SIGKILL"
+        }), " to the least important process"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Process is removed, and its memory (stack, heap, code pages, caches) is reclaimed"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Android cache state maintains recent apps in LRU order; LMK kills from the end of LRU"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "// ION memory allocation (C++ native)\n#include <linux/ion.h>\n#include <fcntl.h>\n#include <sys/ioctl.h>\n#include <stdio.h>\n#include <unistd.h>\n\nint main() {\n    int ion_fd = open(\"/dev/ion\", O_RDWR);\n    if (ion_fd < 0) { perror(\"/dev/ion\"); return 1; }\n\n    struct ion_allocation_data alloc;\n    alloc.len = 1024 * 1024;  // 1 MB\n    alloc.heap_id_mask = 1 << 0;  // system heap\n    alloc.flags = 0;\n\n    if (ioctl(ion_fd, ION_IOC_ALLOC, &alloc) < 0) {\n        perror(\"ION_IOC_ALLOC\");\n        close(ion_fd);\n        return 1;\n    }\n    printf(\"ION allocated: fd=%d, len=%llu\\n\",\n           alloc.fd, (unsigned long long)alloc.len);\n\n    // Map into process (mmap)\n    void* ptr = mmap(NULL, alloc.len, PROT_READ | PROT_WRITE,\n                     MAP_SHARED, alloc.fd, 0);\n    if (ptr == MAP_FAILED) {\n        perror(\"mmap ION\");\n    } else {\n        printf(\"ION mapped at %p\\n\", ptr);\n        munmap(ptr, alloc.len);\n    }\n    close(alloc.fd);\n    close(ion_fd);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-3",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "/system"
+          })
+        }), ": Read-only, ext4 (or EROFS on newer devices for better compression); contains OS images"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "/data"
+          })
+        }), ": User data, ext4 or F2FS (Flash Friendly File System, optimized for flash storage)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "/cache"
+          })
+        }), ": Temporary OTA updates, logs (ext4 or F2FS)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "/vendor"
+          })
+        }), ": SoC vendor-provided binaries and HAL implementations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "/apex"
+          })
+        }), ": APEX containers (system module packages, Android 10+)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scoped Storage"
+        }), " (Android 10+): Apps have restricted access to shared storage; use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MediaStore"
+        }), " API or SAF (Storage Access Framework); prevents broad storage access without permission"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Android: scoped storage → MediaStore query\nimport android.content.ContentResolver;\nimport android.database.Cursor;\nimport android.net.Uri;\nimport android.provider.MediaStore;\nimport android.content.Context;\n\npublic void queryImages(Context context) {\n    ContentResolver resolver = context.getContentResolver();\n    Uri uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;\n\n    String[] projection = {\n        MediaStore.Images.Media._ID,\n        MediaStore.Images.Media.DISPLAY_NAME,\n        MediaStore.Images.Media.SIZE\n    };\n\n    try (Cursor cursor = resolver.query(uri, projection, null, null,\n             MediaStore.Images.Media.DATE_ADDED + \" DESC\")) {\n        if (cursor != null && cursor.moveToFirst()) {\n            do {\n                long id = cursor.getLong(0);\n                String name = cursor.getString(1);\n                long size = cursor.getLong(2);\n                System.out.printf(\"Image: %s (ID=%d, size=%d)%n\",\n                                  name, id, size);\n            } while (cursor.moveToNext());\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model-3",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sandboxing via UID"
+        }), ": Each app runs as a separate Linux user; files and IPC are permission-checked"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Permissions"
+        }), ": Install-time (normal) and runtime (dangerous). ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Manifest.permission"
+        }), " system. Android 11+ auto-resets unused app permissions"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SELinux (enforcing)"
+        }), ": Since Android 4.3 (partial), fully enforcing since 5.0. Mandatory access control labels for all system processes and apps (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "system_app"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "untrusted_app"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "platform_app"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Verified Boot"
+        }), ": dm-verity (device-mapper integrity) checks block-level hashes of system partitions; AVB (Android Verified Boot) ensures chain of trust from bootloader to OS"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Keystore / Keymint"
+        }), ": Hardware-backed cryptographic operations via TEE (Trusted Execution Environment) → usually ARM TrustZone"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Encryption"
+        }), ": File-Based Encryption (FBE, Android 7+) or Full-Disk Encryption (FDE, legacy). FBE uses per-file keys; direct boot allows limited operation before user unlocks"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google Play Protect"
+        }), ": On-device app scanning with ML model (META, Mantis, etc.)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Private Compute Core"
+        }), " (Android 12+): Isolated environment for ML processing (Live Caption, Smart Reply) without network access"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<!-- Android Manifest permissions (AndroidManifest.xml) -->\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <!-- Normal permission → auto-granted at install -->\n    <uses-permission android:name=\"android.permission.INTERNET\" />\n\n    <!-- Dangerous permission → runtime request (Android 6+) -->\n    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n</manifest>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Runtime permission request (Android 6+)\nimport android.Manifest;\nimport android.content.pm.PackageManager;\nimport androidx.core.app.ActivityCompat;\nimport androidx.core.content.ContextCompat;\n\npublic void requestCameraPermission(Activity activity) {\n    if (ContextCompat.checkSelfPermission(activity,\n                Manifest.permission.CAMERA)\n            != PackageManager.PERMISSION_GRANTED) {\n\n        ActivityCompat.requestPermissions(activity,\n                new String[]{Manifest.permission.CAMERA}, 100);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling-3",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Android uses the Linux ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "CFS scheduler"
+      }), " (or EEVDF on newer kernels) with additional Android-specific scheduling policies:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "cgroups v2"
+        }), ": Android uses cgroups to partition CPU, memory, and I/O among foreground apps, background apps, top-app, system services, etc."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cpusets"
+        }), ": Cgroup subsystem to pin foreground apps to high-performance cores (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/dev/cpuset/foreground/cpus"
+        }), " = big cores, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/dev/cpuset/background/cpus"
+        }), " = LITTLE cores)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Schedtune / Uclamp"
+        }), " (utilization clamping): On big.LITTLE/ARM DynamIQ SoCs, per-task utilization clamping via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "uclamp_min"
+        }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "uclamp_max"
+        }), " values ensures latency-sensitive tasks (UI thread) get big cores quickly"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Energy-Aware Scheduling (EAS)"
+        }), " (Android 8+): The scheduler picks the most energy-efficient CPU for a task based on energy model (EM) tables. Schedutil governor + energy_diff calculation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Top-app boost"
+        }), ": The currently visible app receives a schedtune boost (usually 1-20% utilization margin) to reduce UI jank"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Android: UI thread scheduling is automatically boosted by the system\n// But you can query and set thread priorities:\nimport android.os.Process;\n\n// Set background thread to lowest priority\nnew Thread(() -> {\n    // This is a hint → the actual scheduling uses cgroups + uclamp\n    android.os.Process.setThreadPriority(\n        android.os.Process.THREAD_PRIORITY_URGENT_DISPLAY);\n\n    // Do work\n    int tid = Process.myTid();\n    int prio = Process.getThreadPriority(tid);\n    Log.d(TAG, \"Thread TID=\" + tid + \" priority=\" + prio);\n}).start();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features-3",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Binder IPC"
+        }), ": Android's custom IPC mechanism with proxy/stub pattern, per-transaction PID/UID checking, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/dev/binder"
+        }), " driver; the most used IPC in any OS ecosystem"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Project Treble"
+        }), " (Android 8+): Modularizes vendor HAL implementations via HIDL/AIDL interfaces; allows Google to push OS updates without waiting for SoC vendors"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ART (Android Runtime)"
+        }), ": AOT compilation at install time + JIT with profile-guided optimization. Pre-installed frameworks reduce app startup time"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dalvik → ART transition"
+        }), ": Android 5.0 replaced Dalvik VM (JIT-only, register-based) with ART (AOT + JIT, improved GC)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zygote"
+        }), ": Pre-loaded process template from which all apps fork → reduces startup time and shares pages via COW"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Project Mainline"
+        }), " (Android 10+): Critical system modules as APEX/APK-in-APEX; updatable via Google Play without full OTA"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Slices / App Actions / Shortcuts"
+        }), ": UI components shown outside the app context (launcher, assistant)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dynamic System Updates"
+        }), " (DSU, Android 10+): Load a GSI (Generic System Image) temporarily without flashing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MGLRU (Multi-Gen LRU)"
+        }), ": Page reclaim algorithm (Android 13+ mainline-merged into Linux 6.1) → better reclaim efficiency with less CPU overhead"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ahmed / LMKD"
+        }), ": User-space low-memory management that replaced kernel-space LMK"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-3",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App startup (cold start)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 ms (depends on APK size, ART AOT state)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder IPC transaction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-30 µs (same process), ~50-200 µs (cross-process)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zygote fork"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20 ms (pre-loaded page table copy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL call (HIDL/AIDL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100 µs (binderized HAL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Art GC pause"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2-8 ms (concurrent, most pauses < 5 ms)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ION allocation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-500 µs (depends on size and contiguous requirement)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 ns (AVC cache hit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LMK kill latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-50 ms (detection → signal → process cleanup)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-android-vs-others",
+      children: "A&D Table: Android vs Others"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux (Desktop)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "iOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile-first"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General purpose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile-first (Apple ecosystem)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel basis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux LTS fork + Android patches"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Upstream Linux mainline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XNU (Darwin)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App runtime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ART (Java/Kotlin)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native (ELF binary)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cocoa Touch (Objective-C/Swift)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder (primary)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D-Bus, sockets, pipes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC, Mach messages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux enforcing + permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC/MAC (configurable)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox + entitlements + SEP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (HIDL/AIDL) + kernel modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel .ko"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit + DriverKit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory mgmt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ashmem → ION + LMKD + PSI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Demand-paging, THP, KSM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach VM + memory pressure + jetsam"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App distribution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Play, APK sideloading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Package managers (apt, dnf)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App Store (signed, notarized)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Soft via EAS + cgroups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PREEMPT_RT available"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (QoS-based)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AOSP (Apache 2.0 / GPLv2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fully open (GPLv2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel open (APSL), UI proprietary"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel version"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android 14 → Linux 5.15 LTS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Latest mainline (6.x)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Based on XNU (Apple-sourced)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ios-architecture",
+      children: "iOS Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-4",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "iOS is Apple's mobile operating system, first released in 2007 alongside the original iPhone. It is based on a variant of macOS's XNU kernel and Cocoa Touch framework. Unlike Android, iOS is proprietary (closed source) except for the open-source XNU kernel and Darwin components."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key versions"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iPhone OS 1 (2007): No app SDK initially; web apps only; later native apps allowed"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 2 (2008): App Store launched, SDK available (500 apps at launch, now >2 million)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 4 (2010): Multitasking via background states (not true multitasking initially)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 6 (2012): Apple Maps (replaced Google Maps)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 7 (2013): Complete UI redesign (Jony Ive), Control Center, AirDrop"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 10 (2016): opens iOS SDK to more APIs, SiriKit"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 12 (2018): Performance optimization for older devices"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 14 (2020): Widgets, App Library, App Clips"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 16 (2022): Lock Screen customization, Live Activities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 17 (2023): StandBy mode, NameDrop, Check In"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iOS 19 (2025, projected): Continued refinements in AI, health, AR"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Architecture layers"
+      }), " (bottom to top): Core OS (XNU kernel + device drivers), Core Services (foundation frameworks, CFNetwork, SQLite), Media (AVFoundation, Core Audio, Metal), Cocoa Touch (UIKit, EventKit, MapKit, etc.)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": iOS is like a luxury high-security apartment building → the XNU kernel is the secure foundation and building services (electricity, plumbing), Core OS is the building security system, Core Services are the building amenities (gym, pool), Media layer is the entertainment system (cable, internet), and Cocoa Touch is the actual apartment interior (you live here but can't change load-bearing walls). Apple is the landlord who controls everything."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-4",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "iOS Architecture\n================================================================================\n|  COCOA TOUCH LAYER                                                          |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  | UIKit    | | EventKit | | MapKit   | | MessageUI| | PushKit  |           |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  +----------+ +----------+ +----------+ +----------+                        |\n|  | CoreData | | WidgetKit| | Activity | | App Clip |                        |\n|  |          | | (iOS 14+) | |Kit (16+)| | (iOS 14+) |                       |\n|  +----------+ +----------+ +----------+ +----------+                        |\n|  +-----------------------------------------------------------------------+  |\n|  | APPLICATION KIT (not iOS; macOS desktop apps only)                     |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  MEDIA LAYER                                                                |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  | AV       | | Core     | | Metal    | | Core     | | Core     |           |\n|  | Foundat. | | Audio    | | (GPU     | | Image    | | Text     |           |\n|  |          | |          | |  API)    | |          | |          |           |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  +----------+ +----------+ +----------+                                     |\n|  | Core    | | Core     | | Core     |                                     |\n|  | Video   | | Animatio | | Haptics  |                                     |\n|  +----------+ +----------+ +----------+                                     |\n================================================================================\n|  CORE SERVICES LAYER                                                        |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  | Core     | | CFNetwor | | SQLite   | | Core     | | Security |           |\n|  | Foundat. | | k        | |          | | Location | | Framework|           |\n|  +----------+ +----------+ +----------+ +----------+ +----------+           |\n|  +----------+ +----------+ +----------+ +----------+                        |\n|  | Core     | | CloudKit | | HealthKit| | StoreKit |                        |\n|  | Motion   | |          | |          | | (In-App  |                        |\n|  |          | |          | |          | |  Purch.) |                        |\n|  +----------+ +----------+ +----------+ +----------+                        |\n|  +----------+ +----------+ +----------+                                     |\n|  | File     | | Dispatch | | Blocks   |                                     |\n|  | Provider | | (GCD)    | | (Obj-C   |                                     |\n|  |          | |          | |  closures)|                                     |\n|  +----------+ +----------+ +----------+                                     |\n================================================================================\n|  CORE OS LAYER                                                              |\n|  +-----------------------------------------------------------------------+  |\n|  | XNU Kernel (Mach + BSD + I/O Kit)                                     |  |\n|  | - Same kernel as macOS but with iOS-specific additions:                |  |\n|  |   + Jetsam (memory management → kills processes under pressure)       |  |\n|  |   + Trust Cache (pre-approved code signatures)                         |  |\n|  |   + Sandbox (Seatbelt profiles enforced per app bundle ID)             |  |\n|  |   + Apple Mobile File Integrity (AMFI) → code sign enforcement         |  |\n|  |   + PPL (Page Protection Layer) → kernel code integrity on Apple Sil.  |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Secure Enclave Processor (SEP): Biometric processing, crypto keys,    |  |\n|  | SEP OS (L4-based microkernel), isolated from main CPU.                |  |\n|  | Handles: Touch ID, Face ID, Apple Pay, iCloud Keychain, Device keys   |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | DriverKit (iOS-aware variant) / I/O Kit / kernel extensions           |  |\n|  | Firmware: baseband (cellular), ANE (Neural Engine), ISP (image proc)  |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  Apple Silicon (A-series, M-series) → ARM64. Secure Enclave, Neural        |\n|  Engine, Image Signal Processor, storage controller, display engine        |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model-4",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "iOS uses the same Mach task/BSD process model as macOS with additional restrictions:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "App Lifecycle States"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not Running"
+        }), ": App hasn't been launched or was terminated"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inactive"
+        }), ": App is in the foreground but not receiving events (e.g., during a phone call)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Active"
+        }), ": App is in the foreground and receiving events"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Background"
+        }), ": App is in the background; may execute code (limited time, usually 30 seconds)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Suspended"
+        }), ": App is in the background but no code is executing; remains in memory (jetsam candidate)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Background Execution"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Background fetch (~30s)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Background URL sessions (managed by system daemon)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VoIP pushes (PushKit, high priority)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bluetooth LE (central/peripheral role)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Background audio"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Critical alerts (iOS 12+)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-swift",
+        children: "// iOS: Process and thread info\nimport UIKit\n\nclass ViewController: UIViewController {\n    override func viewDidLoad() {\n        super.viewDidLoad()\n\n        // Process info\n        let pid = ProcessInfo.processInfo.processIdentifier\n        let name = ProcessInfo.processInfo.processName\n        print(\"Process: \\(name) (PID: \\(pid))\")\n        print(\"Active processors: \" +\n              \"\\(ProcessInfo.processInfo.processorCount)\")\n        print(\"Physical memory: \" +\n              \"\\(ProcessInfo.processInfo.physicalMemory / 1024 / 1024) MB\")\n\n        // Thread info\n        print(\"Main thread: \\(Thread.isMainThread)\")\n        print(\"Thread name: \\(Thread.current.name ?? \"unnamed\")\")\n        print(\"Thread quality of service: \" +\n              \"\\(Thread.current.qualityOfService.rawValue)\")\n\n        // Background thread with QoS\n        DispatchQueue.global(qos: .background).async {\n            print(\"Background QoS thread: \" +\n                  \"\\(Thread.current.qualityOfService)\")\n        }\n\n        // Serial queue\n        let serialQueue = DispatchQueue(label: \"com.example.serial\")\n        serialQueue.async {\n            print(\"Serial queue thread\")\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "XPC (XPC Services)"
+      }), ": iOS IPC mechanism based on Mach messages. Lightweight, secure, managed by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "launchd"
+      }), ". Each XPC service runs as a separate process."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-swift",
+        children: "// iOS: XPC service example (simplified)\nimport Foundation\n\n// Client code\nlet connection = NSXPCConnection(serviceName: \"com.example.worker\")\nconnection.remoteObjectInterface =\n    NSXPCInterface(with: WorkerProtocol.self)\nconnection.resume()\n\nif let worker = connection.remoteObjectProxy as? WorkerProtocol {\n    worker.process(data: someData) { result in\n        print(\"Got result from XPC service: \\(result)\")\n    }\n}\n\n// Worker service (separate process, sandboxed)\nclass WorkerService: NSObject, WorkerProtocol {\n    func process(data: Data, withReply reply: @escaping (String) -> Void) {\n        reply(\"Processed \\(data.count) bytes\")\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management-4",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "iOS uses the same Mach VM as macOS with iOS-specific additions:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Jetsam"
+        }), " (memorystatus): iOS's memory manager. When free memory is low, Jetsam kills processes starting from the lowest priority (largest suspended apps first)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory Limits"
+        }), ": Per-process memory limit (e.g., ~2-3 GB on modern devices, varies by device RAM). Exceeding triggers ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "EXC_RESOURCE_RESOURCE"
+        }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SIGKILL"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Page Protection Layer (PPL)"
+        }), ": Apple Silicon feature that protects kernel page tables from modification even by kernel-level exploits→memory must be \"unwired\" through PPL to modify page table entries"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wired memory"
+        }), ": Pinned, never paged. Includes kernel, launchd, essential daemons"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compressed memory"
+        }), ": Same as macOS (WKdm compression of inactive pages)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Jetsam Priority Bands"
+      }), " (from highest to lowest priority):"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Priority"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Examples"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel / system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "launchd, kernel_task"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System daemons"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SpringBoard, backboardd"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential background"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "audio, VoIP, BT central"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foreground app"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Currently visible app"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Background + suspended"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recently used, now suspended"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most recent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cached apps (LRU order)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-4",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "APFS"
+        }), ": Same as macOS; copy-on-write, snapshots, encryption, clones"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data Protection API"
+        }), ": Files are encrypted at rest with per-file keys derived from device UID + user passcode. Protection classes:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "NSFileProtectionComplete"
+            }), ": File accessible only when device is unlocked"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "NSFileProtectionCompleteUnlessOpen"
+            }), ": File can be opened when unlocked, then read even after lock"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "NSFileProtectionCompleteUntilFirstUserAuthentication"
+            }), ": Accessible after first unlock (default)"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "NSFileProtectionNone"
+            }), ": Always accessible (for caches/temp)"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Application container"
+        }), ": Each app has a sandboxed home directory (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/var/mobile/Containers/Data/Application/<UUID>/"
+        }), "). Other apps cannot access it"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Keychain"
+        }), ": Encrypted SQLite database; per-app access groups for credential sharing"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-swift",
+        children: "// iOS: File Protection API\nimport Foundation\n\nlet filePath = FileManager.default.temporaryDirectory\n    .appendingPathComponent(\"secret.txt\")\n\nlet content = \"Sensitive data\".data(using: .utf8)!\n\nFileManager.default.createFile(\n    atPath: filePath.path,\n    contents: content,\n    attributes: [\n        .protectionKey: FileProtectionType.complete\n    ]\n)\n\nprint(\"Written with NSFileProtectionComplete\")\n\n// Query protection level\nlet attrs = try FileManager.default.attributesOfItem(atPath: filePath.path)\nif let protection = attrs[.protectionKey] as? FileProtectionType {\n    print(\"Protection: \\(protection.rawValue)\")\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model-4",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "iOS is widely considered the most secure consumer OS:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure Boot Chain"
+        }), ": Boot ROM → iBoot → kernel → OS. Each stage verifies the next via Apple root CA signatures. No unsigned code can run during boot (unlike Android's verified boot which permits custom ROMs)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure Enclave (SEP)"
+        }), ": ARM Cortex-A7 coprocessor with its own secure OS (L4-based microkernel). Manages: biometric keys (Touch ID, Face ID), Apple Pay tokens, iCloud Keychain, file encryption keys, device UID (UID). The SEP has its own boot ROM, crypto engine, memory, and AES engine. Main CPU cannot directly access SEP memory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trust Cache"
+        }), ": Kernel-level list of approved code signatures. All executables must have a hash in the trust cache to run"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sandbox (Seatbelt)"
+        }), ": Per-application sandbox profiles enforced by kernel-level Seatbelt extension. Every resource access (file, network, hardware) is checked against sandbox profile + entitlements"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Entitlements"
+        }), ": Signed key-value pairs in executable code signature. Define what system resources and capabilities the app can access (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "com.apple.security.device.camera"
+        }), "). More restrictive than Android permissions"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Code Signing"
+        }), ": All executable code must be signed by Apple (App Store) or a developer certificate (side-loading/enterprise). Runtime enforcement via AMFI (Apple Mobile File Integrity)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PAC (Pointer Authentication Codes)"
+        }), ": ARM64e feature. Every function pointer and return address is cryptographically signed so memory corruption cannot redirect execution"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kernel Integrity Protection (KIP)"
+        }), ": Apple Silicon prevents writing to kernel text and read-only data"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Personalized Attestation (DCAppAttestService)"
+        }), ": Per-device attestation using Secure Enclave keys"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-swift",
+        children: "// iOS: Keychain access (secure credential storage)\nimport Foundation\nimport Security\n\nlet service = \"com.example.secureService\"\nlet account = \"user123\"\n\n// Store credential\nlet password = \"my_secret_password\".data(using: .utf8)!\nlet query: [String: Any] = [\n    kSecClass as String: kSecClassGenericPassword,\n    kSecAttrService as String: service,\n    kSecAttrAccount as String: account,\n    kSecValueData as String: password,\n    kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly\n]\n\nlet status = SecItemAdd(query as CFDictionary, nil)\nif status == errSecSuccess {\n    print(\"Keychain write succeeded (hardware encrypted)\")\n} else if status == errSecDuplicateItem {\n    print(\"Item already exists\")\n}\n\n// Retrieve credential\nlet getQuery: [String: Any] = [\n    kSecClass as String: kSecClassGenericPassword,\n    kSecAttrService as String: service,\n    kSecAttrAccount as String: account,\n    kSecReturnData as String: true,\n    kSecMatchLimit as String: kSecMatchLimitOne\n]\n\nvar result: AnyObject?\nlet status2 = SecItemCopyMatching(getQuery as CFDictionary, &result)\nif status2 == errSecSuccess, let data = result as? Data {\n    print(\"Retrieved: \\(String(data: data, encoding: .utf8)!)\")\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling-4",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "iOS uses the same MLFQ scheduler as macOS with additional iOS-specific adaptations:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "QoS-based scheduling"
+        }), " (6 tiers: userInteractive > userInitiated > default > utility > background > maintenance)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Energy-aware scheduling"
+        }), ": On Apple Silicon (starting with A7, 2013), the scheduler prefers high-efficiency cores (E-cores) for background tasks and high-performance cores (P-cores) for interactive work"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Timer throttling"
+        }), ": Background app timers are throttled to conserve battery (minimum interval 1 minute for suspended apps)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Launchd-based service management"
+        }), ": launchd manages daemon startup, watchdog timers, and crash recovery"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "System pressure"
+        }), ": Thermal and memory pressure feedback loops → kernel can adjust max performance when device overheats"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-swift",
+        children: "// iOS: Quality of Service (QoS) scheduling\nimport Foundation\n\n// Background task → runs on E-cores\nlet backgroundQueue = OperationQueue()\nbackgroundQueue.qualityOfService = .background\nbackgroundQueue.addOperation {\n    print(\"Background QoS (E-core preferred)\")\n    print(\"Current QoS: \\(QualityOfService.background.rawValue)\")\n}\n\n// User interactive → runs on P-cores with highest priority\nDispatchQueue.main.async(qos: .userInteractive) {\n    print(\"UI work → highest priority, P-cores\")\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features-4",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "App Sandbox"
+        }), ": Every app runs in its own sandboxed directory; all resource access goes through ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sandboxd"
+        }), " and the kernel seatbelt"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Jetsam"
+        }), ": Proactive memory reclamation via process killing → more aggressive than Android's LMKD"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure Enclave"
+        }), ": Dedicated secure processor for biometric and encryption → a unique hardware security feature unmatched in consumer mobile"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "M-series motion coprocessor"
+        }), " (legacy, now absorbed into main SoC): Dedicated low-power processor for accelerometer/gyroscope/compass processing"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Core ML + Apple Neural Engine"
+        }), ": On-device ML inference with dedicated hardware (16-core ANE)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "iOS Privacy Labels"
+        }), ": App Store mandatory disclosure of data collection (since iOS 14)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "App Tracking Transparency"
+        }), " (iOS 14.5+): Apps must request permission using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ATTrackingManager"
+        }), " to track users"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "On-Device Processing"
+        }), ": Face ID data, Siri requests, keyboard analytics processed on-device (since iOS 13/14)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fast App Resume"
+        }), ": Frozen app state in memory; instant relaunch from suspended state"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BackgroundTasks Framework"
+        }), ": Structured background work scheduling (BGProcessingTask, BGAppRefreshTask)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-4",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch (Mach thread)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-3 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach IPC (XPC) round-trip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Jetsam kill + cleanup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100 ms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App cold launch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-600 ms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Secure Enclave operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-50 ms (depending on biometric)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File encryption (AES-XTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-200 MB/s (inline crypto engine)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox policy check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-500 ns (cached)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory compression (WKdm)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500 MB/s compression throughput"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-ios-vs-others",
+      children: "A&D Table: iOS vs Others"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "iOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XNU (Mach+BSD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux + Android patches"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XNU (Mach+BSD+IOKit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Application model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cocoa Touch (UIKit/SwiftUI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ART (Java/Kotlin)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AppKit/SwiftUI (desktop)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC (Mach messages)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC, Mach messages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox + SEP + Trust Cache"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux + permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP + sandbox + Gatekeeper"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "App distribution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App Store only (walled garden)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Play + sideloading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App Store + notarization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel only (APSL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AOSP (full stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel only (APSL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jetsam (process killer)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LMKD + PSI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory pressure + compressed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS (encrypted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ext4/F2FS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tight (Apple Silicon)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loose (vendor SoCs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tight (Apple Silicon)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time capability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (QoS-based)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Soft RT (EAS + cgroups)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (QoS-based)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (+DriverKit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (HIDL/AIDL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (+DriverKit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary language"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swift / Objective-C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java / Kotlin"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swift / Objective-C"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "rtos-freertos-and-vxworks",
+      children: "RTOS: FreeRTOS and VxWorks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-5",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-Time Operating Systems"
+      }), " are designed for applications where timing determinism is critical → meeting deadlines is part of correctness."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": Created by Richard Barry in 2003. A small, open-source (MIT license), hard real-time kernel designed for deeply embedded systems. Runs on 40+ architectures (ARM Cortex-M, AVR, PIC, RISC-V, ESP32, etc.). Acquired by Amazon Web Services (AWS) in 2017, now maintained as part of FreeRTOS + AWS IoT integration. Code footprint: 6-12 KB typical kernel."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": Developed by Wind River (acquired by Intel in 2009, then acquired by Aptiv/TPG in 2018). First released in 1987. A commercial hard real-time RTOS with DO-178C certification (avionics safety). Used in: SpaceX Falcon 9/Dragon, Mars rovers (Perseverance, Ingenuity), Boeing 787 Dreamliner, medical devices (infusion pumps, ventilators), industrial robotics. VxWorks 7 (latest generation) supports 64-bit SMP, POSIX PSE54 certification, virtualization, and OPC UA."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy (FreeRTOS)"
+      }), ": FreeRTOS is like a Lego set → small, modular, you build exactly what you need, no wasted pieces. Each task is a Lego brick; the scheduler is the instruction sheet."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy (VxWorks)"
+      }), ": VxWorks is like the flight computer on a spaceship → every single computation is validated, timed, and verified. If a calculation takes 1 ms longer than budgeted, the rocket could crash (literally)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-5",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FreeRTOS Architecture\n================================================================================\n|  APPLICATION LAYER                                                           |\n|  +----------+ +----------+ +----------+ +----------+                         |\n|  | Sensor   | | Actuator | | Comms    | | Display  |                         |\n|  | Task     | | Task     | | Task     | | Task     |                         |\n|  +----------+ +----------+ +----------+ +----------+                         |\n================================================================================\n|  FREERTOS KERNEL                                                             |\n|  +-----------------------------------------------------------------------+  |\n|  | Task Control: Create, Delete, Suspend, Resume, Delay → 1 task = 1    |  |\n|  | function (void* pvParameters) with infinite loop. Stack allocated     |  |\n|  | statically or dynamically. ~4-8 kB stack per task.                    |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Scheduler: Preemptive, priority-based (up to configMAX_PRIORITIES).   |  |\n|  | Also supports cooperative (deferred yield) mode. Tick-based (config  |  |\n|  | TICK_RATE_HZ, typically 100-1000 Hz). Idle task runs at lowest pri.   |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Inter-Process Communication:                                          |  |\n|  | + Queues (message passing, bounded buffer) → most common IPC          |  |\n|  | + Semaphores (binary, counting, mutex with priority inheritance)      |  |\n|  | + Event groups (flags set/cleared/wait, 24 bits on 32-bit arch)       |  |\n|  | + Task notifications (lightweight, direct-to-task, ~45% faster than  |  |\n|  |   semaphore. Avoids creating separate IPC objects.)                   |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Memory Management: 5 heap strategies (heap_1..heap_5). Simple, not   |  |\n|  | virtual memory. No MMU (typically). Static or dynamic allocation.     |  |\n|  | heap_1: simple, no free. heap_3: wraps malloc/free. heap_4: first     |  |\n|  | fit, coalescing. heap_5: multiple regions.                            |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Timers: Software timers (callback-based, configTIMER_TASK_PRIORITY)   |  |\n|  | Tickless idle mode: Enter low-power sleep between ticks (wake on     |  |\n|  | interrupt). configUSE_TICKLESS_IDLE = 1 or 2 (auto/manual).          |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  ARM Cortex-M (M0/M3/M4/M7), RISC-V, AVR, PIC, ESP32, etc.                 |\n|  No MMU (typically Cortex-M). Interrupt-driven via NVIC.                    |\n================================================================================\n\nVxWorks Architecture\n================================================================================\n|  APPLICATION LAYER (user mode & kernel mode)                                |\n|  +----------+ +----------+ +----------+ +----------+                        |\n|  | Guidance | | Telemetr | | Power    | | Thermal  |                        |\n|  | Nav. Task| | y Task   | | Mgmt Task| | Ctrl Task|                        |\n|  +----------+ +----------+ +----------+ +----------+                        |\n================================================================================\n|  VXWORKS KERNEL (VxMicro / VxWorks SMP)                                    |\n|  +-----------------------------------------------------------------------+  |\n|  | Task Management: Preemptive priority-based + round-robin. Up to 256   |  |\n|  | priority levels. POSIX pthreads (1003.1-2003 PSE54 certified).        |  |\n|  | Also: Rate-monotonic scheduling (RMS) for periodic tasks.             |  |\n|  | VxWorks 7: SMP on up to 32 cores, CPU affinity sets                  |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | IPC: Message queues, semaphores (binary/counting/mutex with priority  |  |\n|  | inheritance), pipes, signals, POSIX mq, shared memory. Priority       |  |\n|  | inheritance built into kernel mutexes (avoiding priority inversion).   |  |\n|  | Watchdog timers for dead task detection.                              |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Memory Management: Flat memory model (no MMU protection context),     |  |\n|  | or MMU-based protected mode (VxWorks 7). Virtual memory for x86/ARM   |  |\n|  | with page-based protection. Deterministic allocation (no kernel       |  |\n|  | dynamic memory in critical paths). Partition-based allocators.        |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | I/O System: VxWorks I/O subsystem with file descriptors, POSIX I/O.  |  |\n|  | Native file systems: dosFS, rt11FS, rawFS, tapeFS.                   |  |\n|  | USB stack, networking (IPnet → dual IPv4/IPv6 stack).                |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Safety & Certification: DO-178C DAL A, IEC 61508 SIL 3, IEC 62304,   |  |\n|  | ISO 26262 ASIL D. Partitioning via ARINC 653 (space/time isolation).  |  |\n|  | End-to-end data integrity, stack overflow detection, object tracking. |  |\n|  +-----------------------------------------------------------------------+  |\n|  +-----------------------------------------------------------------------+  |\n|  | Networking: Full TCP/IP stack (IPnet), IPv4/IPv6, IPSec, TLS, OPC UA,|  |\n|  | CANopen, EtherCAT, ARINC 664 (AFDX). Zero-copy buffer management.    |  |\n|  +-----------------------------------------------------------------------+  |\n================================================================================\n|  HARDWARE                                                                   |\n|  ARM, x86, PowerPC, RISC-V, MIPS (various architectures)                    |\n|  MMU optional; VxWorks 7 supports both flat and protected modes.            |\n================================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "process-and-thread-model-5",
+      children: "Process and Thread Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": Single process (the entire system is a single binary image). All tasks share the same address space. No memory protection between tasks (unless running on Cortex-M with MPU enabled)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// FreeRTOS: Task creation\n#include \"FreeRTOS.h\"\n#include \"task.h\"\n#include \"queue.h\"\n\nQueueHandle_t sensorQueue;\n\nvoid vSensorTask(void* pvParameters) {\n    int reading = 0;\n    for (;;) {\n        reading = read_sensor();\n        xQueueSend(sensorQueue, &reading, portMAX_DELAY);\n        vTaskDelay(pdMS_TO_TICKS(100));  // 10 Hz\n    }\n}\n\nvoid vProcessingTask(void* pvParameters) {\n    int reading;\n    for (;;) {\n        if (xQueueReceive(sensorQueue, &reading, portMAX_DELAY)) {\n            process_reading(reading);\n        }\n    }\n}\n\nint main(void) {\n    sensorQueue = xQueueCreate(10, sizeof(int));\n    if (!sensorQueue) return -1;\n\n    xTaskCreate(vSensorTask, \"Sensor\", 256, NULL, 2, NULL);\n    xTaskCreate(vProcessingTask, \"Proc\", 512, NULL, 1, NULL);\n\n    vTaskStartScheduler();  // Never returns\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": Supports both kernel mode (single address space, fastest context switch) and user mode (processes with protected address spaces, VxWorks 7+). Tasks are the fundamental execution unit (similar to threads). VxWorks processes (RTP → Real-Time Processes) provide memory protection."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// VxWorks: Task creation (kernel mode)\n#include <vxWorks.h>\n#include <taskLib.h>\n#include <msgQLib.h>\n\nMSG_Q_ID sensorMsgQ;\n\nSTATUS sensorTask() {\n    int reading;\n    for (;;) {\n        reading = readSensor();\n        msgQSend(sensorMsgQ, (char*)&reading, sizeof(reading),\n                 WAIT_FOREVER, MSG_PRI_NORMAL);\n        taskDelay(sysClkRateGet() / 10);  // 10 Hz\n    }\n}\n\nSTATUS processingTask() {\n    int reading;\n    for (;;) {\n        if (msgQReceive(sensorMsgQ, (char*)&reading,\n                        sizeof(reading), WAIT_FOREVER) == OK) {\n            processReading(reading);\n        }\n    }\n}\n\nvoid start(void) {\n    sensorMsgQ = msgQCreate(10, sizeof(reading), MSG_Q_FIFO);\n\n    taskSpawn(\"sensor\", 100, 0, 2000, (FUNCPTR)sensorTask,0,0,0,0,0,0,0,0,0,0);\n    taskSpawn(\"proc\", 90, 0, 4000, (FUNCPTR)processingTask,0,0,0,0,0,0,0,0,0,0);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-management-5",
+      children: "Memory Management"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": No virtual memory; tasks use statically or dynamically allocated stacks. 5 heap implementations:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Allocation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Free"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best For"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "heap_1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple (linear, no free)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not supported"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Projects with fixed allocation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "heap_2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best-fit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (no coalescing)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple alloc/free patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "heap_3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wraps malloc/free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wraps free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When using standard C library"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "heap_4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First-fit with coalescing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General embedded use"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "heap_5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First-fit, multiple regions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-contiguous RAM"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": Deterministic memory management with partition allocators. MMU support for task protection. No garbage collection (real-time systems cannot tolerate GC pauses). Partition-based: pre-allocate fixed-size blocks for critical paths to guarantee allocation times."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "file-system-5",
+      children: "File System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": Optional ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "FAT"
+      }), " file system (FreeRTOS+FAT) for SD cards and flash storage. No built-in FS is required (many FreeRTOS applications use no file system at all → data in memory)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": dosFS (FAT), rt11FS, rawFS, tapeFS, NFS client. Flash file system: TrueFFS. VxWorks 7 supports POSIX file I/O, pipes, sockets as file descriptors."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-model-5",
+      children: "Security Model"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": Minimal built-in security. Security relies on hardware isolation (MPU for ARM Cortex-M with FreeRTOS MPU ports). AWS IoT integration adds TLS/DTLS, PKCS#11, and code signing for OTA updates. FreeRTOS tcp/ip stack has IP-layer security options."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": Comprehensive security for safety-critical systems:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DO-178C DAL A certified (avionics)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IEC 61508 SIL 3 (industrial)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ISO 26262 ASIL D (automotive)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ARINC 653 partitioning (spatial + temporal isolation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Memory protection via MMU (kernel/user mode separation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Stack overflow detection at task level"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Object tracking (kernel tracks all system objects to prevent leaks)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scheduling-5",
+      children: "Scheduling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ": Preemptive, fixed-priority with round-robin among equal-priority tasks. Configurable tick rate (100-1000 Hz typical). Tickless idle mode for power saving."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// FreeRTOS: Task notification (lightweight IPC, 45% faster than semaphore)\n#include \"FreeRTOS.h\"\n#include \"task.h\"\n\nstatic TaskHandle_t xReceiverTask = NULL;\n\nvoid vSendingTask(void* pvParameters) {\n    uint32_t ulNotificationValue;\n    for (;;) {\n        // Receive notification from ISR\n        xTaskNotifyWait(0, ULONG_MAX, &ulNotificationValue, portMAX_DELAY);\n        process_notification(ulNotificationValue);\n    }\n}\n\nvoid vTimerISR(void) {\n    BaseType_t xHigherPriorityTaskWoken = pdFALSE;\n    // Send notification to task from ISR\n    vTaskNotifyGiveFromISR(xReceiverTask, &xHigherPriorityTaskWoken);\n    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ": Fixed-priority preemptive (up to 256 levels). Round-robin within priority for equal-priority tasks. Rate-monotonic scheduling (RMS) for periodic tasks: shorter period = higher priority."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Priority Inversion Solutions"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Priority inheritance"
+        }), ": A low-priority task temporarily inherits the blocked higher-priority task's priority until it releases the mutex"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Priority ceiling protocol"
+        }), ": A task holding a lock runs at the highest priority of any task that might need that lock"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VxWorks implements both in kernel mutexes"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// FreeRTOS: Priority inheritance demonstration (mutex)\n#include \"FreeRTOS.h\"\n#include \"semphr.h\"\n#include \"task.h\"\n\nSemaphoreHandle_t xMutex;\n\nvoid vHighPriorityTask(void* pvParameters) {\n    for (;;) {\n        // This will block if low-priority task holds mutex\n        if (xSemaphoreTake(xMutex, portMAX_DELAY) == pdTRUE) {\n            // Critical section → low-priority task will be boosted\n            // to our priority via priority inheritance\n            xSemaphoreGive(xMutex);\n        }\n    }\n}\n\nvoid setup(void) {\n    // Mutex with priority inheritance (enabled by default in FreeRTOS)\n    xMutex = xSemaphoreCreateMutex();\n\n    // Create tasks at different priorities\n    xTaskCreate(vHighPriorityTask, \"High\", 256, NULL, 3, NULL);\n    xTaskCreate(vMidPriorityTask, \"Mid\", 256, NULL, 2, NULL);\n    xTaskCreate(vLowPriorityTask, \"Low\", 256, NULL, 1, NULL);\n\n    vTaskStartScheduler();\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "unique-features-5",
+      children: "Unique Features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "FreeRTOS"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Miniaturized footprint"
+        }), ": Kernel as small as 6 KB compiled"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tickless idle mode"
+        }), ": Deep sleep between ticks for ultra-low power (battery-operated IoT)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stream buffers / message buffers"
+        }), ": Lockless, single-reader-single-writer IPC for ISR-to-task (no blocking in ISR)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Static allocation option"
+        }), ": No malloc at runtime (certification-friendly)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Amazon FreeRTOS"
+        }), ": IoT integration with AWS IoT Core, OTA, Greengrass, Device Defender"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tracealyzer / FreeRTOS+Trace"
+        }), ": Visual task timeline and profiling"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Over 40 architecture ports"
+        }), ": Cortex-M, AVR, RISC-V, ESP32, PIC, H8, etc."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MPU support"
+        }), ": For Cortex-M3/M4/M7 with MPU → task-level memory protection"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "VxWorks"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DO-178C DAL A certification"
+        }), ": Highest avionics safety level → used in flight-critical systems"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Space heritage"
+        }), ": Mars Perseverance rover, Ingenuity helicopter, SpaceX Falcon 9/Dragon"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multi-core SMP"
+        }), ": Up to 32 cores with CPU affinity and cache-coherent SMP"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ARINC 653 partitioning"
+        }), ": Space/time isolation for integrated modular avionics (IMA)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VxWorks 7"
+        }), ": Modular architecture with downloadable feature packs (networking, graphics, safety)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wind River Linux compatibility"
+        }), ": Shared toolchain and development environment"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtualization"
+        }), ": Supports Type 1 hypervisor hosting multiple guest OSes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deterministic networking"
+        }), ": IPnet stack with traffic shaping, QoS, TSN support"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-5",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FreeRTOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VxWorks"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 cycles (Cortex-M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500-1000 cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ISR latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-200 cycles (deterministic)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-300 cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Task creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20 µs (static stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-50 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Message queue send"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-5 µs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3-10 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semaphore give/take"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-3 µs (no contention)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2-8 µs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal footprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-12 KB kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200 KB (VxWorks 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heap malloc (heap_4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-50 µs (first-fit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100 µs (partition)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tick interrupt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-50 µs (includes task switch)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~20-100 µs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-table-rtos-vs-gpos",
+      children: "A&D Table: RTOS vs GPOS"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FreeRTOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VxWorks"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux (GPOS)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time executive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Determinism"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (deterministic)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (certified)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Soft (PREEMPT_RT improves)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MMU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not required (optional MPU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (VxWorks 7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (unless MPU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Task protection / MMU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full process isolation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Configurable (default 5-255)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "256"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "140 (RT + nice)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed-priority preemptive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed-priority + RR + RMS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS/EEVDF + RT classes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flat (single address space)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flat or protected"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual memory per process"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Certification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (optional IEC 61508)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DO-178C, IEC 61508, ISO 26262"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (SELinux only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Footprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-12 KB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200 KB-2 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-50 MB (kernel)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Networking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "lwIP / FreeRTOS+TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IPnet (full TCP/IP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full Linux networking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAT optional (FreeRTOS+FAT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dosFS, TrueFFS, NFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VFS + ext4/XFS/btrfs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Development"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GCC + CMake, IDE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wind River Workbench"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GCC, any IDE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "License"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIT (open source)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Commercial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPLv2 (open source)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Typical use"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IoT, wearables, sensors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avionics, space, auto, med"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Servers, cloud, desktop"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "freebsd",
+      children: "FreeBSD"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "overview-and-history-6",
+      children: "Overview and History"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FreeBSD is a complete, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD) lineage. It traces its roots to 1977 when the Computer Systems Research Group (CSRG) at UC Berkeley released 1BSD for the PDP-11. After the AT&T lawsuit settlement (USL v. BSDi, 1992–1994), 4.4BSD-Lite was released free of licensing encumbrances. FreeBSD 1.0 followed in 1993."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["FreeBSD is known for ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "stability"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "performance"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "advanced features"
+      }), " → ZFS, DTrace, Jails, pf firewall, and the Ports Collection. It powers Netflix's CDN appliances (Open Connect), WhatsApp's messaging infrastructure, and PlayStation 4/5's system software. It has a permissive BSD license (2-clause), allowing commercial use without GPL obligations."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-world analogy"
+      }), ": FreeBSD is like a luxury German car (Mercedes S-Class) → conservatively engineered, extremely reliable, not flashy but everything works perfectly. Where Linux is a Toyota (adaptable, runs everywhere on everything), FreeBSD is the S-Class (fewer models but each is meticulously engineered)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture",
+      children: "Architecture"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["FreeBSD is a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "monolithic kernel"
+      }), " with a well-defined modular structure:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FreeBSD Kernel Architecture\n====================================================================\n|  USER SPACE                                                       |\n|  +--------+ +--------+ +--------+ +--------+                      |\n|  | Shell  | | Web    | | DB     | | User   |                      |\n|  | (csh)  | | (httpd)| | (PgSQL)| | Procs  |                      |\n|  +--------+ +--------+ +--------+ +--------+                      |\n====================================================================\n|  KERNEL SPACE                                                      |\n|  +--------------------------------------------------------------+  |\n|  | System call interface (SYS_syscall table)                    |  |\n|  +--------------------------------------------------------------+  |\n|  +----------+ +----------+ +----------+ +----------+             |  |\n|  | Scheduler | | VM       | | VFS      | | Network  |             |  |\n|  | (ULE)     | | (PHYSVM  | | (UFS/FFS,| | Stack    |             |  |\n|  |           | |  + SWAP) | |  ext2,   | | (TCP/IP) |             |  |\n|  |           | |          | |  ZFS)    | +----------+             |  |\n|  +----------+ +----------+ +----------+                            |  |\n|  +----------+ +----------+ +----------+                            |  |\n|  | KObj     | | MAC      | | Jail     |                            |  |\n|  | Framework| | (Trusted | | (OS-level|                            |  |\n|  | (driver  | |  BSD MAC)| |  virt.)  |                            |  |\n|  |  system) | +----------+ +----------+                            |  |\n|  +----------+                                                      |  |\n|  +--------------------------------------------------------------+  |\n|  | Device Drivers: Newbus (abstraction layer)                    |  |\n|  | GEOM (geometry transformation → RAID, encryption, journaling) |  |\n|  +--------------------------------------------------------------+  |\n====================================================================\n|  HARDWARE                                                          |\n|  x86/x64, ARM64, RISC-V, PowerPC, MIPS                            |\n====================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "freebsd-key-features",
+      children: "FreeBSD Key Features"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic (loadable kernel modules via kldload)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scheduler"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ULE scheduler: multi-queue, per-CPU run queues, load balancing, interactive priority"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHYSSEG-based page layout, unified buffer cache, swap via swapoff/on"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "File system"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UFS/FFS (Unix File System) with soft updates + journaling; ZFS (built-in kernel module)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network stack"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highly optimized, zero-copy, multi-threaded. Used as reference for many TCP improvements"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capsicum (capability-based sandboxing), Mandatory Access Control (MAC) framework, Jail"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jails (precursor to containers, ~5 years before Linux namespaces), bhyve (Type 2 hypervisor)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Licensing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BSD 2-clause → permissive, no GPL restrictions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "freebsd-jails",
+      children: "FreeBSD Jails"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Jails are OS-level virtualization: each jail has its own hostname, IP address, file system, users, and process tree, but shares the same kernel. Created in FreeBSD 4.0 (2000), they predate Linux namespaces by ~5 years and directly influenced Solaris Zones and Linux containers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# FreeBSD jail creation (classic method)\n# /etc/jail.conf configuration:\nwww {\n    host.hostname = \"www.example.com\";\n    ip4.addr = \"192.168.1.100\";\n    path = \"/usr/local/jails/www\";\n    exec.start = \"/bin/sh /etc/rc\";\n    exec.stop = \"/bin/sh /etc/rc.shutdown\";\n}\n\n# Start the jail\nservice jail start www\n\n# List jails\njls\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "freebsd-vs-linux-comparison",
+      children: "FreeBSD vs Linux Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FreeBSD"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "License"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BSD 2-clause (permissive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPLv2 (copyleft)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OS completeness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel + userland (base system)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel only (userland from GNU)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Init system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "rc.d (BSD-style)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "systemd (Linux-standard)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Package management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pkg (binary) + Ports (source)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "apt/dnf/pacman (distro-specific)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Device drivers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Newbus + kobj framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Platform-specific driver model"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ZFS (native kernel module), UFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VFS, ext4, XFS, btrfs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Networking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel-level TCP optimization, pf"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Netfilter/nftables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Jails/Containers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jails (2000), iocage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespaces + cgroups (2008)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "sysctl (runtime), loader.conf (boot)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "sysctl, kernel boot parameters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux binary compat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linuxulator (runs Linux binaries)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (native)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ZFS support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native, in-tree, integrated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ZFS-on-Linux (external module)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "minix-and-microkernels",
+      children: "Minix and Microkernels"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "minix",
+      children: "Minix"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Minix (Mini-Unix) was created by Andrew Tanenbaum in 1987 as an educational operating system. It implements a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "true microkernel"
+      }), ": only essential services (IPC, scheduling, interrupt handling) run in kernel mode. All other services (file system, process manager, device drivers, network stack) run as user-mode server processes communicating via message passing."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key facts"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Minix 3 (2006, latest stable) runs about 12,000 lines of kernel code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All device drivers are user-mode processes (crashed driver can be restarted without kernel panic)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each driver runs in its own isolated process with restricted privileges"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IPC latency: ~2-10 µs (kernel-to-userspace message passing overhead)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Direct inspiration for the Microkernel vs Monolithic kernel debate (Tanenbaum-Torvalds debate, 1992)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Minix 3 Microkernel Architecture\n====================================================================\n|  USER MODE                                                        |\n|  +----------+ +----------+ +----------+ +----------+              |\n|  | File     | | Process  | | Device   | | Network  |              |\n|  | Server   | | Manager  | | Drivers  | | Stack    |              |\n|  | (FS)     | | (PM)     | | (various)| | (Net)    |              |\n|  |          | |          | |          | |          |              |\n|  | Each is a| | Handles  | | Disk,    | | TCP/IP   |              |\n|  | user-mode| | fork,    | | USB,     | | stack,   |              |\n|  | process  | | exec,    | | console  | | sockets  |              |\n|  +----------+ +----------+ +----------+ +----------+              |\n|  +--------------------------------------------------------------+ |\n|  | IPC: Synchronous message passing between servers              | |\n|  | (send, receive, sendrec → kernel forwards between processes)  | |\n|  +--------------------------------------------------------------+ |\n====================================================================\n|  KERNEL MODE (microkernel)                                        |\n|  ~12,000 lines → IPC, scheduling, interrupt handling              |\n|  No file systems, no device drivers, no networking in kernel      |\n|  Scheduler: priority-based with multiple queues                   |\n====================================================================\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Minix kernel code patterns"
+      }), " (conceptual):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Simplified Minix message structure\ntypedef struct {\n    int m_source;           // Sender's process number\n    int m_type;             // Message type (NOTIFY, SENDREC, etc.)\n    union {\n        struct { int fd; char* buf; size_t nbytes; } m1;  // read/write\n        struct { pid_t pid; int status; } m2;              // process management\n        struct { int minor; char* buf; size_t count; } m3; // device I/O\n    };\n} message;\n\n// Kernel kernel_call() pseudo → microkernel IPC\nint kernel_call(message* m) {\n    // 1. Copy message from sender's address space\n    // 2. Verify recipient is valid\n    // 3. Do_async_send() to recipient's mailbox\n    // 4. Switch context to recipient task\n    // 5. Recipient calls receive(), gets the message\n    // 6. On reply, copy result back to sender\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Microkernel advantage"
+      }), ": A crashed file server or device driver can be restarted without crashing the entire system. In Linux, a driver crash = kernel crash (panic/Oops)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Microkernel disadvantage"
+      }), ": IPC overhead → every file read requires a message round-trip to the file server, which is slower than direct kernel function calls in a monolithic kernel."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sel4--formally-verified-microkernel",
+      children: "seL4 → Formally Verified Microkernel"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "seL4"
+      }), " is the first formally verified OS kernel in existence. Developed at NICTA (now CSIRO Data61) and UNSW, it is proven correct against its abstract specification using the Isabelle/HOL theorem prover."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Verified properties"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No buffer overflows"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No null pointer dereferences"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No memory leaks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No use-after-free"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No arithmetic overflows in critical paths"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All API calls behave according to specification"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Performance"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IPC latency: ~130 ns (highly optimized, direct process-to-process)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Syscall entry: ~60 cycles"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Context switch: ~200 cycles"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Minimal kernel: ~8,700 lines of C + 600 lines of assembly"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Capability-based security"
+      }), ": seL4 uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "capabilities"
+      }), " (protected object references) for all kernel resource management. A process can only access a resource (memory, IPC endpoint, thread) if it holds a capability. No other access control mechanism exists → no UIDs, no ACLs, no MAC policies. This is mathematically simpler to reason about."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// seL4: Capability-based invocation (conceptual)\n// seL4 uses a capability-space (cspace) → a protected object table\n\n// A thread must have the capability to:\nseL4_TCB_WriteRegisters(tcb_cap,  // requires cap to TCB\n                        false,     // no arch flags\n                        0,         // skip 0 registers\n                        0,         0,  // PC, SP\n                        seL4_CapInitThreadTCB);\n\n// IPC endpoint requires cap:\nseL4_Send(endpoint_cap, msg_info); // requires Send cap\n\n// Page mapping requires cap to page + cap to VSpace\nseL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,\n                  seL4_AllRights, seL4_ARM_Default_VMAttributes);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Application domains"
+      }), ": seL4 is used in safety-critical and security-critical systems: military vehicles, autonomous drones, medical devices, and verified-correct CPS (cyber-physical systems). The seL4 Foundation maintains the kernel."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "os-comparison-tables",
+      children: "OS Comparison Tables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "all-os-comparison-6-os--15-criteria",
+      children: "All-OS Comparison (6 OS × 15 Criteria)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "iOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RTOS (FreeRTOS/VxWorks)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + LKM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (NT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (Mach+BSD+IOKit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic (Linux fork)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (XNU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time executive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel LOC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~28M (v6.x)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50M (including drivers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2.5M"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~15M (kernel + HAL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2.5M (XNU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-12 KB (FreeRTOS), ~2M (VxWorks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "License"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPLv2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APSL (kernel open)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPLv2 + Apache 2.0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APSL (kernel only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIT (FreeRTOS), Commercial (VxWorks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Primary use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Servers, cloud, embedded"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop, enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Creative, professional"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile phones, tablets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iPhones, iPads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedded, IoT, safety-critical"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Market share (key)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "96%+ of top 1M servers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~75% desktop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~15% desktop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~87% mobile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~13% mobile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dominant in RT embedded"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scheduler"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EEVDF/CFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority + boost (32 levels)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MLFQ + QoS (6 QoS levels)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS + EAS + cgroups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MLFQ + QoS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed-priority preemptive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Thread model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 (NPTL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 (ETHREAD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 (Mach thread)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 (Linux thread)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1:1 (Mach thread)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 task = 1 C function"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Demand-paging, COW, THP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Working-set, VAD tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach VM, COW, compressed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ashmem/ION + LMKD + PSI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach VM + Jetsam"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Static/flat (no MMU often)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IPC primary"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipe, socket, shared mem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALPC, COM, named pipe"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach msg, XPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder (custom driver)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC (Mach messages)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Queue, semaphore, notification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "File system primary"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ext4, XFS, btrfs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NTFS, ReFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ext4, F2FS, EROFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAT (optional), dosFS, rawFS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC + MAC (SELinux/AA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL + VBS + MIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP + Sandbox + Code Sign"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux + permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox + SEP + TrustCache"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (FreeRTOS), DO-178C (VxWorks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Driver framework"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel .ko modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WDM/WDF (signed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (C++) + DriverKit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (HIDL/AIDL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (hw abstraction layer)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM, cgroups/namespaces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hyper-V, WSL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor.framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM (limited)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (single-user)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (FreeRTOS), VxWorks hypervisor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU architectures"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "x86, ARM, RISC-V, MIPS, etc."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "x86, x64, ARM64"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARM64 (Apple Silicon)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARM64, x86, RISC-V"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARM64 (Apple Silicon)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARM Cortex-M, RISC-V, AVR, PIC, x86"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lowest idle RAM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1.5 GB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~800 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~600 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~700 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1 KB (FreeRTOS), ~2 MB (VxWorks)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "desktop-os-comparison-linux-vs-windows-vs-macos",
+      children: "Desktop OS Comparison: Linux vs Windows vs macOS"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ease of installation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (distro-dependent)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (OEM pre-installed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (Apple hardware only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broad (all hardware classes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Excellent (vendor drivers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple hardware only (modern)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "GUI desktop environment"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GNOME, KDE, XFCE, etc."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop Window Manager (DWM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Aqua (Quartz Compositor)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Window system"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wayland / X11 (compositing)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DWM (Desktop Window Manager)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quartz Compositor (Core Animation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Package management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "apt, dnf, pacman, snap, flatpak"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MSI, winget, Microsoft Store"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pkg (Homebrew, .dmg, Mac App Store)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Software library"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vast open source; limited commercial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Largest commercial software library"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong creative/professional; limited gaming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Gaming"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Improving (Steam + Proton/Wine)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best-in-class (DirectX, Game Pass)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (Metal API, Apple Arcade)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Development"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best-in-class (gcc, clang, python, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good (VS, .NET, WSL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good (Xcode, Swift, Metal)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Enterprise management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Puppet, Ansible, Salt, LDAP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AD, GPO, SCCM, Intune"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MDM, JAMF, Profile Manager"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC + SELinux/AppArmor (kernel-level)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIC + VBS + Defender"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP + Sandbox + Gatekeeper + FileVault"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel stability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Module crash = kernel Oops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver crash = BSOD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DriverKit (user-space) improves stability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Default shell"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "bash / zsh"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PowerShell"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "zsh"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cloud integration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native cloud (AWS, GCP, Azure)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure + M365 deeply integrated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iCloud deeply integrated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "System update"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "apt upgrade, dnf upgrade"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows Update"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Software Update (System Settings)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free (open source)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$139-199 (Home/Pro)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free with Apple hardware"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PREEMPT_RT (available, standard Linux 6.2+)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows RT (limited)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not available (QoS-based soft RT only)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mobile-os-comparison-android-vs-ios",
+      children: "Mobile OS Comparison: Android vs iOS"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "iOS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux LTS fork + Android patches"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XNU (Mach + BSD)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "App runtime"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ART (AOT + JIT, profile-guided)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cocoa Touch (Swift/ObjC, native ARM64)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Programming languages"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java, Kotlin, C/C++ (NDK)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Swift, Objective-C, C++"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IPC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder (custom kernel driver)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC (Mach messages)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LMKD + PSI (proactive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jetsam (process killer)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Background execution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexible (services, jobs, alarms)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Restricted (BG tasks, push, limited time)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "File system"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ext4 / F2FS (user-data), EROFS (system)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS (encrypted, COW)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Encryption"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File-Based Encryption (FBE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Protection (per-file, SEP-backed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Biometrics"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fingerprint, face unlock (vendor-specific)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Face ID / Touch ID (Secure Enclave)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TEE (TrustZone, vendor implementation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Secure Enclave (Apple-designed silicon)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "App distribution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Play + F-Droid + sideloading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App Store only (notarized, reviewed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "App update model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APK updates via Google Play"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App Store + App Thinning + on-demand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Open source"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AOSP (100% full stack open)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel open (APSL), UI closed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Customizability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (launchers, widgets, custom ROMs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (limited to Apple-defined customization)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fragmentation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (screen sizes, OS versions, vendor skins)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (limited devices, fast adoption)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Multitasking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Split-screen, picture-in-picture, freeform"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Split-screen (iPad), PiP, Stage Manager (iPad)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security updates"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monthly via vendor + Google Play System Updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct from Apple (same day for all devices)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Market share"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~87% worldwide mobile OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~13% worldwide, ~60% in US"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Average selling price"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wide range ($50-$2000+)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Premium ($400-$1600)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware variety"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thousands of models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (iPhone SE / standard / Pro / Pro Max)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "First release"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "September 2008 (Android 1.0, HTC Dream)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "June 2007 (iPhone OS 1, original iPhone)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Latest version"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android 16 (2025)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iOS 19 (projected 2025)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rtos-vs-gpos-comparison",
+      children: "RTOS vs GPOS Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RTOS (FreeRTOS / VxWorks)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "GPOS (Linux / Windows)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Primary goal"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deterministic timing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput and fairness"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Timing guarantee"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (bounded worst-case execution)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (best-effort scheduling)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Context switch"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-500 cycles (Cortex-M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3000-10000 cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interrupt latency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50-200 cycles (deterministic)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500-2000+ cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory protection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None or optional (MPU/MMU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always (MMU, per-process isolation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Address space"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single (all tasks share)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-process virtual address space"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dynamic memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple (no virtual memory usually)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full VM with demand paging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Task count"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10-100s (embedded)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1000+ (desktop)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "File system"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional minimal (FAT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full journaling (NTFS, ext4, APFS)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Networking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lightweight (lwIP, minimal TCP/IP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full stack (TCP/IP, routing, firewall)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kernel footprint"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 KB - 2 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-50 MB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RAM requirement"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 KB - 8 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "512 MB - 16 GB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No storage needed (flash optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required (GBs of storage)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Development model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-compilation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native or cross-compilation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Debugging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JTAG/SWD, logic analyzer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Debugger, kernel dump, perf"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Certification"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxWorks: DO-178C, IEC 61508"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (SELinux only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Power management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tickless sleep, deep sleep"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACPI sleep states, S3/S4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Multitasking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cooperative + Preemptive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Preemptive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ESP32 sensor node, SpaceX flight computer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ubuntu server, Windows desktop"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rtos-vs-gpos-selection-guide",
+      children: "RTOS vs GPOS Selection Guide"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Choose RTOS when:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system must respond to events within a guaranteed maximum time (missile guidance, airbag deployment, pacemaker)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system runs on a microcontroller (Cortex-M, AVR, PIC) with < 512 KB RAM and < 4 MB flash"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Certification is required (avionics DO-178C, medical IEC 62304, automotive ISO 26262)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Power consumption must be < 1 mW (battery-operated sensor for years)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system has 1-100 well-defined periodic/event-driven tasks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "There is no human interactive interface (no GUI, no web server)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Choose GPOS when:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system needs a full GUI (desktop, mobile app)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multiple user applications must run simultaneously (web browser, office suite, games)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Memory protection and process isolation are critical for security"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system has > 100 MB RAM and > 1 GB storage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system needs complex networking (routing, firewalls, VPN, web servers)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system uses standard file systems with journaling and snapshots"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Development speed matters (GPOS has richer tooling and libraries)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system needs to run third-party apps (app store / package manager)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "which-os-for-which-task",
+      children: "Which OS for Which Task?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Task"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Recommended OS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Web server (static)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux (Nginx)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fastest I/O, small footprint, EPoll, sendfile"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Database server (MySQL/PostgreSQL)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best filesystem performance (XFS/ext4), huge pages, io_uring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Game development"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DirectX 12, Visual Studio, gaming SDKs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Video editing / After Effects"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Metal GPU acceleration, ProRes codecs, unified memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3D rendering (Blender, Maya)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux / Windows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux: farm rendering, Windows: UI tools"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Android app development"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS (or Linux)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iOS emulation requires macOS; Android works on both"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "iOS app development"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Xcode requires macOS; Apple's legal restriction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Embedded IoT sensor"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeRTOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-12 KB footprint, tickless sleep, years on battery"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Avionics flight control"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxWorks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DO-178C DAL A certified, deterministic, space-proven"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Autonomous vehicle"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxWorks / QNX"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard real-time, safety-certified, ISO 26262"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AI/ML training"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux (Ubuntu)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NVIDIA CUDA, ROCm, tensor frameworks, InfiniBand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scientific computing / HPC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Top 500 supercomputers run Linux; MPI clusters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mobile phone"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android / iOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android: variety, iOS: ecosystem lock-in"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Desktop office production"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microsoft Office, Adobe, enterprise apps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CI/CD build server"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Docker-native, GitHub Actions, GitLab runners"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Networking appliance (router/firewall)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux / FreeBSD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux: iptables/nftables; FreeBSD: pf (better performance)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage appliance (NAS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD / TrueNAS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ZFS: best data integrity, snapshots, compression"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Audio production"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core Audio, low-latency, Logic Pro"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cybersecurity / Pentesting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux (Kali)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extensive security tooling, raw socket access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-time audio (live performance)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux (PREEMPT_RT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PREEMPT_RT merged in mainline (6.2+), JACK/ALSA"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "rtos-vs-gpos-selection-detailed-decision-tree",
+      children: "RTOS vs GPOS Selection: Detailed Decision Tree"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "START: Does your system need guaranteed timing?\n  |\n  +-- YES → Does it need certification (DO-178C, ISO 26262)?\n  |     |\n  |     +-- YES → VxWorks (certified) or QNX\n  |     |\n  |     +-- NO → Is your MCU < 256 KB RAM?\n  |           |\n  |           +-- YES → FreeRTOS (6-12 KB kernel)\n  |           |\n  |           +-- NO → Is POSIX compatibility needed?\n  |                 |\n  |                 +-- YES → VxWorks (POSIX PSE54) or Zephyr\n  |                 |\n  |                 +-- NO → FreeRTOS (simplest)\n  |\n  +-- NO → Does it need a GUI or human interaction?\n        |\n        +-- YES → Does it need a file system + networking?\n        |     |\n        |     +-- YES → Linux (full GPOS)\n        |     |\n        |     +-- NO → Embedded Linux (Yocto/Buildroot)\n        |\n        +-- NO → Is the hardware an MCU (< 2 MB flash)?\n              |\n              +-- YES → FreeRTOS / Zephyr\n              |\n              +-- NO → Linux (even small: ~5 MB kernel minimal)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "aws-amazon-web-services",
+      children: "AWS (Amazon Web Services)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["AWS runs on ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Linux"
+      }), " → specifically a custom distribution called Amazon Linux (based on Fedora/RHEL). Key OS features leveraged:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "KVM"
+        }), ": AWS Nitro hypervisor uses KVM for virtualization"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "cgroups/namespaces"
+        }), ": AWS Lambda uses Firecracker microVMs, which use Linux namespaces for isolation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "XFS"
+        }), ": Most EBS volumes use XFS for high-performance file system"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "io_uring"
+        }), ": RDS (Aurora) uses io_uring for async database I/O"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "eBPF"
+        }), ": Used for networking (Cilium), observability (AWS Distro for OTEL), and security (GuardDuty)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "cgroup v2"
+        }), ": ECS/Fargate task resource limits"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "microsoft-azure",
+      children: "Microsoft Azure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Azure uses a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "custom Linux-based OS"
+      }), " for its hypervisor layer (Cloud Host → based on Linux with custom kernel) and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "customized Windows Server"
+      }), " for platform services."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Sphere"
+        }), ": Custom Linux (MCE) for IoT security → hardened, minimal"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Linux"
+        }), " (formerly CBL-Mariner): Internal Linux distribution for container hosts (AKS)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Windows Server"
+        }), ": Used for Azure App Service, Azure SQL legacy, Azure AD/Entra ID domain controllers"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hyper-V"
+        }), ": Type 1 hypervisor (ring -1) runs on Windows Server"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "google-cloud-platform-gcp",
+      children: "Google Cloud Platform (GCP)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google's internal infrastructure"
+        }), ": Runs on their own custom Linux kernel (gLinux, Debian-based)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google Kubernetes Engine (GKE)"
+        }), ": Uses Container-Optimized OS (COS) → hardened Chrome OS Linux derivative"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "gVisor"
+        }), ": User-space kernel for container sandboxing (intercepts syscalls)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google's Borg"
+        }), ": Cluster manager that predates Kubernetes; uses cgroup-based isolation"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tesla",
+      children: "Tesla"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Tesla vehicles run ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Linux"
+      }), " (specifically Ubuntu-based Yocto/Buildroot) for the main infotainment system:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Infotainment (MCU)"
+        }), ": Ubuntu-based Linux with QT UI (Model S/X 2012-2022) → Custom Linux (Model 3/Y, refreshed S/X)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Autopilot (FSD Computer)"
+        }), ": Custom RTOS-like environment on Tesla's FSD chip (Hardware 3.0+)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ROS (Robot Operating System)"
+        }), ": Foundation for some vehicle control modules"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OTA updates"
+        }), ": Full system updates via OSTree (atomic, delta-update)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "spacex",
+      children: "SpaceX"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Falcon 9 / Starship flight computers"
+        }), ": Run three redundant ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "x86"
+        }), " computers per controller, all running ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linux"
+        }), " (modified) with real-time extensions. The flight software is written in C++ (using C++11/14) and runs on top of a Linux kernel with custom real-time patches."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dragon spacecraft"
+        }), ": Uses ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "VxWorks"
+        }), " (DO-178C certifiable) for critical life-support and docking operations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Starlink satellites"
+        }), ": Run ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linux"
+        }), " on each satellite"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ios-in-iphones",
+      children: "iOS in iPhones"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Every iPhone runs ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "iOS"
+        }), " (XNU kernel), managing the A-series/M-series SoC with:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Secure Enclave"
+            }), ": All biometric and cryptographic operations"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "ANE (Apple Neural Engine)"
+            }), ": On-device ML for Face ID, Camera, Siri"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "ISP (Image Signal Processor)"
+            }), ": Real-time camera pipeline processing"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Display Engine"
+            }), ": ProMotion (120 Hz variable refresh)"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Embedded Swift / Real-time"
+            }), ": Audio DSP, sensor fusion on separate cores"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "other-notable-deployments",
+      children: "Other Notable Deployments"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "OS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PlayStation 4/5"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD (Orbis OS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stable base, permissive BSD license allowed proprietary layer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nintendo Switch"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD-based"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD's networking and stability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Netflix CDN"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom TCP stack optimized for streaming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mars Perseverance Rover"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxWorks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certified, fault-tolerant, space heritage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ingenuity Helicopter"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxWorks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard real-time flight control on a tiny FPGA"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "WhatsApp"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High connection density, efficient networking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MacBooks / iMacs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consumer macOS for creative/professional market"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Windows PCs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows 10/11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise, gaming, general desktop"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Android Phones"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android (AOSP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mass-market mobile OS (87% global share)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AirPods"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom RTOS (FreeRTOS-based)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ultra-low power, tiny footprint"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Apple Watch"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "watchOS (XNU derivative)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-power variant of iOS/macOS kernel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fitbit / Wear OS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedded Linux / FreeRTOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-power, simple UI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Automotive IVI"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "QNX / Embedded Linux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Infotainment systems (70% of cars use QNX for safety)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space Station (ISS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Debian Linux (laptops), custom (critical)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80+ laptops run Debian; critical systems use proprietary RTOS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Chrome OS / Chromebooks"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux + Chrome Browser"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud-first, security-hardened Linux"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Windows NT"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "macOS (XNU)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FreeBSD"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Android"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "iOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "FreeRTOS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VxWorks"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel Type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic + modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (Mach+BSD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolithic (Linux fork)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid (XNU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time executive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time kernel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority + boosts (32 levels)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EEVDF/CFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MLFQ + QoS (6 levels)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ULE scheduler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CFS + EAS + cgroups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MLFQ + QoS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed-priority preempt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed-priority + RMS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File System"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NTFS, ReFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VFS → ext4/XFS/Btrfs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UFS, ZFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ext4, F2FS, EROFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "APFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FAT (optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dosFS, TrueFFS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CreateProcess()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fork()/clone()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fork() + Mach tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fork()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zygote fork"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "posix_spawn()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "xTaskCreate()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "taskSpawn()"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL, VBS, BitLocker, MIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux, AppArmor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIP, Sandbox, AMFI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capsicum, MAC, Jails"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux + permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandbox + SEP + TrustCache"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (hardware-based)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DO-178C, ARINC 653"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC primary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ALPC, COM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipe, socket, shared mem, D-Bus"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mach msg, XPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Socket, pipe, POSIX IPC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binder (custom kernel driver)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XPC (Mach msg)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Queue, semaphore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Msg queue, semaphore"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GUI integrated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (win32k.sys)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (Wayland/X11 optional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (Aqua + Quartz)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (X11)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (SurfaceFlinger)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (UIKit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optional (WindML)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Device driver"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WDM/WDF (kernel+user)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-kernel .ko modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit (C++ OO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Newbus (abstraction)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL (HIDL/AIDL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "I/O Kit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HAL layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VxBus"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hyper-V"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM, cgroups/NS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor.framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "bhyve, Jails"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (restricted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor (VxWorks 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Form factor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop, server, tablet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server, desktop, embedded, mobile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop, laptop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server, appliance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile, tablet, TV, watch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile, tablet, watch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MCU, IoT, sensor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avionics, auto, medical"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NT Kernel"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows NT hybrid kernel: executive + kernel + HAL"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "XNU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple hybrid kernel (Mach + BSD + I/O Kit) → \"X is Not Unix\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "HAL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware Abstraction Layer: abstracts CPU architecture for NT portability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EPROCESS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows kernel process object (executive process block)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ETHREAD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows kernel thread object (executive thread block)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IRQL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt Request Level → Windows interrupt prioritization scheme"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DISPATCH_LEVEL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IRQL level where thread scheduling occurs (no page faults allowed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Completely Fair Scheduler → Linux's fair scheduling algorithm (v2.6.23–v6.5)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EEVDF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Earliest Eligible Virtual Deadline First → Linux scheduler (v6.6+)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual File System → Linux abstraction layer over file system implementations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "task_struct"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux kernel structure representing a process or thread"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Zygote"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android pre-loaded process from which all app processes fork"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Binder"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android's custom IPC mechanism (/dev/binder driver)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ashmem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android shared memory allocator (deprecated in favor of ION)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LMK/LMKD"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low Memory Killer / daemon → Android proactive process reclamation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Jetsam"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iOS memory management process killer mechanism"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ART"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android Runtime → AOT + JIT compilation for Java/Kotlin apps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SEP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Secure Enclave Processor → Apple's isolated security coprocessor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AMFI"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple Mobile File Integrity → code signing enforcement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "APFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple File System → COW, encrypted, snapshots, clones (2017+)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SIP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System Integrity Protection → macOS root-level file protection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "QoS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality of Service → macOS/iOS thread priority tiers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "XPC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apple IPC mechanism based on Mach messages (inter-process communication)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Jails"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeBSD OS-level virtualization (precursor to containers)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ZFS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced FS with snapshots, checksums, pooled storage (OpenZFS)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "seL4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Formally verified microkernel (Isabelle/HOL proof)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Minix"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Educational microkernel (Tanenbaum, 1987)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DO-178C"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avionics software safety certification (up to DAL A → catastrophic failure)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PREEMPT_RT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux kernel real-time preemption patch (merged in v6.2, 2023)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Tickless idle"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FreeRTOS power-saving mode: no periodic tick between task activations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Priority inversion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-priority task blocked by low-priority task holding a resource"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Priority inheritance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol that boosts low-priority task's priority to match blocked high-priority task"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EAS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Energy-Aware Scheduling → Android/Linux scheduler for big.LITTLE power efficiency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ION"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Android contiguous memory allocator for GPU/camera/display"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PAC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pointer Authentication Code → ARM64e hardware security against ROP/JOP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PPL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Page Protection Layer → Apple Silicon kernel page table protection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which kernel type does Windows NT use?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Pure microkernel"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Hybrid kernel"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Exokernel"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Monolithic kernel"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the lowest IRQL level in Windows?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) HIGH_LEVEL"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) DISPATCH_LEVEL"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) PASSIVE_LEVEL"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) APC_LEVEL"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which scheduler replaced CFS in Linux v6.6?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) O(1) scheduler"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) WRR scheduler"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) EEVDF scheduler"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) BFS scheduler"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "macOS XNU combines which three components?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Linux + GNU + I/O Kit"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Mach + BSD + I/O Kit"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) NT + HAL + Executive"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) QNX + FreeBSD + Mach"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary IPC mechanism in Android?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) D-Bus"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Binder"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Pipes"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Shared memory"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which component manages process killing under memory pressure on iOS?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) LMKD"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) OOM Killer"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Jetsam"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) kswapd"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "FreeRTOS is best suited for:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Desktop computing"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Cloud servers"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Microcontroller-based embedded systems"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Video game consoles"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which RTOS is DO-178C certified for safety-critical avionics?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FreeRTOS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) VxWorks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Zephyr"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Minix"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is priority inversion?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) A low-priority task starving a high-priority task"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A high-priority task preempting all others"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Round-robin scheduling between equal priorities"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) The scheduler giving negative priority values"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which OS uses a Secure Enclave Processor (SEP) for biometric security?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Android"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) iOS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Linux"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Windows"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "FreeBSD Jails are best described as:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Hardware emulation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) OS-level virtualization"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Process emulation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Ransomware protection"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which scheduling class in Linux has the highest priority?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) SCHED_FIFO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) SCHED_NORMAL"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) SCHED_DEADLINE"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Stop scheduling class"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the key advantage of a microkernel design?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Faster system calls"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Failed servers can be restarted without crashing the kernel"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Better file system performance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Simpler device driver model"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which memory compression algorithm does macOS use?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) LZ4"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) WKdm"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) LZ77"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) zstd"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which mobile OS uses Trust Cache for code signature verification?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Android"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) iOS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Both"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Neither"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers"
+      }), ": 1-b, 2-c, 3-c, 4-b, 5-b, 6-c, 7-c, 8-b, 9-a, 10-b, 11-b, 12-d, 13-b, 14-b, 15-b"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which file system is the default for Windows NT?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) FAT32"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) NTFS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) ReFS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) ext4"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What feature allows Android apps to run in a sandboxed environment?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Docker containers"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) App sandbox with per-app UID isolation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Virtual machines"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Java security manager"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which of the following is a feature unique to macOS's memory management?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Swap compression (WKdm)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Buddy allocator"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) SLUB allocator"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Page coloring"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In FreeRTOS, what is the purpose of a queue?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Store task control blocks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Pass data between tasks in a thread-safe manner"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Manage heap memory allocation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Schedule tasks in round-robin order"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the size of seL4's trusted computing base (TCB)?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) ~8700 LOC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) ~50,000 LOC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) ~500,000 LOC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) ~8,700,000 LOC"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers"
+      }), ": 1-b, 2-c, 3-c, 4-b, 5-b, 6-c, 7-c, 8-b, 9-a, 10-b, 11-b, 12-d, 13-b, 14-b, 15-b, 16-b, 17-b, 18-a, 19-b, 20-a"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-implementation--os-architecture-comparison-framework",
+      children: "TypeScript Implementation — OS Architecture Comparison Framework"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * OSComparisonFramework: A TypeScript model for comparing operating\n * system kernel architectures across key design dimensions.\n * Enables quantitative comparison of Windows, Linux, macOS, Android,\n * iOS, FreeRTOS, VxWorks, FreeBSD, and seL4.\n */\ntype KernelType = 'monolithic' | 'hybrid' | 'microkernel' | 'unikernel';\ntype SchedulerType = 'priority' | 'cfs' | 'eevdf' | 'round-robin' | 'fixed-priority' | 'deadline';\ntype MemoryModel = 'virtual' | 'flat' | 'paged' | 'segmented';\ntype IpcMechanism = 'message-passing' | 'shared-memory' | 'binder' | 'xpc' | 'pipes' | 'signals';\n\ninterface OSArchitecture {\n  name: string;\n  kernelType: KernelType;\n  kernelLOC: number;       // estimated lines of code\n  scheduler: SchedulerType;\n  preemptive: boolean;\n  rtCapable: boolean;\n  memoryModel: MemoryModel;\n  addressSpaceBits: number;\n  ipc: IpcMechanism;\n  driverModel: string;\n  posixCompliant: boolean;\n  certifiable: boolean;    // DO-178C / ISO 26262\n  minRAM: string;          // minimum RAM requirement\n  bootTime: string;        // typical boot time\n  primaryUse: string;\n}\n\nclass OSArchitectureAnalyzer {\n  private oss: OSArchitecture[] = [\n    {\n      name: 'Windows NT', kernelType: 'hybrid', kernelLOC: 50_000_000,\n      scheduler: 'priority', preemptive: true, rtCapable: false,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'message-passing', driverModel: 'WDDM/UMDF',\n      posixCompliant: false, certifiable: false,\n      minRAM: '2 GB', bootTime: '10-30s', primaryUse: 'Desktop/Server'\n    },\n    {\n      name: 'Linux', kernelType: 'monolithic', kernelLOC: 28_000_000,\n      scheduler: 'eevdf', preemptive: true, rtCapable: true,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'shared-memory', driverModel: 'LKM + Device Tree',\n      posixCompliant: true, certifiable: false,\n      minRAM: '256 MB', bootTime: '3-10s', primaryUse: 'Server/Embedded/Desktop'\n    },\n    {\n      name: 'macOS XNU', kernelType: 'hybrid', kernelLOC: 8_000_000,\n      scheduler: 'cfs', preemptive: true, rtCapable: false,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'message-passing', driverModel: 'I/O Kit',\n      posixCompliant: true, certifiable: false,\n      minRAM: '4 GB', bootTime: '10-20s', primaryUse: 'Desktop/Mobile'\n    },\n    {\n      name: 'Android', kernelType: 'monolithic', kernelLOC: 30_000_000,\n      scheduler: 'cfs', preemptive: true, rtCapable: false,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'binder', driverModel: 'HAL + LKM',\n      posixCompliant: true, certifiable: false,\n      minRAM: '2 GB', bootTime: '15-30s', primaryUse: 'Mobile/Embedded'\n    },\n    {\n      name: 'iOS/XNU', kernelType: 'hybrid', kernelLOC: 10_000_000,\n      scheduler: 'cfs', preemptive: true, rtCapable: false,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'xpc', driverModel: 'I/O Kit (modified)',\n      posixCompliant: true, certifiable: false,\n      minRAM: '1 GB', bootTime: '10-20s', primaryUse: 'Mobile'\n    },\n    {\n      name: 'FreeRTOS', kernelType: 'microkernel', kernelLOC: 15_000,\n      scheduler: 'fixed-priority', preemptive: true, rtCapable: true,\n      memoryModel: 'flat', addressSpaceBits: 32,\n      ipc: 'message-passing', driverModel: 'Simple HAL',\n      posixCompliant: false, certifiable: true,\n      minRAM: '2 KB', bootTime: '< 100ms', primaryUse: 'MCU/Embedded'\n    },\n    {\n      name: 'VxWorks', kernelType: 'microkernel', kernelLOC: 1_000_000,\n      scheduler: 'fixed-priority', preemptive: true, rtCapable: true,\n      memoryModel: 'virtual', addressSpaceBits: 64,\n      ipc: 'message-passing', driverModel: 'VxBus',\n      posixCompliant: true, certifiable: true,\n      minRAM: '1 MB', bootTime: '< 500ms', primaryUse: 'Safety-Critical/Embedded'\n    },\n    {\n      name: 'FreeBSD', kernelType: 'monolithic', kernelLOC: 10_000_000,\n      scheduler: 'cfs', preemptive: true, rtCapable: false,\n      memoryModel: 'virtual', addressSpaceBits: 48,\n      ipc: 'shared-memory', driverModel: 'KLD modules',\n      posixCompliant: true, certifiable: false,\n      minRAM: '512 MB', bootTime: '3-8s', primaryUse: 'Server/Network'\n    },\n    {\n      name: 'seL4', kernelType: 'microkernel', kernelLOC: 8_700,\n      scheduler: 'round-robin', preemptive: true, rtCapable: true,\n      memoryModel: 'virtual', addressSpaceBits: 64,\n      ipc: 'message-passing', driverModel: 'User-space servers',\n      posixCompliant: false, certifiable: true,\n      minRAM: '1 MB', bootTime: '< 50ms', primaryUse: 'Safety-Critical/Formal'\n    }\n  ];\n\n  /** Compare a specific metric across all OSes */\n  compareByMetric(metric: keyof OSArchitecture): void {\n    console.log(`\\n=== Comparison by: ${metric} ===`);\n    console.log('OS'.padEnd(20) + ' | ' + String(metric).padEnd(20));\n    console.log('-'.repeat(45));\n    \n    for (const os of this.oss) {\n      const value = String(os[metric]);\n      console.log(os.name.padEnd(20) + ' | ' + value.padEnd(20));\n    }\n  }\n\n  /** Find the best OS for a given set of requirements */\n  recommendOS(requirements: Partial<OSArchitecture>): string[] {\n    const scores: { name: string; score: number }[] = [];\n\n    for (const os of this.oss) {\n      let score = 0;\n      let matches = 0;\n\n      if (requirements.kernelType && os.kernelType === requirements.kernelType) { score += 10; matches++; }\n      if (requirements.rtCapable !== undefined && os.rtCapable === requirements.rtCapable) { score += 10; matches++; }\n      if (requirements.certifiable !== undefined && os.certifiable === requirements.certifiable) { score += 10; matches++; }\n      if (requirements.posixCompliant !== undefined && os.posixCompliant === requirements.posixCompliant) { score += 5; matches++; }\n      if (requirements.preemptive !== undefined && os.preemptive === requirements.preemptive) { score += 5; matches++; }\n\n      if (matches > 0) scores.push({ name: os.name, score });\n    }\n\n    return scores.sort((a, b) => b.score - a.score).map(s => s.name);\n  }\n\n  generateReport(): void {\n    console.log('='.repeat(90));\n    console.log('OS Architecture Comparison Report');\n    console.log('='.repeat(90));\n\n    // Kernel type distribution\n    const types = new Map<KernelType, number>();\n    for (const os of this.oss) {\n      types.set(os.kernelType, (types.get(os.kernelType) || 0) + 1);\n    }\n    console.log('\\nKernel Type Distribution:');\n    for (const [type, count] of types) {\n      console.log(`  ${type}: ${count} OSes`);\n    }\n\n    // Scheduler comparison\n    console.log('\\nScheduler Strategies:');\n    for (const os of this.oss) {\n      console.log(`  ${os.name.padEnd(15)}: ${os.scheduler}${os.rtCapable ? ' (RT-capable)' : ''}`);\n    }\n\n    // Size comparison\n    console.log('\\nKernel Size (LOC):');\n    const sortedBySize = [...this.oss].sort((a, b) => b.kernelLOC - a.kernelLOC);\n    for (const os of sortedBySize) {\n      const sizeStr = os.kernelLOC >= 1_000_000\n        ? `${(os.kernelLOC / 1_000_000).toFixed(1)}M` : `${(os.kernelLOC / 1000).toFixed(0)}K`;\n      console.log(`  ${os.name.padEnd(15)}: ${sizeStr.padStart(8)} LOC`);\n    }\n\n    // Recommendation examples\n    console.log('\\n=== Scenario-Based Recommendations ===');\n    const scenarios: { name: string; req: Partial<OSArchitecture> }[] = [\n      { name: 'Safety-critical avionics', req: { rtCapable: true, certifiable: true, posixCompliant: true } },\n      { name: 'Mobile consumer device', req: { kernelType: 'monolithic', rtCapable: false, posixCompliant: true } },\n      { name: 'Tiny IoT sensor', req: { rtCapable: true, minRAM: '2 KB', certifiable: false } },\n      { name: 'Cloud server', req: { kernelType: 'monolithic', posixCompliant: true } },\n      { name: 'Formally verified system', req: { certifiable: true, rtCapable: true } },\n    ];\n\n    for (const scenario of scenarios) {\n      const recs = this.recommendOS(scenario.req);\n      console.log(`  ${scenario.name.padEnd(35)}: ${recs.slice(0, 3).join(', ') || 'No match'}`);\n    }\n  }\n}\n\n// Run the comparison\nconst analyzer = new OSArchitectureAnalyzer();\nanalyzer.generateReport();\n\nconsole.log('\\n=== Selected Comparisons ===');\nanalyzer.compareByMetric('kernelLOC');\nanalyzer.compareByMetric('scheduler');\nanalyzer.compareByMetric('kernelType');\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Windows NT"
+        }), " uses a hybrid kernel with Executive layer, HAL, and priority-driven 32-level scheduler"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linux"
+        }), " uses a monolithic kernel with EEVDF/CFS scheduler, dynamic task_struct, and loadable kernel modules; dominates servers and cloud"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "macOS XNU"
+        }), " combines Mach (IPC, VM, threads) + BSD (processes, networking, FS) + I/O Kit; features SIP, sandbox, and Apple Silicon unified memory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Android"
+        }), " extends the Linux kernel with Binder IPC, ART runtime, ashmem/ION memory, and LMKD process management; dominates mobile at ~87% share"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "iOS"
+        }), " uses XNU with sandboxing, SEC security, Jetsam memory management, and tight Apple Silicon integration"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "RTOS (FreeRTOS/VxWorks)"
+        }), " provide deterministic timing: FreeRTOS for tiny MCUs (6-12 KB), VxWorks for certified safety-critical (DO-178C, ISO 26262)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FreeBSD"
+        }), " developed jails (precursor to containers) and ZFS; permissive BSD license; powers Netflix, PlayStation, WhatsApp"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Minix and seL4"
+        }), " demonstrate microkernel principles: minimal kernel, servers in user space, seL4 formally verified"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Priority inversion"
+        }), " is solved by priority inheritance or priority ceiling protocol"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OS selection"
+        }), " depends on task requirements: real-time determinism, certification, form factor, hardware constraints, and ecosystem needs"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Compare the kernel architectures of Windows, Linux, and macOS. What are the advantages and disadvantages of each approach?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is priority inversion? How does priority inheritance solve it? Draw a timeline diagram showing the problem."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What are the differences between Android's Binder IPC and iOS's XPC? Which is more efficient and why?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "List three scenarios where you would choose FreeRTOS over Linux."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the Secure Enclave in iOS and what security functions does it perform?"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Write a ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "C program"
+          }), " demonstrating priority inheritance on Linux. Create three threads at different priorities that share a mutex (use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "pthread_mutexattr_setprotocol"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PTHREAD_PRIO_INHERIT"
+          }), "). Show the thread execution order with and without priority inheritance. Measure execution time of each thread."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "FreeRTOS exercise"
+          }), ": Write a FreeRTOS application with 3 tasks: a temperature sensor reader (2 Hz), a display update task (1 Hz), and an alert task (triggered when temperature > 50°C). Use a queue to pass data between the sensor reader and the display task. Use a binary semaphore for the alert task. Measure worst-case execution time."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Linux scheduling"
+          }), ": Write a C program that creates 5 threads at different CFS nice values (-20, -10, 0, 10, 19). Each thread performs the same CPU-bound computation. Measure how many iterations each thread completes in 10 seconds. Explain the ratio of iterations in terms of the weight map in CFS/EEVDF."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Android vs iOS analysis"
+          }), ": Create a table comparing how Android and iOS handle background execution. Include: background fetch, push notifications, location updates, audio playback, Bluetooth communication, and alarms."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "RTOS vs GPOS decision"
+          }), ": For each of the following systems, determine whether an RTOS or GPOS (Linux/Windows) is more appropriate and justify your answer:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Automotive engine control unit"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) In-flight entertainment system"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Smart home hub"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Implantable pacemaker"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "e) Autonomous warehouse robot"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "f) Video streaming server"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "g) Drone flight controller"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "h) Smartwatch"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "IPC benchmark"
+          }), ": Write a benchmark program comparing IPC latency and throughput on a Linux system across:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pipes (unnamed)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Unix domain sockets (SOCK_STREAM)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Shared memory (mmap + pthread barriers)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "TCP sockets over loopback"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Netlink sockets"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Binder (if run on Android)\nMeasure round-trip latency for 4-byte and 4096-byte messages. Explain results in terms of context switches, buffer copies, and kernel involvement."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Minix-style microkernel prototype"
+          }), ": Create a microkernel prototype using Unix signals and shared memory that demonstrates:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A kernel process providing only IPC (message passing via shared memory)"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A file server process handling ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "open"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "read"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "write"
+            }), " requests"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A process manager handling ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "fork"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "exit"
+            })]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A test program that requests file operations\nShow that killing and restarting the file server does not crash the kernel or the test program."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Android Binder deep-dive"
+          }), ": Write a C program that interacts with the Android Binder driver directly (via ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/dev/binder"
+          }), " ioctls). Implement: BC_TRANSACTION and BR_TRANSACTION handling, a simple service that returns \"hello\" to clients, and client code that sends a transaction. Compare Binder latency to Unix domain sockets on the same Android device."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "seL4 capability system design"
+          }), ": Design a capability-based security system for a drone flight controller using seL4 concepts. Define:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "The capability types (Sched, Mem, IRQ, IPC endpoint, etc.)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "The CNode structure (capability addressing)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "How capabilities would be delegated from the bootloader to the flight control application"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "The trusted computing base (TCB) for the system"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "How an attacker exploiting the camera driver would be contained"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Formal verification analysis"
+          }), ": Research and compare the formal verification approaches for:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "seL4 (Isabelle/HOL, C refinement proofs)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "CertiKOS (Coq, layer-based verification)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Hyper-V (VCC, verified hypervisor)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "For each: what properties are proven, what is the TCB size, how much of the kernel is verified, and what are the practical limitations of the approach?"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Kernel build time analysis"
+          }), ": Build the Linux kernel from source. Measure: total build time with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "make -jN"
+          }), ", time per subsystem (kernel/, mm/, fs/, net/, drivers/), most time-consuming modules, and disk space used by the build. Compare with a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "make tinyconfig"
+          }), " build."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Android vs iOS background execution benchmark"
+          }), ": Write applications for both Android and iOS that: start a background service, download a 10MB file every 5 minutes, and display a local notification. Measure: how long the background task runs before being suspended, total data downloaded per hour, battery drain percentage per hour, and the latest OS version tested."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "FreeBSD Jails vs Linux Containers"
+          }), ": Set up a FreeBSD jail and a Docker container with equivalent configurations. Compare: security isolation (syscall filtering, root capabilities), filesystem layout, networking models (VNET vs bridge), resource limits, and administrative commands. Create a comprehensive comparison table."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Microkernel IPC latency benchmark"
+          }), ": Write a benchmark that measures IPC latency for message passing across: Linux pipe, Linux Unix socket, Linux TCP loopback, seL4 IPC (simulated with shared memory and spin-wait), and QNX message passing. Measure round-trip time for 64-byte and 4096-byte messages. Explain the differences in terms of context switches and buffer copies."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "RTOS scheduling analysis"
+          }), ": Compare scheduling behavior of FreeRTOS vs a PREEMPT_RT Linux kernel. Create a test workload with 3 tasks at different priorities performing periodic work. Measure: task activation jitter, deadline miss rate, context switch overhead, and interrupt latency. Show which system provides more deterministic behavior."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Windows vs Linux driver model comparison"
+          }), ": Write a simple driver concept for both Windows (using WDF) and Linux (using platform device driver framework). The driver should: register with the system, handle an interrupt, and read a hardware register. Compare: lines of code, boilerplate required, debugging tools (WinDbg vs kgdb), and community documentation quality."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "OS energy efficiency benchmark"
+          }), ": Create a benchmark that measures energy efficiency across Linux, Windows, and macOS on identical hardware (same CPU, RAM, storage). The workload should include: web browsing, video playback, idle with email, and compile-intensive task. Measure: power draw (watts), performance score, and perf-per-watt ratio."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Binder vs XPC deep dive"
+          }), ": Research and compare the internal implementations of Android's Binder and iOS's XPC. Analyze: data serialization format (Parcel vs XPC dictionary), memory management for large transfers (ashmem vs mmap), security context checking, and latency characteristics. Write a benchmark that transfers 1KB, 64KB, and 1MB messages through each IPC mechanism."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "seL4 capability delegation simulation"
+          }), ": Implement a capability-based access control system in TypeScript based on seL4's model. Define: CNode (capability node) with slots, endpoint capabilities for IPC, untyped memory capabilities, and delegation (copy/mint/move) operations. Simulate a boot sequence where the root task delegates access to a device driver task and a user application task."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Multi-OS boot time comparison"
+          }), ": Write a script that measures boot time for Linux, Windows, and FreeBSD on the same hardware. Use systemd-analyze (Linux), Performance Monitor boot trace (Windows), and dmesg timestamps (FreeBSD). Break down boot time into: firmware/BIOS, bootloader, kernel init, service startup, and login screen ready. Explain the architectural differences that cause the variation."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Next Chapter: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems",
+          children: "Back to Overview"
+        }), " >>"]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

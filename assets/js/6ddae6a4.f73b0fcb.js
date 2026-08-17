@@ -1,0 +1,3673 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[72786],{
+
+/***/ 57129
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_07_deadlocks_md_6dd_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-07-deadlocks-md-6dd.json
+const site_docs_courses_operating_systems_07_deadlocks_md_6dd_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/07-deadlocks","title":"Chapter 7: Deadlocks","description":"---","source":"@site/docs/courses/operating-systems/07-deadlocks.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/07-deadlocks","permalink":"/ai-engineering-journey/operating-systems/07-deadlocks","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-deadlocks","slug":"/operating-systems/07-deadlocks","title":"Chapter 7: Deadlocks","sidebar_label":"Chapter 7: Deadlocks","sidebar_position":7},"sidebar":"course-operating-systems","previous":{"title":"Chapter 6: Semaphores & Monitors","permalink":"/ai-engineering-journey/operating-systems/06-semaphores-monitors"},"next":{"title":"Chapter 8: Memory Management","permalink":"/ai-engineering-journey/operating-systems/08-memory-management"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/07-deadlocks.md
+
+
+const frontMatter = {
+	id: '07-deadlocks',
+	slug: '/operating-systems/07-deadlocks',
+	title: 'Chapter 7: Deadlocks',
+	sidebar_label: 'Chapter 7: Deadlocks',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 7: Deadlocks';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Deadlock Definition",
+  "id": "deadlock-definition",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: The Four-Car Intersection",
+  "id": "real-world-analogy-the-four-car-intersection",
+  "level": 4
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition",
+  "level": 4
+}, {
+  "value": "Numbered Steps to Identify a Deadlock",
+  "id": "numbered-steps-to-identify-a-deadlock",
+  "level": 4
+}, {
+  "value": "Pseudocode: Deadlock Detection (Single-Instance Resources)",
+  "id": "pseudocode-deadlock-detection-single-instance-resources",
+  "level": 4
+}, {
+  "value": "Dry Run Trace Table: Cycle Detection",
+  "id": "dry-run-trace-table-cycle-detection",
+  "level": 4
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 4
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages",
+  "level": 4
+}, {
+  "value": "The Four Necessary Conditions",
+  "id": "the-four-necessary-conditions",
+  "level": 3
+}, {
+  "value": "Detailed Condition Table",
+  "id": "detailed-condition-table",
+  "level": 4
+}, {
+  "value": "Condition 1: Mutual Exclusion in Detail",
+  "id": "condition-1-mutual-exclusion-in-detail",
+  "level": 4
+}, {
+  "value": "Condition 2: Hold and Wait in Detail",
+  "id": "condition-2-hold-and-wait-in-detail",
+  "level": 4
+}, {
+  "value": "Condition 3: No Preemption in Detail",
+  "id": "condition-3-no-preemption-in-detail",
+  "level": 4
+}, {
+  "value": "Condition 4: Circular Wait in Detail",
+  "id": "condition-4-circular-wait-in-detail",
+  "level": 4
+}, {
+  "value": "Necessary Conditions: Formal Proof Sketch",
+  "id": "necessary-conditions-formal-proof-sketch",
+  "level": 4
+}, {
+  "value": "Resource-Allocation Graphs",
+  "id": "resource-allocation-graphs",
+  "level": 3
+}, {
+  "value": "RAG Construction Rules",
+  "id": "rag-construction-rules",
+  "level": 4
+}, {
+  "value": "RAG Example: Deadlock State",
+  "id": "rag-example-deadlock-state",
+  "level": 4
+}, {
+  "value": "Cycles vs Deadlock: The Complete Analysis",
+  "id": "cycles-vs-deadlock-the-complete-analysis",
+  "level": 4
+}, {
+  "value": "Multi-Instance RAG Example: Cycle but No Deadlock",
+  "id": "multi-instance-rag-example-cycle-but-no-deadlock",
+  "level": 4
+}, {
+  "value": "RAG Reduction Algorithm (Deadlock Check)",
+  "id": "rag-reduction-algorithm-deadlock-check",
+  "level": 4
+}, {
+  "value": "Dry Run: RAG Reduction",
+  "id": "dry-run-rag-reduction",
+  "level": 4
+}, {
+  "value": "Edge Case: RAG with Multiple Resource Units",
+  "id": "edge-case-rag-with-multiple-resource-units",
+  "level": 4
+}, {
+  "value": "RAG Complexity Analysis",
+  "id": "rag-complexity-analysis",
+  "level": 4
+}, {
+  "value": "Advantages &amp; Disadvantages of RAG Approach",
+  "id": "advantages--disadvantages-of-rag-approach",
+  "level": 4
+}, {
+  "value": "Deadlock Prevention",
+  "id": "deadlock-prevention",
+  "level": 3
+}, {
+  "value": "Strategy 1: Breaking Mutual Exclusion",
+  "id": "strategy-1-breaking-mutual-exclusion",
+  "level": 4
+}, {
+  "value": "Strategy 2: Breaking Hold and Wait",
+  "id": "strategy-2-breaking-hold-and-wait",
+  "level": 4
+}, {
+  "value": "Strategy 3: Breaking No Preemption",
+  "id": "strategy-3-breaking-no-preemption",
+  "level": 4
+}, {
+  "value": "Strategy 4: Breaking Circular Wait (Most Practical)",
+  "id": "strategy-4-breaking-circular-wait-most-practical",
+  "level": 4
+}, {
+  "value": "Prevention Strategy Comparison",
+  "id": "prevention-strategy-comparison",
+  "level": 4
+}, {
+  "value": "Deadlock Avoidance → Banker&#39;s Algorithm",
+  "id": "deadlock-avoidance--bankers-algorithm",
+  "level": 3
+}, {
+  "value": "Real-World Analogy: The Banker",
+  "id": "real-world-analogy-the-banker",
+  "level": 4
+}, {
+  "value": "Safe State Definition",
+  "id": "safe-state-definition",
+  "level": 4
+}, {
+  "value": "Banker&#39;s Algorithm Data Structures",
+  "id": "bankers-algorithm-data-structures",
+  "level": 4
+}, {
+  "value": "Safety Algorithm (Banker&#39;s Core)",
+  "id": "safety-algorithm-bankers-core",
+  "level": 4
+}, {
+  "value": "Resource-Request Algorithm",
+  "id": "resource-request-algorithm",
+  "level": 4
+}, {
+  "value": "Full Multi-Step Dry Run: 5 Processes, 3 Resources",
+  "id": "full-multi-step-dry-run-5-processes-3-resources",
+  "level": 4
+}, {
+  "value": "Banker&#39;s Algorithm: C++ Implementation",
+  "id": "bankers-algorithm-c-implementation",
+  "level": 4
+}, {
+  "value": "Banker&#39;s Algorithm: Python Implementation",
+  "id": "bankers-algorithm-python-implementation",
+  "level": 4
+}, {
+  "value": "Complexity Analysis of Banker&#39;s Algorithm",
+  "id": "complexity-analysis-of-bankers-algorithm",
+  "level": 4
+}, {
+  "value": "Advantages &amp; Disadvantages of Banker&#39;s Algorithm",
+  "id": "advantages--disadvantages-of-bankers-algorithm",
+  "level": 4
+}, {
+  "value": "Edge Cases in Banker&#39;s Algorithm",
+  "id": "edge-cases-in-bankers-algorithm",
+  "level": 4
+}, {
+  "value": "Deadlock Detection",
+  "id": "deadlock-detection",
+  "level": 3
+}, {
+  "value": "Detection Algorithm: Single Instance per Resource Type",
+  "id": "detection-algorithm-single-instance-per-resource-type",
+  "level": 4
+}, {
+  "value": "Detection Algorithm: Multiple Instances per Resource Type",
+  "id": "detection-algorithm-multiple-instances-per-resource-type",
+  "level": 4
+}, {
+  "value": "Detection Algorithm: C Implementation",
+  "id": "detection-algorithm-c-implementation",
+  "level": 4
+}, {
+  "value": "Detection Dry Run Trace Table",
+  "id": "detection-dry-run-trace-table",
+  "level": 4
+}, {
+  "value": "Detection Algorithm Complexity",
+  "id": "detection-algorithm-complexity",
+  "level": 4
+}, {
+  "value": "How Often to Run Detection",
+  "id": "how-often-to-run-detection",
+  "level": 4
+}, {
+  "value": "Edge Case: Circular Wait Detection in Multi-Instance",
+  "id": "edge-case-circular-wait-detection-in-multi-instance",
+  "level": 4
+}, {
+  "value": "Deadlock Recovery",
+  "id": "deadlock-recovery",
+  "level": 3
+}, {
+  "value": "Approach 1: Process Termination",
+  "id": "approach-1-process-termination",
+  "level": 4
+}, {
+  "value": "Approach 2: Resource Preemption",
+  "id": "approach-2-resource-preemption",
+  "level": 4
+}, {
+  "value": "Comparison: Termination vs Preemption",
+  "id": "comparison-termination-vs-preemption",
+  "level": 4
+}, {
+  "value": "Prevention vs Avoidance vs Detection: Complete Comparison",
+  "id": "prevention-vs-avoidance-vs-detection-complete-comparison",
+  "level": 3
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 3
+}, {
+  "value": "Q1: Deadlock vs Starvation → What&#39;s the Difference?",
+  "id": "q1-deadlock-vs-starvation--whats-the-difference",
+  "level": 4
+}, {
+  "value": "Q2: Dining Philosophers → Deadlock-Free Solution",
+  "id": "q2-dining-philosophers--deadlock-free-solution",
+  "level": 4
+}, {
+  "value": "Q3: What is the Ostrich Algorithm?",
+  "id": "q3-what-is-the-ostrich-algorithm",
+  "level": 4
+}, {
+  "value": "Q4: Can Deadlock Occur with a Single Process?",
+  "id": "q4-can-deadlock-occur-with-a-single-process",
+  "level": 4
+}, {
+  "value": "Q5: What Happens When a Deadlock is Detected in a Database?",
+  "id": "q5-what-happens-when-a-deadlock-is-detected-in-a-database",
+  "level": 4
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 3
+}, {
+  "value": "1. Linux Kernel lockdep (Lock Dependency Validator)",
+  "id": "1-linux-kernel-lockdep-lock-dependency-validator",
+  "level": 4
+}, {
+  "value": "2. Database Deadlock Detection (MySQL InnoDB)",
+  "id": "2-database-deadlock-detection-mysql-innodb",
+  "level": 4
+}, {
+  "value": "3. Java Thread Dump and Deadlock Detection",
+  "id": "3-java-thread-dump-and-deadlock-detection",
+  "level": 4
+}, {
+  "value": "4. Distributed Deadlock Detection",
+  "id": "4-distributed-deadlock-detection",
+  "level": 4
+}, {
+  "value": "Advanced Edge Cases and Practical Considerations",
+  "id": "advanced-edge-cases-and-practical-considerations",
+  "level": 3
+}, {
+  "value": "Edge Case: Nested Locking with Shared Resources",
+  "id": "edge-case-nested-locking-with-shared-resources",
+  "level": 4
+}, {
+  "value": "Edge Case: Lock Splitting and Deadlock",
+  "id": "edge-case-lock-splitting-and-deadlock",
+  "level": 4
+}, {
+  "value": "Edge Case: Reader-Writer Lock Deadlock",
+  "id": "edge-case-reader-writer-lock-deadlock",
+  "level": 4
+}, {
+  "value": "TypeScript Deadlock Detection and Banker&#39;s Algorithm Simulator",
+  "id": "typescript-deadlock-detection-and-bankers-algorithm-simulator",
+  "level": 3
+}, {
+  "value": "Numerical Example: Banker&#39;s Algorithm Safety Check",
+  "id": "numerical-example-bankers-algorithm-safety-check",
+  "level": 3
+}, {
+  "value": "Additional Chapter Quiz Questions",
+  "id": "additional-chapter-quiz-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 4
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 4
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 4
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 3
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 3
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 3
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 3
+}, {
+  "value": "Basic",
+  "id": "basic-1",
+  "level": 4
+}, {
+  "value": "Intermediate",
+  "id": "intermediate-1",
+  "level": 4
+}, {
+  "value": "Advanced",
+  "id": "advanced-1",
+  "level": 4
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-7-deadlocks",
+        children: "Chapter 7: Deadlocks"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/06-semaphores-monitors",
+          children: "Semaphores and Monitors"
+        })]
+      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/operating-systems/08-memory-management",
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next: Memory Management"
+        })
+      }), " >>"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Characterize deadlocks using the four necessary conditions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct and interpret resource-allocation graphs with cycle analysis"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply deadlock prevention by breaking one of the four conditions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement Banker's algorithm for deadlock avoidance with full trace"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design deadlock detection algorithms for single and multiple resource types"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare recovery strategies: process termination vs resource preemption"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand deadlock in real systems: Linux lockdep, InnoDB, Java JVM"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set of blocked processes, each holding a resource waiting for another held by another"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Necessary Conditions"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutual exclusion, hold-and-wait, no preemption, circular wait (all 4 required)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Prevention"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Break at least one condition → most commonly circular wait via resource ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Avoidance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Banker Algorithm: safe state ensures no deadlock even with maximum claims"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Detection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wait-for graph cycle detection for single-instance; O(m·n²) algorithm for multi-instance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process termination or resource preemption with victim selection and rollback"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Deadlock Concept] --> B[Necessary Conditions]\n    B --> C[Resource-Allocation Graphs]\n    C --> D[Prevention]\n    C --> E[Avoidance: Banker's Algorithm]\n    C --> F[Detection: Wait-for Graph]\n    F --> G[Recovery]\n    G --> H[Real Systems & Interview Corner]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/07-deadlocks.png",
+        alt: "Deadlock Handling"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-definition",
+      children: "Deadlock Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "deadlock"
+      }), " is a state in which every process in a set is waiting for an event that can only be caused by another process in the set. Since all are waiting, none can proceed → the system is permanently blocked."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-the-four-car-intersection",
+      children: "Real-World Analogy: The Four-Car Intersection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Imagine four cars arrive simultaneously at a four-way stop, each wanting to turn left across oncoming traffic:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "        Car A (wants to go straight)\n            ↑\n    Car D ← ✚ → Car B (wants to turn left)\n            ↓\n        Car C (wants to turn left)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Car A holds the north-bound lane and needs the east-bound lane (held by Car B)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Car B holds the east-bound lane and needs the south-bound lane (held by Car C)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Car C holds the south-bound lane and needs the west-bound lane (held by Car D)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Car D holds the west-bound lane and needs the north-bound lane (held by Car A)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each car holds one resource (its lane) and waits for another. Nobody moves. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deadlock."
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "formal-definition",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Deadlock ⇔ ∀ Pᵢ ∈ DeadlockSet: Pᵢ is waiting for a resource held by Pⱼ ∈ DeadlockSet\n         ∧ ∀ Pᵢ ∈ DeadlockSet: Pᵢ will never release its held resources\n         ∧ The set is non-empty\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "numbered-steps-to-identify-a-deadlock",
+      children: "Numbered Steps to Identify a Deadlock"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify the set of suspicious processes (those in waiting state)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each process, record which resources it holds and which it requests"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a directed dependency graph (process → resource → process)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect cycles in the graph"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If a cycle exists and all resources in the cycle are single-instance → deadlock confirmed"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If a cycle exists with multi-instance resources → check if sufficient instances break the cycle (may or may not be deadlock)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If no cycle exists → no deadlock"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-deadlock-detection-single-instance-resources",
+      children: "Pseudocode: Deadlock Detection (Single-Instance Resources)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "INPUT:  Wait-for matrix W[n][n] where W[i][j] = 1 if Pᵢ waits for Pⱼ\nOUTPUT: true if deadlock detected\n\nFUNCTION hasDeadlock(W, n):\n    visited[n] = {false}\n    recStack[n] = {false}\n    \n    FOR each process i FROM 0 TO n-1:\n        IF NOT visited[i]:\n            IF dfsCycleDetect(W, i, visited, recStack, n):\n                RETURN true\n    \n    RETURN false\n\nFUNCTION dfsCycleDetect(W, v, visited, recStack, n):\n    visited[v] = true\n    recStack[v] = true\n    \n    FOR each neighbor u FROM 0 TO n-1:\n        IF W[v][u] = 1:\n            IF NOT visited[u]:\n                IF dfsCycleDetect(W, u, visited, recStack, n):\n                    RETURN true\n            ELSE IF recStack[u]:\n                RETURN true           // Cycle found → deadlock\n    \n    recStack[v] = false               // Backtrack\n    RETURN false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-trace-table-cycle-detection",
+      children: "Dry Run Trace Table: Cycle Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "System with 4 processes, single-instance resources:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "visited[]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "recStack[]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current P"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Neighbor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Init"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[F,F,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[F,F,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Start DFS from P0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,F,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,F,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "W[0][1]=1, recurse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,F,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "W[1][2]=1, recurse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,T,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,T,F]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "W[2][3]=1, recurse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,T,T]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[T,T,T,T]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "W[3][0]=1, recStack[0]=T → CYCLE!"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlock detected: P0→P1→P2→P3→P0"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Metric"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DFS traverses adjacency matrix; each edge examined once"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "visited[] and recStack[] arrays of size n"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "For n=100 processes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10,000 checks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Acceptable for periodic detection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages--disadvantages",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to implement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only works for single-instance resource types"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Early detection possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Periodic invocation may miss transient deadlocks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Algorithm is deterministic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle does not guarantee deadlock for multi-instance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low overhead (O(n²))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Does not identify which processes to terminate optimally"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-four-necessary-conditions",
+      children: "The Four Necessary Conditions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For a deadlock to occur, all four conditions must hold ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "simultaneously"
+      }), ". Breaking any one prevents deadlock."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detailed-condition-table",
+      children: "Detailed Condition Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Condition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Real-World Analogy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "How to Break"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Cost"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mutual Exclusion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At least one resource must be held in non-sharable mode"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A conference room can only hold one meeting at a time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Make resources sharable (spooling, read-only)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not always possible; some resources inherently exclusive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hold and Wait"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A process holding resources waits to acquire more held by others"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "You hold your parking spot while waiting for another spot to open"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request all resources at once, or release before requesting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low utilization; resources idle while held unnecessarily"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No Preemption"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resources cannot be forcibly taken → must be released voluntarily"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A book you're reading cannot be taken from your hands"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Allow preemption (OS can take resources)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex; may corrupt state if preempted mid-update"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Circular Wait"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "There exists a cycle where P₀ waits for P₁, P₁ waits for P₂, ..., Pₙ waits for P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Four cars blocking each other at an intersection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce total resource ordering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most practical; ordering must be global and respected"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "condition-1-mutual-exclusion-in-detail",
+      children: "Condition 1: Mutual Exclusion in Detail"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without Mutual Exclusion:\n  Resource R is sharable (e.g., read-only file)\n  P0 and P1 both access R simultaneously → no blocking → no deadlock\n\nWith Mutual Exclusion:\n  Resource R is non-sharable (e.g., printer, mutex lock)\n  P0 holds R, P1 requests R → P1 blocks → potential deadlock ingredient\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight:"
+      }), " Not all resources must be non-sharable → only one. If at least one resource in the cycle is exclusive, mutual exclusion is satisfied."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "condition-2-hold-and-wait-in-detail",
+      children: "Condition 2: Hold and Wait in Detail"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario:"
+      }), " Process P0 holds a tape drive (R1) and requests a printer (R2). Meanwhile P1 holds the printer (R2) and requests the tape drive (R1)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "P0: holds(R1) + wait(R2)\nP1: holds(R2) + wait(R1)\n     ↑ Both hold something AND wait for something → hold-and-wait satisfied\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "condition-3-no-preemption-in-detail",
+      children: "Condition 3: No Preemption in Detail"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario with preemption allowed (deadlock impossible):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "P0 holds R1, requests R2 → R2 not available\nOS preempts R1 from P0, gives to P1\nP1 completes, releases R1 and R2\nP0 restarts with fresh resources\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Without preemption"
+      }), ", P0 keeps R1 forever while waiting → deadlock persists."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "condition-4-circular-wait-in-detail",
+      children: "Condition 4: Circular Wait in Detail"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Circular wait exists iff there is a cycle in the wait-for graph:\n\n   P0 → P1 → P2 → P3 → P0\n   \n   Each arrow means \"waits for resource held by\"\n   \n   If the cycle has k processes, all k conditions for circular wait are met.\n   Removing any one edge breaks the cycle.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "necessary-conditions-formal-proof-sketch",
+      children: "Necessary Conditions: Formal Proof Sketch"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Theorem: Deadlock ⇒ (Mutual Exclusion ∧ Hold-and-Wait ∧ No Preemption ∧ Circular Wait)\nProof:\n  - If no mutual exclusion: all resources sharable → no process ever blocks → no deadlock\n  - If no hold-and-wait: process either has no resources or requests nothing → no circular dependency\n  - If preemption allowed: OS can forcibly take resources → blocked process can progress\n  - If no circular wait: dependency graph is acyclic → by topological order, some process can complete\n  Therefore, deadlock implies all four.\n  \nConverse is false: all four conditions can hold without deadlock (e.g., processes may not all be waiting)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resource-allocation-graphs",
+      children: "Resource-Allocation Graphs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Resource-Allocation Graph (RAG)"
+      }), " is a directed graph that models the system state:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Processes"
+        }), " (circles Pᵢ): active entities that request/use resources"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Resources"
+        }), " (squares Rⱼ with dots for instances): system resources"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Request edge"
+        }), " (Pᵢ → Rⱼ): process i wants resource j"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Assignment edge"
+        }), " (Rⱼ → Pᵢ): resource j is allocated to process i"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rag-construction-rules",
+      children: "RAG Construction Rules"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When process Pᵢ requests resource Rⱼ: add a request edge Pᵢ → Rⱼ"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When the request is granted: convert to assignment edge Rⱼ → Pᵢ"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When Pᵢ releases Rⱼ: remove the assignment edge"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rag-example-deadlock-state",
+      children: "RAG Example: Deadlock State"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "      ┌─────────────────┐\n      │                 │\n      ▼                 │\n     R1 ──► P2 ──► R2 ──┤──► P3\n      ▲         │        │      ▲\n      │         └────R3──┘      │\n      │                         │\n      P1 ◄──────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Resource types:"
+      }), " R1 (1 instance), R2 (1 instance), R3 (1 instance)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edges:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P1 → R1 (request), R1 → P1 (assigned): P1 holds R1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P1 → R2 (request): P1 wants R2"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P2 → R2 (request), R2 → P2 (assigned): P2 holds R2"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P2 → R3 (request): P2 wants R3"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P3 → R3 (request), R3 → P3 (assigned): P3 holds R3"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P3 → R1 (request): P3 wants R1"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cycle:"
+      }), " P1 → R2 → P2 → R3 → P3 → R1 → P1 ← ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "DEADLOCK"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cycles-vs-deadlock-the-complete-analysis",
+      children: "Cycles vs Deadlock: The Complete Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Single-Instance Resources"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Multi-Instance Resources"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No cycle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No deadlock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No deadlock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle present"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlock"
+            }), " guaranteed"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "May or may not"
+            }), " be deadlock"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple cycles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlocked set = union of all processes in cycles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must analyze each cycle independently"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "multi-instance-rag-example-cycle-but-no-deadlock",
+      children: "Multi-Instance RAG Example: Cycle but No Deadlock"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Resources: R1 (2 instances), R2 (2 instances)\n\n     R1 (2 dots: ●●)\n      ↙  ↘\n    P1    P2\n     ↘  ↙\n     R2 (2 dots: ●●)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "State:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P1 holds 1 instance of R1, requests 1 instance of R2"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P2 holds 1 instance of R2, requests 1 instance of R1"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cycle:"
+      }), " P1 → R2 → P2 → R1 → P1"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "But:"
+      }), " R1 has 2 instances; P2 only needs 1. If the second R1 is free, P2's request can be granted. P2 completes, releases R2, P1 gets R2. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "No deadlock!"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rag-reduction-algorithm-deadlock-check",
+      children: "RAG Reduction Algorithm (Deadlock Check)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION isDeadlock(RAG):\n    REPEAT:\n        Find a process Pᵢ whose request edges can all be satisfied\n        (for each request edge Pᵢ → Rⱼ, there is a free instance of Rⱼ)\n        IF found:\n            Remove Pᵢ (pretend it finishes and releases all resources)\n        ELSE:\n            BREAK\n    UNTIL no more processes can be removed\n    \n    IF all processes removed: NO DEADLOCK\n    ELSE: DEADLOCK → remaining processes are deadlocked\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-rag-reduction",
+      children: "Dry Run: RAG Reduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "System: R1 (2 instances), R2 (1 instance). P0 holds R1×1, requests R2. P1 holds R2, requests R1×1. P2 holds R1×1."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Request can be satisfied?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Reason"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R2 held by P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Skip"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free R1 instance available (R1 has 2, P0 holds 1, P2 holds 1 → 0 free → wait, P2 holds 1, P0 holds 1, free=0 → No)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Let me recalculate"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Let me redo with clearer state:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "R1 has 3 instances. Initial allocation: P0:1, P1:0, P2:1. Available R1=1, R2=1. P0 needs R2. P1 needs R1×1. P2 needs nothing."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iteration"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Holds"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Needs"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Available"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Can run?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1×1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "none"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1=1, R2=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "After P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "release R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1=2, R2=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "none"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1×1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1=2, R2=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "After P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1=2, R2=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1×1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R2×1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1=2, R2=1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["All removed → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No deadlock"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-case-rag-with-multiple-resource-units",
+      children: "Edge Case: RAG with Multiple Resource Units"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Resources: R1 (5 instances), R2 (3 instances)\n\nProcess  P0: holds R1×3, holds R2×1, requests R2×1\nProcess  P1: holds R1×2, requests R1×1\nProcess  P2: holds R2×2, requests R1×1\n\nAvailable: R1=0, R2=0\n\nCheck:\n- P0 needs R2×1 but R2=0 available → blocked\n- P1 needs R1×1 but R1=0 available → blocked\n- P2 needs R1×1 but R1=0 available → blocked\n\nAll blocked → DEADLOCK (even though each resource has multiple instances)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rag-complexity-analysis",
+      children: "RAG Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Construction"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(E) where E = #edges"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each request/allocation adds one edge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cycle detection (single-instance)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(V+E)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DFS on graph with V vertices"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reduction (multi-instance)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n·m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "n processes, m resources; each iteration checks all processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n·m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adjacency matrix or edge list"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages--disadvantages-of-rag-approach",
+      children: "Advantages & Disadvantages of RAG Approach"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Visual and intuitive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Becomes unmanageable with >20 processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple cycle → deadlock for single-instance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-instance requires reduction (more complex)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundation for all deadlock algorithms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Does not capture resource ordering constraints"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "O(V+E) detection is fast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must rebuild graph on every state change"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-prevention",
+      children: "Deadlock Prevention"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Prevention ensures at least one of the four necessary conditions ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "cannot"
+      }), " hold. This is a negative approach: design the system to make deadlock structurally impossible."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "strategy-1-breaking-mutual-exclusion",
+      children: "Strategy 1: Breaking Mutual Exclusion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " Make resources sharable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Methods:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spooling:"
+        }), " Printer spooler accepts all print jobs, schedules them sequentially. Process never \"holds\" the printer."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Read-only sharing:"
+        }), " Multiple processes can read the same file."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Copy-on-write:"
+        }), " Each process gets its own copy."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Printer spooling → mutual exclusion broken\n// Process writes to spool directory; spooler daemon prints\nFILE *spool = fopen(\"/var/spool/print/myjob.txt\", \"w\");\nfprintf(spool, \"Hello, printer!\\n\");\nfclose(spool);\n// Process never holds the physical printer\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Some resources are inherently non-sharable (mutex locks, tape drives, DMA buffers)."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No special OS mechanism needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not universally applicable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero runtime overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only works for spoolable devices"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "strategy-2-breaking-hold-and-wait",
+      children: "Strategy 2: Breaking Hold and Wait"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach #1 → Request all at once:"
+      }), "\nProcess must request ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "all"
+      }), " resources before execution begins."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Protocol: request all, then execute\nvoid process_work() {\n    // Phase 1: Request ALL resources upfront\n    request(R1);\n    request(R2);\n    request(R3);\n    \n    // Phase 2: Use resources (never requests again)\n    use(R1);\n    use(R2);\n    \n    // Phase 3: Release all\n    release(R1);\n    release(R2);\n    release(R3);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach #2 → Release before requesting:"
+      }), "\nProcess can only request resources when it holds none."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void process_work() {\n    request(R1);\n    use(R1);\n    release(R1);      // Must release before next request\n    \n    request(R2);       // Now holds no resources\n    request(R3);       // Request multiple at once is OK\n    use(R2);\n    use(R3);\n    release(R2);\n    release(R3);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: Hold-and-Wait Prevention"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "System: R1, R2, R3 (1 instance each)\n\nWithout prevention (deadlock possible):\n  P0: request(R1) → granted → request(R2) → BLOCKED (P1 holds R2)\n  P1: request(R2) → granted → request(R1) → BLOCKED (P0 holds R1)\n  Result: DEADLOCK\n\nWith \"request all at once\" prevention:\n  P0: request(R1, R2, R3) → not all available → P0 BLOCKED (never starts)\n  P1: request(R1, R2, R3) → R1 held by P0, R2 free, R3 free → not all available → P1 BLOCKED\n  \nWait both are blocked before starting. This is terrible for utilization.\n\nBetter with ordering:\n  System enforces: request all at process creation\n  P0 declares need (R1, R2). OS checks: R1 free, R2 free → grant. P0 runs.\n  P1 declares need (R1). OS checks: R1 now held by P0 → P1 must wait.\n  P0 finishes, releases R1, R2 → P1 gets R1, runs.\n  No deadlock, but poor concurrency.\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to implement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Starvation possible (process may wait indefinitely for all resources)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No runtime overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low resource utilization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlock impossible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must know future requirements (often impossible)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "strategy-3-breaking-no-preemption",
+      children: "Strategy 3: Breaking No Preemption"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " If a process holding resources requests more and cannot get them, it must ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "release all currently held resources"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Protocol with preemption\nbool request_with_preemption(int resource_id) {\n    while (true) {\n        if (try_acquire(resource_id)) {\n            return true;  // Got the resource\n        } else {\n            // Resource not available → preempt ourselves\n            release_all_held_resources();\n            // Now we hold nothing. Re-acquire everything.\n            // This creates a fresh start.\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered Steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Process P requests resource R"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If R is available → grant, return"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If R is not available → P releases ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "all"
+        }), " resources it currently holds"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P is added to the wait queue for all needed resources (old ones + new one)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When all are available → P resumes with all resources"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P must be able to restart from the last checkpoint (rollback required)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Rollback requires checkpoint state. If P was updating a critical data structure, releasing the lock mid-update corrupts the data."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No starvation (eventually all resources become available)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires rollback capability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate resource utilization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not possible for all resource types (mutex, kernel locks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to implement for stateless resources"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High overhead from repeated acquire-release cycles"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "strategy-4-breaking-circular-wait-most-practical",
+      children: "Strategy 4: Breaking Circular Wait (Most Practical)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Approach:"
+      }), " Impose a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "total ordering"
+      }), " of all resource types. A process can only request resources in strictly increasing order."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Resource ordering: R1 < R2 < R3 < R4\n// Process can request in order: R1 then R2 then R3\n// But NEVER R3 then R1 (decreasing order)\n\nvoid safe_process() {\n    acquire(R1);    // OK → starting with lowest\n    acquire(R2);    // OK → R1 < R2\n    use_resources();\n    release(R2);\n    release(R1);\n}\n\n// This would be ILLEGAL:\nvoid unsafe_process() {\n    acquire(R2);    // OK \n    acquire(R1);    // VIOLATION → R1 < R2 but we hold R2\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof that resource ordering prevents deadlock:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Assume deadlock exists despite ordering. Then there is a cycle:\n  P0 → Rⱼ → P1 → Rₖ → P2 → ... → Pn → Rₗ → P0\n\nBy the ordering rule:\n  If Pᵢ holds Rₐ and requests Rᵦ, then a < b.\n  \nIn the cycle, each process requests a resource held by the next:\n  P0 holds Rₓ and wants Rⱼ: x < j\n  P1 holds Rⱼ and wants Rₖ: j < k\n  ...by transitivity: x < j < k < ... < l < x\n  \nBut this implies x < x, which is impossible.\nTherefore no cycle can exist → no deadlock.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run: Resource Ordering Prevention"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "System: Resources R0(R1), R1(R2), R2(Printer), R3(Tape)\nOrdering: R0(0) < R1(1) < R2(2) < R3(3)\n\nScenario → P0 needs R1 and R3:\n  Step 1: request(R1) → OK, order starts at 0\n  Step 2: request(R3) → OK, 1 < 3\n  Step 3: use, release(R3), release(R1) ✓\n\nScenario → P1 needs R2 and R1:\n  Step 1: request(R2) → OK\n  Step 2: request(R1) → BLOCKED (would violate ordering) \n  Solution: P1 should request R1 first, then R2\n\nScenario → P0 holds R0, requests R2:\n  P0: holds R0(0), requests R2(2) → OK, 0 < 2\n\nScenario → P1 holds R1, requests R2:\n  P1: holds R1(1), requests R2(2) → OK, 1 < 2\n  \nIf P0 also wants R1: must request in order R0 → R1 → R2\nIf P1 also wants R0: must request R0 first, then R1, then R2\n  → never holds R1 while requesting R0 → no cycle\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Most practical prevention method"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires global agreement on ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low runtime overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May force unnatural access patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to implement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not all resources can be ordered (e.g., identical mutexes)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Used in many real systems (Linux kernel)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application-level ordering requires discipline"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "prevention-strategy-comparison",
+      children: "Prevention Strategy Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Condition Broken"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implementation Difficulty"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Resource Utilization"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutual Exclusion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (spooling)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (printers only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hold and Wait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (all-at-once) or Medium (release-before-request)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No Preemption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (needs rollback)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (DB transactions)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Circular Wait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium-High"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Most common"
+            }), " (Linux, databases)"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-avoidance--bankers-algorithm",
+      children: "Deadlock Avoidance → Banker's Algorithm"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Avoidance requires that the system knows in advance the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "maximum"
+      }), " number of resources each process will ever need. The system decides whether granting a request would leave the system in a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "safe state"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "real-world-analogy-the-banker",
+      children: "Real-World Analogy: The Banker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A banker has limited funds (₹10,000). Several businesses need loans:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Banker (OS) with ₹10,000 capital (available resources)\n  ┌─────────────────────────────────────┐\n  │  Biz A: max ₹7K, already owes ₹2K   │  Needs up to ₹5K more\n  │  Biz B: max ₹3K, already owes ₹1K   │  Needs up to ₹2K more  \n  │  Biz C: max ₹9K, already owes ₹5K   │  Needs up to ₹4K more\n  └─────────────────────────────────────┘\n           Cash on hand: ₹2K\n\nThe banker asks: \"If I grant Biz B's request for ₹1K more, can all businesses\neventually finish?\" This is the safety check.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "safe-state-definition",
+      children: "Safe State Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A state is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "safe"
+      }), " if there exists a sequence of process executions that allows every process to complete."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Safe State:\n    ┌─────────────────────────────────────┐\n    │ Available = 3 units                │\n    │                                    │\n    │ P2 needs 2, has 2 → can finish     │\n    │ After P2: available = 5            │\n    │ P1 needs 5, has 2 → can finish     │\n    │ After P1: available = 7            │\n    │ P0 needs 7, has 0 → can finish ✓   │\n    │                                    │\n    │ Safe sequence: <P2, P1, P0>        │\n    └─────────────────────────────────────┘\n\nUnsafe State (but not deadlock):\n    ┌─────────────────────────────────────┐\n    │ Available = 1 unit                 │\n    │                                    │\n    │ No process has Need ≤ Available    │\n    │ All processes could still progress  │\n    │ if they release resources          │\n    │ But we can't guarantee it          │\n    │ → UNSAFE (future deadlock possible) │\n    └─────────────────────────────────────┘\n\nDeadlock:\n    ┌─────────────────────────────────────┐\n    │ Available = 0 units                │\n    │ All processes blocked, waiting     │\n    │ None can release resources         │\n    │ → DEADLOCK                         │\n    └─────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bankers-algorithm-data-structures",
+      children: "Banker's Algorithm Data Structures"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "n = number of processes\nm = number of resource types\n\nAvailable[m]:     Available[j] = k → k instances of Rⱼ are free\nMax[n][m]:        Max[i][j] = k → Pᵢ will need at most k instances of Rⱼ\nAllocation[n][m]: Allocation[i][j] = k → Pᵢ currently holds k instances\nNeed[n][m]:       Need[i][j] = Max[i][j] - Allocation[i][j]\nRequest[i][m]:    Request[i][j] = k → Pᵢ is requesting k instances of Rⱼ\n\nInvariants:\n  Need[i][j] ≥ 0 for all i, j\n  Allocation[i][j] ≤ Max[i][j] for all i, j\n  Σ Allocation[i][j] + Available[j] = total instances of Rⱼ\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "safety-algorithm-bankers-core",
+      children: "Safety Algorithm (Banker's Core)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "INPUT:  Available, Allocation, Need\nOUTPUT: true if state is safe, false otherwise\n\nFUNCTION isSafe(Available, Allocation, Need, n, m):\n    Work[m] = Available[m]            // Copy of available resources\n    Finish[n] = {false}               // All processes initially unfinished\n    \n    // Find an unfinished process that can complete\n    WHILE true:\n        found = false\n        FOR i = 0 TO n-1:\n            IF Finish[i] == false AND Need[i] ≤ Work:\n                // Pᵢ can complete\n                Work = Work + Allocation[i]\n                Finish[i] = true\n                found = true\n        \n        IF NOT found:\n            BREAK               // No more processes can run\n    \n    // Check if all finished\n    FOR i = 0 TO n-1:\n        IF Finish[i] == false:\n            RETURN false        // Unsafe state\n    \n    RETURN true                 // Safe state\n    \n    // Note: ≤ operator on vectors means all elements satisfy ≤ individually\n    // Need[i] ≤ Work ⇔ ∀ j: Need[i][j] ≤ Work[j]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "resource-request-algorithm",
+      children: "Resource-Request Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "INPUT:  Process i, Request[m]\nOUTPUT: true if request granted, false otherwise\n\nFUNCTION requestResources(i, Request):\n    // Step 1: Check if request ≤ Need\n    IF Request > Need[i]:           // Error: exceeded max claim\n        RETURN false\n    \n    // Step 2: Check if request ≤ Available\n    IF Request > Available:         // Not enough resources right now\n        RETURN false                // Pᵢ must wait\n    \n    // Step 3: Pretend to allocate\n    Available = Available - Request\n    Allocation[i] = Allocation[i] + Request\n    Need[i] = Need[i] - Request\n    \n    // Step 4: Check if resulting state is safe\n    IF isSafe(Available, Allocation, Need, n, m):\n        RETURN true                 // Request granted\n    ELSE:\n        // Roll back the pretend allocation\n        Available = Available + Request\n        Allocation[i] = Allocation[i] - Request\n        Need[i] = Need[i] + Request\n        RETURN false                // Request denied\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "full-multi-step-dry-run-5-processes-3-resources",
+      children: "Full Multi-Step Dry Run: 5 Processes, 3 Resources"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "System state:\n  Total resources: R0=10, R1=5, R2=7\n  \n  Process | Max      | Allocation | Need       | Available\n  --------|----------|------------|------------|----------\n  P0      | [7, 5, 3] | [0, 1, 0]  | [7, 4, 3]  | [3, 3, 2]\n  P1      | [3, 2, 2] | [2, 0, 0]  | [1, 2, 2]  |\n  P2      | [9, 0, 2] | [3, 0, 2]  | [6, 0, 0]  |\n  P3      | [2, 2, 2] | [2, 1, 1]  | [0, 1, 1]  |\n  P4      | [4, 3, 3] | [0, 0, 2]  | [4, 3, 1]  |\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1 → Safety Check on Initial State:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Available = [3, 3, 2]\n\nIteration 1:\n  P0: Need=[7,4,3] > Available=[3,3,2] → cannot run\n  P1: Need=[1,2,2] ≤ Available=[3,3,2] → CAN RUN ✓\n  Execute P1:\n    Work = [3,3,2] + Allocation[1]=[2,0,0] = [5,3,2]\n    Finish[1] = true\n\nIteration 2:\n  P0: Need=[7,4,3] > Work=[5,3,2] → cannot run\n  P2: Need=[6,0,0] > Work=[5,3,2] → cannot run\n  P3: Need=[0,1,1] ≤ Work=[5,3,2] → CAN RUN ✓\n  Execute P3:\n    Work = [5,3,2] + Allocation[3]=[2,1,1] = [7,4,3]\n    Finish[3] = true\n\nIteration 3:\n  P0: Need=[7,4,3] ≤ Work=[7,4,3] → CAN RUN ✓\n  Execute P0:\n    Work = [7,4,3] + Allocation[0]=[0,1,0] = [7,5,3]\n    Finish[0] = true\n\nIteration 4:\n  P2: Need=[6,0,0] ≤ Work=[7,5,3] → CAN RUN ✓\n  Execute P2:\n    Work = [7,5,3] + Allocation[2]=[3,0,2] = [10,5,5]\n    Finish[2] = true\n\nIteration 5:\n  P4: Need=[4,3,1] ≤ Work=[10,5,5] → CAN RUN ✓\n  Execute P4:\n    Work = [10,5,5] + Allocation[4]=[0,0,2] = [10,5,7]\n    Finish[4] = true\n\nAll Finish[i] = true → SYSTEM IS SAFE\nSafe sequence: P1 → P3 → P0 → P2 → P4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry Run Trace Table (Step-by-Step):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Need"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Work (Start)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Need ≤ Work?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Work (End)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Finish"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,4,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1,2,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[3,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,4,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[6,0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0,1,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[5,3,2]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,4,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,4,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,4,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,5,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[6,0,0]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7,5,3]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[10,5,5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4,3,1]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[10,5,5]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[10,5,7]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2 → P1 requests [1, 0, 2]:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "P1 Request = [1, 0, 2]\n\nCheck 1: Request ≤ Need[1]? [1,0,2] ≤ [1,2,2] → Yes ✓\nCheck 2: Request ≤ Available? [1,0,2] ≤ [3,3,2] → Yes ✓\n\nPretend allocation:\n  Available = [3,3,2] - [1,0,2] = [2,3,0]\n  Allocation[1] = [2,0,0] + [1,0,2] = [3,0,2]\n  Need[1] = [1,2,2] - [1,0,2] = [0,2,0]\n\nNew state:\n  Process | Allocation | Need       | Available\n  --------|-----------|------------|----------\n  P0      | [0, 1, 0] | [7, 4, 3]  | [2, 3, 0]\n  P1      | [3, 0, 2] | [0, 2, 0]  |\n  P2      | [3, 0, 2] | [6, 0, 0]  |\n  P3      | [2, 1, 1] | [0, 1, 1]  |\n  P4      | [0, 0, 2] | [4, 3, 1]  |\n\nSafety check on new state:\n\nIteration 1:\n  P0: [7,4,3] > [2,3,0] → No\n  P1: [0,2,0] ≤ [2,3,0] → YES → Work = [5,3,2], Finish[1]=true\n  (check P2, P3, P4: none can run yet)\n\nIteration 2:\n  P0: [7,4,3] > [5,3,2] → No\n  P3: [0,1,1] ≤ [5,3,2] → YES → Work = [7,4,3], Finish[3]=true\n\nIteration 3:\n  P0: [7,4,3] ≤ [7,4,3] → YES → Work = [7,5,3], Finish[0]=true\n\nIteration 4:\n  P2: [6,0,0] ≤ [7,5,3] → YES → Work = [10,5,5], Finish[2]=true\n\nIteration 5:\n  P4: [4,3,1] ≤ [10,5,5] → YES → Work = [10,5,7], Finish[4]=true\n\nAll finished → SAFE → Request GRANTED\nSafe sequence: P1 → P3 → P0 → P2 → P4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3 → What if P4 requests [3, 3, 0]?"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Current available = [2, 3, 0]\n\nP4 Request = [3, 3, 0]\n\nCheck 1: Request ≤ Need[4]? [3,3,0] ≤ [4,3,1] → Yes ✓\nCheck 2: Request ≤ Available? [3,3,0] ≤ [2,3,0] → No → Request DENIED\n(P4 must wait)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4 → What if P0 requests [0, 2, 0]?"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Current available = [2, 3, 0]\n\nP0 Request = [0, 2, 0]\n\nCheck 1: Request ≤ Need[0]? [0,2,0] ≤ [7,4,3] → Yes ✓\nCheck 2: Request ≤ Available? [0,2,0] ≤ [2,3,0] → Yes ✓\n\nPretend allocation:\n  Available = [2,3,0] - [0,2,0] = [2,1,0]\n  Allocation[0] = [0,1,0] + [0,2,0] = [0,3,0]\n  Need[0] = [7,4,3] - [0,2,0] = [7,2,3]\n\nSafety check:\n  P1: [0,2,0] > [2,1,0] → No\n  P3: [0,1,1] > [2,1,0] → No\n  P4: [4,3,1] > [2,1,0] → No\n  P0: [7,2,3] > [2,1,0] → No\n  P2: [6,0,0] > [2,1,0] → No\n  \n  No process can run → UNSAFE → Request DENIED\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bankers-algorithm-c-implementation",
+      children: "Banker's Algorithm: C++ Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nclass BankersAlgorithm {\nprivate:\n    int n;                              // Number of processes\n    int m;                              // Number of resource types\n    vector<vector<int>> max_claim;      // Max matrix\n    vector<vector<int>> allocation;      // Allocation matrix\n    vector<vector<int>> need;            // Need matrix\n    vector<int> available;               // Available vector\n\npublic:\n    BankersAlgorithm(int processes, int resources)\n        : n(processes), m(resources),\n          max_claim(processes, vector<int>(resources, 0)),\n          allocation(processes, vector<int>(resources, 0)),\n          need(processes, vector<int>(resources, 0)),\n          available(resources, 0) {}\n\n    void setMax(int pid, const vector<int>& max_res) {\n        max_claim[pid] = max_res;\n    }\n\n    void setAllocation(int pid, const vector<int>& alloc) {\n        allocation[pid] = alloc;\n    }\n\n    void setAvailable(const vector<int>& avail) {\n        available = avail;\n    }\n\n    void calculateNeed() {\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < m; j++) {\n                need[i][j] = max_claim[i][j] - allocation[i][j];\n            }\n        }\n    }\n\n    bool isSafe(vector<int>& safeSeq) {\n        vector<int> work = available;\n        vector<bool> finish(n, false);\n\n        cout << \"\\n=== Safety Algorithm Execution ===\\n\";\n        cout << \"Initial Work: [\";\n        for (int j = 0; j < m; j++) {\n            cout << work[j] << (j < m - 1 ? \", \" : \"\");\n        }\n        cout << \"]\\n\\n\";\n\n        int completed = 0;\n        while (completed < n) {\n            bool found = false;\n\n            for (int i = 0; i < n; i++) {\n                if (!finish[i]) {\n                    bool canRun = true;\n                    for (int j = 0; j < m; j++) {\n                        if (need[i][j] > work[j]) {\n                            canRun = false;\n                            break;\n                        }\n                    }\n\n                    if (canRun) {\n                        cout << \"P\" << i << \" can run. Need=[\";\n                        for (int j = 0; j < m; j++)\n                            cout << need[i][j] << (j < m-1 ? \",\" : \"\");\n                        cout << \"] <= Work=[\";\n                        for (int j = 0; j < m; j++)\n                            cout << work[j] << (j < m-1 ? \",\" : \"\");\n                        cout << \"]\\n\";\n\n                        for (int j = 0; j < m; j++) {\n                            work[j] += allocation[i][j];\n                        }\n\n                        cout << \"  New Work: [\";\n                        for (int j = 0; j < m; j++)\n                            cout << work[j] << (j < m-1 ? \", \" : \"\");\n                        cout << \"]\\n\";\n\n                        finish[i] = true;\n                        safeSeq.push_back(i);\n                        found = true;\n                        completed++;\n                    }\n                }\n            }\n\n            if (!found) {\n                // Print deadlocked processes\n                cout << \"\\nUNSAFE STATE: Deadlocked processes: \";\n                for (int i = 0; i < n; i++) {\n                    if (!finish[i]) cout << \"P\" << i << \" \";\n                }\n                cout << \"\\n\";\n                return false;\n            }\n        }\n\n        cout << \"\\nSafe sequence found: \";\n        for (int p : safeSeq) cout << \"P\" << p << \" \";\n        cout << \"\\n\";\n        return true;\n    }\n\n    bool requestResources(int pid, const vector<int>& request) {\n        cout << \"\\n=== P\" << pid << \" requests [\";\n        for (int j = 0; j < m; j++)\n            cout << request[j] << (j < m-1 ? \",\" : \"\");\n        cout << \"] ===\\n\";\n\n        // Step 1: Check if request ≤ need\n        for (int j = 0; j < m; j++) {\n            if (request[j] > need[pid][j]) {\n                cout << \"ERROR: Request exceeds maximum claim.\\n\";\n                return false;\n            }\n        }\n        cout << \"Step 1: Request ≤ Need ✓\\n\";\n\n        // Step 2: Check if request ≤ available\n        for (int j = 0; j < m; j++) {\n            if (request[j] > available[j]) {\n                cout << \"Step 2: Request > Available → must wait\\n\";\n                return false;\n            }\n        }\n        cout << \"Step 2: Request ≤ Available ✓\\n\";\n\n        // Step 3: Pretend to allocate\n        for (int j = 0; j < m; j++) {\n            available[j] -= request[j];\n            allocation[pid][j] += request[j];\n            need[pid][j] -= request[j];\n        }\n\n        // Step 4: Safety check\n        vector<int> safeSeq;\n        if (isSafe(safeSeq)) {\n            cout << \"Step 4: State is SAFE → Request GRANTED ✓\\n\";\n            return true;\n        } else {\n            // Rollback\n            for (int j = 0; j < m; j++) {\n                available[j] += request[j];\n                allocation[pid][j] -= request[j];\n                need[pid][j] += request[j];\n            }\n            cout << \"Step 4: State is UNSAFE → Request DENIED ✗\\n\";\n            return false;\n        }\n    }\n\n    void printState() {\n        cout << \"\\nCurrent System State:\\n\";\n        cout << \"Process | Max        | Allocation | Need       |\\n\";\n        cout << \"--------|-----------|-----------|-----------|\\n\";\n        for (int i = 0; i < n; i++) {\n            cout << \"P\" << i << \"      | [\";\n            for (int j = 0; j < m; j++)\n                cout << max_claim[i][j] << (j < m-1 ? \",\" : \"\");\n            cout << \"] | [\";\n            for (int j = 0; j < m; j++)\n                cout << allocation[i][j] << (j < m-1 ? \",\" : \"\");\n            cout << \"] | [\";\n            for (int j = 0; j < m; j++)\n                cout << need[i][j] << (j < m-1 ? \",\" : \"\");\n            cout << \"] |\\n\";\n        }\n        cout << \"Available: [\";\n        for (int j = 0; j < m; j++)\n            cout << available[j] << (j < m-1 ? \", \" : \"\");\n        cout << \"]\\n\";\n    }\n};\n\nint main() {\n    // 5 processes, 3 resource types\n    BankersAlgorithm ba(5, 3);\n\n    ba.setAvailable({3, 3, 2});\n\n    ba.setMax(0, {7, 5, 3});\n    ba.setMax(1, {3, 2, 2});\n    ba.setMax(2, {9, 0, 2});\n    ba.setMax(3, {2, 2, 2});\n    ba.setMax(4, {4, 3, 3});\n\n    ba.setAllocation(0, {0, 1, 0});\n    ba.setAllocation(1, {2, 0, 0});\n    ba.setAllocation(2, {3, 0, 2});\n    ba.setAllocation(3, {2, 1, 1});\n    ba.setAllocation(4, {0, 0, 2});\n\n    ba.calculateNeed();\n    ba.printState();\n\n    // Test initial safety\n    vector<int> safeSeq;\n    cout << \"\\nInitial safety check:\";\n    if (ba.isSafe(safeSeq)) {\n        cout << \"System is in SAFE state.\\n\";\n    } else {\n        cout << \"System is in UNSAFE state.\\n\";\n    }\n\n    // P1 requests [1, 0, 2]\n    ba.requestResources(1, {1, 0, 2});\n\n    ba.printState();\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "bankers-algorithm-python-implementation",
+      children: "Banker's Algorithm: Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class BankersAlgorithm:\n    \"\"\"\n    Banker's Algorithm for Deadlock Avoidance\n    \n    Complexity: O(m * n^2) where m = resources, n = processes\n    Space: O(m * n) for the matrices\n    \"\"\"\n    \n    def __init__(self, processes: int, resources: int):\n        self.n = processes\n        self.m = resources\n        self.max_claim = [[0] * resources for _ in range(processes)]\n        self.allocation = [[0] * resources for _ in range(processes)]\n        self.need = [[0] * resources for _ in range(processes)]\n        self.available = [0] * resources\n    \n    def set_max(self, pid: int, max_res: list):\n        self.max_claim[pid] = max_res[:]\n    \n    def set_allocation(self, pid: int, alloc: list):\n        self.allocation[pid] = alloc[:]\n    \n    def set_available(self, avail: list):\n        self.available = avail[:]\n    \n    def calculate_need(self):\n        for i in range(self.n):\n            for j in range(self.m):\n                self.need[i][j] = self.max_claim[i][j] - self.allocation[i][j]\n    \n    def is_safe(self) -> tuple:\n        \"\"\"\n        Check if current state is safe.\n        Returns: (is_safe: bool, safe_sequence: list)\n        \"\"\"\n        work = self.available[:]\n        finish = [False] * self.n\n        safe_sequence = []\n        \n        print(\"\\n=== Safety Algorithm ===\")\n        print(f\"Initial Work: {work}\")\n        \n        while len(safe_sequence) < self.n:\n            found = False\n            \n            for i in range(self.n):\n                if not finish[i]:\n                    # Check if Need[i] <= Work\n                    can_run = all(self.need[i][j] <= work[j] \n                                for j in range(self.m))\n                    \n                    if can_run:\n                        print(f\"P{i} can run. Need={self.need[i]} \"\n                              f\"<= Work={work}\")\n                        for j in range(self.m):\n                            work[j] += self.allocation[i][j]\n                        print(f\"  New Work: {work}\")\n                        finish[i] = True\n                        safe_sequence.append(i)\n                        found = True\n            \n            if not found:\n                deadlocked = [f\"P{i}\" for i in range(self.n) if not finish[i]]\n                print(f\"UNSAFE. Deadlocked: {deadlocked}\")\n                return False, []\n        \n        print(f\"Safe sequence: {safe_sequence}\")\n        return True, safe_sequence\n    \n    def request_resources(self, pid: int, request: list) -> bool:\n        \"\"\"\n        Handle resource request from process pid.\n        Returns True if request granted, False otherwise.\n        \"\"\"\n        print(f\"\\n=== P{pid} requests {request} ===\")\n        \n        # Step 1: Check request <= need\n        for j in range(self.m):\n            if request[j] > self.need[pid][j]:\n                print(\"ERROR: Request exceeds maximum claim!\")\n                return False\n        print(\"Step 1 ✓: Request <= Need\")\n        \n        # Step 2: Check request <= available\n        for j in range(self.m):\n            if request[j] > self.available[j]:\n                print(\"Step 2 ✗: Request > Available → must wait\")\n                return False\n        print(\"Step 2 ✓: Request <= Available\")\n        \n        # Step 3: Pretend allocation\n        for j in range(self.m):\n            self.available[j] -= request[j]\n            self.allocation[pid][j] += request[j]\n            self.need[pid][j] -= request[j]\n        \n        # Step 4: Safety check\n        safe, seq = self.is_safe()\n        if safe:\n            print(f\"Step 4 ✓: SAFE → Request GRANTED. Sequence: {seq}\")\n            return True\n        else:\n            # Rollback\n            for j in range(self.m):\n                self.available[j] += request[j]\n                self.allocation[pid][j] -= request[j]\n                self.need[pid][j] += request[j]\n            print(\"Step 4 ✗: UNSAFE → Request DENIED, rolled back\")\n            return False\n    \n    def print_state(self):\n        \"\"\"Print current system state.\"\"\"\n        print(\"\\nCurrent System State:\")\n        print(f\"{'Process':<10} {'Max':<15} {'Allocation':<15} {'Need':<15}\")\n        print(\"-\" * 55)\n        for i in range(self.n):\n            print(f\"P{i:<10} {str(self.max_claim[i]):<15} \"\n                  f\"{str(self.allocation[i]):<15} {str(self.need[i]):<15}\")\n        print(f\"{'Available:':<10} {str(self.available):<15}\")\n\n\n# Test the implementation\nif __name__ == \"__main__\":\n    # 5 processes, 3 resource types\n    ba = BankersAlgorithm(5, 3)\n    ba.set_available([3, 3, 2])\n    \n    ba.set_max(0, [7, 5, 3])\n    ba.set_max(1, [3, 2, 2])\n    ba.set_max(2, [9, 0, 2])\n    ba.set_max(3, [2, 2, 2])\n    ba.set_max(4, [4, 3, 3])\n    \n    ba.set_allocation(0, [0, 1, 0])\n    ba.set_allocation(1, [2, 0, 0])\n    ba.set_allocation(2, [3, 0, 2])\n    ba.set_allocation(3, [2, 1, 1])\n    ba.set_allocation(4, [0, 0, 2])\n    \n    ba.calculate_need()\n    ba.print_state()\n    \n    # Test: P1 requests [1, 0, 2]\n    ba.request_resources(1, [1, 0, 2])\n    ba.print_state()\n    \n    # Test: P4 requests [3, 3, 0] → should be denied\n    ba.request_resources(4, [3, 3, 0])\n    \n    # Test: P0 requests [0, 2, 0] → should be denied (unsafe)\n    ba.request_resources(0, [0, 2, 0])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Output (Expected Trace):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Current System State:\nProcess    Max             Allocation      Need\n-------------------------------------------------------\nP0         [7, 5, 3]       [0, 1, 0]       [7, 4, 3]\nP1         [3, 2, 2]       [2, 0, 0]       [1, 2, 2]\nP2         [9, 0, 2]       [3, 0, 2]       [6, 0, 0]\nP3         [2, 2, 2]       [2, 1, 1]       [0, 1, 1]\nP4         [4, 3, 3]       [0, 0, 2]       [4, 3, 1]\nAvailable: [3, 3, 2]\n\n=== P1 requests [1, 0, 2] ===\nStep 1 ✓: Request <= Need\nStep 2 ✓: Request <= Available\n\n=== Safety Algorithm ===\nInitial Work: [2, 3, 0]\nP1 can run. Need=[0, 2, 0] <= Work=[2, 3, 0]\n  New Work: [5, 3, 2]\nP3 can run. Need=[0, 1, 1] <= Work=[5, 3, 2]\n  New Work: [7, 4, 3]\nP0 can run. Need=[7, 2, 3] <= Work=[7, 4, 3]\n  New Work: [7, 5, 3]\nP2 can run. Need=[6, 0, 0] <= Work=[7, 5, 3]\n  New Work: [10, 5, 5]\nP4 can run. Need=[4, 3, 1] <= Work=[10, 5, 5]\n  New Work: [10, 5, 7]\nSafe sequence: [1, 3, 0, 2, 4]\nStep 4 ✓: SAFE → Request GRANTED. Sequence: [1, 3, 0, 2, 4]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "complexity-analysis-of-bankers-algorithm",
+      children: "Complexity Analysis of Banker's Algorithm"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Safety check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For each of n processes (outer loop), we scan n processes × m resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One safety check after pretend allocation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Need calculation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single pass through n×m matrix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store Max, Allocation, Need matrices"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detailed breakdown of safety check O(m·n²):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Outer loop: runs up to n times (once per process)\n  For each iteration:\n    Scan all n processes: O(n)\n      For each unfinished process, check m resources: O(m)\n  Inner complexity: O(n·m)\nTotal: O(n × n·m) = O(m·n²)\n\nWith n=5, m=3: 5 × 5 × 3 = 75 operations → trivial\nWith n=100, m=10: 100 × 100 × 10 = 100,000 operations → still reasonable\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advantages--disadvantages-of-bankers-algorithm",
+      children: "Advantages & Disadvantages of Banker's Algorithm"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guarantees deadlock freedom"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires advance knowledge of maximum resource needs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No resource utilization sacrifice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Processes rarely declare true max → over-reservation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Graceful handling of requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n²) complexity scales quadratically"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rollback ensures no unsafe decisions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Starvation not addressed (process may wait forever for unsafe state to clear)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theoretically optimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impractical for most real OS (processes don't know future needs)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-cases-in-bankers-algorithm",
+      children: "Edge Cases in Banker's Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Case 1: Multiple Resource Units per Type"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "System: R0=2 instances, R1=2 instances\nP0: Max=[2,1], Allocation=[1,0], Need=[1,1]\nP1: Max=[1,2], Allocation=[0,1], Need=[1,1]\nAvailable=[1,1]\n\nSafety check:\n  P0: Need=[1,1] ≤ Work=[1,1] → run → Work=[2,1]\n  P1: Need=[1,1] ≤ Work=[2,1] → run → Work=[2,2]\n  SAFE\n\nScenario where multi-instance prevents deadlock but single-instance wouldn't:\n  If Available=[0,1]:\n    P0: Need=[1,1] > [0,1] → blocked\n    P1: Need=[1,1] > [0,1] → blocked\n    UNSAFE (potential deadlock)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Case 2: Process with Zero Max Need"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "P0: Max=[0,0,0], Allocation=[0,0,0], Need=[0,0,0]\n  → Always finishable, trivially safe\n  → Acts as resource donor (has nothing, needs nothing)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Case 3: Available Exactly Equals Need"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "P0: Need=[2,1], Work=[2,1]\n  → Exact match, can run\n  → After completion: Work += Allocation\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Case 4: Deadlock Detection vs Avoidance Distinction"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Avoidance says: \"This state could lead to deadlock, deny the request.\"\nDetection says: \"I'll allow it. If deadlock happens, I'll find and fix it.\"\n\nIn an avoidance system, unsafe ≠ deadlock. The system is being conservative.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-detection",
+      children: "Deadlock Detection"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If the system does not prevent or avoid deadlocks, it must be able to ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "detect"
+      }), " them."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detection-algorithm-single-instance-per-resource-type",
+      children: "Detection Algorithm: Single Instance per Resource Type"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "wait-for graph"
+      }), " → derived from the resource-allocation graph by removing resources and connecting processes directly."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "RAG to Wait-for Graph Conversion:\n\nRAG:                    Wait-for Graph:\nP1 → R1 → P2            P1 → P2 (P1 waits for P2)\nP2 → R2 → P3   ===>     P2 → P3 (P2 waits for P3)\nP3 → R1                 P3 → P1 (P3 waits for P1, since P3→R1 and R1→P1)\nR1 → P1\nR2 → P2, P3\n\nAlgorithm: For each resource R with instances, connect each process\nholding R to each process waiting for R.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Wait-for Graph Cycle Detection (DFS):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def has_deadlock(wait_for_graph, n):\n    \"\"\"\n    Detect deadlock in a wait-for graph.\n    Args:\n        wait_for_graph: n×n adjacency matrix\n        n: number of processes\n    Returns:\n        (has_deadlock, deadlocked_processes)\n    \"\"\"\n    visited = [False] * n\n    rec_stack = [False] * n\n    deadlocked = []\n    \n    def dfs(v):\n        visited[v] = True\n        rec_stack[v] = True\n        \n        for u in range(n):\n            if wait_for_graph[v][u]:  # v waits for u\n                if not visited[u]:\n                    if dfs(u):\n                        return True\n                elif rec_stack[u]:\n                    # Cycle detected → collect processes in cycle\n                    # (simplified: mark all in current recursion stack)\n                    return True\n        \n        rec_stack[v] = False\n        return False\n    \n    for i in range(n):\n        if not visited[i]:\n            if dfs(i):\n                # Collect deadlocked processes\n                for v in range(n):\n                    if rec_stack[v]:\n                        deadlocked.append(v)\n                return True, deadlocked\n    \n    return False, []\n\n# Example wait-for graph\n# P0 → P1 → P2 → P0 (cycle = deadlock)\ngraph = [\n    [0, 1, 0],  # P0 waits for P1\n    [0, 0, 1],  # P1 waits for P2\n    [1, 0, 0],  # P2 waits for P0\n]\n\ndeadlock, processes = has_deadlock(graph, 3)\nprint(f\"Deadlock detected: {deadlock}\")\nprint(f\"Deadlocked processes: {processes}\")\n# Output: Deadlock detected: True\n# Output: Deadlocked processes: [0, 1, 2]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detection-algorithm-multiple-instances-per-resource-type",
+      children: "Detection Algorithm: Multiple Instances per Resource Type"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Similar to Banker's safety algorithm but modified:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION detectDeadlock(Available, Allocation, Request, n, m):\n    Work[m] = Available[m]\n    Finish[n] = {false}\n    \n    // Initialize: processes with zero allocation are finished\n    FOR i = 0 TO n-1:\n        IF Allocation[i] == [0, 0, ..., 0]:\n            Finish[i] = true\n        ELSE:\n            Finish[i] = false\n    \n    // Find an unfinished process whose request ≤ work\n    WHILE true:\n        found = false\n        FOR i = 0 TO n-1:\n            IF NOT Finish[i] AND Request[i] ≤ Work:\n                Work = Work + Allocation[i]\n                Finish[i] = true\n                found = true\n        \n        IF NOT found:\n            BREAK\n    \n    // Any process still unfinished → deadlocked\n    FOR i = 0 TO n-1:\n        IF NOT Finish[i]:\n            mark Pᵢ as deadlocked\n    \n    RETURN any unfinished found\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detection-algorithm-c-implementation",
+      children: "Detection Algorithm: C Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <stdbool.h>\n\n#define N 5  // processes\n#define M 3  // resource types\n\nint available[N] = {0, 0, 0};  // NOTE: this is confusing naming\n// Let's use proper names\nint avail[M] = {0, 1, 0};\nint allocation[N][M] = {\n    {0, 1, 0},  // P0\n    {2, 0, 0},  // P1\n    {3, 0, 2},  // P2\n    {2, 1, 1},  // P3\n    {0, 0, 2}   // P4\n};\nint request[N][M] = {\n    {0, 0, 0},  // P0 → request = Need from Banker\n    {2, 0, 2},  // P1\n    {0, 0, 0},  // P2\n    {1, 0, 0},  // P3\n    {0, 0, 2}   // P4\n};\n\nbool detect_deadlock() {\n    int work[M];\n    bool finish[N];\n    \n    // Initialize work = available\n    for (int j = 0; j < M; j++)\n        work[j] = avail[j];\n    \n    // Initialize finish: processes with zero allocation are done\n    for (int i = 0; i < N; i++) {\n        bool zero_alloc = true;\n        for (int j = 0; j < M; j++) {\n            if (allocation[i][j] != 0) {\n                zero_alloc = false;\n                break;\n            }\n        }\n        finish[i] = zero_alloc;\n    }\n    \n    bool changed;\n    do {\n        changed = false;\n        for (int i = 0; i < N; i++) {\n            if (!finish[i]) {\n                bool can_run = true;\n                for (int j = 0; j < M; j++) {\n                    if (request[i][j] > work[j]) {\n                        can_run = false;\n                        break;\n                    }\n                }\n                if (can_run) {\n                    for (int j = 0; j < M; j++)\n                        work[j] += allocation[i][j];\n                    finish[i] = true;\n                    changed = true;\n                    printf(\"P%d can complete. Work = [%d,%d,%d]\\n\",\n                           i, work[0], work[1], work[2]);\n                }\n            }\n        }\n    } while (changed);\n    \n    // Check for deadlocked processes\n    bool deadlock = false;\n    printf(\"\\nDeadlocked processes: \");\n    for (int i = 0; i < N; i++) {\n        if (!finish[i]) {\n            printf(\"P%d \", i);\n            deadlock = true;\n        }\n    }\n    \n    if (!deadlock)\n        printf(\"None → system is deadlock-free\\n\");\n    printf(\"\\n\");\n    return deadlock;\n}\n\nint main() {\n    printf(\"=== Deadlock Detection ===\\n\");\n    printf(\"Available: [%d,%d,%d]\\n\", avail[0], avail[1], avail[2]);\n    \n    if (detect_deadlock())\n        printf(\"DEADLOCK DETECTED\\n\");\n    else\n        printf(\"No deadlock\\n\");\n    \n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detection-dry-run-trace-table",
+      children: "Detection Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "State:\n  Available: [0, 1, 0]\n  Process | Allocation | Request (Need)\n  --------|-----------|----------------\n  P0      | [0, 1, 0] | [0, 0, 0]\n  P1      | [2, 0, 0] | [2, 0, 2]\n  P2      | [3, 0, 2] | [0, 0, 0]\n  P3      | [2, 1, 1] | [1, 0, 0]\n  P4      | [0, 0, 2] | [0, 0, 2]\n\nInitial Finish:\n  P0: Allocation=[0,1,0] ≠ zero → Finish[0]=false\n  P1: Allocation=[2,0,0] ≠ zero → Finish[1]=false\n  P2: Allocation=[3,0,2] ≠ zero → Finish[2]=false\n  P3: Allocation=[2,1,1] ≠ zero → Finish[3]=false\n  P4: Allocation=[0,0,2] ≠ zero → Finish[4]=false\n\nIteration | Process | Request | Work (Start) | Request ≤ Work? | Work (End) | Finish\n----------|---------|---------|-------------|-----------------|------------|-------\n1         | P0      | [0,0,0] | [0,1,0]     | Yes             | [0,2,0]   | True\n1         | P1      | [2,0,2] | [0,2,0]     | [2 > 0 → No]    | -          | -\n1         | P2      | [0,0,0] | [0,2,0]     | Yes             | [3,2,2]   | True\n1         | P3      | [1,0,0] | [3,2,2]     | Yes             | [5,3,3]   | True\n1         | P4      | [0,0,2] | [5,3,3]     | Yes             | [5,3,5]   | True\n\nAll finished → NO DEADLOCK\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario with actual deadlock:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "  Available: [0, 0, 0]\n  Process | Allocation | Request\n  --------|-----------|--------\n  P0      | [1, 0, 0] | [0, 1, 0]   → wants R2, holds R1\n  P1      | [0, 1, 0] | [0, 0, 1]   → wants R3, holds R2\n  P2      | [0, 0, 1] | [1, 0, 0]   → wants R1, holds R3\n\nIteration | Process | Request | Work | Request ≤ Work? | Finish\n----------|---------|---------|------|-----------------|-------\n1         | P0      | [0,1,0] | [0,0,0] | No (1>0)    | -\n1         | P1      | [0,0,1] | [0,0,0] | No (1>0)    | -\n1         | P2      | [1,0,0] | [0,0,0] | No (1>0)    | -\n2         | No process can run → all remain unfinished\n\nDEADLOCK: P0, P1, P2 all deadlocked\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "detection-algorithm-complexity",
+      children: "Detection Algorithm Complexity"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same as Banker: scan all n processes, up to n times, each checking m resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Space Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m·n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store available (m), allocation (n×m), request (n×m)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "For n=100, m=10"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100K operations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runs in milliseconds; can be invoked periodically"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "how-often-to-run-detection",
+      children: "How Often to Run Detection"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Frequency"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Approach"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check after every resource request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum overhead, instant detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Periodic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every T time units or N requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tunable; may miss short deadlocks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "On-demand"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Triggered by process timeout/blocking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low overhead; detection delay equals timeout duration"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-case-circular-wait-detection-in-multi-instance",
+      children: "Edge Case: Circular Wait Detection in Multi-Instance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Resources: R1 (2 instances), R2 (2 instances)\n\nP0: holds R1×2, needs R2×1\nP1: holds R2×2, needs R1×1\nP2: holds nothing, needs nothing (idle)\n\nAvailable: R1=0, R2=0\n\nDetection:\n  P2: Allocation=[0,0] → Finish[2]=true (no resources held)\n  P0: Need=[0,1] > Work=[0,0] → blocked\n  P1: Need=[1,0] > Work=[0,0] → blocked\n  Result: DEADLOCK between P0 and P1\n\nEven with multi-instance resources, exhaustion of all instances\ncreates circular wait.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-recovery",
+      children: "Deadlock Recovery"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Once a deadlock is detected, the system must ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "recover"
+      }), ". Two main approaches exist."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "approach-1-process-termination",
+      children: "Approach 1: Process Termination"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Option A → Abort all deadlocked processes:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void abort_all_deadlocked(bool deadlocked[], int n) {\n    for (int i = 0; i < n; i++) {\n        if (deadlocked[i]) {\n            printf(\"Aborting P%d\\n\", i);\n            terminate_process(i);  // Force kill\n        }\n    }\n}\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Pro"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Con"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple, guaranteed recovery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expensive: lost computation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Breaks all cycles at once"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Processes may have held locks for hours"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Option B → Abort one process at a time:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "void abort_one_by_one(int deadlocked[], int count) {\n    // Sort by cost (ascending)\n    sort_by_cost(deadlocked, count);\n    \n    for (int i = 0; i < count; i++) {\n        terminate_process(deadlocked[i]);\n        if (!detect_deadlock()) {\n            printf(\"Deadlock broken after aborting P%d\\n\", deadlocked[i]);\n            return;\n        }\n    }\n}\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Pro"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Con"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lower overhead: only abort what's necessary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must re-run detection after each abort (O(m·n²) each time)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Selective: choose victim with minimum cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May take multiple iterations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Selection Criteria (victim selection):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Cost function for victim selection:\n  cost(P) = w₁·priority(P)⁻¹ + w₂·runtime(P) + w₃·resources_held(P) + w₄·remaining_time(P)\n\nWhere:\n  priority(P)   = process priority (higher = more important → higher cost to abort)\n  runtime(P)    = CPU time used so far (more runtime = more lost work → higher cost)\n  resources_held(P) = number of resources held (more resources to reclaim → lower cost)\n  remaining_time(P) = estimated time to completion (more remaining = lower cost to abort)\n  w₁, w₂, w₃, w₄ = weighting factors\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered Steps for Process Termination Recovery:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect deadlock, get set of deadlocked processes D"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For each process Pᵢ ∈ D, compute cost(Pᵢ) using selection criteria"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sort D by cost in descending order (highest cost = worst to abort)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Select victim Pⱼ = lowest cost process in D"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Terminate Pⱼ and all its child threads"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reclaim all resources held by Pⱼ"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run deadlock detection again"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If deadlock persists, go to step 2 with reduced set D \\ {Pⱼ}"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If deadlock resolved, resume normal operation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "approach-2-resource-preemption",
+      children: "Approach 2: Resource Preemption"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Forcibly take resources from a process and give them to others."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "typedef struct {\n    int process_id;\n    int resource_id;\n    int instances_needed;\n    void *checkpoint_state;\n} PreemptionTarget;\n\nPreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {\n    // Select the process holding the fewest resources\n    // (minimizes rollback cost)\n    int min_resources = INT_MAX;\n    int victim = -1;\n    int resource = -1;\n    \n    for (int i = 0; i < n; i++) {\n        if (deadlocked[i]) {\n            for (int j = 0; j < m; j++) {\n                if (allocation[i][j] > 0 && allocation[i][j] < min_resources) {\n                    min_resources = allocation[i][j];\n                    victim = i;\n                    resource = j;\n                }\n            }\n        }\n    }\n    \n    PreemptionTarget target = {victim, resource, min_resources, NULL};\n    return target;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Three Challenges of Preemption:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Challenge"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1. Victim Selection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which process/resource to preempt?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Preempt processes holding preemptable resources (memory pages, not mutexes)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "2. Rollback"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Preempted process must be restored to safe state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Checkpoint at known safe points (syscall boundaries, transaction commits)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3. Starvation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same process repeatedly selected"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Include preemption count in cost metric: cost(P) × (1 + preemption_count(P))"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered Steps for Resource Preemption:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify preemptable resources from deadlocked set (schedulable resources only: CPU, memory, disk space)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Select victim process Pⱼ using weighted cost function that includes preemption history"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checkpoint: save process state at last safe point (register file, stack pointer)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Preempt: forcibly remove resource from Pⱼ (revoke memory pages, take back disk blocks)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Restart Pⱼ from last checkpoint (may lose some computation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Allocate preempted resource to the waiting process"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Record preemption in Pⱼ's starvation counter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If deadlock persists, repeat from step 1"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "comparison-termination-vs-preemption",
+      children: "Comparison: Termination vs Preemption"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process Termination"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Resource Preemption"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Simplicity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to implement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex: needs checkpoint/rollback"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Speed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast (kill is instant)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slower (rollback takes time)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Data loss"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All computation lost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only work since last checkpoint lost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Starvation risk"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (process is gone)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (same victim repeatedly)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Applicability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All resource types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only preemptable resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "OS usage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (manual kill -9)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual memory (page eviction)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Database usage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transaction abort"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row-level lock release"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prevention-vs-avoidance-vs-detection-complete-comparison",
+      children: "Prevention vs Avoidance vs Detection: Complete Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Prevention"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoidance (Banker)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detection + Recovery"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Strategy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Make deadlock structurally impossible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluate each request; deny if leads to unsafe state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Allow deadlock to occur, then detect and fix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resource utilization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (especially hold-and-wait prevention)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Throughput"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lower"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advance knowledge needed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes → processes must declare Max need"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Runtime overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (check ordering)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (O(m·n²) per request)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (periodic detection)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Implementation complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (circular wait ordering)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (maintain matrices, safe state check)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (detection algorithm + recovery)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When deadlock possible?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never (conservative)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes, but handled"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Starvation possible?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (hold-and-wait)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (process may wait indefinitely for safe state)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (during preemption)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Real-world use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux kernel lock ordering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare (some DB systems)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Databases (InnoDB), some OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedded systems, kernels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Systems with known workloads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General purpose systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q1-deadlock-vs-starvation--whats-the-difference",
+      children: "Q1: Deadlock vs Starvation → What's the Difference?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Deadlock"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Starvation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Definition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set of processes blocked forever, each waiting for a resource held by another"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A process is indefinitely delayed because higher-priority processes always get the resource first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Blocked set"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "≥ 2 processes involved"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 process is the victim"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Can affected processes run?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No → all are blocked waiting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The starving process could run if scheduler allowed it"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resource held by victim?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes → each holds resources"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maybe → starving process may hold no resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Self-recovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impossible without external action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Possible when load decreases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Detection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle in wait-for graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No cycle → just unfair scheduling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resolution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Terminate or preempt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority aging, fair scheduling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Analogy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Four cars blocking intersection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One car stuck behind constantly passing traffic, never getting a gap"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example: Starvation (not deadlock)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Starvation scenario → not a deadlock\n// High-priority thread keeps acquiring mutex, low-priority thread never gets it\n\npthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;\n\nvoid *high_priority_task(void *arg) {\n    while (1) {\n        pthread_mutex_lock(&mutex);\n        // Does work, releases quickly\n        pthread_mutex_unlock(&mutex);\n        sched_yield();  // Yields CPU but keeps mutex priority advantage\n    }\n}\n\nvoid *low_priority_task(void *arg) {\n    while (1) {\n        pthread_mutex_lock(&mutex);  // May never acquire if high priority always gets it first\n        printf(\"Low priority task running\\n\");\n        pthread_mutex_unlock(&mutex);\n    }\n}\n// This is STARVATION, not deadlock:\n// - Only one process (low priority) is affected\n// - No circular wait\n// - Low-priority could run if scheduler chose it\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code example: Deadlock (different from starvation)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Deadlock → two processes each holding one lock, waiting for the other\npthread_mutex_t mutex_a = PTHREAD_MUTEX_INITIALIZER;\npthread_mutex_t mutex_b = PTHREAD_MUTEX_INITIALIZER;\n\nvoid *task_a(void *arg) {\n    pthread_mutex_lock(&mutex_a);\n    sleep(1);\n    pthread_mutex_lock(&mutex_b);  // Blocks → B holds mutex_b\n    pthread_mutex_unlock(&mutex_b);\n    pthread_mutex_unlock(&mutex_a);\n}\n\nvoid *task_b(void *arg) {\n    pthread_mutex_lock(&mutex_b);\n    sleep(1);\n    pthread_mutex_lock(&mutex_a);  // Blocks → A holds mutex_a\n    pthread_mutex_unlock(&mutex_a);\n    pthread_mutex_unlock(&mutex_b);\n}\n// This is DEADLOCK:\n// - Both processes blocked\n// - Circular wait: A→B→A\n// - Both hold resources\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q2-dining-philosophers--deadlock-free-solution",
+      children: "Q2: Dining Philosophers → Deadlock-Free Solution"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Problem:"
+      }), " 5 philosophers sit at a round table. Each needs 2 chopsticks to eat. Each picks up left chopstick, then right. If all pick up left simultaneously, deadlock."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deadlock-Free Solution Using Resource Ordering:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <pthread.h>\n#include <unistd.h>\n\n#define N 5\npthread_mutex_t chopsticks[N];\n\nvoid *philosopher(void *arg) {\n    int id = *(int *)arg;\n    int left = id;\n    int right = (id + 1) % N;\n    \n    while (1) {\n        // Think\n        printf(\"Philosopher %d thinking...\\n\", id);\n        usleep(100000);\n        \n        // Resource ordering: always pick up lower-numbered chopstick first\n        int first = (left < right) ? left : right;\n        int second = (left < right) ? right : left;\n        \n        pthread_mutex_lock(&chopsticks[first]);\n        pthread_mutex_lock(&chopsticks[second]);\n        \n        printf(\"Philosopher %d eating...\\n\", id);\n        usleep(100000);\n        \n        pthread_mutex_unlock(&chopsticks[second]);\n        pthread_mutex_unlock(&chopsticks[first]);\n    }\n    return NULL;\n}\n\nint main() {\n    pthread_t philosophers[N];\n    int ids[N];\n    \n    for (int i = 0; i < N; i++)\n        pthread_mutex_init(&chopsticks[i], NULL);\n    \n    for (int i = 0; i < N; i++) {\n        ids[i] = i;\n        pthread_create(&philosophers[i], NULL, philosopher, &ids[i]);\n    }\n    \n    for (int i = 0; i < N; i++)\n        pthread_join(philosophers[i], NULL);\n    \n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof of deadlock freedom:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "For N philosophers with ordered chopstick pickup:\n  - Chopsticks numbered 0, 1, 2, 3, 4\n  - Each philosopher picks up min(left, right) first, then max(left, right)\n  - Philosopher 0: left=0, right=1 → picks 0 then 1\n  - Philosopher 1: left=1, right=2 → picks 1 then 2\n  - Philosopher 2: left=2, right=3 → picks 2 then 3\n  - Philosopher 3: left=3, right=4 → picks 3 then 4\n  - Philosopher 4: left=4, right=0 → picks 0 then 4 (0 < 4, picks 0 first!)\n\nAt most 4 philosophers can hold chopstick 0 (one gets it).\nThe one who gets 0 will also get their second chopstick.\nNo cycle can form because:\n  - To have a cycle, we'd need P₀ waiting for P₁, P₁ waiting for P₂, etc.\n  - But P₄ picks up 0 first (not 4), and 0 is the lowest number\n  - P₄ cannot be part of a decreasing-order cycle\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Alternative Solution: Limit the number of eaters."
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Allow at most 4 philosophers to eat simultaneously\n// Known as the \"concurrent dining\" solution\nsem_t eaters;  // Initialized to N-1 = 4\n\nvoid *philosopher_sem(void *arg) {\n    int id = *(int *)arg;\n    int left = id;\n    int right = (id + 1) % N;\n    \n    while (1) {\n        think(id);\n        sem_wait(&eaters);  // Only N-1 can try to eat at once\n        pthread_mutex_lock(&chopsticks[left]);\n        pthread_mutex_lock(&chopsticks[right]);\n        eat(id);\n        pthread_mutex_unlock(&chopsticks[right]);\n        pthread_mutex_unlock(&chopsticks[left]);\n        sem_post(&eaters);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q3-what-is-the-ostrich-algorithm",
+      children: "Q3: What is the Ostrich Algorithm?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ostrich algorithm"
+      }), " is the most common deadlock strategy: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ignore the problem"
+      }), ". The name comes from the (false) belief that ostriches bury their heads in the sand."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Strategy: Do nothing. If a deadlock occurs, reboot the system.\n\nUsed by: Most general-purpose OS (Linux, Windows, macOS) for most resources.\n\nRationale:\n  - Deadlocks are rare in correctly designed systems\n  - Cost of prevention (reduced utilization, O(m·n²) checks) exceeds cost of occasional reboot\n  - Users are tolerant of occasional freezes if they're infrequent\n  - Developer effort is better spent elsewhere\n\nWhen it fails: Consider a system controlling a nuclear reactor. A deadlock\nthat triggers a reboot could be catastrophic. Safety-critical systems MUST\nuse prevention or avoidance.\n\nCounterpoint: Modern systems have so many concurrent components that\ndeadlocks are becoming more frequent. The Ostrich algorithm is less\nacceptable for cloud services with 99.999% uptime SLAs.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q4-can-deadlock-occur-with-a-single-process",
+      children: "Q4: Can Deadlock Occur with a Single Process?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "No. Deadlock requires at least 2 processes.\nA single process can block (wait for I/O, wait for a resource held by itself),\nbut this is not deadlock:\n  - If it holds a resource and waits for the same resource: not possible\n    (requesting what you already hold is granted immediately)\n  - If it waits for a resource held by itself: trivial cycle but avoidable\n  - No other process involved → no circular wait\n\nException: A single multithreaded process can deadlock internally when\ntwo threads in the same process deadlock over its own mutexes.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "q5-what-happens-when-a-deadlock-is-detected-in-a-database",
+      children: "Q5: What Happens When a Deadlock is Detected in a Database?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "InnoDB deadlock detection (MySQL):\n  1. InnoDB maintains a wait-for graph of transactions\n  2. On every lock wait, InnoDB runs cycle detection\n  3. If cycle found, choose the transaction that did the least work (fewest locks)\n  4. Roll back that transaction (undo all its changes)\n  5. Release its locks → other transaction can proceed\n  6. The aborted transaction gets error: \"Deadlock found when trying to get lock\"\n  7. Application must retry the transaction\n\nExample:\n  Transaction T1: UPDATE accounts SET balance=balance-100 WHERE id=1;\n                  (locks row 1)\n  Transaction T2: UPDATE accounts SET balance=balance-100 WHERE id=2;\n                  (locks row 2)\n  T1: UPDATE accounts SET balance=balance+100 WHERE id=2;\n      (waits for T2's row 2 lock)\n  T2: UPDATE accounts SET balance=balance+100 WHERE id=1;\n      (waits for T1's row 1 lock)\n  \n  InnoDB detects cycle T1→T2→T1.\n  Victim: the transaction that modified fewer rows (T2, or whichever is \"younger\").\n  T2 is rolled back. T1 continues.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1-linux-kernel-lockdep-lock-dependency-validator",
+      children: "1. Linux Kernel lockdep (Lock Dependency Validator)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The Linux kernel uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lockdep"
+      }), " to prevent deadlocks at compile time and runtime."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "How lockdep works:\n  1. Every lock in the kernel is assigned a unique class (not just address)\n  2. When a lock is acquired, lockdep records the acquisition in a dependency graph\n  3. lock = lockdep_hash_entry(lock class, lock instance)\n  \n  4. On each lock acquisition, lockdep checks:\n     a. Is this a new lock dependency? (lock A → lock B never seen before)\n     b. If yes, add edge to dependency graph\n     c. Check if adding the edge creates a cycle\n     d. If cycle: print full backtrace of both acquisitions → DEADLOCK DETECTED\n\n  5. Example lockdep output:\n     [ INFO: possible circular locking dependency detected ]\n     -------------------------------------------------------\n     WARNING: possible circular locking dependency detected\n     \n     kworker/0:1 is trying to acquire lock:\n      (&mm->mmap_lock){++++}-{3:3}, at: handle_mm_fault+0x...\n     \n     but task is already holding lock:\n      (&sb->s_type->i_mutex_key){+.+.}-{3:3}, at: ext4_file_write+0x...\n     \n     which lock already depends on the new lock.\n     \n     -> #0 (&mm->mmap_lock){++++}-{3:3}:\n        down_read+0x3b/0x50\n        handle_mm_fault+0x...\n     -> #1 (&sb->s_type->i_mutex_key){+.+.}-{3:3}:\n        mutex_lock+0x...\n        ext4_file_write+0x...\n     \n     Possible unsafe locking scenario:\n           CPU0                    CPU1\n           ----                    ----\n      lock(&sb->s_type->i_mutex_key);\n                                   lock(&mm->mmap_lock);\n                                   lock(&sb->s_type->i_mutex_key);\n      lock(&mm->mmap_lock);\n     \n      *** DEADLOCK ***\n\n  6. lockdep runs at boot time OR when lock class first acquired (static key)\n  7. Once all dependencies validated → lockdep shuts up (no runtime cycle detection)\n  8. If new code path creates new dependency → lockdep re-validates\n  \n  Key insight: lockdep detects potential deadlocks statically (before they occur).\n  It verifies that kernel lock ordering has no cycles.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numbered Steps of lockdep Operation:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kernel initializes, registers all lock classes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread T acquires lock L1 (class C1) → lockdep records T holds C1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread T acquires lock L2 (class C2) while holding C1 → lockdep records dependency C1 → C2"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread T releases L2, then L1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Later, thread U acquires lock L2 (class C2) → recorded"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread U acquires lock L1 (class C1) while holding C2 → dependency C2 → C1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "lockdep detects: C1 → C2 AND C2 → C1 → CIRCULAR DEPENDENCY!"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "lockdep prints \"possible circular locking dependency detected\" warning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kernel developers get a bug report, fix the ordering"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "2-database-deadlock-detection-mysql-innodb",
+      children: "2. Database Deadlock Detection (MySQL InnoDB)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "InnoDB Deadlock Detection System:\n  \n  Architecture:\n    ┌─────────────────────────────────────────────┐\n    │  Transaction Manager                       │\n    │  ┌─────────────┐  ┌─────────────────────┐  │\n    │  │ Lock System  │  │ Deadlock Detector   │  │\n    │  │ - row locks  │  │ - wait-for graph    │  │\n    │  │ - gap locks  │  │ - cycle detection   │  │\n    │  │ - table locks│  │ - victim selection  │  │\n    │  └─────────────┘  └─────────────────────┘  │\n    │         │                    │               │\n    │         ▼                    ▼               │\n    │  ┌─────────────────────────────────────┐    │\n    │  │ Rollback Engine (undo log)          │    │\n    │  └─────────────────────────────────────┘    │\n    └─────────────────────────────────────────────┘\n\n  Detection trigger: Every time a transaction waits for a lock\n  \n  Algorithm:\n    1. Transaction T1 requests lock on resource held by T2\n    2. Lock system calls deadlock detector before putting T1 to sleep\n    3. Detector builds/updates wait-for graph\n    4. Runs DFS cycle detection (O(n) where n = active transactions)\n    5. If cycle found → victim selection\n    6. Victim = transaction with the fewest rows modified (cheapest to roll back)\n    7. Victim transaction is aborted with error: \n       ERROR 1213 (40001): Deadlock found when trying to get lock\n    8. All locks held by victim are released\n    9. Other transactions can proceed\n\n  Configuration:\n    innodb_deadlock_detect = ON     (default, can be disabled)\n    innodb_lock_wait_timeout = 50   (seconds before timeout, fallback)\n    \n  Disabling deadlock detection:\n    - When deadlocks are rare and detection overhead is measurable\n    - Without detection: transactions wait until innodb_lock_wait_timeout\n    - Trade-off: detection is O(n), timeout wastes 50 seconds\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deadlock Detection Trace in InnoDB:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "mysql> SHOW ENGINE INNODB STATUS\\G\n-------------------------\nLATEST DETECTED DEADLOCK\n-------------------------\n2024-01-15 10:30:45 0x7f1234\n*** (1) TRANSACTION:\nTRANSACTION 28746, ACTIVE 2 sec starting index read\nmysql tables in use 1, locked 1\nLOCK WAIT 2 lock struct(s), heap size 1136\nMySQL thread id 8, OS thread handle 14000, query id 100\nUPDATE accounts SET balance = balance - 100 WHERE id = 1\n\n*** (1) HOLDS THE LOCK(S):\nRECORD LOCKS space id 5 page no 3 n bits 72 index PRIMARY of table\n  `bank`.`accounts` trx id 28746 lock_mode X locks rec but not gap\n  Record lock, heap no 2 PHYSICAL RECORD: ...\n\n*** (1) WAITING FOR THIS LOCK TO BE GRANTED:\nRECORD LOCKS space id 5 page no 3 n bits 72 index PRIMARY of table\n  `bank`.`accounts` trx id 28746 lock_mode X locks rec but not gap\n  Record lock, heap no 3 PHYSICAL RECORD: ...\n\n*** (2) TRANSACTION:\nTRANSACTION 28745, ACTIVE 3 sec\nmysql tables in use 1, locked 1\n2 lock struct(s), heap size 1136\nMySQL thread id 9, OS thread handle 15000, query id 101\nUPDATE accounts SET balance = balance + 100 WHERE id = 2\n\n*** (2) HOLDS THE LOCK(S):\nRECORD LOCKS space id 5 page no 3 n bits 72 index PRIMARY ...\n  Record lock, heap no 3\n\n*** (2) WAITING FOR THIS LOCK TO BE GRANTED:\nRECORD LOCKS space id 5 page no 3 n bits 72 index PRIMARY ...\n  Record lock, heap no 2\n\n*** WE ROLL BACK TRANSACTION (2)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "3-java-thread-dump-and-deadlock-detection",
+      children: "3. Java Thread Dump and Deadlock Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Java has built-in deadlock detection via the JVM. When you take a thread dump, the JVM reports deadlocked threads."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Example: Java deadlock that can be detected via thread dump\npublic class JavaDeadlockExample {\n    private static final Object lock1 = new Object();\n    private static final Object lock2 = new Object();\n    \n    public static void main(String[] args) {\n        Thread t1 = new Thread(() -> {\n            synchronized (lock1) {\n                System.out.println(\"Thread 1: locked lock1\");\n                try { Thread.sleep(100); } catch (InterruptedException e) {}\n                \n                synchronized (lock2) {  // Deadlock here\n                    System.out.println(\"Thread 1: locked lock2\");\n                }\n            }\n        });\n        \n        Thread t2 = new Thread(() -> {\n            synchronized (lock2) {\n                System.out.println(\"Thread 2: locked lock2\");\n                try { Thread.sleep(100); } catch (InterruptedException e) {}\n                \n                synchronized (lock1) {  // Deadlock here\n                    System.out.println(\"Thread 2: locked lock1\");\n                }\n            }\n        });\n        \n        t1.start();\n        t2.start();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detecting Deadlock with jstack:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "$ jstack -l <pid>\n    \nFound one Java-level deadlock:\n=============================\n\"Thread-1\":\n  waiting to lock monitor 0x00007f8b8c004b00 (object 0x000000076b5f6d10,\n                                                a java.lang.Object),\n  which is held by \"Thread-0\"\n\n\"Thread-0\":\n  waiting to lock monitor 0x00007f8b8c004c00 (object 0x000000076b5f6d20,\n                                                a java.lang.Object),\n  which is held by \"Thread-1\"\n\nJava stack information for the threads listed above:\n===================================================\n\"Thread-1\":\n    at JavaDeadlockExample.lambda$main$1(JavaDeadlockExample.java:24)\n    - waiting to own <0x000000076b5f6d10> (a java.lang.Object)\n    - locked <0x000000076b5f6d20> (a java.lang.Object)\n    \n\"Thread-0\":\n    at JavaDeadlockExample.lambda$main$0(JavaDeadlockExample.java:13)\n    - waiting to own <0x000000076b5f6d20> (a java.lang.Object)\n    - locked <0x000000076b5f6d10> (a java.lang.Object)\n\nFound 1 deadlock.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Programmatic Deadlock Detection in Java:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.lang.management.ManagementFactory;\nimport java.lang.management.ThreadInfo;\nimport java.lang.management.ThreadMXBean;\n\npublic class DeadlockDetector {\n    private final ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();\n    \n    public long[] findDeadlockedThreads() {\n        return threadMXBean.findDeadlockedThreads();\n        // Returns array of deadlocked thread IDs, or null if none\n    }\n    \n    public void printDeadlockInfo() {\n        long[] deadlockedIds = findDeadlockedThreads();\n        if (deadlockedIds == null) {\n            System.out.println(\"No deadlock detected\");\n            return;\n        }\n        \n        ThreadInfo[] threadInfos = threadMXBean.getThreadInfo(deadlockedIds, true, true);\n        System.out.println(\"DEADLOCK DETECTED: \" + deadlockedIds.length + \" threads involved\");\n        \n        for (ThreadInfo info : threadInfos) {\n            System.out.println(\"Thread: \" + info.getThreadName() + \" (ID: \" + info.getThreadId() + \")\");\n            System.out.println(\"  State: \" + info.getThreadState());\n            System.out.println(\"  Lock: \" + info.getLockName());\n            System.out.println(\"  Lock Owner: \" + info.getLockOwnerName());\n            System.out.println(\"  Stack trace:\");\n            for (StackTraceElement element : info.getStackTrace()) {\n                System.out.println(\"    \" + element);\n            }\n        }\n    }\n    \n    public static void main(String[] args) throws InterruptedException {\n        DeadlockDetector detector = new DeadlockDetector();\n        \n        // Run deadlock detection periodically\n        while (true) {\n            long[] deadlocked = detector.findDeadlockedThreads();\n            if (deadlocked != null) {\n                detector.printDeadlockInfo();\n                // Attempt recovery: interrupt deadlocked threads\n                for (long id : deadlocked) {\n                    Thread thread = findThreadById(id);\n                    if (thread != null) {\n                        thread.interrupt();\n                        System.out.println(\"Interrupted thread \" + id);\n                    }\n                }\n            }\n            Thread.sleep(5000);  // Check every 5 seconds\n        }\n    }\n    \n    private static Thread findThreadById(long id) {\n        for (Thread t : Thread.getAllStackTraces().keySet()) {\n            if (t.getId() == id) return t;\n        }\n        return null;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "4-distributed-deadlock-detection",
+      children: "4. Distributed Deadlock Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In distributed systems, deadlock detection spans multiple machines."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Types of distributed deadlocks:\n  1. Resource Deadlock: Process on machine A holds resource, \n     process on machine B wants it (and vice versa)\n  2. Communication Deadlock: Processes waiting for messages from \n     each other in a cycle (no resource involved)\n\nDetection approaches:\n  a. Centralized: One coordinator collects all wait-for info\n     - Pro: Simple\n     - Con: Single point of failure, bottleneck\n     \n  b. Hierarchical: Tree of detectors, each subtree reports up\n     - Pro: Scalable, fault-tolerant\n     - Con: Detection delay increases with tree depth\n     \n  c. Distributed: Each node detects locally, propagates probes\n     - Pro: No single point of failure\n     - Con: Complex, phantom deadlocks possible\n     \n  d. Edge-chasing (Chandy-Misra-Haas, 1983):\n     - Special probe message circulates along wait edges\n     - If probe returns to initiator → deadlock detected\n     - Each probe contains: (initiator, current, predecessor, transaction)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge-Chasing Algorithm (Distributed Deadlock):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Probe format: (i, j, k) → initiated by Pᵢ, sent from Pⱼ to Pₖ\n// Pⱼ waits for Pₖ (Pⱼ → Pₖ in wait-for graph)\n\nPROCEDURE send_probe(i, j, k):\n    // Pⱼ sends probe to Pₖ on behalf of initiator Pᵢ\n    // Pₖ is the process Pⱼ is waiting for\n    IF Pₖ is waiting for some process:\n        FOR each Pₘ that Pₖ waits for:\n            send probe (i, k, m) to Pₘ\n\nUPON receiving probe (i, j, k):\n    // Pₖ received probe (i, j, k)\n    IF Pₖ is blocked:\n        IF k == i:  // Probe returned to initiator\n            DEADLOCK DETECTED!\n            Print: \"Deadlock involving Pᵢ, ..., Pₖ\"\n            Initiate recovery\n        ELSE:\n            // Forward probe along wait edges\n            send_probe(i, k, next) for each blocked Pₖ → next\n    ELSE:\n        // Pₖ is not blocked → discard probe\n        RETURN\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced-edge-cases-and-practical-considerations",
+      children: "Advanced Edge Cases and Practical Considerations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-case-nested-locking-with-shared-resources",
+      children: "Edge Case: Nested Locking with Shared Resources"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Thread A: lock(R1) → lock(R2) → unlock(R2) → unlock(R1)\nThread B: lock(R2) → lock(R1) → unlock(R1) → unlock(R2)\n\nIf A acquires R1, B acquires R2 simultaneously:\n  A: holds R1, waits for R2\n  B: holds R2, waits for R1\n  → Deadlock!\n\nFix: Consistent lock ordering (always R1 before R2)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-case-lock-splitting-and-deadlock",
+      children: "Edge Case: Lock Splitting and Deadlock"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Lock splitting for performance can introduce deadlocks\n\npthread_mutex_t table_lock;  // Protects entire hash table\n// vs\npthread_mutex_t bucket_locks[N];  // One lock per bucket\n\n// With per-bucket locks:\nvoid transfer(int from_bucket, int to_bucket) {\n    // Must lock BOTH buckets → potential deadlock\n    pthread_mutex_lock(&bucket_locks[from_bucket]);\n    // ... thread switch here ...\n    pthread_mutex_lock(&bucket_locks[to_bucket]);\n    \n    // Move data from 'from' to 'to'\n    \n    pthread_mutex_unlock(&bucket_locks[to_bucket]);\n    pthread_mutex_unlock(&bucket_locks[from_bucket]);\n}\n\n// Two threads transferring in opposite directions → deadlock\n// Fix: always lock the smaller bucket number first\nvoid transfer_safe(int from, int to) {\n    int first = min(from, to);\n    int second = max(from, to);\n    pthread_mutex_lock(&bucket_locks[first]);\n    pthread_mutex_lock(&bucket_locks[second]);\n    // ... transfer ...\n    pthread_mutex_unlock(&bucket_locks[second]);\n    pthread_mutex_unlock(&bucket_locks[first]);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "edge-case-reader-writer-lock-deadlock",
+      children: "Edge Case: Reader-Writer Lock Deadlock"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Reader-writer lock deadlock scenario\npthread_rwlock_t rwlock = PTHREAD_RWLOCK_INITIALIZER;\n\nvoid *reader(void *arg) {\n    pthread_rwlock_rdlock(&rwlock);   // Reader acquires read lock\n    // ... do some reading ...\n    pthread_rwlock_wrlock(&rwlock);   // Trying to upgrade to write lock\n    // DEADLOCK if another reader holds the lock!\n    pthread_rwlock_unlock(&rwlock);\n}\n\n// Most implementations do NOT allow read→write upgrade for this reason.\n// Solution: release read lock first, then acquire write lock.\nvoid *reader_fixed(void *arg) {\n    pthread_rwlock_rdlock(&rwlock);\n    // ... read ...\n    pthread_rwlock_unlock(&rwlock);   // Release read\n    pthread_rwlock_wrlock(&rwlock);   // Acquire write separately\n    pthread_rwlock_unlock(&rwlock);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-deadlock-detection-and-bankers-algorithm-simulator",
+      children: "TypeScript Deadlock Detection and Banker's Algorithm Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following TypeScript implementation models deadlock detection via wait-for graphs, Banker's algorithm, and resource allocation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Deadlock Detection & Avoidance Simulator\n * Implements: Banker's Algorithm, Wait-For Graph cycle detection,\n *             Resource Allocation Graph, Deadlock detection\n */\nclass BankersAlgorithm {\n  private processes: number;\n  private resources: number;\n  private available: number[];\n  private max: number[][];\n  private allocation: number[][];\n  private need: number[][];\n\n  constructor(available: number[], max: number[][], allocation: number[][]) {\n    this.processes = max.length;\n    this.resources = available.length;\n    this.available = [...available];\n    this.max = max.map(r => [...r]);\n    this.allocation = allocation.map(r => [...r]);\n    this.need = max.map((row, i) => row.map((val, j) => val - allocation[i][j]));\n  }\n\n  isSafeState(): { safe: boolean; safeSequence: number[] } {\n    const work = [...this.available];\n    const finish = new Array(this.processes).fill(false);\n    const sequence: number[] = [];\n    let count = 0;\n\n    while (count < this.processes) {\n      let found = false;\n      for (let i = 0; i < this.processes; i++) {\n        if (!finish[i] && this.need[i].every((n, j) => n <= work[j])) {\n          // This process can finish\n          for (let j = 0; j < this.resources; j++) {\n            work[j] += this.allocation[i][j];\n          }\n          finish[i] = true;\n          sequence.push(i);\n          found = true;\n          count++;\n        }\n      }\n\n      if (!found) {\n        // No process can proceed — unsafe state\n        return { safe: false, safeSequence: sequence };\n      }\n    }\n\n    return { safe: true, safeSequence: sequence };\n  }\n\n  requestResources(pid: number, request: number[]): string {\n    // Check if request exceeds declared maximum\n    for (let j = 0; j < this.resources; j++) {\n      if (request[j] > this.need[pid][j]) {\n        return `DENIED: Process P${pid} requested more than its maximum claim`;\n      }\n    }\n\n    // Check if resources are available\n    for (let j = 0; j < this.resources; j++) {\n      if (request[j] > this.available[j]) {\n        return `DENIED: Resources not available — P${pid} must wait`;\n      }\n    }\n\n    // Pretend to allocate\n    const savedAlloc = this.allocation.map(r => [...r]);\n    const savedAvail = [...this.available];\n    const savedNeed = this.need.map(r => [...r]);\n\n    for (let j = 0; j < this.resources; j++) {\n      this.available[j] -= request[j];\n      this.allocation[pid][j] += request[j];\n      this.need[pid][j] -= request[j];\n    }\n\n    // Check if resulting state is safe\n    const { safe, safeSequence } = this.isSafeState();\n    if (safe) {\n      return `GRANTED: Resources allocated to P${pid}. Safe sequence: P${safeSequence.join(' → P')}`;\n    } else {\n      // Roll back\n      this.allocation = savedAlloc;\n      this.available = savedAvail;\n      this.need = savedNeed;\n      return `DENIED: Unsafe state would result. Request from P${pid} would lead to deadlock.`;\n    }\n  }\n\n  releaseResources(pid: number, release: number[]): void {\n    for (let j = 0; j < this.resources; j++) {\n      this.available[j] += release[j];\n      this.allocation[pid][j] -= release[j];\n      this.need[pid][j] += release[j];\n    }\n  }\n\n  printState(): string {\n    const header = `Available: [${this.available.join(', ')}]\\n`;\n    const rows = ['PID\\tAlloc\\t\\tMax\\t\\tNeed'];\n    for (let i = 0; i < this.processes; i++) {\n      rows.push(`P${i}\\t[${this.allocation[i].join(',')}]\\t[${this.max[i].join(',')}]\\t[${this.need[i].join(',')}]`);\n    }\n    return header + rows.join('\\n');\n  }\n}\n\nclass WaitForGraph {\n  private adjacency: Map<number, Set<number>> = new Map();\n\n  addEdge(from: number, to: number): void {\n    if (!this.adjacency.has(from)) this.adjacency.set(from, new Set());\n    this.adjacency.get(from)!.add(to);\n  }\n\n  hasCycle(): { cycle: boolean; cyclePath: number[] } {\n    const visited = new Set<number>();\n    const recStack = new Set<number>();\n    const parent = new Map<number, number>();\n\n    const dfs = (node: number): number | null => {\n      visited.add(node);\n      recStack.add(node);\n\n      const neighbors = this.adjacency.get(node) || new Set();\n      for (const neighbor of neighbors) {\n        if (!visited.has(neighbor)) {\n          parent.set(neighbor, node);\n          const result = dfs(neighbor);\n          if (result !== null) return result;\n        } else if (recStack.has(neighbor)) {\n          return neighbor; // Cycle found — return cycle start\n        }\n      }\n\n      recStack.delete(node);\n      return null;\n    };\n\n    for (const node of this.adjacency.keys()) {\n      if (!visited.has(node)) {\n        const cycleStart = dfs(node);\n        if (cycleStart !== null) {\n          // Reconstruct cycle path\n          const path = [cycleStart];\n          let current = cycleStart;\n          do {\n            current = parent.get(current)!;\n            path.push(current);\n          } while (current !== cycleStart);\n          return { cycle: true, cyclePath: path.reverse() };\n        }\n      }\n    }\n\n    return { cycle: false, cyclePath: [] };\n  }\n\n  printGraph(): string {\n    const edges: string[] = [];\n    for (const [from, toSet] of this.adjacency) {\n      for (const to of toSet) {\n        edges.push(`P${from} → P${to}`);\n      }\n    }\n    return edges.join('\\n');\n  }\n}\n\n// Banker's Algorithm example\nconsole.log('=== Banker\\'s Algorithm ===');\nconst banker = new BankersAlgorithm(\n  [3, 3, 2],  // Available\n  [            // Max\n    [7, 5, 3],\n    [3, 2, 2],\n    [9, 0, 2],\n    [2, 2, 2],\n    [4, 3, 3]\n  ],\n  [            // Allocation\n    [0, 1, 0],\n    [2, 0, 0],\n    [3, 0, 2],\n    [2, 1, 1],\n    [0, 0, 2]\n  ]\n);\nconsole.log(banker.printState());\nconsole.log(`\\nSafe state check:`, banker.isSafeState());\nconsole.log(`\\nP1 request [1,0,2]:`, banker.requestResources(1, [1, 0, 2]));\n\n// Wait-for graph cycle detection\nconsole.log('\\n=== Wait-For Graph Deadlock Detection ===');\nconst wfg = new WaitForGraph();\nwfg.addEdge(1, 2); // P1 waiting for P2\nwfg.addEdge(2, 3); // P2 waiting for P3\nwfg.addEdge(3, 1); // P3 waiting for P1 — cycle!\nconsole.log(wfg.printGraph());\nconsole.log('Cycle detected:', wfg.hasCycle());\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numerical-example-bankers-algorithm-safety-check",
+      children: "Numerical Example: Banker's Algorithm Safety Check"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "System state:"
+      }), " Available = [3, 3, 2], 5 processes with Max and Allocation shown."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Need matrix"
+      }), " = Max - Allocation:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "PID"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Need"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[7, 4, 3]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[1, 2, 2]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[6, 0, 0]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[0, 1, 1]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[4, 3, 1]"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Safety algorithm trace:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Work = [3, 3, 2]. Need[0]=[7,4,3] > Work. Skip."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Need[1]=[1,2,2] ≤ Work. P1 can finish. Work = [3,3,2]+[2,0,0] = [5,3,2]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Need[3]=[0,1,1] ≤ Work. P3 can finish. Work = [5,3,2]+[2,1,1] = [7,4,3]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Need[4]=[4,3,1] ≤ Work. P4 can finish. Work = [7,4,3]+[0,0,2] = [7,4,5]."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Need[2]=[6,0,0] ≤ Work. P2 can finish. Work = [7,4,5]+[3,0,2] = [10,4,7]."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Need[0]=[7,4,3] ≤ Work. P0 can finish. Work = [10,4,7]+[0,1,0] = [10,5,7].\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Safe sequence:"
+        }), " P1 → P3 → P4 → P2 → P0"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-chapter-quiz-questions",
+      children: "Additional Chapter Quiz Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "9",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the time complexity of Banker's algorithm safety check?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) O(n)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) O(m·n)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) O(m·n²)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) O(2ⁿ)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In the resource allocation graph, what does a cycle with multi-instance resources indicate?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Certain deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Possible deadlock (depends on reduction)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) No deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Starvation"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the \"Ostrich algorithm\" for deadlocks?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Actively preventing deadlocks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Ignoring the possibility of deadlocks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Detecting and recovering from deadlocks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Avoiding deadlocks via Banker's algorithm"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which deadlock prevention strategy is most practical in real systems?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Eliminate mutual exclusion"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Eliminate hold-and-wait (acquire all at once)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Enforce lock ordering (eliminate circular wait)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Allow preemption of resources"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In MySQL InnoDB, what happens when a deadlock is detected?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) The server crashes"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) One transaction is rolled back (the one that modified fewer rows)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Both transactions are rolled back"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) The deadlock is ignored"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 9-c, 10-b, 11-b, 12-c, 13-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "14",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Given the resource allocation graph: P1 → R1 → P2 → R2 → P3 → R1 (with R1 having 1 instance, R2 having 1 instance), determine whether a deadlock exists. Draw the wait-for graph to confirm."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "15",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a TypeScript implementation of the Banker's algorithm that handles up to 10 processes and 5 resource types. The implementation should accept a sequence of resource requests and grant or deny each request based on safety. Display the safe sequence in each case."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "distributed deadlock detection"
+        }), " algorithm (Chandy-Misra-Haas edge chasing). The implementation should support probe messages that traverse the wait-for graph across simulated nodes. When a probe returns to the initiator, a deadlock is declared. Demonstrate with a 4-node distributed system."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "wound-wait"
+        }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "wait-die"
+        }), " deadlock prevention schemes. Create a scenario with 3 transactions where the schemes prevent deadlock. Compare wound-wait and wait-die in terms of restarts per transaction."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deadlock"
+        }), " requires four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Resource-allocation graphs"
+        }), " detect cycles; single-instance cycle = deadlock, multi-instance needs reduction"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prevention"
+        }), " breaks one condition; circular wait via resource ordering is most practical"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Avoidance (Banker's algorithm)"
+        }), " uses O(m·n²) safety checks before granting each request"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Detection"
+        }), " uses wait-for graph (single-instance) or Banker-like algorithm (multi-instance)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Recovery"
+        }), " via process termination (simple but lossy) or resource preemption (complex but preserves work)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Real systems"
+        }), ": Linux lockdep validates ordering at boot; InnoDB detects cycles on every lock wait; Java's jstack reports deadlocks on demand"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The Ostrich algorithm"
+        }), " (ignore deadlocks) is most common in general-purpose OS"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "quick-reference-1",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Permanent blocking due to circular resource waiting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safe State"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State from which all processes can complete without deadlock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Banker Algorithm"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avoidance algorithm using maximum claims and safe-state checking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Wait-for Graph"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Directed graph showing process wait relationships (single-instance detection)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RAG"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource-Allocation Graph with processes (circles) and resources (squares)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "lockdep"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux kernel lock dependency validator"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Edge Chasing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed deadlock detection via probe messages"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Server"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Database"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Embedded System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Smartphone"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cloud Service"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Prevention"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock ordering in worker threads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock ordering in InnoDB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No dynamic allocation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iOS lock ranking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed lock ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Avoidance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rarely used"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two-phase locking (2PL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Safety-critical systems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource budgeting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coordinated scheduling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Detection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "timeout → restart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "InnoDB cycle detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Watchdog timer reset"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ANR detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge-chasing probes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kill worker process"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rollback victim transaction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System restart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Force-close app"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Circuit breaker trip"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which is NOT a necessary condition for deadlock?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Mutual exclusion"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Preemption"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Hold-and-wait"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Circular wait"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What does the Banker Algorithm check before granting resources?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Resource availability"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Whether resulting state is safe"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Process priority"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) CPU utilization"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "If a resource-allocation graph has a cycle but uses multi-instance resources:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) There is definitely a deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) There is definitely not a deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) There may or may not be a deadlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) The graph is invalid"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the time complexity of Banker's safety algorithm?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) O(n)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) O(m·n)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) O(m·n²)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) O(2ⁿ)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Most general-purpose OS handle deadlocks by:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Prevention"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Avoidance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Detection+recovery"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Ignoring them (ostrich algorithm)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "How does MySQL InnoDB detect deadlocks?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Periodic polling of all transactions"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Wait-for graph analysis on every lock wait"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Timeout-based detection only"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Hardware deadlock detection"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In the dining philosophers problem, which solution guarantees deadlock freedom?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Each philosopher picks up left chopstick first"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Each philosopher picks up the lower-numbered chopstick first"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Allowing all 5 philosophers to eat simultaneously"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Using a single global chopstick lock"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Deadlock and starvation differ because:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Starvation affects multiple processes simultaneously"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Deadlock requires a cycle, starvation does not"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Starvation requires resource preemption"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Deadlock is always temporary"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 1-b, 2-b, 3-c, 4-c, 5-d, 6-b, 7-b, 8-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "basic-1",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "List the four necessary conditions for deadlock and explain each in one sentence."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Draw the resource-allocation graph for: P1 holds R1, wants R2; P2 holds R2, wants R1. Is this a deadlock?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between deadlock prevention and deadlock avoidance?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the Ostrich algorithm. Why is it the most common deadlock strategy?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "intermediate-1",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Given a system with three resource types (A:10, B:5, C:7) and processes:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P0: Max (7,5,3), Allocation (0,1,0)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P1: Max (3,2,2), Allocation (2,0,0)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P2: Max (9,0,2), Allocation (3,0,2)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P3: Max (2,2,2), Allocation (2,1,1)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P4: Max (4,3,3), Allocation (0,0,2)\nUse Banker's algorithm to determine if (3,3,0) available is a safe state. Show the full trace."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Convert the following RAG to a wait-for graph. Then detect if there is a deadlock:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P0 → R1 → P1 (R1 has 1 instance)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P1 → R2 → P2 (R2 has 1 instance)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P2 → R1 (requesting R1)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "P1 also holds R3, P2 also holds R3 (R3 has 2 instances)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement a wait-for graph cycle detection algorithm in Python. Test it with a graph that has a cycle and one that doesn't."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "For the dining philosophers problem with 5 philosophers, prove that the resource-ordering solution (pick up lower-numbered chopstick first) prevents deadlock. What changes if there are 6 philosophers?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Research and explain how PostgreSQL handles deadlocks differently from MySQL InnoDB. What are the trade-offs?"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advanced-1",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement Banker's algorithm for a system with up to 10 processes and 5 resource types. Your program should accept resource request vectors and either grant or deny them, displaying the safe sequence with a full trace table."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Design a deadlock detection system for a distributed database with 3 nodes. Use the edge-chasing algorithm. Simulate a deadlock scenario across nodes."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "wound-wait"
+          }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "wait-die"
+          }), " schemes are alternative deadlock prevention methods used in databases. Research both, implement them, and compare with Banker's algorithm. Which has better resource utilization?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Consider the dining philosophers problem with resource ordering. Assign chopsticks numbers 0-4. Philosopher i must acquire the lower-numbered chopstick first, then the higher. Prove this prevents deadlock. Find a scenario where starvation is still possible."
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

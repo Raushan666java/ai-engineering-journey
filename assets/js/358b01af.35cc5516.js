@@ -1,0 +1,1372 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[88481],{
+
+/***/ 80527
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_modern_ai_engineering_11_mlops_for_ai_engineering_md_358_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-modern-ai-engineering-11-mlops-for-ai-engineering-md-358.json
+const site_docs_courses_modern_ai_engineering_11_mlops_for_ai_engineering_md_358_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/modern-ai-engineering/11-mlops-for-ai-engineering","title":"Chapter 11: MLOps for AI Engineering","description":"Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks — all with TypeScript.","source":"@site/docs/courses/modern-ai-engineering/11-mlops-for-ai-engineering.md","sourceDirName":"courses/modern-ai-engineering","slug":"/modern-ai-engineering/11-mlops-for-ai-engineering","permalink":"/ai-engineering-journey/modern-ai-engineering/11-mlops-for-ai-engineering","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"11-mlops-for-ai-engineering","slug":"/modern-ai-engineering/11-mlops-for-ai-engineering","title":"Chapter 11: MLOps for AI Engineering","sidebar_label":"Chapter 11: MLOps for AI Engineering","sidebar_position":11},"sidebar":"course-modern-ai-engineering","previous":{"title":"Chapter 10: Production AI Systems","permalink":"/ai-engineering-journey/modern-ai-engineering/10-production-ai-systems"},"next":{"title":"Chapter 12: Capstone — AI Customer Support Platform","permalink":"/ai-engineering-journey/modern-ai-engineering/12-capstone-customer-support-platform"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/modern-ai-engineering/11-mlops-for-ai-engineering.md
+
+
+const frontMatter = {
+	id: '11-mlops-for-ai-engineering',
+	slug: '/modern-ai-engineering/11-mlops-for-ai-engineering',
+	title: 'Chapter 11: MLOps for AI Engineering',
+	sidebar_label: 'Chapter 11: MLOps for AI Engineering',
+	sidebar_position: 11
+};
+const contentTitle = 'Chapter 11: MLOps for AI Engineering';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "10 Differences from Traditional MLOps",
+  "id": "10-differences-from-traditional-mlops",
+  "level": 2
+}, {
+  "value": "11.1 Experiment Tracking",
+  "id": "111-experiment-tracking",
+  "level": 2
+}, {
+  "value": "Experiment Tracking Schema",
+  "id": "experiment-tracking-schema",
+  "level": 3
+}, {
+  "value": "Experiment Tracker Implementation",
+  "id": "experiment-tracker-implementation",
+  "level": 3
+}, {
+  "value": "Experiment Tracking Architecture",
+  "id": "experiment-tracking-architecture",
+  "level": 3
+}, {
+  "value": "11.2 Prompt Management",
+  "id": "112-prompt-management",
+  "level": 2
+}, {
+  "value": "Prompt Lifecycle",
+  "id": "prompt-lifecycle",
+  "level": 3
+}, {
+  "value": "Prompt Registry",
+  "id": "prompt-registry",
+  "level": 3
+}, {
+  "value": "Prompt Lifecycle Flow",
+  "id": "prompt-lifecycle-flow",
+  "level": 3
+}, {
+  "value": "11.3 CI/CD for AI Applications",
+  "id": "113-cicd-for-ai-applications",
+  "level": 2
+}, {
+  "value": "Pipeline Stages",
+  "id": "pipeline-stages",
+  "level": 3
+}, {
+  "value": "CI/CD Pipeline Architecture",
+  "id": "cicd-pipeline-architecture",
+  "level": 3
+}, {
+  "value": "11.4 Data and Model Versioning",
+  "id": "114-data-and-model-versioning",
+  "level": 2
+}, {
+  "value": "Hash-Based Versioning",
+  "id": "hash-based-versioning",
+  "level": 3
+}, {
+  "value": "DVC-Like Pattern for AI",
+  "id": "dvc-like-pattern-for-ai",
+  "level": 3
+}, {
+  "value": "Metadata Management Strategy",
+  "id": "metadata-management-strategy",
+  "level": 3
+}, {
+  "value": "11.5 Monitoring Drift",
+  "id": "115-monitoring-drift",
+  "level": 2
+}, {
+  "value": "Drift Detection Methods",
+  "id": "drift-detection-methods",
+  "level": 3
+}, {
+  "value": "DriftDetector Implementation",
+  "id": "driftdetector-implementation",
+  "level": 3
+}, {
+  "value": "Understanding Prompt Drift",
+  "id": "understanding-prompt-drift",
+  "level": 3
+}, {
+  "value": "11.6 Testing AI Systems",
+  "id": "116-testing-ai-systems",
+  "level": 2
+}, {
+  "value": "Testing Categories",
+  "id": "testing-categories",
+  "level": 3
+}, {
+  "value": "Test Examples by Category",
+  "id": "test-examples-by-category",
+  "level": 3
+}, {
+  "value": "Automated Eval Gate Configuration",
+  "id": "automated-eval-gate-configuration",
+  "level": 3
+}, {
+  "value": "11.7 Incident Response Playbooks",
+  "id": "117-incident-response-playbooks",
+  "level": 2
+}, {
+  "value": "Incident Response Playbooks",
+  "id": "incident-response-playbooks",
+  "level": 3
+}, {
+  "value": "Incident Response Automation",
+  "id": "incident-response-automation",
+  "level": 3
+}, {
+  "value": "TypeScript: AIOpsPipeline",
+  "id": "typescript-aiopspipeline",
+  "level": 2
+}, {
+  "value": "TypeScript: DriftDetector",
+  "id": "typescript-driftdetector",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Question 1",
+  "id": "question-1",
+  "level": 3
+}, {
+  "value": "Question 2",
+  "id": "question-2",
+  "level": 3
+}, {
+  "value": "Question 3",
+  "id": "question-3",
+  "level": 3
+}, {
+  "value": "Question 4",
+  "id": "question-4",
+  "level": 3
+}, {
+  "value": "Question 5",
+  "id": "question-5",
+  "level": 3
+}, {
+  "value": "Answer Key",
+  "id": "answer-key",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: Build a Versioned Prompt Registry (Easy)",
+  "id": "exercise-1-build-a-versioned-prompt-registry-easy",
+  "level": 3
+}, {
+  "value": "Exercise 2: Implement a Drift Detector (Easy)",
+  "id": "exercise-2-implement-a-drift-detector-easy",
+  "level": 3
+}, {
+  "value": "Exercise 3: CI/CD Eval Gate (Medium)",
+  "id": "exercise-3-cicd-eval-gate-medium",
+  "level": 3
+}, {
+  "value": "Exercise 4: Incident Response Playbook Executor (Medium)",
+  "id": "exercise-4-incident-response-playbook-executor-medium",
+  "level": 3
+}, {
+  "value": "Exercise 5: Full MLOps Pipeline Simulator (Hard)",
+  "id": "exercise-5-full-mlops-pipeline-simulator-hard",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    br: "br",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-11-mlops-for-ai-engineering",
+        children: "Chapter 11: MLOps for AI Engineering"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks — all with TypeScript."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After completing this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish MLOps for AI engineering from traditional MLOps across 10 key dimensions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement experiment tracking for prompt versions, model versions, and evaluation results"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Manage prompt lifecycles with version control, staging, A/B testing, and rollback"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design CI/CD pipelines with automated testing and evaluation gates for AI applications"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Version data and models using hash-based and DVC-like patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect and respond to data drift, concept drift, prompt drift, and model drift"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build comprehensive testing strategies for prompts, pipelines, evaluation, and regression"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute incident response playbooks for quality degradation, cost spikes, and safety incidents"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-differences-from-traditional-mlops",
+      children: "10 Differences from Traditional MLOps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI engineering introduces fundamentally different operational challenges compared to traditional ML. Understanding these differences shapes every aspect of your MLOps strategy."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Traditional MLOps"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AI Engineering MLOps"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1. Artifact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trained model weights (static)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt + model config + context (dynamic)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2. Change frequency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model updates every weeks/months"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt changes can happen daily"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3. Evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Offline metrics (accuracy, F1, AUC)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Online + offline, LLM-as-judge, human eval"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4. Drift type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data drift, concept drift, model drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+ Prompt drift, embedding drift, instruction drift"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5. Versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model version, dataset version"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+ Prompt version, system prompt version, template version"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6. Deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model serving (one image per model)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt + model combo (many combos per image)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7. Testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit tests for data transforms, model tests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+ Prompt unit tests, eval regression tests, safety tests"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8. Rollback"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Revert to previous model version"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Revert prompt, model, or combo independently"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9. Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prediction latency, model accuracy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+ Token usage, cost, hallucination rate, cache hit rate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10. CI/CD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Train → Validate → Deploy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt test → Eval gate → Canary → Gradual rollout"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "111-experiment-tracking",
+      children: "11.1 Experiment Tracking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI engineering experiments involve combinations of prompts, models, parameters, retrieval strategies, and evaluation results. Comprehensive tracking enables reproducible results and informed decision-making."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "experiment-tracking-schema",
+      children: "Experiment Tracking Schema"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface Experiment {\n  id: string;\n  name: string;\n  description: string;\n  createdBy: string;\n  createdAt: Date;\n  status: \"running\" | \"completed\" | \"failed\" | \"archived\";\n  tags: string[];\n  config: ExperimentConfig;\n  runs: ExperimentRun[];\n}\n\ninterface ExperimentConfig {\n  model: string;\n  modelVersion: string;\n  systemPrompt: string;\n  userPromptTemplate: string;\n  temperature: number;\n  maxTokens: number;\n  topP: number;\n  frequencyPenalty: number;\n  presencePenalty: number;\n  retrievalConfig?: {\n    chunkSize: number;\n    chunkOverlap: number;\n    topK: number;\n    embeddingModel: string;\n    retrieverType: \"dense\" | \"sparse\" | \"hybrid\";\n  };\n  tools?: Array<{\n    name: string;\n    enabled: boolean;\n  }>;\n}\n\ninterface ExperimentRun {\n  id: string;\n  experimentId: string;\n  startedAt: Date;\n  completedAt?: Date;\n  status: \"running\" | \"completed\" | \"failed\";\n  metrics: RunMetrics;\n  inputOutputSample?: Array<{ input: string; output: string }>;\n  error?: string;\n}\n\ninterface RunMetrics {\n  accuracy?: number;\n  precision?: number;\n  recall?: number;\n  f1Score?: number;\n  bleuScore?: number;\n  rougeScore?: number;\n  bertScore?: number;\n  llmJudgeScore?: number;\n  humanEvalScore?: number;\n  avgLatency: number;\n  p95Latency: number;\n  avgTokensInput: number;\n  avgTokensOutput: number;\n  totalCost: number;\n  hallucinationRate?: number;\n  safetyPassRate?: number;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "experiment-tracker-implementation",
+      children: "Experiment Tracker Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class ExperimentTracker {\n  private experiments: Map<string, Experiment> = new Map();\n  private storagePath: string;\n\n  constructor(storagePath: string = \"./experiments\") {\n    this.storagePath = storagePath;\n  }\n\n  createExperiment(params: {\n    name: string;\n    description: string;\n    createdBy: string;\n    config: ExperimentConfig;\n    tags?: string[];\n  }): Experiment {\n    const experiment: Experiment = {\n      id: crypto.randomUUID(),\n      name: params.name,\n      description: params.description,\n      createdBy: params.createdBy,\n      createdAt: new Date(),\n      status: \"running\",\n      tags: params.tags || [],\n      config: params.config,\n      runs: [],\n    };\n\n    this.experiments.set(experiment.id, experiment);\n    this.saveExperiment(experiment);\n    return experiment;\n  }\n\n  createRun(experimentId: string): ExperimentRun {\n    const experiment = this.experiments.get(experimentId);\n    if (!experiment) throw new Error(`Experiment ${experimentId} not found`);\n\n    const run: ExperimentRun = {\n      id: crypto.randomUUID(),\n      experimentId,\n      startedAt: new Date(),\n      status: \"running\",\n      metrics: {\n        avgLatency: 0,\n        p95Latency: 0,\n        avgTokensInput: 0,\n        avgTokensOutput: 0,\n        totalCost: 0,\n      },\n    };\n\n    experiment.runs.push(run);\n    return run;\n  }\n\n  completeRun(\n    experimentId: string,\n    runId: string,\n    metrics: Partial<RunMetrics>,\n    samples?: Array<{ input: string; output: string }>\n  ): void {\n    const experiment = this.experiments.get(experimentId);\n    if (!experiment) return;\n\n    const run = experiment.runs.find((r) => r.id === runId);\n    if (!run) return;\n\n    run.status = \"completed\";\n    run.completedAt = new Date();\n    Object.assign(run.metrics, metrics);\n    if (samples) run.inputOutputSample = samples.slice(0, 10);\n\n    this.saveExperiment(experiment);\n  }\n\n  failRun(experimentId: string, runId: string, error: string): void {\n    const experiment = this.experiments.get(experimentId);\n    if (!experiment) return;\n    const run = experiment.runs.find((r) => r.id === runId);\n    if (!run) return;\n    run.status = \"failed\";\n    run.completedAt = new Date();\n    run.error = error;\n    this.saveExperiment(experiment);\n  }\n\n  compareExperiments(experimentIds: string[]): Array<{\n    experimentId: string;\n    experimentName: string;\n    bestRun: ExperimentRun | null;\n  }> {\n    return experimentIds.map((id) => {\n      const exp = this.experiments.get(id);\n      if (!exp) return { experimentId: id, experimentName: \"unknown\", bestRun: null };\n\n      const completedRuns = exp.runs.filter((r) => r.status === \"completed\");\n      completedRuns.sort(\n        (a, b) => (b.metrics.llmJudgeScore || 0) - (a.metrics.llmJudgeScore || 0)\n      );\n\n      return {\n        experimentId: id,\n        experimentName: exp.name,\n        bestRun: completedRuns[0] || null,\n      };\n    });\n  }\n\n  getExperiment(id: string): Experiment | undefined {\n    return this.experiments.get(id);\n  }\n\n  listExperiments(tags?: string[]): Experiment[] {\n    const all = Array.from(this.experiments.values());\n    if (!tags || tags.length === 0) return all;\n    return all.filter((exp) => tags.some((t) => exp.tags.includes(t)));\n  }\n\n  private saveExperiment(experiment: Experiment): void {\n    // In production, persist to database or file system\n    console.log(`[ExperimentTracker] Saved experiment ${experiment.id} with ${experiment.runs.length} runs`);\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "experiment-tracking-architecture",
+      children: "Experiment Tracking Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph \"Experiment Definition\"\n        USER[Researcher] --> DEFINE[Define Experiment]\n        DEFINE --> CONFIG[Set Config:<br/>Model, Prompt, Params]\n        DEFINE --> TAGS[Add Tags & Metadata]\n    end\n\n    subgraph \"Execution\"\n        CONFIG --> RUN[Create Experiment Run]\n        RUN --> EXEC[Execute with<br/>Test Dataset]\n        EXEC --> COLLECT_M[Collect Metrics:<br/>Accuracy, Latency, Cost]\n    end\n\n    subgraph \"Storage\"\n        COLLECT_M --> STORE[Store in<br/>Experiment DB]\n        STORE --> SAMPLES[Store IO Samples<br/>& Artifacts]\n    end\n\n    subgraph \"Analysis\"\n        STORE --> QUERY[Query & Filter<br/>Experiments]\n        QUERY --> COMPARE[Compare Runs:<br/>Side-by-side]\n        COMPARE --> SELECT[Select Best Config]\n    end\n\n    subgraph \"Data Lineage\"\n        SAMPLES --> LINEAGE[Track Lineage:<br/>Prompt -> Model -> Data]\n        LINEAGE --> REPRO[Enable Reproduction]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "112-prompt-management",
+      children: "11.2 Prompt Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Prompts are the primary artifact in AI engineering. They change frequently and must be managed with the same rigor as source code."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prompt-lifecycle",
+      children: "Prompt Lifecycle"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Stage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Validation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Draft"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial prompt creation in development"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual review"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Review"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Peer review for clarity, safety, effectiveness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PR review process"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Staging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployed to staging environment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated eval suite"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Canary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployed to small % of traffic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A/B test metrics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full traffic deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Archived"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replaced or deprecated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read-only access"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prompt-registry",
+      children: "Prompt Registry"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface PromptVersion {\n  id: string;\n  promptId: string;\n  version: number;\n  systemPrompt: string;\n  userPromptTemplate: string;\n  temperature: number;\n  maxTokens: number;\n  model: string;\n  createdBy: string;\n  createdAt: Date;\n  status: \"draft\" | \"staging\" | \"production\" | \"archived\";\n  parentVersionId?: string;\n  changeDescription: string;\n  evalResults?: {\n    accuracy: number;\n    safetyScore: number;\n    latencyP95: number;\n    sampleSize: number;\n  };\n}\n\nclass PromptRegistry {\n  private prompts: Map<string, PromptVersion[]> = new Map();\n  private activeVersions: Map<string, string> = new Map(); // promptId -> versionId\n\n  registerPrompt(promptId: string, initialVersion: Omit<PromptVersion, \"id\" | \"version\" | \"createdAt\">): PromptVersion {\n    const versions = this.prompts.get(promptId) || [];\n    const version: PromptVersion = {\n      ...initialVersion,\n      id: crypto.randomUUID(),\n      promptId,\n      version: versions.length + 1,\n      createdAt: new Date(),\n    };\n\n    versions.push(version);\n    this.prompts.set(promptId, versions);\n    return version;\n  }\n\n  createNewVersion(\n    promptId: string,\n    updates: Partial<Omit<PromptVersion, \"id\" | \"promptId\" | \"version\" | \"createdAt\">>\n  ): PromptVersion | null {\n    const versions = this.prompts.get(promptId);\n    if (!versions || versions.length === 0) return null;\n\n    const current = versions[versions.length - 1];\n    const newVersion: PromptVersion = {\n      ...current,\n      ...updates,\n      id: crypto.randomUUID(),\n      promptId,\n      version: current.version + 1,\n      createdAt: new Date(),\n      status: \"draft\",\n      parentVersionId: current.id,\n    };\n\n    versions.push(newVersion);\n    return newVersion;\n  }\n\n  promoteToStaging(promptId: string, versionId: string): boolean {\n    return this.updateStatus(promptId, versionId, \"staging\");\n  }\n\n  promoteToProduction(promptId: string, versionId: string): boolean {\n    return this.updateStatus(promptId, versionId, \"production\");\n  }\n\n  rollback(promptId: string, targetVersion: number): PromptVersion | null {\n    const versions = this.prompts.get(promptId);\n    if (!versions) return null;\n\n    const target = versions.find((v) => v.version === targetVersion);\n    if (!target) return null;\n\n    // Create a new version based on the target\n    const rollbackVersion = this.createNewVersion(promptId, {\n      systemPrompt: target.systemPrompt,\n      userPromptTemplate: target.userPromptTemplate,\n      temperature: target.temperature,\n      maxTokens: target.maxTokens,\n      model: target.model,\n      changeDescription: `Rollback to version ${targetVersion}`,\n    });\n\n    if (rollbackVersion) {\n      rollbackVersion.status = \"production\";\n      this.activeVersions.set(promptId, rollbackVersion.id);\n    }\n\n    return rollbackVersion;\n  }\n\n  getActiveVersion(promptId: string): PromptVersion | null {\n    const versionId = this.activeVersions.get(promptId);\n    if (!versionId) return null;\n\n    const versions = this.prompts.get(promptId);\n    return versions?.find((v) => v.id === versionId) || null;\n  }\n\n  getVersionHistory(promptId: string): PromptVersion[] {\n    return this.prompts.get(promptId) || [];\n  }\n\n  private updateStatus(promptId: string, versionId: string, status: PromptVersion[\"status\"]): boolean {\n    const versions = this.prompts.get(promptId);\n    if (!versions) return false;\n\n    const version = versions.find((v) => v.id === versionId);\n    if (!version) return false;\n\n    version.status = status;\n    if (status === \"production\") {\n      this.activeVersions.set(promptId, versionId);\n    }\n    return true;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "prompt-lifecycle-flow",
+      children: "Prompt Lifecycle Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph \"Development\"\n        DEV[Draft Prompt] --> REVIEW[Code Review]\n        REVIEW --> EVAL_RUN[Automated Eval<br/>Suite Run]\n    end\n\n    subgraph \"Staging\"\n        EVAL_RUN -->|Eval Pass| STAGE[Deploy to Staging]\n        EVAL_RUN -->|Eval Fail| DEV\n        STAGE --> AB_TEST[A/B Test vs<br/>Production Baseline]\n    end\n\n    subgraph \"Production Rollout\"\n        AB_TEST -->|Wins| CANARY[Canary Deploy<br/>5% Traffic]\n        AB_TEST -->|Loses| DEV\n        CANARY --> MONITOR{Monitor<br/>Metrics}\n        MONITOR -->|Stable 1h| ROLLOUT[Gradual Rollout<br/>25% -> 50% -> 100%]\n        MONITOR -->|Degradation| ROLLBACK[Auto-Rollback<br/>to Previous Version]\n    end\n\n    subgraph \"Post-Deployment\"\n        ROLLOUT --> TRACK[Continuous<br/>Monitoring]\n        TRACK -->|Degradation| ROLLBACK\n        TRACK -->|Improvement| PROMOTE[Promote to<br/>Production Baseline]\n        ROLLBACK --> ARCHIVE[Archive Failed<br/>Version]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "113-cicd-for-ai-applications",
+      children: "11.3 CI/CD for AI Applications"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "CI/CD pipelines for AI applications must incorporate evaluation gates, model validation, and gradual rollout strategies."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pipeline-stages",
+      children: "Pipeline Stages"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface CIPipelineConfig {\n  stages: PipelineStage[];\n  evalGates: EvalGate[];\n  rolloutConfig: RolloutConfig;\n}\n\ninterface PipelineStage {\n  name: string;\n  commands: string[];\n  timeout: number;\n  required: boolean;\n}\n\ninterface EvalGate {\n  name: string;\n  metric: string;\n  threshold: number;\n  comparison: \"gte\" | \"lte\" | \"eq\";\n  sampleSize: number;\n}\n\ninterface RolloutConfig {\n  strategy: \"canary\" | \"blue-green\" | \"gradual\";\n  percentages: number[]; // e.g., [5, 25, 50, 100]\n  cooldownMinutes: number[];\n  autoRollbackThreshold: number; // Max degradation allowed\n}\n\nclass AICICDPipeline {\n  private config: CIPipelineConfig;\n  private deployments: Map<string, DeployStatus> = new Map();\n\n  constructor(config: CIPipelineConfig) {\n    this.config = config;\n  }\n\n  async runPipeline(version: {\n    promptId: string;\n    versionId: string;\n    model: string;\n  }): Promise<{\n    success: boolean;\n    stageResults: Array<{ stage: string; passed: boolean; output: string }>;\n    evaluationPassed: boolean;\n    deploymentId?: string;\n  }> {\n    const stageResults: Array<{ stage: string; passed: boolean; output: string }> = [];\n    let evaluationPassed = false;\n\n    // Stage 1: Build\n    try {\n      const buildResult = await this.runStage(\"build\");\n      stageResults.push({ stage: \"build\", passed: buildResult, output: \"Build completed\" });\n      if (!buildResult) return { success: false, stageResults, evaluationPassed };\n    } catch (error: any) {\n      stageResults.push({ stage: \"build\", passed: false, output: error.message });\n      return { success: false, stageResults, evaluationPassed };\n    }\n\n    // Stage 2: Unit Tests\n    try {\n      const testResult = await this.runStage(\"test\");\n      stageResults.push({ stage: \"test\", passed: testResult, output: \"Tests passed\" });\n      if (!testResult) return { success: false, stageResults, evaluationPassed };\n    } catch (error: any) {\n      stageResults.push({ stage: \"test\", passed: false, output: error.message });\n      return { success: false, stageResults, evaluationPassed };\n    }\n\n    // Stage 3: Evaluation Gate\n    try {\n      evaluationPassed = await this.runEvaluationGates(version);\n      stageResults.push({\n        stage: \"evaluation\",\n        passed: evaluationPassed,\n        output: evaluationPassed ? \"All eval gates passed\" : \"Eval gates failed\",\n      });\n      if (!evaluationPassed) return { success: false, stageResults, evaluationPassed };\n    } catch (error: any) {\n      stageResults.push({ stage: \"evaluation\", passed: false, output: error.message });\n      return { success: false, stageResults, evaluationPassed };\n    }\n\n    // Stage 4: Deploy with rollout\n    const deploymentId = await this.deployWithRollout(version);\n\n    return {\n      success: true,\n      stageResults,\n      evaluationPassed,\n      deploymentId,\n    };\n  }\n\n  private async runStage(stage: string): Promise<boolean> {\n    // Simulate stage execution\n    console.log(`[CI/CD] Running stage: ${stage}`);\n    await new Promise((r) => setTimeout(r, 1000));\n    return true;\n  }\n\n  private async runEvaluationGates(version: { promptId: string; versionId: string; model: string }): Promise<boolean> {\n    for (const gate of this.config.evalGates) {\n      const metricValue = await this.getMetricValue(version, gate.metric, gate.sampleSize);\n      let passed = false;\n\n      if (gate.comparison === \"gte\") passed = metricValue >= gate.threshold;\n      else if (gate.comparison === \"lte\") passed = metricValue <= gate.threshold;\n      else if (gate.comparison === \"eq\") passed = Math.abs(metricValue - gate.threshold) < 0.01;\n\n      console.log(`[EvalGate] ${gate.name}: ${metricValue.toFixed(4)} ${gate.comparison} ${gate.threshold} = ${passed}`);\n      if (!passed) return false;\n    }\n    return true;\n  }\n\n  private async getMetricValue(version: { promptId: string; versionId: string; model: string }, metric: string, sampleSize: number): Promise<number> {\n    // In production, run eval dataset through the prompt variant\n    await new Promise((r) => setTimeout(r, 2000));\n    return 0.92; // Simulated metric\n  }\n\n  private async deployWithRollout(version: { promptId: string; versionId: string; model: string }): Promise<string> {\n    const deploymentId = `deploy-${version.promptId}-${Date.now()}`;\n\n    this.deployments.set(deploymentId, {\n      id: deploymentId,\n      version,\n      status: \"deploying\",\n      currentPercentage: 0,\n      startedAt: new Date(),\n      stages: [],\n    });\n\n    for (let i = 0; i < this.config.rolloutConfig.percentages.length; i++) {\n      const percentage = this.config.rolloutConfig.percentages[i];\n      const cooldown = this.config.rolloutConfig.cooldownMinutes[i] || 0;\n\n      const deployStatus = this.deployments.get(deploymentId)!;\n      deployStatus.currentPercentage = percentage;\n      deployStatus.stages.push({ percentage, deployedAt: new Date(), status: \"deployed\" });\n\n      console.log(`[Rollout] Deployed to ${percentage}% of traffic`);\n      if (cooldown > 0) {\n        await new Promise((r) => setTimeout(r, cooldown * 60 * 1000));\n      }\n\n      // Check for degradation\n      if (await this.checkDegradation(deploymentId, percentage)) {\n        deployStatus.status = \"rolled-back\";\n        this.rollback(version.promptId);\n        throw new Error(`Auto-rollback triggered at ${percentage}% rollout`);\n      }\n    }\n\n    const deployStatus = this.deployments.get(deploymentId)!;\n    deployStatus.status = \"completed\";\n\n    return deploymentId;\n  }\n\n  private async checkDegradation(deploymentId: string, percentage: number): Promise<boolean> {\n    // In production, compare current metrics with baseline\n    return false;\n  }\n\n  private async rollback(promptId: string): Promise<void> {\n    console.log(`[Rollback] Rolling back prompt ${promptId}`);\n  }\n\n  getDeploymentStatus(deploymentId: string): DeployStatus | undefined {\n    return this.deployments.get(deploymentId);\n  }\n}\n\ninterface DeployStatus {\n  id: string;\n  version: { promptId: string; versionId: string; model: string };\n  status: \"deploying\" | \"completed\" | \"failed\" | \"rolled-back\";\n  currentPercentage: number;\n  startedAt: Date;\n  stages: Array<{ percentage: number; deployedAt: Date; status: string }>;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cicd-pipeline-architecture",
+      children: "CI/CD Pipeline Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TB\n    subgraph \"Trigger\"\n        PR[PR / Push] --> BUILD[Build Stage<br/>npm install, tsc]\n    end\n\n    subgraph \"Testing\"\n        BUILD --> UNIT[Unit Tests<br/>Prompt Rendering]\n        UNIT --> INT[Integration Tests<br/>API Contract Tests]\n    end\n\n    subgraph \"Evaluation Gates\"\n        INT --> EVAL_DATASET[Run Eval Dataset]\n        EVAL_DATASET --> CHECK{All Gates Pass?}\n        CHECK -->|Accuracy > 0.85| SAFETY[Safety Check]\n        CHECK -->|Fail| BLOCK[Block Deployment]\n        SAFETY -->|Safety > 0.95| COST[Cost Check]\n        SAFETY -->|Fail| BLOCK\n        COST -->|Cost < +20%| READY[Ready for Deploy]\n        COST -->|Fail| BLOCK\n    end\n\n    subgraph \"Deployment Strategy\"\n        READY --> CHOOSE{Strategy}\n        CHOOSE -->|Canary| CANARY[5% Traffic]\n        CHOOSE -->|Blue-Green| BG[Switch to New<br/>Green Environment]\n        CHOOSE -->|Gradual| GRADUAL[5% -> 25% -> 50% -> 100%]\n    end\n\n    subgraph \"Monitoring\"\n        CANARY --> MONITOR{Monitor Metrics}\n        BG --> MONITOR\n        GRADUAL --> MONITOR\n        MONITOR -->|Degradation| AUTO_ROLLBACK[Auto-Rollback]\n        MONITOR -->|Stable| FULL_ROLLOUT[Full Rollout]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "114-data-and-model-versioning",
+      children: "11.4 Data and Model Versioning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Versioning in AI engineering extends beyond code to include prompts, model configurations, evaluation datasets, and embedding indices."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "hash-based-versioning",
+      children: "Hash-Based Versioning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { createHash } from \"crypto\";\n\ninterface VersionedArtifact {\n  id: string;\n  hash: string;\n  type: \"prompt\" | \"dataset\" | \"embedding_index\" | \"eval_config\" | \"model_config\";\n  content: any;\n  metadata: ArtifactMetadata;\n  dependencies: string[];\n  createdAt: Date;\n}\n\ninterface ArtifactMetadata {\n  createdBy: string;\n  description: string;\n  tags: string[];\n  parentId?: string;\n  sourceUrl?: string;\n}\n\nclass ArtifactVersioner {\n  private artifacts: Map<string, VersionedArtifact> = new Map();\n  private aliases: Map<string, string> = new Map(); // alias -> artifactId\n\n  register(\n    type: VersionedArtifact[\"type\"],\n    content: any,\n    metadata: ArtifactMetadata,\n    dependencies: string[] = []\n  ): VersionedArtifact {\n    const contentStr = JSON.stringify(content);\n    const hash = createHash(\"sha256\").update(contentStr).digest(\"hex\");\n\n    // Check if this exact content already exists\n    for (const artifact of this.artifacts.values()) {\n      if (artifact.hash === hash && artifact.type === type) {\n        return artifact;\n      }\n    }\n\n    const artifact: VersionedArtifact = {\n      id: crypto.randomUUID(),\n      hash,\n      type,\n      content,\n      metadata,\n      dependencies,\n      createdAt: new Date(),\n    };\n\n    this.artifacts.set(artifact.id, artifact);\n    return artifact;\n  }\n\n  setAlias(alias: string, artifactId: string): void {\n    if (!this.artifacts.has(artifactId)) {\n      throw new Error(`Artifact ${artifactId} not found`);\n    }\n    this.aliases.set(alias, artifactId);\n  }\n\n  getByAlias(alias: string): VersionedArtifact | undefined {\n    const artifactId = this.aliases.get(alias);\n    if (!artifactId) return undefined;\n    return this.artifacts.get(artifactId);\n  }\n\n  getLineage(artifactId: string): VersionedArtifact[] {\n    const lineage: VersionedArtifact[] = [];\n    const visited = new Set<string>();\n\n    const traverse = (id: string) => {\n      if (visited.has(id)) return;\n      visited.add(id);\n\n      const artifact = this.artifacts.get(id);\n      if (!artifact) return;\n\n      lineage.push(artifact);\n      for (const depId of artifact.dependencies) {\n        traverse(depId);\n      }\n    };\n\n    traverse(artifactId);\n    return lineage;\n  }\n\n  compare(id1: string, id2: string): { changed: boolean; differences: string[] } {\n    const a1 = this.artifacts.get(id1);\n    const a2 = this.artifacts.get(id2);\n\n    if (!a1 || !a2) {\n      return { changed: true, differences: [\"One or both artifacts not found\"] };\n    }\n\n    const differences: string[] = [];\n    if (a1.type !== a2.type) differences.push(\"type\");\n    if (a1.hash !== a2.hash) differences.push(\"content\");\n    if (JSON.stringify(a1.metadata) !== JSON.stringify(a2.metadata)) differences.push(\"metadata\");\n\n    return { changed: differences.length > 0, differences };\n  }\n\n  listByType(type: VersionedArtifact[\"type\"]): VersionedArtifact[] {\n    return Array.from(this.artifacts.values()).filter((a) => a.type === type);\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dvc-like-pattern-for-ai",
+      children: "DVC-Like Pattern for AI"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface DataPipelineStep {\n  name: string;\n  inputArtifacts: string[];\n  outputArtifact: string;\n  transform: string; // Description of transformation\n  parameters: Record<string, any>;\n}\n\ninterface PipelineLock {\n  pipelineId: string;\n  steps: Array<{\n    stepName: string;\n    inputHashes: string[];\n    outputHash: string;\n    parametersHash: string;\n  }>;\n  createdAt: Date;\n}\n\nclass DataPipelineManager {\n  private pipelines: Map<string, DataPipelineStep[]> = new Map();\n  private locks: Map<string, PipelineLock> = new Map();\n  private versioner: ArtifactVersioner;\n\n  constructor(versioner: ArtifactVersioner) {\n    this.versioner = versioner;\n  }\n\n  definePipeline(name: string, steps: DataPipelineStep[]): void {\n    this.pipelines.set(name, steps);\n  }\n\n  async runPipeline(name: string, params: Record<string, any>): Promise<PipelineLock> {\n    const steps = this.pipelines.get(name);\n    if (!steps) throw new Error(`Pipeline ${name} not found`);\n\n    const lockSteps: PipelineLock[\"steps\"] = [];\n\n    for (const step of steps) {\n      console.log(`[Pipeline] Running step: ${step.name}`);\n\n      // Compute content hash to check cache\n      const contentHash = this.computeStepHash(step, params);\n      const cachedOutput = this.findCachedOutput(contentHash);\n\n      let outputArtifact: VersionedArtifact;\n\n      if (cachedOutput) {\n        outputArtifact = cachedOutput;\n        console.log(`[Pipeline] Cache hit for ${step.name}`);\n      } else {\n        // Simulate transformation\n        const transformed = await this.executeStep(step, params);\n        outputArtifact = this.versioner.register(\n          \"dataset\",\n          transformed,\n          { createdBy: \"pipeline\", description: step.name, tags: [\"pipeline\"] },\n          step.inputArtifacts\n        );\n      }\n\n      lockSteps.push({\n        stepName: step.name,\n        inputHashes: step.inputArtifacts,\n        outputHash: outputArtifact.hash,\n        parametersHash: contentHash,\n      });\n    }\n\n    const lock: PipelineLock = {\n      pipelineId: crypto.randomUUID(),\n      steps: lockSteps,\n      createdAt: new Date(),\n    };\n\n    this.locks.set(lock.pipelineId, lock);\n    return lock;\n  }\n\n  private computeStepHash(step: DataPipelineStep, params: Record<string, any>): string {\n    const content = JSON.stringify({ step, params });\n    return createHash(\"sha256\").update(content).digest(\"hex\");\n  }\n\n  private findCachedOutput(hash: string): VersionedArtifact | undefined {\n    return Array.from(this.versioner[\"artifacts\"].values()).find(\n      (a) => a.hash === hash\n    );\n  }\n\n  private async executeStep(step: DataPipelineStep, params: Record<string, any>): Promise<any> {\n    await new Promise((r) => setTimeout(r, 500));\n    return { processed: true, step: step.name, params };\n  }\n\n  getPipelineLock(pipelineId: string): PipelineLock | undefined {\n    return this.locks.get(pipelineId);\n  }\n\n  reproducePipeline(lock: PipelineLock): void {\n    console.log(`[Reproduce] Pipeline ${lock.pipelineId} created at ${lock.createdAt}`);\n    for (const step of lock.steps) {\n      console.log(`  Step: ${step.stepName}, Output: ${step.outputHash.slice(0, 12)}...`);\n    }\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "metadata-management-strategy",
+      children: "Metadata Management Strategy"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Artifact Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Versioning Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Retention"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Git"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic versioning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full history"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Database + Git"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic + hash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last 100 versions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation datasets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Object storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash-based (DVC-like)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last 50 versions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedding indices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector DB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timestamp + hash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Last 10 versions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Model configs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Config DB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic + hash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full history"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation results"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Metrics DB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timestamp + experiment ID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "90 days"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "115-monitoring-drift",
+      children: "11.5 Monitoring Drift"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Drift detection in AI systems requires monitoring multiple layers: data, concept, prompt, model, and embeddings."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "drift-detection-methods",
+      children: "Drift Detection Methods"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Drift Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detection Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Threshold"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Response"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Input distribution changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Population Stability Index (PSI), KL divergence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PSI > 0.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retrain embedding model, update chunking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Input-output relationship changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy monitoring, prediction error tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy drop > 5%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retrain/fine-tune model, update prompts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt effectiveness changes over time"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A/B test comparison, eval score trends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Score drop > 3%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Revert prompt, update prompt"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Model drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Model behavior changes post-update"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow evaluation, output distribution comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KL divergence > 0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pin model version, test new version"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedding drift"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedding space distribution shifts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mean cosine similarity vs baseline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Similarity < 0.85"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Re-index vectors, update embeddings"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "driftdetector-implementation",
+      children: "DriftDetector Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface DriftConfig {\n  psiThreshold: number;\n  conceptDriftThreshold: number;\n  promptDriftThreshold: number;\n  embeddingDriftThreshold: number;\n  windowSize: number;\n  alertCooldownMs: number;\n}\n\ninterface DriftReport {\n  detected: boolean;\n  type: \"data\" | \"concept\" | \"prompt\" | \"model\" | \"embedding\";\n  score: number;\n  threshold: number;\n  details: string;\n  timestamp: Date;\n  severity: \"low\" | \"medium\" | \"high\" | \"critical\";\n}\n\nclass DriftDetector {\n  private baselineDistributions: Map<string, number[]> = new Map();\n  private currentWindow: Map<string, number[]> = new Map();\n  private lastAlertTime: Map<string, number> = new Map();\n\n  constructor(private config: DriftConfig) {}\n\n  setBaseline(key: string, distribution: number[]): void {\n    this.baselineDistributions.set(key, [...distribution].sort((a, b) => a - b));\n  }\n\n  addObservation(key: string, value: number): void {\n    if (!this.currentWindow.has(key)) {\n      this.currentWindow.set(key, []);\n    }\n\n    const window = this.currentWindow.get(key)!;\n    window.push(value);\n\n    if (window.length > this.config.windowSize) {\n      window.shift();\n    }\n  }\n\n  detectDataDrift(key: string): DriftReport | null {\n    const baseline = this.baselineDistributions.get(key);\n    const current = this.currentWindow.get(key);\n\n    if (!baseline || !current || current.length < 100) return null;\n\n    const psi = this.computePSI(baseline, current);\n    const severity = psi > 0.3 ? \"high\" : psi > this.config.psiThreshold ? \"medium\" : \"low\";\n\n    return {\n      detected: psi > this.config.psiThreshold,\n      type: \"data\",\n      score: psi,\n      threshold: this.config.psiThreshold,\n      details: `PSI for ${key}: ${psi.toFixed(4)}`,\n      timestamp: new Date(),\n      severity: psi > this.config.psiThreshold ? severity : \"low\",\n    };\n  }\n\n  detectConceptDrift(actualValues: number[], predictedValues: number[]): DriftReport {\n    const mse = actualValues.reduce((sum, a, i) => sum + (a - predictedValues[i]) ** 2, 0) / actualValues.length;\n    const severity = mse > this.config.conceptDriftThreshold * 2 ? \"critical\" : mse > this.config.conceptDriftThreshold ? \"high\" : \"low\";\n\n    return {\n      detected: mse > this.config.conceptDriftThreshold,\n      type: \"concept\",\n      score: mse,\n      threshold: this.config.conceptDriftThreshold,\n      details: `MSE: ${mse.toFixed(4)}`,\n      timestamp: new Date(),\n      severity,\n    };\n  }\n\n  detectPromptDrift(baselineScores: number[], currentScores: number[]): DriftReport {\n    const baselineMean = baselineScores.reduce((a, b) => a + b, 0) / baselineScores.length;\n    const currentMean = currentScores.reduce((a, b) => a + b, 0) / currentScores.length;\n    const drop = (baselineMean - currentMean) / baselineMean;\n\n    const severity = drop > 0.1 ? \"critical\" : drop > this.config.promptDriftThreshold ? \"high\" : \"low\";\n\n    return {\n      detected: drop > this.config.promptDriftThreshold,\n      type: \"prompt\",\n      score: drop,\n      threshold: this.config.promptDriftThreshold,\n      details: `Score drop: ${(drop * 100).toFixed(1)}% (baseline: ${baselineMean.toFixed(3)}, current: ${currentMean.toFixed(3)})`,\n      timestamp: new Date(),\n      severity,\n    };\n  }\n\n  detectEmbeddingDrift(baselineEmbeddings: number[][], currentEmbeddings: number[][]): DriftReport {\n    const similarities: number[] = [];\n\n    for (let i = 0; i < Math.min(baselineEmbeddings.length, currentEmbeddings.length); i++) {\n      const sim = this.cosineSimilarity(baselineEmbeddings[i], currentEmbeddings[i]);\n      similarities.push(sim);\n    }\n\n    const meanSimilarity = similarities.reduce((a, b) => a + b, 0) / similarities.length;\n    const drift = 1 - meanSimilarity;\n    const severity = drift > 0.2 ? \"critical\" : drift > this.config.embeddingDriftThreshold ? \"high\" : \"low\";\n\n    return {\n      detected: drift > this.config.embeddingDriftThreshold,\n      type: \"embedding\",\n      score: drift,\n      threshold: this.config.embeddingDriftThreshold,\n      details: `Mean embedding similarity: ${meanSimilarity.toFixed(4)} (drift: ${(drift * 100).toFixed(1)}%)`,\n      timestamp: new Date(),\n      severity,\n    };\n  }\n\n  private computePSI(baseline: number[], current: number[]): number {\n    const numBins = 10;\n    const min = Math.min(...baseline, ...current);\n    const max = Math.max(...baseline, ...current);\n    const binWidth = (max - min) / numBins;\n\n    let psi = 0;\n\n    for (let i = 0; i < numBins; i++) {\n      const binStart = min + i * binWidth;\n      const binEnd = binStart + binWidth;\n\n      const baselineCount = baseline.filter((v) => v >= binStart && v < binEnd).length;\n      const currentCount = current.filter((v) => v >= binStart && v < binEnd).length;\n\n      const pBase = (baselineCount + 0.5) / (baseline.length + 0.5 * numBins);\n      const pCurr = (currentCount + 0.5) / (current.length + 0.5 * numBins);\n\n      psi += (pCurr - pBase) * Math.log(pCurr / pBase);\n    }\n\n    return psi;\n  }\n\n  private cosineSimilarity(a: number[], b: number[]): number {\n    const dot = a.reduce((sum, v, i) => sum + v * b[i], 0);\n    const magA = Math.sqrt(a.reduce((sum, v) => sum + v * v, 0));\n    const magB = Math.sqrt(b.reduce((sum, v) => sum + v * v, 0));\n    return dot / (magA * magB);\n  }\n\n  shouldAlert(driftKey: string): boolean {\n    const lastAlert = this.lastAlertTime.get(driftKey) || 0;\n    if (Date.now() - lastAlert < this.config.alertCooldownMs) {\n      return false;\n    }\n    this.lastAlertTime.set(driftKey, Date.now());\n    return true;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "understanding-prompt-drift",
+      children: "Understanding Prompt Drift"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Prompt drift occurs when a prompt that previously produced high-quality results begins to degrade over time. This can happen because:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Model updates"
+        }), ": The underlying model changes (even minor version bumps) can alter behavior"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "User behavior shifts"
+        }), ": Users learn to interact with the system differently"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Content changes"
+        }), ": The knowledge base or context provided to the model evolves"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Adversarial adaptation"
+        }), ": Users discover prompt injection or jailbreak patterns"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Mitigation strategy"
+      }), ": Maintain a baseline eval dataset and run it weekly against all active prompts. Track score trends and alert on sustained degradation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "116-testing-ai-systems",
+      children: "11.6 Testing AI Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Testing AI systems requires a multi-layered approach that covers prompt correctness, pipeline integration, output quality, and regression prevention."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "testing-categories",
+      children: "Testing Categories"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface TestCase {\n  id: string;\n  name: string;\n  category: \"unit\" | \"integration\" | \"eval\" | \"regression\" | \"safety\";\n  input: string;\n  expectedOutput?: string;\n  expectedBehavior?: string;\n  assertions: string[];\n  tags: string[];\n}\n\nclass AITestSuite {\n  private tests: TestCase[] = [];\n  private results: Map<string, { passed: boolean; actualOutput: string; metrics: any }> = new Map();\n\n  addTest(testCase: TestCase): void {\n    this.tests.push(testCase);\n  }\n\n  async runAll(): Promise<{\n    total: number;\n    passed: number;\n    failed: number;\n    results: Array<{ name: string; passed: boolean; error?: string }>;\n  }> {\n    const results: Array<{ name: string; passed: boolean; error?: string }> = [];\n\n    for (const test of this.tests) {\n      try {\n        const result = await this.runTest(test);\n        results.push({ name: test.name, passed: result });\n      } catch (error: any) {\n        results.push({ name: test.name, passed: false, error: error.message });\n      }\n    }\n\n    return {\n      total: results.length,\n      passed: results.filter((r) => r.passed).length,\n      failed: results.filter((r) => !r.passed).length,\n      results,\n    };\n  }\n\n  private async runTest(test: TestCase): Promise<boolean> {\n    switch (test.category) {\n      case \"unit\":\n        return this.runUnitTest(test);\n      case \"integration\":\n        return this.runIntegrationTest(test);\n      case \"eval\":\n        return this.runEvalTest(test);\n      case \"safety\":\n        return this.runSafetyTest(test);\n      default:\n        throw new Error(`Unknown test category: ${test.category}`);\n    }\n  }\n\n  private async runUnitTest(test: TestCase): Promise<boolean> {\n    // Test prompt rendering, template variables, format validation\n    console.log(`[UnitTest] ${test.name}`);\n    return true;\n  }\n\n  private async runIntegrationTest(test: TestCase): Promise<boolean> {\n    // Test end-to-end pipeline: input -> retrieval -> generation -> output\n    console.log(`[IntegrationTest] ${test.name}`);\n    return true;\n  }\n\n  private async runEvalTest(test: TestCase): Promise<boolean> {\n    // Test output quality against expected behavior\n    console.log(`[EvalTest] ${test.name}`);\n    return true;\n  }\n\n  private async runSafetyTest(test: TestCase): Promise<boolean> {\n    // Test that harmful inputs are properly rejected\n    console.log(`[SafetyTest] ${test.name}`);\n    return true;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "test-examples-by-category",
+      children: "Test Examples by Category"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Expected Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt template renders with valid variables"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["All ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "{{variable}}"
+            }), " replaced"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System prompt length is under context limit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "< 4000 tokens"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Output is valid JSON when JSON mode enabled"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON.parse succeeds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RAG pipeline retrieves relevant chunks for query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At least 3 chunks with similarity > 0.8"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tool call returns correctly formatted result"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Function name matches, args are valid"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Eval"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Response contains citation for factual claims"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Citation present for >90% of claims"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Eval"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Summarization preserves all key entities"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Entity recall > 0.85"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Safety"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Refuses harmful request (e.g., \"How to hack\")"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Refuses or redirects"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Safety"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PII is not leaked in output"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No email/phone/SSN patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Regression"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same input produces quality score within range of baseline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Score >= baseline * 0.95"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "automated-eval-gate-configuration",
+      children: "Automated Eval Gate Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class EvalGate {\n  private baselineMetrics: Map<string, number> = new Map();\n  private degradationThresholds: Map<string, number> = new Map();\n\n  setBaseline(metric: string, value: number): void {\n    this.baselineMetrics.set(metric, value);\n  }\n\n  setThreshold(metric: string, maxDegradationPercent: number): void {\n    this.degradationThresholds.set(metric, maxDegradationPercent);\n  }\n\n  evaluate(currentMetrics: Record<string, number>): {\n    passed: boolean;\n    failures: Array<{ metric: string; expected: number; actual: number; degradation: number }>;\n  } {\n    const failures: Array<{ metric: string; expected: number; actual: number; degradation: number }> = [];\n\n    for (const [metric, baseline] of this.baselineMetrics) {\n      const current = currentMetrics[metric];\n      if (current === undefined) continue;\n\n      const threshold = this.degradationThresholds.get(metric) || 10;\n      const degradation = ((baseline - current) / baseline) * 100;\n\n      if (degradation > threshold) {\n        failures.push({ metric, expected: baseline, actual: current, degradation });\n      }\n    }\n\n    return { passed: failures.length === 0, failures };\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "117-incident-response-playbooks",
+      children: "11.7 Incident Response Playbooks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI systems require specialized incident response playbooks for each failure mode."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "incident-response-playbooks",
+      children: "Incident Response Playbooks"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Incident Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Symptoms"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detection"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Immediate Actions"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Root Cause Investigation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Resolution"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Quality Degradation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User complaints, eval scores drop, response quality decline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring dashboards, user feedback, eval score trends"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Rollback to previous prompt version", (0,jsx_runtime.jsx)(_components.br, {}), "2. Switch to fallback model", (0,jsx_runtime.jsx)(_components.br, {}), "3. Notify stakeholders"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Compare eval results across versions", (0,jsx_runtime.jsx)(_components.br, {}), "2. Check for model updates", (0,jsx_runtime.jsx)(_components.br, {}), "3. Review recent prompt changes"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Deploy fixed prompt", (0,jsx_runtime.jsx)(_components.br, {}), "2. Update eval datasets", (0,jsx_runtime.jsx)(_components.br, {}), "3. Add regression tests"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cost Spike"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Daily spend exceeds budget by >50%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Budget alerts, cost monitoring dashboards"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Enable aggressive caching", (0,jsx_runtime.jsx)(_components.br, {}), "2. Route traffic to cheaper model", (0,jsx_runtime.jsx)(_components.br, {}), "3. Increase rate limits"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Analyze token usage by user/endpoint", (0,jsx_runtime.jsx)(_components.br, {}), "2. Check for prompt loops", (0,jsx_runtime.jsx)(_components.br, {}), "3. Review model tier allocation"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Implement tiered routing", (0,jsx_runtime.jsx)(_components.br, {}), "2. Add spending limits per user", (0,jsx_runtime.jsx)(_components.br, {}), "3. Optimize prompts"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Safety Incident"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Toxic output, PII leak, harmful content"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Content filter alerts, user reports, manual review"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Block offending inputs/outputs", (0,jsx_runtime.jsx)(_components.br, {}), "2. Revoke abusive API keys", (0,jsx_runtime.jsx)(_components.br, {}), "3. Disable affected feature"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Analyze trigger patterns", (0,jsx_runtime.jsx)(_components.br, {}), "2. Review filter configuration", (0,jsx_runtime.jsx)(_components.br, {}), "3. Check for adversarial inputs"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Update safety filters", (0,jsx_runtime.jsx)(_components.br, {}), "2. Add new guardrails", (0,jsx_runtime.jsx)(_components.br, {}), "3. Security review"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Model Failure"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5xx errors, empty responses, timeouts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error rate monitoring, uptime checks"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Switch to fallback model", (0,jsx_runtime.jsx)(_components.br, {}), "2. Enable circuit breaker", (0,jsx_runtime.jsx)(_components.br, {}), "3. Scale up alternative provider"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Check model API status", (0,jsx_runtime.jsx)(_components.br, {}), "2. Review recent model changes", (0,jsx_runtime.jsx)(_components.br, {}), "3. Test with different params"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Update model routing", (0,jsx_runtime.jsx)(_components.br, {}), "2. Add more fallback options", (0,jsx_runtime.jsx)(_components.br, {}), "3. Update SLAs"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Data Issue"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Incorrect answers, stale information, missing context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality monitoring, user reports"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Disable affected knowledge sources", (0,jsx_runtime.jsx)(_components.br, {}), "2. Clear cache", (0,jsx_runtime.jsx)(_components.br, {}), "3. Reroute to fallback"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Check data pipeline logs", (0,jsx_runtime.jsx)(_components.br, {}), "2. Review ingestion process", (0,jsx_runtime.jsx)(_components.br, {}), "3. Validate source data"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["1. Fix data pipeline", (0,jsx_runtime.jsx)(_components.br, {}), "2. Re-index affected content", (0,jsx_runtime.jsx)(_components.br, {}), "3. Add data validation"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "incident-response-automation",
+      children: "Incident Response Automation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type IncidentSeverity = \"sev1\" | \"sev2\" | \"sev3\";\ntype IncidentType = \"quality\" | \"cost\" | \"safety\" | \"model\" | \"data\";\n\ninterface IncidentPlaybook {\n  type: IncidentType;\n  severity: IncidentSeverity;\n  detectionRules: string[];\n  immediateActions: string[];\n  investigationSteps: string[];\n  resolutionSteps: string[];\n  notificationChannels: string[];\n  slaMinutes: number;\n}\n\nconst PLAYBOOKS: Record<IncidentType, IncidentPlaybook> = {\n  quality: {\n    type: \"quality\",\n    severity: \"sev2\",\n    detectionRules: [\"eval_score_drop > 5%\", \"user_satisfaction < 3.0\"],\n    immediateActions: [\n      \"Rollback to previous prompt version\",\n      \"Switch to fallback model gpt-4o\",\n      \"Notify product team\",\n    ],\n    investigationSteps: [\n      \"Compare eval results across last 24 hours\",\n      \"Check for model provider updates\",\n      \"Review recent prompt changes in registry\",\n    ],\n    resolutionSteps: [\n      \"Deploy fixed prompt version\",\n      \"Update eval dataset with regression cases\",\n      \"Add automated quality regression test\",\n    ],\n    notificationChannels: [\"slack\", \"email\"],\n    slaMinutes: 60,\n  },\n  cost: {\n    type: \"cost\",\n    severity: \"sev3\",\n    detectionRules: [\"daily_spend > budget * 1.5\", \"cost_per_request > 2x baseline\"],\n    immediateActions: [\n      \"Enable aggressive semantic caching\",\n      \"Route non-critical traffic to economy model\",\n      \"Increase rate limiting for top spend users\",\n    ],\n    investigationSteps: [\n      \"Analyze token consumption per user/endpoint\",\n      \"Check for infinite retry loops\",\n      \"Review model tier distribution\",\n    ],\n    resolutionSteps: [\n      \"Implement per-user spending limits\",\n      \"Add cost anomaly detection\",\n      \"Optimize prompts for token efficiency\",\n    ],\n    notificationChannels: [\"slack\", \"email\"],\n    slaMinutes: 120,\n  },\n  safety: {\n    type: \"safety\",\n    severity: \"sev1\",\n    detectionRules: [\"content_filter_rate > 5%\", \"user_report > 3 in 1h\"],\n    immediateActions: [\n      \"Block all offending inputs at gateway\",\n      \"Revoke API keys of abusive users\",\n      \"Disable affected AI feature\",\n      \"Notify security team immediately\",\n    ],\n    investigationSteps: [\n      \"Analyze trigger patterns in safety logs\",\n      \"Review filter configuration for gaps\",\n      \"Check for coordinated attack patterns\",\n    ],\n    resolutionSteps: [\n      \"Deploy updated safety filters\",\n      \"Add new guardrail rules\",\n      \"Complete security incident report\",\n    ],\n    notificationChannels: [\"pagerduty\", \"slack\", \"email\", \"security\"],\n    slaMinutes: 15,\n  },\n  model: {\n    type: \"model\",\n    severity: \"sev2\",\n    detectionRules: [\"error_rate > 5%\", \"p95_latency > 10s\"],\n    immediateActions: [\n      \"Switch traffic to fallback model\",\n      \"Enable circuit breaker pattern\",\n      \"Increase timeout limits\",\n    ],\n    investigationSteps: [\n      \"Verify model API provider status\",\n      \"Test model with simple baseline prompt\",\n      \"Check for API version changes\",\n    ],\n    resolutionSteps: [\n      \"Update model routing configuration\",\n      \"Add additional model providers\",\n      \"Document incident for provider communication\",\n    ],\n    notificationChannels: [\"slack\", \"email\"],\n    slaMinutes: 30,\n  },\n  data: {\n    type: \"data\",\n    severity: \"sev2\",\n    detectionRules: [\"retrieval_score < 0.6\", \"user_report_stale_info > 5\"],\n    immediateActions: [\n      \"Disable affected knowledge base sources\",\n      \"Clear response cache\",\n      \"Fall back to base model without RAG\",\n    ],\n    investigationSteps: [\n      \"Check data pipeline job logs for failures\",\n      \"Validate source data freshness\",\n      \"Review chunking and indexing config\",\n    ],\n    resolutionSteps: [\n      \"Repair data pipeline\",\n      \"Re-index knowledge base\",\n      \"Add data freshness alerts\",\n    ],\n    notificationChannels: [\"slack\", \"email\"],\n    slaMinutes: 60,\n  },\n};\n\nclass IncidentResponder {\n  private activeIncidents: Map<string, { playbook: IncidentPlaybook; startedAt: Date }> = new Map();\n\n  detectAndRespond(type: IncidentType, details: string): string {\n    const playbook = PLAYBOOKS[type];\n    const incidentId = `inc-${type}-${Date.now()}`;\n\n    console.log(`\\n=== INCIDENT: ${type.toUpperCase()} [${playbook.severity}] ===`);\n    console.log(`ID: ${incidentId}`);\n    console.log(`Details: ${details}`);\n    console.log(`SLA: ${playbook.slaMinutes} minutes`);\n    console.log(\"\\nImmediate Actions:\");\n    playbook.immediateActions.forEach((action, i) => console.log(`  ${i + 1}. ${action}`));\n    console.log(\"\\nNotifications Sent To:\");\n    playbook.notificationChannels.forEach((ch) => console.log(`  - ${ch}`));\n\n    this.activeIncidents.set(incidentId, { playbook, startedAt: new Date() });\n    return incidentId;\n  }\n\n  runInvestigation(incidentId: string): void {\n    const incident = this.activeIncidents.get(incidentId);\n    if (!incident) {\n      console.log(`Incident ${incidentId} not found`);\n      return;\n    }\n\n    console.log(\"\\nInvestigation Steps:\");\n    incident.playbook.investigationSteps.forEach((step, i) => console.log(`  ${i + 1}. ${step}`));\n  }\n\n  resolve(incidentId: string): void {\n    const incident = this.activeIncidents.get(incidentId);\n    if (!incident) return;\n\n    const duration = (Date.now() - incident.startedAt.getTime()) / 1000 / 60;\n    console.log(`\\n=== RESOLUTION ===`);\n    console.log(`Incident: ${incidentId}`);\n    console.log(`Duration: ${duration.toFixed(1)} minutes`);\n    console.log(\"\\nResolution Steps:\");\n    incident.playbook.resolutionSteps.forEach((step, i) => console.log(`  ${i + 1}. ${step}`));\n\n    console.log(\"\\nPost-Mortem Required: YES\");\n    this.activeIncidents.delete(incidentId);\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-aiopspipeline",
+      children: "TypeScript: AIOpsPipeline"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AIOpsPipeline"
+      }), " class integrates experiment tracking, prompt registry, CI/CD configuration, and drift detection into a unified operations pipeline."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class AIOpsPipeline {\n  private experimentTracker: ExperimentTracker;\n  private promptRegistry: PromptRegistry;\n  private cicdPipeline: AICICDPipeline;\n  private driftDetector: DriftDetector;\n  private artifactVersioner: ArtifactVersioner;\n  private incidentResponder: IncidentResponder;\n\n  constructor() {\n    this.experimentTracker = new ExperimentTracker();\n    this.promptRegistry = new PromptRegistry();\n    this.artifactVersioner = new ArtifactVersioner();\n\n    this.cicdPipeline = new AICICDPipeline({\n      stages: [\n        { name: \"build\", commands: [\"npm ci\", \"npm run build\"], timeout: 300, required: true },\n        { name: \"test\", commands: [\"npm test\"], timeout: 300, required: true },\n        { name: \"eval\", commands: [\"npm run eval\"], timeout: 600, required: true },\n      ],\n      evalGates: [\n        { name: \"accuracy\", metric: \"accuracy\", threshold: 0.85, comparison: \"gte\", sampleSize: 200 },\n        { name: \"safety\", metric: \"safety_score\", threshold: 0.95, comparison: \"gte\", sampleSize: 100 },\n      ],\n      rolloutConfig: {\n        strategy: \"gradual\",\n        percentages: [5, 25, 50, 100],\n        cooldownMinutes: [10, 30, 60],\n        autoRollbackThreshold: 0.05,\n      },\n    });\n\n    this.driftDetector = new DriftDetector({\n      psiThreshold: 0.2,\n      conceptDriftThreshold: 0.1,\n      promptDriftThreshold: 0.05,\n      embeddingDriftThreshold: 0.15,\n      windowSize: 1000,\n      alertCooldownMs: 3600000,\n    });\n\n    this.incidentResponder = new IncidentResponder();\n  }\n\n  async runExperiment(params: {\n    name: string;\n    description: string;\n    createdBy: string;\n    config: ExperimentConfig;\n  }): Promise<string> {\n    const experiment = this.experimentTracker.createExperiment(params);\n    const run = this.experimentTracker.createRun(experiment.id);\n\n    try {\n      const metrics = await this.executeExperimentRun(experiment.config);\n      this.experimentTracker.completeRun(experiment.id, run.id, metrics);\n    } catch (error: any) {\n      this.experimentTracker.failRun(experiment.id, run.id, error.message);\n    }\n\n    return experiment.id;\n  }\n\n  private async executeExperimentRun(config: ExperimentConfig): Promise<Partial<RunMetrics>> {\n    const latencies: number[] = [];\n    const outputTokens: number[] = [];\n    const inputTokens: number[] = [];\n\n    for (let i = 0; i < 50; i++) {\n      const start = Date.now();\n      await new Promise((r) => setTimeout(r, 100 + Math.random() * 200));\n      const latency = Date.now() - start;\n      latencies.push(latency);\n      inputTokens.push(Math.floor(Math.random() * 500 + 100));\n      outputTokens.push(Math.floor(Math.random() * 300 + 50));\n    }\n\n    latencies.sort((a, b) => a - b);\n    const avgLatency = latencies.reduce((a, b) => a + b, 0) / latencies.length;\n    const p95Index = Math.floor(latencies.length * 0.95);\n    const totalCost =\n      inputTokens.reduce((a, b) => a + b, 0) * 0.000003 +\n      outputTokens.reduce((a, b) => a + b, 0) * 0.00001;\n\n    return {\n      accuracy: 0.87 + Math.random() * 0.1,\n      llmJudgeScore: 0.82 + Math.random() * 0.15,\n      avgLatency,\n      p95Latency: latencies[p95Index],\n      avgTokensInput: inputTokens.reduce((a, b) => a + b, 0) / inputTokens.length,\n      avgTokensOutput: outputTokens.reduce((a, b) => a + b, 0) / outputTokens.length,\n      totalCost,\n      safetyPassRate: 0.97 + Math.random() * 0.03,\n    };\n  }\n\n  registerPrompt(initialVersion: Omit<PromptVersion, \"id\" | \"version\" | \"createdAt\">): string {\n    const version = this.promptRegistry.registerPrompt(initialVersion.promptId, initialVersion);\n\n    this.artifactVersioner.register(\"prompt\", version, {\n      createdBy: version.createdBy,\n      description: `Prompt ${version.promptId} v${version.version}`,\n      tags: [\"prompt\"],\n    });\n\n    return version.id;\n  }\n\n  async runCICD(version: { promptId: string; versionId: string; model: string }): Promise<void> {\n    const result = await this.cicdPipeline.runPipeline(version);\n    console.log(`[AIOps] CI/CD result: ${result.success ? \"PASSED\" : \"FAILED\"}`);\n\n    if (result.success && result.deploymentId) {\n      console.log(`[AIOps] Deployment: ${result.deploymentId}`);\n    }\n  }\n\n  observeMetrics(metrics: {\n    latency: number;\n    accuracy: number;\n    inputLength: number;\n    score: number;\n    userId: string;\n  }): void {\n    this.driftDetector.addObservation(\"latency\", metrics.latency);\n    this.driftDetector.addObservation(\"score\", metrics.score);\n    this.driftDetector.addObservation(\"input_length\", metrics.inputLength);\n\n    const dataDrift = this.driftDetector.detectDataDrift(\"score\");\n    if (dataDrift?.detected && this.driftDetector.shouldAlert(\"score\")) {\n      console.log(`[DriftAlert] ${dataDrift.details}`);\n      this.incidentResponder.detectAndRespond(\"quality\", dataDrift.details);\n    }\n  }\n\n  getStatus(): {\n    experiments: number;\n    prompts: number;\n    deployments: number;\n    activeIncidents: number;\n    driftAlerts: number;\n  } {\n    return {\n      experiments: this.experimentTracker.listExperiments().length,\n      prompts: this.promptRegistry[\"prompts\"].size,\n      deployments: 0,\n      activeIncidents: this.incidentResponder[\"activeIncidents\"].size,\n      driftAlerts: 0,\n    };\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-driftdetector",
+      children: "TypeScript: DriftDetector"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DriftDetector"
+      }), " class implements statistical tests for detecting data, concept, and prompt drift with configurable thresholds and alerting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// (Full DriftDetector implementation is in section 11.5 above)\n// The following demonstrates its usage in a production setting:\n\nclass DriftMonitor {\n  private detector: DriftDetector;\n  private alertHistory: Map<string, number> = new Map();\n\n  constructor() {\n    this.detector = new DriftDetector({\n      psiThreshold: 0.2,\n      conceptDriftThreshold: 0.1,\n      promptDriftThreshold: 0.05,\n      embeddingDriftThreshold: 0.15,\n      windowSize: 1000,\n      alertCooldownMs: 3600000,\n    });\n\n    // Initialize baselines\n    this.detector.setBaseline(\"accuracy\", Array.from({ length: 1000 }, () => 0.85 + Math.random() * 0.12));\n    this.detector.setBaseline(\"latency\", Array.from({ length: 1000 }, () => 200 + Math.random() * 300));\n    this.detector.setBaseline(\"score\", Array.from({ length: 1000 }, () => 0.75 + Math.random() * 0.2));\n  }\n\n  recordObservation(metric: string, value: number): void {\n    this.detector.addObservation(metric, value);\n  }\n\n  checkAll(): DriftReport[] {\n    const reports: DriftReport[] = [];\n\n    const dataDrift = this.detector.detectDataDrift(\"accuracy\");\n    if (dataDrift) reports.push(dataDrift);\n\n    const scoreDrift = this.detector.detectDataDrift(\"score\");\n    if (scoreDrift) reports.push(scoreDrift);\n\n    return reports.filter((r) => r.detected);\n  }\n\n  checkPromptHealth(baselineScores: number[], currentScores: number[]): DriftReport {\n    const report = this.detector.detectPromptDrift(baselineScores, currentScores);\n\n    if (report.detected && this.detector.shouldAlert(\"prompt_drift\")) {\n      console.log(`[PromptDrift] ${report.details} (severity: ${report.severity})`);\n\n      if (report.severity === \"high\" || report.severity === \"critical\") {\n        console.log(\"[PromptDrift] Triggering automated rollback...\");\n        // call rollback logic here\n      }\n    }\n\n    return report;\n  }\n\n  getAggregatedHealth(): { healthy: boolean; activeDrifts: number; summary: string } {\n    const drifts = this.checkAll();\n    return {\n      healthy: drifts.length === 0,\n      activeDrifts: drifts.length,\n      summary: drifts.length === 0\n        ? \"All systems healthy\"\n        : `${drifts.length} drift(s) detected: ${drifts.map((d) => `${d.type} (${(d.score * 100).toFixed(1)}%)`).join(\", \")}`,\n    };\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MLOps for AI engineering diverges from traditional MLOps in ten critical ways — prompts replace trained models as the primary artifact, change frequency shifts from weekly to daily, evaluation requires LLM-as-judge alongside traditional metrics, and drift monitoring must account for prompt drift and embedding drift. Experiment tracking must capture the full combinatorial space of prompts, models, parameters, retrieval strategies, and evaluation results, with automated comparison to identify winning configurations. Prompt management demands a rigorous lifecycle from draft through review, staging, canary, production, and archival — with version control, rollback capability, and automated eval gates at every promotion stage. CI/CD pipelines for AI must incorporate evaluation gates that block deployment if accuracy, safety, or cost thresholds are breached, and gradual rollout strategies (canary, blue-green, percentage-based) that auto-rollback on degradation. Data and model versioning requires hash-based content addressing and DVC-like pipeline locking to ensure reproducibility. Drift monitoring must operate across five dimensions — data, concept, prompt, model, and embedding — each with specific detection methods and response protocols. Testing spans four layers: unit tests for prompt rendering, integration tests for pipeline correctness, eval tests for output quality, and safety tests for harm prevention. Incident response playbooks must be pre-defined for quality degradation, cost spikes, safety breaches, model failures, and data issues, each with clear detection rules, immediate actions, investigation steps, and resolution procedures."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Version everything"
+        }), " — prompts, model configs, eval datasets, and embedding indices all need hash-based versioning with full lineage tracking for reproducibility"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Automate eval gates in CI/CD"
+        }), " — block deployments that degrade accuracy (>5% drop), safety (>2% drop), or cost (>20% increase). This prevents bad changes from reaching users"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Monitor five drift dimensions"
+        }), " — track data drift (PSI), concept drift (error rate), prompt drift (score trends), model drift (output distribution), and embedding drift (cosine similarity). Each requires different detection and response"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Implement graduated rollout by default"
+        }), " — use canary (5% → 25% → 50% → 100%) with cooldown periods between stages and auto-rollback on any metric degradation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pre-write incident playbooks"
+        }), " — define runbooks for the five most common AI incidents (quality, cost, safety, model, data) with clear SLA targets, immediate actions, and investigation steps before incidents occur"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Test your understanding of MLOps for AI engineering concepts."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "question-1",
+      children: "Question 1"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which of the following is a key difference between traditional MLOps and AI engineering MLOps?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Traditional MLOps uses LLM-as-judge evaluation\nB) AI engineering MLOps treats prompts as primary artifacts that change frequently\nC) Traditional MLOps requires drift monitoring but AI engineering does not\nD) AI engineering MLOps does not require CI/CD pipelines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "question-2",
+      children: "Question 2"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A prompt version achieves a 92% accuracy score in staging but drops to 84% in production after 2 weeks. What type of drift is this?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Data drift\nB) Concept drift\nC) Prompt drift\nD) Embedding drift"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "question-3",
+      children: "Question 3"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In the CI/CD pipeline described in this chapter, what happens if a prompt variant fails the evaluation gate?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) It is deployed to canary anyway\nB) The deployment is blocked until the eval gate passes\nC) It is deployed to staging only\nD) The previous prompt version is automatically rolled back"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "question-4",
+      children: "Question 4"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which drift detection method uses Population Stability Index (PSI)?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Concept drift detection\nB) Data drift detection\nC) Prompt drift detection\nD) Embedding drift detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "question-5",
+      children: "Question 5"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What is the correct first action for a safety incident (sev1)?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A) Conduct root cause analysis\nB) Write a post-mortem report\nC) Block offending inputs and revoke abusive API keys\nD) Notify stakeholders via email"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answer-key",
+      children: "Answer Key"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In AI engineering, prompts change frequently and are treated as versioned primary artifacts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt drift occurs when a prompt's effectiveness degrades over time due to model updates, user behavior shifts, or content changes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation gates are blocking checks — if a prompt fails accuracy, safety, or cost thresholds, the deployment is blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PSI (Population Stability Index) measures distribution shifts in input data for data drift detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Immediate containment (blocking inputs, revoking keys) is the first priority; investigation and post-mortem come after mitigation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-build-a-versioned-prompt-registry-easy",
+      children: "Exercise 1: Build a Versioned Prompt Registry (Easy)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a simple prompt registry that stores prompt versions with support for creating, retrieving, and comparing versions. Each version should have a hash, timestamp, and change description."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deliverable"
+      }), ": TypeScript class ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SimplePromptRegistry"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "createVersion"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "getVersion"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "compareVersions"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "getHistory"
+      }), " methods."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "interface PromptV {\n  id: string;\n  version: number;\n  content: string;\n  hash: string;\n  createdAt: Date;\n  description: string;\n}\n\nclass SimplePromptRegistry {\n  private prompts: Map<string, PromptV[]> = new Map();\n\n  createVersion(promptId: string, content: string, description: string): PromptV {\n    const { createHash } = require(\"crypto\");\n    const versions = this.prompts.get(promptId) || [];\n    const hash = createHash(\"sha256\").update(content).digest(\"hex\").slice(0, 12);\n\n    const version: PromptV = {\n      id: crypto.randomUUID(),\n      version: versions.length + 1,\n      content,\n      hash,\n      createdAt: new Date(),\n      description,\n    };\n\n    versions.push(version);\n    this.prompts.set(promptId, versions);\n    return version;\n  }\n\n  getVersion(promptId: string, version?: number): PromptV | null {\n    const versions = this.prompts.get(promptId);\n    if (!versions || versions.length === 0) return null;\n    if (version === undefined) return versions[versions.length - 1];\n    return versions.find((v) => v.version === version) || null;\n  }\n\n  compareVersions(promptId: string, v1: number, v2: number): { changed: boolean; differences: string[] } {\n    const a = this.getVersion(promptId, v1);\n    const b = this.getVersion(promptId, v2);\n    const diffs: string[] = [];\n    if (!a || !b) return { changed: true, differences: [\"Version not found\"] };\n    if (a.hash !== b.hash) diffs.push(\"content differs\");\n    return { changed: diffs.length > 0, differences: diffs };\n  }\n\n  getHistory(promptId: string): PromptV[] {\n    return this.prompts.get(promptId) || [];\n  }\n}\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-implement-a-drift-detector-easy",
+      children: "Exercise 2: Implement a Drift Detector (Easy)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build a drift detector that monitors accuracy scores over time. Implement PSI (Population Stability Index) calculation for data drift detection. Test with two distributions: one similar to baseline and one significantly different."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deliverable"
+      }), ": TypeScript function ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "detectPSIDrift(baseline: number[], current: number[], threshold: number): { psi: number; drifted: boolean }"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "function detectPSIDrift(\n  baseline: number[],\n  current: number[],\n  threshold: number = 0.2\n): { psi: number; drifted: boolean } {\n  const numBins = 10;\n  const allValues = [...baseline, ...current];\n  const min = Math.min(...allValues);\n  const max = Math.max(...allValues);\n  const binWidth = (max - min) / numBins;\n\n  let psi = 0;\n\n  for (let i = 0; i < numBins; i++) {\n    const binStart = min + i * binWidth;\n    const binEnd = binStart + binWidth;\n\n    const baselineCount = baseline.filter(v => v >= binStart && v < binEnd).length;\n    const currentCount = current.filter(v => v >= binStart && v < binEnd).length;\n\n    const pBase = (baselineCount + 0.5) / (baseline.length + 0.5 * numBins);\n    const pCurr = (currentCount + 0.5) / (current.length + 0.5 * numBins);\n\n    psi += (pCurr - pBase) * Math.log(pCurr / pBase);\n  }\n\n  return { psi, drifted: psi > threshold };\n}\n\n// Test\nconst baseline = Array.from({ length: 1000 }, () => 0.8 + Math.random() * 0.15);\nconst similar = Array.from({ length: 1000 }, () => 0.8 + Math.random() * 0.15);\nconst different = Array.from({ length: 1000 }, () => 0.3 + Math.random() * 0.15);\n\nconsole.log(detectPSIDrift(baseline, similar)); // { psi: ~0.02, drifted: false }\nconsole.log(detectPSIDrift(baseline, different)); // { psi: >1.0, drifted: true }\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-cicd-eval-gate-medium",
+      children: "Exercise 3: CI/CD Eval Gate (Medium)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build an evaluation gate that checks whether a new prompt version meets quality thresholds before deployment. The gate should compare metrics against a baseline and block deployment if degradation exceeds configurable thresholds."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deliverable"
+      }), ": TypeScript class ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EvalGate"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "check(metrics: Record<string, number>): GateResult"
+      }), " method."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "interface GateThreshold {\n  metric: string;\n  maxDegradationPercent: number;\n  minValue: number;\n}\n\ninterface GateResult {\n  passed: boolean;\n  failures: Array<{ metric: string; baseline: number; current: number; degradation: number }>;\n}\n\nclass EvalGate {\n  private baselines: Map<string, number> = new Map();\n  private thresholds: GateThreshold[] = [];\n\n  setBaseline(metric: string, value: number): void {\n    this.baselines.set(metric, value);\n  }\n\n  addThreshold(threshold: GateThreshold): void {\n    this.thresholds.push(threshold);\n  }\n\n  check(current: Record<string, number>): GateResult {\n    const failures: GateResult[\"failures\"] = [];\n\n    for (const threshold of this.thresholds) {\n      const currentValue = current[threshold.metric];\n      if (currentValue === undefined) continue;\n\n      // Check absolute threshold\n      if (currentValue < threshold.minValue) {\n        failures.push({\n          metric: threshold.metric,\n          baseline: threshold.minValue,\n          current: currentValue,\n          degradation: ((threshold.minValue - currentValue) / threshold.minValue) * 100,\n        });\n        continue;\n      }\n\n      // Check degradation from baseline\n      const baselineValue = this.baselines.get(threshold.metric);\n      if (baselineValue !== undefined) {\n        const degradation = ((baselineValue - currentValue) / baselineValue) * 100;\n        if (degradation > threshold.maxDegradationPercent) {\n          failures.push({ metric: threshold.metric, baseline: baselineValue, current: currentValue, degradation });\n        }\n      }\n    }\n\n    return { passed: failures.length === 0, failures };\n  }\n}\n\n// Test\nconst gate = new EvalGate();\ngate.setBaseline(\"accuracy\", 0.90);\ngate.addThreshold({ metric: \"accuracy\", maxDegradationPercent: 5, minValue: 0.80 });\n\nconsole.log(gate.check({ accuracy: 0.88 })); // passed: true (< 5% drop)\nconsole.log(gate.check({ accuracy: 0.82 })); // passed: true (8.8% drop > 5% threshold, but above 0.80 min)\nconsole.log(gate.check({ accuracy: 0.78 })); // passed: false (below minValue 0.80)\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-incident-response-playbook-executor-medium",
+      children: "Exercise 4: Incident Response Playbook Executor (Medium)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build an incident response executor that takes an incident type, executes the corresponding playbook steps, tracks SLA compliance, and logs the incident timeline."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deliverable"
+      }), ": TypeScript class ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PlaybookExecutor"
+      }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "execute(type: IncidentType, details: string): IncidentLog"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "type IncidentType = \"quality\" | \"cost\" | \"safety\" | \"model\" | \"data\";\n\ninterface Playbook {\n  type: IncidentType;\n  severity: string;\n  slaMinutes: number;\n  immediateActions: string[];\n  investigationSteps: string[];\n  resolutionSteps: string[];\n}\n\ninterface IncidentLog {\n  id: string;\n  type: IncidentType;\n  startedAt: Date;\n  mitigatedAt?: Date;\n  resolvedAt?: Date;\n  slaBreached: boolean;\n  actions: Array<{ step: string; completedAt: Date }>;\n}\n\nconst PLAYBOOKS_MAP: Record<IncidentType, Playbook> = {\n  quality: { type: \"quality\", severity: \"sev2\", slaMinutes: 60, immediateActions: [\"Rollback prompt\", \"Switch model\", \"Notify team\"], investigationSteps: [\"Check eval trends\", \"Review changes\"], resolutionSteps: [\"Deploy fix\", \"Add regression test\"] },\n  cost: { type: \"cost\", severity: \"sev3\", slaMinutes: 120, immediateActions: [\"Enable caching\", \"Route to cheap model\", \"Increase limits\"], investigationSteps: [\"Check token usage\", \"Find anomalies\"], resolutionSteps: [\"Set spending limits\", \"Optimize prompts\"] },\n  safety: { type: \"safety\", severity: \"sev1\", slaMinutes: 15, immediateActions: [\"Block inputs\", \"Revoke keys\", \"Disable feature\"], investigationSteps: [\"Analyze triggers\", \"Review filters\"], resolutionSteps: [\"Update filters\", \"File security report\"] },\n  model: { type: \"model\", severity: \"sev2\", slaMinutes: 30, immediateActions: [\"Switch model\", \"Enable circuit breaker\"], investigationSteps: [\"Check provider\", \"Test baseline\"], resolutionSteps: [\"Update routing\", \"Add fallbacks\"] },\n  data: { type: \"data\", severity: \"sev2\", slaMinutes: 60, immediateActions: [\"Disable sources\", \"Clear cache\"], investigationSteps: [\"Check pipeline\", \"Validate data\"], resolutionSteps: [\"Fix pipeline\", \"Re-index\"] },\n};\n\nclass PlaybookExecutor {\n  execute(type: IncidentType, details: string): IncidentLog {\n    const playbook = PLAYBOOKS_MAP[type];\n    const log: IncidentLog = { id: `inc-${Date.now()}`, type, startedAt: new Date(), slaBreached: false, actions: [] };\n\n    console.log(`[${playbook.severity.toUpperCase()}] ${type} incident: ${details}`);\n    console.log(`SLA: ${playbook.slaMinutes} minutes`);\n\n    for (const action of playbook.immediateActions) {\n      const completedAt = new Date();\n      log.actions.push({ step: action, completedAt });\n      console.log(`  [ACTION] ${action} at ${completedAt.toISOString()}`);\n    }\n\n    log.mitigatedAt = new Date();\n    const elapsed = (log.mitigatedAt.getTime() - log.startedAt.getTime()) / 60000;\n    log.slaBreached = elapsed > playbook.slaMinutes;\n    console.log(`Mitigated in ${elapsed.toFixed(1)}min ${log.slaBreached ? \"(SLA BREACHED)\" : \"(within SLA)\"}`);\n\n    return log;\n  }\n}\n\nconst executor = new PlaybookExecutor();\nexecutor.execute(\"safety\", \"Multiple users reporting toxic output\");\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-full-mlops-pipeline-simulator-hard",
+      children: "Exercise 5: Full MLOps Pipeline Simulator (Hard)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build a simulator that integrates experiment tracking, prompt versioning, CI/CD with eval gates, and drift monitoring. Simulate a complete workflow: create experiment → register prompt → run CI/CD → monitor for drift → detect incident → execute playbook."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deliverable"
+      }), ": TypeScript class ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MLOpsSimulator"
+      }), " with a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "runFullCycle()"
+      }), " method that demonstrates the complete workflow with simulated data."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "class MLOpsSimulator {\n  async runFullCycle(): Promise<void> {\n    console.log(\"=== MLOps Pipeline Simulation ===\\n\");\n\n    // Step 1: Experiment Tracking\n    console.log(\"1. Running Experiment...\");\n    const pipeline = new AIOpsPipeline();\n    const expId = await pipeline.runExperiment({\n      name: \"prompt-v2-test\",\n      description: \"Testing new system prompt with chain-of-thought\",\n      createdBy: \"ml-eng-1\",\n      config: {\n        model: \"gpt-4o\",\n        modelVersion: \"2024-08-01\",\n        systemPrompt: \"You are a helpful assistant. Think step by step.\",\n        userPromptTemplate: \"Question: {{question}}\",\n        temperature: 0.3,\n        maxTokens: 1000,\n        topP: 0.9,\n        frequencyPenalty: 0,\n        presencePenalty: 0,\n        retrievalConfig: { chunkSize: 512, chunkOverlap: 50, topK: 5, embeddingModel: \"text-embedding-3-small\", retrieverType: \"hybrid\" },\n      },\n    });\n    console.log(`   Experiment ID: ${expId}\\n`);\n\n    // Step 2: Register Prompt\n    console.log(\"2. Registering Prompt Version...\");\n    const versionId = pipeline.registerPrompt({\n      promptId: \"customer-support-v1\",\n      systemPrompt: \"You are a customer support agent...\",\n      userPromptTemplate: \"Customer query: {{query}}\",\n      temperature: 0.3,\n      maxTokens: 500,\n      model: \"gpt-4o-mini\",\n      createdBy: \"ml-eng-1\",\n      status: \"draft\",\n      changeDescription: \"Initial version\",\n    });\n    console.log(`   Version ID: ${versionId}\\n`);\n\n    // Step 3: CI/CD Pipeline\n    console.log(\"3. Running CI/CD Pipeline...\");\n    await pipeline.runCICD({ promptId: \"customer-support-v1\", versionId, model: \"gpt-4o-mini\" });\n    console.log(\"\");\n\n    // Step 4: Simulate Production Traffic\n    console.log(\"4. Simulating Production Traffic...\");\n    for (let i = 0; i < 100; i++) {\n      pipeline.observeMetrics({\n        latency: 150 + Math.random() * 850,\n        accuracy: 0.88 + Math.random() * 0.1,\n        inputLength: 100 + Math.floor(Math.random() * 400),\n        score: i < 80 ? 0.85 + Math.random() * 0.12 : 0.5 + Math.random() * 0.2,\n        userId: `user-${i % 10}`,\n      });\n    }\n    console.log(\"   Traffic simulated\\n\");\n\n    // Step 5: Drift Detection\n    console.log(\"5. Checking for Drift...\");\n    const monitor = new DriftMonitor();\n    [0.82, 0.79, 0.65, 0.58, 0.45].forEach(v => monitor.recordObservation(\"accuracy\", v));\n    const drifts = monitor.checkAll();\n    console.log(`   Drifts detected: ${drifts.length}\\n`);\n\n    // Step 6: Incident Response\n    console.log(\"6. Incident Response...\");\n    if (drifts.length > 0) {\n      const responder = new IncidentResponder();\n      responder.detectAndRespond(\"quality\", \"Accuracy score dropped from 0.88 to 0.45 over 2 hours\");\n    }\n\n    console.log(\"\\n=== Simulation Complete ===\");\n  }\n}\n\n// Run: new MLOpsSimulator().runFullCycle();\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next"
+        }), ": ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/modern-ai-engineering/12-capstone-customer-support-platform",
+          children: "Chapter 12: Capstone — AI Customer Support Platform →"
+        })]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

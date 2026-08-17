@@ -1,0 +1,970 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[31846],{
+
+/***/ 52628
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_python_programming_19_apis_testing_md_5ea_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-python-programming-19-apis-testing-md-5ea.json
+const site_docs_courses_python_programming_19_apis_testing_md_5ea_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/python-programming/19-apis-testing","title":"Chapter 19: APIs and Testing","description":"Previous NumPy and pandas","source":"@site/docs/courses/python-programming/19-apis-testing.md","sourceDirName":"courses/python-programming","slug":"/python-programming/19-apis-testing","permalink":"/ai-engineering-journey/python-programming/19-apis-testing","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"19-apis-testing","slug":"/python-programming/19-apis-testing","title":"Chapter 19: APIs and Testing","sidebar_label":"Chapter 19: APIs and Testing","sidebar_position":19},"sidebar":"course-python-programming","previous":{"title":"Chapter 18: The Python Standard Library","permalink":"/ai-engineering-journey/python-programming/18-stdlib"},"next":{"title":"Chapter 20: NumPy and pandas","permalink":"/ai-engineering-journey/python-programming/20-numpy-pandas"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/python-programming/19-apis-testing.md
+
+
+const frontMatter = {
+	id: '19-apis-testing',
+	slug: '/python-programming/19-apis-testing',
+	title: 'Chapter 19: APIs and Testing',
+	sidebar_label: 'Chapter 19: APIs and Testing',
+	sidebar_position: 19
+};
+const contentTitle = 'Chapter 19: APIs and Testing';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "19.1 HTTP Requests",
+  "id": "191-http-requests",
+  "level": 2
+}, {
+  "value": "19.1.1 The requests Library",
+  "id": "1911-the-requests-library",
+  "level": 3
+}, {
+  "value": "19.1.2 Sessions",
+  "id": "1912-sessions",
+  "level": 3
+}, {
+  "value": "19.1.3 httpx → Async HTTP",
+  "id": "1913-httpx--async-http",
+  "level": 3
+}, {
+  "value": "19.2 Building APIs with FastAPI",
+  "id": "192-building-apis-with-fastapi",
+  "level": 2
+}, {
+  "value": "19.3 Pydantic Validation",
+  "id": "193-pydantic-validation",
+  "level": 2
+}, {
+  "value": "19.4 Testing with unittest",
+  "id": "194-testing-with-unittest",
+  "level": 2
+}, {
+  "value": "19.5 Testing with pytest",
+  "id": "195-testing-with-pytest",
+  "level": 2
+}, {
+  "value": "19.5.1 Assertions",
+  "id": "1951-assertions",
+  "level": 3
+}, {
+  "value": "19.5.2 Fixtures",
+  "id": "1952-fixtures",
+  "level": 3
+}, {
+  "value": "19.5.3 Fixture Scope",
+  "id": "1953-fixture-scope",
+  "level": 3
+}, {
+  "value": "19.5.4 Parametrization",
+  "id": "1954-parametrization",
+  "level": 3
+}, {
+  "value": "19.5.5 Mocking",
+  "id": "1955-mocking",
+  "level": 3
+}, {
+  "value": "19.5.6 Testing Exceptions",
+  "id": "1956-testing-exceptions",
+  "level": 3
+}, {
+  "value": "19.5.7 Conftest",
+  "id": "1957-conftest",
+  "level": 3
+}, {
+  "value": "19.6 Doctests",
+  "id": "196-doctests",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript API Client &amp; Mock Testing Patterns",
+  "id": "typescript-api-client--mock-testing-patterns",
+  "level": 3
+}, {
+  "value": "TypeScript Utilities",
+  "id": "typescript-utilities",
+  "level": 3
+}, {
+  "value": "TypeScript API &amp; Testing Patterns",
+  "id": "typescript-api--testing-patterns",
+  "level": 3
+}, {
+  "value": "TypeScript API Patterns &amp; Testing",
+  "id": "typescript-api-patterns--testing",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-19-apis-and-testing",
+        children: "Chapter 19: APIs and Testing"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/18-stdlib",
+          children: "The Python Standard Library"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/20-numpy-pandas",
+          children: "NumPy and pandas"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Make HTTP requests with requests and httpx"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build REST APIs with FastAPI"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate data with Pydantic models"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write unit tests with unittest and pytest"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use fixtures, parametrize, and mocking in pytest"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write doctests embedded in documentation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Measure and improve test coverage"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/19-apis-testing.png",
+        alt: "APIs and Testing"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.1 HTTP Requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "requests"
+            }), " makes HTTP calls simple; use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Session"
+            }), " for connection reuse across requests."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.2 Building APIs with FastAPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FastAPI builds type-validated APIs with automatic OpenAPI docs and interactive Swagger UI."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.3 Pydantic Validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pydantic validates data at runtime using Python type annotations — define schemas with classes."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.4 Testing with unittest"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["pytest fixtures provide reusable setup/teardown; parametrize tests with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@pytest.mark.parametrize"
+            }), "."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.5 Testing with pytest"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Mocking isolates code from external dependencies; use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "unittest.mock"
+            }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "pytest-mock"
+            }), "."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19.6 Doctests"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    S0[HTTP Requests]\n    S1[Building APIs with FastAPI]\n    S2[Pydantic Validation]\n    S3[Testing with unittest]\n    S4[Testing with pytest]\n    S5[Doctests]\n    S0 --> S1\n    S1 --> S2\n    S2 --> S3\n    S3 --> S4\n    S4 --> S5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "191-http-requests",
+      children: "19.1 HTTP Requests"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "requests"
+        }), " makes HTTP calls simple; use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Session"
+        }), " for connection reuse across requests.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always handle HTTP errors — check ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "response.status_code"
+        }), " or use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "response.raise_for_status()"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1911-the-requests-library",
+      children: "19.1.1 The requests Library"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import requests\n\n# GET request\nresponse = requests.get(\"https://api.github.com\")\nprint(response.status_code)     # 200\nprint(response.ok)               # True\nprint(response.headers[\"Content-Type\"])\n\n# JSON response\ndata = response.json()\nprint(data[\"current_user_url\"])\n\n# Query parameters\nparams = {\"q\": \"python\", \"sort\": \"stars\"}\nresponse = requests.get(\"https://api.github.com/search/repositories\", params=params)\nprint(f\"Found {response.json()['total_count']} repositories\")\n\n# POST request\npayload = {\"title\": \"New Issue\", \"body\": \"This is a test\"}\nheaders = {\"Authorization\": \"token YOUR_TOKEN\"}\nresponse = requests.post(\n    \"https://api.github.com/repos/owner/repo/issues\",\n    json=payload,\n    headers=headers,\n)\nprint(response.status_code)\n\n# Error handling\nresponse = requests.get(\"https://api.github.com/nonexistent\")\nif response.status_code == 404:\n    print(\"Not found\")\nelse:\n    response.raise_for_status()  # raises HTTPError for 4xx/5xx\n\n# Timeouts\ntry:\n    response = requests.get(\"https://example.com\", timeout=5)\nexcept requests.Timeout:\n    print(\"Request timed out\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1912-sessions",
+      children: "19.1.2 Sessions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Sessions reuse TCP connections and persist cookies\nwith requests.Session() as session:\n    session.headers.update({\"Authorization\": \"token TOKEN\"})\n    for repo in [\"repo1\", \"repo2\", \"repo3\"]:\n        response = session.get(f\"https://api.github.com/repos/owner/{repo}\")\n        print(response.json()[\"description\"])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1913-httpx--async-http",
+      children: "19.1.3 httpx → Async HTTP"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import httpx\nimport asyncio\n\n# Synchronous\nwith httpx.Client() as client:\n    response = client.get(\"https://api.github.com\")\n    print(response.json())\n\n# Asynchronous\nasync def fetch_all():\n    async with httpx.AsyncClient() as client:\n        tasks = [\n            client.get(\"https://api.github.com\"),\n            client.get(\"https://api.github.com/repos/python/cpython\"),\n        ]\n        responses = await asyncio.gather(*tasks)\n        for resp in responses:\n            print(resp.status_code, resp.url)\n\nasyncio.run(fetch_all())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "192-building-apis-with-fastapi",
+      children: "19.2 Building APIs with FastAPI"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " FastAPI builds type-validated APIs with automatic OpenAPI docs and interactive Swagger UI."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from fastapi import FastAPI, HTTPException, Query\nfrom pydantic import BaseModel\nfrom typing import Optional\n\napp = FastAPI(title=\"Task Manager API\", version=\"1.0.0\")\n\n# In-memory database\ntasks_db: dict[int, dict] = {}\nnext_id = 1\n\n# Pydantic models (covered in next section)\nclass TaskCreate(BaseModel):\n    title: str\n    description: Optional[str] = None\n    completed: bool = False\n\nclass Task(TaskCreate):\n    id: int\n\nclass TaskUpdate(BaseModel):\n    title: Optional[str] = None\n    description: Optional[str] = None\n    completed: Optional[bool] = None\n\n# Routes\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"Task Manager API\"}\n\n@app.get(\"/tasks\", response_model=list[Task])\ndef list_tasks(\n    skip: int = Query(0, ge=0),\n    limit: int = Query(10, ge=1, le=100),\n):\n    return list(tasks_db.values())[skip : skip + limit]\n\n@app.post(\"/tasks\", response_model=Task, status_code=201)\ndef create_task(task: TaskCreate):\n    global next_id\n    task_id = next_id\n    next_id += 1\n    tasks_db[task_id] = {\"id\": task_id, **task.model_dump()}\n    return tasks_db[task_id]\n\n@app.get(\"/tasks/{task_id}\", response_model=Task)\ndef get_task(task_id: int):\n    if task_id not in tasks_db:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    return tasks_db[task_id]\n\n@app.put(\"/tasks/{task_id}\", response_model=Task)\ndef update_task(task_id: int, task: TaskUpdate):\n    if task_id not in tasks_db:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    current = tasks_db[task_id]\n    updates = task.model_dump(exclude_unset=True)\n    current.update(updates)\n    return current\n\n@app.delete(\"/tasks/{task_id}\", status_code=204)\ndef delete_task(task_id: int):\n    if task_id not in tasks_db:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    del tasks_db[task_id]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Save as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "main.py"
+      }), " and run with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "uvicorn main:app --reload"
+      }), ". Visit ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "http://localhost:8000/docs"
+      }), " for interactive documentation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "193-pydantic-validation",
+      children: "19.3 Pydantic Validation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Pydantic validates data at runtime using Python type annotations — define schemas with classes."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pydantic enforces type constraints on data models at runtime:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from pydantic import BaseModel, Field, EmailStr, field_validator\nfrom datetime import datetime\n\nclass User(BaseModel):\n    name: str = Field(..., min_length=1, max_length=100)\n    email: EmailStr\n    age: int = Field(..., ge=0, le=150)\n    created_at: datetime = Field(default_factory=datetime.now)\n    tags: list[str] = []\n\n    @field_validator(\"name\")\n    @classmethod\n    def name_must_be_meaningful(cls, v: str) -> str:\n        if v.strip() == \"\":\n            raise ValueError(\"Name cannot be blank\")\n        return v.strip()\n\nclass Order(BaseModel):\n    user_id: int\n    items: list[str] = Field(..., min_length=1)\n    total: float = Field(..., gt=0)\n\n# Valid data\nuser = User(name=\"Alice\", email=\"alice@example.com\", age=30)\nprint(user.model_dump())\n\n# Invalid data\ntry:\n    User(name=\"\", email=\"not-an-email\", age=200)\nexcept Exception as e:\n    print(e)\n    # 3 validation errors: name (blank), email (invalid), age (too large)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pydantic integrates seamlessly with FastAPI → route parameters are automatically validated and documented in OpenAPI/Swagger."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "194-testing-with-unittest",
+      children: "19.4 Testing with unittest"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " pytest fixtures provide reusable setup/teardown; parametrize tests with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@pytest.mark.parametrize"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import unittest\n\ndef factorial(n: int) -> int:\n    if n < 0:\n        raise ValueError(\"Negative input\")\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n\nclass TestFactorial(unittest.TestCase):\n    def test_zero(self):\n        self.assertEqual(factorial(0), 1)\n    \n    def test_positive(self):\n        self.assertEqual(factorial(5), 120)\n    \n    def test_negative(self):\n        with self.assertRaises(ValueError):\n            factorial(-1)\n    \n    def test_large(self):\n        self.assertEqual(factorial(10), 3628800)\n\n# setUp and tearDown\nclass TestDatabase(unittest.TestCase):\n    def setUp(self):\n        self.data = [1, 2, 3]\n    \n    def tearDown(self):\n        self.data.clear()\n    \n    def test_length(self):\n        self.assertEqual(len(self.data), 3)\n    \n    def test_contains(self):\n        self.assertIn(2, self.data)\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "195-testing-with-pytest",
+      children: "19.5 Testing with pytest"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Mocking isolates code from external dependencies; use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "unittest.mock"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pytest-mock"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "pytest is the modern standard for Python testing:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# test_math.py\nimport pytest\n\ndef add(a: int, b: int) -> int:\n    return a + b\n\ndef test_add():\n    assert add(2, 3) == 5\n    assert add(-1, 1) == 0\n    assert add(0, 0) == 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1951-assertions",
+      children: "19.5.1 Assertions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["pytest uses plain ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "assert"
+      }), " → no need for ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "self.assertEqual"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def test_strings():\n    assert \"hello\".upper() == \"HELLO\"\n    assert \"hello\".startswith(\"he\")\n    assert \"hello\" in \"hello world\"\n\ndef test_lists():\n    result = [1, 2, 3]\n    assert result == [1, 2, 3]\n    assert 2 in result\n    assert len(result) == 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1952-fixtures",
+      children: "19.5.2 Fixtures"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Fixtures provide reusable test setup:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pytest\n\n@pytest.fixture\ndef sample_data():\n    return {\"name\": \"Alice\", \"scores\": [85, 92, 78]}\n\n@pytest.fixture\ndef db_connection():\n    conn = {\"connected\": True}\n    yield conn  # setup\n    conn[\"connected\"] = False  # teardown\n\ndef test_average(sample_data):\n    scores = sample_data[\"scores\"]\n    assert sum(scores) / len(scores) == 85.0\n\ndef test_connection_active(db_connection):\n    assert db_connection[\"connected\"] is True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1953-fixture-scope",
+      children: "19.5.3 Fixture Scope"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "@pytest.fixture(scope=\"module\")\ndef expensive_resource():\n    # Created once per module\n    return {\"data\": [i ** 2 for i in range(1000)]}\n\n@pytest.fixture(scope=\"session\")\ndef global_config():\n    # Created once per test session\n    return {\"base_url\": \"https://api.example.com\"}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1954-parametrization",
+      children: "19.5.4 Parametrization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "@pytest.mark.parametrize(\"a,b,expected\", [\n    (1, 2, 3),\n    (0, 0, 0),\n    (-1, 1, 0),\n    (100, 200, 300),\n])\ndef test_add(a, b, expected):\n    assert add(a, b) == expected\n\n@pytest.mark.parametrize(\"n,expected\", [\n    (0, 1),\n    (1, 1),\n    (5, 120),\n    (10, 3628800),\n])\ndef test_factorial(n, expected):\n    assert factorial(n) == expected\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1955-mocking",
+      children: "19.5.5 Mocking"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from unittest.mock import Mock, patch\nimport pytest\nimport requests\n\ndef get_user_name(user_id: int) -> str:\n    response = requests.get(f\"https://api.example.com/users/{user_id}\")\n    return response.json()[\"name\"]\n\n@patch(\"requests.get\")\ndef test_get_user_name(mock_get):\n    # Configure the mock\n    mock_response = Mock()\n    mock_response.json.return_value = {\"name\": \"Alice\"}\n    mock_get.return_value = mock_response\n    \n    result = get_user_name(1)\n    assert result == \"Alice\"\n    mock_get.assert_called_once_with(\"https://api.example.com/users/1\")\n\n# Using pytest-mock fixture\ndef test_external_call(mocker):\n    mock_response = mocker.Mock()\n    mock_response.json.return_value = {\"status\": \"ok\"}\n    mocker.patch(\"requests.post\", return_value=mock_response)\n    \n    # Test code here\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1956-testing-exceptions",
+      children: "19.5.6 Testing Exceptions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def test_negative_input():\n    with pytest.raises(ValueError, match=\"Negative\"):\n        factorial(-1)\n\ndef test_multiple_exceptions():\n    with pytest.raises((ValueError, TypeError)):\n        factorial(\"abc\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1957-conftest",
+      children: "19.5.7 Conftest"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Shared fixtures go in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "conftest.py"
+      }), " at the test directory root:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# conftest.py\nimport pytest\nfrom typing import Generator\n\n@pytest.fixture\ndef api_client() -> Generator:\n    from fastapi.testclient import TestClient\n    from main import app\n    client = TestClient(app)\n    yield client\n\n# test_api.py\ndef test_create_task(api_client):\n    response = api_client.post(\"/tasks\", json={\n        \"title\": \"Write tests\",\n        \"description\": \"Write pytest tests\",\n    })\n    assert response.status_code == 201\n    data = response.json()\n    assert data[\"title\"] == \"Write tests\"\n    assert data[\"id\"] == 1\n\ndef test_list_tasks(api_client):\n    response = api_client.get(\"/tasks\")\n    assert response.status_code == 200\n    assert len(response.json()) > 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "196-doctests",
+      children: "19.6 Doctests"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Doctests embed executable examples in docstrings:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def fibonacci(n: int) -> int:\n    \"\"\"Return the nth Fibonacci number.\n    \n    Examples:\n        >>> fibonacci(0)\n        0\n        >>> fibonacci(1)\n        1\n        >>> fibonacci(10)\n        55\n        >>> fibonacci(20)\n        6765\n    \n    Args:\n        n: Non-negative index\n    \n    Returns:\n        The nth Fibonacci number\n    \n    Raises:\n        ValueError: If n is negative\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"n must be non-negative\")\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(n - 1):\n        a, b = b, a + b\n    return b\n\n# Run doctests\nif __name__ == \"__main__\":\n    import doctest\n    doctest.testmod(verbose=True)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Run with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "python -m doctest module.py"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "pytest --doctest-modules"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Feature"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "requests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Session, .json(), raise_for_status"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FastAPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Web framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type validation, auto docs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "pytest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixtures, parametrize, fixture scopes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "unittest.mock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mocking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "patch, Mock, MagicMock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "doctest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Doc testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Checks code in docstrings"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import requests\nresp = requests.get(\"https://api.github.com\")\nprint(resp.status_code, resp.json())\n\nfrom fastapi import FastAPI\napp = FastAPI()\n@app.get(\"/\")\ndef root():\n    return {\"hello\": \"world\"}\n\n# pytest\ndef test_example():\n    assert 2 + 2 == 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Area"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Relevant Section"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Web Dev"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REST API with FastAPI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19.2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Science"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Testing data pipelines with pytest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19.5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DevOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API health check monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19.1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mock external services in tests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19.5"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What does requests.Session provide?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["connection reuse ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "async support"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "data validation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "automatic retry"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " What does FastAPI auto-generate?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SQL queries"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["OpenAPI docs ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CSS styles"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "test cases"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " What does Pydantic validate?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["runtime data with type annotations ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "static types only"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SQL queries"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "HTTP headers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " What is a pytest fixture?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a test case"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["a reusable setup function ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a mock object"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a test marker"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " What does mocker.patch replace?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a test case"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["a real object with a mock ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a fixture"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a fixture scope"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Chapter 19: TypeScript API & Testing Equivalents\n// Python: requests.get() → TypeScript: fetch()\nasync function fetchData(url: string): Promise<unknown> {\n  const response = await fetch(url);\n  if (!response.ok) {\n    throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n  }\n  return response.json();\n}\n// Python equivalent: requests.get(url).json()\n\n// Python: FastAPI → TypeScript: Express / Hono / Elysia\nimport { Hono } from \"hono\";\nconst app = new Hono();\n\n// Type-safe route with validation\ninterface Book {\n  id: number;\n  title: string;\n  author: string;\n}\n\nlet books: Book[] = [\n  { id: 1, title: \"1984\", author: \"George Orwell\" },\n];\n\napp.get(\"/books\", (c) => c.json(books));\napp.get(\"/books/:id\", (c) => {\n  const id = Number(c.req.param(\"id\"));\n  const book = books.find((b) => b.id === id);\n  return book ? c.json(book) : c.json({ error: \"Not found\" }, 404);\n});\n// Python equivalent: FastAPI with Pydantic models\n\n// Python: pytest → TypeScript: vitest\nimport { describe, it, expect } from \"vitest\";\n\nfunction add(a: number, b: number): number {\n  return a + b;\n}\n\ndescribe(\"add\", () => {\n  it(\"adds two numbers\", () => {\n    expect(add(2, 3)).toBe(5);\n  });\n\n  it(\"handles negative numbers\", () => {\n    expect(add(-1, 1)).toBe(0);\n  });\n});\n// Python equivalent: def test_add(): assert add(2, 3) == 5\n\n// Python: unittest.mock → TypeScript: vi.mock()\n// vi.mock(\"./database\");\n// Python: mocker.patch(\"module.function\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-api-client--mock-testing-patterns",
+      children: "TypeScript API Client & Mock Testing Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Python: requests.Session() → TypeScript: fetch with headers\nasync function createApiClient(baseUrl: string) {\n  const headers = new Headers({ \"Content-Type\": \"application/json\" });\n  return {\n    get: async <T>(path: string): Promise<T> => {\n      const res = await fetch(`${baseUrl}${path}`, { headers });\n      if (!res.ok) throw new Error(`GET ${path}: ${res.status}`);\n      return res.json() as Promise<T>;\n    },\n    post: async <T>(path: string, body: unknown): Promise<T> => {\n      const res = await fetch(`${baseUrl}${path}`, {\n        method: \"POST\",\n        headers,\n        body: JSON.stringify(body),\n      });\n      return res.json() as Promise<T>;\n    },\n  };\n}\n\n// Python: pytest fixtures → TypeScript: vi.setupFiles / beforeAll\n// vitest.config.ts\nimport { defineConfig } from \"vitest/config\";\nexport default defineConfig({\n  test: {\n    globals: true,\n    setupFiles: [\"./src/test/setup.ts\"],\n  },\n});\n\n// Python: unittest.mock → TypeScript: vi.mock\n// __mocks__/database.ts\nexport const db = {\n  findUser: vi.fn().mockResolvedValue({ id: 1, name: \"Alice\" }),\n  saveUser: vi.fn().mockResolvedValue(true),\n};\n\n// Python: parametrize → TypeScript: test.each\n// Equivalent Python: @pytest.mark.parametrize(\"a,b,expected\", [(1,2,3), (-1,1,0)])\nconst cases = [\n  { a: 1, b: 2, expected: 3 },\n  { a: -1, b: 1, expected: 0 },\n  { a: 0, b: 0, expected: 0 },\n];\nfor (const { a, b, expected } of cases) {\n  describe(`add(${a}, ${b})`, () => {\n    it(`returns ${expected}`, () => expect(a + b).toBe(expected));\n  });\n}\n\n// Python: httpx async → TypeScript: fetch async\nasync function concurrentRequests(): Promise<void> {\n  const urls = [\"/api/users\", \"/api/products\", \"/api/orders\"];\n  const results = await Promise.all(urls.map((u) => api.get(u)));\n  console.log(results);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-utilities",
+      children: "TypeScript Utilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Fetch Wrapper with Retry ===\ninterface FetchOptions extends RequestInit { retries?: number; retryDelay?: number }\nasync function fetchWithRetry(url: string, options: FetchOptions = {}): Promise<Response> {\n  const { retries = 3, retryDelay = 1000, ...fetchOpts } = options;\n  for (let i = 0; i <= retries; i++) {\n    try {\n      const res = await fetch(url, fetchOpts);\n      if (res.ok) return res;\n      if (res.status >= 400 && res.status < 500 && res.status !== 429) throw new Error(`HTTP ${res.status}`);\n    } catch (err) {\n      if (i === retries) throw err;\n      await new Promise((r) => setTimeout(r, retryDelay * Math.pow(2, i)));\n    }\n  }\n  throw new Error(\"Unreachable\");\n}\n// await fetchWithRetry(\"https://api.example.com/data\");\n\n// === Rate-Limited Client ===\nclass RateLimitedClient {\n  private queue: Array<() => Promise<unknown>> = [];\n  private running = 0;\n  private lastRequest = 0;\n  constructor(private maxRequests: number, private perMs: number) {}\n  async request<T>(fn: () => Promise<T>): Promise<T> {\n    return new Promise((resolve, reject) => {\n      this.queue.push(async () => { try { resolve(await fn()); } catch (e) { reject(e); } });\n      this.processQueue();\n    });\n  }\n  private async processQueue(): Promise<void> {\n    if (this.running >= this.maxRequests) return;\n    const elapsed = Date.now() - this.lastRequest;\n    if (elapsed < this.perMs / this.maxRequests) await new Promise((r) => setTimeout(r, this.perMs / this.maxRequests - elapsed));\n    const task = this.queue.shift();\n    if (!task) return;\n    this.running++;\n    this.lastRequest = Date.now();\n    try { await task(); } finally { this.running--; this.processQueue(); }\n  }\n}\nconst client = new RateLimitedClient(5, 1000);\n// client.request(() => fetch(\"/api/data\"));\n\n// === API Response Validator (Pydantic equivalent) ===\nclass SchemaValidator {\n  static validate<T>(data: unknown, schema: Record<keyof T, string>): { valid: boolean; errors: string[] } {\n    const errors: string[] = [];\n    for (const [field, type] of Object.entries(schema)) {\n      const val = (data as Record<string, unknown>)[field];\n      if (type === \"string\" && typeof val !== \"string\") errors.push(`${field}: expected string, got ${typeof val}`);\n      if (type === \"number\" && typeof val !== \"number\") errors.push(`${field}: expected number, got ${typeof val}`);\n      if (type === \"boolean\" && typeof val !== \"boolean\") errors.push(`${field}: expected boolean, got ${typeof val}`);\n    }\n    return { valid: errors.length === 0, errors };\n  }\n}\nconst userSchema = { name: \"string\", age: \"number\", active: \"boolean\" } as const;\nconsole.log(SchemaValidator.validate({ name: \"Alice\", age: 30, active: true }, userSchema));\nconsole.log(SchemaValidator.validate({ name: 42, age: \"30\", active: 1 }, userSchema));\n\n// === Mock HTTP Server for Testing ===\nasync function mockHandler(url: string, method: string): Promise<{ status: number; body: unknown }> {\n  const routes: Array<{ pattern: RegExp; method: string; handler: () => unknown }> = [\n    { pattern: /^\\/api\\/users$/, method: \"GET\", handler: () => [{ id: 1, name: \"Alice\" }] },\n    { pattern: /^\\/api\\/users\\/\\d+$/, method: \"GET\", handler: () => ({ id: 1, name: \"Alice\" }) },\n  ];\n  for (const route of routes) {\n    if (route.method === method && route.pattern.test(url)) return { status: 200, body: route.handler() };\n  }\n  return { status: 404, body: { error: \"Not found\" } };\n}\nconsole.log(await mockHandler(\"/api/users\", \"GET\"));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-api--testing-patterns",
+      children: "TypeScript API & Testing Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Fetch API (Python: requests) ===\ninterface ApiResponse<T> { data?: T; error?: string; status: number; }\nasync function get<T>(url: string, headers?: Record<string, string>): Promise<ApiResponse<T>> {\n  try {\n    const res = await fetch(url, { headers: { \"Content-Type\": \"application/json\", ...headers } });\n    if (!res.ok) return { status: res.status, error: `HTTP ${res.status}: ${res.statusText}` };\n    return { status: res.status, data: await res.json() as T };\n  } catch (err) { return { status: 0, error: (err as Error).message }; }\n}\n\nasync function post<T>(url: string, body: unknown, headers?: Record<string, string>): Promise<ApiResponse<T>> {\n  try {\n    const res = await fetch(url, {\n      method: \"POST\",\n      headers: { \"Content-Type\": \"application/json\", ...headers },\n      body: JSON.stringify(body),\n    });\n    return { status: res.status, data: await res.json() as T };\n  } catch (err) { return { status: 0, error: (err as Error).message }; }\n}\n\n// === REST Client Builder (Python: requests Session) ===\nclass ApiClient {\n  private baseHeaders: Record<string, string> = {};\n  constructor(private baseUrl: string) {}\n  setHeader(key: string, value: string): this { this.baseHeaders[key] = value; return this; }\n  setAuth(token: string): this { return this.setHeader(\"Authorization\", `Bearer ${token}`); }\n  async get<T>(path: string): Promise<ApiResponse<T>> { return get(`${this.baseUrl}${path}`, this.baseHeaders); }\n  async post<T>(path: string, body: unknown): Promise<ApiResponse<T>> { return post(`${this.baseUrl}${path}`, body, this.baseHeaders); }\n  async put<T>(path: string, body: unknown): Promise<ApiResponse<T>> {\n    const res = await fetch(`${this.baseUrl}${path}`, { method: \"PUT\", headers: this.baseHeaders, body: JSON.stringify(body) });\n    return { status: res.status, data: await res.json() as T };\n  }\n  async delete<T>(path: string): Promise<ApiResponse<T>> {\n    const res = await fetch(`${this.baseUrl}${path}`, { method: \"DELETE\", headers: this.baseHeaders });\n    return { status: res.status, data: await res.json() as T };\n  }\n}\nconst api = new ApiClient(\"https://api.example.com\").setAuth(\"token-123\");\n// await api.get(\"/users\");\n\n// === Response Validation ===\nfunction validateResponse<T>(data: unknown, schema: Record<string, string>): data is T {\n  if (typeof data !== \"object\" || data === null) return false;\n  for (const [key, type] of Object.entries(schema)) {\n    const val = (data as Record<string, unknown>)[key];\n    if (val === undefined || typeof val !== type) return false;\n  }\n  return true;\n}\n\n// === Retry with Exponential Backoff ===\nasync function fetchWithRetry<T>(url: string, maxRetries = 3): Promise<T> {\n  for (let attempt = 0; attempt < maxRetries; attempt++) {\n    try {\n      const res = await fetch(url);\n      if (res.ok) return await res.json() as T;\n      if (res.status < 500) throw new Error(`HTTP ${res.status}`);\n    } catch (err) {\n      if (attempt === maxRetries - 1) throw err;\n      await new Promise(r => setTimeout(r, 1000 * Math.pow(2, attempt)));\n    }\n  }\n  throw new Error(\"Max retries exceeded\");\n}\n\n// === Assertion Utilities (Python: assert) ===\nfunction assertEqual<T>(actual: T, expected: T, msg = \"\"): void {\n  if (actual !== expected) throw new Error(`Assertion failed: ${msg || `${actual} !== ${expected}`}`);\n}\nfunction assertThrows(fn: () => void, expectedMsg?: string): void {\n  let threw = false;\n  try { fn(); } catch (err) {\n    threw = true;\n    if (expectedMsg && !(err as Error).message.includes(expectedMsg)) {\n      throw new Error(`Expected error containing \"${expectedMsg}\", got \"${(err as Error).message}\"`);\n    }\n  }\n  if (!threw) throw new Error(\"Expected function to throw\");\n}\nassertEqual(2 + 2, 4, \"basic math\");\nassertThrows(() => { throw new Error(\"fail\"); }, \"fail\");\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-api-patterns--testing",
+      children: "TypeScript API Patterns & Testing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === API Client Builder ===\ninterface ApiConfig { baseUrl: string; timeout: number; headers: Record<string, string>; }\nclass ApiClient {\n  constructor(private config: ApiConfig) {}\n  private async request<T>(method: string, path: string, body?: unknown): Promise<T> {\n    const controller = new AbortController();\n    const timer = setTimeout(() => controller.abort(), this.config.timeout);\n    try {\n      const res = await fetch(`${this.config.baseUrl}${path}`, {\n        method, headers: this.config.headers, body: body ? JSON.stringify(body) : undefined,\n        signal: controller.signal,\n      });\n      if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);\n      return res.json();\n    } finally { clearTimeout(timer); }\n  }\n  get<T>(path: string): Promise<T> { return this.request(\"GET\", path); }\n  post<T>(path: string, body: unknown): Promise<T> { return this.request(\"POST\", path, body); }\n  put<T>(path: string, body: unknown): Promise<T> { return this.request(\"PUT\", path, body); }\n  delete<T>(path: string): Promise<T> { return this.request(\"DELETE\", path); }\n}\n\n// === Mock Server (Python: unittest.mock / responses) ===\ninterface MockEndpoint { method: string; path: string; status: number; body: unknown; }\nclass MockServer {\n  private endpoints: MockEndpoint[] = [];\n  on(method: string, path: string, status = 200, body: unknown = {}): this {\n    this.endpoints.push({ method: method.toUpperCase(), path, status, body });\n    return this;\n  }\n  private async simulateRequest(method: string, path: string): Promise<Response> {\n    const ep = this.endpoints.find(e => e.method === method.toUpperCase() && e.path === path);\n    if (!ep) return new Response(null, { status: 404 });\n    return new Response(JSON.stringify(ep.body), { status: ep.status, headers: { \"Content-Type\": \"application/json\" } });\n  }\n  getClient(): ApiClient { return new ApiClient({ baseUrl: \"http://mock\", timeout: 1000, headers: {} }); }\n}\n\n// === Retry with Circuit Breaker ===\nclass CircuitBreaker {\n  private failures = 0;\n  private lastFailure = 0;\n  constructor(private maxFailures = 5, private resetTimeoutMs = 30000) {}\n  async call<T>(fn: () => Promise<T>): Promise<T> {\n    if (this.failures >= this.maxFailures) {\n      if (Date.now() - this.lastFailure > this.resetTimeoutMs) this.failures = 0;\n      else throw new Error(\"Circuit breaker open\");\n    }\n    try {\n      const result = await fn();\n      this.failures = 0;\n      return result;\n    } catch (e) {\n      this.failures++;\n      this.lastFailure = Date.now();\n      throw e;\n    }\n  }\n  get state(): \"closed\" | \"open\" | \"half-open\" {\n    if (this.failures === 0) return \"closed\";\n    if (this.failures >= this.maxFailures) return \"open\";\n    return \"half-open\";\n  }\n}\n\n// === Test Suite Runner (Python: unittest) ===\ninterface TestCase { name: string; run(): Promise<void> | void; }\nclass TestSuite {\n  private tests: TestCase[] = [];\n  private results = { passed: 0, failed: 0, errors: [] as Array<{ name: string; error: string }> };\n  add(test: TestCase): void { this.tests.push(test); }\n  async run(): Promise<void> {\n    for (const test of this.tests) {\n      try { await test.run(); this.results.passed++; } catch (e) { this.results.failed++; this.results.errors.push({ name: test.name, error: (e as Error).message }); }\n    }\n    console.log(`Passed: ${this.results.passed}, Failed: ${this.results.failed}`);\n  }\n}\n\n// === GraphQL Client ===\nclass GraphQLClient {\n  constructor(private endpoint: string, private headers: Record<string, string> = {}) {}\n  async query<T>(query: string, variables?: Record<string, unknown>): Promise<T> {\n    const res = await fetch(this.endpoint, {\n      method: \"POST\",\n      headers: { ...this.headers, \"Content-Type\": \"application/json\" },\n      body: JSON.stringify({ query, variables }),\n    });\n    const data = await res.json();\n    if (data.errors) throw new Error(data.errors[0]?.message ?? \"GraphQL error\");\n    return data.data;\n  }\n}\n\nconst client = new GraphQLClient(\"https://api.example.com/graphql\");\n// const result = await client.query(\"{ users { id name } }\");\nconst circuit = new CircuitBreaker();\nconsole.log(circuit.state); // \"closed\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "requests"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "httpx"
+        }), " make HTTP requests; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "httpx"
+        }), " supports async."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "FastAPI builds type-validated APIs with automatic OpenAPI docs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pydantic validates data at runtime with Python type annotations."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "unittest"
+        }), " is the built-in testing framework; pytest is more powerful."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "pytest fixtures provide reusable setup; parametrization tests multiple cases."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mocking isolates code from external dependencies."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Doctests verify code examples in docstrings."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the advantage of using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "requests.Session"
+        }), " over individual requests?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does FastAPI generate interactive API documentation automatically?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "scope=\"function\""
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "scope=\"session\""
+        }), " in pytest fixtures?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When would you use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "mocker.patch"
+        }), " over ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "unittest.mock.patch"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the main limitation of doctests compared to pytest tests?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a FastAPI application that manages a library of books. Each book has a title, author, ISBN, publication year, and status (available/checked out). Implement CRUD endpoints with proper error handling. Add a search endpoint that filters by title or author. Use Pydantic for validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write pytest tests for the library API using TestClient. Include tests for creating books, retrieving by ID, handling 404 errors, searching, and checking out a book. Use parametrization to test multiple book creation scenarios. Mock the database layer."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create a command-line weather tool using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "argparse"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "requests"
+        }), " that fetches data from OpenWeatherMap or a similar free API. Include flags for city name, units (metric/imperial), and output format (text/json). Handle network errors and invalid city names gracefully."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build a comprehensive testing suite for the Task Manager API from this chapter. Include:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Unit tests for all CRUD operations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Parametrized tests for edge cases (empty title, negative IDs, etc.)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Tests that verify the API's pagination with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "skip"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "limit"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mock tests that simulate database failures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A conftest.py with reusable fixtures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Doctests for any utility functions"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Run coverage (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pytest --cov --cov-report=html"
+        }), ") and achieve at least 90% coverage"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

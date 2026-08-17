@@ -1,0 +1,1242 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[57969],{
+
+/***/ 67254
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_17_boost_md_03e_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-17-boost-md-03e.json
+const site_docs_courses_laravel_17_boost_md_03e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/17-boost","title":"Chapter 17: Laravel Boost — AI-Assisted Development","description":"Previous Automation Patterns","source":"@site/docs/courses/laravel/17-boost.md","sourceDirName":"courses/laravel","slug":"/laravel/17-boost","permalink":"/ai-engineering-journey/laravel/17-boost","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"17-boost","slug":"/laravel/17-boost","title":"Chapter 17: Laravel Boost — AI-Assisted Development","sidebar_label":"Chapter 17: Laravel Boost — AI-Assisted Development","sidebar_position":17},"sidebar":"course-laravel","previous":{"title":"Chapter 16: Semantic Search, Vector Search & RAG with pgvector","permalink":"/ai-engineering-journey/laravel/16-search-rag"},"next":{"title":"Chapter 18: Automation Patterns & Workflows","permalink":"/ai-engineering-journey/laravel/18-automation-patterns"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/17-boost.md
+
+
+const frontMatter = {
+	id: '17-boost',
+	slug: '/laravel/17-boost',
+	title: 'Chapter 17: Laravel Boost — AI-Assisted Development',
+	sidebar_label: 'Chapter 17: Laravel Boost — AI-Assisted Development',
+	sidebar_position: 17
+};
+const contentTitle = 'Chapter 17: Laravel Boost — AI-Assisted Development';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "17.1 What Is Laravel Boost?",
+  "id": "171-what-is-laravel-boost",
+  "level": 3
+}, {
+  "value": "17.2 Installation",
+  "id": "172-installation",
+  "level": 3
+}, {
+  "value": "17.3 Vectorized Documentation",
+  "id": "173-vectorized-documentation",
+  "level": 3
+}, {
+  "value": "17.4 Tools",
+  "id": "174-tools",
+  "level": 3
+}, {
+  "value": "17.5 AI Guidelines",
+  "id": "175-ai-guidelines",
+  "level": 3
+}, {
+  "value": "17.6 Agent Integration",
+  "id": "176-agent-integration",
+  "level": 3
+}, {
+  "value": "17.7 Custom Guidelines",
+  "id": "177-custom-guidelines",
+  "level": 3
+}, {
+  "value": "17.8 Agentic Development",
+  "id": "178-agentic-development",
+  "level": 3
+}, {
+  "value": "17.9 Complete Example: Boost-Driven Feature Development",
+  "id": "179-complete-example-boost-driven-feature-development",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-17-laravel-boost--ai-assisted-development",
+        children: "Chapter 17: Laravel Boost — AI-Assisted Development"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/16-search-rag",
+          children: "Search & RAG"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/18-automation-patterns",
+          children: "Automation Patterns"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand Laravel Boost's architecture and how it bridges AI agents with Laravel"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Install and configure Boost in a Laravel application"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use Boost's 15+ specialized tools for code generation and diagnostics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Leverage vectorized documentation and AI guidelines for convention-aware code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Integrate Boost with Cursor, Claude Code, OpenCode, and GitHub Copilot"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build custom guidelines for team-specific conventions"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Boost Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bridges AI agents with Laravel through tools, docs, and guidelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Install once to get version-aware AI code generation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Installation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interactive installer auto-detects IDE, agent, and Laravel version"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Run ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "composer require laravel/boost --dev && php artisan boost:install"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Vectorized Docs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "17,000+ embedded documentation pieces with version targeting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agents query version-matched docs automatically"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AI Guidelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Markdown/Blade files defining framework and project conventions"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Place custom ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".md"
+            }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".blade.php"
+            }), " files in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".ai/guidelines/"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Works with Cursor, Claude Code, OpenCode, and GitHub Copilot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each agent has a slightly different integration mechanism"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent-Ready Framework"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Laravel's conventions make it uniquely suited for AI assistance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predict file locations, naming, and patterns with high accuracy"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Install Boost] --> B[Interactive Config]\n    B --> C[Vectorized Docs]\n    B --> D[AI Guidelines]\n    C --> E[Agent Tools]\n    D --> E\n    E --> F[Code Generation]\n    F --> G[Test Generation]\n    G --> H[Verification]\n    H --> I[Production-Ready Code]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/17-boost.png",
+        alt: "Laravel Boost"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "171-what-is-laravel-boost",
+      children: "17.1 What Is Laravel Boost?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Boost provides tools, vectorized docs, and AI guidelines to make any AI agent Laravel-aware."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without Boost, it relies on its training data — which may reference an older version of Laravel, use deprecated patterns, or miss framework-specific conventions. Boost solves this by providing three things:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Laravel-specific tools"
+        }), " — 15+ executable tools that let the agent inspect your actual application"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Vectorized documentation"
+        }), " — 17,000+ pieces of Laravel ecosystem documentation embedded for semantic search"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AI guidelines"
+        }), " — Laravel-maintained guidance for framework conventions, testing patterns, and pitfalls"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The architecture works like this:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "AI Agent (Cursor, Claude Code, OpenCode, Copilot)\n    │\n    ├── Reads .ai/guidelines/* ────► Convention rules\n    ├── Calls Boost tools ─────────► Live app introspection\n    └── Queries docs vectors ──────► Version-matched documentation\n    │\n    ▼\nGenerates code that matches:\n    - Correct Laravel version APIs\n    - Your app's existing patterns\n    - Framework best practices\n    - Working test suites\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Boost supports PHP 8.1+ and Laravel 10 through 13. It auto-detects your installed package versions and targets the correct documentation for each."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "172-installation",
+      children: "17.2 Installation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The interactive installer auto-detects your environment and creates the .ai/ directory structure."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Install Boost as a dev dependency and run its interactive installer:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "composer require laravel/boost --dev\n\nphp artisan boost:install\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The installer is interactive. It detects your environment and asks targeted questions:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "$ php artisan boost:install\n\n┌ Laravel Boost Installer ──────────────────────────┐\n│                                                    │\n│   Detected: Laravel 13.x, PHP 8.4                  │\n│   Detected IDE: Visual Studio Code                 │\n│   Detected OS: Windows                             │\n│                                                    │\n│   â→‡ Which AI coding agents do you use?             │\n│     ■ Cursor                                       │\n│     ■ Claude Code                                  │\n│     □ OpenCode                                     │\n│     □ GitHub Copilot                               │\n│                                                    │\n│   â→‡ Install example custom guidelines?  [Yes/No]   │\n│                                                    │\n│   â→‡ Generate Boost configuration?       [Yes/No]   │\n│                                                    │\n└────────────────────────────────────────────────────┘\n\n✔ Boost installed successfully!\n\n  Next steps:\n  1. Review .ai/guidelines/ for Laravel best practices\n  2. Run `php artisan boost:check` to verify the setup\n  3. Open your AI agent and try: \"Create a blog post model with migration\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The installer creates the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/"
+      }), " directory structure in your project root:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/\n├── guidelines/\n│   ├── laravel-conventions.md\n│   ├── testing-standards.md\n│   ├── security-best-practices.md\n│   └── elqouent-patterns.md\n├── boost.json\n└── tools/\n    └── ...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "boost.json"
+      }), " configuration file stores your preferences:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-json",
+        children: "{\n    \"version\": \"1.0.0\",\n    \"laravel_version\": \"13.x\",\n    \"agents\": [\"cursor\", \"claude-code\"],\n    \"guidelines_path\": \".ai/guidelines\",\n    \"tools_enabled\": true,\n    \"docs_auto_query\": true,\n    \"version_targeting\": \"installed\"\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "173-vectorized-documentation",
+      children: "17.3 Vectorized Documentation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " 17,000+ version-targeted documentation pieces let agents query the exact API docs matching your install."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Boost embeds 17,000+ documentation pages from the Laravel ecosystem using the same pgvector technology from Chapter 16. When an agent needs to write Laravel code, it queries these vectors to find the exact API documentation matching the installed version:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Inside Boost's internal query engine (simplified)\n$results = BoostDocs::search('Laravel broadcasting with Pusher')\n    ->version('13.x')\n    ->limit(5)\n    ->get();\n\nforeach ($results as $doc) {\n    echo $doc->title;      // \"Broadcasting: Laravel 13.x\"\n    echo $doc->content;    // Full documentation text\n    echo $doc->package;    // \"laravel/framework\"\n    echo $doc->similarity; // 0.91\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The documentation coverage includes:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Laravel core framework (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "laravel/framework"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Laravel packages (Cashier, Horizon, Telescope, Passport, Sanctum, etc.)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "First-party tools (Forge, Vapor, Envoyer, Nightwatch)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Community packages maintained by the Laravel team"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Version targeting is automatic. If your ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "composer.json"
+      }), " requires ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "laravel/framework: ^13.0"
+      }), ", Boost queries the 13.x documentation bundle. This prevents the agent from using APIs that do not exist in your version:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Boost's internal version resolver\n$installedVersion = Composer::getInstalledVersion('laravel/framework');\n$docsBundle = BoostDocs::forVersion($installedVersion);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Run php artisan boost:check after installation to verify that all tools, guidelines, and documentation vectors are properly configured before handing control to your AI agent."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "174-tools",
+      children: "17.4 Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " 15+ specialized tools let agents inspect schemas, search docs, generate tests, and execute code in your app context."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Boost provides over 15 specialized tools that AI agents invoke during development. Here are the most important ones:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Package Detection"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent checks which packages are installed before generating code:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: detect_packages\n// The agent calls this to inspect composer.json\n\n$packages = Boost::tools()->detectPackages();\n\n// Returns:\n// [\n//     'laravel/framework' => '13.0.0',\n//     'laravel/cashier' => '15.0.0',\n//     'spatie/laravel-permission' => '6.0.0',\n//     'spatie/laravel-medialibrary' => '11.0.0',\n// ]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Database Querying"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent inspects your database schema to generate accurate migrations and queries:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: query_database\n// The agent inspects table structures before writing queries\n\n$schema = Boost::tools()->getTableSchema('users');\n\n// Returns:\n// [\n//     'table' => 'users',\n//     'columns' => [\n//         ['name' => 'id', 'type' => 'bigint unsigned', 'auto_increment' => true],\n//         ['name' => 'name', 'type' => 'varchar(255)'],\n//         ['name' => 'email', 'type' => 'varchar(255)', 'unique' => true],\n//         ['name' => 'email_verified_at', 'type' => 'timestamp', 'nullable' => true],\n//         ['name' => 'password', 'type' => 'varchar(255)'],\n//         ['name' => 'remember_token', 'type' => 'varchar(100)', 'nullable' => true],\n//         ['name' => 'created_at', 'type' => 'timestamp', 'nullable' => true],\n//         ['name' => 'updated_at', 'type' => 'timestamp', 'nullable' => true],\n//     ],\n//     'indexes' => [\n//         ['name' => 'users_email_unique', 'columns' => ['email'], 'unique' => true],\n//     ],\n// ]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Documentation Search"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent queries version-matched docs for the specific APIs it needs:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: search_docs\n// The agent searches for relevant documentation before writing code\n\n$docs = Boost::tools()->searchDocs(\n    query: 'Rate limiting with RateLimiter facade',\n    version: '13.x',\n    limit: 3\n);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Browser Log Reader"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When debugging frontend issues, the agent reads browser console logs:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: read_browser_logs\n// The agent reads the latest Laravel debugbar or browser logs\n\n$logs = Boost::tools()->readBrowserLogs();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Generation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent generates PHPUnit or PEST tests that match your existing test patterns:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: generate_test\n// The agent examines existing tests to match style, then generates new ones\n\n$testCode = Boost::tools()->generateTest([\n    'type' => 'feature',\n    'target' => 'App\\Http\\Controllers\\PostController@store',\n    'style' => 'pest',\n]);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tinker Code Execution"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent executes throwaway code in your application context to verify assumptions:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Tool: tinker_execute\n// The agent runs code via Artisan Tinker to test a hypothesis\n\n$result = Boost::tools()->tinker('User::where(\"email\", \"test@example.com\")->exists()');\n// Returns: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "All tools are accessed through a unified facade that the AI agent uses automatically during development."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "175-ai-guidelines",
+      children: "17.5 AI Guidelines"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Markdown and Blade files in .ai/guidelines/ define conventions for routing, Eloquent, testing, and project specifics."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Guidelines are markdown files that tell the AI agent how to write code for your specific project. Laravel ships a default set that covers framework conventions:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-markdown",
+        children: "# .ai/guidelines/laravel-conventions.md\n\n# Laravel Conventions\n\n## Routing\n\n- Use Route Model Binding for all resource routes\n- Name routes with dot notation: `posts.show`, `admin.users.index`\n- Group related routes with `Route::prefix()` or `Route::middleware()`\n- Use `Route::view()` for simple static pages\n- Avoid closures in `routes/web.php`; use controller classes\n\n## Eloquent\n\n- Always define `$fillable` or `$guarded` on every model\n- Use local scopes for reusable query constraints: `scopeActive()`\n- Use eager loading to avoid N+1 queries: `Post::with('comments')->get()`\n- Prefer `firstOrCreate()` over manual existence checks\n- Use `when()` for conditional query building\n\n## Validation\n\n- Use Form Request classes for complex validation logic\n- Keep validation rules in the request, not the controller\n- Use rule objects for reusable validation: `new Uppercase()`\n\n## Responses\n\n- Use API Resources for JSON transformation\n- Use `tap()` or `higherOrderMessages()` for clean object manipulation\n- Return `redirect()->route()` with flash messages for web responses\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-markdown",
+        children: "# .ai/guidelines/testing-standards.md\n\n# Testing Standards\n\n## Framework\n\n- Use PEST for all new tests\n- Name test files with the `.pest.php` extension\n- Use descriptive test function names: `it_can_create_a_post_as_authenticated_user()`\n\n## Coverage\n\n- Every controller action must have a feature test\n- Every model scope must have a unit test\n- Every Form Request must have a validation test\n- Every job must have a test for success and failure scenarios\n\n## Factories\n\n- Define model factories for all Eloquent models\n- Use factory states for variant data: `User::factory()->unverified()->create()`\n- Sequence data when order matters: `User::factory()->count(3)->sequence(...)`\n\n## Assertions\n\n- Prefer `assertDatabaseHas()` over querying the database manually\n- Use `assertSessionHas()` for flash message assertions\n- Use `assertJsonStructure()` for API response shape validation\n- Use `assertStatus()` with explicit HTTP codes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Custom guidelines go in the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/guidelines/"
+      }), " directory and can be written as ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".blade.php"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".md"
+      }), " files. Blade files are useful when you need dynamic content in your guidelines:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "{{-- .ai/guidelines/deployment-pipeline.blade.php --}}\n\n# Deployment Pipeline\n\n## Branch Strategy\n\n- `main` — production-ready code only\n- `develop` — integration branch for feature work\n- `feature/{ticket-number}-{kebab-name}` — individual features\n\n## CI Requirements\n\n- All tests must pass before merge\n- Code must pass {{ config('app.pint_config') === 'laravel' ? 'Laravel Pint' : 'custom Pint' }} style checks\n- No PHPStan errors at level {{ config('app.phpstan_level', 6) }}\n- All new code must have {{ config('app.min_test_coverage', 80) }}% coverage\n\n## Deployment\n\n- Deployments happen every {{ config('app.deploy_schedule', 'Tuesday') }} at 10:00 UTC\n- Run `php artisan migrate --force` after code deploy\n- Clear cache: `php artisan optimize:clear`\n- Restart queue: `php artisan queue:restart`\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "176-agent-integration",
+      children: "17.6 Agent Integration"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Cursor, Claude Code, OpenCode, and GitHub Copilot each integrate with Boost via slightly different mechanisms."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Boost integrates with four major AI coding agents. Each has a slightly different integration mechanism:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cursor"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Cursor reads the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/guidelines/"
+      }), " directory automatically. Boost detects Cursor's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".cursorrules"
+      }), " file during installation and merges guidelines:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Boost detects Cursor during install and generates:\n# .cursorrules → references .ai/guidelines/*.md\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Claude Code"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Claude Code uses ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CLAUDE.md"
+      }), " as its project-level instruction file. Boost adds a reference during installation:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-markdown",
+        children: "<!-- CLAUDE.md (added by Boost installer) -->\n\n# Laravel Boost\n\nThis project uses Laravel Boost. Always read `.ai/guidelines/` before writing code.\n\nAvailable tools: package detection, schema inspection, docs search, test generation.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OpenCode"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["OpenCode reads guidelines from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".opencode/rules/"
+      }), ". Boost creates symlinks or copies during install:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Boost creates .opencode/rules/ with references to .ai/guidelines/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "GitHub Copilot"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Copilot reads ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "./github/copilot-instructions.md"
+      }), ". Boost creates this file during installation:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-markdown",
+        children: "# .github/copilot-instructions.md\n\nThis project uses Laravel 13. Follow Laravel conventions:\n- Use Eloquent ORM, not raw SQL\n- Use Form Requests for validation\n- Use PEST for testing\n- Use Route Model Binding\n- See .ai/guidelines/ for complete conventions\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Custom guidelines in .blade.php files have access to Laravel config values. Avoid exposing sensitive credentials or environment variables through dynamic guideline content."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "177-custom-guidelines",
+      children: "17.7 Custom Guidelines"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Drop .md or .blade.php files into .ai/guidelines/ — Boost auto-includes them without manual registration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Adding project-specific guidelines is as simple as placing a file in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/guidelines/"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-markdown",
+        children: "# .ai/guidelines/billing-patterns.md\n\n# Billing Patterns\n\nThis project uses Laravel Cashier v15 with Stripe.\n\n## Subscription Handling\n\n- Always create subscriptions through `$user->newSubscription()`\n- Use subscription names matching the plan type: 'default', 'enterprise'\n- Call `$subscription->cancel()` for cancellations, never delete subscriptions\n- Store Stripe customer IDs in the `stripe_id` column on the users table\n\n## Invoicing\n\n- Generate invoices through Cashier: `$user->invoice()`\n- Always set a description when creating invoices\n- Use `$user->invoices()` for listing, never query `cashier_invoices` directly\n\n## Webhook Handling\n\n- Route Stripe webhooks through Cashier's built-in controller\n- Do not add custom webhook endpoints unless absolutely necessary\n- Handle `invoice.payment_succeeded` to update payment status in local DB\n\n## Testing\n\n- Use Cashier's `withStripeCredentials()` test helper\n- Mock Stripe API calls with `Http::fake()` targeting `api.stripe.com/*`\n- Never call Stripe's production API in tests\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Boost automatically includes all ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".md"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".blade.php"
+      }), " files in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".ai/guidelines/"
+      }), " during ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "boost:install"
+      }), ". You do not need to register them manually."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "178-agentic-development",
+      children: "17.8 Agentic Development"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Laravel's naming, directory, and pattern conventions make it uniquely agent-ready."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Laravel is uniquely suited as an \"agent-ready\" framework. Its consistent conventions allow AI agents to predict file locations, naming patterns, and architectural choices with high accuracy:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// An AI agent, guided by Boost, can predict:\n\n// File location: app/Models/Post.php\n// Based on: naming convention + boost knows Laravel puts models in app/Models\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\n\nclass Post extends Model\n{\n    protected $fillable = [\n        'title',\n        'slug',\n        'body',\n        'user_id',\n        'published_at',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'published_at' => 'datetime',\n        ];\n    }\n\n    public function author(): BelongsTo\n    {\n        return $this->belongsTo(User::class, 'user_id');\n    }\n\n    public function comments(): HasMany\n    {\n        return $this->hasMany(Comment::class);\n    }\n\n    public function scopePublished($query)\n    {\n        return $query->whereNotNull('published_at');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The key properties that make Laravel agent-ready:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Naming conventions"
+        }), ": Model files are always ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "StudlyCase"
+        }), " and singular; migration files are always ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "yyyy_mm_dd_hhmmss_descriptive_name.php"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Directory structure"
+        }), ": Controllers in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "app/Http/Controllers/"
+        }), ", Models in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "app/Models/"
+        }), ", etc."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Well-defined patterns"
+        }), ": Resource controllers, Form Requests, API Resources, Job classes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Comprehensive documentation"
+        }), ": Every feature documented with examples that match the naming conventions"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Boost auto-detects your Laravel version from composer.json and targets the correct documentation bundle. Always keep dependencies updated so the agent queries accurate APIs."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "179-complete-example-boost-driven-feature-development",
+      children: "17.9 Complete Example: Boost-Driven Feature Development"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " A full workflow from Boost install to AI-generated tests demonstrates the complete pipeline."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This example shows the full workflow of setting up Boost and having an AI agent build a feature:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Step 1: Install Boost\ncomposer require laravel/boost --dev\nphp artisan boost:install\n\n# Step 2: Verify the setup\nphp artisan boost:check\n\n# Output:\n# ┌ Laravel Boost Status ────────────────────┐\n# │                                          │\n# │  Laravel Version:  13.x                  │\n# │  PHP Version:      8.4                   │\n# │  Guidelines:       4 files loaded        │\n# │  Tools:            15 available           │\n# │  Docs Vectors:     17,234 pieces          │\n# │  Agent:            Cursor (detected)     │\n# │  Status:           ✅ All systems go    │\n# │                                          │\n# └──────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The AI agent now receives Boost's context. When the developer requests a feature, the agent follows this pipeline:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Developer: \"Create a product review system with ratings\"\n\n// Phase 1 — Agent reads guidelines\n// Reads: .ai/guidelines/laravel-conventions.md\n// Reads: .ai/guidelines/testing-standards.md\n// Reads: .ai/guidelines/eloquent-patterns.md\n\n// Phase 2 — Agent inspects existing codebase\n$packages = Boost::tools()->detectPackages();\n// Laravel 13.x, spatie/laravel-permission, laravel/cashier\n\n$schema = Boost::tools()->getTableSchema('products');\n// Already has: id, name, description, price, user_id\n\n// Phase 3 — Agent queries version-matched docs\n$docs = Boost::tools()->searchDocs(\n    query: 'one-to-many relationship validation',\n    version: '13.x'\n);\n\n// Phase 4 — Agent generates the feature\n\n// Migration\nSchema::create('reviews', function (Blueprint $table) {\n    $table->id();\n    $table->foreignId('product_id')->constrained()->cascadeOnDelete();\n    $table->foreignId('user_id')->constrained()->cascadeOnDelete();\n    $table->tinyInteger('rating')->unsigned();\n    $table->text('body')->nullable();\n    $table->timestamps();\n\n    $table->unique(['product_id', 'user_id']);\n});\n\n// Model\nclass Review extends Model\n{\n    protected $fillable = ['rating', 'body'];\n\n    protected function casts(): array\n    {\n        return [\n            'rating' => 'integer',\n        ];\n    }\n\n    public function product(): BelongsTo\n    {\n        return $this->belongsTo(Product::class);\n    }\n\n    public function user(): BelongsTo\n    {\n        return $this->belongsTo(User::class);\n    }\n}\n\n// Form Request\nclass StoreReviewRequest extends FormRequest\n{\n    public function authorize(): bool\n    {\n        return auth()->check();\n    }\n\n    public function rules(): array\n    {\n        return [\n            'rating' => ['required', 'integer', 'between:1,5'],\n            'body' => ['nullable', 'string', 'max:5000'],\n        ];\n    }\n}\n\n// Controller\nclass ProductReviewController extends Controller\n{\n    public function store(StoreReviewRequest $request, Product $product): RedirectResponse\n    {\n        $review = $product->reviews()->create([\n            ...$request->validated(),\n            'user_id' => $request->user()->id,\n        ]);\n\n        return redirect()\n            ->route('products.show', $product)\n            ->with('success', 'Review added successfully.');\n    }\n}\n\n// Phase 5 — Agent generates tests (PEST style)\nit('authenticated user can review a product', function () {\n    $user = User::factory()->create();\n    $product = Product::factory()->create();\n\n    $this->actingAs($user)\n        ->post(route('reviews.store', $product), [\n            'rating' => 5,\n            'body' => 'Excellent product!',\n        ])\n        ->assertRedirect()\n        ->assertSessionHas('success');\n\n    $this->assertDatabaseHas('reviews', [\n        'product_id' => $product->id,\n        'user_id' => $user->id,\n        'rating' => 5,\n    ]);\n});\n\nit('prevents duplicate reviews from the same user', function () {\n    $user = User::factory()->create();\n    $product = Product::factory()->create();\n\n    Review::factory()->create([\n        'product_id' => $product->id,\n        'user_id' => $user->id,\n    ]);\n\n    $this->actingAs($user)\n        ->post(route('reviews.store', $product), [\n            'rating' => 3,\n            'body' => 'Second review attempt.',\n        ])\n        ->assertSessionHasErrors('product_id');\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Benefit"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Limitation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Vectorized Docs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API documentation for agent context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-accurate code generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires initial embedding download"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AI Guidelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Convention definitions in Markdown"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Team-specific patterns enforced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be manually maintained"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Boost Tools"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Live app introspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time schema/code awareness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires running application"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDE/CLI agent connectivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Works with multiple platforms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Different setup per agent type"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "composer require laravel/boost --dev"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Install Boost as a dev dependency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:install"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Run interactive installer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify Boost configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boost::tools()->detectPackages()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inspect installed packages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boost::tools()->getTableSchema('table')"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inspect database schema"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boost::tools()->searchDocs(...)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Query version-matched docs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boost::tools()->generateTest(...)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate PEST/PHPUnit tests"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boost::tools()->tinker(...)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute code in app context"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Boost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Manual AI"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Without AI"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code accuracy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Version-targeted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Training-data dependent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Developer knowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Schema awareness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Live inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual lookup"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Test generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern-matched from existing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generic templates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual writing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Doc search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "17K+ vectorized pieces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General web search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Official docs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guideline enforcement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic reading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual instruction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code review"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Test your understanding of Laravel Boost."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What three components does Laravel Boost provide to AI agents?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Tools, vectorized docs, and AI guidelines"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Routes, controllers, and views"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Cache, sessions, and queues"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Migrations, seeders, and factories"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**A)** Tools, vectorized docs, and AI guidelines are the three pillars of Boost."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "How does Boost ensure version-accurate code generation?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) By reading the Laravel blog"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["B) By querying ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "composer.json"
+            }), " and targeting the matching documentation bundle"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) By asking the developer which version they use"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) By always targeting the latest Laravel version"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** Boost reads the installed package version from `composer.json` and queries the matching documentation bundle."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which file formats does Boost accept for custom guidelines?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A) Only ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".md"
+            }), " files"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["B) Only ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".json"
+            }), " files"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["C) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".md"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".blade.php"
+            }), " files"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["D) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".md"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".blade.php"
+            }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".php"
+            }), " files"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**C)** Boost accepts `.md` and `.blade.php` files in the `.ai/guidelines/` directory."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which AI coding agents does Boost integrate with?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Only Cursor"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Cursor, Claude Code, OpenCode, and GitHub Copilot"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Only Claude Code"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) All available IDE extensions"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** Boost supports Cursor, Claude Code, OpenCode, and GitHub Copilot with specific integration mechanisms for each."
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What command verifies Boost is properly configured?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:status"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["B) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:check"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["C) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:verify"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["D) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "php artisan boost:inspect"
+            })]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsx)(_components.summary, {
+            children: "Answer</summary>**B)** `php artisan boost:check` displays the full Boost status including version, tools, guidelines, and docs vectors."
+          })
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Laravel Boost bridges AI coding agents with Laravel applications through tools, docs, and guidelines"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Installation is interactive and auto-detects IDE, agent, and Laravel version"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "17,000+ vectorized documentation pieces are version-targeted to installed packages"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "15+ specialized tools let agents inspect schemas, search docs, generate tests, and execute code"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["AI guidelines in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".ai/guidelines/"
+        }), " define conventions for routing, Eloquent, testing, and more"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Boost integrates with Cursor, Claude Code, OpenCode, and GitHub Copilot"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Custom guidelines can be ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".md"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".blade.php"
+        }), " files and are auto-included"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Laravel's consistent conventions make it naturally \"agent-ready\" for AI-assisted development"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "boost:check"
+        }), " command verifies the full setup is working"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What three components does Laravel Boost provide to AI agents?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does Boost's version targeting prevent an AI agent from using deprecated or nonexistent APIs?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the purpose of the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".ai/guidelines/"
+        }), " directory, and what file formats does it accept?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "List four of Boost's specialized tools and describe what each does."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does Boost integrate with each of the four supported AI coding agents?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Install Laravel Boost in a Laravel 13 application and run the interactive installer for Cursor. Verify the setup with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "boost:check"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a custom guideline file for API versioning conventions specific to your application, covering URL prefixing, header-based versioning, and deprecation handling."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Using Boost's tool system, write a PEST test for a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ProductController@store"
+        }), " action that validates the request and creates a product. Run the test to confirm it passes."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Set up a complete Boost-driven development workflow:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Install Boost with Claude Code integration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write custom guidelines for a team-specific billing pattern involving Cashier and Stripe webhooks"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Instruct the AI agent to build a complete subscription management feature with:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A migration for a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "subscriptions"
+            }), " table with proper foreign keys"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SubscriptionController"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "store"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "cancel"
+            }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "resume"
+            }), " methods"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["A ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SubscriptionPolicy"
+            }), " for authorization"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "PEST tests for each controller action"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "All code must follow the custom billing guidelines"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Verify the generated code passes ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "php artisan pint --test"
+        }), " and all generated tests pass"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

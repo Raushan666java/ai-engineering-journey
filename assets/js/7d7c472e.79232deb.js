@@ -1,0 +1,2515 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[91868],{
+
+/***/ 39558
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_coding_problems_07_dynamic_programming_md_7d7_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-coding-problems-07-dynamic-programming-md-7d7.json
+const site_docs_courses_coding_problems_07_dynamic_programming_md_7d7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/coding-problems/07-dynamic-programming","title":"Chapter 07: Dynamic Programming","description":"Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews.","source":"@site/docs/courses/coding-problems/07-dynamic-programming.md","sourceDirName":"courses/coding-problems","slug":"/coding-problems/07-dynamic-programming","permalink":"/ai-engineering-journey/coding-problems/07-dynamic-programming","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"07-dynamic-programming","slug":"/coding-problems/07-dynamic-programming","title":"Chapter 07: Dynamic Programming","sidebar_label":"Chapter 07: Dynamic Programming","sidebar_position":7},"sidebar":"course-coding-problems","previous":{"title":"Chapter 06: Graphs","permalink":"/ai-engineering-journey/coding-problems/06-graphs"},"next":{"title":"Chapter 08: Greedy Algorithms","permalink":"/ai-engineering-journey/coding-problems/08-greedy"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/coding-problems/07-dynamic-programming.md
+
+
+const frontMatter = {
+	id: '07-dynamic-programming',
+	slug: '/coding-problems/07-dynamic-programming',
+	title: 'Chapter 07: Dynamic Programming',
+	sidebar_label: 'Chapter 07: Dynamic Programming',
+	sidebar_position: 7
+};
+const contentTitle = 'Chapter 07: Dynamic Programming';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Problem Classification Flow",
+  "id": "problem-classification-flow",
+  "level": 2
+}, {
+  "value": "DP Patterns Classification",
+  "id": "dp-patterns-classification",
+  "level": 2
+}, {
+  "value": "Complexity Heat Map",
+  "id": "complexity-heat-map",
+  "level": 2
+}, {
+  "value": "Easy Problems (10)",
+  "id": "easy-problems-10",
+  "level": 2
+}, {
+  "value": "Problem 1: Climbing Stairs",
+  "id": "problem-1-climbing-stairs",
+  "level": 3
+}, {
+  "value": "Problem 2: House Robber",
+  "id": "problem-2-house-robber",
+  "level": 3
+}, {
+  "value": "Problem 3: Maximum Subarray (Kadane&#39;s Algorithm)",
+  "id": "problem-3-maximum-subarray-kadanes-algorithm",
+  "level": 3
+}, {
+  "value": "Problem 4: Fibonacci Number",
+  "id": "problem-4-fibonacci-number",
+  "level": 3
+}, {
+  "value": "Problem 5: Min Cost Climbing Stairs",
+  "id": "problem-5-min-cost-climbing-stairs",
+  "level": 3
+}, {
+  "value": "Problem 6: Pascal&#39;s Triangle",
+  "id": "problem-6-pascals-triangle",
+  "level": 3
+}, {
+  "value": "Problem 7: Divisor Game",
+  "id": "problem-7-divisor-game",
+  "level": 3
+}, {
+  "value": "Problem 8: Tribonacci Number",
+  "id": "problem-8-tribonacci-number",
+  "level": 3
+}, {
+  "value": "Problem 9: Maximum Product of Three Numbers",
+  "id": "problem-9-maximum-product-of-three-numbers",
+  "level": 3
+}, {
+  "value": "Problem 10: Counting Bits",
+  "id": "problem-10-counting-bits",
+  "level": 3
+}, {
+  "value": "Medium Problems (18)",
+  "id": "medium-problems-18",
+  "level": 2
+}, {
+  "value": "Problem 11: Coin Change",
+  "id": "problem-11-coin-change",
+  "level": 3
+}, {
+  "value": "Problem 12: Longest Increasing Subsequence",
+  "id": "problem-12-longest-increasing-subsequence",
+  "level": 3
+}, {
+  "value": "Problem 13: Longest Common Subsequence",
+  "id": "problem-13-longest-common-subsequence",
+  "level": 3
+}, {
+  "value": "Problem 14: Unique Paths",
+  "id": "problem-14-unique-paths",
+  "level": 3
+}, {
+  "value": "Problem 15: Unique Paths II",
+  "id": "problem-15-unique-paths-ii",
+  "level": 3
+}, {
+  "value": "Problem 16: Jump Game",
+  "id": "problem-16-jump-game",
+  "level": 3
+}, {
+  "value": "Problem 17: Word Break",
+  "id": "problem-17-word-break",
+  "level": 3
+}, {
+  "value": "Problem 18: Decode Ways",
+  "id": "problem-18-decode-ways",
+  "level": 3
+}, {
+  "value": "Problem 19: Target Sum",
+  "id": "problem-19-target-sum",
+  "level": 3
+}, {
+  "value": "Problem 20: Partition Equal Subset Sum",
+  "id": "problem-20-partition-equal-subset-sum",
+  "level": 3
+}, {
+  "value": "Problem 21: Minimum Path Sum",
+  "id": "problem-21-minimum-path-sum",
+  "level": 3
+}, {
+  "value": "Problem 22: Maximum Length of Repeated Subarray",
+  "id": "problem-22-maximum-length-of-repeated-subarray",
+  "level": 3
+}, {
+  "value": "Problem 23: Maximum Alternating Subsequence Sum",
+  "id": "problem-23-maximum-alternating-subsequence-sum",
+  "level": 3
+}, {
+  "value": "Problem 24: Coin Change II",
+  "id": "problem-24-coin-change-ii",
+  "level": 3
+}, {
+  "value": "Problem 25: House Robber II",
+  "id": "problem-25-house-robber-ii",
+  "level": 3
+}, {
+  "value": "Problem 26: Longest Palindromic Substring (DP)",
+  "id": "problem-26-longest-palindromic-substring-dp",
+  "level": 3
+}, {
+  "value": "Problem 27: Longest Increasing Path in a Matrix (DP)",
+  "id": "problem-27-longest-increasing-path-in-a-matrix-dp",
+  "level": 3
+}, {
+  "value": "Problem 28: Best Time to Buy and Sell Stock with Cooldown",
+  "id": "problem-28-best-time-to-buy-and-sell-stock-with-cooldown",
+  "level": 3
+}, {
+  "value": "Problem 29: 0/1 Knapsack",
+  "id": "problem-29-01-knapsack",
+  "level": 3
+}, {
+  "value": "Problem 30: Edit Distance (DP)",
+  "id": "problem-30-edit-distance-dp",
+  "level": 3
+}, {
+  "value": "Hard Problems (7)",
+  "id": "hard-problems-7",
+  "level": 2
+}, {
+  "value": "Problem 31: Burst Balloons",
+  "id": "problem-31-burst-balloons",
+  "level": 3
+}, {
+  "value": "Problem 32: Regular Expression Matching",
+  "id": "problem-32-regular-expression-matching",
+  "level": 3
+}, {
+  "value": "Problem 33: Distinct Subsequences",
+  "id": "problem-33-distinct-subsequences",
+  "level": 3
+}, {
+  "value": "Problem 34: Best Time to Buy and Sell Stock IV",
+  "id": "problem-34-best-time-to-buy-and-sell-stock-iv",
+  "level": 3
+}, {
+  "value": "Problem 35: Frog Jump",
+  "id": "problem-35-frog-jump",
+  "level": 3
+}, {
+  "value": "Summary Table",
+  "id": "summary-table",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-07-dynamic-programming",
+        children: "Chapter 07: Dynamic Programming"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recognize optimal substructure and overlapping subproblems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Master the art of defining states and recurrence relations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement both top-down (memoization) and bottom-up (tabulation) approaches"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply space optimization techniques to reduce memory complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify DP patterns: 0/1 Knapsack, LCS, LIS, matrix chain, state machine"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "problem-classification-flow",
+      children: "Problem Classification Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[DP Problem] --> B{Type?}\n    B -->|Sequential| C{One array?}\n    C -->|Yes| D[1D DP: Fibonacci, House Robber]\n    C -->|No| E[2D DP: Edit Distance, LCS]\n    \n    B -->|Knapsack| F{Items duplicate?}\n    F -->|No| G[0/1 Knapsack]\n    F -->|Yes| H[Unbounded Knapsack]\n    \n    B -->|Interval| I[Matrix Chain / Burst Balloons]\n    B -->|Tree| J[Tree DP: Diameter, Cameras]\n    B -->|State Machine| K[Buy/Sell Stock with cooldown]\n    B -->|Digit| L[Digit DP: Count numbers with property]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "dp-patterns-classification",
+      children: "DP Patterns Classification"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "mindmap\n  root((DP Patterns))\n    1D DP\n      Fibonacci\n      Climbing Stairs\n      House Robber\n      Decode Ways\n    2D Grid\n      Unique Paths\n      Min Path Sum\n      Dungeon Game\n    Subsequence\n      LIS → O(n log n) possible\n      LCS → 2D DP\n      Edit Distance → 2D DP\n    Knapsack\n      0/1 Knapsack\n      Partition Equal Subset Sum\n      Coin Change (unbounded)\n    String DP\n      Palindromic Substrings\n      Distinct Subsequences\n      Regular Expression\n    Interval DP\n      Matrix Chain\n      Burst Balloons\n      Palindrome Partitioning\n    State Machine\n      Stock Trading\n      House Robber II/III\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "complexity-heat-map",
+      children: "Complexity Heat Map"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "xychart-beta\n    title \"DP Time Complexity by Pattern\"\n    x-axis [\"1D DP\", \"LIS\", \"LCS\", \"Knapsack\", \"Edit Distance\", \"Matrix Chain\"]\n    y-axis \"Time\" 0 --> 100\n    bar [15, 25, 60, 55, 60, 80]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "easy-problems-10",
+      children: "Easy Problems (10)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-1-climbing-stairs",
+      children: "Problem 1: Climbing Stairs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Math, Memoization]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 2\nOutput: 2\nExplanation: 1+1, 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 45"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Recursion:"
+        }), " fib(n) = fib(n-1) + fib(n-2) — but exponential."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DP:"
+        }), " Bottom-up with O(n) time, O(1) space."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function climbStairs(n: number): number {\n  if (n <= 2) return n;\n\n  let prev2 = 1;\n  let prev1 = 2;\n\n  for (let i = 3; i <= n; i++) {\n    const curr = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = curr;\n  }\n\n  return prev1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(climbStairs(2)); // 2\nconsole.log(climbStairs(3)); // 3\nconsole.log(climbStairs(5)); // 8\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-2-house-robber",
+      children: "Problem 2: House Robber"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an array of money in houses, rob the maximum amount without robbing adjacent houses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [1, 2, 3, 1]\nOutput: 4\nExplanation: Rob house 1 (1) + house 3 (3) = 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ nums.length ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function rob(nums: number[]): number {\n  if (nums.length === 1) return nums[0];\n\n  let prev2 = nums[0];\n  let prev1 = Math.max(nums[0], nums[1]);\n\n  for (let i = 2; i < nums.length; i++) {\n    const curr = Math.max(prev1, prev2 + nums[i]);\n    prev2 = prev1;\n    prev1 = curr;\n  }\n\n  return prev1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(rob([1, 2, 3, 1])); // 4\nconsole.log(rob([2, 7, 9, 3, 1])); // 12\nconsole.log(rob([5])); // 5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-3-maximum-subarray-kadanes-algorithm",
+      children: "Problem 3: Maximum Subarray (Kadane's Algorithm)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [LinkedIn]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the contiguous subarray with the largest sum."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]\nOutput: 6\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kadane's: dp[i] = max(nums[i], dp[i-1] + nums[i])"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxSubArray(nums: number[]): number {\n  let current = nums[0];\n  let maxVal = nums[0];\n\n  for (let i = 1; i < nums.length; i++) {\n    current = Math.max(nums[i], current + nums[i]);\n    maxVal = Math.max(maxVal, current);\n  }\n\n  return maxVal;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // 6\nconsole.log(maxSubArray([1])); // 1\nconsole.log(maxSubArray([-1])); // -1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-4-fibonacci-number",
+      children: "Problem 4: Fibonacci Number"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Math, Recursion]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Return the nth Fibonacci number."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 4\nOutput: 3 (0, 1, 1, 2, 3)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function fib(n: number): number {\n  if (n <= 1) return n;\n\n  let prev2 = 0;\n  let prev1 = 1;\n\n  for (let i = 2; i <= n; i++) {\n    const curr = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = curr;\n  }\n\n  return prev1;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(fib(2)); // 1\nconsole.log(fib(4)); // 3\nconsole.log(fib(10)); // 55\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-5-min-cost-climbing-stairs",
+      children: "Problem 5: Min Cost Climbing Stairs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an array where cost[i] is the cost of stepping on stair i, find the minimum cost to reach the top. You can start from step 0 or 1, and climb 1 or 2 steps."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: cost = [10, 15, 20]\nOutput: 15\nExplanation: Start at 1, pay 15, climb 2 to top.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function minCostClimbingStairs(cost: number[]): number {\n  let prev2 = cost[0];\n  let prev1 = cost[1];\n\n  for (let i = 2; i < cost.length; i++) {\n    const curr = cost[i] + Math.min(prev1, prev2);\n    prev2 = prev1;\n    prev1 = curr;\n  }\n\n  return Math.min(prev1, prev2);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(minCostClimbingStairs([10, 15, 20])); // 15\nconsole.log(minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])); // 6\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-6-pascals-triangle",
+      children: "Problem 6: Pascal's Triangle"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Generate the first numRows of Pascal's triangle."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: numRows = 5\nOutput: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function generate(numRows: number): number[][] {\n  const result: number[][] = [];\n\n  for (let i = 0; i < numRows; i++) {\n    const row: number[] = new Array(i + 1).fill(1);\n    for (let j = 1; j < i; j++) {\n      row[j] = result[i - 1][j - 1] + result[i - 1][j];\n    }\n    result.push(row);\n  }\n\n  return result;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(generate(5));\n// [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n²)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n²)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-7-divisor-game",
+      children: "Problem 7: Divisor Game"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Math]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Alice and Bob take turns. On each turn, choose x where 0 < x < n and n % x == 0, replace n with n - x. If a player cannot move, they lose. Alice starts. Return true if she wins with optimal play."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 2\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mathematical insight: even numbers always win (dp[n] = !dp[n-1] or just n % 2 === 0)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Or DP: dp[i] = any j where i % j == 0 and !dp[i - j]."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function divisorGame(n: number): boolean {\n  return n % 2 === 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(divisorGame(2)); // true\nconsole.log(divisorGame(3)); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(1)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-8-tribonacci-number",
+      children: "Problem 8: Tribonacci Number"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Math]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " T₀ = 0, T₁ = 1, T₂ = 1, Tₙ = Tₙ₋₁ + Tₙ₋₂ + Tₙ₋₃. Return Tₙ."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 4\nOutput: 4\nExplanation: 0,1,1,2,4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function tribonacci(n: number): number {\n  if (n === 0) return 0;\n  if (n <= 2) return 1;\n\n  let t0 = 0, t1 = 1, t2 = 1;\n  for (let i = 3; i <= n; i++) {\n    const curr = t0 + t1 + t2;\n    t0 = t1;\n    t1 = t2;\n    t2 = curr;\n  }\n  return t2;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(tribonacci(4)); // 4\nconsole.log(tribonacci(25)); // 1389537\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-9-maximum-product-of-three-numbers",
+      children: "Problem 9: Maximum Product of Three Numbers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [Array, Math]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the maximum product of any three numbers from the array."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [1, 2, 3]\nOutput: 6\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sort or track 3 max and 2 min (for negative * negative)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maximumProduct(nums: number[]): number {\n  nums.sort((a, b) => a - b);\n  const n = nums.length;\n  return Math.max(\n    nums[n - 1] * nums[n - 2] * nums[n - 3],\n    nums[0] * nums[1] * nums[n - 1]\n  );\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maximumProduct([1, 2, 3])); // 6\nconsole.log(maximumProduct([-100, -98, 1, 2, 3, 4])); // 39200\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n log n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-10-counting-bits",
+      children: "Problem 10: Counting Bits"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Bit Manipulation]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given n, return an array of length n+1 where ans[i] is the number of 1 bits in binary representation of i."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: n = 2\nOutput: [0, 1, 1]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DP: ans[i] = ans[i >> 1] + (i & 1). Or ans[i] = ans[i & (i-1)] + 1."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function countBits(n: number): number[] {\n  const ans = new Array(n + 1).fill(0);\n\n  for (let i = 1; i <= n; i++) {\n    ans[i] = ans[i >> 1] + (i & 1);\n  }\n\n  return ans;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(countBits(2)); // [0, 1, 1]\nconsole.log(countBits(5)); // [0, 1, 1, 2, 1, 2]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "medium-problems-18",
+      children: "Medium Problems (18)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-11-coin-change",
+      children: "Problem 11: Coin Change"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, BFS, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given coins of different denominations and a total amount, return the fewest coins needed to make that amount. Return -1 if impossible."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: coins = [1, 2, 5], amount = 11\nOutput: 3 (5 + 5 + 1)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ coins.length ≤ 12"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "0 ≤ amount ≤ 10⁴"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function coinChange(coins: number[], amount: number): number {\n  const dp = new Array(amount + 1).fill(Infinity);\n  dp[0] = 0;\n\n  for (let i = 1; i <= amount; i++) {\n    for (const coin of coins) {\n      if (coin <= i) {\n        dp[i] = Math.min(dp[i], 1 + dp[i - coin]);\n      }\n    }\n  }\n\n  return dp[amount] === Infinity ? -1 : dp[amount];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(coinChange([1, 2, 5], 11)); // 3\nconsole.log(coinChange([2], 3)); // -1\nconsole.log(coinChange([1], 0)); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × amount)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(amount)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-12-longest-increasing-subsequence",
+      children: "Problem 12: Longest Increasing Subsequence"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Binary Search]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the length of the longest strictly increasing subsequence."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [10, 9, 2, 5, 3, 7, 101, 18]\nOutput: 4 ([2, 3, 7, 101])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ nums.length ≤ 2500"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DP:"
+        }), " dp[i] = 1 + max(dp[j]) for j < i and nums[j] < nums[i]. O(n²)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Optimal (Patience Sorting):"
+        }), " Maintain tails array, binary search. O(n log n)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function lengthOfLIS(nums: number[]): number {\n  const tails: number[] = [];\n\n  for (const num of nums) {\n    let left = 0;\n    let right = tails.length;\n\n    while (left < right) {\n      const mid = Math.floor((left + right) / 2);\n      if (tails[mid] < num) {\n        left = mid + 1;\n      } else {\n        right = mid;\n      }\n    }\n\n    if (left === tails.length) {\n      tails.push(num);\n    } else {\n      tails[left] = num;\n    }\n  }\n\n  return tails.length;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])); // 4\nconsole.log(lengthOfLIS([0, 1, 0, 3, 2, 3])); // 4\nconsole.log(lengthOfLIS([7, 7, 7, 7])); // 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n log n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-13-longest-common-subsequence",
+      children: "Problem 13: Longest Common Subsequence"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given two strings, find the length of their longest common subsequence."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: text1 = \"abcde\", text2 = \"ace\"\nOutput: 3 (\"ace\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ text1.length, text2.length ≤ 1000"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function longestCommonSubsequence(text1: string, text2: string): number {\n  const m = text1.length;\n  const n = text2.length;\n  const dp: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));\n\n  for (let i = 1; i <= m; i++) {\n    for (let j = 1; j <= n; j++) {\n      if (text1[i - 1] === text2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n      } else {\n        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n  }\n\n  return dp[m][n];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(longestCommonSubsequence(\"abcde\", \"ace\")); // 3\nconsole.log(longestCommonSubsequence(\"abc\", \"abc\")); // 3\nconsole.log(longestCommonSubsequence(\"abc\", \"def\")); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-14-unique-paths",
+      children: "Problem 14: Unique Paths"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Math, Combinatorics]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " A robot is at top-left of an m×n grid. It can only move down or right. How many unique paths to bottom-right?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: m = 3, n = 7\nOutput: 28\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ m, n ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DP:"
+        }), " dp[i][j] = dp[i-1][j] + dp[i][j-1]."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Math:"
+        }), " C(m+n-2, m-1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function uniquePaths(m: number, n: number): number {\n  const dp: number[] = new Array(n).fill(1);\n\n  for (let i = 1; i < m; i++) {\n    for (let j = 1; j < n; j++) {\n      dp[j] += dp[j - 1];\n    }\n  }\n\n  return dp[n - 1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(uniquePaths(3, 7)); // 28\nconsole.log(uniquePaths(3, 2)); // 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-15-unique-paths-ii",
+      children: "Problem 15: Unique Paths II"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Matrix]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Same as Unique Paths but with obstacles (1 = obstacle)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]\nOutput: 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function uniquePathsWithObstacles(obstacleGrid: number[][]): number {\n  const m = obstacleGrid.length;\n  const n = obstacleGrid[0].length;\n  const dp = new Array(n).fill(0);\n  dp[0] = 1 - obstacleGrid[0][0];\n\n  for (let i = 0; i < m; i++) {\n    for (let j = 0; j < n; j++) {\n      if (obstacleGrid[i][j] === 1) {\n        dp[j] = 0;\n      } else if (j > 0) {\n        dp[j] += dp[j - 1];\n      }\n    }\n  }\n\n  return dp[n - 1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(uniquePathsWithObstacles([[0,0,0],[0,1,0],[0,0,0]])); // 2\nconsole.log(uniquePathsWithObstacles([[0,1],[0,0]])); // 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-16-jump-game",
+      children: "Problem 16: Jump Game"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Greedy, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an array where nums[i] is max jump length, determine if you can reach the last index."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [2, 3, 1, 1, 4]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DP:"
+        }), " dp[i] = true if any dp[j] where j + nums[j] >= i."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Greedy:"
+        }), " Track max reachable index."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function canJump(nums: number[]): boolean {\n  let maxReach = 0;\n\n  for (let i = 0; i < nums.length; i++) {\n    if (i > maxReach) return false;\n    maxReach = Math.max(maxReach, i + nums[i]);\n    if (maxReach >= nums.length - 1) return true;\n  }\n\n  return true;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(canJump([2, 3, 1, 1, 4])); // true\nconsole.log(canJump([3, 2, 1, 0, 4])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-17-word-break",
+      children: "Problem 17: Word Break"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft] [Apple]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Trie, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given a string s and a dictionary of words, return true if s can be segmented into dictionary words."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: s = \"leetcode\", wordDict = [\"leet\", \"code\"]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ s.length ≤ 300"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function wordBreak(s: string, wordDict: string[]): boolean {\n  const wordSet = new Set(wordDict);\n  const dp = new Array(s.length + 1).fill(false);\n  dp[0] = true;\n\n  for (let i = 1; i <= s.length; i++) {\n    for (let j = 0; j < i; j++) {\n      if (dp[j] && wordSet.has(s.substring(j, i))) {\n        dp[i] = true;\n        break;\n      }\n    }\n  }\n\n  return dp[s.length];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(wordBreak(\"leetcode\", [\"leet\", \"code\"])); // true\nconsole.log(wordBreak(\"applepenapple\", [\"apple\", \"pen\"])); // true\nconsole.log(wordBreak(\"catsandog\", [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n² × m) where m = max word length\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-18-decode-ways",
+      children: "Problem 18: Decode Ways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " A message containing A-Z can be encoded to numbers ('A' → 1 ... 'Z' → 26). Count the number of ways to decode a digit string."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: s = \"226\"\nOutput: 3 (BZ, VF, BBF)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ s.length ≤ 100"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function numDecodings(s: string): number {\n  if (!s || s[0] === '0') return 0;\n\n  const n = s.length;\n  const dp = new Array(n + 1).fill(0);\n  dp[0] = 1;\n  dp[1] = 1;\n\n  for (let i = 2; i <= n; i++) {\n    const oneDigit = parseInt(s.substring(i - 1, i));\n    const twoDigits = parseInt(s.substring(i - 2, i));\n\n    if (oneDigit >= 1) dp[i] += dp[i - 1];\n    if (twoDigits >= 10 && twoDigits <= 26) dp[i] += dp[i - 2];\n  }\n\n  return dp[n];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(numDecodings(\"12\")); // 2\nconsole.log(numDecodings(\"226\")); // 3\nconsole.log(numDecodings(\"06\")); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-19-target-sum",
+      children: "Problem 19: Target Sum"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, DFS, Memoization]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an array of integers and a target, assign + or - signs to each element to reach the target sum. Count number of such assignments."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [1, 1, 1, 1, 1], target = 3\nOutput: 5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Convert to subset sum: sum(P) - sum(N) = target → sum(P) = (target + totalSum) / 2."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findTargetSumWays(nums: number[], target: number): number {\n  const totalSum = nums.reduce((s, n) => s + n, 0);\n\n  if (Math.abs(target) > totalSum || (totalSum + target) % 2 !== 0) return 0;\n\n  const sum = (totalSum + target) / 2;\n  const dp = new Array(sum + 1).fill(0);\n  dp[0] = 1;\n\n  for (const num of nums) {\n    for (let s = sum; s >= num; s--) {\n      dp[s] += dp[s - num];\n    }\n  }\n\n  return dp[sum];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findTargetSumWays([1, 1, 1, 1, 1], 3)); // 5\nconsole.log(findTargetSumWays([1], 1)); // 1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × sum)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(sum)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-20-partition-equal-subset-sum",
+      children: "Problem 20: Partition Equal Subset Sum"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given an array, return true if it can be partitioned into two subsets with equal sum."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [1, 5, 11, 5]\nOutput: true ([1, 5, 5] and [11])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ nums.length ≤ 200"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function canPartition(nums: number[]): boolean {\n  const total = nums.reduce((s, n) => s + n, 0);\n  if (total % 2 !== 0) return false;\n\n  const target = total / 2;\n  const dp = new Array(target + 1).fill(false);\n  dp[0] = true;\n\n  for (const num of nums) {\n    for (let s = target; s >= num; s--) {\n      if (dp[s - num]) dp[s] = true;\n    }\n  }\n\n  return dp[target];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(canPartition([1, 5, 11, 5])); // true\nconsole.log(canPartition([1, 2, 3, 5])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × target)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(target)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-21-minimum-path-sum",
+      children: "Problem 21: Minimum Path Sum"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Grid]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the minimum path sum from top-left to bottom-right, moving only down or right."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: grid = [[1,3,1],[1,5,1],[4,2,1]]\nOutput: 7 (1→3→1→1→1)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function minPathSum(grid: number[][]): number {\n  const m = grid.length;\n  const n = grid[0].length;\n  const dp = [...grid[0]];\n\n  for (let j = 1; j < n; j++) dp[j] += dp[j - 1];\n\n  for (let i = 1; i < m; i++) {\n    dp[0] += grid[i][0];\n    for (let j = 1; j < n; j++) {\n      dp[j] = grid[i][j] + Math.min(dp[j], dp[j - 1]);\n    }\n  }\n\n  return dp[n - 1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(minPathSum([[1,3,1],[1,5,1],[4,2,1]])); // 7\nconsole.log(minPathSum([[1,2,3],[4,5,6]])); // 12\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-22-maximum-length-of-repeated-subarray",
+      children: "Problem 22: Maximum Length of Repeated Subarray"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array, Binary Search]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the maximum length of a subarray that appears in both arrays."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums1 = [1, 2, 3, 2, 1], nums2 = [3, 2, 1, 4, 7]\nOutput: 3 ([3, 2, 1])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function findLength(nums1: number[], nums2: number[]): number {\n  const m = nums1.length;\n  const n = nums2.length;\n  const dp: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));\n  let maxLen = 0;\n\n  for (let i = 1; i <= m; i++) {\n    for (let j = 1; j <= n; j++) {\n      if (nums1[i - 1] === nums2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n        maxLen = Math.max(maxLen, dp[i][j]);\n      }\n    }\n  }\n\n  return maxLen;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])); // 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(m × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(m × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-23-maximum-alternating-subsequence-sum",
+      children: "Problem 23: Maximum Alternating Subsequence Sum"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the maximum sum of an alternating subsequence (a[index] - a[index+1] + a[index+2] - ...)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [4, 2, 5, 3]\nOutput: 7 (4 - 2 + 5 = 7)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxAlternatingSum(nums: number[]): number {\n  let even = nums[0];\n  let odd = 0;\n\n  for (let i = 1; i < nums.length; i++) {\n    even = Math.max(even, odd + nums[i]);\n    odd = Math.max(odd, even - nums[i]);\n  }\n\n  return even;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maxAlternatingSum([4, 2, 5, 3])); // 7\nconsole.log(maxAlternatingSum([5, 6, 7, 8])); // 8\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-24-coin-change-ii",
+      children: "Problem 24: Coin Change II"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Count the number of combinations that make up a given amount."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: amount = 5, coins = [1, 2, 5]\nOutput: 4 (5, 2+2+1, 2+1+1+1, 1+1+1+1+1)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function change(amount: number, coins: number[]): number {\n  const dp = new Array(amount + 1).fill(0);\n  dp[0] = 1;\n\n  for (const coin of coins) {\n    for (let i = coin; i <= amount; i++) {\n      dp[i] += dp[i - coin];\n    }\n  }\n\n  return dp[amount];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(change(5, [1, 2, 5])); // 4\nconsole.log(change(3, [2])); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × amount)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(amount)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-25-house-robber-ii",
+      children: "Problem 25: House Robber II"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Houses are arranged in a circle. You cannot rob adjacent houses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [2, 3, 2]\nOutput: 3\nExplanation: Rob house 1 (3) only.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function robII(nums: number[]): number {\n  if (nums.length === 1) return nums[0];\n\n  const robRange = (start: number, end: number): number => {\n    let prev2 = 0, prev1 = 0;\n    for (let i = start; i <= end; i++) {\n      const curr = Math.max(prev1, prev2 + nums[i]);\n      prev2 = prev1;\n      prev1 = curr;\n    }\n    return prev1;\n  };\n\n  return Math.max(robRange(0, nums.length - 2), robRange(1, nums.length - 1));\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(robII([2, 3, 2])); // 3\nconsole.log(robII([1, 2, 3, 1])); // 4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-26-longest-palindromic-substring-dp",
+      children: "Problem 26: Longest Palindromic Substring (DP)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String, Two Pointers]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the longest palindromic substring."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: s = \"babad\"\nOutput: \"bab\" or \"aba\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution Approach (DP):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "dp[i][j] = true if s[i..j] is palindrome. dp[i][j] = s[i]==s[j] && (j-i<3 || dp[i+1][j-1])."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function longestPalindrome(s: string): string {\n  const n = s.length;\n  const dp: boolean[][] = Array.from({ length: n }, () => new Array(n).fill(false));\n  let start = 0;\n  let maxLen = 1;\n\n  for (let i = 0; i < n; i++) dp[i][i] = true;\n\n  for (let len = 2; len <= n; len++) {\n    for (let i = 0; i <= n - len; i++) {\n      const j = i + len - 1;\n      if (s[i] === s[j] && (len <= 2 || dp[i + 1][j - 1])) {\n        dp[i][j] = true;\n        if (len > maxLen) {\n          maxLen = len;\n          start = i;\n        }\n      }\n    }\n  }\n\n  return s.substring(start, start + maxLen);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(longestPalindrome(\"babad\")); // \"bab\" or \"aba\"\nconsole.log(longestPalindrome(\"cbbd\")); // \"bb\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n²)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n²)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-27-longest-increasing-path-in-a-matrix-dp",
+      children: "Problem 27: Longest Increasing Path in a Matrix (DP)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, DFS, Memoization, Graph]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Find the length of the longest increasing path in a matrix."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "(Located in Graphs chapter, Problem 24. DP solution uses memoization.)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-28-best-time-to-buy-and-sell-stock-with-cooldown",
+      children: "Problem 28: Best Time to Buy and Sell Stock with Cooldown"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, State Machine, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " You can complete unlimited transactions, but after selling you must wait one day before buying again."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: prices = [1, 2, 3, 0, 2]\nOutput: 3 (buy@1, sell@2, cool, buy@0, sell@2)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxProfitCooldown(prices: number[]): number {\n  let sold = 0, held = -Infinity, cooled = 0;\n\n  for (const price of prices) {\n    const prevSold = sold;\n    sold = held + price;\n    held = Math.max(held, cooled - price);\n    cooled = Math.max(cooled, prevSold);\n  }\n\n  return Math.max(sold, cooled);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maxProfitCooldown([1, 2, 3, 0, 2])); // 3\nconsole.log(maxProfitCooldown([1])); // 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-29-01-knapsack",
+      children: "Problem 29: 0/1 Knapsack"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given weights and values of n items, and a knapsack capacity, find the maximum value you can fit."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: weights = [1, 3, 4, 5], values = [1, 4, 5, 7], capacity = 7\nOutput: 9 (items with weights 1+5=6, values 1+7=8? Actually optimal: 3+4=7, values 4+5=9)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function knapsack(weights: number[], values: number[], capacity: number): number {\n  const n = weights.length;\n  const dp = new Array(capacity + 1).fill(0);\n\n  for (let i = 0; i < n; i++) {\n    for (let w = capacity; w >= weights[i]; w--) {\n      dp[w] = Math.max(dp[w], dp[w - weights[i]] + values[i]);\n    }\n  }\n\n  return dp[capacity];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(knapsack([1, 3, 4, 5], [1, 4, 5, 7], 7)); // 9\nconsole.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n × capacity)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(capacity)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-30-edit-distance-dp",
+      children: "Problem 30: Edit Distance (DP)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Microsoft] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given two strings, find the minimum number of operations (insert, delete, replace) to convert one to the other."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "(Also listed in Strings chapter, Problem 22.)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "hard-problems-7",
+      children: "Hard Problems (7)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-31-burst-balloons",
+      children: "Problem 31: Burst Balloons"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Given n balloons (each with a coin value), bursting balloon i earns nums[i-1] * nums[i] * nums[i+1]. Find the maximum coins you can collect."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: nums = [3, 1, 5, 8]\nOutput: 167\nExplanation: nums = [3,1,5,8] → [3,5,8] → [3,8] → [8] → []. Coins: 3*1*5 + 3*5*8 + 3*8*1 + 1*8*1 = 167\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Constraints:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 ≤ n ≤ 300"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxCoins(nums: number[]): number {\n  const n = nums.length;\n  const arr = [1, ...nums, 1];\n  const dp: number[][] = Array.from({ length: n + 2 }, () => new Array(n + 2).fill(0));\n\n  for (let len = 1; len <= n; len++) {\n    for (let left = 1; left <= n - len + 1; left++) {\n      const right = left + len - 1;\n      for (let last = left; last <= right; last++) {\n        const coins = arr[left - 1] * arr[last] * arr[right + 1];\n        dp[left][right] = Math.max(\n          dp[left][right],\n          coins + dp[left][last - 1] + dp[last + 1][right]\n        );\n      }\n    }\n  }\n\n  return dp[1][n];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maxCoins([3, 1, 5, 8])); // 167\nconsole.log(maxCoins([1, 5])); // 10\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n³)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n²)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-32-regular-expression-matching",
+      children: "Problem 32: Regular Expression Matching"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta] [Microsoft]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String, Backtracking]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Implement regex matching with '.' and '*'."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "(Detailed solution in Strings chapter, Problem 21.)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-33-distinct-subsequences",
+      children: "Problem 33: Distinct Subsequences"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Count the number of distinct subsequences of s that equal t."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "(Detailed solution in Strings chapter, Problem 23.)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-34-best-time-to-buy-and-sell-stock-iv",
+      children: "Problem 34: Best Time to Buy and Sell Stock IV"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Array, State Machine]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " You can complete at most k transactions. Find maximum profit."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: k = 2, prices = [3, 2, 6, 5, 0, 3]\nOutput: 7 (buy@2, sell@6, buy@0, sell@3)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxProfitIV(k: number, prices: number[]): number {\n  const n = prices.length;\n  if (k >= n / 2) {\n    let profit = 0;\n    for (let i = 1; i < n; i++) {\n      if (prices[i] > prices[i - 1]) profit += prices[i] - prices[i - 1];\n    }\n    return profit;\n  }\n\n  const dp: number[][] = Array.from({ length: k + 1 }, () => new Array(n).fill(0));\n\n  for (let t = 1; t <= k; t++) {\n    let maxDiff = -prices[0];\n    for (let d = 1; d < n; d++) {\n      dp[t][d] = Math.max(dp[t][d - 1], prices[d] + maxDiff);\n      maxDiff = Math.max(maxDiff, dp[t - 1][d] - prices[d]);\n    }\n  }\n\n  return dp[k][n - 1];\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(maxProfitIV(2, [3, 2, 6, 5, 0, 3])); // 7\nconsole.log(maxProfitIV(2, [2, 4, 1])); // 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(k × n)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(k × n)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "problem-35-frog-jump",
+      children: "Problem 35: Frog Jump"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🏷️ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Companies:"
+      }), " [Amazon] [Google] [Meta]\n📊 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Difficulty:"
+      }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Topics:"
+      }), " [DP, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " A frog starts at stone 0 and can jump k units. After jumping k units, it can jump k-1, k, or k+1 units. Determine if it can reach the last stone."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example 1:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Input: stones = [0, 1, 3, 5, 6, 8, 12, 17]\nOutput: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function canCross(stones: number[]): boolean {\n  const map = new Map<number, Set<number>>();\n  for (const stone of stones) map.set(stone, new Set());\n  map.get(0)!.add(0);\n\n  for (const stone of stones) {\n    for (const jump of map.get(stone)!) {\n      for (const nextJump of [jump - 1, jump, jump + 1]) {\n        if (nextJump > 0 && map.has(stone + nextJump)) {\n          map.get(stone + nextJump)!.add(nextJump);\n        }\n      }\n    }\n  }\n\n  return map.get(stones[stones.length - 1])!.size > 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "console.log(canCross([0, 1, 3, 5, 6, 8, 12, 17])); // true\nconsole.log(canCross([0, 1, 2, 3, 4, 8, 9, 11])); // false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity:"
+      }), " O(n²)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity:"
+      }), " O(n²)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary-table",
+      children: "Summary Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Difficulty"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Companies"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Climbing Stairs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "House Robber"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum Subarray"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fibonacci Number"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Min Cost Climbing Stairs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pascal's Triangle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Divisor Game"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tribonacci"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Max Product of Three"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n log n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Counting Bits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google, Meta"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coin Change"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×amt)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(amt)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest Increasing Subseq"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n log n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest Common Subseq"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unique Paths"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unique Paths II"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Jump Game"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Word Break"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²×m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decode Ways"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Target Sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×sum)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(sum)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partition Equal Subset"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×target)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(target)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "21"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimum Path Sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Max Length Repeated Subarray"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "23"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Max Alternating Sum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coin Change II"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×amt)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(amt)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "House Robber II"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "26"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest Palindromic Substr (DP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "27"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest Increasing Path Matrix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(mn)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "28"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stock with Cooldown"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "29"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0/1 Knapsack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n×cap)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(cap)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Edit Distance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "31"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Burst Balloons"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n³)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "32"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regex Matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "33"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distinct Subsequences"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "34"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best Time to Buy/Sell IV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k×n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k×n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "35"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Frog Jump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon, Google"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n²)"
+          })]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

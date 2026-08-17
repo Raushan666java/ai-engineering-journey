@@ -1,0 +1,1620 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[74366],{
+
+/***/ 95012
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_devops_11_cloud_platforms_md_11c_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-devops-11-cloud-platforms-md-11c.json
+const site_docs_courses_devops_11_cloud_platforms_md_11c_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/devops/11-cloud-platforms","title":"Chapter 11: Cloud Platforms","description":"Previous Monitoring and Logging","source":"@site/docs/courses/devops/11-cloud-platforms.md","sourceDirName":"courses/devops","slug":"/devops/11-cloud-platforms","permalink":"/ai-engineering-journey/devops/11-cloud-platforms","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":20,"frontMatter":{"id":"11-cloud-platforms","slug":"/devops/11-cloud-platforms","title":"Chapter 11: Cloud Platforms","sidebar_label":"Chapter 11: Cloud Platforms","sidebar_position":20},"sidebar":"course-devops","previous":{"title":"Chapter 10: Site Reliability Engineering (SRE) and Monitoring","permalink":"/ai-engineering-journey/devops/10-monitoring"},"next":{"title":"Chapter 12: Monitoring and Logging","permalink":"/ai-engineering-journey/devops/12-monitoring-logging"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/devops/11-cloud-platforms.md
+
+
+const frontMatter = {
+	id: '11-cloud-platforms',
+	slug: '/devops/11-cloud-platforms',
+	title: 'Chapter 11: Cloud Platforms',
+	sidebar_label: 'Chapter 11: Cloud Platforms',
+	sidebar_position: 20
+};
+const contentTitle = 'Chapter 11: Cloud Platforms';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "11.1 Amazon Web Services (AWS)",
+  "id": "111-amazon-web-services-aws",
+  "level": 3
+}, {
+  "value": "11.2 Microsoft Azure",
+  "id": "112-microsoft-azure",
+  "level": 3
+}, {
+  "value": "11.3 Google Cloud Platform (GCP)",
+  "id": "113-google-cloud-platform-gcp",
+  "level": 3
+}, {
+  "value": "11.4 Cloud Provider Comparison",
+  "id": "114-cloud-provider-comparison",
+  "level": 3
+}, {
+  "value": "11.5 Multi-Cloud and Hybrid Cloud",
+  "id": "115-multi-cloud-and-hybrid-cloud",
+  "level": 3
+}, {
+  "value": "11.6 Cloud Governance",
+  "id": "116-cloud-governance",
+  "level": 3
+}, {
+  "value": "11.7 Cloud Cost Optimization (FinOps)",
+  "id": "117-cloud-cost-optimization-finops",
+  "level": 3
+}, {
+  "value": "11.8 Auto-Scaling Strategies",
+  "id": "118-auto-scaling-strategies",
+  "level": 3
+}, {
+  "value": "11.9 Infrastructure as Code Across Clouds",
+  "id": "119-infrastructure-as-code-across-clouds",
+  "level": 3
+}, {
+  "value": "11.10 Serverless Comparison",
+  "id": "1110-serverless-comparison",
+  "level": 3
+}, {
+  "value": "11.11 Cloud Migration Strategies",
+  "id": "1111-cloud-migration-strategies",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: Multi-Cloud Cost Comparison",
+  "id": "example-1-multi-cloud-cost-comparison",
+  "level": 3
+}, {
+  "value": "Example 2: Tagging Strategy and Cost Allocation",
+  "id": "example-2-tagging-strategy-and-cost-allocation",
+  "level": 3
+}, {
+  "value": "Example 3: Auto-Scaling Policy Simulator",
+  "id": "example-3-auto-scaling-policy-simulator",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Cloud Cost Calculator",
+  "id": "cloud-cost-calculator",
+  "level": 3
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Multi-Cloud Cost Comparator",
+  "id": "multi-cloud-cost-comparator",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Cloud Disaster Recovery Strategies",
+  "id": "cloud-disaster-recovery-strategies",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    br: "br",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-11-cloud-platforms",
+        children: "Chapter 11: Cloud Platforms"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/devops/10-monitoring",
+          children: "SRE and Monitoring"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/devops/12-monitoring-logging",
+          children: "Monitoring and Logging"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe the core compute, storage, networking, and identity services of AWS, Azure, and GCP"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare cloud providers across service models, pricing, and capabilities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design multi-cloud and hybrid cloud architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply FinOps principles for cloud cost optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure auto-scaling, reserved instances, and spot instances for cost efficiency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement cloud governance with tagging, budgets, and compliance controls"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200+ services, largest market share, broadest catalog"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best for comprehensive cloud strategy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep enterprise integration with Microsoft ecosystem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best for Microsoft-centric organizations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data analytics, ML, and container-native services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best for data-driven and container-first orgs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-Cloud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Using multiple providers to avoid lock-in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adds complexity; use only when necessary"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FinOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud cost optimization through accountability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tag resources, right-size, use reserved instances"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud Governance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Policies, compliance, and cost controls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automate with policy-as-code and budget alerts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-Scaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic resource adjustment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scale horizontally for stateless workloads"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Cloud Providers] --> B[AWS]\n    A --> C[Azure]\n    A --> D[GCP]\n    B & C & D --> E[Comparison]\n    E --> F[Multi-Cloud]\n    E --> G[Hybrid Cloud]\n    F & G --> H[Cloud Governance]\n    H --> I[FinOps]\n    I --> J[Auto-Scaling]\n    J --> K[Cost Optimization]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-amazon-web-services-aws",
+      children: "11.1 Amazon Web Services (AWS)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AWS is the largest and most mature public cloud provider, offering over 200 services across 30+ global regions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EC2 (Elastic Compute Cloud)"
+        }), " — Virtual machines optimized for general purpose (t3, m6i), compute (c6i), memory (r6i), storage (i3), and GPU (p4). Supports spot instances (60-90% discount), reserved instances (up to 72% discount), and dedicated hosts."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Lambda"
+        }), " — Serverless function execution supporting Node.js, Python, Java, Go, Ruby, .NET, and custom runtimes. Scales automatically. Billed per invocation and duration (rounded to 1ms)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ECS (Elastic Container Service)"
+        }), " — Docker container orchestration with Fargate (serverless) and EC2 launch types."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EKS (Elastic Kubernetes Service)"
+        }), " — Managed Kubernetes control plane with automated upgrades and IAM integration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Storage:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "S3 (Simple Storage Service)"
+        }), " — Object storage with 99.999999999% durability. Storage classes: Standard, Intelligent-Tiering, Infrequent Access, Glacier, Deep Archive. Lifecycle policies automate tier transitions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EBS (Elastic Block Store)"
+        }), " — Block storage with gp3 (general purpose), io2 (provisioned IOPS up to 256K), st1 (throughput), sc1 (cold). Snapshots are incremental and stored in S3."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "RDS (Relational Database Service)"
+        }), " — Managed MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora. Multi-AZ for high availability, Read Replicas for read scaling."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Networking:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VPC (Virtual Private Cloud)"
+        }), " — Isolated network environment with subnets, route tables, internet/NAT gateways, security groups, network ACLs, VPC peering, Transit Gateway."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CloudFront"
+        }), " — CDN with 400+ edge locations. Supports Lambda@Edge for custom logic at the edge."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Route 53"
+        }), " — DNS with routing policies: simple, weighted, latency-based, geolocation, geonear, failover, multi-value."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "IAM (Identity and Access Management)"
+      }), " — Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0, and OIDC. IAM Roles Anywhere for on-premises workloads."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-microsoft-azure",
+      children: "11.2 Microsoft Azure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Azure is the second-largest cloud provider with deep enterprise and Microsoft ecosystem integration across 60+ regions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtual Machines"
+        }), " — Windows and Linux VMs with flexible sizing. Availability sets (99.95% SLA) and availability zones (99.99% SLA) for high availability. Supports spot VMs and reserved instances."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Functions"
+        }), " — Serverless compute supporting C#, JavaScript, Python, Java, PowerShell. Consumption, Premium, and Dedicated plans."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AKS (Azure Kubernetes Service)"
+        }), " — Managed Kubernetes with Azure AD integration, managed identity, and Azure Policy for governance."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "App Service"
+        }), " — Managed platform for web apps and APIs. Supports Windows and Linux, auto-scale, staging slots, and integrated CI/CD."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Storage:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Blob Storage"
+        }), " — Object storage with hot, cool, cold, and archive tiers. Supports lifecycle management and immutable storage for compliance."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure SQL Database"
+        }), " — Managed SQL Server with built-in HA, auto-tuning, serverless compute, and geo-replication."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cosmos DB"
+        }), " — Globally distributed NoSQL database with turnkey distribution, multi-master, and five consistency models (strong, bounded staleness, session, consistent prefix, eventual)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Networking:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtual Network (VNet)"
+        }), " — Network isolation with subnets, peering, VPN gateways, ExpressRoute for dedicated private connections."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure DNS"
+        }), " — Domain hosting with 100% SLA."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Front Door"
+        }), " — Global load balancing and CDN with WAF, SSL termination, and URL-based routing."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Identity:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Microsoft Entra ID (formerly Azure AD)"
+        }), " — Identity and access management with SSO, MFA, conditional access, identity protection, and privileged identity management (PIM)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-google-cloud-platform-gcp",
+      children: "11.3 Google Cloud Platform (GCP)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "GCP excels in data analytics, machine learning, and container-native services across 35+ global regions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compute:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Compute Engine"
+        }), " — Virtual machines with live migration, custom machine types, sustained-use discounts (automatic 30% for full month), and committed use discounts (up to 57% for 1-3 year commitments)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud Functions"
+        }), " — Serverless functions (Node.js, Python, Go, Java, .NET, Ruby, PHP). 1st gen and 2nd gen (Cloud Run-based)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GKE (Google Kubernetes Engine)"
+        }), " — Managed Kubernetes with Autopilot mode (serverless), integrated Cloud NAT, workload identity, and GKE Sandbox for extra isolation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud Run"
+        }), " — Serverless container execution. Runs any containerized application with automatic scale-to-zero. Billed per 100ms of CPU and memory usage."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Storage:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud Storage"
+        }), " — Object storage with standard, nearline, coldline, and archive classes. Uniform and fine-grained access control through IAM and ACLs. Object lifecycle management."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud SQL"
+        }), " — Managed MySQL, PostgreSQL, SQL Server with automatic replication, backups, and failover."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud Spanner"
+        }), " — Horizontally scalable relational database with strong consistency and 99.999% SLA. Supports SQL queries and transactions."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Networking:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "VPC"
+        }), " — Global virtual network (not regional like AWS). Subnets, firewall rules, Cloud NAT, Cloud VPN, Dedicated Interconnect."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud CDN"
+        }), " — Content delivery with global edge caching using Google's global fiber network."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cloud DNS"
+        }), " — Managed DNS with 100% SLA."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "114-cloud-provider-comparison",
+      children: "11.4 Cloud Provider Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AWS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Azure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "GCP"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Market share"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Largest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Second"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Third"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Services count"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120+"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Global regions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "35+"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kubernetes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EKS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AKS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GKE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Serverless functions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lambda"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Functions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud Functions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Serverless containers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fargate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container Instances"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud Run"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Managed K8s cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Control plane billed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Control plane free"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Control plane free (Autopilot has fee)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Networking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPC (regional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VNet (regional)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPC (global)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Identity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IAM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Entra ID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud IAM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AI/ML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SageMaker"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure AI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vertex AI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Global network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400+ CloudFront PoPs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "160+ edge nodes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "140+ edge nodes (fastest fiber)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "115-multi-cloud-and-hybrid-cloud",
+      children: "11.5 Multi-Cloud and Hybrid Cloud"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multi-Cloud"
+      }), " — Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Challenges:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Increased operational complexity and skill requirements"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data transfer costs between providers (egress fees)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inconsistent security models and tooling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Latency between services on different providers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hybrid Cloud"
+      }), " — Connecting on-premises infrastructure with cloud resources."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Use cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Legacy application migration (lift-and-shift, re-platform)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data residency compliance (keep sensitive data on-premises)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Burst capacity for peak workloads (cloud bursting)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disaster recovery (on-premises primary, cloud secondary)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hybrid management platforms:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AWS Outposts"
+        }), " — AWS infrastructure on-premises"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Arc"
+        }), " — Manage multi-cloud and on-prem from Azure"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google Anthos"
+        }), " — Multi-cloud and on-prem Kubernetes management"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "116-cloud-governance",
+      children: "11.6 Cloud Governance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cloud governance ensures security, compliance, and cost control across cloud environments:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Identity and Access Management:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement least-privilege access with IAM roles and policies"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use identity federation with existing identity providers (Okta, Azure AD)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enable MFA for all human users"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use temporary credentials (STS) for automation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Policy as Code:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AWS Service Control Policies (SCPs)"
+        }), " — Guardrails for accounts in AWS Organizations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Azure Policy"
+        }), " — Enforce compliance rules across subscriptions"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "GCP Organization Policies"
+        }), " — Constraints at the organization level"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compliance Automation:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Automated compliance scanning (AWS Config, Azure Policy, GCP Security Command Center)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Continuous monitoring with CIS benchmarks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Automated remediation for common violations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Audit logging with CloudTrail, Azure Monitor, Cloud Audit Logs"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "117-cloud-cost-optimization-finops",
+      children: "11.7 Cloud Cost Optimization (FinOps)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FinOps is the practice of managing cloud costs through cultural change, financial accountability, and engineering excellence."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Practices:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Right-sizing"
+        }), " — Match instance types to workload requirements. Use AWS Compute Optimizer, Azure Advisor, GCP Rightsizing Recommendations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reserved Instances and Savings Plans"
+        }), " — Commit to 1-year or 3-year terms for 30-72% discount over on-demand."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spot Instances"
+        }), " — Use spare compute capacity at 60-90% discount. Suitable for fault-tolerant workloads."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Auto-scaling"
+        }), " — Scale resources to match demand. Scale down during low-traffic periods."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Storage Lifecycle Policies"
+        }), " — Move data to cheaper storage tiers as it ages (automate with lifecycle rules)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tagging and Cost Allocation"
+        }), " — Tag resources by team, project, environment. Track spending with cost allocation reports."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Budget Alerts"
+        }), " — Configure budgets with alert thresholds at 50%, 80%, 90%, 100%."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "118-auto-scaling-strategies",
+      children: "11.8 Auto-Scaling Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Auto-scaling adjusts compute resources dynamically based on demand:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Horizontal Scaling"
+        }), " — Add/remove instances. Preferred for stateless applications. Near-infinite scaling."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Vertical Scaling"
+        }), " — Increase/decrease instance size. Limited by maximum instance size. Requires restart."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Predictive Scaling"
+        }), " — ML-based scaling based on historical patterns. Available in AWS Predictive Scaling."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scheduled Scaling"
+        }), " — Scale based on known traffic patterns (scale up at 8 AM, scale down at 8 PM)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Auto-scaling configuration considerations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cooldown periods between scaling activities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Warm-up time for new instances (affects aggressive scaling)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Scale-in protection to prevent terminating instances with active connections"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Metrics selection (CPU, memory, request count, custom metrics)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "119-infrastructure-as-code-across-clouds",
+      children: "11.9 Infrastructure as Code Across Clouds"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each cloud provider offers its own IaC tooling, but Pulumi and CDK enable a unified TypeScript experience:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph \"IaC Layer\"\n        A[Pulumi / CDK / Terraform]\n    end\n    subgraph \"Cloud Providers\"\n        B[AWS]\n        C[Azure]\n        D[GCP]\n    end\n    A --> B\n    A --> C\n    A --> D\n    E[TypeScript] --> A\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Terraform (multi-cloud):"
+      }), " HCL-based, works across all three providers with state management and module reuse."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "AWS CDK (TypeScript):"
+      }), " Define AWS infrastructure as TypeScript classes. Offers higher-level constructs (L2/L3) that reduce boilerplate."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pulumi (TypeScript):"
+      }), " Native TypeScript/JavaScript SDK. Works across AWS, Azure, GCP, and Kubernetes. Supports unit testing of infrastructure code."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-cloud patterns with TypeScript:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use a unified ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "CloudProvider"
+        }), " interface to abstract resource creation"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define environment-specific configuration via typed config objects"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Share types between infrastructure and application code"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write infrastructure tests with Pulumi's ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Policy as Code"
+        }), " or CDK's ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "assertions"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1110-serverless-comparison",
+      children: "11.10 Serverless Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AWS Lambda"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Azure Functions"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "GCP Cloud Functions"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Max memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10,240 MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1,536 MB (Premium: 14 GB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32 GB (2nd gen)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Max timeout"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10 min (Premium: 60 min)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60 min (2nd gen)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Languages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node, Python, Java, Go, Ruby, .NET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C#, JS, Python, Java, PowerShell"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node, Python, Go, Java, .NET, Ruby, PHP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cold start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-500ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~200-800ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100-300ms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concurrent exec"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1,000 (can increase)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unlimited (Consumption)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3,000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Trigger sources"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15+ (S3, SQS, SNS, DynamoDB, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20+ (Blob, Queue, Event Grid, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10+ (Storage, Pub/Sub, Firestore, etc.)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pricing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$0.20/1M requests + $0.0000166667/GB-s"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$0.20/1M executions + $0.000016/GB-s"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$0.40/1M invocations + $0.0000025/GB-s (1st gen)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1111-cloud-migration-strategies",
+      children: "11.11 Cloud Migration Strategies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "7 Rs of cloud migration"
+      }), " guide workload migration decisions:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Tooling"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effort"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Retire"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decommission unused applications"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application portfolio analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Retain"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep on-premises for compliance/latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep existing infrastructure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rehost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lift-and-shift, move as-is"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS SMS, Azure Migrate, Migrate for Compute Engine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Relocate"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Move to cloud-native VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Replication Agent, Azure Site Recovery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Replatform"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Move with minimal optimizations (e.g., to managed DB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS DMS, Azure Database Migration Service"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Refactor"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Re-architect for cloud-native patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strangler fig pattern, event-driven architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reimagine"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rebuild using cloud-native services entirely"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Serverless, managed services, SaaS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very High"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Migration assessment steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inventory all workloads and dependencies"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Classify each workload into one of the 7 Rs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Assess data gravity and network bandwidth constraints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plan migration waves with rollback criteria"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute with automated testing at each wave"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-multi-cloud-cost-comparison",
+      children: "Example 1: Multi-Cloud Cost Comparison"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface CloudPricing {\n  provider: string;\n  compute: { instance: string; hourly: number; monthly: number };\n  storage: { tier: string; perGB: number };\n  network: { egressPerGB: number };\n  support: string;\n}\n\nclass CostEstimator {\n  estimateMonthly(pricing: CloudPricing, instances: number, storageGB: number, egressGB: number): string {\n    const computeCost = pricing.compute.monthly * instances;\n    const storageCost = pricing.storage.perGB * storageGB;\n    const egressCost = pricing.network.egressPerGB * egressGB;\n    const total = computeCost + storageCost + egressCost;\n\n    return JSON.stringify({\n      provider: pricing.provider,\n      breakdown: { compute: computeCost, storage: storageCost, egress: egressCost },\n      total: Math.round(total * 100) / 100,\n      currency: 'USD',\n    }, null, 2);\n  }\n}\n\nconst estimator = new CostEstimator();\nconst aws = {\n  provider: 'AWS', compute: { instance: 'm6i.large', hourly: 0.096, monthly: 70.08 },\n  storage: { perGB: 0.023 }, network: { egressPerGB: 0.09 }, support: 'Developer',\n};\nconst azure = {\n  provider: 'Azure', compute: { instance: 'D2s v3', hourly: 0.096, monthly: 70.08 },\n  storage: { perGB: 0.0208 }, network: { egressPerGB: 0.087 }, support: 'Developer',\n};\nconst gcp = {\n  provider: 'GCP', compute: { instance: 'e2-standard-2', hourly: 0.067, monthly: 48.91 },\n  storage: { perGB: 0.020 }, network: { egressPerGB: 0.12 }, support: 'Developer',\n};\n\nconsole.log(estimator.estimateMonthly(aws, 10, 500, 1000));\nconsole.log(estimator.estimateMonthly(azure, 10, 500, 1000));\nconsole.log(estimator.estimateMonthly(gcp, 10, 500, 1000));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-tagging-strategy-and-cost-allocation",
+      children: "Example 2: Tagging Strategy and Cost Allocation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface Tag {\n  key: string;\n  value: string;\n}\n\ninterface Resource {\n  id: string;\n  type: string;\n  tags: Tag[];\n  monthlyCost: number;\n}\n\nclass CostAllocator {\n  private resources: Resource[] = [];\n\n  addResource(resource: Resource): void {\n    this.resources.push(resource);\n  }\n\n  getCostByTag(tagKey: string): Record<string, number> {\n    const costs: Record<string, number> = {};\n\n    for (const resource of this.resources) {\n      const tag = resource.tags.find(t => t.key === tagKey);\n      const group = tag ? tag.value : 'untagged';\n      costs[group] = (costs[group] || 0) + resource.monthlyCost;\n    }\n\n    return costs;\n  }\n\n  findUntaggedResources(): Resource[] {\n    return this.resources.filter(r => r.tags.length === 0);\n  }\n\n  enforceTaggingPolicy(requiredTags: string[]): string[] {\n    const violations: string[] = [];\n\n    for (const resource of this.resources) {\n      const resourceKeys = resource.tags.map(t => t.key);\n      const missing = requiredTags.filter(k => !resourceKeys.includes(k));\n      if (missing.length > 0) {\n        violations.push(`${resource.id} missing tags: ${missing.join(', ')}`);\n      }\n    }\n\n    return violations;\n  }\n\n  generateReport(): string {\n    let report = '# Cloud Cost Allocation Report\\n\\n';\n    report += '## Cost by Team\\n';\n\n    const byTeam = this.getCostByTag('team');\n    for (const [team, cost] of Object.entries(byTeam)) {\n      report += `- ${team}: $${cost.toFixed(2)}/month\\n`;\n    }\n\n    report += '\\n## Cost by Environment\\n';\n    const byEnv = this.getCostByTag('environment');\n    for (const [env, cost] of Object.entries(byEnv)) {\n      report += `- ${env}: $${cost.toFixed(2)}/month\\n`;\n    }\n\n    report += '\\n## Untagged Resources\\n';\n    const untagged = this.findUntaggedResources();\n    report += untagged.length === 0 ? 'None\\n' : untagged.map(r => `- ${r.id}\\n`).join('');\n\n    report += '\\n## Policy Violations\\n';\n    const violations = this.enforceTaggingPolicy(['team', 'environment', 'project']);\n    report += violations.length === 0 ? 'None\\n' : violations.map(v => `- ${v}\\n`).join('');\n\n    return report;\n  }\n}\n\nconst allocator = new CostAllocator();\nallocator.addResource({ id: 'ec2-web-01', type: 'EC2', tags: [{ key: 'team', value: 'frontend' }, { key: 'environment', value: 'production' }, { key: 'project', value: 'web-app' }], monthlyCost: 70.08 });\nallocator.addResource({ id: 'rds-db-01', type: 'RDS', tags: [{ key: 'team', value: 'backend' }, { key: 'environment', value: 'production' }, { key: 'project', value: 'web-app' }], monthlyCost: 120.00 });\nallocator.addResource({ id: 's3-data-01', type: 'S3', tags: [], monthlyCost: 15.50 });\nallocator.addResource({ id: 'elb-prod', type: 'ELB', tags: [{ key: 'team', value: 'platform' }, { key: 'environment', value: 'production' }], monthlyCost: 22.30 });\n\nconsole.log(allocator.generateReport());\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-3-auto-scaling-policy-simulator",
+      children: "Example 3: Auto-Scaling Policy Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface ScalingPolicy {\n  metric: string;\n  targetValue: number;\n  minInstances: number;\n  maxInstances: number;\n  cooldownSeconds: number;\n  scaleUpBy: number;\n  scaleDownBy: number;\n}\n\ninterface AutoScalerState {\n  currentInstances: number;\n  lastScalingAction: number; // timestamp\n  metricValues: number[]; // recent metric values\n}\n\nclass AutoScalerSimulator {\n  private state: AutoScalerState;\n\n  constructor(private policy: ScalingPolicy) {\n    this.state = {\n      currentInstances: policy.minInstances,\n      lastScalingAction: Date.now(),\n      metricValues: [],\n    };\n  }\n\n  ingestMetric(value: number): string | null {\n    this.state.metricValues.push(value);\n    if (this.state.metricValues.length > 5) this.state.metricValues.shift();\n\n    return this.evaluate();\n  }\n\n  private evaluate(): string | null {\n    const now = Date.now();\n    if (now - this.state.lastScalingAction < this.policy.cooldownSeconds * 1000) return null;\n\n    const avg = this.state.metricValues.reduce((a, b) => a + b, 0) / this.state.metricValues.length;\n    const { currentInstances } = this.state;\n    const { targetValue, minInstances, maxInstances } = this.policy;\n\n    if (avg > targetValue * 1.2 && currentInstances < maxInstances) {\n      const newCount = Math.min(currentInstances + this.policy.scaleUpBy, maxInstances);\n      this.state.currentInstances = newCount;\n      this.state.lastScalingAction = now;\n      return `SCALE_UP: ${currentInstances} ? ${newCount} (avg: ${avg.toFixed(1)} > ${targetValue})`;\n    }\n\n    if (avg < targetValue * 0.6 && currentInstances > minInstances) {\n      const newCount = Math.max(currentInstances - this.policy.scaleDownBy, minInstances);\n      this.state.currentInstances = newCount;\n      this.state.lastScalingAction = now;\n      return `SCALE_DOWN: ${currentInstances} ? ${newCount} (avg: ${avg.toFixed(1)} < ${targetValue})`;\n    }\n\n    return null;\n  }\n\n  simulate(metrics: number[]): string[] {\n    const actions: string[] = [];\n    for (const m of metrics) {\n      const action = this.ingestMetric(m);\n      if (action) actions.push(action);\n    }\n    return actions;\n  }\n}\n\nconst policy: ScalingPolicy = {\n  metric: 'cpu', targetValue: 70, minInstances: 2, maxInstances: 10,\n  cooldownSeconds: 120, scaleUpBy: 2, scaleDownBy: 1,\n};\n\nconst simulator = new AutoScalerSimulator(policy);\nconst cpuMetrics = [45, 50, 55, 60, 75, 85, 90, 95, 30, 25, 20, 35, 40, 45, 50];\nconsole.log('Auto-scaling decisions:', simulator.simulate(cpuMetrics));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadest service catalog, largest market share"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep Microsoft integration, enterprise focus"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data/ML leadership, container-native, global network"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-Cloud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple providers, complex operations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid Cloud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "On-prem + cloud integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FinOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right-size, Reserved/Spot, Auto-scale, Tagging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud Governance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IAM, policies, compliance, budget controls"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EC2, Lambda, S3, RDS, EKS, IAM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure Services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMs, Functions, Blob, SQL, AKS, Entra ID"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GCP Services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compute Engine, Functions, Storage, Cloud SQL, GKE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FinOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Right-size, Reserved/Spot, Auto-scaling, Tagging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200+ services each, K8s (EKS/AKS/GKE)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Governance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SCPs, Azure Policy, Org Policies, Config rules"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Web"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Global CDN and web hosting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-cloud workload orchestration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid cloud with on-prem integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ML"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vertex AI vs SageMaker for ML pipelines"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cloud-cost-calculator",
+      children: "Cloud Cost Calculator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding cloud costs across providers is essential for budget management. The following tool compares pricing across AWS, Azure, and GCP for common resource types."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface ResourcePricing {\n  provider: string;\n  resourceType: string;\n  hourlyRate: number;\n  monthlyRate: number;\n  region: string;\n}\n\ninterface CostEstimate {\n  resources: ResourcePricing[];\n  totalMonthly: number;\n  totalAnnual: number;\n  recommendations: string[];\n}\n\nclass CloudCostCalculator {\n  private pricingCatalog: ResourcePricing[] = [\n    { provider: 'AWS', resourceType: 't3.medium', hourlyRate: 0.0416, monthlyRate: 30.37, region: 'us-east-1' },\n    { provider: 'Azure', resourceType: 'D2s_v3', hourlyRate: 0.0392, monthlyRate: 28.62, region: 'eastus' },\n    { provider: 'GCP', resourceType: 'e2-standard-2', hourlyRate: 0.0365, monthlyRate: 26.65, region: 'us-central1' },\n    { provider: 'AWS', resourceType: 't3.large', hourlyRate: 0.0832, monthlyRate: 60.74, region: 'us-east-1' },\n    { provider: 'Azure', resourceType: 'D4s_v3', hourlyRate: 0.0784, monthlyRate: 57.23, region: 'eastus' },\n    { provider: 'GCP', resourceType: 'e2-standard-4', hourlyRate: 0.0730, monthlyRate: 53.29, region: 'us-central1' },\n    { provider: 'AWS', resourceType: 'm5.xlarge', hourlyRate: 0.192, monthlyRate: 140.16, region: 'us-east-1' },\n    { provider: 'Azure', resourceType: 'D8s_v3', hourlyRate: 0.179, monthlyRate: 130.67, region: 'eastus' },\n    { provider: 'GCP', resourceType: 'n2-standard-8', hourlyRate: 0.168, monthlyRate: 122.64, region: 'us-central1' },\n  ];\n\n  estimate(requirements: { vcpu: number; memoryGB: number; hoursPerMonth: number }): CostEstimate {\n    const matched = this.pricingCatalog.filter(p => {\n      const specs = this.parseSpecs(p.resourceType);\n      return specs.vcpu >= requirements.vcpu && specs.memoryGB >= requirements.memoryGB;\n    });\n\n    const monthlyCosts = matched.map(r => ({\n      ...r,\n      actualMonthly: r.hourlyRate * requirements.hoursPerMonth,\n    }));\n\n    monthlyCosts.sort((a, b) => a.actualMonthly - b.actualMonthly);\n\n    const cheapest = monthlyCosts[0];\n    const recommendations: string[] = [];\n    if (cheapest) {\n      const mostExpensive = monthlyCosts[monthlyCosts.length - 1];\n      const savings = mostExpensive.actualMonthly - cheapest.actualMonthly;\n      recommendations.push(`Cheapest: ${cheapest.provider} ${cheapest.resourceType} at $${cheapest.actualMonthly.toFixed(2)}/mo`);\n      if (savings > 0) recommendations.push(`Potential savings: $${savings.toFixed(2)}/mo by choosing ${cheapest.provider}`);\n    }\n\n    const totalMonthly = monthlyCosts.reduce((s, r) => s + r.actualMonthly, 0) / Math.max(monthlyCosts.length, 1);\n    return {\n      resources: monthlyCosts,\n      totalMonthly: Math.round(totalMonthly * 100) / 100,\n      totalAnnual: Math.round(totalMonthly * 12 * 100) / 100,\n      recommendations,\n    };\n  }\n\n  private parseSpecs(type: string): { vcpu: number; memoryGB: number } {\n    const map: Record<string, { vcpu: number; memoryGB: number }> = {\n      't3.medium': { vcpu: 2, memoryGB: 4 },\n      'D2s_v3': { vcpu: 2, memoryGB: 8 },\n      'e2-standard-2': { vcpu: 2, memoryGB: 8 },\n      't3.large': { vcpu: 2, memoryGB: 8 },\n      'D4s_v3': { vcpu: 4, memoryGB: 16 },\n      'e2-standard-4': { vcpu: 4, memoryGB: 16 },\n      'm5.xlarge': { vcpu: 4, memoryGB: 16 },\n      'D8s_v3': { vcpu: 8, memoryGB: 32 },\n      'n2-standard-8': { vcpu: 8, memoryGB: 32 },\n    };\n    return map[type] || { vcpu: 2, memoryGB: 4 };\n  }\n}\n\nconst calculator = new CloudCostCalculator();\nconst estimate = calculator.estimate({ vcpu: 4, memoryGB: 16, hoursPerMonth: 730 });\nconsole.log(`Monthly: $${estimate.totalMonthly}, Annual: $${estimate.totalAnnual}`);\nestimate.recommendations.forEach(r => console.log(r));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What this demonstrates:"
+      }), " Multi-cloud cost comparison enables data-driven provider selection and identifies savings opportunities across AWS, Azure, and GCP."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Question 1: Which provider has the most global regions?"
+      }), "**A)** AWS", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Azure", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** GCP", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** DigitalOcean", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** Azure with 60+ regions</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+        children: [(0,jsx_runtime.jsx)(_components.summary, {
+          children: "Question 2: What is FinOps?"
+        }), "**A)** A cloud provider", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Cloud cost management practice", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** A monitoring tool", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** A deployment strategy", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** Cloud cost management practice</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+          children: [(0,jsx_runtime.jsx)(_components.summary, {
+            children: "Question 3: Which GCP service excels at serverless containers?"
+          }), "**A)** Compute Engine", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Cloud Functions", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** Cloud Run", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** GKE", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: C)** Cloud Run</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+            children: [(0,jsx_runtime.jsx)(_components.summary, {
+              children: "Question 4: What is the primary benefit of spot instances?"
+            }), "**A)** Higher performance", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** 60-90% cost discount", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** Better security", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** Guaranteed availability", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** 60-90% cost discount</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+              children: [(0,jsx_runtime.jsx)(_components.summary, {
+                children: "Question 5: Which AWS service provides DNS with routing policies?"
+              }), "**A)** CloudFront", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Route 53", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** ELB", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** VPC", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** Route 53</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "multi-cloud-cost-comparator",
+                children: "Multi-Cloud Cost Comparator"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "Choosing the optimal cloud provider for each workload requires detailed cost comparison. The following tool estimates and compares costs across providers for a given workload profile."
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-typescript",
+                  children: "// cloud-cost-comparator.ts\n// Compare costs across cloud providers for given workload profiles\n\ninterface WorkloadProfile {\n  vCPUs: number;\n  memoryGB: number;\n  storageGB: number;\n  storageType: 'ssd' | 'hdd' | 'object';\n  networkEgressGB: number;\n  hoursPerMonth: number;\n  databaseType: 'managed-sql' | 'managed-nosql' | 'self-hosted';\n  dbStorageGB: number;\n}\n\ninterface ProviderPricing {\n  computeHourly: number;\n  storageGBMonthly: number;\n  networkEgressPerGB: number;\n  managedDbHourly: number;\n  managedDbStorageGBMonthly: number;\n  discountReserved1yr: number;\n  discountReserved3yr: number;\n  discountSpot: number;\n}\n\ninterface CostBreakdown {\n  provider: string;\n  compute: number;\n  storage: number;\n  network: number;\n  database: number;\n  totalMonthly: number;\n  savingsWithReserved1yr: number;\n  savingsWithSpot: number;\n  recommendation: string;\n}\n\nclass CloudCostComparator {\n  private pricing: Record<string, ProviderPricing> = {\n    aws: { computeHourly: 0.0864, storageGBMonthly: 0.023, networkEgressPerGB: 0.09, managedDbHourly: 0.17, managedDbStorageGBMonthly: 0.115, discountReserved1yr: 0.4, discountReserved3yr: 0.6, discountSpot: 0.7 },\n    azure: { computeHourly: 0.0792, storageGBMonthly: 0.0208, networkEgressPerGB: 0.087, managedDbHourly: 0.156, managedDbStorageGBMonthly: 0.108, discountReserved1yr: 0.38, discountReserved3yr: 0.58, discountSpot: 0.65 },\n    gcp: { computeHourly: 0.0768, storageGBMonthly: 0.02, networkEgressPerGB: 0.12, managedDbHourly: 0.15, managedDbStorageGBMonthly: 0.10, discountReserved1yr: 0.35, discountReserved3yr: 0.55, discountSpot: 0.6 },\n  };\n\n  compare(workload: WorkloadProfile): CostBreakdown[] {\n    return Object.entries(this.pricing).map(([provider, p]) => {\n      const compute = workload.vCPUs * p.computeHourly * workload.hoursPerMonth;\n      const storage = workload.storageGB * p.storageGBMonthly;\n      const network = workload.networkEgressGB * p.networkEgressPerGB;\n      const database = workload.databaseType.startsWith('managed')\n        ? (p.managedDbHourly * workload.hoursPerMonth) + (workload.dbStorageGB * p.managedDbStorageGBMonthly)\n        : 0;\n      const totalMonthly = compute + storage + network + database;\n\n      const recommended = this.getRecommendation(workload, provider, totalMonthly);\n\n      return {\n        provider, compute: Math.round(compute * 100) / 100,\n        storage: Math.round(storage * 100) / 100,\n        network: Math.round(network * 100) / 100,\n        database: Math.round(database * 100) / 100,\n        totalMonthly: Math.round(totalMonthly * 100) / 100,\n        savingsWithReserved1yr: Math.round(totalMonthly * p.discountReserved1yr * 100) / 100,\n        savingsWithSpot: Math.round(totalMonthly * p.discountSpot * 100) / 100,\n        recommendation: recommended,\n      };\n    }).sort((a, b) => a.totalMonthly - b.totalMonthly);\n  }\n\n  generateReport(workload: WorkloadProfile): string {\n    const breakdowns = this.compare(workload);\n    const lines = [\n      `# Multi-Cloud Cost Comparison`,\n      `Workload: ${workload.vCPUs} vCPU, ${workload.memoryGB}GB RAM, ${workload.storageGB}GB storage`,\n      '',\n      '| Provider | Compute | Storage | Network | Database | Total/Month | 1yr Reserved | Spot |',\n      '|----------|---------|---------|---------|----------|-------------|--------------|------|',\n    ];\n    for (const b of breakdowns) {\n      lines.push(`| ${b.provider} | $${b.compute} | $${b.storage} | $${b.network} | $${b.database} | **$${b.totalMonthly}** | $${b.savingsWithReserved1yr} | $${b.savingsWithSpot} |`);\n    }\n    lines.push('', '**Recommendations:**');\n    for (const b of breakdowns) lines.push(`- ${b.provider}: ${b.recommendation}`);\n    return lines.join('\\n');\n  }\n\n  private getRecommendation(workload: WorkloadProfile, provider: string, cost: number): string {\n    if (workload.networkEgressGB > 1000) return 'High egress cost risk — consider CDN or multi-region';\n    if (workload.databaseType === 'managed-sql') return 'Good fit for managed SQL workloads';\n    if (workload.storageType === 'object' && workload.storageGB > 10000) return 'Object storage cost-effective at scale';\n    return `$${cost.toFixed(0)}/mo — ${cost < 500 ? 'cost-effective' : 'consider reserved instances'}`;\n  }\n}\n\nconst comparator = new CloudCostComparator();\nconst workload: WorkloadProfile = { vCPUs: 4, memoryGB: 16, storageGB: 500, storageType: 'ssd', networkEgressGB: 500, hoursPerMonth: 730, databaseType: 'managed-sql', dbStorageGB: 100 };\nconsole.log(comparator.generateReport(workload));\n"
+                })
+              }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                  children: "What this demonstrates:"
+                }), " Automated multi-cloud cost comparison enables data-driven provider selection and identifies savings opportunities through reserved instances and spot pricing."]
+              }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "// cloud platforms\n// cicd-infrastructure-automation implementation"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'cloud platforms', data: { topic: 'cicd-infrastructure-automation' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+              }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                id: "summary",
+                children: "Summary"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "Each major cloud provider offers comprehensive compute, storage, networking, and identity services. AWS provides the broadest service catalog. Azure excels in enterprise integration and Microsoft ecosystem. GCP leads in data analytics, ML, and container-native services. Multi-cloud and hybrid cloud strategies address specific business needs but add operational complexity. Cloud governance ensures security, compliance, and cost control. FinOps practices optimize cloud costs through right-sizing, reservation models, spot instances, and budget governance. Auto-scaling ensures cost-efficient capacity management for variable workloads."
+              }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "cloud-disaster-recovery-strategies",
+                children: "Cloud Disaster Recovery Strategies"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "Every cloud architecture needs a disaster recovery plan aligned to Recovery Time Objective (RTO) and Recovery Point Objective (RPO):"
+              }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                children: [(0,jsx_runtime.jsx)(_components.thead, {
+                  children: (0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.th, {
+                      children: "Strategy"
+                    }), (0,jsx_runtime.jsx)(_components.th, {
+                      children: "RTO"
+                    }), (0,jsx_runtime.jsx)(_components.th, {
+                      children: "RPO"
+                    }), (0,jsx_runtime.jsx)(_components.th, {
+                      children: "Cost"
+                    }), (0,jsx_runtime.jsx)(_components.th, {
+                      children: "Description"
+                    })]
+                  })
+                }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                  children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.td, {
+                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Backup & Restore"
+                      })
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Hours"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "24h"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Low"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Periodic backups to object storage, restore when needed"
+                    })]
+                  }), (0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.td, {
+                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Pilot Light"
+                      })
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Minutes"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Minutes"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Medium"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Core services running minimal, scale up on failover"
+                    })]
+                  }), (0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.td, {
+                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Warm Standby"
+                      })
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Minutes"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Seconds"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Medium-High"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Scaled-down full copy, scale up on failover"
+                    })]
+                  }), (0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.td, {
+                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Multi-Site Active/Active"
+                      })
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Near-zero"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Seconds"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "High"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Full production in two regions, traffic split"
+                    })]
+                  }), (0,jsx_runtime.jsxs)(_components.tr, {
+                    children: [(0,jsx_runtime.jsx)(_components.td, {
+                      children: (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Multi-Cloud DR"
+                      })
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Minutes"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Minutes"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "High"
+                    }), (0,jsx_runtime.jsx)(_components.td, {
+                      children: "Secondary provider for critical workloads"
+                    })]
+                  })]
+                })]
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-mermaid",
+                  children: "flowchart LR\n    subgraph \"Primary Region\"\n        A[Production<br/>us-east-1]\n    end\n    subgraph \"DR Region\"\n        B[Standby<br/>us-west-2]\n    end\n    A -->|Data Replication| B\n    A -->|Route 53 Failover| C[DNS]\n    B --> C\n    C --> D[Users]\n"
+                })
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-typescript",
+                  children: "interface DRPlan {\n  strategy: string;\n  rto: number; // minutes\n  rpo: number; // minutes\n  costPerMonth: number;\n  steps: string[];\n}\n\nclass DisasterRecoveryPlanner {\n  generatePlan(service: string, criticality: 'critical' | 'high' | 'medium'): DRPlan {\n    const plans: Record<string, DRPlan> = {\n      critical: {\n        strategy: 'Multi-Site Active/Active',\n        rto: 1, rpo: 1, costPerMonth: 15000,\n        steps: [\n          'Deploy identical infrastructure in second region',\n          'Configure synchronous database replication',\n          'Set up global load balancer with health checks',\n          'Implement automated failover and failback',\n          'Run quarterly Game Day exercises',\n        ],\n      },\n      high: {\n        strategy: 'Warm Standby',\n        rto: 15, rpo: 5, costPerMonth: 5000,\n        steps: [\n          'Deploy scaled-down infrastructure in DR region',\n          'Configure asynchronous replication',\n          'Automate scale-up and DNS switch on failover',\n          'Test failover monthly',\n        ],\n      },\n      medium: {\n        strategy: 'Pilot Light',\n        rto: 60, rpo: 30, costPerMonth: 1000,\n        steps: [\n          'Store AMIs and database snapshots in DR region',\n          'Maintain minimal networking in DR region',\n          'Automate infrastructure provisioning on failover',\n          'Test quarterly',\n        ],\n      },\n    };\n    return plans[criticality];\n  }\n}\n"
+                })
+              }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                id: "exercises",
+                children: "Exercises"
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "review-questions",
+                children: "Review Questions"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Compare EC2, Lambda, and ECS in terms of management overhead, scaling characteristics, and billing model."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "How does GCP's global VPC differ from AWS's regional VPC model?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "What are the primary cost drivers in cloud computing? How does FinOps address each?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Under what circumstances would you choose multi-cloud over single-cloud architecture?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Compare spot instances across AWS, Azure, and GCP. What workloads are suitable each?"
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "application-problems",
+                children: "Application Problems"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Create an AWS architecture diagram for a three-tier web application (web, API, database) using VPC, ALB, EC2 auto-scaling group, RDS Multi-AZ, ElastiCache, and S3 for static assets. Justify each service choice."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Calculate the cost comparison for a workload running 24/7: on-demand vs 1-year reserved vs 3-year reserved vs spot instances using public pricing."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Set up budget alerts on a cloud provider. Create a tagging strategy that allocates costs by project, environment, and team."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Write a TypeScript Pulumi program that deploys an S3 bucket with versioning, lifecycle rules to transition objects to Glacier after 90 days, and public access blocking. Use the CostAllocator class to estimate monthly costs based on 100GB storage with 10GB daily uploads."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Using the AutoScalerSimulator class from this chapter, configure a policy that: scales up when CPU exceeds 60% (add 1 instance), scales down when CPU drops below 30% (remove 1 instance), has min 3 and max 15 instances, and has a 60-second cooldown. Simulate with a workload pattern that spikes to 90% CPU during business hours (8 AM-6 PM) and drops to 10% overnight."
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "CostEstimator"
+                  }), " class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWS?GCP $0.09/GB, GCP?AWS $0.12/GB, Azure?AWS $0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers."]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["Write a ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "CloudGovernanceEnforcer"
+                  }), " class that: defines required tagging policies (team, environment, project, cost-center), scans a list of resources for compliance, generates weekly violation reports with cost impact of untagged resources, and auto-remediates by applying default tags to non-compliant resources (with dry-run mode). Use the ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "CostAllocator"
+                  }), " class for the cost impact calculation."]
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "challenge-problems",
+                children: "Challenge Problems"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                start: "8",
+                children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["Write a TypeScript class ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "CloudMigrationPlanner"
+                  }), " that implements the 7 Rs migration strategy. The class should: accept a list of workloads (each with name, dependencies, current location, criticality, and data size), classify each workload into one of the 7 Rs based on dependency analysis and criticality, generate a migration wave schedule respecting dependency ordering (critical path), calculate total data transfer costs based on egress pricing from the source provider, and output a JSON migration plan with per-wave resource requirements and rollback criteria."]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["Design a ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "MultiCloudOrchestrator"
+                  }), " class that: defines a unified ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "CloudProvider"
+                  }), " interface with methods ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "provisionCompute()"
+                  }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "provisionStorage()"
+                  }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "provisionDatabase()"
+                  }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "createNetwork()"
+                  }), "; implements the interface for AWS (using EC2/S3/RDS/VPC), Azure (VM/Blob/SQL/VNet), and GCP (Compute Engine/Storage/Cloud SQL/VPC); provides a ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "selectOptimalProvider"
+                  }), " method that picks the cheapest provider for each resource type given a workload profile; and generates a combined Terraform/Pulumi configuration that provisions resources across all three providers from a single deployment script."]
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "challenge-problem",
+                children: "Challenge Problem"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "Design a multi-cloud architecture for a global SaaS platform with the following requirements: primary workload on AWS for compute, secondary on GCP for data analytics, disaster recovery across providers, data residency compliance (EU data stays in EU, US data stays in US), global CDN for static assets, managed Kubernetes for container orchestration, and a monthly cloud budget not exceeding $50,000. Define the architecture, provider service mapping, networking topology, data replication strategy, cost allocation model, and governance policies with estimated cost breakdown."
+              }), "\n"]
+            })]
+          })]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

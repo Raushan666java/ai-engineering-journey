@@ -1,0 +1,5288 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[28689],{
+
+/***/ 33359
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_16_security_md_ad9_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-16-security-md-ad9.json
+const site_docs_courses_operating_systems_16_security_md_ad9_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/16-security","title":"Chapter 16: Security","description":"---","source":"@site/docs/courses/operating-systems/16-security.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/16-security","permalink":"/ai-engineering-journey/operating-systems/16-security","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":16,"frontMatter":{"id":"16-security","slug":"/operating-systems/16-security","title":"Chapter 16: Security","sidebar_label":"Chapter 16: Security","sidebar_position":16},"sidebar":"course-operating-systems","previous":{"title":"Chapter 15: Shell Scripting","permalink":"/ai-engineering-journey/operating-systems/15-shell-scripting"},"next":{"title":"Chapter 17: Virtualization","permalink":"/ai-engineering-journey/operating-systems/17-virtualization"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/16-security.md
+
+
+const frontMatter = {
+	id: '16-security',
+	slug: '/operating-systems/16-security',
+	title: 'Chapter 16: Security',
+	sidebar_label: 'Chapter 16: Security',
+	sidebar_position: 16
+};
+const contentTitle = 'Chapter 16: Security';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Security Goals",
+  "id": "security-goals",
+  "level": 3
+}, {
+  "value": "Security Threats",
+  "id": "security-threats",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy",
+  "level": 3
+}, {
+  "value": "Threat Classification",
+  "id": "threat-classification",
+  "level": 3
+}, {
+  "value": "Malware Attack Chain (Numbered Steps)",
+  "id": "malware-attack-chain-numbered-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode: Basic Malware Scanner",
+  "id": "pseudocode-basic-malware-scanner",
+  "level": 3
+}, {
+  "value": "C++: Simple Malware Signature Scanner",
+  "id": "c-simple-malware-signature-scanner",
+  "level": 3
+}, {
+  "value": "Python: Malware Scanner (Same Logic)",
+  "id": "python-malware-scanner-same-logic",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "Authentication",
+  "id": "authentication",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-1",
+  "level": 3
+}, {
+  "value": "Authentication Factors Comparison",
+  "id": "authentication-factors-comparison",
+  "level": 3
+}, {
+  "value": "Multi-Factor Authentication (MFA) Steps",
+  "id": "multi-factor-authentication-mfa-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode: Password Authentication Flow",
+  "id": "pseudocode-password-authentication-flow",
+  "level": 3
+}, {
+  "value": "Dry Run: Authentication Trace Table",
+  "id": "dry-run-authentication-trace-table",
+  "level": 3
+}, {
+  "value": "C++: Password Hashing with Salt",
+  "id": "c-password-hashing-with-salt",
+  "level": 3
+}, {
+  "value": "Python: Password Authentication System",
+  "id": "python-password-authentication-system",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-1",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-1",
+  "level": 3
+}, {
+  "value": "Authorization",
+  "id": "authorization",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-2",
+  "level": 3
+}, {
+  "value": "Authorization Steps",
+  "id": "authorization-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode: Authorization Decision",
+  "id": "pseudocode-authorization-decision",
+  "level": 3
+}, {
+  "value": "C++: Simple Authorization Check",
+  "id": "c-simple-authorization-check",
+  "level": 3
+}, {
+  "value": "Python: Authorization Check",
+  "id": "python-authorization-check",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-2",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-2",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-2",
+  "level": 3
+}, {
+  "value": "Access Control Models",
+  "id": "access-control-models",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-3",
+  "level": 3
+}, {
+  "value": "Discretionary Access Control (DAC)",
+  "id": "discretionary-access-control-dac",
+  "level": 3
+}, {
+  "value": "Steps for DAC Permission Check",
+  "id": "steps-for-dac-permission-check",
+  "level": 4
+}, {
+  "value": "Pseudocode: DAC Permission Decision",
+  "id": "pseudocode-dac-permission-decision",
+  "level": 4
+}, {
+  "value": "Dry Run: DAC Permission Check",
+  "id": "dry-run-dac-permission-check",
+  "level": 4
+}, {
+  "value": "Mandatory Access Control (MAC)",
+  "id": "mandatory-access-control-mac",
+  "level": 3
+}, {
+  "value": "SELinux Security Context",
+  "id": "selinux-security-context",
+  "level": 4
+}, {
+  "value": "Steps for MAC Permission Check",
+  "id": "steps-for-mac-permission-check",
+  "level": 4
+}, {
+  "value": "Role-Based Access Control (RBAC)",
+  "id": "role-based-access-control-rbac",
+  "level": 3
+}, {
+  "value": "RBAC Model (NIST Standard)",
+  "id": "rbac-model-nist-standard",
+  "level": 4
+}, {
+  "value": "Pseudocode: RBAC Authorization",
+  "id": "pseudocode-rbac-authorization",
+  "level": 4
+}, {
+  "value": "Access Control Models Comparison",
+  "id": "access-control-models-comparison",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-3",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-3",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-3",
+  "level": 3
+}, {
+  "value": "Cryptography Basics",
+  "id": "cryptography-basics",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-4",
+  "level": 3
+}, {
+  "value": "Symmetric vs Asymmetric Cryptography Comparison",
+  "id": "symmetric-vs-asymmetric-cryptography-comparison",
+  "level": 3
+}, {
+  "value": "Steps: Encrypting a File with AES (Symmetric)",
+  "id": "steps-encrypting-a-file-with-aes-symmetric",
+  "level": 3
+}, {
+  "value": "Pseudocode: AES Encryption (High Level)",
+  "id": "pseudocode-aes-encryption-high-level",
+  "level": 3
+}, {
+  "value": "Dry Run: AES Encryption (Simplified 1-Block)",
+  "id": "dry-run-aes-encryption-simplified-1-block",
+  "level": 3
+}, {
+  "value": "C++: AES Encryption (Using OpenSSL)",
+  "id": "c-aes-encryption-using-openssl",
+  "level": 3
+}, {
+  "value": "Python: RSA Encryption (Asymmetric)",
+  "id": "python-rsa-encryption-asymmetric",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-4",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-4",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-4",
+  "level": 3
+}, {
+  "value": "Buffer Overflow",
+  "id": "buffer-overflow",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-5",
+  "level": 3
+}, {
+  "value": "Stack Layout Diagram",
+  "id": "stack-layout-diagram",
+  "level": 3
+}, {
+  "value": "Steps: Buffer Overflow Exploit (Classic)",
+  "id": "steps-buffer-overflow-exploit-classic",
+  "level": 3
+}, {
+  "value": "C++: Vulnerable Program + Exploit",
+  "id": "c-vulnerable-program--exploit",
+  "level": 3
+}, {
+  "value": "Python: Simulated Buffer Overflow",
+  "id": "python-simulated-buffer-overflow",
+  "level": 3
+}, {
+  "value": "Defenses Against Buffer Overflows (Comparison)",
+  "id": "defenses-against-buffer-overflows-comparison",
+  "level": 3
+}, {
+  "value": "Stack Canary Visual",
+  "id": "stack-canary-visual",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-5",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-5",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-5",
+  "level": 3
+}, {
+  "value": "Intrusion Detection",
+  "id": "intrusion-detection",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-6",
+  "level": 3
+}, {
+  "value": "IDS Types",
+  "id": "ids-types",
+  "level": 3
+}, {
+  "value": "Steps: IDS Detection Flow",
+  "id": "steps-ids-detection-flow",
+  "level": 3
+}, {
+  "value": "Pseudocode: Simple Signature-Based IDS",
+  "id": "pseudocode-simple-signature-based-ids",
+  "level": 3
+}, {
+  "value": "C++: Simple IDS Component",
+  "id": "c-simple-ids-component",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-6",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-6",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-6",
+  "level": 3
+}, {
+  "value": "Firewalls",
+  "id": "firewalls",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-7",
+  "level": 3
+}, {
+  "value": "Firewall Types",
+  "id": "firewall-types",
+  "level": 3
+}, {
+  "value": "Steps: Packet Filter Decision",
+  "id": "steps-packet-filter-decision",
+  "level": 3
+}, {
+  "value": "Pseudocode: Simple Firewall",
+  "id": "pseudocode-simple-firewall",
+  "level": 3
+}, {
+  "value": "C++: Simple Firewall Rule Engine",
+  "id": "c-simple-firewall-rule-engine",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-7",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-7",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-7",
+  "level": 3
+}, {
+  "value": "Secure OS Design",
+  "id": "secure-os-design",
+  "level": 2
+}, {
+  "value": "Core Principles",
+  "id": "core-principles",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-8",
+  "level": 3
+}, {
+  "value": "Secure OS Architecture: SELinux Integration",
+  "id": "secure-os-architecture-selinux-integration",
+  "level": 3
+}, {
+  "value": "C++: Simulating Secure OS Access",
+  "id": "c-simulating-secure-os-access",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-8",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-8",
+  "level": 3
+}, {
+  "value": "Authentication (Password-Based)",
+  "id": "authentication-password-based",
+  "level": 3
+}, {
+  "value": "Two-Factor Authentication (2FA)",
+  "id": "two-factor-authentication-2fa",
+  "level": 4
+}, {
+  "value": "Access Control Models",
+  "id": "access-control-models-1",
+  "level": 3
+}, {
+  "value": "Discretionary Access Control (DAC)",
+  "id": "discretionary-access-control-dac-1",
+  "level": 4
+}, {
+  "value": "Mandatory Access Control (MAC)",
+  "id": "mandatory-access-control-mac-1",
+  "level": 4
+}, {
+  "value": "Role-Based Access Control (RBAC)",
+  "id": "role-based-access-control-rbac-1",
+  "level": 4
+}, {
+  "value": "Access Control Lists (ACLs)",
+  "id": "access-control-lists-acls",
+  "level": 4
+}, {
+  "value": "Privilege Escalation",
+  "id": "privilege-escalation",
+  "level": 3
+}, {
+  "value": "Vertical Escalation",
+  "id": "vertical-escalation",
+  "level": 4
+}, {
+  "value": "Horizontal Escalation",
+  "id": "horizontal-escalation",
+  "level": 4
+}, {
+  "value": "Defenses Against Buffer Overflows",
+  "id": "defenses-against-buffer-overflows",
+  "level": 4
+}, {
+  "value": "Linux Security Modules (LSM)",
+  "id": "linux-security-modules-lsm",
+  "level": 3
+}, {
+  "value": "SELinux",
+  "id": "selinux",
+  "level": 4
+}, {
+  "value": "AppArmor",
+  "id": "apparmor",
+  "level": 4
+}, {
+  "value": "Cryptography in the OS",
+  "id": "cryptography-in-the-os",
+  "level": 3
+}, {
+  "value": "Encryption at Rest",
+  "id": "encryption-at-rest",
+  "level": 4
+}, {
+  "value": "Trusted Platform Module (TPM)",
+  "id": "trusted-platform-module-tpm",
+  "level": 4
+}, {
+  "value": "Principle of Least Privilege",
+  "id": "principle-of-least-privilege",
+  "level": 3
+}, {
+  "value": "Common Vulnerabilities",
+  "id": "common-vulnerabilities",
+  "level": 3
+}, {
+  "value": "Race Conditions (TOCTOU)",
+  "id": "race-conditions-toctou",
+  "level": 4
+}, {
+  "value": "Format String Vulnerabilities",
+  "id": "format-string-vulnerabilities",
+  "level": 4
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: What is ASLR and how does it work?",
+  "id": "q1-what-is-aslr-and-how-does-it-work",
+  "level": 3
+}, {
+  "value": "Q2: What is DEP / NX and why is it important?",
+  "id": "q2-what-is-dep--nx-and-why-is-it-important",
+  "level": 3
+}, {
+  "value": "Q3: What is Ring -1 (negative one) in OS security?",
+  "id": "q3-what-is-ring--1-negative-one-in-os-security",
+  "level": 3
+}, {
+  "value": "Q4: Capabilities vs ACLs - compare and contrast.",
+  "id": "q4-capabilities-vs-acls---compare-and-contrast",
+  "level": 3
+}, {
+  "value": "Q5: SELinux vs AppArmor - which is better?",
+  "id": "q5-selinux-vs-apparmor---which-is-better",
+  "level": 3
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "Windows UAC (User Account Control)",
+  "id": "windows-uac-user-account-control",
+  "level": 3
+}, {
+  "value": "Linux Capabilities",
+  "id": "linux-capabilities",
+  "level": 3
+}, {
+  "value": "SELinux: Android Sandbox",
+  "id": "selinux-android-sandbox",
+  "level": 3
+}, {
+  "value": "macOS System Integrity Protection (SIP)",
+  "id": "macos-system-integrity-protection-sip",
+  "level": 3
+}, {
+  "value": "TPM (Trusted Platform Module)",
+  "id": "tpm-trusted-platform-module",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: Linux Capabilities",
+  "id": "example-1-linux-capabilities",
+  "level": 3
+}, {
+  "value": "Example 2: chroot and Containers",
+  "id": "example-2-chroot-and-containers",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript Implementation — Access Control &amp; Buffer Overflow Simulator",
+  "id": "typescript-implementation--access-control--buffer-overflow-simulator",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 3
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 3
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-16-security",
+        children: "Chapter 16: Security"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/15-shell-scripting",
+          children: "Shell Scripting"
+        })]
+      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/operating-systems/17-virtualization",
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next: Virtualization and Cloud Computing"
+        })
+      }), " >>"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify the four main goals of OS security: confidentiality, integrity, availability, and authentication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe authentication mechanisms from passwords to biometrics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain access control models: DAC, MAC, RBAC, and ACLs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand privilege escalation attacks and mitigations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe Linux Security Modules (LSM) and SELinux"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand buffer overflow attacks and modern mitigations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the principle of least privilege and its implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze cryptography basics: symmetric, asymmetric, hashing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Classify malware types: virus, worm, trojan, ransomware, rootkit"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security Goals"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confidentiality, integrity, availability (CIA triad)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Authentication"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Passwords, biometrics, two-factor, Kerberos"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Access Control"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discretionary (DAC), mandatory (MAC), role-based (RBAC)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Buffer Overflow"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classic exploit; overwrite return address to execute arbitrary code"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cryptography"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Symmetric (AES), asymmetric (RSA), hashing (SHA-256), signatures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewalls, VPNs, TLS, intrusion detection systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Security Goals: CIA] --> B[Authentication Methods]\n    B --> C[Access Control Models]\n    C --> D[Buffer Overflow & Malware]\n    D --> E[Cryptography Basics]\n    E --> F[Network Security]\n    F --> G[Security Best Practices]\n    G --> H[Summary]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/16-security.png",
+        alt: "Security"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "security-goals",
+      children: "Security Goals"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Goal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example Violation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Confidentiality"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data is accessible only to authorized users"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reading another user's files"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Integrity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data cannot be modified without authorization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tampering with system binaries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Availability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System resources are accessible when needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Denial-of-service attack"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Authentication"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Users are who they claim to be"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Password theft"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-threats",
+      children: "Security Threats"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Security threats are actions or events that compromise the confidentiality, integrity, or availability of a system. The OS must defend against both external attackers and malicious insiders."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Apartment Building Security"
+        }), ": Just as an apartment building has multiple layers (front door lock, mailbox lock, apartment door lock, safe), an OS has layered security. A \"threat\" is anyone trying to bypass these layers → a burglar picking the front lock, a thief stealing mail, a neighbor entering your apartment."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "threat-classification",
+      children: "Threat Classification"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Threat Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Propagation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Payload"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virus"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Attaches to host files; requires user action to spread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File infection, email attachments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data corruption, resource drain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CIH (Chernobyl) virus"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Worm"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-replicating; spreads without user action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network exploits, removable media"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bandwidth exhaustion, backdoor installation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Morris worm, WannaCry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Trojan"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disguised as legitimate software"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Social engineering, fake downloads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Credential theft, spyware, ransomware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zeus banking trojan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ransomware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypts files and demands payment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Phishing emails, exploit kits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File encryption, data exfiltration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ryuk, LockBit, BlackCat"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rootkit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hides deep in the OS (kernel/boot)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver installation, bootkits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stealth persistence, keylogging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sony BMG rootkit, Stuxnet"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Spyware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Secretly monitors user activity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bundled software, drive-by download"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data theft, screen capture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pegasus, DarkComet"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Adware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Displays unwanted advertisements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bundled installers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Revenue fraud, browser hijacking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fireball, Gator"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "malware-attack-chain-numbered-steps",
+      children: "Malware Attack Chain (Numbered Steps)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Delivery → Attacker delivers payload via email, exploit, or USB\nStep 2: Execution → User opens file or exploit triggers code execution\nStep 3: Persistence → Malware installs itself (registry keys, cron jobs, services)\nStep 4: Privilege Escalation → Malware escalates to SYSTEM/root\nStep 5: Defense Evasion → Malware disables AV, hides processes, clears logs\nStep 6: Credential Access → Malware steals passwords, tokens, hashes\nStep 7: Lateral Movement → Malware spreads to other systems on the network\nStep 8: Exfiltration/Impact → Data stolen or system encrypted/destroyed\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-basic-malware-scanner",
+      children: "Pseudocode: Basic Malware Scanner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION scanFile(filePath):\n    signatures = loadSignatures(\"virus_definitions.dat\")\n    fileContent = readFile(filePath)\n    FOR EACH sig IN signatures:\n        IF contains(fileContent, sig.pattern):\n            LOG \"Threat detected: \" + sig.name + \" in \" + filePath\n            quarantineFile(filePath)\n            RETURN \"INFECTED: \" + sig.name\n    RETURN \"CLEAN\"\n\nFUNCTION quarantineFile(filePath):\n    quarantineDir = \"/quarantine/\" + timestamp()\n    copyFile(filePath, quarantineDir)\n    deleteFile(filePath)\n    LOG \"Quarantined: \" + filePath\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-simple-malware-signature-scanner",
+      children: "C++: Simple Malware Signature Scanner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <fstream>\n#include <vector>\n#include <string>\n#include <ctime>\nusing namespace std;\n\nstruct Signature {\n    string name;\n    string pattern;\n    int severity; // 1-5\n};\n\nclass MalwareScanner {\nprivate:\n    vector<Signature> signatures;\n    int scanCount = 0, threatCount = 0;\n\npublic:\n    void loadSignatures(const string& path) {\n        ifstream file(path);\n        string name, pattern;\n        int sev;\n        while (file >> name >> pattern >> sev)\n            signatures.push_back({name, pattern, sev});\n    }\n\n    string scanFile(const string& path) {\n        ifstream file(path);\n        if (!file) return \"ERROR: Cannot open \" + path;\n        string content((istreambuf_iterator<char>(file)), {});\n        scanCount++;\n        for (auto& sig : signatures) {\n            if (content.find(sig.pattern) != string::npos) {\n                threatCount++;\n                string threat = sig.name + \" [\" + to_string(sig.severity) + \"]\";\n                cout << \"[THREAT] \" << threat << \" in \" << path << endl;\n                quarantine(path);\n                return threat;\n            }\n        }\n        return \"CLEAN\";\n    }\n\n    void quarantine(const string& path) {\n        string dest = \"quarantine/\" + to_string(time(0)) + \"_\" + path;\n        ifstream src(path, ios::binary);\n        ofstream dst(dest, ios::binary);\n        dst << src.rdbuf();\n        remove(path.c_str());\n        cout << \"[QUARANTINED] \" << path << \" -> \" << dest << endl;\n    }\n\n    void report() {\n        cout << \"\\n--- Scan Report ---\" << endl;\n        cout << \"Files scanned: \" << scanCount << endl;\n        cout << \"Threats found: \" << threatCount << endl;\n    }\n};\n\nint main() {\n    MalwareScanner scanner;\n    scanner.loadSignatures(\"signatures.dat\");\n    cout << scanner.scanFile(\"suspicious.exe\") << endl;\n    cout << scanner.scanFile(\"legit.doc\") << endl;\n    scanner.report();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-malware-scanner-same-logic",
+      children: "Python: Malware Scanner (Same Logic)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import os\nimport shutil\nfrom datetime import datetime\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass\nclass Signature:\n    name: str\n    pattern: str\n    severity: int\n\nclass MalwareScanner:\n    def __init__(self):\n        self.signatures: list[Signature] = []\n        self.scan_count = 0\n        self.threat_count = 0\n\n    def load_signatures(self, path: str) -> None:\n        with open(path) as f:\n            for line in f:\n                name, pattern, sev = line.strip().split()\n                self.signatures.append(Signature(name, pattern, int(sev)))\n\n    def scan_file(self, path: str) -> str:\n        try:\n            with open(path, 'rb') as f:\n                content = f.read()\n        except FileNotFoundError:\n            return f\"ERROR: Cannot open {path}\"\n        self.scan_count += 1\n        for sig in self.signatures:\n            if sig.pattern.encode() in content:\n                self.threat_count += 1\n                result = f\"{sig.name} [{sig.severity}]\"\n                print(f\"[THREAT] {result} in {path}\")\n                self._quarantine(path)\n                return result\n        return \"CLEAN\"\n\n    def _quarantine(self, path: str) -> None:\n        dest = f\"quarantine/{datetime.now().timestamp()}_{os.path.basename(path)}\"\n        os.makedirs(\"quarantine\", exist_ok=True)\n        shutil.copy2(path, dest)\n        os.remove(path)\n        print(f\"[QUARANTINED] {path} -> {dest}\")\n\n    def report(self) -> None:\n        print(f\"\\n--- Scan Report ---\")\n        print(f\"Files scanned: {self.scan_count}\")\n        print(f\"Threats found: {self.threat_count}\")\n\nif __name__ == \"__main__\":\n    s = MalwareScanner()\n    s.load_signatures(\"signatures.dat\")\n    print(s.scan_file(\"suspicious.exe\"))\n    print(s.scan_file(\"legit.doc\"))\n    s.report()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signature loading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S = number of signatures; each stored in memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File scanning (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S * N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S signatures * N file bytes; contains() is O(N) per sig"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File scanning (Aho-Corasick)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S + N + M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S + M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build automaton O(S), scan O(N), M = total pattern matches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Quarantine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "F = file size; must copy entire file"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Signature-Based Scanning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavioral Analysis"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Heuristic Scanning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low false positives, fast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detects novel malware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Balances speed and detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Misses zero-day variants"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High false positives, slow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate false positives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Known threats"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unknown malware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variants of known families"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Polymorphic malware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Changes signature each infection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use behavioral/heuristic analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Encrypted/obfuscated payload"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Static pattern matching fails"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decrypt/deobfuscate first or use emulation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Large files (>2GB)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory exhaustion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stream-based scanning (chunked reads)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Zero-day malware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No signature exists"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Behavioral monitoring, sandbox execution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Race condition on quarantine"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File deleted between check and quarantine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use atomic rename + exclusive locks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "authentication",
+      children: "Authentication"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Authentication verifies a user's claimed identity. It is the first line of defense in any secure system."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-1",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Airport Security Check"
+        }), ": To board a flight, you must prove your identity. \"Something you know\" = your booking reference. \"Something you have\" = your passport. \"Something you are\" = your face matched to the passport photo. The gate agent checks all three before allowing you through."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "authentication-factors-comparison",
+      children: "Authentication Factors Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Factor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Examples"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Strength"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Weakness"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge"
+            }), " (Type 1)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Something you know"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Password, PIN, security questions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replay, phishing, shoulder surfing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Possession"
+            }), " (Type 2)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Something you have"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Phone (TOTP), YubiKey, smart card"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium-high"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theft, loss, SIM swap"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Inherence"
+            }), " (Type 3)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Something you are"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fingerprint, face, iris, voice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot be reset; biometric data leakage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Location"
+            }), " (Type 4)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Somewhere you are"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPS, IP geo, Wi-Fi SSID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (contextual)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spoofable, VPN bypass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Behavior"
+            }), " (Type 5)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Something you do"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keystroke dynamics, gait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High false rejection rate"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "multi-factor-authentication-mfa-steps",
+      children: "Multi-Factor Authentication (MFA) Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: User submits username + password (Type 1)\nStep 2: Server validates password hash against database\nStep 3: Server generates random challenge (nonce)\nStep 4: Server sends challenge to user's registered device (Type 2)\nStep 5: User responds with signed challenge (TOTP or hardware token)\nStep 6: Server verifies response cryptographically\nStep 7: Server issues session token (JWT / session cookie)\nStep 8: User accesses resources using session token\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-password-authentication-flow",
+      children: "Pseudocode: Password Authentication Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION authenticateUser(username, password):\n    userRecord = DB.getUser(username)\n    IF userRecord == NULL:\n        RETURN \"USER_NOT_FOUND\"\n    \n    salt = userRecord.salt\n    storedHash = userRecord.hash\n    inputHash = slowHash(password, salt)  // bcrypt/scrypt/Argon2\n    \n    IF inputHash == storedHash:\n        sessionToken = generateSessionToken()\n        DB.storeSession(username, sessionToken)\n        RETURN \"SUCCESS:\" + sessionToken\n    ELSE:\n        incrementFailedAttempts(username)\n        IF failedAttempts > MAX_ATTEMPTS:\n            lockAccount(username)\n            RETURN \"ACCOUNT_LOCKED\"\n        RETURN \"INVALID_PASSWORD\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-authentication-trace-table",
+      children: "Dry Run: Authentication Trace Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Input"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Output"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"alice\", \"pass123\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Query DB for user"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Found: salt=0xAB12, hash=0x7D3F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash password with salt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "hash(\"pass123\" + \"AB12\") = ?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Calculate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow hash: bcrypt with cost=12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~250ms computation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Result: 0x7D3F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare computed vs stored"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0x7D3F == 0x7D3F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate session token"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UUID v4: \"a1b2c3...\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Token"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store session in DB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "key:token, value:alice, TTL:3600s"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stored"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return success"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"SUCCESS: a1b2c3...\""
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-password-hashing-with-salt",
+      children: "C++: Password Hashing with Salt"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <sstream>\n#include <iomanip>\n#include <random>\n#include <cstring>\nusing namespace std;\n\nclass PasswordHasher {\nprivate:\n    random_device rd;\n    mt19937_64 gen{rd()};\n    uniform_int_distribution<> dis{0, 255};\n\n    string toHex(const unsigned char* data, size_t len) {\n        stringstream ss;\n        for (size_t i = 0; i < len; i++)\n            ss << hex << setw(2) << setfill('0') << (int)data[i];\n        return ss.str();\n    }\n\npublic:\n    string generateSalt(size_t bytes = 16) {\n        unsigned char salt[16];\n        for (size_t i = 0; i < bytes; i++)\n            salt[i] = dis(gen) & 0xFF;\n        return toHex(salt, bytes);\n    }\n\n    string hashPassword(const string& password, const string& salt) {\n        string combined = salt + password;\n        unsigned char result[32];\n        memset(result, 0, 32);\n        for (size_t i = 0; i < combined.size(); i++)\n            result[i % 32] ^= combined[i];\n        return toHex(result, 32);\n    }\n\n    struct User {\n        string username;\n        string salt;\n        string hash;\n    };\n\n    User createUser(const string& username, const string& password) {\n        string s = generateSalt();\n        string h = hashPassword(password, s);\n        return {username, s, h};\n    }\n\n    bool verifyPassword(const User& user, const string& password) {\n        string h = hashPassword(password, user.salt);\n        return h == user.hash;\n    }\n};\n\nint main() {\n    PasswordHasher ph;\n    auto user = ph.createUser(\"alice\", \"mySecureP@ss\");\n    cout << \"Username: \" << user.username << endl;\n    cout << \"Salt:     \" << user.salt << endl;\n    cout << \"Hash:     \" << user.hash << endl;\n    cout << \"\\nVerification:\" << endl;\n    cout << \"Correct pw: \" << ph.verifyPassword(user, \"mySecureP@ss\") << endl;\n    cout << \"Wrong pw:   \" << ph.verifyPassword(user, \"wrongPass\") << endl;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-password-authentication-system",
+      children: "Python: Password Authentication System"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import hashlib\nimport os\nimport uuid\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass\nclass User:\n    username: str\n    salt: str\n    hash: str\n\nclass AuthSystem:\n    def __init__(self):\n        self.users: dict[str, User] = {}\n        self.sessions: dict[str, str] = {}\n        self.failed_attempts: dict[str, int] = {}\n        self.max_attempts = 3\n\n    def _generate_salt(self) -> str:\n        return os.urandom(16).hex()\n\n    def _hash_password(self, password: str, salt: str) -> str:\n        return hashlib.pbkdf2_hmac('sha256',\n            password.encode(), salt.encode(), 100000).hex()\n\n    def create_user(self, username: str, password: str) -> User:\n        salt = self._generate_salt()\n        hash_val = self._hash_password(password, salt)\n        user = User(username, salt, hash_val)\n        self.users[username] = user\n        print(f\"[AUTH] Created user: {username}\")\n        return user\n\n    def authenticate(self, username: str, password: str) -> Optional[str]:\n        if username not in self.users:\n            return None\n        if self.failed_attempts.get(username, 0) >= self.max_attempts:\n            print(f\"[AUTH] Account locked: {username}\")\n            return None\n        user = self.users[username]\n        computed = self._hash_password(password, user.salt)\n        if computed != user.hash:\n            self.failed_attempts[username] = \\\n                self.failed_attempts.get(username, 0) + 1\n            remaining = self.max_attempts - self.failed_attempts[username]\n            print(f\"[AUTH] Failed attempt for {username} ({remaining} remaining)\")\n            return None\n        self.failed_attempts[username] = 0\n        token = str(uuid.uuid4())\n        self.sessions[token] = username\n        print(f\"[AUTH] {username} authenticated successfully\")\n        return token\n\n    def check_session(self, token: str) -> Optional[str]:\n        return self.sessions.get(token)\n\n    def logout(self, token: str) -> None:\n        self.sessions.pop(token, None)\n\nif __name__ == \"__main__\":\n    auth = AuthSystem()\n    auth.create_user(\"alice\", \"secure123\")\n    auth.create_user(\"bob\", \"password456\")\n    token = auth.authenticate(\"alice\", \"secure123\")\n    print(f\"Session: {auth.check_session(token)}\")\n    auth.authenticate(\"bob\", \"wrongpass\")\n    auth.authenticate(\"bob\", \"wrongpass\")\n    auth.authenticate(\"bob\", \"wrongpass\")\n    auth.authenticate(\"bob\", \"stillwrong\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash computation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed input size; *iterations multiplies constant (e.g., PBKDF2=100k rounds)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Salt generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Random bytes; constant time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User lookup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) avg"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(U)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash table; U = number of users"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Session validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) avg"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash table; S = active sessions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-1",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Password-Only"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MFA (2FA/TOTP)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Biometric-Only"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple, universal user experience"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong security against credential theft"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very hard to forge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weak against phishing/breach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User friction, device dependency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Privacy concerns, cannot reset"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reset via email"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can lose device"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Biometric data is permanent"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-1",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Salt collision"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two users get same salt (low probability but possible)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use cryptographic RNG; salt length >= 16 bytes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Brute force"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Attacker tries all password combinations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate limiting, account lockout, exponential backoff"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Side-channel timing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Attacker measures response time to guess hash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constant-time comparison (hash_equals / timing_safe_compare)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Password reuse"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User reuses password across services"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Password blacklist checking (HaveIBeenPwned API)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Session hijacking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Token stolen via XSS or network sniffing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTPS only, HttpOnly cookies, short TTL, refresh rotation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "authorization",
+      children: "Authorization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After authentication confirms who you are, authorization determines what you can do. Authentication is about identity; authorization is about permissions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-2",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Office Building Access"
+        }), ": After showing your ID badge at the front desk (authentication), authorization determines which floors you can access. An intern can access only the ground floor (low authorization), an engineer can access floors 2-5 (medium authorization), and the CEO can access all floors including the penthouse (high authorization)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "authorization-steps",
+      children: "Authorization Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: User is authenticated (identity established)\nStep 2: System identifies the resource being accessed (object)\nStep 3: System determines the type of operation (read/write/execute/delete)\nStep 4: System looks up access rules for this user + resource + operation\nStep 5: System evaluates the rules:\n    - Does the user own the resource? -> DAC check\n    - Does the user's role permit this? -> RBAC check\n    - Does the system policy allow this? -> MAC check\nStep 6: Grant or deny access; log the decision (audit trail)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-authorization-decision",
+      children: "Pseudocode: Authorization Decision"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION checkAccess(user, resource, operation):\n    // DAC layer -- does the user own the resource?\n    IF resource.owner == user.uid:\n        permission = resource.ownerPermissions\n        IF permission.contains(operation):\n            RETURN \"GRANTED\"\n    // ACL layer -- explicit user/group entries\n    IF user.uid IN resource.acl.users:\n        RETURN resource.acl.users[user.uid].contains(operation)\n    IF any(user.groups & resource.acl.groups):\n        RETURN resource.acl.groups[common].contains(operation)\n    // Default: check \"others\" permissions\n    RETURN resource.othersPermissions.contains(operation)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-simple-authorization-check",
+      children: "C++: Simple Authorization Check"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <unordered_map>\n#include <unordered_set>\n#include <vector>\nusing namespace std;\n\nenum Operation { READ, WRITE, EXECUTE, DELETE };\nconst string opNames[] = {\"READ\", \"WRITE\", \"EXECUTE\", \"DELETE\"};\n\nstruct User {\n    string name;\n    int uid;\n    unordered_set<string> groups;\n};\n\nstruct Resource {\n    string path;\n    int ownerUid;\n    unordered_set<Operation> ownerPerms;\n    unordered_set<Operation> groupPerms;\n    unordered_set<Operation> otherPerms;\n    unordered_map<string, unordered_set<Operation>> userACL;\n};\n\nclass AuthorizationService {\npublic:\n    bool checkAccess(const User& user, const Resource& res, Operation op) {\n        if (user.uid == res.ownerUid && res.ownerPerms.count(op))\n            return true;\n        if (res.userACL.count(user.name) && res.userACL.at(user.name).count(op))\n            return true;\n        for (auto& g : res.userACL) {\n            if (user.groups.count(g.first) && g.second.count(op))\n                return true;\n        }\n        return res.otherPerms.count(op);\n    }\n};\n\nint main() {\n    AuthorizationService authz;\n    User alice{\"alice\", 1001, {\"dev\", \"users\"}};\n    User bob{\"bob\", 1002, {\"qa\", \"users\"}};\n    Resource secretFile{\n        \"/etc/secret.conf\", 1001,\n        {READ, WRITE}, {READ}, {},\n        {{\"bob\", {READ}}}\n    };\n    cout << \"Alice read:  \" << authz.checkAccess(alice, secretFile, READ) << endl;\n    cout << \"Alice write: \" << authz.checkAccess(alice, secretFile, WRITE) << endl;\n    cout << \"Bob read:    \" << authz.checkAccess(bob, secretFile, READ) << endl;\n    cout << \"Bob write:   \" << authz.checkAccess(bob, secretFile, WRITE) << endl;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-authorization-check",
+      children: "Python: Authorization Check"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from enum import Enum, auto\nfrom dataclasses import dataclass, field\n\nclass Operation(Enum):\n    READ = auto()\n    WRITE = auto()\n    EXECUTE = auto()\n    DELETE = auto()\n\n@dataclass\nclass User:\n    name: str\n    uid: int\n    groups: set[str] = field(default_factory=set)\n\n@dataclass\nclass Resource:\n    path: str\n    owner_uid: int\n    owner_perms: set[Operation] = field(default_factory=set)\n    group_perms: set[Operation] = field(default_factory=set)\n    other_perms: set[Operation] = field(default_factory=set)\n    user_acl: dict[str, set[Operation]] = field(default_factory=dict)\n\nclass AuthorizationService:\n    def check_access(self, user: User, resource: Resource,\n                     operation: Operation) -> bool:\n        if user.uid == resource.owner_uid and \\\n           operation in resource.owner_perms:\n            return True\n        if user.name in resource.user_acl and \\\n           operation in resource.user_acl[user.name]:\n            return True\n        for group in user.groups:\n            if group in resource.user_acl and \\\n               operation in resource.user_acl[group]:\n                return True\n        return operation in resource.other_perms\n\nif __name__ == \"__main__\":\n    authz = AuthorizationService()\n    alice = User(\"alice\", 1001, {\"dev\", \"users\"})\n    bob = User(\"bob\", 1002, {\"qa\", \"users\"})\n    secret = Resource(\n        path=\"/etc/secret.conf\", owner_uid=1001,\n        owner_perms={Operation.READ, Operation.WRITE},\n        group_perms={Operation.READ},\n        other_perms=set(),\n        user_acl={\"bob\": {Operation.READ}}\n    )\n    print(f\"Alice read:  {authz.check_access(alice, secret, Operation.READ)}\")\n    print(f\"Alice write: {authz.check_access(alice, secret, Operation.WRITE)}\")\n    print(f\"Bob read:    {authz.check_access(bob, secret, Operation.READ)}\")\n    print(f\"Bob write:   {authz.check_access(bob, secret, Operation.WRITE)}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-2",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL lookup (direct user)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash table; A = number of ACL entries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL lookup (group membership)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "G = user's groups; linear scan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Owner check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct UID comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full authorization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G) avg"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(A + G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depends on ACL structure"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-2",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ACL-Based"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Capability-Based"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Policy-Based (MAC)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intuitive, Unix heritage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fine-grained, delegatable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System-enforced, tamper-proof"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Difficult to audit at scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Revocation is complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inflexible, complex policy management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Granularity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-user/group"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-token"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System-wide label matching"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-2",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Least privilege violation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User granted more access than needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Periodic permission reviews, RBAC role mining"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Permission creep"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accumulated access across role changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time-bound assignments, quarterly audits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Confused deputy problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legitimate program tricked into unauthorized actions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capability-based security, sandboxing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TOCTOU on ACL check"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACL changes between check and use"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic operations, deny-by-default"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "access-control-models",
+      children: "Access Control Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Access control models define how subjects (users, processes) can interact with objects (files, devices, memory)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-3",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Library Access Systems"
+        }), ": DAC = a book owner decides who borrows their book. MAC = the library has a classified section; no one below Top Secret clearance can enter. RBAC = \"Librarians\" can check books in/out; \"Patrons\" can browse and borrow; \"Managers\" can order new books → permissions go with the role, not the person."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "discretionary-access-control-dac",
+      children: "Discretionary Access Control (DAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In DAC, the owner of an object decides who can access it. This is the standard Unix/Linux permission model."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "steps-for-dac-permission-check",
+      children: "Steps for DAC Permission Check"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: User executes operation on object (e.g., open file for writing)\nStep 2: Kernel gets the object's owner UID, owning GID, and permission bits\nStep 3: Kernel gets the user's UID and supplementary group list\nStep 4: If user UID == object owner UID -> use owner permission bits\nStep 5: Else if user is in object's group -> use group permission bits\nStep 6: Else -> use \"others\" permission bits\nStep 7: If required operation bit is set -> GRANT; else -> DENY\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-dac-permission-decision",
+      children: "Pseudocode: DAC Permission Decision"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION checkUnixPermissions(user, file, requestedOp):\n    ownerBits = (file.permissions >> 6) & 0x07\n    groupBits = (file.permissions >> 3) & 0x07\n    otherBits = file.permissions & 0x07\n\n    IF user.uid == file.ownerUid:\n        RETURN (ownerBits & requestedOp) != 0\n    IF user.gid == file.groupGid OR user in file.supplementalGroups:\n        RETURN (groupBits & requestedOp) != 0\n    RETURN (otherBits & requestedOp) != 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "dry-run-dac-permission-check",
+      children: "Dry Run: DAC Permission Check"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Scenario: User alice (uid=1001) tries to WRITE to /etc/config. Permissions: -rw-r----- (640) owner=root group=root"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User UID == file owner?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1001 != 0 (root)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User GID == file GID?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1001 != 0 (root)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fall to \"others\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "others bits = --- (0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 & W not true"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Final decision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DENIED"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mandatory-access-control-mac",
+      children: "Mandatory Access Control (MAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In MAC, system-wide policy controls access. Users cannot override these rules, even if they own the object."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "selinux-security-context",
+      children: "SELinux Security Context"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every subject (process) and object (file, socket) has a security context:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "user:role:type:level\n\nExample:\nsystem_u:object_r:httpd_sys_content_t:s0\n\n- user: SELinux user identity (system_u, user_u)\n- role: RBAC role within SELinux (object_r, system_r)\n- type: Type Enforcement -- the primary access control decision point\n- level: MLS (Multi-Level Security) sensitivity\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "steps-for-mac-permission-check",
+      children: "Steps for MAC Permission Check"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Subject (process with context S) requests operation OP on object (context O)\nStep 2: Kernel calls LSM hook (e.g., security_file_permission)\nStep 3: SELinux looks up the Access Vector Cache (AVC)\nStep 4: AVC searches for an entry: allow S.type O.type : class { OP }\nStep 5: If cached decision exists -> return cached result\nStep 6: If not cached -> query policy database (binary .pp policy)\nStep 7: Compute decision: allowed if ANY allow rule matches\nStep 8: Cache decision in AVC for future requests\nStep 9: Return allow/deny\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "role-based-access-control-rbac",
+      children: "Role-Based Access Control (RBAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "RBAC assigns permissions to roles, and users to roles."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "rbac-model-nist-standard",
+      children: "RBAC Model (NIST Standard)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Core RBAC:\n  - User-Role Assignment: users are members of roles\n  - Role-Permission Assignment: roles have permissions\n  - User's effective permissions = U(role permissions)\n\nHierarchical RBAC:\n  - Role hierarchy: senior roles inherit junior role permissions\n  - Example: admin inherits all editor permissions + more\n\nConstrained RBAC:\n  - Separation of Duty (SoD): conflicting roles cannot overlap\n  - Example: same person cannot be both \"purchaser\" and \"approver\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode-rbac-authorization",
+      children: "Pseudocode: RBAC Authorization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION checkRBAC(user, resource, operation):\n    userRoles = getUserRoles(user)\n    FOR EACH role IN userRoles:\n        permissions = getRolePermissions(role)\n        resourcePerms = permissions.get(resource)\n        IF resourcePerms AND resourcePerms.contains(operation):\n            RETURN \"GRANTED\"\n        inheritedRoles = getParentRoles(role)\n        FOR EACH inherited IN inheritedRoles:\n            inheritedPerms = getRolePermissions(inherited)\n            IF inheritedPerms.get(resource).contains(operation):\n                RETURN \"GRANTED\"\n    RETURN \"DENIED\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "access-control-models-comparison",
+      children: "Access Control Models Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RBAC"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Control by"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File owner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System policy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Flexibility"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (users decide)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (centralized)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security Level"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (user-granted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (kernel-enforced)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate-High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Tamper resistance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (users cannot bypass)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Granularity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-user/group/other"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-label pair"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-role"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (policy authoring)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Auditability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (decentralized)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Examples"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unix permissions, NTFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux, AppArmor, SMACK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows AD groups, AWS IAM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use Case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktops, general servers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Military, classified systems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise organizations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-3",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Model"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Authorization Decision"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Policy Storage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DAC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple bitmask check on file inode; F = number of files"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC (SELinux AVC)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) cached"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AVC hash cache; P = number of policy rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC (uncached)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary search in avtab (AVL tree of allow rules)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RBAC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R * H)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R + P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R = user's roles, H = hierarchy depth"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-3",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RBAC"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intuitive, decentralized"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong security, tamper-proof"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalable permission management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Malware inherits user perms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex to configure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role explosion risk"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintenance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy per-file"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Difficult overall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-3",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SetUID + DAC bypass"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Program runs as owner, not caller"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avoid SetUID; use capabilities"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type collision (MAC)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Different apps share same type"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use fine-grained type definitions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Role explosion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hundreds of roles created"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role mining, attribute-based access (ABAC)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Privilege escalation via transitive role"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role A grants role B which grants admin"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proper separation of duties"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "User namespace remapping"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root inside namespace != host root"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explicit UID mapping configuration"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cryptography-basics",
+      children: "Cryptography Basics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cryptography provides the mathematical foundation for confidentiality, integrity, and authentication in operating systems."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-4",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Locked Diary + Sealed Envelope"
+        }), ": Symmetric encryption is like a locked diary → you use the same key to lock and unlock it. Asymmetric encryption is like a mailbox with a slot → anyone can drop mail in (public key encrypts), but only the owner with the private key can open it. Hashing is like a fingerprint → unique to the document, but you cannot reconstruct the person from the fingerprint."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "symmetric-vs-asymmetric-cryptography-comparison",
+      children: "Symmetric vs Asymmetric Cryptography Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Symmetric (AES)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Asymmetric (RSA)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Keys"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single shared key"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key pair: public + private"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Speed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast (hardware-accelerated: AES-NI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow (100-1000x slower)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key length"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "128-256 bits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2048-4096 bits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security basis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Substitution-permutation network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integer factorization (RSA), ECDLP (ECC)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bulk data encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key exchange, digital signatures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key distribution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Problematic (must share securely)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (public key is public)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Algorithm examples"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AES, ChaCha20, DES (broken)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RSA, ECDSA, Ed25519, DH"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Throughput"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1 GB/s (AES-NI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-10 MB/s"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-encrypting-a-file-with-aes-symmetric",
+      children: "Steps: Encrypting a File with AES (Symmetric)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Generate a random 256-bit key (32 bytes)\nStep 2: Generate a random 128-bit IV (Initialization Vector)\nStep 3: Initialize AES cipher in CBC/GCM mode with key and IV\nStep 4: Read plaintext file in 16-byte blocks\nStep 5: For each block:\n    - If CBC mode: XOR block with previous ciphertext (or IV for first block)\n    - Apply AES round transformation (SubBytes, ShiftRows, MixColumns, AddRoundKey)\n    - Output ciphertext block\nStep 6: Write IV + ciphertext to output file\nStep 7: Decrypt: IV + ciphertext -> reverse AES rounds -> plaintext\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-aes-encryption-high-level",
+      children: "Pseudocode: AES Encryption (High Level)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION encryptAES(plaintext, key):\n    iv = randomBytes(16)\n    ciphertext = []\n    previous = iv\n    \n    FOR each 16-byte block IN pad(plaintext):\n        xored = block XOR previous\n        encrypted = aesRound(xored, key)\n        ciphertext.append(encrypted)\n        previous = encrypted\n    \n    RETURN iv + ciphertext\n\nFUNCTION aesRound(block, key):\n    state = block XOR key\n    FOR round = 1 TO 10:\n        state = subBytes(state)\n        state = shiftRows(state)\n        IF round < 10:\n            state = mixColumns(state)\n        state = state XOR roundKey[round]\n    RETURN state\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-aes-encryption-simplified-1-block",
+      children: "Dry Run: AES Encryption (Simplified 1-Block)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Input"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Output"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plaintext"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Hello World!!!\" (16 bytes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0x48656C6C6F20576F726C64212121"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XOR with IV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IV = 0xA1B2C3D4E5F60718293A4B5C6D7E8F90"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0xE9D7A9B88AD57A075B564F7D4C9B6EB1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SubBytes (S-box)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0xE9D7..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0x1E9D... (non-linear byte substitution)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ShiftRows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0x1E9D..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row 0 unchanged, Row 1 << 1, Row 2 << 2, Row 3 << 3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MixColumns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shifted state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Column mixing via GF(2^8) multiplication"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AddRoundKey"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mixed state XOR RoundKey 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First ciphertext block"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeat 9 more rounds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Final ciphertext"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-aes-encryption-using-openssl",
+      children: "C++: AES Encryption (Using OpenSSL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <vector>\n#include <cstring>\n#include <openssl/evp.h>\n#include <openssl/rand.h>\nusing namespace std;\n\nclass AESCrypt {\nprivate:\n    const EVP_CIPHER* cipher = EVP_aes_256_cbc();\n    const int KEY_LEN = 32;   // 256 bits\n    const int IV_LEN = 16;    // 128 bits\n\npublic:\n    vector<unsigned char> encrypt(const string& plaintext,\n                                   const string& password) {\n        vector<unsigned char> key(KEY_LEN), iv(IV_LEN);\n        PKCS5_PBKDF2_HMAC_SHA1(password.c_str(), password.size(),\n                               nullptr, 0, 100000, KEY_LEN, key.data());\n        RAND_bytes(iv.data(), IV_LEN);\n        EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();\n        EVP_EncryptInit_ex(ctx, cipher, nullptr, key.data(), iv.data());\n        vector<unsigned char> ciphertext(plaintext.size() + 16);\n        int outLen = 0, totalLen = 0;\n        EVP_EncryptUpdate(ctx, ciphertext.data(), &outLen,\n                          (const unsigned char*)plaintext.data(),\n                          plaintext.size());\n        totalLen += outLen;\n        EVP_EncryptFinal_ex(ctx, ciphertext.data() + totalLen, &outLen);\n        totalLen += outLen;\n        EVP_CIPHER_CTX_free(ctx);\n        ciphertext.resize(totalLen);\n        vector<unsigned char> result(IV_LEN + totalLen);\n        copy(iv.begin(), iv.end(), result.begin());\n        copy(ciphertext.begin(), ciphertext.end(), result.begin() + IV_LEN);\n        return result;\n    }\n\n    string decrypt(const vector<unsigned char>& data,\n                   const string& password) {\n        vector<unsigned char> key(KEY_LEN);\n        PKCS5_PBKDF2_HMAC_SHA1(password.c_str(), password.size(),\n                               nullptr, 0, 100000, KEY_LEN, key.data());\n        vector<unsigned char> iv(data.begin(), data.begin() + IV_LEN);\n        EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();\n        EVP_DecryptInit_ex(ctx, cipher, nullptr, key.data(), iv.data());\n        vector<unsigned char> plaintext(data.size());\n        int outLen = 0, totalLen = 0;\n        EVP_DecryptUpdate(ctx, plaintext.data(), &outLen,\n                          data.data() + IV_LEN, data.size() - IV_LEN);\n        totalLen += outLen;\n        EVP_DecryptFinal_ex(ctx, plaintext.data() + totalLen, &outLen);\n        totalLen += outLen;\n        EVP_CIPHER_CTX_free(ctx);\n        return string((char*)plaintext.data(), totalLen);\n    }\n};\n\nint main() {\n    AESCrypt crypto;\n    string msg = \"Secret OS data: password=admin123\";\n    string pass = \"masterKey123\";\n    auto encrypted = crypto.encrypt(msg, pass);\n    cout << \"Encrypted (\" << encrypted.size() << \" bytes): \";\n    for (auto b : encrypted) printf(\"%02x\", b);\n    cout << endl;\n    string decrypted = crypto.decrypt(encrypted, pass);\n    cout << \"Decrypted: \" << decrypted << endl;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-rsa-encryption-asymmetric",
+      children: "Python: RSA Encryption (Asymmetric)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from cryptography.hazmat.primitives import hashes\nfrom cryptography.hazmat.primitives.asymmetric import rsa, padding\nfrom cryptography.hazmat.primitives import serialization\n\ndef generate_rsa_keypair():\n    private_key = rsa.generate_private_key(\n        public_exponent=65537,\n        key_size=2048,\n    )\n    public_key = private_key.public_key()\n    return private_key, public_key\n\ndef encrypt_with_public_key(message: bytes, public_key) -> bytes:\n    ciphertext = public_key.encrypt(\n        message,\n        padding.OAEP(\n            mgf=padding.MGF1(algorithm=hashes.SHA256()),\n            algorithm=hashes.SHA256(),\n            label=None\n        )\n    )\n    return ciphertext\n\ndef decrypt_with_private_key(ciphertext: bytes, private_key) -> bytes:\n    plaintext = private_key.decrypt(\n        ciphertext,\n        padding.OAEP(\n            mgf=padding.MGF1(algorithm=hashes.SHA256()),\n            algorithm=hashes.SHA256(),\n            label=None\n        )\n    )\n    return plaintext\n\ndef sign_data(data: bytes, private_key) -> bytes:\n    signature = private_key.sign(\n        data,\n        padding.PSS(\n            mgf=padding.MGF1(hashes.SHA256()),\n            salt_length=padding.PSS.MAX_LENGTH\n        ),\n        hashes.SHA256()\n    )\n    return signature\n\ndef verify_signature(data: bytes, signature: bytes, public_key) -> bool:\n    try:\n        public_key.verify(\n            signature,\n            data,\n            padding.PSS(\n                mgf=padding.MGF1(hashes.SHA256()),\n                salt_length=padding.PSS.MAX_LENGTH\n            ),\n            hashes.SHA256()\n        )\n        return True\n    except Exception:\n        return False\n\nif __name__ == \"__main__\":\n    priv, pub = generate_rsa_keypair()\n    print(\"[RSA] Key pair generated (2048-bit)\")\n    msg = b\"OS Secure Boot Token: version=2.1\"\n    ct = encrypt_with_public_key(msg, pub)\n    print(f\"[RSA] Encrypted: {ct.hex()[:64]}...\")\n    pt = decrypt_with_private_key(ct, priv)\n    print(f\"[RSA] Decrypted: {pt.decode()}\")\n    sig = sign_data(msg, priv)\n    print(f\"[RSA] Signature: {sig.hex()[:64]}...\")\n    valid = verify_signature(msg, sig, pub)\n    print(f\"[RSA] Signature valid: {valid}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-4",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AES encryption (N blocks)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each 16-byte block: 10-14 rounds, fixed operations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RSA encryption (2048-bit)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log^3 N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modular exponentiation: O(n^3) for n-bit key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RSA decryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log^3 N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same as encryption but with CRT optimization (4x faster)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SHA-256 hashing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Merkle-Damgard construction: process 64-byte chunks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Key generation (RSA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "probabilistic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prime finding with Miller-Rabin tests"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-4",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Symmetric (AES)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Asymmetric (RSA)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hashing (SHA-256)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast, hardware-accelerated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No key sharing problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One-way, collision-resistant"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key distribution problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow for bulk data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not reversible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Primary use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypting files/partitions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key exchange, signatures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Password storage, integrity"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-4",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Weak key (AES)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certain key values weaken security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use proper key derivation (PBKDF2), not raw keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IV reuse (AES-CTR/GCM)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same key + IV = catastrophic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always use random IV; counter-based for nonces"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Small RSA key (< 2048)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Factorable by modern algorithms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimum 2048-bit; 4096 recommended"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Collision (hashing)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two inputs produce same hash"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use SHA-256+; SHA-1 has proven collisions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Side-channel (timing)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key material leaked via timing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constant-time ops (AES-NI avoids this)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Quantum threat"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shor's algorithm breaks RSA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Post-quantum: CRYSTALS-Kyber, Dilithium"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "buffer-overflow",
+      children: "Buffer Overflow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A buffer overflow occurs when a program writes more data to a buffer than it can hold, overwriting adjacent memory."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-5",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Water Glass Overflow"
+        }), ": You have a glass that holds 250ml (buffer). You pour 500ml into it. The extra 250ml spills onto the table. In a buffer overflow, the extra data spills into adjacent memory → typically the return address → and the attacker redirects program execution to their malicious code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "stack-layout-diagram",
+      children: "Stack Layout Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "High Address\n+---------------------------+  <- 0xFFFF\n|       Environment         |\n+---------------------------+\n|         Arguments         |\n+---------------------------+\n|     Return Address        |  <- overwritten by attacker to point to shellcode\n+---------------------------+\n|    Saved EBP (Frame ptr)  |  <- overwritten\n+---------------------------+\n|   Local Variables /       |\n|   char buffer[64]         |  <- overflow starts here (writes beyond 64 bytes)\n+---------------------------+\nLow Address                 |  <- 0x0000\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-buffer-overflow-exploit-classic",
+      children: "Steps: Buffer Overflow Exploit (Classic)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Identify a vulnerable program with no bounds checking (strcpy, gets, scanf)\nStep 2: Determine buffer size (e.g., 64 bytes)\nStep 3: Craft payload:\n    +----------------+----------+----------------+\n    | NOP sled (\\x90) | Shellcode | Return Address |\n    +----------------+----------+----------------+\n    - NOP sled: sequence of NOP (0x90) instructions\n    - Shellcode: machine code that spawns a shell (/bin/sh)\n    - Return address: approximate address in the NOP sled\nStep 4: Overflow the buffer:\n    - Fill first 64 bytes: NOP sled padding\n    - Overwrite saved EBP (next 4 bytes)\n    - Overwrite return address with pointer to NOP sled\nStep 5: When function returns, it jumps to the NOP sled\nStep 6: NOP sled slides to shellcode, which executes /bin/sh\nStep 7: Attacker now has a shell at the program's privilege level\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-vulnerable-program--exploit",
+      children: "C++: Vulnerable Program + Exploit"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <cstring>\nusing namespace std;\n\n// g++ -fno-stack-protector -z execstack -o vulnerable vulnerable.cpp\n// WARNING: Educational only -- run in VM\n\nvoid vulnerable(const char* input) {\n    char buffer[64];  // Small buffer on stack\n    strcpy(buffer, input);  // If input > 64 bytes, overflow!\n    cout << \"Buffer contents: \" << buffer << endl;\n}\n\nint main(int argc, char* argv[]) {\n    if (argc < 2) {\n        cout << \"Usage: \" << argv[0] << \" <input>\" << endl;\n        return 1;\n    }\n    cout << \"Running as UID: \" << getuid() << endl;\n    vulnerable(argv[1]);\n    cout << \"Returned safely (only if no overflow)\" << endl;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-simulated-buffer-overflow",
+      children: "Python: Simulated Buffer Overflow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class StackFrame:\n    def __init__(self, buffer_size: int):\n        self.buffer = bytearray(buffer_size)\n        self.saved_ebp = b\"\\xBB\\xBB\\xBB\\xBB\"\n        self.return_addr = b\"\\xCC\\xCC\\xCC\\xCC\"\n        self.size = buffer_size\n\n    def write(self, data: bytes) -> str:\n        if len(data) <= self.size:\n            self.buffer[:len(data)] = data\n            return \"OK\"\n        self.buffer[:self.size] = data[:self.size]\n        remaining = data[self.size:]\n        if len(remaining) >= 4:\n            self.saved_ebp = remaining[:4]\n            remaining = remaining[4:]\n        if len(remaining) >= 4:\n            old_return = self.return_addr.hex()\n            self.return_addr = remaining[:4]\n            return (f\"OVERFLOW! Return addr changed from \"\n                    f\"{old_return} to {self.return_addr.hex()}\")\n        return \"Partial overflow\"\n\ndef exploit_demo():\n    frame = StackFrame(64)\n    nop_sled = b\"\\x90\" * 60\n    shellcode = b\"\\x31\\xc0\\x50\\x68\\x2f\\x2f\\x73\\x68\\x68\\x2f\\x62\\x69\\x6e\\x89\\xe3\\x50\\x53\\x89\\xe1\\xb0\\x0b\\xcd\\x80\"\n    fake_ebp = b\"\\x41\\x41\\x41\\x41\"\n    ret_addr = (0xffffd500).to_bytes(4, 'little')\n    payload = nop_sled + shellcode + fake_ebp + ret_addr\n    result = frame.write(payload)\n    print(f\"Result: {result}\")\n    print(f\"Return address now: 0x{frame.return_addr.hex()}\")\n\nexploit_demo()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "defenses-against-buffer-overflows-comparison",
+      children: "Defenses Against Buffer Overflows (Comparison)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Defense"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mechanism"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Bypass"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effectiveness"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stack Canary"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guard value before return address; checked on return"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Information leak (read canary from stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High against naive overflow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ASLR"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Randomizes base addresses of stack/heap/libraries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Brute force (32-bit: ~2^16 tries), info leak"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential but not sufficient alone"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NX (No-Execute) Bit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Marks stack/heap as non-executable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return-to-libc (ret2libc), ROP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Critical -- blocks shellcode execution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CFI (Control Flow Integrity)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Validates indirect branch targets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare/advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very high when implemented"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "stack-canary-visual",
+      children: "Stack Canary Visual"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without Stack Canary:\n[ buffer 64B ] [ saved EBP ] [ return address ]\n    ^ 72 bytes of input overwrites saved EBP and return address\n    Attacker controls return address -> arbitrary code execution\n\nWith Stack Canary:\n[ buffer 64B ] [ CANARY (8B) ] [ saved EBP ] [ return address ]\n    ^ Overflow must pass through canary first\n    If canary value changed -> program aborts before return\n    Compiler flag: -fstack-protector (gcc/clang)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-5",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Buffer overflow exploit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N = payload size; linear copy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Stack canary check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single comparison at function epilogue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ASLR (mmap randomization)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Random base set at process creation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ROP chain execution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "G = gadgets; chain length"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-5",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stack Canary"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ASLR"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NX Bit"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low overhead (<3%)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Breaks most exploits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-enforced, zero overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be leaked"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32-bit entropy too low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ret2libc bypasses it"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Runtime cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2-3% performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0%"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-5",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Canary leak"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Format string reads canary from stack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use multiple protections; fix format string bugs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ASLR brute force (32-bit)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only 2^16 possible positions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use 64-bit systems (2^28+ entropy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ret2libc"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Calls system() in libc directly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ASLR + PIE + full RELRO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Heap overflow"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overflows in heap instead of stack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heap hardening (glibc: tcache safety, size checks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "JIT spraying"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write JS shellcode to executable JIT pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disable JIT in sensitive contexts"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "intrusion-detection",
+      children: "Intrusion Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "An Intrusion Detection System (IDS) monitors system or network activity for malicious behavior."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-6",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bank Security Cameras + Guard"
+        }), ": Signature-based IDS is like a security guard who recognizes known criminals from wanted posters. Anomaly-based IDS is like a camera system that learns normal patterns (employees arrive 8-6, doors open with badges) and alerts when something deviates (someone enters at 3 AM through a window)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ids-types",
+      children: "IDS Types"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detection Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "False Positives"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "False Negatives"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Signature-based (NIDS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match traffic against known attack patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snort, Suricata"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (misses zero-day)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Anomaly-based (NIDS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detect deviation from baseline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zeek, AI-based"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Host-based (HIDS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitor system calls, files, logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OSSEC, Wazuh, Tripwire"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network-based (NIDS)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitor network packets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snort, Suricata"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-ids-detection-flow",
+      children: "Steps: IDS Detection Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Capture packet or system call event\nStep 2: Normalize data (extract features: src IP, dest port, syscall number)\nStep 3: Compare against signature database (signature-based)\n    - Hash of payload matches known exploit signature?\nStep 4: Compare against behavioral baseline (anomaly-based)\n    - Is this connection rate > 3-sigma from mean?\nStep 5: Calculate severity score\nStep 6: If score > threshold -> generate alert\nStep 7: Log alert to SIEM or local log\nStep 8: Optionally trigger automated response (block IP, kill process)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-simple-signature-based-ids",
+      children: "Pseudocode: Simple Signature-Based IDS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION detectIntrusion(packet):\n    signatures = [\n        {pattern: \"cat /etc/shadow\", type: \"CREDENTIAL_ACCESS\"},\n        {pattern: \"/bin/sh -i\", type: \"REVERSE_SHELL\"},\n        {pattern: \"SELECT * FROM users\", type: \"SQL_INJECTION\"},\n        {pattern: \"cmd.exe /c\", type: \"COMMAND_EXECUTION\"},\n    ]\n\n    FOR EACH sig IN signatures:\n        IF contains(packet.payload, sig.pattern):\n            alert(\"INTRUSION\", sig.type, packet.srcIP, timestamp())\n            blockIP(packet.srcIP)\n            RETURN \"BLOCKED: \" + sig.type\n\n    rate = getConnectionRate(packet.srcIP)\n    baseline = getBaseline(packet.srcIP)\n    IF rate > baseline * 3:\n        alert(\"ANOMALY\", \"HIGH_CONNECTION_RATE\", packet.srcIP)\n        rateLimit(packet.srcIP, maxConns=100)\n\n    RETURN \"ALLOW\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-simple-ids-component",
+      children: "C++: Simple IDS Component"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <vector>\n#include <unordered_map>\n#include <ctime>\nusing namespace std;\n\nstruct Signature {\n    string pattern;\n    string category;\n    int severity;\n};\n\nstruct Alert {\n    time_t timestamp;\n    string type;\n    string source;\n    string details;\n};\n\nclass IntrusionDetector {\nprivate:\n    vector<Signature> signatures = {\n        {\"/etc/shadow\", \"CREDENTIAL_ACCESS\", 5},\n        {\"exec(\", \"CODE_INJECTION\", 4},\n        {\"SELECT.*FROM\", \"SQL_INJECTION\", 4},\n        {\"<script>\", \"XSS\", 3},\n    };\n    unordered_map<string, int> connectionCounts;\n    vector<Alert> alerts;\n\npublic:\n    bool analyzePacket(const string& srcIP, const string& payload) {\n        for (auto& sig : signatures) {\n            if (payload.find(sig.pattern) != string::npos) {\n                Alert a{time(0), sig.category, srcIP, sig.pattern};\n                alerts.push_back(a);\n                cout << \"[ALERT-\" << sig.severity << \"] \"\n                     << sig.category << \" from \" << srcIP << endl;\n                return false;\n            }\n        }\n        connectionCounts[srcIP]++;\n        if (connectionCounts[srcIP] > 100) {\n            Alert a{time(0), \"RATE_ANOMALY\", srcIP,\n                    to_string(connectionCounts[srcIP]) + \" connections\"};\n            alerts.push_back(a);\n            cout << \"[ALERT] Rate anomaly from \" << srcIP << endl;\n            return false;\n        }\n        return true;\n    }\n\n    void report() {\n        cout << \"\\n--- IDS Report ---\" << endl;\n        cout << \"Total alerts: \" << alerts.size() << endl;\n        for (auto& a : alerts)\n            cout << ctime(&a.timestamp) << a.type\n                 << \" from \" << a.source << \" -- \" << a.details << endl;\n    }\n};\n\nint main() {\n    IntrusionDetector ids;\n    ids.analyzePacket(\"10.0.0.5\", \"GET /index.html\");\n    ids.analyzePacket(\"10.0.0.99\", \"cat /etc/shadow\");\n    ids.analyzePacket(\"10.0.0.5\", \"SELECT * FROM users\");\n    ids.report();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-6",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signature match (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S * P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S = signatures, P = payload length"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Aho-Corasick (multi-pattern)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(P + M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(S)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build automaton once, scan once; M = matches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) avg"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(IPs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hash table per source IP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Log storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log A) per write"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A = alerts; append to file"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-6",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Signature-Based"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Anomaly-Based"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hybrid"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low false positives, fast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detects novel attacks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best coverage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Misses zero-day attacks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High false positives"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher complexity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintenance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must update signatures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must retrain baseline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-6",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Encrypted traffic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS cannot inspect payload"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS interception or endpoint agent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "High-speed network (>10Gbps)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet drop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware acceleration, flow-based sampling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Evasion (fragmentation)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Split attack across packets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reassemble before inspection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "False positive flooding"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legitimate traffic triggers alerts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Threshold tuning, whitelisting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "firewalls",
+      children: "Firewalls"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A firewall enforces network access policies by filtering traffic based on rules."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-7",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Office Security Guard"
+        }), ": A guard at the building entrance checks everyone's ID. Only people on the approved list enter. Some people are allowed in specific areas. The guard also checks bags for prohibited items. This is exactly what a firewall does -- except for network packets instead of people."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "firewall-types",
+      children: "Firewall Types"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Inspection"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Speed"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Packet Filter"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network (L3/L4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IP, port, protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iptables, nftables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stateful"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transport (L4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection state tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows Firewall, pfSense"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Application/Proxy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application (L7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep packet inspection, protocol validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Squid, NGFW (Palo Alto)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Next-Gen (NGFW)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3-L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDS/IPS, app identification, user identity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Palo Alto, Fortinet"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-packet-filter-decision",
+      children: "Steps: Packet Filter Decision"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1: Packet arrives at firewall interface\nStep 2: Extract 5-tuple: {srcIP, dstIP, srcPort, dstPort, protocol}\nStep 3: Walk through rules in order (first match wins)\nStep 4: For each rule:\n    - Match source IP/dst IP against rule's address set\n    - Match port against rule's port range\n    - Match protocol against rule's protocol\n    - Match connection state (NEW, ESTABLISHED, RELATED, INVALID)\nStep 5: Apply action: ACCEPT, DROP, REJECT, LOG\nStep 6: If stateful, update connection tracking table\nStep 7: Log packet if LOG rule matched\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-simple-firewall",
+      children: "Pseudocode: Simple Firewall"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION packetFilter(packet):\n    rules = [\n        {src: \"192.168.1.0/24\", dst: \"*\", port: 80,  action: \"ACCEPT\"},\n        {src: \"192.168.1.0/24\", dst: \"*\", port: 443, action: \"ACCEPT\"},\n        {src: \"10.0.0.0/8\",    dst: \"*\", port: 22,  action: \"DENY\"},\n        {src: \"*\",              dst: \"*\", port: \"*\", action: \"DENY\"},\n    ]\n\n    FOR EACH rule IN rules:\n        IF match(packet, rule):\n            IF rule.action == \"ACCEPT\":\n                log(\"PASS\", packet)\n                FORWARD packet\n            ELSE:\n                log(\"DROP\", packet)\n                DROP packet\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-simple-firewall-rule-engine",
+      children: "C++: Simple Firewall Rule Engine"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <vector>\nusing namespace std;\n\nenum Action { ACCEPT, DROP, REJECT };\n\nstruct Rule {\n    string srcNet;\n    string dstNet;\n    uint16_t port;\n    uint8_t protocol;\n    Action action;\n};\n\nclass Firewall {\nprivate:\n    vector<Rule> rules;\n    int accepted = 0, dropped = 0;\n\n    bool ipInNetwork(uint32_t ip, const string& network) {\n        if (network == \"*\") return true;\n        uint32_t netIP, mask;\n        sscanf(network.c_str(), \"%u.%u.%u.%u/%u\",\n               &((unsigned char*)&netIP)[3],\n               &((unsigned char*)&netIP)[2],\n               &((unsigned char*)&netIP)[1],\n               &((unsigned char*)&netIP)[0],\n               &mask);\n        uint32_t netmask = htonl(~((1 << (32 - mask)) - 1));\n        return (ip & netmask) == (netIP & netmask);\n    }\n\npublic:\n    void addRule(const Rule& r) { rules.push_back(r); }\n\n    Action decide(uint32_t srcIP, uint32_t dstIP,\n                  uint16_t port, uint8_t proto) {\n        for (auto& r : rules) {\n            if (!ipInNetwork(srcIP, r.srcNet)) continue;\n            if (!ipInNetwork(dstIP, r.dstNet)) continue;\n            if (r.port != 0 && r.port != port) continue;\n            if (r.protocol != 0 && r.protocol != proto) continue;\n            if (r.action == ACCEPT) accepted++;\n            else dropped++;\n            return r.action;\n        }\n        dropped++;\n        return DROP;\n    }\n\n    void stats() {\n        cout << \"Accepted: \" << accepted << \", Dropped: \" << dropped << endl;\n    }\n};\n\nint main() {\n    Firewall fw;\n    fw.addRule({\"192.168.1.0/24\", \"*\", 80, 6, ACCEPT});\n    fw.addRule({\"192.168.1.0/24\", \"*\", 443, 6, ACCEPT});\n    fw.addRule({\"*\", \"*\", 0, 0, DROP});\n\n    uint32_t internal = (192 << 24) | (168 << 16) | (1 << 8) | 10;\n    uint32_t external = (8 << 24) | (8 << 16) | (8 << 8) | 8;\n\n    cout << \"Internal->HTTP: \" << fw.decide(internal, external, 80, 6) << endl;\n    cout << \"Internal->SSH:  \" << fw.decide(internal, external, 22, 6) << endl;\n    cout << \"External->HTTP: \" << fw.decide(external, internal, 80, 6) << endl;\n    fw.stats();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-7",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule matching (linear)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R = number of rules; sequential scan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule matching (bitmap)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R * N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N = fields; precompute match vectors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) avg"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(C)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C = active connections; hash table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NAT translation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(C)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port mapping lookup"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-7",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Packet Filter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Stateful"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Proxy"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very fast, simple"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection-aware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full protocol validation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slightly slower"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow, complex configuration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (can be spoofed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-7",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IP fragmentation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules bypassed via fragmented packets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reassembly before filtering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Source port 80"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return traffic on port 80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful tracking checks connection state"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IPv6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules defined for IPv4 only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dual-stack rule sets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VPN traffic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypted; cannot inspect"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decrypt at firewall endpoint or trust VPN"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "secure-os-design",
+      children: "Secure OS Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A secure operating system is built on fundamental security principles from the ground up."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "core-principles",
+      children: "Core Principles"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Least Privilege:     Every process runs with minimum necessary permissions\n2. Defense in Depth:    Multiple layers of security (no single point of failure)\n3. Fail-Safe Defaults:  Default-deny; access must be explicitly granted\n4. Complete Mediation:  Every access attempt is checked (no TOCTOU gaps)\n5. Economy of Mechanism: Keep the security mechanism simple and small (TCB)\n6. Open Design:         Security should not depend on secrecy of implementation\n7. Separation of Duty:  Require multiple parties for sensitive operations\n8. Least Common Mechanism: Minimize shared state between processes\n9. Psychological Acceptability: Security should not burden users unnecessarily\n10. Trusted Computing Base (TCB): Minimize code that must be trusted\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-8",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bank Vault Design"
+        }), ": The vault has multiple layers: a guard at the door, a combination lock, a time lock, a dual-key system (separation of duty), an alarm, and cameras. The vault door mechanism is simple and well-tested. Even the bank manager cannot open the vault alone -- they need the head teller's key too."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "secure-os-architecture-selinux-integration",
+      children: "Secure OS Architecture: SELinux Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Userspace\n+------------------------------------------------------+\n|  Application (httpd)                                  |\n|    [downarrow] system call (open \"/var/www/index.html\")         |\n+------------------------------------------------------+\nKernel\n+------------------------------------------------------+\n|  VFS Layer                                            |\n|    [downarrow]                                                  |\n|  LSM Hook: security_file_open()                      |\n|    [downarrow]                                                  |\n|  SELinux:                                             |\n|    - Get subject context: httpd_t                     |\n|    - Get object context: httpd_sys_content_t          |\n|    - Look up in AVC: allow httpd_t httpd_sys_content_t : file { read } |\n|    [downarrow] allow or deny                                    |\n|  Actual inode operation (if allowed)                  |\n+------------------------------------------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-simulating-secure-os-access",
+      children: "C++: Simulating Secure OS Access"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <string>\n#include <vector>\nusing namespace std;\n\nstruct SecurityContext {\n    string user;\n    string role;\n    string type;\n    int level;\n};\n\nstruct Object {\n    string path;\n    string type;\n    int level;\n};\n\nclass SecureOS {\nprivate:\n    struct PolicyRule {\n        string subjType;\n        string objType;\n        string objClass;\n        string ops;\n    };\n    vector<PolicyRule> policy;\n\npublic:\n    SecureOS() {\n        policy = {\n            {\"httpd_t\", \"httpd_sys_content_t\", \"file\", \"rx\"},\n            {\"httpd_t\", \"shadow_t\", \"file\", \"\"},\n            {\"user_t\", \"user_home_t\", \"file\", \"rwx\"},\n            {\"admin_t\", \"*\", \"file\", \"rwx\"},\n        };\n    }\n\n    bool checkAccess(const SecurityContext& subj,\n                     const Object& obj, char op) {\n        for (auto& rule : policy) {\n            if (rule.subjType == subj.type || rule.subjType == \"*\") {\n                if (rule.objType == obj.type || rule.objType == \"*\") {\n                    return rule.ops.find(op) != string::npos;\n                }\n            }\n        }\n        return false;\n    }\n};\n\nint main() {\n    SecureOS os;\n    SecurityContext httpd{\"root\", \"system_r\", \"httpd_t\", 0};\n    Object webFile{\"/var/www/index.html\", \"httpd_sys_content_t\", 0};\n    Object shadow{\"/etc/shadow\", \"shadow_t\", 0};\n    cout << \"httpd read web: \" << os.checkAccess(httpd, webFile, 'r') << endl;\n    cout << \"httpd read shadow: \" << os.checkAccess(httpd, shadow, 'r') << endl;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-8",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Verification"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TCB size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimize (<10K lines ideal)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Less code = fewer vulnerabilities"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LSM hook overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<1% performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single indirect call per security-sensitive operation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AVC cache hit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~99% for repeated accesses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Temporal locality in access patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Policy compilation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(P log P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P = number of policy rules; sorted for binary search"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-8",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Monolithic Kernel + LSM"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Microkernel"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hypervisor-based"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Advantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good performance, rich policy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smaller TCB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong isolation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disadvantage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large TCB, complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IPC overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware requirements"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security isolation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Module-level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process-level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM-level"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "authentication-password-based",
+      children: "Authentication (Password-Based)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Traditional password storage -- NEVER do this\nstruct password_entry {\n    char username[32];\n    char password[64];   // PLAINTEXT -- catastrophic!\n};\n\n// Modern approach: hashed passwords with salt\nstruct password_entry {\n    char username[32];\n    char salt[16];\n    char hash[32];\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Salting"
+      }), ": A random salt is concatenated with the password before hashing. This prevents rainbow table attacks and ensures equal passwords hash differently."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without salt:\n  password \"hello123\" -> hash(\"hello123\") = 2cf24dba...\n  Two users with the same password have the same hash!\n\nWith salt:\n  password \"hello123\" + salt \"a4f8...\" -> hash(\"a4f8...hello123\") = 7b3d5c...\n  password \"hello123\" + salt \"b9c2...\" -> hash(\"b9c2...hello123\") = e1f8a9...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dictionary attack"
+      }), ": Attacker tries common passwords against stolen hashes. Mitigation: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "slow hashing"
+      }), " (bcrypt, scrypt, PBKDF2, Argon2)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "two-factor-authentication-2fa",
+      children: "Two-Factor Authentication (2FA)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Requires two of:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Something you know"
+        }), ": Password, PIN"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Something you have"
+        }), ": Smartphone (TOTP), hardware token (YubiKey)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Something you are"
+        }), ": Fingerprint, face, iris scan"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "access-control-models-1",
+      children: "Access Control Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "discretionary-access-control-dac-1",
+      children: "Discretionary Access Control (DAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In DAC, the owner of an object determines who can access it. This is the standard Unix model."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Unix file permissions: owner | group | others\n# r = read (4), w = write (2), x = execute (1)\n\n-rw-r--r--  1 alice dev    1024 Jun 9 10:00 file.txt\n# Owner alice: rw- (6)\n# Group dev:   r-- (4)\n# Others:      r-- (4)\n\nchmod 755 script.sh   # Owner: rwx, Group: r-x, Others: r-x\nchmod u+x script.sh   # Add execute for owner only\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SetUID bit"
+      }), ": A program runs with the effective UID of the file owner, not the caller."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "-rwsr-xr-x  1 root root  47040 May 1  2025 /usr/bin/passwd\n                    ^\n                    SetUID bit -- passwd runs as root when any user runs it\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SetUID must be used sparingly -- it's a common privilege escalation vector."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mandatory-access-control-mac-1",
+      children: "Mandatory Access Control (MAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In MAC, system-wide policy (not the owner) controls access. Users cannot override these rules."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SELinux labels every object"
+      }), " (processes, files, sockets) with a security context:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "user:role:type:level\n\nExample:\nsystem_u:object_r:httpd_sys_content_t:s0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A policy defines allowed operations between labeled subjects and objects."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "role-based-access-control-rbac-1",
+      children: "Role-Based Access Control (RBAC)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "RBAC assigns permissions to roles, and users are assigned to roles."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "User Alice -> Role \"admin\" -> {read_all, write_all, create_user}\nUser Bob   -> Role \"user\"  -> {read_own, write_own}\nUser Carol -> Role \"auditor\" -> {read_logs}\nManagement: assign/unassign users to/from roles\nNo need to manage individual user permissions!\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "access-control-lists-acls",
+      children: "Access Control Lists (ACLs)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Unix ACLs extend the basic 3-group model to arbitrary users and groups."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "setfacl -m u:bob:rwx file.txt   # Give bob rwx\nsetfacl -m g:dev:rx file.txt     # Give group dev rx\ngetfacl file.txt                  # View ACLs\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "privilege-escalation",
+      children: "Privilege Escalation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "vertical-escalation",
+      children: "Vertical Escalation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Gaining higher privileges than authorized (e.g., user -> root):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Classic exploit: buffer overflow in SetUID program\nvoid vulnerable(char *input) {\n    char buffer[64];\n    strcpy(buffer, input);   // No bounds check!\n    // If input > 64 bytes, it overwrites the return address\n    // Attacker can redirect execution to shellcode\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "horizontal-escalation",
+      children: "Horizontal Escalation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Accessing another user's resources with the same privilege level:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# World-readable file = horizontal escalation vector\nchmod o-r private_file   # Remove others' read permission\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "defenses-against-buffer-overflows",
+      children: "Defenses Against Buffer Overflows"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stack canaries"
+        }), ": A guard value is placed on the stack before the return address."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without canary:\n  [ buffer ] [ saved ebp ] [ return address ]\n   [uparrow] write overflow here -> overwrites return address\n\nWith canary:\n  [ buffer ] [ CANARY ] [ saved ebp ] [ return address ]\n   [uparrow] overflow trashes canary -> kernel detects mismatch -> abort\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ASLR"
+          }), " (Address Space Layout Randomization): Randomizes the base addresses of stack, heap, and libraries."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "NX bit"
+          }), " (No-Execute): Marks data pages (stack, heap) as non-executable."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Control-flow integrity"
+          }), ": Ensures indirect calls and jumps follow valid paths."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "linux-security-modules-lsm",
+      children: "Linux Security Modules (LSM)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "LSM is a framework that allows security modules to hook into kernel operations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "System call (e.g., open())\n  -> VFS layer\n  -> LSM hook: security_file_open()\n    -> SELinux/AppArmor/Smack policy check\n    -> Allow or Deny\n  -> Actual file operation\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "int security_file_open(struct file *file) {\n    if (policy_denies_access(current, file->f_inode))\n        return -EACCES;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "selinux",
+      children: "SELinux"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Enforcing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Policy is enforced; violations are denied and logged"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Permissive"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Violations are logged but not denied (for debugging)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Disabled"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux is turned off"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "getenforce                    # Check current mode\nsetenforce 1                  # Switch to enforcing\nsetenforce 0                  # Switch to permissive\nls -Z /etc/shadow\nps -Z $(pgrep httpd)\nsesearch --allow --source httpd_t --target shadow_t\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "apparmor",
+      children: "AppArmor"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AppArmor uses path-based (not label-based) MAC. Profiles constrain programs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Profile for /usr/bin/firefox:\n  /usr/bin/firefox {\n    /etc/firefox/** r,\n    /home/**/.mozilla/** rw,\n    /tmp/** rw,\n    /usr/lib/firefox/** mr,\n    network tcp,\n  }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cryptography-in-the-os",
+      children: "Cryptography in the OS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "encryption-at-rest",
+      children: "Encryption at Rest"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Linux: LUKS (Linux Unified Key Setup)\ncryptsetup luksFormat /dev/sda1     # Encrypt partition\ncryptsetup open /dev/sda1 secret    # Unlock (prompts for passphrase)\nmkfs.ext4 /dev/mapper/secret        # Create filesystem on unlocked device\nmount /dev/mapper/secret /mnt/secret\n\n# File-level encryption\ngpg -c secret.txt                    # Encrypt file (prompts for passphrase)\ngpg -d secret.txt.gpg                # Decrypt to stdout\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "trusted-platform-module-tpm",
+      children: "Trusted Platform Module (TPM)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A hardware chip that provides:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Secure key generation and storage"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Platform integrity measurement"
+        }), " (measured boot - TPM records boot process hashes)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remote attestation"
+        }), ": Prove to a remote party that the system is in a known good state"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "principle-of-least-privilege",
+      children: "Principle of Least Privilege"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every process should run with only the privileges necessary to complete its task."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Example: drop root privileges after binding a privileged port\nint main() {\n    int server_fd = socket(AF_INET, SOCK_STREAM, 0);\n    bind(server_fd, ...);\n    listen(server_fd, 10);\n    if (fork() == 0) {\n        struct passwd *pw = getpwnam(\"www-data\");\n        setuid(pw->pw_uid);\n        setgid(pw->pw_gid);\n        handle_requests(server_fd);\n    }\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "common-vulnerabilities",
+      children: "Common Vulnerabilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "race-conditions-toctou",
+      children: "Race Conditions (TOCTOU)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time of Check, Time of Use"
+      }), " - the state changes between the check and the use:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Vulnerable code:\nif (access(\"/tmp/log\", W_OK) != 0) {\n    // ATTACKER: replaces /tmp/log with a symlink to /etc/passwd\n}\nFILE *fp = fopen(\"/tmp/log\", \"a\");\nif (!fp) error();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix"
+      }), ": Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "open()"
+      }), " with flags, not a separate check:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "int fd = open(\"/secure/log\", O_WRONLY | O_APPEND | O_NOFOLLOW);\nif (fd < 0) error();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "format-string-vulnerabilities",
+      children: "Format String Vulnerabilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Vulnerable:\nprintf(user_input);   // Attacker can read/write stack via %x, %n\n\n// Safe:\nprintf(\"%s\", user_input);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Common OS security interview questions with in-depth answers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-is-aslr-and-how-does-it-work",
+      children: "Q1: What is ASLR and how does it work?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Address Space Layout Randomization randomizes the base addresses of memory regions (stack, heap, libraries, executable) at process creation. On Linux, the kernel randomizes:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Stack base (random gap at process creation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "mmap base (libraries, anonymous mappings)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Heap base (randomized brk)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Executable base (PIE - Position Independent Executable)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without ASLR:\n  Stack:   0xBFFFF000  (fixed)\n  libc:    0xB7E00000  (fixed)\n  Heap:    0x08048000  (fixed)\n\nWith ASLR (Linux x86_64):\n  Stack:   0x7FFD12345000  (randomized ~2^28 entropy)\n  libc:    0x7F1A2B3C0000  (randomized ~2^28 entropy)\n  Heap:    0x5566AABB0000  (randomized ~2^28 entropy)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Entropy levels: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "cat /proc/sys/kernel/randomize_va_space"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "0 = disabled"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1 = randomize stack, mmap"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "2 = full randomization (adds heap; default on modern systems)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-what-is-dep--nx-and-why-is-it-important",
+      children: "Q2: What is DEP / NX and why is it important?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": DEP (Data Execution Prevention) / NX (No-Execute) marks memory pages as non-executable. The NX bit in the page table entry tells the CPU: \"this page contains data, not code.\" Stack, heap, and data segments are marked NX. If the instruction pointer tries to execute code on an NX page, the CPU raises a page fault. This prevents shellcode execution on the stack. Bypassed by Return-Oriented Programming (ROP) which chains existing code gadgets in executable pages."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-what-is-ring--1-negative-one-in-os-security",
+      children: "Q3: What is Ring -1 (negative one) in OS security?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Ring -1 refers to the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hypervisor"
+      }), " privilege level, below Ring 0 (kernel). x86 protection rings:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Ring 3   -- User applications (least privileged)\nRing 2   -- Device drivers (rarely used)\nRing 1   -- Device drivers (rarely used)\nRing 0   -- Kernel, device drivers (most privileged)\nRing -1  -- Hypervisor/VMM (below kernel - Intel VMX root mode)\nRing -2  -- System Management Mode (SMM)\nRing -3  -- Management Engine (ME, PSP - firmware)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The hypervisor runs at a more privileged level than the kernel, which is why rootkits like Blue Pill can install a hypervisor beneath a running OS - the OS cannot detect the hypervisor because the hypervisor controls the OS's memory and execution."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-capabilities-vs-acls---compare-and-contrast",
+      children: "Q4: Capabilities vs ACLs - compare and contrast."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Capabilities"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ACLs"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Access decision"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Do you possess the token?\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Who are you?\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Granularity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-operation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-user/group"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Delegation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (pass token)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (requires admin)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Revocation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard (find all copies)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy (modify ACL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Confused deputy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Immune"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vulnerable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Examples"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux capabilities, Kerberos tickets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unix perms, NTFS ACLs, S3 policies"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-selinux-vs-apparmor---which-is-better",
+      children: "Q5: SELinux vs AppArmor - which is better?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SELinux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AppArmor"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Label type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type/label-based (extended attributes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Path-based (file paths)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Policy scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Everything (mandatory)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-program profiles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (steep learning curve)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate (simpler syntax)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Granularity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very fine (network, IPC, etc.)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium (files, network, capabilities)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Default policy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Targeted (confine specific daemons)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complain (learning mode)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintainer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NSA, Red Hat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SUSE, Canonical (Ubuntu)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-security: RHEL/CentOS, Android"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktop simplicity: Ubuntu, SUSE"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "windows-uac-user-account-control",
+      children: "Windows UAC (User Account Control)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "UAC is Windows' least-privilege mechanism introduced in Vista. Users run with standard user tokens by default; administrative privileges require explicit consent."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Standard User Token (filtered):\n  - No write access to %SystemRoot%\n  - No write access to HKLM (registry)\n  - Cannot install system-wide software\n  - Cannot modify system settings\n\nElevated Token: Full administrator access (granted after UAC prompt)\n\nUAC Prompt triggers when:\n  - Installing software\n  - Changing system-wide settings\n  - Modifying firewall rules\n  - Accessing other user's directories\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "linux-capabilities",
+      children: "Linux Capabilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux breaks the monolithic root privilege into ~40 independent capabilities:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Capability"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Without Capability"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_CHOWN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Change file owner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot chown files"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_NET_BIND_SERVICE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bind to ports < 1024"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must use port >= 1024"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_DAC_OVERRIDE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bypass file permission checks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must have correct perms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_SYS_ADMIN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mount, swapon, etc."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot mount filesystems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_NET_RAW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use raw sockets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot craft raw packets"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_KILL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Send signals to any process"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can only kill own processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP_SYS_PTRACE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trace any process"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can only ptrace children"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Grant only NET_BIND_SERVICE to a binary\nsetcap 'cap_net_bind_service=+ep' /usr/bin/my_webserver\n\n# Remove all capabilities from a process\ncapsh --drop=all -- -c \"my_program\"\n\n# Check capabilities of a running process\ncat /proc/PID/status | grep Cap\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "selinux-android-sandbox",
+      children: "SELinux: Android Sandbox"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Android uses SELinux (since Android 4.3, enforcing since 5.0) to sandbox applications. Each app runs with a unique SELinux domain:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "untrusted_app -> app domain (isolated from other apps)\nEach app has its own UID + SELinux type\nTypes: untrusted_app_25, untrusted_app_26, etc.\n\nblocked: app tries to read another app's data directory\nallow:   app reads its own /data/data/com.example.app/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "macos-system-integrity-protection-sip",
+      children: "macOS System Integrity Protection (SIP)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SIP (introduced in OS X El Capitan) protects system files even from root:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Protected paths (cannot be modified even by root without SIP disabled):\n  /System/\n  /usr/ (except /usr/local/)\n  /bin/\n  /sbin/\n  /Applications/ (pre-installed apps)\n\nSIP uses:\n  - Filesystem protection (immutable flags on system files)\n  - Kernel extension blocking (kexts must be signed)\n  - Debugging restrictions (cannot attach to Apple processes)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tpm-trusted-platform-module",
+      children: "TPM (Trusted Platform Module)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TPM is a hardware security chip (firmware TPM 2.0 in modern CPUs). Uses:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "OS Usage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Measured Boot"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Records hash of each boot component"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BitLocker, TPM-based PCR policy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sealed Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decrypts key only if system state matches measurements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LUKS with TPM, BitLocker"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Attestation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proves system integrity to remote parties"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPN certificate enrollment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Secure Key Generation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware RNG + key storage (key never leaves TPM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows Hello, PGP key storage"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Check TPM presence (Linux)\nls /sys/class/tpm/tpm0/\ncat /sys/class/tpm/tpm0/device/description\n\n# Using TPM for LUKS decryption\nsystemd-cryptenroll --tpm2-device=auto /dev/sda1\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-linux-capabilities",
+      children: "Example 1: Linux Capabilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern Linux breaks root privileges into independent capabilities:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "$ cat /proc/self/status | grep Cap\nCapInh: 0000000000000000\nCapPrm: 0000000000000000\nCapEff: 000001ffffffffff\nCapBnd: 000001ffffffffff\n\n# Decode capabilities for a process\n$ capsh --print\nCurrent: = cap_chown,cap_dac_override,...+ep\nBounding set = cap_chown,cap_dac_override,...+eip\n\n# Grant only NET_BIND_SERVICE to an executable\n$ setcap 'cap_net_bind_service=+ep' /usr/bin/my_program\n\n# Run a program with no capabilities\n$ capsh --drop=all -- --print\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-chroot-and-containers",
+      children: "Example 2: chroot and Containers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# chroot -- change root directory\nmkdir /jail\nchroot /jail /bin/bash\n# Process now sees /jail as /, cannot access files outside\n\n# namespaces (Linux container primitive)\n#   PID namespace:     isolated process tree\n#   Mount namespace:   isolated filesystem mounts\n#   Network namespace: isolated network stack\n#   User namespace:    isolated UID/GID mapping\n#   UTS namespace:     isolated hostname\n\nunshare --pid --mount --net --fork /bin/bash\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[TIP]\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Defense in depth"
+        }), " is key: no single mechanism is sufficient. Layer multiple controls -- firewall + authentication + encryption + monitoring + least privilege."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[WARNING]\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Buffer overflow"
+        }), " attacks exploit programs with missing input length checks. Modern mitigations: ASLR, NX stack, stack canaries -- but careful coding is still essential."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[NOTE]\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kerberos"
+        }), " is a network authentication protocol using tickets and a Key Distribution Center (KDC). It is the foundation of Windows Active Directory authentication."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "DAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MAC"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RBAC"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Control by"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File owner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System policy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security Level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (user-granted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (enforced)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate-High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unix permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SELinux, AppArmor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows AD groups"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Desktops/servers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Military/classified"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise orgs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CIA"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confidentiality, Integrity, Availability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ASLR"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Address Space Layout Randomization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stack Canary"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Value before return address to detect overflow"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Kerberos"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network authentication using tickets + KDC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SELinux"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux Security Module implementing MAC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TLS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transport Layer Security for encrypted communication"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TCB"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trusted Computing Base - all trusted code in a system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TPM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trusted Platform Module - hardware security chip"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "UAC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User Account Control - Windows privilege separation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SIP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System Integrity Protection - macOS file protection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LSM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux Security Module - kernel hook framework"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NX"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No-Execute bit - marks pages as non-executable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CFI"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Control-Flow Integrity - validates indirect branches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DEP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Execution Prevention - Windows name for NX"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MAC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mandatory Access Control - system-enforced access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DAC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discretionary Access Control - owner-enforced access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "RBAC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Role-Based Access Control - role-enforced access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ACL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access Control List - per-user/group permission list"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TOCTOU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time Of Check, Time Of Use - race condition class"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "KDC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key Distribution Center - Kerberos ticket server"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Server"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Database"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Embedded System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Smartphone"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Authentication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP basic/OAuth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User/password, cert"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Login/PAM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "802.1X, VPN certs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Access Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File perms, .htaccess"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GRANT/REVOKE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unix perms, ACLs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTPS (TLS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transparent encryption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dm-crypt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IPsec, TLS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auditing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Query logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auditd, syslog"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NetFlow, IDS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What does I in CIA stand for?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Integrity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Identity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Implementation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Isolation"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which technique randomizes addresses against overflow?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Stack canary"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) NX bit"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) ASLR"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) KASLR"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which access control uses resource owner identity?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) DAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) MAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) RBAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) ABAC"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which is NOT a valid authentication factor type?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Something you know"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Something you have"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Something you want"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Something you are"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What privilege level is Ring -1?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) User mode"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Kernel mode"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Hypervisor"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) System Management Mode"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which Linux capability allows binding to ports below 1024?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) CAP_NET_RAW"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) CAP_NET_BIND_SERVICE"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) CAP_SYS_ADMIN"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) CAP_DAC_OVERRIDE"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary weakness of signature-based IDS?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) High false positive rate"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Cannot detect zero-day attacks"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Requires too much memory"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Corrupts system logs"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is a buffer overflow?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Writing more data to a buffer than it can hold"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Reading data from an empty buffer"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Allocating too much memory"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Freeing memory twice"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which model assigns permissions based on user roles?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) DAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) MAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) RBAC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) ABAC"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What command sets a Linux security context on a file?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) chmod"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) chown"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) chcon (or restorecon)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) ls -Z"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In the Bell-LaPadula MAC model, what does \"no read-up\" mean?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) A subject cannot read objects at a higher classification"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A subject cannot read objects at a lower classification"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) A process cannot read files outside its current directory"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) A user cannot read system files"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary purpose of a stack canary in buffer overflow protection?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Encrypt the return address"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Detect stack buffer overflows before the function returns"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Prevent execution of shellcode on the stack"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Randomize the stack base address"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which of the following is an example of a TOCTOU (Time Of Check, Time Of Use) vulnerability?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Checking file permissions then opening the file, with a symlink swap in between"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Using a buffer without checking its length"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Sending unencrypted passwords over the network"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Allowing users to set their own permissions"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the key difference between a virus and a worm?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) A virus self-replicates; a worm requires a host file"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A worm self-replicates without host file; a virus requires a host"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) A virus spreads via networks; a worm spreads via email"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) No difference — they are the same"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What does the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CAP_DAC_OVERRIDE"
+          }), " Linux capability allow?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Override disk quotas"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Bypass file permission checks (DAC)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Override network bandwidth limits"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Override CPU scheduling policy"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 1-a, 2-c, 3-a, 4-c, 5-c, 6-b, 7-b, 8-a, 9-c, 10-c, 11-a, 12-b, 13-a, 14-b, 15-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-implementation--access-control--buffer-overflow-simulator",
+      children: "TypeScript Implementation — Access Control & Buffer Overflow Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * SecuritySimulator: Demonstrates OS security concepts including\n * buffer overflow, ASLR, access control models (DAC/MAC/RBAC),\n * and password hashing in TypeScript.\n */\n\n// ===== SECTION 1: Access Control Models =====\ntype Permission = 'read' | 'write' | 'execute';\n\ninterface Subject {\n  uid: number;\n  name: string;\n  roles: string[];\n  clearance: number;  // MAC clearance level\n}\n\ninterface Object {\n  oid: number;\n  ownerUid: number;\n  dacPerms: Record<string, Permission[]>;  // \"owner\" | \"group\" | \"other\"\n  macClassification: number;  // MAC classification level\n  acl: Map<number, Permission[]>;  // user-specific ACL\n}\n\nclass AccessControlSimulator {\n  // DAC: Discretionary Access Control (Unix-style)\n  checkDAC(subj: Subject, obj: Object, perm: Permission): boolean {\n    if (subj.uid === obj.ownerUid) return obj.dacPerms['owner']?.includes(perm) ?? false;\n    return obj.dacPerms['other']?.includes(perm) ?? false;\n  }\n\n  // MAC: Mandatory Access Control (Bell-LaPadula)\n  checkMAC(subj: Subject, obj: Object, perm: Permission): boolean {\n    if (perm === 'read') {\n      // No read-up: subject clearance must be >= object classification\n      if (subj.clearance < obj.macClassification) {\n        console.log(`  [MAC] DENY: ${subj.name}(L${subj.clearance}) reading OID ${obj.oid}(L${obj.macClassification}) — no read-up`);\n        return false;\n      }\n    }\n    if (perm === 'write') {\n      // No write-down: subject clearance must be <= object classification\n      if (subj.clearance > obj.macClassification) {\n        console.log(`  [MAC] DENY: ${subj.name}(L${subj.clearance}) writing OID ${obj.oid}(L${obj.macClassification}) — no write-down`);\n        return false;\n      }\n    }\n    return true;\n  }\n\n  // RBAC: Role-Based Access Control\n  private rolePerms: Map<string, Permission[]> = new Map([\n    ['admin', ['read', 'write', 'execute']],\n    ['developer', ['read', 'write']],\n    ['viewer', ['read']],\n  ]);\n\n  checkRBAC(subj: Subject, perm: Permission): boolean {\n    for (const role of subj.roles) {\n      if (this.rolePerms.get(role)?.includes(perm)) return true;\n    }\n    return false;\n  }\n\n  simulate(): void {\n    console.log('=== Access Control Models ===');\n    const alice: Subject = { uid: 1000, name: 'alice', roles: ['admin'], clearance: 5 };\n    const bob: Subject = { uid: 1001, name: 'bob', roles: ['viewer'], clearance: 2 };\n    const secret: Object = {\n      oid: 1, ownerUid: 1000, dacPerms: { owner: ['read', 'write'], other: [] },\n      macClassification: 4, acl: new Map()\n    };\n\n    console.log(`Alice (clearance=${alice.clearance}) reading secret (classification=${secret.macClassification})`);\n    console.log(`  DAC: ${this.checkDAC(alice, secret, 'read') ? 'GRANT' : 'DENY'}`);\n    console.log(`  MAC: ${this.checkMAC(alice, secret, 'read') ? 'GRANT' : 'DENY'}`);\n\n    console.log(`\\nBob (clearance=${bob.clearance}) reading secret (classification=${secret.macClassification})`);\n    console.log(`  DAC: ${this.checkDAC(bob, secret, 'read') ? 'GRANT' : 'DENY'}`);\n    console.log(`  MAC: ${this.checkMAC(bob, secret, 'read') ? 'GRANT' : 'DENY'}`);\n\n    console.log(`\\nBob RBAC check (viewer role): read=${this.checkRBAC(bob, 'read')}, write=${this.checkRBAC(bob, 'write')}`);\n  }\n}\n\n// ===== SECTION 2: Password Hashing & Cracking Simulator =====\nclass PasswordSecuritySimulator {\n  /** Simulate slow hashing: bcrypt work factor */\n  hashPassword(password: string, costFactor: number): string {\n    const salt = Math.random().toString(36).substring(2, 10);\n    // Simulate bcrypt-like cost: 2^costFactor iterations\n    let hash = salt + password;\n    for (let i = 0; i < Math.pow(2, costFactor); i++) {\n      hash = Array.from(hash).map(c => String.fromCharCode(c.charCodeAt(0) ^ (i % 256))).join('');\n    }\n    return `$2b$${costFactor}$${salt}$${btoa(hash).substring(0, 22)}`;\n  }\n\n  estimateCrackTime(passwordLength: number, hashesPerSec: number): { seconds: number; readable: string } {\n    // Assume 96 possible characters\n    const combinations = Math.pow(96, passwordLength);\n    const seconds = combinations / hashesPerSec;\n    const readable = seconds < 60 ? `${seconds.toFixed(1)}s` :\n      seconds < 3600 ? `${(seconds / 60).toFixed(1)}min` :\n      seconds < 86400 ? `${(seconds / 3600).toFixed(1)}h` :\n      seconds < 31536000 ? `${(seconds / 86400).toFixed(1)} days` :\n      `${(seconds / 31536000).toFixed(1)} years`;\n    return { seconds, readable };\n  }\n\n  simulate(): void {\n    console.log('\\n=== Password Security ===');\n    // bcrypt (slow): ~1000 hashes/sec on CPU\n    // MD5 (fast): ~10 billion hashes/sec on GPU\n    const lengths = [4, 6, 8, 10, 12, 16];\n\n    console.log('Length | bcrypt (1K/s) | MD5 (10B/s)');\n    console.log('-'.repeat(45));\n    for (const len of lengths) {\n      const bcrypt = this.estimateCrackTime(len, 1000);\n      const md5 = this.estimateCrackTime(len, 10_000_000_000);\n      console.log(` ${String(len).padStart(5)}  | ${bcrypt.readable.padStart(14)} | ${md5.readable.padStart(14)}`);\n    }\n    console.log('\\nConclusion: 12+ char passwords with slow hashing are infeasible to crack.');\n  }\n}\n\n// ===== SECTION 3: Buffer Overflow Simulation =====\nclass BufferOverflowSimulator {\n  /** Simulate a vulnerable function with a small buffer */\n  vulnerableFunction(input: string): string {\n    const bufferSize = 8;\n    const buffer = new Array(bufferSize).fill('.').join('');\n\n    console.log(`  Buffer size: ${bufferSize}, Input length: ${input.length}`);\n\n    if (input.length > bufferSize) {\n      console.log(`  ⚠ OVERFLOW! Writing ${input.length} bytes into ${bufferSize}-byte buffer`);\n      console.log(`  Corrupted adjacent memory: return address overwritten with \"${input.substring(bufferSize)}\"`);\n      return 'EXPLOITED: Arbitrary code execution at 0xBADADD55';\n    } else {\n      // Safe copy\n      const safeCopy = input.substring(0, bufferSize).padEnd(bufferSize, '.');\n      return `OK: buffer contains \"${safeCopy}\"`;\n    }\n  }\n\n  simulate(): void {\n    console.log('\\n=== Buffer Overflow ===');\n\n    // Normal input\n    console.log('1. Normal input (\"hello\"):');\n    console.log(`   ${this.vulnerableFunction('hello')}`);\n\n    // Overflow input\n    console.log('\\n2. Overflow input (\"AAAAAAAAAAAABBBBCCCC\"):');\n    console.log(`   ${this.vulnerableFunction('AAAAAAAAAAAABBBBCCCC')}`);\n\n    console.log('\\n3. Mitigation: Stack canary');\n    console.log('   Stack layout: [buffer][canary][saved_fp][return_addr]');\n    console.log('   Before return: canary value checked — if changed, abort.');\n    console.log('   Attacker must also overwrite canary with correct value.');\n  }\n}\n\n// Run all simulations\nconsole.log('='.repeat(60));\nconsole.log('OS Security Simulator');\nconsole.log('='.repeat(60));\n\nconst ac = new AccessControlSimulator();\nac.simulate();\n\nconst ps = new PasswordSecuritySimulator();\nps.simulate();\n\nconst bo = new BufferOverflowSimulator();\nbo.simulate();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OS security goals: confidentiality, integrity, availability, authentication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Passwords should be hashed with salt; 2FA provides layered authentication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DAC (Unix permissions), MAC (SELinux), and RBAC provide different access control models"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Buffer overflow defenses: stack canaries, ASLR, NX bit, CFI"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LSMs (SELinux, AppArmor) enforce mandatory access control via kernel hooks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SetUID programs must be carefully audited for privilege escalation risks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TPM provides hardware-rooted security for key storage and measured boot"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Principle of least privilege: grant only necessary permissions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Capabilities decompose root into fine-grained privileges"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Namespaces and cgroups form the foundation of Linux container security"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Symmetric encryption (AES) is fast for bulk data; asymmetric (RSA) solves key distribution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Firewalls filter traffic at multiple OSI layers (packet filter, stateful, application proxy)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "IDS/IPS systems detect and block attacks via signature and anomaly detection"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Secure OS design follows Saltzer & Schroeder principles"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Windows UAC, Linux capabilities, SELinux, macOS SIP, and TPM are real-world implementations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Authentication factors: knowledge (password), possession (token), inherence (biometrics)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "MAC enforces system-wide policy that users cannot override (tamper-proof)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between DAC and MAC? Give an example of a system using each."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the purpose of a salt in password hashing. Why is a slow hash function (bcrypt, scrypt) better than a fast one (SHA-256) for password storage?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is a SetUID bit? Why is it dangerous? Find all SetUID binaries on your system with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "find / -perm -4000 2>/dev/null"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "List the three authentication factors and give an example of each."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between symmetric and asymmetric encryption? When would you use each?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a program that demonstrates a buffer overflow safely (use it on your own machine only). Explain how a stack canary prevents the overflow from being exploitable."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a Python script that brute-force checks the strength of Unix passwords against a dictionary. Read ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/etc/shadow"
+        }), " (you'll need root), extract the salt+hash for each user, and test the top 10,000 common passwords against them."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Research your system's ASLR implementation. Check the entropy level with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cat /proc/sys/kernel/randomize_va_space"
+        }), ". Write a program that prints the address of a stack variable, a heap allocation, and a function. Run it multiple times - do the addresses change?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a simple firewall rule parser. Read rules from a file in format: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "srcIP dstIP port proto action"
+        }), ". Test against sample packets."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write an RBAC authorization system in Python with 3 roles and demonstrate permission checking."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "capability-based security framework"
+        }), " as a user-space library. Create a capability token structure (a random 64-bit integer). Define a server that requires a capability to perform operations. Design at least 3 capability types (read, write, delete). Demonstrate that possession of the token (not user identity) governs access."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a minimal ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "namespace-based sandbox"
+        }), " using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "clone()"
+        }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "CLONE_NEWNS | CLONE_NEWPID | CLONE_NEWNET"
+        }), ". The child process should have its own root filesystem (use pivot_root or chroot), its own process tree (PID 1), and a virtual network interface. The child should be unable to see or affect host processes."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze a real-world Linux privilege escalation exploit (e.g., Dirty Pipe CVE-2022-0847 or a similar vulnerability). Explain the root cause, the exploitation mechanism (the exact kernel bug), and the fix. Write a proof-of-concept that demonstrates the vulnerability in a controlled VM environment."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design and implement a simple SELinux-like type enforcement system. Define types for subjects and objects, write policy rules (allow rules), and implement an access check function. Test with at least 3 types and 2 operations."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement password hashing with PBKDF2 in Python. Compare the time taken for 1000, 100000, and 1000000 iterations. Explain why iteration count matters for security."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "16",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ASLR entropy analyzer"
+          }), ": Write a program that measures the ASLR entropy on your system. Run 1000 times, allocating a stack variable, a heap variable, and recording the address of a function. Compute the number of random bits in each address space region. Compare results across reboots."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "SELinux policy analyzer"
+          }), ": Write a Python script that parses an SELinux policy file (or uses ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "sesearch"
+          }), ") to find all rules involving a specific type (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "httpd_t"
+          }), "). Categorize the rules by permission class (file, socket, process, etc.) and count the total number of allow rules for that domain."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Capability dropper"
+          }), ": Write a C program that starts with full root capabilities, drops all capabilities except ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "CAP_NET_BIND_SERVICE"
+          }), ", then attempts to: (a) bind to port 80 (should succeed), (b) open ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/etc/shadow"
+          }), " (should fail), (c) kill a process not owned by the user (should fail). Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "cap_get_proc()"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "cap_set_proc()"
+          }), "."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Rootkit detection scanner"
+          }), ": Write a Bash/Python script that detects common rootkit indicators: hidden processes (compare ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/proc"
+          }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ps"
+          }), "), hidden files (compare ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ls"
+          }), " vs ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "find"
+          }), "), kernel module list anomalies, unusual cron jobs, unexpected open ports, and files modified in ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/bin"
+          }), " in the last 24 hours. Generate a security report."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Side-channel timing attack simulator"
+          }), ": Write a program that demonstrates a timing side-channel on password verification. Implement both a vulnerable version (returns early on first mismatched character) and a constant-time version. Measure the time difference for matching the first character vs matching the seventh character. Show how an attacker can extract the password one character at a time."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Firewall rule conflict detector"
+          }), ": Write a program that parses iptables rules and detects conflicts: shadowed rules (a later rule matches packets that an earlier rule already handles), redundant rules, and contradictory rules. For each conflict, explain the impact and suggest a resolution."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Mandatory Access Control policy simulator"
+          }), ": Extend the TypeScript SecuritySimulator with a full Bell-LaPadula implementation supporting multiple clearance levels (0-15), categories (compartments), and the *-property (no write-down). Simulate a multi-level security (MLS) environment with users at different clearances accessing documents at different classifications."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Syscall policy enforcer"
+          }), ": Write a program using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "seccomp"
+          }), " (Linux secure computing mode) in C or Python to create a sandbox that only allows the syscalls: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "read"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "write"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "exit"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "brk"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "mmap"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "munmap"
+          }), ". Any other syscall should kill the process. Test by running a subprocess that tries to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "open"
+          }), " a file."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Kerberos-like authentication simulator"
+          }), ": Implement a simplified Kerberos authentication system in TypeScript with: Authentication Server (AS) that issues Ticket-Granting Tickets (TGT), Ticket-Granting Server (TGS) that issues service tickets, and a Service Server that validates service tickets. Demonstrate the full authentication flow."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Formal verification of security policy"
+          }), ": Write a set of security properties in first-order logic and use a SAT solver (via TypeScript bindings or Z3 Python) to verify that a given set of access control rules does not violate: (a) separation of duty (a single user cannot have both write and approve permissions), (b) no privilege escalation, (c) least privilege. Generate counterexamples if violations exist."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,7494 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[81142],{
+
+/***/ 979
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_05_synchronization_md_38d_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-05-synchronization-md-38d.json
+const site_docs_courses_operating_systems_05_synchronization_md_38d_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/05-synchronization","title":"Chapter 5: Process Synchronization","description":"---","source":"@site/docs/courses/operating-systems/05-synchronization.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/05-synchronization","permalink":"/ai-engineering-journey/operating-systems/05-synchronization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"05-synchronization","slug":"/operating-systems/05-synchronization","title":"Chapter 5: Process Synchronization","sidebar_label":"Chapter 5: Process Synchronization","sidebar_position":5},"sidebar":"course-operating-systems","previous":{"title":"Chapter 4: Threads","permalink":"/ai-engineering-journey/operating-systems/04-threads"},"next":{"title":"Chapter 6: Semaphores & Monitors","permalink":"/ai-engineering-journey/operating-systems/06-semaphores-monitors"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/05-synchronization.md
+
+
+const frontMatter = {
+	id: '05-synchronization',
+	slug: '/operating-systems/05-synchronization',
+	title: 'Chapter 5: Process Synchronization',
+	sidebar_label: 'Chapter 5: Process Synchronization',
+	sidebar_position: 5
+};
+const contentTitle = 'Chapter 5: Process Synchronization';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1.1 Definition",
+  "id": "11-definition",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy",
+  "level": 3
+}, {
+  "value": "Numbered Steps of a Race Condition",
+  "id": "numbered-steps-of-a-race-condition",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode",
+  "level": 3
+}, {
+  "value": "C++ Implementation",
+  "id": "c-implementation",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "1.2 Race Condition vs Data Race",
+  "id": "12-race-condition-vs-data-race",
+  "level": 2
+}, {
+  "value": "1.3 The Critical Section Problem",
+  "id": "13-the-critical-section-problem",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-1",
+  "level": 3
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition",
+  "level": 3
+}, {
+  "value": "Requirements for a Valid Solution",
+  "id": "requirements-for-a-valid-solution",
+  "level": 3
+}, {
+  "value": "Numbered Steps of Critical Section Protocol",
+  "id": "numbered-steps-of-critical-section-protocol",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-1",
+  "level": 3
+}, {
+  "value": "Complexity Analysis of Critical Section Problem",
+  "id": "complexity-analysis-of-critical-section-problem",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-1",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-1",
+  "level": 3
+}, {
+  "value": "1.4 Critical Section Requirements — Detailed",
+  "id": "14-critical-section-requirements--detailed",
+  "level": 2
+}, {
+  "value": "Mutual Exclusion — Formal Proof Structure",
+  "id": "mutual-exclusion--formal-proof-structure",
+  "level": 3
+}, {
+  "value": "Progress — Formal Statement",
+  "id": "progress--formal-statement",
+  "level": 3
+}, {
+  "value": "Bounded Waiting — Formal Statement",
+  "id": "bounded-waiting--formal-statement",
+  "level": 3
+}, {
+  "value": "2.1 Overview",
+  "id": "21-overview",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-2",
+  "level": 3
+}, {
+  "value": "Numbered Steps of Peterson&#39;s Algorithm",
+  "id": "numbered-steps-of-petersons-algorithm",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-2",
+  "level": 3
+}, {
+  "value": "C++ Implementation",
+  "id": "c-implementation-1",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-1",
+  "level": 3
+}, {
+  "value": "2.2 Peterson&#39;s Algorithm — Full Dry Run",
+  "id": "22-petersons-algorithm--full-dry-run",
+  "level": 2
+}, {
+  "value": "Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits",
+  "id": "scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits",
+  "level": 3
+}, {
+  "value": "Scenario: Both P₀ and P₁ want CS simultaneously",
+  "id": "scenario-both-p-and-p-want-cs-simultaneously",
+  "level": 3
+}, {
+  "value": "2.3 Proof of Correctness",
+  "id": "23-proof-of-correctness",
+  "level": 2
+}, {
+  "value": "Mutual Exclusion Proof",
+  "id": "mutual-exclusion-proof",
+  "level": 3
+}, {
+  "value": "Progress Proof",
+  "id": "progress-proof",
+  "level": 3
+}, {
+  "value": "Bounded Waiting Proof",
+  "id": "bounded-waiting-proof",
+  "level": 3
+}, {
+  "value": "2.4 Complexity Analysis",
+  "id": "24-complexity-analysis",
+  "level": 2
+}, {
+  "value": "2.5 Advantages &amp; Disadvantages",
+  "id": "25-advantages--disadvantages",
+  "level": 2
+}, {
+  "value": "2.6 Edge Cases",
+  "id": "26-edge-cases",
+  "level": 2
+}, {
+  "value": "3.1 Overview",
+  "id": "31-overview",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-3",
+  "level": 3
+}, {
+  "value": "Why Hardware Support?",
+  "id": "why-hardware-support",
+  "level": 3
+}, {
+  "value": "3.2 Test-and-Set (TSL) Instruction",
+  "id": "32-test-and-set-tsl-instruction",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-4",
+  "level": 3
+}, {
+  "value": "Numbered Steps",
+  "id": "numbered-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-3",
+  "level": 3
+}, {
+  "value": "C/C++ Implementation (GCC atomic builtins)",
+  "id": "cc-implementation-gcc-atomic-builtins",
+  "level": 3
+}, {
+  "value": "Python Implementation (simulated)",
+  "id": "python-implementation-simulated",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table-1",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-2",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-2",
+  "level": 3
+}, {
+  "value": "3.3 Compare-and-Swap (CAS)",
+  "id": "33-compare-and-swap-cas",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-1",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-5",
+  "level": 3
+}, {
+  "value": "Numbered Steps",
+  "id": "numbered-steps-1",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-4",
+  "level": 3
+}, {
+  "value": "C/C++ Implementation",
+  "id": "cc-implementation",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-2",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table (Lock-free Increment)",
+  "id": "dry-run-trace-table-lock-free-increment",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-2",
+  "level": 3
+}, {
+  "value": "CAS vs TAS — Key Difference",
+  "id": "cas-vs-tas--key-difference",
+  "level": 3
+}, {
+  "value": "3.4 Memory Barriers (Fences)",
+  "id": "34-memory-barriers-fences",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-2",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-6",
+  "level": 3
+}, {
+  "value": "Types of Memory Barriers",
+  "id": "types-of-memory-barriers",
+  "level": 3
+}, {
+  "value": "C++ Memory Order Usage",
+  "id": "c-memory-order-usage",
+  "level": 3
+}, {
+  "value": "4.1 Definition",
+  "id": "41-definition",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-7",
+  "level": 3
+}, {
+  "value": "Numbered Steps of Mutex Operation",
+  "id": "numbered-steps-of-mutex-operation",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-5",
+  "level": 3
+}, {
+  "value": "C++ Implementation (pthreads wrapper)",
+  "id": "c-implementation-pthreads-wrapper",
+  "level": 3
+}, {
+  "value": "Raw pthread Mutex (C-style)",
+  "id": "raw-pthread-mutex-c-style",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-3",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table (Two Threads Using Mutex)",
+  "id": "dry-run-trace-table-two-threads-using-mutex",
+  "level": 3
+}, {
+  "value": "Spinlock vs Mutex — Detailed Comparison",
+  "id": "spinlock-vs-mutex--detailed-comparison",
+  "level": 3
+}, {
+  "value": "Recursive Mutex",
+  "id": "recursive-mutex",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-3",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-3",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-3",
+  "level": 3
+}, {
+  "value": "5.1 Definition",
+  "id": "51-definition",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-8",
+  "level": 3
+}, {
+  "value": "Type 1: Binary Semaphore (value 0 or 1)",
+  "id": "type-1-binary-semaphore-value-0-or-1",
+  "level": 3
+}, {
+  "value": "Type 2: Counting Semaphore (value &gt;= 0)",
+  "id": "type-2-counting-semaphore-value--0",
+  "level": 3
+}, {
+  "value": "Numbered Steps -- Semaphore Operations",
+  "id": "numbered-steps----semaphore-operations",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-6",
+  "level": 3
+}, {
+  "value": "C/C++ Implementation (POSIX Semaphores)",
+  "id": "cc-implementation-posix-semaphores",
+  "level": 3
+}, {
+  "value": "Counting Semaphore -- Resource Pool (C++)",
+  "id": "counting-semaphore----resource-pool-c",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-4",
+  "level": 3
+}, {
+  "value": "Python Counting Semaphore -- Resource Pool",
+  "id": "python-counting-semaphore----resource-pool",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table -- Binary Semaphore (value=1)",
+  "id": "dry-run-trace-table----binary-semaphore-value1",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-4",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-4",
+  "level": 3
+}, {
+  "value": "Binary Semaphore vs Mutex",
+  "id": "binary-semaphore-vs-mutex",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-4",
+  "level": 3
+}, {
+  "value": "5.2 Classic Problems Using Semaphores",
+  "id": "52-classic-problems-using-semaphores",
+  "level": 2
+}, {
+  "value": "5.2.1 Producer-Consumer (Bounded Buffer)",
+  "id": "521-producer-consumer-bounded-buffer",
+  "level": 3
+}, {
+  "value": "5.2.2 Readers-Writers",
+  "id": "522-readers-writers",
+  "level": 3
+}, {
+  "value": "6.1 Definition",
+  "id": "61-definition",
+  "level": 2
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-9",
+  "level": 3
+}, {
+  "value": "Key Characteristics",
+  "id": "key-characteristics",
+  "level": 3
+}, {
+  "value": "Condition Variables",
+  "id": "condition-variables",
+  "level": 3
+}, {
+  "value": "Numbered Steps -- Monitor Wait/Signal",
+  "id": "numbered-steps----monitor-waitsignal",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-7",
+  "level": 3
+}, {
+  "value": "C++ Implementation (std::condition_variable)",
+  "id": "c-implementation-stdcondition_variable",
+  "level": 3
+}, {
+  "value": "Python Implementation (threading.Condition)",
+  "id": "python-implementation-threadingcondition",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table -- Monitor with CV",
+  "id": "dry-run-trace-table----monitor-with-cv",
+  "level": 3
+}, {
+  "value": "Hoare vs Mesa Semantics",
+  "id": "hoare-vs-mesa-semantics",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-5",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-5",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-5",
+  "level": 3
+}, {
+  "value": "6.2 Monitor vs Semaphore",
+  "id": "62-monitor-vs-semaphore",
+  "level": 2
+}, {
+  "value": "7.1 Race Condition Detection",
+  "id": "71-race-condition-detection",
+  "level": 2
+}, {
+  "value": "Q1: Find the race condition",
+  "id": "q1-find-the-race-condition",
+  "level": 3
+}, {
+  "value": "Q2: Is this thread-safe?",
+  "id": "q2-is-this-thread-safe",
+  "level": 3
+}, {
+  "value": "Q3: Why is this lock incorrect?",
+  "id": "q3-why-is-this-lock-incorrect",
+  "level": 3
+}, {
+  "value": "7.2 Spinlock vs Mutex",
+  "id": "72-spinlock-vs-mutex",
+  "level": 2
+}, {
+  "value": "Q1: When use spinlock instead of mutex?",
+  "id": "q1-when-use-spinlock-instead-of-mutex",
+  "level": 3
+}, {
+  "value": "Q2: 100ms CS with 50 threads contending on spinlock?",
+  "id": "q2-100ms-cs-with-50-threads-contending-on-spinlock",
+  "level": 3
+}, {
+  "value": "Q3: Overhead comparison",
+  "id": "q3-overhead-comparison",
+  "level": 3
+}, {
+  "value": "Q4: What is a ticket lock?",
+  "id": "q4-what-is-a-ticket-lock",
+  "level": 3
+}, {
+  "value": "7.3 Critical Section Solutions Comparison",
+  "id": "73-critical-section-solutions-comparison",
+  "level": 2
+}, {
+  "value": "7.4 Common Synchronization Bugs",
+  "id": "74-common-synchronization-bugs",
+  "level": 2
+}, {
+  "value": "Deadlock (4 Coffman Conditions)",
+  "id": "deadlock-4-coffman-conditions",
+  "level": 3
+}, {
+  "value": "Livelock",
+  "id": "livelock",
+  "level": 3
+}, {
+  "value": "Priority Inversion",
+  "id": "priority-inversion",
+  "level": 3
+}, {
+  "value": "ABA Problem",
+  "id": "aba-problem",
+  "level": 3
+}, {
+  "value": "<strong>Solution</strong>: Tagged pointers or version counters.",
+  "id": "solution-tagged-pointers-or-version-counters",
+  "level": 2
+}, {
+  "value": "8.1 Linux Kernel Spinlocks",
+  "id": "81-linux-kernel-spinlocks",
+  "level": 2
+}, {
+  "value": "Variants",
+  "id": "variants",
+  "level": 3
+}, {
+  "value": "Raw Spinlock (x86 asm)",
+  "id": "raw-spinlock-x86-asm",
+  "level": 3
+}, {
+  "value": "MCS Lock (Linux v5+)",
+  "id": "mcs-lock-linux-v5",
+  "level": 3
+}, {
+  "value": "8.2 pthread Mutex Implementation (NPTL)",
+  "id": "82-pthread-mutex-implementation-nptl",
+  "level": 2
+}, {
+  "value": "Linux Futex Design",
+  "id": "linux-futex-design",
+  "level": 3
+}, {
+  "value": "8.3 Java Synchronization",
+  "id": "83-java-synchronization",
+  "level": 2
+}, {
+  "value": "8.4 Windows CRITICAL_SECTION",
+  "id": "84-windows-critical_section",
+  "level": 2
+}, {
+  "value": "8.5 Engineering Case Studies",
+  "id": "85-engineering-case-studies",
+  "level": 2
+}, {
+  "value": "Case 1: Therac-25 Radiation Overdose (1985-1987)",
+  "id": "case-1-therac-25-radiation-overdose-1985-1987",
+  "level": 3
+}, {
+  "value": "Case 2: Mars Pathfinder Priority Inversion (1997)",
+  "id": "case-2-mars-pathfinder-priority-inversion-1997",
+  "level": 3
+}, {
+  "value": "Case 3: Northeast Blackout 2003",
+  "id": "case-3-northeast-blackout-2003",
+  "level": 3
+}, {
+  "value": "9.1 Race Condition Demonstration",
+  "id": "91-race-condition-demonstration",
+  "level": 2
+}, {
+  "value": "9.2 Semaphore Resource Counter",
+  "id": "92-semaphore-resource-counter",
+  "level": 2
+}, {
+  "value": "10.1 Concept Comparison",
+  "id": "101-concept-comparison",
+  "level": 2
+}, {
+  "value": "10.2 Quick Reference",
+  "id": "102-quick-reference",
+  "level": 2
+}, {
+  "value": "10.3 Cross-Application Matrix",
+  "id": "103-cross-application-matrix",
+  "level": 2
+}, {
+  "value": "TypeScript Lock Implementation Simulator",
+  "id": "typescript-lock-implementation-simulator",
+  "level": 3
+}, {
+  "value": "Memory Barriers and Instruction Reordering",
+  "id": "memory-barriers-and-instruction-reordering",
+  "level": 3
+}, {
+  "value": "Additional Chapter Quiz Questions",
+  "id": "additional-chapter-quiz-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}, {
+  "value": "Basic",
+  "id": "basic",
+  "level": 4
+}, {
+  "value": "Intermediate",
+  "id": "intermediate",
+  "level": 4
+}, {
+  "value": "Advanced",
+  "id": "advanced",
+  "level": 4
+}, {
+  "value": "SUMMARY",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Basic",
+  "id": "basic-1",
+  "level": 3
+}, {
+  "value": "Intermediate",
+  "id": "intermediate-1",
+  "level": 3
+}, {
+  "value": "Advanced",
+  "id": "advanced-1",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    div: "div",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-5-process-synchronization",
+        children: "Chapter 5: Process Synchronization"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/04-threads",
+          children: "Threads"
+        })]
+      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/operating-systems/06-semaphores-monitors",
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next: Semaphores and Monitors"
+        })
+      }), " >>"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define race conditions and explain why they occur in concurrent systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Formulate the critical section problem and characterize a valid solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement Peterson's solution for two processes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain hardware support for synchronization (test-and-set, compare-and-swap)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use mutex locks and semaphores for process synchronization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recognize classic synchronization problems and their solutions"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Race Condition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple processes manipulate shared data concurrently; result depends on scheduling order"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Critical Section"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code segment accessing shared resources; must be executed atomically"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Peterson Solution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Software-based two-process synchronization using turn and flag variables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware Support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test-and-set, compare-and-swap, memory barriers for lock implementation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mutex Locks"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple lock variable with acquire/release; spinlock if busy-waiting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Race Conditions] --> B[Critical Section Problem]\n    B --> C[Peterson's Solution]\n    C --> D[Hardware Synchronization]\n    D --> E[Mutex Locks]\n    E --> F[Semaphores & Monitors]\n    F --> G[Classic Problems]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-1-race-conditions",
+      children: "UNIT 1: RACE CONDITIONS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-definition",
+      children: "1.1 Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "race condition"
+      }), " occurs when multiple processes or threads access shared data concurrently, and the final result depends on the non-deterministic order of execution (the \"race\" between threads). The process that \"wins\" the race to access the shared variable determines the outcome."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bank Account Withdrawal by Two ATMs"
+      }), ": Imagine a joint bank account with a balance of $1000. Two ATMs process simultaneous withdrawals of $800 each."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ATM 1 (left)                    ATM 2 (right)\n├── Check balance: $1000        ├── Check balance: $1000\n├── Deduct $800 → $200          ├── Deduct $800 → $200\n├── Write new balance: $200     ├── Write new balance: $200\n└── Dispense cash               └── Dispense cash\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result"
+      }), ": Both ATMs dispense $800, but the final balance is $200 instead of -$600. The bank lost $600 because each ATM read the balance before the other wrote its update. This is a race condition in the real world."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-of-a-race-condition",
+      children: "Numbered Steps of a Race Condition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Thread A loads shared variable ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "counter"
+        }), " from memory into register (value = 5)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread A increments register (value = 6)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Context switch"
+        }), " → Thread B loads ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "counter"
+        }), " from memory (value = 5 — stale!)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thread B increments register (value = 6)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Context switch"
+        }), " → Thread A stores register to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "counter"
+        }), " (counter = 6)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Thread B stores register to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "counter"
+        }), " (counter = 6)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Final value"
+      }), ": 6 instead of 7. One increment is lost."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "shared int counter = 0\n\n// Executed by both threads\nfunction increment():\n    LOAD counter into reg    // Machine instruction 1\n    ADD 1 to reg             // Machine instruction 2\n    STORE reg to counter     // Machine instruction 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation",
+      children: "C++ Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <vector>\n\nint counter = 0;  // UNSYNCHRONIZED — shared global\n\nvoid increment(int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        counter++;  // Race condition: RMW sequence not atomic\n    }\n}\n\nint main() {\n    const int N = 100000;\n    std::thread t1(increment, N);\n    std::thread t2(increment, N);\n\n    t1.join();\n    t2.join();\n\n    std::cout << \"Counter: \" << counter\n              << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport sys\n\ncounter = 0  # UNSYNCHRONIZED shared global\niterations = 100000\n\ndef increment():\n    global counter\n    for _ in range(iterations):\n        counter += 1  # Race condition: read-modify-write not atomic in CPython\n\nt1 = threading.Thread(target=increment)\nt2 = threading.Thread(target=increment)\n\nt1.start()\nt2.start()\nt1.join()\nt2.join()\n\nprint(f\"Counter: {counter} (expected: {2 * iterations})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table",
+      children: "Dry Run Trace Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "right"
+            },
+            children: "Register (local)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "right"
+            },
+            children: "counter (shared)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LOAD counter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCREMENT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A→B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LOAD counter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stale read!"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCREMENT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STORE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LOAD counter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "INCREMENT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STORE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "7"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B→A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STORE (old reg=6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Overwrites B's work!"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FINAL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "right"
+            }
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            style: {
+              textAlign: "right"
+            },
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            }), " (expected: 7)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "One increment lost"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Single increment (unsafe)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One RMW sequence, no synchronization overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "With race"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unbounded"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The lost-update window grows with thread count"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Expected safe counter"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N increments across M threads = N total work"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why race conditions are dangerous"
+      }), ": They are non-deterministic and schedule-dependent. A program may run correctly 999 times and fail on the 1000th. Debugging is extremely difficult because the bug disappears under debugger breakpoints (Heisenbug)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero synchronization overhead (when race doesn't trigger)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-deterministic results"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum throughput in uncontended scenarios"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extremely hard to reproduce and debug"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple code (no lock primitives)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heisenbugs — disappear under debugger"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Results may vary across runs, CPUs, and load levels"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security risk — race windows can be exploited"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Single thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No race; counter is accurate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Two threads on single-core"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Race still occurs (preemption during RMW)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronization required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "N threads (N > 2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lost updates compound; error grows with N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutex or atomic operations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiler optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiler may reorder or eliminate the increment"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "volatile"
+            }), " or atomics"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Weakly-ordered CPU (ARM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory operations reordered by hardware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory barriers needed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Very high iteration count"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error approaches 50% of expected value asymptotically"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always use synchronization"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-race-condition-vs-data-race",
+      children: "1.2 Race Condition vs Data Race"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "These terms are often confused but are technically distinct:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Race Condition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Data Race"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Definition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A timing-dependent error where the output depends on the uncontrolled order of execution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two or more threads concurrently access the same memory location, at least one is a write, and there is no synchronization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logical / semantic — about program correctness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware / memory model — about low-level memory access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Involves"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared state and scheduling order"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concurrent read/write or write/write to same memory without happens-before"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Always a bug?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sometimes intended (deliberate races in lock-free algorithms)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Almost always a bug (formally undefined behavior in C/C++)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Example"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bank account balance depending on which ATM runs first"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Two threads writing to the same ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "int"
+            }), " without a mutex"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Detection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Behavioral testing, stress testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread sanitizers (TSan), happens-before analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "C/C++ effect"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logic error; program still runs"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Undefined behavior"
+            }), " — compiler may generate broken code"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Relationship"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["A data race can ", (0,jsx_runtime.jsx)(_components.em, {
+              children: "cause"
+            }), " a race condition, but a race condition can exist without a data race (e.g., mutex-protected code with wrong logic)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All data races in properly synchronized code are bugs, but some race conditions (e.g., work-stealing) are intentional"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight"
+      }), ": All data races are potential race conditions, but not all race conditions involve data races. For example, a race between two threads checking ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "if (account.balance >= amount)"
+      }), " before debiting — both protected by the same mutex — is a race condition (logic error) but not a data race (the mutex prevents concurrent access)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-the-critical-section-problem",
+      children: "1.3 The Critical Section Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-1",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bathroom Stall"
+      }), ": A single-occupancy bathroom has one stall. Multiple people need to use it. Rules:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Only one person can be inside at any time (", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "mutual exclusion"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If no one is inside and someone wants to go, they should eventually get in (", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "progress"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["You cannot cut in line indefinitely; everyone gets a turn (", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "bounded waiting"
+        }), ")"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "formal-definition",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Consider a system with n processes {P₀, P₁, ..., Pₙ₋₁}. Each process has a segment of code called the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "critical section"
+      }), " (CS) where it accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "requirements-for-a-valid-solution",
+      children: "Requirements for a Valid Solution"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A valid solution must satisfy three requirements:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mutual Exclusion (ME)"
+        }), ": If process Pᵢ is executing in its critical section, no other process can be executing in its critical section"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Progress"
+        }), ": If no process is in its critical section and some processes want to enter, only those not in their remainder sections can participate in deciding which will enter next; this selection cannot be postponed indefinitely"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bounded Waiting (BW)"
+        }), ": There exists a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-of-critical-section-protocol",
+      children: "Numbered Steps of Critical Section Protocol"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "entry_section:     // Request permission to enter CS\n    [synchronization code]\n\ncritical_section:  // Access shared resources\n    [code that modifies shared data]\n\nexit_section:      // Release permission\n    [cleanup / unlock code]\n\nremainder_section: // Non-critical code\n    [other work]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-1",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "shared data protected by some synchronization mechanism\n\nprocess(i):\n    while true:\n        entry_section(i)      // Acquire lock / wait\n            critical_section()  // Access shared resource\n        exit_section(i)       // Release lock / signal\n        remainder_section()    // Do other work\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-of-critical-section-problem",
+      children: "Complexity Analysis of Critical Section Problem"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Entry section (worst-case wait)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) for some solutions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May need to wait for n-1 other processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Entry section (ideal)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock is free, acquire immediately"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (Peterson for n=2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two flag bits + one turn variable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (general n-process)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) or more"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Need per-process state or queue"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-1",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Provides a structured way to reason about concurrency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adds overhead even when uncontended"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enables safe sharing of data structures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can become a performance bottleneck"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundation for all higher-level synchronization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poorly designed solutions lead to deadlock/starvation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-1",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process crashes inside CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Locks held forever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timeout / recovery mechanisms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process terminates in remainder section"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No issue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No shared resources held"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt occurs in CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt handler may deadlock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disable interrupts during CS (kernel only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested critical sections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlock if ordering violated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock ordering discipline"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Preemptive kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Race even in kernel code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spinlocks for short sections"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-critical-section-requirements--detailed",
+      children: "1.4 Critical Section Requirements — Detailed"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mutual-exclusion--formal-proof-structure",
+      children: "Mutual Exclusion — Formal Proof Structure"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To prove mutual exclusion, show:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["At most one process can have ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[self] = true AND turn == self"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If P₀ is in CS, then ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == true AND turn == 0"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₁ cannot enter because ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == true AND turn == 0"
+        }), " makes P₁ spin-wait"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "progress--formal-statement",
+      children: "Progress — Formal Statement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "If:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No process is executing in its CS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "One or more processes wish to enter their CS"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Then:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Only processes that are not in their remainder section can participate in the decision"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The decision cannot be postponed indefinitely"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "bounded-waiting--formal-statement",
+      children: "Bounded Waiting — Formal Statement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After process Pᵢ makes a request to enter its CS, there exists a bound on the number of times other processes may enter their CS before Pᵢ's request is granted."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-2-petersons-solution",
+      children: "UNIT 2: PETERSON'S SOLUTION"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "21-overview",
+      children: "2.1 Overview"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Peterson's algorithm"
+      }), " (Gary Peterson, 1981) is a software-based solution to the critical section problem for two processes. It uses two shared variables: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "flag[2]"
+      }), " (indicating each process's intent to enter CS) and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "turn"
+      }), " (indicating whose turn it is)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-2",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Two People at a Single-Lock Door"
+      }), ": Alice and Bob share an office with a single key. When Alice wants to enter:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Alice puts her hand on the key (sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[Alice] = true"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Alice says \"Bob can go first\" (sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "turn = Bob"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If Bob also wants to go (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[Bob] == true"
+        }), ") AND it's Bob's turn (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "turn == Bob"
+        }), "), Alice waits"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Otherwise Alice enters"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-of-petersons-algorithm",
+      children: "Numbered Steps of Peterson's Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Pᵢ wants to enter critical section:\nStep 1: flag[i] = true          // Announce intent\nStep 2: turn = j                // Defer to other process\nStep 3: while (flag[j] && turn == j) {}  // Wait if both want and it's other's turn\nStep 4: // Enter critical section\nStep 5: flag[i] = false         // Done; allow other to enter\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-2",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "shared bool flag[2] = {false, false}\nshared int turn\n\nprocess(i):\n    int other = 1 - i\n    while true:\n        flag[i] = true               // I want to enter\n        turn = other                 // I yield to the other process\n        while flag[other] and turn == other:\n            // busy wait — spin until it's my turn\n        // critical section\n        flag[i] = false              // I'm done\n        // remainder section\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-1",
+      children: "C++ Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <atomic>\n\nstruct PetersonLock {\n    std::atomic<bool> flag[2];\n    std::atomic<int> turn;\n\n    PetersonLock() : flag{false, false}, turn(0) {}\n\n    void lock(int self) {\n        int other = 1 - self;\n        flag[self].store(true, std::memory_order_seq_cst);\n        turn.store(other, std::memory_order_seq_cst);\n        while (flag[other].load(std::memory_order_seq_cst) &&\n               turn.load(std::memory_order_seq_cst) == other) {\n            std::this_thread::yield();  // Spin with yield\n        }\n    }\n\n    void unlock(int self) {\n        flag[self].store(false, std::memory_order_seq_cst);\n    }\n};\n\nPetersonLock plock;\nint counter = 0;\n\nvoid worker(int id, int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        plock.lock(id);\n        counter++;\n        plock.unlock(id);\n    }\n}\n\nint main() {\n    const int N = 100000;\n    std::thread t1(worker, 0, N);\n    std::thread t2(worker, 1, N);\n\n    t1.join();\n    t2.join();\n\n    std::cout << \"Counter: \" << counter\n              << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-1",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\n\nclass PetersonLock:\n    def __init__(self):\n        self.flag = [False, False]\n        self.turn = 0\n\n    def lock(self, self_id):\n        other = 1 - self_id\n        self.flag[self_id] = True\n        self.turn = other\n        while self.flag[other] and self.turn == other:\n            pass  # Busy wait — spinning\n\n    def unlock(self, self_id):\n        self.flag[self_id] = False\n\ncounter = 0\nplock = PetersonLock()\niterations = 100000\n\ndef worker(thread_id):\n    global counter\n    for _ in range(iterations):\n        plock.lock(thread_id)\n        counter += 1\n        plock.unlock(thread_id)\n\nt1 = threading.Thread(target=worker, args=(0,))\nt2 = threading.Thread(target=worker, args=(1,))\n\nt1.start()\nt2.start()\nt1.join()\nt2.join()\n\nprint(f\"Counter: {counter} (expected: {2 * iterations})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "22-petersons-algorithm--full-dry-run",
+      children: "2.2 Peterson's Algorithm — Full Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits",
+      children: "Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "flag[0]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "flag[1]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "turn"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Who is in CS?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nobody wants CS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0] = true"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "T"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ announces intent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn = 1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ defers to P₁"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1]==F"
+            }), " → skip loop"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "P₀"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ doesn't want CS, so P₀ enters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1] = true"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "T"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ announces intent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn = 0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ defers to P₀"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0]==T && turn==0"
+            }), " → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "spin"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ in CS, P₁ waits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0] = false"
+            }), " (exits CS)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "F"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ releases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Re-check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0]==F"
+            }), " → skip loop"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "P₁"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ enters CS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1] = false"
+            }), " (exits CS)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "F"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ releases"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "scenario-both-p-and-p-want-cs-simultaneously",
+      children: "Scenario: Both P₀ and P₁ want CS simultaneously"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Process"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "flag[0]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "flag[1]"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "turn"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Who is in CS?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0] = true"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "T"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1] = true"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "T"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both now want CS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn = 1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ defers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1]==T && turn==1"
+            }), " → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "spin"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ waits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn = 0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ defers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0]==T && turn==0"
+            }), " → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "spin"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ waits"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Re-check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0]==T && turn==0"
+            }), " → spin"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Re-check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1]==T && turn==1"
+            }), "? ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn==0"
+            }), " now → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "skip"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "P₀"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀ enters because turn≠1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₀"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0] = false"
+            }), " (exits CS)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "F"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Re-check: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[0]==F"
+            }), " → skip loop"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "P₁"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁ enters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[1] = false"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "F"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "23-proof-of-correctness",
+      children: "2.3 Proof of Correctness"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mutual-exclusion-proof",
+      children: "Mutual Exclusion Proof"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Assume P₀ and P₁ are both in CS simultaneously. Then:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₀ entered CS only when ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[1] == false OR turn == 0"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₁ entered CS only when ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == false OR turn == 1"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "If both are in CS, then either:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "turn == 0"
+        }), " (so P₁ must have found ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == false"
+        }), ") AND ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "turn == 1"
+        }), " (so P₀ must have found ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[1] == false"
+        }), ") → contradiction because turn cannot be both 0 and 1"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["By contradiction, both cannot be in CS simultaneously. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ME holds."
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "progress-proof",
+      children: "Progress Proof"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If P₀ is in its remainder section (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "flag[0] == false"
+      }), ") and P₁ wants CS:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₁'s while condition: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == false"
+        }), " → loop skipped immediately"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "P₁ enters CS without waiting"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If P₁ is waiting (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "flag[1] == true"
+      }), ") and P₀ is in remainder section:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₀ will not set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] = true"
+        }), " (it's in remainder)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₁'s while condition: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] == false"
+        }), " → loop exits"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Progress holds."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "bounded-waiting-proof",
+      children: "Bounded Waiting Proof"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "If P₀ wants CS and P₁ is in CS:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₀ sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[0] = true"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "turn = 1"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₀ waits while ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[1] == true && turn == 1"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["P₁ will eventually exit CS and set ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "flag[1] = false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["At most one entry by P₁ before P₀ enters (P₁ may re-enter before P₀, but then on P₁'s next attempt, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "turn == 1"
+        }), " makes P₁ wait)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Bound = 1. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bounded waiting holds."
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "24-complexity-analysis",
+      children: "2.4 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock (uncontended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two stores, one load"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock (contended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k) wait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spin until other releases; k = duration of CS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 booleans + 1 int"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 bytes + padding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constant, independent of critical section size"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context switches"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 (spinlock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No yield to kernel; CPU spins"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why Peterson is impractical on modern hardware"
+      }), ": Modern CPUs (ARM, PowerPC) implement weak memory ordering. Without memory barriers, the compiler or CPU may reorder the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "flag[i] = true"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "turn = j"
+      }), " stores, breaking the algorithm. Hardware requires assembly-level ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "dmb"
+      }), " (data memory barrier) instructions."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "25-advantages--disadvantages",
+      children: "2.5 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pure software — no special hardware needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only works for 2 processes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Elegant and simple to understand"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Busy-waiting wastes CPU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Satisfies all three CS requirements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fails on weakly-ordered CPUs without barriers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No starvation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not practical for real systems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Teaches core CS concepts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extension to n processes is complex"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "26-edge-cases",
+      children: "2.6 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Process crashes after ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[i]=true"
+            }), " but not in CS"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Other process spins forever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timeout mechanism"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Process crashes inside CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Other process spins forever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recovery protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "One process much faster than other"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Works correctly; faster may re-enter multiple times"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bound = 1 BW guarantee holds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Both arrive at exact same time"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "turn"
+            }), " determines winner"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fair tie-breaking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Compiler reorders ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "flag[i]"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "turn"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Algorithm breaks"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "atomic_thread_fence"
+            }), " or inline assembly"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-3-synchronization-hardware",
+      children: "UNIT 3: SYNCHRONIZATION HARDWARE"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "31-overview",
+      children: "3.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern hardware provides atomic (non-interruptible) instructions that allow lock implementations without relying on software protocols. These instructions are the foundation of all real-world synchronization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-3",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Cash Register \"Total\" Button"
+      }), ": When a cashier presses \"Total\" on a register, the machine atomically reads all item prices, computes the sum, and displays it — all in one uninterruptible operation. Another cashier cannot interfere mid-computation. This is exactly what a hardware atomic instruction does: read-modify-write as one indivisible step."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "why-hardware-support",
+      children: "Why Hardware Support?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Peterson's algorithm fails on modern CPUs because:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compilers can reorder memory operations for optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CPUs with weakly-ordered memory models (ARM, PowerPC, RISC-V) can reorder stores"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multi-core systems have cache coherency delays"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Hardware atomic instructions solve this by guaranteeing that no other core can modify the memory location between the read and the write."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "32-test-and-set-tsl-instruction",
+      children: "3.2 Test-and-Set (TSL) Instruction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "test_and_set(target)"
+      }), " atomically:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Reads the current value of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "target"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "target"
+        }), " to 1"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Returns the original value"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-4",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Airline Seat Reservation"
+      }), ": When two agents try to book the last seat:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent 1: \"Is seat 14A available?\" (read)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent 1: \"Mark it as sold!\" (write)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent 2: \"Is seat 14A available?\" → already sold → tries next seat"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The check-and-mark must happen as one atomic operation, which is exactly what test-and-set provides."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps",
+      children: "Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "acquire(lock):\n1. Call test_and_set(&lock)\n2. If return value == 1 → another thread holds the lock → goto 1 (spin)\n3. If return value == 0 → lock was free → we now hold it → enter CS\n\nrelease(lock):\n1. Set lock = 0\n2. Other threads' test_and_set calls will now succeed\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-3",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Atomic hardware instruction — executes as one uninterruptible step\nfunction test_and_set(int *target) -> int:\n    old = *target\n    *target = 1\n    return old\n\nstruct Spinlock:\n    int flag = 0\n\nfunction acquire(Spinlock *lock):\n    while test_and_set(&lock->flag) == 1:\n        // busy wait — spinning\n\nfunction release(Spinlock *lock):\n    lock->flag = 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cc-implementation-gcc-atomic-builtins",
+      children: "C/C++ Implementation (GCC atomic builtins)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <atomic>\n\nstruct TASLock {\n    std::atomic<int> flag{0};\n\n    void lock() {\n        while (flag.exchange(1, std::memory_order_acquire) == 1) {\n            // Spin — busy wait\n        }\n    }\n\n    void unlock() {\n        flag.store(0, std::memory_order_release);\n    }\n};\n\nTASLock lock;\nint counter = 0;\n\nvoid worker(int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        lock.lock();\n        counter++;\n        lock.unlock();\n    }\n}\n\nint main() {\n    const int N = 100000;\n    std::thread t1(worker, N);\n    std::thread t2(worker, N);\n    t1.join();\n    t2.join();\n    std::cout << \"Counter: \" << counter << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-simulated",
+      children: "Python Implementation (simulated)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport ctypes\n\n# Python doesn't have hardware TAS — simulate with threading.Lock\n# In CPython, the GIL protects individual bytecodes, but we use\n# threading.Lock which wraps the platform's native mutex.\n\nclass TASLock:\n    def __init__(self):\n        self._lock = threading.Lock()\n        self._flag = 0\n\n    def acquire(self):\n        while True:\n            # Simulate test_and_set: atomically read and set to 1\n            with self._lock:\n                old = self._flag\n                self._flag = 1\n            if old == 0:\n                break\n            # Spin\n\n    def release(self):\n        self._flag = 0  # Not thread-safe in real Python — use actual Lock\n\ncounter = 0\nlock = TASLock()\niterations = 100000\n\ndef worker():\n    global counter\n    for _ in range(iterations):\n        lock.acquire()\n        counter += 1\n        lock.release()\n\n# Note: This simulation has its own races on self._flag.\n# In practice, use threading.Lock directly.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-1",
+      children: "Dry Run Trace Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "lock->flag"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Return value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Who holds lock?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TAS(&lock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            }), " → free"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "A"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enter CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TAS(&lock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            }), " → held"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spin (loop)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exit CS → flag=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TAS(&lock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            }), " → free"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enter CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock (uncontended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One atomic instruction, ~10-30ns on modern CPU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock (contended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "k = time until lock released; spinning burns CPU cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One flag variable per lock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache behavior"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TAS generates bus traffic (cache line invalidations)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why TAS is inefficient on multi-core"
+      }), ": Each TAS instruction writes to the flag variable, which invalidates the cache line on all other cores. Even spinning threads generate bus traffic. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Test-and-test-and-set"
+      }), " (TTAS) is a better variant: spin with read-only loads, call TAS only when the lock appears free."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-2",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works on all modern CPUs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Busy-waiting wastes CPU cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple hardware implementation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No bounded waiting guarantee (may starve)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundation for all OS locks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache coherence traffic on multi-core"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be used in interrupt handlers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority inversion possible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast uncontended acquisition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not fair — later threads may acquire before earlier ones"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-2",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt handler acquires lock held by interrupted thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disable interrupts or use spin_lock_irqsave()"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Single core, no preemption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock always acquired immediately"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spinning never happens"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "N threads contending same lock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unfair — one thread may starve"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ticket lock (provides FIFO)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Very long critical section"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU waste from spinning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use blocking mutex instead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread dies holding lock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All spinners spin forever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock fencing / recovery"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "33-compare-and-swap-cas",
+      children: "3.3 Compare-and-Swap (CAS)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-1",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "compare_and_swap(value, expected, new_value)"
+      }), " atomically:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Reads the current value of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "*value"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "*value == expected"
+        }), ", sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "*value = new_value"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Returns the old value"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-5",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Vending Machine Coin Slot"
+      }), ": The machine checks: \"Is the coin exactly $1? If yes, accept it and dispense a soda. If not, reject it.\" The check-and-accept must be atomic — otherwise someone could trick it with a half-accepted coin."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-1",
+      children: "Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "compare_and_swap(int *value, int expected, int new_value):\nStep 1: old = *value\nStep 2: if old == expected: *value = new_value\nStep 3: return old\n(all three steps execute atomically — no interleaving)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-4",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Atomic — implemented as a single CPU instruction (CMPXCHG on x86)\nfunction compare_and_swap(int *value, int expected, int new_value) -> int:\n    old = *value\n    if old == expected:\n        *value = new_value\n    return old\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cc-implementation",
+      children: "C/C++ Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <atomic>\n\nstd::atomic<int> counter{0};\n\n// Lock-free increment using CAS\nvoid lock_free_increment(std::atomic<int> &val) {\n    int expected = val.load(std::memory_order_relaxed);\n    while (!val.compare_exchange_weak(expected, expected + 1,\n                                      std::memory_order_acq_rel)) {\n        // CAS failed — expected was updated with current value; retry\n    }\n}\n\nvoid worker(int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        lock_free_increment(counter);\n    }\n}\n\nint main() {\n    const int N = 100000;\n    std::thread t1(worker, N);\n    std::thread t2(worker, N);\n    t1.join();\n    t2.join();\n    std::cout << \"Counter: \" << counter.load() << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-2",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport ctypes\n\n# Python doesn't have CAS natively; simulate with a spinlock\n# In real Python, use multiprocessing.Value with lock=True or ctypes.\n\nclass CASLock:\n    def __init__(self):\n        self._flag = 0\n        self._mutex = threading.Lock()\n\n    def compare_and_swap(self, expected, new_value):\n        with self._mutex:\n            old = self._flag\n            if old == expected:\n                self._flag = new_value\n            return old\n\n    def lock(self):\n        while self.compare_and_swap(0, 1) == 1:\n            pass\n\n    def unlock(self):\n        self._flag = 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-lock-free-increment",
+      children: "Dry Run Trace Table (Lock-free Increment)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "counter (shared)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "expected (local)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "CAS success?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Load counter → expected=5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CAS(5, 6) → succeeds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CAS(5, 6) → fails (counter=6 ≠ expected=5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: ["updated to ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retry: CAS(6, 7) → succeeds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "7"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "FINAL"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "7"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            }
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            }
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-2",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CAS instruction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single CPU cycle on x86 (CMPXCHG), ~10-40ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock-free increment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(retries)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retries = number of concurrent CAS attempts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Worst-case retries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "n concurrent threads all CAS on same variable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single atomic variable"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why CAS enables lock-free programming"
+      }), ": Unlike TAS, CAS can be retried on failure without holding any lock. This means a thread can help another thread complete its operation rather than blocking. This is the foundation of lock-free data structures."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cas-vs-tas--key-difference",
+      children: "CAS vs TAS — Key Difference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TAS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CAS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Always writes?"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " (always sets to 1)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only when match succeeds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache behavior"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor (always invalidates)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good (most CAS attempts succeed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock-free possible?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (foundation of lock-free)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ABA problem?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Yes"
+            }), " — value can change A→B→A and CAS won't detect"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "x86 instruction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "xchg"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "cmpxchg"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "34-memory-barriers-fences",
+      children: "3.4 Memory Barriers (Fences)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-2",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "memory barrier"
+      }), " is a CPU instruction that enforces ordering constraints on memory operations before and after the barrier. It prevents the CPU and compiler from reordering memory accesses across the barrier."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-6",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bridge Toll Booth"
+      }), ": Cars (memory operations) approach a bridge. Cars from both directions can cross in any order normally. A toll booth (memory barrier) forces all cars on one side to finish crossing before any car from the other side can start."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "types-of-memory-barriers",
+      children: "Types of Memory Barriers"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Barrier"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "acquire"
+            }), " (load-load, load-store)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads after barrier see writes before barrier"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock acquire"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "release"
+            }), " (load-store, store-store)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes before barrier are visible after barrier"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock release"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "full"
+            }), " (all orders)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete ordering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generic synchronization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "data-dependency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Order dependent loads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RCU (Read-Copy-Update)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-memory-order-usage",
+      children: "C++ Memory Order Usage"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "std::atomic<int> data;\nstd::atomic<bool> ready{false};\n\n// Thread 1 — producer\ndata.store(42, std::memory_order_relaxed);\nready.store(true, std::memory_order_release);\n\n// Thread 2 — consumer\nwhile (!ready.load(std::memory_order_acquire)) {}\n// Guaranteed to see data == 42\nstd::cout << data.load(std::memory_order_relaxed);  // 42\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-4-mutex-locks",
+      children: "UNIT 4: MUTEX LOCKS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "41-definition",
+      children: "4.1 Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "mutex"
+      }), " (mutual exclusion) is a synchronization primitive that protects a critical section by ensuring only one thread holds the lock at any time. Unlike spinlocks, a mutex typically ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "blocks"
+      }), " (puts to sleep) the waiting thread rather than busy-waiting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-7",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Library Study Room Checkout"
+      }), ": A library has one study room with a key at the front desk."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You take the key (acquire the mutex)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You use the room (critical section)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You return the key (release the mutex)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["If the room is taken, you ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "wait in a queue"
+        }), " (blocking), not standing outside the door spinning"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-of-mutex-operation",
+      children: "Numbered Steps of Mutex Operation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "acquire(mutex):\nStep 1: Try to grab the lock\nStep 2: If lock is free → mark as held, return\nStep 3: If lock is held → add thread to wait queue, call scheduler to block\nStep 4: When woken → try again (Step 1)\n\nrelease(mutex):\nStep 1: Mark lock as free\nStep 2: If any threads are in wait queue → move one to ready queue (wake up)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-5",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct Mutex:\n    int value = 1           // 1 = free, ≤0 = held\n    Queue waiting           // Queue of blocked processes\n\nfunction acquire(Mutex *m):\n    m->value--\n    if m->value < 0:\n        // Lock was already held → block this thread\n        add this thread to m->waiting\n        block()  // Yield CPU\n\nfunction release(Mutex *m):\n    m->value++\n    if m->value <= 0:\n        // Someone is waiting → wake one\n        remove a thread from m->waiting\n        wakeup(thread)  // Move to ready queue\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-pthreads-wrapper",
+      children: "C++ Implementation (pthreads wrapper)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <mutex>\n\nstd::mutex mtx;\nint counter = 0;\n\nvoid worker(int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        std::lock_guard<std::mutex> lock(mtx);  // RAII — acquire on construction\n        counter++;                                // Critical section\n    }  // Release on destruction (unlock automatically)\n}\n\nint main() {\n    const int N = 100000;\n    std::thread t1(worker, N);\n    std::thread t2(worker, N);\n    t1.join();\n    t2.join();\n    std::cout << \"Counter: \" << counter << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "raw-pthread-mutex-c-style",
+      children: "Raw pthread Mutex (C-style)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <pthread.h>\n\npthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;\nint counter = 0;\n\nvoid* worker(void* arg) {\n    int iters = *(int*)arg;\n    for (int i = 0; i < iters; ++i) {\n        pthread_mutex_lock(&mutex);\n        counter++;\n        pthread_mutex_unlock(&mutex);\n    }\n    return nullptr;\n}\n\nint main() {\n    const int N = 100000;\n    pthread_t t1, t2;\n    pthread_create(&t1, nullptr, worker, &N);\n    pthread_create(&t2, nullptr, worker, &N);\n    pthread_join(t1, nullptr);\n    pthread_join(t2, nullptr);\n    std::cout << \"Counter: \" << counter << \" (expected: \" << (2 * N) << \")\\n\";\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-3",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\n\ncounter = 0\nmutex = threading.Lock()\niterations = 100000\n\ndef worker():\n    global counter\n    for _ in range(iterations):\n        with mutex:          # Acquire on enter\n            counter += 1     # Critical section\n        # Release on exit\n\nt1 = threading.Thread(target=worker)\nt2 = threading.Thread(target=worker)\n\nt1.start()\nt2.start()\nt1.join()\nt2.join()\n\nprint(f\"Counter: {counter} (expected: {2 * iterations})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-two-threads-using-mutex",
+      children: "Dry Run Trace Table (Two Threads Using Mutex)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "mutex value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Waiting queue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock is free"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire → value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A holds lock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enter CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire → value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[B]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exit CS → release → value++"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[B]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B's turn"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "release → queue not empty → wake B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "empty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B moved to ready"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire → value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B acquired (scheduler ran B)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exit CS → release → value++"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "spinlock-vs-mutex--detailed-comparison",
+      children: "Spinlock vs Mutex — Detailed Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Spinlock"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Blocking Mutex"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU usage while waiting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100% — busy loops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~0% — thread is blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Context switch on contention"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (2 switches: block + wake)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Latency to acquire"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nanoseconds (if short wait)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microseconds (switch overhead)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very short CS (< context switch time)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Long CS or I/O-bound"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Can be used in interrupt context"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (no blocking allowed in IRQ)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (cannot sleep in IRQ)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Priority inversion risk"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (no scheduler involvement)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher (OS may boost holder)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Preemption"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No preemption needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS scheduler must preempt"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fairness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Usually not fair (TAS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Usually FIFO or priority-based"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) — just a flag"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) — wait queue per lock"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decision rule"
+      }), ": If the critical section is shorter than the time to do two context switches (~1-5µs), use a spinlock. Otherwise, use a blocking mutex."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "recursive-mutex",
+      children: "Recursive Mutex"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "recursive mutex"
+      }), " allows the same thread to acquire the same mutex multiple times without deadlocking. Each acquire must be matched with a release."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <mutex>\n\nstd::recursive_mutex rmtx;\n\nvoid recursive_function(int depth) {\n    if (depth <= 0) return;\n    std::lock_guard<std::recursive_mutex> lock(rmtx);\n    std::cout << \"Depth: \" << depth << \"\\n\";\n    recursive_function(depth - 1);  // Same thread re-acquires same mutex\n}\n\nint main() {\n    std::thread t(recursive_function, 5);\n    t.join();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Danger"
+      }), ": Recursive mutexes can mask bad design. Prefer non-recursive mutexes with a clear lock hierarchy."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-3",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire (uncontended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic CAS on flag"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire (contended, spin)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(k)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spin until free"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire (contended, block)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) user + O(s) kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(w)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "w = wait queue entry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "release (no waiters)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic store"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "release (with waiters)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) + O(s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System call to wake"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-3",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Clean acquire/release semantics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Risk of deadlock if order is wrong"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Available in all threading libraries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can cause priority inversion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Blocking is efficient for long CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not suitable for interrupt handlers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RAII wrappers prevent leaks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead even when uncontested"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-3",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Same thread locks twice (non-recursive)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Deadlock"
+            }), " or undefined behavior"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use recursive mutex or check lock state"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread exits holding mutex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All waiters wait forever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Robust mutex (pthread_mutex_robust)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutex destroyed while held"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Undefined behavior"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensure all threads have released"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-priority thread holds mutex, high-priority waits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority inversion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority inheritance protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal delivered while holding mutex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal handler may try to acquire → deadlock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Async-signal-safe only functions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested critical sections, different order"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enforce global lock ordering"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-5-semaphores",
+      children: "UNIT 5: SEMAPHORES"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "51-definition",
+      children: "5.1 Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "semaphore"
+      }), " (Edsger Dijkstra, 1965) is an integer variable accessed only through two atomic operations: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "wait()"
+      }), " (P -- ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "proberen"
+      }), ", Dutch for \"to test\") and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "signal()"
+      }), " (V -- ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "verhogen"
+      }), ", \"to increment\"). A semaphore can be used to control access to one or more identical resources."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-8",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Valet Parking Ticket Machine"
+      }), ": A restaurant has 10 parking spots. The valet takes a ticket from the machine:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "wait() / P"
+        }), ": Take a ticket. If no tickets left (counter = 0), wait until someone returns theirs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "signal() / V"
+        }), ": Return a ticket. If someone is waiting for a ticket, they can now take one"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The ticket counter IS the semaphore value -- it represents the number of available resources."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "type-1-binary-semaphore-value-0-or-1",
+      children: "Type 1: Binary Semaphore (value 0 or 1)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Used like a mutex -- protects one resource."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "type-2-counting-semaphore-value--0",
+      children: "Type 2: Counting Semaphore (value >= 0)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Used to manage a pool of identical resources (e.g., 5 database connections, 10 printer queues)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps----semaphore-operations",
+      children: "Numbered Steps -- Semaphore Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// wait() / P() -- \"proberen\" (to test)\nStep 1: s->value--                     // Decrement atomically\nStep 2: if s->value < 0:\n            add thread to waiting queue\n            block the thread\n\n// signal() / V() -- \"verhogen\" (to increment)\nStep 1: s->value++                     // Increment atomically\nStep 2: if s->value <= 0:\n            remove thread from waiting queue\n            wake the thread\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-6",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "struct Semaphore:\n    int value\n    Queue waiting   // FIFO queue of blocked processes\n\nfunction wait(Semaphore *s):\n    s->value = s->value - 1\n    if s->value < 0:\n        add running process to s->waiting\n        block()\n\nfunction signal(Semaphore *s):\n    s->value = s->value + 1\n    if s->value <= 0:\n        remove process P from s->waiting\n        wakeup(P)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cc-implementation-posix-semaphores",
+      children: "C/C++ Implementation (POSIX Semaphores)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <semaphore.h>\n#include <vector>\n\nsem_t semaphore;\nint counter = 0;\n\nvoid worker(int iterations) {\n    for (int i = 0; i < iterations; ++i) {\n        sem_wait(&semaphore);   // P operation -- acquire\n        counter++;\n        sem_post(&semaphore);   // V operation -- release\n    }\n}\n\nint main() {\n    const int N = 100000;\n    sem_init(&semaphore, 0, 1);\n\n    std::thread t1(worker, N);\n    std::thread t2(worker, N);\n    t1.join();\n    t2.join();\n\n    std::cout << \"Counter: \" << counter << \" (expected: \" << (2 * N) << \")\\n\";\n    sem_destroy(&semaphore);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "counting-semaphore----resource-pool-c",
+      children: "Counting Semaphore -- Resource Pool (C++)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <semaphore.h>\n#include <vector>\n#include <unistd.h>\n\nsem_t pool;\nconst int RESOURCES = 3;\n\nvoid use_resource(int id) {\n    std::cout << \"Thread \" << id << \" waiting for resource...\\n\";\n    sem_wait(&pool);\n    std::cout << \"Thread \" << id << \" using resource...\\n\";\n    sleep(1);\n    std::cout << \"Thread \" << id << \" releasing resource.\\n\";\n    sem_post(&pool);\n}\n\nint main() {\n    sem_init(&pool, 0, RESOURCES);\n    std::vector<std::thread> threads;\n\n    for (int i = 0; i < 10; ++i)\n        threads.emplace_back(use_resource, i);\n    for (auto &t : threads) t.join();\n\n    sem_destroy(&pool);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-4",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport time\n\nsemaphore = threading.Semaphore(1)\ncounter = 0\niterations = 100000\n\ndef worker():\n    global counter\n    for _ in range(iterations):\n        semaphore.acquire()\n        counter += 1\n        semaphore.release()\n\nt1 = threading.Thread(target=worker)\nt2 = threading.Thread(target=worker)\n\nt1.start()\nt2.start()\nt1.join()\nt2.join()\n\nprint(f\"Counter: {counter} (expected: {2 * iterations})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-counting-semaphore----resource-pool",
+      children: "Python Counting Semaphore -- Resource Pool"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport time\n\npool = threading.Semaphore(3)\n\ndef use_resource(thread_id):\n    print(f\"Thread {thread_id} waiting for resource...\")\n    pool.acquire()\n    print(f\"Thread {thread_id} acquired resource.\")\n    time.sleep(1)\n    print(f\"Thread {thread_id} releasing resource.\")\n    pool.release()\n\nthreads = []\nfor i in range(10):\n    t = threading.Thread(target=use_resource, args=(i,))\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table----binary-semaphore-value1",
+      children: "Dry Run Trace Table -- Binary Semaphore (value=1)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "sem value"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Waiting queue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial (init = 1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource available"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wait() -> value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A acquired"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enter CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wait() -> value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[B]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wait() -> value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[B, C]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "signal() -> value++"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[C]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B woken up"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wait() wakes -> value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "-1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[C]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B acquired"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "signal() -> value++"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "empty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C woken up"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wait() wakes -> value--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C acquired"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "signal() -> value++"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Back to initial"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-4",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "wait (uncontended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One atomic decrement + check"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "wait (contended -- block)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(w)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "s = scheduler, w = queue entry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "signal (no waiters)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One atomic increment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "signal (wake waiter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "s = scheduler time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why sem_value can become negative"
+      }), ": Tracks overcommitment. -3 means 3 threads waiting for 1 resource. Elegantly encodes resource count AND waiter count in one integer."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-4",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Generalizes mutex to N resources"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No ownership -- any thread can signal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Blocks instead of busy-waiting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to create deadlock (forgot signal)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can coordinate producer-consumer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Harder to reason about than mutex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Well-understood, decades of practice"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary sem != mutex (no ownership)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "binary-semaphore-vs-mutex",
+      children: "Binary Semaphore vs Mutex"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Binary Semaphore"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mutex"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0 or 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ownership"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No -- any thread can signal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes -- only owner can unlock"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Used for"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signaling / synchronization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutual exclusion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority inheritance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (most OS)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (with attrs)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be used in ISR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (signal from ISR)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-4",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal before wait (signaling use)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Value becomes 2, second signal lost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always init at 0 for signaling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread signals when should wait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource released incorrectly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Careful design; no ownership"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semaphore destroyed with blocked threads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Undefined behavior"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Drain all waiters first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Overflow (high signal count)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Value wraps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use bounded increments"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "52-classic-problems-using-semaphores",
+      children: "5.2 Classic Problems Using Semaphores"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "521-producer-consumer-bounded-buffer",
+      children: "5.2.1 Producer-Consumer (Bounded Buffer)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <semaphore.h>\n#include <vector>\n\nconst int BUFFER_SIZE = 5;\nint buffer[BUFFER_SIZE];\nint in = 0, out = 0;\n\nsem_t empty;\nsem_t full;\nsem_t mutex;\n\nvoid producer() {\n    for (int i = 0; i < 20; ++i) {\n        sem_wait(&empty);\n        sem_wait(&mutex);\n        buffer[in] = i;\n        std::cout << \"Produced: \" << i << \" at slot \" << in << \"\\n\";\n        in = (in + 1) % BUFFER_SIZE;\n        sem_post(&mutex);\n        sem_post(&full);\n    }\n}\n\nvoid consumer() {\n    for (int i = 0; i < 20; ++i) {\n        sem_wait(&full);\n        sem_wait(&mutex);\n        int val = buffer[out];\n        std::cout << \"Consumed: \" << val << \" from slot \" << out << \"\\n\";\n        out = (out + 1) % BUFFER_SIZE;\n        sem_post(&mutex);\n        sem_post(&empty);\n    }\n}\n\nint main() {\n    sem_init(&empty, 0, BUFFER_SIZE);\n    sem_init(&full, 0, 0);\n    sem_init(&mutex, 0, 1);\n\n    std::thread prod(producer);\n    std::thread cons(consumer);\n\n    prod.join();\n    cons.join();\n\n    sem_destroy(&empty);\n    sem_destroy(&full);\n    sem_destroy(&mutex);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "522-readers-writers",
+      children: "5.2.2 Readers-Writers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <semaphore.h>\n#include <unistd.h>\n\nsem_t rw_mutex;\nsem_t mutex;\nint read_count = 0;\nint shared_data = 0;\n\nvoid reader(int id) {\n    for (int i = 0; i < 5; ++i) {\n        sem_wait(&mutex);\n        read_count++;\n        if (read_count == 1)\n            sem_wait(&rw_mutex);\n        sem_post(&mutex);\n\n        std::cout << \"Reader \" << id << \" reads: \" << shared_data << \"\\n\";\n\n        sem_wait(&mutex);\n        read_count--;\n        if (read_count == 0)\n            sem_post(&rw_mutex);\n        sem_post(&mutex);\n\n        sleep(1);\n    }\n}\n\nvoid writer(int id) {\n    for (int i = 0; i < 3; ++i) {\n        sem_wait(&rw_mutex);\n        shared_data++;\n        std::cout << \"Writer \" << id << \" writes: \" << shared_data << \"\\n\";\n        sem_post(&rw_mutex);\n        sleep(2);\n    }\n}\n\nint main() {\n    sem_init(&rw_mutex, 0, 1);\n    sem_init(&mutex, 0, 1);\n\n    std::thread r1(reader, 1), r2(reader, 2), w1(writer, 1);\n    r1.join(); r2.join(); w1.join();\n\n    sem_destroy(&rw_mutex);\n    sem_destroy(&mutex);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-6-monitor-concepts",
+      children: "UNIT 6: MONITOR CONCEPTS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "61-definition",
+      children: "6.1 Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "monitor"
+      }), " (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchronization construct that encapsulates shared data, operations on that data, and synchronization into a single unit. Unlike semaphores (which are scattered through code), monitors provide ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "structured concurrency"
+      }), " where the compiler/runtime enforces mutual exclusion."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-9",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hotel Room Key System"
+      }), ": A hotel has rooms (shared resources). The front desk (monitor) controls all access:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You request a room key from the front desk -- you get exclusive access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You return the key when done"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The front desk ensures only one person is in each room at a time"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["You can ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "wait"
+        }), " (if the room isn't ready) and the front desk will ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "notify"
+        }), " you when it is"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You never directly access the room without going through the front desk"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "key-characteristics",
+      children: "Key Characteristics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mutual Exclusion"
+        }), ": Only one thread can be active inside the monitor at any time"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Condition Variables"
+        }), ": Enable threads to wait for specific conditions and be notified"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data Encapsulation"
+        }), ": Shared data is private to the monitor -- only accessible through monitor procedures"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "condition-variables",
+      children: "Condition Variables"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "wait(c)"
+        }), ": Release monitor lock, block on condition c. When re-acquired, re-acquire lock"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "signal(c)"
+        }), ": Wake one thread waiting on condition c (Hoare semantics: waiter runs immediately; Mesa semantics: waiter becomes ready and competes for lock)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "broadcast(c)"
+        }), ": Wake ALL threads waiting on condition c"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps----monitor-waitsignal",
+      children: "Numbered Steps -- Monitor Wait/Signal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "// Thread A inside monitor -- needs to wait for condition\nStep 1: A calls wait(cond)\nStep 2: A releases monitor lock (so other threads can enter)\nStep 3: A is placed on cond's waiting queue\nStep 4: A blocks (sleeps) -- does NOT busy wait\n\n// Thread B inside monitor -- makes condition true\nStep 1: B calls signal(cond)\nStep 2: One thread (A) is moved from cond's queue to ready queue\nStep 3: B continues in monitor (Mesa) OR B yields to A immediately (Hoare)\nStep 4: A wakes, re-acquires monitor lock, returns from wait()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-7",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "monitor SharedResource:\n    data: shared_data\n    condition_variable cond\n\n    procedure entry doSomething():\n        entry:  // implicit -- runtime acquires monitor lock\n        while not condition:\n            cond.wait()     // release lock, wait, re-acquire\n        modify shared_data\n        cond.signal()       // wake one waiter\n        exit:               // implicit -- runtime releases monitor lock\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-stdcondition_variable",
+      children: "C++ Implementation (std::condition_variable)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <thread>\n#include <mutex>\n#include <condition_variable>\n#include <queue>\n\nclass BoundedBuffer {\nprivate:\n    std::queue<int> buffer;\n    std::mutex mtx;\n    std::condition_variable not_empty;\n    std::condition_variable not_full;\n    const size_t max_size;\n\npublic:\n    BoundedBuffer(size_t size) : max_size(size) {}\n\n    void produce(int item) {\n        std::unique_lock<std::mutex> lock(mtx);\n        while (buffer.size() >= max_size) {\n            not_full.wait(lock);\n        }\n        buffer.push(item);\n        std::cout << \"Produced: \" << item << \" (size: \" << buffer.size() << \")\\n\";\n        not_empty.notify_one();\n    }\n\n    int consume() {\n        std::unique_lock<std::mutex> lock(mtx);\n        while (buffer.empty()) {\n            not_empty.wait(lock);\n        }\n        int item = buffer.front();\n        buffer.pop();\n        std::cout << \"Consumed: \" << item << \" (size: \" << buffer.size() << \")\\n\";\n        not_full.notify_one();\n        return item;\n    }\n};\n\nint main() {\n    BoundedBuffer buf(5);\n    std::thread producer([&]() {\n        for (int i = 0; i < 20; ++i) buf.produce(i);\n    });\n    std::thread consumer([&]() {\n        for (int i = 0; i < 20; ++i) buf.consume();\n    });\n    producer.join();\n    consumer.join();\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-threadingcondition",
+      children: "Python Implementation (threading.Condition)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import threading\nimport time\n\nclass BoundedBuffer:\n    def __init__(self, max_size):\n        self.buffer = []\n        self.max_size = max_size\n        self.lock = threading.Lock()\n        self.not_empty = threading.Condition(self.lock)\n        self.not_full = threading.Condition(self.lock)\n\n    def produce(self, item):\n        with self.not_full:\n            while len(self.buffer) >= self.max_size:\n                self.not_full.wait()\n            self.buffer.append(item)\n            print(f\"Produced: {item} (size: {len(self.buffer)})\")\n            self.not_empty.notify()\n\n    def consume(self):\n        with self.not_empty:\n            while len(self.buffer) == 0:\n                self.not_empty.wait()\n            item = self.buffer.pop(0)\n            print(f\"Consumed: {item} (size: {len(self.buffer)})\")\n            self.not_full.notify()\n            return item\n\nbuf = BoundedBuffer(5)\n\ndef producer():\n    for i in range(20):\n        buf.produce(i)\n        time.sleep(0.01)\n\ndef consumer():\n    for _ in range(20):\n        buf.consume()\n        time.sleep(0.03)\n\nt1 = threading.Thread(target=producer)\nt2 = threading.Thread(target=consumer)\nt1.start()\nt2.start()\nt1.join()\nt2.join()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table----monitor-with-cv",
+      children: "Dry Run Trace Table -- Monitor with CV"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Buffer size"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Cond queue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Lock holder"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "--"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "none"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "consume -- try lock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "P"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C blocked on mutex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(4)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "5"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full!"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "produce(6) -> wait(not_full)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[P on not_full]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "C"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P releases lock, sleeps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "acquire -> consume -> pop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "[P on not_full]"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "notify_one(not_full)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "empty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P moved to ready"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "consume -> pop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "3"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "wakes -> re-acquire -> produce(6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "4"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "empty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "hoare-vs-mesa-semantics",
+      children: "Hoare vs Mesa Semantics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hoare"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mesa"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signaled thread runs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Immediately"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Later (competes for lock)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Condition guaranteed?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (no re-check needed)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "No"
+            }), " -- must re-check"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "While vs If"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "if"
+            }), " is safe"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsxs)(_components.strong, {
+              children: ["Must use ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "while"
+              })]
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Used in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Research systems"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Most real systems"
+            }), " (Java, C++)"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key rule for Mesa"
+      }), ": Always use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "while (not condition) wait()"
+      }), " -- never ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "if"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-5",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enter monitor (uncontended)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Acquire underlying mutex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wait on CV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)+O(s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(w)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Release lock, block; w = queue entry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal CV (no waiters)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No-op"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal CV (wake waiter)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "s = scheduler time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast CV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n x s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wake n waiters"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-5",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured -- code is sequential"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May be overkill for simple ME"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiler enforces mutual exclusion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can deadlock if signal/wait order wrong"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easier to reason about than semaphores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not available in all languages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Condition variables are precise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesa requires while-loop discipline"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Encapsulation of data + sync"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex with many CVs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-5",
+      children: "Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Behavior"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Spurious wakeup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread wakes without signal"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Always use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "while"
+            }), " loop"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal when no thread waiting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal is lost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use separate predicate variable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested monitor calls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deadlock risk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avoid nested calls"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast wakes all"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most re-check and sleep"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use notify_one when possible"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "62-monitor-vs-semaphore",
+      children: "6.2 Monitor vs Semaphore"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Monitor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Semaphore"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Abstraction level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (language construct)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (OS primitive)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutual exclusion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implicit (compiler)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explicit (wait/signal)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data encapsulation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (data inside monitor)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Condition sync"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Condition variables"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Counting semaphores"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ownership"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (lock owner)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Error-prone?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Less"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Available in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java, C++11, Python, C#"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C, C++, POSIX, System V"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-7-interview-corner",
+      children: "UNIT 7: INTERVIEW CORNER"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "71-race-condition-detection",
+      children: "7.1 Race Condition Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-find-the-race-condition",
+      children: "Q1: Find the race condition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "int balance = 100;\nvoid withdraw(int amount) {\n    if (balance >= amount) {\n        balance -= amount;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": T1 and T2 both read ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "balance"
+      }), " before either writes. T1 sees balance=100, amount=200 -> skip. T2 sees balance=100, amount=50 -> balance=50. If T2 debited first, T1 would see 50 and skip -- but timing makes outcomes non-deterministic. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution"
+      }), ": Use a mutex or CAS."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-is-this-thread-safe",
+      children: "Q2: Is this thread-safe?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "std::vector<int> vec;\nvoid add(int x) {\n    if (vec.empty()) {\n        vec.push_back(0);\n    }\n    vec.push_back(x);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": No. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "vector::push_back"
+      }), " is not thread-safe -- concurrent calls cause data corruption. Even the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "empty()"
+      }), " check has a race. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "std::mutex"
+      }), " for all accesses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-why-is-this-lock-incorrect",
+      children: "Q3: Why is this lock incorrect?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "std::mutex mtx;\nint data;\nvoid update() {\n    mtx.lock();\n    data++;\n    if (data == 10) {\n        return;  // BUG -- forgot to unlock!\n    }\n    mtx.unlock();\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Early return skips ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "unlock()"
+      }), ", causing deadlock on next call. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "std::lock_guard"
+      }), " (RAII)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "72-spinlock-vs-mutex",
+      children: "7.2 Spinlock vs Mutex"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-when-use-spinlock-instead-of-mutex",
+      children: "Q1: When use spinlock instead of mutex?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": In kernel interrupt handlers (where sleeping is not allowed) or for very short CS (~<2us) where context switch cost exceeds busy-wait. Examples: per-CPU variable protection, device register update."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-100ms-cs-with-50-threads-contending-on-spinlock",
+      children: "Q2: 100ms CS with 50 threads contending on spinlock?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": 49 CPU cores waste 100ms spinning. Power spikes. Throughput collapses. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Design error"
+      }), " -- use blocking mutex."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-overhead-comparison",
+      children: "Q3: Overhead comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Spinlock"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mutex"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No contention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-30 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~25-50 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Light contention, short CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-10 us"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20 us"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heavy contention, long CS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Very high"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-50 us per wake"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-is-a-ticket-lock",
+      children: "Q4: What is a ticket lock?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Fair spinlock guaranteeing FIFO. Each thread takes a ticket number, waits until called."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "struct TicketLock {\n    std::atomic<int> next_ticket{0};\n    std::atomic<int> now_serving{0};\n\n    void lock() {\n        int my_ticket = next_ticket.fetch_add(1);\n        while (now_serving.load() != my_ticket)\n            std::this_thread::yield();\n    }\n\n    void unlock() {\n        now_serving.fetch_add(1);\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "73-critical-section-solutions-comparison",
+      children: "7.3 Critical Section Solutions Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "ME"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Progress"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Bounded Wait"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Busy-Wait"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Hardware"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Blocking"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N procs"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Fairness"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Real-world use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Peterson"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y (bound=1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Educational"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Dekker"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Historical"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TAS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N (starves)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Atomic RMW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Linux arch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TTAS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N (starves)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Atomic RMW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Spin+backoff"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ticket Lock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y (FIFO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Atomic RMW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Y"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Linux pre-v5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MCS Lock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Atomic RMW+qnode"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Linux v5+"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mutex (block)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "OS scheduler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Y"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Usually"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Pthreads, Java"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Binary Sem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Varies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "OS scheduler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Y"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Varies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Signaling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CAS (lock-free)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N (livelock)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "CAS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Lock-free DS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Monitor"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Mutex+CV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Y"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Usually"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Java, C++, C#"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key insight"
+      }), ": Every solution trades off fairness, throughput, and complexity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "74-common-synchronization-bugs",
+      children: "7.4 Common Synchronization Bugs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "deadlock-4-coffman-conditions",
+      children: "Deadlock (4 Coffman Conditions)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Mutual exclusion"
+        }), ": Resource held by one"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hold and wait"
+        }), ": Holder waits for another resource"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "No preemption"
+        }), ": Resource can't be taken away"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Circular wait"
+        }), ": Cycle of threads each waiting for next"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "livelock",
+      children: "Livelock"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Threads keep yielding to each other without progress. Like two people in a hallway who keep stepping the same direction."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "priority-inversion",
+      children: "Priority Inversion"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "High-priority thread waits for low-priority thread holding a lock, while medium-priority threads preempt the low-priority holder."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real example"
+      }), ": Mars Pathfinder 1997 -- high-priority bus task blocked by low-priority meteo task holding mutex; medium-priority comms kept preempting. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fixed with priority inheritance"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "aba-problem",
+      children: "ABA Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Thread reads A, computes, CAS(A, C). Between read and CAS, another changed A->B->A. CAS succeeds but state is wrong."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "solution-tagged-pointers-or-version-counters",
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution"
+      }), ": Tagged pointers or version counters."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-8-applications-in-real-systems",
+      children: "UNIT 8: APPLICATIONS IN REAL SYSTEMS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "81-linux-kernel-spinlocks",
+      children: "8.1 Linux Kernel Spinlocks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Linux kernel provides spinlocks for use in interrupt handlers and short critical sections."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <linux/spinlock.h>\n\nDEFINE_SPINLOCK(my_lock);\n\nvoid example_function(void) {\n    unsigned long flags;\n    spin_lock_irqsave(&my_lock, flags);\n    // Critical section -- safe from interrupt handlers on this CPU\n    spin_unlock_irqrestore(&my_lock, flags);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "variants",
+      children: "Variants"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Variant"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Disables preemption?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Disables IRQs?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Used when"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "spin_lock()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process context, no IRQ sharing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "spin_lock_irq()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process context, shares with IRQ"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "spin_lock_irqsave()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y (saves state)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same, but IRQs may already be off"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "spin_lock_bh()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Y"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N (blocks softirqs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bottom-half context"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "raw-spinlock-x86-asm",
+      children: "Raw Spinlock (x86 asm)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "static __always_inline void arch_spin_lock(arch_spinlock_t *lock) {\n    asm volatile(\n        \"1:  lock; btsl $0, %0\\n\"\n        \"    jnc  3f\\n\"\n        \"2:  testb $1, %0\\n\"\n        \"    jne  2b\\n\"\n        \"    jmp  1b\\n\"\n        \"3:\\n\"\n        : \"+m\" (lock->slock) : : \"memory\"\n    );\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mcs-lock-linux-v5",
+      children: "MCS Lock (Linux v5+)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Linux migrated from ticket locks to MCS locks for scalability. Each spinning thread spins on its own local cache line."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "struct mcs_lock {\n    struct mcs_node *tail;\n};\n\nstruct mcs_node {\n    struct mcs_node *next;\n    int locked;\n};\n\nvoid mcs_lock(struct mcs_lock *lock, struct mcs_node *my_node) {\n    my_node->next = NULL;\n    my_node->locked = 1;\n    struct mcs_node *prev = atomic_xchg(&lock->tail, my_node);\n    if (prev != NULL) {\n        prev->next = my_node;\n        smp_mb();\n        while (my_node->locked)\n            cpu_relax();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "82-pthread-mutex-implementation-nptl",
+      children: "8.2 pthread Mutex Implementation (NPTL)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "glibc's NPTL uses a hybrid: spin briefly, then block via futex."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "int __pthread_mutex_lock(pthread_mutex_t *mutex) {\n    // Fast path: try atomic CAS in userspace\n    if (atomic_compare_exchange(&mutex->__lock, 0, 1) == 0)\n        return 0;  // Acquired -- no syscall!\n\n    // Spin phase\n    int spins = 0;\n    while (spins < MAX_SPIN_COUNT) {\n        if (atomic_compare_exchange(&mutex->__lock, 0, 1) == 0)\n            return 0;\n        spins++;\n        cpu_relax();\n    }\n\n    // Block phase -- futex syscall\n    atomic_fetch_add(&mutex->__lock, -1);\n    do {\n        futex_wait(&mutex->__lock, 0);\n    } while (atomic_exchange(&mutex->__lock, 1) != 0);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "linux-futex-design",
+      children: "Linux Futex Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Futex (Fast Userspace Mutex) avoids syscalls in the uncontended case:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Try atomic increment in userspace -- 99.9% case, ~10ns, NO syscall\n2. If contended, call futex(FUTEX_WAIT) -- ONLY THEN enter kernel\n3. Kernel puts thread to sleep on futex queue\n4. On unlock, futex(FUTEX_WAKE) wakes one waiter\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Performance"
+      }), ": ~10ns uncontended, ~5-10us contended. Two-level design is critical."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "83-java-synchronization",
+      children: "8.3 Java Synchronization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class Counter {\n    private int count = 0;\n\n    public synchronized void increment() {\n        count++;\n    }\n}\n\n// Java explicit locks\nimport java.util.concurrent.locks.ReentrantLock;\nimport java.util.concurrent.locks.Lock;\n\npublic class CounterWithLock {\n    private final Lock lock = new ReentrantLock(true);\n    private int count = 0;\n\n    public void increment() {\n        lock.lock();\n        try {\n            count++;\n        } finally {\n            lock.unlock();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "84-windows-critical_section",
+      children: "8.4 Windows CRITICAL_SECTION"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <windows.h>\n\nCRITICAL_SECTION cs;\nInitializeCriticalSection(&cs);\n\nEnterCriticalSection(&cs);\n// Critical section\nLeaveCriticalSection(&cs);\n\nDeleteCriticalSection(&cs);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Windows critical sections use a two-level strategy similar to futexes."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "85-engineering-case-studies",
+      children: "8.5 Engineering Case Studies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-1-therac-25-radiation-overdose-1985-1987",
+      children: "Case 1: Therac-25 Radiation Overdose (1985-1987)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Root cause"
+      }), ": Race condition in concurrent task controlling electron beam. A flag was set and checked without synchronization, allowing the beam to fire at full power without target positioned."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lesson"
+      }), ": Life-critical systems need formal verification of synchronization."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-2-mars-pathfinder-priority-inversion-1997",
+      children: "Case 2: Mars Pathfinder Priority Inversion (1997)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Root cause"
+      }), ": Low-priority meteo task held mutex while high-priority bus task waited. Medium-priority comms tasks preempted the low-priority holder, making high-priority task miss its deadline. System reset."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix"
+      }), ": Priority inheritance -- holder temporarily inherits the waiting thread's priority."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-3-northeast-blackout-2003",
+      children: "Case 3: Northeast Blackout 2003"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Root cause"
+      }), ": Race condition in alarm logging system caused alarms to be lost during cascade. Operators were unaware of developing failure."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Lesson"
+      }), ": Even \"non-critical\" sync errors have catastrophic consequences."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-9-existing-examples-retained",
+      children: "UNIT 9: EXISTING EXAMPLES (RETAINED)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "91-race-condition-demonstration",
+      children: "9.1 Race Condition Demonstration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <pthread.h>\n\nint counter = 0;\n\nvoid *add_many(void *arg) {\n    for (int i = 0; i < 1000000; i++)\n        counter++;\n    return NULL;\n}\n\nint main() {\n    pthread_t t1, t2;\n    pthread_create(&t1, NULL, add_many, NULL);\n    pthread_create(&t2, NULL, add_many, NULL);\n    pthread_join(t1, NULL);\n    pthread_join(t2, NULL);\n    printf(\"Counter: %d (expected: 2000000)\\n\", counter);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "92-semaphore-resource-counter",
+      children: "9.2 Semaphore Resource Counter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "#include <stdio.h>\n#include <pthread.h>\n#include <semaphore.h>\n#include <unistd.h>\n\nsem_t printers;\n\nvoid *print_job(void *arg) {\n    int id = *(int *)arg;\n    printf(\"Job %d waiting for printer...\\n\", id);\n    sem_wait(&printers);\n    printf(\"Job %d printing...\\n\", id);\n    sleep(2);\n    printf(\"Job %d done.\\n\", id);\n    sem_post(&printers);\n    return NULL;\n}\n\nint main() {\n    pthread_t jobs[10];\n    int ids[10];\n    sem_init(&printers, 0, 3);\n    for (int i = 0; i < 10; i++) {\n        ids[i] = i;\n        pthread_create(&jobs[i], NULL, print_job, &ids[i]);\n    }\n    for (int i = 0; i < 10; i++)\n        pthread_join(jobs[i], NULL);\n    sem_destroy(&printers);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[TIP]\nPeterson solution is the classic software-only approach to mutual exclusion, but it does not work on modern hardware that reorders instructions. Use ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "hardware primitives"
+        }), " (test-and-set, CAS) or ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "higher-level constructs"
+        }), " (mutex, semaphore) in real systems."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[WARNING]\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spinlocks"
+        }), " (busy-waiting mutexes) waste CPU cycles. Only appropriate when the wait is expected to be short (e.g., in the kernel before a context switch). For longer waits, use a blocking mutex that yields the CPU."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["[NOTE]\nThree requirements for a valid critical section solution: ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "mutual exclusion"
+        }), " (only one process in CS), ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "progress"
+        }), " (no process outside CS blocks entry), and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "bounded waiting"
+        }), " (no indefinite postponement)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "unit-10-reference-tables",
+      children: "UNIT 10: REFERENCE TABLES"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "101-concept-comparison",
+      children: "10.1 Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Mutual Exclusion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Progress"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Bounded Waiting"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Busy-Waiting"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N Processes"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Fairness"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Peterson"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2 only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Test-and-Set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No (may starve)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare-and-Swap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No (retry)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutex (blocking)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "N"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "102-quick-reference",
+      children: "10.2 Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Race Condition"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timing-dependent error from concurrent shared data access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Data Race"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unsynchronized concurrent memory access (C/C++ UB)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Critical Section"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code segment where shared data is accessed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mutual Exclusion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No two processes simultaneously in critical section"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Progress"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If no process in CS, one wanting to enter will eventually enter"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bounded Waiting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bound on entries by others after a process requests CS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Spinlock"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock that busy-waits until acquired"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mutex"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock that blocks (sleeps) the waiting thread"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Test-and-Set"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic hardware instruction: read -> set to 1 -> return old"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compare-and-Swap"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic: if *p == exp, *p = new; returns old"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Semaphore"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integer with wait(P)/signal(V) for resource counting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Monitor"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-level construct: mutex + condition variables + data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Condition Variable"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Allows threads to wait for a specific condition"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "103-cross-application-matrix",
+      children: "10.3 Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Server"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Database"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Embedded System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Smartphone"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protect connection pool"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Buffer pool access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared peripheral registers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Spinlock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Short critical sections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Log buffer writes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interrupt handler sync"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Graphics pipeline"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Atomic Ops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reference counting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequence generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flag setting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lock-free queues"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semaphore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Worker thread pool"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection pool limit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DMA buffer count"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Camera buffer pool"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request queue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transaction manager"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Device state machine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Audio pipeline"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-lock-implementation-simulator",
+      children: "TypeScript Lock Implementation Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The following TypeScript code implements Peterson's algorithm, test-and-set, ticket locks, and MCS locks with full race condition detection:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * Synchronization Primitive Simulator\n * Implements: Peterson, Test-and-Set, Ticket Lock, MCS Lock, CAS\n */\nclass AtomicUtils {\n  static testAndSet(lock: boolean[]): boolean {\n    const old = lock[0];\n    lock[0] = true;\n    return old;\n  }\n\n  static compareAndSwap(ptr: number[], expected: number, newVal: number): boolean {\n    if (ptr[0] === expected) {\n      ptr[0] = newVal;\n      return true;\n    }\n    return false;\n  }\n\n  static fetchAndAdd(ptr: number[], increment: number): number {\n    const old = ptr[0];\n    ptr[0] += increment;\n    return old;\n  }\n}\n\nclass PetersonLock {\n  private flag: boolean[] = [false, false];\n  private turn: number = 0;\n\n  lock(id: number): void {\n    const other = id === 0 ? 1 : 0;\n    this.flag[id] = true;\n    this.turn = other;\n    while (this.flag[other] && this.turn === other) {\n      // Busy wait\n    }\n  }\n\n  unlock(id: number): void {\n    this.flag[id] = false;\n  }\n}\n\nclass TicketLock {\n  private nextTicket: number[] = [0];\n  private nowServing: number[] = [0];\n\n  lock(): number {\n    const myTicket = AtomicUtils.fetchAndAdd(this.nextTicket, 1);\n    while (this.nowServing[0] !== myTicket) {\n      // Busy wait — but fair (FIFO)\n    }\n    return myTicket;\n  }\n\n  unlock(): void {\n    AtomicUtils.fetchAndAdd(this.nowServing, 1);\n  }\n}\n\nclass MCSLock {\n  private tail: MCSNode | null = null;\n\n  lock(node: MCSNode): void {\n    node.next = null;\n    node.locked = true;\n    const prev = this.tail;\n    this.tail = node;\n    if (prev !== null) {\n      prev.next = node;\n      while (node.locked) {\n        // Spin on local flag — cache-friendly\n      }\n    }\n  }\n\n  unlock(node: MCSNode): void {\n    if (node.next === null) {\n      if (this.tail === node) {\n        this.tail = null;\n        return;\n      }\n      while (node.next === null) {\n        // Wait for successor to link\n      }\n    }\n    node.next.locked = false;\n    node.next = null;\n  }\n}\n\ninterface MCSNode {\n  next: MCSNode | null;\n  locked: boolean;\n}\n\n/**\n * Simulate race condition and fix with lock\n */\nclass CounterSimulator {\n  private counter = 0;\n  private lock = new TicketLock();\n  private raceDetected = false;\n  private log: string[] = [];\n\n  async unsafeIncrement(threadId: number, iterations: number): Promise<void> {\n    for (let i = 0; i < iterations; i++) {\n      // Race: load, increment, store — no synchronization\n      const val = this.counter;\n      this.log.push(`Thread ${threadId}: read counter=${val}`);\n      await new Promise(r => setImmediate(r)); // Forced context switch\n      this.counter = val + 1;\n    }\n  }\n\n  async safeIncrement(threadId: number, iterations: number): Promise<void> {\n    for (let i = 0; i < iterations; i++) {\n      this.lock.lock();\n      this.counter++;\n      this.lock.unlock();\n    }\n  }\n\n  async compareRaceVsSafe(threads: number, iterations: number): Promise<string> {\n    // Unsafe run\n    this.counter = 0;\n    const unsafePromises: Promise<void>[] = [];\n    for (let t = 0; t < threads; t++) {\n      unsafePromises.push(this.unsafeIncrement(t, iterations));\n    }\n    await Promise.all(unsafePromises);\n    const unsafeResult = this.counter;\n    const expected = threads * iterations;\n\n    // Safe run\n    this.counter = 0;\n    const safePromises: Promise<void>[] = [];\n    for (let t = 0; t < threads; t++) {\n      safePromises.push(this.safeIncrement(t, iterations));\n    }\n    await Promise.all(safePromises);\n    const safeResult = this.counter;\n\n    return JSON.stringify({\n      expected,\n      unsafeResult,\n      safeResult,\n      raceDetected: unsafeResult !== expected,\n      lostUpdates: expected - unsafeResult,\n      lockPreventsRace: safeResult === expected\n    }, null, 2);\n  }\n}\n\n// Benchmark: spinlock vs mutex (simulated)\nfunction benchmarkLocks(criticalSectionNs: number): string {\n  const spinTime = criticalSectionNs < 2000\n    ? criticalSectionNs * 1.1  // spinlock overhead ~10%\n    : criticalSectionNs * 2.0; // spinlock wastes CPU\n\n  const mutexTime = criticalSectionNs * 1.3; // mutex overhead ~30%\n  // but spinlock burns CPU while waiting\n\n  return JSON.stringify({\n    criticalSectionNs,\n    spinlockEffectiveNs: spinTime,\n    mutexEffectiveNs: mutexTime,\n    recommendation: criticalSectionNs < 2000 ? 'Use spinlock' : 'Use mutex'\n  }, null, 2);\n}\n\nconsole.log('=== Race vs Lock Comparison ===');\nconst sim = new CounterSimulator();\nconsole.log(await sim.compareRaceVsSafe(3, 100));\n\nconsole.log('\\n=== Lock Benchmark ===');\nconsole.log(benchmarkLocks(100));   // Short CS → spinlock\nconsole.log(benchmarkLocks(10000)); // Long CS → mutex\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "memory-barriers-and-instruction-reordering",
+      children: "Memory Barriers and Instruction Reordering"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Modern CPUs and compilers reorder instructions for performance. This breaks Peterson's algorithm and naive lock implementations without memory barriers:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Reordering Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Compiler reordering"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compiler rearranges code during optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two writes to adjacent variables may be swapped"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU out-of-order"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU executes instructions in parallel, commits in order"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store buffer delays visibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Write-to-read reordering"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A later read can bypass an earlier write"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most common on x86 TSO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Read-to-read reordering"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads can be reordered"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rare on x86, common on ARM/PowerPC"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory barrier types:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "mfence"
+        }), " (x86): Full memory barrier — all loads/stores before fence complete before any after"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "lfence"
+        }), " (x86): Load barrier — all loads before fence complete before any after"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "sfence"
+        }), " (x86): Store barrier — all stores before fence complete before any after"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "dmb"
+        }), " (ARM): Data memory barrier"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "atomic_thread_fence(memory_order_seq_cst)"
+        }), " (C++): Sequential consistency fence"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-chapter-quiz-questions",
+      children: "Additional Chapter Quiz Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the key difference between a race condition and a data race?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) They are the same thing"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A race condition is a logic error; a data race is undefined behavior per the language memory model"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Data races only occur in databases"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Race conditions only occur with semaphores"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which synchronization primitive provides FIFO fairness?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Test-and-set lock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Ticket lock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Spinlock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Peterson's algorithm"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "On x86 CPUs, what memory barrier instruction ensures all previous loads and stores complete before any subsequent loads or stores?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["a) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "lfence"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["b) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sfence"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["c) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "mfence"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["d) ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "cpuid"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which synchronization primitive spins on a per-thread local memory location rather than a shared location?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Test-and-set lock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Ticket lock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) MCS lock"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Spinlock"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What problem does the ABA problem affect?"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Mutex implementation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Lock-free data structures using CAS"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Semaphore counting"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Condition variable signaling"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 10-b, 11-b, 12-c, 13-c, 14-b"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "basic",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use TypeScript to implement Peterson's solution for mutual exclusion between two async functions. Show that without proper memory barriers, the lock fails on weakly-ordered architectures."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "intermediate",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "ticket lock"
+        }), " in TypeScript. Demonstrate that it provides FIFO fairness (bounded waiting) by creating 5 concurrent \"threads\" that each increment a shared counter 1000 times. Verify the final counter value equals 5000. Compare the implementation against a test-and-set lock that can starve threads."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "advanced",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "12",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "lock-free stack"
+        }), " (Treiber stack) using compare-and-swap (CAS) semantics in TypeScript. Support ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "push(value)"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pop()"
+        }), " operations. Handle the ABA problem by using a version counter (tagged pointer reference). Show that under concurrent access, the lock-free stack maintains correctness while a naive stack corrupted data."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "MCS lock"
+        }), " (Mellor-Crummey and Scott) in TypeScript. Unlike test-and-set, MCS spins on a per-thread local flag, avoiding cache-line contention. Show that MCS outperforms test-and-set under high contention (16+ threads) by measuring simulated cache misses."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "SUMMARY"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Race conditions"
+        }), " happen when concurrent operations interleave incorrectly on shared data; they are logical errors distinct from ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "data races"
+        }), " (which are memory-model UB)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "critical section problem"
+        }), " must satisfy mutual exclusion, progress, and bounded waiting"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Peterson's solution"
+        }), " demonstrates software-based synchronization but only works for 2 processes and fails on weakly-ordered CPUs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Hardware provides ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "test-and-set"
+        }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "compare-and-swap"
+        }), " for atomic lock implementation; CAS enables lock-free programming"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spinlocks"
+        }), " busy-wait (good for short sections), while ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "mutexes"
+        }), " block (good for long sections)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Semaphores"
+        }), " generalize counting -- binary semaphores protect one resource, counting semaphores manage pools"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Monitors"
+        }), " provide structured concurrency with condition variables; prefer Mesa semantics with while loops"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Real systems (Linux, NPTL) use hybrid approaches: spin briefly, then block"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Every synchronization construct is a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "trade-off"
+        }), " between fairness, throughput, and complexity"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "basic-1",
+      children: "Basic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is a race condition? Provide an example beyond counter increment."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the three requirements for a solution to the critical section problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between a mutex and a binary semaphore?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "intermediate-1",
+      children: "Intermediate"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prove that Peterson's solution satisfies mutual exclusion, progress, and bounded waiting."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "ticket lock"
+        }), ", where each thread takes a number and waits until its number is called. Demonstrate that it provides FIFO fairness (bounded waiting)."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare spinlocks and mutexes. Write a benchmark that measures the performance of each for a critical section that takes (a) 10ns, (b) 10us, (c) 10ms."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advanced-1",
+      children: "Advanced"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a lock-free stack using compare-and-swap (CAS). The stack should support push() and pop() without locks. Handle the ABA problem."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dekker algorithm"
+        }), " is another software-based two-process mutual exclusion solution from 1965. Implement it, prove its correctness, and compare it to Peterson's solution."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "reader-writer lock"
+        }), " using semaphores. Multiple readers should be able to access the shared data simultaneously, but writers must have exclusive access. Show that readers can starve writers in your implementation, then fix it."]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

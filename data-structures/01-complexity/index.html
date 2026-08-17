@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 1: Complexity Analysis | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/data-structures/01-complexity"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 1: Complexity Analysis | AI Engineering Journey"><meta data-rh="true" name="description" content="Learning Objectives"><meta data-rh="true" property="og:description" content="Learning Objectives"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/data-structures/01-complexity"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/data-structures/01-complexity" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/data-structures/01-complexity" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 1: Complexity Analysis","item":"https://raushan666java.github.io/ai-engineering-journey/data-structures/01-complexity"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.032d307f.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.3aacf703.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.41c9cdb2.js" defer="defer"></script>
 </head>
 <body>
@@ -20,22 +20,6 @@
 <li class="">Compare algorithms using growth-rate families.</li>
 <li class="">Apply complexity analysis to choose optimal data structures for real-world problems.</li>
 </ul>
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a href="../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
-    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.png" alt="Handwritten notes" class="img_ev3q">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a href="../../assets/images/lessons/data-structures/01-complexity/sticky-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
-    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-structures/01-complexity/sticky-notes.png" alt="Sticky-note revision" class="img_ev3q">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a href="../../assets/images/lessons/data-structures/01-complexity/visual-explanation.png" class="lesson-visual-card" target="_blank" rel="noopener">
-    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-structures/01-complexity/visual-explanation.png" alt="Visual concept guide" class="img_ev3q">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-complexity-analysis-matters-in-ds">Why Complexity Analysis Matters in DS<a href="#why-complexity-analysis-matters-in-ds" class="hash-link" aria-label="Direct link to Why Complexity Analysis Matters in DS" title="Direct link to Why Complexity Analysis Matters in DS" translate="no">​</a></h2>
 <p><strong>Real-World Analogy:</strong> Imagine you are building a contact-list app for a phone with 1 million users. When a user searches for a contact, using an <strong>ArrayList</strong> (O(n) search) would scan through all million entries — taking ~10 milliseconds. But using a <strong>HashMap</strong> (O(1) average search) retrieves the contact in under 1 microsecond. At scale, the difference between O(n) and O(1) is the difference between a snappy app and one that freezes. Data structure choice IS complexity analysis in action.</p>
 <p>Every major system — Google Search, Redis, PostgreSQL, Netflix — lives or dies by choosing the right data structure for each operation. Complexity analysis is the tool that makes that choice rigorous.</p>

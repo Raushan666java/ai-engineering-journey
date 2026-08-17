@@ -1,0 +1,1429 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[90824],{
+
+/***/ 39414
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_python_programming_14_magic_methods_md_51a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-python-programming-14-magic-methods-md-51a.json
+const site_docs_courses_python_programming_14_magic_methods_md_51a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/python-programming/14-magic-methods","title":"Chapter 14: Magic Methods","description":"Previous Decorators","source":"@site/docs/courses/python-programming/14-magic-methods.md","sourceDirName":"courses/python-programming","slug":"/python-programming/14-magic-methods","permalink":"/ai-engineering-journey/python-programming/14-magic-methods","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"14-magic-methods","slug":"/python-programming/14-magic-methods","title":"Chapter 14: Magic Methods","sidebar_label":"Chapter 14: Magic Methods","sidebar_position":14},"sidebar":"course-python-programming","previous":{"title":"Chapter 13: Inheritance and Protocols","permalink":"/ai-engineering-journey/python-programming/13-inheritance"},"next":{"title":"Chapter 15: Decorators","permalink":"/ai-engineering-journey/python-programming/15-decorators"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/python-programming/14-magic-methods.md
+
+
+const frontMatter = {
+	id: '14-magic-methods',
+	slug: '/python-programming/14-magic-methods',
+	title: 'Chapter 14: Magic Methods',
+	sidebar_label: 'Chapter 14: Magic Methods',
+	sidebar_position: 14
+};
+const contentTitle = 'Chapter 14: Magic Methods';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "14.1 Introduction",
+  "id": "141-introduction",
+  "level": 2
+}, {
+  "value": "14.2 <strong>str</strong> and <strong>repr</strong>",
+  "id": "142-str-and-repr",
+  "level": 2
+}, {
+  "value": "14.3 <strong>eq</strong> and <strong>hash</strong>",
+  "id": "143-eq-and-hash",
+  "level": 2
+}, {
+  "value": "14.4 <strong>lt</strong>, <strong>le</strong>, <strong>gt</strong>, <strong>ge</strong>",
+  "id": "144-lt-le-gt-ge",
+  "level": 2
+}, {
+  "value": "14.5 <strong>getitem</strong>, <strong>setitem</strong>, <strong>delitem</strong>",
+  "id": "145-getitem-setitem-delitem",
+  "level": 2
+}, {
+  "value": "14.6 <strong>call</strong>",
+  "id": "146-call",
+  "level": 2
+}, {
+  "value": "14.7 <strong>enter</strong> and <strong>exit</strong> (Context Managers)",
+  "id": "147-enter-and-exit-context-managers",
+  "level": 2
+}, {
+  "value": "14.8 <strong>iter</strong> and <strong>next</strong>",
+  "id": "148-iter-and-next",
+  "level": 2
+}, {
+  "value": "14.9 <strong>len</strong> and <strong>bool</strong>",
+  "id": "149-len-and-bool",
+  "level": 2
+}, {
+  "value": "14.10 <strong>add</strong>, <strong>sub</strong>, <strong>mul</strong>, and Arithmetic",
+  "id": "1410-add-sub-mul-and-arithmetic",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "More TypeScript Magic Method Equivalents",
+  "id": "more-typescript-magic-method-equivalents",
+  "level": 3
+}, {
+  "value": "TypeScript Utilities",
+  "id": "typescript-utilities",
+  "level": 3
+}, {
+  "value": "TypeScript Metaprogramming with Proxy",
+  "id": "typescript-metaprogramming-with-proxy",
+  "level": 3
+}, {
+  "value": "TypeScript Proxy-based Magic Patterns",
+  "id": "typescript-proxy-based-magic-patterns",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel",
+  "level": 2
+}, {
+  "value": "Python Magic Methods vs TypeScript Equivalents",
+  "id": "python-magic-methods-vs-typescript-equivalents",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-14-magic-methods",
+        children: "Chapter 14: Magic Methods"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/13-inheritance",
+          children: "Inheritance and Polymorphism"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/15-decorators",
+          children: "Decorators"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement common magic methods for string representation, equality, hashing, and ordering"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Make objects subscriptable with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__getitem__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__setitem__"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create callable objects with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__call__"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write context managers using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__enter__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__exit__"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Build iterable objects with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__iter__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__next__"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__len__"
+        }), " and other container methods"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png",
+        alt: "Magic Methods"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14.1 Introduction"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magic methods (dunder methods) hook objects into Python language behaviours."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.2 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "str"
+            }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "repr"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__repr__"
+            }), " is for developers (unambiguous); ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__str__"
+            }), " is for users (readable via print())."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.3 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "eq"
+            }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "hash"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Override ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__eq__"
+            }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__hash__"
+            }), " together — if ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__eq__"
+            }), " changes, ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__hash__"
+            }), " must change too."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.4 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "lt"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "le"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "gt"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ge"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__enter__"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__exit__"
+            }), " implement context managers; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@contextmanager"
+            }), " offers a generator-based alternative."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.5 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "getitem"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "setitem"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "delitem"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__call__"
+            }), " makes objects callable; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__getitem__"
+            }), "/", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__setitem__"
+            }), " make them subscriptable."]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.6 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "call"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.7 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "enter"
+            }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "exit"
+            }), " (Context Managers)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.8 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "iter"
+            }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "next"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.9 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "len"
+            }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "bool"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["14.10 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "add"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "sub"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "mul"
+            }), ", and Arithmetic"]
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {
+            children: "undefined"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    S0[Introduction]\n    S1[__str__ and __repr__]\n    S2[__eq__ and __hash__]\n    S3[__lt__, __le__, __gt__, __ge__]\n    S4[__getitem__, __setitem__, __delitem__]\n    S5[__call__]\n    S6[__enter__ and __exit__ (Context Managers)]\n    S7[__iter__ and __next__]\n    S8[__len__ and __bool__]\n    S9[__add__, __sub__, __mul__, and Arithmetic]\n    S0 --> S1\n    S1 --> S2\n    S2 --> S3\n    S3 --> S4\n    S4 --> S5\n    S5 --> S6\n    S6 --> S7\n    S7 --> S8\n    S8 --> S9\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "141-introduction",
+      children: "14.1 Introduction"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Magic methods (dunder methods) hook objects into Python language behaviours."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly → Python calls them implicitly."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Point:\n    def __init__(self, x: float, y: float):\n        self.x = x\n        self.y = y\n    \n    def __repr__(self) -> str:\n        return f\"Point({self.x}, {self.y})\"\n    \n    def __str__(self) -> str:\n        return f\"({self.x}, {self.y})\"\n\np = Point(3, 4)\nprint(repr(p))   # Point(3, 4)  → calls __repr__\nprint(str(p))    # (3, 4)       → calls __str__\nprint(p)         # (3, 4)       → calls __str__\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "142-str-and-repr",
+      children: ["14.2 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "str"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "repr"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__repr__"
+        }), " is for developers (unambiguous); ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__str__"
+        }), " is for users (readable via print())."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "__repr__"
+      }), " is for developers (unambiguous, used in debugging). ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__str__"
+      }), " is for users (readable, used by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "print()"
+      }), "):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Fraction:\n    def __init__(self, num: int, den: int):\n        self.num = num\n        self.den = den\n    \n    def __repr__(self) -> str:\n        return f\"Fraction({self.num}, {self.den})\"\n    \n    def __str__(self) -> str:\n        return f\"{self.num}/{self.den}\"\n\nf = Fraction(3, 4)\nprint([f, Fraction(1, 2)])  # [Fraction(3, 4), Fraction(1, 2)]  (uses __repr__)\nprint(f)                     # 3/4  (uses __str__)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__str__"
+      }), " is not defined, Python falls back to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__repr__"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "143-eq-and-hash",
+      children: ["14.3 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "eq"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hash"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Override ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__eq__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__hash__"
+        }), " together — if ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__eq__"
+        }), " changes, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__hash__"
+        }), " must change too."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), " defines equality. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__hash__"
+      }), " makes an object usable as a dict key or set member:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Person:\n    def __init__(self, name: str, ssn: str):\n        self.name = name\n        self.ssn = ssn\n    \n    def __repr__(self) -> str:\n        return f\"Person({self.name}, ...)\"\n    \n    def __eq__(self, other) -> bool:\n        if not isinstance(other, Person):\n            return NotImplemented\n        return self.ssn == other.ssn\n    \n    def __hash__(self) -> int:\n        return hash(self.ssn)\n\np1 = Person(\"Alice\", \"123-45-6789\")\np2 = Person(\"Alice\", \"123-45-6789\")\np3 = Person(\"Bob\", \"987-65-4321\")\n\nprint(p1 == p2)       # True (same SSN)\nprint(p1 is p2)       # False (different objects)\nprint(p1 == p3)       # False\n\n# Can be used in sets and dicts\npeople = {p1, p2, p3}\nprint(len(people))    # 2 (p1 and p2 are equal)\n\nregistry = {p1: \"active\"}\nprint(registry[p2])   # \"active\" (same hash, same equality)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Rule"
+      }), ": if you define ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), ", define ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__hash__"
+      }), ". If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), " is defined but ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__hash__"
+      }), " is not, the object becomes unhashable (can't be used in sets or as dict keys). If a class defines ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), " but not ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__hash__"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__hash__"
+      }), " is set to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "None"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "144-lt-le-gt-ge",
+      children: ["14.4 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lt"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "le"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "gt"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ge"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__enter__"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__exit__"
+        }), " implement context managers; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@contextmanager"
+        }), " offers a generator-based alternative."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Define ordering for sorting and comparison:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Product:\n    def __init__(self, name: str, price: float):\n        self.name = name\n        self.price = price\n    \n    def __repr__(self) -> str:\n        return f\"Product({self.name}, ${self.price:.2f})\"\n    \n    def __lt__(self, other) -> bool:\n        if not isinstance(other, Product):\n            return NotImplemented\n        return self.price < other.price\n    \n    def __le__(self, other) -> bool:\n        if not isinstance(other, Product):\n            return NotImplemented\n        return self.price <= other.price\n\nproducts = [\n    Product(\"Chair\", 150),\n    Product(\"Desk\", 500),\n    Product(\"Lamp\", 80),\n]\nproducts.sort()\nprint(products)\n# [Product(Lamp, $80.00), Product(Chair, $150.00), Product(Desk, $500.00)]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@total_ordering"
+      }), " from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "functools"
+      }), " reduces boilerplate → define ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), " and one comparison method, and the rest are generated:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from functools import total_ordering\n\n@total_ordering\nclass Student:\n    def __init__(self, name: str, grade: float):\n        self.name = name\n        self.grade = grade\n    \n    def __eq__(self, other) -> bool:\n        return self.grade == other.grade\n    \n    def __lt__(self, other) -> bool:\n        return self.grade < other.grade\n    \n    def __repr__(self) -> str:\n        return f\"Student({self.name}, {self.grade})\"\n\ns1, s2, s3 = Student(\"Alice\", 85), Student(\"Bob\", 92), Student(\"Charlie\", 78)\nprint(s1 > s3)   # True (generated from __lt__)\nprint(s2 >= s1)  # True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "145-getitem-setitem-delitem",
+      children: ["14.5 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "getitem"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "setitem"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "delitem"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__call__"
+        }), " makes objects callable; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__getitem__"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__setitem__"
+        }), " make them subscriptable."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Make objects subscriptable:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class SimpleDict:\n    def __init__(self):\n        self._data = {}\n    \n    def __getitem__(self, key):\n        return self._data[key]\n    \n    def __setitem__(self, key, value):\n        self._data[key] = value\n    \n    def __delitem__(self, key):\n        del self._data[key]\n    \n    def __contains__(self, key):\n        return key in self._data\n    \n    def __len__(self):\n        return len(self._data)\n\nd = SimpleDict()\nd[\"name\"] = \"Alice\"    # __setitem__\nprint(d[\"name\"])       # __getitem__  → Alice\nprint(\"name\" in d)     # __contains__ → True\nprint(len(d))           # __len__     → 1\ndel d[\"name\"]           # __delitem__\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "146-call",
+      children: ["14.6 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "call"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Make objects callable like functions:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Adder:\n    def __init__(self, n: int):\n        self.n = n\n    \n    def __call__(self, x: int) -> int:\n        return self.n + x\n\nadd5 = Adder(5)\nprint(add5(10))    # 15\nprint(add5(3))     # 8\n\n# Practical: decorator factory\nclass CountCalls:\n    def __init__(self):\n        self.count = 0\n    \n    def __call__(self):\n        self.count += 1\n        return self.count\n\ncounter = CountCalls()\nprint(counter())   # 1\nprint(counter())   # 2\nprint(counter())   # 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "147-enter-and-exit-context-managers",
+      children: ["14.7 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "enter"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "exit"
+      }), " (Context Managers)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Context managers handle setup and teardown automatically with the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "with"
+      }), " statement:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ManagedFile:\n    def __init__(self, filename: str, mode: str = \"r\"):\n        self.filename = filename\n        self.mode = mode\n    \n    def __enter__(self):\n        self.file = open(self.filename, self.mode)\n        return self.file  # bound to 'as' variable\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        self.file.close()\n        # Return False to propagate exceptions, True to suppress\n        return False\n\n# Usage\nwith ManagedFile(\"test.txt\", \"w\") as f:\n    f.write(\"Hello, world!\")\n\n# The file is closed automatically after the block\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Using ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "contextlib.contextmanager"
+      }), " for simpler cases:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from contextlib import contextmanager\n\n@contextmanager\ndef managed_file(filename: str, mode: str = \"r\"):\n    f = open(filename, mode)\n    try:\n        yield f\n    finally:\n        f.close()\n\nwith managed_file(\"test.txt\") as f:\n    print(f.read())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "148-iter-and-next",
+      children: ["14.8 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "iter"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "next"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Make objects iterable:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Range:\n    def __init__(self, start: int, end: int, step: int = 1):\n        self.start = start\n        self.end = end\n        self.step = step\n    \n    def __iter__(self):\n        self.current = self.start\n        return self\n    \n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        value = self.current\n        self.current += self.step\n        return value\n\nfor i in Range(0, 5):\n    print(i, end=\" \")  # 0 1 2 3 4\n\nprint()\n\n# Two-iterator protocol (iterable but not its own iterator)\nclass Squares:\n    def __init__(self, n: int):\n        self.n = n\n    \n    def __iter__(self):\n        return (i ** 2 for i in range(self.n))\n\ns = Squares(5)\nprint(list(s))   # [0, 1, 4, 9, 16]\nprint(list(s))   # [0, 1, 4, 9, 16]  (fresh iterator each time)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "149-len-and-bool",
+      children: ["14.9 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "len"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "bool"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Team:\n    def __init__(self, members: list[str]):\n        self.members = members\n    \n    def __len__(self) -> int:\n        return len(self.members)\n    \n    def __bool__(self) -> bool:\n        return len(self.members) > 0\n\nteam = Team([\"Alice\", \"Bob\", \"Charlie\"])\nprint(len(team))        # 3\nif team:\n    print(\"Team exists\")\n\nempty = Team([])\nprint(bool(empty))      # False\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__bool__"
+      }), " is not defined, Python falls back to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__len__"
+      }), " (truthy if length > 0)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h2, {
+      id: "1410-add-sub-mul-and-arithmetic",
+      children: ["14.10 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "add"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "sub"
+      }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "mul"
+      }), ", and Arithmetic"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " undefined"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Vector:\n    def __init__(self, x: float, y: float):\n        self.x = x\n        self.y = y\n    \n    def __repr__(self) -> str:\n        return f\"Vector({self.x}, {self.y})\"\n    \n    def __add__(self, other: \"Vector\") -> \"Vector\":\n        return Vector(self.x + other.x, self.y + other.y)\n    \n    def __sub__(self, other: \"Vector\") -> \"Vector\":\n        return Vector(self.x - other.x, self.y - other.y)\n    \n    def __mul__(self, scalar: float) -> \"Vector\":\n        return Vector(self.x * scalar, self.y * scalar)\n    \n    def __rmul__(self, scalar: float) -> \"Vector\":\n        return self * scalar  # commutativity\n    \n    def __abs__(self) -> float:\n        import math\n        return math.sqrt(self.x ** 2 + self.y ** 2)\n\nv1 = Vector(3, 4)\nv2 = Vector(1, 2)\nprint(v1 + v2)    # Vector(4, 6)\nprint(v1 - v2)    # Vector(2, 2)\nprint(v1 * 2)     # Vector(6, 8)\nprint(2 * v1)     # Vector(6, 8)  (reverse multiplication)\nprint(abs(v1))    # 5.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reflected operators"
+      }), " (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__radd__"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__rsub__"
+      }), ", etc.) are called when the left operand does not support the operation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trigger"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "init"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constructor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ClassName()"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "str"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User-friendly string"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "print(), str()"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "repr"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Developer-friendly string"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "repr(), debug"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "call"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Callable objects"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "obj()"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "enter"
+            }), "/", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "exit"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context manager"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "with statement"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class Point:\n    def __init__(self, x, y): self.x=x; self.y=y\n    def __repr__(self): return f\"Point({self.x},{self.y})\"\n    def __add__(self, o): return Point(self.x+o.x, self.y+o.y)\n    def __eq__(self, o): return self.x==o.x and self.y==o.y\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Area"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Relevant Section"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Web Dev"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context managers for DB connections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14.7"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Science"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Callable models with ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "call"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14.6"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DevOps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Custom iterable configuration parsers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14.8"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Comparable version objects with ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "lt"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14.4"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What is the difference between ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "str"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "repr"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "no difference"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "str"
+        }), " for users, ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "repr"
+        }), " for devs ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "str"
+        }), " for devs, ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "repr"
+        }), " for users"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "both are for debugging"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " What must you do when overriding ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "eq"
+      }), "?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["also override ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "hash"
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["also override ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "str"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["call super().", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "eq"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "nothing"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " What does ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "enter"
+      }), " return?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "None"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "the context manager itself"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["any object bound to \"as\" ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "True/False"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " What does ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "call"
+      }), " do?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "creates instances"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["makes instances callable ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "deletes attributes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iterates over items"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " What @total_ordering generates?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["all comparison methods ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "init"
+        }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "repr"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "hash"
+        }), " only"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "getter/setter"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "more-typescript-magic-method-equivalents",
+      children: "More TypeScript Magic Method Equivalents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Python: __add__ → TypeScript: custom add method\nclass Vector2D {\n  constructor(public x: number, public y: number) {}\n  add(other: Vector2D): Vector2D {\n    return new Vector2D(this.x + other.x, this.y + other.y);\n  }\n  // Python: __repr__\n  toString(): string {\n    return `Vector2D(${this.x}, ${this.y})`;\n  }\n}\nconst v1 = new Vector2D(1, 2);\nconst v2 = new Vector2D(3, 4);\nconsole.log(v1.add(v2).toString());  // Vector2D(4, 6)\n\n// Python: __getitem__ / __setitem__ → TypeScript: Proxy\nconst handler: ProxyHandler<Record<string, unknown>> = {\n  get(target, prop: string) {\n    if (prop in target) return target[prop];\n    return `Key \"${prop}\" not found`;\n  },\n  set(target, prop: string, value) {\n    console.log(`Setting ${prop} to ${value}`);\n    target[prop] = value;\n    return true;\n  },\n};\nconst dict = new Proxy({}, handler);\ndict.name = \"Alice\";  // logs: Setting name to Alice\nconsole.log(dict.missing);  // Key \"missing\" not found\n\n// Python: __len__ → TypeScript: length property\nclass Collection<T> {\n  private items: T[] = [];\n  get length(): number { return this.items.length; }\n  add(item: T): void { this.items.push(item); }\n}\n\n// Python: __call__ → TypeScript: class with apply\nclass Adder {\n  constructor(private n: number) {}\n  apply(value: number): number {\n    return value + this.n;\n  }\n}\nconst add5 = new Adder(5);\nconsole.log(add5.apply(10));  // 15\n// Note: TypeScript doesn't support making instances directly callable\n\n// Python: __eq__ / __hash__ → TypeScript: custom equals\nclass Money {\n  constructor(public amount: number, public currency: string) {}\n  equals(other: Money): boolean {\n    return this.amount === other.amount && this.currency === other.currency;\n  }\n  hashCode(): string {\n    return `${this.amount}:${this.currency}`;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-utilities",
+      children: "TypeScript Utilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Proxy-Based Observable (Python __getattr__/__setattr__ pattern) ===\nfunction createObservable<T extends Record<string, unknown>>(target: T, onChange: (key: string, value: unknown) => void): T {\n  return new Proxy(target, {\n    get(obj, prop) {\n      if (prop === \"__isProxy\") return true;\n      return Reflect.get(obj, prop);\n    },\n    set(obj, prop, value) {\n      const old = obj[prop as string];\n      const result = Reflect.set(obj, prop, value);\n      if (old !== value) onChange(String(prop), value);\n      return result;\n    },\n  });\n}\nconst observed = createObservable({ x: 10, y: 20 }, (key, val) => console.log(`Changed: ${key} = ${val}`));\nobserved.x = 15; // \"Changed: x = 15\"\nobserved.y = 25; // \"Changed: y = 25\"\n\n// === Symbol.iterator Helper (Python __iter__ pattern) ===\nclass RangeIterator {\n  constructor(private start: number, private end: number, private step = 1) {}\n  *[Symbol.iterator](): Generator<number> {\n    for (let i = this.start; i < this.end; i += this.step) yield i;\n  }\n}\nconst r = new RangeIterator(1, 6, 2);\nconsole.log([...r]); // [1, 3, 5]\n\n// === toString Override Generator ===\nfunction autoToString<T extends Record<string, unknown>>(obj: T): string {\n  const entries = Object.entries(obj).map(([k, v]) => `${k}=${v}`).join(\", \");\n  return `${obj.constructor.name}(${entries})`;\n}\nclass User2 {\n  constructor(public name: string, public age: number) {}\n  toString(): string { return autoToString(this); }\n}\nconsole.log(new User2(\"Alice\", 30).toString()); // User2(name=Alice, age=30)\n\n// === ValueOf Equivalent ===\nclass Money {\n  constructor(private amount: number, private currency: string) {}\n  valueOf(): number { return this.amount; }\n  toString(): string { return `${this.amount} ${this.currency}`; }\n}\nconst m1 = new Money(10, \"USD\");\nconst m2 = new Money(5, \"USD\");\nconsole.log(m1.valueOf() + m2.valueOf()); // 15\n\n// === Python __getitem__ / __setitem__ via Proxy ===\nfunction createDictList<T>(items: T[] = []): { items: T[]; get(idx: number): T; set(idx: number, val: T): void; push(val: T): void } {\n  return {\n    items: [...items],\n    get(idx: number): T { return this.items[idx]; },\n    set(idx: number, val: T): void { if (idx < this.items.length) this.items[idx] = val; },\n    push(val: T): void { this.items.push(val); },\n  };\n}\nconst dl = createDictList<number>([1, 2, 3]);\nconsole.log(dl.get(1)); // 2\ndl.set(1, 99);\nconsole.log(dl.items);  // [1, 99, 3]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-metaprogramming-with-proxy",
+      children: "TypeScript Metaprogramming with Proxy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Property Access Logger (Python: __getattr__) ===\nfunction loggedObject<T extends object>(target: T): T {\n  return new Proxy(target, {\n    get(obj, prop) {\n      console.log(`Accessing ${String(prop)}`);\n      return Reflect.get(obj, prop);\n    },\n    set(obj, prop, value) {\n      console.log(`Setting ${String(prop)} = ${value}`);\n      return Reflect.set(obj, prop, value);\n    },\n  });\n}\n\n// === Negative Array Indexing (Python: arr[-1]) ===\nfunction negativeIndexArray<T>(arr: T[]): T[] {\n  return new Proxy(arr, {\n    get(target, prop) {\n      if (typeof prop === \"string\" && !isNaN(Number(prop))) {\n        const idx = Number(prop);\n        return idx < 0 ? target[target.length + idx] : target[idx];\n      }\n      return Reflect.get(target, prop);\n    },\n    set(target, prop, value) {\n      if (typeof prop === \"string\" && !isNaN(Number(prop))) {\n        const idx = Number(prop);\n        if (idx < 0) target[target.length + idx] = value as T;\n        else target[idx] = value as T;\n        return true;\n      }\n      return Reflect.set(target, prop, value);\n    },\n  });\n}\nconst arr = negativeIndexArray([10, 20, 30, 40, 50]);\nconsole.log(arr[-1]); // 50\nconsole.log(arr[-2]); // 40\n\n// === Method Missing Handler (Python: __getattr__ for methods) ===\nfunction dynamicMethods<T extends object>(target: T): T {\n  return new Proxy(target, {\n    get(obj, prop) {\n      if (prop in obj) return Reflect.get(obj, prop);\n      return (...args: unknown[]) => console.log(`Called dynamic method ${String(prop)}(${args.map(a => JSON.stringify(a)).join(\", \")})`);\n    },\n  });\n}\nconst dyn = dynamicMethods({ name: \"test\" });\nconsole.log(dyn.name); // \"test\"\n(dyn as any).unknownMethod(1, 2, 3); // \"Called dynamic method unknownMethod(1, 2, 3)\"\n\n// === Memoized Property (Python: @cached_property) ===\nfunction cachedProperty<T, K extends keyof T>(target: T, key: K, getter: () => T[K]): void {\n  let value: T[K] | undefined;\n  let initialized = false;\n  Object.defineProperty(target, key, {\n    get() {\n      if (!initialized) { value = getter(); initialized = true; }\n      return value;\n    },\n    configurable: true,\n    enumerable: true,\n  });\n}\n\n// === Auto-stringification (Python: __str__) ===\nfunction autoString<T extends object>(target: T): T {\n  return new Proxy(target, {\n    get(obj, prop) {\n      if (prop === \"toString\" || prop === Symbol.toPrimitive) {\n        return () => JSON.stringify(obj);\n      }\n      return Reflect.get(obj, prop);\n    },\n  });\n}\n\n// === Validation Proxy (Python: __setattr__ validation) ===\nfunction validatedObject<T extends object>(target: T, schema: Partial<Record<keyof T, (v: unknown) => boolean>>): T {\n  return new Proxy(target, {\n    set(obj, prop, value) {\n      const validator = schema[prop as keyof T];\n      if (validator && !validator(value)) throw new Error(`Invalid value for ${String(prop)}`);\n      return Reflect.set(obj, prop, value);\n    },\n  });\n}\n\n// === Default Values (Python: defaultdict pattern via __missing__) ===\nfunction withDefault<T extends object>(target: T, defaultFn: (key: string) => unknown): T {\n  return new Proxy(target, {\n    get(obj, prop) {\n      if (prop in obj) return Reflect.get(obj, prop);\n      const val = defaultFn(String(prop));\n      Reflect.set(obj, prop, val as any);\n      return val;\n    },\n  });\n}\n\n// === Read-only Wrapper ===\nfunction readonly<T extends object>(target: T): T {\n  return new Proxy(target, {\n    set: () => { throw new Error(\"Object is read-only\"); },\n    deleteProperty: () => { throw new Error(\"Object is read-only\"); },\n    defineProperty: () => { throw new Error(\"Object is read-only\"); },\n  });\n}\n\ninterface UserSchema { name: string; age: number; }\nconst user = validatedObject<UserSchema>({ name: \"Alice\", age: 30 }, {\n  age: (v) => typeof v === \"number\" && v >= 0 && v < 150,\n  name: (v) => typeof v === \"string\" && v.length > 0,\n});\nuser.age = 25; // OK\n// user.age = -5; // Throws Error\n\nconst defaults = withDefault({}, key => `default_${key}`);\nconsole.log((defaults as any).foo); // \"default_foo\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-proxy-based-magic-patterns",
+      children: "TypeScript Proxy-based Magic Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Operator Overloading via Proxy ===\nfunction createOverloaded<T extends object>(target: T): T {\n  const handler: ProxyHandler<T> = {\n    get(target, prop, receiver) {\n      const val = Reflect.get(target, prop, receiver);\n      if (typeof val === \"function\") {\n        return function(...args: unknown[]) {\n          console.log(`[magic] ${String(prop)}(${args.map(a => JSON.stringify(a)).join(\", \")})`);\n          return val.apply(this, args);\n        };\n      }\n      return val;\n    },\n    set(target, prop, value) {\n      console.log(`[magic] set ${String(prop)} = ${JSON.stringify(value)}`);\n      return Reflect.set(target, prop, value);\n    },\n    has(target, prop) {\n      console.log(`[magic] contains ${String(prop)}`);\n      return prop in target;\n    },\n    deleteProperty(target, prop) {\n      console.log(`[magic] delete ${String(prop)}`);\n      return delete target[prop];\n    },\n    ownKeys(target) {\n      console.log(\"[magic] dir()\");\n      return Reflect.ownKeys(target);\n    },\n  };\n  return new Proxy(target, handler);\n}\nconst obj = createOverloaded({ x: 10, y: 20 });\n\"x\" in obj;           // logs: contains x\nobj.z = 30;           // logs: set z = 30\ndelete obj.y;         // logs: delete y\n\n// === Python-style __str__ / __repr__ via toString ===\nclass ReprMixin {\n  toString(): string { return `${this.constructor.name}(${JSON.stringify(this)})`; }\n  toJSON(): unknown { return { ...this, _type: this.constructor.name }; }\n}\n\n// === Python-style __len__, __getitem__ via Proxy ===\nfunction arrayLike<T>(items: T[]): T[] {\n  return new Proxy(items, {\n    get(target, prop) {\n      if (prop === \"__len__\") return target.length;\n      if (typeof prop === \"string\" && !isNaN(Number(prop))) {\n        const idx = Number(prop);\n        return idx < 0 ? target[target.length + idx] : target[idx];\n      }\n      return Reflect.get(target, prop);\n    },\n  });\n}\nconst seq = arrayLike([10, 20, 30, 40, 50]);\nconsole.log((seq as any)[\"-1\"]);  // 50 (Python-style negative index)\n\n// === Python-style __call__ via Proxy ===\nfunction makeCallable<T extends object>(obj: T, fn: (...args: unknown[]) => unknown): T {\n  const handler: ProxyHandler<T> = {\n    apply(target, thisArg, args) { return fn.apply(thisArg, args); },\n    get(target, prop) { return Reflect.get(target, prop); },\n  };\n  return new Proxy(obj, handler);\n}\n\n// === Python-style property descriptor via Object.defineProperty ===\nfunction defineProperty<T>(obj: T, key: keyof T, getter: () => unknown, setter?: (v: unknown) => void): void {\n  Object.defineProperty(obj, key, { get: getter, set: setter, enumerable: true, configurable: true });\n}\n\n// === Python-style __iter__ / __next__ ===\nclass Iterable<T> implements Iterable<T> {\n  constructor(private items: T[]) {}\n  [Symbol.iterator](): Iterator<T> {\n    let idx = 0;\n    const items = this.items;\n    return { next: () => ({ value: items[idx], done: idx++ >= items.length }) };\n  }\n}\nfor (const item of new Iterable([1, 2, 3])) console.log(item);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Magic methods hook into Python's built-in behaviours:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Methods"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Representation"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__repr__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__str__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__format__"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparison"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__eq__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__hash__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__lt__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__le__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__gt__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__ge__"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Container"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__getitem__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__setitem__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__delitem__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__contains__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__len__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__bool__"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Callable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "__call__"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context manager"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__enter__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__exit__"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Iterator"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__iter__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__next__"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Arithmetic"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__add__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__sub__"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__mul__"
+            }), ", etc."]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-parallel",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TypeScript doesn't have magic methods in the same sense, but has equivalents for several protocols:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// toString / toJSON (equivalent to __str__ / __repr__)\nclass Point {\n  constructor(public x: number, public y: number) {}\n\n  toString(): string {\n    return `Point(${this.x}, ${this.y})`;\n  }\n\n  toJSON(): object {\n    return { x: this.x, y: this.y, type: \"Point\" };\n  }\n}\n\n// ValueOf for primitive coercion\nclass Money {\n  constructor(public amount: number, public currency: string) {}\n\n  valueOf(): number {\n    return this.amount;\n  }\n}\nconst price = new Money(29.99, \"USD\");\nconsole.log(price + 10);  // 39.99 (uses valueOf)\n\n// Symbol.iterator for iteration (like __iter__)\nclass Range implements Iterable<number> {\n  constructor(private start: number, private end: number) {}\n\n  [Symbol.iterator](): Iterator<number> {\n    let current = this.start;\n    return {\n      next: (): IteratorResult<number> => {\n        if (current > this.end) return { done: true, value: undefined as any };\n        return { done: false, value: current++ };\n      }\n    };\n  }\n}\nfor (const n of new Range(1, 5)) console.log(n);  // 1, 2, 3, 4, 5\n\n// Custom getter/setter (like __getitem__ / __setitem__)\nclass FixedArray<T> {\n  private data: T[] = [];\n\n  constructor(private capacity: number) {}\n\n  get(index: number): T | undefined {\n    if (index < 0 || index >= this.capacity) throw new Error(\"Index out of bounds\");\n    return this.data[index];\n  }\n\n  set(index: number, value: T): void {\n    if (index < 0 || index >= this.capacity) throw new Error(\"Index out of bounds\");\n    this.data[index] = value;\n  }\n\n  get length(): number {\n    return this.capacity;\n  }\n}\n\n// Symbol.toPrimitive (like __int__ / __float__)\nclass Vector2D {\n  constructor(public x: number, public y: number) {}\n\n  [Symbol.toPrimitive](hint: string): number | string {\n    if (hint === \"number\") return Math.sqrt(this.x ** 2 + this.y ** 2);\n    return `(${this.x}, ${this.y})`;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-magic-methods-vs-typescript-equivalents",
+      children: "Python Magic Methods vs TypeScript Equivalents"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Python"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TypeScript"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__str__"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__repr__"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "toString()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "String representation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__iter__"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__next__"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "[Symbol.iterator]()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Iteration protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__getitem__"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__setitem__"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "get()"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "set()"
+            }), " methods"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Indexed access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "__len__"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "get length()"
+            }), " property"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Size query"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "__enter__"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "__exit__"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "using"
+            }), " (TS 5.2+) / try-finally"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Context management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "__call__"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "() =>"
+            }), " function type"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Callable objects"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "__eq__"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "equals()"
+            }), " method or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "==="
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Equality comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "__add__"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["method like ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "add()"
+            }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "+"
+            }), " overload"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Arithmetic"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Why should ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__hash__"
+        }), " be defined when ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__eq__"
+        }), " is overridden?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__str__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__repr__"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How does ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__enter__"
+        }), " communicate its return value to the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "as"
+        }), " variable?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What must ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__exit__"
+        }), " return to suppress an exception?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@total_ordering"
+        }), " and what does it generate?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Matrix2D"
+        }), " class with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__add__"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__sub__"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__mul__"
+        }), " (scalar and matrix multiplication), ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__repr__"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__eq__"
+        }), ". Support ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__getitem__"
+        }), " with tuple keys: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "m[(row, col)]"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Timer"
+        }), " context manager using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__enter__"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__exit__"
+        }), " that measures elapsed time. Print the duration when the block exits. Then reimplement it with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@contextmanager"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "FixedArray"
+        }), " class with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__len__"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__getitem__"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__setitem__"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "__iter__"
+        }), ". It should have a fixed capacity set at construction time. Raise ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "IndexError"
+        }), " for out-of-bounds access."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a simple SQL query builder using magic methods. Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Query"
+      }), " class that supports ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__and__"
+      }), " (WHERE clause conjunction), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__or__"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), " (field comparison), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__call__"
+      }), " (execution). Define a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Field"
+      }), " descriptor class with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__eq__"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__lt__"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "__gt__"
+      }), " that produces ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Comparison"
+      }), " objects. Chain them: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Query().select(\"name\", \"age\").where((Field(\"age\") >= 18) & (Field(\"name\").contains(\"Al\")))"
+      }), ". Generate a SQL string."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

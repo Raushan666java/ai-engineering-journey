@@ -1,0 +1,1933 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[40484],{
+
+/***/ 54966
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_31_hr_recruitment_md_7f1_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-31-hr-recruitment-md-7f1.json
+const site_docs_courses_laravel_31_hr_recruitment_md_7f1_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/31-hr-recruitment","title":"Chapter 31: HR & Recruitment — AI-Powered Talent Agents","description":"Previous Marketing & Advertising Agents","source":"@site/docs/courses/laravel/31-hr-recruitment.md","sourceDirName":"courses/laravel","slug":"/laravel/31-hr-recruitment","permalink":"/ai-engineering-journey/laravel/31-hr-recruitment","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":31,"frontMatter":{"id":"31-hr-recruitment","slug":"/laravel/31-hr-recruitment","title":"Chapter 31: HR & Recruitment — AI-Powered Talent Agents","sidebar_label":"Chapter 31: HR & Recruitment — AI-Powered Talent Agents","sidebar_position":31},"sidebar":"course-laravel","previous":{"title":"Chapter 30: Logistics & Supply Chain Agents","permalink":"/ai-engineering-journey/laravel/30-logistics"},"next":{"title":"Chapter 32: Marketing & Advertising Agents","permalink":"/ai-engineering-journey/laravel/32-marketing"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/31-hr-recruitment.md
+
+
+const frontMatter = {
+	id: '31-hr-recruitment',
+	slug: '/laravel/31-hr-recruitment',
+	title: 'Chapter 31: HR & Recruitment — AI-Powered Talent Agents',
+	sidebar_label: 'Chapter 31: HR & Recruitment — AI-Powered Talent Agents',
+	sidebar_position: 31
+};
+const contentTitle = 'Chapter 31: HR & Recruitment — AI-Powered Talent Agents';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "31.1 HR Data Models",
+  "id": "311-hr-data-models",
+  "level": 3
+}, {
+  "value": "Migrations",
+  "id": "migrations",
+  "level": 4
+}, {
+  "value": "Eloquent Models",
+  "id": "eloquent-models",
+  "level": 4
+}, {
+  "value": "31.2 Resume Screening &amp; Ranking Agents",
+  "id": "312-resume-screening--ranking-agents",
+  "level": 3
+}, {
+  "value": "31.3 Interview Scheduling Automation",
+  "id": "313-interview-scheduling-automation",
+  "level": 3
+}, {
+  "value": "31.4 Candidate Matching Agents",
+  "id": "314-candidate-matching-agents",
+  "level": 3
+}, {
+  "value": "31.5 Onboarding Workflow Agents",
+  "id": "315-onboarding-workflow-agents",
+  "level": 3
+}, {
+  "value": "31.6 Performance Review Analysis",
+  "id": "316-performance-review-analysis",
+  "level": 3
+}, {
+  "value": "31.7 Employee Sentiment Monitoring",
+  "id": "317-employee-sentiment-monitoring",
+  "level": 3
+}, {
+  "value": "31.8 Training &amp; Development Recommendation",
+  "id": "318-training--development-recommendation",
+  "level": 3
+}, {
+  "value": "31.9 Compliance &amp; Reporting",
+  "id": "319-compliance--reporting",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-31-hr--recruitment--ai-powered-talent-agents",
+        children: "Chapter 31: HR & Recruitment — AI-Powered Talent Agents"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/30-logistics",
+          children: "Logistics & Supply Chain Agents"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/32-marketing",
+          children: "Marketing & Advertising Agents"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design and implement HR domain data models (Candidate, Employee, JobPosting, Review, Training) with Laravel migrations and Eloquent relationships"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a ResumeScreeningAgent that parses PDF resumes, extracts structured candidate data with AI, and ranks applicants against job requirements"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create an InterviewSchedulingAgent that coordinates availability between candidates and interviewers using calendar-aware logic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a CandidateMatchingAgent that uses vector embeddings and cosine similarity to match candidates to job postings"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deploy an OnboardingAgent that automates new-hire task checklists, document verification, and role-based provisioning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a PerformanceReviewAgent that analyzes review text with sentiment analysis and detects performance trends over time"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct a SentimentAgent that monitors employee engagement surveys, flags negative sentiment, and escalates concerns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Develop a TrainingRecommendationAgent that identifies skill gaps from performance data and recommends targeted training programs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement an HrComplianceAgent that tracks certification deadlines, equal-opportunity metrics, and generates compliance reports"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HR domain data models, AI agents for recruitment, onboarding, performance, compliance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, Eloquent models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HR domain data models, AI agents for recruitment, onboarding, performance, compliance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, Eloquent models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HR domain data models, AI agents for recruitment, onboarding, performance, compliance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, Eloquent models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HR domain data models, AI agents for recruitment, onboarding, performance, compliance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory, Eloquent models, agent implementations, AI integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation → master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/31-hr-recruitment.png",
+        alt: "HR and Recruitment Domain"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "311-hr-data-models",
+      children: "31.1 HR Data Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every HR automation begins with well-structured data. The core HR domain includes candidates seeking employment, employees managing their careers, job postings defining roles, performance reviews tracking growth, and training records documenting development. These models form the foundation upon which all AI agents operate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "migrations",
+      children: "Migrations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('candidates', function (Blueprint $table) {\n            $table->id();\n            $table->string('first_name');\n            $table->string('last_name');\n            $table->string('email')->unique();\n            $table->string('phone')->nullable();\n            $table->string('current_company')->nullable();\n            $table->string('current_title')->nullable();\n            $table->integer('years_experience')->default(0);\n            $table->json('skills')->nullable();\n            $table->text('resume_text')->nullable();\n            $table->string('resume_file_path')->nullable();\n            $table->string('source')->nullable();\n            $table->string('status')->default('new');\n            $table->decimal('ai_ranking_score', 5, 2)->nullable();\n            $table->json('ai_extracted_data')->nullable();\n            $table->foreignId('job_posting_id')->nullable()->constrained();\n            $table->timestamps();\n        });\n\n        Schema::create('employees', function (Blueprint $table) {\n            $table->id();\n            $table->string('employee_id')->unique();\n            $table->string('first_name');\n            $table->string('last_name');\n            $table->string('email')->unique();\n            $table->string('phone')->nullable();\n            $table->string('department');\n            $table->string('position');\n            $table->string('manager_id')->nullable();\n            $table->date('hire_date');\n            $table->string('employment_type')->default('full_time');\n            $table->string('status')->default('active');\n            $table->json('skills')->nullable();\n            $table->json('certifications')->nullable();\n            $table->string('timezone')->default('UTC');\n            $table->timestamps();\n        });\n\n        Schema::create('job_postings', function (Blueprint $table) {\n            $table->id();\n            $table->string('title');\n            $table->string('department');\n            $table->string('location')->nullable();\n            $table->string('employment_type')->default('full_time');\n            $table->text('description');\n            $table->json('requirements');\n            $table->json('preferred_skills')->nullable();\n            $table->text('responsibilities')->nullable();\n            $table->decimal('salary_min', 10, 2)->nullable();\n            $table->decimal('salary_max', 10, 2)->nullable();\n            $table->string('status')->default('open');\n            $table->foreignId('hiring_manager_id')->nullable()->constrained('employees');\n            $table->json('ai_embedding')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('reviews', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('employee_id')->constrained()->cascadeOnDelete();\n            $table->foreignId('reviewer_id')->constrained('employees')->cascadeOnDelete();\n            $table->string('type')->default('annual');\n            $table->date('review_date');\n            $table->date('review_period_start');\n            $table->date('review_period_end');\n            $table->json('ratings')->nullable();\n            $table->text('employee_comment')->nullable();\n            $table->text('reviewer_comment')->nullable();\n            $table->text('goals_achieved')->nullable();\n            $table->text('areas_for_improvement')->nullable();\n            $table->decimal('overall_score', 5, 2)->nullable();\n            $table->decimal('ai_sentiment_score', 5, 2)->nullable();\n            $table->json('ai_analysis')->nullable();\n            $table->string('status')->default('draft');\n            $table->timestamps();\n        });\n\n        Schema::create('training_records', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('employee_id')->constrained()->cascadeOnDelete();\n            $table->string('title');\n            $table->string('provider')->nullable();\n            $table->string('category');\n            $table->text('description')->nullable();\n            $table->text('skills_covered')->nullable();\n            $table->date('start_date');\n            $table->date('completion_date')->nullable();\n            $table->string('status')->default('enrolled');\n            $table->decimal('cost', 10, 2)->nullable();\n            $table->boolean('certification_earned')->default(false);\n            $table->date('certification_expiry')->nullable();\n            $table->integer('duration_hours')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('hr_documents', function (Blueprint $table) {\n            $table->id();\n            $table->string('type');\n            $table->foreignId('candidate_id')->nullable()->constrained()->nullOnDelete();\n            $table->foreignId('employee_id')->nullable()->constrained()->nullOnDelete();\n            $table->string('title');\n            $table->string('file_path');\n            $table->boolean('is_verified')->default(false);\n            $table->date('verified_at')->nullable();\n            $table->date('expiry_date')->nullable();\n            $table->json('ai_verification_data')->nullable();\n            $table->timestamps();\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('hr_documents');\n        Schema::dropIfExists('training_records');\n        Schema::dropIfExists('reviews');\n        Schema::dropIfExists('job_postings');\n        Schema::dropIfExists('employees');\n        Schema::dropIfExists('candidates');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "eloquent-models",
+      children: "Eloquent Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\nuse Illuminate\\Support\\Arr;\n\nclass Candidate extends Model\n{\n    protected $fillable = [\n        'first_name', 'last_name', 'email', 'phone',\n        'current_company', 'current_title', 'years_experience',\n        'skills', 'resume_text', 'resume_file_path', 'source',\n        'status', 'ai_ranking_score', 'ai_extracted_data',\n        'job_posting_id',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'skills' => 'array',\n            'ai_extracted_data' => 'array',\n            'years_experience' => 'integer',\n            'ai_ranking_score' => 'decimal:2',\n        ];\n    }\n\n    public function jobPosting(): BelongsTo\n    {\n        return $this->belongsTo(JobPosting::class);\n    }\n\n    public function getFullNameAttribute(): string\n    {\n        return \"{$this->first_name} {$this->last_name}\";\n    }\n}\n\nclass Employee extends Model\n{\n    protected $fillable = [\n        'employee_id', 'first_name', 'last_name', 'email', 'phone',\n        'department', 'position', 'manager_id', 'hire_date',\n        'employment_type', 'status', 'skills', 'certifications', 'timezone',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'skills' => 'array',\n            'certifications' => 'array',\n            'hire_date' => 'date',\n        ];\n    }\n\n    public function reviews(): HasMany\n    {\n        return $this->hasMany(Review::class);\n    }\n\n    public function trainingRecords(): HasMany\n    {\n        return $this->hasMany(TrainingRecord::class);\n    }\n\n    public function documents(): HasMany\n    {\n        return $this->hasMany(HrDocument::class);\n    }\n}\n\nclass JobPosting extends Model\n{\n    protected $fillable = [\n        'title', 'department', 'location', 'employment_type',\n        'description', 'requirements', 'preferred_skills',\n        'responsibilities', 'salary_min', 'salary_max',\n        'status', 'hiring_manager_id', 'ai_embedding',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'requirements' => 'array',\n            'preferred_skills' => 'array',\n            'ai_embedding' => 'array',\n            'salary_min' => 'decimal:2',\n            'salary_max' => 'decimal:2',\n        ];\n    }\n\n    public function candidates(): HasMany\n    {\n        return $this->hasMany(Candidate::class);\n    }\n\n    public function hiringManager(): BelongsTo\n    {\n        return $this->belongsTo(Employee::class, 'hiring_manager_id');\n    }\n}\n\nclass Review extends Model\n{\n    protected $fillable = [\n        'employee_id', 'reviewer_id', 'type', 'review_date',\n        'review_period_start', 'review_period_end', 'ratings',\n        'employee_comment', 'reviewer_comment', 'goals_achieved',\n        'areas_for_improvement', 'overall_score', 'ai_sentiment_score',\n        'ai_analysis', 'status',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'ratings' => 'array',\n            'ai_analysis' => 'array',\n            'review_date' => 'date',\n            'review_period_start' => 'date',\n            'review_period_end' => 'date',\n            'overall_score' => 'decimal:2',\n            'ai_sentiment_score' => 'decimal:2',\n        ];\n    }\n\n    public function employee(): BelongsTo\n    {\n        return $this->belongsTo(Employee::class);\n    }\n\n    public function reviewer(): BelongsTo\n    {\n        return $this->belongsTo(Employee::class, 'reviewer_id');\n    }\n}\n\nclass TrainingRecord extends Model\n{\n    protected $fillable = [\n        'employee_id', 'title', 'provider', 'category', 'description',\n        'skills_covered', 'start_date', 'completion_date', 'status',\n        'cost', 'certification_earned', 'certification_expiry',\n        'duration_hours',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'skills_covered' => 'array',\n            'start_date' => 'date',\n            'completion_date' => 'date',\n            'certification_expiry' => 'date',\n            'cost' => 'decimal:2',\n            'certification_earned' => 'boolean',\n        ];\n    }\n\n    public function employee(): BelongsTo\n    {\n        return $this->belongsTo(Employee::class);\n    }\n\n    public function isExpiringSoon(int $days = 30): bool\n    {\n        return $this->certification_expiry\n            && $this->certification_expiry->isFuture()\n            && $this->certification_expiry->diffInDays(now()) <= $days;\n    }\n}\n\nclass HrDocument extends Model\n{\n    protected $fillable = [\n        'type', 'candidate_id', 'employee_id', 'title',\n        'file_path', 'is_verified', 'verified_at',\n        'expiry_date', 'ai_verification_data',\n    ];\n\n    protected function casts(): array\n    {\n        return [\n            'is_verified' => 'boolean',\n            'verified_at' => 'date',\n            'expiry_date' => 'date',\n            'ai_verification_data' => 'array',\n        ];\n    }\n\n    public function candidate(): BelongsTo\n    {\n        return $this->belongsTo(Candidate::class);\n    }\n\n    public function employee(): BelongsTo\n    {\n        return $this->belongsTo(Employee::class);\n    }\n\n    public function scopeExpired($query)\n    {\n        return $query->whereNotNull('expiry_date')\n            ->where('expiry_date', '<', now());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "312-resume-screening--ranking-agents",
+      children: "31.2 Resume Screening & Ranking Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The ResumeScreeningAgent ingests candidate resumes (PDF or text), uses AI to extract structured data — skills, years of experience, education, previous roles — and scores each candidate against the requirements of a specific job posting. This automates the most time-consuming phase of recruiting: reviewing hundreds of resumes to find qualified candidates."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The agent works in three phases: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "parse"
+      }), " (extract raw text from the uploaded file), ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "extract"
+      }), " (use an LLM to pull structured fields from unstructured text), and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "rank"
+      }), " (compute a match score against job requirements using both keyword overlap and semantic understanding)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Candidate;\nuse App\\Models\\JobPosting;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Storage;\nuse Laravel\\Ai\\AiManager;\nuse Smalot\\PdfParser\\Parser as PdfParser;\nuse thiagoalessio\\TesseractOCR\\TesseractOCR;\n\nclass ResumeScreeningAgent\n{\n    public function __construct(\n        protected AiManager $ai,\n        protected PdfParser $pdfParser,\n    ) {}\n\n    public function screen(Candidate $candidate, JobPosting $jobPosting): Candidate\n    {\n        $resumeText = $this->parseResume($candidate);\n\n        $extractedData = $this->extractStructuredData($resumeText);\n        $candidate->ai_extracted_data = $extractedData;\n        $candidate->skills = $extractedData['skills'] ?? [];\n        $candidate->years_experience = $extractedData['years_experience'] ?? 0;\n\n        $rankingScore = $this->rankCandidate($extractedData, $jobPosting);\n        $candidate->ai_ranking_score = $rankingScore;\n\n        $candidate->save();\n\n        Log::info(\"Resume screened for candidate {$candidate->id}\", [\n            'score' => $rankingScore,\n            'skills_found' => count($extractedData['skills'] ?? []),\n        ]);\n\n        return $candidate;\n    }\n\n    public function parseResume(Candidate $candidate): string\n    {\n        if ($candidate->resume_text) {\n            return $candidate->resume_text;\n        }\n\n        $path = Storage::disk('private')->path($candidate->resume_file_path);\n\n        if (!file_exists($path)) {\n            throw new \\RuntimeException(\"Resume file not found: {$path}\");\n        }\n\n        $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));\n\n        return match ($extension) {\n            'pdf' => $this->parsePdf($path),\n            'docx' => $this->parseDocx($path),\n            'txt' => file_get_contents($path),\n            'png', 'jpg', 'jpeg' => $this->parseImage($path),\n            default => throw new \\RuntimeException(\"Unsupported resume format: {$extension}\"),\n        };\n    }\n\n    protected function parsePdf(string $path): string\n    {\n        $pdf = $this->pdfParser->parseFile($path);\n\n        return $pdf->getText();\n    }\n\n    protected function parseDocx(string $path): string\n    {\n        $zip = new \\ZipArchive();\n        $zip->open($path);\n        $xml = $zip->getFromName('word/document.xml');\n        $zip->close();\n\n        $xml = preg_replace('/<w:p[^>]*>/', \"\\n\", $xml);\n        $xml = strip_tags($xml);\n\n        return trim(preg_replace('/\\s+/', ' ', $xml));\n    }\n\n    protected function parseImage(string $path): string\n    {\n        return (new TesseractOCR($path))->run();\n    }\n\n    public function extractStructuredData(string $resumeText): array\n    {\n        $response = $this->ai->agent()\n            ->instructions('You are an expert resume parser. Extract structured data from the resume text provided.')\n            ->prompt(\"\n                Extract the following fields from this resume text.\n                Return ONLY valid JSON with NO markdown formatting.\n\n                Resume text:\n                {$resumeText}\n\n                JSON schema:\n                {\n                    \\\"full_name\\\": \\\"string\\\",\n                    \\\"email\\\": \\\"string|null\\\",\n                    \\\"phone\\\": \\\"string|null\\\",\n                    \\\"skills\\\": [\\\"string\\\"],\n                    \\\"years_experience\\\": \\\"integer\\\",\n                    \\\"education\\\": [\n                        {\n                            \\\"degree\\\": \\\"string\\\",\n                            \\\"field\\\": \\\"string\\\",\n                            \\\"institution\\\": \\\"string\\\",\n                            \\\"year\\\": \\\"integer|null\\\"\n                        }\n                    ],\n                    \\\"previous_roles\\\": [\n                        {\n                            \\\"title\\\": \\\"string\\\",\n                            \\\"company\\\": \\\"string\\\",\n                            \\\"years\\\": \\\"integer\\\"\n                        }\n                    ],\n                    \\\"certifications\\\": [\\\"string\\\"]\n                }\n            \")\n            ->generate();\n\n        return json_decode($response->text(), true) ?? [];\n    }\n\n    public function rankCandidate(array $extracted, JobPosting $jobPosting): float\n    {\n        $requiredSkills = collect($jobPosting->requirements['skills'] ?? []);\n        $preferredSkills = collect($jobPosting->preferred_skills ?? []);\n        $candidateSkills = collect($extracted['skills'] ?? []);\n\n        $candidateSkillNames = $candidateSkills->map(fn ($s) => strtolower(trim($s)));\n\n        $requiredMatches = $requiredSkills->filter(\n            fn ($req) => $candidateSkillNames->contains(strtolower(trim($req)))\n        )->count();\n\n        $preferredMatches = $preferredSkills->filter(\n            fn ($pref) => $candidateSkillNames->contains(strtolower(trim($pref)))\n        )->count();\n\n        $totalRequired = max($requiredSkills->count(), 1);\n        $totalPreferred = max($preferredSkills->count(), 1);\n\n        $requiredScore = ($requiredMatches / $totalRequired) * 60;\n        $preferredScore = ($preferredMatches / $totalPreferred) * 25;\n\n        $experienceYears = $extracted['years_experience'] ?? 0;\n        $requiredYears = $jobPosting->requirements['min_years_experience'] ?? 0;\n        $experienceScore = $requiredYears > 0\n            ? min(($experienceYears / $requiredYears) * 15, 15)\n            : 10;\n\n        return round($requiredScore + $preferredScore + $experienceScore, 2);\n    }\n\n    public function screenMultiple(JobPosting $jobPosting, int $limit = 50): array\n    {\n        $candidates = Candidate::where('status', 'new')\n            ->where(fn ($q) => $q->whereNull('job_posting_id')\n                ->orWhere('job_posting_id', $jobPosting->id))\n            ->limit($limit)\n            ->get();\n\n        $results = [];\n\n        foreach ($candidates as $candidate) {\n            try {\n                $this->screen($candidate, $jobPosting);\n                $results[] = [\n                    'candidate' => $candidate->toArray(),\n                    'score' => $candidate->ai_ranking_score,\n                ];\n            } catch (\\Throwable $e) {\n                Log::error(\"Failed to screen candidate {$candidate->id}: {$e->getMessage()}\");\n                $results[] = [\n                    'candidate_id' => $candidate->id,\n                    'error' => $e->getMessage(),\n                ];\n            }\n        }\n\n        usort($results, fn ($a, $b) => ($b['score'] ?? 0) <=> ($a['score'] ?? 0));\n\n        return $results;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "313-interview-scheduling-automation",
+      children: "31.3 Interview Scheduling Automation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The InterviewSchedulingAgent coordinates the logistics of scheduling interviews between candidates and interviewers. It checks availability windows, proposes overlapping time slots, sends calendar invitations, and handles rescheduling when conflicts arise. The agent uses a constraint-satisfaction approach: candidate availability, interviewer availability, required attendees, room booking, and timezone normalization are all treated as constraints that must be satisfied simultaneously."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Candidate;\nuse App\\Models\\Employee;\nuse App\\Notifications\\InterviewScheduled;\nuse Carbon\\Carbon;\nuse Carbon\\CarbonInterval;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Notification;\n\nclass InterviewSchedulingAgent\n{\n    protected array $defaultDuration = 60;\n\n    protected array $businessHours = [\n        'start' => '09:00',\n        'end' => '17:00',\n    ];\n\n    protected array $excludedDays = [0, 6];\n\n    public function __construct(\n        protected array $config = [],\n    ) {\n        $this->defaultDuration = $config['default_duration_minutes'] ?? 60;\n        $this->businessHours['start'] = $config['business_hours_start'] ?? '09:00';\n        $this->businessHours['end'] = $config['business_hours_end'] ?? '17:00';\n    }\n\n    public function schedule(\n        Candidate $candidate,\n        array $interviewerIds,\n        string $type = 'technical',\n        ?Carbon $preferredDate = null,\n        int $durationMinutes = 60,\n    ): array {\n        $durationMinutes = $durationMinutes ?: $this->defaultDuration;\n\n        $interviewers = Employee::whereIn('id', $interviewerIds)\n            ->where('status', 'active')\n            ->get();\n\n        if ($interviewers->isEmpty()) {\n            throw new \\RuntimeException('No available interviewers found.');\n        }\n\n        $candidateTimezone = $candidate->timezone ?? 'UTC';\n        $candidateAvailability = $this->getCandidateAvailability($candidate);\n\n        $combinedSlots = $this->findCommonSlots(\n            candidateSlots: $candidateAvailability,\n            interviewers: $interviewers,\n            durationMinutes: $durationMinutes,\n            preferredDate: $preferredDate,\n        );\n\n        if ($combinedSlots->isEmpty()) {\n            $this->flagForManualScheduling($candidate, $interviewers, $type);\n\n            return [\n                'status' => 'manual_scheduling_required',\n                'message' => 'No common time slots found. Manual scheduling initiated.',\n            ];\n        }\n\n        $selectedSlot = $combinedSlots->first();\n\n        $interview = $this->createInterviewRecord(\n            candidate: $candidate,\n            interviewers: $interviewers,\n            type: $type,\n            startTime: $selectedSlot['start'],\n            endTime: $selectedSlot['end'],\n        );\n\n        $this->sendInvitations($candidate, $interviewers, $selectedSlot);\n\n        Log::info(\"Interview scheduled for candidate {$candidate->id}\", [\n            'type' => $type,\n            'slot' => $selectedSlot['start']->toIso8601String(),\n            'interviewers' => $interviewerIds,\n        ]);\n\n        return [\n            'status' => 'scheduled',\n            'interview' => $interview,\n            'start_time' => $selectedSlot['start'],\n            'end_time' => $selectedSlot['end'],\n            'timezone' => $candidateTimezone,\n        ];\n    }\n\n    protected function getCandidateAvailability(Candidate $candidate): Collection\n    {\n        $timezone = $candidate->timezone ?? 'UTC';\n\n        $windowStart = Carbon::now($timezone)->addDay()->startOfDay();\n        $windowEnd = Carbon::now($timezone)->addDays(14)->endOfDay();\n\n        $slots = collect();\n\n        $current = $windowStart->copy()->setTimeFromTimeString($this->businessHours['start']);\n\n        while ($current->lessThan($windowEnd)) {\n            if (!in_array($current->dayOfWeek, $this->excludedDays)) {\n                $dayEnd = $current->copy()->setTimeFromTimeString($this->businessHours['end']);\n                $slotStart = $current->copy();\n                $slots->push([\n                    'start' => $slotStart->copy(),\n                    'end' => $slotStart->copy()->addMinutes($this->defaultDuration),\n                ]);\n            }\n            $current->addDay();\n        }\n\n        return $slots;\n    }\n\n    protected function findCommonSlots(\n        Collection $candidateSlots,\n        Collection $interviewers,\n        int $durationMinutes,\n        ?Carbon $preferredDate = null,\n    ): Collection {\n        $interviewerSlots = $interviewers->mapWithKeys(\n            fn (Employee $interviewer) => [\n                $interviewer->id => $this->getInterviewerAvailability($interviewer),\n            ]\n        );\n\n        $commonSlots = $candidateSlots->filter(function (array $candidateSlot) use ($interviewerSlots) {\n            foreach ($interviewerSlots as $interviewerId => $slots) {\n                $overlaps = $slots->first(function (array $is) use ($candidateSlot) {\n                    return $is['start']->lessThan($candidateSlot['end'])\n                        && $is['end']->greaterThan($candidateSlot['start']);\n                });\n\n                if (!$overlaps) {\n                    return false;\n                }\n            }\n\n            return true;\n        });\n\n        if ($commonSlots->isEmpty() && $preferredDate) {\n            return $candidateSlots->filter(\n                fn (array $slot) => $slot['start']->isSameDay($preferredDate)\n            )->take(5);\n        }\n\n        return $commonSlots;\n    }\n\n    protected function getInterviewerAvailability(Employee $interviewer): Collection\n    {\n        $timezone = $interviewer->timezone ?? 'UTC';\n\n        $start = Carbon::now($timezone)->addDay()->startOfDay();\n        $end = Carbon::now($timezone)->addDays(14)->endOfDay();\n\n        $slots = collect();\n        $current = $start->copy()->setTimeFromTimeString($this->businessHours['start']);\n\n        while ($current->lessThan($end)) {\n            if (!in_array($current->dayOfWeek, $this->excludedDays)) {\n                $dayEnd = $current->copy()->setTimeFromTimeString($this->businessHours['end']);\n\n                $slotStart = $current->copy();\n                while ($slotStart->copy()->addMinutes($this->defaultDuration)->lessThan($dayEnd)) {\n                    $slots->push([\n                        'start' => $slotStart->copy(),\n                        'end' => $slotStart->copy()->addMinutes($this->defaultDuration),\n                    ]);\n                    $slotStart->addMinutes($this->defaultDuration);\n                }\n            }\n            $current->addDay();\n        }\n\n        return $slots;\n    }\n\n    protected function createInterviewRecord(\n        Candidate $candidate,\n        Collection $interviewers,\n        string $type,\n        Carbon $startTime,\n        Carbon $endTime,\n    ): array {\n        $interview = [\n            'candidate_id' => $candidate->id,\n            'type' => $type,\n            'scheduled_at' => $startTime,\n            'ends_at' => $endTime,\n            'timezone' => $candidate->timezone ?? 'UTC',\n            'interviewers' => $interviewers->pluck('id')->toArray(),\n            'status' => 'scheduled',\n            'meeting_link' => $this->generateMeetingLink(),\n        ];\n\n        Log::info('Interview record created', $interview);\n\n        return $interview;\n    }\n\n    protected function sendInvitations(\n        Candidate $candidate,\n        Collection $interviewers,\n        array $slot,\n    ): void {\n        $details = [\n            'candidate_name' => $candidate->full_name,\n            'candidate_email' => $candidate->email,\n            'start_time' => $slot['start']->toIso8601String(),\n            'end_time' => $slot['end']->toIso8601String(),\n            'meeting_link' => $this->generateMeetingLink(),\n        ];\n\n        Notification::route('mail', $candidate->email)\n            ->notify(new InterviewScheduled($details));\n\n        foreach ($interviewers as $interviewer) {\n            Notification::route('mail', $interviewer->email)\n                ->notify(new InterviewScheduled($details));\n        }\n    }\n\n    protected function generateMeetingLink(): string\n    {\n        $uuid = (string) \\Illuminate\\Support\\Str::uuid();\n\n        return \"https://meet.example.com/interview/{$uuid}\";\n    }\n\n    protected function flagForManualScheduling(\n        Candidate $candidate,\n        Collection $interviewers,\n        string $type,\n    ): void {\n        Log::warning('Manual scheduling required', [\n            'candidate_id' => $candidate->id,\n            'interviewers' => $interviewers->pluck('id')->toArray(),\n            'type' => $type,\n        ]);\n\n        Notification::route('slack', config('services.slack.hr_channel'))\n            ->notify(new \\App\\Notifications\\ManualSchedulingRequired(\n                candidate: $candidate,\n                interviewers: $interviewers,\n                type: $type,\n            ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "314-candidate-matching-agents",
+      children: "31.4 Candidate Matching Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The CandidateMatchingAgent uses vector embeddings to perform semantic matching between job postings and candidates. Instead of relying solely on keyword overlap — which misses synonyms and context — the agent embeds both the job description and the candidate's resume into high-dimensional vectors, then computes cosine similarity. Candidates whose profiles are semantically close to the job requirements surface to the top, even when they use different terminology."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Candidate;\nuse App\\Models\\JobPosting;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Log;\nuse Laravel\\Ai\\AiManager;\n\nclass CandidateMatchingAgent\n{\n    protected int $topK = 20;\n\n    protected float $minimumScore = 0.4;\n\n    public function __construct(\n        protected AiManager $ai,\n    ) {}\n\n    public function embedJobPosting(JobPosting $posting): JobPosting\n    {\n        $text = $this->buildJobText($posting);\n\n        $embedding = $this->createEmbedding($text);\n        $posting->ai_embedding = $embedding;\n        $posting->save();\n\n        return $posting;\n    }\n\n    public function embedCandidate(Candidate $candidate): array\n    {\n        $text = $this->buildCandidateText($candidate);\n\n        return $this->createEmbedding($text);\n    }\n\n    public function findMatchesForJob(\n        JobPosting $posting,\n        ?int $limit = null,\n    ): Collection {\n        $limit = $limit ?? $this->topK;\n\n        if (!$posting->ai_embedding) {\n            $this->embedJobPosting($posting);\n        }\n\n        $queryVector = $posting->ai_embedding;\n\n        $candidates = Candidate::where('status', 'new')\n            ->whereNull('ai_ranking_score')\n            ->orWhere('job_posting_id', $posting->id)\n            ->limit(100)\n            ->get();\n\n        $scored = $candidates->map(function (Candidate $candidate) use ($queryVector) {\n            $candidateVector = $this->embedCandidate($candidate);\n            $similarity = $this->cosineSimilarity($queryVector, $candidateVector);\n\n            return [\n                'candidate' => $candidate,\n                'similarity' => round($similarity, 4),\n            ];\n        })->filter(fn ($item) => $item['similarity'] >= $this->minimumScore)\n            ->sortByDesc('similarity')\n            ->values()\n            ->take($limit);\n\n        Log::info(\"Found {$scored->count()} matching candidates for job {$posting->id}\");\n\n        return $scored;\n    }\n\n    public function findJobsForCandidate(\n        Candidate $candidate,\n        ?int $limit = null,\n    ): Collection {\n        $limit = $limit ?? $this->topK;\n\n        $candidateVector = $this->embedCandidate($candidate);\n\n        $postings = JobPosting::where('status', 'open')->get();\n\n        $jobEmbeddings = $postings->map(function (JobPosting $posting) {\n            if (!$posting->ai_embedding) {\n                $this->embedJobPosting($posting);\n            }\n\n            return $posting;\n        });\n\n        $scored = $jobEmbeddings->map(function (JobPosting $posting) use ($candidateVector) {\n            $similarity = $this->cosineSimilarity($candidateVector, $posting->ai_embedding);\n\n            return [\n                'job' => $posting,\n                'similarity' => round($similarity, 4),\n            ];\n        })->filter(fn ($item) => $item['similarity'] >= $this->minimumScore)\n            ->sortByDesc('similarity')\n            ->values()\n            ->take($limit);\n\n        return $scored;\n    }\n\n    public function generateMatchExplanation(\n        Candidate $candidate,\n        JobPosting $posting,\n    ): string {\n        $response = $this->ai->agent()\n            ->instructions('You are an HR recruitment specialist. Explain why this candidate matches or does not match this job posting.')\n            ->prompt(\"\n                Candidate Profile:\n                - Skills: \" . implode(', ', $candidate->skills ?? []) . \"\n                - Experience: {$candidate->years_experience} years\n                - Current Role: {$candidate->current_title} at {$candidate->current_company}\n                - Extracted Data: \" . json_encode($candidate->ai_extracted_data) . \"\n\n                Job Posting: {$posting->title} ({$posting->department})\n                - Requirements: \" . json_encode($posting->requirements) . \"\n                - Preferred Skills: \" . json_encode($posting->preferred_skills) . \"\n\n                Provide a 2-3 sentence explanation of the match strength, key qualifications,\n                and any notable gaps. Be direct and specific.\n            \")->generate();\n\n        return $response->text();\n    }\n\n    protected function buildJobText(JobPosting $posting): string\n    {\n        return implode(\"\\n\", array_filter([\n            \"Title: {$posting->title}\",\n            \"Department: {$posting->department}\",\n            \"Description: {$posting->description}\",\n            \"Requirements: \" . implode(', ', $posting->requirements ?? []),\n            \"Preferred Skills: \" . implode(', ', $posting->preferred_skills ?? []),\n            \"Responsibilities: {$posting->responsibilities}\",\n        ]));\n    }\n\n    protected function buildCandidateText(Candidate $candidate): string\n    {\n        $extracted = $candidate->ai_extracted_data ?? [];\n\n        return implode(\"\\n\", array_filter([\n            \"Name: {$candidate->first_name} {$candidate->last_name}\",\n            \"Current Role: {$candidate->current_title} at {$candidate->current_company}\",\n            \"Skills: \" . implode(', ', $candidate->skills ?? []),\n            \"Experience: {$candidate->years_experience} years\",\n            \"Resume: {$candidate->resume_text}\",\n        ]));\n    }\n\n    protected function createEmbedding(string $text): array\n    {\n        $response = $this->ai->embeddings()->input($text)->generate();\n\n        return $response->data[0]->embedding ?? [];\n    }\n\n    protected function cosineSimilarity(array $vectorA, array $vectorB): float\n    {\n        $dotProduct = 0;\n        $magnitudeA = 0;\n        $magnitudeB = 0;\n\n        foreach ($vectorA as $i => $valueA) {\n            $valueB = $vectorB[$i] ?? 0;\n            $dotProduct += $valueA * $valueB;\n            $magnitudeA += $valueA * $valueA;\n            $magnitudeB += $valueB * $valueB;\n        }\n\n        $magnitudeA = sqrt($magnitudeA);\n        $magnitudeB = sqrt($magnitudeB);\n\n        if ($magnitudeA === 0.0 || $magnitudeB === 0.0) {\n            return 0.0;\n        }\n\n        return $dotProduct / ($magnitudeA * $magnitudeB);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "315-onboarding-workflow-agents",
+      children: "31.5 Onboarding Workflow Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The OnboardingAgent automates the new-hire onboarding process from acceptance through day-one readiness. The agent creates a personalized task checklist, verifies required documents (ID verification, tax forms, employment eligibility), provisions accounts across internal systems, assigns a mentor, schedules orientation sessions, and tracks completion status. Each step can be configured per role, department, or location."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Candidate;\nuse App\\Models\\Employee;\nuse App\\Models\\HrDocument;\nuse App\\Notifications\\OnboardingTaskAssigned;\nuse Carbon\\Carbon;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Notification;\nuse Illuminate\\Support\\Str;\n\nclass OnboardingAgent\n{\n    protected array $defaultTasks = [\n        'complete_welcome_form' => [\n            'title' => 'Complete Welcome Form',\n            'description' => 'Fill out personal details, emergency contacts, and banking information',\n            'assigned_to' => 'employee',\n            'due_offset_days' => -7,\n            'category' => 'paperwork',\n        ],\n        'upload_id_document' => [\n            'title' => 'Upload Government ID',\n            'description' => 'Provide a valid passport, driver\\'s license, or national ID card',\n            'assigned_to' => 'employee',\n            'due_offset_days' => -7,\n            'category' => 'documents',\n        ],\n        'verify_employment_eligibility' => [\n            'title' => 'Employment Eligibility Verification (I-9)',\n            'description' => 'Complete Form I-9 and provide supporting documents',\n            'assigned_to' => 'hr',\n            'due_offset_days' => 0,\n            'category' => 'compliance',\n        ],\n        'sign_employment_contract' => [\n            'title' => 'Sign Employment Contract',\n            'description' => 'Review and sign the employment agreement',\n            'assigned_to' => 'employee',\n            'due_offset_days' => -14,\n            'category' => 'legal',\n        ],\n        'provision_email_account' => [\n            'title' => 'Provision Email & System Accounts',\n            'description' => 'Create email account, HRIS profile, and internal tool access',\n            'assigned_to' => 'it',\n            'due_offset_days' => -3,\n            'category' => 'it',\n        ],\n        'assign_equipment' => [\n            'title' => 'Assign Equipment',\n            'description' => 'Prepare laptop, monitor, peripherals, and accessories',\n            'assigned_to' => 'it',\n            'due_offset_days' => -2,\n            'category' => 'it',\n        ],\n        'schedule_orientation' => [\n            'title' => 'Schedule Orientation Session',\n            'description' => 'Book company orientation and departmental onboarding',\n            'assigned_to' => 'hr',\n            'due_offset_days' => 0,\n            'category' => 'orientation',\n        ],\n        'assign_mentor' => [\n            'title' => 'Assign Mentor',\n            'description' => 'Match new hire with a peer mentor from the same department',\n            'assigned_to' => 'manager',\n            'due_offset_days' => 0,\n            'category' => 'culture',\n        ],\n    ];\n\n    public function onboard(Candidate $candidate, string $startDate): Employee\n    {\n        $employee = DB::transaction(function () use ($candidate, $startDate) {\n            $employee = Employee::create([\n                'employee_id' => $this->generateEmployeeId(),\n                'first_name' => $candidate->first_name,\n                'last_name' => $candidate->last_name,\n                'email' => $candidate->email,\n                'position' => $candidate->ai_extracted_data['target_position']\n                    ?? $candidate->current_title ?? 'New Hire',\n                'department' => $candidate->jobPosting?->department ?? 'General',\n                'hire_date' => Carbon::parse($startDate),\n                'status' => 'onboarding',\n                'skills' => $candidate->skills,\n            ]);\n\n            $this->createOnboardingTasks($employee, $startDate);\n\n            return $employee;\n        });\n\n        Log::info(\"Onboarding initiated for employee {$employee->id}\", [\n            'employee_id' => $employee->employee_id,\n            'start_date' => $startDate,\n        ]);\n\n        return $employee;\n    }\n\n    protected function generateEmployeeId(): string\n    {\n        $year = now()->format('Y');\n        $random = Str::upper(Str::random(6));\n\n        return \"EMP-{$year}-{$random}\";\n    }\n\n    protected function createOnboardingTasks(Employee $employee, string $startDate): void\n    {\n        $hireDate = Carbon::parse($startDate);\n\n        foreach ($this->defaultTasks as $taskKey => $taskDef) {\n            $dueDate = $hireDate->copy()->addDays($taskDef['due_offset_days']);\n\n            $task = DB::table('onboarding_tasks')->insert([\n                'uuid' => (string) Str::uuid(),\n                'employee_id' => $employee->id,\n                'key' => $taskKey,\n                'title' => $taskDef['title'],\n                'description' => $taskDef['description'],\n                'assigned_to' => $taskDef['assigned_to'],\n                'category' => $taskDef['category'],\n                'due_date' => $dueDate,\n                'status' => 'pending',\n                'created_at' => now(),\n                'updated_at' => now(),\n            ]);\n\n            Notification::route('mail', $employee->email)\n                ->notify(new OnboardingTaskAssigned(\n                    employee: $employee,\n                    task: $taskDef,\n                    dueDate: $dueDate,\n                ));\n        }\n    }\n\n    public function verifyDocument(HrDocument $document): HrDocument\n    {\n        if ($document->is_verified) {\n            return $document;\n        }\n\n        $document->update([\n            'is_verified' => true,\n            'verified_at' => now(),\n        ]);\n\n        Log::info(\"Document verified: {$document->id} ({$document->type})\");\n\n        return $document;\n    }\n\n    public function getOnboardingProgress(Employee $employee): array\n    {\n        $tasks = DB::table('onboarding_tasks')\n            ->where('employee_id', $employee->id)\n            ->get();\n\n        $total = $tasks->count();\n        $completed = $tasks->where('status', 'completed')->count();\n        $overdue = $tasks->filter(\n            fn ($t) => $t->status !== 'completed' && Carbon::parse($t->due_date)->isPast()\n        )->count();\n\n        return [\n            'employee_id' => $employee->id,\n            'total_tasks' => $total,\n            'completed_tasks' => $completed,\n            'overdue_tasks' => $overdue,\n            'progress_percentage' => $total > 0 ? round(($completed / $total) * 100, 1) : 0,\n            'is_complete' => $completed === $total,\n            'tasks_by_category' => $tasks->groupBy('category')\n                ->map(fn ($group) => [\n                    'total' => $group->count(),\n                    'completed' => $group->where('status', 'completed')->count(),\n                ]),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "316-performance-review-analysis",
+      children: "31.6 Performance Review Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The PerformanceReviewAgent analyzes review text to extract sentiment, identify performance trends across review periods, and generate manager-friendly summaries. It processes both quantitative ratings and qualitative comments, detecting patterns such as consistent strengths, recurring areas for improvement, changes in trajectory (improving, declining, steady), and flagging reviews that need managerial attention."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Employee;\nuse App\\Models\\Review;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\Log;\nuse Laravel\\Ai\\AiManager;\n\nclass PerformanceReviewAgent\n{\n    public function __construct(\n        protected AiManager $ai,\n    ) {}\n\n    public function analyze(Review $review): Review\n    {\n        $sentimentScore = $this->analyzeSentiment($review);\n        $review->ai_sentiment_score = $sentimentScore;\n\n        $analysis = $this->extractInsights($review);\n        $review->ai_analysis = $analysis;\n\n        $review->save();\n\n        Log::info(\"Review analyzed: {$review->id}\", [\n            'sentiment' => $sentimentScore,\n            'categories' => array_keys($analysis),\n        ]);\n\n        return $review;\n    }\n\n    public function analyzeSentiment(Review $review): float\n    {\n        $texts = array_filter([\n            $review->employee_comment,\n            $review->reviewer_comment,\n            $review->goals_achieved,\n            $review->areas_for_improvement,\n        ]);\n\n        $combined = implode(\"\\n\\n\", $texts);\n\n        if (empty(trim($combined))) {\n            return 0.5;\n        }\n\n        $response = $this->ai->agent()\n            ->instructions('You analyze employee performance review text and return a single sentiment score.')\n            ->prompt(\"\n                Analyze the sentiment of this performance review text.\n                Return ONLY a decimal number between 0.0 (extremely negative) and 1.0 (extremely positive).\n                Do NOT include any explanation or formatting.\n\n                Review text:\n                {$combined}\n            \")->generate();\n\n        $score = (float) trim($response->text());\n\n        return max(0.0, min(1.0, $score));\n    }\n\n    public function extractInsights(Review $review): array\n    {\n        $response = $this->ai->agent()\n            ->instructions('You are an HR analytics specialist. Extract structured insights from performance reviews.')\n            ->prompt(\"\n                Analyze this performance review and return structured insights as JSON.\n\n                Employee Ratings: \" . json_encode($review->ratings) . \"\n                Overall Score: {$review->overall_score}\n                Reviewer Comment: {$review->reviewer_comment}\n                Employee Comment: {$review->employee_comment}\n                Goals Achieved: {$review->goals_achieved}\n                Areas for Improvement: {$review->areas_for_improvement}\n\n                Return JSON with these fields:\n                {\n                    \\\"key_strengths\\\": [\\\"string\\\"],\n                    \\\"areas_for_growth\\\": [\\\"string\\\"],\n                    \\\"sentiment_trend\\\": \\\"improving|declining|steady\\\",\n                    \\\"manager_attention_required\\\": boolean,\n                    \\\"summary\\\": \\\"string (2-3 sentences)\\\",\n                    \\\"recommended_actions\\\": [\\\"string\\\"]\n                }\n            \")->generate();\n\n        return json_decode($response->text(), true) ?? [\n            'key_strengths' => [],\n            'areas_for_growth' => [],\n            'sentiment_trend' => 'steady',\n            'manager_attention_required' => false,\n            'summary' => 'Analysis unavailable.',\n            'recommended_actions' => [],\n        ];\n    }\n\n    public function detectTrends(Employee $employee): array\n    {\n        $reviews = $employee->reviews()\n            ->where('status', 'completed')\n            ->orderBy('review_date')\n            ->get();\n\n        if ($reviews->isEmpty()) {\n            return [\n                'employee_id' => $employee->id,\n                'trend' => 'no_data',\n                'message' => 'No completed reviews found for trend analysis.',\n            ];\n        }\n\n        $scores = $reviews->pluck('overall_score')->filter()->values();\n        $sentiments = $reviews->pluck('ai_sentiment_score')->filter()->values();\n\n        $scoreTrend = $this->calculateTrend($scores->toArray());\n        $sentimentTrend = $this->calculateTrend($sentiments->toArray());\n\n        $analysis = $this->ai->agent()\n            ->instructions('You synthesize performance review trends into concise observations.')\n            ->prompt(\"\n                Employee: {$employee->first_name} {$employee->last_name} ({$employee->position})\n                Department: {$employee->department}\n\n                Review History (\" . $reviews->count() . \" reviews):\n                \" . $reviews->map(fn (Review $r) => \"- {$r->review_date->format('Y-m-d')}: Score {$r->overall_score}, Sentiment {$r->ai_sentiment_score}\")->implode(\"\\n\") . \"\n\n                Score Trend: {$scoreTrend}\n                Sentiment Trend: {$sentimentTrend}\n\n                Provide a 3-4 sentence synthesis of this employee's performance trajectory.\n                Note improvements, declines, and any patterns across review periods.\n            \")->generate();\n\n        return [\n            'employee_id' => $employee->id,\n            'reviews_analyzed' => $reviews->count(),\n            'score_trend' => $scoreTrend,\n            'sentiment_trend' => $sentimentTrend,\n            'average_score' => $scores->average(),\n            'latest_score' => $scores->last(),\n            'synthesis' => $analysis->text(),\n        ];\n    }\n\n    protected function calculateTrend(array $values): string\n    {\n        $count = count($values);\n\n        if ($count < 2) {\n            return 'insufficient_data';\n        }\n\n        $firstHalf = array_slice($values, 0, (int) floor($count / 2));\n        $secondHalf = array_slice($values, (int) floor($count / 2));\n\n        $firstAvg = count($firstHalf) > 0 ? array_sum($firstHalf) / count($firstHalf) : 0;\n        $secondAvg = count($secondHalf) > 0 ? array_sum($secondHalf) / count($secondHalf) : 0;\n\n        $diff = $secondAvg - $firstAvg;\n\n        if ($diff > 0.15) {\n            return 'improving';\n        }\n\n        if ($diff < -0.15) {\n            return 'declining';\n        }\n\n        return 'steady';\n    }\n\n    public function generateDepartmentReport(string $department): array\n    {\n        $employees = Employee::where('department', $department)\n            ->where('status', 'active')\n            ->get();\n\n        $reports = $employees->map(\n            fn (Employee $e) => $this->detectTrends($e)\n        );\n\n        $declining = $reports->where('score_trend', 'declining')->count();\n        $improving = $reports->where('score_trend', 'improving')->count();\n        $steady = $reports->where('score_trend', 'steady')->count();\n\n        return [\n            'department' => $department,\n            'employees_analyzed' => $employees->count(),\n            'trend_distribution' => [\n                'improving' => $improving,\n                'declining' => $declining,\n                'steady' => $steady,\n            ],\n            'department_average_score' => $reports->avg('average_score'),\n            'employee_reports' => $reports->toArray(),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "317-employee-sentiment-monitoring",
+      children: "31.7 Employee Sentiment Monitoring"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The SentimentAgent continuously monitors employee engagement by analyzing survey responses, pulse check results, and feedback submissions. It scores each response for sentiment, detects negative trends at the individual and team level, and escalates concerns when sentiment drops below configurable thresholds. This agent serves as an early-warning system for disengagement, burnout, and cultural issues before they escalate into turnover."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Employee;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Notification;\nuse Laravel\\Ai\\AiManager;\n\nclass SentimentAgent\n{\n    protected array $alertThresholds = [\n        'critical' => 0.25,\n        'warning' => 0.40,\n        'notice' => 0.55,\n    ];\n\n    protected int $trendWindowDays = 90;\n\n    public function __construct(\n        protected AiManager $ai,\n    ) {}\n\n    public function analyzeSurveyResponse(\n        Employee $employee,\n        array $responses,\n        string $surveyType = 'engagement',\n    ): array {\n        $combined = collect($responses)\n            ->map(fn ($answer, $question) => \"{$question}: {$answer}\")\n            ->implode(\"\\n\");\n\n        $sentimentScore = $this->computeSentiment($combined);\n        $themes = $this->extractThemes($responses);\n        $flags = $this->checkFlags($sentimentScore, $themes);\n\n        DB::table('sentiment_records')->insert([\n            'employee_id' => $employee->id,\n            'survey_type' => $surveyType,\n            'responses' => json_encode($responses),\n            'sentiment_score' => $sentimentScore,\n            'themes' => json_encode($themes),\n            'flags' => json_encode($flags),\n            'submitted_at' => now(),\n            'created_at' => now(),\n            'updated_at' => now(),\n        ]);\n\n        if (!empty($flags)) {\n            $this->escalate($employee, $sentimentScore, $flags);\n        }\n\n        Log::info(\"Survey response analyzed for {$employee->id}\", [\n            'score' => $sentimentScore,\n            'flags' => count($flags),\n        ]);\n\n        return [\n            'employee_id' => $employee->id,\n            'sentiment_score' => $sentimentScore,\n            'themes' => $themes,\n            'flags' => $flags,\n        ];\n    }\n\n    public function computeSentiment(string $text): float\n    {\n        $response = $this->ai->agent()\n            ->instructions('Analyze employee survey text for sentiment. Return a single decimal.')\n            ->prompt(\"\n                Analyze the sentiment of these employee survey responses.\n                Consider the emotional tone, satisfaction level, and any signs of engagement or disengagement.\n\n                Return ONLY a number between 0.0 (extremely negative / distressed)\n                and 1.0 (extremely positive / highly engaged).\n\n                Survey text:\n                {$text}\n            \")->generate();\n\n        return max(0.0, min(1.0, (float) trim($response->text())));\n    }\n\n    protected function extractThemes(array $responses): array\n    {\n        $text = json_encode($responses);\n\n        $response = $this->ai->agent()\n            ->instructions('Extract key themes from employee survey responses.')\n            ->prompt(\"\n                From these survey responses, identify the top 3-5 themes or topics.\n                Return ONLY a JSON array of strings, each theme being 1-3 words.\n\n                Examples: [\\\"workload balance\\\", \\\"career growth\\\", \\\"team collaboration\\\", \\\"management support\\\"]\n\n                Survey responses: {$text}\n            \")->generate();\n\n        return json_decode($response->text(), true) ?? ['general'];\n    }\n\n    protected function checkFlags(float $score, array $themes): array\n    {\n        $flags = [];\n\n        if ($score <= $this->alertThresholds['critical']) {\n            $flags[] = [\n                'type' => 'critical',\n                'message' => 'Sentiment score critically low — immediate intervention recommended.',\n            ];\n        } elseif ($score <= $this->alertThresholds['warning']) {\n            $flags[] = [\n                'type' => 'warning',\n                'message' => 'Sentiment score below warning threshold — monitor closely.',\n            ];\n        } elseif ($score <= $this->alertThresholds['notice']) {\n            $flags[] = [\n                'type' => 'notice',\n                'message' => 'Sentiment score slightly below average — review context.',\n            ];\n        }\n\n        $negativeThemes = ['burnout', 'overwork', 'toxic', 'harassment', 'discrimination', 'unfair'];\n        foreach ($themes as $theme) {\n            $themeLower = strtolower($theme);\n            foreach ($negativeThemes as $keyword) {\n                if (str_contains($themeLower, $keyword)) {\n                    $flags[] = [\n                        'type' => 'critical',\n                        'message' => \"Negative theme detected: \\\"{$theme}\\\" — requires investigation.\",\n                    ];\n                    break;\n                }\n            }\n        }\n\n        return $flags;\n    }\n\n    public function getTeamSentiment(string $department): array\n    {\n        $records = DB::table('sentiment_records')\n            ->join('employees', 'sentiment_records.employee_id', '=', 'employees.id')\n            ->where('employees.department', $department)\n            ->where('sentiment_records.created_at', '>=', now()->subDays($this->trendWindowDays))\n            ->select(\n                'sentiment_records.*',\n                'employees.first_name',\n                'employees.last_name',\n            )\n            ->get();\n\n        if ($records->isEmpty()) {\n            return [\n                'department' => $department,\n                'status' => 'no_data',\n            ];\n        }\n\n        $averageScore = $records->avg('sentiment_score');\n\n        $lowScorers = $records->filter(\n            fn ($r) => $r->sentiment_score <= $this->alertThresholds['warning']\n        );\n\n        $recentTrend = $this->calculateSentimentTrend($records);\n\n        return [\n            'department' => $department,\n            'respondents' => $records->count(),\n            'average_sentiment' => round($averageScore, 4),\n            'trend' => $recentTrend,\n            'low_scorers' => $lowScorers->map(fn ($r) => [\n                'employee' => \"{$r->first_name} {$r->last_name}\",\n                'score' => $r->sentiment_score,\n                'themes' => json_decode($r->themes, true),\n                'date' => $r->submitted_at,\n            ])->values(),\n            'requires_attention' => $lowScorers->isNotEmpty(),\n        ];\n    }\n\n    protected function calculateSentimentTrend(Collection $records): string\n    {\n        $sorted = $records->sortBy('submitted_at')->values();\n        $count = $sorted->count();\n\n        if ($count < 4) {\n            return 'insufficient_data';\n        }\n\n        $midpoint = (int) floor($count / 2);\n        $firstHalf = $sorted->take($midpoint);\n        $secondHalf = $sorted->skip($midpoint);\n\n        $firstAvg = $firstHalf->avg('sentiment_score');\n        $secondAvg = $secondHalf->avg('sentiment_score');\n\n        $diff = $secondAvg - $firstAvg;\n\n        if ($diff > 0.08) {\n            return 'improving';\n        }\n\n        if ($diff < -0.08) {\n            return 'declining';\n        }\n\n        return 'stable';\n    }\n\n    protected function escalate(Employee $employee, float $score, array $flags): void\n    {\n        $criticalFlags = collect($flags)->where('type', 'critical');\n\n        if ($criticalFlags->isNotEmpty()) {\n            Notification::route('slack', config('services.slack.hr_alerts'))\n                ->notify(new \\App\\Notifications\\EmployeeSentimentAlert(\n                    employee: $employee,\n                    score: $score,\n                    flags: $criticalFlags->toArray(),\n                ));\n\n            Notification::route('mail', config('hr.alert_email'))\n                ->notify(new \\App\\Notifications\\EmployeeSentimentAlert(\n                    employee: $employee,\n                    score: $score,\n                    flags: $criticalFlags->toArray(),\n                ));\n        }\n\n        DB::table('sentiment_alerts')->insert([\n            'employee_id' => $employee->id,\n            'sentiment_score' => $score,\n            'flags' => json_encode($flags),\n            'acknowledged' => false,\n            'created_at' => now(),\n            'updated_at' => now(),\n        ]);\n    }\n\n    public function getAlertSummary(): array\n    {\n        $alerts = DB::table('sentiment_alerts')\n            ->where('acknowledged', false)\n            ->join('employees', 'sentiment_alerts.employee_id', '=', 'employees.id')\n            ->select(\n                'sentiment_alerts.*',\n                'employees.first_name',\n                'employees.last_name',\n                'employees.department',\n            )\n            ->get();\n\n        return [\n            'total_unacknowledged' => $alerts->count(),\n            'alerts' => $alerts->map(fn ($a) => [\n                'employee' => \"{$a->first_name} {$a->last_name}\",\n                'department' => $a->department,\n                'score' => $a->sentiment_score,\n                'flags' => json_decode($a->flags, true),\n                'created_at' => $a->created_at,\n            ]),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "318-training--development-recommendation",
+      children: "31.8 Training & Development Recommendation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The TrainingRecommendationAgent identifies skill gaps by comparing an employee's current skills and performance data against their role requirements and career goals. It then recommends specific training programs, courses, or certifications to close those gaps. The agent considers the employee's learning history, preferred learning format, budget constraints, and certification timelines to produce a prioritized development plan."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Employee;\nuse App\\Models\\TrainingRecord;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\nuse Laravel\\Ai\\AiManager;\n\nclass TrainingRecommendationAgent\n{\n    public function __construct(\n        protected AiManager $ai,\n    ) {}\n\n    public function analyzeSkillGaps(Employee $employee): array\n    {\n        $roleRequirements = $this->getRoleRequirements($employee->position, $employee->department);\n        $currentSkills = collect($employee->skills ?? []);\n        $completedTraining = $employee->trainingRecords()\n            ->where('status', 'completed')\n            ->get();\n\n        $skillsFromTraining = $completedTraining\n            ->flatMap(fn (TrainingRecord $t) => $t->skills_covered ?? [])\n            ->unique()\n            ->values();\n\n        $allKnownSkills = $currentSkills->merge($skillsFromTraining)\n            ->unique()\n            ->map(fn ($s) => strtolower(trim($s)))\n            ->values();\n\n        $missingSkills = collect($roleRequirements['required_skills'])\n            ->filter(fn ($req) => !$allKnownSkills->contains(strtolower(trim($req))))\n            ->values();\n\n        $underdevelopedSkills = collect($roleRequirements['preferred_skills'] ?? [])\n            ->filter(fn ($pref) => !$allKnownSkills->contains(strtolower(trim($pref))))\n            ->values();\n\n        $recommendations = $this->generateRecommendations(\n            employee: $employee,\n            missingSkills: $missingSkills,\n            underdevelopedSkills: $underdevelopedSkills,\n            roleRequirements: $roleRequirements,\n        );\n\n        Log::info(\"Skill gaps analyzed for employee {$employee->id}\", [\n            'missing' => $missingSkills->count(),\n            'underdeveloped' => $underdevelopedSkills->count(),\n            'recommendations' => count($recommendations),\n        ]);\n\n        return [\n            'employee_id' => $employee->id,\n            'role' => $employee->position,\n            'department' => $employee->department,\n            'current_skills_count' => $currentSkills->count(),\n            'missing_skills' => $missingSkills->toArray(),\n            'underdeveloped_skills' => $underdevelopedSkills->toArray(),\n            'skill_coverage_percentage' => $this->computeCoverage(\n                $allKnownSkills,\n                $roleRequirements['required_skills'],\n            ),\n            'recommendations' => $recommendations,\n        ];\n    }\n\n    protected function getRoleRequirements(string $position, string $department): array\n    {\n        $cached = DB::table('role_skill_requirements')\n            ->where('position', $position)\n            ->where('department', $department)\n            ->first();\n\n        if ($cached) {\n            return [\n                'required_skills' => json_decode($cached->required_skills, true),\n                'preferred_skills' => json_decode($cached->preferred_skills, true),\n                'min_years_experience' => $cached->min_years_experience,\n                'certifications' => json_decode($cached->certifications, true),\n            ];\n        }\n\n        $response = $this->ai->agent()\n            ->instructions('You define role skill requirements for HR systems.')\n            ->prompt(\"\n                Define the typical skill requirements for this position.\n\n                Position: {$position}\n                Department: {$department}\n\n                Return JSON:\n                {\n                    \\\"required_skills\\\": [\\\"8-15 essential technical and soft skills\\\"],\n                    \\\"preferred_skills\\\": [\\\"5-10 nice-to-have skills\\\"],\n                    \\\"min_years_experience\\\": integer,\n                    \\\"certifications\\\": [\\\"relevant certification names\\\"]\n                }\n            \")->generate();\n\n        $requirements = json_decode($response->text(), true) ?? [\n            'required_skills' => [],\n            'preferred_skills' => [],\n            'min_years_experience' => 0,\n            'certifications' => [],\n        ];\n\n        DB::table('role_skill_requirements')->insert([\n            'position' => $position,\n            'department' => $department,\n            'required_skills' => json_encode($requirements['required_skills'] ?? []),\n            'preferred_skills' => json_encode($requirements['preferred_skills'] ?? []),\n            'min_years_experience' => $requirements['min_years_experience'] ?? 0,\n            'certifications' => json_encode($requirements['certifications'] ?? []),\n            'created_at' => now(),\n            'updated_at' => now(),\n        ]);\n\n        return $requirements;\n    }\n\n    protected function generateRecommendations(\n        Employee $employee,\n        Collection $missingSkills,\n        Collection $underdevelopedSkills,\n        array $roleRequirements,\n    ): array {\n        $allGaps = $missingSkills->merge($underdevelopedSkills)->unique();\n\n        if ($allGaps->isEmpty()) {\n            $response = $this->ai->agent()\n                ->instructions('Suggest advanced training for proficient employees.')\n                ->prompt(\"\n                    Employee {$employee->first_name} {$employee->last_name} has all required skills\n                    for their role ({$employee->position}). Suggest 2-3 advanced or leadership\n                    development trainings that would help them grow.\n                    Return JSON array: [{title, provider, category, description, estimated_hours}]\n                \")->generate();\n\n            return json_decode($response->text(), true) ?? [];\n        }\n\n        $gapText = $allGaps->implode(', ');\n\n        $response = $this->ai->agent()\n            ->instructions('You are a corporate learning and development specialist.')\n            ->prompt(\"\n                Recommend training programs to close these skill gaps for an employee.\n\n                Employee: {$employee->first_name} {$employee->last_name}\n                Role: {$employee->position}\n                Department: {$employee->department}\n                Skill Gaps: {$gapText}\n                Required Certifications: \" . json_encode($roleRequirements['certifications'] ?? []) . \"\n\n                For each gap, recommend 1-2 specific training programs.\n                Prioritize certifications that are required for the role.\n\n                Return JSON array:\n                [\n                    {\n                        \\\"skill_addressed\\\": \\\"string\\\",\n                        \\\"priority\\\": \\\"high|medium|low\\\",\n                        \\\"recommendations\\\": [\n                            {\n                                \\\"title\\\": \\\"string\\\",\n                                \\\"provider\\\": \\\"string\\\",\n                                \\\"category\\\": \\\"technical|soft_skill|leadership|certification\\\",\n                                \\\"description\\\": \\\"string\\\",\n                                \\\"estimated_hours\\\": integer,\n                                \\\"cost_estimate\\\": \\\"string\\\",\n                                \\\"certification_available\\\": boolean\n                            }\n                        ]\n                    }\n                ]\n            \")->generate();\n\n        return json_decode($response->text(), true) ?? [];\n    }\n\n    protected function computeCoverage(Collection $knownSkills, array $required): float\n    {\n        $required = collect($required);\n\n        if ($required->isEmpty()) {\n            return 100.0;\n        }\n\n        $matched = $required->filter(\n            fn ($req) => $knownSkills->contains(strtolower(trim($req)))\n        )->count();\n\n        return round(($matched / $required->count()) * 100, 1);\n    }\n\n    public function buildDevelopmentPlan(Employee $employee): array\n    {\n        $gapAnalysis = $this->analyzeSkillGaps($employee);\n        $reviews = $employee->reviews()->where('status', 'completed')\n            ->orderByDesc('review_date')->take(3)->get();\n        $recentTraining = $employee->trainingRecords()\n            ->where('status', 'completed')\n            ->orderByDesc('completion_date')\n            ->take(5)\n            ->get();\n\n        $reviewSummary = $reviews->map(\n            fn ($r) => \"{$r->review_date->format('Y-m')}: Score {$r->overall_score}\"\n        )->implode('; ');\n\n        $trainingHistory = $recentTraining->map(\n            fn ($t) => \"{$t->title} ({$t->completion_date?->format('Y-m')})\"\n        )->implode('; ');\n\n        $developmentGoal = $this->ai->agent()\n            ->instructions('Create a personalized employee development plan.')\n            ->prompt(\"\n                Create a 90-day development plan for this employee.\n\n                Employee: {$employee->first_name} {$employee->last_name}\n                Role: {$employee->position}\n                Department: {$employee->department}\n                Gaps: \" . json_encode($gapAnalysis['missing_skills']) . \"\n                Recent Reviews: {$reviewSummary}\n                Recent Training: {$trainingHistory}\n                Recommended Training: \" . json_encode($gapAnalysis['recommendations']) . \"\n\n                Return a JSON object:\n                {\n                    \\\"phase_1_30_days\\\": {\n                        \\\"focus\\\": \\\"string\\\",\n                        \\\"actions\\\": [\\\"string\\\"],\n                        \\\"expected_outcome\\\": \\\"string\\\"\n                    },\n                    \\\"phase_2_60_days\\\": {\n                        \\\"focus\\\": \\\"string\\\",\n                        \\\"actions\\\": [\\\"string\\\"],\n                        \\\"expected_outcome\\\": \\\"string\\\"\n                    },\n                    \\\"phase_3_90_days\\\": {\n                        \\\"focus\\\": \\\"string\\\",\n                        \\\"actions\\\": [\\\"string\\\"],\n                        \\\"expected_outcome\\\": \\\"string\\\"\n                    },\n                    \\\"long_term_goals\\\": [\\\"string\\\"]\n                }\n            \")->generate();\n\n        return [\n            'employee_id' => $employee->id,\n            'skill_coverage' => $gapAnalysis['skill_coverage_percentage'],\n            'missing_skills' => $gapAnalysis['missing_skills'],\n            'development_plan' => json_decode($developmentGoal->text(), true),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "319-compliance--reporting",
+      children: "31.9 Compliance & Reporting"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The HrComplianceAgent tracks regulatory and internal compliance requirements across the organization. It monitors certification expiry dates, equal-opportunity reporting metrics, mandatory training completion, and document retention schedules. The agent proactively notifies HR staff of approaching deadlines and generates compliance reports ready for audit or regulatory submission."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Agents\\Hr;\n\nuse App\\Models\\Employee;\nuse App\\Models\\TrainingRecord;\nuse App\\Models\\HrDocument;\nuse Carbon\\Carbon;\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Facades\\Log;\nuse Illuminate\\Support\\Facades\\Notification;\nuse Laravel\\Ai\\AiManager;\n\nclass HrComplianceAgent\n{\n    protected array $upcomingWindowDays = 30;\n\n    protected array $overdueThresholdDays = 7;\n\n    public function __construct(\n        protected AiManager $ai,\n    ) {}\n\n    public function checkCertificationCompliance(): array\n    {\n        $expiringRecords = TrainingRecord::where('certification_earned', true)\n            ->whereNotNull('certification_expiry')\n            ->where('certification_expiry', '>=', now())\n            ->where('certification_expiry', '<=', now()->addDays($this->upcomingWindowDays))\n            ->with('employee')\n            ->get();\n\n        $expiredRecords = TrainingRecord::where('certification_earned', true)\n            ->whereNotNull('certification_expiry')\n            ->where('certification_expiry', '<', now())\n            ->with('employee')\n            ->get();\n\n        $this->notifyExpiringCertifications($expiringRecords);\n        $this->notifyExpiredCertifications($expiredRecords);\n\n        $results = [\n            'expiring_within_30_days' => $expiringRecords->map(fn ($r) => [\n                'employee' => \"{$r->employee->first_name} {$r->employee->last_name}\",\n                'certification' => $r->title,\n                'expires_at' => $r->certification_expiry->format('Y-m-d'),\n            ]),\n            'expired' => $expiredRecords->map(fn ($r) => [\n                'employee' => \"{$r->employee->first_name} {$r->employee->last_name}\",\n                'certification' => $r->title,\n                'expired_at' => $r->certification_expiry->format('Y-m-d'),\n            ]),\n            'compliant_count' => $this->getCompliantCertificationCount(),\n        ];\n\n        Log::info('Certification compliance check complete', [\n            'expiring' => $expiringRecords->count(),\n            'expired' => $expiredRecords->count(),\n        ]);\n\n        return $results;\n    }\n\n    public function checkDocumentCompliance(): array\n    {\n        $missingDocuments = $this->findMissingRequiredDocuments();\n        $expiredDocuments = HrDocument::expired()->with('employee')->get();\n\n        $results = [\n            'missing_documents' => $missingDocuments->toArray(),\n            'expired_documents' => $expiredDocuments->map(fn ($d) => [\n                'employee' => $d->employee\n                    ? \"{$d->employee->first_name} {$d->employee->last_name}\"\n                    : 'Unknown',\n                'document' => $d->title,\n                'type' => $d->type,\n                'expired_at' => $d->expiry_date?->format('Y-m-d'),\n            ]),\n        ];\n\n        if (!empty($results['missing_documents']) || $expiredDocuments->isNotEmpty()) {\n            Notification::route('mail', config('hr.compliance_email'))\n                ->notify(new \\App\\Notifications\\DocumentComplianceAlert($results));\n        }\n\n        return $results;\n    }\n\n    public function generateEeoReport(string $year): array\n    {\n        $startDate = Carbon::createFromFormat('Y', $year)->startOfYear();\n        $endDate = Carbon::createFromFormat('Y', $year)->endOfYear();\n\n        $activeEmployees = Employee::where('status', 'active')\n            ->where('hire_date', '<=', $endDate)\n            ->get();\n\n        $hiredThisYear = Employee::whereBetween('hire_date', [$startDate, $endDate])->count();\n        $terminatedThisYear = Employee::where('status', 'terminated')\n            ->whereBetween('updated_at', [$startDate, $endDate])\n            ->count();\n\n        $departmentBreakdown = $activeEmployees->groupBy('department')\n            ->map(fn ($emps) => [\n                'headcount' => $emps->count(),\n                'avg_tenure_years' => round($emps->avg(\n                    fn ($e) => $e->hire_date->diffInYears(now())\n                ), 1),\n            ]);\n\n        $reportData = [\n            'report_type' => 'EEO-1',\n            'year' => $year,\n            'generated_at' => now()->toIso8601String(),\n            'total_employees' => $activeEmployees->count(),\n            'new_hires' => $hiredThisYear,\n            'separations' => $terminatedThisYear,\n            'departments' => $departmentBreakdown,\n            'department_count' => $departmentBreakdown->count(),\n        ];\n\n        $narrativeSummary = $this->ai->agent()\n            ->instructions('You generate HR compliance report narratives.')\n            ->prompt(\"\n                Generate a concise executive summary for this EEO-1 compliance report.\n\n                Data:\n                - Report Year: {$year}\n                - Total Employees: {$activeEmployees->count()}\n                - New Hires: {$hiredThisYear}\n                - Separations: {$terminatedThisYear}\n\n                \" . $departmentBreakdown->map(\n                    fn ($data, $dept) => \"- {$dept}: {$data['headcount']} employees, {$data['avg_tenure_years']}yr avg tenure\"\n                )->implode(\"\\n\") . \"\n\n                Write 3-4 sentences summarizing the workforce composition and notable changes.\n                Do NOT include any recommendations — factual summary only.\n            \")->generate();\n\n        $reportData['executive_summary'] = $narrativeSummary->text();\n\n        DB::table('compliance_reports')->insert([\n            'report_type' => 'eeo-1',\n            'report_year' => $year,\n            'report_data' => json_encode($reportData),\n            'generated_at' => now(),\n            'created_at' => now(),\n            'updated_at' => now(),\n        ]);\n\n        return $reportData;\n    }\n\n    public function getComplianceDashboard(): array\n    {\n        $certifications = $this->checkCertificationCompliance();\n        $documents = $this->checkDocumentCompliance();\n\n        $totalEmployees = Employee::where('status', 'active')->count();\n\n        $completedTrainings = TrainingRecord::where('status', 'completed')\n            ->where('completion_date', '>=', now()->subYear())\n            ->count();\n\n        $pendingOnboarding = DB::table('onboarding_tasks')\n            ->where('status', 'pending')\n            ->where('due_date', '<', now()->addDays($this->overdueThresholdDays))\n            ->count();\n\n        return [\n            'total_employees' => $totalEmployees,\n            'certifications_expiring' => count($certifications['expiring_within_30_days']),\n            'certifications_expired' => count($certifications['expired']),\n            'certification_compliance_rate' => $totalEmployees > 0\n                ? round(($this->getCompliantCertificationCount() / $totalEmployees) * 100, 1)\n                : 100,\n            'completed_trainings_annual' => $completedTrainings,\n            'pending_onboarding_tasks' => $pendingOnboarding,\n            'missing_documents' => count($documents['missing_documents']),\n            'expired_documents' => count($documents['expired_documents']),\n        ];\n    }\n\n    public function runFullComplianceAudit(): array\n    {\n        Log::info('Starting full compliance audit');\n\n        $certifications = $this->checkCertificationCompliance();\n        $documents = $this->checkDocumentCompliance();\n        $dashboard = $this->getComplianceDashboard();\n\n        $issues = [];\n\n        foreach ($certifications['expired'] as $expired) {\n            $issues[] = \"EXPIRED CERTIFICATION: {$expired['employee']} — {$expired['certification']} expired {$expired['expired_at']}\";\n        }\n\n        foreach ($documents['expired_documents'] as $expired) {\n            $issues[] = \"EXPIRED DOCUMENT: {$expired['employee']} — {$expired['document']} ({$expired['type']})\";\n        }\n\n        $response = $this->ai->agent()\n            ->instructions('You summarize HR compliance audit results.')\n            ->prompt(\"\n                Summarize this compliance audit and provide a priority-ranked action plan.\n\n                Dashboard:\n                - Total Employees: {$dashboard['total_employees']}\n                - Certification Compliance Rate: {$dashboard['certification_compliance_rate']}%\n                - Certifications Expired: {$dashboard['certifications_expired']}\n                - Missing/Expired Documents: {$dashboard['missing_documents']} / {$dashboard['expired_documents']}\n\n                Issues Found (\" . count($issues) . \"):\n                \" . implode(\"\\n\", array_slice($issues, 0, 20)) . \"\n\n                Provide:\n                1. An overall compliance score (0-100)\n                2. Top 5 priority actions ranked by urgency\n                3. A compliance rating (GREEN/YELLOW/RED)\n            \")->generate();\n\n        return [\n            'audit_timestamp' => now()->toIso8601String(),\n            'dashboard' => $dashboard,\n            'compliance_analysis' => $response->text(),\n            'issues' => $issues,\n            'total_issues' => count($issues),\n        ];\n    }\n\n    protected function notifyExpiringCertifications(Collection $records): void\n    {\n        if ($records->isEmpty()) {\n            return;\n        }\n\n        $grouped = $records->groupBy(fn ($r) => $r->employee->email);\n\n        foreach ($grouped as $email => $employeeRecords) {\n            Notification::route('mail', $email)\n                ->notify(new \\App\\Notifications\\CertificationExpiryWarning(\n                    records: $employeeRecords,\n                ));\n        }\n    }\n\n    protected function notifyExpiredCertifications(Collection $records): void\n    {\n        if ($records->isEmpty()) {\n            return;\n        }\n\n        Notification::route('slack', config('services.slack.hr_compliance'))\n            ->notify(new \\App\\Notifications\\ExpiredCertificationsAlert(\n                records: $records,\n            ));\n    }\n\n    protected function findMissingRequiredDocuments(): Collection\n    {\n        $requiredDocTypes = ['employment_contract', 'tax_form', 'id_verification'];\n\n        $activeEmployees = Employee::where('status', 'active')\n            ->orWhere('status', 'onboarding')\n            ->get();\n\n        $missing = collect();\n\n        foreach ($activeEmployees as $employee) {\n            $existingDocs = HrDocument::where('employee_id', $employee->id)\n                ->whereIn('type', $requiredDocTypes)\n                ->pluck('type')\n                ->toArray();\n\n            foreach ($requiredDocTypes as $type) {\n                if (!in_array($type, $existingDocs)) {\n                    $missing->push([\n                        'employee_id' => $employee->id,\n                        'employee_name' => $employee->full_name,\n                        'missing_document_type' => $type,\n                    ]);\n                }\n            }\n        }\n\n        return $missing;\n    }\n\n    protected function getCompliantCertificationCount(): int\n    {\n        return TrainingRecord::where('certification_earned', true)\n            ->where(function ($query) {\n                $query->whereNull('certification_expiry')\n                    ->orWhere('certification_expiry', '>=', now());\n            })\n            ->distinct('employee_id')\n            ->count('employee_id');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare key agents to understand their roles and AI techniques."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Agent"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Primary Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AI Technique Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ResumeScreeningAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parse and rank resumes against job requirements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM structured extraction + weighted scoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "InterviewSchedulingAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coordinate multi-party interview scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constraint satisfaction + availability overlap"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CandidateMatchingAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic matching of candidates to jobs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector embeddings + cosine similarity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OnboardingAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automate new-hire task checklists and verification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deterministic workflow + role-based assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PerformanceReviewAgent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Analyze review text and detect performance trends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM sentiment analysis + trend calculation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for key topics and definitions."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HR Data Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume Parsing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PDF, DOCX, TXT, image formats with OCR fallback"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Weighted Scoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60% required skills + 25% preferred + 15% experience"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14-day window, business hours, weekend exclusion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance Reports"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EEO-1 format with AI-generated executive summaries"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resume Screening"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recruitment pipeline automation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy vs parsing speed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview Scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-interviewer coordination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive search vs compute time"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Candidate Matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector similarity search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precision vs recall"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sentiment Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Employee engagement tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Privacy vs actionable insight"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance Reporting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regulatory adherence automation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automation vs manual verification"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your understanding with these chapter questions."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) 70% required skills, 20% preferred, 10% experience"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) 60% required skills, 25% preferred, 15% experience"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) 50% required skills, 30% preferred, 20% experience"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) 40% required skills, 40% preferred, 20% experience"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " Which agent uses vector embeddings and cosine similarity for matching?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) ResumeScreeningAgent"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) InterviewSchedulingAgent"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) CandidateMatchingAgent"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) OnboardingAgent"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>C) CandidateMatchingAgent</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What does the SentimentAgent use to analyze employee engagement?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Only numeric rating scales"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) LLM-based text sentiment analysis"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Keyword matching"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Rule-based scoring"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) LLM-based text sentiment analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " Which compliance report format does the HrComplianceAgent generate?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) SOC-2"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) EEO-1"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) ISO 27001"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) PCI-DSS"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) EEO-1</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q5:"
+                      }), " How are onboarding task assignments routed?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) All tasks assigned solely to HR"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Per-role assignment (employee, HR, IT, manager)"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) All tasks assigned to the new hire"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Tasks are not assigned to anyone"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "concept-comparison-1",
+                          children: "Concept Comparison"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                            children: [(0,jsx_runtime.jsx)(_components.strong, {
+                              children: "One-Sentence Takeaway:"
+                            }), " Compare key agents to understand their roles and AI techniques."]
+                          }), "\n"]
+                        }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                          children: [(0,jsx_runtime.jsx)(_components.thead, {
+                            children: (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.th, {
+                                children: "Agent"
+                              }), (0,jsx_runtime.jsx)(_components.th, {
+                                children: "Primary Function"
+                              }), (0,jsx_runtime.jsx)(_components.th, {
+                                children: "AI Technique Used"
+                              })]
+                            })
+                          }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "ResumeScreeningAgent"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Parse and rank resumes against job requirements"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "LLM structured extraction + weighted scoring"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "InterviewSchedulingAgent"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Coordinate multi-party interview scheduling"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Constraint satisfaction + availability overlap"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "CandidateMatchingAgent"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Semantic matching of candidates to jobs"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Vector embeddings + cosine similarity"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "OnboardingAgent"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Automate new-hire task checklists and verification"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Deterministic workflow + role-based assignment"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "PerformanceReviewAgent"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Analyze review text and detect performance trends"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "LLM sentiment analysis + trend calculation"
+                              })]
+                            })]
+                          })]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "quick-reference-1",
+                          children: "Quick Reference"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                            children: [(0,jsx_runtime.jsx)(_components.strong, {
+                              children: "One-Sentence Takeaway:"
+                            }), " Quick reference for key topics and definitions."]
+                          }), "\n"]
+                        }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                          children: [(0,jsx_runtime.jsx)(_components.thead, {
+                            children: (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.th, {
+                                children: "Topic"
+                              }), (0,jsx_runtime.jsx)(_components.th, {
+                                children: "Key Point"
+                              })]
+                            })
+                          }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "HR Data Models"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Resume Parsing"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "PDF, DOCX, TXT, image formats with OCR fallback"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Weighted Scoring"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "60% required skills + 25% preferred + 15% experience"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Interview Scheduling"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "14-day window, business hours, weekend exclusion"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Compliance Reports"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "EEO-1 format with AI-generated executive summaries"
+                              })]
+                            })]
+                          })]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "cross-application-matrix-1",
+                          children: "Cross-Application Matrix"
+                        }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                          children: [(0,jsx_runtime.jsx)(_components.thead, {
+                            children: (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.th, {
+                                children: "Concept"
+                              }), (0,jsx_runtime.jsx)(_components.th, {
+                                children: "Application Context"
+                              }), (0,jsx_runtime.jsx)(_components.th, {
+                                children: "Trade-Off"
+                              })]
+                            })
+                          }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Resume Screening"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Recruitment pipeline automation"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Accuracy vs parsing speed"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Interview Scheduling"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Multi-interviewer coordination"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Comprehensive search vs compute time"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Candidate Matching"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Vector similarity search"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Precision vs recall"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Sentiment Monitoring"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Employee engagement tracking"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Privacy vs actionable insight"
+                              })]
+                            }), (0,jsx_runtime.jsxs)(_components.tr, {
+                              children: [(0,jsx_runtime.jsx)(_components.td, {
+                                children: "Compliance Reporting"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Regulatory adherence automation"
+                              }), (0,jsx_runtime.jsx)(_components.td, {
+                                children: "Automation vs manual verification"
+                              })]
+                            })]
+                          })]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "chapter-quiz-1",
+                          children: "Chapter Quiz"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                            children: [(0,jsx_runtime.jsx)(_components.strong, {
+                              children: "One-Sentence Takeaway:"
+                            }), " Test your understanding with these chapter questions."]
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q1:"
+                          }), " What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) 70% required skills, 20% preferred, 10% experience"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) 60% required skills, 25% preferred, 15% experience"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) 50% required skills, 30% preferred, 20% experience"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) 40% required skills, 40% preferred, 20% experience"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q2:"
+                              }), " Which agent uses vector embeddings and cosine similarity for matching?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) ResumeScreeningAgent"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) InterviewSchedulingAgent"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) CandidateMatchingAgent"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) OnboardingAgent"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>C) CandidateMatchingAgent</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q3:"
+                                  }), " What does the SentimentAgent use to analyze employee engagement?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Only numeric rating scales"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) LLM-based text sentiment analysis"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Keyword matching"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Rule-based scoring"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) LLM-based text sentiment analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q4:"
+                                      }), " Which compliance report format does the HrComplianceAgent generate?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) SOC-2"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) EEO-1"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) ISO 27001"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) PCI-DSS"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) EEO-1</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q5:"
+                                          }), " How are onboarding task assignments routed?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) All tasks assigned solely to HR"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) Per-role assignment (employee, HR, IT, manager)"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) All tasks assigned to the new hire"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) Tasks are not assigned to anyone"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                              id: "concept-comparison-2",
+                                              children: "Concept Comparison"
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                  children: "One-Sentence Takeaway:"
+                                                }), " Compare key agents to understand their roles and AI techniques."]
+                                              }), "\n"]
+                                            }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                              children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Agent"
+                                                  }), (0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Primary Function"
+                                                  }), (0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "AI Technique Used"
+                                                  })]
+                                                })
+                                              }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "ResumeScreeningAgent"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Parse and rank resumes against job requirements"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "LLM structured extraction + weighted scoring"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "InterviewSchedulingAgent"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Coordinate multi-party interview scheduling"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Constraint satisfaction + availability overlap"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "CandidateMatchingAgent"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Semantic matching of candidates to jobs"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Vector embeddings + cosine similarity"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "OnboardingAgent"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Automate new-hire task checklists and verification"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Deterministic workflow + role-based assignment"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "PerformanceReviewAgent"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Analyze review text and detect performance trends"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "LLM sentiment analysis + trend calculation"
+                                                  })]
+                                                })]
+                                              })]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                              id: "quick-reference-2",
+                                              children: "Quick Reference"
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                  children: "One-Sentence Takeaway:"
+                                                }), " Quick reference for key topics and definitions."]
+                                              }), "\n"]
+                                            }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                              children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Topic"
+                                                  }), (0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Key Point"
+                                                  })]
+                                                })
+                                              }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "HR Data Models"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Resume Parsing"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "PDF, DOCX, TXT, image formats with OCR fallback"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Weighted Scoring"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "60% required skills + 25% preferred + 15% experience"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Interview Scheduling"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "14-day window, business hours, weekend exclusion"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Compliance Reports"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "EEO-1 format with AI-generated executive summaries"
+                                                  })]
+                                                })]
+                                              })]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                              id: "cross-application-matrix-2",
+                                              children: "Cross-Application Matrix"
+                                            }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                              children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Concept"
+                                                  }), (0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Application Context"
+                                                  }), (0,jsx_runtime.jsx)(_components.th, {
+                                                    children: "Trade-Off"
+                                                  })]
+                                                })
+                                              }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Resume Screening"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Recruitment pipeline automation"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Accuracy vs parsing speed"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Interview Scheduling"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Multi-interviewer coordination"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Comprehensive search vs compute time"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Candidate Matching"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Vector similarity search"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Precision vs recall"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Sentiment Monitoring"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Employee engagement tracking"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Privacy vs actionable insight"
+                                                  })]
+                                                }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Compliance Reporting"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Regulatory adherence automation"
+                                                  }), (0,jsx_runtime.jsx)(_components.td, {
+                                                    children: "Automation vs manual verification"
+                                                  })]
+                                                })]
+                                              })]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                              id: "chapter-quiz-2",
+                                              children: "Chapter Quiz"
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                  children: "One-Sentence Takeaway:"
+                                                }), " Test your understanding with these chapter questions."]
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q1:"
+                                              }), " What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) 70% required skills, 20% preferred, 10% experience"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) 60% required skills, 25% preferred, 15% experience"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) 50% required skills, 30% preferred, 20% experience"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) 40% required skills, 40% preferred, 20% experience"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q2:"
+                                                  }), " Which agent uses vector embeddings and cosine similarity for matching?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) ResumeScreeningAgent"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) InterviewSchedulingAgent"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) CandidateMatchingAgent"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) OnboardingAgent"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>C) CandidateMatchingAgent</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q3:"
+                                                      }), " What does the SentimentAgent use to analyze employee engagement?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Only numeric rating scales"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) LLM-based text sentiment analysis"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Keyword matching"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Rule-based scoring"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) LLM-based text sentiment analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q4:"
+                                                          }), " Which compliance report format does the HrComplianceAgent generate?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) SOC-2"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) EEO-1"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) ISO 27001"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) PCI-DSS"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) EEO-1</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q5:"
+                                                              }), " How are onboarding task assignments routed?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) All tasks assigned solely to HR"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Per-role assignment (employee, HR, IT, manager)"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) All tasks assigned to the new hire"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) Tasks are not assigned to anyone"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                  id: "concept-comparison-3",
+                                                                  children: "Concept Comparison"
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                      children: "One-Sentence Takeaway:"
+                                                                    }), " Compare key agents to understand their roles and AI techniques."]
+                                                                  }), "\n"]
+                                                                }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                                    children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Agent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Primary Function"
+                                                                      }), (0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "AI Technique Used"
+                                                                      })]
+                                                                    })
+                                                                  }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                                    children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "ResumeScreeningAgent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Parse and rank resumes against job requirements"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "LLM structured extraction + weighted scoring"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "InterviewSchedulingAgent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Coordinate multi-party interview scheduling"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Constraint satisfaction + availability overlap"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "CandidateMatchingAgent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Semantic matching of candidates to jobs"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Vector embeddings + cosine similarity"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "OnboardingAgent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Automate new-hire task checklists and verification"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Deterministic workflow + role-based assignment"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "PerformanceReviewAgent"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Analyze review text and detect performance trends"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "LLM sentiment analysis + trend calculation"
+                                                                      })]
+                                                                    })]
+                                                                  })]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                  id: "quick-reference-3",
+                                                                  children: "Quick Reference"
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                      children: "One-Sentence Takeaway:"
+                                                                    }), " Quick reference for key topics and definitions."]
+                                                                  }), "\n"]
+                                                                }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                                    children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Topic"
+                                                                      }), (0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Key Point"
+                                                                      })]
+                                                                    })
+                                                                  }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                                    children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "HR Data Models"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Resume Parsing"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "PDF, DOCX, TXT, image formats with OCR fallback"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Weighted Scoring"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "60% required skills + 25% preferred + 15% experience"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Interview Scheduling"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "14-day window, business hours, weekend exclusion"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Compliance Reports"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "EEO-1 format with AI-generated executive summaries"
+                                                                      })]
+                                                                    })]
+                                                                  })]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                  id: "cross-application-matrix-3",
+                                                                  children: "Cross-Application Matrix"
+                                                                }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                                    children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Concept"
+                                                                      }), (0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Application Context"
+                                                                      }), (0,jsx_runtime.jsx)(_components.th, {
+                                                                        children: "Trade-Off"
+                                                                      })]
+                                                                    })
+                                                                  }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                                    children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Resume Screening"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Recruitment pipeline automation"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Accuracy vs parsing speed"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Interview Scheduling"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Multi-interviewer coordination"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Comprehensive search vs compute time"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Candidate Matching"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Vector similarity search"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Precision vs recall"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Sentiment Monitoring"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Employee engagement tracking"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Privacy vs actionable insight"
+                                                                      })]
+                                                                    }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Compliance Reporting"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Regulatory adherence automation"
+                                                                      }), (0,jsx_runtime.jsx)(_components.td, {
+                                                                        children: "Automation vs manual verification"
+                                                                      })]
+                                                                    })]
+                                                                  })]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                  id: "chapter-quiz-3",
+                                                                  children: "Chapter Quiz"
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                      children: "One-Sentence Takeaway:"
+                                                                    }), " Test your understanding with these chapter questions."]
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q1:"
+                                                                  }), " What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) 70% required skills, 20% preferred, 10% experience"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) 60% required skills, 25% preferred, 15% experience"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) 50% required skills, 30% preferred, 20% experience"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) 40% required skills, 40% preferred, 20% experience"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Q2:"
+                                                                      }), " Which agent uses vector embeddings and cosine similarity for matching?"]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "A) ResumeScreeningAgent"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "B) InterviewSchedulingAgent"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "C) CandidateMatchingAgent"
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "D) OnboardingAgent"
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                        children: ["Answer</summary>C) CandidateMatchingAgent</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                            children: "Q3:"
+                                                                          }), " What does the SentimentAgent use to analyze employee engagement?"]
+                                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                            children: "A) Only numeric rating scales"
+                                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                            children: "B) LLM-based text sentiment analysis"
+                                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                            children: "C) Keyword matching"
+                                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                            children: "D) Rule-based scoring"
+                                                                          }), "\n"]
+                                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                            children: ["Answer</summary>B) LLM-based text sentiment analysis</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                children: "Q4:"
+                                                                              }), " Which compliance report format does the HrComplianceAgent generate?"]
+                                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                children: "A) SOC-2"
+                                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                children: "B) EEO-1"
+                                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                children: "C) ISO 27001"
+                                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                children: "D) PCI-DSS"
+                                                                              }), "\n"]
+                                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                                children: ["Answer</summary>B) EEO-1</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                    children: "Q5:"
+                                                                                  }), " How are onboarding task assignments routed?"]
+                                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                    children: "A) All tasks assigned solely to HR"
+                                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                    children: "B) Per-role assignment (employee, HR, IT, manager)"
+                                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                    children: "C) All tasks assigned to the new hire"
+                                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                                    children: "D) Tasks are not assigned to anyone"
+                                                                                  }), "\n"]
+                                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                                    children: ["Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                                      id: "summary",
+                                                                                      children: "Summary"
+                                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                                      children: "This chapter demonstrated how AI agents transform every phase of the HR and recruitment lifecycle within a Laravel 13 application. We began with the foundational data models — Candidate, Employee, JobPosting, Review, TrainingRecord, and HrDocument — building the relational schema that all HR agents operate against."
+                                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "ResumeScreeningAgent"
+                                                                                      }), " automated the most labor-intensive recruiting task: parsing hundreds of resumes, extracting structured data with LLMs, and ranking candidates against job requirements. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "InterviewSchedulingAgent"
+                                                                                      }), " eliminated the back-and-forth email chain by treating scheduling as a multi-constraint satisfaction problem, finding common availability across candidates and multiple interviewers."]
+                                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "CandidateMatchingAgent"
+                                                                                      }), " introduced vector embeddings and cosine similarity for semantic matching, going beyond keyword matching to find candidates whose profiles are conceptually aligned with job requirements. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "OnboardingAgent"
+                                                                                      }), " transformed the new-hire experience by creating personalized task checklists, verifying documents, and tracking progress across HR, IT, and management stakeholders."]
+                                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                      children: ["For employee development, the ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "PerformanceReviewAgent"
+                                                                                      }), " analyzed review text with sentiment scoring and trend detection, while the ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "SentimentAgent"
+                                                                                      }), " provided an early-warning system for disengagement through survey analysis and automated escalation. The ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "TrainingRecommendationAgent"
+                                                                                      }), " closed the loop by identifying skill gaps and building personalized 90-day development plans with targeted training recommendations."]
+                                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                      children: ["Finally, the ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                                        children: "HrComplianceAgent"
+                                                                                      }), " ensured regulatory adherence through certification tracking, document compliance monitoring, EEO-1 report generation, and full audit summaries — keeping the organization audit-ready at all times."]
+                                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                                      children: "The architecture follows a consistent pattern: each agent encapsulates a single HR domain concern, is testable in isolation, stores its results back to the database for auditability, and communicates through Laravel's notification system for alerts and escalations. Together, these agents form a comprehensive AI-powered HR operations platform."
+                                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                                      id: "exercises",
+                                                                                      children: "Exercises"
+                                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Resume Parser Extension"
+                                                                                          }), ": Add a new ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "extractWorkHistory"
+                                                                                          }), " method to the ResumeScreeningAgent that parses employment history dates and detects employment gaps longer than six months. Store gap information in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "ai_extracted_data"
+                                                                                          }), " JSON field."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Interview Conflict Detection"
+                                                                                          }), ": Extend the InterviewSchedulingAgent to detect and prevent double-booking of interviewers. Add a method ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "getInterviewerSchedule(int $interviewerId, string $date)"
+                                                                                          }), " that queries existing interviews and returns all busy time blocks."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Skill Taxonomy Normalizer"
+                                                                                          }), ": Build a service class ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "SkillNormalizer"
+                                                                                          }), " that the CandidateMatchingAgent uses to normalize skill names (e.g., \"JS\", \"JavaScript\", \"ECMAScript\" → \"JavaScript\"). Use a combination of a lookup table and AI suggestion for unknown variants."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Onboarding Deadline Escalation"
+                                                                                          }), ": Add an escalation chain to the OnboardingAgent: if a task is overdue by 1 day, notify the employee; by 3 days, notify the manager; by 7 days, notify HR. Implement this as a scheduled Artisan command."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Review Anomaly Detection"
+                                                                                          }), ": Add a method ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "detectAnomalies(Employee $employee)"
+                                                                                          }), " to the PerformanceReviewAgent that flags reviews where the sentiment score and overall score diverge significantly (e.g., positive sentiment but low numeric rating), suggesting possible bias or misunderstanding."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Sentiment Dashboard Controller"
+                                                                                          }), ": Build a Laravel controller ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "SentimentDashboardController"
+                                                                                          }), " with a single action ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "teamReport"
+                                                                                          }), " that accepts a department parameter, calls the SentimentAgent's ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "getTeamSentiment"
+                                                                                          }), " method, and returns JSON with the team's average sentiment, trend, and any low-scorer flags."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Compliance Report Scheduler"
+                                                                                          }), ": Create a Laravel scheduled task in ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "App\\Console\\Kernel"
+                                                                                          }), " that runs the HrComplianceAgent's ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "runFullComplianceAudit"
+                                                                                          }), " weekly and logs the compliance score. If the score falls below 70, send an alert notification to the compliance team."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                                            children: "Training Budget Tracker"
+                                                                                          }), ": Extend the TrainingRecommendationAgent to track department training budgets. Add a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "TrainingBudget"
+                                                                                          }), " model with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "department"
+                                                                                          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "fiscal_year"
+                                                                                          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "allocated_amount"
+                                                                                          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "spent_amount"
+                                                                                          }), " columns. Modify ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                                            children: "buildDevelopmentPlan"
+                                                                                          }), " to respect remaining budget when recommending paid trainings."]
+                                                                                        }), "\n"]
+                                                                                      }), "\n"]
+                                                                                    }), "\n"]
+                                                                                  })
+                                                                                })]
+                                                                              })
+                                                                            })]
+                                                                          })
+                                                                        })]
+                                                                      })
+                                                                    })]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

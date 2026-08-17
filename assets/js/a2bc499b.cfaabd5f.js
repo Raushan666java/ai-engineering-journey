@@ -1,0 +1,1019 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[26555],{
+
+/***/ 97677
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_43_tracing_md_a2b_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-43-tracing-md-a2b.json
+const site_docs_courses_java_43_tracing_md_a2b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/43-tracing","title":"Distributed Tracing & Observability","description":"Previous Project Reactor &amp; Reactive Streams","source":"@site/docs/courses/java/43-tracing.md","sourceDirName":"courses/java","slug":"/java/43-tracing","permalink":"/ai-engineering-journey/java/43-tracing","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":43,"frontMatter":{"id":"43-tracing","slug":"/java/43-tracing","title":"Distributed Tracing & Observability","sidebar_label":"Distributed Tracing & Observability","sidebar_position":43},"sidebar":"course-java","previous":{"title":"Distributed Configuration","permalink":"/ai-engineering-journey/java/42-config"},"next":{"title":"Chapter 44: Project Reactor & Reactive Streams","permalink":"/ai-engineering-journey/java/44-reactor"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/43-tracing.md
+
+
+const frontMatter = {
+	id: '43-tracing',
+	slug: '/java/43-tracing',
+	title: 'Distributed Tracing & Observability',
+	sidebar_label: 'Distributed Tracing & Observability',
+	sidebar_position: 43
+};
+const contentTitle = 'Distributed Tracing & Observability';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Distributed Tracing",
+  "id": "distributed-tracing",
+  "level": 3
+}, {
+  "value": "Micrometer Tracing",
+  "id": "micrometer-tracing",
+  "level": 3
+}, {
+  "value": "Observability Tools",
+  "id": "observability-tools",
+  "level": 3
+}, {
+  "value": "Complete Code Examples",
+  "id": "complete-code-examples",
+  "level": 2
+}, {
+  "value": "pom.xml",
+  "id": "pomxml",
+  "level": 3
+}, {
+  "value": "application.yml",
+  "id": "applicationyml",
+  "level": 3
+}, {
+  "value": "Micrometer Tracing Configuration",
+  "id": "micrometer-tracing-configuration",
+  "level": 3
+}, {
+  "value": "Custom Trace Propagator",
+  "id": "custom-trace-propagator",
+  "level": 3
+}, {
+  "value": "Tracer Service",
+  "id": "tracer-service",
+  "level": 3
+}, {
+  "value": "Span Customizer Bean",
+  "id": "span-customizer-bean",
+  "level": 3
+}, {
+  "value": "Observed Service",
+  "id": "observed-service",
+  "level": 3
+}, {
+  "value": "Baggage Propagation",
+  "id": "baggage-propagation",
+  "level": 3
+}, {
+  "value": "Zipkin Configuration",
+  "id": "zipkin-configuration",
+  "level": 3
+}, {
+  "value": "Zipkin Sender Configuration",
+  "id": "zipkin-sender-configuration",
+  "level": 3
+}, {
+  "value": "OpenTelemetry Configuration",
+  "id": "opentelemetry-configuration",
+  "level": 3
+}, {
+  "value": "OpenTelemetry Manual Instrumentation",
+  "id": "opentelemetry-manual-instrumentation",
+  "level": 3
+}, {
+  "value": "Distributed Logging with MDC",
+  "id": "distributed-logging-with-mdc",
+  "level": 3
+}, {
+  "value": "Logback Configuration with JSON",
+  "id": "logback-configuration-with-json",
+  "level": 3
+}, {
+  "value": "Trace-aware REST Controller",
+  "id": "trace-aware-rest-controller",
+  "level": 3
+}, {
+  "value": "Feign Client with Tracing",
+  "id": "feign-client-with-tracing",
+  "level": 3
+}, {
+  "value": "WebClient with Tracing",
+  "id": "webclient-with-tracing",
+  "level": 3
+}, {
+  "value": "Trace Metrics",
+  "id": "trace-metrics",
+  "level": 3
+}, {
+  "value": "Trace Observation Handler",
+  "id": "trace-observation-handler",
+  "level": 3
+}, {
+  "value": "Actuator Trace Endpoint",
+  "id": "actuator-trace-endpoint",
+  "level": 3
+}, {
+  "value": "Tracing Health Indicator",
+  "id": "tracing-health-indicator",
+  "level": 3
+}, {
+  "value": "Grafana Tempo Configuration",
+  "id": "grafana-tempo-configuration",
+  "level": 3
+}, {
+  "value": "Integration Tests",
+  "id": "integration-tests",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "distributed-tracing--observability",
+        children: "Distributed Tracing & Observability"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/42-config",
+          children: "Distributed Configuration"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/44-reactor",
+          children: "Project Reactor & Reactive Streams"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Core Concepts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundational understanding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-world application"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Implementation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code-first approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Working examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Best Practices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Avoid common pitfalls"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Concepts] --> B[Setup/Configuration]\n    B --> C[Implementation]\n    C --> D[Testing]\n    D --> E[Best Practices]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand distributed tracing concepts: traceId, spanId, parentId, and propagation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure Micrometer Tracing with OpenTelemetry bridge and custom span customizers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set up Zipkin for span collection, visualization, and analysis"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement distributed logging with MDC and correlation IDs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure structured JSON logging with logstash-encoder"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set up Grafana Tempo for trace ingestion and querying"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement OpenTelemetry SDK with automatic and manual instrumentation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Test with production-like configurations → dev setups often hide issues that surface under real load."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/43-tracing.png",
+        alt: "Distributed Tracing - Micrometer, Zipkin, OpenTelemetry"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "distributed-tracing",
+      children: "Distributed Tracing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Distributed tracing tracks requests as they flow through multiple microservices. Each request is assigned a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "traceId"
+      }), " that propagates across service boundaries. Within each service, units of work are represented as ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "spans"
+      }), " with their own ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "spanId"
+      }), " and optional ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "parentId"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Core Concepts:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trace"
+        }), ": The complete path of a request through the system, identified by a unique traceId"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Span"
+        }), ": A named, timed operation within a trace; spans form a tree structure via parent-child relationships"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Propagation"
+        }), ": The mechanism by which tracing context (traceId, spanId) is passed between services via HTTP headers"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "micrometer-tracing",
+      children: "Micrometer Tracing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Micrometer Tracing is the modern replacement for Spring Cloud Sleuth. It provides:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tracer"
+        }), ": Creates and manages spans"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Span Customizer"
+        }), ": Adds custom tags to spans"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Baggage"
+        }), ": Key-value pairs that propagate across service boundaries"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bridge"
+        }), ": Supports OpenTelemetry and Zipkin Brave backends"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "observability-tools",
+      children: "Observability Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zipkin"
+        }), ": Distributed tracing system for collecting, storing, and visualizing spans"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Grafana Tempo"
+        }), ": High-scale, cost-effective trace storage backend"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OpenTelemetry"
+        }), ": Industry standard for observability instrumentation"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "complete-code-examples",
+      children: "Complete Code Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pomxml",
+      children: "pom.xml"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0\n         https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n    <parent>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-parent</artifactId>\n        <version>3.2.0</version>\n        <relativePath/>\n    </parent>\n    <groupId>com.course.tracing</groupId>\n    <artifactId>tracing-demo</artifactId>\n    <version>1.0.0</version>\n    <name>tracing-demo</name>\n    <properties>\n        <java.version>21</java.version>\n        <spring-cloud.version>2023.0.0</spring-cloud.version>\n    </properties>\n    <dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-webflux</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-actuator</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.micrometer</groupId>\n            <artifactId>micrometer-tracing</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.micrometer</groupId>\n            <artifactId>micrometer-tracing-bridge-otel</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.opentelemetry</groupId>\n            <artifactId>opentelemetry-exporter-zipkin</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.zipkin.reporter2</groupId>\n            <artifactId>zipkin-reporter-brave</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.micrometer</groupId>\n            <artifactId>micrometer-registry-prometheus</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>net.logstash.logback</groupId>\n            <artifactId>logstash-logback-encoder</artifactId>\n            <version>7.4</version>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.cloud</groupId>\n            <artifactId>spring-cloud-starter-openfeign</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.opentelemetry</groupId>\n            <artifactId>opentelemetry-sdk</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.opentelemetry</groupId>\n            <artifactId>opentelemetry-exporter-otlp</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>io.opentelemetry</groupId>\n            <artifactId>opentelemetry-sdk-extension-autoconfigure</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.projectlombok</groupId>\n            <artifactId>lombok</artifactId>\n            <optional>true</optional>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>\n    <dependencyManagement>\n        <dependencies>\n            <dependency>\n                <groupId>org.springframework.cloud</groupId>\n                <artifactId>spring-cloud-dependencies</artifactId>\n                <version>${spring-cloud.version}</version>\n                <type>pom</type>\n                <scope>import</scope>\n            </dependency>\n        </dependencies>\n    </dependencyManagement>\n    <build>\n        <plugins>\n            <plugin>\n                <groupId>org.springframework.boot</groupId>\n                <artifactId>spring-boot-maven-plugin</artifactId>\n            </plugin>\n        </plugins>\n    </build>\n</project>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.cloud.openfeign.EnableFeignClients;\n\n@SpringBootApplication\n@EnableFeignClients\npublic class TracingDemoApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(TracingDemoApplication.class, args);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "applicationyml",
+      children: "application.yml"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "server:\n  port: 8080\n\nspring:\n  application:\n    name: tracing-demo\n\n  tracing:\n    enabled: true\n    sampling:\n      probability: 1.0\n    propagation:\n      type: W3C\n\nmanagement:\n  tracing:\n    enabled: true\n    sampling:\n      probability: 1.0\n  endpoints:\n    web:\n      exposure:\n        include: health,info,metrics,prometheus,trace\n  endpoint:\n    health:\n      show-details: always\n  metrics:\n    tags:\n      application: ${spring.application.name}\n    export:\n      prometheus:\n        enabled: true\n\nlogging:\n  level:\n    com.course.tracing: DEBUG\n    io.micrometer.tracing: TRACE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "micrometer-tracing-configuration",
+      children: "Micrometer Tracing Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.config;\n\nimport io.micrometer.observation.ObservationRegistry;\nimport io.micrometer.observation.aop.ObservedAspect;\nimport io.micrometer.tracing.SpanCustomizer;\nimport io.micrometer.tracing.Tracer;\nimport io.micrometer.tracing.annotation.*;\nimport io.opentelemetry.exporter.otlp.trace.OtlpGrpcSpanExporter;\nimport io.opentelemetry.sdk.trace.export.SpanExporter;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.cloud.client.loadbalancer.LoadBalanced;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.client.RestTemplate;\nimport org.springframework.web.reactive.function.client.WebClient;\nimport java.time.Duration;\n\n@Configuration(proxyBeanMethods = false)\npublic class TracingConfig {\n\n    @Bean\n    public ObservedAspect observedAspect(ObservationRegistry observationRegistry) {\n        return new ObservedAspect(observationRegistry);\n    }\n\n    @Bean\n    public DefaultMethodInvocationProcessor methodInvocationProcessor(\n            NewSpanParser newSpanParser,\n            Tracer tracer,\n            SpanCustomizer spanCustomizer,\n            ObservationRegistry observationRegistry) {\n        return new DefaultMethodInvocationProcessor(\n                newSpanParser, tracer, spanCustomizer, observationRegistry);\n    }\n\n    @Bean\n    public SpanCustomizer spanCustomizer() {\n        return span -> span.tag(\"application\", \"tracing-demo\");\n    }\n\n    @Bean\n    @LoadBalanced\n    public RestTemplate restTemplate() {\n        return new RestTemplate();\n    }\n\n    @Bean\n    @LoadBalanced\n    public WebClient.Builder webClientBuilder() {\n        return WebClient.builder();\n    }\n\n    @Bean\n    public SpanExporter otlpSpanExporter(\n            @Value(\"${otel.exporter.otlp.endpoint:http://localhost:4317}\") String endpoint) {\n        return OtlpGrpcSpanExporter.builder()\n                .setEndpoint(endpoint)\n                .setTimeout(Duration.ofSeconds(10))\n                .build();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "custom-trace-propagator",
+      children: "Custom Trace Propagator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.config;\n\nimport io.micrometer.tracing.Span;\nimport io.micrometer.tracing.TraceContext;\nimport io.micrometer.tracing.propagation.Propagator;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\nimport java.util.Collections;\nimport java.util.List;\n\n@Configuration\npublic class CustomPropagatorConfig {\n\n    private static final Logger log = LoggerFactory.getLogger(CustomPropagatorConfig.class);\n\n    public static class CustomPropagator implements Propagator {\n\n        private static final String CUSTOM_TRACE_HEADER = \"X-Custom-Trace-Id\";\n\n        @Override\n        public List<String> fields() {\n            return Collections.singletonList(CUSTOM_TRACE_HEADER);\n        }\n\n        @Override\n        public <C> void inject(TraceContext context, C carrier, Setter<C> setter) {\n            String traceId = context.traceId();\n            setter.set(carrier, CUSTOM_TRACE_HEADER, traceId);\n            log.debug(\"Injected custom trace header: {}={}\", CUSTOM_TRACE_HEADER, traceId);\n        }\n\n        @Override\n        public <C> Span.Builder extract(C carrier, Getter<C> getter) {\n            String traceId = getter.get(carrier, CUSTOM_TRACE_HEADER);\n            if (traceId != null) {\n                log.debug(\"Extracted custom trace header: {}={}\", CUSTOM_TRACE_HEADER, traceId);\n                return Span.builder().traceId(traceId);\n            }\n            return null;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tracer-service",
+      children: "Tracer Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.service;\n\nimport io.micrometer.tracing.Span;\nimport io.micrometer.tracing.Tracer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\nimport java.util.Map;\nimport java.util.concurrent.ConcurrentHashMap;\n\n@Service\npublic class TracingService {\n\n    private static final Logger log = LoggerFactory.getLogger(TracingService.class);\n\n    private final Tracer tracer;\n    private final Map<String, Long> spanTimings = new ConcurrentHashMap<>();\n\n    public TracingService(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    public void createCustomSpan(String operationName, String spanType, Runnable operation) {\n        Span customSpan = tracer.spanBuilder()\n                .tag(\"span.type\", spanType)\n                .tag(\"operation\", operationName)\n                .start();\n\n        try (var ignored = tracer.withSpan(customSpan)) {\n            log.info(\"Starting custom span: {} ({})\", operationName, spanType);\n            operation.run();\n            customSpan.tag(\"status\", \"success\");\n        } catch (Exception e) {\n            customSpan.tag(\"status\", \"error\");\n            customSpan.error(e);\n            throw e;\n        } finally {\n            customSpan.end();\n        }\n    }\n\n    public Span createChildSpan(String name, String parentSpanId) {\n        Span currentSpan = tracer.currentSpan();\n        Span childSpan;\n\n        if (currentSpan != null) {\n            childSpan = tracer.spanBuilder()\n                    .setParent(currentSpan.context())\n                    .name(name)\n                    .start();\n        } else {\n            childSpan = tracer.spanBuilder()\n                    .name(name)\n                    .start();\n        }\n\n        childSpan.tag(\"created-at\", String.valueOf(System.currentTimeMillis()));\n        return childSpan;\n    }\n\n    public void addEventToCurrentSpan(String eventName, Map<String, String> attributes) {\n        Span currentSpan = tracer.currentSpan();\n        if (currentSpan != null) {\n            currentSpan.event(eventName);\n            attributes.forEach(currentSpan::tag);\n            log.debug(\"Added event '{}' to current span with attributes: {}\", eventName, attributes);\n        }\n    }\n\n    public String getCurrentTraceId() {\n        Span currentSpan = tracer.currentSpan();\n        if (currentSpan != null) {\n            return currentSpan.context().traceId();\n        }\n        return null;\n    }\n\n    public String getCurrentSpanId() {\n        Span currentSpan = tracer.currentSpan();\n        if (currentSpan != null) {\n            return currentSpan.context().spanId();\n        }\n        return null;\n    }\n\n    public void recordTiming(String operationName, long durationMs) {\n        spanTimings.put(operationName, durationMs);\n        Span currentSpan = tracer.currentSpan();\n        if (currentSpan != null) {\n            currentSpan.tag(\"timing.\" + operationName, String.valueOf(durationMs) + \"ms\");\n        }\n        log.debug(\"Recorded timing: {} = {}ms\", operationName, durationMs);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "span-customizer-bean",
+      children: "Span Customizer Bean"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.service;\n\nimport io.micrometer.tracing.SpanCustomizer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Component;\n\n@Component\npublic class EnvironmentSpanCustomizer implements SpanCustomizer {\n\n    private static final Logger log = LoggerFactory.getLogger(EnvironmentSpanCustomizer.class);\n\n    @Override\n    public void customize(SpanCustomizer span) {\n        span.tag(\"application.version\", \"1.0.0\");\n        span.tag(\"application.environment\", System.getProperty(\"spring.profiles.active\", \"default\"));\n        span.tag(\"host.name\", System.getenv().getOrDefault(\"HOSTNAME\", \"localhost\"));\n        log.debug(\"Customized span with environment tags\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "observed-service",
+      children: "Observed Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.service;\n\nimport io.micrometer.observation.Observation;\nimport io.micrometer.observation.ObservationRegistry;\nimport io.micrometer.tracing.annotation.*;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\n\n@Service\npublic class OrderService {\n\n    private static final Logger log = LoggerFactory.getLogger(OrderService.class);\n\n    private final ObservationRegistry observationRegistry;\n\n    public OrderService(ObservationRegistry observationRegistry) {\n        this.observationRegistry = observationRegistry;\n    }\n\n    @NewSpan(name = \"createOrder\")\n    public OrderResult createOrder(OrderRequest request) {\n        log.info(\"Creating order: {}\", request);\n        SpanTag(\"orderId\") String orderId = \"ORD-\" + java.util.UUID.randomUUID().toString().substring(0, 8).toUpperCase();\n\n        processPayment(request.total());\n        checkInventory(request.productId());\n        sendNotification(orderId);\n\n        return new OrderResult(orderId, \"CREATED\", request.total());\n    }\n\n    @Observed(name = \"processPayment\",\n            contextualName = \"processing-payment\",\n            lowCardinalityKeyValues = {\"payment.type\", \"credit_card\"})\n    public void processPayment(double amount) {\n        log.info(\"Processing payment: ${}\", amount);\n        try {\n            Thread.sleep(50);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n        }\n    }\n\n    @Observed(name = \"checkInventory\")\n    public void checkInventory(String productId) {\n        log.info(\"Checking inventory for product: {}\", productId);\n        try {\n            Thread.sleep(30);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n        }\n    }\n\n    @Observed(name = \"sendNotification\")\n    public void sendNotification(String orderId) {\n        log.info(\"Sending notification for order: {}\", orderId);\n        Observation.createNotStarted(\"notification.email\", observationRegistry)\n                .lowCardinalityKeyValue(\"channel\", \"email\")\n                .observe(() -> {\n                    try {\n                        Thread.sleep(20);\n                    } catch (InterruptedException e) {\n                        Thread.currentThread().interrupt();\n                    }\n                });\n    }\n\n    @NewSpan(name = \"getOrder\")\n    public OrderResult getOrder(String orderId) {\n        SpanTag(\"orderId\") String id = orderId;\n        log.info(\"Fetching order: {}\", orderId);\n        return new OrderResult(orderId, \"EXISTS\", 99.99);\n    }\n\n    @NewSpan(name = \"cancelOrder\")\n    public void cancelOrder(@SpanTag(\"orderId\") String orderId, @SpanTag(\"reason\") String reason) {\n        log.info(\"Cancelling order {}: {}\", orderId, reason);\n    }\n\n    public record OrderRequest(String productId, String customerId, double total, int quantity) {}\n    public record OrderResult(String orderId, String status, double total) {}\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "baggage-propagation",
+      children: "Baggage Propagation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.service;\n\nimport io.micrometer.tracing.BaggageInScope;\nimport io.micrometer.tracing.Tracer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\n\n@Service\npublic class BaggageService {\n\n    private static final Logger log = LoggerFactory.getLogger(BaggageService.class);\n\n    private final Tracer tracer;\n\n    public BaggageService(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    public void propagateUserContext(String userId, String userRole) {\n        try (BaggageInScope baggage = tracer.createBaggageInScope(\"user.id\", userId)) {\n            baggage.set(\"user.role\", userRole);\n            baggage.set(\"user.ip\", getClientIp());\n            log.info(\"Propagated user context: userId={}, role={}\", userId, userRole);\n        }\n    }\n\n    public void propagateRequestContext(String requestId, String source) {\n        try (BaggageInScope baggage = tracer.createBaggageInScope(\"request.id\", requestId)) {\n            baggage.set(\"request.source\", source);\n            baggage.set(\"request.timestamp\", String.valueOf(System.currentTimeMillis()));\n        }\n    }\n\n    public String getBaggageValue(String key) {\n        try (BaggageInScope baggage = tracer.getBaggage(key)) {\n            if (baggage != null) {\n                return baggage.get();\n            }\n        }\n        return null;\n    }\n\n    private String getClientIp() {\n        return \"10.0.0.1\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "zipkin-configuration",
+      children: "Zipkin Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application-zipkin.yml\n\n> **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)\nspring:\n  zipkin:\n    enabled: true\n    base-url: http://localhost:9411\n    sender:\n      type: web\n    service:\n      name: tracing-demo\n    compression:\n      enabled: true\n    encoder: JSON_V2\n\nmanagement:\n  tracing:\n    sampling:\n      probability: 1.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "zipkin-sender-configuration",
+      children: "Zipkin Sender Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.config;\n\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.context.annotation.Profile;\nimport zipkin2.Span;\nimport zipkin2.reporter.AsyncReporter;\nimport zipkin2.reporter.Reporter;\nimport zipkin2.reporter.kafka.KafkaSender;\nimport zipkin2.reporter.okhttp3.OkHttpSender;\n\n@Configuration\n@Profile(\"zipkin\")\npublic class ZipkinConfig {\n\n    @Bean\n    public OkHttpSender zipkinHttpSender(\n            @Value(\"${spring.zipkin.base-url:http://localhost:9411}\") String baseUrl) {\n        return OkHttpSender.create(baseUrl + \"/api/v2/spans\");\n    }\n\n    @Bean\n    public Reporter<Span> zipkinReporter(OkHttpSender sender) {\n        return AsyncReporter.create(sender);\n    }\n\n    @Bean\n    @Profile(\"kafka-zipkin\")\n    public KafkaSender zipkinKafkaSender(\n            @Value(\"${spring.kafka.bootstrap-servers:localhost:9092}\") String bootstrapServers) {\n        return KafkaSender.create(bootstrapServers);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "opentelemetry-configuration",
+      children: "OpenTelemetry Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.config;\n\nimport io.opentelemetry.api.OpenTelemetry;\nimport io.opentelemetry.api.common.Attributes;\nimport io.opentelemetry.api.trace.Tracer;\nimport io.opentelemetry.api.trace.propagation.W3CTraceContextPropagator;\nimport io.opentelemetry.context.propagation.ContextPropagators;\nimport io.opentelemetry.exporter.otlp.trace.OtlpGrpcSpanExporter;\nimport io.opentelemetry.sdk.OpenTelemetrySdk;\nimport io.opentelemetry.sdk.resources.Resource;\nimport io.opentelemetry.sdk.trace.SdkTracerProvider;\nimport io.opentelemetry.sdk.trace.export.BatchSpanProcessor;\nimport io.opentelemetry.sdk.trace.export.SpanExporter;\nimport io.opentelemetry.sdk.trace.samplers.Sampler;\nimport io.opentelemetry.semconv.ResourceAttributes;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.context.annotation.Profile;\n\nimport java.time.Duration;\n\n@Configuration\n@Profile(\"opentelemetry\")\npublic class OpenTelemetryConfig {\n\n    @Bean\n    public OpenTelemetry openTelemetry(\n            @Value(\"${otel.service.name:tracing-demo}\") String serviceName,\n            @Value(\"${otel.exporter.otlp.endpoint:http://localhost:4317}\") String otlpEndpoint) {\n\n        Resource resource = Resource.getDefault()\n                .merge(Resource.create(Attributes.of(\n                        ResourceAttributes.SERVICE_NAME, serviceName,\n                        ResourceAttributes.SERVICE_VERSION, \"1.0.0\",\n                        ResourceAttributes.DEPLOYMENT_ENVIRONMENT,\n                                System.getProperty(\"spring.profiles.active\", \"default\")\n                )));\n\n        SpanExporter exporter = OtlpGrpcSpanExporter.builder()\n                .setEndpoint(otlpEndpoint)\n                .setTimeout(Duration.ofSeconds(10))\n                .build();\n\n        SdkTracerProvider tracerProvider = SdkTracerProvider.builder()\n                .setResource(resource)\n                .setSampler(Sampler.alwaysOn())\n                .addSpanProcessor(BatchSpanProcessor.builder(exporter)\n                        .setMaxExportBatchSize(512)\n                        .setExporterTimeout(Duration.ofSeconds(30))\n                        .setScheduleDelay(Duration.ofSeconds(5))\n                        .setMaxQueueSize(2048)\n                        .build())\n                .build();\n\n        return OpenTelemetrySdk.builder()\n                .setTracerProvider(tracerProvider)\n                .setPropagators(ContextPropagators.create(W3CTraceContextPropagator.getInstance()))\n                .build();\n    }\n\n    @Bean\n    public Tracer otelTracer(OpenTelemetry openTelemetry) {\n        return openTelemetry.getTracer(\"tracing-demo\", \"1.0.0\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "opentelemetry-manual-instrumentation",
+      children: "OpenTelemetry Manual Instrumentation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.service;\n\nimport io.opentelemetry.api.trace.Span;\nimport io.opentelemetry.api.trace.StatusCode;\nimport io.opentelemetry.api.trace.Tracer;\nimport io.opentelemetry.context.Scope;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\n\n@Service\npublic class OtelManualInstrumentationService {\n\n    private static final Logger log = LoggerFactory.getLogger(OtelManualInstrumentationService.class);\n\n    private final Tracer tracer;\n\n    public OtelManualInstrumentationService(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    public void executeBusinessLogic(String businessId) {\n        Span parentSpan = tracer.spanBuilder(\"business-logic\")\n                .setAttribute(\"business.id\", businessId)\n                .setAttribute(\"business.type\", \"standard\")\n                .startSpan();\n\n        try (Scope scope = parentSpan.makeCurrent()) {\n            log.info(\"Executing business logic for: {}\", businessId);\n\n            validateData(businessId);\n            processData(businessId);\n            persistResult(businessId);\n\n            parentSpan.setStatus(StatusCode.OK);\n        } catch (Exception e) {\n            parentSpan.recordException(e);\n            parentSpan.setStatus(StatusCode.ERROR, e.getMessage());\n            throw e;\n        } finally {\n            parentSpan.end();\n        }\n    }\n\n    private void validateData(String businessId) {\n        Span span = tracer.spanBuilder(\"validate-data\")\n                .setParent(io.opentelemetry.context.Context.current())\n                .setAttribute(\"data.id\", businessId)\n                .startSpan();\n\n        try (Scope scope = span.makeCurrent()) {\n            log.debug(\"Validating data: {}\", businessId);\n            span.addEvent(\"validation.started\");\n            Thread.sleep(20);\n            span.addEvent(\"validation.completed\");\n            span.setStatus(StatusCode.OK);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n            span.recordException(e);\n            span.setStatus(StatusCode.ERROR);\n        } finally {\n            span.end();\n        }\n    }\n\n    private void processData(String businessId) {\n        Span span = tracer.spanBuilder(\"process-data\")\n                .setParent(io.opentelemetry.context.Context.current())\n                .startSpan();\n\n        try (Scope scope = span.makeCurrent()) {\n            log.debug(\"Processing data: {}\", businessId);\n            span.addEvent(\"processing.started\");\n            Thread.sleep(50);\n\n            Span subProcessSpan = tracer.spanBuilder(\"sub-process\")\n                    .setParent(io.opentelemetry.context.Context.current())\n                    .startSpan();\n            try {\n                Thread.sleep(15);\n                subProcessSpan.setAttribute(\"sub.process.type\", \"transformation\");\n                subProcessSpan.setStatus(StatusCode.OK);\n            } finally {\n                subProcessSpan.end();\n            }\n\n            span.addEvent(\"processing.completed\",\n                    io.opentelemetry.api.common.Attributes.of(\n                            io.opentelemetry.semconv.ResourceAttributes.PROCESS_PID,\n                            (long) ProcessHandle.current().pid()));\n            span.setStatus(StatusCode.OK);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n            span.recordException(e);\n            span.setStatus(StatusCode.ERROR);\n        } finally {\n            span.end();\n        }\n    }\n\n    private void persistResult(String businessId) {\n        Span span = tracer.spanBuilder(\"persist-result\")\n                .setParent(io.opentelemetry.context.Context.current())\n                .startSpan();\n\n        try (Scope scope = span.makeCurrent()) {\n            log.debug(\"Persisting result for: {}\", businessId);\n            span.addEvent(\"persist.started\");\n            Thread.sleep(30);\n            span.addEvent(\"persist.completed\",\n                    io.opentelemetry.api.common.Attributes.of(\n                            io.opentelemetry.semconv.ResourceAttributes.DB_NAME,\n                            \"tracing_db\"));\n            span.setStatus(StatusCode.OK);\n        } catch (InterruptedException e) {\n            Thread.currentThread().interrupt();\n            span.recordException(e);\n            span.setStatus(StatusCode.ERROR);\n        } finally {\n            span.end();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "distributed-logging-with-mdc",
+      children: "Distributed Logging with MDC"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.filter;\n\nimport io.micrometer.tracing.Tracer;\nimport jakarta.servlet.*;\nimport jakarta.servlet.http.HttpServletRequest;\nimport org.slf4j.MDC;\nimport org.springframework.core.Ordered;\nimport org.springframework.core.annotation.Order;\nimport org.springframework.stereotype.Component;\nimport java.io.IOException;\n\n@Component\n@Order(Ordered.HIGHEST_PRECEDENCE)\npublic class MdcLoggingFilter implements Filter {\n\n    private final Tracer tracer;\n\n    public MdcLoggingFilter(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    @Override\n    public void doFilter(ServletRequest request, ServletResponse response,\n                         FilterChain chain) throws IOException, ServletException {\n        try {\n            HttpServletRequest httpRequest = (HttpServletRequest) request;\n\n            MDC.put(\"traceId\", getTraceId());\n            MDC.put(\"spanId\", getSpanId());\n            MDC.put(\"requestId\", java.util.UUID.randomUUID().toString().substring(0, 8));\n            MDC.put(\"method\", httpRequest.getMethod());\n            MDC.put(\"path\", httpRequest.getRequestURI());\n            MDC.put(\"remoteAddr\", httpRequest.getRemoteAddr());\n            MDC.put(\"userAgent\", httpRequest.getHeader(\"User-Agent\"));\n            MDC.put(\"application\", \"tracing-demo\");\n            MDC.put(\"environment\", System.getProperty(\"spring.profiles.active\", \"default\"));\n\n            chain.doFilter(request, response);\n        } finally {\n            MDC.clear();\n        }\n    }\n\n    private String getTraceId() {\n        io.micrometer.tracing.Span span = tracer.currentSpan();\n        if (span != null && span.context() != null) {\n            return span.context().traceId();\n        }\n        return \"no-trace\";\n    }\n\n    private String getSpanId() {\n        io.micrometer.tracing.Span span = tracer.currentSpan();\n        if (span != null && span.context() != null) {\n            return span.context().spanId();\n        }\n        return \"no-span\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "logback-configuration-with-json",
+      children: "Logback Configuration with JSON"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-xml",
+        children: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<configuration>\n    <include resource=\"org/springframework/boot/logging/logback/defaults.xml\"/>\n\n    <springProperty scope=\"context\" name=\"springAppName\" source=\"spring.application.name\"/>\n    <springProperty scope=\"context\" name=\"activeProfile\" source=\"spring.profiles.active\" defaultValue=\"default\"/>\n\n    <appender name=\"JSON\" class=\"ch.qos.logback.core.ConsoleAppender\">\n        <encoder class=\"net.logstash.logback.encoder.LogstashEncoder\">\n            <includeContext>false</includeContext>\n            <fieldNames>\n                <timestamp>@timestamp</timestamp>\n                <version>[ignore]</version>\n                <levelValue>[ignore]</levelValue>\n            </fieldNames>\n            <customFields>{\n                \"application\": \"${springAppName:-}\",\n                \"environment\": \"${activeProfile:-}\"\n            }</customFields>\n            <provider class=\"net.logstash.logback.composite.loggingevent.LoggingEventPatternJsonProvider\">\n                <pattern>\n                    {\n                    \"trace\": {\n                    \"trace_id\": \"%mdc{traceId}\",\n                    \"span_id\": \"%mdc{spanId}\",\n                    \"request_id\": \"%mdc{requestId}\"\n                    },\n                    \"http\": {\n                    \"method\": \"%mdc{method}\",\n                    \"path\": \"%mdc{path}\",\n                    \"remote_addr\": \"%mdc{remoteAddr}\"\n                    }\n                    }\n                </pattern>\n            </provider>\n        </encoder>\n    </appender>\n\n    <appender name=\"CONSOLE\" class=\"ch.qos.logback.core.ConsoleAppender\">\n        <encoder>\n            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId}] %-5level %logger{36} - %msg%n</pattern>\n        </encoder>\n    </appender>\n\n    <springProfile name=\"json\">\n        <root level=\"INFO\">\n            <appender-ref ref=\"JSON\"/>\n        </root>\n    </springProfile>\n\n    <springProfile name=\"!json\">\n        <root level=\"INFO\">\n            <appender-ref ref=\"CONSOLE\"/>\n        </root>\n    </springProfile>\n\n    <logger name=\"com.course.tracing\" level=\"DEBUG\"/>\n    <logger name=\"io.micrometer.tracing\" level=\"TRACE\" additivity=\"false\">\n        <appender-ref ref=\"CONSOLE\"/>\n    </logger>\n</configuration>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trace-aware-rest-controller",
+      children: "Trace-aware REST Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.web;\n\nimport com.course.tracing.service.*;\nimport io.micrometer.tracing.Tracer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.slf4j.MDC;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.Map;\n\n@RestController\n@RequestMapping(\"/api/tracing\")\npublic class TracingController {\n\n    private static final Logger log = LoggerFactory.getLogger(TracingController.class);\n\n    private final Tracer tracer;\n    private final TracingService tracingService;\n    private final BaggageService baggageService;\n    private final OrderService orderService;\n    private final OtelManualInstrumentationService otelService;\n\n    public TracingController(Tracer tracer,\n                              TracingService tracingService,\n                              BaggageService baggageService,\n                              OrderService orderService,\n                              OtelManualInstrumentationService otelService) {\n        this.tracer = tracer;\n        this.tracingService = tracingService;\n        this.baggageService = baggageService;\n        this.orderService = orderService;\n        this.otelService = otelService;\n    }\n\n    @PostMapping(\"/orders\")\n    public ResponseEntity<OrderService.OrderResult> createOrder(@RequestBody OrderService.OrderRequest request) {\n        log.info(\"POST /api/tracing/orders - Creating order for product: {}, customer: {}\",\n                request.productId(), request.customerId());\n\n        baggageService.propagateUserContext(request.customerId(), \"customer\");\n\n        OrderService.OrderResult result = orderService.createOrder(request);\n        log.info(\"Order created: {} with traceId: {}\", result.orderId(), tracingService.getCurrentTraceId());\n\n        return ResponseEntity.ok(result);\n    }\n\n    @GetMapping(\"/trace\")\n    public ResponseEntity<Map<String, String>> getTraceInfo() {\n        String traceId = tracingService.getCurrentTraceId();\n        String spanId = tracingService.getCurrentSpanId();\n\n        log.info(\"Current trace context - traceId: {}, spanId: {}\", traceId, spanId);\n\n        return ResponseEntity.ok(Map.of(\n                \"traceId\", traceId != null ? traceId : \"none\",\n                \"spanId\", spanId != null ? spanId : \"none\",\n                \"mdcTraceId\", MDC.get(\"traceId\") != null ? MDC.get(\"traceId\") : \"none\",\n                \"mdcSpanId\", MDC.get(\"spanId\") != null ? MDC.get(\"spanId\") : \"none\"\n        ));\n    }\n\n    @GetMapping(\"/manual-span\")\n    public ResponseEntity<Map<String, String>> createManualSpan() {\n        tracingService.createCustomSpan(\"manual-operation\", \"custom\", () -> {\n            log.info(\"Executing inside custom span\");\n            try {\n                Thread.sleep(100);\n            } catch (InterruptedException e) {\n                Thread.currentThread().interrupt();\n            }\n        });\n\n        return ResponseEntity.ok(Map.of(\n                \"message\", \"Manual span created\",\n                \"traceId\", tracingService.getCurrentTraceId()\n        ));\n    }\n\n    @GetMapping(\"/otel-manual\")\n    public ResponseEntity<Map<String, Object>> otelManualInstrumentation(@RequestParam String businessId) {\n        otelService.executeBusinessLogic(businessId);\n        return ResponseEntity.ok(Map.of(\n                \"message\", \"OTEL manual instrumentation completed\",\n                \"businessId\", businessId,\n                \"traceId\", tracingService.getCurrentTraceId()\n        ));\n    }\n\n    @GetMapping(\"/baggage\")\n    public ResponseEntity<Map<String, String>> baggageDemo(@RequestParam String userId,\n                                                            @RequestParam String role) {\n        baggageService.propagateUserContext(userId, role);\n        String retrievedUserId = baggageService.getBaggageValue(\"user.id\");\n        String retrievedRole = baggageService.getBaggageValue(\"user.role\");\n        return ResponseEntity.ok(Map.of(\n                \"userId\", retrievedUserId != null ? retrievedUserId : \"none\",\n                \"role\", retrievedRole != null ? retrievedRole : \"none\"\n        ));\n    }\n\n    @GetMapping(\"/async-span\")\n    public ResponseEntity<Map<String, String>> createAsyncSpan() {\n        String traceId = tracingService.getCurrentTraceId();\n        tracingService.createCustomSpan(\"async-operation\", \"async\", () -> {\n            try {\n                Thread.sleep(50);\n                log.info(\"Async span executed with parent trace: {}\", traceId);\n            } catch (InterruptedException e) {\n                Thread.currentThread().interrupt();\n            }\n        });\n        return ResponseEntity.ok(Map.of(\"traceId\", traceId));\n    }\n\n    @PostMapping(\"/baggage/propagate\")\n    public ResponseEntity<Map<String, String>> propagateBaggage(\n            @RequestParam String key, @RequestParam String value) {\n        try (var baggage = tracer.createBaggageInScope(key, value)) {\n            log.info(\"Set baggage: {}={}\", key, value);\n        }\n        return ResponseEntity.ok(Map.of(\"key\", key, \"value\", value));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "feign-client-with-tracing",
+      children: "Feign Client with Tracing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.client;\n\nimport org.springframework.cloud.openfeign.FeignClient;\nimport org.springframework.web.bind.annotation.*;\n\n@FeignClient(name = \"order-service\", url = \"${order.service.url:http://localhost:8081}\")\npublic interface OrderServiceFeignClient {\n\n    @GetMapping(\"/api/orders/{orderId}\")\n    String getOrder(@PathVariable(\"orderId\") String orderId);\n\n    @PostMapping(\"/api/orders\")\n    String createOrder(@RequestBody String orderRequest);\n\n    @PostMapping(\"/api/orders/{orderId}/ship\")\n    void shipOrder(@PathVariable(\"orderId\") String orderId);\n\n    @PostMapping(\"/api/orders/{orderId}/cancel\")\n    void cancelOrder(@PathVariable(\"orderId\") String orderId, @RequestParam String reason);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "webclient-with-tracing",
+      children: "WebClient with Tracing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.client;\n\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Component;\nimport org.springframework.web.reactive.function.client.WebClient;\nimport reactor.core.publisher.Mono;\nimport java.time.Duration;\n\n@Component\npublic class ReactiveTracingClient {\n\n    private static final Logger log = LoggerFactory.getLogger(ReactiveTracingClient.class);\n    private static final Duration TIMEOUT = Duration.ofSeconds(10);\n\n    private final WebClient.Builder webClientBuilder;\n\n    public ReactiveTracingClient(WebClient.Builder webClientBuilder) {\n        this.webClientBuilder = webClientBuilder;\n    }\n\n    public Mono<String> getOrder(String orderId) {\n        log.info(\"Reactive call to get order: {}\", orderId);\n        return webClientBuilder.build()\n                .get()\n                .uri(\"http://order-service/api/orders/{orderId}\", orderId)\n                .retrieve()\n                .bodyToMono(String.class)\n                .timeout(TIMEOUT)\n                .doOnSuccess(response -> log.info(\"Received response for order: {}\", orderId))\n                .doOnError(error -> log.error(\"Failed to get order: {}\", orderId, error));\n    }\n\n    public Mono<String> createOrder(String orderRequest) {\n        log.info(\"Reactive call to create order\");\n        return webClientBuilder.build()\n                .post()\n                .uri(\"http://order-service/api/orders\")\n                .bodyValue(orderRequest)\n                .retrieve()\n                .bodyToMono(String.class)\n                .timeout(TIMEOUT);\n    }\n\n    public Mono<Void> shipOrder(String orderId) {\n        log.info(\"Reactive call to ship order: {}\", orderId);\n        return webClientBuilder.build()\n                .post()\n                .uri(\"http://order-service/api/orders/{orderId}/ship\", orderId)\n                .retrieve()\n                .bodyToMono(Void.class)\n                .timeout(TIMEOUT);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trace-metrics",
+      children: "Trace Metrics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.metrics;\n\nimport io.micrometer.core.instrument.MeterRegistry;\nimport io.micrometer.core.instrument.Tag;\nimport io.micrometer.core.instrument.Timer;\nimport io.micrometer.tracing.Tracer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Component;\nimport java.util.List;\nimport java.util.concurrent.ConcurrentHashMap;\nimport java.util.concurrent.TimeUnit;\nimport java.util.concurrent.atomic.AtomicLong;\n\n@Component\npublic class TraceMetricsCollector {\n\n    private static final Logger log = LoggerFactory.getLogger(TraceMetricsCollector.class);\n\n    private final MeterRegistry meterRegistry;\n    private final Tracer tracer;\n    private final ConcurrentHashMap<String, AtomicLong> spanCounts = new ConcurrentHashMap<>();\n\n    public TraceMetricsCollector(MeterRegistry meterRegistry, Tracer tracer) {\n        this.meterRegistry = meterRegistry;\n        this.tracer = tracer;\n        initializeMetrics();\n    }\n\n    private void initializeMetrics() {\n        meterRegistry.gauge(\"tracing.active.spans\",\n                List.of(Tag.of(\"service\", \"tracing-demo\")),\n                this,\n                TraceMetricsCollector::getActiveSpanCount);\n    }\n\n    public void recordSpanDuration(String spanName, long durationMs) {\n        Timer timer = Timer.builder(\"tracing.span.duration\")\n                .tag(\"span.name\", spanName)\n                .tag(\"service\", \"tracing-demo\")\n                .register(meterRegistry);\n        timer.record(durationMs, TimeUnit.MILLISECONDS);\n\n        spanCounts.computeIfAbsent(spanName, k -> new AtomicLong(0)).incrementAndGet();\n    }\n\n    public void recordTraceDuration(long durationMs, boolean success) {\n        Timer timer = Timer.builder(\"tracing.trace.duration\")\n                .tag(\"success\", String.valueOf(success))\n                .tag(\"service\", \"tracing-demo\")\n                .register(meterRegistry);\n        timer.record(durationMs, TimeUnit.MILLISECONDS);\n    }\n\n    public void incrementSpanCount(String spanName) {\n        meterRegistry.counter(\"tracing.span.count\",\n                \"span.name\", spanName,\n                \"service\", \"tracing-demo\"\n        ).increment();\n    }\n\n    private double getActiveSpanCount() {\n        long count = spanCounts.values().stream()\n                .mapToLong(AtomicLong::get)\n                .sum();\n        return count;\n    }\n\n    public long getSpanCount(String spanName) {\n        AtomicLong count = spanCounts.get(spanName);\n        return count != null ? count.get() : 0;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trace-observation-handler",
+      children: "Trace Observation Handler"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.observation;\n\nimport io.micrometer.observation.Observation;\nimport io.micrometer.observation.ObservationHandler;\nimport io.micrometer.tracing.Tracer;\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Component;\n\n@Component\npublic class TraceObservationHandler implements ObservationHandler<Observation.Context> {\n\n    private static final Logger log = LoggerFactory.getLogger(TraceObservationHandler.class);\n\n    private final Tracer tracer;\n    private final com.course.tracing.metrics.TraceMetricsCollector metricsCollector;\n\n    public TraceObservationHandler(Tracer tracer,\n                                    com.course.tracing.metrics.TraceMetricsCollector metricsCollector) {\n        this.tracer = tracer;\n        this.metricsCollector = metricsCollector;\n    }\n\n    @Override\n    public void onStart(Observation.Context context) {\n        log.debug(\"Observation started: {} with name: {}\",\n                context.getClass().getSimpleName(), context.getName());\n    }\n\n    @Override\n    public void onStop(Observation.Context context) {\n        long duration = context.getTime() != null\n                ? System.nanoTime() - context.getTime() : 0;\n\n        log.debug(\"Observation stopped: {} - duration: {}ms\",\n                context.getName(), duration / 1_000_000);\n\n        metricsCollector.recordSpanDuration(context.getName(), duration / 1_000_000);\n    }\n\n    @Override\n    public void onError(Observation.Context context) {\n        log.error(\"Observation error: {}\", context.getName());\n        if (context.getError() != null) {\n            log.error(\"Error details: {}\", context.getError().getMessage());\n        }\n    }\n\n    @Override\n    public boolean supportsContext(Observation.Context context) {\n        return true;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "actuator-trace-endpoint",
+      children: "Actuator Trace Endpoint"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.actuator;\n\nimport io.micrometer.tracing.Tracer;\nimport org.springframework.boot.actuate.endpoint.annotation.Endpoint;\nimport org.springframework.boot.actuate.endpoint.annotation.ReadOperation;\nimport org.springframework.stereotype.Component;\nimport java.util.Map;\n\n@Component\n@Endpoint(id = \"trace-info\")\npublic class TraceInfoEndpoint {\n\n    private final Tracer tracer;\n\n    public TraceInfoEndpoint(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    @ReadOperation\n    public Map<String, Object> traceInfo() {\n        var currentSpan = tracer.currentSpan();\n\n        return Map.of(\n                \"tracerAvailable\", tracer != null,\n                \"hasCurrentSpan\", currentSpan != null,\n                \"traceId\", currentSpan != null ? currentSpan.context().traceId() : null,\n                \"spanId\", currentSpan != null ? currentSpan.context().spanId() : null,\n                \"sampled\", currentSpan != null ? currentSpan.context().sampled() : null\n        );\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tracing-health-indicator",
+      children: "Tracing Health Indicator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing.actuator;\n\nimport io.micrometer.tracing.Tracer;\nimport org.springframework.boot.actuate.health.Health;\nimport org.springframework.boot.actuate.health.HealthIndicator;\nimport org.springframework.stereotype.Component;\n\n@Component\npublic class TracingHealthIndicator implements HealthIndicator {\n\n    private final Tracer tracer;\n\n    public TracingHealthIndicator(Tracer tracer) {\n        this.tracer = tracer;\n    }\n\n    @Override\n    public Health health() {\n        try {\n            if (tracer != null) {\n                var currentSpan = tracer.currentSpan();\n                return Health.up()\n                        .withDetail(\"tracerType\", tracer.getClass().getSimpleName())\n                        .withDetail(\"hasCurrentSpan\", currentSpan != null)\n                        .build();\n            }\n            return Health.down()\n                    .withDetail(\"reason\", \"Tracer not available\")\n                    .build();\n        } catch (Exception e) {\n            return Health.down(e)\n                    .withDetail(\"reason\", e.getMessage())\n                    .build();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "grafana-tempo-configuration",
+      children: "Grafana Tempo Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# tempo-config.yml\n\n> **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)\nserver:\n  http_listen_port: 3200\n\ndistributor:\n  receivers:\n    otlp:\n      protocols:\n        grpc:\n          endpoint: 0.0.0.0:4317\n        http:\n          endpoint: 0.0.0.0:4318\n\ningester:\n  lifecycler:\n    ring:\n      kvstore:\n        store: inmemory\n\nstorage:\n  trace:\n    backend: local\n    local:\n      path: /tmp/tempo/traces\n    wal:\n      path: /tmp/tempo/wal\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# docker-compose for observability stack\n\n> **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)\nversion: '3.8'\nservices:\n  tempo:\n    image: grafana/tempo:2.2\n    command: -config.file=/etc/tempo-config.yml\n    volumes:\n      - ./tempo-config.yml:/etc/tempo-config.yml\n      - tempo-data:/tmp/tempo\n    ports:\n      - \"3200:3200\"\n      - \"4317:4317\"\n      - \"4318:4318\"\n\n  zipkin:\n    image: openzipkin/zipkin:latest\n    ports:\n      - \"9411:9411\"\n\n  grafana:\n    image: grafana/grafana:10.2.0\n    ports:\n      - \"3000:3000\"\n    environment:\n      - GF_AUTH_ANONYMOUS_ENABLED=true\n      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin\n    volumes:\n      - grafana-data:/var/lib/grafana\n      - ./grafana-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml\n\n  prometheus:\n    image: prom/prometheus:latest\n    ports:\n      - \"9090:9090\"\n    volumes:\n      - ./prometheus.yml:/etc/prometheus/prometheus.yml\n      - prometheus-data:/prometheus\n\nvolumes:\n  tempo-data:\n  grafana-data:\n  prometheus-data:\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# grafana-datasources.yml\n\n> **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)\napiVersion: 1\ndatasources:\n  - name: Tempo\n    type: tempo\n    access: proxy\n    url: http://tempo:3200\n    editable: true\n    jsonData:\n      httpMethod: GET\n      serviceMap:\n        datasourceUid: prometheus\n\n  - name: Prometheus\n    type: prometheus\n    access: proxy\n    url: http://prometheus:9090\n    editable: true\n\n  - name: Zipkin\n    type: zipkin\n    access: proxy\n    url: http://zipkin:9411\n    editable: true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# prometheus.yml\n\n> **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)\nglobal:\n  scrape_interval: 15s\n  evaluation_interval: 15s\n\nscrape_configs:\n  - job_name: 'tracing-demo'\n    metrics_path: '/actuator/prometheus'\n    static_configs:\n      - targets: ['tracing-demo:8080']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "integration-tests",
+      children: "Integration Tests"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "package com.course.tracing;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.test.context.ActiveProfiles;\nimport static org.assertj.core.api.Assertions.assertThat;\nimport io.micrometer.tracing.Tracer;\n\n@SpringBootTest\n@ActiveProfiles(\"test\")\nclass TracingIntegrationTest {\n\n    @Autowired\n    private Tracer tracer;\n\n    @Test\n    void shouldHaveTracerBean() {\n        assertThat(tracer).isNotNull();\n    }\n\n    @Test\n    void shouldCreateTrace() {\n        var span = tracer.spanBuilder().name(\"test-span\").start();\n        assertThat(span).isNotNull();\n        assertThat(span.context()).isNotNull();\n        assertThat(span.context().traceId()).isNotNull();\n        span.end();\n    }\n\n    @Test\n    void shouldPropagateTraceId() {\n        var parentSpan = tracer.spanBuilder().name(\"parent-span\").start();\n        String parentTraceId;\n        String childTraceId;\n\n        try {\n            parentTraceId = parentSpan.context().traceId();\n            var childSpan = tracer.spanBuilder()\n                    .setParent(parentSpan.context())\n                    .name(\"child-span\")\n                    .start();\n            try {\n                childTraceId = childSpan.context().traceId();\n                assertThat(childTraceId).isEqualTo(parentTraceId);\n            } finally {\n                childSpan.end();\n            }\n        } finally {\n            parentSpan.end();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approach C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core description"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Primary differentiator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use this"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Commands/APIs"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Setup"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required dependencies and configuration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify versions match"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Implementation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Core code patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test edge cases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Testing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification methods"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cover success and failure paths"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern C"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Small application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise system"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High-throughput API"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Event-driven"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✗"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "✓"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the primary benefit of this chapter's main topic?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Improved performance"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Better developer productivity"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Enhanced reliability"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) All of the above"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which approach is recommended for production deployments?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) The simplest solution"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) The most feature-rich option"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) The one with best operational characteristics"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Whatever the team knows best"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["When should you consider this pattern?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) For every project regardless of size"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) When complexity justifies the overhead"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Only in legacy systems"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Never → it is outdated"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Distributed Tracing"
+        }), " tracks requests across microservices using traceId, spanId, and parentId"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Micrometer Tracing"
+        }), " provides a bridge to OpenTelemetry and Zipkin Brave for span creation and propagation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zipkin"
+        }), " collects and visualizes spans via HTTP or Kafka collectors with configurable sampling rates"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MDC"
+        }), " (Mapped Diagnostic Context) enriches log entries with correlation IDs for trace-log correlation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Logstash Encoder"
+        }), " produces structured JSON logs compatible with Elasticsearch and Grafana Loki"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Grafana Tempo"
+        }), " ingests trace data via OTLP protocol and integrates with Grafana for trace exploration"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OpenTelemetry"
+        }), " SDK provides automatic instrumentation (via Java agent) and manual instrumentation (via API)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Trace Propagation"
+          }), ": Set up Micrometer Tracing with W3C propagation. Create two services (A and B) where A calls B via RestTemplate. Verify traceId propagates across the HTTP call."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Custom Span Tags"
+          }), ": Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SpanCustomizer"
+          }), " that adds environment, version, and region tags to every span. Verify the tags appear in Zipkin."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Zipkin Setup"
+          }), ": Deploy Zipkin via Docker. Configure a Spring Boot application to send spans. Create a custom query that filters spans by tag values."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "MDC + Logs"
+          }), ": Configure structured JSON logging with logstash-encoder. Include traceId, spanId, and custom business context (orderId, userId) in every log entry."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Grafana Tempo"
+          }), ": Deploy the Grafana Tempo stack. Configure OTLP exporter in the application. Use Grafana's TraceQL to query traces with duration > 500ms."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "OpenTelemetry Manual Instrumentation"
+          }), ": Write a service that creates a parent span for a business transaction and three child spans for sub-operations. Record exceptions and attributes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sampling Strategy"
+          }), ": Implement a custom sampler that samples 100% of traces for admin users but only 1% for regular users. Test with different user roles."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

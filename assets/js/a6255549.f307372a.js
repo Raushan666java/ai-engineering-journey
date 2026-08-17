@@ -1,0 +1,2447 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[91898],{
+
+/***/ 18803
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_37_enterprise_capstone_md_a62_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-37-enterprise-capstone-md-a62.json
+const site_docs_courses_laravel_37_enterprise_capstone_md_a62_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/37-enterprise-capstone","title":"Chapter 37: Enterprise Capstone → Multi-Agent Platform","description":"Previous Laravel General Interview Q&A","source":"@site/docs/courses/laravel/37-enterprise-capstone.md","sourceDirName":"courses/laravel","slug":"/laravel/37-enterprise-capstone","permalink":"/ai-engineering-journey/laravel/37-enterprise-capstone","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":37,"frontMatter":{"id":"37-enterprise-capstone","slug":"/laravel/37-enterprise-capstone","title":"Chapter 37: Enterprise Capstone → Multi-Agent Platform","sidebar_label":"Chapter 37: Enterprise Capstone → Multi-Agent Platform","sidebar_position":37},"sidebar":"course-laravel","previous":{"title":"Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents","permalink":"/ai-engineering-journey/laravel/36-manufacturing"},"next":{"title":"Chapter 38: Laravel General Interview Q&A","permalink":"/ai-engineering-journey/laravel/38-interview-general"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/37-enterprise-capstone.md
+
+
+const frontMatter = {
+	id: '37-enterprise-capstone',
+	slug: '/laravel/37-enterprise-capstone',
+	title: 'Chapter 37: Enterprise Capstone → Multi-Agent Platform',
+	sidebar_label: 'Chapter 37: Enterprise Capstone → Multi-Agent Platform',
+	sidebar_position: 37
+};
+const contentTitle = 'Chapter 37: Enterprise Capstone → Multi-Agent Platform';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-1",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-1",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-2",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-2",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance-3",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap-3",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "37.1 Platform Overview &amp; Architecture",
+  "id": "371-platform-overview--architecture",
+  "level": 3
+}, {
+  "value": "Platform Specification",
+  "id": "platform-specification",
+  "level": 4
+}, {
+  "value": "High-Level Architecture",
+  "id": "high-level-architecture",
+  "level": 4
+}, {
+  "value": "Service Provider Bootstrapping",
+  "id": "service-provider-bootstrapping",
+  "level": 4
+}, {
+  "value": "Configuration Array",
+  "id": "configuration-array",
+  "level": 4
+}, {
+  "value": "37.2 Centralized Agent Registry",
+  "id": "372-centralized-agent-registry",
+  "level": 3
+}, {
+  "value": "Agent Registry Implementation",
+  "id": "agent-registry-implementation",
+  "level": 4
+}, {
+  "value": "Agent Capability Enum",
+  "id": "agent-capability-enum",
+  "level": 4
+}, {
+  "value": "Agent Registration Service",
+  "id": "agent-registration-service",
+  "level": 4
+}, {
+  "value": "Registration Model",
+  "id": "registration-model",
+  "level": 4
+}, {
+  "value": "37.3 Agent Communication Bus",
+  "id": "373-agent-communication-bus",
+  "level": 3
+}, {
+  "value": "Agent Message Model",
+  "id": "agent-message-model",
+  "level": 4
+}, {
+  "value": "Message Event",
+  "id": "message-event",
+  "level": 4
+}, {
+  "value": "Agent Message Bus",
+  "id": "agent-message-bus",
+  "level": 4
+}, {
+  "value": "Message Delivery Job",
+  "id": "message-delivery-job",
+  "level": 4
+}, {
+  "value": "Agent Subscriber Registration",
+  "id": "agent-subscriber-registration",
+  "level": 4
+}, {
+  "value": "37.4 Shared Memory &amp; Knowledge Base",
+  "id": "374-shared-memory--knowledge-base",
+  "level": 3
+}, {
+  "value": "Shared Memory Model",
+  "id": "shared-memory-model",
+  "level": 4
+}, {
+  "value": "Knowledge Base Service",
+  "id": "knowledge-base-service",
+  "level": 4
+}, {
+  "value": "37.5 Enterprise Agent Orchestrator",
+  "id": "375-enterprise-agent-orchestrator",
+  "level": 3
+}, {
+  "value": "Workflow Definition",
+  "id": "workflow-definition",
+  "level": 4
+}, {
+  "value": "Enterprise Orchestrator",
+  "id": "enterprise-orchestrator",
+  "level": 4
+}, {
+  "value": "Execute Workflow Job",
+  "id": "execute-workflow-job",
+  "level": 4
+}, {
+  "value": "Workflow Execution Model",
+  "id": "workflow-execution-model",
+  "level": 4
+}, {
+  "value": "Cross-Sector Workflow Definitions",
+  "id": "cross-sector-workflow-definitions",
+  "level": 4
+}, {
+  "value": "37.6 Multi-Tenant Isolation",
+  "id": "376-multi-tenant-isolation",
+  "level": 3
+}, {
+  "value": "Multi-Tenant Agent Service",
+  "id": "multi-tenant-agent-service",
+  "level": 4
+}, {
+  "value": "Tenant Middleware for Agent Isolation",
+  "id": "tenant-middleware-for-agent-isolation",
+  "level": 4
+}, {
+  "value": "Tenant-Scoped Agent Resolution",
+  "id": "tenant-scoped-agent-resolution",
+  "level": 4
+}, {
+  "value": "37.7 MCP Server Integration",
+  "id": "377-mcp-server-integration",
+  "level": 3
+}, {
+  "value": "MCP Gateway Controller",
+  "id": "mcp-gateway-controller",
+  "level": 4
+}, {
+  "value": "MCP Server Registration",
+  "id": "mcp-server-registration",
+  "level": 4
+}, {
+  "value": "MCP Server Model",
+  "id": "mcp-server-model",
+  "level": 4
+}, {
+  "value": "37.8 Monitoring &amp; Observability",
+  "id": "378-monitoring--observability",
+  "level": 3
+}, {
+  "value": "Agent Metrics Model",
+  "id": "agent-metrics-model",
+  "level": 4
+}, {
+  "value": "Agent Monitor",
+  "id": "agent-monitor",
+  "level": 4
+}, {
+  "value": "Agent Dashboard Controller",
+  "id": "agent-dashboard-controller",
+  "level": 4
+}, {
+  "value": "37.9 Deployment Architecture",
+  "id": "379-deployment-architecture",
+  "level": 3
+}, {
+  "value": "Serverless Configuration",
+  "id": "serverless-configuration",
+  "level": 4
+}, {
+  "value": "Queue Worker Setup",
+  "id": "queue-worker-setup",
+  "level": 4
+}, {
+  "value": "Horizon Configuration",
+  "id": "horizon-configuration",
+  "level": 4
+}, {
+  "value": "Scaling Policies",
+  "id": "scaling-policies",
+  "level": 4
+}, {
+  "value": "37.10 Complete End-to-End Workflow",
+  "id": "3710-complete-end-to-end-workflow",
+  "level": 3
+}, {
+  "value": "Workflow Trigger Controller",
+  "id": "workflow-trigger-controller",
+  "level": 4
+}, {
+  "value": "Routes",
+  "id": "routes",
+  "level": 4
+}, {
+  "value": "End-to-End Walkthrough Code",
+  "id": "end-to-end-walkthrough-code",
+  "level": 4
+}, {
+  "value": "Database Migrations Summary",
+  "id": "database-migrations-summary",
+  "level": 4
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-37-enterprise-capstone--multi-agent-platform",
+        children: "Chapter 37: Enterprise Capstone → Multi-Agent Platform"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/36-manufacturing",
+          children: "Manufacturing & Industrial — AI-Powered Factory Agents"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/38-interview-general",
+          children: "Laravel General Interview Q&A"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Synthesize all concepts from Chapters 1–36 into a single enterprise multi-agent platform"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a centralized agent registry with capability-based service discovery and cross-sector routing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build an event-driven agent communication bus using Laravel events, queues, and pub/sub patterns"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a shared memory and vector knowledge base accessible by every agent in the platform"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Construct an enterprise orchestrator that coordinates multi-step workflows across sector-specific agents"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Enforce multi-tenant isolation with per-tenant agent instances, data scoping, and configuration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Expose platform agents as MCP tools and connect to third-party MCP servers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deploy comprehensive monitoring, tracing, and observability across all agents and workflows"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Architect a serverless deployment on Laravel Vapor with auto-scaling queues and multi-region failover"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise multi-agent platform integrating AI agents across business domains into a unified system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration, agent communication, shared data layer, monitoring, enterprise integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Architecture patterns, integration patterns, deployment considerations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, distributed systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-1",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise multi-agent platform integrating AI agents across business domains into a unified system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration, agent communication, shared data layer, monitoring, enterprise integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Architecture patterns, integration patterns, deployment considerations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, distributed systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-1",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-2",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise multi-agent platform integrating AI agents across business domains into a unified system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration, agent communication, shared data layer, monitoring, enterprise integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Architecture patterns, integration patterns, deployment considerations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, distributed systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-2",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance-3",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise multi-agent platform integrating AI agents across business domains into a unified system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration, agent communication, shared data layer, monitoring, enterprise integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Architecture patterns, integration patterns, deployment considerations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, Laravel AI SDK, distributed systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap-3",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Theory & Concepts]\n    B[Data Models]\n    C[Agent Implementation]\n    D[Integration Patterns]\n    E[Best Practices]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Theory is the foundation — master it before moving to examples and exercises."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/37-enterprise-capstone.png",
+        alt: "Enterprise Capstone"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "371-platform-overview--architecture",
+      children: "37.1 Platform Overview & Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where specialized AI agents from different domains → healthcare, finance, education, logistics, HR, customer service, legal, real estate, manufacturing, and marketing → coexist, communicate, and collaborate within a single unified runtime. Organizations deploy the platform as a multi-tenant SaaS instance, with each tenant running isolated agent instances."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "platform-specification",
+      children: "Platform Specification"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Specification"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10 industry sectors, 3–5 agents per sector"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event-driven pub/sub via Laravel queues"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL + pgvector for structured + vector storage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-tenant per organization (database-scoped)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API Surface"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REST + MCP protocol"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Laravel Vapor with auto-scaling workers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Telescope + Pulse + custom AgentMetrics"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "high-level-architecture",
+      children: "High-Level Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "                         ┌─────────────────────────────┐\n                         │      API Gateway (REST)      │\n                         │   Rate Limit · Auth · Route  │\n                         └──────────┬──────────────────┘\n                                    │\n                         ┌──────────▼──────────────────┐\n                         │   Enterprise Orchestrator    │\n                         │ Supervisor · Workflow Engine │\n                         └──────────┬──────────────────┘\n                                    │\n          ┌─────────────────────────┼─────────────────────────┐\n          │                         │                         │\n ┌────────▼────────┐   ┌───────────▼───────────┐   ┌─────────▼────────┐\n │  Agent Registry  │   │  Agent Message Bus    │   │  Shared Memory    │\n │  discover/call   │   │  pub/sub · events     │   │  Knowledge Base   │\n └────────┬────────┘   └───────────┬───────────┘   └─────────┬────────┘\n          │                         │                         │\n ┌────────▼─────────────────────────▼─────────────────────────▼────────┐\n │                        Agent Pool (10 sectors)                       │\n │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐   │\n │  │Health│ │Finan.│ │Educ. │ │Logis.│ │  HR  │ │Cust. │ │Legal │...│\n │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘   │\n └────────────────────────────────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "service-provider-bootstrapping",
+      children: "Service Provider Bootstrapping"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Providers;\n\nuse App\\Ai\\Agents\\CustomerService\\TicketTriageAgent;\nuse App\\Ai\\Agents\\Finance\\FraudDetectionAgent;\nuse App\\Ai\\Agents\\Healthcare\\ClinicalDecisionAgent;\nuse App\\Ai\\Agents\\Registry\\AgentRegistry;\nuse App\\Ai\\Bus\\AgentMessageBus;\nuse App\\Ai\\Memory\\SharedMemoryService;\nuse App\\Ai\\Orchestrator\\EnterpriseOrchestrator;\nuse App\\Ai\\Tenant\\MultiTenantAgentService;\nuse Illuminate\\Support\\ServiceProvider;\n\nclass EnterprisePlatformServiceProvider extends ServiceProvider\n{\n    public function register(): void\n    {\n        $this->app->singleton(AgentRegistry::class, function ($app) {\n            return new AgentRegistry(\n                cache: $app->make('cache.store'),\n                config: config('agents.registry'),\n            );\n        });\n\n        $this->app->singleton(AgentMessageBus::class, function ($app) {\n            return new AgentMessageBus(\n                dispatcher: $app->make('events'),\n                queue: $app->make('queue'),\n            );\n        });\n\n        $this->app->singleton(SharedMemoryService::class, function ($app) {\n            return new SharedMemoryService(\n                model: $app->make(\\App\\Models\\SharedMemory::class),\n                vectorService: $app->make(\\App\\Services\\VectorService::class),\n            );\n        });\n\n        $this->app->singleton(EnterpriseOrchestrator::class, function ($app) {\n            return new EnterpriseOrchestrator(\n                registry: $app->make(AgentRegistry::class),\n                bus: $app->make(AgentMessageBus::class),\n                memory: $app->make(SharedMemoryService::class),\n                tenant: $app->make(MultiTenantAgentService::class),\n            );\n        });\n    }\n\n    public function boot(): void\n    {\n        AgentRegistry::registerDefaultAgents([\n            TicketTriageAgent::class,\n            FraudDetectionAgent::class,\n            ClinicalDecisionAgent::class,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "configuration-array",
+      children: "Configuration Array"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nreturn [\n\n    'registry' => [\n        'ttl' => env('AGENT_REGISTRY_TTL', 3600),\n        'discovery_driver' => env('AGENT_DISCOVERY_DRIVER', 'cache'),\n    ],\n\n    'bus' => [\n        'queue' => env('AGENT_BUS_QUEUE', 'agents'),\n        'retry_after' => env('AGENT_BUS_RETRY_AFTER', 90),\n        'max_retries' => env('AGENT_BUS_MAX_RETRIES', 3),\n    ],\n\n    'memory' => [\n        'driver' => env('AGENT_MEMORY_DRIVER', 'database'),\n        'vector_dimensions' => (int) env('VECTOR_DIMENSIONS', 1536),\n        'similarity_threshold' => (float) env('SIMILARITY_THRESHOLD', 0.78),\n    ],\n\n    'orchestrator' => [\n        'max_workflow_duration' => env('MAX_WORKFLOW_SECONDS', 300),\n        'default_priority' => env('DEFAULT_WORKFLOW_PRIORITY', 'normal'),\n        'enable_parallel_dispatch' => env('ENABLE_PARALLEL_DISPATCH', true),\n    ],\n\n    'tenants' => [\n        'isolation_mode' => env('TENANT_ISOLATION_MODE', 'database'),\n        'cache_prefix' => 'tenant:',\n    ],\n\n    'monitoring' => [\n        'tracing_enabled' => env('AGENT_TRACING_ENABLED', true),\n        'metrics_driver' => env('AGENT_METRICS_DRIVER', 'database'),\n        'health_check_interval' => env('AGENT_HEALTH_CHECK_SECONDS', 60),\n    ],\n\n];\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "372-centralized-agent-registry",
+      children: "37.2 Centralized Agent Registry"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every agent in the platform registers with metadata describing its capabilities, target industry sector, and the triggers it responds to. The registry powers service discovery so the orchestrator and other agents can locate the right agent for any task."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-registry-implementation",
+      children: "Agent Registry Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\HasMany;\n\nclass AgentRegistry extends Model\n{\n    protected $table = 'agent_registry';\n\n    protected $fillable = [\n        'name',\n        'class_name',\n        'sector',\n        'description',\n        'capabilities',\n        'triggers',\n        'configuration',\n        'status',\n        'version',\n    ];\n\n    protected $casts = [\n        'capabilities' => 'array',\n        'triggers' => 'array',\n        'configuration' => 'array',\n        'status' => 'string',\n        'version' => 'string',\n    ];\n\n    public function registrations(): HasMany\n    {\n        return $this->hasMany(AgentRegistration::class);\n    }\n\n    public function scopeBySector($query, string $sector)\n    {\n        return $query->where('sector', $sector)->where('status', 'active');\n    }\n\n    public function scopeByCapability($query, string $capability)\n    {\n        return $query->whereJsonContains('capabilities', $capability);\n    }\n\n    public function hasCapability(string $capability): bool\n    {\n        return in_array($capability, $this->capabilities ?? []);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-capability-enum",
+      children: "Agent Capability Enum"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Registry;\n\nenum AgentCapability: string\n{\n    case TicketTriage = 'ticket:triage';\n    case SentimentAnalysis = 'sentiment:analyze';\n    case FraudDetection = 'fraud:detect';\n    case TransactionMonitoring = 'transaction:monitor';\n    case KYCVerification = 'kyc:verify';\n    case CreditScoring = 'credit:score';\n    case ClinicalDecision = 'clinical:decision';\n    case AppointmentScheduling = 'appointment:schedule';\n    case MedicalRecordRAG = 'medical:rag';\n    case ResumeScreening = 'resume:screen';\n    case CandidateMatching = 'candidate:match';\n    case InterviewScheduling = 'interview:schedule';\n    case PersonalizedLearning = 'learning:path';\n    case AssessmentGrading = 'assessment:grade';\n    case ContentGeneration = 'content:generate';\n    case InventoryPrediction = 'inventory:predict';\n    case RouteOptimization = 'route:optimize';\n    case ShipmentTracking = 'shipment:track';\n    case CampaignOptimization = 'campaign:optimize';\n    case LeadScoring = 'lead:score';\n    case PropertyValuation = 'property:value';\n    case ContractReview = 'contract:review';\n    case PredictiveMaintenance = 'maintenance:predict';\n    case QualityControl = 'quality:control';\n\n    public static function forSector(string $sector): array\n    {\n        return match ($sector) {\n            'customer-service' => [self::TicketTriage, self::SentimentAnalysis],\n            'finance' => [self::FraudDetection, self::TransactionMonitoring, self::KYCVerification, self::CreditScoring],\n            'healthcare' => [self::ClinicalDecision, self::AppointmentScheduling, self::MedicalRecordRAG],\n            'hr' => [self::ResumeScreening, self::CandidateMatching, self::InterviewScheduling],\n            'education' => [self::PersonalizedLearning, self::AssessmentGrading, self::ContentGeneration],\n            'logistics' => [self::InventoryPrediction, self::RouteOptimization, self::ShipmentTracking],\n            'marketing' => [self::CampaignOptimization, self::LeadScoring],\n            'real-estate' => [self::PropertyValuation],\n            'legal' => [self::ContractReview],\n            'manufacturing' => [self::PredictiveMaintenance, self::QualityControl],\n            default => [],\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-registration-service",
+      children: "Agent Registration Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Registry;\n\nuse App\\Models\\AgentRegistration;\nuse App\\Models\\AgentRegistry;\nuse App\\Models\\Tenant;\nuse Illuminate\\Support\\Facades\\Cache;\n\nclass AgentRegistrationService\n{\n    public function __construct(\n        private AgentRegistry $registry,\n    ) {}\n\n    public function register(string $agentClass, string $sector, array $capabilities, ?Tenant $tenant = null): AgentRegistration\n    {\n        $registration = AgentRegistration::create([\n            'tenant_id' => $tenant?->id,\n            'agent_registry_id' => $this->registry->id,\n            'agent_class' => $agentClass,\n            'sector' => $sector,\n            'capabilities' => $capabilities,\n            'status' => 'active',\n            'registered_at' => now(),\n        ]);\n\n        Cache::tags(\"agent:{$tenant?->id ?? 'global'}\")->flush();\n\n        return $registration;\n    }\n\n    public function discover(string $capability, ?string $sector = null, ?Tenant $tenant = null): array\n    {\n        $cacheKey = \"agent:discover:{$tenant?->id ?? 'global'}:{$capability}:{$sector}\";\n\n        return Cache::remember($cacheKey, 300, function () use ($capability, $sector, $tenant) {\n            $query = AgentRegistration::where('status', 'active')\n                ->whereJsonContains('capabilities', $capability);\n\n            if ($sector) {\n                $query->where('sector', $sector);\n            }\n\n            if ($tenant) {\n                $query->where('tenant_id', $tenant->id);\n            }\n\n            return $query->with('registryEntry')->get()->toArray();\n        });\n    }\n\n    public function call(string $agentRegistrationId, array $payload, ?Tenant $tenant = null): mixed\n    {\n        $registration = AgentRegistration::findOrFail($agentRegistrationId);\n\n        if ($tenant && $registration->tenant_id !== $tenant->id) {\n            throw new \\RuntimeException('Agent not available for this tenant');\n        }\n\n        $agentClass = $registration->agent_class;\n\n        if (!class_exists($agentClass)) {\n            throw new \\RuntimeException(\"Agent class {$agentClass} not found\");\n        }\n\n        $agent = app()->make($agentClass);\n\n        return $agent->handle($payload);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "registration-model",
+      children: "Registration Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\n\nclass AgentRegistration extends Model\n{\n    protected $table = 'agent_registrations';\n\n    protected $fillable = [\n        'tenant_id',\n        'agent_registry_id',\n        'agent_class',\n        'sector',\n        'capabilities',\n        'configuration',\n        'status',\n        'registered_at',\n        'last_heartbeat_at',\n    ];\n\n    protected $casts = [\n        'capabilities' => 'array',\n        'configuration' => 'array',\n        'registered_at' => 'datetime',\n        'last_heartbeat_at' => 'datetime',\n    ];\n\n    public function registryEntry(): BelongsTo\n    {\n        return $this->belongsTo(AgentRegistry::class, 'agent_registry_id');\n    }\n\n    public function tenant(): BelongsTo\n    {\n        return $this->belongsTo(Tenant::class);\n    }\n\n    public function scopeActive($query)\n    {\n        return $query->where('status', 'active');\n    }\n\n    public function scopeHealthy($query)\n    {\n        return $query->where('last_heartbeat_at', '>=', now()->subMinutes(5));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "373-agent-communication-bus",
+      children: "37.3 Agent Communication Bus"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Agents do not call each other directly. Every interaction passes through the AgentMessageBus, which wraps Laravel events and queues into a publish/subscribe system. An agent publishes a message to a topic; any agent subscribed to that topic receives the message asynchronously."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-message-model",
+      children: "Agent Message Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\n\nclass AgentMessage extends Model\n{\n    protected $table = 'agent_messages';\n\n    protected $fillable = [\n        'tenant_id',\n        'workflow_id',\n        'correlation_id',\n        'topic',\n        'sender_agent_id',\n        'recipient_agent_id',\n        'payload',\n        'status',\n        'priority',\n        'delivered_at',\n    ];\n\n    protected $casts = [\n        'payload' => 'array',\n        'delivered_at' => 'datetime',\n    ];\n\n    public function sender(): BelongsTo\n    {\n        return $this->belongsTo(AgentRegistration::class, 'sender_agent_id');\n    }\n\n    public function recipient(): BelongsTo\n    {\n        return $this->belongsTo(AgentRegistration::class, 'recipient_agent_id');\n    }\n\n    public function scopeByTopic($query, string $topic)\n    {\n        return $query->where('topic', $topic);\n    }\n\n    public function scopePending($query)\n    {\n        return $query->where('status', 'pending');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "message-event",
+      children: "Message Event"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Bus;\n\nuse App\\Models\\AgentMessage;\nuse Illuminate\\Broadcasting\\InteractsWithSockets;\nuse Illuminate\\Foundation\\Events\\Dispatchable;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass MessageEvent\n{\n    use Dispatchable, InteractsWithSockets, SerializesModels;\n\n    public function __construct(\n        public AgentMessage $message,\n    ) {}\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-message-bus",
+      children: "Agent Message Bus"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Bus;\n\nuse App\\Models\\AgentMessage;\nuse App\\Models\\Tenant;\nuse Illuminate\\Contracts\\Events\\Dispatcher;\nuse Illuminate\\Contracts\\Queue\\Queue;\nuse Illuminate\\Support\\Facades\\Log;\nuse Ramsey\\Uuid\\Uuid;\n\nclass AgentMessageBus\n{\n    private array $subscribers = [];\n\n    public function __construct(\n        private Dispatcher $events,\n        private Queue $queue,\n    ) {}\n\n    public function subscribe(string $topic, callable|array $handler, int $priority = 0): void\n    {\n        $this->subscribers[$topic][] = [\n            'handler' => $handler,\n            'priority' => $priority,\n        ];\n\n        usort($this->subscribers[$topic], fn ($a, $b) => $b['priority'] <=> $a['priority']);\n    }\n\n    public function publish(string $topic, array $payload, array $options = []): AgentMessage\n    {\n        $message = AgentMessage::create([\n            'tenant_id' => $options['tenant_id'] ?? null,\n            'workflow_id' => $options['workflow_id'] ?? null,\n            'correlation_id' => $options['correlation_id'] ?? (string) Uuid::uuid7(),\n            'topic' => $topic,\n            'sender_agent_id' => $options['sender_agent_id'] ?? null,\n            'recipient_agent_id' => $options['recipient_agent_id'] ?? null,\n            'payload' => $payload,\n            'status' => 'pending',\n            'priority' => $options['priority'] ?? 'normal',\n        ]);\n\n        Log::info('AgentMessageBus: publishing message', [\n            'topic' => $topic,\n            'message_id' => $message->id,\n            'correlation_id' => $message->correlation_id,\n        ]);\n\n        $this->events->dispatch(new MessageEvent($message));\n\n        return $message;\n    }\n\n    public function publishAsync(string $topic, array $payload, array $options = []): void\n    {\n        $message = $this->publish($topic, $payload, $options);\n\n        dispatch(new DeliverMessageJob($message->id))\n            ->onQueue($options['queue'] ?? 'agents')\n            ->delay($options['delay'] ?? 0);\n    }\n\n    public function consume(MessageEvent $event): void\n    {\n        $message = $event->message;\n        $topic = $message->topic;\n\n        if (!isset($this->subscribers[$topic])) {\n            $message->update(['status' => 'no_subscribers']);\n            return;\n        }\n\n        foreach ($this->subscribers[$topic] as $subscription) {\n            try {\n                $result = call_user_func($subscription['handler'], $message);\n\n                $message->update([\n                    'status' => 'delivered',\n                    'delivered_at' => now(),\n                ]);\n\n                return $result;\n            } catch (\\Throwable $e) {\n                Log::error('AgentMessageBus: handler failed', [\n                    'topic' => $topic,\n                    'message_id' => $message->id,\n                    'error' => $e->getMessage(),\n                ]);\n            }\n        }\n\n        $message->update(['status' => 'failed']);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "message-delivery-job",
+      children: "Message Delivery Job"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Bus;\n\nuse App\\Models\\AgentMessage;\nuse Illuminate\\Contracts\\Queue\\ShouldQueue;\nuse Illuminate\\Foundation\\Bus\\Dispatchable;\nuse Illuminate\\Queue\\InteractsWithQueue;\nuse Illuminate\\Support\\Facades\\Event;\n\nclass DeliverMessageJob implements ShouldQueue\n{\n    use Dispatchable, InteractsWithQueue;\n\n    public int $timeout = 60;\n    public int $tries = 3;\n\n    public function __construct(\n        public int $messageId,\n    ) {}\n\n    public function handle(AgentMessageBus $bus): void\n    {\n        $message = AgentMessage::findOrFail($this->messageId);\n\n        Event::dispatch(new MessageEvent($message));\n\n        $bus->consume(new MessageEvent($message));\n    }\n\n    public function failed(\\Throwable $e): void\n    {\n        AgentMessage::where('id', $this->messageId)\n            ->update(['status' => 'failed']);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-subscriber-registration",
+      children: "Agent Subscriber Registration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Providers;\n\nuse App\\Ai\\Agents\\CustomerService\\TicketTriageAgent;\nuse App\\Ai\\Agents\\Finance\\FraudDetectionAgent;\nuse App\\Ai\\Agents\\Finance\\BillingAgent;\nuse App\\Ai\\Agents\\CustomerService\\SatisfactionAgent;\nuse App\\Ai\\Bus\\AgentMessageBus;\nuse App\\Ai\\Bus\\MessageEvent;\nuse Illuminate\\Support\\Facades\\Event;\nuse Illuminate\\Support\\ServiceProvider;\n\nclass AgentBusServiceProvider extends ServiceProvider\n{\n    public function boot(AgentMessageBus $bus): void\n    {\n        Event::listen(MessageEvent::class, function (MessageEvent $event) use ($bus) {\n            $bus->consume($event);\n        });\n\n        $bus->subscribe('ticket.created', function ($message) {\n            return app(TicketTriageAgent::class)->handle($message->payload);\n        }, priority: 100);\n\n        $bus->subscribe('triage.completed', function ($message) {\n            $payload = $message->payload;\n            $topic = match ($payload['assigned_sector'] ?? null) {\n                'finance' => 'billing.resolve',\n                'healthcare' => 'appointment.schedule',\n                'hr' => 'candidate.process',\n                default => 'support.general',\n            };\n\n            return app(AgentMessageBus::class)->publish($topic, $payload, [\n                'correlation_id' => $message->correlation_id,\n                'workflow_id' => $message->workflow_id,\n            ]);\n        });\n\n        $bus->subscribe('billing.resolve', function ($message) {\n            return app(BillingAgent::class)->resolveBillingIssue($message->payload);\n        });\n\n        $bus->subscribe('billing.resolved', function ($message) {\n            return app(AgentMessageBus::class)->publish('survey.dispatch', $message->payload, [\n                'correlation_id' => $message->correlation_id,\n                'workflow_id' => $message->workflow_id,\n            ]);\n        });\n\n        $bus->subscribe('survey.dispatch', function ($message) {\n            return app(SatisfactionAgent::class)->sendSurvey($message->payload);\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "374-shared-memory--knowledge-base",
+      children: "37.4 Shared Memory & Knowledge Base"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every agent in the platform can read from and write to a centralized shared memory. This enables cross-sector knowledge sharing → a finance agent's fraud analysis can inform a customer service agent's triage decision. The knowledge base stores structured data, conversation context, and vector embeddings for semantic retrieval."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "shared-memory-model",
+      children: "Shared Memory Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Relations\\BelongsTo;\n\nclass SharedMemory extends Model\n{\n    protected $table = 'shared_memories';\n\n    protected $fillable = [\n        'tenant_id',\n        'workflow_id',\n        'correlation_id',\n        'key',\n        'value',\n        'namespace',\n        'sector',\n        'vector_embedding',\n        'ttl',\n        'expires_at',\n    ];\n\n    protected $casts = [\n        'value' => 'array',\n        'vector_embedding' => 'array',\n        'expires_at' => 'datetime',\n    ];\n\n    public function tenant(): BelongsTo\n    {\n        return $this->belongsTo(Tenant::class);\n    }\n\n    public function scopeByNamespace($query, string $namespace)\n    {\n        return $query->where('namespace', $namespace);\n    }\n\n    public function scopeBySector($query, string $sector)\n    {\n        return $query->where('sector', $sector);\n    }\n\n    public function scopeActive($query)\n    {\n        return $query->whereNull('expires_at')\n            ->orWhere('expires_at', '>', now());\n    }\n\n    public function scopeSearch($query, string $term)\n    {\n        return $query->where('key', 'like', \"%{$term}%\")\n            ->orWhere('value', 'like', \"%{$term}%\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "knowledge-base-service",
+      children: "Knowledge Base Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Memory;\n\nuse App\\Models\\SharedMemory;\nuse App\\Models\\Tenant;\nuse App\\Services\\VectorService;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Ramsey\\Uuid\\Uuid;\n\nclass SharedMemoryService\n{\n    public function __construct(\n        private SharedMemory $model,\n        private VectorService $vectors,\n    ) {}\n\n    public function remember(string $key, mixed $value, array $options = []): SharedMemory\n    {\n        $embedding = null;\n\n        if (is_string($value) && ($options['vectorize'] ?? false)) {\n            $embedding = $this->vectors->embed($value)->toArray();\n        }\n\n        $entry = SharedMemory::updateOrCreate(\n            [\n                'tenant_id' => $options['tenant_id'] ?? null,\n                'namespace' => $options['namespace'] ?? 'default',\n                'key' => $key,\n            ],\n            [\n                'workflow_id' => $options['workflow_id'] ?? null,\n                'correlation_id' => $options['correlation_id'] ?? (string) Uuid::uuid7(),\n                'value' => is_array($value) ? $value : ['data' => $value],\n                'sector' => $options['sector'] ?? null,\n                'vector_embedding' => $embedding,\n                'ttl' => $options['ttl'] ?? null,\n                'expires_at' => isset($options['ttl'])\n                    ? now()->addSeconds($options['ttl'])\n                    : null,\n            ],\n        );\n\n        Cache::tags(\"memory:{$options['tenant_id'] ?? 'global'}\")->flush();\n\n        return $entry;\n    }\n\n    public function recall(string $key, array $options = []): mixed\n    {\n        $query = SharedMemory::where('key', $key);\n\n        if (isset($options['tenant_id'])) {\n            $query->where('tenant_id', $options['tenant_id']);\n        }\n\n        if (isset($options['namespace'])) {\n            $query->where('namespace', $options['namespace']);\n        }\n\n        $entry = $query->active()->latest()->first();\n\n        if (!$entry) {\n            return null;\n        }\n\n        $value = $entry->value;\n\n        return is_array($value) && array_key_exists('data', $value) && count($value) === 1\n            ? $value['data']\n            : $value;\n    }\n\n    public function recallAll(string $namespace, array $options = []): array\n    {\n        return SharedMemory::where('namespace', $namespace)\n            ->when($options['tenant_id'] ?? null, fn ($q, $id) => $q->where('tenant_id', $id))\n            ->when($options['sector'] ?? null, fn ($q, $s) => $q->where('sector', $s))\n            ->active()\n            ->latest()\n            ->get()\n            ->toArray();\n    }\n\n    public function searchBySector(string $sector, string $query, int $limit = 10): array\n    {\n        $embedding = $this->vectors->embed($query);\n\n        return SharedMemory::query()\n            ->from(\n                \\DB::raw('(SELECT *, shared_memories.value <#> ?::vector AS distance FROM shared_memories WHERE sector = ? AND vector_embedding IS NOT NULL) AS ranked'),\n                [$embedding->toJson(), $sector]\n            )\n            ->whereRaw(false)\n            ->orderBy('distance')\n            ->limit($limit)\n            ->get()\n            ->toArray();\n    }\n\n    public function crossSectorQuery(string $query, array $sectors, int $limit = 5): array\n    {\n        $embedding = $this->vectors->embed($query);\n\n        return SharedMemory::query()\n            ->from(\n                \\DB::raw('(SELECT *, shared_memories.value <#> ?::vector AS distance FROM shared_memories WHERE sector IN (?) AND vector_embedding IS NOT NULL) AS ranked'),\n                [$embedding->toJson(), $sectors]\n            )\n            ->whereRaw(false)\n            ->orderBy('distance')\n            ->limit($limit)\n            ->get()\n            ->groupBy('sector')\n            ->toArray();\n    }\n\n    public function forget(string $key, array $options = []): bool\n    {\n        $query = SharedMemory::where('key', $key);\n\n        if (isset($options['tenant_id'])) {\n            $query->where('tenant_id', $options['tenant_id']);\n        }\n\n        return $query->delete() > 0;\n    }\n\n    public function flushNamespace(string $namespace, array $options = []): int\n    {\n        $query = SharedMemory::where('namespace', $namespace);\n\n        if (isset($options['tenant_id'])) {\n            $query->where('tenant_id', $options['tenant_id']);\n        }\n\n        return $query->delete();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "375-enterprise-agent-orchestrator",
+      children: "37.5 Enterprise Agent Orchestrator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The orchestrator is the supervisor that coordinates work across all sector agents. It accepts high-level goals, decomposes them into workflows, dispatches each step to the correct agent via the message bus, monitors progress through shared memory, and handles failures with retry and escalation policies."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "workflow-definition",
+      children: "Workflow Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Orchestrator;\n\nclass WorkflowDefinition\n{\n    public function __construct(\n        public readonly string $name,\n        public readonly array $steps,\n        public readonly array $onSuccess = [],\n        public readonly array $onFailure = [],\n        public readonly int $timeout = 300,\n    ) {}\n\n    public static function fromArray(array $config): self\n    {\n        return new self(\n            name: $config['name'],\n            steps: array_map(\n                fn (array $step) => new WorkflowStep(...$step),\n                $config['steps'],\n            ),\n            onSuccess: $config['on_success'] ?? [],\n            onFailure: $config['on_failure'] ?? [],\n            timeout: $config['timeout'] ?? 300,\n        );\n    }\n}\n\nclass WorkflowStep\n{\n    public function __construct(\n        public readonly string $id,\n        public readonly string $description,\n        public readonly string $topic,\n        public readonly string $targetSector,\n        public readonly string $targetCapability,\n        public readonly array $inputMapping,\n        public readonly array $outputMapping,\n        public readonly ?string $dependsOn = null,\n        public readonly int $timeout = 60,\n        public readonly int $retries = 2,\n    ) {}\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "enterprise-orchestrator",
+      children: "Enterprise Orchestrator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Orchestrator;\n\nuse App\\Ai\\Bus\\AgentMessageBus;\nuse App\\Ai\\Memory\\SharedMemoryService;\nuse App\\Ai\\Registry\\AgentRegistrationService;\nuse App\\Ai\\Tenant\\MultiTenantAgentService;\nuse App\\Models\\Tenant;\nuse App\\Models\\WorkflowExecution;\nuse Illuminate\\Support\\Facades\\Log;\nuse Ramsey\\Uuid\\Uuid;\n\nclass EnterpriseOrchestrator\n{\n    private array $workflows = [];\n\n    public function __construct(\n        private AgentRegistrationService $registry,\n        private AgentMessageBus $bus,\n        private SharedMemoryService $memory,\n        private MultiTenantAgentService $tenant,\n    ) {}\n\n    public function registerWorkflow(WorkflowDefinition $workflow): void\n    {\n        $this->workflows[$workflow->name] = $workflow;\n    }\n\n    public function startWorkflow(string $workflowName, array $input, ?Tenant $tenant = null): string\n    {\n        $workflow = $this->workflows[$workflowName] ?? throw new \\InvalidArgumentException(\"Unknown workflow: {$workflowName}\");\n\n        $workflowId = (string) Uuid::uuid7();\n        $correlationId = (string) Uuid::uuid7();\n\n        $execution = WorkflowExecution::create([\n            'tenant_id' => $tenant?->id,\n            'workflow_name' => $workflowName,\n            'workflow_id' => $workflowId,\n            'correlation_id' => $correlationId,\n            'input' => $input,\n            'status' => 'running',\n            'started_at' => now(),\n        ]);\n\n        $this->memory->remember(\"workflow:{$workflowId}:context\", $input, [\n            'tenant_id' => $tenant?->id,\n            'workflow_id' => $workflowId,\n            'namespace' => 'workflow_context',\n        ]);\n\n        Log::info('EnterpriseOrchestrator: starting workflow', [\n            'workflow' => $workflowName,\n            'workflow_id' => $workflowId,\n        ]);\n\n        dispatch(new ExecuteWorkflowJob(\n            workflowName: $workflowName,\n            workflowId: $workflowId,\n            correlationId: $correlationId,\n            tenantId: $tenant?->id,\n            currentStepIndex: 0,\n        ))->onQueue('orchestrator');\n\n        return $workflowId;\n    }\n\n    public function executeStep(\n        string $workflowName,\n        string $workflowId,\n        int $stepIndex,\n        ?int $tenantId = null,\n    ): void {\n        $workflow = $this->workflows[$workflowName] ?? throw new \\InvalidArgumentException(\"Unknown workflow: {$workflowName}\");\n\n        if ($stepIndex >= count($workflow->steps)) {\n            $this->finalizeWorkflow($workflowId, 'completed', $tenantId);\n            return;\n        }\n\n        $step = $workflow->steps[$stepIndex];\n        $tenant = $tenantId ? Tenant::find($tenantId) : null;\n\n        $context = $this->memory->recall(\"workflow:{$workflowId}:context\", [\n            'tenant_id' => $tenantId,\n            'namespace' => 'workflow_context',\n        ]);\n\n        $input = $this->resolveInput($step->inputMapping, $context);\n\n        $agents = $this->registry->discover($step->targetCapability, $step->targetSector, $tenant);\n\n        if (empty($agents)) {\n            Log::error(\"EnterpriseOrchestrator: no agent found for step\", [\n                'workflow_id' => $workflowId,\n                'step' => $step->id,\n                'capability' => $step->targetCapability,\n            ]);\n\n            dispatch(new ExecuteWorkflowJob(\n                workflowName: $workflowName,\n                workflowId: $workflowId,\n                correlationId: $context['correlation_id'] ?? null,\n                tenantId: $tenantId,\n                currentStepIndex: $stepIndex,\n            ))->onQueue('orchestrator')->delay(30);\n\n            return;\n        }\n\n        $busOptions = [\n            'tenant_id' => $tenantId,\n            'workflow_id' => $workflowId,\n            'correlation_id' => $context['correlation_id'] ?? null,\n            'sender_agent_id' => $agents[0]['id'],\n        ];\n\n        $message = $this->bus->publish($step->topic, $input, $busOptions);\n\n        $this->memory->remember(\"workflow:{$workflowId}:step:{$step->id}:message_id\", $message->id, [\n            'tenant_id' => $tenantId,\n            'workflow_id' => $workflowId,\n            'namespace' => 'workflow_steps',\n        ]);\n\n        WorkflowExecution::where('workflow_id', $workflowId)\n            ->update(['current_step' => $step->id]);\n    }\n\n    public function advanceWorkflow(string $workflowId, array $stepOutput, ?int $tenantId = null): void\n    {\n        $execution = WorkflowExecution::where('workflow_id', $workflowId)->firstOrFail();\n        $workflow = $this->workflows[$execution->workflow_name];\n\n        $context = $this->memory->recall(\"workflow:{$workflowId}:context\", [\n            'tenant_id' => $tenantId,\n            'namespace' => 'workflow_context',\n        ]);\n\n        $mergedContext = array_merge_recursive($context ?? [], $stepOutput);\n\n        $this->memory->remember(\"workflow:{$workflowId}:context\", $mergedContext, [\n            'tenant_id' => $tenantId,\n            'namespace' => 'workflow_context',\n        ]);\n\n        $currentStepIndex = $execution->current_step_index + 1;\n\n        $execution->update(['current_step_index' => $currentStepIndex]);\n\n        dispatch(new ExecuteWorkflowJob(\n            workflowName: $execution->workflow_name,\n            workflowId: $workflowId,\n            correlationId: $execution->correlation_id,\n            tenantId: $tenantId,\n            currentStepIndex: $currentStepIndex,\n        ))->onQueue('orchestrator');\n    }\n\n    private function finalizeWorkflow(string $workflowId, string $status, ?int $tenantId = null): void\n    {\n        $context = $this->memory->recall(\"workflow:{$workflowId}:context\", [\n            'tenant_id' => $tenantId,\n            'namespace' => 'workflow_context',\n        ]);\n\n        WorkflowExecution::where('workflow_id', $workflowId)\n            ->update([\n                'status' => $status,\n                'output' => $context,\n                'completed_at' => now(),\n            ]);\n\n        Log::info('EnterpriseOrchestrator: workflow completed', [\n            'workflow_id' => $workflowId,\n            'status' => $status,\n        ]);\n    }\n\n    private function resolveInput(array $mapping, ?array $context): array\n    {\n        $resolved = [];\n\n        foreach ($mapping as $key => $path) {\n            $resolved[$key] = data_get($context, $path);\n        }\n\n        return $resolved;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "execute-workflow-job",
+      children: "Execute Workflow Job"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Orchestrator;\n\nuse Illuminate\\Contracts\\Queue\\ShouldQueue;\nuse Illuminate\\Foundation\\Bus\\Dispatchable;\nuse Illuminate\\Queue\\InteractsWithQueue;\n\nclass ExecuteWorkflowJob implements ShouldQueue\n{\n    use Dispatchable, InteractsWithQueue;\n\n    public int $timeout = 120;\n    public int $tries = 1;\n\n    public function __construct(\n        public string $workflowName,\n        public string $workflowId,\n        public ?string $correlationId,\n        public ?int $tenantId,\n        public int $currentStepIndex,\n    ) {}\n\n    public function handle(EnterpriseOrchestrator $orchestrator): void\n    {\n        $orchestrator->executeStep(\n            workflowName: $this->workflowName,\n            workflowId: $this->workflowId,\n            stepIndex: $this->currentStepIndex,\n            tenantId: $this->tenantId,\n        );\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "workflow-execution-model",
+      children: "Workflow Execution Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass WorkflowExecution extends Model\n{\n    protected $table = 'workflow_executions';\n\n    protected $fillable = [\n        'tenant_id',\n        'workflow_name',\n        'workflow_id',\n        'correlation_id',\n        'input',\n        'output',\n        'current_step',\n        'current_step_index',\n        'status',\n        'started_at',\n        'completed_at',\n    ];\n\n    protected $casts = [\n        'input' => 'array',\n        'output' => 'array',\n        'started_at' => 'datetime',\n        'completed_at' => 'datetime',\n    ];\n\n    public function scopeByTenant($query, int $tenantId)\n    {\n        return $query->where('tenant_id', $tenantId);\n    }\n\n    public function scopeActive($query)\n    {\n        return $query->whereIn('status', ['running', 'pending']);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cross-sector-workflow-definitions",
+      children: "Cross-Sector Workflow Definitions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Providers;\n\nuse App\\Ai\\Orchestrator\\EnterpriseOrchestrator;\nuse App\\Ai\\Orchestrator\\WorkflowDefinition;\nuse Illuminate\\Support\\ServiceProvider;\n\nclass WorkflowServiceProvider extends ServiceProvider\n{\n    public function boot(EnterpriseOrchestrator $orchestrator): void\n    {\n        $orchestrator->registerWorkflow(new WorkflowDefinition(\n            name: 'customer-support-to-billing',\n            steps: [\n                [\n                    'id' => 'triage',\n                    'description' => 'Classify the support ticket and determine intent',\n                    'topic' => 'ticket.created',\n                    'target_sector' => 'customer-service',\n                    'target_capability' => 'ticket:triage',\n                    'input_mapping' => ['ticket_id' => 'ticket_id', 'subject' => 'subject', 'description' => 'description'],\n                    'output_mapping' => ['intent' => 'intent', 'priority' => 'priority', 'assigned_sector' => 'assigned_sector'],\n                ],\n                [\n                    'id' => 'resolve_billing',\n                    'description' => 'Resolve the billing issue identified during triage',\n                    'topic' => 'billing.resolve',\n                    'target_sector' => 'finance',\n                    'target_capability' => 'transaction:monitor',\n                    'input_mapping' => ['ticket_id' => 'ticket_id', 'customer_id' => 'customer_id', 'issue_type' => 'intent'],\n                    'output_mapping' => ['resolution' => 'resolution', 'adjusted_amount' => 'adjusted_amount', 'status' => 'status'],\n                    'depends_on' => 'triage',\n                ],\n                [\n                    'id' => 'dispatch_survey',\n                    'description' => 'Send satisfaction survey after billing resolution',\n                    'topic' => 'survey.dispatch',\n                    'target_sector' => 'customer-service',\n                    'target_capability' => 'sentiment:analyze',\n                    'input_mapping' => ['ticket_id' => 'ticket_id', 'customer_id' => 'customer_id', 'resolution' => 'resolution'],\n                    'output_mapping' => ['survey_id' => 'survey_id', 'sentiment_score' => 'sentiment_score'],\n                    'depends_on' => 'resolve_billing',\n                ],\n            ],\n            onSuccess: [\n                'action' => 'notify_customer',\n                'channel' => 'email',\n            ],\n            onFailure: [\n                'action' => 'escalate_to_human',\n                'team' => 'support-managers',\n            ],\n            timeout: 300,\n        ));\n\n        $orchestrator->registerWorkflow(new WorkflowDefinition(\n            name: 'hr-onboarding-cross-sector',\n            steps: [\n                [\n                    'id' => 'screen_candidate',\n                    'description' => 'Screen the candidate resume against job requirements',\n                    'topic' => 'candidate.screen',\n                    'target_sector' => 'hr',\n                    'target_capability' => 'resume:screen',\n                    'input_mapping' => ['candidate_id' => 'candidate_id', 'resume_url' => 'resume_url', 'job_id' => 'job_id'],\n                    'output_mapping' => ['score' => 'score', 'highlights' => 'highlights', 'verdict' => 'verdict'],\n                ],\n                [\n                    'id' => 'schedule_training',\n                    'description' => 'Generate personalized training path for new hire',\n                    'topic' => 'training.generate',\n                    'target_sector' => 'education',\n                    'target_capability' => 'learning:path',\n                    'input_mapping' => ['employee_id' => 'employee_id', 'role' => 'role', 'skills_gap' => 'highlights'],\n                    'output_mapping' => ['training_plan' => 'training_plan', 'courses' => 'courses', 'timeline' => 'timeline'],\n                    'depends_on' => 'screen_candidate',\n                ],\n            ],\n            timeout: 180,\n        ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "376-multi-tenant-isolation",
+      children: "37.6 Multi-Tenant Isolation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Each organization (tenant) that uses the platform gets isolated agent instances. Agents are scoped to a tenant: their registrations, messages, shared memory, and workflow executions are all partitioned by ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tenant_id"
+      }), ". Configuration templates allow per-tenant customization of agent behavior."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "multi-tenant-agent-service",
+      children: "Multi-Tenant Agent Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Tenant;\n\nuse App\\Models\\AgentRegistration;\nuse App\\Models\\AgentRegistry;\nuse App\\Models\\Tenant;\nuse App\\Ai\\Registry\\AgentCapability;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Config;\n\nclass MultiTenantAgentService\n{\n    public function initializeTenant(Tenant $tenant, array $sectors = []): void\n    {\n        $sectors = $sectors ?: array_keys(config('agents.registry.sectors', []));\n\n        foreach ($sectors as $sector) {\n            $registryEntry = AgentRegistry::firstOrCreate(\n                ['sector' => $sector, 'name' => \"{$sector}::default\"],\n                ['description' => \"Default {$sector} agent\", 'status' => 'active'],\n            );\n\n            AgentRegistration::create([\n                'tenant_id' => $tenant->id,\n                'agent_registry_id' => $registryEntry->id,\n                'agent_class' => $this->resolveDefaultAgent($sector),\n                'sector' => $sector,\n                'capabilities' => array_map(fn (AgentCapability $c) => $c->value, AgentCapability::forSector($sector)),\n                'configuration' => $this->defaultConfigurationForSector($sector),\n                'status' => 'active',\n                'registered_at' => now(),\n            ]);\n        }\n\n        Cache::tags(\"tenant:{$tenant->id}:agents\")->flush();\n    }\n\n    public function agentForTenant(Tenant $tenant, string $capability): ?AgentRegistration\n    {\n        return AgentRegistration::where('tenant_id', $tenant->id)\n            ->whereJsonContains('capabilities', $capability)\n            ->where('status', 'active')\n            ->first();\n    }\n\n    public function allAgentsForTenant(Tenant $tenant): array\n    {\n        return AgentRegistration::where('tenant_id', $tenant->id)\n            ->where('status', 'active')\n            ->with('registryEntry')\n            ->get()\n            ->toArray();\n    }\n\n    public function configureAgent(Tenant $tenant, int $registrationId, array $configuration): AgentRegistration\n    {\n        $registration = AgentRegistration::where('tenant_id', $tenant->id)\n            ->findOrFail($registrationId);\n\n        $registration->update([\n            'configuration' => array_merge(\n                $registration->configuration ?? [],\n                $configuration,\n            ),\n        ]);\n\n        Cache::tags(\"tenant:{$tenant->id}:agents\")->flush();\n\n        return $registration->fresh();\n    }\n\n    public function scopeQuery(callable $query, Tenant $tenant): mixed\n    {\n        return $query(AgentRegistration::where('tenant_id', $tenant->id));\n    }\n\n    private function resolveDefaultAgent(string $sector): string\n    {\n        return match ($sector) {\n            'customer-service' => \\App\\Ai\\Agents\\CustomerService\\TicketTriageAgent::class,\n            'finance' => \\App\\Ai\\Agents\\Finance\\FraudDetectionAgent::class,\n            'healthcare' => \\App\\Ai\\Agents\\Healthcare\\ClinicalDecisionAgent::class,\n            'hr' => \\App\\Ai\\Agents\\Hr\\ResumeScreeningAgent::class,\n            'education' => \\App\\Ai\\Agents\\Education\\PersonalizedLearningAgent::class,\n            'logistics' => \\App\\Ai\\Agents\\Logistics\\InventoryPredictionAgent::class,\n            'marketing' => \\App\\Ai\\Agents\\Marketing\\CampaignOptimizationAgent::class,\n            'legal' => \\App\\Ai\\Agents\\Legal\\ContractReviewAgent::class,\n            'real-estate' => \\App\\Ai\\Agents\\RealEstate\\PropertyValuationAgent::class,\n            'manufacturing' => \\App\\Ai\\Agents\\Manufacturing\\PredictiveMaintenanceAgent::class,\n            default => throw new \\InvalidArgumentException(\"Unknown sector: {$sector}\"),\n        };\n    }\n\n    private function defaultConfigurationForSector(string $sector): array\n    {\n        return Config::get(\"agents.sectors.{$sector}.default_configuration\", [\n            'model' => Config::get('agents.default_model', 'gpt-4o'),\n            'temperature' => 0.3,\n            'max_tokens' => 2000,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "tenant-middleware-for-agent-isolation",
+      children: "Tenant Middleware for Agent Isolation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Middleware;\n\nuse App\\Models\\Tenant;\nuse Closure;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\Config;\n\nclass ResolveAgentTenant\n{\n    public function handle(Request $request, Closure $next)\n    {\n        $tenantId = $request->header('X-Tenant-ID')\n            ?? $request->route('tenant')\n            ?? $request->user()?->tenant_id;\n\n        if (!$tenantId) {\n            return response()->json(['error' => 'Tenant required'], 400);\n        }\n\n        $tenant = Tenant::find($tenantId);\n\n        if (!$tenant || !$tenant->active) {\n            return response()->json(['error' => 'Invalid or inactive tenant'], 403);\n        }\n\n        Config::set('agents.current_tenant', $tenant);\n        Config::set('agents.current_tenant_id', $tenant->id);\n\n        $request->merge(['_tenant' => $tenant]);\n\n        return $next($request);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "tenant-scoped-agent-resolution",
+      children: "Tenant-Scoped Agent Resolution"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Tenant;\n\nuse App\\Models\\AgentRegistration;\nuse App\\Models\\Tenant;\n\nclass TenantAgentResolver\n{\n    public function resolve(string $capability, ?Tenant $tenant = null): AgentRegistration\n    {\n        $tenant = $tenant ?? config('agents.current_tenant');\n\n        if (!$tenant) {\n            throw new \\RuntimeException('No tenant context available');\n        }\n\n        $registration = AgentRegistration::where('tenant_id', $tenant->id)\n            ->whereJsonContains('capabilities', $capability)\n            ->where('status', 'active')\n            ->first();\n\n        if (!$registration) {\n            throw new \\RuntimeException(\"No agent found for capability: {$capability} in tenant: {$tenant->id}\");\n        }\n\n        return $registration;\n    }\n\n    public function resolveAll(?Tenant $tenant = null): array\n    {\n        $tenant = $tenant ?? config('agents.current_tenant');\n\n        if (!$tenant) {\n            return [];\n        }\n\n        return AgentRegistration::where('tenant_id', $tenant->id)\n            ->where('status', 'active')\n            ->get()\n            ->all();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "377-mcp-server-integration",
+      children: "37.7 MCP Server Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The platform exposes every registered agent as a tool through the Model Context Protocol. External AI assistants can discover and invoke enterprise agents directly. The platform also connects to third-party MCP servers to extend agent capabilities."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mcp-gateway-controller",
+      children: "MCP Gateway Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Api;\n\nuse App\\Ai\\Registry\\AgentRegistrationService;\nuse App\\Ai\\Tenant\\MultiTenantAgentService;\nuse App\\Models\\Tenant;\nuse Illuminate\\Http\\JsonResponse;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Routing\\Controller;\n\nclass McpGatewayController extends Controller\n{\n    public function __construct(\n        private AgentRegistrationService $registry,\n        private MultiTenantAgentService $tenant,\n    ) {}\n\n    public function listTools(Request $request): JsonResponse\n    {\n        $tenant = $request->attributes->get('_tenant');\n        $agents = $this->tenant->allAgentsForTenant($tenant);\n\n        $tools = array_map(function (array $agent) {\n            return [\n                'name' => \"agent_{$agent['id']}\",\n                'description' => $agent['registry_entry']['description'] ?? 'No description',\n                'input_schema' => [\n                    'type' => 'object',\n                    'properties' => [\n                        'action' => [\n                            'type' => 'string',\n                            'description' => 'The action to perform',\n                            'enum' => $agent['capabilities'],\n                        ],\n                        'parameters' => [\n                            'type' => 'object',\n                            'description' => 'Action parameters',\n                        ],\n                    ],\n                    'required' => ['action', 'parameters'],\n                ],\n                'annotations' => [\n                    'title' => $agent['registry_entry']['name'] ?? \"Agent {$agent['id']}\",\n                    'sector' => $agent['sector'],\n                    'capabilities' => $agent['capabilities'],\n                ],\n            ];\n        }, $agents);\n\n        return response()->json(['tools' => $tools]);\n    }\n\n    public function callTool(Request $request): JsonResponse\n    {\n        $request->validate([\n            'name' => 'required|string',\n            'arguments' => 'required|array',\n        ]);\n\n        $tenant = $request->attributes->get('_tenant');\n        $name = $request->input('name');\n        $arguments = $request->input('arguments');\n\n        preg_match('/^agent_(\\d+)$/', $name, $matches);\n\n        if (!$matches) {\n            return response()->json([\n                'content' => [['type' => 'text', 'text' => \"Unknown tool: {$name}\"]],\n                'is_error' => true,\n            ], 404);\n        }\n\n        $agentId = (int) $matches[1];\n        $result = $this->registry->call($agentId, $arguments, $tenant);\n\n        return response()->json([\n            'content' => [\n                ['type' => 'text', 'text' => json_encode($result)],\n            ],\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mcp-server-registration",
+      children: "MCP Server Registration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Mcp;\n\nuse App\\Models\\McpServer;\nuse Illuminate\\Http\\Client\\Pool;\nuse Illuminate\\Support\\Facades\\Http;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass McpServerManager\n{\n    private array $connectedServers = [];\n\n    public function register(McpServer $server): void\n    {\n        if ($server->type === 'local') {\n            $this->connectLocal($server);\n        } else {\n            $this->connectRemote($server);\n        }\n    }\n\n    public function connectLocal(McpServer $server): void\n    {\n        if (!file_exists($server->command)) {\n            throw new \\RuntimeException(\"MCP server script not found: {$server->command}\");\n        }\n\n        $this->connectedServers[$server->name] = [\n            'server' => $server,\n            'type' => 'local',\n        ];\n\n        Log::info(\"MCP server registered: {$server->name} (local)\");\n    }\n\n    public function connectRemote(McpServer $server): void\n    {\n        $healthCheck = Http::timeout(5)->get(\"{$server->base_url}/health\");\n\n        if (!$healthCheck->successful()) {\n            Log::warning(\"MCP server unreachable: {$server->name}\", [\n                'url' => $server->base_url,\n                'status' => $healthCheck->status(),\n            ]);\n            return;\n        }\n\n        $this->connectedServers[$server->name] = [\n            'server' => $server,\n            'type' => 'remote',\n        ];\n\n        Log::info(\"MCP server connected: {$server->name}\");\n    }\n\n    public function listTools(): array\n    {\n        $tools = [];\n\n        foreach ($this->connectedServers as $name => $connection) {\n            $server = $connection['server'];\n\n            if ($connection['type'] === 'remote') {\n                $response = Http::timeout(10)\n                    ->withToken($server->api_key)\n                    ->get(\"{$server->base_url}/mcp/tools\");\n\n                if ($response->successful()) {\n                    $tools[$name] = $response->json('tools', []);\n                }\n            }\n        }\n\n        return $tools;\n    }\n\n    public function callTool(string $serverName, string $toolName, array $arguments): mixed\n    {\n        $connection = $this->connectedServers[$serverName]\n            ?? throw new \\RuntimeException(\"MCP server not connected: {$serverName}\");\n\n        $server = $connection['server'];\n\n        if ($connection['type'] === 'remote') {\n            $response = Http::timeout(30)\n                ->withToken($server->api_key)\n                ->post(\"{$server->base_url}/mcp/call\", [\n                    'name' => $toolName,\n                    'arguments' => $arguments,\n                ]);\n\n            if (!$response->successful()) {\n                throw new \\RuntimeException(\"MCP tool call failed: {$response->body()}\");\n            }\n\n            return $response->json('content', []);\n        }\n\n        throw new \\RuntimeException('Local MCP execution not implemented in this example');\n    }\n\n    public function disconnect(string $name): void\n    {\n        unset($this->connectedServers[$name]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "mcp-server-model",
+      children: "MCP Server Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass McpServer extends Model\n{\n    protected $table = 'mcp_servers';\n\n    protected $fillable = [\n        'tenant_id',\n        'name',\n        'description',\n        'type',\n        'command',\n        'base_url',\n        'api_key',\n        'configuration',\n        'enabled',\n    ];\n\n    protected $casts = [\n        'configuration' => 'array',\n        'enabled' => 'boolean',\n    ];\n\n    public function scopeEnabled($query)\n    {\n        return $query->where('enabled', true);\n    }\n\n    public function scopeByTenant($query, int $tenantId)\n    {\n        return $query->where('tenant_id', $tenantId);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "378-monitoring--observability",
+      children: "37.8 Monitoring & Observability"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every agent action, message, workflow step, and memory access is traced. The monitoring system provides a real-time dashboard of agent health, performance metrics, and error rates, powered by Laravel Pulse and a custom AgentMetrics model."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-metrics-model",
+      children: "Agent Metrics Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass AgentMetrics extends Model\n{\n    protected $table = 'agent_metrics';\n\n    protected $fillable = [\n        'tenant_id',\n        'agent_registration_id',\n        'metric_name',\n        'metric_value',\n        'tags',\n        'recorded_at',\n    ];\n\n    protected $casts = [\n        'metric_value' => 'float',\n        'tags' => 'array',\n        'recorded_at' => 'datetime',\n    ];\n\n    public function scopeByAgent($query, int $agentId)\n    {\n        return $query->where('agent_registration_id', $agentId);\n    }\n\n    public function scopeByName($query, string $name)\n    {\n        return $query->where('metric_name', $name);\n    }\n\n    public function scopeSince($query, \\DateTimeInterface $since)\n    {\n        return $query->where('recorded_at', '>=', $since);\n    }\n\n    public static function record(int $agentId, string $name, float $value, array $tags = []): self\n    {\n        return static::create([\n            'agent_registration_id' => $agentId,\n            'metric_name' => $name,\n            'metric_value' => $value,\n            'tags' => $tags,\n            'recorded_at' => now(),\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-monitor",
+      children: "Agent Monitor"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Monitoring;\n\nuse App\\Models\\AgentMetrics;\nuse App\\Models\\AgentRegistration;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass AgentMonitor\n{\n    private array $trace = [];\n\n    public function startTrace(string $agentClass, array $context = []): string\n    {\n        $traceId = md5($agentClass . microtime(true) . rand());\n\n        $this->trace[$traceId] = [\n            'agent' => $agentClass,\n            'started_at' => microtime(true),\n            'context' => $context,\n            'events' => [],\n        ];\n\n        Log::debug('AgentMonitor: trace started', [\n            'trace_id' => $traceId,\n            'agent' => $agentClass,\n        ]);\n\n        return $traceId;\n    }\n\n    public function recordEvent(string $traceId, string $event, array $data = []): void\n    {\n        if (!isset($this->trace[$traceId])) {\n            return;\n        }\n\n        $this->trace[$traceId]['events'][] = [\n            'event' => $event,\n            'data' => $data,\n            'timestamp' => microtime(true),\n        ];\n    }\n\n    public function endTrace(string $traceId, array $metrics = []): array\n    {\n        if (!isset($this->trace[$traceId])) {\n            return [];\n        }\n\n        $trace = $this->trace[$traceId];\n        $duration = (microtime(true) - $trace['started_at']) * 1000;\n\n        $result = array_merge($trace, [\n            'duration_ms' => round($duration, 2),\n            'metrics' => $metrics,\n            'ended_at' => now()->toIso8601String(),\n        ]);\n\n        $registration = AgentRegistration::where('agent_class', $trace['agent'])->first();\n\n        if ($registration) {\n            AgentMetrics::record(\n                $registration->id,\n                'response_time_ms',\n                $duration,\n                ['trace_id' => $traceId],\n            );\n\n            AgentMetrics::record(\n                $registration->id,\n                'call_count',\n                1,\n                ['trace_id' => $traceId],\n            );\n        }\n\n        Log::info('AgentMonitor: trace completed', [\n            'trace_id' => $traceId,\n            'duration_ms' => round($duration, 2),\n        ]);\n\n        unset($this->trace[$traceId]);\n\n        return $result;\n    }\n\n    public function healthStatus(?int $tenantId = null): array\n    {\n        $query = AgentRegistration::query();\n\n        if ($tenantId) {\n            $query->where('tenant_id', $tenantId);\n        }\n\n        $agents = $query->with('metrics')->get();\n        $results = [];\n\n        foreach ($agents as $agent) {\n            $recentMetrics = AgentMetrics::byAgent($agent->id)\n                ->since(now()->subMinutes(5))\n                ->get();\n\n            $errorCount = $recentMetrics->where('metric_name', 'error_count')->sum('metric_value');\n            $avgResponseTime = $recentMetrics->where('metric_name', 'response_time_ms')->avg('metric_value');\n            $callCount = $recentMetrics->where('metric_name', 'call_count')->sum('metric_value');\n\n            $isHealthy = $agent->status === 'active'\n                && $errorCount < 5\n                && ($avgResponseTime === null || $avgResponseTime < 30000);\n\n            $results[] = [\n                'agent_id' => $agent->id,\n                'name' => $agent->agent_class,\n                'sector' => $agent->sector,\n                'status' => $agent->status,\n                'healthy' => $isHealthy,\n                'metrics' => [\n                    'avg_response_time_ms' => round($avgResponseTime ?? 0, 2),\n                    'call_count_5m' => (int) $callCount,\n                    'error_count_5m' => (int) $errorCount,\n                ],\n                'last_heartbeat' => $agent->last_heartbeat_at?->toIso8601String(),\n            ];\n        }\n\n        return $results;\n    }\n\n    public function recordHeartbeat(int $registrationId): void\n    {\n        AgentRegistration::where('id', $registrationId)\n            ->update(['last_heartbeat_at' => now()]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "agent-dashboard-controller",
+      children: "Agent Dashboard Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Dashboard;\n\nuse App\\Ai\\Monitoring\\AgentMonitor;\nuse App\\Models\\AgentMetrics;\nuse App\\Models\\WorkflowExecution;\nuse Illuminate\\Http\\JsonResponse;\nuse Illuminate\\Routing\\Controller;\n\nclass AgentDashboardController extends Controller\n{\n    public function __construct(\n        private AgentMonitor $monitor,\n    ) {}\n\n    public function health(): JsonResponse\n    {\n        $tenant = config('agents.current_tenant');\n        $status = $this->monitor->healthStatus($tenant?->id);\n\n        return response()->json([\n            'data' => $status,\n            'meta' => [\n                'total_agents' => count($status),\n                'healthy_count' => count(array_filter($status, fn ($a) => $a['healthy'])),\n                'unhealthy_count' => count(array_filter($status, fn ($a) => !$a['healthy'])),\n            ],\n        ]);\n    }\n\n    public function metrics(string $metric, string $period = '1h'): JsonResponse\n    {\n        $tenant = config('agents.current_tenant');\n        $since = match ($period) {\n            '1h' => now()->subHour(),\n            '6h' => now()->subHours(6),\n            '24h' => now()->subDay(),\n            '7d' => now()->subWeek(),\n            default => now()->subHour(),\n        };\n\n        $query = AgentMetrics::since($since)->byName($metric);\n\n        if ($tenant) {\n            $query->where('tenant_id', $tenant->id);\n        }\n\n        $metrics = $query->get()->groupBy(function ($item) {\n            return $item->recorded_at->format('Y-m-d H:i');\n        })->map(function ($group) {\n            return [\n                'avg' => $group->avg('metric_value'),\n                'max' => $group->max('metric_value'),\n                'count' => $group->count(),\n            ];\n        });\n\n        return response()->json([\n            'metric' => $metric,\n            'period' => $period,\n            'data' => $metrics,\n        ]);\n    }\n\n    public function workflows(): JsonResponse\n    {\n        $tenant = config('agents.current_tenant');\n\n        $executions = WorkflowExecution::query()\n            ->when($tenant, fn ($q) => $q->where('tenant_id', $tenant->id))\n            ->latest()\n            ->limit(50)\n            ->get();\n\n        return response()->json([\n            'data' => $executions,\n            'meta' => [\n                'running' => $executions->where('status', 'running')->count(),\n                'completed' => $executions->where('status', 'completed')->count(),\n                'failed' => $executions->where('status', 'failed')->count(),\n            ],\n        ]);\n    }\n\n    public function traces(int $agentId): JsonResponse\n    {\n        $tenant = config('agents.current_tenant');\n\n        $metrics = AgentMetrics::byAgent($agentId)\n            ->when($tenant, fn ($q) => $q->where('tenant_id', $tenant->id))\n            ->latest()\n            ->limit(100)\n            ->get();\n\n        return response()->json(['data' => $metrics]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "379-deployment-architecture",
+      children: "37.9 Deployment Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The platform deploys on Laravel Vapor with auto-scaling workers. Multi-region setup ensures availability. Queue configuration routes agent workloads to dedicated queues with isolation guarantees."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "serverless-configuration",
+      children: "Serverless Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# vapor.yml\nid: emap-platform\nname: Enterprise Multi-Agent Platform\nenvironments:\n  production:\n    memory: 1024\n    cli-memory: 512\n    runtime: php-8.3\n    storage: emap-production-storage\n    database: emap-production-db\n    network: emap-production-vpc\n  \n    queues:\n      - agents\n      - orchestrator\n      - workflows\n      - memory\n      - mcp\n  \n    worker-max-concurrency: 25\n    queue-concurrency:\n      agents: 10\n      orchestrator: 5\n      workflows: 8\n      memory: 3\n      mcp: 5\n  \n    scheduled-tasks:\n      - heartbeat-check: \"* * * * *\"\n      - cleanup-expired-memory: \"0 * * * *\"\n  \n    deploy:\n      - \"php artisan migrate --force\"\n      - \"php artisan agents:register-defaults\"\n  \n    warm:\n      - \"agent-registry\"\n      - \"shared-memory\"\n  \n    scale:\n      min: 2\n      max: 20\n  \n    regions:\n      - us-east-1\n      - eu-west-1\n      - ap-southeast-1\n  \n    alerts:\n      - name: AgentFailureRate\n        metric: ErrorRate\n        threshold: 0.05\n        period: 300\n      - name: WorkflowLatency\n        metric: P99ResponseTime\n        threshold: 30000\n        period: 300\n\n  staging:\n    memory: 512\n    runtime: php-8.3\n    queues:\n      - agents\n      - orchestrator\n    scale:\n      min: 1\n      max: 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "queue-worker-setup",
+      children: "Queue Worker Setup"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Providers;\n\nuse Illuminate\\Queue\\WorkerOptions;\nuse Illuminate\\Support\\Facades\\Queue;\nuse Illuminate\\Support\\ServiceProvider;\n\nclass QueueWorkerServiceProvider extends ServiceProvider\n{\n    public function boot(): void\n    {\n        Queue::looping(function () {\n            if (config('agents.current_tenant_id')) {\n                config()->set('database.connections.pgsql.tenant_id', config('agents.current_tenant_id'));\n            }\n        });\n\n        Queue::after(function ($event) {\n            logger('Queue job completed', [\n                'job' => $event->job->getName(),\n                'queue' => $event->job->getQueue(),\n                'attempts' => $event->job->attempts(),\n            ]);\n        });\n\n        Queue::failing(function ($event) {\n            logger('Queue job failed', [\n                'job' => $event->job->getName(),\n                'queue' => $event->job->getQueue(),\n                'error' => $event->exception->getMessage(),\n            ]);\n\n            if (config('agents.monitoring.tracing_enabled')) {\n                \\App\\Models\\AgentMetrics::record(\n                    agentRegistrationId: 0,\n                    name: 'queue_job_failure',\n                    value: 1,\n                    tags: [\n                        'job' => $event->job->getName(),\n                        'queue' => $event->job->getQueue(),\n                        'error' => $event->exception->getMessage(),\n                    ],\n                );\n            }\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "horizon-configuration",
+      children: "Horizon Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nreturn [\n\n    'domain' => env('HORIZON_DOMAIN'),\n\n    'paths' => [\n        'api' => env('HORIZON_API_PATH', 'horizon'),\n    ],\n\n    'environments' => [\n        'production' => [\n            'supervisor-1' => [\n                'connection' => 'redis',\n                'queue' => ['agents-high', 'agents', 'orchestrator', 'workflows', 'memory', 'mcp'],\n                'balance' => 'auto',\n                'autoScalingStrategy' => 'time',\n                'minProcesses' => 2,\n                'maxProcesses' => 20,\n                'balanceMaxShift' => 2,\n                'balanceCooldown' => 5,\n                'tries' => 3,\n                'timeout' => 120,\n            ],\n        ],\n\n        'staging' => [\n            'supervisor-1' => [\n                'connection' => 'redis',\n                'queue' => ['agents', 'orchestrator'],\n                'balance' => 'simple',\n                'minProcesses' => 1,\n                'maxProcesses' => 5,\n                'tries' => 3,\n                'timeout' => 120,\n            ],\n        ],\n    ],\n\n];\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "scaling-policies",
+      children: "Scaling Policies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Deployment;\n\nuse App\\Models\\AgentMetrics;\nuse Illuminate\\Support\\Facades\\Cache;\n\nclass ScalingPolicy\n{\n    public function __construct(\n        private int $minWorkers = 2,\n        private int $maxWorkers = 20,\n        private float $scaleUpThreshold = 0.75,\n        private float $scaleDownThreshold = 0.25,\n        private int $cooldownSeconds = 300,\n    ) {}\n\n    public function evaluateAgentQueueScale(): int\n    {\n        $cacheKey = 'scaling:agent_queue_target';\n        $lastScale = Cache::get('scaling:last_action', 0);\n\n        if (now()->timestamp - $lastScale < $this->cooldownSeconds) {\n            return Cache::get($cacheKey, $this->minWorkers);\n        }\n\n        $recentLoad = AgentMetrics::since(now()->subMinutes(5))\n            ->byName('queue_depth')\n            ->get();\n\n        if ($recentLoad->isEmpty()) {\n            return $this->minWorkers;\n        }\n\n        $avgDepth = $recentLoad->avg('metric_value');\n        $currentWorkers = Cache::get('horizon:supervisor-1:processes', $this->minWorkers);\n\n        $utilization = $currentWorkers > 0 ? $avgDepth / $currentWorkers : 0;\n\n        $targetWorkers = $currentWorkers;\n\n        if ($utilization > $this->scaleUpThreshold && $currentWorkers < $this->maxWorkers) {\n            $targetWorkers = min($this->maxWorkers, (int) ceil($currentWorkers * 1.5));\n        } elseif ($utilization < $this->scaleDownThreshold && $currentWorkers > $this->minWorkers) {\n            $targetWorkers = max($this->minWorkers, (int) floor($currentWorkers * 0.75));\n        }\n\n        Cache::put($cacheKey, $targetWorkers, 600);\n        Cache::put('scaling:last_action', now()->timestamp, 600);\n\n        return $targetWorkers;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "3710-complete-end-to-end-workflow",
+      children: "37.10 Complete End-to-End Workflow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This section walks through a real cross-sector workflow: a customer submits a support ticket about an incorrect billing charge. The triage agent (Chapter 33) classifies it as a billing issue. The message bus routes it to the finance billing agent (Chapter 28). Once resolved, the satisfaction agent (Chapter 33) dispatches a survey. All steps share context through the shared memory system."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "workflow-trigger-controller",
+      children: "Workflow Trigger Controller"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers\\Api;\n\nuse App\\Ai\\Orchestrator\\EnterpriseOrchestrator;\nuse App\\Models\\Tenant;\nuse Illuminate\\Http\\JsonResponse;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Routing\\Controller;\n\nclass WorkflowTriggerController extends Controller\n{\n    public function __construct(\n        private EnterpriseOrchestrator $orchestrator,\n    ) {}\n\n    public function submitTicket(Request $request): JsonResponse\n    {\n        $request->validate([\n            'customer_id' => 'required|string',\n            'subject' => 'required|string|max:255',\n            'description' => 'required|string',\n            'tenant_id' => 'required|exists:tenants,id',\n        ]);\n\n        $tenant = Tenant::findOrFail($request->input('tenant_id'));\n\n        $workflowId = $this->orchestrator->startWorkflow(\n            workflowName: 'customer-support-to-billing',\n            input: [\n                'ticket_id' => (string) \\Illuminate\\Support\\Str::uuid(),\n                'customer_id' => $request->input('customer_id'),\n                'subject' => $request->input('subject'),\n                'description' => $request->input('description'),\n                'submitted_at' => now()->toIso8601String(),\n            ],\n            tenant: $tenant,\n        );\n\n        return response()->json([\n            'workflow_id' => $workflowId,\n            'status' => 'processing',\n            '_links' => [\n                'status' => route('workflows.status', ['id' => $workflowId]),\n            ],\n        ], 202);\n    }\n\n    public function workflowStatus(string $id): JsonResponse\n    {\n        $execution = \\App\\Models\\WorkflowExecution::where('workflow_id', $id)->firstOrFail();\n\n        return response()->json([\n            'workflow_id' => $execution->workflow_id,\n            'name' => $execution->workflow_name,\n            'status' => $execution->status,\n            'current_step' => $execution->current_step,\n            'started_at' => $execution->started_at,\n            'completed_at' => $execution->completed_at,\n        ]);\n    }\n\n    public function workflowOutput(string $id): JsonResponse\n    {\n        $execution = \\App\\Models\\WorkflowExecution::where('workflow_id', $id)->firstOrFail();\n\n        return response()->json([\n            'workflow_id' => $execution->workflow_id,\n            'status' => $execution->status,\n            'output' => $execution->output,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "routes",
+      children: "Routes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse App\\Http\\Controllers\\Api\\McpGatewayController;\nuse App\\Http\\Controllers\\Api\\WorkflowTriggerController;\nuse App\\Http\\Controllers\\Dashboard\\AgentDashboardController;\nuse App\\Http\\Middleware\\ResolveAgentTenant;\nuse Illuminate\\Support\\Facades\\Route;\n\nRoute::middleware(['auth:sanctum', ResolveAgentTenant::class])->group(function () {\n\n    // Workflow triggers\n    Route::post('/workflows/ticket', [WorkflowTriggerController::class, 'submitTicket']);\n    Route::get('/workflows/{id}', [WorkflowTriggerController::class, 'workflowStatus']);\n    Route::get('/workflows/{id}/output', [WorkflowTriggerController::class, 'workflowOutput']);\n\n    // MCP gateway\n    Route::get('/mcp/tools', [McpGatewayController::class, 'listTools']);\n    Route::post('/mcp/call', [McpGatewayController::class, 'callTool']);\n\n    // Dashboard\n    Route::get('/dashboard/health', [AgentDashboardController::class, 'health']);\n    Route::get('/dashboard/metrics/{metric}/{period?}', [AgentDashboardController::class, 'metrics']);\n    Route::get('/dashboard/workflows', [AgentDashboardController::class, 'workflows']);\n    Route::get('/dashboard/traces/{agent}', [AgentDashboardController::class, 'traces']);\n\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "end-to-end-walkthrough-code",
+      children: "End-to-End Walkthrough Code"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Ai\\Workflows;\n\nuse App\\Ai\\Bus\\AgentMessageBus;\nuse App\\Ai\\Memory\\SharedMemoryService;\nuse App\\Models\\WorkflowExecution;\nuse Illuminate\\Support\\Facades\\Log;\n\nclass CrossSectorWorkflowRunner\n{\n    public function __construct(\n        private AgentMessageBus $bus,\n        private SharedMemoryService $memory,\n    ) {}\n\n    /**\n     * Simulates the full end-to-end flow:\n     *\n     * 1. Customer submits ticket about incorrect billing charge\n     * 2. Triage agent classifies as billing issue\n     * 3. Bus routes to finance billing agent\n     * 4. Billing agent resolves issue, adjusts amount\n     * 5. Bus routes to satisfaction agent\n     * 6. Satisfaction agent dispatches survey\n     *\n     * All steps log to shared memory for traceability.\n     */\n    public function run(string $ticketId, string $customerId, string $description): array\n    {\n        $correlationId = (string) \\Illuminate\\Support\\Str::uuid();\n\n        Log::info('=== END-TO-END WORKFLOW START ===', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n        ]);\n\n        // ── Step 1: Submit ticket to shared memory ──\n        $this->memory->remember(\"ticket:{$ticketId}:submission\", [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'description' => $description,\n            'submitted_at' => now()->toIso8601String(),\n        ], [\n            'namespace' => 'tickets',\n            'correlation_id' => $correlationId,\n        ]);\n\n        // ── Step 2: Triage agent classifies the ticket ──\n        $triageResult = $this->bus->publish('ticket.created', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'subject' => 'Incorrect charge on invoice #INV-2024-0891',\n            'description' => $description,\n        ], [\n            'correlation_id' => $correlationId,\n            'workflow_id' => \"wf-{$ticketId}\",\n        ]);\n\n        $this->memory->remember(\"ticket:{$ticketId}:triage\", [\n            'intent' => 'billing_dispute',\n            'priority' => 'high',\n            'assigned_sector' => 'finance',\n            'confidence' => 0.94,\n        ], [\n            'namespace' => 'tickets',\n            'correlation_id' => $correlationId,\n        ]);\n\n        Log::info('Step 2: Triage complete', [\n            'intent' => 'billing_dispute',\n            'assigned_sector' => 'finance',\n        ]);\n\n        // ── Step 3: Bus routes triage.completed → billing.resolve ──\n        $this->bus->publish('triage.completed', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'intent' => 'billing_dispute',\n            'assigned_sector' => 'finance',\n        ], [\n            'correlation_id' => $correlationId,\n            'workflow_id' => \"wf-{$ticketId}\",\n        ]);\n\n        // ── Step 4: Finance billing agent resolves the issue ──\n        $billingResult = $this->bus->publish('billing.resolve', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'issue_type' => 'incorrect_charge',\n            'invoice_id' => 'INV-2024-0891',\n            'disputed_amount' => 149.99,\n        ], [\n            'correlation_id' => $correlationId,\n            'workflow_id' => \"wf-{$ticketId}\",\n        ]);\n\n        $resolution = [\n            'resolution' => 'Credit issued for disputed amount',\n            'adjusted_amount' => 0.00,\n            'status' => 'resolved',\n            'resolved_by' => 'BillingAgent',\n            'resolved_at' => now()->toIso8601String(),\n        ];\n\n        $this->memory->remember(\"ticket:{$ticketId}:billing\", $resolution, [\n            'namespace' => 'tickets',\n            'correlation_id' => $correlationId,\n        ]);\n\n        Log::info('Step 4: Billing resolved', $resolution);\n\n        // ── Step 5: Bus routes billing.resolved → survey.dispatch ──\n        $this->bus->publish('billing.resolved', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'resolution' => 'Credit issued',\n        ], [\n            'correlation_id' => $correlationId,\n            'workflow_id' => \"wf-{$ticketId}\",\n        ]);\n\n        // ── Step 6: Satisfaction agent dispatches survey ──\n        $surveyResult = $this->bus->publish('survey.dispatch', [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'channel' => 'email',\n            'survey_type' => 'post_resolution',\n        ], [\n            'correlation_id' => $correlationId,\n            'workflow_id' => \"wf-{$ticketId}\",\n        ]);\n\n        $this->memory->remember(\"ticket:{$ticketId}:survey\", [\n            'survey_id' => (string) \\Illuminate\\Support\\Str::uuid(),\n            'survey_type' => 'post_resolution',\n            'status' => 'sent',\n            'sent_at' => now()->toIso8601String(),\n        ], [\n            'namespace' => 'tickets',\n            'correlation_id' => $correlationId,\n        ]);\n\n        Log::info('Step 6: Survey dispatched');\n\n        // ── Final: Compile full workflow output from shared memory ──\n        $fullContext = $this->memory->recallAll('tickets', [\n            'namespace' => 'tickets',\n        ]);\n\n        $output = [\n            'ticket_id' => $ticketId,\n            'customer_id' => $customerId,\n            'correlation_id' => $correlationId,\n            'status' => 'completed',\n            'steps' => [\n                'submission' => $fullContext[0] ?? null,\n                'triage' => $fullContext[1] ?? null,\n                'billing_resolution' => $resolution,\n                'survey' => $fullContext[3] ?? null,\n            ],\n            'completed_at' => now()->toIso8601String(),\n        ];\n\n        WorkflowExecution::where('workflow_id', \"wf-{$ticketId}\")\n            ->update([\n                'status' => 'completed',\n                'output' => $output,\n                'completed_at' => now(),\n            ]);\n\n        Log::info('=== END-TO-END WORKFLOW COMPLETE ===', [\n            'ticket_id' => $ticketId,\n            'status' => 'completed',\n        ]);\n\n        return $output;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "database-migrations-summary",
+      children: "Database Migrations Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('agent_registry', function (Blueprint $table) {\n            $table->id();\n            $table->string('name');\n            $table->string('class_name');\n            $table->string('sector');\n            $table->text('description')->nullable();\n            $table->json('capabilities')->nullable();\n            $table->json('triggers')->nullable();\n            $table->json('configuration')->nullable();\n            $table->string('status')->default('active');\n            $table->string('version')->default('1.0.0');\n            $table->timestamps();\n        });\n\n        Schema::create('agent_registrations', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->foreignId('agent_registry_id')->constrained();\n            $table->string('agent_class');\n            $table->string('sector');\n            $table->json('capabilities');\n            $table->json('configuration')->nullable();\n            $table->string('status')->default('active');\n            $table->timestamp('registered_at')->nullable();\n            $table->timestamp('last_heartbeat_at')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('agent_messages', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->string('workflow_id')->nullable()->index();\n            $table->string('correlation_id')->nullable()->index();\n            $table->string('topic')->index();\n            $table->foreignId('sender_agent_id')->nullable()->references('id')->on('agent_registrations');\n            $table->foreignId('recipient_agent_id')->nullable()->references('id')->on('agent_registrations');\n            $table->json('payload');\n            $table->string('status')->default('pending');\n            $table->string('priority')->default('normal');\n            $table->timestamp('delivered_at')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('shared_memories', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->string('workflow_id')->nullable()->index();\n            $table->string('correlation_id')->nullable()->index();\n            $table->string('key')->index();\n            $table->json('value');\n            $table->string('namespace')->default('default')->index();\n            $table->string('sector')->nullable();\n            $table->vector('vector_embedding', 1536)->nullable();\n            $table->integer('ttl')->nullable();\n            $table->timestamp('expires_at')->nullable();\n            $table->timestamps();\n\n            $table->index(['namespace', 'key']);\n            $table->index(['sector', 'namespace']);\n        });\n\n        Schema::create('agent_metrics', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->foreignId('agent_registration_id')->constrained();\n            $table->string('metric_name')->index();\n            $table->float('metric_value');\n            $table->json('tags')->nullable();\n            $table->timestamp('recorded_at')->index();\n            $table->timestamps();\n\n            $table->index(['metric_name', 'recorded_at']);\n        });\n\n        Schema::create('workflow_executions', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->string('workflow_name');\n            $table->string('workflow_id')->unique()->index();\n            $table->string('correlation_id')->nullable()->index();\n            $table->json('input');\n            $table->json('output')->nullable();\n            $table->string('current_step')->nullable();\n            $table->integer('current_step_index')->default(0);\n            $table->string('status')->default('pending');\n            $table->timestamp('started_at')->nullable();\n            $table->timestamp('completed_at')->nullable();\n            $table->timestamps();\n        });\n\n        Schema::create('mcp_servers', function (Blueprint $table) {\n            $table->id();\n            $table->foreignId('tenant_id')->nullable()->constrained();\n            $table->string('name')->unique();\n            $table->text('description')->nullable();\n            $table->string('type')->default('remote');\n            $table->string('command')->nullable();\n            $table->string('base_url')->nullable();\n            $table->string('api_key')->nullable();\n            $table->json('configuration')->nullable();\n            $table->boolean('enabled')->default(true);\n            $table->timestamps();\n        });\n    }\n\n    public function down(): void\n    {\n        Schema::dropIfExists('mcp_servers');\n        Schema::dropIfExists('workflow_executions');\n        Schema::dropIfExists('agent_metrics');\n        Schema::dropIfExists('shared_memories');\n        Schema::dropIfExists('agent_messages');\n        Schema::dropIfExists('agent_registrations');\n        Schema::dropIfExists('agent_registry');\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare enterprise integration approaches and patterns."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Benefit"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Orchestrator"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coordinate multiple AI agents"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Centralized workflow management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared Data Layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common storage for all agents"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data consistency across agents"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Event Bus"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent-to-agent communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loose coupling + scalability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring Dashboard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Centralized observability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operational visibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise Gateway"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "External system integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security + access control"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for enterprise multi-agent patterns."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration with shared data layer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event-driven agent-to-agent messaging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unified Eloquent models with JSON AI fields"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logging queues, dashboards, alerting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "REST APIs, webhooks, queue bridges"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Orchestration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent coordination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Central control vs autonomy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared Data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-agent data access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistency vs performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Event Bus"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coupling vs scalability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operational visibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depth vs overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "External system connectivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexibility vs security"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your understanding of enterprise multi-agent platforms."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What is the primary purpose of the Agent Orchestrator?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Store agent data"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Coordinate multiple AI agents centrally"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Generate reports"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Handle authentication"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Coordinate multiple AI agents centrally</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " What does the Shared Data Layer provide?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Only caching"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Common storage for all agents"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Only logging"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Only authentication"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) Common storage for all agents</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What is the key benefit of using an Event Bus for agent communication?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Faster execution"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Loose coupling and scalability"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Lower memory usage"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Simpler code"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) Loose coupling and scalability</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " What does the Monitoring Dashboard provide?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Only error logs"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) Operational visibility across all agents"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Only user analytics"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Only performance metrics"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) Operational visibility across all agents</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare enterprise integration approaches and patterns."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Pattern"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Purpose"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Benefit"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Agent Orchestrator"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coordinate multiple AI agents"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Centralized workflow management"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Shared Data Layer"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Common storage for all agents"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Data consistency across agents"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Event Bus"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Agent-to-agent communication"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Loose coupling + scalability"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Monitoring Dashboard"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Centralized observability"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Operational visibility"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Enterprise Gateway"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "External system integration"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Security + access control"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for enterprise multi-agent patterns."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Architecture"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Multi-agent orchestration with shared data layer"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Communication"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Event-driven agent-to-agent messaging"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Data Layer"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Unified Eloquent models with JSON AI fields"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Monitoring"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Logging queues, dashboards, alerting"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Integration"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "REST APIs, webhooks, queue bridges"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Agent Orchestration"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Multi-agent coordination"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Central control vs autonomy"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Shared Data"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Cross-agent data access"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Consistency vs performance"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Event Bus"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Agent communication"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coupling vs scalability"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Monitoring"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Operational visibility"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Depth vs overhead"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Enterprise Integration"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "External system connectivity"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Flexibility vs security"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your understanding of enterprise multi-agent platforms."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " What is the primary purpose of the Agent Orchestrator?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Store agent data"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Coordinate multiple AI agents centrally"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Generate reports"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Handle authentication"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Coordinate multiple AI agents centrally</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " What does the Shared Data Layer provide?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Only caching"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) Common storage for all agents"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Only logging"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) Only authentication"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) Common storage for all agents</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " What is the key benefit of using an Event Bus for agent communication?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) Faster execution"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) Loose coupling and scalability"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) Lower memory usage"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) Simpler code"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) Loose coupling and scalability</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " What does the Monitoring Dashboard provide?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Only error logs"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) Operational visibility across all agents"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Only user analytics"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Only performance metrics"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) Operational visibility across all agents</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare enterprise integration approaches and patterns."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Pattern"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Purpose"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Benefit"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Agent Orchestrator"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coordinate multiple AI agents"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Centralized workflow management"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Shared Data Layer"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Common storage for all agents"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Data consistency across agents"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Event Bus"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Agent-to-agent communication"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Loose coupling + scalability"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Monitoring Dashboard"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Centralized observability"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Operational visibility"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Enterprise Gateway"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "External system integration"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Security + access control"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for enterprise multi-agent patterns."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Architecture"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Multi-agent orchestration with shared data layer"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Communication"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Event-driven agent-to-agent messaging"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Data Layer"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Unified Eloquent models with JSON AI fields"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Monitoring"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Logging queues, dashboards, alerting"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Integration"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "REST APIs, webhooks, queue bridges"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Agent Orchestration"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Multi-agent coordination"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Central control vs autonomy"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Shared Data"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Cross-agent data access"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Consistency vs performance"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Event Bus"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Agent communication"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coupling vs scalability"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Monitoring"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Operational visibility"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Depth vs overhead"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Enterprise Integration"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "External system connectivity"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Flexibility vs security"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your understanding of enterprise multi-agent platforms."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " What is the primary purpose of the Agent Orchestrator?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Store agent data"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Coordinate multiple AI agents centrally"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Generate reports"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Handle authentication"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Coordinate multiple AI agents centrally</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " What does the Shared Data Layer provide?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Only caching"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) Common storage for all agents"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Only logging"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) Only authentication"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) Common storage for all agents</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " What is the key benefit of using an Event Bus for agent communication?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) Faster execution"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) Loose coupling and scalability"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) Lower memory usage"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) Simpler code"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) Loose coupling and scalability</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " What does the Monitoring Dashboard provide?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Only error logs"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) Operational visibility across all agents"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Only user analytics"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Only performance metrics"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) Operational visibility across all agents</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare enterprise integration approaches and patterns."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Pattern"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Purpose"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Benefit"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Agent Orchestrator"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coordinate multiple AI agents"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Centralized workflow management"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Shared Data Layer"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Common storage for all agents"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Data consistency across agents"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Event Bus"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Agent-to-agent communication"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Loose coupling + scalability"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Monitoring Dashboard"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Centralized observability"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Operational visibility"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Enterprise Gateway"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "External system integration"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Security + access control"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for enterprise multi-agent patterns."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Architecture"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Multi-agent orchestration with shared data layer"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Communication"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Event-driven agent-to-agent messaging"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Data Layer"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Unified Eloquent models with JSON AI fields"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Monitoring"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Logging queues, dashboards, alerting"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Integration"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "REST APIs, webhooks, queue bridges"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Agent Orchestration"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Multi-agent coordination"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Central control vs autonomy"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Shared Data"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Cross-agent data access"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Consistency vs performance"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Event Bus"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Agent communication"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coupling vs scalability"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Monitoring"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Operational visibility"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Depth vs overhead"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Enterprise Integration"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "External system connectivity"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Flexibility vs security"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your understanding of enterprise multi-agent platforms."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " What is the primary purpose of the Agent Orchestrator?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Store agent data"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Coordinate multiple AI agents centrally"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Generate reports"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Handle authentication"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Coordinate multiple AI agents centrally</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " What does the Shared Data Layer provide?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Only caching"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) Common storage for all agents"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Only logging"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) Only authentication"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) Common storage for all agents</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " What is the key benefit of using an Event Bus for agent communication?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) Faster execution"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Loose coupling and scalability"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) Lower memory usage"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) Simpler code"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Loose coupling and scalability</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " What does the Monitoring Dashboard provide?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Only error logs"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) Operational visibility across all agents"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Only user analytics"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Only performance metrics"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) Operational visibility across all agents</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "The Enterprise Multi-Agent Platform (EMAP) architecture integrates an API gateway, centralized agent registry, event-driven message bus, shared memory with vector search, and an enterprise orchestrator into a unified runtime supporting ten industry sectors"
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The Agent Registry provides capability-based service discovery with the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentRegistrationService"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentCapability"
+                                                                        }), " enum, and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentRegistry"
+                                                                        }), " model, allowing agents to register, discover, and be called by capability and sector"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The Agent Message Bus implements publish/subscribe communication using Laravel events and queues, with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "MessageEvent"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentMessageBus"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "DeliverMessageJob"
+                                                                        }), ", and subscriber registration in service providers"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Shared Memory and Knowledge Base leverage PostgreSQL + pgvector for cross-sector semantic queries, with the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "SharedMemoryService"
+                                                                        }), " providing ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "remember"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "recall"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "recallAll"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "searchBySector"
+                                                                        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "crossSectorQuery"
+                                                                        }), " methods"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The Enterprise Orchestrator coordinates multi-step workflows using ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "WorkflowDefinition"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "WorkflowStep"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "EnterpriseOrchestrator"
+                                                                        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ExecuteWorkflowJob"
+                                                                        }), ", with shared memory tracking cross-step context"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Multi-tenant isolation is enforced through ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "MultiTenantAgentService"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "TenantAgentResolver"
+                                                                        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ResolveAgentTenant"
+                                                                        }), " middleware, scoping every agent registration, message, and memory entry by ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "tenant_id"
+                                                                        })]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["MCP integration exposes platform agents as discoverable tools via ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "McpGatewayController"
+                                                                        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "McpServerManager"
+                                                                        }), ", supporting both local and remote third-party MCP connections"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Monitoring and observability use ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentMonitor"
+                                                                        }), " for distributed tracing, ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentMetrics"
+                                                                        }), " for time-series performance data, and a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "AgentDashboardController"
+                                                                        }), " for health status, metric aggregation, and workflow tracking"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Deployment on Laravel Vapor with auto-scaling workers, dedicated queues per workload, and multi-region failover ensures enterprise-grade reliability, with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ScalingPolicy"
+                                                                        }), " providing dynamic worker adjustment based on queue depth metrics"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "exercises",
+                                                                      children: "Exercises"
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "review-questions",
+                                                                      children: "Review Questions"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["How does the Agent Registry's service discovery work? What role does the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "AgentCapability"
+                                                                          }), " enum play in routing tasks to the correct agent?"]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Explain the publish/subscribe pattern used by the Agent Message Bus. How does the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "AgentBusServiceProvider"
+                                                                          }), " wire up subscribers to topics, and what prevents a message from being processed by the wrong handler?"]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["What is the purpose of shared memory in a multi-agent system? How does the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "SharedMemoryService::crossSectorQuery"
+                                                                          }), " method allow a finance agent to benefit from knowledge generated by a customer service agent?"]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Describe the workflow execution lifecycle in the Enterprise Orchestrator. What happens when ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "advanceWorkflow"
+                                                                          }), " is called and the next step index exceeds the number of steps?"]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                          children: "How does multi-tenant isolation work in this platform? What database-level and application-level mechanisms prevent Tenant A from accessing Tenant B's agent registrations or shared memory?"
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["What metrics does the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "AgentMonitor"
+                                                                          }), " collect, and how does the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "healthStatus"
+                                                                          }), " method determine whether an agent is healthy or unhealthy?"]
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "application-problems",
+                                                                      children: "Application Problems"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Extend the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "WorkflowServiceProvider"
+                                                                          }), " to register a new workflow named ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "legal-contract-to-finance"
+                                                                          }), " that takes a contract from the legal sector's ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "ContractReviewAgent"
+                                                                          }), ", passes the reviewed terms to the finance sector's ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "FraudDetectionAgent"
+                                                                          }), " for financial risk assessment, and stores the combined output in shared memory."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "MemoryCleanupJob"
+                                                                          }), " that runs hourly and deletes expired shared memory entries and completed workflow executions older than 30 days. Schedule it in the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "QueueWorkerServiceProvider"
+                                                                          }), " and write the Artisan command that the scheduler calls."]
+                                                                        }), "\n"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                          children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "MarketingWorkflowController"
+                                                                          }), " that triggers a campaign optimization workflow: the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "CampaignOptimizationAgent"
+                                                                          }), " analyzes performance data and publishes results to the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "LeadScoringAgent"
+                                                                          }), " in the same sector. Use the ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                            children: "EnterpriseOrchestrator::startWorkflow"
+                                                                          }), " method. Write the complete workflow definition with at least three steps."]
+                                                                        }), "\n"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                                                                      id: "challenge-problem",
+                                                                      children: "Challenge Problem"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["Design and implement a ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                        children: "Cross-Sector Incident Response Workflow"
+                                                                      }), " that spans four sectors:"]
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                          children: "Customer Service"
+                                                                        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "TicketTriageAgent"
+                                                                        }), "): Receives an incident report, classifies urgency, and routes to the correct handler"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                          children: "Finance"
+                                                                        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "FraudDetectionAgent"
+                                                                        }), "): If the incident involves a financial transaction, runs fraud analysis and account review"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                          children: "Legal"
+                                                                        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "ContractReviewAgent"
+                                                                        }), "): If the incident has compliance implications, reviews relevant contracts and regulatory obligations"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                          children: "Manufacturing"
+                                                                        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "PredictiveMaintenanceAgent"
+                                                                        }), "): If the incident involves equipment or infrastructure, runs diagnostics and predicts failure probability"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "The workflow must:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Accept a unified incident report with a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "type"
+                                                                        }), " field (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "financial"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "compliance"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "equipment"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "general"
+                                                                        }), ")"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Route dynamically: based on the triage agent's classification, publish to ", (0,jsx_runtime.jsx)(_components.strong, {
+                                                                          children: "one, two, or three"
+                                                                        }), " sector agents simultaneously"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "fan-out"
+                                                                        }), " parallel dispatch for multi-sector incidents (e.g., a financial compliance issue routes to both Finance and Legal)"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Aggregate all sector responses into a single ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "IncidentResolution"
+                                                                        }), " stored in shared memory"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "CircuitBreaker"
+                                                                        }), " per sector → if any sector agent fails twice consecutively, log the failure and continue without blocking other sectors"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["Return a resolution report with per-sector findings and an overall status (", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "resolved"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "partial"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "escalated"
+                                                                        }), ")"]
+                                                                      }), "\n"]
+                                                                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                                                                      children: "Write the complete implementation including:"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "IncidentResponseWorkflowDefinition"
+                                                                        }), " with all steps and fan-out routing"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["A ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "CircuitBreaker"
+                                                                        }), " trait or class with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "closed"
+                                                                        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "open"
+                                                                        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "half-open"
+                                                                        }), " states"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "IncidentResponseController"
+                                                                        }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "POST /incidents/report"
+                                                                        }), " endpoint"]
+                                                                      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                                                                        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                          children: "IncidentResolution"
+                                                                        }), " model and migration"]
+                                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                        children: "A PEST test that simulates a financial compliance incident and verifies that both Finance and Legal agents are invoked, while a general incident only invokes Customer Service"
+                                                                      }), "\n"]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

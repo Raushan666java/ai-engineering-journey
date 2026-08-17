@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-learning-how-to-learn-index-md-e59.json
-const site_docs_courses_learning_how_to_learn_index_md_e59_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/learning-how-to-learn/index","title":"Learning How to Learn","description":"Master the universal meta-skill: accelerate learning across every course in this repository.","source":"@site/docs/courses/learning-how-to-learn/index.md","sourceDirName":"courses/learning-how-to-learn","slug":"/learning-how-to-learn","permalink":"/ai-engineering-journey/learning-how-to-learn","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/learning-how-to-learn","title":"Learning How to Learn","sidebar_label":"Learning How to Learn","sidebar_position":19},"sidebar":"course-learning-how-to-learn","previous":{"title":"Chapter 17: Study Protocols & Brain Hacks","permalink":"/ai-engineering-journey/learning-how-to-learn/ch-17-study-protocols"}}');
+const site_docs_courses_learning_how_to_learn_index_md_e59_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/learning-how-to-learn/index","title":"Learning How to Learn","description":"Master the universal meta-skill: accelerate learning across every course in this repository.","source":"@site/docs/courses/learning-how-to-learn/index.md","sourceDirName":"courses/learning-how-to-learn","slug":"/learning-how-to-learn","permalink":"/ai-engineering-journey/learning-how-to-learn","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/learning-how-to-learn","title":"Learning How to Learn","sidebar_label":"Learning How to Learn","sidebar_position":19},"sidebar":"course-learning-how-to-learn","previous":{"title":"Chapter 18: Professional Routine & Energy Design","permalink":"/ai-engineering-journey/learning-how-to-learn/ch-18-professional-routine-energy-design"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -82,8 +82,8 @@ const toc = [{
   "id": "module-6-ai-assisted--advanced-learning-chapters-1114",
   "level": 3
 }, {
-  "value": "Module 7: Study Protocols &amp; Brain Hacks (Chapter 17)",
-  "id": "module-7-study-protocols--brain-hacks-chapter-17",
+  "value": "Module 7: Study Protocols &amp; Brain Hacks (Chapters 17–18)",
+  "id": "module-7-study-protocols--brain-hacks-chapters-1718",
   "level": 3
 }, {
   "value": "Diagnostic Pre-Test",
@@ -138,7 +138,7 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Master the universal meta-skill: accelerate learning across every course in this repository."
-        }), "\n17 chapters · 318 Q&As · 17 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science."]
+        }), "\n18 chapters · 340 Q&As · 18 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science."]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: (0,jsx_runtime.jsxs)(_components.em, {
           children: ["Deployed: commit ", (0,jsx_runtime.jsx)(_components.code, {
@@ -509,9 +509,9 @@ function _createMdxContent(props) {
         })]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "module-7-study-protocols--brain-hacks-chapter-17",
-      children: "Module 7: Study Protocols & Brain Hacks (Chapter 17)"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      id: "module-7-study-protocols--brain-hacks-chapters-1718",
+      children: "Module 7: Study Protocols & Brain Hacks (Chapters 17–18)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
@@ -524,8 +524,8 @@ function _createMdxContent(props) {
             children: "Q&As"
           })]
         })
-      }), (0,jsx_runtime.jsx)(_components.tbody, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "17"
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -535,7 +535,17 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Q291–Q318"
           })]
-        })
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Professional Routine & Energy Design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "168-hour time budget, energy-based scheduling, morning deep block, travel learning (audio + Anki on commute), lunch-hour rule, evening practice, sleep protection (caffeine cutoff, fixed wake time), weekend mock/recovery design, minimum viable day, Professional Warrior Protocol, 90-day placement sprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q319–Q340"
+          })]
+        })]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "diagnostic-pre-test",
@@ -738,6 +748,10 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "If you want ready-to-run study protocols:"
         }), " Start with Chapters 1–4, then Chapter 17 for PQRST, Paper Theory, Dopamine Loading, and the 45-Minute Focus Rule"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If you're a working professional (job + commute):"
+        }), " Start with Chapters 1–4, then Chapter 18 for the Professional Routine & Energy Design system (time budget, morning deep block, travel learning, sleep protection)"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "how-to-read-each-chapter",

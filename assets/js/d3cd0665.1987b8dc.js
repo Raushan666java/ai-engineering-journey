@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-33-campus-placement-visual-notes-md-d3c.json
-const site_docs_courses_ai_engineering_placement_33_campus_placement_visual_notes_md_d3c_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/campus-placement/visual-notes","title":"Visual Notes — The Campus Placement Journey","description":"One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.","source":"@site/docs/courses/ai-engineering-placement/33-campus-placement/visual-notes.md","sourceDirName":"courses/ai-engineering-placement/33-campus-placement","slug":"/ai-engineering-placement/33-campus-placement/visual-notes","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/visual-notes","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":372,"frontMatter":{"id":"visual-notes","slug":"/ai-engineering-placement/33-campus-placement/visual-notes","title":"Visual Notes — The Campus Placement Journey","sidebar_label":"Visual Notes","sidebar_position":372},"sidebar":"placementSidebar","previous":{"title":"Challenge Economics & Reward Systems","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/09-challenge-economics"},"next":{"title":"Syllabus Expansion Plan — AI Engineer Placement Course","permalink":"/ai-engineering-journey/courses/ai-engineering-placement/PLAN"}}');
+const site_docs_courses_ai_engineering_placement_33_campus_placement_visual_notes_md_d3c_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/campus-placement/visual-notes","title":"Visual Notes — The Campus Placement Journey","description":"One diagram, the full picture. This page is meant to be glanced at before reading the chapters, and again before interviews.","source":"@site/docs/courses/ai-engineering-placement/33-campus-placement/visual-notes.md","sourceDirName":"courses/ai-engineering-placement/33-campus-placement","slug":"/ai-engineering-placement/33-campus-placement/visual-notes","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/visual-notes","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":391,"frontMatter":{"id":"visual-notes","slug":"/ai-engineering-placement/33-campus-placement/visual-notes","title":"Visual Notes — The Campus Placement Journey","sidebar_label":"Visual Notes","sidebar_position":391},"sidebar":"placementSidebar","previous":{"title":"Deloitte Mock Test — Full Pattern Simulation (44 Questions)","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/28-mock-deloitte"},"next":{"title":"Syllabus Expansion Plan — AI Engineer Placement Course","permalink":"/ai-engineering-journey/courses/ai-engineering-placement/PLAN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-engineering-placement/33-campus-placement/visual-notes',
 	title: 'Visual Notes — The Campus Placement Journey',
 	sidebar_label: 'Visual Notes',
-	sidebar_position: 372
+	sidebar_position: 391
 };
 const contentTitle = 'Visual Notes — The Campus Placement Journey';
 

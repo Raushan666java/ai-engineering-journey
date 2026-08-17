@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-33-campus-placement-index-md-cb4.json
-const site_docs_courses_ai_engineering_placement_33_campus_placement_index_md_cb4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/campus-placement/index","title":"33 — Campus Placement & Aptitude","description":"Overview","source":"@site/docs/courses/ai-engineering-placement/33-campus-placement/index.md","sourceDirName":"courses/ai-engineering-placement/33-campus-placement","slug":"/ai-engineering-placement/33-campus-placement","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":371,"frontMatter":{"id":"index","slug":"/ai-engineering-placement/33-campus-placement","title":"33 — Campus Placement & Aptitude","sidebar_label":"33 — Campus Placement & Aptitude","sidebar_position":371},"sidebar":"placementSidebar","previous":{"title":"Visual Notes","permalink":"/ai-engineering-journey/ai-engineering-placement/32-competitive-programming/visual-notes"},"next":{"title":"Quantitative Aptitude for Campus Placements","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/01-quantitative-aptitude"}}');
+const site_docs_courses_ai_engineering_placement_33_campus_placement_index_md_cb4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/campus-placement/index","title":"33 — Campus Placement & Aptitude","description":"Overview","source":"@site/docs/courses/ai-engineering-placement/33-campus-placement/index.md","sourceDirName":"courses/ai-engineering-placement/33-campus-placement","slug":"/ai-engineering-placement/33-campus-placement","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":390,"frontMatter":{"id":"index","slug":"/ai-engineering-placement/33-campus-placement","title":"33 — Campus Placement & Aptitude","sidebar_label":"33 — Campus Placement & Aptitude","sidebar_position":390},"sidebar":"placementSidebar","previous":{"title":"Visual Notes","permalink":"/ai-engineering-journey/ai-engineering-placement/32-competitive-programming/visual-notes"},"next":{"title":"Quantitative Aptitude for Campus Placements","permalink":"/ai-engineering-journey/ai-engineering-placement/33-campus-placement/01-quantitative-aptitude"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-engineering-placement/33-campus-placement',
 	title: '33 — Campus Placement & Aptitude',
 	sidebar_label: '33 — Campus Placement & Aptitude',
-	sidebar_position: 371
+	sidebar_position: 390
 };
 const contentTitle = '33 — Campus Placement & Aptitude';
 
@@ -92,7 +92,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "sub-chapters",
       children: "Sub-Chapters"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
@@ -223,6 +223,253 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "10"
           })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/10-aptitude-master-plan",
+              children: "Aptitude Master Plan (Any Company)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-week sprint, mock rotation, error log, cut-off benchmarks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/11-quantitative-all-topics",
+              children: "Quantitative All Topics"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "all 16 quant topics: formulas, worked examples, traps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/12-logical-all-types",
+              children: "Logical All Types"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "all 12 reasoning types: methods, examples, traps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/13-verbal-all-sections",
+              children: "Verbal All Sections"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "all 10 verbal sections: rules, strategies, examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/14-speed-tricks-cheatsheet",
+              children: "Speed Tricks Cheatsheet"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "40 instant-recognition rules, topic quick map"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/15-quant-question-bank",
+              children: "Quant Question Bank (100)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 questions with answers across all 16 topics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/16-logical-question-bank",
+              children: "Logical Question Bank (100)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 questions with answers across all 12 types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/17-verbal-question-bank",
+              children: "Verbal Question Bank (100)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 questions with answers across all 10 sections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/18-mock-any-company-1",
+              children: "Mock — Any Company 1"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "generic 30 Q, 45 min, entry level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/19-mock-any-company-2",
+              children: "Mock — Any Company 2"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "generic 40 Q, 60 min, standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/20-mock-any-company-3",
+              children: "Mock — Any Company 3"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "generic hard 45 Q, 60 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "21"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/21-mock-tcs-nqt",
+              children: "Mock — TCS NQT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 54 Q pattern, 85 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/22-mock-infosys",
+              children: "Mock — Infosys"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 45 Q pattern, 60 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "23"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/23-mock-cognizant",
+              children: "Mock — Cognizant GenC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 40 Q pattern, 65 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/24-mock-capgemini",
+              children: "Mock — Capgemini"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 42 Q pattern, 65 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/25-mock-wipro",
+              children: "Mock — Wipro NLTH"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 44 Q pattern, 80 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "26"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/26-mock-accenture",
+              children: "Mock — Accenture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 45 Q pattern, 75 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "27"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/27-mock-zoho",
+              children: "Mock — Zoho"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 40 Q pattern, 90 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "28"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/ai-engineering-placement/33-campus-placement/28-mock-deloitte",
+              children: "Mock — Deloitte"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "full 44 Q pattern, 90 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
@@ -235,6 +482,10 @@ function _createMdxContent(props) {
         children: "Then chapter 04 — learn the exact test format of your target company"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Practice with chapter 08 PYQs, then simulate with chapter 07 mocks"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Universal track (any company)"
+        }), ": follow chapter 10 (4-week master plan), memorize chapter 14 (speed rules), drill chapters 15-17 (300-question banks), then rotate chapters 18-28 (11 full mocks)"]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Before interview day: chapter 05 (GD) and chapter 06 (HR)"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {

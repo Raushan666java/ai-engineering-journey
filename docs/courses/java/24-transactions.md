@@ -12,25 +12,6 @@ This chapter covers the entire transaction landscape: from simple local transact
 
 By the end of this chapter you should be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/24-transactions/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/24-transactions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/24-transactions/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/24-transactions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/24-transactions/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/24-transactions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Configure and use `@Transactional` with all seven propagation behaviors and five isolation levels
 - Control rollback behavior with `rollbackFor`, `noRollbackFor`, the `readOnly` flag, and `timeout`
 - Manage transactions programmatically using `TransactionTemplate` with callbacks

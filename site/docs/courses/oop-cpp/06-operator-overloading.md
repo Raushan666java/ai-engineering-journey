@@ -14,25 +14,6 @@ sidebar_position: 6
 ## Learning Objectives
 
 After studying this chapter, students will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Explain the rules and constraints of C++ operator overloading
 - Implement binary and unary operators as member and non-member functions
 - Distinguish between member and non-member overloads with rationale

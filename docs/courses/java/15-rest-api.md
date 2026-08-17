@@ -6,25 +6,6 @@
 
 After completing this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/15-rest-api/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/15-rest-api/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/15-rest-api/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Build RESTful web services using `@RestController` and understand its composition from `@Controller` + `@ResponseBody`
 - Map HTTP requests to handler methods using `@RequestMapping` and its composed annotations
 - Extract data from requests using `@PathVariable`, `@RequestParam`, `@RequestHeader`, `@RequestBody`, `@RequestAttribute`, and `@MatrixVariable`

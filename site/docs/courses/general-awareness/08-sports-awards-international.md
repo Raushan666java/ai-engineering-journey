@@ -10,25 +10,6 @@ sidebar_position: 8
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Recall winners of major sports tournaments — Olympics, Cricket World Cup, FIFA, Asian Games, Commonwealth Games
 - Identify India's national awards — Bharat Ratna, Padma awards, Gallantry awards, and their recent recipients
 - List international awards — Nobel Prize, Oscar, Booker Prize, Pulitzer, Fields Medal, and 2024–2026 winners

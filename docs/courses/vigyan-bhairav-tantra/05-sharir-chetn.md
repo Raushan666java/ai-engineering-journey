@@ -1,4 +1,4 @@
-﻿# अध्याय ५: शरीर चेतना — ओशो की शारीरिक ध्यान विधियाँ
+# अध्याय ५: शरीर चेतना — ओशो की शारीरिक ध्यान विधियाँ
 
 > **पिछला अध्याय:** [अध्याय ४: ध्यान की तैयारी — आसन, दीक्षा और मुद्राएँ](./04-shwas-pragya.md)
 > **अगला अध्याय:** [अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें](./06-drishya-dhyan.md)
@@ -15,25 +15,6 @@
 विज्ञान भैरव तंत्र में जितनी भी शारीरिक तकनीकें हैं, ओशो ने उन्हें एक नए दृष्टिकोण से समझाया। उन्होंने तंत्र की प्राचीन विधियों को बीसवीं सदी के मनोविज्ञान, बायोएनर्जेटिक्स और उनके अपने डायनामिक मेडिटेशन के अनुभव से जोड़ा।
 
 ---
-
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/05-sharir-chetn/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## सीखने के उद्देश्य (Learning Objectives)
 

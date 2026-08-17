@@ -23,25 +23,6 @@ sidebar_position: 21
 - Execute cost optimization across cache, compute, CDN, database, and logging infrastructure
 - Plan and execute a monolith-to-services migration using the Strangler Fig pattern, database decomposition, and feature-flag-controlled traffic shifting
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/21-system-design-scale/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/21-system-design-scale/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/21-system-design-scale/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/21-system-design-scale/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/21-system-design-scale/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/21-system-design-scale/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Theory
 
 ![System Design and Scale](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/21-system-design-scale.png)

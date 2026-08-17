@@ -1,4 +1,4 @@
-﻿# Chapter 10: Programmable Logic ? PLA and PAL
+# Chapter 10: Programmable Logic ? PLA and PAL
 
 > **Prereq:** Chapter 4 (Karnaugh Maps) and Chapter 5 (Combinational Circuits) ? programmable logic implements sum-of-products expressions.
 > **Next:** Chapter 11 (Arithmetic Circuits) ? arithmetic building blocks often use PLD structures for control logic.
@@ -6,25 +6,6 @@
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/10-pla-pal/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/10-pla-pal/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/10-pla-pal/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/10-pla-pal/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/10-pla-pal/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/10-pla-pal/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Distinguish between PROM, PLA, PAL, and CPLD/FPGA architectures
 2. Design and program a PLA for arbitrary combinational logic

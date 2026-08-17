@@ -14,25 +14,6 @@ sidebar_position: 7
 
 By the conclusion of this chapter, the student shall be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/07-state-machines/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/07-state-machines/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/07-state-machines/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/07-state-machines/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/07-state-machines/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/07-state-machines/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1. Distinguish between Mealy and Moore state machine models
 2. Construct state diagrams and state tables from informal specifications
 3. Design state machines using D, JK, and T flip-flops

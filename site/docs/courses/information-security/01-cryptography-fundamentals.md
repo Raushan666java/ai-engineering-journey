@@ -1,4 +1,4 @@
-﻿---
+---
 id: 01-cryptography-fundamentals
 slug: /information-security/01-cryptography-fundamentals
 title: "Chapter 1: Cryptography Fundamentals"
@@ -16,25 +16,6 @@ sidebar_position: 1
 ## Learning Objectives
 
 After completing this chapter you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/01-cryptography-fundamentals/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/01-cryptography-fundamentals/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/01-cryptography-fundamentals/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/01-cryptography-fundamentals/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/01-cryptography-fundamentals/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/01-cryptography-fundamentals/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Distinguish between symmetric and asymmetric encryption across key management, performance, and use cases.
 - Explain the internal architecture of DES, 3DES, and AES.
 - Describe RSA key generation, encryption, and decryption using modular arithmetic.

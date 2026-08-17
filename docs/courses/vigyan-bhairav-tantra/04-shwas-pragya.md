@@ -9,25 +9,6 @@
 > "श्वास पर ध्यान देना — यह सबसे सरल और सबसे क्रांतिकारी तकनीक है। यह कोई प्राणायाम नहीं है — मैं तुमसे श्वास को नियंत्रित करने के लिए नहीं कह रहा। मैं कह रहा हूँ — श्वास को देखो। बस देखो। इस देखने में ही संपूर्ण क्रांति छिपी है। श्वास को देखना सीख लो — तो सब कुछ सीख लिया।"
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/04-shwas-pragya/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## सीखने के उद्देश्य (Learning Objectives)
 
 इस अध्याय को पूरा करने के बाद आप:

@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) identify sources of bias in AI systems; (2) apply interpretability techniques to explain model decisions; (3) analyze privacy implications of AI deployment; (4) explain the AI alignment problem and its significance; (5) describe major regulatory frameworks governing AI; (6) evaluate ethical trade-offs in real-world AI deployments; (7) implement fairness-aware machine learning pipelines; (8) articulate responsible AI principles across organizational contexts.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/15-ethics-ai/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why AI Ethics Matters
 
 Imagine you are handed the keys to a Ferrari — 900 horsepower, zero to sixty in 2.5 seconds, a machine of incredible capability. The engineer who built it says, "It can go faster than anything on the road." But nobody gave you a steering wheel, brake pedal, or rearview mirror. There are no traffic laws, no speed limits, no lines painted on the road. Would you drive it?

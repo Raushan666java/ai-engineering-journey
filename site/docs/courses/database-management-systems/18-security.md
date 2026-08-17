@@ -21,25 +21,6 @@ sidebar_position: 18
 - Implement dynamic data masking to protect sensitive output
 - Understand security layers: network, transport, database, application
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/database-management-systems/18-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/database-management-systems/18-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/database-management-systems/18-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

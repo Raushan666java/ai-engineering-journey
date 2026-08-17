@@ -8,25 +8,6 @@
 - Distinguish storage types (object, block, file) with use cases
 - Explain elasticity, scalability, and the shared responsibility model
 - Apply CAP theorem to cloud database selection
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/08-cloud-computing/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/08-cloud-computing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/08-cloud-computing/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/08-cloud-computing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/08-cloud-computing/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/08-cloud-computing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## 1. Cloud Service Models

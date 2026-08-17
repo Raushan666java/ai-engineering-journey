@@ -17,25 +17,6 @@ By the end of this chapter, you will be able to:
 - Combine insights from multiple chart types within a single question set
 - Apply approximation and estimation strategies for time-efficient calculation
 - Compute CAGR, growth rates, ratios, and averages from tabular data
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

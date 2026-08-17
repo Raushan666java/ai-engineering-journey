@@ -1,4 +1,4 @@
-﻿# Chapter 6: Sequential Circuits
+# Chapter 6: Sequential Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.
 > **Next:** Chapter 7 (State Machines) ? sequential circuits with a systematic state-transition structure.
@@ -6,25 +6,6 @@
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/06-sequential-circuits/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/06-sequential-circuits/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/06-sequential-circuits/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/06-sequential-circuits/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/06-sequential-circuits/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/06-sequential-circuits/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Distinguish between latches and flip-flops and explain their timing behaviour
 2. Analyse SR, D, JK, and T flip-flops using characteristic tables and excitation tables

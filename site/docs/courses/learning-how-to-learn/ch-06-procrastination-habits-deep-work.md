@@ -30,25 +30,6 @@ These aren't abstract theories. Every technique here is something you can apply 
 
 ![Procrastination, Habits & Deep Work](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work-dg1.png)
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-06-procrastination-habits-deep-work/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 After completing this chapter, you will be able to:
 
 - **Identify your procrastination triggers** by recognizing the four components of the procrastination loop

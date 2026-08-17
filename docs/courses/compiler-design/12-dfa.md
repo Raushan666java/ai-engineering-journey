@@ -1,29 +1,10 @@
-﻿# Chapter 12: Data-Flow Analysis
+# Chapter 12: Data-Flow Analysis
 
 ? Previous: [Chapter 11: Control-Flow Analysis](11-cfa.md) | **Next:** [Chapter 13: Loop Optimization](13-loop-optimization.md)
 
 ## Learning Objectives
 
 After completing this chapter, students will be able to: formulate data-flow equations for reaching definitions, live variables, and available expressions; implement the iterative fixed-point algorithm; distinguish may from must analyses and forward from backward problems; apply constant propagation using a lattice-based value representation; construct and solve data-flow equations for any block-structured language; implement a generic data-flow analysis framework in TypeScript; explain the theoretical underpinnings of monotone data-flow frameworks; and analyze the time complexity and termination guarantees of iterative data-flow solvers.
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/12-dfa/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/12-dfa/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/12-dfa/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/12-dfa/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/12-dfa/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/12-dfa/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 ### Chapter at a Glance
 

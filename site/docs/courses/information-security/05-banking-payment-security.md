@@ -16,25 +16,6 @@ sidebar_position: 5
 ## Learning Objectives
 
 After completing this chapter you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/05-banking-payment-security/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/05-banking-payment-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/05-banking-payment-security/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/05-banking-payment-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/05-banking-payment-security/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/05-banking-payment-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Explain key RBI cybersecurity guidelines for scheduled commercial banks (BCSBI, cyber fraud reporting, outsourcing).
 - Describe PCI DSS requirements for cardholder data protection (encryption, access control, logging, quarterly scans).
 - Walk through the 3D Secure (3DS) authentication flow — merchant, issuer, ACS.

@@ -1,4 +1,4 @@
-﻿# Chapter 4: Karnaugh Maps
+# Chapter 4: Karnaugh Maps
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? K-maps provide a graphical alternative to algebraic minimisation.
 > **Next:** Chapter 5 (Combinational Circuits) ? minimised expressions map directly to efficient circuits.
@@ -6,25 +6,6 @@
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/04-karnaugh-maps/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/04-karnaugh-maps/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/04-karnaugh-maps/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/04-karnaugh-maps/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/04-karnaugh-maps/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/04-karnaugh-maps/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Construct K-maps for 2, 3, 4, and 5 variables with correct Gray code ordering
 2. Apply K-map grouping rules to identify prime implicants and essential prime implicants

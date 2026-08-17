@@ -23,25 +23,6 @@ Learning a new programming language or framework is a recurring challenge throug
 - Apply the T-model for learning multiple technologies in parallel
 - Avoid the tutorial trap by learning through active construction, not passive consumption
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-09-framework-language-learning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ![Framework & Language Learning Blueprint](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning-dg1.png)
 
 ---

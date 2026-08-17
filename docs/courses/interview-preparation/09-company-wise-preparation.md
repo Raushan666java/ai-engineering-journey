@@ -8,25 +8,6 @@
 - Develop targeted preparation for government organizations (NIC, NIELIT, DRDO, ISRO, BARC)
 - Learn preparation strategies for PSUs (SAIL, ONGC, IOCL, BSNL, NTPC, BHEL)
 - Identify company-specific question patterns and focus areas
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Company-Wise Interview Landscape
 
 ```mermaid

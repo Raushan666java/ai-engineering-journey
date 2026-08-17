@@ -27,25 +27,6 @@ Every example in this chapter compiles and runs against JUnit 5.10+. Add this de
 
 By the end of this chapter you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/29-junit5/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/29-junit5/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/29-junit5/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/29-junit5/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/29-junit5/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/29-junit5/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Diagram the JUnit 5 architecture including the Platform, Jupiter, and Vintage modules and explain how they interact with IDEs and build tools
 - Write parameterized tests using every source annotation and combine them with argument conversion and aggregation
 - Generate dynamic tests at runtime using `@TestFactory` and the `DynamicTest`/`DynamicContainer` API

@@ -19,25 +19,6 @@ By the end of this chapter, you will be able to:
 - Handle new pattern coding-decoding questions that appear in recent exams
 - Differentiate between "all," "some," "no," "some not" statements in syllogism
 - Apply the either-or case in syllogism when conclusions share the same predicate-subject pair
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

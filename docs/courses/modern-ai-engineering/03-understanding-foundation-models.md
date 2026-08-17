@@ -10,25 +10,6 @@
 | LO4 | Analyze core capabilities: reasoning, in-context learning, instruction following, code generation, summarization |
 | LO5 | Identify limitations including hallucinations, knowledge cutoff, context window constraints, and bias |
 | LO6 | Apply a model selection framework that maps tasks to models based on capability, cost, and latency requirements |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## 3.1 How Transformers Work
 
 The transformer architecture, introduced in the 2017 paper "Attention Is All You Need," is the foundation upon which all modern foundation models are built. Understanding transformers is essential for making informed decisions about model selection, prompt design, and troubleshooting.

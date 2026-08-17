@@ -10,25 +10,6 @@ By the end of this chapter, you will be able to:
 - Analyse the Basel capital adequacy norms (Basel I, II, III) and their implementation in India
 - Explain the Prompt Corrective Action (PCA) framework and its triggers
 - Summarise RBI's supervisory functions and inspection mechanisms
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

@@ -16,25 +16,6 @@ sidebar_position: 1
 > "मैं कोई गुरु नहीं हूँ। गुरु तो वे हैं जो तुम्हें बाँधते हैं — किसी सिद्धांत से, किसी पंथ से, किसी परंपरा से। मैं तो मुक्त करना चाहता हूँ। मैं तुम्हें स्वतंत्रता देना चाहता हूँ — मुझसे भी। मैं एक द्वार हूँ, एक खिड़की हूँ — द्वार पर खड़े होकर मत रुक जाना, पार चले जाना।"
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## सीखने के उद्देश्य (Learning Objectives)
 
 इस अध्याय को पूरा करने के बाद आप:

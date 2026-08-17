@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation models and their emergent abilities; (3) implement in-context learning and prompt engineering; (4) understand multimodal model architectures; (5) describe AI agent architectures including ReAct, MCP, and AutoGPT; (6) implement generative AI algorithms from scratch; (7) design autonomous agent systems; (8) evaluate modern AI systems across real-world applications.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Modern AI Matters
 
 **Real-World Analogy:** Traditional AI was like a cookbook — every recipe (rule) had to be written by hand, ingredient by ingredient. If you wanted the system to recognize a cat, you had to manually define whisker length, ear shape, fur texture, and eye color. Modern AI is like a chef who learns to cook by eating thousands of meals — the system discovers the patterns itself from data, generalizes to new dishes, and even creates novel recipes no human ever wrote.

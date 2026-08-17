@@ -13,25 +13,6 @@ sidebar_position: 26
 
 By the end of this chapter, students will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/17-sre/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/devops/17-sre/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/17-sre/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/devops/17-sre/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/17-sre/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/devops/17-sre/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1. Differentiate SRE from DevOps and describe the SRE model of reliability engineering
 2. Define and implement Service Level Objectives, Indicators, and Agreements
 3. Calculate and use error budgets to balance reliability and feature velocity

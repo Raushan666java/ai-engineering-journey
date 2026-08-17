@@ -10,25 +10,6 @@ sidebar_position: 19
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 1.  **Trace** the historical evolution of Zero Trust from Forrester's 2010 initiative through NIST SP 800-207 and industry adoption at Google BeyondCorp.
 2.  **Explain** the seven core principles of Zero Trust—never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation.
 3.  **Diagram** the NIST SP 800-207 logical architecture including the Policy Engine (PE), Policy Administrator (PA), and Policy Enforcement Point (PEP).

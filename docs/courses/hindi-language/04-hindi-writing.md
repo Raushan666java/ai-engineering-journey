@@ -8,25 +8,6 @@ By the end of this chapter, you will be able to:
 - Structure essays (निबंध) on common exam topics
 - Write reports, summaries, and dialogues in Hindi
 - Use official Hindi (कार्यालयी हिंदी) terminology for government documentation
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/04-hindi-writing/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/hindi-language/04-hindi-writing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/04-hindi-writing/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/hindi-language/04-hindi-writing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/04-hindi-writing/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/hindi-language/04-hindi-writing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

@@ -1,4 +1,4 @@
-﻿# Chapter 2: Missing Data and Caselet DI
+# Chapter 2: Missing Data and Caselet DI
 
 ## Learning Objectives
 
@@ -9,25 +9,6 @@ By the end of this chapter, you will be able to:
 - Apply ratio and proportion principles to deduce missing information
 - Solve 4-7 question sets from a single caselet passage
 - Distinguish between solvable and unsolvable missing data scenarios
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

@@ -1,29 +1,10 @@
-﻿# Chapter 10: Vector Calculus & Applications
+# Chapter 10: Vector Calculus & Applications
 
 > **Previous:** [Chapter 9: Optimization](09-optimization.md) | **Next:** None (final chapter)
 
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/engineering-mathematics/10-vector-calculus/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 - Compute line integrals and surface integrals of scalar and vector fields
 - Apply Green's theorem, Stokes' theorem, and the divergence theorem

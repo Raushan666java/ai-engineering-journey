@@ -9,25 +9,6 @@
 - Traverse graphs using BFS and DFS with complexity analysis
 - Select appropriate sorting algorithm based on input characteristics
 - Resolve hash collisions with chaining and open addressing
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## 1. Array vs Linked List

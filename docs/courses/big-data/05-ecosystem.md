@@ -1,4 +1,4 @@
-﻿# Chapter 5: Big Data Ecosystem Tools
+# Chapter 5: Big Data Ecosystem Tools
 
 > **Previous:** [Chapter 4: Spark MLlib](./04-spark-mllib.md) | **Next:** None (Last Chapter)
 
@@ -10,25 +10,6 @@ After completing this chapter, you will be able to:
 - Explain when to use column-family stores (HBase) vs columnar formats (Parquet)
 - Set up and use Kafka for streaming data ingestion
 - Compare legacy Hadoop tools with modern cloud-native alternatives
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/big-data/05-ecosystem/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/big-data/05-ecosystem/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/big-data/05-ecosystem/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/big-data/05-ecosystem/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/big-data/05-ecosystem/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/big-data/05-ecosystem/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 ## Chapter at a Glance
 

@@ -21,25 +21,6 @@ sidebar_position: 7
 - Convert a PDA to an equivalent CFG.
 - Understand the limitations of deterministic PDA.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/07-pda/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/theory-of-computation/07-pda/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/07-pda/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/theory-of-computation/07-pda/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/07-pda/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/theory-of-computation/07-pda/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

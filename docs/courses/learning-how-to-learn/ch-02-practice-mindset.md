@@ -13,25 +13,6 @@ The difference between learners who plateau and learners who keep improving isn'
 
 After completing this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Apply deliberate practice principles to any skill by identifying the performance edge, getting immediate feedback, and working with a coach or role model
 - Recognize illusions of competence (familiarity vs. recall, fluency, re-reading) and replace them with production-based verification
 - Distinguish recall tests from recognition tests and use both strategically for different learning goals

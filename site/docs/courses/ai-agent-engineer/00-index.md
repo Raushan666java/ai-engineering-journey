@@ -1,4 +1,4 @@
-﻿---
+---
 id: 00-index
 slug: /ai-agent-engineer
 title: "Laravel Backend Developer → AI Agent Engineer"
@@ -10,25 +10,6 @@ sidebar_position: 1
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
 
 > **Companion text — Agentic AI: The Complete Book:** A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: [`agentic-ai-book/00-index.md`](agentic-ai-book/00-index.md)
-
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## Course Overview
 

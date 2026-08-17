@@ -17,25 +17,6 @@ sidebar_position: 1
 | LO4 | Apply a decision framework for determining when to use foundation models vs traditional approaches |
 | LO5 | Describe the four-layer AI engineering stack: data, model, application, and deployment |
 | LO6 | Identify key challenges in production AI systems and their mitigation strategies |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## 1.1 What is AI Engineering?
 
 AI engineering is the discipline of building production-ready applications powered by foundation models. It sits at the intersection of machine learning engineering, software engineering, and systems design, but introduces unique concerns that neither field addresses alone.

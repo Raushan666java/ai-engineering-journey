@@ -4,25 +4,6 @@
 > — **ओशो**
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/18-samapan-osho/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## सीखने के उद्देश्य (Learning Objectives)
 
 ```mermaid

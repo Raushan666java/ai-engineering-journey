@@ -11,25 +11,6 @@
 - Analyze why Build Heap runs in O(n) time.
 - Apply heap-based solutions to classic interview problems.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/10-heaps/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/10-heaps/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/10-heaps/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/10-heaps/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/10-heaps/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/10-heaps/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Heaps Matter
 
 **Real-World Analogy (Hospital ER Triage):** In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs immediate attention even if 20 people with minor cuts arrived first. A queue (FIFO) would be disastrous → you'd treat in arrival order, letting critical cases wait. A priority queue (heap) solves this: the most critical patient is always treated next, regardless of arrival order. This is exactly what heaps do → they maintain items in a way that the "most important" (highest/lowest priority) is always immediately accessible.

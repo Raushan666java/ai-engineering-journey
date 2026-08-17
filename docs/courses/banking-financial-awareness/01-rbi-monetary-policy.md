@@ -10,25 +10,6 @@ By the end of this chapter, you will be able to:
 - Analyse the composition and functioning of the Monetary Policy Committee (MPC)
 - Evaluate how Open Market Operations (OMO) influence money supply and inflation
 - Interpret the transmission mechanism from policy rate changes to economic outcomes
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

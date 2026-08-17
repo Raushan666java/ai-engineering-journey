@@ -16,25 +16,6 @@ sidebar_position: 16
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 1.  Map the AI/ML threat landscape using the OWASP ML Top 10 and identify attack surfaces across the ML pipeline.
 2.  Generate adversarial examples using FGSM and PGD, and understand how they evade ML-based malware/IDS detectors.
 3.  Distinguish data poisoning, backdoor attacks, and supply-chain compromises on ML models.

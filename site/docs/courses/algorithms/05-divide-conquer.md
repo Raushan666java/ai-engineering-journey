@@ -13,25 +13,6 @@ sidebar_position: 5
 
 By the end of this chapter, students will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1. Apply the divide-and-conquer paradigm to novel problems.
 2. Solve the maximum subarray problem in \( O(n \log n) \) time.
 3. Analyze Strassen's matrix multiplication and Karatsuba multiplication.

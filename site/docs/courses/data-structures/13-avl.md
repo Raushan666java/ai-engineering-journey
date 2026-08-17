@@ -13,25 +13,6 @@ sidebar_position: 13
 
 > **One-Sentence Takeaway:** AVL trees guarantee O(log n) operations by maintaining a strict height balance factor of -1, 0, or 1 at every node.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/13-avl/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/13-avl/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/13-avl/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/13-avl/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/13-avl/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/13-avl/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Define balance factor and AVL invariant.
 - Implement LL, RR, LR, and RL rotations.
 - Implement insertion and deletion with rebalancing.

@@ -1,4 +1,4 @@
-﻿# Chapter 14: Timing Analysis
+# Chapter 14: Timing Analysis
 
 > **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flop timing parameters are the foundation of static timing analysis.
 > **Next:** Chapter 15 (Advanced Topics) ? timing closure is a critical step in modern VLSI design.
@@ -6,25 +6,6 @@
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/14-timing-analysis/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/14-timing-analysis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/14-timing-analysis/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/14-timing-analysis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/14-timing-analysis/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/14-timing-analysis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Perform static timing analysis (STA) on synchronous digital circuits
 2. Compute setup and hold slack for timing paths

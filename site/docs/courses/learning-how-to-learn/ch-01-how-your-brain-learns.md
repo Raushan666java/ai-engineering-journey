@@ -16,25 +16,6 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ![Focused vs Diffuse Modes](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns-dg1.png)
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Understand focused vs diffuse thinking and when to use each
 - Explain the 4-chunk limit and how to build chunks
 - Distinguish procedural knowledge from declarative knowledge

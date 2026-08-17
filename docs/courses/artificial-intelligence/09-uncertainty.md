@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) apply probability theory to represent uncertain knowledge; (2) construct and query Bayesian networks; (3) analyze conditional independence using d-separation; (4) implement exact and approximate inference in Bayesian networks; (5) model temporal processes using dynamic Bayesian networks and hidden Markov models.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Probabilistic Reasoning Matters
 
 **Real-World Analogy — Diagnosing Disease from Symptoms:** Imagine you are a doctor. A patient walks in with a fever, cough, and fatigue. These symptoms could indicate flu, COVID-19, common cold, or even something benign. You cannot be certain — but you must act. You weigh:

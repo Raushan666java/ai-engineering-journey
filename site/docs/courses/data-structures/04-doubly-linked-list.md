@@ -13,25 +13,6 @@ sidebar_position: 4
 
 After completing this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/04-doubly-linked-list/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/04-doubly-linked-list/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/04-doubly-linked-list/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/04-doubly-linked-list/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/04-doubly-linked-list/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/04-doubly-linked-list/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Implement a doubly linked list with forward and backward traversal.
 - Implement a circular linked list (singly and doubly).
 - Compare singly, doubly, and circular linked lists on time/space complexity.

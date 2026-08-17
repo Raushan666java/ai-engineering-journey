@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) describe major AI application domains spanning healthcare, finance, transportation, education, entertainment, agriculture, security, and environment; (2) explain how AI systems are architected, trained, and deployed in each domain with concrete implementations; (3) analyze the limitations, risks, edge cases, and failure modes of AI in high-stakes settings; (4) evaluate the societal and economic impact of AI applications across industries; (5) compare AI model performance against human baselines for key tasks; (6) discuss real-world AI systems (DeepMind, Waymo, Grammarly, Copilot) and their production architectures.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/18-ai-applications/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/18-ai-applications/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/18-ai-applications/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/18-ai-applications/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/18-ai-applications/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/18-ai-applications/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why AI Applications Matter
 
 > **Analogy:** A century ago, electricity was a laboratory curiosity. Then Edison built the light bulb, Tesla designed the AC motor, and within decades every factory, home, and city was electrified. AI today stands exactly where electricity stood in 1900 → no longer a research topic, but a general-purpose technology embedding itself into every product, service, and industry.

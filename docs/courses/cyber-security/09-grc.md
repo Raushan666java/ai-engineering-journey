@@ -11,25 +11,6 @@
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/09-grc/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/09-grc/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/09-grc/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/09-grc/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/09-grc/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/09-grc/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1. Define the three pillars of GRC and explain how they interconnect.
 2. Compare and contrast major security frameworks (NIST CSF 2.0, ISO 27001, CIS Controls, COBIT, PCI DSS 4.0, HIPAA, GDPR, SOC 2, FedRAMP, SOX).
 3. Perform qualitative and quantitative risk assessments using industry-standard models (NIST RMF, FAIR).

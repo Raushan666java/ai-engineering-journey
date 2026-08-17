@@ -15,25 +15,6 @@ sidebar_position: 1
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Define Artificial Intelligence from four distinct perspectives: acting humanly, thinking humanly, acting rationally, and thinking rationally.
 - Trace the historical development of AI from its philosophical roots (Aristotle) to modern deep learning systems.
 - Identify the core subfields of AI — machine learning, NLP, computer vision, robotics, expert systems — and their primary research goals.

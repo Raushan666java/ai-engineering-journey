@@ -15,25 +15,6 @@ sidebar_position: 10
 - Acquire speed techniques for data interpretation (DI) using estimation and approximation
 - Practice 50+ solved examples with shortcut methods across all major topics
 - Build confidence for written tests of TCS, Infosys, Wipro, IBPS, SBI, PSUs, and NIC
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Key Concepts
 
 ### The Speed Mathematics Mindset

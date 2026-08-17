@@ -15,25 +15,6 @@ This chapter covers system design concepts essential for senior Java backend int
 
 ![System Design Interview - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/65-interview-system-design.png)
 
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/65-interview-system-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/65-interview-system-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/65-interview-system-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

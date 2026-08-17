@@ -13,25 +13,6 @@ sidebar_position: 19
 
 After completing this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/19-jdbc-jooq/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/19-jdbc-jooq/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/19-jdbc-jooq/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/19-jdbc-jooq/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/19-jdbc-jooq/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/19-jdbc-jooq/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Establish database connections using DriverManager and DataSource
 - Execute SQL queries with Statement, PreparedStatement, and CallableStatement
 - Prevent SQL injection attacks using parameterized queries

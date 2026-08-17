@@ -13,25 +13,6 @@ sidebar_position: 10
 
 After completing this chapter you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Combine all loop concepts from Chapters 1–9 into a single production agent system
 - Implement a Plan-Act-Observe (ReAct) main loop with a full tool surface
 - Design human-in-the-loop approval gates with auto-approve heuristics

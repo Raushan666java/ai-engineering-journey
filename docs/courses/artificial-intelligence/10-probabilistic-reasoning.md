@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) construct Bayesian networks to model probabilistic relationships from domain knowledge; (2) analyze conditional independence using d-separation rules; (3) implement exact inference via variable elimination; (4) implement approximate inference using Gibbs sampling and likelihood weighting; (5) apply probabilistic reasoning to real-world systems such as medical diagnosis, fault analysis, and bioinformatics.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Chapter at a Glance
 
 | Section | Key Topics | Key Terms |

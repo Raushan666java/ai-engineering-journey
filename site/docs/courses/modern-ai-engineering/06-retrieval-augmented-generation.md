@@ -22,25 +22,6 @@ sidebar_position: 6
 > - Construct a complete RAGPipeline and RAGEvaluator in TypeScript
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/06-retrieval-augmented-generation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## 6.1 RAG Architecture
 
 Retrieval-Augmented Generation (RAG) combines a retrieval system with a generative model to produce responses grounded in external knowledge. Instead of relying solely on the model's parametric memory, RAG first retrieves relevant documents from a knowledge base and conditions the generation on those documents.

@@ -12,25 +12,6 @@ sidebar_position: 2
 > **Negative Marking:** 0.25 per wrong answer
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Test Pattern
 
 | Section | Questions | Marks | Duration | Cutoff (Gen/OBC/SC/ST) |

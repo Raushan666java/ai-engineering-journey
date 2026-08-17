@@ -9,25 +9,6 @@ In Chapter 3 you learned active recall and spaced repetition — how to pull inf
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Use the Pomodoro Technique to maintain deep focus during coding sessions
 - Apply interleaving to DSA and GATE preparation for stronger retention
 - Explain any concept using the Feynman Technique in plain language

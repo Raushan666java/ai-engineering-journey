@@ -19,25 +19,6 @@ sidebar_position: 20
 - Design a personalized recommendation pipeline using candidate generation, neural ranking, and re-ranking stages
 - Apply chaos engineering principles including Chaos Monkey, Chaos Kong, and automated failure experimentation in production
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

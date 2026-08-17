@@ -12,25 +12,6 @@ sidebar_position: 41
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/41-resilience/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/41-resilience/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/41-resilience/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Configure and use Circuit Breaker with states CLOSED, OPEN, HALF_OPEN, sliding window, failure rate threshold, and wait duration
 - Implement @CircuitBreaker annotations with custom fallback methods
 - Configure Retry with maxAttempts, waitDuration, exponential backoff, and retryOnException

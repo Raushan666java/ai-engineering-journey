@@ -1,4 +1,4 @@
-﻿# Chapter 12: Hardware Description Languages
+# Chapter 12: Hardware Description Languages
 
 > **Prereq:** Chapters 1?11 (digital logic fundamentals) ? HDLs describe the circuits designed in previous chapters.
 > **Next:** Chapter 13 (DAC and ADC) ? mixed-signal interfaces between digital HDL designs and the analog world.
@@ -6,25 +6,6 @@
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Distinguish between behavioural, RTL, and structural levels of abstraction
 2. Write and simulate combinational and sequential logic in a hardware description language

@@ -1,4 +1,4 @@
-﻿# अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें
+# अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें
 
 > **पिछला अध्याय:** [अध्याय ७: ध्वनि और नाद — ओशो की ध्वनि तकनीकें](./07-dhwani-nad.md)
 > **अगला अध्याय:** [अध्याय ९: आनंद और भावना — ओशो की आनंद तकनीकें](./09-chetna-ki-avasthayen.md)
@@ -18,25 +18,6 @@
 दबाने से भावना जहर बन जाती है, व्यक्त करने से आदत बन जाती है। तीसरा मार्ग है — साक्षी।
 
 ---
-
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## सीखने के उद्देश्य (Learning Objectives)
 

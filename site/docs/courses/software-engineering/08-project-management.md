@@ -19,25 +19,6 @@ sidebar_position: 8
 ✓ Implement TypeScript tools for EVM, risk tracking, estimation, and scheduling
 ✓ Apply planning poker and Delphi techniques for collaborative estimation
 ```
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/08-project-management/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/08-project-management/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/08-project-management/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Theory
 
 ### The Nature of Software Project Management

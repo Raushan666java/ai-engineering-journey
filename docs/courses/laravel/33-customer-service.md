@@ -19,25 +19,6 @@
 - Implement a SelfServiceAgent that powers FAQ matching and guided troubleshooting flows
 - Develop an SlaMonitoringAgent that tracks compliance metrics, generates reports, and alerts on breach patterns
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Chapter at a Glance
 
 | Aspect | Details |

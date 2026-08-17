@@ -16,25 +16,6 @@ By the end of this chapter, you will be able to:
 - Describe recent banking developments including PSB mergers and digital payments growth
 - Analyse the NPA classification stages from standard asset to loss asset
 - Appreciate financial inclusion initiatives and their impact
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-financial-awareness/05-banking-terminology-acts/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

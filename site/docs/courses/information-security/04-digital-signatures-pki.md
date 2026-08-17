@@ -1,4 +1,4 @@
-﻿---
+---
 id: 04-digital-signatures-pki
 slug: /information-security/04-digital-signatures-pki
 title: "Chapter 4: Digital Signatures & PKI"
@@ -16,25 +16,6 @@ sidebar_position: 4
 ## Learning Objectives
 
 After completing this chapter you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/04-digital-signatures-pki/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/04-digital-signatures-pki/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/04-digital-signatures-pki/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/04-digital-signatures-pki/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/04-digital-signatures-pki/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/04-digital-signatures-pki/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Explain the digital signature process: signing (hash + encrypt with private key) and verification (decrypt with public key + compare hash).
 - Describe the PKI hierarchy: Certificate Authority (CA), Registration Authority (RA), Validation Authority (VA), Certificate Revocation List (CRL), and OCSP.
 - Interpret X.509 certificate structure (version, serial number, issuer, subject, validity, public key, extensions).

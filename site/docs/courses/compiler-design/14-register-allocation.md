@@ -13,25 +13,6 @@ sidebar_position: 14
 
 After completing this chapter, students will be able to: construct live ranges from live-variable analysis; build interference graphs and compute register interference; apply Chaitin's graph-coloring algorithm with simplify, select, and spill phases; implement the Briggs optimistic-coloring improvement; perform conservative coalescing using both Briggs and George criteria; distinguish register allocation from assignment; apply weighted spill costs to prioritize inner-loop values; implement rematerialization for cheap recomputable values; handle pre-colored registers for calling conventions; and implement a complete graph-coloring register allocator in TypeScript.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/14-register-allocation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/14-register-allocation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/14-register-allocation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/14-register-allocation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/14-register-allocation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/14-register-allocation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |

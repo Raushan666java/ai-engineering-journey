@@ -13,25 +13,6 @@ sidebar_position: 8
 
 > **One-Sentence Takeaway:** Node.js uses a single-threaded event loop with six phases for async I/O processing.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/08-node-express/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/08-node-express/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/08-node-express/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/08-node-express/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/08-node-express/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/08-node-express/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

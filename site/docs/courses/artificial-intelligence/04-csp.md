@@ -13,25 +13,6 @@ sidebar_position: 7
 
 By the conclusion of this chapter, the student will be able to: (1) formulate problems as constraint satisfaction problems; (2) apply backtracking search with heuristic ordering; (3) implement constraint propagation via arc consistency; (4) exploit problem structure for efficient solving; (5) apply iterative algorithms for large CSPs.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/04-csp/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/04-csp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/04-csp/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/04-csp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/04-csp/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/04-csp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Constraint Satisfaction Matters
 
 **Real-World Analogy — Scheduling University Classes:** Imagine you are the registrar at a university. You have 50 classes to schedule across 10 time slots and 20 rooms. Each professor can only teach during certain hours, no two classes can share the same room at the same time, some courses must be taken in sequence (prerequisite constraints), and some students must be able to take both AI and Machine Learning without a time conflict. This is a classic Constraint Satisfaction Problem (CSP). The variables are (class, time, room) triples, the domains are all possible time-room combinations, and the constraints capture every real-world restriction. Without a CSP framework, you would resort to brute-force enumeration — evaluating 20¹â�° possible room assignments alone. With CSP techniques (backtracking, forward checking, AC-3), you prune invalid branches early and find a feasible schedule in seconds instead of centuries. CSPs are the mathematical backbone of timetabling, Sudoku, register allocation in compilers, and even NASA's Deep Space Network antenna scheduling.

@@ -10,25 +10,6 @@ sidebar_position: 1
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/01-core-banking-solutions/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/01-core-banking-solutions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/01-core-banking-solutions/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/01-core-banking-solutions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/01-core-banking-solutions/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/01-core-banking-solutions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Explain the three-tier architecture of Core Banking Solutions (CBS)
 - Compare leading CBS platforms: T24, Finacle, and BaNCS
 - Describe the technical flow of NEFT and RTGS settlement systems

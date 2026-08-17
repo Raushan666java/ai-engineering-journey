@@ -15,25 +15,6 @@ sidebar_position: 1
 - Compare algorithms using growth-rate families.
 - Apply complexity analysis to choose optimal data structures for real-world problems.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/01-complexity/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/01-complexity/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/01-complexity/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/01-complexity/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Complexity Analysis Matters in DS
 
 **Real-World Analogy:** Imagine you are building a contact-list app for a phone with 1 million users. When a user searches for a contact, using an **ArrayList** (O(n) search) would scan through all million entries — taking ~10 milliseconds. But using a **HashMap** (O(1) average search) retrieves the contact in under 1 microsecond. At scale, the difference between O(n) and O(1) is the difference between a snappy app and one that freezes. Data structure choice IS complexity analysis in action.

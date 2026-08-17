@@ -21,25 +21,6 @@ sidebar_position: 3
 - Extend logistic regression to multi-class classification via softmax
 - Apply L1 and L2 regularization to logistic regression
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/03-logistic-regression/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/03-logistic-regression/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/03-logistic-regression/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/03-logistic-regression/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/03-logistic-regression/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/03-logistic-regression/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

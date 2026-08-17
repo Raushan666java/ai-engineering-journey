@@ -8,25 +8,6 @@ By the end of this chapter, you will be able to:
 - Analyse the marketing environment using micro and macro frameworks
 - Apply the STP (Segmentation, Targeting, Positioning) process
 - Compare marketing philosophies from production to holistic orientation
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/marketing-aptitude/01-marketing-concepts/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Theory

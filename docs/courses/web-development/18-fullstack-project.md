@@ -6,25 +6,6 @@
 
 > **One-Sentence Takeaway:** Monorepo with shared types package ensures type consistency across frontend and backend.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/18-fullstack-project/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/18-fullstack-project/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/18-fullstack-project/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/18-fullstack-project/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/18-fullstack-project/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/web-development/18-fullstack-project/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

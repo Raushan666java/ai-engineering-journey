@@ -11,25 +11,6 @@ This chapter covers the four pillars of web security beyond basic authentication
 
 By the end of this chapter you should be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Enable method-level security with `@EnableMethodSecurity` (Java 17+ syntax)
 - Apply `@PreAuthorize`, `@PostAuthorize`, `@PreFilter`, and `@PostFilter` with SpEL expressions
 - Understand and use `hasRole`, `hasAuthority`, `hasAnyAuthority`, `hasPermission`, `authentication`, `principal`, `returnObject`, and `filterObject`

@@ -16,25 +16,6 @@ sidebar_position: 5
 - Apply stacks to expression evaluation, parenthesis matching, and undo functionality.
 - Analyze the complexity of each stack operation.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/05-stacks/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-structures/05-stacks/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Stacks Matter
 
 **Real-world analogy:** Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost one (pop). The plate at the bottom came first but gets used last. This is exactly Last-In-First-Out (LIFO). Another example — a Pringles can: you can only remove the chip that was inserted last. Stacks appear everywhere in computing: the Call Stack tracks where each function should return after it finishes; the Undo stack (Ctrl+Z) remembers your last edit; your browser's Back button pops the previous page off a navigation stack. Without stacks, recursion, expression evaluation, and depth-first search simply would not work.

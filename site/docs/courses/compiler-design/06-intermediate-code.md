@@ -13,25 +13,6 @@ sidebar_position: 6
 
 After completing this chapter, students will be able to: distinguish among abstract syntax trees, postfix notation, and three-address code as intermediate representations; construct quadruples, triples, and indirect triples; build directed acyclic graphs for common-subexpression sharing; generate three-address code for common programming-language constructs including assignment, conditional statements, loops, array access, and procedure calls; compare IRs on suitability, storage cost, and optimization potential; and implement a complete TAC generator in TypeScript.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/06-intermediate-code/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/06-intermediate-code/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/06-intermediate-code/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/06-intermediate-code/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/06-intermediate-code/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/06-intermediate-code/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ### Chapter at a Glance
 
 | Section | Description |

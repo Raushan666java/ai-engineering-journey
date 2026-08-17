@@ -19,25 +19,6 @@ After completing this chapter, you will be able to:
 - Parallelize ML workflows: hyperparameter tuning, batch inference, ensemble evaluation
 - Avoid shared-state pitfalls and serialization bottlenecks
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ![Concurrency and Multiprocessing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
 
 

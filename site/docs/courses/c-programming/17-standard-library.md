@@ -22,25 +22,6 @@ sidebar_position: 17
 - Recognize `stdarg.h` for variadic functions and `signal.h` for signal handling
 - Apply errno-based error detection with `math.h` and `stdlib.h` functions
 - Compare `atoi` vs `strtol` vs `sscanf` for production-safe parsing
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/17-standard-library/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/17-standard-library/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/17-standard-library/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ### Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

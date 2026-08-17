@@ -1,29 +1,10 @@
-﻿# Chapter 6: Cloud Networking
+# Chapter 6: Cloud Networking
 
 > **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security](./07-cloud-security.md)
 
 ## Learning Objectives
 
 After completing this chapter, students will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/06-cloud-networking/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/06-cloud-networking/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/06-cloud-networking/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/06-cloud-networking/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/06-cloud-networking/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/06-cloud-networking/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Design Virtual Private Cloud (VPC) architectures with subnets, route tables, and gateways.
 2. Configure security groups and network ACLs for traffic filtering.

@@ -10,25 +10,6 @@ sidebar_position: 2
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Explain UPI architecture including NPCI role, PSPs, issuer/acquirer banks, and the UPI reference number flow
 - Compare IMPS, NEFT, and RTGS on settlement type, timing, and transaction limits
 - Describe RuPay card processing and how it differs from Visa/Mastercard

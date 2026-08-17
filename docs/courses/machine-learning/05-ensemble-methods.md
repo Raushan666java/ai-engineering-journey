@@ -1,4 +1,4 @@
-﻿# Chapter 5: Ensemble Methods
+# Chapter 5: Ensemble Methods
 
 > **Previous:** [Decision Trees](./04-decision-trees.md) | **Next:** [Support Vector Machines](./06-support-vector-machines.md)
 
@@ -14,25 +14,6 @@
 - Explain Gradient Boosting conceptually (GBM, XGBoost, LightGBM)
 - Compare and contrast stacking, voting, and blending ensembles
 - Use out-of-bag (OOB) evaluation for unbiased performance estimation
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/05-ensemble-methods/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/05-ensemble-methods/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/05-ensemble-methods/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/05-ensemble-methods/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/05-ensemble-methods/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/05-ensemble-methods/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 ## Chapter at a Glance
 

@@ -13,25 +13,6 @@
 7. Implement IPv4 header parsing, subnet calculation, ARP cache, and fragmentation simulation in C++ and Python.
 8. Analyze time and space complexity of network layer algorithms with reasoning.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ---
 
 ### Chapter at a Glance

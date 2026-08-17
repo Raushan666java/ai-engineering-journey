@@ -13,25 +13,6 @@ sidebar_position: 10
 
 After studying this chapter, students will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Distinguish among the five STL algorithm categories (non-modifying, modifying, sorting, numeric, set operations)
 - Apply std::find, std::count, std::equal, std::mismatch, and std::search on real data
 - Use std::copy, std::transform, std::replace, std::fill, std::generate, std::remove, and std::unique correctly

@@ -2,25 +2,6 @@
 
 > **Purpose:** A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done conditions.
 
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Overview
 
 This plan bridges backend engineering (Python, FastAPI) with AI agent development (LangGraph, CrewAI, MCP) and production hardening (Docker, CI/CD, monitoring). By week 12 you will have:

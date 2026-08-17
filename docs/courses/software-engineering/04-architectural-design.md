@@ -12,25 +12,6 @@
 > - Select appropriate architectural patterns based on quality attribute requirements
 > - Implement layered, MVC, and hexagonal architectures in TypeScript
 > - Build an ArchitectureDecisionRecord manager with full lifecycle support
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Theory
 
 ### The Role of Architectural Design

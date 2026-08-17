@@ -12,25 +12,6 @@ sidebar_position: 32
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/32-testcontainers/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/32-testcontainers/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/32-testcontainers/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/32-testcontainers/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/32-testcontainers/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/32-testcontainers/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1.  Understand the Testcontainers architecture and how it manages container lifecycles
 2.  Use `GenericContainer` with the JUnit 5 `@Testcontainers` / `@Container` extension
 3.  Manage container lifecycles: start/stop, reusable containers, singleton patterns

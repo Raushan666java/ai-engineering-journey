@@ -8,25 +8,6 @@
 
 After studying this chapter, students will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Distinguish compile-time polymorphism from run-time polymorphism and select the right mechanism
 - Apply function overloading rules to resolve ambiguous calls
 - Design operator overloads following C++ guidelines and best practices

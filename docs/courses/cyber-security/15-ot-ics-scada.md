@@ -14,25 +14,6 @@
 - Implement OT monitoring strategies with passive vs active techniques, OT-SIEM, Wireshark dissectors, and Zeek scripts
 - Configure secure remote access including jump boxes, session recording, vendor MFA, and air-gap considerations
 - Build working TypeScript tools: Modbus scanner, S7comm packet builder, DNP3 frame parser, Purdue model validator, ICS threat detection rules, and BACnet who-is scanner
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/15-ot-ics-scada/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/15-ot-ics-scada/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/15-ot-ics-scada/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/15-ot-ics-scada/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/15-ot-ics-scada/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/15-ot-ics-scada/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ---
 
 ## Chapter at a Glance

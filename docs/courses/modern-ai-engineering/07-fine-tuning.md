@@ -11,25 +11,6 @@
 > - Evaluate fine-tuned models and avoid benchmark overfitting
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## 7.1 When to Fine-Tune
 
 Fine-tuning is one of the most powerful tools in an AI engineer's toolkit, but it is also the most expensive and complex. Before fine-tuning, teams should exhaust cheaper alternatives: prompt engineering, few-shot examples, retrieval-augmented generation (RAG), and controlled decoding. The decision to fine-tune should be driven by **performance gaps** that cannot be closed by other means.

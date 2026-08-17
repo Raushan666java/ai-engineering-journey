@@ -19,25 +19,6 @@ This chapter establishes the mathematical and architectural vocabulary you need 
 
 After completing this chapter you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch01-loop-foundations/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1.  **Distinguish open-loop from closed-loop control** and explain why closed loops are essential for robust agents.
 2.  **Identify positive and negative feedback** in any agent architecture and predict their stability consequences.
 3.  **Define gain margin, phase margin, and oscillation criteria** in the context of software loops.

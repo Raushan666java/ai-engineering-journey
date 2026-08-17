@@ -16,25 +16,6 @@ Every example in this chapter is complete and compilable. Create a Maven project
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/11-auto-configuration/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/11-auto-configuration/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/11-auto-configuration/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/11-auto-configuration/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Explain how `@EnableAutoConfiguration` delegates to `AutoConfigurationImportSelector` and loads auto-configuration classes from `spring.factories` and `AutoConfiguration.imports`
 - Use every member of the `@Conditional` family to gate bean definitions on classpath presence, bean presence, property values, resource availability, expression evaluation, cloud platform, JNDI, Java version, single-candidate beans, and war deployment
 - Recognize the major auto-configuration classes â€” `DataSourceAutoConfiguration`, `JpaRepositoriesAutoConfiguration`, `SecurityAutoConfiguration` â€” and understand their conditional guards

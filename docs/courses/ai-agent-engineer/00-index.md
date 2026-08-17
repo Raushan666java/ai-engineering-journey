@@ -2,25 +2,6 @@
 
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
 
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Course Overview
 
 A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend developers who want to pivot into AI Agent Engineering. Builds on your existing production experience — multi-tenant ERPs, payment systems, WhatsApp AI bots, n8n automation, Docker, Redis — and fills the gaps in Python async, LLM fundamentals, RAG theory, LangGraph orchestration, MCP protocol, and production hardening for AI workloads.

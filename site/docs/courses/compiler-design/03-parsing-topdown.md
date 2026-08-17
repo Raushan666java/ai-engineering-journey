@@ -13,25 +13,6 @@ sidebar_position: 3
 
 After completing this chapter, students will be able to: define context-free grammars and use them to describe programming-language syntax; construct derivations and parse trees; eliminate ambiguity, left recursion, and common prefixes from grammars; compute FIRST and FOLLOW sets using the full iterative algorithm; construct LL(1) parsing tables; implement recursive-descent parsers with proper error reporting; and implement a complete LL(1) parser generator in TypeScript.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ### Chapter at a Glance
 
 | Section | Description |

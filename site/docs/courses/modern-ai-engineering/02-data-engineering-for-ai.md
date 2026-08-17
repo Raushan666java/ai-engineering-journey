@@ -17,25 +17,6 @@ sidebar_position: 2
 | LO4 | Design preprocessing pipelines for cleaning, normalization, deduplication, and PII removal |
 | LO5 | Apply curation methods including active learning, weak supervision, and programmatic labeling |
 | LO6 | Navigate privacy regulations (GDPR, CCPA) and implement responsible data handling practices |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/modern-ai-engineering/02-data-engineering-for-ai/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## 2.1 The Critical Role of Data in AI
 
 The most widely cited lesson from production AI systems is that data quality matters more than model choice. A 2023 survey of AI practitioners found that 60% of project failures traced back to data issues, not model issues. This section explains why data is the dominant factor in AI application performance.

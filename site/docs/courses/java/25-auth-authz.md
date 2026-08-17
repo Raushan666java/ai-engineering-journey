@@ -18,25 +18,6 @@ This chapter covers the full authentication and authorization architecture of Sp
 
 By the end of this chapter you should be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/25-auth-authz/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/25-auth-authz/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/25-auth-authz/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/25-auth-authz/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/25-auth-authz/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/25-auth-authz/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Configure `SecurityFilterChain` with `@EnableWebSecurity` and understand the auto-configuration that Spring Boot provides
 - Add custom `Filter` implementations at specific positions in the filter chain
 - Understand `ProviderManager`, `DaoAuthenticationProvider`, and how to write a custom `AuthenticationProvider`

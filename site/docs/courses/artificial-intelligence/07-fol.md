@@ -21,25 +21,6 @@ sidebar_position: 12
 - Convert FOL sentences to Conjunctive Normal Form (CNF) via Skolemization.
 - Apply the unification algorithm and resolution principle in FOL theorem proving.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/07-fol/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/07-fol/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/07-fol/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/07-fol/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/07-fol/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/07-fol/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why FOL Matters — Contracts, Not Facts
 
 **Real-World Analogy (Contract Law):** Propositional Logic is like a checklist of facts — "It is raining," "The contract was signed." But contracts are far richer: they say "Every party must sign before the effective date" (universal claim) and "There exists a notary who witnessed the signatures" (existential claim). A contract that said only "Party A signed. Party B signed. Effective date passed." would miss the conditional structure and the scope of obligations. FOL is the language of contracts — it says *for every* object of a certain kind, *there exists* some relation or object that satisfies a condition. Without FOL, you cannot represent general truths that span entire classes of objects, and no AI system can reason about the world beyond isolated facts.

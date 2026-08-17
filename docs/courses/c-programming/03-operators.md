@@ -1,4 +1,4 @@
-﻿# Chapter 3: Operators in C --- In-Depth Reference
+# Chapter 3: Operators in C --- In-Depth Reference
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)
 
@@ -10,25 +10,6 @@
 - Use ternary, comma, sizeof, pointer, member-access, and cast operators fluently
 - Predict short-circuit evaluation, overflow, and signed/unsigned shift behavior
 - Recognize real-world applications: embedded GPIO, kernel macros, networking, graphics
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/03-operators/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/03-operators/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/c-programming/03-operators/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 ### Chapter at a Glance
 

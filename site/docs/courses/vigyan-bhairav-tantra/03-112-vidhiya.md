@@ -16,25 +16,6 @@ sidebar_position: 3
 > "जब मैंने पहली बार विज्ञान भैरव तंत्र पढ़ा, तो मैं चकित रह गया। ११२ तकनीकें — हर एक अलग, हर एक पूर्ण, हर एक किसी न किसी प्रकार के व्यक्ति के लिए। यह कोई आकस्मिक संग्रह नहीं है — यह एक वैज्ञानिक वर्गीकरण है। यह मनुष्य की चेतना के पूरे स्पेक्ट्रम को कवर करता है — सबसे स्थूल से लेकर सबसे सूक्ष्म तक।"
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/vigyan-bhairav-tantra/03-112-vidhiya/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## सीखने के उद्देश्य (Learning Objectives)
 
 इस अध्याय को पूरा करने के बाद आप:

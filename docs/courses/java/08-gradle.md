@@ -12,25 +12,6 @@ This chapter covers Gradle from first principles through advanced production pat
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/08-gradle/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/08-gradle/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/08-gradle/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Explain the Gradle build lifecycle: initialization, configuration, and execution phases
 - Write and run builds using both Groovy DSL and Kotlin DSL
 - Define tasks with `doLast`, `doFirst`, `@TaskAction`, `dependsOn`, and Gradle's built-in task types (`Copy`, `Exec`, `Jar`, `Zip`, `Delete`, `JavaExec`)

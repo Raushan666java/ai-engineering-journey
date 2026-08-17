@@ -16,25 +16,6 @@ sidebar_position: 7
 - Implement both top-down (memoization) and bottom-up (tabulation) approaches
 - Apply space optimization techniques to reduce memory complexity
 - Identify DP patterns: 0/1 Knapsack, LCS, LIS, matrix chain, state machine
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/07-dynamic-programming/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/07-dynamic-programming/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/07-dynamic-programming/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/07-dynamic-programming/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/07-dynamic-programming/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/07-dynamic-programming/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Problem Classification Flow
 
 ```mermaid

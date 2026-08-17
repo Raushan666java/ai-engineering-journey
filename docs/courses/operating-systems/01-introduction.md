@@ -13,25 +13,6 @@
 - Explain system calls and differentiate standard APIs from actual system calls
 - Compare OS structures: monolithic, microkernel, layered, modular, hybrid
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Operating Systems Matter
 
 Imagine a 50-story office building. Without a building manager, chaos erupts: people fight over elevators, rooms are double-booked, the HVAC runs randomly, and unauthorized people wander into restricted areas. The **building manager** allocates office space, schedules cleaning, controls access, mediates disputes, and ensures utilities run efficiently.

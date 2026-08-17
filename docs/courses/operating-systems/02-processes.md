@@ -14,25 +14,6 @@
 - Compare interprocess communication methods: shared memory and message passing
 - Distinguish between independent and cooperating processes
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/02-processes/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/02-processes/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/02-processes/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/02-processes/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/02-processes/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/operating-systems/02-processes/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Process Management Matters
 
 Imagine a car factory assembly line. Multiple car models → sedans, SUVs, trucks → move through the same line simultaneously. Each vehicle is at a different stage: one getting an engine, another getting painted, a third undergoing quality inspection. The factory manager (OS) must track each vehicle's status, allocate resources (workers, tools, paint), switch between tasks efficiently, and handle emergencies (defective parts, stalled machines). Without this management, chaos ensues → collisions, idle workers, missed deadlines.

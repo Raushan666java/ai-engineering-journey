@@ -14,25 +14,6 @@
 > - Implement a full RequirementsManager with CRUD, traceability, and prioritisation in TypeScript
 > - Build automated validation pipelines that check SMART criteria, consistency, and completeness
 > - Generate use cases from user stories and manage requirements evolution
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/02-requirements/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/02-requirements/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/02-requirements/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Theory
 
 ### The Requirements Engineering Process

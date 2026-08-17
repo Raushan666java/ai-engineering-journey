@@ -12,25 +12,6 @@ After completing this chapter, the student will be able to:
 - Plan and manage a 6-sprint development cycle
 - Assess and mitigate project risks
 - Deploy using blue-green deployment on Kubernetes
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/16-capstone/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/16-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/16-capstone/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/16-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/16-capstone/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/16-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Capstone Overview
 
 The capstone project integrates every topic covered in this course into a single, coherent development exercise. Students will specify, design, implement, test, and document a software system using the techniques from all 15 previous chapters.

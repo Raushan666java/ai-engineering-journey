@@ -13,25 +13,6 @@ sidebar_position: 13
 
 After completing this chapter, students will be able to: identify loop-invariant expressions using reaching-definitions information; perform loop-invariant code motion with safety checks; detect basic and derived induction variables; apply strength reduction to replace multiplications with additions; eliminate induction variables from loop control; implement loop unrolling with remainder handling; apply loop fusion and fission transformations; determine when loop interchange improves cache locality; understand vectorization legality via dependence analysis; and implement a complete loop-optimization pipeline in TypeScript.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/13-loop-optimization/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/13-loop-optimization/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/13-loop-optimization/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/13-loop-optimization/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/13-loop-optimization/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/compiler-design/13-loop-optimization/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |

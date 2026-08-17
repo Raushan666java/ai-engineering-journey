@@ -23,25 +23,6 @@ sidebar_position: 10
 - Compare models statistically using McNemar's test and paired t-tests
 - Diagnose bias vs variance using learning curves and validation curves
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/10-model-evaluation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/10-model-evaluation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/10-model-evaluation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/10-model-evaluation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/10-model-evaluation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/machine-learning/10-model-evaluation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ---
 
 ## Chapter at a Glance

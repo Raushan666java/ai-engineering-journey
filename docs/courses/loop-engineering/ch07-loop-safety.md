@@ -6,25 +6,6 @@
 
 After completing this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch07-loop-safety/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch07-loop-safety/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch07-loop-safety/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch07-loop-safety/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch07-loop-safety/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/loop-engineering/ch07-loop-safety/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Identify and prevent runaway loops (infinite retries, token explosion, cost blowout)
 - Detect reward hacking and goal misgeneralization in agentic systems
 - Recognize loop arrest and local optima traps in optimization loops

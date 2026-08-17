@@ -5,25 +5,6 @@
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 1. **Analyze** real-world software supply chain attacks (SolarWinds, Codecov, log4j) and identify the technical vectors used.
 2. **Generate and validate** SBOM (Software Bill of Materials) documents in SPDX and CycloneDX formats.
 3. **Implement** dependency vulnerability scanning using tools like npm audit, Snyk, and OWASP Dependency Check.

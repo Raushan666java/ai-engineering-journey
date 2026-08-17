@@ -18,25 +18,6 @@ sidebar_position: 9
 - Build distributable Laravel packages with config publishing, migrations, views, routes, and Artisan commands
 - Create custom Artisan commands with complex input, output formatting, and progress feedback
 - Schedule tasks, manage overlapping prevention, and leverage Laravel's concurrency primitives
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/09-container-packages/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/09-container-packages/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/laravel/09-container-packages/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Section | Key Topics |

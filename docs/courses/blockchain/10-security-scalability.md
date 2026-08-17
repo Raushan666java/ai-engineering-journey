@@ -14,25 +14,6 @@
 - Understand zk-SNARKs vs zk-STARKs differences
 - Identify the data availability problem and its solutions
 - Analyze the impact of quantum computing on current cryptographic standards
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/10-security-scalability/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/blockchain/10-security-scalability/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/10-security-scalability/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/blockchain/10-security-scalability/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/10-security-scalability/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/blockchain/10-security-scalability/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

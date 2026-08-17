@@ -10,25 +10,6 @@ By the end of this chapter, you will be able to:
 - Distinguish between "sufficient" and "necessary" conditions
 - Apply the decision tree approach consistently
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ---
 
 ## Theory

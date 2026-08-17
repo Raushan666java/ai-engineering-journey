@@ -16,25 +16,6 @@ sidebar_position: 1
 - Master hash map-based optimization for O(n) time solutions
 - Handle edge cases: empty arrays, duplicate values, negative numbers, overflow
 - Implement algorithms that balance time and space complexity
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/01-arrays/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/01-arrays/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/01-arrays/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/01-arrays/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/01-arrays/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/coding-problems/01-arrays/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Problem Classification Flow
 
 ```mermaid

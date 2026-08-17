@@ -1,4 +1,4 @@
-﻿---
+---
 id: 02-network-security
 slug: /information-security/02-network-security
 title: "Chapter 2: Network Security"
@@ -16,25 +16,6 @@ sidebar_position: 2
 ## Learning Objectives
 
 After completing this chapter you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/02-network-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/02-network-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/information-security/02-network-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 - Classify firewalls by generation and explain filtering mechanisms (packet filter, stateful, application proxy, NGFW).
 - Distinguish between IDS and IPS across detection methods (signature-based vs anomaly-based).
 - Describe VPN architectures and compare IPSec vs SSL/TLS VPNs.

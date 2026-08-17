@@ -3,25 +3,6 @@
 > National Informatics Centre (NIC) Scientist B recruitment exam — fully solved with explanations, TypeScript code, Mermaid diagrams, and topic-wise analysis.
 
 ---
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Exam Pattern
 
 | Section | Subject | Questions | Marks | Duration |

@@ -6,25 +6,6 @@
 
 By the conclusion of this chapter, the student will be able to: (1) define language models and evaluate them using perplexity; (2) implement n-gram models with smoothing; (3) apply HMMs and CRFs for sequence labeling; (4) implement the CKY algorithm for parsing; (5) use modern NLP toolkits for standard tasks; (6) explain tokenization, stemming, lemmatization, and POS tagging with working code; (7) implement named entity recognition and dependency parsing; (8) understand word embeddings (Word2Vec, GloVe, FastText, BERT); (9) explain the Transformer architecture, attention mechanism, and GPT/BERT differences; (10) apply NLP to real-world systems like chatbots, search, and translation.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why NLP Matters
 
 **Analogy:** Teaching a computer to understand language is like teaching a child to read. A child first learns letters (characters), then words (tokens), then grammar (syntax), then meaning (semantics), then reading between the lines (pragmatics). Similarly, NLP pipelines progress from raw text through tokenization, parsing, semantic analysis, and discourse processing — each layer building on the previous one.

@@ -1,29 +1,10 @@
-﻿# Chapter 3: Cloud Compute Services
+# Chapter 3: Cloud Compute Services
 
 > **Previous:** [Chapter 2: Virtualization](./02-virtualization.md) | **Next:** [Chapter 4: Cloud Storage Services](./04-cloud-storage.md)
 
 ## Learning Objectives
 
 After completing this chapter, students will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/03-cloud-compute/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/03-cloud-compute/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/03-cloud-compute/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/03-cloud-compute/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/cloud-computing/03-cloud-compute/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/cloud-computing/03-cloud-compute/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 1. Compare and contrast compute services across AWS (EC2), Azure (Virtual Machines), and GCP (Compute Engine).
 2. Categorize instance families and select the appropriate type for specific workload profiles.

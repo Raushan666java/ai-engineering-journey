@@ -1,29 +1,10 @@
-﻿# Chapter 12: Boolean Algebra
+# Chapter 12: Boolean Algebra
 
 > **Previous:** [Chapter 11: Algebraic Structures](./11-algebra.md) | **Next:** [Chapter 13: Probability](./13-probability.md)
 
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/12-boolean/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/discrete-mathematics/12-boolean/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/12-boolean/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/discrete-mathematics/12-boolean/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/12-boolean/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/discrete-mathematics/12-boolean/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 
 - Define Boolean algebra and identify its axioms and properties
 - Simplify Boolean expressions using identities and laws

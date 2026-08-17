@@ -11,25 +11,6 @@ sidebar_position: 15
 
 ![Web APIs and Application Protocols](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch15-web-apis.png)
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/15-web-apis/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/15-web-apis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/15-web-apis/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/15-web-apis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/15-web-apis/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/computer-networks/15-web-apis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 1. Design RESTful APIs with appropriate resource modeling, HTTP methods, and status codes.
 2. Explain the WebSocket protocol and its use in real-time applications.
 3. Compare gRPC and REST for different application requirements.

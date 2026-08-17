@@ -13,25 +13,6 @@ sidebar_position: 10
 
 By the conclusion of this chapter, the student will be able to: (1) explain the role of ontology in knowledge representation; (2) distinguish propositional and first-order logic as representation languages; (3) construct semantic networks and frame-based representations; (4) apply description logic to taxonomic reasoning; (5) model actions and change using situation and event calculi; (6) compare knowledge representation schemes along expressiveness, tractability, and decidability; (7) implement basic inference procedures for semantic networks and description logics in Python.
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 ## Why Knowledge Representation Matters
 
 > **Real-World Analogy:** Think of a library cataloging system. A library contains thousands of books, each with a subject, author, publication year, and location. Without a structured catalog (Dewey Decimal System, card catalogs, digital databases), finding a specific book would require searching every shelf. Knowledge representation is the AI equivalent — it provides the schema, categories, and relationships that allow an intelligent system to store, index, retrieve, and infer new knowledge efficiently.

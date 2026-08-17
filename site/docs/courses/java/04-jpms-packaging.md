@@ -21,25 +21,6 @@ All examples are written for **Java 21+** and are fully compilable.
 
 By the end of this chapter, you will be able to:
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
-
 - Explain the five core motivations for the Java module system: JAR hell, strong encapsulation, reliable configuration, scalable reasoning, and JDK modularization
 - Write `module-info.java` declarations using `requires`, `exports`, `opens`, `provides`, `uses`, and `permits`
 - Distinguish between named modules, unnamed modules, and automatic modules, and understand how the module graph is resolved

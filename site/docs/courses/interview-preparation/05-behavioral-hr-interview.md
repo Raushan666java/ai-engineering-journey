@@ -15,25 +15,6 @@ sidebar_position: 5
 - Navigate situational judgment tests using the STARR framework
 - Excel in group discussions with proven strategies
 - Develop confidence for panel interviews in both IT and government sectors
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Key Concepts
 
 ### The STAR Method

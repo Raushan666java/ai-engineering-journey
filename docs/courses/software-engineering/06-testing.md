@@ -14,25 +14,6 @@
 ✓ Apply BDD principles with user-story-driven test scenarios
 ✓ Design a CI/CD test pipeline with quality gates
 ```
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/06-testing/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/06-testing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/06-testing/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/06-testing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/06-testing/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/software-engineering/06-testing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Theory
 
 ### Verification and Validation

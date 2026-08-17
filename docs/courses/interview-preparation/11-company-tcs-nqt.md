@@ -7,25 +7,6 @@
 - Crack 15 reasoning problems covering coding-decoding, blood relations, direction sense, and syllogisms
 - Ace 10 verbal ability questions with synonyms, antonyms, and sentence completion
 - Understand TCS exam pattern, marking scheme, and topic weightage through visual guides
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## TCS NQT Exam Pattern
 
 ```mermaid

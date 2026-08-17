@@ -3,7 +3,7 @@ id: visual-notes
 slug: /ai-engineering-placement/33-campus-placement/visual-notes
 title: "Visual Notes — The Campus Placement Journey"
 sidebar_label: "Visual Notes"
-sidebar_position: 372
+sidebar_position: 391
 ---
 # Visual Notes — The Campus Placement Journey
 

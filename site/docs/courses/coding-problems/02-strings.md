@@ -89,6 +89,11 @@ xychart-beta
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Two Pointers]
+🧩 **Pattern:** Two Pointers
+✅ **Best Option:** Two pointers skipping non-alphanumerics — O(n) time, O(1) space
+❌ **Not Optimal:** Filter + reverse copy O(n) space — extra memory not required
+🔗 **LeetCode:** [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+🔗 **Related:** [Reverse String](02-strings.md#problem-4-reverse-string) · [Longest Palindromic Substring](02-strings.md#problem-10-longest-palindromic-substring) · [Container With Most Water](01-arrays.md#problem-13-container-with-most-water)
 
 **Problem:** Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
@@ -147,6 +152,11 @@ console.log(isPalindrome(".,")); // true
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Hash Table, Sorting]
+🧩 **Pattern:** Frequency Count, Hash Map
+✅ **Best Option:** 26-slot count array — O(n) time, O(1) space
+❌ **Not Optimal:** Sorting both strings O(n log n) — slower than a counting pass
+🔗 **LeetCode:** [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+🔗 **Related:** [Group Anagrams](02-strings.md#problem-11-group-anagrams) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string) · [Two Sum](01-arrays.md#problem-1-two-sum)
 
 **Problem:** Given two strings s and t, return true if t is an anagram of s, false otherwise.
 
@@ -201,6 +211,11 @@ console.log(isAnagram("a", "a")); // true
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Hash Table]
+🧩 **Pattern:** Frequency Count, Hash Map
+✅ **Best Option:** Two-pass frequency count — O(n) time, O(1) space
+❌ **Not Optimal:** Nested loops O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+🔗 **Related:** [Valid Anagram](02-strings.md#problem-2-valid-anagram) · [Longest Repeating Character Replacement](02-strings.md#problem-13-longest-repeating-character-replacement) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate)
 
 **Problem:** Given a string s, find the first non-repeating character and return its index. If none exists, return -1.
 
@@ -256,6 +271,11 @@ console.log(firstUniqChar("aabb")); // -1
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Two Pointers]
+🧩 **Pattern:** Two Pointers, In-place
+✅ **Best Option:** Two pointers swapping ends — O(n) time, O(1) space
+❌ **Not Optimal:** Reverse into a copy O(n) space — violates the in-place requirement
+🔗 **LeetCode:** [Reverse String](https://leetcode.com/problems/reverse-string/)
+🔗 **Related:** [Valid Palindrome](02-strings.md#problem-1-valid-palindrome) · [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string) · [Move Zeroes](01-arrays.md#problem-4-move-zeroes)
 
 **Problem:** Write a function that reverses a string in-place.
 
@@ -302,6 +322,11 @@ console.log(s2); // ["h","a","n","n","a","H"]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Trie]
+🧩 **Pattern:** String Manipulation
+✅ **Best Option:** Vertical scanning — O(n·m) time, O(1) space
+❌ **Not Optimal:** Sorting strings first O(n log n · m) — sorting cost is unnecessary
+🔗 **LeetCode:** [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+🔗 **Related:** [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers) · [Implement strStr()](02-strings.md#problem-7-implement-strstr) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -353,6 +378,11 @@ console.log(longestCommonPrefix([""])); // ""
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Stack]
+🧩 **Pattern:** String Manipulation, Hash Map
+✅ **Best Option:** Stack + bracket map — O(n) time, O(n) space
+❌ **Not Optimal:** Counting open/close only — fails ordering like "([)]"
+🔗 **LeetCode:** [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+🔗 **Related:** [Letter Combinations of a Phone Number](02-strings.md#problem-18-letter-combinations-of-a-phone-number) · [Wildcard Matching](02-strings.md#problem-25-wildcard-matching) · [Two Sum](01-arrays.md#problem-1-two-sum)
 
 **Problem:** Given a string containing '(', ')', '{', '}', '[' and ']', determine if the input string is valid. Brackets must close in the correct order.
 
@@ -400,6 +430,11 @@ console.log(isValid("([)]")); // false
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Two Pointers, Pattern Matching]
+🧩 **Pattern:** Two Pointers, Sliding Window
+✅ **Best Option:** Sliding window compare — O(n·m) time, O(1) space
+❌ **Not Optimal:** KMP O(n+m) — overkill for constraints n, m ≤ 10⁴
+🔗 **LeetCode:** [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+🔗 **Related:** [Longest Common Prefix](02-strings.md#problem-5-longest-common-prefix) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters) · [First and Last Position of Element in Sorted Array](01-arrays.md#problem-22-first-and-last-position-of-element-in-sorted-array)
 
 **Problem:** Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
@@ -449,6 +484,11 @@ console.log(strStr("", "")); // 0
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String]
+🧩 **Pattern:** String Manipulation, Two Pointers
+✅ **Best Option:** Traverse from the end — O(n) time, O(1) space
+❌ **Not Optimal:** Split + filter O(n) space — unnecessary allocation
+🔗 **LeetCode:** [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+🔗 **Related:** [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string) · [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers) · [Plus One](01-arrays.md#problem-10-plus-one)
 
 **Problem:** Given a string s consisting of words and spaces, return the length of the last word in the string.
 
@@ -498,6 +538,11 @@ console.log(lengthOfLastWord("a")); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Sliding Window, Hash Table]
+🧩 **Pattern:** Sliding Window, Hash Map
+✅ **Best Option:** Sliding window + set — O(n) time, O(min(n,m)) space
+❌ **Not Optimal:** Brute force O(n³) — fails for n up to 5 × 10⁴
+🔗 **LeetCode:** [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+🔗 **Related:** [Longest Repeating Character Replacement](02-strings.md#problem-13-longest-repeating-character-replacement) · [Minimum Window Substring](02-strings.md#problem-14-minimum-window-substring) · [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm)
 
 **Problem:** Given a string s, find the length of the longest substring without repeating characters.
 
@@ -552,6 +597,11 @@ console.log(lengthOfLongestSubstring("")); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, DP, Two Pointers]
+🧩 **Pattern:** Two Pointers, Memoization
+✅ **Best Option:** Expand around center — O(n²) time, O(1) space
+❌ **Not Optimal:** Brute force O(n³) — fails for n up to 1000
+🔗 **LeetCode:** [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+🔗 **Related:** [Palindromic Substrings](02-strings.md#problem-15-palindromic-substrings) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
 
 **Problem:** Given a string s, return the longest palindromic substring in s.
 
@@ -614,6 +664,11 @@ console.log(longestPalindrome("a")); // "a"
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Hash Table, Sorting]
+🧩 **Pattern:** Hash Map, Sorting
+✅ **Best Option:** Sorted-key hash map — O(n·k log k) time, O(n·k) space
+❌ **Not Optimal:** Compare every pair O(n²·k) — fails for n up to 10⁴
+🔗 **LeetCode:** [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+🔗 **Related:** [Valid Anagram](02-strings.md#problem-2-valid-anagram) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string) · [Two Sum](01-arrays.md#problem-1-two-sum)
 
 **Problem:** Given an array of strings strs, group the anagrams together.
 
@@ -663,6 +718,11 @@ console.log(groupAnagrams(["a"])); // [["a"]]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Math]
+🧩 **Pattern:** String Manipulation
+✅ **Best Option:** State-machine scan — O(n) time, O(1) space
+❌ **Not Optimal:** Built-in parseInt — ignores whitespace, sign and clamp rules
+🔗 **LeetCode:** [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+🔗 **Related:** [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers) · [Length of Last Word](02-strings.md#problem-8-length-of-last-word) · [Plus One](01-arrays.md#problem-10-plus-one)
 
 **Problem:** Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
 
@@ -730,6 +790,11 @@ console.log(myAtoi("-91283472332")); // -2147483648
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Sliding Window]
+🧩 **Pattern:** Sliding Window, Frequency Count
+✅ **Best Option:** Sliding window + max frequency — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+🔗 **Related:** [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters) · [Minimum Window Substring](02-strings.md#problem-14-minimum-window-substring) · [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k)
 
 **Problem:** Given a string s and an integer k, find the length of the longest substring that can be obtained by replacing at most k characters to make all characters same.
 
@@ -787,6 +852,11 @@ console.log(characterReplacement("AAAA", 0)); // 4
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Sliding Window, Hash Table]
+🧩 **Pattern:** Sliding Window, Hash Map
+✅ **Best Option:** Sliding window + two maps — O(n) time, O(m) space
+❌ **Not Optimal:** Brute force all substrings O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+🔗 **Related:** [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters) · [Longest Repeating Character Replacement](02-strings.md#problem-13-longest-repeating-character-replacement) · [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k)
 
 **Problem:** Given two strings s and t, return the minimum window substring of s that contains all characters of t.
 
@@ -861,6 +931,11 @@ console.log(minWindow("a", "aa")); // ""
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, DP, Two Pointers]
+🧩 **Pattern:** Two Pointers
+✅ **Best Option:** Expand around center — O(n²) time, O(1) space
+❌ **Not Optimal:** Brute force O(n³) — fails for n up to 1000
+🔗 **LeetCode:** [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+🔗 **Related:** [Longest Palindromic Substring](02-strings.md#problem-10-longest-palindromic-substring) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome) · [Trapping Rain Water](01-arrays.md#problem-27-trapping-rain-water)
 
 **Problem:** Count how many palindromic substrings exist in a given string.
 
@@ -915,6 +990,11 @@ console.log(countSubstrings("")); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Design]
+🧩 **Pattern:** String Manipulation, In-place
+✅ **Best Option:** Length-prefix encoding — O(n) time, O(n) space
+❌ **Not Optimal:** Delimiter-only encoding — fails when strings contain the delimiter
+🔗 **LeetCode:** [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
+🔗 **Related:** [String to Integer (atoi)](02-strings.md#problem-12-string-to-integer-atoi) · [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers) · [Rotate Array](01-arrays.md#problem-19-rotate-array)
 
 **Problem:** Design an algorithm to encode a list of strings to a single string and decode it back.
 
@@ -966,6 +1046,11 @@ console.log(decode(encoded)); // ["hello", "world", "test#1"]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Divide and Conquer, Sliding Window]
+🧩 **Pattern:** Sliding Window, Frequency Count
+✅ **Best Option:** Sliding window per unique-count — O(26n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁴
+🔗 **LeetCode:** [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+🔗 **Related:** [Longest Repeating Character Replacement](02-strings.md#problem-13-longest-repeating-character-replacement) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters) · [First Missing Positive](01-arrays.md#problem-26-first-missing-positive)
 
 **Problem:** Find the length of the longest substring such that each character appears at least k times.
 
@@ -1020,6 +1105,11 @@ console.log(longestSubstring("ababacb", 3)); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Backtracking]
+🧩 **Pattern:** String Manipulation, Memoization
+✅ **Best Option:** Backtracking recursion — O(4ⁿ) time, O(n) space
+❌ **Not Optimal:** Hard-coded nested loops — depth is fixed and breaks if digits grow
+🔗 **LeetCode:** [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+🔗 **Related:** [Wildcard Matching](02-strings.md#problem-25-wildcard-matching) · [Regular Expression Matching](02-strings.md#problem-21-regular-expression-matching) · [Three Sum](01-arrays.md#problem-11-three-sum)
 
 **Problem:** Given a string containing digits 2-9, return all possible letter combinations that the number could represent.
 
@@ -1077,6 +1167,11 @@ console.log(letterCombinations("2")); // ["a", "b", "c"]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Two Pointers]
+🧩 **Pattern:** Two Pointers, In-place
+✅ **Best Option:** Split + reverse join — O(n) time, O(n) space
+❌ **Not Optimal:** Split on single space — mishandles leading/multiple spaces without extra filtering
+🔗 **LeetCode:** [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+🔗 **Related:** [Reverse String](02-strings.md#problem-4-reverse-string) · [Length of Last Word](02-strings.md#problem-8-length-of-last-word) · [Rotate Array](01-arrays.md#problem-19-rotate-array)
 
 **Problem:** Given a string s, reverse the order of words.
 
@@ -1113,6 +1208,11 @@ console.log(reverseWords("a good   example")); // "example good a"
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Two Pointers]
+🧩 **Pattern:** Two Pointers, String Manipulation
+✅ **Best Option:** Split + zero-pad compare — O(n+m) time, O(n+m) space
+❌ **Not Optimal:** Parse as floats — precision loss and "1.0" vs "1.0.0" mismatch
+🔗 **LeetCode:** [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)
+🔗 **Related:** [String to Integer (atoi)](02-strings.md#problem-12-string-to-integer-atoi) · [Length of Last Word](02-strings.md#problem-8-length-of-last-word) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Compare two version numbers (e.g., "1.01" vs "1.001"). Return 1 if v1 > v2, -1 if v1 < v2, 0 if equal.
 
@@ -1160,6 +1260,11 @@ console.log(compareVersion("0.1", "1.1")); // -1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, DP, Backtracking]
+🧩 **Pattern:** Memoization
+✅ **Best Option:** DP table — O(m·n) time, O(m·n) space
+❌ **Not Optimal:** Naive recursive backtracking — exponential without memoization
+🔗 **LeetCode:** [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+🔗 **Related:** [Wildcard Matching](02-strings.md#problem-25-wildcard-matching) · [Edit Distance](02-strings.md#problem-22-edit-distance) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
 
 **Problem:** Implement regular expression matching with support for '.' and '*'.
 
@@ -1219,6 +1324,11 @@ console.log(isMatch("ab", ".*")); // true
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, DP]
+🧩 **Pattern:** Memoization
+✅ **Best Option:** DP table — O(m·n) time, O(m·n) space
+❌ **Not Optimal:** Recursion without memo O(3ⁿ) — exponential branching
+🔗 **LeetCode:** [Edit Distance](https://leetcode.com/problems/edit-distance/)
+🔗 **Related:** [Regular Expression Matching](02-strings.md#problem-21-regular-expression-matching) · [Distinct Subsequences](02-strings.md#problem-23-distinct-subsequences) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
 
 **Problem:** Given two strings, return minimum edit operations (insert, delete, replace) to convert word1 to word2.
 
@@ -1280,6 +1390,11 @@ console.log(minDistance("", "a")); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, DP]
+🧩 **Pattern:** Memoization
+✅ **Best Option:** DP table — O(m·n) time, O(m·n) space
+❌ **Not Optimal:** Enumerate subsequences O(2ᵐ) — fails for s up to 1000
+🔗 **LeetCode:** [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
+🔗 **Related:** [Edit Distance](02-strings.md#problem-22-edit-distance) · [Wildcard Matching](02-strings.md#problem-25-wildcard-matching) · [Count of Smaller Numbers After Self](01-arrays.md#problem-30-count-of-smaller-numbers-after-self)
 
 **Problem:** Given two strings s and t, count the number of distinct subsequences of s that equal t.
 
@@ -1331,6 +1446,11 @@ console.log(numDistinct("babgbag", "bag")); // 5
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, Simulation]
+🧩 **Pattern:** Greedy, String Manipulation
+✅ **Best Option:** Greedy line packing — O(n·L) time, O(n) space
+❌ **Not Optimal:** Fixed-width chunking — breaks justification rules and single-word overflow
+🔗 **LeetCode:** [Text Justification](https://leetcode.com/problems/text-justification/)
+🔗 **Related:** [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string) · [Length of Last Word](02-strings.md#problem-8-length-of-last-word) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given an array of words and a maxWidth, format the text such that each line has exactly maxWidth characters, fully justified.
 
@@ -1407,6 +1527,11 @@ console.log(fullJustify(words, 16));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, DP, Greedy]
+🧩 **Pattern:** Memoization, Greedy
+✅ **Best Option:** DP table — O(m·n) time, O(m·n) space
+❌ **Not Optimal:** Recursive backtracking O(2ⁿ) — fails for lengths up to 2000
+🔗 **LeetCode:** [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+🔗 **Related:** [Regular Expression Matching](02-strings.md#problem-21-regular-expression-matching) · [Edit Distance](02-strings.md#problem-22-edit-distance) · [Jump Game II](01-arrays.md#problem-24-jump-game-ii)
 
 **Problem:** Implement wildcard pattern matching with support for '?' (any single char) and '*' (any sequence including empty).
 

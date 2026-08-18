@@ -85,6 +85,12 @@ xychart-beta
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math, Memoization]
 
+🧩 **Pattern:** Fibonacci-style, Memoization (Top-Down)
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Recursion without memoization — O(2^n), TLE at n ≥ 30
+🔗 **LeetCode:** [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+🔗 **Related:** [Fibonacci Number](07-dynamic-programming.md#problem-4-fibonacci-number) · [Min Cost Climbing Stairs](07-dynamic-programming.md#problem-5-min-cost-climbing-stairs)
+
 **Problem:** You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 **Example 1:**
@@ -136,6 +142,12 @@ console.log(climbStairs(5)); // 8
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array]
 
+🧩 **Pattern:** 1D DP, Fibonacci-style
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Greedy (rob every other house) — fails; skipping a house for a bigger neighbor needs DP
+🔗 **LeetCode:** [House Robber](https://leetcode.com/problems/house-robber/)
+🔗 **Related:** [House Robber II](07-dynamic-programming.md#problem-25-house-robber-ii) · [Maximum Alternating Subsequence Sum](07-dynamic-programming.md#problem-23-maximum-alternating-subsequence-sum) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
+
 **Problem:** Given an array of money in houses, rob the maximum amount without robbing adjacent houses.
 
 **Example 1:**
@@ -183,6 +195,12 @@ console.log(rob([5])); // 5
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array, Divide and Conquer]
 
+🧩 **Pattern:** 1D DP (Kadane's), Greedy-as-alternative
+✅ **Best Option:** Tabulation (Kadane's) — O(n) time, O(1) space
+❌ **Not Optimal:** Divide and Conquer — O(n log n), correct but slower than Kadane
+🔗 **LeetCode:** [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+🔗 **Related:** [Maximum Subarray (Kadane's Algorithm)](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
+
 **Problem:** Find the contiguous subarray with the largest sum.
 
 **Example 1:**
@@ -225,6 +243,12 @@ console.log(maxSubArray([-1])); // -1
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math, Recursion]
+
+🧩 **Pattern:** Fibonacci-style, Memoization (Top-Down)
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Recursion without memoization — O(2^n), recomputes overlapping subproblems
+🔗 **LeetCode:** [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+🔗 **Related:** [Climbing Stairs](07-dynamic-programming.md#problem-1-climbing-stairs) · [Tribonacci Number](07-dynamic-programming.md#problem-8-tribonacci-number)
 
 **Problem:** Return the nth Fibonacci number.
 
@@ -269,6 +293,12 @@ console.log(fib(10)); // 55
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array]
 
+🧩 **Pattern:** Fibonacci-style, 1D DP
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Greedy (always take the cheaper immediate step) — fails; local choices ignore future costs
+🔗 **LeetCode:** [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+🔗 **Related:** [Climbing Stairs](07-dynamic-programming.md#problem-1-climbing-stairs) · [Decode Ways](07-dynamic-programming.md#problem-18-decode-ways)
+
 **Problem:** Given an array where cost[i] is the cost of stepping on stair i, find the minimum cost to reach the top. You can start from step 0 or 1, and climb 1 or 2 steps.
 
 **Example 1:**
@@ -309,6 +339,12 @@ console.log(minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])); // 6
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array]
+
+🧩 **Pattern:** Tabulation (Bottom-Up), Grid DP
+✅ **Best Option:** Tabulation — O(n²) time, O(n²) space
+❌ **Not Optimal:** Combinatorics per cell (nCr) — O(n²) factorial computations with overflow risk
+🔗 **LeetCode:** [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+🔗 **Related:** [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths) · [Product of Array Except Self](01-arrays.md#problem-12-product-of-array-except-self)
 
 **Problem:** Generate the first numRows of Pascal's triangle.
 
@@ -351,6 +387,12 @@ console.log(generate(5));
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math]
 
+🧩 **Pattern:** Math Insight, Fibonacci-style (game DP)
+✅ **Best Option:** Math shortcut (even n always wins) — O(1) time, O(1) space
+❌ **Not Optimal:** Full game DP — O(n²) time, O(n) space; overkill when the parity insight exists
+🔗 **LeetCode:** [Divisor Game](https://leetcode.com/problems/divisor-game/)
+🔗 **Related:** [Fibonacci Number](07-dynamic-programming.md#problem-4-fibonacci-number) · [Missing Number](01-arrays.md#problem-6-missing-number)
+
 **Problem:** Alice and Bob take turns. On each turn, choose x where 0 < x < n and n % x == 0, replace n with n - x. If a player cannot move, they lose. Alice starts. Return true if she wins with optimal play.
 
 **Example 1:**
@@ -385,6 +427,12 @@ console.log(divisorGame(3)); // false
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math]
+
+🧩 **Pattern:** Fibonacci-style
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Recursion without memoization — O(3^n), TLE at n ≥ 30
+🔗 **LeetCode:** [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
+🔗 **Related:** [Fibonacci Number](07-dynamic-programming.md#problem-4-fibonacci-number) · [Climbing Stairs](07-dynamic-programming.md#problem-1-climbing-stairs)
 
 **Problem:** T₀ = 0, T₁ = 1, T₂ = 1, Tₙ = Tₙ₋₁ + Tₙ₋₂ + Tₙ₋₃. Return Tₙ.
 
@@ -428,6 +476,12 @@ console.log(tribonacci(25)); // 1389537
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math]
 
+🧩 **Pattern:** Sorting, Greedy-as-alternative
+✅ **Best Option:** Sort and check two candidates — O(n log n) time, O(1) space
+❌ **Not Optimal:** Brute-force triple loop — O(n³), TLE at n ≥ 1000
+🔗 **LeetCode:** [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)
+🔗 **Related:** [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray) · [Maximum Subarray (Kadane's Algorithm)](07-dynamic-programming.md#problem-3-maximum-subarray-kadanes-algorithm)
+
 **Problem:** Find the maximum product of any three numbers from the array.
 
 **Example 1:**
@@ -466,6 +520,12 @@ console.log(maximumProduct([-100, -98, 1, 2, 3, 4])); // 39200
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Bit Manipulation]
+
+🧩 **Pattern:** Tabulation (Bottom-Up), Bit Manipulation
+✅ **Best Option:** DP recurrence ans[i] = ans[i >> 1] + (i & 1) — O(n) time, O(n) space
+❌ **Not Optimal:** Popcount per number — O(n log n), recomputes bits from scratch
+🔗 **LeetCode:** [Counting Bits](https://leetcode.com/problems/counting-bits/)
+🔗 **Related:** [Fibonacci Number](07-dynamic-programming.md#problem-4-fibonacci-number) · [Single Number](01-arrays.md#problem-8-single-number)
 
 **Problem:** Given n, return an array of length n+1 where ans[i] is the number of 1 bits in binary representation of i.
 
@@ -510,6 +570,12 @@ console.log(countBits(5)); // [0, 1, 1, 2, 1, 2]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, BFS, Array]
+
+🧩 **Pattern:** Unbounded Knapsack, Tabulation (Bottom-Up)
+✅ **Best Option:** Tabulation — O(n × amount) time, O(amount) space
+❌ **Not Optimal:** Greedy (largest coin first) — fails: coins [1, 3, 4], amount 6 → 3 coins (4+1+1) vs optimal 2 (3+3)
+🔗 **LeetCode:** [Coin Change](https://leetcode.com/problems/coin-change/)
+🔗 **Related:** [Coin Change II](07-dynamic-programming.md#problem-24-coin-change-ii) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
 
 **Problem:** Given coins of different denominations and a total amount, return the fewest coins needed to make that amount. Return -1 if impossible.
 
@@ -557,6 +623,12 @@ console.log(coinChange([1], 0)); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Binary Search]
+
+🧩 **Pattern:** LIS, Tabulation (Bottom-Up), Binary Search
+✅ **Best Option:** Patience sorting (tails + binary search) — O(n log n) time, O(n) space
+❌ **Not Optimal:** O(n²) tabulation — correct but TLE at n ≥ 10⁵
+🔗 **LeetCode:** [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+🔗 **Related:** [Longest Common Subsequence](07-dynamic-programming.md#problem-13-longest-common-subsequence) · [Count of Smaller Numbers After Self](01-arrays.md#problem-30-count-of-smaller-numbers-after-self)
 
 **Problem:** Find the length of the longest strictly increasing subsequence.
 
@@ -619,6 +691,12 @@ console.log(lengthOfLIS([7, 7, 7, 7])); // 1
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String]
 
+🧩 **Pattern:** LCS / String DP, Tabulation (Bottom-Up)
+✅ **Best Option:** 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ **Not Optimal:** Recursion without memoization — O(2^(m+n)), TLE
+🔗 **LeetCode:** [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+🔗 **Related:** [Edit Distance](07-dynamic-programming.md#problem-30-edit-distance-dp) · [Longest Palindromic Substring](07-dynamic-programming.md#problem-26-longest-palindromic-substring-dp) · [Edit Distance](02-strings.md#problem-22-edit-distance)
+
 **Problem:** Given two strings, find the length of their longest common subsequence.
 
 **Example 1:**
@@ -668,6 +746,12 @@ console.log(longestCommonSubsequence("abc", "def")); // 0
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Math, Combinatorics]
 
+🧩 **Pattern:** Grid DP, Tabulation (Bottom-Up)
+✅ **Best Option:** 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ **Not Optimal:** Recursive DFS — O(2^(m+n)), TLE at m, n ≥ 30
+🔗 **LeetCode:** [Unique Paths](https://leetcode.com/problems/unique-paths/)
+🔗 **Related:** [Unique Paths II](07-dynamic-programming.md#problem-15-unique-paths-ii) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum) · [Shortest Path in Binary Matrix](06-graphs.md#problem-19-shortest-path-in-binary-matrix)
+
 **Problem:** A robot is at top-left of an m×n grid. It can only move down or right. How many unique paths to bottom-right?
 
 **Example 1:**
@@ -713,6 +797,12 @@ console.log(uniquePaths(3, 2)); // 3
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Matrix]
+
+🧩 **Pattern:** Grid DP, Tabulation (Bottom-Up)
+✅ **Best Option:** 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ **Not Optimal:** Recursive DFS without memoization — O(2^(m+n)), TLE with obstacles
+🔗 **LeetCode:** [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+🔗 **Related:** [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum)
 
 **Problem:** Same as Unique Paths but with obstacles (1 = obstacle).
 
@@ -760,6 +850,12 @@ console.log(uniquePathsWithObstacles([[0,1],[0,0]])); // 1
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Greedy, Array]
 
+🧩 **Pattern:** Greedy-as-alternative, Tabulation (Bottom-Up)
+✅ **Best Option:** Greedy (max reach) — O(n) time, O(1) space
+❌ **Not Optimal:** 1D DP — O(n²) time, O(n) space; correct but slower than greedy
+🔗 **LeetCode:** [Jump Game](https://leetcode.com/problems/jump-game/)
+🔗 **Related:** [Jump Game (Greedy)](08-greedy.md#problem-16-jump-game-greedy) · [Jump Game II](01-arrays.md#problem-24-jump-game-ii)
+
 **Problem:** Given an array where nums[i] is max jump length, determine if you can reach the last index.
 
 **Example 1:**
@@ -802,6 +898,12 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Trie, String]
+
+🧩 **Pattern:** String DP, Tabulation (Bottom-Up), Memoization (Top-Down)
+✅ **Best Option:** Tabulation — O(n² × m) time, O(n) space
+❌ **Not Optimal:** Backtracking without memoization — O(2^n) segmentations, TLE at n = 300
+🔗 **LeetCode:** [Word Break](https://leetcode.com/problems/word-break/)
+🔗 **Related:** [Decode Ways](07-dynamic-programming.md#problem-18-decode-ways) · [Palindrome Partitioning](09-backtracking.md#problem-11-palindrome-partitioning)
 
 **Problem:** Given a string s and a dictionary of words, return true if s can be segmented into dictionary words.
 
@@ -850,6 +952,12 @@ console.log(wordBreak("catsandog", ["cats","dog","sand","and","cat"])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String]
+
+🧩 **Pattern:** String DP, Fibonacci-style
+✅ **Best Option:** Tabulation — O(n) time, O(1) space
+❌ **Not Optimal:** Recursion without memoization — O(2^n), TLE
+🔗 **LeetCode:** [Decode Ways](https://leetcode.com/problems/decode-ways/)
+🔗 **Related:** [Climbing Stairs](07-dynamic-programming.md#problem-1-climbing-stairs) · [Word Break](07-dynamic-programming.md#problem-17-word-break)
 
 **Problem:** A message containing A-Z can be encoded to numbers ('A' → 1 ... 'Z' → 26). Count the number of ways to decode a digit string.
 
@@ -901,6 +1009,12 @@ console.log(numDecodings("06")); // 0
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, DFS, Memoization]
 
+🧩 **Pattern:** Knapsack (0/1), Memoization (Top-Down)
+✅ **Best Option:** 0/1 Knapsack Tabulation (subset-sum transform) — O(n × sum) time, O(sum) space
+❌ **Not Optimal:** DFS without memoization — O(2^n), TLE at n ≥ 20
+🔗 **LeetCode:** [Target Sum](https://leetcode.com/problems/target-sum/)
+🔗 **Related:** [Partition Equal Subset Sum](07-dynamic-programming.md#problem-20-partition-equal-subset-sum) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
+
 **Problem:** Given an array of integers and a target, assign + or - signs to each element to reach the target sum. Count number of such assignments.
 
 **Example 1:**
@@ -949,6 +1063,12 @@ console.log(findTargetSumWays([1], 1)); // 1
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
 
+🧩 **Pattern:** Knapsack (0/1), Tabulation (Bottom-Up)
+✅ **Best Option:** 0/1 Knapsack Tabulation — O(n × target) time, O(target) space
+❌ **Not Optimal:** Greedy (sort and assign largest first) — fails: [1, 5, 11, 5] needs subset choice, not greedy pairing
+🔗 **LeetCode:** [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+🔗 **Related:** [Target Sum](07-dynamic-programming.md#problem-19-target-sum) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
+
 **Problem:** Given an array, return true if it can be partitioned into two subsets with equal sum.
 
 **Example 1:**
@@ -996,6 +1116,12 @@ console.log(canPartition([1, 2, 3, 5])); // false
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Grid]
 
+🧩 **Pattern:** Grid DP, Tabulation (Bottom-Up)
+✅ **Best Option:** 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ **Not Optimal:** Recursive DFS — O(2^(m+n)) paths, TLE
+🔗 **LeetCode:** [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
+🔗 **Related:** [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths) · [Unique Paths II](07-dynamic-programming.md#problem-15-unique-paths-ii)
+
 **Problem:** Find the minimum path sum from top-left to bottom-right, moving only down or right.
 
 **Example 1:**
@@ -1039,6 +1165,12 @@ console.log(minPathSum([[1,2,3],[4,5,6]])); // 12
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array, Binary Search]
+
+🧩 **Pattern:** LCS / String DP (longest common substring), Tabulation (Bottom-Up)
+✅ **Best Option:** 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ **Not Optimal:** Brute force all start pairs — O(m × n × min(m, n)), TLE
+🔗 **LeetCode:** [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)
+🔗 **Related:** [Longest Common Subsequence](07-dynamic-programming.md#problem-13-longest-common-subsequence) · [Edit Distance](02-strings.md#problem-22-edit-distance)
 
 **Problem:** Find the maximum length of a subarray that appears in both arrays.
 
@@ -1084,6 +1216,12 @@ console.log(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])); // 3
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
 
+🧩 **Pattern:** State Machine, 1D DP
+✅ **Best Option:** State-machine Tabulation (even/odd) — O(n) time, O(1) space
+❌ **Not Optimal:** O(n²) subsequence DP — correct but slow; state machine collapses it to O(n)
+🔗 **LeetCode:** [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/)
+🔗 **Related:** [Best Time to Buy and Sell Stock with Cooldown](07-dynamic-programming.md#problem-28-best-time-to-buy-and-sell-stock-with-cooldown) · [Best Time to Buy and Sell Stock II](08-greedy.md#problem-3-best-time-to-buy-and-sell-stock-ii)
+
 **Problem:** Find the maximum sum of an alternating subsequence (a[index] - a[index+1] + a[index+2] - ...).
 
 **Example 1:**
@@ -1122,6 +1260,12 @@ console.log(maxAlternatingSum([5, 6, 7, 8])); // 8
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
+
+🧩 **Pattern:** Unbounded Knapsack, Tabulation (Bottom-Up)
+✅ **Best Option:** Unbounded Knapsack Tabulation (coin-outer loop) — O(n × amount) time, O(amount) space
+❌ **Not Optimal:** Coin Change I loop order (amount-outer) — counts permutations instead of combinations
+🔗 **LeetCode:** [Coin Change II](https://leetcode.com/problems/coin-change-ii/)
+🔗 **Related:** [Coin Change](07-dynamic-programming.md#problem-11-coin-change) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
 
 **Problem:** Count the number of combinations that make up a given amount.
 
@@ -1162,6 +1306,12 @@ console.log(change(3, [2])); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
+
+🧩 **Pattern:** 1D DP, State Machine (circular), Fibonacci-style
+✅ **Best Option:** Tabulation on two ranges — O(n) time, O(1) space
+❌ **Not Optimal:** Greedy — fails; circular adjacency breaks local choices, needs DP on both slices
+🔗 **LeetCode:** [House Robber II](https://leetcode.com/problems/house-robber-ii/)
+🔗 **Related:** [House Robber](07-dynamic-programming.md#problem-2-house-robber) · [Maximum Alternating Subsequence Sum](07-dynamic-programming.md#problem-23-maximum-alternating-subsequence-sum) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray)
 
 **Problem:** Houses are arranged in a circle. You cannot rob adjacent houses.
 
@@ -1206,6 +1356,12 @@ console.log(robII([1, 2, 3, 1])); // 4
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String, Two Pointers]
+
+🧩 **Pattern:** String DP, Matrix DP (interval), Two Pointers
+✅ **Best Option:** Tabulation (interval) — O(n²) time, O(n²) space
+❌ **Not Optimal:** Brute force all substrings + palindrome check — O(n³), TLE at n ≥ 5000
+🔗 **LeetCode:** [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+🔗 **Related:** [Longest Palindromic Substring](02-strings.md#problem-10-longest-palindromic-substring) · [Palindromic Substrings](02-strings.md#problem-15-palindromic-substrings)
 
 **Problem:** Find the longest palindromic substring.
 
@@ -1261,6 +1417,12 @@ console.log(longestPalindrome("cbbd")); // "bb"
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, DFS, Memoization, Graph]
 
+🧩 **Pattern:** Matrix DP, Memoization (Top-Down), DFS
+✅ **Best Option:** DFS + Memoization — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Plain DFS without memoization — O(4^(m×n)) worst case, TLE
+🔗 **LeetCode:** [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
+🔗 **Related:** [Longest Increasing Path in a Matrix](06-graphs.md#problem-24-longest-increasing-path-in-a-matrix) · [Longest Increasing Subsequence](07-dynamic-programming.md#problem-12-longest-increasing-subsequence)
+
 **Problem:** Find the length of the longest increasing path in a matrix.
 
 (Located in Graphs chapter, Problem 24. DP solution uses memoization.)
@@ -1272,6 +1434,12 @@ console.log(longestPalindrome("cbbd")); // "bb"
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, State Machine, Array]
+
+🧩 **Pattern:** State Machine, 1D DP
+✅ **Best Option:** State-machine Tabulation (sold/held/cooled) — O(n) time, O(1) space
+❌ **Not Optimal:** Greedy (sell on every rise) — violates the cooldown constraint, needs state tracking
+🔗 **LeetCode:** [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+🔗 **Related:** [Best Time to Buy and Sell Stock IV](07-dynamic-programming.md#problem-34-best-time-to-buy-and-sell-stock-iv) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock) · [Best Time to Buy and Sell Stock II](08-greedy.md#problem-3-best-time-to-buy-and-sell-stock-ii)
 
 **Problem:** You can complete unlimited transactions, but after selling you must wait one day before buying again.
 
@@ -1313,6 +1481,12 @@ console.log(maxProfitCooldown([1])); // 0
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
 
+🧩 **Pattern:** Knapsack (0/1), Tabulation (Bottom-Up)
+✅ **Best Option:** 0/1 Knapsack Tabulation (reverse loop) — O(n × capacity) time, O(capacity) space
+❌ **Not Optimal:** Greedy by value/weight ratio — fails; items can't be split, ratio ranking misses optimal combos
+🔗 **LeetCode:** No direct LC equivalent — see Related links
+🔗 **Related:** [Partition Equal Subset Sum](07-dynamic-programming.md#problem-20-partition-equal-subset-sum) · [Target Sum](07-dynamic-programming.md#problem-19-target-sum)
+
 **Problem:** Given weights and values of n items, and a knapsack capacity, find the maximum value you can fit.
 
 **Example 1:**
@@ -1353,6 +1527,12 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String]
 
+🧩 **Pattern:** String DP, LCS-family, Tabulation (Bottom-Up)
+✅ **Best Option:** 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ **Not Optimal:** Recursion without memoization — O(3^(m+n)), TLE
+🔗 **LeetCode:** [Edit Distance](https://leetcode.com/problems/edit-distance/)
+🔗 **Related:** [Edit Distance](02-strings.md#problem-22-edit-distance) · [Longest Common Subsequence](07-dynamic-programming.md#problem-13-longest-common-subsequence)
+
 **Problem:** Given two strings, find the minimum number of operations (insert, delete, replace) to convert one to the other.
 
 (Also listed in Strings chapter, Problem 22.)
@@ -1368,6 +1548,12 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, Divide and Conquer]
+
+🧩 **Pattern:** Partition DP, Interval DP, Tabulation (Bottom-Up)
+✅ **Best Option:** Interval DP on the last balloon burst — O(n³) time, O(n²) space
+❌ **Not Optimal:** Greedy (burst smallest balloon first) — fails; burst order interacts, needs interval DP
+🔗 **LeetCode:** [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
+🔗 **Related:** [Longest Palindromic Substring](07-dynamic-programming.md#problem-26-longest-palindromic-substring-dp) · [Palindrome Partitioning](09-backtracking.md#problem-11-palindrome-partitioning)
 
 **Problem:** Given n balloons (each with a coin value), bursting balloon i earns nums[i-1] * nums[i] * nums[i+1]. Find the maximum coins you can collect.
 
@@ -1421,6 +1607,12 @@ console.log(maxCoins([1, 5])); // 10
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, String, Backtracking]
 
+🧩 **Pattern:** String DP, Tabulation (Bottom-Up), Memoization (Top-Down)
+✅ **Best Option:** 2D Tabulation — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Backtracking without memoization — O(2^(m+n)); 'x*' branches explode on repeated patterns
+🔗 **LeetCode:** [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+🔗 **Related:** [Regular Expression Matching](02-strings.md#problem-21-regular-expression-matching) · [Distinct Subsequences](07-dynamic-programming.md#problem-33-distinct-subsequences)
+
 **Problem:** Implement regex matching with '.' and '*'.
 
 (Detailed solution in Strings chapter, Problem 21.)
@@ -1433,6 +1625,12 @@ console.log(maxCoins([1, 5])); // 10
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, String]
 
+🧩 **Pattern:** String DP, LCS-family, Tabulation (Bottom-Up)
+✅ **Best Option:** 2D Tabulation — O(m × n) time, O(n) space (rolling rows)
+❌ **Not Optimal:** Enumerate all subsequences — O(2^m), TLE at m ≥ 20
+🔗 **LeetCode:** [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
+🔗 **Related:** [Longest Common Subsequence](07-dynamic-programming.md#problem-13-longest-common-subsequence) · [Distinct Subsequences](02-strings.md#problem-23-distinct-subsequences) · [Edit Distance](07-dynamic-programming.md#problem-30-edit-distance-dp)
+
 **Problem:** Count the number of distinct subsequences of s that equal t.
 
 (Detailed solution in Strings chapter, Problem 23.)
@@ -1444,6 +1642,12 @@ console.log(maxCoins([1, 5])); // 10
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, Array, State Machine]
+
+🧩 **Pattern:** State Machine, Tabulation (Bottom-Up)
+✅ **Best Option:** 2D Tabulation (k × n) — O(k × n) time, O(k × n) space; greedy fallback when k ≥ n/2
+❌ **Not Optimal:** Backtracking over buy/sell states without memoization — O(2^n) paths, TLE at n ≥ 30
+🔗 **LeetCode:** [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
+🔗 **Related:** [Best Time to Buy and Sell Stock with Cooldown](07-dynamic-programming.md#problem-28-best-time-to-buy-and-sell-stock-with-cooldown) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock) · [Best Time to Buy and Sell Stock II](08-greedy.md#problem-3-best-time-to-buy-and-sell-stock-ii)
 
 **Problem:** You can complete at most k transactions. Find maximum profit.
 
@@ -1494,6 +1698,12 @@ console.log(maxProfitIV(2, [2, 4, 1])); // 2
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, Hash Table]
+
+🧩 **Pattern:** Memoization (Top-Down), Hash Map DP
+✅ **Best Option:** DFS + memo (stone → reachable jump sizes) — O(n²) time, O(n²) space
+❌ **Not Optimal:** Greedy (always jump the max) — fails; must explore k-1, k, k+1 from every stone
+🔗 **LeetCode:** [Frog Jump](https://leetcode.com/problems/frog-jump/)
+🔗 **Related:** [Jump Game II](01-arrays.md#problem-24-jump-game-ii) · [Climbing Stairs](07-dynamic-programming.md#problem-1-climbing-stairs)
 
 **Problem:** A frog starts at stone 0 and can jump k units. After jumping k units, it can jump k-1, k, or k+1 units. Determine if it can reach the last stone.
 

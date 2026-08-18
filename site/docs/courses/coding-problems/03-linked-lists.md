@@ -95,6 +95,11 @@ flowchart LR
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Recursion]
+🧩 **Pattern:** Reverse Linked List, In-place Reversal
+✅ **Best Option:** Iterative three-pointer (prev, curr, next) reversal — O(n) time, O(1) space
+❌ **Not Optimal:** Copy values to an array and rebuild — O(n) extra space; in-place pointer rewiring is O(1)
+🔗 **LeetCode:** [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+🔗 **Related:** [Reverse Linked List II](03-linked-lists.md#problem-17-reverse-linked-list-ii) · [Reverse Nodes in k-Group](03-linked-lists.md#problem-20-reverse-nodes-in-k-group) · [Reverse String](02-strings.md#problem-4-reverse-string)
 
 **Problem:** Given the head of a singly linked list, reverse the list and return the new head.
 
@@ -177,6 +182,11 @@ console.log(listToArray(reverseList(null)));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Recursion]
+🧩 **Pattern:** Merge Lists, Dummy Head
+✅ **Best Option:** Dummy head + iterative merge — O(n + m) time, O(1) space
+❌ **Not Optimal:** Recursive merge — O(n + m) call-stack space; dummy-head iteration avoids the stack
+🔗 **LeetCode:** [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+🔗 **Related:** [Merge K Sorted Lists](03-linked-lists.md#problem-18-merge-k-sorted-lists) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Merge two sorted linked lists into one sorted list.
 
@@ -236,6 +246,11 @@ console.log(listToArray(mergeTwoLists(null, arrayToList([0]))));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Fast & Slow Pointer, Tortoise & Hare, Cycle Detection
+✅ **Best Option:** Floyd's tortoise & hare — O(n) time, O(1) space
+❌ **Not Optimal:** Hash set of visited nodes — O(n) extra space is avoidable here
+🔗 **LeetCode:** [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+🔗 **Related:** [Middle of the Linked List](03-linked-lists.md#problem-5-middle-of-the-linked-list) · [Find the Duplicate Number](01-arrays.md#problem-14-find-the-duplicate-number)
 
 **Problem:** Given head of a linked list, determine if there is a cycle.
 
@@ -294,6 +309,11 @@ console.log(hasCycle(list)); // false
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List]
+🧩 **Pattern:** Linked List, Two Pointers
+✅ **Best Option:** Single-pass skip over duplicates — O(n) time, O(1) space
+❌ **Not Optimal:** Hash map of seen values — O(n) extra space; sorted list needs only one pointer
+🔗 **LeetCode:** [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+🔗 **Related:** [Remove Duplicates from Sorted List II](03-linked-lists.md#problem-16-remove-duplicates-from-sorted-list-ii) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate)
 
 **Problem:** Given a sorted linked list, delete all duplicates such that each element appears only once.
 
@@ -340,6 +360,11 @@ console.log(listToArray(deleteDuplicates(arrayToList([1, 1, 2, 3, 3]))));
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Fast & Slow Pointer, Tortoise & Hare
+✅ **Best Option:** Fast & slow pointers — O(n) time, O(1) space
+❌ **Not Optimal:** Two passes (count nodes, then traverse) — extra full traversal; one slow + fast pass finds it directly
+🔗 **LeetCode:** [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+🔗 **Related:** [Linked List Cycle](03-linked-lists.md#problem-3-linked-list-cycle) · [Reorder List](03-linked-lists.md#problem-14-reorder-list)
 
 **Problem:** Return the middle node of the linked list. If there are two middle nodes, return the second middle.
 
@@ -382,6 +407,11 @@ console.log(middleNode(arrayToList([1, 2, 3, 4, 5, 6]))?.val); // 4
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List]
+🧩 **Pattern:** Dummy Head
+✅ **Best Option:** Dummy head + single pass — O(n) time, O(1) space
+❌ **Not Optimal:** Special-casing head deletion without a dummy — error-prone edge handling; dummy head unifies it
+🔗 **LeetCode:** [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
+🔗 **Related:** [Remove Nth Node From End of List](03-linked-lists.md#problem-9-remove-nth-node-from-end-of-list) · [Remove Duplicates from Sorted List II](03-linked-lists.md#problem-16-remove-duplicates-from-sorted-list-ii)
 
 **Problem:** Remove all nodes with a given value.
 
@@ -426,6 +456,11 @@ console.log(listToArray(removeElements(arrayToList([]), 1)));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Two Pointers, Stack]
+🧩 **Pattern:** Fast & Slow Pointer, Reverse Linked List, In-place Reversal
+✅ **Best Option:** Find mid, reverse second half, compare halves — O(n) time, O(1) space
+❌ **Not Optimal:** Copy values to an array or stack — O(n) extra space is avoidable with mid + reverse
+🔗 **LeetCode:** [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+🔗 **Related:** [Reverse Linked List](03-linked-lists.md#problem-1-reverse-linked-list) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome)
 
 **Problem:** Given the head of a linked list, determine if it's a palindrome.
 
@@ -500,6 +535,11 @@ console.log(isPalindrome(arrayToList([1]))); // true
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Math]
+🧩 **Pattern:** Dummy Head, Math
+✅ **Best Option:** Dummy head + digit-by-digit carry — O(max(n, m)) time, O(max(n, m)) space for output
+❌ **Not Optimal:** Convert lists to numbers and add — overflows on large lists; carry propagation is required
+🔗 **LeetCode:** [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+🔗 **Related:** [Merge Two Sorted Lists](03-linked-lists.md#problem-2-merge-two-sorted-lists) · [Plus One](01-arrays.md#problem-10-plus-one)
 
 **Problem:** Given two non-empty linked lists representing two non-negative integers (digits stored in reverse order), add them and return the sum as a linked list.
 
@@ -554,6 +594,11 @@ console.log(listToArray(addTwoNumbers(
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Two Pointers, Dummy Head
+✅ **Best Option:** Dummy head + two pointers with an n-node gap — O(n) time, O(1) space
+❌ **Not Optimal:** Two passes (find length, then delete) — requires a second traversal; the one-pass gap method is better
+🔗 **LeetCode:** [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+🔗 **Related:** [Rotate List](03-linked-lists.md#problem-13-rotate-list) · [Remove Linked List Elements](03-linked-lists.md#problem-6-remove-linked-list-elements)
 
 **Problem:** Remove the nth node from the end of the list.
 
@@ -609,6 +654,11 @@ console.log(listToArray(removeNthFromEnd(arrayToList([1]), 1)));
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Recursion]
+🧩 **Pattern:** Dummy Head, In-place Reversal
+✅ **Best Option:** Dummy head + iterative pair swap — O(n) time, O(1) space
+❌ **Not Optimal:** Recursive swap — O(n) call-stack space; iterative dummy-head loop stays O(1)
+🔗 **LeetCode:** [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+🔗 **Related:** [Reverse Nodes in k-Group](03-linked-lists.md#problem-20-reverse-nodes-in-k-group) · [Reverse Linked List](03-linked-lists.md#problem-1-reverse-linked-list)
 
 **Problem:** Swap every two adjacent nodes in a linked list.
 
@@ -659,6 +709,11 @@ console.log(listToArray(swapPairs(arrayToList([1, 2, 3]))));
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List]
+🧩 **Pattern:** Two Pointers, In-place Reversal
+✅ **Best Option:** Two-pointer odd/even weaving in place — O(n) time, O(1) space
+❌ **Not Optimal:** Build two separate lists then concatenate — extra node allocation; single-pass weaving is O(1) space
+🔗 **LeetCode:** [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
+🔗 **Related:** [Reorder List](03-linked-lists.md#problem-14-reorder-list) · [Move Zeroes](01-arrays.md#problem-4-move-zeroes)
 
 **Problem:** Group all odd-indexed nodes together followed by even-indexed nodes.
 
@@ -709,6 +764,11 @@ console.log(listToArray(oddEvenList(arrayToList([1]))));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Two Pointers
+✅ **Best Option:** Two-pointer traversal switch (a/b swap) — O(n + m) time, O(1) space
+❌ **Not Optimal:** Hash set of one list's nodes — O(n) extra space is avoidable with pointer switching
+🔗 **LeetCode:** [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+🔗 **Related:** [Linked List Cycle](03-linked-lists.md#problem-3-linked-list-cycle) · [Intersection of Two Arrays II](01-arrays.md#problem-9-intersection-of-two-arrays-ii)
 
 **Problem:** Find the node at which the intersection of two singly linked lists begins.
 
@@ -758,6 +818,11 @@ console.log(getIntersectionNode(headA, headB)?.val); // 8
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Linked List, Two Pointers
+✅ **Best Option:** Find length, link tail to head, advance len - k — O(n) time, O(1) space
+❌ **Not Optimal:** Rotate one node at a time k times — O(n·k); k mod len with one traversal is O(n)
+🔗 **LeetCode:** [Rotate List](https://leetcode.com/problems/rotate-list/)
+🔗 **Related:** [Remove Nth Node From End of List](03-linked-lists.md#problem-9-remove-nth-node-from-end-of-list) · [Rotate Array](01-arrays.md#problem-19-rotate-array)
 
 **Problem:** Rotate the linked list to the right by k places.
 
@@ -816,6 +881,11 @@ console.log(listToArray(rotateRight(arrayToList([1, 2]), 1)));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Two Pointers]
+🧩 **Pattern:** Fast & Slow Pointer, Reverse Linked List, Two Pointers
+✅ **Best Option:** Find mid, reverse second half, weave halves — O(n) time, O(1) space
+❌ **Not Optimal:** Copy nodes into an array and re-link — O(n) extra space is avoidable with mid + reverse
+🔗 **LeetCode:** [Reorder List](https://leetcode.com/problems/reorder-list/)
+🔗 **Related:** [Palindrome Linked List](03-linked-lists.md#problem-7-palindrome-linked-list) · [Middle of the Linked List](03-linked-lists.md#problem-5-middle-of-the-linked-list)
 
 **Problem:** Given L0 → L1 → … → Ln-1 → Ln, reorder to L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
 
@@ -876,6 +946,11 @@ console.log(listToArray(list)); // [1, 4, 2, 3]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Sorting, Merge Sort]
+🧩 **Pattern:** Merge Sort, Fast & Slow Pointer, Recursion
+✅ **Best Option:** Top-down merge sort (mid via fast & slow) — O(n log n) time, O(log n) recursion space
+❌ **Not Optimal:** Copy to an array and sort — O(n) extra space; linked lists need no random access, so merge sort works in place
+🔗 **LeetCode:** [Sort List](https://leetcode.com/problems/sort-list/)
+🔗 **Related:** [Merge Two Sorted Lists](03-linked-lists.md#problem-2-merge-two-sorted-lists) · [Count of Smaller Numbers After Self](01-arrays.md#problem-30-count-of-smaller-numbers-after-self)
 
 **Problem:** Sort a linked list in O(n log n) time and O(1) space.
 
@@ -927,6 +1002,11 @@ console.log(listToArray(sortList(arrayToList([-1, 5, 3, 4, 0]))));
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List]
+🧩 **Pattern:** Dummy Head, Linked List
+✅ **Best Option:** Dummy head + skip duplicate runs — O(n) time, O(1) space
+❌ **Not Optimal:** Frequency hash map pass — O(n) extra space; the sorted list allows single-pass run skipping
+🔗 **LeetCode:** [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+🔗 **Related:** [Remove Duplicates from Sorted List](03-linked-lists.md#problem-4-remove-duplicates-from-sorted-list) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate)
 
 **Problem:** Remove all nodes that have duplicate numbers, leaving only distinct numbers.
 
@@ -976,6 +1056,11 @@ console.log(listToArray(deleteDuplicates2(arrayToList([1, 1, 1, 2, 3]))));
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List]
+🧩 **Pattern:** Reverse Linked List, In-place Reversal, Dummy Head
+✅ **Best Option:** Dummy head + in-place reversal of the [left, right] sublist — O(n) time, O(1) space
+❌ **Not Optimal:** Rebuild the list via an array — O(n) extra space; in-place pointer rewiring is O(1)
+🔗 **LeetCode:** [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+🔗 **Related:** [Reverse Linked List](03-linked-lists.md#problem-1-reverse-linked-list) · [Swap Nodes in Pairs](03-linked-lists.md#problem-10-swap-nodes-in-pairs) · [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string)
 
 **Problem:** Reverse a linked list from position left to right. 1-indexed.
 
@@ -1026,6 +1111,11 @@ console.log(listToArray(reverseBetween(arrayToList([1, 2, 3, 4, 5]), 2, 4)));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Linked List, Divide and Conquer, Heap]
+🧩 **Pattern:** Priority Queue/Heap, Dummy Head, Recursion
+✅ **Best Option:** Min-heap of k heads — O(n log k) time, O(k) space
+❌ **Not Optimal:** Merging two lists k−1 times sequentially — O(n·k) and slow for large k; the heap merges all lists at once
+🔗 **LeetCode:** [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+🔗 **Related:** [Merge Two Sorted Lists](03-linked-lists.md#problem-2-merge-two-sorted-lists) · [Sort List](03-linked-lists.md#problem-15-sort-list) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Merge k sorted linked lists into one sorted list.
 
@@ -1080,6 +1170,11 @@ console.log(listToArray(mergeKLists(lists)));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Linked List, Hash Table]
+🧩 **Pattern:** Hash Map, Two Pointers
+✅ **Best Option:** In-place interleaving (clone next to original, set randoms, split) — O(n) time, O(1) space
+❌ **Not Optimal:** Hash map from original to clone — O(n) extra space; interleaving achieves O(1) space
+🔗 **LeetCode:** [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+🔗 **Related:** [Clone Graph](06-graphs.md#problem-7-clone-graph) · [Intersection of Two Linked Lists](03-linked-lists.md#problem-12-intersection-of-two-linked-lists) · [Reverse Linked List](03-linked-lists.md#problem-1-reverse-linked-list)
 
 **Problem:** A linked list has an additional random pointer that could point to any node or null. Create a deep copy.
 
@@ -1163,6 +1258,11 @@ console.log(copied?.next?.random?.val); // 7
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Linked List, Recursion]
+🧩 **Pattern:** Reverse Linked List, Recursion, In-place Reversal
+✅ **Best Option:** Iterative k-node reversal + recursion on the rest — O(n) time, O(n/k) recursion space
+❌ **Not Optimal:** Copy values into an array and rebuild — O(n) extra space; in-place k-group reversal is O(1) apart from recursion
+🔗 **LeetCode:** [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+🔗 **Related:** [Reverse Linked List II](03-linked-lists.md#problem-17-reverse-linked-list-ii) · [Swap Nodes in Pairs](03-linked-lists.md#problem-10-swap-nodes-in-pairs) · [Reverse String](02-strings.md#problem-4-reverse-string)
 
 **Problem:** Reverse nodes in groups of k. If remaining nodes < k, keep original order.
 

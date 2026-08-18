@@ -69,180 +69,180 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 
 ## Pattern 1: Arrays & Hashing
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Two Sum | Easy | All | Use hash map for O(n). Complement = target - current |
-| 2 | Contains Duplicate | Easy | All | Set lookup. O(n) time, O(n) space |
-| 3 | Valid Anagram | Easy | G, A, M | Sort both strings or count char frequencies |
-| 4 | Group Anagrams | Medium | G, M, A | Sort each word as key, map to list of anagrams |
-| 5 | Top K Frequent Elements | Medium | G, F, M | Bucket sort or quickselect. O(n) |
-| 6 | Product of Array Except Self | Medium | G, M, A | Prefix and suffix products. No division |
-| 7 | Longest Consecutive Sequence | Medium | G, F | Set membership check. O(n) |
-| 8 | Encode and Decode Strings | Medium | M | Length-prefix encoding: len + delimiter + str |
-| 9 | First Missing Positive | Hard | G, A | Cyclic sort: place each number at its index |
-| 10 | Longest Substring Without Repeating | Medium | G, F, A | Sliding window with char set |
+| 1 | Two Sum | Easy | All | Use hash map for O(n). Complement = target - current | [Two Sum](https://leetcode.com/problems/two-sum/) |
+| 2 | Contains Duplicate | Easy | All | Set lookup. O(n) time, O(n) space | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |
+| 3 | Valid Anagram | Easy | G, A, M | Sort both strings or count char frequencies | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
+| 4 | Group Anagrams | Medium | G, M, A | Sort each word as key, map to list of anagrams | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) |
+| 5 | Top K Frequent Elements | Medium | G, F, M | Bucket sort or quickselect. O(n) | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |
+| 6 | Product of Array Except Self | Medium | G, M, A | Prefix and suffix products. No division | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
+| 7 | Longest Consecutive Sequence | Medium | G, F | Set membership check. O(n) | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) |
+| 8 | Encode and Decode Strings | Medium | M | Length-prefix encoding: len + delimiter + str | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) |
+| 9 | First Missing Positive | Hard | G, A | Cyclic sort: place each number at its index | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) |
+| 10 | Longest Substring Without Repeating | Medium | G, F, A | Sliding window with char set | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 
 ## Pattern 2: Two Pointers
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Valid Palindrome | Easy | All | Two pointers from ends. Skip non-alphanumeric |
-| 2 | Two Sum II - Sorted | Medium | G, A | Left + right pointer, adjust based on sum |
-| 3 | 3Sum | Medium | G, F, A | Sort first, fix one element, two-pointer the rest |
-| 4 | Container With Most Water | Medium | G, F, A | Two pointers, move the shorter inward |
-| 5 | Trapping Rain Water | Hard | G, F, A | Left/right max arrays. Or two-pointer on heights |
-| 6 | Remove Duplicates from Sorted | Easy | A | Slow/fast pointer. Write unique elements |
-| 7 | Move Zeroes | Easy | F | One pointer for next non-zero position |
+| 1 | Valid Palindrome | Easy | All | Two pointers from ends. Skip non-alphanumeric | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) |
+| 2 | Two Sum II - Sorted | Medium | G, A | Left + right pointer, adjust based on sum | [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
+| 3 | 3Sum | Medium | G, F, A | Sort first, fix one element, two-pointer the rest | [3Sum](https://leetcode.com/problems/3sum/) |
+| 4 | Container With Most Water | Medium | G, F, A | Two pointers, move the shorter inward | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
+| 5 | Trapping Rain Water | Hard | G, F, A | Left/right max arrays. Or two-pointer on heights | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) |
+| 6 | Remove Duplicates from Sorted | Easy | A | Slow/fast pointer. Write unique elements | [Remove Duplicates from Sorted](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
+| 7 | Move Zeroes | Easy | F | One pointer for next non-zero position | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) |
 
 ## Pattern 3: Sliding Window
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Best Time to Buy and Sell Stock | Easy | All | Track min price, compute max profit |
-| 2 | Longest Substring Without Repeating | Medium | G, F, A | Expand right, shrink left when duplicate found |
-| 3 | Longest Repeating Character Replacement | Medium | G, M | Max frequency in window determines replacements |
-| 4 | Minimum Window Substring | Hard | G, F, A | Two hash maps: have vs need. Shrink when satisfied |
-| 5 | Sliding Window Maximum | Hard | G, A | Deque for O(n). Maintain decreasing values |
-| 6 | Permutation in String | Medium | M | Frequency array + sliding window of same length |
+| 1 | Best Time to Buy and Sell Stock | Easy | All | Track min price, compute max profit | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
+| 2 | Longest Substring Without Repeating | Medium | G, F, A | Expand right, shrink left when duplicate found | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| 3 | Longest Repeating Character Replacement | Medium | G, M | Max frequency in window determines replacements | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |
+| 4 | Minimum Window Substring | Hard | G, F, A | Two hash maps: have vs need. Shrink when satisfied | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) |
+| 5 | Sliding Window Maximum | Hard | G, A | Deque for O(n). Maintain decreasing values | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |
+| 6 | Permutation in String | Medium | M | Frequency array + sliding window of same length | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) |
 
 ## Pattern 4: Binary Search
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Binary Search | Easy | All | Classic divide and conquer |
-| 2 | Search a 2D Matrix | Medium | All | Treat as flattened array, row = mid//cols |
-| 3 | Find Minimum in Rotated Sorted Array | Medium | G, F, A | Compare mid with right to find rotation |
-| 4 | Search in Rotated Sorted Array | Medium | G, F, A | Binary search, check which half is sorted |
-| 5 | Koko Eating Bananas | Medium | G, F | Binary search on answer (eating speed) |
-| 6 | Time Based Key-Value Store | Medium | G, F | Dict of lists (sorted by time), binary search |
-| 7 | Median of Two Sorted Arrays | Hard | G, A | Partition both arrays, binary search on smaller |
+| 1 | Binary Search | Easy | All | Classic divide and conquer | [Binary Search](https://leetcode.com/problems/binary-search/) |
+| 2 | Search a 2D Matrix | Medium | All | Treat as flattened array, row = mid//cols | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) |
+| 3 | Find Minimum in Rotated Sorted Array | Medium | G, F, A | Compare mid with right to find rotation | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
+| 4 | Search in Rotated Sorted Array | Medium | G, F, A | Binary search, check which half is sorted | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
+| 5 | Koko Eating Bananas | Medium | G, F | Binary search on answer (eating speed) | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) |
+| 6 | Time Based Key-Value Store | Medium | G, F | Dict of lists (sorted by time), binary search | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) |
+| 7 | Median of Two Sorted Arrays | Hard | G, A | Partition both arrays, binary search on smaller | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
 
 ## Pattern 5: Linked Lists
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Reverse Linked List | Easy | All | Three pointers: prev, curr, next |
-| 2 | Merge Two Sorted Lists | Easy | All | Dummy head, compare and link |
-| 3 | Linked List Cycle | Easy | All | Tortoise and hare. Fast/slow pointer |
-| 4 | Remove Nth Node From End | Medium | G, F, A | Two pointers with n-gap |
-| 5 | Reorder List | Medium | G, F, A | Find middle, reverse second half, merge |
-| 6 | Merge K Sorted Lists | Hard | G, F, A | Divide and conquer or min-heap |
-| 7 | LRU Cache | Medium | G, F, A | Doubly linked list + hash map. O(1) |
-| 8 | Copy List with Random Pointer | Medium | G, F | Interleave copied nodes, assign random, detach |
+| 1 | Reverse Linked List | Easy | All | Three pointers: prev, curr, next | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |
+| 2 | Merge Two Sorted Lists | Easy | All | Dummy head, compare and link | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| 3 | Linked List Cycle | Easy | All | Tortoise and hare. Fast/slow pointer | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) |
+| 4 | Remove Nth Node From End | Medium | G, F, A | Two pointers with n-gap | [Remove Nth Node From End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
+| 5 | Reorder List | Medium | G, F, A | Find middle, reverse second half, merge | [Reorder List](https://leetcode.com/problems/reorder-list/) |
+| 6 | Merge K Sorted Lists | Hard | G, F, A | Divide and conquer or min-heap | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) |
+| 7 | LRU Cache | Medium | G, F, A | Doubly linked list + hash map. O(1) | [LRU Cache](https://leetcode.com/problems/lru-cache/) |
+| 8 | Copy List with Random Pointer | Medium | G, F | Interleave copied nodes, assign random, detach | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) |
 
 ## Pattern 6: Stacks & Queues
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Valid Parentheses | Easy | All | Stack, match closing with top |
-| 2 | Min Stack | Medium | G, F, A | Stack of pairs (value, currentMin) |
-| 3 | Evaluate Reverse Polish Notation | Medium | G, F | Stack for operands, apply operator |
-| 4 | Daily Temperatures | Medium | G, F | Monotonic decreasing stack |
-| 5 | Car Fleet | Medium | G, F | Sort by position, compute time to target, stack |
-| 6 | Largest Rectangle in Histogram | Hard | G, F, A | Monotonic stack. Compute area at each popped bar |
+| 1 | Valid Parentheses | Easy | All | Stack, match closing with top | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |
+| 2 | Min Stack | Medium | G, F, A | Stack of pairs (value, currentMin) | [Min Stack](https://leetcode.com/problems/min-stack/) |
+| 3 | Evaluate Reverse Polish Notation | Medium | G, F | Stack for operands, apply operator | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| 4 | Daily Temperatures | Medium | G, F | Monotonic decreasing stack | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) |
+| 5 | Car Fleet | Medium | G, F | Sort by position, compute time to target, stack | [Car Fleet](https://leetcode.com/problems/car-fleet/) |
+| 6 | Largest Rectangle in Histogram | Hard | G, F, A | Monotonic stack. Compute area at each popped bar | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
 
 ## Pattern 7: Trees
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Maximum Depth of Binary Tree | Easy | All | Recursive DFS. Max(left, right) + 1 |
-| 2 | Invert Binary Tree | Easy | G | Swap left and right recursively |
-| 3 | Same Tree | Easy | All | Recursive: check root then left and right |
-| 4 | Subtree of Another Tree | Easy | G, F | Check equality at each node |
-| 5 | Lowest Common Ancestor of BST | Medium | G, F, A | Split: if p<root<q then root is LCA |
-| 6 | Binary Tree Level Order Traversal | Medium | G, F, A | BFS queue. Process level by level |
-| 7 | Validate BST | Medium | G, F, A | In-order traversal must be sorted. Or min/max bounds |
-| 8 | Binary Tree from Preorder and Inorder | Medium | G, F | First in preorder is root. Split inorder |
-| 9 | Serialize and Deserialize Binary Tree | Hard | G, F, A | BFS with null markers. DFS also works |
-| 10 | Diameter of Binary Tree | Easy | All | DFS, return max(left,right)+1, update global max |
+| 1 | Maximum Depth of Binary Tree | Easy | All | Recursive DFS. Max(left, right) + 1 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
+| 2 | Invert Binary Tree | Easy | G | Swap left and right recursively | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) |
+| 3 | Same Tree | Easy | All | Recursive: check root then left and right | [Same Tree](https://leetcode.com/problems/same-tree/) |
+| 4 | Subtree of Another Tree | Easy | G, F | Check equality at each node | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) |
+| 5 | Lowest Common Ancestor of BST | Medium | G, F, A | Split: if p<root<q then root is LCA | [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
+| 6 | Binary Tree Level Order Traversal | Medium | G, F, A | BFS queue. Process level by level | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| 7 | Validate BST | Medium | G, F, A | In-order traversal must be sorted. Or min/max bounds | [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) |
+| 8 | Binary Tree from Preorder and Inorder | Medium | G, F | First in preorder is root. Split inorder | [Binary Tree from Preorder and Inorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |
+| 9 | Serialize and Deserialize Binary Tree | Hard | G, F, A | BFS with null markers. DFS also works | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
+| 10 | Diameter of Binary Tree | Easy | All | DFS, return max(left,right)+1, update global max | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) |
 
 ## Pattern 8: Heaps & Priority Queues
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Kth Largest Element in a Stream | Easy | G | Min-heap of size k |
-| 2 | Kth Largest Element in an Array | Medium | G, F, A | Quickselect avg O(n) or min-heap O(n log k) |
-| 3 | Find Median from Data Stream | Hard | G, F, A | Two heaps: max-heap for lower half, min-heap for upper |
-| 4 | Task Scheduler | Medium | G, F, A | Max frequency determines idle slots |
-| 5 | Top K Frequent Words | Medium | G, F | Min-heap of size k. Compare by freq then lexicographic |
+| 1 | Kth Largest Element in a Stream | Easy | G | Min-heap of size k | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
+| 2 | Kth Largest Element in an Array | Medium | G, F, A | Quickselect avg O(n) or min-heap O(n log k) | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
+| 3 | Find Median from Data Stream | Hard | G, F, A | Two heaps: max-heap for lower half, min-heap for upper | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |
+| 4 | Task Scheduler | Medium | G, F, A | Max frequency determines idle slots | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) |
+| 5 | Top K Frequent Words | Medium | G, F | Min-heap of size k. Compare by freq then lexicographic | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) |
 
 ## Pattern 9: Graphs
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Number of Islands | Medium | G, F, A | DFS/BFS on each unvisited land cell |
-| 2 | Clone Graph | Medium | G, F | Hash map for visited. DFS/BFS copy |
-| 3 | Course Schedule | Medium | G, F, A | Topological sort via Kahn or DFS cycle detection |
-| 4 | Pacific Atlantic Water Flow | Medium | G, F | DFS from borders inward. Track reachable sets |
-| 5 | Number of Connected Components | Medium | F | Union-find. Count distinct roots |
-| 6 | Graph Valid Tree | Medium | G, F | Check n-1 edges + fully connected |
-| 7 | Word Ladder | Hard | G, F, A | BFS from start, change one letter at a time |
-| 8 | Alien Dictionary | Hard | G, F, A | Compare adjacent words, build graph, topological sort |
+| 1 | Number of Islands | Medium | G, F, A | DFS/BFS on each unvisited land cell | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
+| 2 | Clone Graph | Medium | G, F | Hash map for visited. DFS/BFS copy | [Clone Graph](https://leetcode.com/problems/clone-graph/) |
+| 3 | Course Schedule | Medium | G, F, A | Topological sort via Kahn or DFS cycle detection | [Course Schedule](https://leetcode.com/problems/course-schedule/) |
+| 4 | Pacific Atlantic Water Flow | Medium | G, F | DFS from borders inward. Track reachable sets | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) |
+| 5 | Number of Connected Components | Medium | F | Union-find. Count distinct roots | [Number of Connected Components](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |
+| 6 | Graph Valid Tree | Medium | G, F | Check n-1 edges + fully connected | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) |
+| 7 | Word Ladder | Hard | G, F, A | BFS from start, change one letter at a time | [Word Ladder](https://leetcode.com/problems/word-ladder/) |
+| 8 | Alien Dictionary | Hard | G, F, A | Compare adjacent words, build graph, topological sort | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) |
 
 ## Pattern 10: Dynamic Programming 1D
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Climbing Stairs | Easy | All | dp[i] = dp[i-1] + dp[i-2] (Fibonacci) |
-| 2 | House Robber | Medium | G, F, A | dp[i] = max(dp[i-1], dp[i-2] + nums[i]) |
-| 3 | Coin Change | Medium | G, F, A | dp[i] = min(dp[i], dp[i-coin] + 1) |
-| 4 | Longest Increasing Subsequence | Medium | G, F, A | dp[i] = max(dp[j] + 1) for j < i. Binary search improves |
-| 5 | Palindromic Substrings | Medium | G, F | Expand around center. Count palindromes |
-| 6 | Word Break | Medium | G, F, A | dp[i] = true if dp[j] and s[j:i] in wordSet |
-| 7 | Decode Ways | Medium | G, F, A | dp[i] = dp[i-1] + dp[i-2] (if valid two-digit) |
+| 1 | Climbing Stairs | Easy | All | dp[i] = dp[i-1] + dp[i-2] (Fibonacci) | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) |
+| 2 | House Robber | Medium | G, F, A | dp[i] = max(dp[i-1], dp[i-2] + nums[i]) | [House Robber](https://leetcode.com/problems/house-robber/) |
+| 3 | Coin Change | Medium | G, F, A | dp[i] = min(dp[i], dp[i-coin] + 1) | [Coin Change](https://leetcode.com/problems/coin-change/) |
+| 4 | Longest Increasing Subsequence | Medium | G, F, A | dp[i] = max(dp[j] + 1) for j < i. Binary search improves | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
+| 5 | Palindromic Substrings | Medium | G, F | Expand around center. Count palindromes | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) |
+| 6 | Word Break | Medium | G, F, A | dp[i] = true if dp[j] and s[j:i] in wordSet | [Word Break](https://leetcode.com/problems/word-break/) |
+| 7 | Decode Ways | Medium | G, F, A | dp[i] = dp[i-1] + dp[i-2] (if valid two-digit) | [Decode Ways](https://leetcode.com/problems/decode-ways/) |
 
 ## Pattern 11: Dynamic Programming 2D
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Unique Paths | Medium | All | dp[i][j] = dp[i-1][j] + dp[i][j-1] |
-| 2 | Longest Common Subsequence | Medium | G, F, A | dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j], dp[i][j-1]) |
-| 3 | Edit Distance | Hard | G, F, A | dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + (0 if same else 1)) |
-| 4 | Coin Change 2 | Medium | G, F | dp[i][a] = dp[i-1][a] + dp[i][a-coins[i-1]] |
-| 5 | Target Sum | Medium | G, F | dp[i][s] = count. Or transform to subset sum |
-| 6 | Burst Balloons | Hard | G, F | dp[l][r] = max(dp[l][k-1] + dp[k+1][r] + nums[l-1]*nums[k]*nums[r+1]) |
+| 1 | Unique Paths | Medium | All | dp[i][j] = dp[i-1][j] + dp[i][j-1] | [Unique Paths](https://leetcode.com/problems/unique-paths/) |
+| 2 | Longest Common Subsequence | Medium | G, F, A | dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j], dp[i][j-1]) | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |
+| 3 | Edit Distance | Hard | G, F, A | dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + (0 if same else 1)) | [Edit Distance](https://leetcode.com/problems/edit-distance/) |
+| 4 | Coin Change 2 | Medium | G, F | dp[i][a] = dp[i-1][a] + dp[i][a-coins[i-1]] | [Coin Change 2](https://leetcode.com/problems/coin-change-ii/) |
+| 5 | Target Sum | Medium | G, F | dp[i][s] = count. Or transform to subset sum | [Target Sum](https://leetcode.com/problems/target-sum/) |
+| 6 | Burst Balloons | Hard | G, F | dp[l][r] = max(dp[l][k-1] + dp[k+1][r] + nums[l-1]*nums[k]*nums[r+1]) | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |
 
 ## Pattern 12: Backtracking
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Subsets | Medium | G, F, A | Backtrack: include/exclude each element |
-| 2 | Permutations | Medium | G, F, A | Swap each element with current position |
-| 3 | Combination Sum | Medium | G, F, A | Sort first. Choose or skip, same element allowed multiple times |
-| 4 | Letter Combinations of Phone Number | Medium | G, F, A | Build string digit by digit. Map digit to letters |
-| 5 | N-Queens | Hard | G, F, A | Place queen per row. Check col, diag, anti-diag |
-| 6 | Word Search | Medium | G, F, A | DFS from each cell. Mark visited on path |
+| 1 | Subsets | Medium | G, F, A | Backtrack: include/exclude each element | [Subsets](https://leetcode.com/problems/subsets/) |
+| 2 | Permutations | Medium | G, F, A | Swap each element with current position | [Permutations](https://leetcode.com/problems/permutations/) |
+| 3 | Combination Sum | Medium | G, F, A | Sort first. Choose or skip, same element allowed multiple times | [Combination Sum](https://leetcode.com/problems/combination-sum/) |
+| 4 | Letter Combinations of Phone Number | Medium | G, F, A | Build string digit by digit. Map digit to letters | [Letter Combinations of Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
+| 5 | N-Queens | Hard | G, F, A | Place queen per row. Check col, diag, anti-diag | [N-Queens](https://leetcode.com/problems/n-queens/) |
+| 6 | Word Search | Medium | G, F, A | DFS from each cell. Mark visited on path | [Word Search](https://leetcode.com/problems/word-search/) |
 
 ## Pattern 13: Tries
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Implement Trie | Medium | G, F | TrieNode with children map and isEnd flag |
-| 2 | Word Search II | Hard | G, F, A | Trie for dictionary, DFS on board |
-| 3 | Prefix and Suffix Search | Hard | G, F | Insert all prefix+suffix combos |
-| 4 | Replace Words | Medium | M | Insert dictionary in trie, replace words |
+| 1 | Implement Trie | Medium | G, F | TrieNode with children map and isEnd flag | [Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/) |
+| 2 | Word Search II | Hard | G, F, A | Trie for dictionary, DFS on board | [Word Search II](https://leetcode.com/problems/word-search-ii/) |
+| 3 | Prefix and Suffix Search | Hard | G, F | Insert all prefix+suffix combos | [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) |
+| 4 | Replace Words | Medium | M | Insert dictionary in trie, replace words | [Replace Words](https://leetcode.com/problems/replace-words/) |
 
 ## Pattern 14: Intervals
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Meeting Rooms | Easy | G, F, A | Sort by start, check overlap with next |
-| 2 | Merge Intervals | Medium | G, F, A | Sort by start, merge if overlapping |
-| 3 | Insert Interval | Medium | G, F, A | Process before overlap, merge overlap, after |
-| 4 | Non Overlapping Intervals | Medium | G, F, A | Sort by end, greedy. Remove intervals with earlier end |
-| 5 | Meeting Rooms II | Medium | G, F, A | Chronological ordering or min-heap of end times |
-| 6 | Minimum Interval in Range Queries | Hard | G | Sort intervals, min-heap for smallest covering |
+| 1 | Meeting Rooms | Easy | G, F, A | Sort by start, check overlap with next | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) |
+| 2 | Merge Intervals | Medium | G, F, A | Sort by start, merge if overlapping | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
+| 3 | Insert Interval | Medium | G, F, A | Process before overlap, merge overlap, after | [Insert Interval](https://leetcode.com/problems/insert-interval/) |
+| 4 | Non Overlapping Intervals | Medium | G, F, A | Sort by end, greedy. Remove intervals with earlier end | [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |
+| 5 | Meeting Rooms II | Medium | G, F, A | Chronological ordering or min-heap of end times | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) |
+| 6 | Minimum Interval in Range Queries | Hard | G | Sort intervals, min-heap for smallest covering | [Minimum Interval in Range Queries](https://leetcode.com/problems/minimum-interval-to-include-each-query/) |
 
 ## Pattern 15: Math & Bit Manipulation
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Single Number | Easy | All | XOR all elements. Duplicates cancel |
-| 2 | Number of 1 Bits | Easy | All | n & (n-1) clears lowest set bit |
-| 3 | Reverse Bits | Easy | G | Build result bit by bit |
-| 4 | Missing Number | Easy | G, F | XOR indices with values. Or sum formula |
-| 5 | Sum of Two Integers | Medium | G, F, A | Bit manipulation: carry = a&b, sum = a^b |
-| 6 | Pow(x, n) | Medium | G, F, A | Binary exponentiation O(log n) |
+| 1 | Single Number | Easy | All | XOR all elements. Duplicates cancel | [Single Number](https://leetcode.com/problems/single-number/) |
+| 2 | Number of 1 Bits | Easy | All | n & (n-1) clears lowest set bit | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
+| 3 | Reverse Bits | Easy | G | Build result bit by bit | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) |
+| 4 | Missing Number | Easy | G, F | XOR indices with values. Or sum formula | [Missing Number](https://leetcode.com/problems/missing-number/) |
+| 5 | Sum of Two Integers | Medium | G, F, A | Bit manipulation: carry = a&b, sum = a^b | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) |
+| 6 | Pow(x, n) | Medium | G, F, A | Binary exponentiation O(log n) | [Pow(x, n)](https://leetcode.com/problems/powx-n/) |
 
 ## Company-Specific Focus
 
@@ -351,53 +351,53 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 
 ## Pattern 16: More DP Problems
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Counting Bits | Easy | All | dp[i] = dp[i>>1] + (i & 1) |
-| 2 | Min Cost Climbing Stairs | Easy | All | dp[i] = cost[i] + min(dp[i-1], dp[i-2]) |
-| 3 | Partition Equal Subset Sum | Medium | G, F, A | dp[s] = true if subset sums to s |
-| 4 | Maximum Product Subarray | Medium | G, F, A | Track min and max at each position |
-| 5 | Unique Paths II | Medium | G, F | Skip obstacles in DP table |
-| 6 | Longest Palindromic Substring | Medium | G, F, A | Expand around center or DP table |
-| 7 | Interleaving String | Medium | G, F | 2D DP: dp[i][j] = match s3[i+j-1] with s1[i-1] or s2[j-1] |
+| 1 | Counting Bits | Easy | All | dp[i] = dp[i>>1] + (i & 1) | [Counting Bits](https://leetcode.com/problems/counting-bits/) |
+| 2 | Min Cost Climbing Stairs | Easy | All | dp[i] = cost[i] + min(dp[i-1], dp[i-2]) | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) |
+| 3 | Partition Equal Subset Sum | Medium | G, F, A | dp[s] = true if subset sums to s | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) |
+| 4 | Maximum Product Subarray | Medium | G, F, A | Track min and max at each position | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) |
+| 5 | Unique Paths II | Medium | G, F | Skip obstacles in DP table | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) |
+| 6 | Longest Palindromic Substring | Medium | G, F, A | Expand around center or DP table | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |
+| 7 | Interleaving String | Medium | G, F | 2D DP: dp[i][j] = match s3[i+j-1] with s1[i-1] or s2[j-1] | [Interleaving String](https://leetcode.com/problems/interleaving-string/) |
 
 ## Pattern 17: Greedy
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Maximum Subarray | Medium | All | Kadane: current = max(num, current+num), max = max(max, current) |
-| 2 | Jump Game | Medium | G, F, A | Track farthest reachable index. If i > farthest, fail |
-| 3 | Jump Game II | Medium | G, F, A | BFS-like: current end, farthest reachable, count jumps |
-| 4 | Gas Station | Medium | G, F, A | If total gas < total cost, impossible. Start where gas-cost is negative |
-| 5 | Hand of Straights | Medium | G, F | Sort, group consecutive, use frequency map |
-| 6 | Merge Triplets | Medium | G | Greedy: track which positions can reach target values |
+| 1 | Maximum Subarray | Medium | All | Kadane: current = max(num, current+num), max = max(max, current) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |
+| 2 | Jump Game | Medium | G, F, A | Track farthest reachable index. If i > farthest, fail | [Jump Game](https://leetcode.com/problems/jump-game/) |
+| 3 | Jump Game II | Medium | G, F, A | BFS-like: current end, farthest reachable, count jumps | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) |
+| 4 | Gas Station | Medium | G, F, A | If total gas < total cost, impossible. Start where gas-cost is negative | [Gas Station](https://leetcode.com/problems/gas-station/) |
+| 5 | Hand of Straights | Medium | G, F | Sort, group consecutive, use frequency map | [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) |
+| 6 | Merge Triplets | Medium | G | Greedy: track which positions can reach target values | [Merge Triplets](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) |
 
 ## Pattern 18: Advanced Graphs
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Reconstruct Itinerary | Hard | G | Eulerian path. DFS with post-order, process lexical order |
-| 2 | Minimum Height Trees | Medium | G | Topological removal of leaves. Repeat until 1-2 nodes remain |
-| 3 | Network Delay Time | Medium | G, F | Dijkstra from source. Max distance among reachable nodes |
-| 4 | Cheapest Flights Within K Stops | Medium | G, F | Bellman-Ford. Relax K+1 times |
-| 5 | Swim in Rising Water | Hard | G | Binary search + BFS, or Dijkstra (minimize max along path) |
-| 6 | Alien Dictionary | Hard | G, F, A | Build graph from adjacent word diffs. Topological sort |
-| 7 | Bus Routes | Hard | G | BFS on bus stops and bus lines. Each stop connects to all its lines |
+| 1 | Reconstruct Itinerary | Hard | G | Eulerian path. DFS with post-order, process lexical order | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) |
+| 2 | Minimum Height Trees | Medium | G | Topological removal of leaves. Repeat until 1-2 nodes remain | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |
+| 3 | Network Delay Time | Medium | G, F | Dijkstra from source. Max distance among reachable nodes | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) |
+| 4 | Cheapest Flights Within K Stops | Medium | G, F | Bellman-Ford. Relax K+1 times | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) |
+| 5 | Swim in Rising Water | Hard | G | Binary search + BFS, or Dijkstra (minimize max along path) | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) |
+| 6 | Alien Dictionary | Hard | G, F, A | Build graph from adjacent word diffs. Topological sort | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) |
+| 7 | Bus Routes | Hard | G | BFS on bus stops and bus lines. Each stop connects to all its lines | [Bus Routes](https://leetcode.com/problems/bus-routes/) |
 
 ## Pattern 19: String Problems
 
-| # | Problem | Difficulty | Company | Hint |
+| # | Problem | Difficulty | Company | Hint | LeetCode |
 |---|---------|-----------|---------|------|
-| 1 | Valid Palindrome II | Easy | G, F | Two pointers. Skip one char if mismatch |
-| 2 | Longest Common Prefix | Easy | All | Sort and compare first and last, or vertical scanning |
-| 3 | Reverse Words in a String | Medium | G, F, A | Split, reverse, join. Or two-pointer reverse each word |
-| 4 | Integer to Roman | Medium | G, F, A | Greedy: largest value symbols first |
-| 5 | Roman to Integer | Easy | G, F, A | Left-to-right, subtract when smaller before larger |
-| 6 | Text Justification | Hard | G, F, A | Greedy line packing. Distribute spaces evenly |
-| 7 | Valid Number | Hard | G | State machine or regex. Check digits, dot, sign, exponent |
-| 8 | First Unique Character in a String | Easy | All | Frequency array, second pass for first with count 1 |
-| 9 | String to Integer (atoi) | Medium | G, F, A | Skip whitespace, handle sign, overflow, non-digit chars |
-| 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid |
+| 1 | Valid Palindrome II | Easy | G, F | Two pointers. Skip one char if mismatch | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) |
+| 2 | Longest Common Prefix | Easy | All | Sort and compare first and last, or vertical scanning | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) |
+| 3 | Reverse Words in a String | Medium | G, F, A | Split, reverse, join. Or two-pointer reverse each word | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) |
+| 4 | Integer to Roman | Medium | G, F, A | Greedy: largest value symbols first | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) |
+| 5 | Roman to Integer | Easy | G, F, A | Left-to-right, subtract when smaller before larger | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) |
+| 6 | Text Justification | Hard | G, F, A | Greedy line packing. Distribute spaces evenly | [Text Justification](https://leetcode.com/problems/text-justification/) |
+| 7 | Valid Number | Hard | G | State machine or regex. Check digits, dot, sign, exponent | [Valid Number](https://leetcode.com/problems/valid-number/) |
+| 8 | First Unique Character in a String | Easy | All | Frequency array, second pass for first with count 1 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) |
+| 9 | String to Integer (atoi) | Medium | G, F, A | Skip whitespace, handle sign, overflow, non-digit chars | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) |
+| 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) |
 
 ## Examples
 

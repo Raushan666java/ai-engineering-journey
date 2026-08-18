@@ -87,6 +87,11 @@ flowchart LR
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array, Sorting]
+🧩 **Pattern:** Sorting + Greedy, Two Pointers
+✅ **Best Option:** Sort both arrays + greedy pointer match — O(n log n + m log m) time, O(1) space
+❌ **Not Optimal:** Brute force trying every cookie-child pairing — O(n × m)
+🔗 **LeetCode:** [Assign Cookies](https://leetcode.com/problems/assign-cookies/)
+🔗 **Related:** [Lemonade Change](08-greedy.md#problem-2-lemonade-change) · [Maximum Units on a Truck](08-greedy.md#problem-5-maximum-units-on-a-truck) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given children's greed factors and cookie sizes, maximize the number of content children (a child is content if cookie size ≥ greed factor). Each child gets at most one cookie.
 
@@ -129,6 +134,11 @@ console.log(findContentChildren([1, 2], [1, 2, 3])); // 2
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Single-pass greedy with $5/$10 bill counters — O(n) time, O(1) space
+❌ **Not Optimal:** Backtracking over bill change combinations — exponential
+🔗 **LeetCode:** [Lemonade Change](https://leetcode.com/problems/lemonade-change/)
+🔗 **Related:** [Assign Cookies](08-greedy.md#problem-1-assign-cookies) · [Gas Station](08-greedy.md#problem-9-gas-station) · [Coin Change](07-dynamic-programming.md#problem-11-coin-change)
 
 **Problem:** Each customer pays with $5, $10, or $20 for a $5 lemonade. Determine if you can provide correct change.
 
@@ -182,6 +192,11 @@ console.log(lemonadeChange([5, 5, 10, 10, 20])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Single-pass accumulate positive price deltas — O(n) time, O(1) space
+❌ **Not Optimal:** DP over buy/sell states — O(n²), overkill when greedy suffices
+🔗 **LeetCode:** [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+🔗 **Related:** [Gas Station](08-greedy.md#problem-9-gas-station) · [Jump Game II](08-greedy.md#problem-8-jump-game-ii) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock)
 
 **Problem:** You can complete as many transactions as you like (buy one and sell one share on different days). Maximize profit.
 
@@ -223,6 +238,11 @@ console.log(maxProfitII([7, 6, 4, 3, 1])); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array, Sorting]
+🧩 **Pattern:** Interval Scheduling, Sorting + Greedy
+✅ **Best Option:** Sort by end + greedy overlap merge — O(n log n) time, O(1) space
+❌ **Not Optimal:** Interval graph coloring — O(n²), overkill for counting overlaps
+🔗 **LeetCode:** [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+🔗 **Related:** [Activity Selection (Non-overlapping Intervals)](08-greedy.md#problem-6-activity-selection-non-overlapping-intervals) · [Minimum Number of Platforms](08-greedy.md#problem-7-minimum-number-of-platforms) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given balloons as intervals [x_start, x_end], shoot arrows vertically. Find minimum arrows needed to burst all balloons.
 
@@ -267,6 +287,11 @@ console.log(findMinArrowShots([[1,2],[3,4],[5,6],[7,8]])); // 4
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Greedy, Array, Sorting]
+🧩 **Pattern:** Sorting + Greedy, Greedy Choice
+✅ **Best Option:** Sort by units-per-box desc + greedy fill — O(n log n) time, O(1) space
+❌ **Not Optimal:** 0/1 knapsack DP — O(n × truckSize), overkill for a fractional-style load
+🔗 **LeetCode:** [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)
+🔗 **Related:** [Assign Cookies](08-greedy.md#problem-1-assign-cookies) · [Minimum Cost to Hire K Workers](08-greedy.md#problem-15-minimum-cost-to-hire-k-workers) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
 
 **Problem:** Given box types with [numberOfBoxes, unitsPerBox] and a truck size, maximize total units loaded.
 
@@ -312,6 +337,11 @@ console.log(maximumUnits([[5,10],[2,5],[4,7],[3,9]], 10)); // 91
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Interval, Sorting]
+🧩 **Pattern:** Interval Scheduling, Activity Selection, Sorting + Greedy
+✅ **Best Option:** Sort by end time + greedy selection — O(n log n) time, O(1) space
+❌ **Not Optimal:** DP longest non-overlapping chain — O(n²), same optimum at higher cost
+🔗 **LeetCode:** [Activity Selection (Non-overlapping Intervals)](https://leetcode.com/problems/non-overlapping-intervals/)
+🔗 **Related:** [Minimum Number of Arrows to Burst Balloons](08-greedy.md#problem-4-minimum-number-of-arrows-to-burst-balloons) · [Minimum Number of Platforms](08-greedy.md#problem-7-minimum-number-of-platforms) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given intervals [start, end], find the maximum number of non-overlapping intervals you can select (or the minimum number to remove to make them non-overlapping).
 
@@ -357,6 +387,11 @@ console.log(eraseOverlapIntervals([[1,2],[1,2],[1,2]])); // 2
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Interval, Sorting]
+🧩 **Pattern:** Two Pointers, Sorting + Greedy, Interval Scheduling
+✅ **Best Option:** Sort arrivals/departures + two-pointer sweep — O(n log n) time, O(1) space
+❌ **Not Optimal:** Checking every pair of trains for overlap — O(n²)
+🔗 **LeetCode:** No direct LC equivalent — see Related links
+🔗 **Related:** [Activity Selection (Non-overlapping Intervals)](08-greedy.md#problem-6-activity-selection-non-overlapping-intervals) · [Minimum Number of Arrows to Burst Balloons](08-greedy.md#problem-4-minimum-number-of-arrows-to-burst-balloons) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given arrival and departure times of trains, find the minimum number of platforms needed.
 
@@ -409,6 +444,11 @@ console.log(findPlatform([900, 1000], [910, 1010])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Track farthest reach per jump layer — O(n) time, O(1) space
+❌ **Not Optimal:** DP minimum jumps — O(n²), greedy reaches the optimum in O(n)
+🔗 **LeetCode:** [Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+🔗 **Related:** [Jump Game (Greedy)](08-greedy.md#problem-16-jump-game-greedy) · [Gas Station](08-greedy.md#problem-9-gas-station) · [Jump Game](07-dynamic-programming.md#problem-16-jump-game)
 
 **Problem:** Given an array where nums[i] is max jump length, return the minimum number of jumps to reach the last index.
 
@@ -453,6 +493,11 @@ console.log(jump([0])); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Single-pass tank tracking with start reset — O(n) time, O(1) space
+❌ **Not Optimal:** Trying every station as a start — O(n²)
+🔗 **LeetCode:** [Gas Station](https://leetcode.com/problems/gas-station/)
+🔗 **Related:** [Jump Game II](08-greedy.md#problem-8-jump-game-ii) · [Candy](08-greedy.md#problem-10-candy) · [Maximum Subarray (Kadane's Algorithm)](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm)
 
 **Problem:** Given gas[i] (gas at station i) and cost[i] (cost to travel from i to i+1), find the starting station to complete a circuit. Return -1 if impossible.
 
@@ -501,6 +546,11 @@ console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])); // -1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Two-pass greedy (left-to-right then right-to-left) — O(n) time, O(n) space
+❌ **Not Optimal:** Brute force bumping candies until constraints hold — O(n²) worst
+🔗 **LeetCode:** [Candy](https://leetcode.com/problems/candy/)
+🔗 **Related:** [Queue Reconstruction by Height](08-greedy.md#problem-11-queue-reconstruction-by-height) · [Partition Labels](08-greedy.md#problem-13-partition-labels) · [Trapping Rain Water](01-arrays.md#problem-27-trapping-rain-water)
 
 **Problem:** Each child must have at least one candy. Children with higher ratings get more than their neighbors. Find the minimum total candies.
 
@@ -550,6 +600,11 @@ console.log(candy([1, 2, 2])); // 4
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array, Sorting]
+🧩 **Pattern:** Sorting + Greedy, Greedy Choice
+✅ **Best Option:** Sort by height desc + insert at k index — O(n²) time, O(n) space
+❌ **Not Optimal:** Trying all permutations of the queue — O(n!)
+🔗 **LeetCode:** [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)
+🔗 **Related:** [Candy](08-greedy.md#problem-10-candy) · [Two City Scheduling](08-greedy.md#problem-17-two-city-scheduling) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals)
 
 **Problem:** Given people [height, numInFront] where numInFront is number of people ≥ height in front, reconstruct the queue.
 
@@ -588,6 +643,11 @@ console.log(reconstructQueue([[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array, Heap]
+🧩 **Pattern:** Greedy Choice, Heap/Priority Queue
+✅ **Best Option:** Frequency + idle-slot formula — O(n + 26 log 26) time, O(1) space
+❌ **Not Optimal:** Simulating time slots one by one — O(maxFreq × n)
+🔗 **LeetCode:** [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
+🔗 **Related:** [Split Array into Consecutive Subsequences](08-greedy.md#problem-18-split-array-into-consecutive-subsequences) · [Minimum Cost to Hire K Workers](08-greedy.md#problem-15-minimum-cost-to-hire-k-workers) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
 
 **Problem:** Given tasks and a cooldown n, find the minimum time to complete all tasks (same task must be n apart).
 
@@ -635,6 +695,11 @@ console.log(leastInterval(["A","A","A","B","B","B"], 0)); // 6
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, String, Two Pointers]
+🧩 **Pattern:** Two Pointers, Greedy Choice
+✅ **Best Option:** Last-occurrence map + greedy segment expansion — O(n) time, O(1) space
+❌ **Not Optimal:** Checking every substring for character containment — O(n²)
+🔗 **LeetCode:** [Partition Labels](https://leetcode.com/problems/partition-labels/)
+🔗 **Related:** [Jump Game II](08-greedy.md#problem-8-jump-game-ii) · [Candy](08-greedy.md#problem-10-candy) · [Minimum Window Substring](02-strings.md#problem-14-minimum-window-substring)
 
 **Problem:** Partition a string into as many parts as possible so that each character appears in at most one part.
 
@@ -687,6 +752,11 @@ console.log(partitionLabels("eccbbbbdec")); // [10]
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Greedy, DP, Binary Search, Sorting]
+🧩 **Pattern:** Interval Scheduling, Sorting + Greedy
+✅ **Best Option:** Sort by end + DP with binary search — O(n log n) time, O(n) space
+❌ **Not Optimal:** Pure earliest-finish greedy — fails when profits differ
+🔗 **LeetCode:** [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)
+🔗 **Related:** [Activity Selection (Non-overlapping Intervals)](08-greedy.md#problem-6-activity-selection-non-overlapping-intervals) · [Minimum Cost to Hire K Workers](08-greedy.md#problem-15-minimum-cost-to-hire-k-workers) · [Longest Increasing Subsequence](07-dynamic-programming.md#problem-12-longest-increasing-subsequence)
 
 **Problem:** Given jobs with startTime, endTime, and profit, find the maximum profit with non-overlapping jobs.
 
@@ -746,6 +816,11 @@ console.log(jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60])); // 150
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Greedy, Heap, Sorting]
+🧩 **Pattern:** Heap/Priority Queue, Sorting + Greedy
+✅ **Best Option:** Sort by wage/quality ratio + max-heap of k smallest qualities — O(n log k) time, O(k) space
+❌ **Not Optimal:** Enumerating every size-k subset — O(C(n, k)) combinations
+🔗 **LeetCode:** [Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/)
+🔗 **Related:** [Task Scheduler](08-greedy.md#problem-12-task-scheduler) · [Maximum Units on a Truck](08-greedy.md#problem-5-maximum-units-on-a-truck) · [0/1 Knapsack](07-dynamic-programming.md#problem-29-01-knapsack)
 
 **Problem:** Hire exactly k workers. Each worker has wage[i] and quality[i]. Pay proportional to quality ratio. Find minimum cost.
 
@@ -839,6 +914,11 @@ console.log(mincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3)); // 30.66667
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array]
+🧩 **Pattern:** Greedy Choice
+✅ **Best Option:** Single-pass max-reach tracking — O(n) time, O(1) space
+❌ **Not Optimal:** DP reachability table — O(n²), greedy decides reachability in O(n)
+🔗 **LeetCode:** [Jump Game](https://leetcode.com/problems/jump-game/)
+🔗 **Related:** [Jump Game II](08-greedy.md#problem-8-jump-game-ii) · [Gas Station](08-greedy.md#problem-9-gas-station) · [Jump Game](07-dynamic-programming.md#problem-16-jump-game)
 
 **Problem:** Given an array where nums[i] is max jump length from position i, determine if you can reach the last index.
 
@@ -882,6 +962,11 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Array, Sorting]
+🧩 **Pattern:** Sorting + Greedy, Greedy Choice
+✅ **Best Option:** Sort by cost difference (refund) + split halves — O(n log n) time, O(1) space
+❌ **Not Optimal:** Enumerating all n-of-2n city assignments — O(C(2n, n))
+🔗 **LeetCode:** [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
+🔗 **Related:** [Queue Reconstruction by Height](08-greedy.md#problem-11-queue-reconstruction-by-height) · [Best Time to Buy and Sell Stock II](08-greedy.md#problem-3-best-time-to-buy-and-sell-stock-ii) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock)
 
 **Problem:** A company wants to fly 2n people to two cities. cost[i][0] is cost to send to city A, cost[i][1] is cost to send to city B. Return minimum cost to send exactly n people to each city.
 
@@ -926,6 +1011,11 @@ console.log(twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Greedy, Heap, Hash Table]
+🧩 **Pattern:** Greedy Choice, Heap/Priority Queue
+✅ **Best Option:** Greedy chain extension with frequency/need maps — O(n) time, O(n) space
+❌ **Not Optimal:** Backtracking over all chain partitions — exponential
+🔗 **LeetCode:** [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)
+🔗 **Related:** [Task Scheduler](08-greedy.md#problem-12-task-scheduler) · [Minimum Cost to Hire K Workers](08-greedy.md#problem-15-minimum-cost-to-hire-k-workers) · [Longest Increasing Subsequence](07-dynamic-programming.md#problem-12-longest-increasing-subsequence)
 
 **Problem:** Given an array sorted in non-decreasing order, return true if it can be split into one or more subsequences of length >= 3 with consecutive integers.
 

@@ -66,6 +66,11 @@ flowchart LR
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, String]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack-based bracket matching — O(n) time, O(n) space
+❌ **Not Optimal:** Repeatedly replacing balanced pairs — O(n²) worst case; a single stack pass is O(n)
+🔗 **LeetCode:** [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+🔗 **Related:** [Decode String](04-stacks-queues.md#problem-11-decode-string) · [Remove All Adjacent Duplicates In String](04-stacks-queues.md#problem-6-remove-all-adjacent-duplicates-in-string) · [Valid Parentheses](02-strings.md#problem-6-valid-parentheses)
 
 **Problem:** Given a string containing '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -116,6 +121,11 @@ console.log(isValid("{[]}")); // true
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Design]
+🧩 **Pattern:** Two Stacks
+✅ **Best Option:** Auxiliary min stack tracking per-level minimums — O(1) per operation, O(n) space
+❌ **Not Optimal:** Single min variable — becomes stale after pop; the min stack preserves per-level history
+🔗 **LeetCode:** [Min Stack](https://leetcode.com/problems/min-stack/)
+🔗 **Related:** [Implement Queue using Stacks](04-stacks-queues.md#problem-3-implement-queue-using-stacks) · [Validate Stack Sequences](04-stacks-queues.md#problem-16-validate-stack-sequences) · [Serialize and Deserialize Binary Tree](05-trees.md#problem-25-serialize-and-deserialize-binary-tree)
 
 **Problem:** Design a stack that supports push, pop, top, and retrieving the minimum element in O(1) time.
 
@@ -185,6 +195,11 @@ console.log(minStack.getMin()); // -2
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Queue, Design]
+🧩 **Pattern:** Two Stacks
+✅ **Best Option:** Input/output stacks with lazy transfer — O(1) amortized per operation, O(n) space
+❌ **Not Optimal:** Single stack with shift-based pops — O(n) per pop; two-stack transfer amortizes to O(1)
+🔗 **LeetCode:** [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+🔗 **Related:** [Min Stack](04-stacks-queues.md#problem-2-min-stack) · [Validate Stack Sequences](04-stacks-queues.md#problem-16-validate-stack-sequences) · [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal)
 
 **Problem:** Implement a FIFO queue using two stacks.
 
@@ -249,6 +264,11 @@ console.log(q.empty()); // false
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Array]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack simulation of the operations — O(n) time, O(n) space
+❌ **Not Optimal:** Array splicing on C/D ops — O(n²) from shifting; stack push/pop mirrors the rules in O(n)
+🔗 **LeetCode:** [Baseball Game](https://leetcode.com/problems/baseball-game/)
+🔗 **Related:** [Evaluate Reverse Polish Notation](04-stacks-queues.md#problem-10-evaluate-reverse-polish-notation) · [Asteroid Collision](04-stacks-queues.md#problem-12-asteroid-collision) · [Valid Parentheses](02-strings.md#problem-6-valid-parentheses)
 
 **Problem:** You are keeping score. Operations: integer (record), '+' (sum of last two), 'D' (double last), 'C' (remove last). Return sum of all scores.
 
@@ -299,6 +319,11 @@ console.log(calPoints(["5", "-2", "4", "C", "D", "9", "+", "+"])); // 27
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Two Pointers]
+🧩 **Pattern:** Two Pointers, Stack
+✅ **Best Option:** Right-to-left two-pointer scan with skip counting — O(n + m) time, O(1) space
+❌ **Not Optimal:** Stack build per string — O(n + m) extra space; the reverse scan skips backspaces in O(1)
+🔗 **LeetCode:** [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
+🔗 **Related:** [Remove All Adjacent Duplicates In String](04-stacks-queues.md#problem-6-remove-all-adjacent-duplicates-in-string) · [Simplify Path](04-stacks-queues.md#problem-15-simplify-path) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome)
 
 **Problem:** Given two strings where '#' represents backspace, return true if they're equal when typed into an empty text editor.
 
@@ -348,6 +373,11 @@ console.log(backspaceCompare("a#c", "b")); // false
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, String]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack with top-of-stack comparison — O(n) time, O(n) space
+❌ **Not Optimal:** Repeated replace passes over the string — O(n²); a single stack pass removes all duplicates at once
+🔗 **LeetCode:** [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
+🔗 **Related:** [Backspace String Compare](04-stacks-queues.md#problem-5-backspace-string-compare) · [Decode String](04-stacks-queues.md#problem-11-decode-string) · [Remove Duplicates from Sorted List II](03-linked-lists.md#problem-16-remove-duplicates-from-sorted-list-ii)
 
 **Problem:** Repeatedly remove adjacent duplicate characters until no more duplicates exist.
 
@@ -391,6 +421,11 @@ console.log(removeDuplicates("a")); // "a"
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Hash Table]
+🧩 **Pattern:** Monotonic Stack, Hash Map
+✅ **Best Option:** Monotonic stack over nums2 + hash map of next-greater results — O(n + m) time, O(m) space
+❌ **Not Optimal:** Brute force scan of nums2 per element — O(n·m); the monotonic stack resolves all in one pass
+🔗 **LeetCode:** [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
+🔗 **Related:** [Next Greater Element II](04-stacks-queues.md#problem-8-next-greater-element-ii) · [Daily Temperatures](04-stacks-queues.md#problem-9-daily-temperatures) · [Two Sum](01-arrays.md#problem-1-two-sum)
 
 **Problem:** Find the next greater element for each element in nums1 from nums2.
 
@@ -439,6 +474,11 @@ console.log(nextGreaterElement([2, 4], [1, 2, 3, 4])); // [3, -1]
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array]
+🧩 **Pattern:** Monotonic Stack
+✅ **Best Option:** Double-length circular pass (2n) with a monotonic stack — O(n) time, O(n) space
+❌ **Not Optimal:** Naive double loop over the circular array — O(n²); simulating the circle with i % n keeps it linear
+🔗 **LeetCode:** [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
+🔗 **Related:** [Next Greater Element I](04-stacks-queues.md#problem-7-next-greater-element-i) · [Daily Temperatures](04-stacks-queues.md#problem-9-daily-temperatures) · [Rotate Array](01-arrays.md#problem-19-rotate-array)
 
 **Problem:** Given a circular array, find the next greater element for each element.
 
@@ -485,6 +525,11 @@ console.log(nextGreaterElements([1, 2, 3, 4, 3])); // [2, 3, 4, -1, 4]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array, Monotonic Stack]
+🧩 **Pattern:** Monotonic Stack
+✅ **Best Option:** Monotonic stack of indices — O(n) time, O(n) space
+❌ **Not Optimal:** Brute force search for the next warmer day — O(n²), TLE for n ≥ 10⁵; the stack resolves all in one pass
+🔗 **LeetCode:** [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+🔗 **Related:** [Next Greater Element II](04-stacks-queues.md#problem-8-next-greater-element-ii) · [Largest Rectangle in Histogram](04-stacks-queues.md#problem-18-largest-rectangle-in-histogram) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock)
 
 **Problem:** Given an array of temperatures, return an array such that answer[i] is the number of days until a warmer temperature.
 
@@ -532,6 +577,11 @@ console.log(dailyTemperatures([30, 40, 50, 60])); // [1, 1, 1, 0]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Math]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack evaluation of postfix tokens — O(n) time, O(n) space
+❌ **Not Optimal:** Building an expression tree first — extra O(n) structure; direct stack evaluation is a single pass
+🔗 **LeetCode:** [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+🔗 **Related:** [Baseball Game](04-stacks-queues.md#problem-4-baseball-game) · [Decode String](04-stacks-queues.md#problem-11-decode-string) · [String to Integer (atoi)](02-strings.md#problem-12-string-to-integer-atoi)
 
 **Problem:** Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 
@@ -586,6 +636,11 @@ console.log(evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, String, Recursion]
+🧩 **Pattern:** Stack, Recursion
+✅ **Best Option:** Two stacks (counts + strings) — O(n) time, O(n) space
+❌ **Not Optimal:** Recursive descent that reparses brackets — repeated sub-string rebuilds; stack simulation is single-pass
+🔗 **LeetCode:** [Decode String](https://leetcode.com/problems/decode-string/)
+🔗 **Related:** [Valid Parentheses](04-stacks-queues.md#problem-1-valid-parentheses) · [Evaluate Reverse Polish Notation](04-stacks-queues.md#problem-10-evaluate-reverse-polish-notation) · [Encode and Decode Strings](02-strings.md#problem-16-encode-and-decode-strings)
 
 **Problem:** Decode a string encoded as k[encoded_string]. E.g., "3[a]2[bc]" → "aaabcbc".
 
@@ -642,6 +697,11 @@ console.log(decodeString("2[abc]3[cd]ef")); // "abcabccdcdcdef"
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack simulation with collision resolution — O(n) time, O(n) space
+❌ **Not Optimal:** Two-pointer array with splice removals — O(n²) worst case; a stack processes each asteroid once
+🔗 **LeetCode:** [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
+🔗 **Related:** [Baseball Game](04-stacks-queues.md#problem-4-baseball-game) · [Daily Temperatures](04-stacks-queues.md#problem-9-daily-temperatures) · [Remove Linked List Elements](03-linked-lists.md#problem-6-remove-linked-list-elements)
 
 **Problem:** We are given an array asteroids of integers representing asteroids in a row. The absolute value represents its size, and the sign represents its direction (positive = right, negative = left). Find out the state of the asteroids after all collisions.
 
@@ -695,6 +755,11 @@ console.log(asteroidCollision([10, 2, -5])); // [10]
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Monotonic Stack, Design]
+🧩 **Pattern:** Monotonic Stack
+✅ **Best Option:** Monotonic stack of (price, span) pairs — O(1) amortized per call, O(n) space
+❌ **Not Optimal:** Brute-force lookback over all past prices — O(n²) worst case; span aggregation on the stack is amortized O(1)
+🔗 **LeetCode:** [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
+🔗 **Related:** [Daily Temperatures](04-stacks-queues.md#problem-9-daily-temperatures) · [Next Greater Element I](04-stacks-queues.md#problem-7-next-greater-element-i) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock)
 
 **Problem:** Design a class that returns the number of consecutive days (including today) the stock price has been less than or equal to today's price.
 
@@ -746,6 +811,11 @@ console.log(spanner.next(85)); // 6
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Greedy]
+🧩 **Pattern:** Monotonic Stack, Greedy
+✅ **Best Option:** Monotonic increasing stack + greedy removals — O(n) time, O(n) space
+❌ **Not Optimal:** Enumerating all digit-removal combinations — exponential; greedy stack removal is linear
+🔗 **LeetCode:** [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+🔗 **Related:** [Next Greater Element II](04-stacks-queues.md#problem-8-next-greater-element-ii) · [Remove All Adjacent Duplicates In String](04-stacks-queues.md#problem-6-remove-all-adjacent-duplicates-in-string) · [Next Permutation](01-arrays.md#problem-17-next-permutation)
 
 **Problem:** Given a string num representing a non-negative integer, and an integer k, return the smallest possible integer after removing k digits.
 
@@ -801,6 +871,11 @@ console.log(removeKdigits("10", 2)); // "0"
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, String]
+🧩 **Pattern:** Stack
+✅ **Best Option:** Stack of directory segments — O(n) time, O(n) space
+❌ **Not Optimal:** String regex collapsing — fragile against ".." and "." edge cases; the stack of segments handles them directly
+🔗 **LeetCode:** [Simplify Path](https://leetcode.com/problems/simplify-path/)
+🔗 **Related:** [Decode String](04-stacks-queues.md#problem-11-decode-string) · [Valid Parentheses](04-stacks-queues.md#problem-1-valid-parentheses) · [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string)
 
 **Problem:** Given an absolute path for a Unix-style file system, simplify it.
 
@@ -847,6 +922,11 @@ console.log(simplifyPath("/../")); // "/"
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Simulation]
+🧩 **Pattern:** Stack, Two Pointers
+✅ **Best Option:** Greedy push/pop simulation — O(n) time, O(n) space
+❌ **Not Optimal:** Checking all permutation orderings — O(n!) impossible; the greedy simulation is linear
+🔗 **LeetCode:** [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
+🔗 **Related:** [Min Stack](04-stacks-queues.md#problem-2-min-stack) · [Implement Queue using Stacks](04-stacks-queues.md#problem-3-implement-queue-using-stacks) · [Intersection of Two Linked Lists](03-linked-lists.md#problem-12-intersection-of-two-linked-lists)
 
 **Problem:** Given pushed and popped sequences, return true if they represent valid push/pop operations on an initially empty stack.
 
@@ -889,6 +969,11 @@ console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Design, Recursion]
+🧩 **Pattern:** Stack, Recursion
+✅ **Best Option:** Lazy stack of iterators — O(n) total, O(1) amortized per next/hasNext
+❌ **Not Optimal:** Eager recursive flattening of the whole list upfront — builds the full O(n) list; the lazy stack holds only the traversal path
+🔗 **LeetCode:** [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
+🔗 **Related:** [Decode String](04-stacks-queues.md#problem-11-decode-string) · [Validate Stack Sequences](04-stacks-queues.md#problem-16-validate-stack-sequences) · [Flatten Binary Tree to Linked List](05-trees.md#problem-23-flatten-binary-tree-to-linked-list)
 
 **Problem:** Design an iterator that flattens a nested list of integers.
 
@@ -931,6 +1016,11 @@ class NestedIterator {
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Stack, Array, Monotonic Stack]
+🧩 **Pattern:** Monotonic Stack
+✅ **Best Option:** Monotonic stack with a sentinel bar — O(n) time, O(n) space
+❌ **Not Optimal:** Brute force across all bar pairs — O(n²), TLE for n ≥ 10⁵; the monotonic stack computes every area in one pass
+🔗 **LeetCode:** [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+🔗 **Related:** [Daily Temperatures](04-stacks-queues.md#problem-9-daily-temperatures) · [Next Greater Element II](04-stacks-queues.md#problem-8-next-greater-element-ii) · [Container With Most Water](01-arrays.md#problem-13-container-with-most-water)
 
 **Problem:** Given an array of heights representing a histogram, find the largest rectangle area.
 
@@ -983,6 +1073,11 @@ console.log(largestRectangleArea([1])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Queue, Deque, Sliding Window]
+🧩 **Pattern:** Deque
+✅ **Best Option:** Monotonic deque of indices — O(n) time, O(k) space
+❌ **Not Optimal:** Brute force max per window — O(n·k); a heap is O(n log k); the monotonic deque keeps it O(n)
+🔗 **LeetCode:** [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+🔗 **Related:** [Minimum Window Substring](02-strings.md#problem-14-minimum-window-substring) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters) · [Largest Rectangle in Histogram](04-stacks-queues.md#problem-18-largest-rectangle-in-histogram)
 
 **Problem:** You are given an array of integers nums, and a sliding window of size k moving from left to right. Return the max in each window.
 
@@ -1042,6 +1137,11 @@ console.log(maxSlidingWindow([1, -1], 1)); // [1, -1]
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Heap, BFS, Matrix]
+🧩 **Pattern:** Priority Queue/Heap, BFS
+✅ **Best Option:** Min-heap boundary expansion (Dijkstra-style BFS) — O(m·n log(m·n)) time, O(m·n) space
+❌ **Not Optimal:** Simulating water flow cell-by-cell from every boundary — O(m²n²); the boundary min-heap settles each cell once
+🔗 **LeetCode:** [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)
+🔗 **Related:** [Sliding Window Maximum](04-stacks-queues.md#problem-19-sliding-window-maximum) · [Trapping Rain Water](01-arrays.md#problem-27-trapping-rain-water) · [Number of Islands](06-graphs.md#problem-6-number-of-islands)
 
 **Problem:** Given an m x n matrix of heights, compute how much water it can trap after raining. Water flows to any of the four adjacent cells with lower height.
 

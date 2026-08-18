@@ -86,6 +86,12 @@ xychart-beta
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, Stack, Recursion]
 
+🧩 **Pattern:** Inorder Traversal, Iterative Traversal, Recursion
+✅ **Best Option:** Iterative traversal with explicit stack — O(n) time, O(h) space
+❌ **Not Optimal:** BFS level-order — does not produce inorder sequence
+🔗 **LeetCode:** [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+🔗 **Related:** [Kth Smallest Element in a BST](05-trees.md#problem-15-kth-smallest-element-in-a-bst) · [Recover Binary Search Tree](05-trees.md#problem-28-recover-binary-search-tree) · [Valid Parentheses](02-strings.md#problem-6-valid-parentheses)
+
 **Problem:** Given the root of a binary tree, return the inorder traversal (left → root → right).
 
 **Example 1:**
@@ -170,6 +176,12 @@ console.log(inorderTraversal(arrayToTree([]))); // []
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, DFS, BFS]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — O(n) extra queue space
+🔗 **LeetCode:** [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+🔗 **Related:** [Minimum Depth of Binary Tree](05-trees.md#problem-8-minimum-depth-of-binary-tree) · [Balanced Binary Tree](05-trees.md#problem-7-balanced-binary-tree) · [Number of Islands](06-graphs.md#problem-6-number-of-islands)
+
 **Problem:** Find the maximum depth (number of nodes along the longest path from root to farthest leaf).
 
 **Example 1:**
@@ -205,6 +217,12 @@ console.log(maxDepth(null)); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, DFS, Recursion]
+
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS comparing both trees — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — O(n) extra queue space
+🔗 **LeetCode:** [Same Tree](https://leetcode.com/problems/same-tree/)
+🔗 **Related:** [Symmetric Tree](05-trees.md#problem-4-symmetric-tree) · [Invert Binary Tree](05-trees.md#problem-10-invert-binary-tree) · [Clone Graph](06-graphs.md#problem-7-clone-graph)
 
 **Problem:** Given two binary trees, check if they are structurally identical and have same values.
 
@@ -244,6 +262,12 @@ console.log(isSameTree(tree1, tree3)); // false
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, DFS, BFS]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS mirror check — O(n) time, O(h) space
+❌ **Not Optimal:** BFS comparing levels — O(n) extra queue space
+🔗 **LeetCode:** [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+🔗 **Related:** [Same Tree](05-trees.md#problem-3-same-tree) · [Invert Binary Tree](05-trees.md#problem-10-invert-binary-tree) · [Clone Graph](06-graphs.md#problem-7-clone-graph)
+
 **Problem:** Given a binary tree, check if it is a mirror of itself.
 
 **Example 1:**
@@ -282,6 +306,12 @@ console.log(isSymmetric(arrayToTree([1, 2, 2, null, 3, null, 3]))); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, BFS]
+
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS with queue, one level per iteration — O(n) time, O(n) space
+❌ **Not Optimal:** DFS recursion — needs extra depth bookkeeping to group levels
+🔗 **LeetCode:** [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+🔗 **Related:** [Binary Tree Zigzag Level Order Traversal](05-trees.md#problem-12-binary-tree-zigzag-level-order-traversal) · [Binary Tree Level Order Traversal II](05-trees.md#problem-19-binary-tree-level-order-traversal-ii) · [Rotting Oranges](06-graphs.md#problem-12-rotting-oranges)
 
 **Problem:** Return the level order traversal of a binary tree's nodes' values (left to right, level by level).
 
@@ -333,6 +363,12 @@ console.log(levelOrder(null)); // []
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, BST, Divide and Conquer]
 
+🧩 **Pattern:** Balanced BST, Recursion
+✅ **Best Option:** Recursive mid-split — O(n) time, O(log n) space
+❌ **Not Optimal:** Sequential insertion — produces skewed tree, not height-balanced
+🔗 **LeetCode:** [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+🔗 **Related:** [Validate Binary Search Tree](05-trees.md#problem-11-validate-binary-search-tree) · [Kth Smallest Element in a BST](05-trees.md#problem-15-kth-smallest-element-in-a-bst) · [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array)
+
 **Problem:** Given an integer array sorted in ascending order, convert it to a height-balanced BST.
 
 **Example 1:**
@@ -372,6 +408,12 @@ console.log(inorderTraversal(bst)); // [-10, -3, 0, 5, 9]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, DFS]
+
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Postorder DFS with early exit (-1 sentinel) — O(n) time, O(h) space
+❌ **Not Optimal:** Top-down height recomputation per node — O(n log n) redundant work
+🔗 **LeetCode:** [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+🔗 **Related:** [Maximum Depth of Binary Tree](05-trees.md#problem-2-maximum-depth-of-binary-tree) · [Convert Sorted Array to BST](05-trees.md#problem-6-convert-sorted-array-to-bst) · [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm)
 
 **Problem:** Determine if a binary tree is height-balanced (left and right subtrees differ by ≤1 in height).
 
@@ -415,6 +457,12 @@ console.log(isBalanced(arrayToTree([1, 2, 2, 3, 3, null, null, 4, 4]))); // fals
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, BFS, DFS]
+
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS — early exit at first leaf, O(n) time, O(n) space
+❌ **Not Optimal:** DFS recursion — explores whole tree even when a shallow leaf exists
+🔗 **LeetCode:** [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+🔗 **Related:** [Maximum Depth of Binary Tree](05-trees.md#problem-2-maximum-depth-of-binary-tree) · [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [Shortest Path in Binary Matrix](06-graphs.md#problem-19-shortest-path-in-binary-matrix)
 
 **Problem:** Find the minimum depth (shortest path from root to nearest leaf).
 
@@ -463,6 +511,12 @@ console.log(minDepth(arrayToTree([2, null, 3, null, 4]))); // 3
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, DFS]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS with remaining-sum — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — O(n) extra queue space, no early-exit advantage
+🔗 **LeetCode:** [Path Sum](https://leetcode.com/problems/path-sum/)
+🔗 **Related:** [Sum Root to Leaf Numbers](05-trees.md#problem-22-sum-root-to-leaf-numbers) · [Binary Tree Paths](05-trees.md#problem-21-binary-tree-paths) · [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k)
+
 **Problem:** Given a target sum, determine if the tree has a root-to-leaf path that sums to target.
 
 **Example 1:**
@@ -497,6 +551,12 @@ console.log(hasPathSum(null, 0)); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Tree, Recursion]
+
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS swapping children — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — O(n) extra queue space
+🔗 **LeetCode:** [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+🔗 **Related:** [Symmetric Tree](05-trees.md#problem-4-symmetric-tree) · [Same Tree](05-trees.md#problem-3-same-tree) · [Clone Graph](06-graphs.md#problem-7-clone-graph)
 
 **Problem:** Given the root of a binary tree, invert the tree (mirror it).
 
@@ -537,6 +597,12 @@ console.log(levelOrder(inverted));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BST, DFS]
+
+🧩 **Pattern:** Binary Search Tree, Inorder Traversal, DFS
+✅ **Best Option:** Recursive DFS with min/max range bounds — O(n) time, O(h) space
+❌ **Not Optimal:** Parent-child comparison only — misses violations deeper in the tree
+🔗 **LeetCode:** [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+🔗 **Related:** [Kth Smallest Element in a BST](05-trees.md#problem-15-kth-smallest-element-in-a-bst) · [Recover Binary Search Tree](05-trees.md#problem-28-recover-binary-search-tree) · [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array)
 
 **Problem:** Determine if a binary tree is a valid BST. Left subtree values must be < root value; right > root.
 
@@ -583,6 +649,12 @@ console.log(isValidBST(arrayToTree([5, 1, 4, null, null, 3, 6]))); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BFS]
+
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS with direction toggle — O(n) time, O(n) space
+❌ **Not Optimal:** DFS recursion — needs depth tracking and level reversal
+🔗 **LeetCode:** [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+🔗 **Related:** [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [Binary Tree Right Side View](05-trees.md#problem-14-binary-tree-right-side-view) · [Word Ladder](06-graphs.md#problem-10-word-ladder)
 
 **Problem:** Return zigzag level order: left→right, then right→left, alternating.
 
@@ -639,6 +711,12 @@ console.log(zigzagLevelOrder(arrayToTree([3, 9, 20, null, null, 15, 7])));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, Array, Divide and Conquer]
 
+🧩 **Pattern:** Preorder Traversal, Inorder Traversal, Recursion
+✅ **Best Option:** Recursive with hash map for inorder index — O(n) time, O(n) space
+❌ **Not Optimal:** Linear indexOf per node — O(n²) worst case
+🔗 **LeetCode:** [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+🔗 **Related:** [Serialize and Deserialize Binary Tree](05-trees.md#problem-25-serialize-and-deserialize-binary-tree) · [Binary Tree Inorder Traversal](05-trees.md#problem-1-binary-tree-inorder-traversal) · [Two Sum](01-arrays.md#problem-1-two-sum)
+
 **Problem:** Build a binary tree from preorder and inorder traversal arrays.
 
 **Example 1:**
@@ -687,6 +765,12 @@ console.log(levelOrder(buildTree(preorder, inorder)));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BFS, DFS]
 
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS taking last node of each level — O(n) time, O(n) space
+❌ **Not Optimal:** DFS visiting left children first — captures left-side nodes, not the right view
+🔗 **LeetCode:** [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+🔗 **Related:** [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [Binary Tree Zigzag Level Order Traversal](05-trees.md#problem-12-binary-tree-zigzag-level-order-traversal) · [Rotting Oranges](06-graphs.md#problem-12-rotting-oranges)
+
 **Problem:** Return the values of nodes you can see from the right side of the tree (top to bottom).
 
 **Example 1:**
@@ -731,6 +815,12 @@ console.log(rightSideView(arrayToTree([1, 2, 3, null, 5, null, 4])));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BST, DFS]
+
+🧩 **Pattern:** Binary Search Tree, Inorder Traversal, Iterative Traversal
+✅ **Best Option:** Iterative inorder with early stop at k — O(h + k) time, O(h) space
+❌ **Not Optimal:** Collect full inorder array then index — always O(n), even when k is small
+🔗 **LeetCode:** [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+🔗 **Related:** [Binary Tree Inorder Traversal](05-trees.md#problem-1-binary-tree-inorder-traversal) · [Validate Binary Search Tree](05-trees.md#problem-11-validate-binary-search-tree) · [Find Minimum in Rotated Sorted Array](01-arrays.md#problem-23-find-minimum-in-rotated-sorted-array)
 
 **Problem:** Find the kth smallest element in a BST.
 
@@ -781,6 +871,12 @@ console.log(kthSmallest(arrayToTree([5, 3, 6, 2, 4, null, null, 1]), 3)); // 3
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BST]
 
+🧩 **Pattern:** Binary Search Tree, Lowest Common Ancestor
+✅ **Best Option:** BST property descent — O(h) time, O(1) space
+❌ **Not Optimal:** Generic binary-tree LCA recursion — O(n), ignores BST ordering
+🔗 **LeetCode:** [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+🔗 **Related:** [Lowest Common Ancestor of a Binary Tree](05-trees.md#problem-17-lowest-common-ancestor-of-a-binary-tree) · [Validate Binary Search Tree](05-trees.md#problem-11-validate-binary-search-tree) · [Find if Path Exists in Graph](06-graphs.md#problem-1-find-if-path-exists-in-graph)
+
 **Problem:** Find the lowest common ancestor of two nodes in a BST.
 
 **Example 1:**
@@ -823,6 +919,12 @@ console.log(lowestCommonAncestorBST(bstTree, p, q)?.val); // 6
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, DFS]
 
+🧩 **Pattern:** Lowest Common Ancestor, DFS, Recursion
+✅ **Best Option:** Recursive postorder DFS — O(n) time, O(h) space
+❌ **Not Optimal:** Parent map + visited set — O(n) extra space
+🔗 **LeetCode:** [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+🔗 **Related:** [Lowest Common Ancestor of a BST](05-trees.md#problem-16-lowest-common-ancestor-of-a-bst) · [All Nodes Distance K in Binary Tree](05-trees.md#problem-30-all-nodes-distance-k-in-binary-tree) · [Clone Graph](06-graphs.md#problem-7-clone-graph)
+
 **Problem:** Find the LCA of two nodes in a binary tree (not necessarily BST).
 
 **Example 1:**
@@ -861,6 +963,12 @@ console.log(lowestCommonAncestor(treeLCA, pNode, qNode)?.val); // 3
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, DFS, DP]
+
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Postorder DFS tracking max gain — O(n) time, O(h) space
+❌ **Not Optimal:** Brute-force check every pair of nodes — O(n²) path computations
+🔗 **LeetCode:** [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+🔗 **Related:** [Binary Tree Maximum Path Sum (with variations)](05-trees.md#problem-27-binary-tree-maximum-path-sum-with-variations) · [Path Sum](05-trees.md#problem-9-path-sum) · [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm)
 
 **Problem:** Find the maximum path sum in a binary tree. Path can start and end at any node.
 
@@ -911,6 +1019,12 @@ console.log(maxPathSum(arrayToTree([1, 2, 3]))); // 6
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BFS]
 
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS with unshift per level — O(n) time, O(n) space
+❌ **Not Optimal:** DFS recursion — needs depth tracking and final reversal
+🔗 **LeetCode:** [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+🔗 **Related:** [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [Binary Tree Zigzag Level Order Traversal](05-trees.md#problem-12-binary-tree-zigzag-level-order-traversal) · [Rotting Oranges](06-graphs.md#problem-12-rotting-oranges)
+
 **Problem:** Return bottom-up level order (leaf to root).
 
 **Example 1:**
@@ -957,6 +1071,12 @@ console.log(levelOrderBottom(arrayToTree([3, 9, 20, null, null, 15, 7])));
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, Binary Search]
+
+🧩 **Pattern:** Binary Search Tree, Recursion
+✅ **Best Option:** Recursive height comparison using completeness — O(log² n) time, O(log n) space
+❌ **Not Optimal:** Full traversal counting — O(n), wastes the complete-tree property
+🔗 **LeetCode:** [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+🔗 **Related:** [Maximum Depth of Binary Tree](05-trees.md#problem-2-maximum-depth-of-binary-tree) · [Balanced Binary Tree](05-trees.md#problem-7-balanced-binary-tree) · [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array)
 
 **Problem:** Count the number of nodes in a complete binary tree in O(n) time (or better).
 
@@ -1010,6 +1130,12 @@ console.log(countNodes(arrayToTree([]))); // 0
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, DFS, String]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS carrying path string — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — stores a full path copy per queue node, O(n²) worst-case memory
+🔗 **LeetCode:** [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+🔗 **Related:** [Path Sum](05-trees.md#problem-9-path-sum) · [Sum Root to Leaf Numbers](05-trees.md#problem-22-sum-root-to-leaf-numbers) · [Word Search](09-backtracking.md#problem-9-word-search)
+
 **Problem:** Return all root-to-leaf paths.
 
 **Example 1:**
@@ -1054,6 +1180,12 @@ console.log(binaryTreePaths(arrayToTree([1, 2, 3, null, 5])));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, DFS]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Recursive DFS with running sum — O(n) time, O(h) space
+❌ **Not Optimal:** BFS — O(n) extra queue space carrying partial sums
+🔗 **LeetCode:** [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+🔗 **Related:** [Path Sum](05-trees.md#problem-9-path-sum) · [Binary Tree Paths](05-trees.md#problem-21-binary-tree-paths) · [Word Search](09-backtracking.md#problem-9-word-search)
+
 **Problem:** Each root-to-leaf path represents a number. Return total sum of all root-to-leaf numbers.
 
 **Example 1:**
@@ -1092,6 +1224,12 @@ console.log(sumNumbers(arrayToTree([4, 9, 0, 5, 1]))); // 1026
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, DFS, Stack]
+
+🧩 **Pattern:** DFS, Preorder Traversal, Recursion
+✅ **Best Option:** Postorder recursion relinking in place — O(n) time, O(h) space
+❌ **Not Optimal:** Collect preorder into array then relink — O(n) extra space, not in-place
+🔗 **LeetCode:** [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+🔗 **Related:** [Binary Tree Inorder Traversal](05-trees.md#problem-1-binary-tree-inorder-traversal) · [Serialize and Deserialize Binary Tree](05-trees.md#problem-25-serialize-and-deserialize-binary-tree) · [Reverse Linked List](03-linked-lists.md#problem-1-reverse-linked-list)
 
 **Problem:** Flatten a binary tree to a right-skewed linked list (in-place, preorder order).
 
@@ -1135,6 +1273,12 @@ console.log(rightSideView(flatTree)); // [1, 2, 3, 4, 5, 6]
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Tree, BFS]
+
+🧩 **Pattern:** BFS, Level Order
+✅ **Best Option:** BFS level-by-level linking — O(n) time, O(n) space
+❌ **Not Optimal:** DFS recursion — cannot link next pointers across subtrees without sibling context
+🔗 **LeetCode:** [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+🔗 **Related:** [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [Binary Tree Right Side View](05-trees.md#problem-14-binary-tree-right-side-view) · [Word Ladder](06-graphs.md#problem-10-word-ladder)
 
 **Problem:** Connect each node to its next right node (perfect binary tree).
 
@@ -1191,6 +1335,12 @@ function connect(root: NodeWithNext | null): NodeWithNext | null {
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, Design, String]
+
+🧩 **Pattern:** Tree Serialization, Preorder Traversal, Recursion
+✅ **Best Option:** Preorder DFS with null markers — O(n) time, O(n) space
+❌ **Not Optimal:** Level-order array with trailing nulls — O(2^h) space blow-up on skewed trees
+🔗 **LeetCode:** [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+🔗 **Related:** [Construct Binary Tree from Preorder and Inorder](05-trees.md#problem-13-construct-binary-tree-from-preorder-and-inorder) · [Binary Tree Inorder Traversal](05-trees.md#problem-1-binary-tree-inorder-traversal) · [Encode and Decode Strings](02-strings.md#problem-16-encode-and-decode-strings)
 
 **Problem:** Design algorithms to serialize and deserialize a binary tree.
 
@@ -1263,6 +1413,12 @@ console.log(levelOrder(deserialized));
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, DFS, Greedy, DP]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Postorder DFS greedy with 3 states — O(n) time, O(h) space
+❌ **Not Optimal:** Brute-force all camera placements — O(2^n)
+🔗 **LeetCode:** [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
+🔗 **Related:** [Binary Tree Maximum Path Sum](05-trees.md#problem-18-binary-tree-maximum-path-sum) · [Lowest Common Ancestor of a Binary Tree](05-trees.md#problem-17-lowest-common-ancestor-of-a-binary-tree) · [Longest Increasing Path in a Matrix](06-graphs.md#problem-24-longest-increasing-path-in-a-matrix)
+
 **Problem:** Given a binary tree, we install cameras on nodes where each camera monitors its parent, itself, and immediate children. Return the minimum number of cameras needed to monitor all nodes.
 
 **Example 1:**
@@ -1317,6 +1473,12 @@ console.log(minCameraCover(arrayToTree([0, 0, null, 0, null, 0, null, null, 0]))
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, DFS, DP]
 
+🧩 **Pattern:** DFS, Recursion
+✅ **Best Option:** Postorder DFS tracking max gain — O(n) time, O(h) space
+❌ **Not Optimal:** Brute-force check every pair of nodes — O(n²) path computations
+🔗 **LeetCode:** [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+🔗 **Related:** [Binary Tree Maximum Path Sum](05-trees.md#problem-18-binary-tree-maximum-path-sum) · [Path Sum](05-trees.md#problem-9-path-sum) · [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm)
+
 **Problem:** Given a binary tree, find the maximum path sum that can start and end at any node. The path must not pass through the same node twice.
 
 **Example 1:**
@@ -1334,6 +1496,12 @@ Output: 6
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, BST, DFS]
+
+🧩 **Pattern:** Binary Search Tree, Inorder Traversal, Iterative Traversal
+✅ **Best Option:** Inorder traversal detecting two misplaced nodes — O(n) time, O(h) space
+❌ **Not Optimal:** Collect full inorder array + sort — O(n) extra space
+🔗 **LeetCode:** [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)
+🔗 **Related:** [Validate Binary Search Tree](05-trees.md#problem-11-validate-binary-search-tree) · [Binary Tree Inorder Traversal](05-trees.md#problem-1-binary-tree-inorder-traversal) · [Valid Parentheses](02-strings.md#problem-6-valid-parentheses)
 
 **Problem:** Two elements of a BST are swapped by mistake. Recover the tree without changing its structure.
 
@@ -1387,6 +1555,12 @@ console.log(inorderTraversal(broken)); // [1, 2, 3]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, BFS, Hash Table]
+
+🧩 **Pattern:** DFS, Level Order
+✅ **Best Option:** DFS tagging (col, row) + sort — O(n log n) time, O(n) space
+❌ **Not Optimal:** BFS without coordinate tracking — cannot group nodes by column
+🔗 **LeetCode:** [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
+🔗 **Related:** [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal) · [All Nodes Distance K in Binary Tree](05-trees.md#problem-30-all-nodes-distance-k-in-binary-tree) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
 
 **Problem:** Return the vertical order traversal from leftmost to rightmost. If two nodes are in the same row and column, sort by value.
 
@@ -1442,6 +1616,12 @@ console.log(verticalTraversal(arrayToTree([3, 9, 20, null, null, 15, 7])));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Tree, BFS, Graph, Hash Table]
+
+🧩 **Pattern:** BFS, DFS, Recursion
+✅ **Best Option:** DFS parent map + BFS from target — O(n) time, O(n) space
+❌ **Not Optimal:** DFS downward from target only — misses nodes reachable through ancestors
+🔗 **LeetCode:** [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+🔗 **Related:** [Lowest Common Ancestor of a Binary Tree](05-trees.md#problem-17-lowest-common-ancestor-of-a-binary-tree) · [Vertical Order Traversal of a Binary Tree](05-trees.md#problem-29-vertical-order-traversal-of-a-binary-tree) · [Clone Graph](06-graphs.md#problem-7-clone-graph)
 
 **Problem:** Given a target node, return all nodes at distance K from the target.
 

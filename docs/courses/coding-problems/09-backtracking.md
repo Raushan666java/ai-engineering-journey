@@ -80,6 +80,12 @@ flowchart LR
 📊 **Difficulty:** Easy
 📂 **Topics:** [Backtracking, Array, Bit Manipulation]
 
+🧩 **Pattern:** Backtracking, Recursion, Subsets
+✅ **Best Option:** Backtracking pick/not-pick — O(n × 2^n) time, O(n × 2^n) space
+❌ **Not Optimal:** Bit manipulation — O(2^n) but does not generalize to duplicates or constraints
+🔗 **LeetCode:** [Subsets](https://leetcode.com/problems/subsets/)
+🔗 **Related:** [Subsets II (with duplicates)](09-backtracking.md#problem-8-subsets-ii-with-duplicates) · [Combinations](09-backtracking.md#problem-15-combinations) · [Next Permutation](01-arrays.md#problem-17-next-permutation)
+
 **Problem:** Given an array of unique integers, return all possible subsets (the power set).
 
 **Example 1:**
@@ -132,6 +138,12 @@ console.log(subsets([0])); // [[], [0]]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Backtracking, Bit Manipulation]
 
+🧩 **Pattern:** Backtracking, State Space Search, Pruning
+✅ **Best Option:** Backtracking over 10 LEDs with hour/minute pruning — O(2^10) = O(1) time, O(1) space
+❌ **Not Optimal:** Nested loops over all hour and minute bitmasks — no pruning, redundant states
+🔗 **LeetCode:** [Binary Watch](https://leetcode.com/problems/binary-watch/)
+🔗 **Related:** [Subsets (Power Set)](09-backtracking.md#problem-1-subsets-power-set) · [Letter Case Permutation](09-backtracking.md#problem-3-letter-case-permutation) · [Single Number](01-arrays.md#problem-8-single-number)
+
 **Problem:** A binary watch has 4 LEDs for hours (0-11) and 6 for minutes (0-59). Given turnedOn (number of lit LEDs), return all possible times.
 
 **Example 1:**
@@ -183,6 +195,12 @@ console.log(readBinaryWatch(1));
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Backtracking, String, Bit Manipulation]
+
+🧩 **Pattern:** Backtracking, Recursion
+✅ **Best Option:** Backtracking with two branches per letter — O(n × 2^n) time, O(n × 2^n) space
+❌ **Not Optimal:** BFS level expansion — O(2^n) queue blow-up
+🔗 **LeetCode:** [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)
+🔗 **Related:** [Subsets (Power Set)](09-backtracking.md#problem-1-subsets-power-set) · [Generate Parentheses](09-backtracking.md#problem-10-generate-parentheses) · [Letter Combinations of a Phone Number](02-strings.md#problem-18-letter-combinations-of-a-phone-number)
 
 **Problem:** Given a string s, transform each letter to lowercase or uppercase to create all possible permutations.
 
@@ -245,6 +263,12 @@ console.log(letterCasePermutation(\"3z4\")); // [\"3z4\",\"3Z4\"]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
 
+🧩 **Pattern:** Backtracking, Recursion, Permutations
+✅ **Best Option:** Backtracking with visited array — O(n × n!) time, O(n) space
+❌ **Not Optimal:** No visited tracking — reuses elements, produces invalid permutations
+🔗 **LeetCode:** [Permutations](https://leetcode.com/problems/permutations/)
+🔗 **Related:** [Permutations II (with duplicates)](09-backtracking.md#problem-5-permutations-ii-with-duplicates) · [Combinations](09-backtracking.md#problem-15-combinations) · [Next Permutation](01-arrays.md#problem-17-next-permutation)
+
 **Problem:** Given an array of distinct integers, return all possible permutations.
 
 **Example 1:**
@@ -300,6 +324,12 @@ console.log(permute([0, 1])); // [[0,1],[1,0]]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
 
+🧩 **Pattern:** Backtracking, Recursion, Permutations, Pruning
+✅ **Best Option:** Backtracking + sort + skip duplicate branches — O(n × n!) time, O(n) space
+❌ **Not Optimal:** Generate all then dedupe with Set — O(n!) extra memory
+🔗 **LeetCode:** [Permutations II](https://leetcode.com/problems/permutations-ii/)
+🔗 **Related:** [Permutations](09-backtracking.md#problem-4-permutations) · [Subsets II (with duplicates)](09-backtracking.md#problem-8-subsets-ii-with-duplicates) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
+
 **Problem:** Given an array that may contain duplicates, return all unique permutations.
 
 **Example 1:**
@@ -354,6 +384,12 @@ console.log(permuteUnique([1, 1, 2]));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
 
+🧩 **Pattern:** Backtracking, Recursion, Combinations, Pruning
+✅ **Best Option:** Backtracking with start index + prune overshoot — O(n^(target/min)) time, O(target/min) space
+❌ **Not Optimal:** Enumerate all subsets then filter — O(2^n) and cannot reuse numbers
+🔗 **LeetCode:** [Combination Sum](https://leetcode.com/problems/combination-sum/)
+🔗 **Related:** [Combination Sum II](09-backtracking.md#problem-7-combination-sum-ii) · [Combinations](09-backtracking.md#problem-15-combinations) · [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k)
+
 **Problem:** Given distinct integers and a target, find all unique combinations where the numbers sum to target. Same number may be reused.
 
 **Example 1:**
@@ -407,6 +443,12 @@ console.log(combinationSum([2, 3, 5], 8));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
 
+🧩 **Pattern:** Backtracking, Recursion, Combinations, Pruning
+✅ **Best Option:** Backtracking + sort + skip adjacent duplicates — O(2^n) time, O(n) space
+❌ **Not Optimal:** No duplicate skipping — emits repeated combinations
+🔗 **LeetCode:** [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+🔗 **Related:** [Combination Sum](09-backtracking.md#problem-6-combination-sum) · [Subsets II (with duplicates)](09-backtracking.md#problem-8-subsets-ii-with-duplicates) · [Three Sum](01-arrays.md#problem-11-three-sum)
+
 **Problem:** Same as Combination Sum but each number may be used only once, and array may have duplicates.
 
 **Example 1:**
@@ -458,6 +500,12 @@ console.log(combinationSum2([10,1,2,7,6,1,5], 8));
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
 
+🧩 **Pattern:** Backtracking, Recursion, Subsets, Pruning
+✅ **Best Option:** Backtracking + sort + skip duplicates — O(n × 2^n) time, O(n × 2^n) space
+❌ **Not Optimal:** Generate all subsets then dedupe with Set — O(2^n) extra memory
+🔗 **LeetCode:** [Subsets II](https://leetcode.com/problems/subsets-ii/)
+🔗 **Related:** [Subsets (Power Set)](09-backtracking.md#problem-1-subsets-power-set) · [Combination Sum II](09-backtracking.md#problem-7-combination-sum-ii) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate)
+
 **Problem:** Given an array that may contain duplicates, return all unique subsets.
 
 **Example 1:**
@@ -503,6 +551,12 @@ console.log(subsetsWithDup([1, 2, 2]));
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Matrix, String]
+
+🧩 **Pattern:** Backtracking, Recursion, State Space Search, Pruning
+✅ **Best Option:** Backtracking DFS with in-place visited marking — O(m × n × 4^L) time, O(L) space
+❌ **Not Optimal:** BFS — needs a visited copy per path, memory explodes to O(m × n × 4^L)
+🔗 **LeetCode:** [Word Search](https://leetcode.com/problems/word-search/)
+🔗 **Related:** [N-Queens](09-backtracking.md#problem-13-n-queens) · [Sudoku Solver](09-backtracking.md#problem-14-sudoku-solver) · [Number of Islands](06-graphs.md#problem-6-number-of-islands)
 
 **Problem:** Given an m x n board of letters and a word, determine if the word exists in the grid (adjacent cells, no reuse).
 
@@ -570,6 +624,12 @@ console.log(exist(board, \"ABCB\")); // false
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, String]
 
+🧩 **Pattern:** Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ **Best Option:** Backtracking with open/close balance — O(4^n / √n) time, O(n) space
+❌ **Not Optimal:** Generate all 2^(2n) strings then validate — wasteful full enumeration
+🔗 **LeetCode:** [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+🔗 **Related:** [Letter Case Permutation](09-backtracking.md#problem-3-letter-case-permutation) · [Restore IP Addresses](09-backtracking.md#problem-12-restore-ip-addresses) · [Valid Parentheses](02-strings.md#problem-6-valid-parentheses)
+
 **Problem:** Given n pairs of parentheses, generate all well-formed combinations.
 
 **Example 1:**
@@ -617,6 +677,12 @@ console.log(generateParenthesis(1)); // [\"()\"]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, String, DP]
+
+🧩 **Pattern:** Backtracking, Recursion, Pruning
+✅ **Best Option:** Backtracking exploring palindrome prefixes only — O(n × 2^n) time, O(n) space
+❌ **Not Optimal:** Generate all partitions then filter — O(2^n) checks wasted on non-palindrome prefixes
+🔗 **LeetCode:** [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+🔗 **Related:** [Restore IP Addresses](09-backtracking.md#problem-12-restore-ip-addresses) · [N-Queens](09-backtracking.md#problem-13-n-queens) · [Palindromic Substrings](02-strings.md#problem-15-palindromic-substrings)
 
 **Problem:** Given a string, partition it such that every substring is a palindrome. Return all possible palindromic partitions.
 
@@ -682,6 +748,12 @@ console.log(partition(\"a\")); // [[\"a\"]]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, String]
 
+🧩 **Pattern:** Backtracking, Recursion, State Space Search, Pruning
+✅ **Best Option:** Backtracking with segment validation (0-255, no leading zero) — O(3^4) = O(1) time, O(1) space
+❌ **Not Optimal:** Try every dot placement without validation — O(2^(n-1)) combos of invalid IPs
+🔗 **LeetCode:** [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
+🔗 **Related:** [Palindrome Partitioning](09-backtracking.md#problem-11-palindrome-partitioning) · [Generate Parentheses](09-backtracking.md#problem-10-generate-parentheses) · [Letter Combinations of a Phone Number](02-strings.md#problem-18-letter-combinations-of-a-phone-number)
+
 **Problem:** Given a string of digits, return all valid IP addresses that can be formed by inserting dots.
 
 **Example 1:**
@@ -740,6 +812,12 @@ console.log(restoreIpAddresses(\"0000\")); // [\"0.0.0.0\"]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Backtracking, Matrix]
+
+🧩 **Pattern:** Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ **Best Option:** Backtracking with column/diagonal sets — O(n!) time, O(n²) space
+❌ **Not Optimal:** Re-scan the board for attacks on every placement — O(n³) redundant checks
+🔗 **LeetCode:** [N-Queens](https://leetcode.com/problems/n-queens/)
+🔗 **Related:** [Sudoku Solver](09-backtracking.md#problem-14-sudoku-solver) · [Word Search](09-backtracking.md#problem-9-word-search) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions)
 
 **Problem:** Place n queens on an n x n chessboard so that no two queens attack each other. Return all distinct solutions.
 
@@ -810,6 +888,12 @@ console.log(solveNQueens(1)); // [[\"Q\"]]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Backtracking, Matrix, Hash Table]
+
+🧩 **Pattern:** Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ **Best Option:** Backtracking with row/col/box sets — O(9^81) worst case, O(1) space
+❌ **Not Optimal:** Re-scan the board per empty cell — repeated O(81) checks slow every placement
+🔗 **LeetCode:** [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+🔗 **Related:** [N-Queens](09-backtracking.md#problem-13-n-queens) · [Word Search](09-backtracking.md#problem-9-word-search) · [Number of Islands](06-graphs.md#problem-6-number-of-islands)
 
 **Problem:** Write a program to solve a Sudoku puzzle by filling empty cells (denoted by '.').
 
@@ -907,6 +991,12 @@ console.log(board);
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy (but included as Hard for completeness)
 📂 **Topics:** [Backtracking, Combinatorics]
+
+🧩 **Pattern:** Backtracking, Recursion, Combinations, Pruning
+✅ **Best Option:** Backtracking with start index — O(C(n,k) × k) time, O(k) space
+❌ **Not Optimal:** No branch-count pruning — explores branches that can never reach k elements
+🔗 **LeetCode:** [Combinations](https://leetcode.com/problems/combinations/)
+🔗 **Related:** [Subsets (Power Set)](09-backtracking.md#problem-1-subsets-power-set) · [Permutations](09-backtracking.md#problem-4-permutations) · [Next Permutation](01-arrays.md#problem-17-next-permutation)
 
 **Problem:** Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n].
 

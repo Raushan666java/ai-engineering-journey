@@ -69,6 +69,20 @@ Easy (65 problems) ──────► Medium (108 problems) ─────�
    └─ Master syntax              └─ Deepen intuition            └─ System design adjacent
 ```
 
+## Problem Metadata Legend
+
+Every problem in this bank carries a 5-line metadata block so you can classify and revise faster. Read it as a quick-scan card:
+
+| Badge | Meaning | Example |
+|-------|---------|---------|
+| 🧩 **Pattern** | The algorithmic pattern(s) the optimal solution uses | `🧩 Pattern: Sliding Window + Hash Map` |
+| ✅ **Best Option** | The optimal approach with its time/space complexity | `✅ Best Option: Deque — O(n) time, O(n) space` |
+| ❌ **Not Optimal** | The approach to avoid and why it fails at scale | `❌ Not Optimal: Brute force O(n²) — fails for n ≥ 10⁵` |
+| 🔗 **LeetCode** | Direct link to the exact problem on LeetCode (or "No direct LC equivalent" for custom variants) | `🔗 LeetCode: Two Sum` |
+| 🔗 **Related** | 2–3 same-bank problems that share the pattern or build on it | `🔗 Related: 3Sum · Two Sum II` |
+
+**How to use it:** before solving, cover the block and try to classify the pattern yourself (30-second rule). After solving, check ✅/❌ — if your approach matches ❌, re-derive the optimal one from the pattern. Use the Related links to interleave (never drill 10 problems of the same pattern in a row), and use the LeetCode link for spaced repetition — re-solve after 1, 3, 7, and 30 days.
+
 ## Problem-Solving Patterns
 
 ```mermaid

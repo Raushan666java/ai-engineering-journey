@@ -91,6 +91,11 @@ xychart-beta
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, DFS, BFS, Union-Find]
+🧩 **Pattern:** BFS (shortest path), DFS, Adjacency List
+✅ **Best Option:** BFS/DFS from source — O(V + E) time, O(V + E) space
+❌ **Not Optimal:** Brute force enumerating every path via recursion — exponential O(2^V)
+🔗 **LeetCode:** [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)
+🔗 **Related:** [Number of Connected Components](06-graphs.md#problem-15-number-of-connected-components-in-a-graph) · [Find the Town Judge](06-graphs.md#problem-5-find-the-town-judge) · [Binary Tree Paths](05-trees.md#problem-21-binary-tree-paths)
 
 **Problem:** There is a bi-directional graph with n vertices. Edges are given as a 2D array. Determine if there's a path from source to destination.
 
@@ -151,6 +156,11 @@ console.log(validPath(6, [[0,1],[0,2],[3,5],[5,4],[4,3]], 0, 5)); // false
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph]
+🧩 **Pattern:** Adjacency List
+✅ **Best Option:** Compare the endpoints of the first two edges — O(1) time, O(1) space
+❌ **Not Optimal:** Building a full adjacency list and counting degrees — O(V + E), overkill for a star
+🔗 **LeetCode:** [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)
+🔗 **Related:** [Find the Town Judge](06-graphs.md#problem-5-find-the-town-judge) · [Number of Connected Components](06-graphs.md#problem-15-number-of-connected-components-in-a-graph) · [Maximum Depth of Binary Tree](05-trees.md#problem-2-maximum-depth-of-binary-tree)
 
 **Problem:** A star graph has one center node connected to all others. Find the center given edges.
 
@@ -184,6 +194,11 @@ console.log(findCenter([[1,2],[5,1],[1,3],[1,4]])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, Matrix, DFS, BFS]
+🧩 **Pattern:** Matrix Traversal, DFS, BFS
+✅ **Best Option:** DFS/BFS from the start pixel — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Repeated full-grid rescans to propagate the color — O((m × n)²)
+🔗 **LeetCode:** [Flood Fill](https://leetcode.com/problems/flood-fill/)
+🔗 **Related:** [Number of Islands](06-graphs.md#problem-6-number-of-islands) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths)
 
 **Problem:** Replace all connected pixels of the same starting color with a new color.
 
@@ -234,6 +249,11 @@ console.log(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2));
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, Matrix, DFS]
+🧩 **Pattern:** Matrix Traversal
+✅ **Best Option:** Single scan adding 4 and subtracting shared edges — O(m × n) time, O(1) space
+❌ **Not Optimal:** DFS flood fill then re-counting borders — O(m × n) with recursion stack
+🔗 **LeetCode:** [Island Perimeter](https://leetcode.com/problems/island-perimeter/)
+🔗 **Related:** [Number of Islands](06-graphs.md#problem-6-number-of-islands) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum)
 
 **Problem:** Given a grid where 1 = land, 0 = water, compute the perimeter of the island.
 
@@ -281,6 +301,11 @@ console.log(islandPerimeter([
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, Array]
+🧩 **Pattern:** Adjacency List
+✅ **Best Option:** Indegree/outdegree count arrays — O(n + t) time, O(n) space
+❌ **Not Optimal:** BFS/DFS trust simulation from every person — O(n × (n + t))
+🔗 **LeetCode:** [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+🔗 **Related:** [Find Center of Star Graph](06-graphs.md#problem-2-find-center-of-star-graph) · [Course Schedule](06-graphs.md#problem-8-course-schedule) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** In a town of n people, the town judge trusts nobody and everyone trusts the judge. Find the judge or return -1.
 
@@ -332,6 +357,11 @@ console.log(findJudge(3, [[1,3],[2,3],[3,1]])); // -1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Matrix, DFS, BFS, Union-Find]
+🧩 **Pattern:** Matrix Traversal, DFS, Connected Components
+✅ **Best Option:** DFS/BFS flood fill marking visited — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** BFS from every land cell without marking visited — O((m × n)²), rescans the same island
+🔗 **LeetCode:** [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+🔗 **Related:** [Flood Fill](06-graphs.md#problem-3-flood-fill) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths)
 
 **Problem:** Given a 2D grid of '1's (land) and '0's (water), count the number of islands.
 
@@ -405,6 +435,11 @@ console.log(numIslands([
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Hash Table]
+🧩 **Pattern:** DFS, BFS, Adjacency List
+✅ **Best Option:** DFS/BFS with a visited clone map — O(V + E) time, O(V) space
+❌ **Not Optimal:** Recursive cloning without a visited map — infinite recursion on cycles
+🔗 **LeetCode:** [Clone Graph](https://leetcode.com/problems/clone-graph/)
+🔗 **Related:** [Evaluate Division](06-graphs.md#problem-17-evaluate-division) · [Word Ladder II](06-graphs.md#problem-23-word-ladder-ii) · [Copy List with Random Pointer](03-linked-lists.md#problem-19-copy-list-with-random-pointer)
 
 **Problem:** Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.
 
@@ -476,6 +511,11 @@ console.log(cloned !== n1); // true
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Topological Sort]
+🧩 **Pattern:** Topological Sort (Kahn), Cycle Detection, DFS
+✅ **Best Option:** Kahn's BFS topological sort — O(V + E) time, O(V + E) space
+❌ **Not Optimal:** Brute force trying every course permutation — O(V!)
+🔗 **LeetCode:** [Course Schedule](https://leetcode.com/problems/course-schedule/)
+🔗 **Related:** [Course Schedule II](06-graphs.md#problem-9-course-schedule-ii) · [Alien Dictionary](06-graphs.md#problem-20-alien-dictionary) · [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal)
 
 **Problem:** There are n courses labeled 0 to n-1. Given prerequisites [a, b] meaning b must be taken before a, determine if it's possible to finish all courses.
 
@@ -537,6 +577,11 @@ console.log(canFinish(5, [[1,0],[2,1],[3,2],[4,3]])); // true
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Topological Sort]
+🧩 **Pattern:** Topological Sort (Kahn), Cycle Detection
+✅ **Best Option:** Kahn's BFS topological sort — O(V + E) time, O(V + E) space
+❌ **Not Optimal:** DFS post-order without cycle detection — wrong ordering on cyclic graphs
+🔗 **LeetCode:** [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+🔗 **Related:** [Course Schedule](06-graphs.md#problem-8-course-schedule) · [Alien Dictionary](06-graphs.md#problem-20-alien-dictionary) · [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal)
 
 **Problem:** Return the ordering of courses to take to finish all courses.
 
@@ -591,6 +636,11 @@ console.log(findOrder(2, [[1,0],[0,1]])); // []
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, BFS, String]
+🧩 **Pattern:** BFS (shortest path), Adjacency List
+✅ **Best Option:** BFS over the implicit word graph — O(n × L × 26) time, O(n) space
+❌ **Not Optimal:** Pre-building all word-pair edges — O(n² × L) build time before searching
+🔗 **LeetCode:** [Word Ladder](https://leetcode.com/problems/word-ladder/)
+🔗 **Related:** [Word Ladder II](06-graphs.md#problem-23-word-ladder-ii) · [Shortest Path in Binary Matrix](06-graphs.md#problem-19-shortest-path-in-binary-matrix) · [Edit Distance](07-dynamic-programming.md#problem-30-edit-distance-dp)
 
 **Problem:** Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord where each step changes one letter and each intermediate word is in the wordList.
 
@@ -652,6 +702,11 @@ console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"])); // 0
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Matrix, DFS, BFS]
+🧩 **Pattern:** Matrix Traversal, DFS, BFS
+✅ **Best Option:** Reverse DFS/BFS from both ocean borders — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Forward DFS from every cell checking both oceans — O((m × n)²)
+🔗 **LeetCode:** [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+🔗 **Related:** [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Flood Fill](06-graphs.md#problem-3-flood-fill) · [Longest Increasing Path in a Matrix](07-dynamic-programming.md#problem-27-longest-increasing-path-in-a-matrix-dp)
 
 **Problem:** Given a matrix of heights, find cells where water can flow to both Pacific (top/left) and Atlantic (bottom/right) oceans. Water flows to equal or lower height neighbors.
 
@@ -710,6 +765,11 @@ function pacificAtlantic(heights: number[][]): number[][] {
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, BFS, Matrix]
+🧩 **Pattern:** BFS (shortest path), Matrix Traversal
+✅ **Best Option:** Multi-source BFS — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Minute-by-minute simulation rescanning the grid — O((m × n)²) worst
+🔗 **LeetCode:** [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
+🔗 **Related:** [Shortest Path in Binary Matrix](06-graphs.md#problem-19-shortest-path-in-binary-matrix) · [Number of Islands](06-graphs.md#problem-6-number-of-islands) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum)
 
 **Problem:** Given a grid where 0=empty, 1=fresh, 2=rotten, every minute any fresh orange adjacent to a rotten one becomes rotten. Return minimum minutes until no fresh orange remains, or -1.
 
@@ -772,6 +832,11 @@ console.log(orangesRotting([[2,1,1],[0,1,1],[1,0,1]])); // -1
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Union-Find]
+🧩 **Pattern:** Union-Find, Cycle Detection, Connected Components
+✅ **Best Option:** Union-Find with edge count check — O(V + E α) time, O(V) space
+❌ **Not Optimal:** DFS that checks cycles but skips the connectivity check — misses disconnected graphs
+🔗 **LeetCode:** [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+🔗 **Related:** [Number of Connected Components in a Graph](06-graphs.md#problem-15-number-of-connected-components-in-a-graph) · [Minimum Height Trees](06-graphs.md#problem-21-minimum-height-trees) · [Same Tree](05-trees.md#problem-3-same-tree)
 
 **Problem:** Given n nodes and edges, check if the graph forms a valid tree (connected and no cycles).
 
@@ -828,6 +893,11 @@ console.log(validTree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Matrix, DFS, BFS]
+🧩 **Pattern:** Matrix Traversal, DFS, Connected Components
+✅ **Best Option:** DFS/BFS from border 'O's — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Flood-filling every interior 'O' to test enclosure — O((m × n)²)
+🔗 **LeetCode:** [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+🔗 **Related:** [Pacific Atlantic Water Flow](06-graphs.md#problem-11-pacific-atlantic-water-flow) · [Flood Fill](06-graphs.md#problem-3-flood-fill) · [Longest Increasing Path in a Matrix](07-dynamic-programming.md#problem-27-longest-increasing-path-in-a-matrix-dp)
 
 **Problem:** Capture all 'O's that are surrounded by 'X's (change to 'X'). Any 'O' on the border remains.
 
@@ -892,6 +962,11 @@ console.log(board);
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Union-Find, DFS]
+🧩 **Pattern:** Connected Components, Union-Find, DFS
+✅ **Best Option:** DFS/Union-Find — O(V + E) time, O(V + E) space
+❌ **Not Optimal:** BFS from every node resetting visited each time — O(V × (V + E))
+🔗 **LeetCode:** [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+🔗 **Related:** [Graph Valid Tree](06-graphs.md#problem-13-graph-valid-tree) · [Number of Islands](06-graphs.md#problem-6-number-of-islands) · [All Nodes Distance K in Binary Tree](05-trees.md#problem-30-all-nodes-distance-k-in-binary-tree)
 
 **Problem:** Count the number of connected components in an undirected graph.
 
@@ -950,6 +1025,11 @@ console.log(countComponents(5, [[0,1],[1,2],[2,3],[3,4]])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, Topological Sort]
+🧩 **Pattern:** Cycle Detection, Topological Sort, DFS
+✅ **Best Option:** DFS with 3-state visited marking — O(V + E) time, O(V + E) space
+❌ **Not Optimal:** Adjacency-matrix transitive-closure checks — O(V³)
+🔗 **LeetCode:** No direct LC equivalent — see Related links
+🔗 **Related:** [Course Schedule](06-graphs.md#problem-8-course-schedule) · [Alien Dictionary](06-graphs.md#problem-20-alien-dictionary) · [Linked List Cycle](03-linked-lists.md#problem-3-linked-list-cycle)
 
 **Problem:** Given a directed graph, return true if it contains a cycle.
 
@@ -1002,6 +1082,11 @@ console.log(hasCycle(4, [[0,1],[1,2],[1,3]])); // false
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, Union-Find]
+🧩 **Pattern:** DFS, Union-Find, Adjacency List
+✅ **Best Option:** DFS per query with path products — O(n × q) time, O(n) space
+❌ **Not Optimal:** Floyd-Warshall all-pairs precompute — O(V³), overkill for sparse queries
+🔗 **LeetCode:** [Evaluate Division](https://leetcode.com/problems/evaluate-division/)
+🔗 **Related:** [Clone Graph](06-graphs.md#problem-7-clone-graph) · [Find if Path Exists in Graph](06-graphs.md#problem-1-find-if-path-exists-in-graph) · [Path Sum](05-trees.md#problem-9-path-sum)
 
 **Problem:** Given equations like a/b = 2.0, find results of queries like a/c.
 
@@ -1069,6 +1154,11 @@ console.log(calcEquation(
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Matrix]
+🧩 **Pattern:** Matrix Traversal, DFS, BFS
+✅ **Best Option:** DFS/BFS reveal with mine counting — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** Simulating full-board scans per click — O((m × n)²)
+🔗 **LeetCode:** [Minesweeper](https://leetcode.com/problems/minesweeper/)
+🔗 **Related:** [Flood Fill](06-graphs.md#problem-3-flood-fill) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum)
 
 **Problem:** Implement Minesweeper click logic: if unrevealed mine → game over; if empty → reveal all adjacent empties; if number → reveal just that cell.
 
@@ -1132,6 +1222,11 @@ function updateBoard(board: string[][], click: number[]): string[][] {
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, BFS, Matrix]
+🧩 **Pattern:** BFS (shortest path), Matrix Traversal
+✅ **Best Option:** BFS with 8-directional moves — O(n²) time, O(n²) space
+❌ **Not Optimal:** DFS backtracking all paths — exponential, no shortest-distance guarantee
+🔗 **LeetCode:** [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
+🔗 **Related:** [Rotting Oranges](06-graphs.md#problem-12-rotting-oranges) · [Word Ladder](06-graphs.md#problem-10-word-ladder) · [Unique Paths](07-dynamic-programming.md#problem-14-unique-paths)
 
 **Problem:** Find the shortest clear path from top-left to bottom-right in a binary matrix (0 = clear, 1 = blocked). 8-directional movement.
 
@@ -1191,6 +1286,11 @@ console.log(shortestPathBinaryMatrix([[0,0,0],[1,1,0],[1,1,0]])); // 4
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, Topological Sort, String]
+🧩 **Pattern:** Topological Sort (Kahn), Cycle Detection
+✅ **Best Option:** Build graph from adjacent words + Kahn's algorithm — O(n × L) time, O(1) space
+❌ **Not Optimal:** DFS topological sort without cycle detection — wrong order on cyclic input
+🔗 **LeetCode:** [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+🔗 **Related:** [Course Schedule](06-graphs.md#problem-8-course-schedule) · [Course Schedule II](06-graphs.md#problem-9-course-schedule-ii) · [Longest Common Prefix](02-strings.md#problem-5-longest-common-prefix)
 
 **Problem:** Given sorted words from an alien language, find the order of characters.
 
@@ -1266,6 +1366,11 @@ console.log(alienOrder(["z","x","z"])); // ""
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, BFS, Topological Sort]
+🧩 **Pattern:** Topological Sort (Kahn), BFS, Adjacency List
+✅ **Best Option:** Leaf-peeling topological trim — O(n) time, O(n) space
+❌ **Not Optimal:** BFS from every node computing tree heights — O(n²)
+🔗 **LeetCode:** [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
+🔗 **Related:** [Graph Valid Tree](06-graphs.md#problem-13-graph-valid-tree) · [Number of Connected Components in a Graph](06-graphs.md#problem-15-number-of-connected-components-in-a-graph) · [Maximum Depth of Binary Tree](05-trees.md#problem-2-maximum-depth-of-binary-tree)
 
 **Problem:** Find all root labels of MHTs (minimum height trees) for an undirected tree.
 
@@ -1327,6 +1432,11 @@ console.log(findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])); // [3, 4]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, BFS, Dijkstra, DP]
+🧩 **Pattern:** Dijkstra, BFS, Adjacency List
+✅ **Best Option:** Bellman-Ford with k relaxations — O(k × E) time, O(V) space
+❌ **Not Optimal:** Plain Dijkstra ignoring the stop limit — returns paths exceeding k stops
+🔗 **LeetCode:** [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
+🔗 **Related:** [Shortest Path in Binary Matrix](06-graphs.md#problem-19-shortest-path-in-binary-matrix) · [Find if Path Exists in Graph](06-graphs.md#problem-1-find-if-path-exists-in-graph) · [Minimum Path Sum](07-dynamic-programming.md#problem-21-minimum-path-sum)
 
 **Problem:** Find the cheapest price from src to dst with at most k stops.
 
@@ -1389,6 +1499,11 @@ console.log(findCheapestPrice(4,
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, BFS, Backtracking]
+🧩 **Pattern:** BFS (shortest path), DFS, Adjacency List
+✅ **Best Option:** BFS distance graph + DFS backtracking — O(n × L × 26) time, O(n × L) space
+❌ **Not Optimal:** Pure DFS enumerating all sequences — exponential without distance pruning
+🔗 **LeetCode:** [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)
+🔗 **Related:** [Word Ladder](06-graphs.md#problem-10-word-ladder) · [Clone Graph](06-graphs.md#problem-7-clone-graph) · [Letter Combinations of a Phone Number](02-strings.md#problem-18-letter-combinations-of-a-phone-number)
 
 **Problem:** Find all shortest transformation sequences from beginWord to endWord.
 
@@ -1461,6 +1576,11 @@ function findLadders(beginWord: string, endWord: string, wordList: string[]): st
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, Matrix, DFS, DP, Topological Sort]
+🧩 **Pattern:** Matrix Traversal, DFS, Topological Sort
+✅ **Best Option:** DFS with memoization — O(m × n) time, O(m × n) space
+❌ **Not Optimal:** DFS without memoization — exponential, recomputes overlapping paths
+🔗 **LeetCode:** [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
+🔗 **Related:** [Pacific Atlantic Water Flow](06-graphs.md#problem-11-pacific-atlantic-water-flow) · [Surrounded Regions](06-graphs.md#problem-14-surrounded-regions) · [Longest Increasing Subsequence](07-dynamic-programming.md#problem-12-longest-increasing-subsequence)
 
 **Problem:** Find the length of the longest increasing path in a matrix (4-directional).
 
@@ -1521,6 +1641,11 @@ console.log(longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]])); // 4
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, BFS, Hash Table]
+🧩 **Pattern:** BFS (shortest path), Adjacency List
+✅ **Best Option:** BFS over the stop→route graph — O(R × S) time, O(R × S) space
+❌ **Not Optimal:** BFS without a visited-route set — revisits routes, exponential blowup
+🔗 **LeetCode:** [Bus Routes](https://leetcode.com/problems/bus-routes/)
+🔗 **Related:** [Rotting Oranges](06-graphs.md#problem-12-rotting-oranges) · [Word Ladder](06-graphs.md#problem-10-word-ladder) · [Binary Tree Level Order Traversal](05-trees.md#problem-5-binary-tree-level-order-traversal)
 
 **Problem:** Given routes (list of bus stops), find the minimum number of buses needed to travel from source to target.
 

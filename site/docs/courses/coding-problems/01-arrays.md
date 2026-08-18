@@ -101,6 +101,11 @@ quadrantChart
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table]
+🧩 **Pattern:** Hash Map
+✅ **Best Option:** Hash map — O(n) time, O(n) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁴
+🔗 **LeetCode:** [Two Sum](https://leetcode.com/problems/two-sum/)
+🔗 **Related:** [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate) · [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k) · [Valid Anagram](02-strings.md#problem-2-valid-anagram)
 
 **Problem:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers that add up to `target`. You may assume that each input has exactly one solution, and you may not use the same element twice.
 
@@ -161,6 +166,11 @@ console.log(twoSum([1, 5, 3, 7], 8));     // [1, 3] or [0, 2]
 🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Dynamic Programming]
+🧩 **Pattern:** Kadane's, Greedy
+✅ **Best Option:** Single-pass min-price tracking — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+🔗 **Related:** [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters)
 
 **Problem:** You are given an array `prices` where `prices[i]` is the price of a given stock on day `i`. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve. If no profit can be made, return 0.
 
@@ -222,6 +232,11 @@ console.log(maxProfit([2, 4, 1]));            // 2
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta] [LinkedIn]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Divide and Conquer, DP]
+🧩 **Pattern:** Kadane's
+✅ **Best Option:** Kadane's algorithm — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n³) — fails for n up to 10⁵
+🔗 **LeetCode:** [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+🔗 **Related:** [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters)
 
 **Problem:** Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
@@ -279,6 +294,11 @@ console.log(maxSubArray([-2, -1]));                          // -1
 🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Two Pointers]
+🧩 **Pattern:** Two Pointers, In-place
+✅ **Best Option:** Two pointers — O(n) time, O(1) space
+❌ **Not Optimal:** Copy to a new array O(n) space — violates the in-place requirement
+🔗 **LeetCode:** [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+🔗 **Related:** [Sort Colors](01-arrays.md#problem-18-sort-colors-dutch-national-flag) · [Rotate Array](01-arrays.md#problem-19-rotate-array) · [Reverse String](02-strings.md#problem-4-reverse-string)
 
 **Problem:** Given an integer array `nums`, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Do this in-place without making a copy of the array.
 
@@ -334,6 +354,11 @@ console.log(arr3); // [1, 2, 3]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table, Sorting]
+🧩 **Pattern:** Hash Map
+✅ **Best Option:** Hash set — O(n) time, O(n) space
+❌ **Not Optimal:** Nested loops O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+🔗 **Related:** [Two Sum](01-arrays.md#problem-1-two-sum) · [Single Number](01-arrays.md#problem-8-single-number) · [Valid Anagram](02-strings.md#problem-2-valid-anagram)
 
 **Problem:** Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
@@ -388,6 +413,11 @@ console.log(containsDuplicate([1, 1, 1]));     // true
 🏷️ **Companies:** [Amazon] [Microsoft] [Meta] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math, Bit Manipulation]
+🧩 **Pattern:** In-place, Frequency Count
+✅ **Best Option:** Sum formula / XOR — O(n) time, O(1) space
+❌ **Not Optimal:** Sorting O(n log n) — slower than the required O(n)
+🔗 **LeetCode:** [Missing Number](https://leetcode.com/problems/missing-number/)
+🔗 **Related:** [Find All Numbers Disappeared in an Array](01-arrays.md#problem-7-find-all-numbers-disappeared-in-an-array) · [Single Number](01-arrays.md#problem-8-single-number) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 
@@ -443,6 +473,11 @@ console.log(missingNumber([0]));          // 1
 🏷️ **Companies:** [Google] [Amazon]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table]
+🧩 **Pattern:** In-place, Cyclic Sort
+✅ **Best Option:** Negative marking in-place — O(n) time, O(1) space
+❌ **Not Optimal:** Hash set O(n) space — violates the O(1) space constraint
+🔗 **LeetCode:** [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+🔗 **Related:** [Missing Number](01-arrays.md#problem-6-missing-number) · [First Missing Positive](01-arrays.md#problem-26-first-missing-positive) · [Valid Anagram](02-strings.md#problem-2-valid-anagram)
 
 **Problem:** Given an array `nums` of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
@@ -499,6 +534,11 @@ console.log(findDisappearedNumbers([2, 2]));                    // [1]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Bit Manipulation]
+🧩 **Pattern:** Frequency Count, Hash Map
+✅ **Best Option:** XOR — O(n) time, O(1) space
+❌ **Not Optimal:** Hash map counting O(n) space — violates the constant-space requirement
+🔗 **LeetCode:** [Single Number](https://leetcode.com/problems/single-number/)
+🔗 **Related:** [Missing Number](01-arrays.md#problem-6-missing-number) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one. Implement a solution with linear runtime complexity and constant extra space.
 
@@ -550,6 +590,11 @@ console.log(singleNumber([1]));                 // 1
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table, Two Pointers]
+🧩 **Pattern:** Hash Map, Two Pointers
+✅ **Best Option:** Frequency count with hash map — O(n+m) time, O(min(n,m)) space
+❌ **Not Optimal:** Nested loops O(n·m) — slow when both arrays are large
+🔗 **LeetCode:** [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+🔗 **Related:** [Two Sum](01-arrays.md#problem-1-two-sum) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate) · [Valid Anagram](02-strings.md#problem-2-valid-anagram)
 
 **Problem:** Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result should appear as many times as it appears in both arrays.
 
@@ -604,6 +649,11 @@ console.log(intersect([4, 9, 5], [9, 4, 9, 8, 4])); // [4, 9] or [9, 4]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math]
+🧩 **Pattern:** In-place, String Manipulation
+✅ **Best Option:** Right-to-left carry — O(n) time, O(1) space
+❌ **Not Optimal:** Convert to number and add — overflows for 100-digit inputs
+🔗 **LeetCode:** [Plus One](https://leetcode.com/problems/plus-one/)
+🔗 **Related:** [Rotate Array](01-arrays.md#problem-19-rotate-array) · [String to Integer (atoi)](02-strings.md#problem-12-string-to-integer-atoi) · [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers)
 
 **Problem:** You are given a large integer represented as an integer array `digits`, where each digit is an element of the array. Increment the large integer by one and return the resulting array.
 
@@ -660,6 +710,11 @@ console.log(plusOne([9, 9]));    // [1, 0, 0]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Sorting]
+🧩 **Pattern:** Two Pointers, Sorting
+✅ **Best Option:** Sort + two pointers — O(n²) time, O(1) space
+❌ **Not Optimal:** Brute force O(n³) — fails for n up to 3000
+🔗 **LeetCode:** [3Sum](https://leetcode.com/problems/3sum/)
+🔗 **Related:** [Two Sum](01-arrays.md#problem-1-two-sum) · [Container With Most Water](01-arrays.md#problem-13-container-with-most-water) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
 
 **Problem:** Given an integer array `nums`, return all unique triplets `[nums[i], nums[j], nums[k]]` such that i, j, k are distinct and sum to zero.
 
@@ -727,6 +782,11 @@ console.log(threeSum([1, 2, -2, -1])); // []
 🏷️ **Companies:** [Amazon] [Meta] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Prefix Sum]
+🧩 **Pattern:** Prefix Sum
+✅ **Best Option:** Prefix × suffix products — O(n) time, O(1) space (excluding output)
+❌ **Not Optimal:** Division by total product — fails when the array contains zeros
+🔗 **LeetCode:** [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+🔗 **Related:** [Subarray Sum Equals K](01-arrays.md#problem-15-subarray-sum-equals-k) · [Maximum Product Subarray](01-arrays.md#problem-20-maximum-product-subarray) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
 
 **Problem:** Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`. Solve without division and in O(n) time.
 
@@ -780,6 +840,11 @@ console.log(productExceptSelf([-1, 1, 0, -3, 3])); // [0, 0, 9, 0, 0]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Greedy]
+🧩 **Pattern:** Two Pointers, Greedy
+✅ **Best Option:** Two pointers from both ends — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+🔗 **Related:** [Trapping Rain Water](01-arrays.md#problem-27-trapping-rain-water) · [Three Sum](01-arrays.md#problem-11-three-sum) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome)
 
 **Problem:** Given n non-negative integers `height` representing vertical lines, find two lines that together with the x-axis form a container that holds the most water.
 
@@ -837,6 +902,11 @@ console.log(maxArea([4, 3, 2, 1, 4])); // 16
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Binary Search]
+🧩 **Pattern:** Two Pointers, Cyclic Sort
+✅ **Best Option:** Floyd's cycle detection — O(n) time, O(1) space
+❌ **Not Optimal:** Hash set O(n) space — violates the no-extra-memory constraint
+🔗 **LeetCode:** [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+🔗 **Related:** [Missing Number](01-arrays.md#problem-6-missing-number) · [Single Number](01-arrays.md#problem-8-single-number) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** Given an array of integers `nums` containing n+1 integers where each integer is in [1, n], there is exactly one repeated number. Find the duplicate without modifying the array and using O(1) extra space.
 
@@ -893,6 +963,11 @@ console.log(findDuplicate([1, 1])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Hash Table, Prefix Sum]
+🧩 **Pattern:** Prefix Sum, Hash Map
+✅ **Best Option:** Prefix sum + hash map — O(n) time, O(n) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 2 × 10⁴
+🔗 **LeetCode:** [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+🔗 **Related:** [Two Sum](01-arrays.md#problem-1-two-sum) · [Product of Array Except Self](01-arrays.md#problem-12-product-of-array-except-self) · [Longest Substring Without Repeating Characters](02-strings.md#problem-9-longest-substring-without-repeating-characters)
 
 **Problem:** Given an array of integers `nums` and an integer `k`, return the total number of subarrays whose sum equals `k`.
 
@@ -947,6 +1022,11 @@ console.log(subarraySum([-1, -1, 1], 0)); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Sorting]
+🧩 **Pattern:** Sorting, In-place
+✅ **Best Option:** Sort + linear merge — O(n log n) time, O(n) space
+❌ **Not Optimal:** Pairwise merge check O(n²) — fails for n up to 10⁴
+🔗 **LeetCode:** [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+🔗 **Related:** [Maximum Gap](01-arrays.md#problem-29-maximum-gap) · [Sort Colors](01-arrays.md#problem-18-sort-colors-dutch-national-flag) · [Longest Common Prefix](02-strings.md#problem-5-longest-common-prefix)
 
 **Problem:** Given an array of intervals `intervals[i] = [starti, endi]`, merge all overlapping intervals and return an array of the non-overlapping intervals.
 
@@ -1001,6 +1081,11 @@ console.log(merge([[1, 4], [2, 3]])); // [[1, 4]]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers]
+🧩 **Pattern:** Two Pointers, In-place
+✅ **Best Option:** Reverse suffix after swap — O(n) time, O(1) space
+❌ **Not Optimal:** Generate all permutations O(n!) — fails for n up to 100
+🔗 **LeetCode:** [Next Permutation](https://leetcode.com/problems/next-permutation/)
+🔗 **Related:** [Rotate Array](01-arrays.md#problem-19-rotate-array) · [Sort Colors](01-arrays.md#problem-18-sort-colors-dutch-national-flag) · [Reverse Words in a String](02-strings.md#problem-19-reverse-words-in-a-string)
 
 **Problem:** Implement next permutation, which rearranges numbers into the lexicographically next greater permutation. If not possible, rearrange as the lowest possible order.
 
@@ -1064,6 +1149,11 @@ console.log(arr2); // [1, 2, 3]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Sorting]
+🧩 **Pattern:** Two Pointers, In-place
+✅ **Best Option:** Dutch national flag — O(n) time, O(1) space
+❌ **Not Optimal:** Library sort O(n log n) — the problem forbids using sort
+🔗 **LeetCode:** [Sort Colors](https://leetcode.com/problems/sort-colors/)
+🔗 **Related:** [Move Zeroes](01-arrays.md#problem-4-move-zeroes) · [Find the Duplicate Number](01-arrays.md#problem-14-find-the-duplicate-number) · [Valid Anagram](02-strings.md#problem-2-valid-anagram)
 
 **Problem:** Given an array `nums` with n objects colored red (0), white (1), or blue (2), sort them in-place so that same colors are adjacent. Do not use the library's sort function.
 
@@ -1124,6 +1214,11 @@ console.log(arr2); // [0, 1, 2]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Math, Two Pointers]
+🧩 **Pattern:** In-place, Two Pointers
+✅ **Best Option:** Triple reverse — O(n) time, O(1) space
+❌ **Not Optimal:** Rotate one step k times O(n·k) — fails for n, k up to 10⁵
+🔗 **LeetCode:** [Rotate Array](https://leetcode.com/problems/rotate-array/)
+🔗 **Related:** [Move Zeroes](01-arrays.md#problem-4-move-zeroes) · [Next Permutation](01-arrays.md#problem-17-next-permutation) · [Reverse String](02-strings.md#problem-4-reverse-string)
 
 **Problem:** Given an array, rotate the array to the right by k steps, where k is non-negative.
 
@@ -1180,6 +1275,11 @@ console.log(arr2); // [3, 99, -1, -100]
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Dynamic Programming]
+🧩 **Pattern:** Kadane's, Memoization
+✅ **Best Option:** Track min and max product — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 2 × 10⁴
+🔗 **LeetCode:** [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+🔗 **Related:** [Maximum Subarray](01-arrays.md#problem-3-maximum-subarray-kadanes-algorithm) · [Best Time to Buy and Sell Stock](01-arrays.md#problem-2-best-time-to-buy-and-sell-stock) · [Edit Distance](02-strings.md#problem-22-edit-distance)
 
 **Problem:** Given an integer array `nums`, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
 
@@ -1231,6 +1331,11 @@ console.log(maxProduct([-2, 3, -4]));   // 24
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
+🧩 **Pattern:** Binary Search
+✅ **Best Option:** Modified binary search — O(log n) time, O(1) space
+❌ **Not Optimal:** Linear scan O(n) — violates the required O(log n)
+🔗 **LeetCode:** [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+🔗 **Related:** [Find Minimum in Rotated Sorted Array](01-arrays.md#problem-23-find-minimum-in-rotated-sorted-array) · [First and Last Position of Element in Sorted Array](01-arrays.md#problem-22-first-and-last-position-of-element-in-sorted-array) · [Implement strStr()](02-strings.md#problem-7-implement-strstr)
 
 **Problem:** Given a rotated sorted array and a target, return its index. If not found, return -1. Must be O(log n).
 
@@ -1294,6 +1399,11 @@ console.log(search([1], 0)); // -1
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
+🧩 **Pattern:** Binary Search
+✅ **Best Option:** Two binary searches — O(log n) time, O(1) space
+❌ **Not Optimal:** Linear scan O(n) — violates the O(log n) requirement
+🔗 **LeetCode:** [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+🔗 **Related:** [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array) · [Median of Two Sorted Arrays](01-arrays.md#problem-28-median-of-two-sorted-arrays) · [Implement strStr()](02-strings.md#problem-7-implement-strstr)
 
 **Problem:** Find the starting and ending position of a given target value in a sorted array. If not found, return [-1, -1]. O(log n) required.
 
@@ -1357,6 +1467,11 @@ console.log(searchRange([], 0)); // [-1, -1]
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
+🧩 **Pattern:** Binary Search
+✅ **Best Option:** Binary search against right boundary — O(log n) time, O(1) space
+❌ **Not Optimal:** Linear scan O(n) — violates the O(log n) requirement
+🔗 **LeetCode:** [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+🔗 **Related:** [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array) · [First and Last Position of Element in Sorted Array](01-arrays.md#problem-22-first-and-last-position-of-element-in-sorted-array) · [Longest Common Prefix](02-strings.md#problem-5-longest-common-prefix)
 
 **Problem:** Given a rotated sorted array of unique elements, find the minimum element in O(log n).
 
@@ -1404,6 +1519,11 @@ console.log(findMin([11, 13, 15, 17])); // 11
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Greedy]
+🧩 **Pattern:** Greedy
+✅ **Best Option:** BFS-like greedy — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force DFS O(2ⁿ) — fails for n up to 10⁴
+🔗 **LeetCode:** [Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+🔗 **Related:** [Container With Most Water](01-arrays.md#problem-13-container-with-most-water) · [Majority Element](01-arrays.md#problem-25-majority-element) · [Wildcard Matching](02-strings.md#problem-25-wildcard-matching)
 
 **Problem:** Given an array where nums[i] is max jump length from position i, return minimum jumps to reach the last index.
 
@@ -1455,6 +1575,11 @@ console.log(jump([0]));             // 0
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy → Medium
 📂 **Topics:** [Array, Voting Algorithm]
+🧩 **Pattern:** Frequency Count, Sorting
+✅ **Best Option:** Boyer-Moore voting — O(n) time, O(1) space
+❌ **Not Optimal:** Hash map counting O(n) space — wasteful when majority is guaranteed
+🔗 **LeetCode:** [Majority Element](https://leetcode.com/problems/majority-element/)
+🔗 **Related:** [Single Number](01-arrays.md#problem-8-single-number) · [Contains Duplicate](01-arrays.md#problem-5-contains-duplicate) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** Find the majority element (appears more than ⌊n/2⌋ times). Assume majority always exists.
 
@@ -1507,6 +1632,11 @@ console.log(majorityElement([2, 2, 1, 1, 1, 2, 2])); // 2
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Hash Table]
+🧩 **Pattern:** Cyclic Sort, In-place
+✅ **Best Option:** Cyclic placement — O(n) time, O(1) space
+❌ **Not Optimal:** Hash set O(n) space — violates the O(1) space constraint
+🔗 **LeetCode:** [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+🔗 **Related:** [Find All Numbers Disappeared in an Array](01-arrays.md#problem-7-find-all-numbers-disappeared-in-an-array) · [Missing Number](01-arrays.md#problem-6-missing-number) · [First Unique Character in a String](02-strings.md#problem-3-first-unique-character-in-a-string)
 
 **Problem:** Given an unsorted integer array, find the smallest missing positive integer. O(n) time, O(1) space.
 
@@ -1566,6 +1696,11 @@ console.log(firstMissingPositive([7, 8, 9, 11, 12])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Two Pointers, Stack, DP]
+🧩 **Pattern:** Two Pointers, Prefix Sum
+✅ **Best Option:** Two pointers with max tracking — O(n) time, O(1) space
+❌ **Not Optimal:** Brute force per-bar scan O(n²) — fails for n up to 2 × 10⁴
+🔗 **LeetCode:** [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+🔗 **Related:** [Container With Most Water](01-arrays.md#problem-13-container-with-most-water) · [Product of Array Except Self](01-arrays.md#problem-12-product-of-array-except-self) · [Valid Palindrome](02-strings.md#problem-1-valid-palindrome)
 
 **Problem:** Given n non-negative integers representing elevation map, compute how much water it can trap after raining.
 
@@ -1631,6 +1766,11 @@ console.log(trap([1, 0, 1])); // 1
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Binary Search, Divide and Conquer]
+🧩 **Pattern:** Binary Search
+✅ **Best Option:** Binary search on the smaller array — O(log(min(m,n))) time, O(1) space
+❌ **Not Optimal:** Merge both arrays O(m+n) — violates the O(log(m+n)) requirement
+🔗 **LeetCode:** [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+🔗 **Related:** [Search in Rotated Sorted Array](01-arrays.md#problem-21-search-in-rotated-sorted-array) · [Find Minimum in Rotated Sorted Array](01-arrays.md#problem-23-find-minimum-in-rotated-sorted-array) · [Compare Version Numbers](02-strings.md#problem-20-compare-version-numbers)
 
 **Problem:** Given two sorted arrays nums1 and nums2 of size m and n, return the median of the two sorted arrays. O(log(m+n)) time.
 
@@ -1701,6 +1841,11 @@ console.log(findMedianSortedArrays([0, 0], [0, 0]));    // 0
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Bucket Sort, Radix Sort]
+🧩 **Pattern:** Sorting, In-place
+✅ **Best Option:** Bucket sort (pigeonhole) — O(n) time, O(n) space
+❌ **Not Optimal:** Full sort + adjacent diff O(n log n) — violates the linear-time requirement
+🔗 **LeetCode:** [Maximum Gap](https://leetcode.com/problems/maximum-gap/)
+🔗 **Related:** [Merge Intervals](01-arrays.md#problem-16-merge-intervals) · [Median of Two Sorted Arrays](01-arrays.md#problem-28-median-of-two-sorted-arrays) · [Group Anagrams](02-strings.md#problem-11-group-anagrams)
 
 **Problem:** Given an unsorted array, find the maximum difference between successive elements in its sorted form. Linear time and space.
 
@@ -1766,6 +1911,11 @@ console.log(maximumGap([1, 10000000]));  // 9999999
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Binary Search, Divide and Conquer, Fenwick Tree]
+🧩 **Pattern:** Binary Search, Sorting
+✅ **Best Option:** Merge sort counting — O(n log n) time, O(n) space
+❌ **Not Optimal:** Brute force O(n²) — fails for n up to 10⁵
+🔗 **LeetCode:** [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+🔗 **Related:** [Maximum Gap](01-arrays.md#problem-29-maximum-gap) · [Merge Intervals](01-arrays.md#problem-16-merge-intervals) · [Distinct Subsequences](02-strings.md#problem-23-distinct-subsequences)
 
 **Problem:** Given an integer array nums, return a new array counts where counts[i] is the number of smaller elements to the right of nums[i].
 

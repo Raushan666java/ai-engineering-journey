@@ -62,6 +62,10 @@ const toc = [{
   "id": "difficulty-progression-path",
   "level": 3
 }, {
+  "value": "Problem Metadata Legend",
+  "id": "problem-metadata-legend",
+  "level": 2
+}, {
   "value": "Problem-Solving Patterns",
   "id": "problem-solving-patterns",
   "level": 2
@@ -498,6 +502,89 @@ function _createMdxContent(props) {
       children: (0,jsx_runtime.jsx)(_components.code, {
         children: "Easy (65 problems) ──────► Medium (108 problems) ──────► Hard (47 problems)\n   │                              │                              │\n   ├─ Build confidence            ├─ Core interview bar          ├─ Stretch goals\n   ├─ Learn patterns              ├─ Most common difficulty      ├─ FAANG+ final rounds\n   └─ Master syntax              └─ Deepen intuition            └─ System design adjacent\n"
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "problem-metadata-legend",
+      children: "Problem Metadata Legend"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every problem in this bank carries a 5-line metadata block so you can classify and revise faster. Read it as a quick-scan card:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Badge"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pattern"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The algorithmic pattern(s) the optimal solution uses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "🧩 Pattern: Sliding Window + Hash Map"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best Option"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The optimal approach with its time/space complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "✅ Best Option: Deque — O(n) time, O(n) space"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Not Optimal"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The approach to avoid and why it fails at scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "❌ Not Optimal: Brute force O(n²) — fails for n ≥ 10⁵"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "LeetCode"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct link to the exact problem on LeetCode (or \"No direct LC equivalent\" for custom variants)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "🔗 LeetCode: Two Sum"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: ["🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Related"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2–3 same-bank problems that share the pattern or build on it"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "🔗 Related: 3Sum · Two Sum II"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How to use it:"
+      }), " before solving, cover the block and try to classify the pattern yourself (30-second rule). After solving, check ✅/❌ — if your approach matches ❌, re-derive the optimal one from the pattern. Use the Related links to interleave (never drill 10 problems of the same pattern in a row), and use the LeetCode link for spaced repetition — re-solve after 1, 3, 7, and 30 days."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "problem-solving-patterns",
       children: "Problem-Solving Patterns"

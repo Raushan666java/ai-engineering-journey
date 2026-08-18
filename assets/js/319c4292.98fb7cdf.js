@@ -176,6 +176,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -261,7 +262,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, BFS, Union-Find]"]
+      }), " [Graph, DFS, BFS, Union-Find]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), DFS, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS/DFS from source — O(V + E) time, O(V + E) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force enumerating every path via recursion — exponential O(2^V)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+        children: "Find if Path Exists in Graph"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph",
+        children: "Number of Connected Components"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-5-find-the-town-judge",
+        children: "Find the Town Judge"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths",
+        children: "Binary Tree Paths"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -322,7 +345,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph]"]
+      }), " [Graph]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Compare the endpoints of the first two edges — O(1) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Building a full adjacency list and counting degrees — O(V + E), overkill for a star\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-center-of-star-graph/",
+        children: "Find Center of Star Graph"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-5-find-the-town-judge",
+        children: "Find the Town Judge"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph",
+        children: "Number of Connected Components"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree",
+        children: "Maximum Depth of Binary Tree"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -365,7 +410,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS, BFS]"]
+      }), " [Graph, Matrix, DFS, BFS]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, BFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/BFS from the start pixel — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Repeated full-grid rescans to propagate the color — O((m × n)²)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/flood-fill/",
+        children: "Flood Fill"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -418,7 +485,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS]"]
+      }), " [Graph, Matrix, DFS]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Single scan adding 4 and subtracting shared edges — O(m × n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS flood fill then re-counting borders — O(m × n) with recursion stack\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/island-perimeter/",
+        children: "Island Perimeter"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -461,7 +550,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Array]"]
+      }), " [Graph, Array]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Indegree/outdegree count arrays — O(n + t) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS/DFS trust simulation from every person — O(n × (n + t))\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-the-town-judge/",
+        children: "Find the Town Judge"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-2-find-center-of-star-graph",
+        children: "Find Center of Star Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule",
+        children: "Course Schedule"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -515,7 +626,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS, BFS, Union-Find]"]
+      }), " [Graph, Matrix, DFS, BFS, Union-Find]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, Connected Components\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/BFS flood fill marking visited — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS from every land cell without marking visited — O((m × n)²), rescans the same island\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/number-of-islands/",
+        children: "Number of Islands"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill",
+        children: "Flood Fill"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -574,7 +707,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, BFS, Hash Table]"]
+      }), " [Graph, DFS, BFS, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, BFS, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/BFS with a visited clone map — O(V + E) time, O(V) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive cloning without a visited map — infinite recursion on cycles\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/clone-graph/",
+        children: "Clone Graph"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-17-evaluate-division",
+        children: "Evaluate Division"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-23-word-ladder-ii",
+        children: "Word Ladder II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-19-copy-list-with-random-pointer",
+        children: "Copy List with Random Pointer"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -625,7 +780,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, BFS, Topological Sort]"]
+      }), " [Graph, DFS, BFS, Topological Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Topological Sort (Kahn), Cycle Detection, DFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Kahn's BFS topological sort — O(V + E) time, O(V + E) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force trying every course permutation — O(V!)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/course-schedule/",
+        children: "Course Schedule"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-9-course-schedule-ii",
+        children: "Course Schedule II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary",
+        children: "Alien Dictionary"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -684,7 +861,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Topological Sort]"]
+      }), " [Graph, Topological Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Topological Sort (Kahn), Cycle Detection\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Kahn's BFS topological sort — O(V + E) time, O(V + E) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS post-order without cycle detection — wrong ordering on cyclic graphs\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/course-schedule-ii/",
+        children: "Course Schedule II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule",
+        children: "Course Schedule"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary",
+        children: "Alien Dictionary"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -727,7 +926,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, String]"]
+      }), " [Graph, BFS, String]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS over the implicit word graph — O(n × L × 26) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Pre-building all word-pair edges — O(n² × L) build time before searching\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-ladder/",
+        children: "Word Ladder"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-23-word-ladder-ii",
+        children: "Word Ladder II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix",
+        children: "Shortest Path in Binary Matrix"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp",
+        children: "Edit Distance"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -788,7 +1009,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS, BFS]"]
+      }), " [Graph, Matrix, DFS, BFS]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, BFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Reverse DFS/BFS from both ocean borders — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Forward DFS from every cell checking both oceans — O((m × n)²)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+        children: "Pacific Atlantic Water Flow"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill",
+        children: "Flood Fill"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-27-longest-increasing-path-in-a-matrix-dp",
+        children: "Longest Increasing Path in a Matrix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -830,7 +1073,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Matrix]"]
+      }), " [Graph, BFS, Matrix]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), Matrix Traversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Multi-source BFS — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Minute-by-minute simulation rescanning the grid — O((m × n)²) worst\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/rotting-oranges/",
+        children: "Rotting Oranges"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix",
+        children: "Shortest Path in Binary Matrix"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -873,7 +1138,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, BFS, Union-Find]"]
+      }), " [Graph, DFS, BFS, Union-Find]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Union-Find, Cycle Detection, Connected Components\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Union-Find with edge count check — O(V + E α) time, O(V) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS that checks cycles but skips the connectivity check — misses disconnected graphs\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/graph-valid-tree/",
+        children: "Graph Valid Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph",
+        children: "Number of Connected Components in a Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-21-minimum-height-trees",
+        children: "Minimum Height Trees"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree",
+        children: "Same Tree"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -924,7 +1211,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS, BFS]"]
+      }), " [Graph, Matrix, DFS, BFS]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, Connected Components\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/BFS from border 'O's — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Flood-filling every interior 'O' to test enclosure — O((m × n)²)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/surrounded-regions/",
+        children: "Surrounded Regions"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-11-pacific-atlantic-water-flow",
+        children: "Pacific Atlantic Water Flow"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill",
+        children: "Flood Fill"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-27-longest-increasing-path-in-a-matrix-dp",
+        children: "Longest Increasing Path in a Matrix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -967,7 +1276,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Union-Find, DFS]"]
+      }), " [Graph, Union-Find, DFS]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Connected Components, Union-Find, DFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/Union-Find — O(V + E) time, O(V + E) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS from every node resetting visited each time — O(V × (V + E))\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+        children: "Number of Connected Components in an Undirected Graph"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-13-graph-valid-tree",
+        children: "Graph Valid Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree",
+        children: "All Nodes Distance K in Binary Tree"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1024,7 +1355,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, Topological Sort]"]
+      }), " [Graph, DFS, Topological Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Cycle Detection, Topological Sort, DFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS with 3-state visited marking — O(V + E) time, O(V + E) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Adjacency-matrix transitive-closure checks — O(V³)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " No direct LC equivalent — see Related links\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule",
+        children: "Course Schedule"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary",
+        children: "Alien Dictionary"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-3-linked-list-cycle",
+        children: "Linked List Cycle"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1067,7 +1417,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, Union-Find]"]
+      }), " [Graph, DFS, Union-Find]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Union-Find, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS per query with path products — O(n × q) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Floyd-Warshall all-pairs precompute — O(V³), overkill for sparse queries\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/evaluate-division/",
+        children: "Evaluate Division"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph",
+        children: "Find if Path Exists in Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum",
+        children: "Path Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1110,7 +1482,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, DFS, BFS, Matrix]"]
+      }), " [Graph, DFS, BFS, Matrix]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, BFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS/BFS reveal with mine counting — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Simulating full-board scans per click — O((m × n)²)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minesweeper/",
+        children: "Minesweeper"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill",
+        children: "Flood Fill"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1144,7 +1538,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Matrix]"]
+      }), " [Graph, BFS, Matrix]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), Matrix Traversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS with 8-directional moves — O(n²) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS backtracking all paths — exponential, no shortest-distance guarantee\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+        children: "Shortest Path in Binary Matrix"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges",
+        children: "Rotting Oranges"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder",
+        children: "Word Ladder"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1190,7 +1606,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Topological Sort, String]"]
+      }), " [Graph, Topological Sort, String]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Topological Sort (Kahn), Cycle Detection\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Build graph from adjacent words + Kahn's algorithm — O(n × L) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS topological sort without cycle detection — wrong order on cyclic input\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/alien-dictionary/",
+        children: "Alien Dictionary"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule",
+        children: "Course Schedule"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-9-course-schedule-ii",
+        children: "Course Schedule II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix",
+        children: "Longest Common Prefix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1241,7 +1679,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Topological Sort]"]
+      }), " [Graph, BFS, Topological Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Topological Sort (Kahn), BFS, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Leaf-peeling topological trim — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS from every node computing tree heights — O(n²)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-height-trees/",
+        children: "Minimum Height Trees"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-13-graph-valid-tree",
+        children: "Graph Valid Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph",
+        children: "Number of Connected Components in a Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree",
+        children: "Maximum Depth of Binary Tree"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1292,7 +1752,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Dijkstra, DP]"]
+      }), " [Graph, BFS, Dijkstra, DP]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Dijkstra, BFS, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Bellman-Ford with k relaxations — O(k × E) time, O(V) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Plain Dijkstra ignoring the stop limit — returns paths exceeding k stops\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+        children: "Cheapest Flights Within K Stops"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix",
+        children: "Shortest Path in Binary Matrix"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph",
+        children: "Find if Path Exists in Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1343,7 +1825,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Backtracking]"]
+      }), " [Graph, BFS, Backtracking]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), DFS, Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS distance graph + DFS backtracking — O(n × L × 26) time, O(n × L) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Pure DFS enumerating all sequences — exponential without distance pruning\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-ladder-ii/",
+        children: "Word Ladder II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder",
+        children: "Word Ladder"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number",
+        children: "Letter Combinations of a Phone Number"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1377,7 +1881,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, Matrix, DFS, DP, Topological Sort]"]
+      }), " [Graph, Matrix, DFS, DP, Topological Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix Traversal, DFS, Topological Sort\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS with memoization — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS without memoization — exponential, recomputes overlapping paths\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+        children: "Longest Increasing Path in a Matrix"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-11-pacific-atlantic-water-flow",
+        children: "Pacific Atlantic Water Flow"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence",
+        children: "Longest Increasing Subsequence"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1428,7 +1954,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Graph, BFS, Hash Table]"]
+      }), " [Graph, BFS, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS (shortest path), Adjacency List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS over the stop→route graph — O(R × S) time, O(R × S) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS without a visited-route set — revisits routes, exponential blowup\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/bus-routes/",
+        children: "Bus Routes"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges",
+        children: "Rotting Oranges"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder",
+        children: "Word Ladder"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

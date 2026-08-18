@@ -216,6 +216,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -301,6 +302,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Math, Memoization]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fibonacci-style, Memoization (Top-Down)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(2^n), TLE at n ≥ 30\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/climbing-stairs/",
+        children: "Climbing Stairs"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number",
+        children: "Fibonacci Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-5-min-cost-climbing-stairs",
+        children: "Min Cost Climbing Stairs"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?"]
@@ -366,6 +388,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " 1D DP, Fibonacci-style\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (rob every other house) — fails; skipping a house for a bigger neighbor needs DP\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/house-robber/",
+        children: "House Robber"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-25-house-robber-ii",
+        children: "House Robber II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-23-maximum-alternating-subsequence-sum",
+        children: "Maximum Alternating Subsequence Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given an array of money in houses, rob the maximum amount without robbing adjacent houses."]
@@ -416,6 +462,27 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " 1D DP (Kadane's), Greedy-as-alternative\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation (Kadane's) — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Divide and Conquer — O(n log n), correct but slower than Kadane\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-subarray/",
+        children: "Maximum Subarray"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray (Kadane's Algorithm)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -468,6 +535,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Math, Recursion]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fibonacci-style, Memoization (Top-Down)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(2^n), recomputes overlapping subproblems\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/fibonacci-number/",
+        children: "Fibonacci Number"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs",
+        children: "Climbing Stairs"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-8-tribonacci-number",
+        children: "Tribonacci Number"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return the nth Fibonacci number."]
@@ -510,6 +598,27 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fibonacci-style, 1D DP\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (always take the cheaper immediate step) — fails; local choices ignore future costs\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/min-cost-climbing-stairs/",
+        children: "Min Cost Climbing Stairs"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs",
+        children: "Climbing Stairs"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-18-decode-ways",
+        children: "Decode Ways"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -554,6 +663,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Tabulation (Bottom-Up), Grid DP\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n²) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Combinatorics per cell (nCr) — O(n²) factorial computations with overflow risk\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/pascals-triangle/",
+        children: "Pascal's Triangle"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self",
+        children: "Product of Array Except Self"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Generate the first numRows of Pascal's triangle."]
@@ -596,6 +726,27 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Math]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Math Insight, Fibonacci-style (game DP)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Math shortcut (even n always wins) — O(1) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Full game DP — O(n²) time, O(n) space; overkill when the parity insight exists\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/divisor-game/",
+        children: "Divisor Game"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number",
+        children: "Fibonacci Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number",
+        children: "Missing Number"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -650,6 +801,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Math]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fibonacci-style\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(3^n), TLE at n ≥ 30\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/n-th-tribonacci-number/",
+        children: "N-th Tribonacci Number"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number",
+        children: "Fibonacci Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs",
+        children: "Climbing Stairs"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " T₀ = 0, T₁ = 1, T₂ = 1, Tₙ = Tₙ₋₁ + Tₙ₋₂ + Tₙ₋₃. Return Tₙ."]
@@ -692,6 +864,27 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Array, Math]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Sorting, Greedy-as-alternative\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Sort and check two candidates — O(n log n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute-force triple loop — O(n³), TLE at n ≥ 1000\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+        children: "Maximum Product of Three Numbers"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray (Kadane's Algorithm)"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -743,6 +936,27 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Bit Manipulation]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Tabulation (Bottom-Up), Bit Manipulation\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DP recurrence ans[i] = ans[i >> 1] + (i & 1) — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Popcount per number — O(n log n), recomputes bits from scratch\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/counting-bits/",
+        children: "Counting Bits"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number",
+        children: "Fibonacci Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -798,6 +1012,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, BFS, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Unbounded Knapsack, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n × amount) time, O(amount) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (largest coin first) — fails: coins [1, 3, 4], amount 6 → 3 coins (4+1+1) vs optimal 2 (3+3)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/coin-change/",
+        children: "Coin Change"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-24-coin-change-ii",
+        children: "Coin Change II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack",
+        children: "0/1 Knapsack"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given coins of different denominations and a total amount, return the fewest coins needed to make that amount. Return -1 if impossible."]
@@ -850,6 +1085,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Binary Search]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " LIS, Tabulation (Bottom-Up), Binary Search\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Patience sorting (tails + binary search) — O(n log n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " O(n²) tabulation — correct but TLE at n ≥ 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-increasing-subsequence/",
+        children: "Longest Increasing Subsequence"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence",
+        children: "Longest Common Subsequence"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-30-count-of-smaller-numbers-after-self",
+        children: "Count of Smaller Numbers After Self"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -916,6 +1172,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " LCS / String DP, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(2^(m+n)), TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-common-subsequence/",
+        children: "Longest Common Subsequence"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp",
+        children: "Edit Distance"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-26-longest-palindromic-substring-dp",
+        children: "Longest Palindromic Substring"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance",
+        children: "Edit Distance"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given two strings, find the length of their longest common subsequence."]
@@ -966,6 +1246,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Math, Combinatorics]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Grid DP, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 1D rolling Tabulation — O(m × n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive DFS — O(2^(m+n)), TLE at m, n ≥ 30\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/unique-paths/",
+        children: "Unique Paths"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-15-unique-paths-ii",
+        children: "Unique Paths II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix",
+        children: "Shortest Path in Binary Matrix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1032,6 +1336,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Matrix]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Grid DP, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 1D rolling Tabulation — O(m × n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive DFS without memoization — O(2^(m+n)), TLE with obstacles\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/unique-paths-ii/",
+        children: "Unique Paths II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum",
+        children: "Minimum Path Sum"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Same as Unique Paths but with obstacles (1 = obstacle)."]
@@ -1074,6 +1399,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Greedy, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Greedy-as-alternative, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Greedy (max reach) — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " 1D DP — O(n²) time, O(n) space; correct but slower than greedy\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/jump-game/",
+        children: "Jump Game"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/08-greedy#problem-16-jump-game-greedy",
+        children: "Jump Game (Greedy)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-24-jump-game-ii",
+        children: "Jump Game II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1132,6 +1478,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Trie, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, Tabulation (Bottom-Up), Memoization (Top-Down)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n² × m) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Backtracking without memoization — O(2^n) segmentations, TLE at n = 300\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-break/",
+        children: "Word Break"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-18-decode-ways",
+        children: "Decode Ways"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning",
+        children: "Palindrome Partitioning"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given a string s and a dictionary of words, return true if s can be segmented into dictionary words."]
@@ -1182,6 +1549,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, Fibonacci-style\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(2^n), TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/decode-ways/",
+        children: "Decode Ways"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs",
+        children: "Climbing Stairs"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-17-word-break",
+        children: "Word Break"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1234,6 +1622,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, DFS, Memoization]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Knapsack (0/1), Memoization (Top-Down)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 0/1 Knapsack Tabulation (subset-sum transform) — O(n × sum) time, O(sum) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS without memoization — O(2^n), TLE at n ≥ 20\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/target-sum/",
+        children: "Target Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-20-partition-equal-subset-sum",
+        children: "Partition Equal Subset Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack",
+        children: "0/1 Knapsack"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given an array of integers and a target, assign + or - signs to each element to reach the target sum. Count number of such assignments."]
@@ -1284,6 +1693,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Knapsack (0/1), Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 0/1 Knapsack Tabulation — O(n × target) time, O(target) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (sort and assign largest first) — fails: [1, 5, 11, 5] needs subset choice, not greedy pairing\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/partition-equal-subset-sum/",
+        children: "Partition Equal Subset Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-19-target-sum",
+        children: "Target Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack",
+        children: "0/1 Knapsack"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1336,6 +1766,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Grid]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Grid DP, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 1D rolling Tabulation — O(m × n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive DFS — O(2^(m+n)) paths, TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-path-sum/",
+        children: "Minimum Path Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths",
+        children: "Unique Paths"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-15-unique-paths-ii",
+        children: "Unique Paths II"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the minimum path sum from top-left to bottom-right, moving only down or right."]
@@ -1378,6 +1829,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array, Binary Search]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " LCS / String DP (longest common substring), Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force all start pairs — O(m × n × min(m, n)), TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+        children: "Maximum Length of Repeated Subarray"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence",
+        children: "Longest Common Subsequence"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance",
+        children: "Edit Distance"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1422,6 +1894,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " State Machine, 1D DP\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " State-machine Tabulation (even/odd) — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " O(n²) subsequence DP — correct but slow; state machine collapses it to O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-alternating-subsequence-sum/",
+        children: "Maximum Alternating Subsequence Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-28-best-time-to-buy-and-sell-stock-with-cooldown",
+        children: "Best Time to Buy and Sell Stock with Cooldown"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii",
+        children: "Best Time to Buy and Sell Stock II"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the maximum sum of an alternating subsequence (a[index] - a[index+1] + a[index+2] - ...)."]
@@ -1464,6 +1957,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Unbounded Knapsack, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Unbounded Knapsack Tabulation (coin-outer loop) — O(n × amount) time, O(amount) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Coin Change I loop order (amount-outer) — counts permutations instead of combinations\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/coin-change-ii/",
+        children: "Coin Change II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-11-coin-change",
+        children: "Coin Change"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack",
+        children: "0/1 Knapsack"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1508,6 +2022,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " 1D DP, State Machine (circular), Fibonacci-style\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation on two ranges — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy — fails; circular adjacency breaks local choices, needs DP on both slices\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/house-robber-ii/",
+        children: "House Robber II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-2-house-robber",
+        children: "House Robber"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-23-maximum-alternating-subsequence-sum",
+        children: "Maximum Alternating Subsequence Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Houses are arranged in a circle. You cannot rob adjacent houses."]
@@ -1550,6 +2088,27 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, String, Two Pointers]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, Matrix DP (interval), Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Tabulation (interval) — O(n²) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force all substrings + palindrome check — O(n³), TLE at n ≥ 5000\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-palindromic-substring/",
+        children: "Longest Palindromic Substring"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-10-longest-palindromic-substring",
+        children: "Longest Palindromic Substring"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-15-palindromic-substrings",
+        children: "Palindromic Substrings"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1602,6 +2161,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, DFS, Memoization, Graph]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Matrix DP, Memoization (Top-Down), DFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS + Memoization — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Plain DFS without memoization — O(4^(m×n)) worst case, TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+        children: "Longest Increasing Path in a Matrix"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-24-longest-increasing-path-in-a-matrix",
+        children: "Longest Increasing Path in a Matrix"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence",
+        children: "Longest Increasing Subsequence"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the length of the longest increasing path in a matrix."]
@@ -1618,6 +2198,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, State Machine, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " State Machine, 1D DP\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " State-machine Tabulation (sold/held/cooled) — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (sell on every rise) — violates the cooldown constraint, needs state tracking\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+        children: "Best Time to Buy and Sell Stock with Cooldown"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-34-best-time-to-buy-and-sell-stock-iv",
+        children: "Best Time to Buy and Sell Stock IV"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii",
+        children: "Best Time to Buy and Sell Stock II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1662,6 +2266,24 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Knapsack (0/1), Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 0/1 Knapsack Tabulation (reverse loop) — O(n × capacity) time, O(capacity) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy by value/weight ratio — fails; items can't be split, ratio ranking misses optimal combos\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " No direct LC equivalent — see Related links\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-20-partition-equal-subset-sum",
+        children: "Partition Equal Subset Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-19-target-sum",
+        children: "Target Sum"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given weights and values of n items, and a knapsack capacity, find the maximum value you can fit."]
@@ -1705,6 +2327,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, LCS-family, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursion without memoization — O(3^(m+n)), TLE\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/edit-distance/",
+        children: "Edit Distance"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance",
+        children: "Edit Distance"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence",
+        children: "Longest Common Subsequence"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given two strings, find the minimum number of operations (insert, delete, replace) to convert one to the other."]
@@ -1724,6 +2367,27 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Partition DP, Interval DP, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Interval DP on the last balloon burst — O(n³) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (burst smallest balloon first) — fails; burst order interacts, needs interval DP\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/burst-balloons/",
+        children: "Burst Balloons"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-26-longest-palindromic-substring-dp",
+        children: "Longest Palindromic Substring"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning",
+        children: "Palindrome Partitioning"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1776,6 +2440,27 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, String, Backtracking]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, Tabulation (Bottom-Up), Memoization (Top-Down)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation — O(m × n) time, O(m × n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Backtracking without memoization — O(2^(m+n)); 'x*' branches explode on repeated patterns\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/regular-expression-matching/",
+        children: "Regular Expression Matching"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-21-regular-expression-matching",
+        children: "Regular Expression Matching"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-33-distinct-subsequences",
+        children: "Distinct Subsequences"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Implement regex matching with '.' and '*'."]
@@ -1793,6 +2478,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [DP, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " String DP, LCS-family, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation — O(m × n) time, O(n) space (rolling rows)\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Enumerate all subsequences — O(2^m), TLE at m ≥ 20\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/distinct-subsequences/",
+        children: "Distinct Subsequences"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence",
+        children: "Longest Common Subsequence"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-23-distinct-subsequences",
+        children: "Distinct Subsequences"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp",
+        children: "Edit Distance"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Count the number of distinct subsequences of s that equal t."]
@@ -1809,6 +2518,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Array, State Machine]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " State Machine, Tabulation (Bottom-Up)\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " 2D Tabulation (k × n) — O(k × n) time, O(k × n) space; greedy fallback when k ≥ n/2\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Backtracking over buy/sell states without memoization — O(2^n) paths, TLE at n ≥ 30\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+        children: "Best Time to Buy and Sell Stock IV"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-28-best-time-to-buy-and-sell-stock-with-cooldown",
+        children: "Best Time to Buy and Sell Stock with Cooldown"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii",
+        children: "Best Time to Buy and Sell Stock II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1852,6 +2585,27 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [DP, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Memoization (Top-Down), Hash Map DP\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS + memo (stone → reachable jump sizes) — O(n²) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Greedy (always jump the max) — fails; must explore k-1, k, k+1 from every stone\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/frog-jump/",
+        children: "Frog Jump"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-24-jump-game-ii",
+        children: "Jump Game II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs",
+        children: "Climbing Stairs"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

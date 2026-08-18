@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 01: Arrays | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/01-arrays"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 01: Arrays | AI Engineering Journey"><meta data-rh="true" name="description" content="Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software engineer."><meta data-rh="true" property="og:description" content="Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software engineer."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/01-arrays"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/01-arrays" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/01-arrays" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 01: Arrays","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/01-arrays"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -35,7 +35,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-two-sum">Problem 1: Two Sum<a href="#problem-1-two-sum" class="hash-link" aria-label="Direct link to Problem 1: Two Sum" title="Direct link to Problem 1: Two Sum" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Hash Table]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table]
+🧩 <strong>Pattern:</strong> Hash Map
+✅ <strong>Best Option:</strong> Hash map — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener noreferrer" class="">Two Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a></p>
 <p><strong>Problem:</strong> Given an array of integers <code>nums</code> and an integer <code>target</code>, return indices of the two numbers that add up to <code>target</code>. You may assume that each input has exactly one solution, and you may not use the same element twice.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 7, 11, 15], target = 9</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [0, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: nums[0] + nums[1] == 9, so we return [0, 1].</span><br></div></code></pre></div></div>
@@ -62,7 +67,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-best-time-to-buy-and-sell-stock">Problem 2: Best Time to Buy and Sell Stock<a href="#problem-2-best-time-to-buy-and-sell-stock" class="hash-link" aria-label="Direct link to Problem 2: Best Time to Buy and Sell Stock" title="Direct link to Problem 2: Best Time to Buy and Sell Stock" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Meta] [Microsoft] [Apple] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Dynamic Programming]</p>
+📂 <strong>Topics:</strong> [Array, Dynamic Programming]
+🧩 <strong>Pattern:</strong> Kadane&#x27;s, Greedy
+✅ <strong>Best Option:</strong> Single-pass min-price tracking — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreferrer" class="">Best Time to Buy and Sell Stock</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></p>
 <p><strong>Problem:</strong> You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on day <code>i</code>. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve. If no profit can be made, return 0.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: prices = [7, 1, 5, 3, 6, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 5</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Buy on day 2 (price=1) and sell on day 5 (price=6), profit = 5.</span><br></div></code></pre></div></div>
@@ -87,7 +97,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-maximum-subarray-kadanes-algorithm">Problem 3: Maximum Subarray (Kadane&#x27;s Algorithm)<a href="#problem-3-maximum-subarray-kadanes-algorithm" class="hash-link" aria-label="Direct link to Problem 3: Maximum Subarray (Kadane&#x27;s Algorithm)" title="Direct link to Problem 3: Maximum Subarray (Kadane&#x27;s Algorithm)" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta] [LinkedIn]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Divide and Conquer, DP]</p>
+📂 <strong>Topics:</strong> [Array, Divide and Conquer, DP]
+🧩 <strong>Pattern:</strong> Kadane&#x27;s
+✅ <strong>Best Option:</strong> Kadane&#x27;s algorithm — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n³) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreferrer" class="">Maximum Subarray</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Subarray [4, -1, 2, 1] has the largest sum = 6.</span><br></div></code></pre></div></div>
@@ -112,7 +127,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-move-zeroes">Problem 4: Move Zeroes<a href="#problem-4-move-zeroes" class="hash-link" aria-label="Direct link to Problem 4: Move Zeroes" title="Direct link to Problem 4: Move Zeroes" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, In-place
+✅ <strong>Best Option:</strong> Two pointers — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Copy to a new array O(n) space — violates the in-place requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/move-zeroes/" target="_blank" rel="noopener noreferrer" class="">Move Zeroes</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag">Sort Colors</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string">Reverse String</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, move all 0&#x27;s to the end of it while maintaining the relative order of the non-zero elements. Do this in-place without making a copy of the array.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [0, 1, 0, 3, 12]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 3, 12, 0, 0]</span><br></div></code></pre></div></div>
@@ -135,7 +155,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-5-contains-duplicate">Problem 5: Contains Duplicate<a href="#problem-5-contains-duplicate" class="hash-link" aria-label="Direct link to Problem 5: Contains Duplicate" title="Direct link to Problem 5: Contains Duplicate" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Hash Table, Sorting]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table, Sorting]
+🧩 <strong>Pattern:</strong> Hash Map
+✅ <strong>Best Option:</strong> Hash set — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Nested loops O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" rel="noopener noreferrer" class="">Contains Duplicate</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, return <code>true</code> if any value appears at least twice in the array, and return <code>false</code> if every element is distinct.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -160,7 +185,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-6-missing-number">Problem 6: Missing Number<a href="#problem-6-missing-number" class="hash-link" aria-label="Direct link to Problem 6: Missing Number" title="Direct link to Problem 6: Missing Number" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Microsoft] [Meta] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Math, Bit Manipulation]</p>
+📂 <strong>Topics:</strong> [Array, Math, Bit Manipulation]
+🧩 <strong>Pattern:</strong> In-place, Frequency Count
+✅ <strong>Best Option:</strong> Sum formula / XOR — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Sorting O(n log n) — slower than the required O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/missing-number/" target="_blank" rel="noopener noreferrer" class="">Missing Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-7-find-all-numbers-disappeared-in-an-array">Find All Numbers Disappeared in an Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return the only number in the range that is missing from the array.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [3, 0, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: n = 3, numbers 0..3, missing 2.</span><br></div></code></pre></div></div>
@@ -189,7 +219,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-7-find-all-numbers-disappeared-in-an-array">Problem 7: Find All Numbers Disappeared in an Array<a href="#problem-7-find-all-numbers-disappeared-in-an-array" class="hash-link" aria-label="Direct link to Problem 7: Find All Numbers Disappeared in an Array" title="Direct link to Problem 7: Find All Numbers Disappeared in an Array" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Google] [Amazon]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Hash Table]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table]
+🧩 <strong>Pattern:</strong> In-place, Cyclic Sort
+✅ <strong>Best Option:</strong> Negative marking in-place — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Hash set O(n) space — violates the O(1) space constraint
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/" target="_blank" rel="noopener noreferrer" class="">Find All Numbers Disappeared in an Array</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number">Missing Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-26-first-missing-positive">First Missing Positive</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a></p>
 <p><strong>Problem:</strong> Given an array <code>nums</code> of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [4, 3, 2, 7, 8, 2, 3, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [5, 6]</span><br></div></code></pre></div></div>
@@ -213,7 +248,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-8-single-number">Problem 8: Single Number<a href="#problem-8-single-number" class="hash-link" aria-label="Direct link to Problem 8: Single Number" title="Direct link to Problem 8: Single Number" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Bit Manipulation]</p>
+📂 <strong>Topics:</strong> [Array, Bit Manipulation]
+🧩 <strong>Pattern:</strong> Frequency Count, Hash Map
+✅ <strong>Best Option:</strong> XOR — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Hash map counting O(n) space — violates the constant-space requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/single-number/" target="_blank" rel="noopener noreferrer" class="">Single Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number">Missing Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> Given a non-empty array of integers <code>nums</code>, every element appears twice except for one. Find that single one. Implement a solution with linear runtime complexity and constant extra space.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 2, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -239,7 +279,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-9-intersection-of-two-arrays-ii">Problem 9: Intersection of Two Arrays II<a href="#problem-9-intersection-of-two-arrays-ii" class="hash-link" aria-label="Direct link to Problem 9: Intersection of Two Arrays II" title="Direct link to Problem 9: Intersection of Two Arrays II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Hash Table, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table, Two Pointers]
+🧩 <strong>Pattern:</strong> Hash Map, Two Pointers
+✅ <strong>Best Option:</strong> Frequency count with hash map — O(n+m) time, O(min(n,m)) space
+❌ <strong>Not Optimal:</strong> Nested loops O(n·m) — slow when both arrays are large
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/" target="_blank" rel="noopener noreferrer" class="">Intersection of Two Arrays II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a></p>
 <p><strong>Problem:</strong> Given two integer arrays <code>nums1</code> and <code>nums2</code>, return an array of their intersection. Each element in the result should appear as many times as it appears in both arrays.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums1 = [1, 2, 2, 1], nums2 = [2, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [2, 2]</span><br></div></code></pre></div></div>
@@ -262,7 +307,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-10-plus-one">Problem 10: Plus One<a href="#problem-10-plus-one" class="hash-link" aria-label="Direct link to Problem 10: Plus One" title="Direct link to Problem 10: Plus One" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Array, Math]</p>
+📂 <strong>Topics:</strong> [Array, Math]
+🧩 <strong>Pattern:</strong> In-place, String Manipulation
+✅ <strong>Best Option:</strong> Right-to-left carry — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Convert to number and add — overflows for 100-digit inputs
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/plus-one/" target="_blank" rel="noopener noreferrer" class="">Plus One</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi">String to Integer (atoi)</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a></p>
 <p><strong>Problem:</strong> You are given a large integer represented as an integer array <code>digits</code>, where each digit is an element of the array. Increment the large integer by one and return the resulting array.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: digits = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 2, 4]</span><br></div></code></pre></div></div>
@@ -288,7 +338,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-11-three-sum">Problem 11: Three Sum<a href="#problem-11-three-sum" class="hash-link" aria-label="Direct link to Problem 11: Three Sum" title="Direct link to Problem 11: Three Sum" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Two Pointers, Sorting]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers, Sorting]
+🧩 <strong>Pattern:</strong> Two Pointers, Sorting
+✅ <strong>Best Option:</strong> Sort + two pointers — O(n²) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n³) — fails for n up to 3000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreferrer" class="">3Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water">Container With Most Water</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, return all unique triplets <code>[nums[i], nums[j], nums[k]]</code> such that i, j, k are distinct and sum to zero.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [-1, 0, 1, 2, -1, -4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[-1, -1, 2], [-1, 0, 1]]</span><br></div></code></pre></div></div>
@@ -311,7 +366,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-12-product-of-array-except-self">Problem 12: Product of Array Except Self<a href="#problem-12-product-of-array-except-self" class="hash-link" aria-label="Direct link to Problem 12: Product of Array Except Self" title="Direct link to Problem 12: Product of Array Except Self" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Meta] [Google] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Prefix Sum]</p>
+📂 <strong>Topics:</strong> [Array, Prefix Sum]
+🧩 <strong>Pattern:</strong> Prefix Sum
+✅ <strong>Best Option:</strong> Prefix × suffix products — O(n) time, O(1) space (excluding output)
+❌ <strong>Not Optimal:</strong> Division by total product — fails when the array contains zeros
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/product-of-array-except-self/" target="_blank" rel="noopener noreferrer" class="">Product of Array Except Self</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, return an array <code>answer</code> such that <code>answer[i]</code> is equal to the product of all the elements of <code>nums</code> except <code>nums[i]</code>. Solve without division and in O(n) time.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [24, 12, 8, 6]</span><br></div></code></pre></div></div>
@@ -334,7 +394,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-13-container-with-most-water">Problem 13: Container With Most Water<a href="#problem-13-container-with-most-water" class="hash-link" aria-label="Direct link to Problem 13: Container With Most Water" title="Direct link to Problem 13: Container With Most Water" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Two Pointers, Greedy]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers, Greedy]
+🧩 <strong>Pattern:</strong> Two Pointers, Greedy
+✅ <strong>Best Option:</strong> Two pointers from both ends — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener noreferrer" class="">Container With Most Water</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water">Trapping Rain Water</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-11-three-sum">Three Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a></p>
 <p><strong>Problem:</strong> Given n non-negative integers <code>height</code> representing vertical lines, find two lines that together with the x-axis form a container that holds the most water.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: height = [1, 8, 6, 2, 5, 4, 8, 3, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 49</span><br></div></code></pre></div></div>
@@ -358,7 +423,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-14-find-the-duplicate-number">Problem 14: Find the Duplicate Number<a href="#problem-14-find-the-duplicate-number" class="hash-link" aria-label="Direct link to Problem 14: Find the Duplicate Number" title="Direct link to Problem 14: Find the Duplicate Number" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Two Pointers, Binary Search]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers, Binary Search]
+🧩 <strong>Pattern:</strong> Two Pointers, Cyclic Sort
+✅ <strong>Best Option:</strong> Floyd&#x27;s cycle detection — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Hash set O(n) space — violates the no-extra-memory constraint
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-the-duplicate-number/" target="_blank" rel="noopener noreferrer" class="">Find the Duplicate Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number">Missing Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> Given an array of integers <code>nums</code> containing n+1 integers where each integer is in [1, n], there is exactly one repeated number. Find the duplicate without modifying the array and using O(1) extra space.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 3, 4, 2, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -383,7 +453,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-15-subarray-sum-equals-k">Problem 15: Subarray Sum Equals K<a href="#problem-15-subarray-sum-equals-k" class="hash-link" aria-label="Direct link to Problem 15: Subarray Sum Equals K" title="Direct link to Problem 15: Subarray Sum Equals K" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Hash Table, Prefix Sum]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table, Prefix Sum]
+🧩 <strong>Pattern:</strong> Prefix Sum, Hash Map
+✅ <strong>Best Option:</strong> Prefix sum + hash map — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 2 × 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank" rel="noopener noreferrer" class="">Subarray Sum Equals K</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self">Product of Array Except Self</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></p>
 <p><strong>Problem:</strong> Given an array of integers <code>nums</code> and an integer <code>k</code>, return the total number of subarrays whose sum equals <code>k</code>.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 1, 1], k = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -407,7 +482,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-16-merge-intervals">Problem 16: Merge Intervals<a href="#problem-16-merge-intervals" class="hash-link" aria-label="Direct link to Problem 16: Merge Intervals" title="Direct link to Problem 16: Merge Intervals" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Array, Sorting]
+🧩 <strong>Pattern:</strong> Sorting, In-place
+✅ <strong>Best Option:</strong> Sort + linear merge — O(n log n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Pairwise merge check O(n²) — fails for n up to 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/merge-intervals/" target="_blank" rel="noopener noreferrer" class="">Merge Intervals</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-29-maximum-gap">Maximum Gap</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag">Sort Colors</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix">Longest Common Prefix</a></p>
 <p><strong>Problem:</strong> Given an array of intervals <code>intervals[i] = [starti, endi]</code>, merge all overlapping intervals and return an array of the non-overlapping intervals.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[1, 6], [8, 10], [15, 18]]</span><br></div></code></pre></div></div>
@@ -429,7 +509,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-17-next-permutation">Problem 17: Next Permutation<a href="#problem-17-next-permutation" class="hash-link" aria-label="Direct link to Problem 17: Next Permutation" title="Direct link to Problem 17: Next Permutation" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, In-place
+✅ <strong>Best Option:</strong> Reverse suffix after swap — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Generate all permutations O(n!) — fails for n up to 100
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/next-permutation/" target="_blank" rel="noopener noreferrer" class="">Next Permutation</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag">Sort Colors</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string">Reverse Words in a String</a></p>
 <p><strong>Problem:</strong> Implement next permutation, which rearranges numbers into the lexicographically next greater permutation. If not possible, rearrange as the lowest possible order.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 3, 2]</span><br></div></code></pre></div></div>
@@ -451,7 +536,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-18-sort-colors-dutch-national-flag">Problem 18: Sort Colors (Dutch National Flag)<a href="#problem-18-sort-colors-dutch-national-flag" class="hash-link" aria-label="Direct link to Problem 18: Sort Colors (Dutch National Flag)" title="Direct link to Problem 18: Sort Colors (Dutch National Flag)" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Two Pointers, Sorting]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers, Sorting]
+🧩 <strong>Pattern:</strong> Two Pointers, In-place
+✅ <strong>Best Option:</strong> Dutch national flag — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Library sort O(n log n) — the problem forbids using sort
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/sort-colors/" target="_blank" rel="noopener noreferrer" class="">Sort Colors</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes">Move Zeroes</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-14-find-the-duplicate-number">Find the Duplicate Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a></p>
 <p><strong>Problem:</strong> Given an array <code>nums</code> with n objects colored red (0), white (1), or blue (2), sort them in-place so that same colors are adjacent. Do not use the library&#x27;s sort function.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 0, 2, 1, 1, 0]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [0, 0, 1, 1, 2, 2]</span><br></div></code></pre></div></div>
@@ -475,7 +565,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-19-rotate-array">Problem 19: Rotate Array<a href="#problem-19-rotate-array" class="hash-link" aria-label="Direct link to Problem 19: Rotate Array" title="Direct link to Problem 19: Rotate Array" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Math, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Array, Math, Two Pointers]
+🧩 <strong>Pattern:</strong> In-place, Two Pointers
+✅ <strong>Best Option:</strong> Triple reverse — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Rotate one step k times O(n·k) — fails for n, k up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/rotate-array/" target="_blank" rel="noopener noreferrer" class="">Rotate Array</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes">Move Zeroes</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation">Next Permutation</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string">Reverse String</a></p>
 <p><strong>Problem:</strong> Given an array, rotate the array to the right by k steps, where k is non-negative.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3, 4, 5, 6, 7], k = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [5, 6, 7, 1, 2, 3, 4]</span><br></div></code></pre></div></div>
@@ -498,7 +593,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-20-maximum-product-subarray">Problem 20: Maximum Product Subarray<a href="#problem-20-maximum-product-subarray" class="hash-link" aria-label="Direct link to Problem 20: Maximum Product Subarray" title="Direct link to Problem 20: Maximum Product Subarray" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Dynamic Programming]</p>
+📂 <strong>Topics:</strong> [Array, Dynamic Programming]
+🧩 <strong>Pattern:</strong> Kadane&#x27;s, Memoization
+✅ <strong>Best Option:</strong> Track min and max product — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 2 × 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-product-subarray/" target="_blank" rel="noopener noreferrer" class="">Maximum Product Subarray</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a></p>
 <p><strong>Problem:</strong> Given an integer array <code>nums</code>, find a contiguous non-empty subarray within the array that has the largest product, and return the product.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, -2, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Subarray [2, 3] has product 6.</span><br></div></code></pre></div></div>
@@ -520,7 +620,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-21-search-in-rotated-sorted-array">Problem 21: Search in Rotated Sorted Array<a href="#problem-21-search-in-rotated-sorted-array" class="hash-link" aria-label="Direct link to Problem 21: Search in Rotated Sorted Array" title="Direct link to Problem 21: Search in Rotated Sorted Array" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Binary Search]</p>
+📂 <strong>Topics:</strong> [Array, Binary Search]
+🧩 <strong>Pattern:</strong> Binary Search
+✅ <strong>Best Option:</strong> Modified binary search — O(log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Linear scan O(n) — violates the required O(log n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreferrer" class="">Search in Rotated Sorted Array</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array">Find Minimum in Rotated Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-22-first-and-last-position-of-element-in-sorted-array">First and Last Position of Element in Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-7-implement-strstr">Implement strStr()</a></p>
 <p><strong>Problem:</strong> Given a rotated sorted array and a target, return its index. If not found, return -1. Must be O(log n).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [4, 5, 6, 7, 0, 1, 2], target = 0</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div></code></pre></div></div>
@@ -543,7 +648,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-22-first-and-last-position-of-element-in-sorted-array">Problem 22: First and Last Position of Element in Sorted Array<a href="#problem-22-first-and-last-position-of-element-in-sorted-array" class="hash-link" aria-label="Direct link to Problem 22: First and Last Position of Element in Sorted Array" title="Direct link to Problem 22: First and Last Position of Element in Sorted Array" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Binary Search]</p>
+📂 <strong>Topics:</strong> [Array, Binary Search]
+🧩 <strong>Pattern:</strong> Binary Search
+✅ <strong>Best Option:</strong> Two binary searches — O(log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Linear scan O(n) — violates the O(log n) requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/" target="_blank" rel="noopener noreferrer" class="">Find First and Last Position of Element in Sorted Array</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-28-median-of-two-sorted-arrays">Median of Two Sorted Arrays</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-7-implement-strstr">Implement strStr()</a></p>
 <p><strong>Problem:</strong> Find the starting and ending position of a given target value in a sorted array. If not found, return [-1, -1]. O(log n) required.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [5, 7, 7, 8, 8, 10], target = 8</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [3, 4]</span><br></div></code></pre></div></div>
@@ -565,7 +675,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-23-find-minimum-in-rotated-sorted-array">Problem 23: Find Minimum in Rotated Sorted Array<a href="#problem-23-find-minimum-in-rotated-sorted-array" class="hash-link" aria-label="Direct link to Problem 23: Find Minimum in Rotated Sorted Array" title="Direct link to Problem 23: Find Minimum in Rotated Sorted Array" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Binary Search]</p>
+📂 <strong>Topics:</strong> [Array, Binary Search]
+🧩 <strong>Pattern:</strong> Binary Search
+✅ <strong>Best Option:</strong> Binary search against right boundary — O(log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Linear scan O(n) — violates the O(log n) requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" target="_blank" rel="noopener noreferrer" class="">Find Minimum in Rotated Sorted Array</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-22-first-and-last-position-of-element-in-sorted-array">First and Last Position of Element in Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix">Longest Common Prefix</a></p>
 <p><strong>Problem:</strong> Given a rotated sorted array of unique elements, find the minimum element in O(log n).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [3, 4, 5, 1, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -582,7 +697,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-24-jump-game-ii">Problem 24: Jump Game II<a href="#problem-24-jump-game-ii" class="hash-link" aria-label="Direct link to Problem 24: Jump Game II" title="Direct link to Problem 24: Jump Game II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Array, Greedy]</p>
+📂 <strong>Topics:</strong> [Array, Greedy]
+🧩 <strong>Pattern:</strong> Greedy
+✅ <strong>Best Option:</strong> BFS-like greedy — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force DFS O(2ⁿ) — fails for n up to 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener noreferrer" class="">Jump Game II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water">Container With Most Water</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-25-majority-element">Majority Element</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching">Wildcard Matching</a></p>
 <p><strong>Problem:</strong> Given an array where nums[i] is max jump length from position i, return minimum jumps to reach the last index.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, 1, 1, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -604,7 +724,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-25-majority-element">Problem 25: Majority Element<a href="#problem-25-majority-element" class="hash-link" aria-label="Direct link to Problem 25: Majority Element" title="Direct link to Problem 25: Majority Element" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Easy → Medium
-📂 <strong>Topics:</strong> [Array, Voting Algorithm]</p>
+📂 <strong>Topics:</strong> [Array, Voting Algorithm]
+🧩 <strong>Pattern:</strong> Frequency Count, Sorting
+✅ <strong>Best Option:</strong> Boyer-Moore voting — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Hash map counting O(n) space — wasteful when majority is guaranteed
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/majority-element/" target="_blank" rel="noopener noreferrer" class="">Majority Element</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> Find the majority element (appears more than ⌊n/2⌋ times). Assume majority always exists.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [3, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -623,7 +748,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-26-first-missing-positive">Problem 26: First Missing Positive<a href="#problem-26-first-missing-positive" class="hash-link" aria-label="Direct link to Problem 26: First Missing Positive" title="Direct link to Problem 26: First Missing Positive" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Array, Hash Table]</p>
+📂 <strong>Topics:</strong> [Array, Hash Table]
+🧩 <strong>Pattern:</strong> Cyclic Sort, In-place
+✅ <strong>Best Option:</strong> Cyclic placement — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Hash set O(n) space — violates the O(1) space constraint
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/first-missing-positive/" target="_blank" rel="noopener noreferrer" class="">First Missing Positive</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-7-find-all-numbers-disappeared-in-an-array">Find All Numbers Disappeared in an Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number">Missing Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> Given an unsorted integer array, find the smallest missing positive integer. O(n) time, O(1) space.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 0]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -647,7 +777,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-27-trapping-rain-water">Problem 27: Trapping Rain Water<a href="#problem-27-trapping-rain-water" class="hash-link" aria-label="Direct link to Problem 27: Trapping Rain Water" title="Direct link to Problem 27: Trapping Rain Water" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Array, Two Pointers, Stack, DP]</p>
+📂 <strong>Topics:</strong> [Array, Two Pointers, Stack, DP]
+🧩 <strong>Pattern:</strong> Two Pointers, Prefix Sum
+✅ <strong>Best Option:</strong> Two pointers with max tracking — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force per-bar scan O(n²) — fails for n up to 2 × 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/trapping-rain-water/" target="_blank" rel="noopener noreferrer" class="">Trapping Rain Water</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water">Container With Most Water</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self">Product of Array Except Self</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a></p>
 <p><strong>Problem:</strong> Given n non-negative integers representing elevation map, compute how much water it can trap after raining.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -671,7 +806,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-28-median-of-two-sorted-arrays">Problem 28: Median of Two Sorted Arrays<a href="#problem-28-median-of-two-sorted-arrays" class="hash-link" aria-label="Direct link to Problem 28: Median of Two Sorted Arrays" title="Direct link to Problem 28: Median of Two Sorted Arrays" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Array, Binary Search, Divide and Conquer]</p>
+📂 <strong>Topics:</strong> [Array, Binary Search, Divide and Conquer]
+🧩 <strong>Pattern:</strong> Binary Search
+✅ <strong>Best Option:</strong> Binary search on the smaller array — O(log(min(m,n))) time, O(1) space
+❌ <strong>Not Optimal:</strong> Merge both arrays O(m+n) — violates the O(log(m+n)) requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener noreferrer" class="">Median of Two Sorted Arrays</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array">Find Minimum in Rotated Sorted Array</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a></p>
 <p><strong>Problem:</strong> Given two sorted arrays nums1 and nums2 of size m and n, return the median of the two sorted arrays. O(log(m+n)) time.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums1 = [1, 3], nums2 = [2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2.0</span><br></div></code></pre></div></div>
@@ -693,7 +833,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-29-maximum-gap">Problem 29: Maximum Gap<a href="#problem-29-maximum-gap" class="hash-link" aria-label="Direct link to Problem 29: Maximum Gap" title="Direct link to Problem 29: Maximum Gap" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Array, Bucket Sort, Radix Sort]</p>
+📂 <strong>Topics:</strong> [Array, Bucket Sort, Radix Sort]
+🧩 <strong>Pattern:</strong> Sorting, In-place
+✅ <strong>Best Option:</strong> Bucket sort (pigeonhole) — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Full sort + adjacent diff O(n log n) — violates the linear-time requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-gap/" target="_blank" rel="noopener noreferrer" class="">Maximum Gap</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-28-median-of-two-sorted-arrays">Median of Two Sorted Arrays</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Given an unsorted array, find the maximum difference between successive elements in its sorted form. Linear time and space.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [3, 6, 9, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -715,7 +860,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-30-count-of-smaller-numbers-after-self">Problem 30: Count of Smaller Numbers After Self<a href="#problem-30-count-of-smaller-numbers-after-self" class="hash-link" aria-label="Direct link to Problem 30: Count of Smaller Numbers After Self" title="Direct link to Problem 30: Count of Smaller Numbers After Self" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Array, Binary Search, Divide and Conquer, Fenwick Tree]</p>
+📂 <strong>Topics:</strong> [Array, Binary Search, Divide and Conquer, Fenwick Tree]
+🧩 <strong>Pattern:</strong> Binary Search, Sorting
+✅ <strong>Best Option:</strong> Merge sort counting — O(n log n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self/" target="_blank" rel="noopener noreferrer" class="">Count of Smaller Numbers After Self</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-29-maximum-gap">Maximum Gap</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-23-distinct-subsequences">Distinct Subsequences</a></p>
 <p><strong>Problem:</strong> Given an integer array nums, return a new array counts where counts[i] is the number of smaller elements to the right of nums[i].</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [5, 2, 6, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [2, 1, 1, 0]</span><br></div></code></pre></div></div>

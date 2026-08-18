@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 06: Graphs | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/06-graphs"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 06: Graphs | AI Engineering Journey"><meta data-rh="true" name="description" content="Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find."><meta data-rh="true" property="og:description" content="Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/06-graphs"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/06-graphs" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/06-graphs" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 06: Graphs","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/06-graphs"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -36,7 +36,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-find-if-path-exists-in-graph">Problem 1: Find if Path Exists in Graph<a href="#problem-1-find-if-path-exists-in-graph" class="hash-link" aria-label="Direct link to Problem 1: Find if Path Exists in Graph" title="Direct link to Problem 1: Find if Path Exists in Graph" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Graph, DFS, BFS, Union-Find]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, BFS, Union-Find]
+🧩 <strong>Pattern:</strong> BFS (shortest path), DFS, Adjacency List
+✅ <strong>Best Option:</strong> BFS/DFS from source — O(V + E) time, O(V + E) space
+❌ <strong>Not Optimal:</strong> Brute force enumerating every path via recursion — exponential O(2^V)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-if-path-exists-in-graph/" target="_blank" rel="noopener noreferrer" class="">Find if Path Exists in Graph</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph">Number of Connected Components</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-5-find-the-town-judge">Find the Town Judge</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths">Binary Tree Paths</a></p>
 <p><strong>Problem:</strong> There is a bi-directional graph with n vertices. Edges are given as a 2D array. Determine if there&#x27;s a path from source to destination.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -58,7 +63,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-find-center-of-star-graph">Problem 2: Find Center of Star Graph<a href="#problem-2-find-center-of-star-graph" class="hash-link" aria-label="Direct link to Problem 2: Find Center of Star Graph" title="Direct link to Problem 2: Find Center of Star Graph" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Graph]</p>
+📂 <strong>Topics:</strong> [Graph]
+🧩 <strong>Pattern:</strong> Adjacency List
+✅ <strong>Best Option:</strong> Compare the endpoints of the first two edges — O(1) time, O(1) space
+❌ <strong>Not Optimal:</strong> Building a full adjacency list and counting degrees — O(V + E), overkill for a star
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-center-of-star-graph/" target="_blank" rel="noopener noreferrer" class="">Find Center of Star Graph</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-5-find-the-town-judge">Find the Town Judge</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph">Number of Connected Components</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a></p>
 <p><strong>Problem:</strong> A star graph has one center node connected to all others. Find the center given edges.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: edges = [[1,2],[2,3],[4,2]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -71,7 +81,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-flood-fill">Problem 3: Flood Fill<a href="#problem-3-flood-fill" class="hash-link" aria-label="Direct link to Problem 3: Flood Fill" title="Direct link to Problem 3: Flood Fill" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, BFS
+✅ <strong>Best Option:</strong> DFS/BFS from the start pixel — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Repeated full-grid rescans to propagate the color — O((m × n)²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/flood-fill/" target="_blank" rel="noopener noreferrer" class="">Flood Fill</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a></p>
 <p><strong>Problem:</strong> Replace all connected pixels of the same starting color with a new color.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[2,2,2],[2,2,0],[2,0,1]]</span><br></div></code></pre></div></div>
@@ -89,7 +104,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-island-perimeter">Problem 4: Island Perimeter<a href="#problem-4-island-perimeter" class="hash-link" aria-label="Direct link to Problem 4: Island Perimeter" title="Direct link to Problem 4: Island Perimeter" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS]
+🧩 <strong>Pattern:</strong> Matrix Traversal
+✅ <strong>Best Option:</strong> Single scan adding 4 and subtracting shared edges — O(m × n) time, O(1) space
+❌ <strong>Not Optimal:</strong> DFS flood fill then re-counting borders — O(m × n) with recursion stack
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/island-perimeter/" target="_blank" rel="noopener noreferrer" class="">Island Perimeter</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a></p>
 <p><strong>Problem:</strong> Given a grid where 1 = land, 0 = water, compute the perimeter of the island.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 16</span><br></div></code></pre></div></div>
@@ -102,7 +122,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-5-find-the-town-judge">Problem 5: Find the Town Judge<a href="#problem-5-find-the-town-judge" class="hash-link" aria-label="Direct link to Problem 5: Find the Town Judge" title="Direct link to Problem 5: Find the Town Judge" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Graph, Array]</p>
+📂 <strong>Topics:</strong> [Graph, Array]
+🧩 <strong>Pattern:</strong> Adjacency List
+✅ <strong>Best Option:</strong> Indegree/outdegree count arrays — O(n + t) time, O(n) space
+❌ <strong>Not Optimal:</strong> BFS/DFS trust simulation from every person — O(n × (n + t))
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-the-town-judge/" target="_blank" rel="noopener noreferrer" class="">Find the Town Judge</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-2-find-center-of-star-graph">Find Center of Star Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule">Course Schedule</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a></p>
 <p><strong>Problem:</strong> In a town of n people, the town judge trusts nobody and everyone trusts the judge. Find the judge or return -1.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 2, trust = [[1,2]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -121,7 +146,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-6-number-of-islands">Problem 6: Number of Islands<a href="#problem-6-number-of-islands" class="hash-link" aria-label="Direct link to Problem 6: Number of Islands" title="Direct link to Problem 6: Number of Islands" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS, Union-Find]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS, Union-Find]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, Connected Components
+✅ <strong>Best Option:</strong> DFS/BFS flood fill marking visited — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> BFS from every land cell without marking visited — O((m × n)²), rescans the same island
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener noreferrer" class="">Number of Islands</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill">Flood Fill</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a></p>
 <p><strong>Problem:</strong> Given a 2D grid of &#x27;1&#x27;s (land) and &#x27;0&#x27;s (water), count the number of islands.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: grid = [</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  [&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;0&quot;],</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;],</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  [&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -142,7 +172,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-7-clone-graph">Problem 7: Clone Graph<a href="#problem-7-clone-graph" class="hash-link" aria-label="Direct link to Problem 7: Clone Graph" title="Direct link to Problem 7: Clone Graph" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, BFS, Hash Table]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, BFS, Hash Table]
+🧩 <strong>Pattern:</strong> DFS, BFS, Adjacency List
+✅ <strong>Best Option:</strong> DFS/BFS with a visited clone map — O(V + E) time, O(V) space
+❌ <strong>Not Optimal:</strong> Recursive cloning without a visited map — infinite recursion on cycles
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/clone-graph/" target="_blank" rel="noopener noreferrer" class="">Clone Graph</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-17-evaluate-division">Evaluate Division</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-23-word-ladder-ii">Word Ladder II</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-19-copy-list-with-random-pointer">Copy List with Random Pointer</a></p>
 <p><strong>Problem:</strong> Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: adjList = [[2,4],[1,3],[2,4],[1,3]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[2,4],[1,3],[2,4],[1,3]]</span><br></div></code></pre></div></div>
@@ -159,7 +194,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-8-course-schedule">Problem 8: Course Schedule<a href="#problem-8-course-schedule" class="hash-link" aria-label="Direct link to Problem 8: Course Schedule" title="Direct link to Problem 8: Course Schedule" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, BFS, Topological Sort]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, BFS, Topological Sort]
+🧩 <strong>Pattern:</strong> Topological Sort (Kahn), Cycle Detection, DFS
+✅ <strong>Best Option:</strong> Kahn&#x27;s BFS topological sort — O(V + E) time, O(V + E) space
+❌ <strong>Not Optimal:</strong> Brute force trying every course permutation — O(V!)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/course-schedule/" target="_blank" rel="noopener noreferrer" class="">Course Schedule</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-9-course-schedule-ii">Course Schedule II</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary">Alien Dictionary</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a></p>
 <p><strong>Problem:</strong> There are n courses labeled 0 to n-1. Given prerequisites [a, b] meaning b must be taken before a, determine if it&#x27;s possible to finish all courses.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: numCourses = 2, prerequisites = [[1,0]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -180,7 +220,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-9-course-schedule-ii">Problem 9: Course Schedule II<a href="#problem-9-course-schedule-ii" class="hash-link" aria-label="Direct link to Problem 9: Course Schedule II" title="Direct link to Problem 9: Course Schedule II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, Topological Sort]</p>
+📂 <strong>Topics:</strong> [Graph, Topological Sort]
+🧩 <strong>Pattern:</strong> Topological Sort (Kahn), Cycle Detection
+✅ <strong>Best Option:</strong> Kahn&#x27;s BFS topological sort — O(V + E) time, O(V + E) space
+❌ <strong>Not Optimal:</strong> DFS post-order without cycle detection — wrong ordering on cyclic graphs
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/course-schedule-ii/" target="_blank" rel="noopener noreferrer" class="">Course Schedule II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule">Course Schedule</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary">Alien Dictionary</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a></p>
 <p><strong>Problem:</strong> Return the ordering of courses to take to finish all courses.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [0,2,1,3] or [0,1,2,3]</span><br></div></code></pre></div></div>
@@ -193,7 +238,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-10-word-ladder">Problem 10: Word Ladder<a href="#problem-10-word-ladder" class="hash-link" aria-label="Direct link to Problem 10: Word Ladder" title="Direct link to Problem 10: Word Ladder" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, BFS, String]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, String]
+🧩 <strong>Pattern:</strong> BFS (shortest path), Adjacency List
+✅ <strong>Best Option:</strong> BFS over the implicit word graph — O(n × L × 26) time, O(n) space
+❌ <strong>Not Optimal:</strong> Pre-building all word-pair edges — O(n² × L) build time before searching
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/word-ladder/" target="_blank" rel="noopener noreferrer" class="">Word Ladder</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-23-word-ladder-ii">Word Ladder II</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix">Shortest Path in Binary Matrix</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp">Edit Distance</a></p>
 <p><strong>Problem:</strong> Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord where each step changes one letter and each intermediate word is in the wordList.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: beginWord = &quot;hit&quot;, endWord = &quot;cog&quot;, wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 5</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: &quot;hit&quot; → &quot;hot&quot; → &quot;dot&quot; → &quot;dog&quot; → &quot;cog&quot; (5 steps)</span><br></div></code></pre></div></div>
@@ -215,7 +265,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-11-pacific-atlantic-water-flow">Problem 11: Pacific Atlantic Water Flow<a href="#problem-11-pacific-atlantic-water-flow" class="hash-link" aria-label="Direct link to Problem 11: Pacific Atlantic Water Flow" title="Direct link to Problem 11: Pacific Atlantic Water Flow" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, BFS
+✅ <strong>Best Option:</strong> Reverse DFS/BFS from both ocean borders — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Forward DFS from every cell checking both oceans — O((m × n)²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/pacific-atlantic-water-flow/" target="_blank" rel="noopener noreferrer" class="">Pacific Atlantic Water Flow</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill">Flood Fill</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-27-longest-increasing-path-in-a-matrix-dp">Longest Increasing Path in a Matrix</a></p>
 <p><strong>Problem:</strong> Given a matrix of heights, find cells where water can flow to both Pacific (top/left) and Atlantic (bottom/right) oceans. Water flows to equal or lower height neighbors.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]</span><br></div></code></pre></div></div>
@@ -230,7 +285,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-12-rotting-oranges">Problem 12: Rotting Oranges<a href="#problem-12-rotting-oranges" class="hash-link" aria-label="Direct link to Problem 12: Rotting Oranges" title="Direct link to Problem 12: Rotting Oranges" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, BFS, Matrix]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Matrix]
+🧩 <strong>Pattern:</strong> BFS (shortest path), Matrix Traversal
+✅ <strong>Best Option:</strong> Multi-source BFS — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Minute-by-minute simulation rescanning the grid — O((m × n)²) worst
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/rotting-oranges/" target="_blank" rel="noopener noreferrer" class="">Rotting Oranges</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix">Shortest Path in Binary Matrix</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a></p>
 <p><strong>Problem:</strong> Given a grid where 0=empty, 1=fresh, 2=rotten, every minute any fresh orange adjacent to a rotten one becomes rotten. Return minimum minutes until no fresh orange remains, or -1.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: grid = [[2,1,1],[1,1,0],[0,1,1]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div></code></pre></div></div>
@@ -243,7 +303,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-13-graph-valid-tree">Problem 13: Graph Valid Tree<a href="#problem-13-graph-valid-tree" class="hash-link" aria-label="Direct link to Problem 13: Graph Valid Tree" title="Direct link to Problem 13: Graph Valid Tree" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, BFS, Union-Find]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, BFS, Union-Find]
+🧩 <strong>Pattern:</strong> Union-Find, Cycle Detection, Connected Components
+✅ <strong>Best Option:</strong> Union-Find with edge count check — O(V + E α) time, O(V) space
+❌ <strong>Not Optimal:</strong> DFS that checks cycles but skips the connectivity check — misses disconnected graphs
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/graph-valid-tree/" target="_blank" rel="noopener noreferrer" class="">Graph Valid Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph">Number of Connected Components in a Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-21-minimum-height-trees">Minimum Height Trees</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree">Same Tree</a></p>
 <p><strong>Problem:</strong> Given n nodes and edges, check if the graph forms a valid tree (connected and no cycles).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -260,7 +325,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-14-surrounded-regions">Problem 14: Surrounded Regions<a href="#problem-14-surrounded-regions" class="hash-link" aria-label="Direct link to Problem 14: Surrounded Regions" title="Direct link to Problem 14: Surrounded Regions" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS, BFS]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, Connected Components
+✅ <strong>Best Option:</strong> DFS/BFS from border &#x27;O&#x27;s — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Flood-filling every interior &#x27;O&#x27; to test enclosure — O((m × n)²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/surrounded-regions/" target="_blank" rel="noopener noreferrer" class="">Surrounded Regions</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-11-pacific-atlantic-water-flow">Pacific Atlantic Water Flow</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill">Flood Fill</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-27-longest-increasing-path-in-a-matrix-dp">Longest Increasing Path in a Matrix</a></p>
 <p><strong>Problem:</strong> Capture all &#x27;O&#x27;s that are surrounded by &#x27;X&#x27;s (change to &#x27;X&#x27;). Any &#x27;O&#x27; on the border remains.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: board = [[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]</span><br></div></code></pre></div></div>
@@ -273,7 +343,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-15-number-of-connected-components-in-a-graph">Problem 15: Number of Connected Components in a Graph<a href="#problem-15-number-of-connected-components-in-a-graph" class="hash-link" aria-label="Direct link to Problem 15: Number of Connected Components in a Graph" title="Direct link to Problem 15: Number of Connected Components in a Graph" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, Union-Find, DFS]</p>
+📂 <strong>Topics:</strong> [Graph, Union-Find, DFS]
+🧩 <strong>Pattern:</strong> Connected Components, Union-Find, DFS
+✅ <strong>Best Option:</strong> DFS/Union-Find — O(V + E) time, O(V + E) space
+❌ <strong>Not Optimal:</strong> BFS from every node resetting visited each time — O(V × (V + E))
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/" target="_blank" rel="noopener noreferrer" class="">Number of Connected Components in an Undirected Graph</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-13-graph-valid-tree">Graph Valid Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree">All Nodes Distance K in Binary Tree</a></p>
 <p><strong>Problem:</strong> Count the number of connected components in an undirected graph.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 5, edges = [[0,1],[1,2],[3,4]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -291,7 +366,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-16-detect-cycle-in-directed-graph">Problem 16: Detect Cycle in Directed Graph<a href="#problem-16-detect-cycle-in-directed-graph" class="hash-link" aria-label="Direct link to Problem 16: Detect Cycle in Directed Graph" title="Direct link to Problem 16: Detect Cycle in Directed Graph" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, Topological Sort]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, Topological Sort]
+🧩 <strong>Pattern:</strong> Cycle Detection, Topological Sort, DFS
+✅ <strong>Best Option:</strong> DFS with 3-state visited marking — O(V + E) time, O(V + E) space
+❌ <strong>Not Optimal:</strong> Adjacency-matrix transitive-closure checks — O(V³)
+🔗 <strong>LeetCode:</strong> No direct LC equivalent — see Related links
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule">Course Schedule</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-20-alien-dictionary">Alien Dictionary</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-3-linked-list-cycle">Linked List Cycle</a></p>
 <p><strong>Problem:</strong> Given a directed graph, return true if it contains a cycle.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 4, edges = [[0,1],[1,2],[2,0],[1,3]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -304,7 +384,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-17-evaluate-division">Problem 17: Evaluate Division<a href="#problem-17-evaluate-division" class="hash-link" aria-label="Direct link to Problem 17: Evaluate Division" title="Direct link to Problem 17: Evaluate Division" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, Union-Find]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, Union-Find]
+🧩 <strong>Pattern:</strong> DFS, Union-Find, Adjacency List
+✅ <strong>Best Option:</strong> DFS per query with path products — O(n × q) time, O(n) space
+❌ <strong>Not Optimal:</strong> Floyd-Warshall all-pairs precompute — O(V³), overkill for sparse queries
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/evaluate-division/" target="_blank" rel="noopener noreferrer" class="">Evaluate Division</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph">Find if Path Exists in Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum">Path Sum</a></p>
 <p><strong>Problem:</strong> Given equations like a/b = 2.0, find results of queries like a/c.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0],</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">       queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [6.0,0.5,-1.0,1.0,-1.0]</span><br></div></code></pre></div></div>
@@ -317,7 +402,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-18-minesweeper">Problem 18: Minesweeper<a href="#problem-18-minesweeper" class="hash-link" aria-label="Direct link to Problem 18: Minesweeper" title="Direct link to Problem 18: Minesweeper" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, DFS, BFS, Matrix]</p>
+📂 <strong>Topics:</strong> [Graph, DFS, BFS, Matrix]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, BFS
+✅ <strong>Best Option:</strong> DFS/BFS reveal with mine counting — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Simulating full-board scans per click — O((m × n)²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minesweeper/" target="_blank" rel="noopener noreferrer" class="">Minesweeper</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-3-flood-fill">Flood Fill</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a></p>
 <p><strong>Problem:</strong> Implement Minesweeper click logic: if unrevealed mine → game over; if empty → reveal all adjacent empties; if number → reveal just that cell.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: board = [[&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;],[&quot;E&quot;,&quot;E&quot;,&quot;M&quot;,&quot;E&quot;,&quot;E&quot;],[&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;],[&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;,&quot;E&quot;]], click = [3,0]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[&quot;B&quot;,&quot;1&quot;,&quot;E&quot;,&quot;1&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;1&quot;,&quot;M&quot;,&quot;1&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;B&quot;,&quot;B&quot;,&quot;B&quot;,&quot;B&quot;]]</span><br></div></code></pre></div></div>
@@ -328,7 +418,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-19-shortest-path-in-binary-matrix">Problem 19: Shortest Path in Binary Matrix<a href="#problem-19-shortest-path-in-binary-matrix" class="hash-link" aria-label="Direct link to Problem 19: Shortest Path in Binary Matrix" title="Direct link to Problem 19: Shortest Path in Binary Matrix" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Graph, BFS, Matrix]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Matrix]
+🧩 <strong>Pattern:</strong> BFS (shortest path), Matrix Traversal
+✅ <strong>Best Option:</strong> BFS with 8-directional moves — O(n²) time, O(n²) space
+❌ <strong>Not Optimal:</strong> DFS backtracking all paths — exponential, no shortest-distance guarantee
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/shortest-path-in-binary-matrix/" target="_blank" rel="noopener noreferrer" class="">Shortest Path in Binary Matrix</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges">Rotting Oranges</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder">Word Ladder</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a></p>
 <p><strong>Problem:</strong> Find the shortest clear path from top-left to bottom-right in a binary matrix (0 = clear, 1 = blocked). 8-directional movement.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: grid = [[0,1],[1,0]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -343,7 +438,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-20-alien-dictionary">Problem 20: Alien Dictionary<a href="#problem-20-alien-dictionary" class="hash-link" aria-label="Direct link to Problem 20: Alien Dictionary" title="Direct link to Problem 20: Alien Dictionary" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, Topological Sort, String]</p>
+📂 <strong>Topics:</strong> [Graph, Topological Sort, String]
+🧩 <strong>Pattern:</strong> Topological Sort (Kahn), Cycle Detection
+✅ <strong>Best Option:</strong> Build graph from adjacent words + Kahn&#x27;s algorithm — O(n × L) time, O(1) space
+❌ <strong>Not Optimal:</strong> DFS topological sort without cycle detection — wrong order on cyclic input
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/alien-dictionary/" target="_blank" rel="noopener noreferrer" class="">Alien Dictionary</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-8-course-schedule">Course Schedule</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-9-course-schedule-ii">Course Schedule II</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix">Longest Common Prefix</a></p>
 <p><strong>Problem:</strong> Given sorted words from an alien language, find the order of characters.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: words = [&quot;wrt&quot;,&quot;wrf&quot;,&quot;er&quot;,&quot;ett&quot;,&quot;rftt&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;wertf&quot;</span><br></div></code></pre></div></div>
@@ -360,7 +460,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-21-minimum-height-trees">Problem 21: Minimum Height Trees<a href="#problem-21-minimum-height-trees" class="hash-link" aria-label="Direct link to Problem 21: Minimum Height Trees" title="Direct link to Problem 21: Minimum Height Trees" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, BFS, Topological Sort]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Topological Sort]
+🧩 <strong>Pattern:</strong> Topological Sort (Kahn), BFS, Adjacency List
+✅ <strong>Best Option:</strong> Leaf-peeling topological trim — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> BFS from every node computing tree heights — O(n²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-height-trees/" target="_blank" rel="noopener noreferrer" class="">Minimum Height Trees</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-13-graph-valid-tree">Graph Valid Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-15-number-of-connected-components-in-a-graph">Number of Connected Components in a Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a></p>
 <p><strong>Problem:</strong> Find all root labels of MHTs (minimum height trees) for an undirected tree.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 4, edges = [[1,0],[1,2],[1,3]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1]</span><br></div></code></pre></div></div>
@@ -377,7 +482,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-22-cheapest-flights-within-k-stops">Problem 22: Cheapest Flights Within K Stops<a href="#problem-22-cheapest-flights-within-k-stops" class="hash-link" aria-label="Direct link to Problem 22: Cheapest Flights Within K Stops" title="Direct link to Problem 22: Cheapest Flights Within K Stops" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, BFS, Dijkstra, DP]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Dijkstra, DP]
+🧩 <strong>Pattern:</strong> Dijkstra, BFS, Adjacency List
+✅ <strong>Best Option:</strong> Bellman-Ford with k relaxations — O(k × E) time, O(V) space
+❌ <strong>Not Optimal:</strong> Plain Dijkstra ignoring the stop limit — returns paths exceeding k stops
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/cheapest-flights-within-k-stops/" target="_blank" rel="noopener noreferrer" class="">Cheapest Flights Within K Stops</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix">Shortest Path in Binary Matrix</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph">Find if Path Exists in Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a></p>
 <p><strong>Problem:</strong> Find the cheapest price from src to dst with at most k stops.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 700</span><br></div></code></pre></div></div>
@@ -394,7 +504,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-23-word-ladder-ii">Problem 23: Word Ladder II<a href="#problem-23-word-ladder-ii" class="hash-link" aria-label="Direct link to Problem 23: Word Ladder II" title="Direct link to Problem 23: Word Ladder II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, BFS, Backtracking]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Backtracking]
+🧩 <strong>Pattern:</strong> BFS (shortest path), DFS, Adjacency List
+✅ <strong>Best Option:</strong> BFS distance graph + DFS backtracking — O(n × L × 26) time, O(n × L) space
+❌ <strong>Not Optimal:</strong> Pure DFS enumerating all sequences — exponential without distance pruning
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/word-ladder-ii/" target="_blank" rel="noopener noreferrer" class="">Word Ladder II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder">Word Ladder</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number</a></p>
 <p><strong>Problem:</strong> Find all shortest transformation sequences from beginWord to endWord.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: beginWord = &quot;hit&quot;, endWord = &quot;cog&quot;, wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[&quot;hit&quot;,&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;cog&quot;],[&quot;hit&quot;,&quot;hot&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;]]</span><br></div></code></pre></div></div>
@@ -405,7 +520,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-24-longest-increasing-path-in-a-matrix">Problem 24: Longest Increasing Path in a Matrix<a href="#problem-24-longest-increasing-path-in-a-matrix" class="hash-link" aria-label="Direct link to Problem 24: Longest Increasing Path in a Matrix" title="Direct link to Problem 24: Longest Increasing Path in a Matrix" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, Matrix, DFS, DP, Topological Sort]</p>
+📂 <strong>Topics:</strong> [Graph, Matrix, DFS, DP, Topological Sort]
+🧩 <strong>Pattern:</strong> Matrix Traversal, DFS, Topological Sort
+✅ <strong>Best Option:</strong> DFS with memoization — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> DFS without memoization — exponential, recomputes overlapping paths
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/" target="_blank" rel="noopener noreferrer" class="">Longest Increasing Path in a Matrix</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-11-pacific-atlantic-water-flow">Pacific Atlantic Water Flow</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence">Longest Increasing Subsequence</a></p>
 <p><strong>Problem:</strong> Find the length of the longest increasing path in a matrix (4-directional).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: [1, 2, 6, 9]</span><br></div></code></pre></div></div>
@@ -422,7 +542,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-25-bus-routes">Problem 25: Bus Routes<a href="#problem-25-bus-routes" class="hash-link" aria-label="Direct link to Problem 25: Bus Routes" title="Direct link to Problem 25: Bus Routes" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Graph, BFS, Hash Table]</p>
+📂 <strong>Topics:</strong> [Graph, BFS, Hash Table]
+🧩 <strong>Pattern:</strong> BFS (shortest path), Adjacency List
+✅ <strong>Best Option:</strong> BFS over the stop→route graph — O(R × S) time, O(R × S) space
+❌ <strong>Not Optimal:</strong> BFS without a visited-route set — revisits routes, exponential blowup
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/bus-routes/" target="_blank" rel="noopener noreferrer" class="">Bus Routes</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges">Rotting Oranges</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder">Word Ladder</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a></p>
 <p><strong>Problem:</strong> Given routes (list of bus stops), find the minimum number of buses needed to travel from source to target.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>

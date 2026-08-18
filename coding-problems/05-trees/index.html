@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 05: Trees | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/05-trees"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 05: Trees | AI Engineering Journey"><meta data-rh="true" name="description" content="Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design. Mastering trees is essential for every software engineer."><meta data-rh="true" property="og:description" content="Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design. Mastering trees is essential for every software engineer."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/05-trees"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/05-trees" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/05-trees" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 05: Trees","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/05-trees"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -37,6 +37,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, Stack, Recursion]</p>
+<p>🧩 <strong>Pattern:</strong> Inorder Traversal, Iterative Traversal, Recursion
+✅ <strong>Best Option:</strong> Iterative traversal with explicit stack — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS level-order — does not produce inorder sequence
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Inorder Traversal</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst">Kth Smallest Element in a BST</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-28-recover-binary-search-tree">Recover Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses">Valid Parentheses</a></p>
 <p><strong>Problem:</strong> Given the root of a binary tree, return the inorder traversal (left → root → right).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, null, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 3, 2]</span><br></div></code></pre></div></div>
@@ -59,6 +64,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, DFS, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — O(n) extra queue space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Maximum Depth of Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-8-minimum-depth-of-binary-tree">Minimum Depth of Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-7-balanced-binary-tree">Balanced Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a></p>
 <p><strong>Problem:</strong> Find the maximum depth (number of nodes along the longest path from root to farthest leaf).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -76,6 +86,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, DFS, Recursion]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS comparing both trees — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — O(n) extra queue space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/same-tree/" target="_blank" rel="noopener noreferrer" class="">Same Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-4-symmetric-tree">Symmetric Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-10-invert-binary-tree">Invert Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a></p>
 <p><strong>Problem:</strong> Given two binary trees, check if they are structurally identical and have same values.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: p = [1, 2, 3], q = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -89,6 +104,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, DFS, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS mirror check — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS comparing levels — O(n) extra queue space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/symmetric-tree/" target="_blank" rel="noopener noreferrer" class="">Symmetric Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree">Same Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-10-invert-binary-tree">Invert Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a></p>
 <p><strong>Problem:</strong> Given a binary tree, check if it is a mirror of itself.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 2, 3, 4, 4, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -102,6 +122,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS with queue, one level per iteration — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS recursion — needs extra depth bookkeeping to group levels
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Level Order Traversal</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal">Binary Tree Zigzag Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-19-binary-tree-level-order-traversal-ii">Binary Tree Level Order Traversal II</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges">Rotting Oranges</a></p>
 <p><strong>Problem:</strong> Return the level order traversal of a binary tree&#x27;s nodes&#x27; values (left to right, level by level).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[3], [9, 20], [15, 7]]</span><br></div></code></pre></div></div>
@@ -115,6 +140,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, BST, Divide and Conquer]</p>
+<p>🧩 <strong>Pattern:</strong> Balanced BST, Recursion
+✅ <strong>Best Option:</strong> Recursive mid-split — O(n) time, O(log n) space
+❌ <strong>Not Optimal:</strong> Sequential insertion — produces skewed tree, not height-balanced
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/" target="_blank" rel="noopener noreferrer" class="">Convert Sorted Array to Binary Search Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree">Validate Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst">Kth Smallest Element in a BST</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a></p>
 <p><strong>Problem:</strong> Given an integer array sorted in ascending order, convert it to a height-balanced BST.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [-10, -3, 0, 5, 9]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [0, -3, 9, -10, null, 5]</span><br></div></code></pre></div></div>
@@ -128,6 +158,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Postorder DFS with early exit (-1 sentinel) — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Top-down height recomputation per node — O(n log n) redundant work
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/balanced-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Balanced Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-6-convert-sorted-array-to-bst">Convert Sorted Array to BST</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a></p>
 <p><strong>Problem:</strong> Determine if a binary tree is height-balanced (left and right subtrees differ by ≤1 in height).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -141,6 +176,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, BFS, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS — early exit at first leaf, O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS recursion — explores whole tree even when a shallow leaf exists
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-depth-of-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Minimum Depth of Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix">Shortest Path in Binary Matrix</a></p>
 <p><strong>Problem:</strong> Find the minimum depth (shortest path from root to nearest leaf).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -154,6 +194,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS with remaining-sum — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — O(n) extra queue space, no early-exit advantage
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/path-sum/" target="_blank" rel="noopener noreferrer" class="">Path Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-22-sum-root-to-leaf-numbers">Sum Root to Leaf Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths">Binary Tree Paths</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a></p>
 <p><strong>Problem:</strong> Given a target sum, determine if the tree has a root-to-leaf path that sums to target.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1], targetSum = 22</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -167,6 +212,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Tree, Recursion]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS swapping children — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — O(n) extra queue space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Invert Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-4-symmetric-tree">Symmetric Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree">Same Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a></p>
 <p><strong>Problem:</strong> Given the root of a binary tree, invert the tree (mirror it).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [4, 2, 7, 1, 3, 6, 9]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [4, 7, 2, 9, 6, 3, 1]</span><br></div></code></pre></div></div>
@@ -182,6 +232,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BST, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> Binary Search Tree, Inorder Traversal, DFS
+✅ <strong>Best Option:</strong> Recursive DFS with min/max range bounds — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Parent-child comparison only — misses violations deeper in the tree
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank" rel="noopener noreferrer" class="">Validate Binary Search Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst">Kth Smallest Element in a BST</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-28-recover-binary-search-tree">Recover Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a></p>
 <p><strong>Problem:</strong> Determine if a binary tree is a valid BST. Left subtree values must be &lt; root value; right &gt; root.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [2, 1, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -205,6 +260,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS with direction toggle — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS recursion — needs depth tracking and level reversal
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Zigzag Level Order Traversal</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-14-binary-tree-right-side-view">Binary Tree Right Side View</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder">Word Ladder</a></p>
 <p><strong>Problem:</strong> Return zigzag level order: left→right, then right→left, alternating.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[3], [20, 9], [15, 7]]</span><br></div></code></pre></div></div>
@@ -218,6 +278,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, Array, Divide and Conquer]</p>
+<p>🧩 <strong>Pattern:</strong> Preorder Traversal, Inorder Traversal, Recursion
+✅ <strong>Best Option:</strong> Recursive with hash map for inorder index — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Linear indexOf per node — O(n²) worst case
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/" target="_blank" rel="noopener noreferrer" class="">Construct Binary Tree from Preorder and Inorder Traversal</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree">Serialize and Deserialize Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal">Binary Tree Inorder Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a></p>
 <p><strong>Problem:</strong> Build a binary tree from preorder and inorder traversal arrays.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: preorder = [3, 9, 20, 15, 7], inorder = [9, 3, 15, 20, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [3, 9, 20, null, null, 15, 7]</span><br></div></code></pre></div></div>
@@ -231,6 +296,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BFS, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS taking last node of each level — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS visiting left children first — captures left-side nodes, not the right view
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-right-side-view/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Right Side View</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal">Binary Tree Zigzag Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges">Rotting Oranges</a></p>
 <p><strong>Problem:</strong> Return the values of nodes you can see from the right side of the tree (top to bottom).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3, null, 5, null, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 3, 4]</span><br></div></code></pre></div></div>
@@ -244,6 +314,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BST, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> Binary Search Tree, Inorder Traversal, Iterative Traversal
+✅ <strong>Best Option:</strong> Iterative inorder with early stop at k — O(h + k) time, O(h) space
+❌ <strong>Not Optimal:</strong> Collect full inorder array then index — always O(n), even when k is small
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/" target="_blank" rel="noopener noreferrer" class="">Kth Smallest Element in a BST</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal">Binary Tree Inorder Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree">Validate Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array">Find Minimum in Rotated Sorted Array</a></p>
 <p><strong>Problem:</strong> Find the kth smallest element in a BST.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 1, 4, null, 2], k = 1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -261,6 +336,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BST]</p>
+<p>🧩 <strong>Pattern:</strong> Binary Search Tree, Lowest Common Ancestor
+✅ <strong>Best Option:</strong> BST property descent — O(h) time, O(1) space
+❌ <strong>Not Optimal:</strong> Generic binary-tree LCA recursion — O(n), ignores BST ordering
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" target="_blank" rel="noopener noreferrer" class="">Lowest Common Ancestor of a Binary Search Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree">Lowest Common Ancestor of a Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree">Validate Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph">Find if Path Exists in Graph</a></p>
 <p><strong>Problem:</strong> Find the lowest common ancestor of two nodes in a BST.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 8</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -274,6 +354,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> Lowest Common Ancestor, DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive postorder DFS — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Parent map + visited set — O(n) extra space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Lowest Common Ancestor of a Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-16-lowest-common-ancestor-of-a-bst">Lowest Common Ancestor of a BST</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree">All Nodes Distance K in Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a></p>
 <p><strong>Problem:</strong> Find the LCA of two nodes in a binary tree (not necessarily BST).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 5, 1, 6, 2, 0, 8, null, null, 7, 4], p = 5, q = 1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -287,6 +372,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, DFS, DP]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Postorder DFS tracking max gain — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Brute-force check every pair of nodes — O(n²) path computations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Maximum Path Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-27-binary-tree-maximum-path-sum-with-variations">Binary Tree Maximum Path Sum (with variations)</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum">Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a></p>
 <p><strong>Problem:</strong> Find the maximum path sum in a binary tree. Path can start and end at any node.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [-10, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 42</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Path 15 → 20 → 7 = 42</span><br></div></code></pre></div></div>
@@ -304,6 +394,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS with unshift per level — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS recursion — needs depth tracking and final reversal
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-level-order-traversal-ii/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Level Order Traversal II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal">Binary Tree Zigzag Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges">Rotting Oranges</a></p>
 <p><strong>Problem:</strong> Return bottom-up level order (leaf to root).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[15, 7], [9, 20], [3]]</span><br></div></code></pre></div></div>
@@ -317,6 +412,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, Binary Search]</p>
+<p>🧩 <strong>Pattern:</strong> Binary Search Tree, Recursion
+✅ <strong>Best Option:</strong> Recursive height comparison using completeness — O(log² n) time, O(log n) space
+❌ <strong>Not Optimal:</strong> Full traversal counting — O(n), wastes the complete-tree property
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/count-complete-tree-nodes/" target="_blank" rel="noopener noreferrer" class="">Count Complete Tree Nodes</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-7-balanced-binary-tree">Balanced Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array">Search in Rotated Sorted Array</a></p>
 <p><strong>Problem:</strong> Count the number of nodes in a complete binary tree in O(n) time (or better).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3, 4, 5, 6]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -334,6 +434,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, DFS, String]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS carrying path string — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — stores a full path copy per queue node, O(n²) worst-case memory
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-paths/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Paths</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum">Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-22-sum-root-to-leaf-numbers">Sum Root to Leaf Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search">Word Search</a></p>
 <p><strong>Problem:</strong> Return all root-to-leaf paths.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3, null, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [&quot;1-&gt;2-&gt;5&quot;, &quot;1-&gt;3&quot;]</span><br></div></code></pre></div></div>
@@ -347,6 +452,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Recursive DFS with running sum — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> BFS — O(n) extra queue space carrying partial sums
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/sum-root-to-leaf-numbers/" target="_blank" rel="noopener noreferrer" class="">Sum Root to Leaf Numbers</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum">Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths">Binary Tree Paths</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search">Word Search</a></p>
 <p><strong>Problem:</strong> Each root-to-leaf path represents a number. Return total sum of all root-to-leaf numbers.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 25</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: 12 + 13 = 25</span><br></div></code></pre></div></div>
@@ -360,6 +470,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, DFS, Stack]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Preorder Traversal, Recursion
+✅ <strong>Best Option:</strong> Postorder recursion relinking in place — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Collect preorder into array then relink — O(n) extra space, not in-place
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list/" target="_blank" rel="noopener noreferrer" class="">Flatten Binary Tree to Linked List</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal">Binary Tree Inorder Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree">Serialize and Deserialize Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list">Reverse Linked List</a></p>
 <p><strong>Problem:</strong> Flatten a binary tree to a right-skewed linked list (in-place, preorder order).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 5, 3, 4, null, 6]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, null, 2, null, 3, null, 4, null, 5, null, 6]</span><br></div></code></pre></div></div>
@@ -373,6 +488,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Tree, BFS]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, Level Order
+✅ <strong>Best Option:</strong> BFS level-by-level linking — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS recursion — cannot link next pointers across subtrees without sibling context
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/" target="_blank" rel="noopener noreferrer" class="">Populating Next Right Pointers in Each Node</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-14-binary-tree-right-side-view">Binary Tree Right Side View</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder">Word Ladder</a></p>
 <p><strong>Problem:</strong> Connect each node to its next right node (perfect binary tree).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3, 4, 5, 6, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, #, 2, 3, #, 4, 5, 6, 7, #]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">(Each next pointer connects to the right neighbor)</span><br></div></code></pre></div></div>
@@ -386,6 +506,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, Design, String]</p>
+<p>🧩 <strong>Pattern:</strong> Tree Serialization, Preorder Traversal, Recursion
+✅ <strong>Best Option:</strong> Preorder DFS with null markers — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Level-order array with trailing nulls — O(2^h) space blow-up on skewed trees
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Serialize and Deserialize Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-13-construct-binary-tree-from-preorder-and-inorder">Construct Binary Tree from Preorder and Inorder</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal">Binary Tree Inorder Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-16-encode-and-decode-strings">Encode and Decode Strings</a></p>
 <p><strong>Problem:</strong> Design algorithms to serialize and deserialize a binary tree.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3, null, null, 4, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 2, 3, null, null, 4, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">(After serialize then deserialize)</span><br></div></code></pre></div></div>
@@ -403,6 +528,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, DFS, Greedy, DP]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Postorder DFS greedy with 3 states — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Brute-force all camera placements — O(2^n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-cameras/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Cameras</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-18-binary-tree-maximum-path-sum">Binary Tree Maximum Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree">Lowest Common Ancestor of a Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-24-longest-increasing-path-in-a-matrix">Longest Increasing Path in a Matrix</a></p>
 <p><strong>Problem:</strong> Given a binary tree, we install cameras on nodes where each camera monitors its parent, itself, and immediate children. Return the minimum number of cameras needed to monitor all nodes.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [0, 0, null, 0, 0]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -420,6 +550,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, DFS, DP]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Recursion
+✅ <strong>Best Option:</strong> Postorder DFS tracking max gain — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Brute-force check every pair of nodes — O(n²) path computations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" target="_blank" rel="noopener noreferrer" class="">Binary Tree Maximum Path Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-18-binary-tree-maximum-path-sum">Binary Tree Maximum Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum">Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a></p>
 <p><strong>Problem:</strong> Given a binary tree, find the maximum path sum that can start and end at any node. The path must not pass through the same node twice.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -429,6 +564,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, BST, DFS]</p>
+<p>🧩 <strong>Pattern:</strong> Binary Search Tree, Inorder Traversal, Iterative Traversal
+✅ <strong>Best Option:</strong> Inorder traversal detecting two misplaced nodes — O(n) time, O(h) space
+❌ <strong>Not Optimal:</strong> Collect full inorder array + sort — O(n) extra space
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/recover-binary-search-tree/" target="_blank" rel="noopener noreferrer" class="">Recover Binary Search Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree">Validate Binary Search Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal">Binary Tree Inorder Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses">Valid Parentheses</a></p>
 <p><strong>Problem:</strong> Two elements of a BST are swapped by mistake. Recover the tree without changing its structure.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [1, 3, null, null, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [3, 1, null, null, 2]</span><br></div></code></pre></div></div>
@@ -446,6 +586,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, BFS, Hash Table]</p>
+<p>🧩 <strong>Pattern:</strong> DFS, Level Order
+✅ <strong>Best Option:</strong> DFS tagging (col, row) + sort — O(n log n) time, O(n) space
+❌ <strong>Not Optimal:</strong> BFS without coordinate tracking — cannot group nodes by column
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/" target="_blank" rel="noopener noreferrer" class="">Vertical Order Traversal of a Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree">All Nodes Distance K in Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Return the vertical order traversal from leftmost to rightmost. If two nodes are in the same row and column, sort by value.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 9, 20, null, null, 15, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[9], [3, 15], [20], [7]]</span><br></div></code></pre></div></div>
@@ -459,6 +604,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Tree, BFS, Graph, Hash Table]</p>
+<p>🧩 <strong>Pattern:</strong> BFS, DFS, Recursion
+✅ <strong>Best Option:</strong> DFS parent map + BFS from target — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> DFS downward from target only — misses nodes reachable through ancestors
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/" target="_blank" rel="noopener noreferrer" class="">All Nodes Distance K in Binary Tree</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree">Lowest Common Ancestor of a Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-29-vertical-order-traversal-of-a-binary-tree">Vertical Order Traversal of a Binary Tree</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph">Clone Graph</a></p>
 <p><strong>Problem:</strong> Given a target node, return all nodes at distance K from the target.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: root = [3, 5, 1, 6, 2, 0, 8, null, null, 7, 4], target = 5, k = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [7, 4, 1]</span><br></div></code></pre></div></div>

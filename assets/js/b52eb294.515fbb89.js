@@ -196,6 +196,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -279,7 +280,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table]"]
+      }), " [Array, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Hash Map\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Hash map — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/two-sum/",
+        children: "Two Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k",
+        children: "Subarray Sum Equals K"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram",
+        children: "Valid Anagram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -366,7 +389,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Dynamic Programming]"]
+      }), " [Array, Dynamic Programming]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Kadane's, Greedy\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Single-pass min-price tracking — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        children: "Best Time to Buy and Sell Stock"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters",
+        children: "Longest Substring Without Repeating Characters"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -447,7 +492,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Divide and Conquer, DP]"]
+      }), " [Array, Divide and Conquer, DP]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Kadane's\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Kadane's algorithm — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n³) — fails for n up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-subarray/",
+        children: "Maximum Subarray"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters",
+        children: "Longest Substring Without Repeating Characters"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -528,7 +595,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers]"]
+      }), " [Array, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two pointers — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy to a new array O(n) space — violates the in-place requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/move-zeroes/",
+        children: "Move Zeroes"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag",
+        children: "Sort Colors"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array",
+        children: "Rotate Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string",
+        children: "Reverse String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -599,7 +688,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table, Sorting]"]
+      }), " [Array, Hash Table, Sorting]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Hash Map\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Hash set — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Nested loops O(n²) — fails for n up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/contains-duplicate/",
+        children: "Contains Duplicate"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram",
+        children: "Valid Anagram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -680,7 +791,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Math, Bit Manipulation]"]
+      }), " [Array, Math, Bit Manipulation]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " In-place, Frequency Count\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Sum formula / XOR — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Sorting O(n log n) — slower than the required O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/missing-number/",
+        children: "Missing Number"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-7-find-all-numbers-disappeared-in-an-array",
+        children: "Find All Numbers Disappeared in an Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -773,7 +906,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table]"]
+      }), " [Array, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " In-place, Cyclic Sort\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Negative marking in-place — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash set O(n) space — violates the O(1) space constraint\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+        children: "Find All Numbers Disappeared in an Array"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number",
+        children: "Missing Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-26-first-missing-positive",
+        children: "First Missing Positive"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram",
+        children: "Valid Anagram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -846,7 +1001,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Bit Manipulation]"]
+      }), " [Array, Bit Manipulation]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Frequency Count, Hash Map\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " XOR — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash map counting O(n) space — violates the constant-space requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/single-number/",
+        children: "Single Number"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number",
+        children: "Missing Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -925,7 +1102,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table, Two Pointers]"]
+      }), " [Array, Hash Table, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Hash Map, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Frequency count with hash map — O(n+m) time, O(min(n,m)) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Nested loops O(n·m) — slow when both arrays are large\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/intersection-of-two-arrays-ii/",
+        children: "Intersection of Two Arrays II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram",
+        children: "Valid Anagram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -996,7 +1195,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Math]"]
+      }), " [Array, Math]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " In-place, String Manipulation\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Right-to-left carry — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Convert to number and add — overflows for 100-digit inputs\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/plus-one/",
+        children: "Plus One"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array",
+        children: "Rotate Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi",
+        children: "String to Integer (atoi)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers",
+        children: "Compare Version Numbers"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1070,7 +1291,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers, Sorting]"]
+      }), " [Array, Two Pointers, Sorting]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Sorting\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Sort + two pointers — O(n²) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n³) — fails for n up to 3000\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/3sum/",
+        children: "3Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water",
+        children: "Container With Most Water"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams",
+        children: "Group Anagrams"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1141,7 +1384,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Prefix Sum]"]
+      }), " [Array, Prefix Sum]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Prefix Sum\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Prefix × suffix products — O(n) time, O(1) space (excluding output)\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Division by total product — fails when the array contains zeros\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/product-of-array-except-self/",
+        children: "Product of Array Except Self"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k",
+        children: "Subarray Sum Equals K"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray",
+        children: "Maximum Product Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams",
+        children: "Group Anagrams"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1218,7 +1483,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers, Greedy]"]
+      }), " [Array, Two Pointers, Greedy]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Greedy\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two pointers from both ends — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/container-with-most-water/",
+        children: "Container With Most Water"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water",
+        children: "Trapping Rain Water"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-11-three-sum",
+        children: "Three Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome",
+        children: "Valid Palindrome"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1289,7 +1576,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers, Binary Search]"]
+      }), " [Array, Two Pointers, Binary Search]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Cyclic Sort\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Floyd's cycle detection — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash set O(n) space — violates the no-extra-memory constraint\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-the-duplicate-number/",
+        children: "Find the Duplicate Number"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number",
+        children: "Missing Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1364,7 +1673,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table, Prefix Sum]"]
+      }), " [Array, Hash Table, Prefix Sum]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Prefix Sum, Hash Map\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Prefix sum + hash map — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 2 × 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/subarray-sum-equals-k/",
+        children: "Subarray Sum Equals K"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self",
+        children: "Product of Array Except Self"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters",
+        children: "Longest Substring Without Repeating Characters"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1441,7 +1772,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Sorting]"]
+      }), " [Array, Sorting]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Sorting, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Sort + linear merge — O(n log n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Pairwise merge check O(n²) — fails for n up to 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-intervals/",
+        children: "Merge Intervals"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-29-maximum-gap",
+        children: "Maximum Gap"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag",
+        children: "Sort Colors"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix",
+        children: "Longest Common Prefix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1504,7 +1857,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers]"]
+      }), " [Array, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Reverse suffix after swap — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generate all permutations O(n!) — fails for n up to 100\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/next-permutation/",
+        children: "Next Permutation"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array",
+        children: "Rotate Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-18-sort-colors-dutch-national-flag",
+        children: "Sort Colors"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string",
+        children: "Reverse Words in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1565,7 +1940,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers, Sorting]"]
+      }), " [Array, Two Pointers, Sorting]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dutch national flag — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Library sort O(n log n) — the problem forbids using sort\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sort-colors/",
+        children: "Sort Colors"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes",
+        children: "Move Zeroes"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-14-find-the-duplicate-number",
+        children: "Find the Duplicate Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram",
+        children: "Valid Anagram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1636,7 +2033,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Math, Two Pointers]"]
+      }), " [Array, Math, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " In-place, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Triple reverse — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Rotate one step k times O(n·k) — fails for n, k up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/rotate-array/",
+        children: "Rotate Array"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes",
+        children: "Move Zeroes"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation",
+        children: "Next Permutation"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string",
+        children: "Reverse String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1703,7 +2122,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Dynamic Programming]"]
+      }), " [Array, Dynamic Programming]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Kadane's, Memoization\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Track min and max product — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 2 × 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-product-subarray/",
+        children: "Maximum Product Subarray"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance",
+        children: "Edit Distance"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1766,7 +2207,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Binary Search]"]
+      }), " [Array, Binary Search]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Modified binary search — O(log n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Linear scan O(n) — violates the required O(log n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        children: "Search in Rotated Sorted Array"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array",
+        children: "Find Minimum in Rotated Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-22-first-and-last-position-of-element-in-sorted-array",
+        children: "First and Last Position of Element in Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-7-implement-strstr",
+        children: "Implement strStr()"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1829,7 +2292,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Binary Search]"]
+      }), " [Array, Binary Search]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two binary searches — O(log n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Linear scan O(n) — violates the O(log n) requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        children: "Find First and Last Position of Element in Sorted Array"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-28-median-of-two-sorted-arrays",
+        children: "Median of Two Sorted Arrays"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-7-implement-strstr",
+        children: "Implement strStr()"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1890,7 +2375,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Binary Search]"]
+      }), " [Array, Binary Search]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Binary search against right boundary — O(log n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Linear scan O(n) — violates the O(log n) requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        children: "Find Minimum in Rotated Sorted Array"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-22-first-and-last-position-of-element-in-sorted-array",
+        children: "First and Last Position of Element in Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix",
+        children: "Longest Common Prefix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1941,7 +2448,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Greedy]"]
+      }), " [Array, Greedy]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Greedy\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS-like greedy — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force DFS O(2ⁿ) — fails for n up to 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/jump-game-ii/",
+        children: "Jump Game II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water",
+        children: "Container With Most Water"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-25-majority-element",
+        children: "Majority Element"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching",
+        children: "Wildcard Matching"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2002,7 +2531,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy → Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Voting Algorithm]"]
+      }), " [Array, Voting Algorithm]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Frequency Count, Sorting\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Boyer-Moore voting — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash map counting O(n) space — wasteful when majority is guaranteed\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/majority-element/",
+        children: "Majority Element"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2058,7 +2609,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Hash Table]"]
+      }), " [Array, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Cyclic Sort, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Cyclic placement — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash set O(n) space — violates the O(1) space constraint\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/first-missing-positive/",
+        children: "First Missing Positive"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-7-find-all-numbers-disappeared-in-an-array",
+        children: "Find All Numbers Disappeared in an Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number",
+        children: "Missing Number"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string",
+        children: "First Unique Character in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2127,7 +2700,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Two Pointers, Stack, DP]"]
+      }), " [Array, Two Pointers, Stack, DP]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Prefix Sum\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two pointers with max tracking — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force per-bar scan O(n²) — fails for n up to 2 × 10⁴\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/trapping-rain-water/",
+        children: "Trapping Rain Water"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water",
+        children: "Container With Most Water"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self",
+        children: "Product of Array Except Self"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome",
+        children: "Valid Palindrome"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2196,7 +2791,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Binary Search, Divide and Conquer]"]
+      }), " [Array, Binary Search, Divide and Conquer]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Binary search on the smaller array — O(log(min(m,n))) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Merge both arrays O(m+n) — violates the O(log(m+n)) requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        children: "Median of Two Sorted Arrays"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array",
+        children: "Find Minimum in Rotated Sorted Array"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers",
+        children: "Compare Version Numbers"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2257,7 +2874,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Bucket Sort, Radix Sort]"]
+      }), " [Array, Bucket Sort, Radix Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Sorting, In-place\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Bucket sort (pigeonhole) — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Full sort + adjacent diff O(n log n) — violates the linear-time requirement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-gap/",
+        children: "Maximum Gap"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals",
+        children: "Merge Intervals"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-28-median-of-two-sorted-arrays",
+        children: "Median of Two Sorted Arrays"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams",
+        children: "Group Anagrams"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -2320,7 +2959,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Array, Binary Search, Divide and Conquer, Fenwick Tree]"]
+      }), " [Array, Binary Search, Divide and Conquer, Fenwick Tree]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search, Sorting\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Merge sort counting — O(n log n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force O(n²) — fails for n up to 10⁵\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+        children: "Count of Smaller Numbers After Self"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-29-maximum-gap",
+        children: "Maximum Gap"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals",
+        children: "Merge Intervals"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-23-distinct-subsequences",
+        children: "Distinct Subsequences"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 08: Greedy Algorithms | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/08-greedy"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 08: Greedy Algorithms | AI Engineering Journey"><meta data-rh="true" name="description" content="Greedy algorithms make locally optimal choices at each step, hoping to reach a globally optimal solution. Not all problems can be solved greedily, but when they can, greedy solutions are often the most efficient."><meta data-rh="true" property="og:description" content="Greedy algorithms make locally optimal choices at each step, hoping to reach a globally optimal solution. Not all problems can be solved greedily, but when they can, greedy solutions are often the most efficient."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/08-greedy"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/08-greedy" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/08-greedy" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 08: Greedy Algorithms","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/08-greedy"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -35,7 +35,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-assign-cookies">Problem 1: Assign Cookies<a href="#problem-1-assign-cookies" class="hash-link" aria-label="Direct link to Problem 1: Assign Cookies" title="Direct link to Problem 1: Assign Cookies" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Greedy, Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Sorting]
+🧩 <strong>Pattern:</strong> Sorting + Greedy, Two Pointers
+✅ <strong>Best Option:</strong> Sort both arrays + greedy pointer match — O(n log n + m log m) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force trying every cookie-child pairing — O(n × m)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/assign-cookies/" target="_blank" rel="noopener noreferrer" class="">Assign Cookies</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-2-lemonade-change">Lemonade Change</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-5-maximum-units-on-a-truck">Maximum Units on a Truck</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given children&#x27;s greed factors and cookie sizes, maximize the number of content children (a child is content if cookie size ≥ greed factor). Each child gets at most one cookie.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: g = [1, 2, 3], s = [1, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1</span><br></div></code></pre></div></div>
@@ -52,7 +57,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-lemonade-change">Problem 2: Lemonade Change<a href="#problem-2-lemonade-change" class="hash-link" aria-label="Direct link to Problem 2: Lemonade Change" title="Direct link to Problem 2: Lemonade Change" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Single-pass greedy with $5/$10 bill counters — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Backtracking over bill change combinations — exponential
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/lemonade-change/" target="_blank" rel="noopener noreferrer" class="">Lemonade Change</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-1-assign-cookies">Assign Cookies</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-9-gas-station">Gas Station</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-11-coin-change">Coin Change</a></p>
 <p><strong>Problem:</strong> Each customer pays with $5, $10, or $20 for a $5 lemonade. Determine if you can provide correct change.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: bills = [5, 5, 5, 10, 20]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -65,7 +75,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-best-time-to-buy-and-sell-stock-ii">Problem 3: Best Time to Buy and Sell Stock II<a href="#problem-3-best-time-to-buy-and-sell-stock-ii" class="hash-link" aria-label="Direct link to Problem 3: Best Time to Buy and Sell Stock II" title="Direct link to Problem 3: Best Time to Buy and Sell Stock II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Single-pass accumulate positive price deltas — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> DP over buy/sell states — O(n²), overkill when greedy suffices
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/" target="_blank" rel="noopener noreferrer" class="">Best Time to Buy and Sell Stock II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-9-gas-station">Gas Station</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-8-jump-game-ii">Jump Game II</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a></p>
 <p><strong>Problem:</strong> You can complete as many transactions as you like (buy one and sell one share on different days). Maximize profit.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: prices = [7, 1, 5, 3, 6, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 7</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Buy@1 sell@5 (+4), buy@3 sell@6 (+3) = 7</span><br></div></code></pre></div></div>
@@ -78,7 +93,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-minimum-number-of-arrows-to-burst-balloons">Problem 4: Minimum Number of Arrows to Burst Balloons<a href="#problem-4-minimum-number-of-arrows-to-burst-balloons" class="hash-link" aria-label="Direct link to Problem 4: Minimum Number of Arrows to Burst Balloons" title="Direct link to Problem 4: Minimum Number of Arrows to Burst Balloons" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Greedy, Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Sorting]
+🧩 <strong>Pattern:</strong> Interval Scheduling, Sorting + Greedy
+✅ <strong>Best Option:</strong> Sort by end + greedy overlap merge — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Interval graph coloring — O(n²), overkill for counting overlaps
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/" target="_blank" rel="noopener noreferrer" class="">Minimum Number of Arrows to Burst Balloons</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-6-activity-selection-non-overlapping-intervals">Activity Selection (Non-overlapping Intervals)</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-7-minimum-number-of-platforms">Minimum Number of Platforms</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given balloons as intervals [x_start, x_end], shoot arrows vertically. Find minimum arrows needed to burst all balloons.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: points = [[10,16],[2,8],[1,6],[7,12]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -91,7 +111,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-5-maximum-units-on-a-truck">Problem 5: Maximum Units on a Truck<a href="#problem-5-maximum-units-on-a-truck" class="hash-link" aria-label="Direct link to Problem 5: Maximum Units on a Truck" title="Direct link to Problem 5: Maximum Units on a Truck" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Greedy, Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Sorting]
+🧩 <strong>Pattern:</strong> Sorting + Greedy, Greedy Choice
+✅ <strong>Best Option:</strong> Sort by units-per-box desc + greedy fill — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> 0/1 knapsack DP — O(n × truckSize), overkill for a fractional-style load
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-units-on-a-truck/" target="_blank" rel="noopener noreferrer" class="">Maximum Units on a Truck</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-1-assign-cookies">Assign Cookies</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-15-minimum-cost-to-hire-k-workers">Minimum Cost to Hire K Workers</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Given box types with [numberOfBoxes, unitsPerBox] and a truck size, maximize total units loaded.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 8 (1×3 + 2×2 + 1×1 = 8)</span><br></div></code></pre></div></div>
@@ -106,7 +131,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-6-activity-selection-non-overlapping-intervals">Problem 6: Activity Selection (Non-overlapping Intervals)<a href="#problem-6-activity-selection-non-overlapping-intervals" class="hash-link" aria-label="Direct link to Problem 6: Activity Selection (Non-overlapping Intervals)" title="Direct link to Problem 6: Activity Selection (Non-overlapping Intervals)" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Interval, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Interval, Sorting]
+🧩 <strong>Pattern:</strong> Interval Scheduling, Activity Selection, Sorting + Greedy
+✅ <strong>Best Option:</strong> Sort by end time + greedy selection — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> DP longest non-overlapping chain — O(n²), same optimum at higher cost
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/non-overlapping-intervals/" target="_blank" rel="noopener noreferrer" class="">Activity Selection (Non-overlapping Intervals)</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-4-minimum-number-of-arrows-to-burst-balloons">Minimum Number of Arrows to Burst Balloons</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-7-minimum-number-of-platforms">Minimum Number of Platforms</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given intervals [start, end], find the maximum number of non-overlapping intervals you can select (or the minimum number to remove to make them non-overlapping).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: intervals = [[1,2],[2,3],[3,4],[1,3]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 1 (remove just [1,3] to make non-overlapping)</span><br></div></code></pre></div></div>
@@ -119,7 +149,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-7-minimum-number-of-platforms">Problem 7: Minimum Number of Platforms<a href="#problem-7-minimum-number-of-platforms" class="hash-link" aria-label="Direct link to Problem 7: Minimum Number of Platforms" title="Direct link to Problem 7: Minimum Number of Platforms" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Interval, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Interval, Sorting]
+🧩 <strong>Pattern:</strong> Two Pointers, Sorting + Greedy, Interval Scheduling
+✅ <strong>Best Option:</strong> Sort arrivals/departures + two-pointer sweep — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Checking every pair of trains for overlap — O(n²)
+🔗 <strong>LeetCode:</strong> No direct LC equivalent — see Related links
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-6-activity-selection-non-overlapping-intervals">Activity Selection (Non-overlapping Intervals)</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-4-minimum-number-of-arrows-to-burst-balloons">Minimum Number of Arrows to Burst Balloons</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given arrival and departure times of trains, find the minimum number of platforms needed.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: arr = [900, 940, 950, 1100, 1500, 1800], dep = [910, 1200, 1120, 1130, 1900, 2000]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -132,7 +167,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-8-jump-game-ii">Problem 8: Jump Game II<a href="#problem-8-jump-game-ii" class="hash-link" aria-label="Direct link to Problem 8: Jump Game II" title="Direct link to Problem 8: Jump Game II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Track farthest reach per jump layer — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> DP minimum jumps — O(n²), greedy reaches the optimum in O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener noreferrer" class="">Jump Game II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-16-jump-game-greedy">Jump Game (Greedy)</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-9-gas-station">Gas Station</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-16-jump-game">Jump Game</a></p>
 <p><strong>Problem:</strong> Given an array where nums[i] is max jump length, return the minimum number of jumps to reach the last index.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, 1, 1, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -145,7 +185,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-9-gas-station">Problem 9: Gas Station<a href="#problem-9-gas-station" class="hash-link" aria-label="Direct link to Problem 9: Gas Station" title="Direct link to Problem 9: Gas Station" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Single-pass tank tracking with start reset — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Trying every station as a start — O(n²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/gas-station/" target="_blank" rel="noopener noreferrer" class="">Gas Station</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-8-jump-game-ii">Jump Game II</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-10-candy">Candy</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray (Kadane&#x27;s Algorithm)</a></p>
 <p><strong>Problem:</strong> Given gas[i] (gas at station i) and cost[i] (cost to travel from i to i+1), find the starting station to complete a circuit. Return -1 if impossible.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: gas = [1, 2, 3, 4, 5], cost = [3, 4, 5, 1, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -162,7 +207,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-10-candy">Problem 10: Candy<a href="#problem-10-candy" class="hash-link" aria-label="Direct link to Problem 10: Candy" title="Direct link to Problem 10: Candy" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Two-pass greedy (left-to-right then right-to-left) — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force bumping candies until constraints hold — O(n²) worst
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/candy/" target="_blank" rel="noopener noreferrer" class="">Candy</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-11-queue-reconstruction-by-height">Queue Reconstruction by Height</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-13-partition-labels">Partition Labels</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water">Trapping Rain Water</a></p>
 <p><strong>Problem:</strong> Each child must have at least one candy. Children with higher ratings get more than their neighbors. Find the minimum total candies.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: ratings = [1, 0, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 5 (2, 1, 2)</span><br></div></code></pre></div></div>
@@ -179,7 +229,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-11-queue-reconstruction-by-height">Problem 11: Queue Reconstruction by Height<a href="#problem-11-queue-reconstruction-by-height" class="hash-link" aria-label="Direct link to Problem 11: Queue Reconstruction by Height" title="Direct link to Problem 11: Queue Reconstruction by Height" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Sorting]
+🧩 <strong>Pattern:</strong> Sorting + Greedy, Greedy Choice
+✅ <strong>Best Option:</strong> Sort by height desc + insert at k index — O(n²) time, O(n) space
+❌ <strong>Not Optimal:</strong> Trying all permutations of the queue — O(n!)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/queue-reconstruction-by-height/" target="_blank" rel="noopener noreferrer" class="">Queue Reconstruction by Height</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-10-candy">Candy</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-17-two-city-scheduling">Two City Scheduling</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given people [height, numInFront] where numInFront is number of people ≥ height in front, reconstruct the queue.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: people = [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]</span><br></div></code></pre></div></div>
@@ -192,7 +247,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-12-task-scheduler">Problem 12: Task Scheduler<a href="#problem-12-task-scheduler" class="hash-link" aria-label="Direct link to Problem 12: Task Scheduler" title="Direct link to Problem 12: Task Scheduler" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array, Heap]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Heap]
+🧩 <strong>Pattern:</strong> Greedy Choice, Heap/Priority Queue
+✅ <strong>Best Option:</strong> Frequency + idle-slot formula — O(n + 26 log 26) time, O(1) space
+❌ <strong>Not Optimal:</strong> Simulating time slots one by one — O(maxFreq × n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/task-scheduler/" target="_blank" rel="noopener noreferrer" class="">Task Scheduler</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-18-split-array-into-consecutive-subsequences">Split Array into Consecutive Subsequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-15-minimum-cost-to-hire-k-workers">Minimum Cost to Hire K Workers</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Given tasks and a cooldown n, find the minimum time to complete all tasks (same task must be n apart).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: tasks = [&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;B&quot;,&quot;B&quot;,&quot;B&quot;], n = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 8 (A→B→idle→A→B→idle→A→B)</span><br></div></code></pre></div></div>
@@ -209,7 +269,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-13-partition-labels">Problem 13: Partition Labels<a href="#problem-13-partition-labels" class="hash-link" aria-label="Direct link to Problem 13: Partition Labels" title="Direct link to Problem 13: Partition Labels" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, String, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Greedy, String, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, Greedy Choice
+✅ <strong>Best Option:</strong> Last-occurrence map + greedy segment expansion — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Checking every substring for character containment — O(n²)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/partition-labels/" target="_blank" rel="noopener noreferrer" class="">Partition Labels</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-8-jump-game-ii">Jump Game II</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-10-candy">Candy</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-14-minimum-window-substring">Minimum Window Substring</a></p>
 <p><strong>Problem:</strong> Partition a string into as many parts as possible so that each character appears in at most one part.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;ababcbacadefegdehijhklij&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [9, 7, 8]</span><br></div></code></pre></div></div>
@@ -224,7 +289,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-14-maximum-profit-in-job-scheduling">Problem 14: Maximum Profit in Job Scheduling<a href="#problem-14-maximum-profit-in-job-scheduling" class="hash-link" aria-label="Direct link to Problem 14: Maximum Profit in Job Scheduling" title="Direct link to Problem 14: Maximum Profit in Job Scheduling" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Greedy, DP, Binary Search, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, DP, Binary Search, Sorting]
+🧩 <strong>Pattern:</strong> Interval Scheduling, Sorting + Greedy
+✅ <strong>Best Option:</strong> Sort by end + DP with binary search — O(n log n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Pure earliest-finish greedy — fails when profits differ
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-profit-in-job-scheduling/" target="_blank" rel="noopener noreferrer" class="">Maximum Profit in Job Scheduling</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-6-activity-selection-non-overlapping-intervals">Activity Selection (Non-overlapping Intervals)</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-15-minimum-cost-to-hire-k-workers">Minimum Cost to Hire K Workers</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence">Longest Increasing Subsequence</a></p>
 <p><strong>Problem:</strong> Given jobs with startTime, endTime, and profit, find the maximum profit with non-overlapping jobs.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 120</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Job 1 (1→3, $50) + Job 3 (3→5, $40) = $90? Actually Job 4 (3→6, $70) + Job 1 = $120</span><br></div></code></pre></div></div>
@@ -237,7 +307,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-15-minimum-cost-to-hire-k-workers">Problem 15: Minimum Cost to Hire K Workers<a href="#problem-15-minimum-cost-to-hire-k-workers" class="hash-link" aria-label="Direct link to Problem 15: Minimum Cost to Hire K Workers" title="Direct link to Problem 15: Minimum Cost to Hire K Workers" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Greedy, Heap, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Heap, Sorting]
+🧩 <strong>Pattern:</strong> Heap/Priority Queue, Sorting + Greedy
+✅ <strong>Best Option:</strong> Sort by wage/quality ratio + max-heap of k smallest qualities — O(n log k) time, O(k) space
+❌ <strong>Not Optimal:</strong> Enumerating every size-k subset — O(C(n, k)) combinations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-cost-to-hire-k-workers/" target="_blank" rel="noopener noreferrer" class="">Minimum Cost to Hire K Workers</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-12-task-scheduler">Task Scheduler</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-5-maximum-units-on-a-truck">Maximum Units on a Truck</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Hire exactly k workers. Each worker has wage[i] and quality[i]. Pay proportional to quality ratio. Find minimum cost.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: quality = [10,20,5], wage = [70,50,30], k = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 105</span><br></div></code></pre></div></div>
@@ -256,7 +331,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-16-jump-game-greedy">Problem 16: Jump Game (Greedy)<a href="#problem-16-jump-game-greedy" class="hash-link" aria-label="Direct link to Problem 16: Jump Game (Greedy)" title="Direct link to Problem 16: Jump Game (Greedy)" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array]</p>
+📂 <strong>Topics:</strong> [Greedy, Array]
+🧩 <strong>Pattern:</strong> Greedy Choice
+✅ <strong>Best Option:</strong> Single-pass max-reach tracking — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> DP reachability table — O(n²), greedy decides reachability in O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/jump-game/" target="_blank" rel="noopener noreferrer" class="">Jump Game</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-8-jump-game-ii">Jump Game II</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-9-gas-station">Gas Station</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-16-jump-game">Jump Game</a></p>
 <p><strong>Problem:</strong> Given an array where nums[i] is max jump length from position i, determine if you can reach the last index.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, 1, 1, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -277,7 +357,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-17-two-city-scheduling">Problem 17: Two City Scheduling<a href="#problem-17-two-city-scheduling" class="hash-link" aria-label="Direct link to Problem 17: Two City Scheduling" title="Direct link to Problem 17: Two City Scheduling" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Array, Sorting]</p>
+📂 <strong>Topics:</strong> [Greedy, Array, Sorting]
+🧩 <strong>Pattern:</strong> Sorting + Greedy, Greedy Choice
+✅ <strong>Best Option:</strong> Sort by cost difference (refund) + split halves — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Enumerating all n-of-2n city assignments — O(C(2n, n))
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/two-city-scheduling/" target="_blank" rel="noopener noreferrer" class="">Two City Scheduling</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-11-queue-reconstruction-by-height">Queue Reconstruction by Height</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii">Best Time to Buy and Sell Stock II</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a></p>
 <p><strong>Problem:</strong> A company wants to fly 2n people to two cities. cost[i][0] is cost to send to city A, cost[i][1] is cost to send to city B. Return minimum cost to send exactly n people to each city.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: costs = [[10,20],[30,200],[400,50],[30,20]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 110</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Person 0 to A (10), Person 1 to A (30), Person 2 to B (50), Person 3 to B (20) = 110</span><br></div></code></pre></div></div>
@@ -294,7 +379,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-18-split-array-into-consecutive-subsequences">Problem 18: Split Array into Consecutive Subsequences<a href="#problem-18-split-array-into-consecutive-subsequences" class="hash-link" aria-label="Direct link to Problem 18: Split Array into Consecutive Subsequences" title="Direct link to Problem 18: Split Array into Consecutive Subsequences" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Greedy, Heap, Hash Table]</p>
+📂 <strong>Topics:</strong> [Greedy, Heap, Hash Table]
+🧩 <strong>Pattern:</strong> Greedy Choice, Heap/Priority Queue
+✅ <strong>Best Option:</strong> Greedy chain extension with frequency/need maps — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Backtracking over all chain partitions — exponential
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/split-array-into-consecutive-subsequences/" target="_blank" rel="noopener noreferrer" class="">Split Array into Consecutive Subsequences</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-12-task-scheduler">Task Scheduler</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-15-minimum-cost-to-hire-k-workers">Minimum Cost to Hire K Workers</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence">Longest Increasing Subsequence</a></p>
 <p><strong>Problem:</strong> Given an array sorted in non-decreasing order, return true if it can be split into one or more subsequences of length &gt;= 3 with consecutive integers.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3, 3, 4, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: [1, 2, 3, 4, 5] and [3] -&gt; need length &gt;=3, so: [1,2,3] and [3,4,5]</span><br></div></code></pre></div></div>

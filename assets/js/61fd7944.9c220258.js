@@ -196,6 +196,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -283,6 +284,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, Stack, Recursion]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Inorder Traversal, Iterative Traversal, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Iterative traversal with explicit stack — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS level-order — does not produce inorder sequence\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        children: "Binary Tree Inorder Traversal"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst",
+        children: "Kth Smallest Element in a BST"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-28-recover-binary-search-tree",
+        children: "Recover Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses",
+        children: "Valid Parentheses"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given the root of a binary tree, return the inorder traversal (left → root → right)."]
@@ -348,6 +373,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, BFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — O(n) extra queue space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        children: "Maximum Depth of Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-8-minimum-depth-of-binary-tree",
+        children: "Minimum Depth of Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-7-balanced-binary-tree",
+        children: "Balanced Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the maximum depth (number of nodes along the longest path from root to farthest leaf)."]
@@ -399,6 +448,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, Recursion]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS comparing both trees — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — O(n) extra queue space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/same-tree/",
+        children: "Same Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-4-symmetric-tree",
+        children: "Symmetric Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-10-invert-binary-tree",
+        children: "Invert Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given two binary trees, check if they are structurally identical and have same values."]
@@ -441,6 +514,30 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, DFS, BFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS mirror check — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS comparing levels — O(n) extra queue space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/symmetric-tree/",
+        children: "Symmetric Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree",
+        children: "Same Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-10-invert-binary-tree",
+        children: "Invert Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -485,6 +582,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS with queue, one level per iteration — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS recursion — needs extra depth bookkeeping to group levels\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        children: "Binary Tree Level Order Traversal"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal",
+        children: "Binary Tree Zigzag Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-19-binary-tree-level-order-traversal-ii",
+        children: "Binary Tree Level Order Traversal II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges",
+        children: "Rotting Oranges"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return the level order traversal of a binary tree's nodes' values (left to right, level by level)."]
@@ -527,6 +648,30 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BST, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Balanced BST, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive mid-split — O(n) time, O(log n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Sequential insertion — produces skewed tree, not height-balanced\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        children: "Convert Sorted Array to Binary Search Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree",
+        children: "Validate Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst",
+        children: "Kth Smallest Element in a BST"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -571,6 +716,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Postorder DFS with early exit (-1 sentinel) — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Top-down height recomputation per node — O(n log n) redundant work\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/balanced-binary-tree/",
+        children: "Balanced Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree",
+        children: "Maximum Depth of Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-6-convert-sorted-array-to-bst",
+        children: "Convert Sorted Array to BST"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Determine if a binary tree is height-balanced (left and right subtrees differ by ≤1 in height)."]
@@ -613,6 +782,30 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BFS, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS — early exit at first leaf, O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS recursion — explores whole tree even when a shallow leaf exists\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-depth-of-binary-tree/",
+        children: "Minimum Depth of Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree",
+        children: "Maximum Depth of Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix",
+        children: "Shortest Path in Binary Matrix"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -657,6 +850,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS with remaining-sum — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — O(n) extra queue space, no early-exit advantage\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/path-sum/",
+        children: "Path Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-22-sum-root-to-leaf-numbers",
+        children: "Sum Root to Leaf Numbers"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths",
+        children: "Binary Tree Paths"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k",
+        children: "Subarray Sum Equals K"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given a target sum, determine if the tree has a root-to-leaf path that sums to target."]
@@ -699,6 +916,30 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, Recursion]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS swapping children — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — O(n) extra queue space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/invert-binary-tree/",
+        children: "Invert Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-4-symmetric-tree",
+        children: "Symmetric Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-3-same-tree",
+        children: "Same Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -745,6 +986,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BST, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search Tree, Inorder Traversal, DFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS with min/max range bounds — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Parent-child comparison only — misses violations deeper in the tree\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/validate-binary-search-tree/",
+        children: "Validate Binary Search Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-15-kth-smallest-element-in-a-bst",
+        children: "Kth Smallest Element in a BST"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-28-recover-binary-search-tree",
+        children: "Recover Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -813,6 +1078,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS with direction toggle — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS recursion — needs depth tracking and level reversal\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        children: "Binary Tree Zigzag Level Order Traversal"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-14-binary-tree-right-side-view",
+        children: "Binary Tree Right Side View"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder",
+        children: "Word Ladder"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return zigzag level order: left→right, then right→left, alternating."]
@@ -855,6 +1144,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, Array, Divide and Conquer]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Preorder Traversal, Inorder Traversal, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive with hash map for inorder index — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Linear indexOf per node — O(n²) worst case\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        children: "Construct Binary Tree from Preorder and Inorder Traversal"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree",
+        children: "Serialize and Deserialize Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal",
+        children: "Binary Tree Inorder Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -899,6 +1212,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS, DFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS taking last node of each level — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS visiting left children first — captures left-side nodes, not the right view\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-right-side-view/",
+        children: "Binary Tree Right Side View"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal",
+        children: "Binary Tree Zigzag Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges",
+        children: "Rotting Oranges"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return the values of nodes you can see from the right side of the tree (top to bottom)."]
@@ -941,6 +1278,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BST, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search Tree, Inorder Traversal, Iterative Traversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Iterative inorder with early stop at k — O(h + k) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Collect full inorder array then index — always O(n), even when k is small\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        children: "Kth Smallest Element in a BST"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal",
+        children: "Binary Tree Inorder Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree",
+        children: "Validate Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-23-find-minimum-in-rotated-sorted-array",
+        children: "Find Minimum in Rotated Sorted Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -993,6 +1354,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BST]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search Tree, Lowest Common Ancestor\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BST property descent — O(h) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generic binary-tree LCA recursion — O(n), ignores BST ordering\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        children: "Lowest Common Ancestor of a Binary Search Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree",
+        children: "Lowest Common Ancestor of a Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree",
+        children: "Validate Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-1-find-if-path-exists-in-graph",
+        children: "Find if Path Exists in Graph"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the lowest common ancestor of two nodes in a BST."]
@@ -1036,6 +1421,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Lowest Common Ancestor, DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive postorder DFS — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Parent map + visited set — O(n) extra space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        children: "Lowest Common Ancestor of a Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-16-lowest-common-ancestor-of-a-bst",
+        children: "Lowest Common Ancestor of a BST"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree",
+        children: "All Nodes Distance K in Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Find the LCA of two nodes in a binary tree (not necessarily BST)."]
@@ -1078,6 +1487,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, DFS, DP]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Postorder DFS tracking max gain — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute-force check every pair of nodes — O(n²) path computations\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        children: "Binary Tree Maximum Path Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-27-binary-tree-maximum-path-sum-with-variations",
+        children: "Binary Tree Maximum Path Sum (with variations)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum",
+        children: "Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1130,6 +1563,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS with unshift per level — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS recursion — needs depth tracking and final reversal\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
+        children: "Binary Tree Level Order Traversal II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-12-binary-tree-zigzag-level-order-traversal",
+        children: "Binary Tree Zigzag Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-12-rotting-oranges",
+        children: "Rotting Oranges"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return bottom-up level order (leaf to root)."]
@@ -1172,6 +1629,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, Binary Search]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search Tree, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive height comparison using completeness — O(log² n) time, O(log n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Full traversal counting — O(n), wastes the complete-tree property\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/count-complete-tree-nodes/",
+        children: "Count Complete Tree Nodes"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-2-maximum-depth-of-binary-tree",
+        children: "Maximum Depth of Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-7-balanced-binary-tree",
+        children: "Balanced Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-21-search-in-rotated-sorted-array",
+        children: "Search in Rotated Sorted Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1224,6 +1705,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS carrying path string — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — stores a full path copy per queue node, O(n²) worst-case memory\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-paths/",
+        children: "Binary Tree Paths"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum",
+        children: "Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-22-sum-root-to-leaf-numbers",
+        children: "Sum Root to Leaf Numbers"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search",
+        children: "Word Search"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return all root-to-leaf paths."]
@@ -1266,6 +1771,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Recursive DFS with running sum — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — O(n) extra queue space carrying partial sums\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+        children: "Sum Root to Leaf Numbers"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum",
+        children: "Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-21-binary-tree-paths",
+        children: "Binary Tree Paths"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search",
+        children: "Word Search"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1310,6 +1839,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, Stack]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Preorder Traversal, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Postorder recursion relinking in place — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Collect preorder into array then relink — O(n) extra space, not in-place\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+        children: "Flatten Binary Tree to Linked List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal",
+        children: "Binary Tree Inorder Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree",
+        children: "Serialize and Deserialize Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list",
+        children: "Reverse Linked List"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Flatten a binary tree to a right-skewed linked list (in-place, preorder order)."]
@@ -1353,6 +1906,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " BFS level-by-level linking — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS recursion — cannot link next pointers across subtrees without sibling context\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+        children: "Populating Next Right Pointers in Each Node"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-14-binary-tree-right-side-view",
+        children: "Binary Tree Right Side View"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-10-word-ladder",
+        children: "Word Ladder"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Connect each node to its next right node (perfect binary tree)."]
@@ -1389,6 +1966,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, Design, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Tree Serialization, Preorder Traversal, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Preorder DFS with null markers — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Level-order array with trailing nulls — O(2^h) space blow-up on skewed trees\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        children: "Serialize and Deserialize Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-13-construct-binary-tree-from-preorder-and-inorder",
+        children: "Construct Binary Tree from Preorder and Inorder"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal",
+        children: "Binary Tree Inorder Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-16-encode-and-decode-strings",
+        children: "Encode and Decode Strings"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1441,6 +2042,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, Greedy, DP]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Postorder DFS greedy with 3 states — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute-force all camera placements — O(2^n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-cameras/",
+        children: "Binary Tree Cameras"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-18-binary-tree-maximum-path-sum",
+        children: "Binary Tree Maximum Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree",
+        children: "Lowest Common Ancestor of a Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-24-longest-increasing-path-in-a-matrix",
+        children: "Longest Increasing Path in a Matrix"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given a binary tree, we install cameras on nodes where each camera monitors its parent, itself, and immediate children. Return the minimum number of cameras needed to monitor all nodes."]
@@ -1492,6 +2117,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, DFS, DP]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Postorder DFS tracking max gain — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute-force check every pair of nodes — O(n²) path computations\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        children: "Binary Tree Maximum Path Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-18-binary-tree-maximum-path-sum",
+        children: "Binary Tree Maximum Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-9-path-sum",
+        children: "Path Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm",
+        children: "Maximum Subarray"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given a binary tree, find the maximum path sum that can start and end at any node. The path must not pass through the same node twice."]
@@ -1516,6 +2165,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BST, DFS]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Binary Search Tree, Inorder Traversal, Iterative Traversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Inorder traversal detecting two misplaced nodes — O(n) time, O(h) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Collect full inorder array + sort — O(n) extra space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/recover-binary-search-tree/",
+        children: "Recover Binary Search Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-11-validate-binary-search-tree",
+        children: "Validate Binary Search Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-1-binary-tree-inorder-traversal",
+        children: "Binary Tree Inorder Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses",
+        children: "Valid Parentheses"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1568,6 +2241,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Tree, BFS, Hash Table]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " DFS, Level Order\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS tagging (col, row) + sort — O(n log n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS without coordinate tracking — cannot group nodes by column\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+        children: "Vertical Order Traversal of a Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-30-all-nodes-distance-k-in-binary-tree",
+        children: "All Nodes Distance K in Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams",
+        children: "Group Anagrams"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Return the vertical order traversal from leftmost to rightmost. If two nodes are in the same row and column, sort by value."]
@@ -1610,6 +2307,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Tree, BFS, Graph, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " BFS, DFS, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " DFS parent map + BFS from target — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " DFS downward from target only — misses nodes reachable through ancestors\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+        children: "All Nodes Distance K in Binary Tree"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-17-lowest-common-ancestor-of-a-binary-tree",
+        children: "Lowest Common Ancestor of a Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-29-vertical-order-traversal-of-a-binary-tree",
+        children: "Vertical Order Traversal of a Binary Tree"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

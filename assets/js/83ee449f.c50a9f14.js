@@ -502,1542 +502,384 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-1-arrays--hashing",
       children: "Pattern 1: Arrays & Hashing"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two Sum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Use hash map for O(n). Complement = target - current"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Contains Duplicate"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Set lookup. O(n) time, O(n) space"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Valid Anagram"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, A, M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort both strings or count char frequencies"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Group Anagrams"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, M, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort each word as key, map to list of anagrams"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Top K Frequent Elements"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Bucket sort or quickselect. O(n)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Product of Array Except Self"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, M, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Prefix and suffix products. No division"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Consecutive Sequence"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Set membership check. O(n)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "8"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Encode and Decode Strings"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Length-prefix encoding: len + delimiter + str"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "9"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "First Missing Positive"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Cyclic sort: place each number at its index"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "10"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Substring Without Repeating"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sliding window with char set"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Two Sum | Easy | All | Use hash map for O(n). Complement = target - current | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/two-sum/",
+        children: "Two Sum"
+      }), " |\n| 2 | Contains Duplicate | Easy | All | Set lookup. O(n) time, O(n) space | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/contains-duplicate/",
+        children: "Contains Duplicate"
+      }), " |\n| 3 | Valid Anagram | Easy | G, A, M | Sort both strings or count char frequencies | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-anagram/",
+        children: "Valid Anagram"
+      }), " |\n| 4 | Group Anagrams | Medium | G, M, A | Sort each word as key, map to list of anagrams | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/group-anagrams/",
+        children: "Group Anagrams"
+      }), " |\n| 5 | Top K Frequent Elements | Medium | G, F, M | Bucket sort or quickselect. O(n) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/top-k-frequent-elements/",
+        children: "Top K Frequent Elements"
+      }), " |\n| 6 | Product of Array Except Self | Medium | G, M, A | Prefix and suffix products. No division | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/product-of-array-except-self/",
+        children: "Product of Array Except Self"
+      }), " |\n| 7 | Longest Consecutive Sequence | Medium | G, F | Set membership check. O(n) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-consecutive-sequence/",
+        children: "Longest Consecutive Sequence"
+      }), " |\n| 8 | Encode and Decode Strings | Medium | M | Length-prefix encoding: len + delimiter + str | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/encode-and-decode-strings/",
+        children: "Encode and Decode Strings"
+      }), " |\n| 9 | First Missing Positive | Hard | G, A | Cyclic sort: place each number at its index | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/first-missing-positive/",
+        children: "First Missing Positive"
+      }), " |\n| 10 | Longest Substring Without Repeating | Medium | G, F, A | Sliding window with char set | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        children: "Longest Substring Without Repeating"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-2-two-pointers",
       children: "Pattern 2: Two Pointers"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Valid Palindrome"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two pointers from ends. Skip non-alphanumeric"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two Sum II - Sorted"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Left + right pointer, adjust based on sum"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "3Sum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort first, fix one element, two-pointer the rest"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Container With Most Water"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two pointers, move the shorter inward"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Trapping Rain Water"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Left/right max arrays. Or two-pointer on heights"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Remove Duplicates from Sorted"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Slow/fast pointer. Write unique elements"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Move Zeroes"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "One pointer for next non-zero position"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Valid Palindrome | Easy | All | Two pointers from ends. Skip non-alphanumeric | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-palindrome/",
+        children: "Valid Palindrome"
+      }), " |\n| 2 | Two Sum II - Sorted | Medium | G, A | Left + right pointer, adjust based on sum | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+        children: "Two Sum II - Sorted"
+      }), " |\n| 3 | 3Sum | Medium | G, F, A | Sort first, fix one element, two-pointer the rest | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/3sum/",
+        children: "3Sum"
+      }), " |\n| 4 | Container With Most Water | Medium | G, F, A | Two pointers, move the shorter inward | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/container-with-most-water/",
+        children: "Container With Most Water"
+      }), " |\n| 5 | Trapping Rain Water | Hard | G, F, A | Left/right max arrays. Or two-pointer on heights | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/trapping-rain-water/",
+        children: "Trapping Rain Water"
+      }), " |\n| 6 | Remove Duplicates from Sorted | Easy | A | Slow/fast pointer. Write unique elements | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        children: "Remove Duplicates from Sorted"
+      }), " |\n| 7 | Move Zeroes | Easy | F | One pointer for next non-zero position | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/move-zeroes/",
+        children: "Move Zeroes"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-3-sliding-window",
       children: "Pattern 3: Sliding Window"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Best Time to Buy and Sell Stock"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Track min price, compute max profit"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Substring Without Repeating"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Expand right, shrink left when duplicate found"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Repeating Character Replacement"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Max frequency in window determines replacements"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Minimum Window Substring"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two hash maps: have vs need. Shrink when satisfied"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sliding Window Maximum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Deque for O(n). Maintain decreasing values"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Permutation in String"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Frequency array + sliding window of same length"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Best Time to Buy and Sell Stock | Easy | All | Track min price, compute max profit | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        children: "Best Time to Buy and Sell Stock"
+      }), " |\n| 2 | Longest Substring Without Repeating | Medium | G, F, A | Expand right, shrink left when duplicate found | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        children: "Longest Substring Without Repeating"
+      }), " |\n| 3 | Longest Repeating Character Replacement | Medium | G, M | Max frequency in window determines replacements | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        children: "Longest Repeating Character Replacement"
+      }), " |\n| 4 | Minimum Window Substring | Hard | G, F, A | Two hash maps: have vs need. Shrink when satisfied | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-window-substring/",
+        children: "Minimum Window Substring"
+      }), " |\n| 5 | Sliding Window Maximum | Hard | G, A | Deque for O(n). Maintain decreasing values | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sliding-window-maximum/",
+        children: "Sliding Window Maximum"
+      }), " |\n| 6 | Permutation in String | Medium | M | Frequency array + sliding window of same length | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/permutation-in-string/",
+        children: "Permutation in String"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-4-binary-search",
       children: "Pattern 4: Binary Search"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary Search"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Classic divide and conquer"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Search a 2D Matrix"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Treat as flattened array, row = mid//cols"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Find Minimum in Rotated Sorted Array"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Compare mid with right to find rotation"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Search in Rotated Sorted Array"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary search, check which half is sorted"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Koko Eating Bananas"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary search on answer (eating speed)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Time Based Key-Value Store"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Dict of lists (sorted by time), binary search"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Median of Two Sorted Arrays"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Partition both arrays, binary search on smaller"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Binary Search | Easy | All | Classic divide and conquer | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-search/",
+        children: "Binary Search"
+      }), " |\n| 2 | Search a 2D Matrix | Medium | All | Treat as flattened array, row = mid//cols | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/search-a-2d-matrix/",
+        children: "Search a 2D Matrix"
+      }), " |\n| 3 | Find Minimum in Rotated Sorted Array | Medium | G, F, A | Compare mid with right to find rotation | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        children: "Find Minimum in Rotated Sorted Array"
+      }), " |\n| 4 | Search in Rotated Sorted Array | Medium | G, F, A | Binary search, check which half is sorted | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        children: "Search in Rotated Sorted Array"
+      }), " |\n| 5 | Koko Eating Bananas | Medium | G, F | Binary search on answer (eating speed) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/koko-eating-bananas/",
+        children: "Koko Eating Bananas"
+      }), " |\n| 6 | Time Based Key-Value Store | Medium | G, F | Dict of lists (sorted by time), binary search | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/time-based-key-value-store/",
+        children: "Time Based Key-Value Store"
+      }), " |\n| 7 | Median of Two Sorted Arrays | Hard | G, A | Partition both arrays, binary search on smaller | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        children: "Median of Two Sorted Arrays"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-5-linked-lists",
       children: "Pattern 5: Linked Lists"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Reverse Linked List"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Three pointers: prev, curr, next"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Merge Two Sorted Lists"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Dummy head, compare and link"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Linked List Cycle"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Tortoise and hare. Fast/slow pointer"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Remove Nth Node From End"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two pointers with n-gap"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Reorder List"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Find middle, reverse second half, merge"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Merge K Sorted Lists"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Divide and conquer or min-heap"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "LRU Cache"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Doubly linked list + hash map. O(1)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "8"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Copy List with Random Pointer"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Interleave copied nodes, assign random, detach"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Reverse Linked List | Easy | All | Three pointers: prev, curr, next | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-linked-list/",
+        children: "Reverse Linked List"
+      }), " |\n| 2 | Merge Two Sorted Lists | Easy | All | Dummy head, compare and link | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-two-sorted-lists/",
+        children: "Merge Two Sorted Lists"
+      }), " |\n| 3 | Linked List Cycle | Easy | All | Tortoise and hare. Fast/slow pointer | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/linked-list-cycle/",
+        children: "Linked List Cycle"
+      }), " |\n| 4 | Remove Nth Node From End | Medium | G, F, A | Two pointers with n-gap | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        children: "Remove Nth Node From End"
+      }), " |\n| 5 | Reorder List | Medium | G, F, A | Find middle, reverse second half, merge | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reorder-list/",
+        children: "Reorder List"
+      }), " |\n| 6 | Merge K Sorted Lists | Hard | G, F, A | Divide and conquer or min-heap | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-k-sorted-lists/",
+        children: "Merge K Sorted Lists"
+      }), " |\n| 7 | LRU Cache | Medium | G, F, A | Doubly linked list + hash map. O(1) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/lru-cache/",
+        children: "LRU Cache"
+      }), " |\n| 8 | Copy List with Random Pointer | Medium | G, F | Interleave copied nodes, assign random, detach | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        children: "Copy List with Random Pointer"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-6-stacks--queues",
       children: "Pattern 6: Stacks & Queues"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Valid Parentheses"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Stack, match closing with top"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Min Stack"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Stack of pairs (value, currentMin)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Evaluate Reverse Polish Notation"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Stack for operands, apply operator"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Daily Temperatures"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Monotonic decreasing stack"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Car Fleet"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort by position, compute time to target, stack"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Largest Rectangle in Histogram"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Monotonic stack. Compute area at each popped bar"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Valid Parentheses | Easy | All | Stack, match closing with top | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-parentheses/",
+        children: "Valid Parentheses"
+      }), " |\n| 2 | Min Stack | Medium | G, F, A | Stack of pairs (value, currentMin) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/min-stack/",
+        children: "Min Stack"
+      }), " |\n| 3 | Evaluate Reverse Polish Notation | Medium | G, F | Stack for operands, apply operator | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        children: "Evaluate Reverse Polish Notation"
+      }), " |\n| 4 | Daily Temperatures | Medium | G, F | Monotonic decreasing stack | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/daily-temperatures/",
+        children: "Daily Temperatures"
+      }), " |\n| 5 | Car Fleet | Medium | G, F | Sort by position, compute time to target, stack | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/car-fleet/",
+        children: "Car Fleet"
+      }), " |\n| 6 | Largest Rectangle in Histogram | Hard | G, F, A | Monotonic stack. Compute area at each popped bar | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        children: "Largest Rectangle in Histogram"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-7-trees",
       children: "Pattern 7: Trees"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Maximum Depth of Binary Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Recursive DFS. Max(left, right) + 1"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Invert Binary Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Swap left and right recursively"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Same Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Recursive: check root then left and right"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Subtree of Another Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Check equality at each node"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Lowest Common Ancestor of BST"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Split: if p<root<q then root is LCA"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary Tree Level Order Traversal"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "BFS queue. Process level by level"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Validate BST"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "In-order traversal must be sorted. Or min/max bounds"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "8"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary Tree from Preorder and Inorder"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "First in preorder is root. Split inorder"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "9"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Serialize and Deserialize Binary Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "BFS with null markers. DFS also works"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "10"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Diameter of Binary Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "DFS, return max(left,right)+1, update global max"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Maximum Depth of Binary Tree | Easy | All | Recursive DFS. Max(left, right) + 1 | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        children: "Maximum Depth of Binary Tree"
+      }), " |\n| 2 | Invert Binary Tree | Easy | G | Swap left and right recursively | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/invert-binary-tree/",
+        children: "Invert Binary Tree"
+      }), " |\n| 3 | Same Tree | Easy | All | Recursive: check root then left and right | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/same-tree/",
+        children: "Same Tree"
+      }), " |\n| 4 | Subtree of Another Tree | Easy | G, F | Check equality at each node | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/subtree-of-another-tree/",
+        children: "Subtree of Another Tree"
+      }), " |\n| 5 | Lowest Common Ancestor of BST | Medium | G, F, A | Split: if p<root<q then root is LCA | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        children: "Lowest Common Ancestor of BST"
+      }), " |\n| 6 | Binary Tree Level Order Traversal | Medium | G, F, A | BFS queue. Process level by level | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        children: "Binary Tree Level Order Traversal"
+      }), " |\n| 7 | Validate BST | Medium | G, F, A | In-order traversal must be sorted. Or min/max bounds | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/validate-binary-search-tree/",
+        children: "Validate BST"
+      }), " |\n| 8 | Binary Tree from Preorder and Inorder | Medium | G, F | First in preorder is root. Split inorder | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        children: "Binary Tree from Preorder and Inorder"
+      }), " |\n| 9 | Serialize and Deserialize Binary Tree | Hard | G, F, A | BFS with null markers. DFS also works | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        children: "Serialize and Deserialize Binary Tree"
+      }), " |\n| 10 | Diameter of Binary Tree | Easy | All | DFS, return max(left,right)+1, update global max | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/diameter-of-binary-tree/",
+        children: "Diameter of Binary Tree"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-8-heaps--priority-queues",
       children: "Pattern 8: Heaps & Priority Queues"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Kth Largest Element in a Stream"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Min-heap of size k"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Kth Largest Element in an Array"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Quickselect avg O(n) or min-heap O(n log k)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Find Median from Data Stream"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two heaps: max-heap for lower half, min-heap for upper"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Task Scheduler"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Max frequency determines idle slots"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Top K Frequent Words"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Min-heap of size k. Compare by freq then lexicographic"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Kth Largest Element in a Stream | Easy | G | Min-heap of size k | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+        children: "Kth Largest Element in a Stream"
+      }), " |\n| 2 | Kth Largest Element in an Array | Medium | G, F, A | Quickselect avg O(n) or min-heap O(n log k) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        children: "Kth Largest Element in an Array"
+      }), " |\n| 3 | Find Median from Data Stream | Hard | G, F, A | Two heaps: max-heap for lower half, min-heap for upper | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/find-median-from-data-stream/",
+        children: "Find Median from Data Stream"
+      }), " |\n| 4 | Task Scheduler | Medium | G, F, A | Max frequency determines idle slots | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/task-scheduler/",
+        children: "Task Scheduler"
+      }), " |\n| 5 | Top K Frequent Words | Medium | G, F | Min-heap of size k. Compare by freq then lexicographic | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/top-k-frequent-words/",
+        children: "Top K Frequent Words"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-9-graphs",
       children: "Pattern 9: Graphs"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Number of Islands"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "DFS/BFS on each unvisited land cell"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Clone Graph"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hash map for visited. DFS/BFS copy"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Course Schedule"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Topological sort via Kahn or DFS cycle detection"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Pacific Atlantic Water Flow"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "DFS from borders inward. Track reachable sets"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Number of Connected Components"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Union-find. Count distinct roots"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Graph Valid Tree"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Check n-1 edges + fully connected"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Word Ladder"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "BFS from start, change one letter at a time"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "8"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Alien Dictionary"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Compare adjacent words, build graph, topological sort"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Number of Islands | Medium | G, F, A | DFS/BFS on each unvisited land cell | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/number-of-islands/",
+        children: "Number of Islands"
+      }), " |\n| 2 | Clone Graph | Medium | G, F | Hash map for visited. DFS/BFS copy | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/clone-graph/",
+        children: "Clone Graph"
+      }), " |\n| 3 | Course Schedule | Medium | G, F, A | Topological sort via Kahn or DFS cycle detection | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/course-schedule/",
+        children: "Course Schedule"
+      }), " |\n| 4 | Pacific Atlantic Water Flow | Medium | G, F | DFS from borders inward. Track reachable sets | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+        children: "Pacific Atlantic Water Flow"
+      }), " |\n| 5 | Number of Connected Components | Medium | F | Union-find. Count distinct roots | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+        children: "Number of Connected Components"
+      }), " |\n| 6 | Graph Valid Tree | Medium | G, F | Check n-1 edges + fully connected | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/graph-valid-tree/",
+        children: "Graph Valid Tree"
+      }), " |\n| 7 | Word Ladder | Hard | G, F, A | BFS from start, change one letter at a time | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-ladder/",
+        children: "Word Ladder"
+      }), " |\n| 8 | Alien Dictionary | Hard | G, F, A | Compare adjacent words, build graph, topological sort | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/alien-dictionary/",
+        children: "Alien Dictionary"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-10-dynamic-programming-1d",
       children: "Pattern 10: Dynamic Programming 1D"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Climbing Stairs"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = dp[i-1] + dp[i-2] (Fibonacci)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "House Robber"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = max(dp[i-1], dp[i-2] + nums[i])"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Coin Change"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = min(dp[i], dp[i-coin] + 1)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Increasing Subsequence"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = max(dp[j] + 1) for j < i. Binary search improves"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Palindromic Substrings"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Expand around center. Count palindromes"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Word Break"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = true if dp[j] and s[j:i] in wordSet"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Decode Ways"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = dp[i-1] + dp[i-2] (if valid two-digit)"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Climbing Stairs | Easy | All | dp[i] = dp[i-1] + dp[i-2] (Fibonacci) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/climbing-stairs/",
+        children: "Climbing Stairs"
+      }), " |\n| 2 | House Robber | Medium | G, F, A | dp[i] = max(dp[i-1], dp[i-2] + nums[i]) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/house-robber/",
+        children: "House Robber"
+      }), " |\n| 3 | Coin Change | Medium | G, F, A | dp[i] = min(dp[i], dp[i-coin] + 1) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/coin-change/",
+        children: "Coin Change"
+      }), " |\n| 4 | Longest Increasing Subsequence | Medium | G, F, A | dp[i] = max(dp[j] + 1) for j < i. Binary search improves | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-increasing-subsequence/",
+        children: "Longest Increasing Subsequence"
+      }), " |\n| 5 | Palindromic Substrings | Medium | G, F | Expand around center. Count palindromes | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/palindromic-substrings/",
+        children: "Palindromic Substrings"
+      }), " |\n| 6 | Word Break | Medium | G, F, A | dp[i] = true if dp[j] and s[j:i] in wordSet | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-break/",
+        children: "Word Break"
+      }), " |\n| 7 | Decode Ways | Medium | G, F, A | dp[i] = dp[i-1] + dp[i-2] (if valid two-digit) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/decode-ways/",
+        children: "Decode Ways"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-11-dynamic-programming-2d",
       children: "Pattern 11: Dynamic Programming 2D"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Unique Paths"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i][j] = dp[i-1][j] + dp[i][j-1]"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Common Subsequence"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j], dp[i][j-1])"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Edit Distance"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + (0 if same else 1))"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Coin Change 2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i][a] = dp[i-1][a] + dp[i][a-coins[i-1]]"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Target Sum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i][s] = count. Or transform to subset sum"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Burst Balloons"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[l][r] = max(dp[l][k-1] + dp[k+1][r] + nums[l-1]*nums[k]*nums[r+1])"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Unique Paths | Medium | All | dp[i][j] = dp[i-1][j] + dp[i][j-1] | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/unique-paths/",
+        children: "Unique Paths"
+      }), " |\n| 2 | Longest Common Subsequence | Medium | G, F, A | dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j], dp[i][j-1]) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-common-subsequence/",
+        children: "Longest Common Subsequence"
+      }), " |\n| 3 | Edit Distance | Hard | G, F, A | dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + (0 if same else 1)) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/edit-distance/",
+        children: "Edit Distance"
+      }), " |\n| 4 | Coin Change 2 | Medium | G, F | dp[i][a] = dp[i-1][a] + dp[i][a-coins[i-1]] | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/coin-change-ii/",
+        children: "Coin Change 2"
+      }), " |\n| 5 | Target Sum | Medium | G, F | dp[i][s] = count. Or transform to subset sum | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/target-sum/",
+        children: "Target Sum"
+      }), " |\n| 6 | Burst Balloons | Hard | G, F | dp[l][r] = max(dp[l][k-1] + dp[k+1][r] + nums[l-1]*nums[k]*nums[r+1]) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/burst-balloons/",
+        children: "Burst Balloons"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-12-backtracking",
       children: "Pattern 12: Backtracking"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Subsets"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Backtrack: include/exclude each element"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Permutations"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Swap each element with current position"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Combination Sum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort first. Choose or skip, same element allowed multiple times"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Letter Combinations of Phone Number"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Build string digit by digit. Map digit to letters"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "N-Queens"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Place queen per row. Check col, diag, anti-diag"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Word Search"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "DFS from each cell. Mark visited on path"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Subsets | Medium | G, F, A | Backtrack: include/exclude each element | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/subsets/",
+        children: "Subsets"
+      }), " |\n| 2 | Permutations | Medium | G, F, A | Swap each element with current position | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/permutations/",
+        children: "Permutations"
+      }), " |\n| 3 | Combination Sum | Medium | G, F, A | Sort first. Choose or skip, same element allowed multiple times | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/combination-sum/",
+        children: "Combination Sum"
+      }), " |\n| 4 | Letter Combinations of Phone Number | Medium | G, F, A | Build string digit by digit. Map digit to letters | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+        children: "Letter Combinations of Phone Number"
+      }), " |\n| 5 | N-Queens | Hard | G, F, A | Place queen per row. Check col, diag, anti-diag | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/n-queens/",
+        children: "N-Queens"
+      }), " |\n| 6 | Word Search | Medium | G, F, A | DFS from each cell. Mark visited on path | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-search/",
+        children: "Word Search"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-13-tries",
       children: "Pattern 13: Tries"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Implement Trie"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "TrieNode with children map and isEnd flag"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Word Search II"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Trie for dictionary, DFS on board"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Prefix and Suffix Search"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Insert all prefix+suffix combos"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Replace Words"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "M"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Insert dictionary in trie, replace words"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Implement Trie | Medium | G, F | TrieNode with children map and isEnd flag | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        children: "Implement Trie"
+      }), " |\n| 2 | Word Search II | Hard | G, F, A | Trie for dictionary, DFS on board | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-search-ii/",
+        children: "Word Search II"
+      }), " |\n| 3 | Prefix and Suffix Search | Hard | G, F | Insert all prefix+suffix combos | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/prefix-and-suffix-search/",
+        children: "Prefix and Suffix Search"
+      }), " |\n| 4 | Replace Words | Medium | M | Insert dictionary in trie, replace words | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/replace-words/",
+        children: "Replace Words"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-14-intervals",
       children: "Pattern 14: Intervals"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Meeting Rooms"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort by start, check overlap with next"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Merge Intervals"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort by start, merge if overlapping"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Insert Interval"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Process before overlap, merge overlap, after"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Non Overlapping Intervals"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort by end, greedy. Remove intervals with earlier end"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Meeting Rooms II"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Chronological ordering or min-heap of end times"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Minimum Interval in Range Queries"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort intervals, min-heap for smallest covering"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Meeting Rooms | Easy | G, F, A | Sort by start, check overlap with next | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/meeting-rooms/",
+        children: "Meeting Rooms"
+      }), " |\n| 2 | Merge Intervals | Medium | G, F, A | Sort by start, merge if overlapping | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-intervals/",
+        children: "Merge Intervals"
+      }), " |\n| 3 | Insert Interval | Medium | G, F, A | Process before overlap, merge overlap, after | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/insert-interval/",
+        children: "Insert Interval"
+      }), " |\n| 4 | Non Overlapping Intervals | Medium | G, F, A | Sort by end, greedy. Remove intervals with earlier end | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/non-overlapping-intervals/",
+        children: "Non Overlapping Intervals"
+      }), " |\n| 5 | Meeting Rooms II | Medium | G, F, A | Chronological ordering or min-heap of end times | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/meeting-rooms-ii/",
+        children: "Meeting Rooms II"
+      }), " |\n| 6 | Minimum Interval in Range Queries | Hard | G | Sort intervals, min-heap for smallest covering | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+        children: "Minimum Interval in Range Queries"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-15-math--bit-manipulation",
       children: "Pattern 15: Math & Bit Manipulation"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Single Number"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "XOR all elements. Duplicates cancel"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Number of 1 Bits"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "n & (n-1) clears lowest set bit"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Reverse Bits"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Build result bit by bit"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Missing Number"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "XOR indices with values. Or sum formula"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sum of Two Integers"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Bit manipulation: carry = a&b, sum = a^b"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Pow(x, n)"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary exponentiation O(log n)"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Single Number | Easy | All | XOR all elements. Duplicates cancel | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/single-number/",
+        children: "Single Number"
+      }), " |\n| 2 | Number of 1 Bits | Easy | All | n & (n-1) clears lowest set bit | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/number-of-1-bits/",
+        children: "Number of 1 Bits"
+      }), " |\n| 3 | Reverse Bits | Easy | G | Build result bit by bit | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-bits/",
+        children: "Reverse Bits"
+      }), " |\n| 4 | Missing Number | Easy | G, F | XOR indices with values. Or sum formula | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/missing-number/",
+        children: "Missing Number"
+      }), " |\n| 5 | Sum of Two Integers | Medium | G, F, A | Bit manipulation: carry = a&b, sum = a^b | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sum-of-two-integers/",
+        children: "Sum of Two Integers"
+      }), " |\n| 6 | Pow(x, n) | Medium | G, F, A | Binary exponentiation O(log n) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/powx-n/",
+        children: "Pow(x, n)"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "company-specific-focus",
       children: "Company-Specific Focus"
@@ -2321,447 +1163,113 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-16-more-dp-problems",
       children: "Pattern 16: More DP Problems"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Counting Bits"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = dp[i>>1] + (i & 1)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Min Cost Climbing Stairs"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[i] = cost[i] + min(dp[i-1], dp[i-2])"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Partition Equal Subset Sum"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "dp[s] = true if subset sums to s"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Maximum Product Subarray"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Track min and max at each position"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Unique Paths II"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Skip obstacles in DP table"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Palindromic Substring"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Expand around center or DP table"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Interleaving String"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "2D DP: dp[i][j] = match s3[i+j-1] with s1[i-1] or s2[j-1]"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Counting Bits | Easy | All | dp[i] = dp[i>>1] + (i & 1) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/counting-bits/",
+        children: "Counting Bits"
+      }), " |\n| 2 | Min Cost Climbing Stairs | Easy | All | dp[i] = cost[i] + min(dp[i-1], dp[i-2]) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/min-cost-climbing-stairs/",
+        children: "Min Cost Climbing Stairs"
+      }), " |\n| 3 | Partition Equal Subset Sum | Medium | G, F, A | dp[s] = true if subset sums to s | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/partition-equal-subset-sum/",
+        children: "Partition Equal Subset Sum"
+      }), " |\n| 4 | Maximum Product Subarray | Medium | G, F, A | Track min and max at each position | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-product-subarray/",
+        children: "Maximum Product Subarray"
+      }), " |\n| 5 | Unique Paths II | Medium | G, F | Skip obstacles in DP table | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/unique-paths-ii/",
+        children: "Unique Paths II"
+      }), " |\n| 6 | Longest Palindromic Substring | Medium | G, F, A | Expand around center or DP table | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-palindromic-substring/",
+        children: "Longest Palindromic Substring"
+      }), " |\n| 7 | Interleaving String | Medium | G, F | 2D DP: dp[i][j] = match s3[i+j-1] with s1[i-1] or s2[j-1] | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/interleaving-string/",
+        children: "Interleaving String"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-17-greedy",
       children: "Pattern 17: Greedy"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Maximum Subarray"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Kadane: current = max(num, current+num), max = max(max, current)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Jump Game"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Track farthest reachable index. If i > farthest, fail"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Jump Game II"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "BFS-like: current end, farthest reachable, count jumps"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Gas Station"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "If total gas < total cost, impossible. Start where gas-cost is negative"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hand of Straights"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort, group consecutive, use frequency map"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Merge Triplets"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Greedy: track which positions can reach target values"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Maximum Subarray | Medium | All | Kadane: current = max(num, current+num), max = max(max, current) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/maximum-subarray/",
+        children: "Maximum Subarray"
+      }), " |\n| 2 | Jump Game | Medium | G, F, A | Track farthest reachable index. If i > farthest, fail | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/jump-game/",
+        children: "Jump Game"
+      }), " |\n| 3 | Jump Game II | Medium | G, F, A | BFS-like: current end, farthest reachable, count jumps | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/jump-game-ii/",
+        children: "Jump Game II"
+      }), " |\n| 4 | Gas Station | Medium | G, F, A | If total gas < total cost, impossible. Start where gas-cost is negative | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/gas-station/",
+        children: "Gas Station"
+      }), " |\n| 5 | Hand of Straights | Medium | G, F | Sort, group consecutive, use frequency map | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/hand-of-straights/",
+        children: "Hand of Straights"
+      }), " |\n| 6 | Merge Triplets | Medium | G | Greedy: track which positions can reach target values | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/",
+        children: "Merge Triplets"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-18-advanced-graphs",
       children: "Pattern 18: Advanced Graphs"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Reconstruct Itinerary"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Eulerian path. DFS with post-order, process lexical order"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Minimum Height Trees"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Topological removal of leaves. Repeat until 1-2 nodes remain"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Network Delay Time"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Dijkstra from source. Max distance among reachable nodes"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Cheapest Flights Within K Stops"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Bellman-Ford. Relax K+1 times"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Swim in Rising Water"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Binary search + BFS, or Dijkstra (minimize max along path)"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Alien Dictionary"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Build graph from adjacent word diffs. Topological sort"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Bus Routes"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "BFS on bus stops and bus lines. Each stop connects to all its lines"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Reconstruct Itinerary | Hard | G | Eulerian path. DFS with post-order, process lexical order | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reconstruct-itinerary/",
+        children: "Reconstruct Itinerary"
+      }), " |\n| 2 | Minimum Height Trees | Medium | G | Topological removal of leaves. Repeat until 1-2 nodes remain | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/minimum-height-trees/",
+        children: "Minimum Height Trees"
+      }), " |\n| 3 | Network Delay Time | Medium | G, F | Dijkstra from source. Max distance among reachable nodes | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/network-delay-time/",
+        children: "Network Delay Time"
+      }), " |\n| 4 | Cheapest Flights Within K Stops | Medium | G, F | Bellman-Ford. Relax K+1 times | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+        children: "Cheapest Flights Within K Stops"
+      }), " |\n| 5 | Swim in Rising Water | Hard | G | Binary search + BFS, or Dijkstra (minimize max along path) | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/swim-in-rising-water/",
+        children: "Swim in Rising Water"
+      }), " |\n| 6 | Alien Dictionary | Hard | G, F, A | Build graph from adjacent word diffs. Topological sort | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/alien-dictionary/",
+        children: "Alien Dictionary"
+      }), " |\n| 7 | Bus Routes | Hard | G | BFS on bus stops and bus lines. Each stop connects to all its lines | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/bus-routes/",
+        children: "Bus Routes"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "pattern-19-string-problems",
       children: "Pattern 19: String Problems"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "#"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Problem"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Difficulty"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Company"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hint"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Valid Palindrome II"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Two pointers. Skip one char if mismatch"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Longest Common Prefix"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Sort and compare first and last, or vertical scanning"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "3"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Reverse Words in a String"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Split, reverse, join. Or two-pointer reverse each word"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "4"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Integer to Roman"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Greedy: largest value symbols first"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "5"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Roman to Integer"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Left-to-right, subtract when smaller before larger"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "6"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Text Justification"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Greedy line packing. Distribute spaces evenly"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "7"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Valid Number"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hard"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "State machine or regex. Check digits, dot, sign, exponent"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "8"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "First Unique Character in a String"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Easy"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "All"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Frequency array, second pass for first with count 1"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "9"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "String to Integer (atoi)"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Skip whitespace, handle sign, overflow, non-digit chars"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "10"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Generate Parentheses"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "G, F, A"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Backtracking: track open and close counts, add only if valid"
-          })]
-        })]
-      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["| # | Problem | Difficulty | Company | Hint | LeetCode |\n|---|---------|-----------|---------|------|\n| 1 | Valid Palindrome II | Easy | G, F | Two pointers. Skip one char if mismatch | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-palindrome-ii/",
+        children: "Valid Palindrome II"
+      }), " |\n| 2 | Longest Common Prefix | Easy | All | Sort and compare first and last, or vertical scanning | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/longest-common-prefix/",
+        children: "Longest Common Prefix"
+      }), " |\n| 3 | Reverse Words in a String | Medium | G, F, A | Split, reverse, join. Or two-pointer reverse each word | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-words-in-a-string/",
+        children: "Reverse Words in a String"
+      }), " |\n| 4 | Integer to Roman | Medium | G, F, A | Greedy: largest value symbols first | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/integer-to-roman/",
+        children: "Integer to Roman"
+      }), " |\n| 5 | Roman to Integer | Easy | G, F, A | Left-to-right, subtract when smaller before larger | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/roman-to-integer/",
+        children: "Roman to Integer"
+      }), " |\n| 6 | Text Justification | Hard | G, F, A | Greedy line packing. Distribute spaces evenly | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/text-justification/",
+        children: "Text Justification"
+      }), " |\n| 7 | Valid Number | Hard | G | State machine or regex. Check digits, dot, sign, exponent | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-number/",
+        children: "Valid Number"
+      }), " |\n| 8 | First Unique Character in a String | Easy | All | Frequency array, second pass for first with count 1 | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/first-unique-character-in-a-string/",
+        children: "First Unique Character in a String"
+      }), " |\n| 9 | String to Integer (atoi) | Medium | G, F, A | Skip whitespace, handle sign, overflow, non-digit chars | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/string-to-integer-atoi/",
+        children: "String to Integer (atoi)"
+      }), " |\n| 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/generate-parentheses/",
+        children: "Generate Parentheses"
+      }), " |"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "examples",
       children: "Examples"

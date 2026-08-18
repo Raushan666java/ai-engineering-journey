@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 07: Dynamic Programming | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/07-dynamic-programming"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 07: Dynamic Programming | AI Engineering Journey"><meta data-rh="true" name="description" content="Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews."><meta data-rh="true" property="og:description" content="Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/07-dynamic-programming"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/07-dynamic-programming" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/07-dynamic-programming" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 07: Dynamic Programming","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/07-dynamic-programming"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -36,6 +36,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Math, Memoization]</p>
+<p>🧩 <strong>Pattern:</strong> Fibonacci-style, Memoization (Top-Down)
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(2^n), TLE at n ≥ 30
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/climbing-stairs/" target="_blank" rel="noopener noreferrer" class="">Climbing Stairs</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number">Fibonacci Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-5-min-cost-climbing-stairs">Min Cost Climbing Stairs</a></p>
 <p><strong>Problem:</strong> You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: 1+1, 2</span><br></div></code></pre></div></div>
@@ -58,6 +63,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> 1D DP, Fibonacci-style
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Greedy (rob every other house) — fails; skipping a house for a bigger neighbor needs DP
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/house-robber/" target="_blank" rel="noopener noreferrer" class="">House Robber</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-25-house-robber-ii">House Robber II</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-23-maximum-alternating-subsequence-sum">Maximum Alternating Subsequence Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Given an array of money in houses, rob the maximum amount without robbing adjacent houses.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Rob house 1 (1) + house 3 (3) = 4</span><br></div></code></pre></div></div>
@@ -75,6 +85,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [LinkedIn]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Array, Divide and Conquer]</p>
+<p>🧩 <strong>Pattern:</strong> 1D DP (Kadane&#x27;s), Greedy-as-alternative
+✅ <strong>Best Option:</strong> Tabulation (Kadane&#x27;s) — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Divide and Conquer — O(n log n), correct but slower than Kadane
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreferrer" class="">Maximum Subarray</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray (Kadane&#x27;s Algorithm)</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Find the contiguous subarray with the largest sum.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -92,6 +107,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Math, Recursion]</p>
+<p>🧩 <strong>Pattern:</strong> Fibonacci-style, Memoization (Top-Down)
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(2^n), recomputes overlapping subproblems
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/fibonacci-number/" target="_blank" rel="noopener noreferrer" class="">Fibonacci Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs">Climbing Stairs</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-8-tribonacci-number">Tribonacci Number</a></p>
 <p><strong>Problem:</strong> Return the nth Fibonacci number.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 (0, 1, 1, 2, 3)</span><br></div></code></pre></div></div>
@@ -105,6 +125,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Fibonacci-style, 1D DP
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Greedy (always take the cheaper immediate step) — fails; local choices ignore future costs
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/min-cost-climbing-stairs/" target="_blank" rel="noopener noreferrer" class="">Min Cost Climbing Stairs</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs">Climbing Stairs</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-18-decode-ways">Decode Ways</a></p>
 <p><strong>Problem:</strong> Given an array where cost[i] is the cost of stepping on stair i, find the minimum cost to reach the top. You can start from step 0 or 1, and climb 1 or 2 steps.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: cost = [10, 15, 20]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 15</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Start at 1, pay 15, climb 2 to top.</span><br></div></code></pre></div></div>
@@ -118,6 +143,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Tabulation (Bottom-Up), Grid DP
+✅ <strong>Best Option:</strong> Tabulation — O(n²) time, O(n²) space
+❌ <strong>Not Optimal:</strong> Combinatorics per cell (nCr) — O(n²) factorial computations with overflow risk
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/pascals-triangle/" target="_blank" rel="noopener noreferrer" class="">Pascal&#x27;s Triangle</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-12-product-of-array-except-self">Product of Array Except Self</a></p>
 <p><strong>Problem:</strong> Generate the first numRows of Pascal&#x27;s triangle.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: numRows = 5</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]</span><br></div></code></pre></div></div>
@@ -131,6 +161,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Math]</p>
+<p>🧩 <strong>Pattern:</strong> Math Insight, Fibonacci-style (game DP)
+✅ <strong>Best Option:</strong> Math shortcut (even n always wins) — O(1) time, O(1) space
+❌ <strong>Not Optimal:</strong> Full game DP — O(n²) time, O(n) space; overkill when the parity insight exists
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/divisor-game/" target="_blank" rel="noopener noreferrer" class="">Divisor Game</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number">Fibonacci Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-6-missing-number">Missing Number</a></p>
 <p><strong>Problem:</strong> Alice and Bob take turns. On each turn, choose x where 0 &lt; x &lt; n and n % x == 0, replace n with n - x. If a player cannot move, they lose. Alice starts. Return true if she wins with optimal play.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -149,6 +184,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Math]</p>
+<p>🧩 <strong>Pattern:</strong> Fibonacci-style
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(3^n), TLE at n ≥ 30
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/n-th-tribonacci-number/" target="_blank" rel="noopener noreferrer" class="">N-th Tribonacci Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number">Fibonacci Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs">Climbing Stairs</a></p>
 <p><strong>Problem:</strong> T₀ = 0, T₁ = 1, T₂ = 1, Tₙ = Tₙ₋₁ + Tₙ₋₂ + Tₙ₋₃. Return Tₙ.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: 0,1,1,2,4</span><br></div></code></pre></div></div>
@@ -162,6 +202,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Array, Math]</p>
+<p>🧩 <strong>Pattern:</strong> Sorting, Greedy-as-alternative
+✅ <strong>Best Option:</strong> Sort and check two candidates — O(n log n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute-force triple loop — O(n³), TLE at n ≥ 1000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-product-of-three-numbers/" target="_blank" rel="noopener noreferrer" class="">Maximum Product of Three Numbers</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray (Kadane&#x27;s Algorithm)</a></p>
 <p><strong>Problem:</strong> Find the maximum product of any three numbers from the array.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 6</span><br></div></code></pre></div></div>
@@ -179,6 +224,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [DP, Bit Manipulation]</p>
+<p>🧩 <strong>Pattern:</strong> Tabulation (Bottom-Up), Bit Manipulation
+✅ <strong>Best Option:</strong> DP recurrence ans[i] = ans[i &gt;&gt; 1] + (i &amp; 1) — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Popcount per number — O(n log n), recomputes bits from scratch
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/counting-bits/" target="_blank" rel="noopener noreferrer" class="">Counting Bits</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-4-fibonacci-number">Fibonacci Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a></p>
 <p><strong>Problem:</strong> Given n, return an array of length n+1 where ans[i] is the number of 1 bits in binary representation of i.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: n = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [0, 1, 1]</span><br></div></code></pre></div></div>
@@ -198,6 +248,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, BFS, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Unbounded Knapsack, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> Tabulation — O(n × amount) time, O(amount) space
+❌ <strong>Not Optimal:</strong> Greedy (largest coin first) — fails: coins [1, 3, 4], amount 6 → 3 coins (4+1+1) vs optimal 2 (3+3)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/coin-change/" target="_blank" rel="noopener noreferrer" class="">Coin Change</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-24-coin-change-ii">Coin Change II</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Given coins of different denominations and a total amount, return the fewest coins needed to make that amount. Return -1 if impossible.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: coins = [1, 2, 5], amount = 11</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 (5 + 5 + 1)</span><br></div></code></pre></div></div>
@@ -216,6 +271,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Binary Search]</p>
+<p>🧩 <strong>Pattern:</strong> LIS, Tabulation (Bottom-Up), Binary Search
+✅ <strong>Best Option:</strong> Patience sorting (tails + binary search) — O(n log n) time, O(n) space
+❌ <strong>Not Optimal:</strong> O(n²) tabulation — correct but TLE at n ≥ 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-increasing-subsequence/" target="_blank" rel="noopener noreferrer" class="">Longest Increasing Subsequence</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence">Longest Common Subsequence</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-30-count-of-smaller-numbers-after-self">Count of Smaller Numbers After Self</a></p>
 <p><strong>Problem:</strong> Find the length of the longest strictly increasing subsequence.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [10, 9, 2, 5, 3, 7, 101, 18]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4 ([2, 3, 7, 101])</span><br></div></code></pre></div></div>
@@ -238,6 +298,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, String]</p>
+<p>🧩 <strong>Pattern:</strong> LCS / String DP, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(2^(m+n)), TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-common-subsequence/" target="_blank" rel="noopener noreferrer" class="">Longest Common Subsequence</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp">Edit Distance</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-26-longest-palindromic-substring-dp">Longest Palindromic Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a></p>
 <p><strong>Problem:</strong> Given two strings, find the length of their longest common subsequence.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: text1 = &quot;abcde&quot;, text2 = &quot;ace&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 (&quot;ace&quot;)</span><br></div></code></pre></div></div>
@@ -255,6 +320,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Math, Combinatorics]</p>
+<p>🧩 <strong>Pattern:</strong> Grid DP, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Recursive DFS — O(2^(m+n)), TLE at m, n ≥ 30
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/unique-paths/" target="_blank" rel="noopener noreferrer" class="">Unique Paths</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-15-unique-paths-ii">Unique Paths II</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-19-shortest-path-in-binary-matrix">Shortest Path in Binary Matrix</a></p>
 <p><strong>Problem:</strong> A robot is at top-left of an m×n grid. It can only move down or right. How many unique paths to bottom-right?</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: m = 3, n = 7</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 28</span><br></div></code></pre></div></div>
@@ -277,6 +347,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Matrix]</p>
+<p>🧩 <strong>Pattern:</strong> Grid DP, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Recursive DFS without memoization — O(2^(m+n)), TLE with obstacles
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/unique-paths-ii/" target="_blank" rel="noopener noreferrer" class="">Unique Paths II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-21-minimum-path-sum">Minimum Path Sum</a></p>
 <p><strong>Problem:</strong> Same as Unique Paths but with obstacles (1 = obstacle).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -290,6 +365,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Greedy, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Greedy-as-alternative, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> Greedy (max reach) — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> 1D DP — O(n²) time, O(n) space; correct but slower than greedy
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/jump-game/" target="_blank" rel="noopener noreferrer" class="">Jump Game</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-16-jump-game-greedy">Jump Game (Greedy)</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-24-jump-game-ii">Jump Game II</a></p>
 <p><strong>Problem:</strong> Given an array where nums[i] is max jump length, determine if you can reach the last index.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, 1, 1, 4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -308,6 +388,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Trie, String]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, Tabulation (Bottom-Up), Memoization (Top-Down)
+✅ <strong>Best Option:</strong> Tabulation — O(n² × m) time, O(n) space
+❌ <strong>Not Optimal:</strong> Backtracking without memoization — O(2^n) segmentations, TLE at n = 300
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/word-break/" target="_blank" rel="noopener noreferrer" class="">Word Break</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-18-decode-ways">Decode Ways</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning">Palindrome Partitioning</a></p>
 <p><strong>Problem:</strong> Given a string s and a dictionary of words, return true if s can be segmented into dictionary words.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;, &quot;code&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -325,6 +410,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, String]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, Fibonacci-style
+✅ <strong>Best Option:</strong> Tabulation — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(2^n), TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/decode-ways/" target="_blank" rel="noopener noreferrer" class="">Decode Ways</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs">Climbing Stairs</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-17-word-break">Word Break</a></p>
 <p><strong>Problem:</strong> A message containing A-Z can be encoded to numbers (&#x27;A&#x27; → 1 ... &#x27;Z&#x27; → 26). Count the number of ways to decode a digit string.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;226&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 (BZ, VF, BBF)</span><br></div></code></pre></div></div>
@@ -342,6 +432,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, DFS, Memoization]</p>
+<p>🧩 <strong>Pattern:</strong> Knapsack (0/1), Memoization (Top-Down)
+✅ <strong>Best Option:</strong> 0/1 Knapsack Tabulation (subset-sum transform) — O(n × sum) time, O(sum) space
+❌ <strong>Not Optimal:</strong> DFS without memoization — O(2^n), TLE at n ≥ 20
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/target-sum/" target="_blank" rel="noopener noreferrer" class="">Target Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-20-partition-equal-subset-sum">Partition Equal Subset Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Given an array of integers and a target, assign + or - signs to each element to reach the target sum. Count number of such assignments.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 1, 1, 1, 1], target = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 5</span><br></div></code></pre></div></div>
@@ -359,6 +454,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Knapsack (0/1), Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 0/1 Knapsack Tabulation — O(n × target) time, O(target) space
+❌ <strong>Not Optimal:</strong> Greedy (sort and assign largest first) — fails: [1, 5, 11, 5] needs subset choice, not greedy pairing
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/partition-equal-subset-sum/" target="_blank" rel="noopener noreferrer" class="">Partition Equal Subset Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-19-target-sum">Target Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Given an array, return true if it can be partitioned into two subsets with equal sum.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 5, 11, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true ([1, 5, 5] and [11])</span><br></div></code></pre></div></div>
@@ -376,6 +476,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Grid]</p>
+<p>🧩 <strong>Pattern:</strong> Grid DP, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 1D rolling Tabulation — O(m × n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Recursive DFS — O(2^(m+n)) paths, TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-path-sum/" target="_blank" rel="noopener noreferrer" class="">Minimum Path Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-14-unique-paths">Unique Paths</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-15-unique-paths-ii">Unique Paths II</a></p>
 <p><strong>Problem:</strong> Find the minimum path sum from top-left to bottom-right, moving only down or right.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: grid = [[1,3,1],[1,5,1],[4,2,1]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 7 (1→3→1→1→1)</span><br></div></code></pre></div></div>
@@ -389,6 +494,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array, Binary Search]</p>
+<p>🧩 <strong>Pattern:</strong> LCS / String DP (longest common substring), Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ <strong>Not Optimal:</strong> Brute force all start pairs — O(m × n × min(m, n)), TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-length-of-repeated-subarray/" target="_blank" rel="noopener noreferrer" class="">Maximum Length of Repeated Subarray</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence">Longest Common Subsequence</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a></p>
 <p><strong>Problem:</strong> Find the maximum length of a subarray that appears in both arrays.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums1 = [1, 2, 3, 2, 1], nums2 = [3, 2, 1, 4, 7]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 ([3, 2, 1])</span><br></div></code></pre></div></div>
@@ -402,6 +512,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> State Machine, 1D DP
+✅ <strong>Best Option:</strong> State-machine Tabulation (even/odd) — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> O(n²) subsequence DP — correct but slow; state machine collapses it to O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/maximum-alternating-subsequence-sum/" target="_blank" rel="noopener noreferrer" class="">Maximum Alternating Subsequence Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-28-best-time-to-buy-and-sell-stock-with-cooldown">Best Time to Buy and Sell Stock with Cooldown</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii">Best Time to Buy and Sell Stock II</a></p>
 <p><strong>Problem:</strong> Find the maximum sum of an alternating subsequence (a[index] - a[index+1] + a[index+2] - ...).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [4, 2, 5, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 7 (4 - 2 + 5 = 7)</span><br></div></code></pre></div></div>
@@ -415,6 +530,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Unbounded Knapsack, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> Unbounded Knapsack Tabulation (coin-outer loop) — O(n × amount) time, O(amount) space
+❌ <strong>Not Optimal:</strong> Coin Change I loop order (amount-outer) — counts permutations instead of combinations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/coin-change-ii/" target="_blank" rel="noopener noreferrer" class="">Coin Change II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-11-coin-change">Coin Change</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-29-01-knapsack">0/1 Knapsack</a></p>
 <p><strong>Problem:</strong> Count the number of combinations that make up a given amount.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: amount = 5, coins = [1, 2, 5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4 (5, 2+2+1, 2+1+1+1, 1+1+1+1+1)</span><br></div></code></pre></div></div>
@@ -428,6 +548,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> 1D DP, State Machine (circular), Fibonacci-style
+✅ <strong>Best Option:</strong> Tabulation on two ranges — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Greedy — fails; circular adjacency breaks local choices, needs DP on both slices
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/house-robber-ii/" target="_blank" rel="noopener noreferrer" class="">House Robber II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-2-house-robber">House Robber</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-23-maximum-alternating-subsequence-sum">Maximum Alternating Subsequence Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Houses are arranged in a circle. You cannot rob adjacent houses.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [2, 3, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Rob house 1 (3) only.</span><br></div></code></pre></div></div>
@@ -441,6 +566,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, String, Two Pointers]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, Matrix DP (interval), Two Pointers
+✅ <strong>Best Option:</strong> Tabulation (interval) — O(n²) time, O(n²) space
+❌ <strong>Not Optimal:</strong> Brute force all substrings + palindrome check — O(n³), TLE at n ≥ 5000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener noreferrer" class="">Longest Palindromic Substring</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-10-longest-palindromic-substring">Longest Palindromic Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-15-palindromic-substrings">Palindromic Substrings</a></p>
 <p><strong>Problem:</strong> Find the longest palindromic substring.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;babad&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;bab&quot; or &quot;aba&quot;</span><br></div></code></pre></div></div>
@@ -458,6 +588,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, DFS, Memoization, Graph]</p>
+<p>🧩 <strong>Pattern:</strong> Matrix DP, Memoization (Top-Down), DFS
+✅ <strong>Best Option:</strong> DFS + Memoization — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Plain DFS without memoization — O(4^(m×n)) worst case, TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/" target="_blank" rel="noopener noreferrer" class="">Longest Increasing Path in a Matrix</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-24-longest-increasing-path-in-a-matrix">Longest Increasing Path in a Matrix</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-12-longest-increasing-subsequence">Longest Increasing Subsequence</a></p>
 <p><strong>Problem:</strong> Find the length of the longest increasing path in a matrix.</p>
 <p>(Located in Graphs chapter, Problem 24. DP solution uses memoization.)</p>
 <hr>
@@ -465,6 +600,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, State Machine, Array]</p>
+<p>🧩 <strong>Pattern:</strong> State Machine, 1D DP
+✅ <strong>Best Option:</strong> State-machine Tabulation (sold/held/cooled) — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Greedy (sell on every rise) — violates the cooldown constraint, needs state tracking
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" target="_blank" rel="noopener noreferrer" class="">Best Time to Buy and Sell Stock with Cooldown</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-34-best-time-to-buy-and-sell-stock-iv">Best Time to Buy and Sell Stock IV</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii">Best Time to Buy and Sell Stock II</a></p>
 <p><strong>Problem:</strong> You can complete unlimited transactions, but after selling you must wait one day before buying again.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: prices = [1, 2, 3, 0, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3 (buy@1, sell@2, cool, buy@0, sell@2)</span><br></div></code></pre></div></div>
@@ -478,6 +618,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Knapsack (0/1), Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 0/1 Knapsack Tabulation (reverse loop) — O(n × capacity) time, O(capacity) space
+❌ <strong>Not Optimal:</strong> Greedy by value/weight ratio — fails; items can&#x27;t be split, ratio ranking misses optimal combos
+🔗 <strong>LeetCode:</strong> No direct LC equivalent — see Related links
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-20-partition-equal-subset-sum">Partition Equal Subset Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-19-target-sum">Target Sum</a></p>
 <p><strong>Problem:</strong> Given weights and values of n items, and a knapsack capacity, find the maximum value you can fit.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: weights = [1, 3, 4, 5], values = [1, 4, 5, 7], capacity = 7</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 9 (items with weights 1+5=6, values 1+7=8? Actually optimal: 3+4=7, values 4+5=9)</span><br></div></code></pre></div></div>
@@ -491,6 +636,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [DP, String]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, LCS-family, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 2D Tabulation — O(m × n) time, O(min(m, n)) space (rolling rows)
+❌ <strong>Not Optimal:</strong> Recursion without memoization — O(3^(m+n)), TLE
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/edit-distance/" target="_blank" rel="noopener noreferrer" class="">Edit Distance</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence">Longest Common Subsequence</a></p>
 <p><strong>Problem:</strong> Given two strings, find the minimum number of operations (insert, delete, replace) to convert one to the other.</p>
 <p>(Also listed in Strings chapter, Problem 22.)</p>
 <hr>
@@ -500,6 +650,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, Divide and Conquer]</p>
+<p>🧩 <strong>Pattern:</strong> Partition DP, Interval DP, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> Interval DP on the last balloon burst — O(n³) time, O(n²) space
+❌ <strong>Not Optimal:</strong> Greedy (burst smallest balloon first) — fails; burst order interacts, needs interval DP
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/burst-balloons/" target="_blank" rel="noopener noreferrer" class="">Burst Balloons</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-26-longest-palindromic-substring-dp">Longest Palindromic Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning">Palindrome Partitioning</a></p>
 <p><strong>Problem:</strong> Given n balloons (each with a coin value), bursting balloon i earns nums[i-1] * nums[i] * nums[i+1]. Find the maximum coins you can collect.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [3, 1, 5, 8]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 167</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: nums = [3,1,5,8] → [3,5,8] → [3,8] → [8] → []. Coins: 3*1*5 + 3*5*8 + 3*8*1 + 1*8*1 = 167</span><br></div></code></pre></div></div>
@@ -517,6 +672,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, String, Backtracking]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, Tabulation (Bottom-Up), Memoization (Top-Down)
+✅ <strong>Best Option:</strong> 2D Tabulation — O(m × n) time, O(m × n) space
+❌ <strong>Not Optimal:</strong> Backtracking without memoization — O(2^(m+n)); &#x27;x*&#x27; branches explode on repeated patterns
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/regular-expression-matching/" target="_blank" rel="noopener noreferrer" class="">Regular Expression Matching</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-21-regular-expression-matching">Regular Expression Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-33-distinct-subsequences">Distinct Subsequences</a></p>
 <p><strong>Problem:</strong> Implement regex matching with &#x27;.&#x27; and &#x27;*&#x27;.</p>
 <p>(Detailed solution in Strings chapter, Problem 21.)</p>
 <hr>
@@ -524,6 +684,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, String]</p>
+<p>🧩 <strong>Pattern:</strong> String DP, LCS-family, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 2D Tabulation — O(m × n) time, O(n) space (rolling rows)
+❌ <strong>Not Optimal:</strong> Enumerate all subsequences — O(2^m), TLE at m ≥ 20
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/distinct-subsequences/" target="_blank" rel="noopener noreferrer" class="">Distinct Subsequences</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-13-longest-common-subsequence">Longest Common Subsequence</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-23-distinct-subsequences">Distinct Subsequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-30-edit-distance-dp">Edit Distance</a></p>
 <p><strong>Problem:</strong> Count the number of distinct subsequences of s that equal t.</p>
 <p>(Detailed solution in Strings chapter, Problem 23.)</p>
 <hr>
@@ -531,6 +696,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, Array, State Machine]</p>
+<p>🧩 <strong>Pattern:</strong> State Machine, Tabulation (Bottom-Up)
+✅ <strong>Best Option:</strong> 2D Tabulation (k × n) — O(k × n) time, O(k × n) space; greedy fallback when k ≥ n/2
+❌ <strong>Not Optimal:</strong> Backtracking over buy/sell states without memoization — O(2^n) paths, TLE at n ≥ 30
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" target="_blank" rel="noopener noreferrer" class="">Best Time to Buy and Sell Stock IV</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-28-best-time-to-buy-and-sell-stock-with-cooldown">Best Time to Buy and Sell Stock with Cooldown</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a> · <a class="" href="/ai-engineering-journey/coding-problems/08-greedy#problem-3-best-time-to-buy-and-sell-stock-ii">Best Time to Buy and Sell Stock II</a></p>
 <p><strong>Problem:</strong> You can complete at most k transactions. Find maximum profit.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: k = 2, prices = [3, 2, 6, 5, 0, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 7 (buy@2, sell@6, buy@0, sell@3)</span><br></div></code></pre></div></div>
@@ -544,6 +714,11 @@
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [DP, Hash Table]</p>
+<p>🧩 <strong>Pattern:</strong> Memoization (Top-Down), Hash Map DP
+✅ <strong>Best Option:</strong> DFS + memo (stone → reachable jump sizes) — O(n²) time, O(n²) space
+❌ <strong>Not Optimal:</strong> Greedy (always jump the max) — fails; must explore k-1, k, k+1 from every stone
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/frog-jump/" target="_blank" rel="noopener noreferrer" class="">Frog Jump</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-24-jump-game-ii">Jump Game II</a> · <a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming#problem-1-climbing-stairs">Climbing Stairs</a></p>
 <p><strong>Problem:</strong> A frog starts at stone 0 and can jump k units. After jumping k units, it can jump k-1, k, or k+1 units. Determine if it can reach the last stone.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: stones = [0, 1, 3, 5, 6, 8, 12, 17]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>

@@ -156,6 +156,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -239,7 +240,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Recursion]"]
+      }), " [Linked List, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Reverse Linked List, In-place Reversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Iterative three-pointer (prev, curr, next) reversal — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy values to an array and rebuild — O(n) extra space; in-place pointer rewiring is O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-linked-list/",
+        children: "Reverse Linked List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-17-reverse-linked-list-ii",
+        children: "Reverse Linked List II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-20-reverse-nodes-in-k-group",
+        children: "Reverse Nodes in k-Group"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string",
+        children: "Reverse String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -306,7 +329,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Recursion]"]
+      }), " [Linked List, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Merge Lists, Dummy Head\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + iterative merge — O(n + m) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive merge — O(n + m) call-stack space; dummy-head iteration avoids the stack\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-two-sorted-lists/",
+        children: "Merge Two Sorted Lists"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-18-merge-k-sorted-lists",
+        children: "Merge K Sorted Lists"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals",
+        children: "Merge Intervals"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -373,7 +415,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fast & Slow Pointer, Tortoise & Hare, Cycle Detection\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Floyd's tortoise & hare — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash set of visited nodes — O(n) extra space is avoidable here\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/linked-list-cycle/",
+        children: "Linked List Cycle"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-5-middle-of-the-linked-list",
+        children: "Middle of the Linked List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-14-find-the-duplicate-number",
+        children: "Find the Duplicate Number"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -440,7 +501,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List]"]
+      }), " [Linked List]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Linked List, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Single-pass skip over duplicates — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash map of seen values — O(n) extra space; sorted list needs only one pointer\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+        children: "Remove Duplicates from Sorted List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-16-remove-duplicates-from-sorted-list-ii",
+        children: "Remove Duplicates from Sorted List II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -491,7 +571,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fast & Slow Pointer, Tortoise & Hare\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Fast & slow pointers — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Two passes (count nodes, then traverse) — extra full traversal; one slow + fast pass finds it directly\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/middle-of-the-linked-list/",
+        children: "Middle of the Linked List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-3-linked-list-cycle",
+        children: "Linked List Cycle"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-14-reorder-list",
+        children: "Reorder List"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -542,7 +641,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List]"]
+      }), " [Linked List]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Dummy Head\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + single pass — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Special-casing head deletion without a dummy — error-prone edge handling; dummy head unifies it\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-linked-list-elements/",
+        children: "Remove Linked List Elements"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-9-remove-nth-node-from-end-of-list",
+        children: "Remove Nth Node From End of List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-16-remove-duplicates-from-sorted-list-ii",
+        children: "Remove Duplicates from Sorted List II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -585,7 +703,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers, Stack]"]
+      }), " [Linked List, Two Pointers, Stack]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fast & Slow Pointer, Reverse Linked List, In-place Reversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Find mid, reverse second half, compare halves — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy values to an array or stack — O(n) extra space is avoidable with mid + reverse\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/palindrome-linked-list/",
+        children: "Palindrome Linked List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list",
+        children: "Reverse Linked List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome",
+        children: "Valid Palindrome"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -647,7 +784,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Math]"]
+      }), " [Linked List, Math]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Dummy Head, Math\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + digit-by-digit carry — O(max(n, m)) time, O(max(n, m)) space for output\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Convert lists to numbers and add — overflows on large lists; carry propagation is required\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/add-two-numbers/",
+        children: "Add Two Numbers"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-2-merge-two-sorted-lists",
+        children: "Merge Two Sorted Lists"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-10-plus-one",
+        children: "Plus One"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -698,7 +854,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Dummy Head\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + two pointers with an n-node gap — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Two passes (find length, then delete) — requires a second traversal; the one-pass gap method is better\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        children: "Remove Nth Node From End of List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-13-rotate-list",
+        children: "Rotate List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-6-remove-linked-list-elements",
+        children: "Remove Linked List Elements"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -765,7 +940,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Recursion]"]
+      }), " [Linked List, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Dummy Head, In-place Reversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + iterative pair swap — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive swap — O(n) call-stack space; iterative dummy-head loop stays O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/swap-nodes-in-pairs/",
+        children: "Swap Nodes in Pairs"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-20-reverse-nodes-in-k-group",
+        children: "Reverse Nodes in k-Group"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list",
+        children: "Reverse Linked List"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -816,7 +1010,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List]"]
+      }), " [Linked List]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, In-place Reversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two-pointer odd/even weaving in place — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Build two separate lists then concatenate — extra node allocation; single-pass weaving is O(1) space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/odd-even-linked-list/",
+        children: "Odd Even Linked List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-14-reorder-list",
+        children: "Reorder List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes",
+        children: "Move Zeroes"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -867,7 +1080,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two-pointer traversal switch (a/b swap) — O(n + m) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash set of one list's nodes — O(n) extra space is avoidable with pointer switching\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        children: "Intersection of Two Linked Lists"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-3-linked-list-cycle",
+        children: "Linked List Cycle"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-9-intersection-of-two-arrays-ii",
+        children: "Intersection of Two Arrays II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -932,7 +1164,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Linked List, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Find length, link tail to head, advance len - k — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Rotate one node at a time k times — O(n·k); k mod len with one traversal is O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/rotate-list/",
+        children: "Rotate List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-9-remove-nth-node-from-end-of-list",
+        children: "Remove Nth Node From End of List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array",
+        children: "Rotate Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -983,7 +1234,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Two Pointers]"]
+      }), " [Linked List, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Fast & Slow Pointer, Reverse Linked List, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Find mid, reverse second half, weave halves — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy nodes into an array and re-link — O(n) extra space is avoidable with mid + reverse\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reorder-list/",
+        children: "Reorder List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-7-palindrome-linked-list",
+        children: "Palindrome Linked List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-5-middle-of-the-linked-list",
+        children: "Middle of the Linked List"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1026,7 +1296,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Sorting, Merge Sort]"]
+      }), " [Linked List, Sorting, Merge Sort]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Merge Sort, Fast & Slow Pointer, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Top-down merge sort (mid via fast & slow) — O(n log n) time, O(log n) recursion space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy to an array and sort — O(n) extra space; linked lists need no random access, so merge sort works in place\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sort-list/",
+        children: "Sort List"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-2-merge-two-sorted-lists",
+        children: "Merge Two Sorted Lists"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-30-count-of-smaller-numbers-after-self",
+        children: "Count of Smaller Numbers After Self"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1077,7 +1366,26 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List]"]
+      }), " [Linked List]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Dummy Head, Linked List\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + skip duplicate runs — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Frequency hash map pass — O(n) extra space; the sorted list allows single-pass run skipping\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+        children: "Remove Duplicates from Sorted List II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-4-remove-duplicates-from-sorted-list",
+        children: "Remove Duplicates from Sorted List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1120,7 +1428,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List]"]
+      }), " [Linked List]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Reverse Linked List, In-place Reversal, Dummy Head\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Dummy head + in-place reversal of the [left, right] sublist — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Rebuild the list via an array — O(n) extra space; in-place pointer rewiring is O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-linked-list-ii/",
+        children: "Reverse Linked List II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list",
+        children: "Reverse Linked List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-10-swap-nodes-in-pairs",
+        children: "Swap Nodes in Pairs"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string",
+        children: "Reverse Words in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1166,7 +1496,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Divide and Conquer, Heap]"]
+      }), " [Linked List, Divide and Conquer, Heap]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Priority Queue/Heap, Dummy Head, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Min-heap of k heads — O(n log k) time, O(k) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Merging two lists k−1 times sequentially — O(n·k) and slow for large k; the heap merges all lists at once\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/merge-k-sorted-lists/",
+        children: "Merge K Sorted Lists"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-2-merge-two-sorted-lists",
+        children: "Merge Two Sorted Lists"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-15-sort-list",
+        children: "Sort List"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals",
+        children: "Merge Intervals"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1235,7 +1587,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Hash Table]"]
+      }), " [Linked List, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Hash Map, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " In-place interleaving (clone next to original, set randoms, split) — O(n) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Hash map from original to clone — O(n) extra space; interleaving achieves O(1) space\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        children: "Copy List with Random Pointer"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-7-clone-graph",
+        children: "Clone Graph"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-12-intersection-of-two-linked-lists",
+        children: "Intersection of Two Linked Lists"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-1-reverse-linked-list",
+        children: "Reverse Linked List"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1288,7 +1662,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Linked List, Recursion]"]
+      }), " [Linked List, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Reverse Linked List, Recursion, In-place Reversal\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Iterative k-node reversal + recursion on the rest — O(n) time, O(n/k) recursion space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Copy values into an array and rebuild — O(n) extra space; in-place k-group reversal is O(1) apart from recursion\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        children: "Reverse Nodes in k-Group"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-17-reverse-linked-list-ii",
+        children: "Reverse Linked List II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-10-swap-nodes-in-pairs",
+        children: "Swap Nodes in Pairs"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string",
+        children: "Reverse String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

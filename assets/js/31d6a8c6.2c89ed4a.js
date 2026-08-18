@@ -156,6 +156,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -239,7 +240,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, String]"]
+      }), " [Stack, String]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack-based bracket matching — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Repeatedly replacing balanced pairs — O(n²) worst case; a single stack pass is O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/valid-parentheses/",
+        children: "Valid Parentheses"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string",
+        children: "Decode String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string",
+        children: "Remove All Adjacent Duplicates In String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses",
+        children: "Valid Parentheses"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -290,7 +313,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Design]"]
+      }), " [Stack, Design]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Stacks\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Auxiliary min stack tracking per-level minimums — O(1) per operation, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Single min variable — becomes stale after pop; the min stack preserves per-level history\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/min-stack/",
+        children: "Min Stack"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-3-implement-queue-using-stacks",
+        children: "Implement Queue using Stacks"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences",
+        children: "Validate Stack Sequences"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree",
+        children: "Serialize and Deserialize Binary Tree"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -341,7 +386,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Queue, Design]"]
+      }), " [Stack, Queue, Design]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Stacks\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Input/output stacks with lazy transfer — O(1) amortized per operation, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Single stack with shift-based pops — O(n) per pop; two-stack transfer amortizes to O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/implement-queue-using-stacks/",
+        children: "Implement Queue using Stacks"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-2-min-stack",
+        children: "Min Stack"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences",
+        children: "Validate Stack Sequences"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal",
+        children: "Binary Tree Level Order Traversal"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -384,7 +451,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Array]"]
+      }), " [Stack, Array]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack simulation of the operations — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Array splicing on C/D ops — O(n²) from shifting; stack push/pop mirrors the rules in O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/baseball-game/",
+        children: "Baseball Game"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-10-evaluate-reverse-polish-notation",
+        children: "Evaluate Reverse Polish Notation"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-12-asteroid-collision",
+        children: "Asteroid Collision"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses",
+        children: "Valid Parentheses"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -427,7 +516,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Two Pointers]"]
+      }), " [Stack, Two Pointers]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Two Pointers, Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Right-to-left two-pointer scan with skip counting — O(n + m) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Stack build per string — O(n + m) extra space; the reverse scan skips backspaces in O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/backspace-string-compare/",
+        children: "Backspace String Compare"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string",
+        children: "Remove All Adjacent Duplicates In String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-15-simplify-path",
+        children: "Simplify Path"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome",
+        children: "Valid Palindrome"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -484,7 +595,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, String]"]
+      }), " [Stack, String]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack with top-of-stack comparison — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Repeated replace passes over the string — O(n²); a single stack pass removes all duplicates at once\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+        children: "Remove All Adjacent Duplicates In String"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-5-backspace-string-compare",
+        children: "Backspace String Compare"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string",
+        children: "Decode String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-16-remove-duplicates-from-sorted-list-ii",
+        children: "Remove Duplicates from Sorted List II"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -527,7 +660,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Hash Table]"]
+      }), " [Stack, Hash Table]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack, Hash Map\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic stack over nums2 + hash map of next-greater results — O(n + m) time, O(m) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force scan of nums2 per element — O(n·m); the monotonic stack resolves all in one pass\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/next-greater-element-i/",
+        children: "Next Greater Element I"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii",
+        children: "Next Greater Element II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures",
+        children: "Daily Temperatures"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum",
+        children: "Two Sum"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -581,7 +736,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Array]"]
+      }), " [Stack, Array]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Double-length circular pass (2n) with a monotonic stack — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Naive double loop over the circular array — O(n²); simulating the circle with i % n keeps it linear\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/next-greater-element-ii/",
+        children: "Next Greater Element II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-7-next-greater-element-i",
+        children: "Next Greater Element I"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures",
+        children: "Daily Temperatures"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array",
+        children: "Rotate Array"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -632,7 +809,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Array, Monotonic Stack]"]
+      }), " [Stack, Array, Monotonic Stack]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic stack of indices — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force search for the next warmer day — O(n²), TLE for n ≥ 10⁵; the stack resolves all in one pass\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/daily-temperatures/",
+        children: "Daily Temperatures"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii",
+        children: "Next Greater Element II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-18-largest-rectangle-in-histogram",
+        children: "Largest Rectangle in Histogram"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -683,7 +882,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Math]"]
+      }), " [Stack, Math]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack evaluation of postfix tokens — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Building an expression tree first — extra O(n) structure; direct stack evaluation is a single pass\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        children: "Evaluate Reverse Polish Notation"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-4-baseball-game",
+        children: "Baseball Game"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string",
+        children: "Decode String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi",
+        children: "String to Integer (atoi)"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -734,7 +955,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, String, Recursion]"]
+      }), " [Stack, String, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Two stacks (counts + strings) — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Recursive descent that reparses brackets — repeated sub-string rebuilds; stack simulation is single-pass\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/decode-string/",
+        children: "Decode String"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-1-valid-parentheses",
+        children: "Valid Parentheses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-10-evaluate-reverse-polish-notation",
+        children: "Evaluate Reverse Polish Notation"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-16-encode-and-decode-strings",
+        children: "Encode and Decode Strings"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -785,7 +1028,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Array]"]
+      }), " [Stack, Array]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack simulation with collision resolution — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Two-pointer array with splice removals — O(n²) worst case; a stack processes each asteroid once\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/asteroid-collision/",
+        children: "Asteroid Collision"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-4-baseball-game",
+        children: "Baseball Game"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures",
+        children: "Daily Temperatures"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-6-remove-linked-list-elements",
+        children: "Remove Linked List Elements"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -836,7 +1101,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Monotonic Stack, Design]"]
+      }), " [Stack, Monotonic Stack, Design]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic stack of (price, span) pairs — O(1) amortized per call, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute-force lookback over all past prices — O(n²) worst case; span aggregation on the stack is amortized O(1)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/online-stock-span/",
+        children: "Online Stock Span"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures",
+        children: "Daily Temperatures"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-7-next-greater-element-i",
+        children: "Next Greater Element I"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock",
+        children: "Best Time to Buy and Sell Stock"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -879,7 +1166,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Greedy]"]
+      }), " [Stack, Greedy]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack, Greedy\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic increasing stack + greedy removals — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Enumerating all digit-removal combinations — exponential; greedy stack removal is linear\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/remove-k-digits/",
+        children: "Remove K Digits"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii",
+        children: "Next Greater Element II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string",
+        children: "Remove All Adjacent Duplicates In String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation",
+        children: "Next Permutation"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -940,7 +1249,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, String]"]
+      }), " [Stack, String]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Stack of directory segments — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " String regex collapsing — fragile against \"..\" and \".\" edge cases; the stack of segments handles them directly\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/simplify-path/",
+        children: "Simplify Path"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string",
+        children: "Decode String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-1-valid-parentheses",
+        children: "Valid Parentheses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string",
+        children: "Reverse Words in a String"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -991,7 +1322,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Simulation]"]
+      }), " [Stack, Simulation]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack, Two Pointers\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Greedy push/pop simulation — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Checking all permutation orderings — O(n!) impossible; the greedy simulation is linear\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/validate-stack-sequences/",
+        children: "Validate Stack Sequences"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-2-min-stack",
+        children: "Min Stack"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-3-implement-queue-using-stacks",
+        children: "Implement Queue using Stacks"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/03-linked-lists#problem-12-intersection-of-two-linked-lists",
+        children: "Intersection of Two Linked Lists"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1034,7 +1387,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Design, Recursion]"]
+      }), " [Stack, Design, Recursion]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Stack, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Lazy stack of iterators — O(n) total, O(1) amortized per next/hasNext\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Eager recursive flattening of the whole list upfront — builds the full O(n) list; the lazy stack holds only the traversal path\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/flatten-nested-list-iterator/",
+        children: "Flatten Nested List Iterator"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string",
+        children: "Decode String"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences",
+        children: "Validate Stack Sequences"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/05-trees#problem-23-flatten-binary-tree-to-linked-list",
+        children: "Flatten Binary Tree to Linked List"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1071,7 +1446,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Stack, Array, Monotonic Stack]"]
+      }), " [Stack, Array, Monotonic Stack]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Monotonic Stack\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic stack with a sentinel bar — O(n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force across all bar pairs — O(n²), TLE for n ≥ 10⁵; the monotonic stack computes every area in one pass\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        children: "Largest Rectangle in Histogram"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures",
+        children: "Daily Temperatures"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii",
+        children: "Next Greater Element II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water",
+        children: "Container With Most Water"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1132,7 +1529,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Queue, Deque, Sliding Window]"]
+      }), " [Queue, Deque, Sliding Window]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Deque\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Monotonic deque of indices — O(n) time, O(k) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Brute force max per window — O(n·k); a heap is O(n log k); the monotonic deque keeps it O(n)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sliding-window-maximum/",
+        children: "Sliding Window Maximum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-14-minimum-window-substring",
+        children: "Minimum Window Substring"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters",
+        children: "Longest Substring Without Repeating Characters"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-18-largest-rectangle-in-histogram",
+        children: "Largest Rectangle in Histogram"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -1193,7 +1612,29 @@ function _createMdxContent(props) {
         children: "Difficulty:"
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
-      }), " [Heap, BFS, Matrix]"]
+      }), " [Heap, BFS, Matrix]\n🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Priority Queue/Heap, BFS\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Min-heap boundary expansion (Dijkstra-style BFS) — O(m·n log(m·n)) time, O(m·n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Simulating water flow cell-by-cell from every boundary — O(m²n²); the boundary min-heap settles each cell once\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/trapping-rain-water-ii/",
+        children: "Trapping Rain Water II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/04-stacks-queues#problem-19-sliding-window-maximum",
+        children: "Sliding Window Maximum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water",
+        children: "Trapping Rain Water"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

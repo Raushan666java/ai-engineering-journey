@@ -142,7 +142,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: (0,jsx_runtime.jsxs)(_components.em, {
           children: ["Deployed: commit ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "23502cfa3"
+            children: "9d13a69208"
           })]
         })
       }), "\n"]

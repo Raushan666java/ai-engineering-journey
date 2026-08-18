@@ -164,6 +164,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     blockquote: "blockquote",
     code: "code",
     h1: "h1",
@@ -254,6 +255,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, Array, Bit Manipulation]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Subsets\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking pick/not-pick — O(n × 2^n) time, O(n × 2^n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Bit manipulation — O(2^n) but does not generalize to duplicates or constraints\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/subsets/",
+        children: "Subsets"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates",
+        children: "Subsets II (with duplicates)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations",
+        children: "Combinations"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation",
+        children: "Next Permutation"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given an array of unique integers, return all possible subsets (the power set)."]
@@ -321,6 +346,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, Bit Manipulation]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, State Space Search, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking over 10 LEDs with hour/minute pruning — O(2^10) = O(1) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Nested loops over all hour and minute bitmasks — no pruning, redundant states\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/binary-watch/",
+        children: "Binary Watch"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set",
+        children: "Subsets (Power Set)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-3-letter-case-permutation",
+        children: "Letter Case Permutation"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number",
+        children: "Single Number"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " A binary watch has 4 LEDs for hours (0-11) and 6 for minutes (0-59). Given turnedOn (number of lit LEDs), return all possible times."]
@@ -365,6 +414,30 @@ function _createMdxContent(props) {
       }), " Easy\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, String, Bit Manipulation]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with two branches per letter — O(n × 2^n) time, O(n × 2^n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS level expansion — O(2^n) queue blow-up\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/letter-case-permutation/",
+        children: "Letter Case Permutation"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set",
+        children: "Subsets (Power Set)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-10-generate-parentheses",
+        children: "Generate Parentheses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number",
+        children: "Letter Combinations of a Phone Number"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -413,6 +486,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Permutations\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with visited array — O(n × n!) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " No visited tracking — reuses elements, produces invalid permutations\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/permutations/",
+        children: "Permutations"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-5-permutations-ii-with-duplicates",
+        children: "Permutations II (with duplicates)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations",
+        children: "Combinations"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation",
+        children: "Next Permutation"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -467,6 +564,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Permutations, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking + sort + skip duplicate branches — O(n × n!) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generate all then dedupe with Set — O(n!) extra memory\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/permutations-ii/",
+        children: "Permutations II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-4-permutations",
+        children: "Permutations"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates",
+        children: "Subsets II (with duplicates)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams",
+        children: "Group Anagrams"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given an array that may contain duplicates, return all unique permutations."]
@@ -511,6 +632,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Array]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Combinations, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with start index + prune overshoot — O(n^(target/min)) time, O(target/min) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Enumerate all subsets then filter — O(2^n) and cannot reuse numbers\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/combination-sum/",
+        children: "Combination Sum"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-7-combination-sum-ii",
+        children: "Combination Sum II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations",
+        children: "Combinations"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k",
+        children: "Subarray Sum Equals K"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -565,6 +710,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Combinations, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking + sort + skip adjacent duplicates — O(2^n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " No duplicate skipping — emits repeated combinations\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/combination-sum-ii/",
+        children: "Combination Sum II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-6-combination-sum",
+        children: "Combination Sum"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates",
+        children: "Subsets II (with duplicates)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-11-three-sum",
+        children: "Three Sum"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Same as Combination Sum but each number may be used only once, and array may have duplicates."]
@@ -610,6 +779,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, Array]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Subsets, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking + sort + skip duplicates — O(n × 2^n) time, O(n × 2^n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generate all subsets then dedupe with Set — O(2^n) extra memory\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/subsets-ii/",
+        children: "Subsets II"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set",
+        children: "Subsets (Power Set)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-7-combination-sum-ii",
+        children: "Combination Sum II"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate",
+        children: "Contains Duplicate"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given an array that may contain duplicates, return all unique subsets."]
@@ -654,6 +847,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Matrix, String]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, State Space Search, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking DFS with in-place visited marking — O(m × n × 4^L) time, O(L) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " BFS — needs a visited copy per path, memory explodes to O(m × n × 4^L)\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/word-search/",
+        children: "Word Search"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens",
+        children: "N-Queens"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-14-sudoku-solver",
+        children: "Sudoku Solver"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -712,6 +929,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Constraint Satisfaction, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with open/close balance — O(4^n / √n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generate all 2^(2n) strings then validate — wasteful full enumeration\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/generate-parentheses/",
+        children: "Generate Parentheses"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-3-letter-case-permutation",
+        children: "Letter Case Permutation"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-12-restore-ip-addresses",
+        children: "Restore IP Addresses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses",
+        children: "Valid Parentheses"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given n pairs of parentheses, generate all well-formed combinations."]
@@ -764,6 +1005,30 @@ function _createMdxContent(props) {
       }), " Medium\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, String, DP]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking exploring palindrome prefixes only — O(n × 2^n) time, O(n) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Generate all partitions then filter — O(2^n) checks wasted on non-palindrome prefixes\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/palindrome-partitioning/",
+        children: "Palindrome Partitioning"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-12-restore-ip-addresses",
+        children: "Restore IP Addresses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens",
+        children: "N-Queens"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-15-palindromic-substrings",
+        children: "Palindromic Substrings"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -820,6 +1085,30 @@ function _createMdxContent(props) {
         children: "Topics:"
       }), " [Backtracking, String]"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, State Space Search, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with segment validation (0-255, no leading zero) — O(3^4) = O(1) time, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Try every dot placement without validation — O(2^(n-1)) combos of invalid IPs\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/restore-ip-addresses/",
+        children: "Restore IP Addresses"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning",
+        children: "Palindrome Partitioning"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-10-generate-parentheses",
+        children: "Generate Parentheses"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number",
+        children: "Letter Combinations of a Phone Number"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
       }), " Given a string of digits, return all valid IP addresses that can be formed by inserting dots."]
@@ -875,6 +1164,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Matrix]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Constraint Satisfaction, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with column/diagonal sets — O(n!) time, O(n²) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Re-scan the board for attacks on every placement — O(n³) redundant checks\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/n-queens/",
+        children: "N-Queens"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-14-sudoku-solver",
+        children: "Sudoku Solver"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search",
+        children: "Word Search"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions",
+        children: "Surrounded Regions"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -934,6 +1247,30 @@ function _createMdxContent(props) {
       }), " Hard\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Matrix, Hash Table]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Constraint Satisfaction, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with row/col/box sets — O(9^81) worst case, O(1) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " Re-scan the board per empty cell — repeated O(81) checks slow every placement\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/sudoku-solver/",
+        children: "Sudoku Solver"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens",
+        children: "N-Queens"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search",
+        children: "Word Search"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands",
+        children: "Number of Islands"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"
@@ -997,6 +1334,30 @@ function _createMdxContent(props) {
       }), " Easy (but included as Hard for completeness)\n📂 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Topics:"
       }), " [Backtracking, Combinatorics]"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["🧩 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pattern:"
+      }), " Backtracking, Recursion, Combinations, Pruning\n✅ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Best Option:"
+      }), " Backtracking with start index — O(C(n,k) × k) time, O(k) space\n❌ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Not Optimal:"
+      }), " No branch-count pruning — explores branches that can never reach k elements\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "LeetCode:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://leetcode.com/problems/combinations/",
+        children: "Combinations"
+      }), "\n🔗 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set",
+        children: "Subsets (Power Set)"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/09-backtracking#problem-4-permutations",
+        children: "Permutations"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation",
+        children: "Next Permutation"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Problem:"

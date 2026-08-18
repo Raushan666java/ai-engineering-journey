@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 02: Strings | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/02-strings"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 02: Strings | AI Engineering Journey"><meta data-rh="true" name="description" content="String problems test your ability to work with character arrays, pattern matching, and text manipulation. They are among the most common problems in coding interviews."><meta data-rh="true" property="og:description" content="String problems test your ability to work with character arrays, pattern matching, and text manipulation. They are among the most common problems in coding interviews."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/02-strings"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/02-strings" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/02-strings" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 02: Strings","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/02-strings"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -35,7 +35,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-valid-palindrome">Problem 1: Valid Palindrome<a href="#problem-1-valid-palindrome" class="hash-link" aria-label="Direct link to Problem 1: Valid Palindrome" title="Direct link to Problem 1: Valid Palindrome" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers
+✅ <strong>Best Option:</strong> Two pointers skipping non-alphanumerics — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Filter + reverse copy O(n) space — extra memory not required
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/valid-palindrome/" target="_blank" rel="noopener noreferrer" class="">Valid Palindrome</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string">Reverse String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-10-longest-palindromic-substring">Longest Palindromic Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water">Container With Most Water</a></p>
 <p><strong>Problem:</strong> Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;A man, a plan, a canal: Panama&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -59,7 +64,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-valid-anagram">Problem 2: Valid Anagram<a href="#problem-2-valid-anagram" class="hash-link" aria-label="Direct link to Problem 2: Valid Anagram" title="Direct link to Problem 2: Valid Anagram" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Hash Table, Sorting]</p>
+📂 <strong>Topics:</strong> [String, Hash Table, Sorting]
+🧩 <strong>Pattern:</strong> Frequency Count, Hash Map
+✅ <strong>Best Option:</strong> 26-slot count array — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Sorting both strings O(n log n) — slower than a counting pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/valid-anagram/" target="_blank" rel="noopener noreferrer" class="">Valid Anagram</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a></p>
 <p><strong>Problem:</strong> Given two strings s and t, return true if t is an anagram of s, false otherwise.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;anagram&quot;, t = &quot;nagaram&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -83,7 +93,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-first-unique-character-in-a-string">Problem 3: First Unique Character in a String<a href="#problem-3-first-unique-character-in-a-string" class="hash-link" aria-label="Direct link to Problem 3: First Unique Character in a String" title="Direct link to Problem 3: First Unique Character in a String" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Hash Table]</p>
+📂 <strong>Topics:</strong> [String, Hash Table]
+🧩 <strong>Pattern:</strong> Frequency Count, Hash Map
+✅ <strong>Best Option:</strong> Two-pass frequency count — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Nested loops O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/first-unique-character-in-a-string/" target="_blank" rel="noopener noreferrer" class="">First Unique Character in a String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-13-longest-repeating-character-replacement">Longest Repeating Character Replacement</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a></p>
 <p><strong>Problem:</strong> Given a string s, find the first non-repeating character and return its index. If none exists, return -1.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;leetcode&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 0</span><br></div></code></pre></div></div>
@@ -107,7 +122,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-reverse-string">Problem 4: Reverse String<a href="#problem-4-reverse-string" class="hash-link" aria-label="Direct link to Problem 4: Reverse String" title="Direct link to Problem 4: Reverse String" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, In-place
+✅ <strong>Best Option:</strong> Two pointers swapping ends — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Reverse into a copy O(n) space — violates the in-place requirement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/reverse-string/" target="_blank" rel="noopener noreferrer" class="">Reverse String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string">Reverse Words in a String</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-4-move-zeroes">Move Zeroes</a></p>
 <p><strong>Problem:</strong> Write a function that reverses a string in-place.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = [&quot;h&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [&quot;o&quot;,&quot;l&quot;,&quot;l&quot;,&quot;e&quot;,&quot;h&quot;]</span><br></div></code></pre></div></div>
@@ -124,7 +144,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-5-longest-common-prefix">Problem 5: Longest Common Prefix<a href="#problem-5-longest-common-prefix" class="hash-link" aria-label="Direct link to Problem 5: Longest Common Prefix" title="Direct link to Problem 5: Longest Common Prefix" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Trie]</p>
+📂 <strong>Topics:</strong> [String, Trie]
+🧩 <strong>Pattern:</strong> String Manipulation
+✅ <strong>Best Option:</strong> Vertical scanning — O(n·m) time, O(1) space
+❌ <strong>Not Optimal:</strong> Sorting strings first O(n log n · m) — sorting cost is unnecessary
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank" rel="noopener noreferrer" class="">Longest Common Prefix</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-7-implement-strstr">Implement strStr()</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Write a function to find the longest common prefix string amongst an array of strings.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: strs = [&quot;flower&quot;, &quot;flow&quot;, &quot;flight&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;fl&quot;</span><br></div></code></pre></div></div>
@@ -147,7 +172,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-6-valid-parentheses">Problem 6: Valid Parentheses<a href="#problem-6-valid-parentheses" class="hash-link" aria-label="Direct link to Problem 6: Valid Parentheses" title="Direct link to Problem 6: Valid Parentheses" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Stack]</p>
+📂 <strong>Topics:</strong> [String, Stack]
+🧩 <strong>Pattern:</strong> String Manipulation, Hash Map
+✅ <strong>Best Option:</strong> Stack + bracket map — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Counting open/close only — fails ordering like &quot;([)]&quot;
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreferrer" class="">Valid Parentheses</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching">Wildcard Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a></p>
 <p><strong>Problem:</strong> Given a string containing &#x27;(&#x27;, &#x27;)&#x27;, &#x27;{&#x27;, &#x27;}&#x27;, &#x27;[&#x27; and &#x27;]&#x27;, determine if the input string is valid. Brackets must close in the correct order.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;()[]{}&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -164,7 +194,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-7-implement-strstr">Problem 7: Implement strStr()<a href="#problem-7-implement-strstr" class="hash-link" aria-label="Direct link to Problem 7: Implement strStr()" title="Direct link to Problem 7: Implement strStr()" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String, Two Pointers, Pattern Matching]</p>
+📂 <strong>Topics:</strong> [String, Two Pointers, Pattern Matching]
+🧩 <strong>Pattern:</strong> Two Pointers, Sliding Window
+✅ <strong>Best Option:</strong> Sliding window compare — O(n·m) time, O(1) space
+❌ <strong>Not Optimal:</strong> KMP O(n+m) — overkill for constraints n, m ≤ 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/" target="_blank" rel="noopener noreferrer" class="">Find the Index of the First Occurrence in a String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-5-longest-common-prefix">Longest Common Prefix</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-22-first-and-last-position-of-element-in-sorted-array">First and Last Position of Element in Sorted Array</a></p>
 <p><strong>Problem:</strong> Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: haystack = &quot;hello&quot;, needle = &quot;ll&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 2</span><br></div></code></pre></div></div>
@@ -186,7 +221,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-8-length-of-last-word">Problem 8: Length of Last Word<a href="#problem-8-length-of-last-word" class="hash-link" aria-label="Direct link to Problem 8: Length of Last Word" title="Direct link to Problem 8: Length of Last Word" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [String]</p>
+📂 <strong>Topics:</strong> [String]
+🧩 <strong>Pattern:</strong> String Manipulation, Two Pointers
+✅ <strong>Best Option:</strong> Traverse from the end — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Split + filter O(n) space — unnecessary allocation
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/length-of-last-word/" target="_blank" rel="noopener noreferrer" class="">Length of Last Word</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string">Reverse Words in a String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-10-plus-one">Plus One</a></p>
 <p><strong>Problem:</strong> Given a string s consisting of words and spaces, return the length of the last word in the string.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;Hello World&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 5</span><br></div></code></pre></div></div>
@@ -205,7 +245,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-9-longest-substring-without-repeating-characters">Problem 9: Longest Substring Without Repeating Characters<a href="#problem-9-longest-substring-without-repeating-characters" class="hash-link" aria-label="Direct link to Problem 9: Longest Substring Without Repeating Characters" title="Direct link to Problem 9: Longest Substring Without Repeating Characters" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Sliding Window, Hash Table]</p>
+📂 <strong>Topics:</strong> [String, Sliding Window, Hash Table]
+🧩 <strong>Pattern:</strong> Sliding Window, Hash Map
+✅ <strong>Best Option:</strong> Sliding window + set — O(n) time, O(min(n,m)) space
+❌ <strong>Not Optimal:</strong> Brute force O(n³) — fails for n up to 5 × 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener noreferrer" class="">Longest Substring Without Repeating Characters</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-13-longest-repeating-character-replacement">Longest Repeating Character Replacement</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-14-minimum-window-substring">Minimum Window Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-3-maximum-subarray-kadanes-algorithm">Maximum Subarray</a></p>
 <p><strong>Problem:</strong> Given a string s, find the length of the longest substring without repeating characters.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;abcabcbb&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: &quot;abc&quot; length 3.</span><br></div></code></pre></div></div>
@@ -227,7 +272,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-10-longest-palindromic-substring">Problem 10: Longest Palindromic Substring<a href="#problem-10-longest-palindromic-substring" class="hash-link" aria-label="Direct link to Problem 10: Longest Palindromic Substring" title="Direct link to Problem 10: Longest Palindromic Substring" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, DP, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, DP, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, Memoization
+✅ <strong>Best Option:</strong> Expand around center — O(n²) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n³) — fails for n up to 1000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener noreferrer" class="">Longest Palindromic Substring</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-15-palindromic-substrings">Palindromic Substrings</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Given a string s, return the longest palindromic substring in s.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;babad&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;bab&quot; or &quot;aba&quot;</span><br></div></code></pre></div></div>
@@ -250,7 +300,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-11-group-anagrams">Problem 11: Group Anagrams<a href="#problem-11-group-anagrams" class="hash-link" aria-label="Direct link to Problem 11: Group Anagrams" title="Direct link to Problem 11: Group Anagrams" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Hash Table, Sorting]</p>
+📂 <strong>Topics:</strong> [String, Hash Table, Sorting]
+🧩 <strong>Pattern:</strong> Hash Map, Sorting
+✅ <strong>Best Option:</strong> Sorted-key hash map — O(n·k log k) time, O(n·k) space
+❌ <strong>Not Optimal:</strong> Compare every pair O(n²·k) — fails for n up to 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener noreferrer" class="">Group Anagrams</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-2-valid-anagram">Valid Anagram</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-3-first-unique-character-in-a-string">First Unique Character in a String</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a></p>
 <p><strong>Problem:</strong> Given an array of strings strs, group the anagrams together.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: strs = [&quot;eat&quot;, &quot;tea&quot;, &quot;tan&quot;, &quot;ate&quot;, &quot;nat&quot;, &quot;bat&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [[&quot;bat&quot;], [&quot;nat&quot;, &quot;tan&quot;], [&quot;ate&quot;, &quot;eat&quot;, &quot;tea&quot;]]</span><br></div></code></pre></div></div>
@@ -273,7 +328,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-12-string-to-integer-atoi">Problem 12: String to Integer (atoi)<a href="#problem-12-string-to-integer-atoi" class="hash-link" aria-label="Direct link to Problem 12: String to Integer (atoi)" title="Direct link to Problem 12: String to Integer (atoi)" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Math]</p>
+📂 <strong>Topics:</strong> [String, Math]
+🧩 <strong>Pattern:</strong> String Manipulation
+✅ <strong>Best Option:</strong> State-machine scan — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Built-in parseInt — ignores whitespace, sign and clamp rules
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/string-to-integer-atoi/" target="_blank" rel="noopener noreferrer" class="">String to Integer (atoi)</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-8-length-of-last-word">Length of Last Word</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-10-plus-one">Plus One</a></p>
 <p><strong>Problem:</strong> Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;42&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 42</span><br></div></code></pre></div></div>
@@ -296,7 +356,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-13-longest-repeating-character-replacement">Problem 13: Longest Repeating Character Replacement<a href="#problem-13-longest-repeating-character-replacement" class="hash-link" aria-label="Direct link to Problem 13: Longest Repeating Character Replacement" title="Direct link to Problem 13: Longest Repeating Character Replacement" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Sliding Window]</p>
+📂 <strong>Topics:</strong> [String, Sliding Window]
+🧩 <strong>Pattern:</strong> Sliding Window, Frequency Count
+✅ <strong>Best Option:</strong> Sliding window + max frequency — O(n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-repeating-character-replacement/" target="_blank" rel="noopener noreferrer" class="">Longest Repeating Character Replacement</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-14-minimum-window-substring">Minimum Window Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a></p>
 <p><strong>Problem:</strong> Given a string s and an integer k, find the length of the longest substring that can be obtained by replacing at most k characters to make all characters same.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;ABAB&quot;, k = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div></code></pre></div></div>
@@ -318,7 +383,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-14-minimum-window-substring">Problem 14: Minimum Window Substring<a href="#problem-14-minimum-window-substring" class="hash-link" aria-label="Direct link to Problem 14: Minimum Window Substring" title="Direct link to Problem 14: Minimum Window Substring" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Sliding Window, Hash Table]</p>
+📂 <strong>Topics:</strong> [String, Sliding Window, Hash Table]
+🧩 <strong>Pattern:</strong> Sliding Window, Hash Map
+✅ <strong>Best Option:</strong> Sliding window + two maps — O(n) time, O(m) space
+❌ <strong>Not Optimal:</strong> Brute force all substrings O(n²) — fails for n up to 10⁵
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/minimum-window-substring/" target="_blank" rel="noopener noreferrer" class="">Minimum Window Substring</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-13-longest-repeating-character-replacement">Longest Repeating Character Replacement</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a></p>
 <p><strong>Problem:</strong> Given two strings s and t, return the minimum window substring of s that contains all characters of t.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;BANC&quot;</span><br></div></code></pre></div></div>
@@ -339,7 +409,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-15-palindromic-substrings">Problem 15: Palindromic Substrings<a href="#problem-15-palindromic-substrings" class="hash-link" aria-label="Direct link to Problem 15: Palindromic Substrings" title="Direct link to Problem 15: Palindromic Substrings" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, DP, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, DP, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers
+✅ <strong>Best Option:</strong> Expand around center — O(n²) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n³) — fails for n up to 1000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/palindromic-substrings/" target="_blank" rel="noopener noreferrer" class="">Palindromic Substrings</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-10-longest-palindromic-substring">Longest Palindromic Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water">Trapping Rain Water</a></p>
 <p><strong>Problem:</strong> Count how many palindromic substrings exist in a given string.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;abc&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: &quot;a&quot;, &quot;b&quot;, &quot;c&quot;</span><br></div></code></pre></div></div>
@@ -360,7 +435,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-16-encode-and-decode-strings">Problem 16: Encode and Decode Strings<a href="#problem-16-encode-and-decode-strings" class="hash-link" aria-label="Direct link to Problem 16: Encode and Decode Strings" title="Direct link to Problem 16: Encode and Decode Strings" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Design]</p>
+📂 <strong>Topics:</strong> [String, Design]
+🧩 <strong>Pattern:</strong> String Manipulation, In-place
+✅ <strong>Best Option:</strong> Length-prefix encoding — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Delimiter-only encoding — fails when strings contain the delimiter
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/encode-and-decode-strings/" target="_blank" rel="noopener noreferrer" class="">Encode and Decode Strings</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi">String to Integer (atoi)</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-20-compare-version-numbers">Compare Version Numbers</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a></p>
 <p><strong>Problem:</strong> Design an algorithm to encode a list of strings to a single string and decode it back.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: [&quot;hello&quot;, &quot;world&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output (encoded): &quot;5#hello5#world&quot;</span><br></div></code></pre></div></div>
@@ -377,7 +457,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-17-longest-substring-with-at-least-k-repeating-characters">Problem 17: Longest Substring with At Least K Repeating Characters<a href="#problem-17-longest-substring-with-at-least-k-repeating-characters" class="hash-link" aria-label="Direct link to Problem 17: Longest Substring with At Least K Repeating Characters" title="Direct link to Problem 17: Longest Substring with At Least K Repeating Characters" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Divide and Conquer, Sliding Window]</p>
+📂 <strong>Topics:</strong> [String, Divide and Conquer, Sliding Window]
+🧩 <strong>Pattern:</strong> Sliding Window, Frequency Count
+✅ <strong>Best Option:</strong> Sliding window per unique-count — O(26n) time, O(1) space
+❌ <strong>Not Optimal:</strong> Brute force O(n²) — fails for n up to 10⁴
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/" target="_blank" rel="noopener noreferrer" class="">Longest Substring with At Least K Repeating Characters</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-13-longest-repeating-character-replacement">Longest Repeating Character Replacement</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-26-first-missing-positive">First Missing Positive</a></p>
 <p><strong>Problem:</strong> Find the length of the longest substring such that each character appears at least k times.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;aaabb&quot;, k = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: &quot;aaa&quot;</span><br></div></code></pre></div></div>
@@ -399,7 +484,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-18-letter-combinations-of-a-phone-number">Problem 18: Letter Combinations of a Phone Number<a href="#problem-18-letter-combinations-of-a-phone-number" class="hash-link" aria-label="Direct link to Problem 18: Letter Combinations of a Phone Number" title="Direct link to Problem 18: Letter Combinations of a Phone Number" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Backtracking]</p>
+📂 <strong>Topics:</strong> [String, Backtracking]
+🧩 <strong>Pattern:</strong> String Manipulation, Memoization
+✅ <strong>Best Option:</strong> Backtracking recursion — O(4ⁿ) time, O(n) space
+❌ <strong>Not Optimal:</strong> Hard-coded nested loops — depth is fixed and breaks if digits grow
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener noreferrer" class="">Letter Combinations of a Phone Number</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching">Wildcard Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-21-regular-expression-matching">Regular Expression Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-11-three-sum">Three Sum</a></p>
 <p><strong>Problem:</strong> Given a string containing digits 2-9, return all possible letter combinations that the number could represent.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: digits = &quot;23&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [&quot;ad&quot;, &quot;ae&quot;, &quot;af&quot;, &quot;bd&quot;, &quot;be&quot;, &quot;bf&quot;, &quot;cd&quot;, &quot;ce&quot;, &quot;cf&quot;]</span><br></div></code></pre></div></div>
@@ -416,7 +506,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-19-reverse-words-in-a-string">Problem 19: Reverse Words in a String<a href="#problem-19-reverse-words-in-a-string" class="hash-link" aria-label="Direct link to Problem 19: Reverse Words in a String" title="Direct link to Problem 19: Reverse Words in a String" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, In-place
+✅ <strong>Best Option:</strong> Split + reverse join — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Split on single space — mishandles leading/multiple spaces without extra filtering
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/reverse-words-in-a-string/" target="_blank" rel="noopener noreferrer" class="">Reverse Words in a String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-4-reverse-string">Reverse String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-8-length-of-last-word">Length of Last Word</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a></p>
 <p><strong>Problem:</strong> Given a string s, reverse the order of words.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;the sky is blue&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;blue is sky the&quot;</span><br></div></code></pre></div></div>
@@ -433,7 +528,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-20-compare-version-numbers">Problem 20: Compare Version Numbers<a href="#problem-20-compare-version-numbers" class="hash-link" aria-label="Direct link to Problem 20: Compare Version Numbers" title="Direct link to Problem 20: Compare Version Numbers" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [String, Two Pointers]</p>
+📂 <strong>Topics:</strong> [String, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, String Manipulation
+✅ <strong>Best Option:</strong> Split + zero-pad compare — O(n+m) time, O(n+m) space
+❌ <strong>Not Optimal:</strong> Parse as floats — precision loss and &quot;1.0&quot; vs &quot;1.0.0&quot; mismatch
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/compare-version-numbers/" target="_blank" rel="noopener noreferrer" class="">Compare Version Numbers</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi">String to Integer (atoi)</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-8-length-of-last-word">Length of Last Word</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Compare two version numbers (e.g., &quot;1.01&quot; vs &quot;1.001&quot;). Return 1 if v1 &gt; v2, -1 if v1 &lt; v2, 0 if equal.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: version1 = &quot;1.01&quot;, version2 = &quot;1.001&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 0</span><br></div></code></pre></div></div>
@@ -448,7 +548,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-21-regular-expression-matching">Problem 21: Regular Expression Matching<a href="#problem-21-regular-expression-matching" class="hash-link" aria-label="Direct link to Problem 21: Regular Expression Matching" title="Direct link to Problem 21: Regular Expression Matching" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [String, DP, Backtracking]</p>
+📂 <strong>Topics:</strong> [String, DP, Backtracking]
+🧩 <strong>Pattern:</strong> Memoization
+✅ <strong>Best Option:</strong> DP table — O(m·n) time, O(m·n) space
+❌ <strong>Not Optimal:</strong> Naive recursive backtracking — exponential without memoization
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/regular-expression-matching/" target="_blank" rel="noopener noreferrer" class="">Regular Expression Matching</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching">Wildcard Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Implement regular expression matching with support for &#x27;.&#x27; and &#x27;*&#x27;.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;aa&quot;, p = &quot;a*&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -470,7 +575,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-22-edit-distance">Problem 22: Edit Distance<a href="#problem-22-edit-distance" class="hash-link" aria-label="Direct link to Problem 22: Edit Distance" title="Direct link to Problem 22: Edit Distance" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [String, DP]</p>
+📂 <strong>Topics:</strong> [String, DP]
+🧩 <strong>Pattern:</strong> Memoization
+✅ <strong>Best Option:</strong> DP table — O(m·n) time, O(m·n) space
+❌ <strong>Not Optimal:</strong> Recursion without memo O(3ⁿ) — exponential branching
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/edit-distance/" target="_blank" rel="noopener noreferrer" class="">Edit Distance</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-21-regular-expression-matching">Regular Expression Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-23-distinct-subsequences">Distinct Subsequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-20-maximum-product-subarray">Maximum Product Subarray</a></p>
 <p><strong>Problem:</strong> Given two strings, return minimum edit operations (insert, delete, replace) to convert word1 to word2.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: word1 = &quot;horse&quot;, word2 = &quot;ros&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -491,7 +601,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-23-distinct-subsequences">Problem 23: Distinct Subsequences<a href="#problem-23-distinct-subsequences" class="hash-link" aria-label="Direct link to Problem 23: Distinct Subsequences" title="Direct link to Problem 23: Distinct Subsequences" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [String, DP]</p>
+📂 <strong>Topics:</strong> [String, DP]
+🧩 <strong>Pattern:</strong> Memoization
+✅ <strong>Best Option:</strong> DP table — O(m·n) time, O(m·n) space
+❌ <strong>Not Optimal:</strong> Enumerate subsequences O(2ᵐ) — fails for s up to 1000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/distinct-subsequences/" target="_blank" rel="noopener noreferrer" class="">Distinct Subsequences</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-25-wildcard-matching">Wildcard Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-30-count-of-smaller-numbers-after-self">Count of Smaller Numbers After Self</a></p>
 <p><strong>Problem:</strong> Given two strings s and t, count the number of distinct subsequences of s that equal t.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;rabbbit&quot;, t = &quot;rabbit&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 3</span><br></div></code></pre></div></div>
@@ -508,7 +623,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-24-text-justification">Problem 24: Text Justification<a href="#problem-24-text-justification" class="hash-link" aria-label="Direct link to Problem 24: Text Justification" title="Direct link to Problem 24: Text Justification" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [String, Simulation]</p>
+📂 <strong>Topics:</strong> [String, Simulation]
+🧩 <strong>Pattern:</strong> Greedy, String Manipulation
+✅ <strong>Best Option:</strong> Greedy line packing — O(n·L) time, O(n) space
+❌ <strong>Not Optimal:</strong> Fixed-width chunking — breaks justification rules and single-word overflow
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/text-justification/" target="_blank" rel="noopener noreferrer" class="">Text Justification</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string">Reverse Words in a String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-8-length-of-last-word">Length of Last Word</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-16-merge-intervals">Merge Intervals</a></p>
 <p><strong>Problem:</strong> Given an array of words and a maxWidth, format the text such that each line has exactly maxWidth characters, fully justified.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: words = [&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;], maxWidth = 16</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   &quot;This    is    an&quot;,</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   &quot;example  of text&quot;,</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   &quot;justification.  &quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">]</span><br></div></code></pre></div></div>
@@ -526,7 +646,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-25-wildcard-matching">Problem 25: Wildcard Matching<a href="#problem-25-wildcard-matching" class="hash-link" aria-label="Direct link to Problem 25: Wildcard Matching" title="Direct link to Problem 25: Wildcard Matching" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [String, DP, Greedy]</p>
+📂 <strong>Topics:</strong> [String, DP, Greedy]
+🧩 <strong>Pattern:</strong> Memoization, Greedy
+✅ <strong>Best Option:</strong> DP table — O(m·n) time, O(m·n) space
+❌ <strong>Not Optimal:</strong> Recursive backtracking O(2ⁿ) — fails for lengths up to 2000
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/wildcard-matching/" target="_blank" rel="noopener noreferrer" class="">Wildcard Matching</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-21-regular-expression-matching">Regular Expression Matching</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-22-edit-distance">Edit Distance</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-24-jump-game-ii">Jump Game II</a></p>
 <p><strong>Problem:</strong> Implement wildcard pattern matching with support for &#x27;?&#x27; (any single char) and &#x27;*&#x27; (any sequence including empty).</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;aa&quot;, p = &quot;*&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>

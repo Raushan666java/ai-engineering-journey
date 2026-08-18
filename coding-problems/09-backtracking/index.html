@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 09: Backtracking | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/09-backtracking"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 09: Backtracking | AI Engineering Journey"><meta data-rh="true" name="description" content="Backtracking is a systematic way to explore all possible configurations of a solution space. It incrementally builds candidates and abandons them (backtracks) when they cannot lead to a valid solution."><meta data-rh="true" property="og:description" content="Backtracking is a systematic way to explore all possible configurations of a solution space. It incrementally builds candidates and abandons them (backtracks) when they cannot lead to a valid solution."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/09-backtracking"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/09-backtracking" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/09-backtracking" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 09: Backtracking","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/09-backtracking"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -46,6 +46,11 @@ B --&gt;|Partitioning| H[Palindrome partitioning]</p>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Backtracking, Array, Bit Manipulation]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Subsets
+✅ <strong>Best Option:</strong> Backtracking pick/not-pick — O(n × 2^n) time, O(n × 2^n) space
+❌ <strong>Not Optimal:</strong> Bit manipulation — O(2^n) but does not generalize to duplicates or constraints
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/subsets/" target="_blank" rel="noopener noreferrer" class="">Subsets</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates">Subsets II (with duplicates)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations">Combinations</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation">Next Permutation</a></p>
 <p><strong>Problem:</strong> Given an array of unique integers, return all possible subsets (the power set).</p>
 <p><strong>Example 1:</strong>
 <code>Input: nums = [1, 2, 3] Output: [[], [1], [2], [1,2], [3], [1,3], [2,3], [1,2,3]]</code></p>
@@ -78,6 +83,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Backtracking, Bit Manipulation]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, State Space Search, Pruning
+✅ <strong>Best Option:</strong> Backtracking over 10 LEDs with hour/minute pruning — O(2^10) = O(1) time, O(1) space
+❌ <strong>Not Optimal:</strong> Nested loops over all hour and minute bitmasks — no pruning, redundant states
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/binary-watch/" target="_blank" rel="noopener noreferrer" class="">Binary Watch</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set">Subsets (Power Set)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-3-letter-case-permutation">Letter Case Permutation</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-8-single-number">Single Number</a></p>
 <p><strong>Problem:</strong> A binary watch has 4 LEDs for hours (0-11) and 6 for minutes (0-59). Given turnedOn (number of lit LEDs), return all possible times.</p>
 <p><strong>Example 1:</strong>
 <code>Input: turnedOn = 1 Output: [\&quot;0:01\&quot;,\&quot;0:02\&quot;,\&quot;0:04\&quot;,\&quot;0:08\&quot;,\&quot;0:16\&quot;,\&quot;0:32\&quot;,\&quot;1:00\&quot;,\&quot;2:00\&quot;,\&quot;4:00\&quot;,\&quot;8:00\&quot;]</code></p>
@@ -107,6 +117,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
 📂 <strong>Topics:</strong> [Backtracking, String, Bit Manipulation]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion
+✅ <strong>Best Option:</strong> Backtracking with two branches per letter — O(n × 2^n) time, O(n × 2^n) space
+❌ <strong>Not Optimal:</strong> BFS level expansion — O(2^n) queue blow-up
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/letter-case-permutation/" target="_blank" rel="noopener noreferrer" class="">Letter Case Permutation</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set">Subsets (Power Set)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-10-generate-parentheses">Generate Parentheses</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number</a></p>
 <p><strong>Problem:</strong> Given a string s, transform each letter to lowercase or uppercase to create all possible permutations.</p>
 <p><strong>Example 1:</strong>
 <code>Input: s = \&quot;a1b2\&quot; Output: [\&quot;a1b2\&quot;,\&quot;a1B2\&quot;,\&quot;A1b2\&quot;,\&quot;A1B2\&quot;]</code></p>
@@ -135,6 +150,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Permutations
+✅ <strong>Best Option:</strong> Backtracking with visited array — O(n × n!) time, O(n) space
+❌ <strong>Not Optimal:</strong> No visited tracking — reuses elements, produces invalid permutations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/permutations/" target="_blank" rel="noopener noreferrer" class="">Permutations</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-5-permutations-ii-with-duplicates">Permutations II (with duplicates)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations">Combinations</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation">Next Permutation</a></p>
 <p><strong>Problem:</strong> Given an array of distinct integers, return all possible permutations.</p>
 <p><strong>Example 1:</strong>
 <code>Input: nums = [1, 2, 3] Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]</code></p>
@@ -166,6 +186,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Permutations, Pruning
+✅ <strong>Best Option:</strong> Backtracking + sort + skip duplicate branches — O(n × n!) time, O(n) space
+❌ <strong>Not Optimal:</strong> Generate all then dedupe with Set — O(n!) extra memory
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/permutations-ii/" target="_blank" rel="noopener noreferrer" class="">Permutations II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-4-permutations">Permutations</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates">Subsets II (with duplicates)</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-11-group-anagrams">Group Anagrams</a></p>
 <p><strong>Problem:</strong> Given an array that may contain duplicates, return all unique permutations.</p>
 <p><strong>Example 1:</strong>
 <code>Input: nums = [1, 1, 2] Output: [[1,1,2],[1,2,1],[2,1,1]]</code></p>
@@ -194,6 +219,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Combinations, Pruning
+✅ <strong>Best Option:</strong> Backtracking with start index + prune overshoot — O(n^(target/min)) time, O(target/min) space
+❌ <strong>Not Optimal:</strong> Enumerate all subsets then filter — O(2^n) and cannot reuse numbers
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/combination-sum/" target="_blank" rel="noopener noreferrer" class="">Combination Sum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-7-combination-sum-ii">Combination Sum II</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-15-combinations">Combinations</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-15-subarray-sum-equals-k">Subarray Sum Equals K</a></p>
 <p><strong>Problem:</strong> Given distinct integers and a target, find all unique combinations where the numbers sum to target. Same number may be reused.</p>
 <p><strong>Example 1:</strong>
 <code>Input: candidates = [2, 3, 6, 7], target = 7 Output: [[2,2,3],[7]]</code></p>
@@ -224,6 +254,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Combinations, Pruning
+✅ <strong>Best Option:</strong> Backtracking + sort + skip adjacent duplicates — O(2^n) time, O(n) space
+❌ <strong>Not Optimal:</strong> No duplicate skipping — emits repeated combinations
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/combination-sum-ii/" target="_blank" rel="noopener noreferrer" class="">Combination Sum II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-6-combination-sum">Combination Sum</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-8-subsets-ii-with-duplicates">Subsets II (with duplicates)</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-11-three-sum">Three Sum</a></p>
 <p><strong>Problem:</strong> Same as Combination Sum but each number may be used only once, and array may have duplicates.</p>
 <p><strong>Example 1:</strong>
 <code>Input: candidates = [10,1,2,7,6,1,5], target = 8 Output: [[1,1,6],[1,2,5],[1,7],[2,6]]</code></p>
@@ -251,6 +286,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Array]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Subsets, Pruning
+✅ <strong>Best Option:</strong> Backtracking + sort + skip duplicates — O(n × 2^n) time, O(n × 2^n) space
+❌ <strong>Not Optimal:</strong> Generate all subsets then dedupe with Set — O(2^n) extra memory
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/subsets-ii/" target="_blank" rel="noopener noreferrer" class="">Subsets II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set">Subsets (Power Set)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-7-combination-sum-ii">Combination Sum II</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-5-contains-duplicate">Contains Duplicate</a></p>
 <p><strong>Problem:</strong> Given an array that may contain duplicates, return all unique subsets.</p>
 <p><strong>Example 1:</strong>
 <code>Input: nums = [1, 2, 2] Output: [[], [1], [1,2], [1,2,2], [2], [2,2]]</code></p>
@@ -275,6 +315,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, Matrix, String]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, State Space Search, Pruning
+✅ <strong>Best Option:</strong> Backtracking DFS with in-place visited marking — O(m × n × 4^L) time, O(L) space
+❌ <strong>Not Optimal:</strong> BFS — needs a visited copy per path, memory explodes to O(m × n × 4^L)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/word-search/" target="_blank" rel="noopener noreferrer" class="">Word Search</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens">N-Queens</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-14-sudoku-solver">Sudoku Solver</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a></p>
 <p><strong>Problem:</strong> Given an m x n board of letters and a word, determine if the word exists in the grid (adjacent cells, no reuse).</p>
 <p><strong>Example 1:</strong>
 <code>Input: board = [[\&quot;A\&quot;,\&quot;B\&quot;,\&quot;C\&quot;,\&quot;E\&quot;],[\&quot;S\&quot;,\&quot;F\&quot;,\&quot;C\&quot;,\&quot;S\&quot;],[\&quot;A\&quot;,\&quot;D\&quot;,\&quot;E\&quot;,\&quot;E\&quot;]], word = \&quot;ABCCED\&quot; Output: true</code></p>
@@ -309,6 +354,11 @@ if (backtrack(r, c, 0)) return true;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, String]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ <strong>Best Option:</strong> Backtracking with open/close balance — O(4^n / √n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Generate all 2^(2n) strings then validate — wasteful full enumeration
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/generate-parentheses/" target="_blank" rel="noopener noreferrer" class="">Generate Parentheses</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-3-letter-case-permutation">Letter Case Permutation</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-12-restore-ip-addresses">Restore IP Addresses</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses">Valid Parentheses</a></p>
 <p><strong>Problem:</strong> Given n pairs of parentheses, generate all well-formed combinations.</p>
 <p><strong>Example 1:</strong>
 <code>Input: n = 3 Output: [\&quot;((()))\&quot;,\&quot;(()())\&quot;,\&quot;(())()\&quot;,\&quot;()(())\&quot;,\&quot;()()()\&quot;]</code></p>
@@ -339,6 +389,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, String, DP]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Pruning
+✅ <strong>Best Option:</strong> Backtracking exploring palindrome prefixes only — O(n × 2^n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Generate all partitions then filter — O(2^n) checks wasted on non-palindrome prefixes
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/palindrome-partitioning/" target="_blank" rel="noopener noreferrer" class="">Palindrome Partitioning</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-12-restore-ip-addresses">Restore IP Addresses</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens">N-Queens</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-15-palindromic-substrings">Palindromic Substrings</a></p>
 <p><strong>Problem:</strong> Given a string, partition it such that every substring is a palindrome. Return all possible palindromic partitions.</p>
 <p><strong>Example 1:</strong>
 <code>Input: s = \&quot;aab\&quot; Output: [[\&quot;a\&quot;,\&quot;a\&quot;,\&quot;b\&quot;],[\&quot;aa\&quot;,\&quot;b\&quot;]]</code></p>
@@ -378,6 +433,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
 📂 <strong>Topics:</strong> [Backtracking, String]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, State Space Search, Pruning
+✅ <strong>Best Option:</strong> Backtracking with segment validation (0-255, no leading zero) — O(3^4) = O(1) time, O(1) space
+❌ <strong>Not Optimal:</strong> Try every dot placement without validation — O(2^(n-1)) combos of invalid IPs
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/restore-ip-addresses/" target="_blank" rel="noopener noreferrer" class="">Restore IP Addresses</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-11-palindrome-partitioning">Palindrome Partitioning</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-10-generate-parentheses">Generate Parentheses</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-18-letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number</a></p>
 <p><strong>Problem:</strong> Given a string of digits, return all valid IP addresses that can be formed by inserting dots.</p>
 <p><strong>Example 1:</strong>
 <code>Input: s = \&quot;25525511135\&quot; Output: [\&quot;255.255.11.135\&quot;,\&quot;255.255.111.35\&quot;]</code></p>
@@ -411,6 +471,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Backtracking, Matrix]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ <strong>Best Option:</strong> Backtracking with column/diagonal sets — O(n!) time, O(n²) space
+❌ <strong>Not Optimal:</strong> Re-scan the board for attacks on every placement — O(n³) redundant checks
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/n-queens/" target="_blank" rel="noopener noreferrer" class="">N-Queens</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-14-sudoku-solver">Sudoku Solver</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search">Word Search</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-14-surrounded-regions">Surrounded Regions</a></p>
 <p><strong>Problem:</strong> Place n queens on an n x n chessboard so that no two queens attack each other. Return all distinct solutions.</p>
 <p><strong>Example 1:</strong>
 <code>Input: n = 4 Output: [[\&quot;.Q..\&quot;,\&quot;...Q\&quot;,\&quot;Q...\&quot;,\&quot;..Q.\&quot;],[\&quot;..Q.\&quot;,\&quot;Q...\&quot;,\&quot;...Q\&quot;,\&quot;.Q..\&quot;]]</code></p>
@@ -445,6 +510,11 @@ return result;
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
 📂 <strong>Topics:</strong> [Backtracking, Matrix, Hash Table]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Constraint Satisfaction, Pruning
+✅ <strong>Best Option:</strong> Backtracking with row/col/box sets — O(9^81) worst case, O(1) space
+❌ <strong>Not Optimal:</strong> Re-scan the board per empty cell — repeated O(81) checks slow every placement
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/sudoku-solver/" target="_blank" rel="noopener noreferrer" class="">Sudoku Solver</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-13-n-queens">N-Queens</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-9-word-search">Word Search</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a></p>
 <p><strong>Problem:</strong> Write a program to solve a Sudoku puzzle by filling empty cells (denoted by &#x27;.&#x27;).</p>
 <p><strong>Example 1:</strong>
 <code>Input: board = [[\&quot;5\&quot;,\&quot;3\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;7\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;],                 [\&quot;6\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;1\&quot;,\&quot;9\&quot;,\&quot;5\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;],                 [\&quot;.\&quot;,\&quot;9\&quot;,\&quot;8\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;6\&quot;,\&quot;.\&quot;],                 [\&quot;8\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;6\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;3\&quot;],                 [\&quot;4\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;8\&quot;,\&quot;.\&quot;,\&quot;3\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;1\&quot;],                 [\&quot;7\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;2\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;6\&quot;],                 [\&quot;.\&quot;,\&quot;6\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;2\&quot;,\&quot;8\&quot;,\&quot;.\&quot;],                 [\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;4\&quot;,\&quot;1\&quot;,\&quot;9\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;5\&quot;],                 [\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;8\&quot;,\&quot;.\&quot;,\&quot;.\&quot;,\&quot;7\&quot;,\&quot;9\&quot;]] Output: solved board (filled)</code></p>
@@ -486,6 +556,11 @@ if (board[r][c] !== &#x27;.&#x27;) return solve(r, c + 1);</p>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy (but included as Hard for completeness)
 📂 <strong>Topics:</strong> [Backtracking, Combinatorics]</p>
+<p>🧩 <strong>Pattern:</strong> Backtracking, Recursion, Combinations, Pruning
+✅ <strong>Best Option:</strong> Backtracking with start index — O(C(n,k) × k) time, O(k) space
+❌ <strong>Not Optimal:</strong> No branch-count pruning — explores branches that can never reach k elements
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/combinations/" target="_blank" rel="noopener noreferrer" class="">Combinations</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-1-subsets-power-set">Subsets (Power Set)</a> · <a class="" href="/ai-engineering-journey/coding-problems/09-backtracking#problem-4-permutations">Permutations</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation">Next Permutation</a></p>
 <p><strong>Problem:</strong> Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n].</p>
 <p><strong>Example 1:</strong>
 <code>Input: n = 4, k = 2 Output: [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]</code></p>

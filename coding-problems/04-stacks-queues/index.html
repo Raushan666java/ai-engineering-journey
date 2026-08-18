@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 04: Stacks &amp; Queues | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems/04-stacks-queues"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 04: Stacks &amp; Queues | AI Engineering Journey"><meta data-rh="true" name="description" content="Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything from expression evaluation to breadth-first search."><meta data-rh="true" property="og:description" content="Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything from expression evaluation to breadth-first search."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/04-stacks-queues"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/04-stacks-queues" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems/04-stacks-queues" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 04: Stacks & Queues","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems/04-stacks-queues"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.49876789.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.eb4b7770.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.9054dedc.js" defer="defer"></script>
 </head>
 <body>
@@ -35,7 +35,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-valid-parentheses">Problem 1: Valid Parentheses<a href="#problem-1-valid-parentheses" class="hash-link" aria-label="Direct link to Problem 1: Valid Parentheses" title="Direct link to Problem 1: Valid Parentheses" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, String]</p>
+📂 <strong>Topics:</strong> [Stack, String]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack-based bracket matching — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Repeatedly replacing balanced pairs — O(n²) worst case; a single stack pass is O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreferrer" class="">Valid Parentheses</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string">Decode String</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string">Remove All Adjacent Duplicates In String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses">Valid Parentheses</a></p>
 <p><strong>Problem:</strong> Given a string containing &#x27;(&#x27;, &#x27;)&#x27;, &#x27;{&#x27;, &#x27;}&#x27;, &#x27;[&#x27; and &#x27;]&#x27;, determine if the input string is valid.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;()[]{}&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -52,7 +57,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-min-stack">Problem 2: Min Stack<a href="#problem-2-min-stack" class="hash-link" aria-label="Direct link to Problem 2: Min Stack" title="Direct link to Problem 2: Min Stack" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, Design]</p>
+📂 <strong>Topics:</strong> [Stack, Design]
+🧩 <strong>Pattern:</strong> Two Stacks
+✅ <strong>Best Option:</strong> Auxiliary min stack tracking per-level minimums — O(1) per operation, O(n) space
+❌ <strong>Not Optimal:</strong> Single min variable — becomes stale after pop; the min stack preserves per-level history
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/min-stack/" target="_blank" rel="noopener noreferrer" class="">Min Stack</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-3-implement-queue-using-stacks">Implement Queue using Stacks</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences">Validate Stack Sequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-25-serialize-and-deserialize-binary-tree">Serialize and Deserialize Binary Tree</a></p>
 <p><strong>Problem:</strong> Design a stack that supports push, pop, top, and retrieving the minimum element in O(1) time.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: [&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">       [[],[-2],[0],[-3],[],[],[],[]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [null,null,null,null,-3,null,0,-2]</span><br></div></code></pre></div></div>
@@ -69,7 +79,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-implement-queue-using-stacks">Problem 3: Implement Queue using Stacks<a href="#problem-3-implement-queue-using-stacks" class="hash-link" aria-label="Direct link to Problem 3: Implement Queue using Stacks" title="Direct link to Problem 3: Implement Queue using Stacks" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, Queue, Design]</p>
+📂 <strong>Topics:</strong> [Stack, Queue, Design]
+🧩 <strong>Pattern:</strong> Two Stacks
+✅ <strong>Best Option:</strong> Input/output stacks with lazy transfer — O(1) amortized per operation, O(n) space
+❌ <strong>Not Optimal:</strong> Single stack with shift-based pops — O(n) per pop; two-stack transfer amortizes to O(1)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/implement-queue-using-stacks/" target="_blank" rel="noopener noreferrer" class="">Implement Queue using Stacks</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-2-min-stack">Min Stack</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences">Validate Stack Sequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-5-binary-tree-level-order-traversal">Binary Tree Level Order Traversal</a></p>
 <p><strong>Problem:</strong> Implement a FIFO queue using two stacks.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: [&quot;MyQueue&quot;,&quot;push&quot;,&quot;push&quot;,&quot;peek&quot;,&quot;pop&quot;,&quot;empty&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">       [[],[1],[2],[],[],[]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [null,null,null,1,1,false]</span><br></div></code></pre></div></div>
@@ -82,7 +97,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-baseball-game">Problem 4: Baseball Game<a href="#problem-4-baseball-game" class="hash-link" aria-label="Direct link to Problem 4: Baseball Game" title="Direct link to Problem 4: Baseball Game" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, Array]</p>
+📂 <strong>Topics:</strong> [Stack, Array]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack simulation of the operations — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Array splicing on C/D ops — O(n²) from shifting; stack push/pop mirrors the rules in O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/baseball-game/" target="_blank" rel="noopener noreferrer" class="">Baseball Game</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-10-evaluate-reverse-polish-notation">Evaluate Reverse Polish Notation</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-12-asteroid-collision">Asteroid Collision</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-6-valid-parentheses">Valid Parentheses</a></p>
 <p><strong>Problem:</strong> You are keeping score. Operations: integer (record), &#x27;+&#x27; (sum of last two), &#x27;D&#x27; (double last), &#x27;C&#x27; (remove last). Return sum of all scores.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: ops = [&quot;5&quot;, &quot;2&quot;, &quot;C&quot;, &quot;D&quot;, &quot;+&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 30</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: 5 → 5,2 → 5, → 5,10 → 5,10,15 = 30</span><br></div></code></pre></div></div>
@@ -95,7 +115,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-5-backspace-string-compare">Problem 5: Backspace String Compare<a href="#problem-5-backspace-string-compare" class="hash-link" aria-label="Direct link to Problem 5: Backspace String Compare" title="Direct link to Problem 5: Backspace String Compare" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Microsoft]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, Two Pointers]</p>
+📂 <strong>Topics:</strong> [Stack, Two Pointers]
+🧩 <strong>Pattern:</strong> Two Pointers, Stack
+✅ <strong>Best Option:</strong> Right-to-left two-pointer scan with skip counting — O(n + m) time, O(1) space
+❌ <strong>Not Optimal:</strong> Stack build per string — O(n + m) extra space; the reverse scan skips backspaces in O(1)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/backspace-string-compare/" target="_blank" rel="noopener noreferrer" class="">Backspace String Compare</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string">Remove All Adjacent Duplicates In String</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-15-simplify-path">Simplify Path</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-1-valid-palindrome">Valid Palindrome</a></p>
 <p><strong>Problem:</strong> Given two strings where &#x27;#&#x27; represents backspace, return true if they&#x27;re equal when typed into an empty text editor.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;ab#c&quot;, t = &quot;ad#c&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: Both become &quot;ac&quot;.</span><br></div></code></pre></div></div>
@@ -113,7 +138,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-6-remove-all-adjacent-duplicates-in-string">Problem 6: Remove All Adjacent Duplicates In String<a href="#problem-6-remove-all-adjacent-duplicates-in-string" class="hash-link" aria-label="Direct link to Problem 6: Remove All Adjacent Duplicates In String" title="Direct link to Problem 6: Remove All Adjacent Duplicates In String" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, String]</p>
+📂 <strong>Topics:</strong> [Stack, String]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack with top-of-stack comparison — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Repeated replace passes over the string — O(n²); a single stack pass removes all duplicates at once
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/" target="_blank" rel="noopener noreferrer" class="">Remove All Adjacent Duplicates In String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-5-backspace-string-compare">Backspace String Compare</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string">Decode String</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-16-remove-duplicates-from-sorted-list-ii">Remove Duplicates from Sorted List II</a></p>
 <p><strong>Problem:</strong> Repeatedly remove adjacent duplicate characters until no more duplicates exist.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;abbaca&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;ca&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: &quot;abbaca&quot; → &quot;aaca&quot; → &quot;ca&quot;</span><br></div></code></pre></div></div>
@@ -126,7 +156,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-7-next-greater-element-i">Problem 7: Next Greater Element I<a href="#problem-7-next-greater-element-i" class="hash-link" aria-label="Direct link to Problem 7: Next Greater Element I" title="Direct link to Problem 7: Next Greater Element I" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Easy
-📂 <strong>Topics:</strong> [Stack, Hash Table]</p>
+📂 <strong>Topics:</strong> [Stack, Hash Table]
+🧩 <strong>Pattern:</strong> Monotonic Stack, Hash Map
+✅ <strong>Best Option:</strong> Monotonic stack over nums2 + hash map of next-greater results — O(n + m) time, O(m) space
+❌ <strong>Not Optimal:</strong> Brute force scan of nums2 per element — O(n·m); the monotonic stack resolves all in one pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="noopener noreferrer" class="">Next Greater Element I</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii">Next Greater Element II</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures">Daily Temperatures</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-1-two-sum">Two Sum</a></p>
 <p><strong>Problem:</strong> Find the next greater element for each element in nums1 from nums2.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums1 = [4, 1, 2], nums2 = [1, 3, 4, 2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [-1, 3, -1]</span><br></div></code></pre></div></div>
@@ -145,7 +180,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-8-next-greater-element-ii">Problem 8: Next Greater Element II<a href="#problem-8-next-greater-element-ii" class="hash-link" aria-label="Direct link to Problem 8: Next Greater Element II" title="Direct link to Problem 8: Next Greater Element II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Array]</p>
+📂 <strong>Topics:</strong> [Stack, Array]
+🧩 <strong>Pattern:</strong> Monotonic Stack
+✅ <strong>Best Option:</strong> Double-length circular pass (2n) with a monotonic stack — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Naive double loop over the circular array — O(n²); simulating the circle with i % n keeps it linear
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/next-greater-element-ii/" target="_blank" rel="noopener noreferrer" class="">Next Greater Element II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-7-next-greater-element-i">Next Greater Element I</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures">Daily Temperatures</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-19-rotate-array">Rotate Array</a></p>
 <p><strong>Problem:</strong> Given a circular array, find the next greater element for each element.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 2, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [2, -1, 2]</span><br></div></code></pre></div></div>
@@ -162,7 +202,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-9-daily-temperatures">Problem 9: Daily Temperatures<a href="#problem-9-daily-temperatures" class="hash-link" aria-label="Direct link to Problem 9: Daily Temperatures" title="Direct link to Problem 9: Daily Temperatures" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Array, Monotonic Stack]</p>
+📂 <strong>Topics:</strong> [Stack, Array, Monotonic Stack]
+🧩 <strong>Pattern:</strong> Monotonic Stack
+✅ <strong>Best Option:</strong> Monotonic stack of indices — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force search for the next warmer day — O(n²), TLE for n ≥ 10⁵; the stack resolves all in one pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/daily-temperatures/" target="_blank" rel="noopener noreferrer" class="">Daily Temperatures</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii">Next Greater Element II</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-18-largest-rectangle-in-histogram">Largest Rectangle in Histogram</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a></p>
 <p><strong>Problem:</strong> Given an array of temperatures, return an array such that answer[i] is the number of days until a warmer temperature.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: temperatures = [73, 74, 75, 71, 69, 72, 76, 73]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 1, 4, 2, 1, 1, 0, 0]</span><br></div></code></pre></div></div>
@@ -179,7 +224,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-10-evaluate-reverse-polish-notation">Problem 10: Evaluate Reverse Polish Notation<a href="#problem-10-evaluate-reverse-polish-notation" class="hash-link" aria-label="Direct link to Problem 10: Evaluate Reverse Polish Notation" title="Direct link to Problem 10: Evaluate Reverse Polish Notation" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Math]</p>
+📂 <strong>Topics:</strong> [Stack, Math]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack evaluation of postfix tokens — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Building an expression tree first — extra O(n) structure; direct stack evaluation is a single pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank" rel="noopener noreferrer" class="">Evaluate Reverse Polish Notation</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-4-baseball-game">Baseball Game</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string">Decode String</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-12-string-to-integer-atoi">String to Integer (atoi)</a></p>
 <p><strong>Problem:</strong> Evaluate the value of an arithmetic expression in Reverse Polish Notation.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: tokens = [&quot;2&quot;, &quot;1&quot;, &quot;+&quot;, &quot;3&quot;, &quot;*&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 9</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Explanation: (2 + 1) * 3 = 9</span><br></div></code></pre></div></div>
@@ -196,7 +246,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-11-decode-string">Problem 11: Decode String<a href="#problem-11-decode-string" class="hash-link" aria-label="Direct link to Problem 11: Decode String" title="Direct link to Problem 11: Decode String" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, String, Recursion]</p>
+📂 <strong>Topics:</strong> [Stack, String, Recursion]
+🧩 <strong>Pattern:</strong> Stack, Recursion
+✅ <strong>Best Option:</strong> Two stacks (counts + strings) — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Recursive descent that reparses brackets — repeated sub-string rebuilds; stack simulation is single-pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/decode-string/" target="_blank" rel="noopener noreferrer" class="">Decode String</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-1-valid-parentheses">Valid Parentheses</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-10-evaluate-reverse-polish-notation">Evaluate Reverse Polish Notation</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-16-encode-and-decode-strings">Encode and Decode Strings</a></p>
 <p><strong>Problem:</strong> Decode a string encoded as k[encoded_string]. E.g., &quot;3[a]2[bc]&quot; → &quot;aaabcbc&quot;.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: s = &quot;3[a]2[bc]&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;aaabcbc&quot;</span><br></div></code></pre></div></div>
@@ -213,7 +268,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-12-asteroid-collision">Problem 12: Asteroid Collision<a href="#problem-12-asteroid-collision" class="hash-link" aria-label="Direct link to Problem 12: Asteroid Collision" title="Direct link to Problem 12: Asteroid Collision" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Array]</p>
+📂 <strong>Topics:</strong> [Stack, Array]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack simulation with collision resolution — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Two-pointer array with splice removals — O(n²) worst case; a stack processes each asteroid once
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/asteroid-collision/" target="_blank" rel="noopener noreferrer" class="">Asteroid Collision</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-4-baseball-game">Baseball Game</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures">Daily Temperatures</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-6-remove-linked-list-elements">Remove Linked List Elements</a></p>
 <p><strong>Problem:</strong> We are given an array asteroids of integers representing asteroids in a row. The absolute value represents its size, and the sign represents its direction (positive = right, negative = left). Find out the state of the asteroids after all collisions.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: asteroids = [5, 10, -5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [5, 10]</span><br></div></code></pre></div></div>
@@ -230,7 +290,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-13-online-stock-span">Problem 13: Online Stock Span<a href="#problem-13-online-stock-span" class="hash-link" aria-label="Direct link to Problem 13: Online Stock Span" title="Direct link to Problem 13: Online Stock Span" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Monotonic Stack, Design]</p>
+📂 <strong>Topics:</strong> [Stack, Monotonic Stack, Design]
+🧩 <strong>Pattern:</strong> Monotonic Stack
+✅ <strong>Best Option:</strong> Monotonic stack of (price, span) pairs — O(1) amortized per call, O(n) space
+❌ <strong>Not Optimal:</strong> Brute-force lookback over all past prices — O(n²) worst case; span aggregation on the stack is amortized O(1)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/online-stock-span/" target="_blank" rel="noopener noreferrer" class="">Online Stock Span</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures">Daily Temperatures</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-7-next-greater-element-i">Next Greater Element I</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-2-best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</a></p>
 <p><strong>Problem:</strong> Design a class that returns the number of consecutive days (including today) the stock price has been less than or equal to today&#x27;s price.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: [&quot;StockSpanner&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">       [[],[100],[80],[60],[70],[60],[75],[85]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [null,1,1,1,2,1,4,6]</span><br></div></code></pre></div></div>
@@ -243,7 +308,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-14-remove-k-digits">Problem 14: Remove K Digits<a href="#problem-14-remove-k-digits" class="hash-link" aria-label="Direct link to Problem 14: Remove K Digits" title="Direct link to Problem 14: Remove K Digits" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Greedy]</p>
+📂 <strong>Topics:</strong> [Stack, Greedy]
+🧩 <strong>Pattern:</strong> Monotonic Stack, Greedy
+✅ <strong>Best Option:</strong> Monotonic increasing stack + greedy removals — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Enumerating all digit-removal combinations — exponential; greedy stack removal is linear
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/remove-k-digits/" target="_blank" rel="noopener noreferrer" class="">Remove K Digits</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii">Next Greater Element II</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-6-remove-all-adjacent-duplicates-in-string">Remove All Adjacent Duplicates In String</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-17-next-permutation">Next Permutation</a></p>
 <p><strong>Problem:</strong> Given a string num representing a non-negative integer, and an integer k, return the smallest possible integer after removing k digits.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: num = &quot;1432219&quot;, k = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;1219&quot;</span><br></div></code></pre></div></div>
@@ -265,7 +335,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-15-simplify-path">Problem 15: Simplify Path<a href="#problem-15-simplify-path" class="hash-link" aria-label="Direct link to Problem 15: Simplify Path" title="Direct link to Problem 15: Simplify Path" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, String]</p>
+📂 <strong>Topics:</strong> [Stack, String]
+🧩 <strong>Pattern:</strong> Stack
+✅ <strong>Best Option:</strong> Stack of directory segments — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> String regex collapsing — fragile against &quot;..&quot; and &quot;.&quot; edge cases; the stack of segments handles them directly
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/simplify-path/" target="_blank" rel="noopener noreferrer" class="">Simplify Path</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string">Decode String</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-1-valid-parentheses">Valid Parentheses</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-19-reverse-words-in-a-string">Reverse Words in a String</a></p>
 <p><strong>Problem:</strong> Given an absolute path for a Unix-style file system, simplify it.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: path = &quot;/home//foo/&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: &quot;/home/foo&quot;</span><br></div></code></pre></div></div>
@@ -282,7 +357,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-16-validate-stack-sequences">Problem 16: Validate Stack Sequences<a href="#problem-16-validate-stack-sequences" class="hash-link" aria-label="Direct link to Problem 16: Validate Stack Sequences" title="Direct link to Problem 16: Validate Stack Sequences" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Simulation]</p>
+📂 <strong>Topics:</strong> [Stack, Simulation]
+🧩 <strong>Pattern:</strong> Stack, Two Pointers
+✅ <strong>Best Option:</strong> Greedy push/pop simulation — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Checking all permutation orderings — O(n!) impossible; the greedy simulation is linear
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/validate-stack-sequences/" target="_blank" rel="noopener noreferrer" class="">Validate Stack Sequences</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-2-min-stack">Min Stack</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-3-implement-queue-using-stacks">Implement Queue using Stacks</a> · <a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists#problem-12-intersection-of-two-linked-lists">Intersection of Two Linked Lists</a></p>
 <p><strong>Problem:</strong> Given pushed and popped sequences, return true if they represent valid push/pop operations on an initially empty stack.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: pushed = [1, 2, 3, 4, 5], popped = [4, 5, 3, 2, 1]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: true</span><br></div></code></pre></div></div>
@@ -295,7 +375,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-17-flatten-nested-list-iterator">Problem 17: Flatten Nested List Iterator<a href="#problem-17-flatten-nested-list-iterator" class="hash-link" aria-label="Direct link to Problem 17: Flatten Nested List Iterator" title="Direct link to Problem 17: Flatten Nested List Iterator" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Medium
-📂 <strong>Topics:</strong> [Stack, Design, Recursion]</p>
+📂 <strong>Topics:</strong> [Stack, Design, Recursion]
+🧩 <strong>Pattern:</strong> Stack, Recursion
+✅ <strong>Best Option:</strong> Lazy stack of iterators — O(n) total, O(1) amortized per next/hasNext
+❌ <strong>Not Optimal:</strong> Eager recursive flattening of the whole list upfront — builds the full O(n) list; the lazy stack holds only the traversal path
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/flatten-nested-list-iterator/" target="_blank" rel="noopener noreferrer" class="">Flatten Nested List Iterator</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-11-decode-string">Decode String</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-16-validate-stack-sequences">Validate Stack Sequences</a> · <a class="" href="/ai-engineering-journey/coding-problems/05-trees#problem-23-flatten-binary-tree-to-linked-list">Flatten Binary Tree to Linked List</a></p>
 <p><strong>Problem:</strong> Design an iterator that flattens a nested list of integers.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nestedList = [[1, 1], 2, [1, 1]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [1, 1, 2, 1, 1]</span><br></div></code></pre></div></div>
@@ -308,7 +393,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-18-largest-rectangle-in-histogram">Problem 18: Largest Rectangle in Histogram<a href="#problem-18-largest-rectangle-in-histogram" class="hash-link" aria-label="Direct link to Problem 18: Largest Rectangle in Histogram" title="Direct link to Problem 18: Largest Rectangle in Histogram" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Stack, Array, Monotonic Stack]</p>
+📂 <strong>Topics:</strong> [Stack, Array, Monotonic Stack]
+🧩 <strong>Pattern:</strong> Monotonic Stack
+✅ <strong>Best Option:</strong> Monotonic stack with a sentinel bar — O(n) time, O(n) space
+❌ <strong>Not Optimal:</strong> Brute force across all bar pairs — O(n²), TLE for n ≥ 10⁵; the monotonic stack computes every area in one pass
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/largest-rectangle-in-histogram/" target="_blank" rel="noopener noreferrer" class="">Largest Rectangle in Histogram</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-9-daily-temperatures">Daily Temperatures</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-8-next-greater-element-ii">Next Greater Element II</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-13-container-with-most-water">Container With Most Water</a></p>
 <p><strong>Problem:</strong> Given an array of heights representing a histogram, find the largest rectangle area.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: heights = [2, 1, 5, 6, 2, 3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 10</span><br></div></code></pre></div></div>
@@ -330,7 +420,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-19-sliding-window-maximum">Problem 19: Sliding Window Maximum<a href="#problem-19-sliding-window-maximum" class="hash-link" aria-label="Direct link to Problem 19: Sliding Window Maximum" title="Direct link to Problem 19: Sliding Window Maximum" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Queue, Deque, Sliding Window]</p>
+📂 <strong>Topics:</strong> [Queue, Deque, Sliding Window]
+🧩 <strong>Pattern:</strong> Deque
+✅ <strong>Best Option:</strong> Monotonic deque of indices — O(n) time, O(k) space
+❌ <strong>Not Optimal:</strong> Brute force max per window — O(n·k); a heap is O(n log k); the monotonic deque keeps it O(n)
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener noreferrer" class="">Sliding Window Maximum</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-14-minimum-window-substring">Minimum Window Substring</a> · <a class="" href="/ai-engineering-journey/coding-problems/02-strings#problem-9-longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a> · <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-18-largest-rectangle-in-histogram">Largest Rectangle in Histogram</a></p>
 <p><strong>Problem:</strong> You are given an array of integers nums, and a sliding window of size k moving from left to right. Return the max in each window.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: nums = [1, 3, -1, -3, 5, 3, 6, 7], k = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: [3, 3, 5, 5, 6, 7]</span><br></div></code></pre></div></div>
@@ -352,7 +447,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-20-trapping-rain-water-ii">Problem 20: Trapping Rain Water II<a href="#problem-20-trapping-rain-water-ii" class="hash-link" aria-label="Direct link to Problem 20: Trapping Rain Water II" title="Direct link to Problem 20: Trapping Rain Water II" translate="no">​</a></h3>
 <p>🏷️ <strong>Companies:</strong> [Amazon] [Google] [Meta]
 📊 <strong>Difficulty:</strong> Hard
-📂 <strong>Topics:</strong> [Heap, BFS, Matrix]</p>
+📂 <strong>Topics:</strong> [Heap, BFS, Matrix]
+🧩 <strong>Pattern:</strong> Priority Queue/Heap, BFS
+✅ <strong>Best Option:</strong> Min-heap boundary expansion (Dijkstra-style BFS) — O(m·n log(m·n)) time, O(m·n) space
+❌ <strong>Not Optimal:</strong> Simulating water flow cell-by-cell from every boundary — O(m²n²); the boundary min-heap settles each cell once
+🔗 <strong>LeetCode:</strong> <a href="https://leetcode.com/problems/trapping-rain-water-ii/" target="_blank" rel="noopener noreferrer" class="">Trapping Rain Water II</a>
+🔗 <strong>Related:</strong> <a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues#problem-19-sliding-window-maximum">Sliding Window Maximum</a> · <a class="" href="/ai-engineering-journey/coding-problems/01-arrays#problem-27-trapping-rain-water">Trapping Rain Water</a> · <a class="" href="/ai-engineering-journey/coding-problems/06-graphs#problem-6-number-of-islands">Number of Islands</a></p>
 <p><strong>Problem:</strong> Given an m x n matrix of heights, compute how much water it can trap after raining. Water flows to any of the four adjacent cells with lower height.</p>
 <p><strong>Example 1:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Input: heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Output: 4</span><br></div></code></pre></div></div>

@@ -1,7 +1,7 @@
 "use strict";
 (globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[83385],{
 
-/***/ 25848
+/***/ 3467
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG

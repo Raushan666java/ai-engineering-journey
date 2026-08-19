@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-07-speed-reading-summarization-md-6e3.json
-const site_docs_courses_ai_powered_learning_ch_07_speed_reading_summarization_md_6e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch07-speed-reading-summarization","title":"Chapter 7: Speed Reading & Summarization","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch07-speed-reading-summarization.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch07-speed-reading-summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"ch07-speed-reading-summarization","slug":"/ai-powered-learning/ch07-speed-reading-summarization","title":"Chapter 7: Speed Reading & Summarization","sidebar_label":"Chapter 7: Speed Reading & Summarization","sidebar_position":8},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 6: Code & DSA with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai"},"next":{"title":"Chapter 8: Interview & Aptitude with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai"}}');
+const site_docs_courses_ai_powered_learning_ch_07_speed_reading_summarization_md_6e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch07-speed-reading-summarization","title":"Chapter 7: Speed Reading & Summarization","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch07-speed-reading-summarization.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch07-speed-reading-summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"ch07-speed-reading-summarization","slug":"/ai-powered-learning/ch07-speed-reading-summarization","title":"Chapter 7: Speed Reading & Summarization","sidebar_label":"Chapter 7: Speed Reading & Summarization","sidebar_position":7},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 6: Code & DSA with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai"},"next":{"title":"Chapter 8: Interview & Aptitude with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch07-speed-reading-summarization',
 	title: 'Chapter 7: Speed Reading & Summarization',
 	sidebar_label: 'Chapter 7: Speed Reading & Summarization',
-	sidebar_position: 8
+	sidebar_position: 7
 };
 const contentTitle = 'Chapter 7: Speed Reading & Summarization';
 
@@ -140,6 +140,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -772,6 +780,34 @@ function _createMdxContent(props) {
         children: "Dense material needs progressive chunking and concept-first prompts; 50-page docs become runnable tutorials."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Misses are data: weekly miss-mining clusters failures by root cause and re-ranks your study plan."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Summaries are lossy. For dense formal content (proofs, derivations), slow full reading beats summary pipelines; the pipeline is for concepts, not formal arguments."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI summaries can flatten nuance, and you cannot notice what was dropped if you never read the original."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The anti-hoarding rule (every note must produce a recall artifact) discourages legitimate reference notes. Some notes exist for lookup, not recall — the rule should not apply to those."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "\"Skim plus AI deep-dive\" is contested in reading research; on unknown, dense topics it can leave you with confident superficiality."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether skim + AI deep-dive preserves comprehension as well as full reading is contested in reading research, and no personal data exists here."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The optimal summary compression ratio (how compressed before recall quality drops) is unknown."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether generated flashcards from compressed summaries leak the same errors the summary introduced is an unverified chain."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

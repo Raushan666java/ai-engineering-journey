@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-index-md-b66.json
-const site_docs_courses_ai_powered_learning_index_md_b66_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/index","title":"AI-Powered Learning — Learn Anything Fast with AI","description":"Course Overview","source":"@site/docs/courses/ai-powered-learning/index.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning","permalink":"/ai-engineering-journey/ai-powered-learning","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"id":"index","slug":"/ai-powered-learning","title":"AI-Powered Learning — Learn Anything Fast with AI","sidebar_label":"AI-Powered Learning — Learn Anything Fast with AI","sidebar_position":1},"sidebar":"course-ai-powered-learning","next":{"title":"Chapter 1: The AI Learning System","permalink":"/ai-engineering-journey/ai-powered-learning/ch01-the-ai-learning-system"}}');
+const site_docs_courses_ai_powered_learning_index_md_b66_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/index","title":"AI-Powered Learning — Learn Anything Fast with AI","description":"Course Overview","source":"@site/docs/courses/ai-powered-learning/index.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning","permalink":"/ai-engineering-journey/ai-powered-learning","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"index","slug":"/ai-powered-learning","title":"AI-Powered Learning — Learn Anything Fast with AI","sidebar_label":"AI-Powered Learning — Learn Anything Fast with AI","sidebar_position":14},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 13: The Science of This Course","permalink":"/ai-engineering-journey/ai-powered-learning/ch13-science-of-this-course"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning',
 	title: 'AI-Powered Learning — Learn Anything Fast with AI',
 	sidebar_label: 'AI-Powered Learning — Learn Anything Fast with AI',
-	sidebar_position: 1
+	sidebar_position: 14
 };
 const contentTitle = 'AI-Powered Learning — Learn Anything Fast with AI';
 
@@ -153,7 +153,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "syllabus",
       children: "Syllabus"
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
@@ -261,6 +261,14 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Weekly workflow, 90-day finish-everything plan, personal prompt library, master tutor config, progress dashboard"
           })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The Science of This Course"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Why the course is built this way: Gagné's nine events, the scientific loop, the evidence hierarchy, the investigation structure, and the investigation-note prompt for your own notes"
+          })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
@@ -334,7 +342,7 @@ function _createMdxContent(props) {
           children: "Produce"
         }), " — build the chapter's deliverable (table below) and keep it in your vault"]
       }), "\n"]
-    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
@@ -494,6 +502,18 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Ch 1–11"
           })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The Science of This Course"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weekend deep work (optional, after the capstone)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Investigation-note template + 10 claims tagged by evidence level"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 1–12"
+          })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -510,6 +530,10 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Never skip the quiz gate — below 8/10, rework the Try This exercises and retake before moving on"
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Read the course as an investigation, not a lecture."
+      }), " Every chapter is a question: each Q&A is a claim backed by evidence (a prompt, a transcript, a tool), and every chapter ends with a Contradictions box (when the method is wrong) and Open Questions (what is not yet known). When you study anything else with AI, structure your notes the same way — Chapter 13 gives you the template."]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-outcomes",
       children: "Learning Outcomes"

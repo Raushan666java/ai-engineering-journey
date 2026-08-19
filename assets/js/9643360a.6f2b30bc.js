@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-08-interview-aptitude-with-ai-md-964.json
-const site_docs_courses_ai_powered_learning_ch_08_interview_aptitude_with_ai_md_964_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch08-interview-aptitude-with-ai","title":"Chapter 8: Interview & Aptitude with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch08-interview-aptitude-with-ai.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch08-interview-aptitude-with-ai","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"id":"ch08-interview-aptitude-with-ai","slug":"/ai-powered-learning/ch08-interview-aptitude-with-ai","title":"Chapter 8: Interview & Aptitude with AI","sidebar_label":"Chapter 8: Interview & Aptitude with AI","sidebar_position":9},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 7: Speed Reading & Summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization"},"next":{"title":"Chapter 9: AI Note-Taking & Knowledge Management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management"}}');
+const site_docs_courses_ai_powered_learning_ch_08_interview_aptitude_with_ai_md_964_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch08-interview-aptitude-with-ai","title":"Chapter 8: Interview & Aptitude with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch08-interview-aptitude-with-ai.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch08-interview-aptitude-with-ai","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"ch08-interview-aptitude-with-ai","slug":"/ai-powered-learning/ch08-interview-aptitude-with-ai","title":"Chapter 8: Interview & Aptitude with AI","sidebar_label":"Chapter 8: Interview & Aptitude with AI","sidebar_position":8},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 7: Speed Reading & Summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization"},"next":{"title":"Chapter 9: AI Note-Taking & Knowledge Management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch08-interview-aptitude-with-ai',
 	title: 'Chapter 8: Interview & Aptitude with AI',
 	sidebar_label: 'Chapter 8: Interview & Aptitude with AI',
-	sidebar_position: 9
+	sidebar_position: 8
 };
 const contentTitle = 'Chapter 8: Interview & Aptitude with AI';
 
@@ -136,6 +136,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -750,6 +758,34 @@ function _createMdxContent(props) {
         children: "Resume bullets must be action + task + tech + impact + number, with every keyword defensible under cross-examination."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "A tracked weekly routine of 3 mocks converts practice into a month-over-month trend line."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI mocks cannot simulate a real interviewer's follow-up logic or the human pressure. Your tenth AI mock is not a tenth real mock; real mocks with peers or seniors are worth more per session."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Company-style personas are educated guesses. Interview patterns shift quarterly, and AI knowledge lags reality — treat personas as practice scaffolds, not intelligence."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI-generated aptitude drills occasionally contain errors. Drilling a wrong question teaches a wrong method; spot-check solutions before mass practice."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "STAR grading by AI is lenient; the model tends to validate narrative structure rather than judge real behavioral impact."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether mock scores correlate with offer rates is untested; treat them as practice metrics, not predictions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How many STAR stories are enough for a three-round process is unknown; five is a floor, not a standard."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether timed AI mock tests replicate the cognitive load of real exams is an open question."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

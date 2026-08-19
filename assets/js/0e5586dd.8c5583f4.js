@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-03-learn-anything-blueprint-md-0e5.json
-const site_docs_courses_ai_powered_learning_ch_03_learn_anything_blueprint_md_0e5_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch03-learn-anything-blueprint","title":"Chapter 3: The Learn-Anything Blueprint","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch03-learn-anything-blueprint.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch03-learn-anything-blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"id":"ch03-learn-anything-blueprint","slug":"/ai-powered-learning/ch03-learn-anything-blueprint","title":"Chapter 3: The Learn-Anything Blueprint","sidebar_label":"Chapter 3: The Learn-Anything Blueprint","sidebar_position":4},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 2: Prompt Foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations"},"next":{"title":"Chapter 4: Concept Mastery with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery"}}');
+const site_docs_courses_ai_powered_learning_ch_03_learn_anything_blueprint_md_0e5_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch03-learn-anything-blueprint","title":"Chapter 3: The Learn-Anything Blueprint","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch03-learn-anything-blueprint.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch03-learn-anything-blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"id":"ch03-learn-anything-blueprint","slug":"/ai-powered-learning/ch03-learn-anything-blueprint","title":"Chapter 3: The Learn-Anything Blueprint","sidebar_label":"Chapter 3: The Learn-Anything Blueprint","sidebar_position":3},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 2: Prompt Foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations"},"next":{"title":"Chapter 4: Concept Mastery with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch03-learn-anything-blueprint',
 	title: 'Chapter 3: The Learn-Anything Blueprint',
 	sidebar_label: 'Chapter 3: The Learn-Anything Blueprint',
-	sidebar_position: 4
+	sidebar_position: 3
 };
 const contentTitle = 'Chapter 3: The Learn-Anything Blueprint';
 
@@ -132,6 +132,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -707,6 +715,34 @@ function _createMdxContent(props) {
         children: "The weekly review and mid-course re-plan prompts close the loop and repair the plan instead of restarting it."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "A TypeScript plan generator produces a reproducible JSON day map that the AI prompts can consume."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Day-by-day plans fail weekly. The plan is a hypothesis about your future energy, not a contract — re-planning is the feature, not a bug."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "30-day crash plans produce interview-passing breadth but weak depth. For roles that test deep DSA, a 90-day plan beats a 30-day plan, and the 2-day format is only for revision, never for first exposure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Syllabus-to-plan conversion assumes the syllabus is the truth. Some syllabi are outdated; the AI will confidently build a plan around material that is no longer asked."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mastery percentages are self-scored. Optimistic self-scoring inflates the number and quietly destroys the plan's signal."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether mastery scores track real interview outcomes is unvalidated; treat scores as trends, not facts."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The optimal review-day density (one review day in four is the default here) is untested across subjects."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether AI-generated curricula miss prerequisites that a human teacher would catch is an open risk, especially in niche topics."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

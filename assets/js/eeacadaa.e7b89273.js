@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-12-capstone-ai-study-system-md-eea.json
-const site_docs_courses_ai_powered_learning_ch_12_capstone_ai_study_system_md_eea_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch12-capstone-ai-study-system","title":"Chapter 12: Capstone — Your Complete AI Study System","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch12-capstone-ai-study-system.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch12-capstone-ai-study-system","permalink":"/ai-engineering-journey/ai-powered-learning/ch12-capstone-ai-study-system","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":13,"frontMatter":{"id":"ch12-capstone-ai-study-system","slug":"/ai-powered-learning/ch12-capstone-ai-study-system","title":"Chapter 12: Capstone — Your Complete AI Study System","sidebar_label":"Chapter 12: Capstone — Your Complete AI Study System","sidebar_position":13},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 11: Verification & Anti-Hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"}}');
+const site_docs_courses_ai_powered_learning_ch_12_capstone_ai_study_system_md_eea_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch12-capstone-ai-study-system","title":"Chapter 12: Capstone — Your Complete AI Study System","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch12-capstone-ai-study-system.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch12-capstone-ai-study-system","permalink":"/ai-engineering-journey/ai-powered-learning/ch12-capstone-ai-study-system","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"ch12-capstone-ai-study-system","slug":"/ai-powered-learning/ch12-capstone-ai-study-system","title":"Chapter 12: Capstone — Your Complete AI Study System","sidebar_label":"Chapter 12: Capstone — Your Complete AI Study System","sidebar_position":12},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 11: Verification & Anti-Hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"},"next":{"title":"Chapter 13: The Science of This Course","permalink":"/ai-engineering-journey/ai-powered-learning/ch13-science-of-this-course"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch12-capstone-ai-study-system',
 	title: 'Chapter 12: Capstone — Your Complete AI Study System',
 	sidebar_label: 'Chapter 12: Capstone — Your Complete AI Study System',
-	sidebar_position: 13
+	sidebar_position: 12
 };
 const contentTitle = 'Chapter 12: Capstone — Your Complete AI Study System';
 
@@ -132,6 +132,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -1010,6 +1018,34 @@ function _createMdxContent(props) {
         children: "Shipping is a data rule: three 70%+ mock weeks, two mocks above target, zero critical unchecked claims"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "The control prompt is the capstone artifact: the whole course, one paste, your complete AI study system"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The 90-day plan assumes life stays average. The plan's real value is the re-planning ritual, not the schedule — abandoning the plan is fine as long as you keep the ritual."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A dashboard can become a gamified lie. Tracking hours is not the same as tracking mastery; the number you watch can become the number you defend."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This system optimizes for finishing. Finishing everything on schedule is compatible with shallow coverage if the quiz gates are soft — the gates are the only defense, so keep them honest."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Automation (custom GPTs, agents) adds setup time and can remove the struggle that drives learning; the dependency test must apply to your own tools too."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether a 90-day AI-accelerated sprint produces the same retention as a nine-month normal pace is exactly the question no one has measured — you will be the data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When to stop preparing and start applying is a judgment call; the shipping rule is a heuristic with no formula."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether the whole system survives a model-pricing or platform change is an unhedged risk."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

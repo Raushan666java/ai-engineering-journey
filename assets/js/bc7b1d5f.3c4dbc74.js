@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-05-active-recall-quiz-prompts-md-bc7.json
-const site_docs_courses_ai_powered_learning_ch_05_active_recall_quiz_prompts_md_bc7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch05-active-recall-quiz-prompts","title":"Chapter 5: Active Recall & Quiz Prompts","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch05-active-recall-quiz-prompts.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch05-active-recall-quiz-prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"ch05-active-recall-quiz-prompts","slug":"/ai-powered-learning/ch05-active-recall-quiz-prompts","title":"Chapter 5: Active Recall & Quiz Prompts","sidebar_label":"Chapter 5: Active Recall & Quiz Prompts","sidebar_position":6},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 4: Concept Mastery with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery"},"next":{"title":"Chapter 6: Code & DSA with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai"}}');
+const site_docs_courses_ai_powered_learning_ch_05_active_recall_quiz_prompts_md_bc7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch05-active-recall-quiz-prompts","title":"Chapter 5: Active Recall & Quiz Prompts","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch05-active-recall-quiz-prompts.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch05-active-recall-quiz-prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"ch05-active-recall-quiz-prompts","slug":"/ai-powered-learning/ch05-active-recall-quiz-prompts","title":"Chapter 5: Active Recall & Quiz Prompts","sidebar_label":"Chapter 5: Active Recall & Quiz Prompts","sidebar_position":5},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 4: Concept Mastery with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery"},"next":{"title":"Chapter 6: Code & DSA with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch05-active-recall-quiz-prompts',
 	title: 'Chapter 5: Active Recall & Quiz Prompts',
 	sidebar_label: 'Chapter 5: Active Recall & Quiz Prompts',
-	sidebar_position: 6
+	sidebar_position: 5
 };
 const contentTitle = 'Chapter 5: Active Recall & Quiz Prompts';
 
@@ -136,6 +136,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -729,6 +737,34 @@ function _createMdxContent(props) {
         children: "The spaced-repetition scheduler with again/hard/good/easy ratings produces a daily due-card list automatically"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Every quiz should end in the mistake-to-card pipeline, tagging misses as concept gap, recall slip, or careless error"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Active recall is proven; AI-generated quizzes are not. A badly generated MCQ can teach you a wrong fact with the confidence of a right one — verify question banks before mass-quizzing."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For pure vocabulary or syntax, plain Anki beats Socratic quizzing. The Socratic quizzer is highest-ROI for concepts, not facts."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interleaving slows you down in the short run. If your test is next week, blocked practice may score higher; interleaving wins retention, not speed."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Self-rated card difficulty (again/hard/good/easy) is biased; learners systematically rate their own cards as easier than they are."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Your correct-rate-per-rung numbers are self-rated, and overconfidence is one of the best-documented biases in psychology (Kahneman's work). Calibration is unmeasured here."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optimal intervals for AI-generated cards are guesses; Anki's SM-2 algorithm was designed for user-made cards, not machine-generated ones."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether generated exams predict real exam performance is untested — that is your experiment to run."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

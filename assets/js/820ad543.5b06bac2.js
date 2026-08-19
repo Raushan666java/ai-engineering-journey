@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-10-research-deep-dives-md-820.json
-const site_docs_courses_ai_powered_learning_ch_10_research_deep_dives_md_820_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch10-research-deep-dives","title":"Chapter 10: Research & Deep Dives with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch10-research-deep-dives.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch10-research-deep-dives","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"ch10-research-deep-dives","slug":"/ai-powered-learning/ch10-research-deep-dives","title":"Chapter 10: Research & Deep Dives with AI","sidebar_label":"Chapter 10: Research & Deep Dives with AI","sidebar_position":11},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 9: AI Note-Taking & Knowledge Management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management"},"next":{"title":"Chapter 11: Verification & Anti-Hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"}}');
+const site_docs_courses_ai_powered_learning_ch_10_research_deep_dives_md_820_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch10-research-deep-dives","title":"Chapter 10: Research & Deep Dives with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch10-research-deep-dives.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch10-research-deep-dives","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"ch10-research-deep-dives","slug":"/ai-powered-learning/ch10-research-deep-dives","title":"Chapter 10: Research & Deep Dives with AI","sidebar_label":"Chapter 10: Research & Deep Dives with AI","sidebar_position":10},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 9: AI Note-Taking & Knowledge Management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management"},"next":{"title":"Chapter 11: Verification & Anti-Hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch10-research-deep-dives',
 	title: 'Chapter 10: Research & Deep Dives with AI',
 	sidebar_label: 'Chapter 10: Research & Deep Dives with AI',
-	sidebar_position: 11
+	sidebar_position: 10
 };
 const contentTitle = 'Chapter 10: Research & Deep Dives with AI';
 
@@ -132,6 +132,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -854,6 +862,34 @@ function _createMdxContent(props) {
         children: "The source tracker (TypeScript) and the research log keep the queue honest: depth only moves forward, and the queue is always shallowest-first."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Papers-to-notes pipelines can produce fluent summaries of papers you did not understand. Reading the original still matters for the hard 20 percent; the pipeline handles the other 80."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The relevance filter protects placement goals but kills curiosity-driven learning — which is where long-term edge actually comes from. Filter for the next 90 days, not forever."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI trend briefs are only as fresh as the model's knowledge. The most important trend of the week is often not in the brief at all."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official docs change faster than AI training data; a \"runnable tutorial\" generated today can be wrong next month."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How many sources define \"mastered a topic\" is arbitrary; the tracker's five-entry default is a guess."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether serial deep dives outperform breadth for interview outcomes is untested."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether deep-dive notes ever get revisited is the unspoken risk of the whole pipeline."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",
       children: "Practical Takeaways"
     }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {

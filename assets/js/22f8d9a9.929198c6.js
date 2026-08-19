@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-11-verification-anti-hallucination-md-22f.json
-const site_docs_courses_ai_powered_learning_ch_11_verification_anti_hallucination_md_22f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch11-verification-anti-hallucination","title":"Chapter 11: Verification & Anti-Hallucination","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch11-verification-anti-hallucination.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch11-verification-anti-hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"ch11-verification-anti-hallucination","slug":"/ai-powered-learning/ch11-verification-anti-hallucination","title":"Chapter 11: Verification & Anti-Hallucination","sidebar_label":"Chapter 11: Verification & Anti-Hallucination","sidebar_position":12},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 10: Research & Deep Dives with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives"},"next":{"title":"Chapter 12: Capstone — Your Complete AI Study System","permalink":"/ai-engineering-journey/ai-powered-learning/ch12-capstone-ai-study-system"}}');
+const site_docs_courses_ai_powered_learning_ch_11_verification_anti_hallucination_md_22f_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch11-verification-anti-hallucination","title":"Chapter 11: Verification & Anti-Hallucination","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch11-verification-anti-hallucination.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch11-verification-anti-hallucination","permalink":"/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":11,"frontMatter":{"id":"ch11-verification-anti-hallucination","slug":"/ai-powered-learning/ch11-verification-anti-hallucination","title":"Chapter 11: Verification & Anti-Hallucination","sidebar_label":"Chapter 11: Verification & Anti-Hallucination","sidebar_position":11},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 10: Research & Deep Dives with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives"},"next":{"title":"Chapter 12: Capstone — Your Complete AI Study System","permalink":"/ai-engineering-journey/ai-powered-learning/ch12-capstone-ai-study-system"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch11-verification-anti-hallucination',
 	title: 'Chapter 11: Verification & Anti-Hallucination',
 	sidebar_label: 'Chapter 11: Verification & Anti-Hallucination',
-	sidebar_position: 12
+	sidebar_position: 11
 };
 const contentTitle = 'Chapter 11: Verification & Anti-Hallucination';
 
@@ -132,6 +132,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -804,6 +812,34 @@ function _createMdxContent(props) {
         children: "The failure-mode prompt makes the model confess its own limits, giving you free interview boundaries"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "The verification log converts \"I think I knew that\" into \"I checked that\" — the only currency that matters"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cross-verification with a second LLM checks consistency, not truth. Two models can share the same hallucination; a second AI is a second guesser, not a fact-checker."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Demanding sources on every answer slows sessions so much that many learners quietly stop using the guard. A too-strict guard is an unused guard; calibrate it to the stakes."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Confidence tags are the model's self-report. Calibration studies show LLMs are systematically overconfident; the tag is evidence, not truth."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The verification log adds overhead; if you log without acting on flags, you are building bureaucracy, not safety."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether verified notes are materially more interview-safe than unverified ones has not been measured here; that is your experiment to run."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The long-term reliability of source-checked claims is a known open problem — sources and versions go stale."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether two-model disagreement reliably predicts factual error is an active research question."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

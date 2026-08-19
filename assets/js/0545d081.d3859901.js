@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-09-note-taking-knowledge-management-md-054.json
-const site_docs_courses_ai_powered_learning_ch_09_note_taking_knowledge_management_md_054_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch09-note-taking-knowledge-management","title":"Chapter 9: AI Note-Taking & Knowledge Management","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch09-note-taking-knowledge-management.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch09-note-taking-knowledge-management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":10,"frontMatter":{"id":"ch09-note-taking-knowledge-management","slug":"/ai-powered-learning/ch09-note-taking-knowledge-management","title":"Chapter 9: AI Note-Taking & Knowledge Management","sidebar_label":"Chapter 9: AI Note-Taking & Knowledge Management","sidebar_position":10},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 8: Interview & Aptitude with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai"},"next":{"title":"Chapter 10: Research & Deep Dives with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives"}}');
+const site_docs_courses_ai_powered_learning_ch_09_note_taking_knowledge_management_md_054_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch09-note-taking-knowledge-management","title":"Chapter 9: AI Note-Taking & Knowledge Management","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch09-note-taking-knowledge-management.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch09-note-taking-knowledge-management","permalink":"/ai-engineering-journey/ai-powered-learning/ch09-note-taking-knowledge-management","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"id":"ch09-note-taking-knowledge-management","slug":"/ai-powered-learning/ch09-note-taking-knowledge-management","title":"Chapter 9: AI Note-Taking & Knowledge Management","sidebar_label":"Chapter 9: AI Note-Taking & Knowledge Management","sidebar_position":9},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 8: Interview & Aptitude with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch08-interview-aptitude-with-ai"},"next":{"title":"Chapter 10: Research & Deep Dives with AI","permalink":"/ai-engineering-journey/ai-powered-learning/ch10-research-deep-dives"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch09-note-taking-knowledge-management',
 	title: 'Chapter 9: AI Note-Taking & Knowledge Management',
 	sidebar_label: 'Chapter 9: AI Note-Taking & Knowledge Management',
-	sidebar_position: 10
+	sidebar_position: 9
 };
 const contentTitle = 'Chapter 9: AI Note-Taking & Knowledge Management';
 
@@ -136,6 +136,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -932,6 +940,34 @@ function _createMdxContent(props) {
         children: "NotebookLM adds a grounded corpus layer over your courseware, and the TypeScript formatter automates the messiest part of capture."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A vault can become procrastination furniture. Building the perfect system is a classic substitute for studying; the hoarding rule reduces this risk but does not eliminate it."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plain-markdown vaults win on portability but lose AI context. NotebookLM-style tools can answer questions about your material better than a folder of files can."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Self-invented tagging conventions are only as good as your future self's retrieval guesses; you will forget the system you invented."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The weekly digest loop adds review time; in a busy week, digesting your notes can displace creating new ones."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether a knowledge graph actually improves retrieval over plain search is unmeasured in this system."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The optimal note atomicity (how small is \"atomic\") is an open design question with no settled answer."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether AI-structured notes retain your own mental models or normalize them toward the model's is untested."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",
       children: "Practical Takeaways"
     }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {

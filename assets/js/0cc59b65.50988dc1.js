@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-06-code-dsa-with-ai-md-0cc.json
-const site_docs_courses_ai_powered_learning_ch_06_code_dsa_with_ai_md_0cc_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch06-code-dsa-with-ai","title":"Chapter 6: Code & DSA with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch06-code-dsa-with-ai.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch06-code-dsa-with-ai","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":7,"frontMatter":{"id":"ch06-code-dsa-with-ai","slug":"/ai-powered-learning/ch06-code-dsa-with-ai","title":"Chapter 6: Code & DSA with AI","sidebar_label":"Chapter 6: Code & DSA with AI","sidebar_position":7},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 5: Active Recall & Quiz Prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts"},"next":{"title":"Chapter 7: Speed Reading & Summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization"}}');
+const site_docs_courses_ai_powered_learning_ch_06_code_dsa_with_ai_md_0cc_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch06-code-dsa-with-ai","title":"Chapter 6: Code & DSA with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch06-code-dsa-with-ai.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch06-code-dsa-with-ai","permalink":"/ai-engineering-journey/ai-powered-learning/ch06-code-dsa-with-ai","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"ch06-code-dsa-with-ai","slug":"/ai-powered-learning/ch06-code-dsa-with-ai","title":"Chapter 6: Code & DSA with AI","sidebar_label":"Chapter 6: Code & DSA with AI","sidebar_position":6},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 5: Active Recall & Quiz Prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts"},"next":{"title":"Chapter 7: Speed Reading & Summarization","permalink":"/ai-engineering-journey/ai-powered-learning/ch07-speed-reading-summarization"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch06-code-dsa-with-ai',
 	title: 'Chapter 6: Code & DSA with AI',
 	sidebar_label: 'Chapter 6: Code & DSA with AI',
-	sidebar_position: 7
+	sidebar_position: 6
 };
 const contentTitle = 'Chapter 6: Code & DSA with AI';
 
@@ -140,6 +140,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -749,6 +757,34 @@ function _createMdxContent(props) {
         children: "Theory-to-code exercises prove conceptual understanding and the verification prompt checks the mapping"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "The solution grader tracks pass rate and hint usage per pattern, making weak spots visible"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hints-only solving is slower than watching solution videos. If your deadline is weeks away, videos are faster but weaker; this chapter bets on retention over speed, and that bet can lose on a tight calendar."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pattern mapping can produce pattern-matching without understanding. Mapping every problem to a familiar pattern can blind you to novel problems — which are exactly the ones interviews ask."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI reviewers praise or punish inconsistently across sessions. The grader's verdicts are noisy signals, not grades; average them over time."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The 20-day language blueprint optimizes for breadth; it will not make you production-fluent in any language."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether practicing with AI hints transfers to whiteboard interviews without AI is the central untested assumption of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How many solved problems constitute \"enough\" is unknown; five per pattern is a start, not a finish."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether AI system-design mocks improve real system-design interviews is unmeasured — the mock format differs materially from a human interviewer's follow-ups."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

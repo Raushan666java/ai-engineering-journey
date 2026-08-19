@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-02-prompt-foundations-md-8c0.json
-const site_docs_courses_ai_powered_learning_ch_02_prompt_foundations_md_8c0_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch02-prompt-foundations","title":"Chapter 2: Prompt Foundations","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch02-prompt-foundations.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch02-prompt-foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"id":"ch02-prompt-foundations","slug":"/ai-powered-learning/ch02-prompt-foundations","title":"Chapter 2: Prompt Foundations","sidebar_label":"Chapter 2: Prompt Foundations","sidebar_position":3},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 1: The AI Learning System","permalink":"/ai-engineering-journey/ai-powered-learning/ch01-the-ai-learning-system"},"next":{"title":"Chapter 3: The Learn-Anything Blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint"}}');
+const site_docs_courses_ai_powered_learning_ch_02_prompt_foundations_md_8c0_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch02-prompt-foundations","title":"Chapter 2: Prompt Foundations","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch02-prompt-foundations.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch02-prompt-foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"ch02-prompt-foundations","slug":"/ai-powered-learning/ch02-prompt-foundations","title":"Chapter 2: Prompt Foundations","sidebar_label":"Chapter 2: Prompt Foundations","sidebar_position":2},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 1: The AI Learning System","permalink":"/ai-engineering-journey/ai-powered-learning/ch01-the-ai-learning-system"},"next":{"title":"Chapter 3: The Learn-Anything Blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch02-prompt-foundations',
 	title: 'Chapter 2: Prompt Foundations',
 	sidebar_label: 'Chapter 2: Prompt Foundations',
-	sidebar_position: 3
+	sidebar_position: 2
 };
 const contentTitle = 'Chapter 2: Prompt Foundations';
 
@@ -136,6 +136,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -771,6 +779,34 @@ function _createMdxContent(props) {
         children: "Climb the level ladder bottom-up with a checkpoint per rung, and run question-first sessions on topics you think you know."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Chain 4 to 6 prompts per session, avoid the 8 common mistakes, and automate with a template builder."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A perfectly engineered prompt can produce answers you copy without thinking. The anti-slop rules fight the output, not the habit — the dependency test from Chapter 1 matters more than any template here."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Chain-of-thought prompting sometimes produces confident wrong reasoning. Asking the AI to \"show your reasoning\" does not guarantee the reasoning is correct; verify, never assume."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hand-written notes occasionally beat AI-generated summaries for retention, precisely because handwriting forces slow selection and effortful encoding. Speed has a price."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Output-format contracts (JSON, CSV) can break across model versions; a format that worked in one chat may silently degrade in another."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No controlled experiment here measures how much prompt iteration actually improves retention; the improvement loop is a heuristic with face validity, not proof."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether long system-style prompts are remembered by models across long sessions is model-dependent and unverified for every tool."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The optimal prompt length per concept (minimal viable prompt) is unknown and likely varies by model."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

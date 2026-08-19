@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-01-the-ai-learning-system-md-7a4.json
-const site_docs_courses_ai_powered_learning_ch_01_the_ai_learning_system_md_7a4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch01-the-ai-learning-system","title":"Chapter 1: The AI Learning System","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch01-the-ai-learning-system.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch01-the-ai-learning-system","permalink":"/ai-engineering-journey/ai-powered-learning/ch01-the-ai-learning-system","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"ch01-the-ai-learning-system","slug":"/ai-powered-learning/ch01-the-ai-learning-system","title":"Chapter 1: The AI Learning System","sidebar_label":"Chapter 1: The AI Learning System","sidebar_position":2},"sidebar":"course-ai-powered-learning","previous":{"title":"AI-Powered Learning — Learn Anything Fast with AI","permalink":"/ai-engineering-journey/ai-powered-learning"},"next":{"title":"Chapter 2: Prompt Foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations"}}');
+const site_docs_courses_ai_powered_learning_ch_01_the_ai_learning_system_md_7a4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch01-the-ai-learning-system","title":"Chapter 1: The AI Learning System","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch01-the-ai-learning-system.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch01-the-ai-learning-system","permalink":"/ai-engineering-journey/ai-powered-learning/ch01-the-ai-learning-system","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"id":"ch01-the-ai-learning-system","slug":"/ai-powered-learning/ch01-the-ai-learning-system","title":"Chapter 1: The AI Learning System","sidebar_label":"Chapter 1: The AI Learning System","sidebar_position":1},"sidebar":"course-ai-powered-learning","next":{"title":"Chapter 2: Prompt Foundations","permalink":"/ai-engineering-journey/ai-powered-learning/ch02-prompt-foundations"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch01-the-ai-learning-system',
 	title: 'Chapter 1: The AI Learning System',
 	sidebar_label: 'Chapter 1: The AI Learning System',
-	sidebar_position: 2
+	sidebar_position: 1
 };
 const contentTitle = 'Chapter 1: The AI Learning System';
 
@@ -132,6 +132,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -972,6 +980,34 @@ function _createMdxContent(props) {
         children: "The struggle rule (10-minute solo, 3-hint escalation) and the weekly dependency test keep you interview-proof."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Velocity is a number: log sessions, track mastery, and let the weekly report drive next week's plan."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The \"10x case\" assumes you actually run the prompts. Most readers finish this chapter and execute none of the Try This exercises — that is a 1x outcome from a 10x system."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For a single exam next week, focused cramming with AI flashcards beats the full 7-stage pipeline. The pipeline is for retained mastery, not emergencies."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The testing effect is strongest in low-stakes practice; running AI quizzes on every topic can crowd out the reading and struggle time the chapter itself demands."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Free-tier tool capabilities change monthly. Treat the tool map as a decision method, not a directory that stays true forever."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether your personal velocity-tracker numbers predict interview readiness is unmeasured — you are the first experiment."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How much struggle time is optimal per concept is unknown; the 10-minute rule is a heuristic, not a law."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether chat-based AI beats dedicated apps (Anki, Quizlet) for long-term retention is still an open comparison."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

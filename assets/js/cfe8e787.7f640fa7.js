@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-powered-learning-ch-04-concept-mastery-md-cfe.json
-const site_docs_courses_ai_powered_learning_ch_04_concept_mastery_md_cfe_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch04-concept-mastery","title":"Chapter 4: Concept Mastery with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch04-concept-mastery.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch04-concept-mastery","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"ch04-concept-mastery","slug":"/ai-powered-learning/ch04-concept-mastery","title":"Chapter 4: Concept Mastery with AI","sidebar_label":"Chapter 4: Concept Mastery with AI","sidebar_position":5},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 3: The Learn-Anything Blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint"},"next":{"title":"Chapter 5: Active Recall & Quiz Prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts"}}');
+const site_docs_courses_ai_powered_learning_ch_04_concept_mastery_md_cfe_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-powered-learning/ch04-concept-mastery","title":"Chapter 4: Concept Mastery with AI","description":"Last Updated 60–75 minutes","source":"@site/docs/courses/ai-powered-learning/ch04-concept-mastery.md","sourceDirName":"courses/ai-powered-learning","slug":"/ai-powered-learning/ch04-concept-mastery","permalink":"/ai-engineering-journey/ai-powered-learning/ch04-concept-mastery","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"id":"ch04-concept-mastery","slug":"/ai-powered-learning/ch04-concept-mastery","title":"Chapter 4: Concept Mastery with AI","sidebar_label":"Chapter 4: Concept Mastery with AI","sidebar_position":4},"sidebar":"course-ai-powered-learning","previous":{"title":"Chapter 3: The Learn-Anything Blueprint","permalink":"/ai-engineering-journey/ai-powered-learning/ch03-learn-anything-blueprint"},"next":{"title":"Chapter 5: Active Recall & Quiz Prompts","permalink":"/ai-engineering-journey/ai-powered-learning/ch05-active-recall-quiz-prompts"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/ai-powered-learning/ch04-concept-mastery',
 	title: 'Chapter 4: Concept Mastery with AI',
 	sidebar_label: 'Chapter 4: Concept Mastery with AI',
-	sidebar_position: 5
+	sidebar_position: 4
 };
 const contentTitle = 'Chapter 4: Concept Mastery with AI';
 
@@ -136,6 +136,14 @@ const toc = [{
 }, {
   "value": "Summary",
   "id": "summary",
+  "level": 2
+}, {
+  "value": "Contradictions",
+  "id": "contradictions",
+  "level": 2
+}, {
+  "value": "Open Questions",
+  "id": "open-questions",
   "level": 2
 }, {
   "value": "Practical Takeaways",
@@ -747,6 +755,34 @@ function _createMdxContent(props) {
         children: "The 90-second drill and interleaved practice train retrieval under interview conditions."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "A TypeScript mastery tracker schedules re-quizzes on the 1/3/7/21/60-day rhythm so mastery is enforced by data."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "contradictions",
+      children: "Contradictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The methods in this chapter are not universally right. Read these before trusting the system blindly:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The Feynman ladder assumes explanations improve memory. For highly procedural skills (regex, recursion, complex syntax), doing problems beats explaining them — the ladder is for concepts, not procedures."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "AI-generated misconception lists are plausible but occasionally wrong. The hunter can mislead you if you skip the verification protocol from Chapter 11."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A vivid but wrong analogy is worse than no analogy, because it is harder to unlearn than to learn. Repair your analogies before trusting them."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Teach-back to AI is weaker than teach-back to a human; the AI is trained to agree with you, so \"good job\" is a signal of fluency, not accuracy."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-questions",
+      children: "Open Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What this chapter deliberately does not claim to know:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether teaching back to an AI that always approves is as effective as teaching to a skeptical human is untested."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The optimal number of counterexamples per concept is unknown; three is a habit, not a law."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Whether the 90-second interview drill transfers to real whiteboard pressure is unmeasured."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "practical-takeaways",

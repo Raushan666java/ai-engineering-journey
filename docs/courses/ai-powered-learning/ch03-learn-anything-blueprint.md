@@ -681,6 +681,23 @@ console.log(JSON.stringify(generator.generate(config), null, 2))
 - The weekly review and mid-course re-plan prompts close the loop and repair the plan instead of restarting it.
 - A TypeScript plan generator produces a reproducible JSON day map that the AI prompts can consume.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Day-by-day plans fail weekly. The plan is a hypothesis about your future energy, not a contract — re-planning is the feature, not a bug.
+- 30-day crash plans produce interview-passing breadth but weak depth. For roles that test deep DSA, a 90-day plan beats a 30-day plan, and the 2-day format is only for revision, never for first exposure.
+- Syllabus-to-plan conversion assumes the syllabus is the truth. Some syllabi are outdated; the AI will confidently build a plan around material that is no longer asked.
+- Mastery percentages are self-scored. Optimistic self-scoring inflates the number and quietly destroys the plan's signal.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether mastery scores track real interview outcomes is unvalidated; treat scores as trends, not facts.
+- The optimal review-day density (one review day in four is the default here) is untested across subjects.
+- Whether AI-generated curricula miss prerequisites that a human teacher would catch is an open risk, especially in niche topics.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

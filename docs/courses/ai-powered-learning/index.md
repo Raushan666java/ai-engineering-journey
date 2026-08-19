@@ -39,6 +39,7 @@ By the end, you will never again stare at a syllabus and wonder how to finish it
 | 10 | Research & Deep Dives with AI | Docs → tutorial, arXiv → plain-language notes, technology comparisons, keeping up with AI trends |
 | 11 | Verification & Anti-Hallucination | Hallucination guards, fact-check workflows, confidence tagging, when to fully distrust AI |
 | 12 | Capstone: Your Complete AI Study System | Weekly workflow, 90-day finish-everything plan, personal prompt library, master tutor config, progress dashboard |
+| 13 | The Science of This Course | Why the course is built this way: Gagné's nine events, the scientific loop, the evidence hierarchy, the investigation structure, and the investigation-note prompt for your own notes |
 
 ---
 
@@ -93,6 +94,7 @@ flowchart LR
 | 10 | Research & Deep Dives | 3 commute blocks | One deep dive + 5 tracker entries | Ch 9 |
 | 11 | Verification & Anti-Hallucination | 3 commute blocks | Verification log with 10 checked claims | None (run with everything) |
 | 12 | Capstone: Your Complete AI Study System | Weekend deep work | The complete system + 90-day plan | Ch 1–11 |
+| 13 | The Science of This Course | Weekend deep work (optional, after the capstone) | Investigation-note template + 10 claims tagged by evidence level | Ch 1–12 |
 
 **Weekly cadence for a working professional:** Chapters 1–11 fit the working week — read during commute blocks Monday–Thursday, take the quiz and produce the deliverable on Friday evening or Saturday. Chapter 12 is a full weekend deep-work session that assembles everything.
 
@@ -100,6 +102,8 @@ flowchart LR
 
 - Never skip the artifact — a chapter you only read is a chapter you did not do
 - Never skip the quiz gate — below 8/10, rework the Try This exercises and retake before moving on
+
+**Read the course as an investigation, not a lecture.** Every chapter is a question: each Q&A is a claim backed by evidence (a prompt, a transcript, a tool), and every chapter ends with a Contradictions box (when the method is wrong) and Open Questions (what is not yet known). When you study anything else with AI, structure your notes the same way — Chapter 13 gives you the template.
 
 ---
 

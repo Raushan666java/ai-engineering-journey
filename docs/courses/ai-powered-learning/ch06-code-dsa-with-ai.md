@@ -577,6 +577,23 @@ patternReport(attempts);
 - Theory-to-code exercises prove conceptual understanding and the verification prompt checks the mapping
 - The solution grader tracks pass rate and hint usage per pattern, making weak spots visible
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Hints-only solving is slower than watching solution videos. If your deadline is weeks away, videos are faster but weaker; this chapter bets on retention over speed, and that bet can lose on a tight calendar.
+- Pattern mapping can produce pattern-matching without understanding. Mapping every problem to a familiar pattern can blind you to novel problems — which are exactly the ones interviews ask.
+- AI reviewers praise or punish inconsistently across sessions. The grader's verdicts are noisy signals, not grades; average them over time.
+- The 20-day language blueprint optimizes for breadth; it will not make you production-fluent in any language.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether practicing with AI hints transfers to whiteboard interviews without AI is the central untested assumption of this chapter.
+- How many solved problems constitute "enough" is unknown; five per pattern is a start, not a finish.
+- Whether AI system-design mocks improve real system-design interviews is unmeasured — the mock format differs materially from a human interviewer's follow-ups.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

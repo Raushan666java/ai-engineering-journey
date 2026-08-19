@@ -751,6 +751,23 @@ console.log(renderMarkdown(note));
 
 ---
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- A vault can become procrastination furniture. Building the perfect system is a classic substitute for studying; the hoarding rule reduces this risk but does not eliminate it.
+- Plain-markdown vaults win on portability but lose AI context. NotebookLM-style tools can answer questions about your material better than a folder of files can.
+- Self-invented tagging conventions are only as good as your future self's retrieval guesses; you will forget the system you invented.
+- The weekly digest loop adds review time; in a busy week, digesting your notes can displace creating new ones.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether a knowledge graph actually improves retrieval over plain search is unmeasured in this system.
+- The optimal note atomicity (how small is "atomic") is an open design question with no settled answer.
+- Whether AI-structured notes retain your own mental models or normalize them toward the model's is untested.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

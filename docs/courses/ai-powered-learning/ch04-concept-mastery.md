@@ -524,6 +524,23 @@ console.log(`Due today: ${tracker.dueOn(today.toISOString().slice(0, 10)).join('
 - The 90-second drill and interleaved practice train retrieval under interview conditions.
 - A TypeScript mastery tracker schedules re-quizzes on the 1/3/7/21/60-day rhythm so mastery is enforced by data.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- The Feynman ladder assumes explanations improve memory. For highly procedural skills (regex, recursion, complex syntax), doing problems beats explaining them — the ladder is for concepts, not procedures.
+- AI-generated misconception lists are plausible but occasionally wrong. The hunter can mislead you if you skip the verification protocol from Chapter 11.
+- A vivid but wrong analogy is worse than no analogy, because it is harder to unlearn than to learn. Repair your analogies before trusting them.
+- Teach-back to AI is weaker than teach-back to a human; the AI is trained to agree with you, so "good job" is a signal of fluency, not accuracy.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether teaching back to an AI that always approves is as effective as teaching to a skeptical human is untested.
+- The optimal number of counterexamples per concept is unknown; three is a habit, not a law.
+- Whether the 90-second interview drill transfers to real whiteboard pressure is unmeasured.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

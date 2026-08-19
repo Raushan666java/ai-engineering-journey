@@ -510,6 +510,23 @@ console.log(filled);
 - Climb the level ladder bottom-up with a checkpoint per rung, and run question-first sessions on topics you think you know.
 - Chain 4 to 6 prompts per session, avoid the 8 common mistakes, and automate with a template builder.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- A perfectly engineered prompt can produce answers you copy without thinking. The anti-slop rules fight the output, not the habit — the dependency test from Chapter 1 matters more than any template here.
+- Chain-of-thought prompting sometimes produces confident wrong reasoning. Asking the AI to "show your reasoning" does not guarantee the reasoning is correct; verify, never assume.
+- Hand-written notes occasionally beat AI-generated summaries for retention, precisely because handwriting forces slow selection and effortful encoding. Speed has a price.
+- Output-format contracts (JSON, CSV) can break across model versions; a format that worked in one chat may silently degrade in another.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- No controlled experiment here measures how much prompt iteration actually improves retention; the improvement loop is a heuristic with face validity, not proof.
+- Whether long system-style prompts are remembered by models across long sessions is model-dependent and unverified for every tool.
+- The optimal prompt length per concept (minimal viable prompt) is unknown and likely varies by model.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

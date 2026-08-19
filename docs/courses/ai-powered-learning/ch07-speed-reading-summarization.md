@@ -620,6 +620,23 @@ printStudyPlan(questions);
 - Dense material needs progressive chunking and concept-first prompts; 50-page docs become runnable tutorials.
 - Misses are data: weekly miss-mining clusters failures by root cause and re-ranks your study plan.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Summaries are lossy. For dense formal content (proofs, derivations), slow full reading beats summary pipelines; the pipeline is for concepts, not formal arguments.
+- AI summaries can flatten nuance, and you cannot notice what was dropped if you never read the original.
+- The anti-hoarding rule (every note must produce a recall artifact) discourages legitimate reference notes. Some notes exist for lookup, not recall — the rule should not apply to those.
+- "Skim plus AI deep-dive" is contested in reading research; on unknown, dense topics it can leave you with confident superficiality.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether skim + AI deep-dive preserves comprehension as well as full reading is contested in reading research, and no personal data exists here.
+- The optimal summary compression ratio (how compressed before recall quality drops) is unknown.
+- Whether generated flashcards from compressed summaries leak the same errors the summary introduced is an unverified chain.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

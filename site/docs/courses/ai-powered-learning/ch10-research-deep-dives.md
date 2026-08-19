@@ -3,7 +3,7 @@ id: ch10-research-deep-dives
 slug: /ai-powered-learning/ch10-research-deep-dives
 title: "Chapter 10: Research & Deep Dives with AI"
 sidebar_label: "Chapter 10: Research & Deep Dives with AI"
-sidebar_position: 11
+sidebar_position: 10
 ---
 # Chapter 10: Research & Deep Dives with AI
 
@@ -794,6 +794,23 @@ for (const s of tracker.queue()) {
 - The source tracker (TypeScript) and the research log keep the queue honest: depth only moves forward, and the queue is always shallowest-first.
 
 ---
+
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Papers-to-notes pipelines can produce fluent summaries of papers you did not understand. Reading the original still matters for the hard 20 percent; the pipeline handles the other 80.
+- The relevance filter protects placement goals but kills curiosity-driven learning — which is where long-term edge actually comes from. Filter for the next 90 days, not forever.
+- AI trend briefs are only as fresh as the model's knowledge. The most important trend of the week is often not in the brief at all.
+- Official docs change faster than AI training data; a "runnable tutorial" generated today can be wrong next month.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- How many sources define "mastered a topic" is arbitrary; the tracker's five-entry default is a guess.
+- Whether serial deep dives outperform breadth for interview outcomes is untested.
+- Whether deep-dive notes ever get revisited is the unspoken risk of the whole pipeline.
 
 ## Practical Takeaways
 

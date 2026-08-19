@@ -608,6 +608,23 @@ console.log("=== Month trend ===\n" + monthTrend(week));
 - Resume bullets must be action + task + tech + impact + number, with every keyword defensible under cross-examination.
 - A tracked weekly routine of 3 mocks converts practice into a month-over-month trend line.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- AI mocks cannot simulate a real interviewer's follow-up logic or the human pressure. Your tenth AI mock is not a tenth real mock; real mocks with peers or seniors are worth more per session.
+- Company-style personas are educated guesses. Interview patterns shift quarterly, and AI knowledge lags reality — treat personas as practice scaffolds, not intelligence.
+- AI-generated aptitude drills occasionally contain errors. Drilling a wrong question teaches a wrong method; spot-check solutions before mass practice.
+- STAR grading by AI is lenient; the model tends to validate narrative structure rather than judge real behavioral impact.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether mock scores correlate with offer rates is untested; treat them as practice metrics, not predictions.
+- How many STAR stories are enough for a three-round process is unknown; five is a floor, not a standard.
+- Whether timed AI mock tests replicate the cognitive load of real exams is an open question.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

@@ -612,6 +612,23 @@ tracker, and the first task for today.
 - Shipping is a data rule: three 70%+ mock weeks, two mocks above target, zero critical unchecked claims
 - The control prompt is the capstone artifact: the whole course, one paste, your complete AI study system
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- The 90-day plan assumes life stays average. The plan's real value is the re-planning ritual, not the schedule — abandoning the plan is fine as long as you keep the ritual.
+- A dashboard can become a gamified lie. Tracking hours is not the same as tracking mastery; the number you watch can become the number you defend.
+- This system optimizes for finishing. Finishing everything on schedule is compatible with shallow coverage if the quiz gates are soft — the gates are the only defense, so keep them honest.
+- Automation (custom GPTs, agents) adds setup time and can remove the struggle that drives learning; the dependency test must apply to your own tools too.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether a 90-day AI-accelerated sprint produces the same retention as a nine-month normal pace is exactly the question no one has measured — you will be the data.
+- When to stop preparing and start applying is a judgment call; the shipping rule is a heuristic with no formula.
+- Whether the whole system survives a model-pricing or platform change is an unhedged risk.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

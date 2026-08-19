@@ -3,7 +3,7 @@ id: ch05-active-recall-quiz-prompts
 slug: /ai-powered-learning/ch05-active-recall-quiz-prompts
 title: "Chapter 5: Active Recall & Quiz Prompts"
 sidebar_label: "Chapter 5: Active Recall & Quiz Prompts"
-sidebar_position: 6
+sidebar_position: 5
 ---
 # Chapter 5: Active Recall & Quiz Prompts
 
@@ -575,6 +575,23 @@ Output the session plan as a checklist, then run item 1 now.
 - Interleaving mixes topics to train topic detection, which is the real skill in mixed-subject interviews
 - The spaced-repetition scheduler with again/hard/good/easy ratings produces a daily due-card list automatically
 - Every quiz should end in the mistake-to-card pipeline, tagging misses as concept gap, recall slip, or careless error
+
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Active recall is proven; AI-generated quizzes are not. A badly generated MCQ can teach you a wrong fact with the confidence of a right one — verify question banks before mass-quizzing.
+- For pure vocabulary or syntax, plain Anki beats Socratic quizzing. The Socratic quizzer is highest-ROI for concepts, not facts.
+- Interleaving slows you down in the short run. If your test is next week, blocked practice may score higher; interleaving wins retention, not speed.
+- Self-rated card difficulty (again/hard/good/easy) is biased; learners systematically rate their own cards as easier than they are.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Your correct-rate-per-rung numbers are self-rated, and overconfidence is one of the best-documented biases in psychology (Kahneman's work). Calibration is unmeasured here.
+- Optimal intervals for AI-generated cards are guesses; Anki's SM-2 algorithm was designed for user-made cards, not machine-generated ones.
+- Whether generated exams predict real exam performance is untested — that is your experiment to run.
 
 ## Practical Takeaways
 

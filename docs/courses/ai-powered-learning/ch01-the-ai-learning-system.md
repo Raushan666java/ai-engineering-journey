@@ -451,6 +451,23 @@ Keep the updated table in the same format so I can paste it back next week.
 - The struggle rule (10-minute solo, 3-hint escalation) and the weekly dependency test keep you interview-proof.
 - Velocity is a number: log sessions, track mastery, and let the weekly report drive next week's plan.
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- The "10x case" assumes you actually run the prompts. Most readers finish this chapter and execute none of the Try This exercises — that is a 1x outcome from a 10x system.
+- For a single exam next week, focused cramming with AI flashcards beats the full 7-stage pipeline. The pipeline is for retained mastery, not emergencies.
+- The testing effect is strongest in low-stakes practice; running AI quizzes on every topic can crowd out the reading and struggle time the chapter itself demands.
+- Free-tier tool capabilities change monthly. Treat the tool map as a decision method, not a directory that stays true forever.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether your personal velocity-tracker numbers predict interview readiness is unmeasured — you are the first experiment.
+- How much struggle time is optimal per concept is unknown; the 10-minute rule is a heuristic, not a law.
+- Whether chat-based AI beats dedicated apps (Anki, Quizlet) for long-term retention is still an open comparison.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

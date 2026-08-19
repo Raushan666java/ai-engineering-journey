@@ -572,6 +572,23 @@ Question: {your question}
 - The failure-mode prompt makes the model confess its own limits, giving you free interview boundaries
 - The verification log converts "I think I knew that" into "I checked that" — the only currency that matters
 
+## Contradictions
+
+The methods in this chapter are not universally right. Read these before trusting the system blindly:
+
+- Cross-verification with a second LLM checks consistency, not truth. Two models can share the same hallucination; a second AI is a second guesser, not a fact-checker.
+- Demanding sources on every answer slows sessions so much that many learners quietly stop using the guard. A too-strict guard is an unused guard; calibrate it to the stakes.
+- Confidence tags are the model's self-report. Calibration studies show LLMs are systematically overconfident; the tag is evidence, not truth.
+- The verification log adds overhead; if you log without acting on flags, you are building bureaucracy, not safety.
+
+## Open Questions
+
+What this chapter deliberately does not claim to know:
+
+- Whether verified notes are materially more interview-safe than unverified ones has not been measured here; that is your experiment to run.
+- The long-term reliability of source-checked claims is a known open problem — sources and versions go stale.
+- Whether two-model disagreement reliably predicts factual error is an active research question.
+
 ## Practical Takeaways
 
 | Technique | Prompt / Command | When to Use |

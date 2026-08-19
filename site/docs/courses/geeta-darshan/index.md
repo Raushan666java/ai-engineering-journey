@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /geeta-darshan/index
+slug: /geeta-darshan
 title: "गीता दर्शन: ओशो की दृष्टि में भगवद्गीता (Geeta Darshan — Osho's Bhagavad Gita)"
 sidebar_label: "गीता दर्शन: ओशो की दृष्टि में भगवद्गीता (Geeta Darshan — Osho's Bhagavad Gita)"
 sidebar_position: 1

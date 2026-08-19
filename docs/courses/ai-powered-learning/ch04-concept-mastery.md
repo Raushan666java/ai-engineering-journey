@@ -4,6 +4,15 @@
 
 Knowing a topic's name is not the same as mastering the concept behind it. This chapter is a toolkit of AI-driven drills that push a concept from "I have heard of it" to "I can teach it cold in an interview." Each tool targets one weakness: shallow definitions, hidden misconceptions, missing edge cases, and recall that dies under follow-up questions.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — your Feynman script and misconception list for one core concept, plus a concept mastery tracker with your first 3 entries.
+>
+> **Prerequisites:** Chapter 2. **Next:** Chapter 5.
+
 ## Learning Objectives
 
 - Climb the Feynman ladder: explain any concept at five difficulty levels, quizzed at each rung

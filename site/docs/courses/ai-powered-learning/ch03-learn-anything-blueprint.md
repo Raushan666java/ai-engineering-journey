@@ -11,6 +11,15 @@ sidebar_position: 4
 
 You do not need to study harder; you need a machine that turns any topic into a day-by-day plan. This chapter gives you the master template that converts any topic, syllabus, or deadline into daily lessons, quizzes, and a measurable mastery score. Every prompt is copy-paste, every output feeds the next step, and every plan is built for a working professional with 4 hours of daily commute.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — a day-by-day Learn-Anything-X plan for one real topic; start with your weakest placement subject.
+>
+> **Prerequisites:** Chapter 2. **Next:** Chapter 4.
+
 ## Learning Objectives
 
 - Build a complete Learn-Anything-X plan for any topic in a single copy-paste prompt

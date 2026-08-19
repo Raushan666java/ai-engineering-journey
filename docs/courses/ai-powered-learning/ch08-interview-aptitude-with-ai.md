@@ -4,6 +4,15 @@
 
 Knowing the material and being asked the material are different sports. This chapter turns ChatGPT, Claude, or Gemini into a personal interview panel that runs company-style mocks, system design rounds, STAR drills, aptitude tests, HR rounds, and negotiation practice on demand. By the end you will have a weekly routine with tracked scores, so the real interview becomes your tenth mock instead of your first.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — one company-style mock interview transcript with your score, plus one STAR story written and graded.
+>
+> **Prerequisites:** Chapter 5. **Next:** Chapter 9.
+
 ## Learning Objectives
 
 - Run FAANG, startup, and service-company mock interviews with the right question mix for each

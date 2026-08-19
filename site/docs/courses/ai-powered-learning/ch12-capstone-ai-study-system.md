@@ -13,6 +13,15 @@ Everything in this course so far has been a component: the pipeline, the prompts
 
 The system is designed for exactly one person: a working professional with a 10-to-6 job and a long commute, who wants to finish a complete placement preparation — all subjects, DSA, aptitude, interviews — fast, without burning out. Follow it as written for 90 days, and you will have a finished, verified, interview-ready knowledge base instead of an endless to-do list.
 
+> **How to work this chapter** — this one is a build, not a read:
+>
+> 1. **Read** — 75 minutes in one or two evening blocks.
+> 2. **Do** — assemble every artifact from Chapters 1–11 into one place.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz.
+> 4. **Produce** — your complete system: weekly schedule, 90-day plan, prompt library, master tutor config, and progress dashboard.
+>
+> **Prerequisites:** Chapters 1–11 — it is the assembly of the whole course. **Next:** you are ready to apply.
+
 ## Learning Objectives
 
 - Assemble all 11 previous chapters into a single weekly study cycle

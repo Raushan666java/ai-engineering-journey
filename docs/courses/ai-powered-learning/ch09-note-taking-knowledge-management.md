@@ -6,6 +6,15 @@ Most students take notes they never read again. This chapter fixes that with a s
 
 The system is a loop — capture, structure, link, review, recall — not a pile. Every prompt in this chapter plugs into that loop, and the TypeScript formatter at the end automates the messiest step. Everything works offline-friendly for your commute: the vault is plain files, and the AI steps run in 5-minute blocks.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — your placement-prep vault: the folder structure plus your first 10 structured notes with tags and links.
+>
+> **Prerequisites:** Chapter 3 (its plans feed the vault). **Next:** Chapter 10.
+
 ---
 
 ## Learning Objectives

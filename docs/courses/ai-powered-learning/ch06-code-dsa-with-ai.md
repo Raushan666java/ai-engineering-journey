@@ -4,6 +4,15 @@
 
 Watching DSA videos creates an illusion of competence; writing code under pressure creates skill. This chapter turns ChatGPT, Claude, or Gemini into a full DSA coaching staff: a hints-only solver, a pattern mapper, a code reviewer, a debugging tutor, a system design interviewer, and a complexity drillmaster. Every tool follows one rule from Chapter 5: the AI assists, you do the work, and the AI grades the result.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — five solved DSA problems with pattern maps and reviewer verdicts, logged in your solution grader.
+>
+> **Prerequisites:** Chapters 2 and 5. **Next:** Chapter 7.
+
 ## Learning Objectives
 
 - Run a hints-only DSA solver that gives three escalating hints and never full solutions

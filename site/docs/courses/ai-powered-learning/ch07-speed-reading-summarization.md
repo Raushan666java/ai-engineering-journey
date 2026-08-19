@@ -11,6 +11,15 @@ sidebar_position: 8
 
 Reading is the slowest part of studying, and re-reading is the most wasteful part of the week. This chapter wires AI into the entire reading workflow — summarizing, note-taking, flashcard generation, and recall — so every hour you read produces revision material you can use for weeks. The pipeline at the center of it all (read once, summarize with AI, quiz with AI, recall on a schedule) is the fastest honest path through a 24-module syllabus that still leaves you interview-ready.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — one real chapter pushed through the full summary-to-recall pipeline: summary, flashcards, quiz, and recall schedule.
+>
+> **Prerequisites:** Chapter 2 (Chapter 5 for the card formats). **Next:** Chapter 8.
+
 ## Learning Objectives
 
 - Run the summary-to-recall pipeline (read, summarize, quiz, schedule) on every chapter

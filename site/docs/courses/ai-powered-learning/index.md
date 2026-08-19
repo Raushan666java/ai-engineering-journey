@@ -77,6 +77,39 @@ flowchart LR
 
 ---
 
+## How to Use This Course
+
+**The universal work protocol — every chapter, every topic:**
+
+1. **Read** — the chapter in 2–3 commute blocks (60–75 minutes total)
+2. **Do** — run every **Try This** as you go; the prompts are the point, not the pages
+3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on
+4. **Produce** — build the chapter's deliverable (table below) and keep it in your vault
+
+| Ch | Chapter | Read in | Produce | Prerequisites |
+|----|---------|---------|---------|---------------|
+| 1 | The AI Learning System | 3 commute blocks | Pipeline diagram + workspace + velocity tracker | None |
+| 2 | Prompt Foundations | 3 commute blocks | Master study prompt + library start | Ch 1 |
+| 3 | Learn-Anything Blueprint | 3 commute blocks | Day-by-day plan for your weakest subject | Ch 2 |
+| 4 | Concept Mastery | 3 commute blocks | Feynman script + mastery tracker | Ch 2 |
+| 5 | Active Recall & Quiz | 3 commute blocks | 50 Anki cards + one sat exam | Ch 2 |
+| 6 | Code & DSA with AI | 3 commute blocks | 5 solved problems with pattern maps | Ch 2, 5 |
+| 7 | Speed Reading & Summarization | 3 commute blocks | One chapter through the full pipeline | Ch 2, 5 |
+| 8 | Interview & Aptitude | 3 commute blocks | One mock transcript + graded STAR story | Ch 5 |
+| 9 | Note-Taking & Knowledge Management | 3 commute blocks | Vault structure + 10 structured notes | Ch 3 |
+| 10 | Research & Deep Dives | 3 commute blocks | One deep dive + 5 tracker entries | Ch 9 |
+| 11 | Verification & Anti-Hallucination | 3 commute blocks | Verification log with 10 checked claims | None (run with everything) |
+| 12 | Capstone: Your Complete AI Study System | Weekend deep work | The complete system + 90-day plan | Ch 1–11 |
+
+**Weekly cadence for a working professional:** Chapters 1–11 fit the working week — read during commute blocks Monday–Thursday, take the quiz and produce the deliverable on Friday evening or Saturday. Chapter 12 is a full weekend deep-work session that assembles everything.
+
+**Two rules that keep the course honest:**
+
+- Never skip the artifact — a chapter you only read is a chapter you did not do
+- Never skip the quiz gate — below 8/10, rework the Try This exercises and retake before moving on
+
+---
+
 ## Learning Outcomes
 
 After completing this course you will be able to:

@@ -11,6 +11,15 @@ sidebar_position: 6
 
 Reading notes feels productive but stores very little in long-term memory. The science-backed alternative is active recall: forcing your brain to pull facts out before checking them, which is exactly what placement interviews do to you. This chapter gives you a complete kit of copy-paste prompts that turn ChatGPT, Claude, or Gemini into a personal quiz engine: a Socratic quizzer, an Anki card factory, an exam question generator, and a spaced-repetition scheduler.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — 50 Anki cards (CSV) generated from one chapter you have already read, plus one generated exam you actually sat.
+>
+> **Prerequisites:** Chapter 2. **Next:** Chapter 6.
+
 ## Learning Objectives
 
 - Run a Socratic quizzer that gives hints only and never full answers

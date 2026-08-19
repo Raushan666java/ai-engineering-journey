@@ -13,6 +13,15 @@ When you learn fast with AI, the biggest risk is not speed — it is wrongness. 
 
 By the end, you will never again copy an AI answer into your notes without a confidence tag, a source, or an explicit "I DON'T KNOW" — and every fact you repeat in an interview will survive a cross-examining senior engineer because you verified it before you memorized it.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — your verification log with at least 10 claims checked, tagged, and dated.
+>
+> **Prerequisites:** none — but run this chapter's guards alongside every chapter from here on. **Next:** Chapter 12.
+
 ## Learning Objectives
 
 - Explain why models hallucinate and why confident tone is not evidence

@@ -11,6 +11,15 @@ sidebar_position: 2
 
 You work a 10-to-6 job, you spend about four hours a day commuting, and you are preparing for software and AI engineering placements. This chapter builds the complete AI-powered learning system that turns those four hours into your study engine using ChatGPT, Claude, Gemini, NotebookLM, Perplexity, and GitHub Copilot. You will finish with a proven pipeline, a tool map, a daily routine, and a TypeScript velocity tracker that measures your placement preparation like a real sprint.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — your AI study workspace: the 7-stage pipeline drawn out, your tool map, and a velocity tracker seeded with your first 7-day sprint plan.
+>
+> **Prerequisites:** none — this is the entry point. **Next:** Chapter 2.
+
 ## Learning Objectives
 
 - Explain why closing the learn-practice-test loop with AI compounds into 10x speed instead of the usual 2x

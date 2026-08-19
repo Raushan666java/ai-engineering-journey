@@ -4,6 +4,15 @@
 
 Every AI-powered learning system from Chapter 1 runs on prompts, and most learners use prompts that are too vague to unlock real depth. This chapter teaches the engineering behind prompts: the universal 5-part structure, the anti-slop rules, format control, level ladders, and prompt chaining, all tuned for studying and placement prep. By the end you will have a reusable master study prompt, a prompt library, and a TypeScript template builder that fills your prompts with one command.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — your personal master study prompt (all 5 parts filled in) plus the first 5 entries of your prompt library.
+>
+> **Prerequisites:** Chapter 1. **Next:** Chapter 3.
+
 ## Learning Objectives
 
 - Build any study prompt from the universal 5 parts: Role, Context, Task, Format, Constraints

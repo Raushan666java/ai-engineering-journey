@@ -13,6 +13,15 @@ Research is the skill that separates students who wait for tutorials from people
 
 The pipeline is goal → sources → comprehension → questions → integration → review. Every section below plugs into one stage of that pipeline, and the TypeScript source tracker at the end keeps your research queue honest — because in a 4-hour commute schedule, what you do NOT read matters as much as what you do.
 
+> **How to work this chapter** — 15–20 minutes of overhead on top of reading:
+>
+> 1. **Read** — 60–75 minutes, split across 2–3 commute blocks.
+> 2. **Do** — run every **Try This** as you go; the chapter's power is in the prompts you actually execute.
+> 3. **Prove** — score 8/10 or better on the Chapter Quiz before moving on.
+> 4. **Produce** — one paper or doc deep dive finished in your vault, plus 5 entries in your source tracker.
+>
+> **Prerequisites:** Chapter 9. **Next:** Chapter 11.
+
 ---
 
 ## Learning Objectives

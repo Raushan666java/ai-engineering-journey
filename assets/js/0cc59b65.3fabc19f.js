@@ -199,6 +199,38 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Watching DSA videos creates an illusion of competence; writing code under pressure creates skill. This chapter turns ChatGPT, Claude, or Gemini into a full DSA coaching staff: a hints-only solver, a pattern mapper, a code reviewer, a debugging tutor, a system design interviewer, and a complexity drillmaster. Every tool follows one rule from Chapter 5: the AI assists, you do the work, and the AI grades the result."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — 15–20 minutes of overhead on top of reading:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 60–75 minutes, split across 2–3 commute blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Try This"
+          }), " as you go; the chapter's power is in the prompts you actually execute."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz before moving on."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — five solved DSA problems with pattern maps and reviewer verdicts, logged in your solution grader."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " Chapters 2 and 5. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 7."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

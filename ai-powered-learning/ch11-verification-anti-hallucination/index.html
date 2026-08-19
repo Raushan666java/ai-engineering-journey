@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Chapter 11: Verification &amp; Anti-Hallucination | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 11: Verification &amp; Anti-Hallucination | AI Engineering Journey"><meta data-rh="true" name="description" content="Last Updated 60–75 minutes"><meta data-rh="true" property="og:description" content="Last Updated 60–75 minutes"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 11: Verification & Anti-Hallucination","item":"https://raushan666java.github.io/ai-engineering-journey/ai-powered-learning/ch11-verification-anti-hallucination"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.41efbd73.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.ade27f59.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/runtime~main.aec03435.js" defer="defer"></script>
 <script src="/ai-engineering-journey/assets/js/main.aad9d36c.js" defer="defer"></script>
 </head>
 <body>
@@ -17,6 +17,16 @@
 </blockquote>
 <p>When you learn fast with AI, the biggest risk is not speed — it is wrongness. A language model does not know anything; it predicts the next most plausible token, which means it can produce a confident, beautifully written, completely false explanation at any moment. This chapter installs your verification layer: guards that force every answer to declare its confidence, protocols that check claims against second sources, a log that separates checked facts from faith, and the discipline to distrust AI exactly when it deserves distrust.</p>
 <p>By the end, you will never again copy an AI answer into your notes without a confidence tag, a source, or an explicit &quot;I DON&#x27;T KNOW&quot; — and every fact you repeat in an interview will survive a cross-examining senior engineer because you verified it before you memorized it.</p>
+<blockquote>
+<p><strong>How to work this chapter</strong> — 15–20 minutes of overhead on top of reading:</p>
+<ol>
+<li class=""><strong>Read</strong> — 60–75 minutes, split across 2–3 commute blocks.</li>
+<li class=""><strong>Do</strong> — run every <strong>Try This</strong> as you go; the chapter&#x27;s power is in the prompts you actually execute.</li>
+<li class=""><strong>Prove</strong> — score 8/10 or better on the Chapter Quiz before moving on.</li>
+<li class=""><strong>Produce</strong> — your verification log with at least 10 claims checked, tagged, and dated.</li>
+</ol>
+<p><strong>Prerequisites:</strong> none — but run this chapter&#x27;s guards alongside every chapter from here on. <strong>Next:</strong> Chapter 12.</p>
+</blockquote>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
 <ul>
 <li class="">Explain why models hallucinate and why confident tone is not evidence</li>

@@ -198,6 +198,38 @@ function _createMdxContent(props) {
       children: "Most students take notes they never read again. This chapter fixes that with a second brain: a local vault of Markdown notes that AI structures, links, reviews, and converts into recall artifacts you actually use. You will build a placement-prep vault where every note is findable, every note produces a testable artifact, and nothing you studied is ever lost in a chat log again."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The system is a loop — capture, structure, link, review, recall — not a pile. Every prompt in this chapter plugs into that loop, and the TypeScript formatter at the end automates the messiest step. Everything works offline-friendly for your commute: the vault is plain files, and the AI steps run in 5-minute blocks."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — 15–20 minutes of overhead on top of reading:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 60–75 minutes, split across 2–3 commute blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Try This"
+          }), " as you go; the chapter's power is in the prompts you actually execute."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz before moving on."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — your placement-prep vault: the folder structure plus your first 10 structured notes with tags and links."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " Chapter 3 (its plans feed the vault). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 10."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

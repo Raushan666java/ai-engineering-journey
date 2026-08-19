@@ -191,6 +191,38 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "You do not need to study harder; you need a machine that turns any topic into a day-by-day plan. This chapter gives you the master template that converts any topic, syllabus, or deadline into daily lessons, quizzes, and a measurable mastery score. Every prompt is copy-paste, every output feeds the next step, and every plan is built for a working professional with 4 hours of daily commute."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — 15–20 minutes of overhead on top of reading:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 60–75 minutes, split across 2–3 commute blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Try This"
+          }), " as you go; the chapter's power is in the prompts you actually execute."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz before moving on."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — a day-by-day Learn-Anything-X plan for one real topic; start with your weakest placement subject."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " Chapter 2. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 4."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

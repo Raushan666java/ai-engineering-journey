@@ -195,6 +195,38 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Every AI-powered learning system from Chapter 1 runs on prompts, and most learners use prompts that are too vague to unlock real depth. This chapter teaches the engineering behind prompts: the universal 5-part structure, the anti-slop rules, format control, level ladders, and prompt chaining, all tuned for studying and placement prep. By the end you will have a reusable master study prompt, a prompt library, and a TypeScript template builder that fills your prompts with one command."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — 15–20 minutes of overhead on top of reading:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 60–75 minutes, split across 2–3 commute blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Try This"
+          }), " as you go; the chapter's power is in the prompts you actually execute."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz before moving on."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — your personal master study prompt (all 5 parts filled in) plus the first 5 entries of your prompt library."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " Chapter 1. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 3."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

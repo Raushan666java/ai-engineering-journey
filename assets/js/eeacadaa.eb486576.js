@@ -193,6 +193,36 @@ function _createMdxContent(props) {
       children: "Everything in this course so far has been a component: the pipeline, the prompts, the mastery methods, the recall drills, the code practice, the notes, the research, the verification. This chapter assembles the components into one working machine — a weekly cycle, a 90-day finish-everything plan, a prompt library, a master tutor config, a dashboard, and repair procedures for when life breaks the system. This is the chapter that turns \"I use AI to study\" into \"I run an AI study system\"."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "The system is designed for exactly one person: a working professional with a 10-to-6 job and a long commute, who wants to finish a complete placement preparation — all subjects, DSA, aptitude, interviews — fast, without burning out. Follow it as written for 90 days, and you will have a finished, verified, interview-ready knowledge base instead of an endless to-do list."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — this one is a build, not a read:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 75 minutes in one or two evening blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — assemble every artifact from Chapters 1–11 into one place."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — your complete system: weekly schedule, 90-day plan, prompt library, master tutor config, and progress dashboard."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " Chapters 1–11 — it is the assembly of the whole course. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " you are ready to apply."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

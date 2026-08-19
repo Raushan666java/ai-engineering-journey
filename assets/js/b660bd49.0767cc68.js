@@ -58,6 +58,10 @@ const toc = [{
   "id": "study-path",
   "level": 2
 }, {
+  "value": "How to Use This Course",
+  "id": "how-to-use-this-course",
+  "level": 2
+}, {
   "value": "Learning Outcomes",
   "id": "learning-outcomes",
   "level": 2
@@ -303,6 +307,209 @@ function _createMdxContent(props) {
         className: "language-mermaid",
         children: "flowchart LR\n    A[Goal] --> B[Plan with AI]\n    B --> C[Learn with Mastery Prompts]\n    C --> D[Practice with Recall Prompts]\n    D --> E[Test with Generated Exams]\n    E --> F[Retain with Spaced Repetition]\n    F --> G[Master + Verification]\n    G --> A\n"
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "how-to-use-this-course",
+      children: "How to Use This Course"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "The universal work protocol — every chapter, every topic:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Read"
+        }), " — the chapter in 2–3 commute blocks (60–75 minutes total)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do"
+        }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Try This"
+        }), " as you go; the prompts are the point, not the pages"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prove"
+        }), " — score 8/10 or better on the Chapter Quiz before moving on"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Produce"
+        }), " — build the chapter's deliverable (table below) and keep it in your vault"]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Ch"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Read in"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Produce"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Prerequisites"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The AI Learning System"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pipeline diagram + workspace + velocity tracker"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prompt Foundations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master study prompt + library start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learn-Anything Blueprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Day-by-day plan for your weakest subject"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept Mastery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Feynman script + mastery tracker"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Active Recall & Quiz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50 Anki cards + one sat exam"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Code & DSA with AI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 solved problems with pattern maps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 2, 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Speed Reading & Summarization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One chapter through the full pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 2, 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview & Aptitude"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One mock transcript + graded STAR story"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Note-Taking & Knowledge Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vault structure + 10 structured notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Research & Deep Dives"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One deep dive + 5 tracker entries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 9"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification & Anti-Hallucination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 commute blocks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification log with 10 checked claims"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (run with everything)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capstone: Your Complete AI Study System"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weekend deep work"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The complete system + 90-day plan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ch 1–11"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Weekly cadence for a working professional:"
+      }), " Chapters 1–11 fit the working week — read during commute blocks Monday–Thursday, take the quiz and produce the deliverable on Friday evening or Saturday. Chapter 12 is a full weekend deep-work session that assembles everything."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Two rules that keep the course honest:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never skip the artifact — a chapter you only read is a chapter you did not do"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never skip the quiz gate — below 8/10, rework the Try This exercises and retake before moving on"
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-outcomes",
       children: "Learning Outcomes"

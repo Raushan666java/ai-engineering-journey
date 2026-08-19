@@ -193,6 +193,38 @@ function _createMdxContent(props) {
       children: "When you learn fast with AI, the biggest risk is not speed — it is wrongness. A language model does not know anything; it predicts the next most plausible token, which means it can produce a confident, beautifully written, completely false explanation at any moment. This chapter installs your verification layer: guards that force every answer to declare its confidence, protocols that check claims against second sources, a log that separates checked facts from faith, and the discipline to distrust AI exactly when it deserves distrust."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "By the end, you will never again copy an AI answer into your notes without a confidence tag, a source, or an explicit \"I DON'T KNOW\" — and every fact you repeat in an interview will survive a cross-examining senior engineer because you verified it before you memorized it."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "How to work this chapter"
+        }), " — 15–20 minutes of overhead on top of reading:"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read"
+          }), " — 60–75 minutes, split across 2–3 commute blocks."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Do"
+          }), " — run every ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Try This"
+          }), " as you go; the chapter's power is in the prompts you actually execute."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Prove"
+          }), " — score 8/10 or better on the Chapter Quiz before moving on."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Produce"
+          }), " — your verification log with at least 10 claims checked, tagged, and dated."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " none — but run this chapter's guards alongside every chapter from here on. ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 12."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "learning-objectives",
       children: "Learning Objectives"

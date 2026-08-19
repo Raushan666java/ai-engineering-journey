@@ -62,6 +62,7 @@ export const courses: Course[] = [
   { name: 'Learning How to Learn (Practical)', slug: 'learning-how-to-learn-practical', category: 'Meta' },
   { name: 'AI-Powered Learning', slug: 'ai-powered-learning', category: 'Meta' },
   { name: 'Vigyan Bhairav Tantra', slug: 'vigyan-bhairav-tantra', category: 'Meta' },
+  { name: 'Geeta Darshan', slug: 'geeta-darshan', category: 'Meta' },
 ];
 
 export const categories = [...new Set(courses.map((c) => c.category))];

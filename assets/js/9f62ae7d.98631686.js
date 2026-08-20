@@ -1,0 +1,1701 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[48313],{
+
+/***/ 54359
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_bhagavad_gita_04_jnana_karma_sanyasa_yoga_md_9f6_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-bhagavad-gita-04-jnana-karma-sanyasa-yoga-md-9f6.json
+const site_docs_courses_bhagavad_gita_04_jnana_karma_sanyasa_yoga_md_9f6_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","description":"\\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\\"","source":"@site/docs/courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga.md","sourceDirName":"courses/bhagavad-gita","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","permalink":"/ai-engineering-journey/bhagavad-gita/04-jnana-karma-sanyasa-yoga","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"id":"04-jnana-karma-sanyasa-yoga","slug":"/bhagavad-gita/04-jnana-karma-sanyasa-yoga","title":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_label":"Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom","sidebar_position":5},"sidebar":"course-bhagavad-gita","previous":{"title":"Chapter 3: Karma Yoga — Action Without Attachment","permalink":"/ai-engineering-journey/bhagavad-gita/03-karma-yoga"},"next":{"title":"Chapter 5: Karma-Sanyasa Yoga — Renunciation Within Action","permalink":"/ai-engineering-journey/bhagavad-gita/05-karma-sanyasa-yoga"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/bhagavad-gita/04-jnana-karma-sanyasa-yoga.md
+
+
+const frontMatter = {
+	id: '04-jnana-karma-sanyasa-yoga',
+	slug: '/bhagavad-gita/04-jnana-karma-sanyasa-yoga',
+	title: 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom',
+	sidebar_label: 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom',
+	sidebar_position: 5
+};
+const contentTitle = 'Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Jnana-Karma-Sanyasa Yoga at a Glance",
+  "id": "jnana-karma-sanyasa-yoga-at-a-glance",
+  "level": 2
+}, {
+  "value": "The scene and the speakers",
+  "id": "the-scene-and-the-speakers",
+  "level": 3
+}, {
+  "value": "The Osho lens",
+  "id": "the-osho-lens",
+  "level": 3
+}, {
+  "value": "The structure of the chapter",
+  "id": "the-structure-of-the-chapter",
+  "level": 3
+}, {
+  "value": "The three-framework note",
+  "id": "the-three-framework-note",
+  "level": 3
+}, {
+  "value": "Traditional Reading vs Osho-Style Reading",
+  "id": "traditional-reading-vs-osho-style-reading",
+  "level": 2
+}, {
+  "value": "The Complete Text — All 42 Shlokas",
+  "id": "the-complete-text--all-42-shlokas",
+  "level": 2
+}, {
+  "value": "Shloka 4.1 — The Ancient Teaching",
+  "id": "shloka-41--the-ancient-teaching",
+  "level": 3
+}, {
+  "value": "Shloka 4.2 — The Lost Yoga",
+  "id": "shloka-42--the-lost-yoga",
+  "level": 3
+}, {
+  "value": "Shloka 4.3 — The Supreme Secret",
+  "id": "shloka-43--the-supreme-secret",
+  "level": 3
+}, {
+  "value": "Shloka 4.4 — Arjuna&#39;s Honest Doubt",
+  "id": "shloka-44--arjunas-honest-doubt",
+  "level": 3
+}, {
+  "value": "Shloka 4.5 — The Many Births",
+  "id": "shloka-45--the-many-births",
+  "level": 3
+}, {
+  "value": "Shloka 4.6 — The Unborn Is Born",
+  "id": "shloka-46--the-unborn-is-born",
+  "level": 3
+}, {
+  "value": "Shloka 4.7 — Whenever Dharma Declines",
+  "id": "shloka-47--whenever-dharma-declines",
+  "level": 3
+}, {
+  "value": "Shloka 4.8 — Born Age After Age",
+  "id": "shloka-48--born-age-after-age",
+  "level": 3
+}, {
+  "value": "Shloka 4.9 — Knowing the Divine Birth and Action",
+  "id": "shloka-49--knowing-the-divine-birth-and-action",
+  "level": 3
+}, {
+  "value": "Shloka 4.10 — The Many Who Have Crossed",
+  "id": "shloka-410--the-many-who-have-crossed",
+  "level": 3
+}, {
+  "value": "Shloka 4.11 — As You Come, So You Are Met",
+  "id": "shloka-411--as-you-come-so-you-are-met",
+  "level": 3
+}, {
+  "value": "Shloka 4.12 — The Quick Fruits of Desire",
+  "id": "shloka-412--the-quick-fruits-of-desire",
+  "level": 3
+}, {
+  "value": "Shloka 4.13 — The Fourfold Order and the Non-Doer",
+  "id": "shloka-413--the-fourfold-order-and-the-non-doer",
+  "level": 3
+}, {
+  "value": "Shloka 4.14 — Untainted by Action",
+  "id": "shloka-414--untainted-by-action",
+  "level": 3
+}, {
+  "value": "Shloka 4.15 — The Ancient Seekers Acted",
+  "id": "shloka-415--the-ancient-seekers-acted",
+  "level": 3
+}, {
+  "value": "Shloka 4.16 — Even the Wise Are Confused",
+  "id": "shloka-416--even-the-wise-are-confused",
+  "level": 3
+}, {
+  "value": "Shloka 4.17 — The Three Kinds of Karma",
+  "id": "shloka-417--the-three-kinds-of-karma",
+  "level": 3
+}, {
+  "value": "Shloka 4.18 — Inaction in Action",
+  "id": "shloka-418--inaction-in-action",
+  "level": 3
+}, {
+  "value": "Shloka 4.19 — The Sage of Burnt Undertakings",
+  "id": "shloka-419--the-sage-of-burnt-undertakings",
+  "level": 3
+}, {
+  "value": "Shloka 4.20 — Ever Content, Depending on Nothing",
+  "id": "shloka-420--ever-content-depending-on-nothing",
+  "level": 3
+}, {
+  "value": "Shloka 4.21 — The Body Acts, the Self Does Not",
+  "id": "shloka-421--the-body-acts-the-self-does-not",
+  "level": 3
+}, {
+  "value": "Shloka 4.22 — Even in Success and Failure",
+  "id": "shloka-422--even-in-success-and-failure",
+  "level": 3
+}, {
+  "value": "Shloka 4.23 — Actions That Dissolve",
+  "id": "shloka-423--actions-that-dissolve",
+  "level": 3
+}, {
+  "value": "Shloka 4.24 — All Is Brahman",
+  "id": "shloka-424--all-is-brahman",
+  "level": 3
+}, {
+  "value": "Shloka 4.25 — Two Kinds of Offering",
+  "id": "shloka-425--two-kinds-of-offering",
+  "level": 3
+}, {
+  "value": "Shloka 4.26 — Senses and Sense-Objects as Sacrifice",
+  "id": "shloka-426--senses-and-sense-objects-as-sacrifice",
+  "level": 3
+}, {
+  "value": "Shloka 4.27 — All Functions Offered",
+  "id": "shloka-427--all-functions-offered",
+  "level": 3
+}, {
+  "value": "Shloka 4.28 — Wealth, Austerity, Study as Sacrifice",
+  "id": "shloka-428--wealth-austerity-study-as-sacrifice",
+  "level": 3
+}, {
+  "value": "Shloka 4.29 — Breath in Breath",
+  "id": "shloka-429--breath-in-breath",
+  "level": 3
+}, {
+  "value": "Shloka 4.30 — Regulated Food, Offering to Offerings",
+  "id": "shloka-430--regulated-food-offering-to-offerings",
+  "level": 3
+}, {
+  "value": "Shloka 4.31 — The Nectar of the Remnant",
+  "id": "shloka-431--the-nectar-of-the-remnant",
+  "level": 3
+}, {
+  "value": "Shloka 4.32 — Born of Action, Know Them All",
+  "id": "shloka-432--born-of-action-know-them-all",
+  "level": 3
+}, {
+  "value": "Shloka 4.33 — Knowledge Surpasses All Sacrifices",
+  "id": "shloka-433--knowledge-surpasses-all-sacrifices",
+  "level": 3
+}, {
+  "value": "Shloka 4.34 — Prostration, Question, Service",
+  "id": "shloka-434--prostration-question-service",
+  "level": 3
+}, {
+  "value": "Shloka 4.35 — No More Delusion",
+  "id": "shloka-435--no-more-delusion",
+  "level": 3
+}, {
+  "value": "Shloka 4.36 — The Raft of Knowledge",
+  "id": "shloka-436--the-raft-of-knowledge",
+  "level": 3
+}, {
+  "value": "Shloka 4.37 — Fire Burns Fuel",
+  "id": "shloka-437--fire-burns-fuel",
+  "level": 3
+}, {
+  "value": "Shloka 4.38 — Nothing Purer Than Knowledge",
+  "id": "shloka-438--nothing-purer-than-knowledge",
+  "level": 3
+}, {
+  "value": "Shloka 4.39 — Faith, Devotion, Restraint",
+  "id": "shloka-439--faith-devotion-restraint",
+  "level": 3
+}, {
+  "value": "Shloka 4.40 — The Doubting Soul Is Lost",
+  "id": "shloka-440--the-doubting-soul-is-lost",
+  "level": 3
+}, {
+  "value": "Shloka 4.41 — The Self-Possessed Are Not Bound",
+  "id": "shloka-441--the-self-possessed-are-not-bound",
+  "level": 3
+}, {
+  "value": "Shloka 4.42 — The Sword of Knowledge",
+  "id": "shloka-442--the-sword-of-knowledge",
+  "level": 3
+}, {
+  "value": "Key Themes",
+  "id": "key-themes",
+  "level": 2
+}, {
+  "value": "The Inner Journey",
+  "id": "the-inner-journey",
+  "level": 2
+}, {
+  "value": "A Mind Map",
+  "id": "a-mind-map",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "TypeScript Tool: Karma Binding Analyzer",
+  "id": "typescript-tool-karma-binding-analyzer",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-4-jnana-karma-sanyasa-yoga--the-fire-of-knowledge-burns-action-into-freedom",
+        children: "Chapter 4: Jnana-Karma-Sanyasa Yoga — The Fire of Knowledge Burns Action into Freedom"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "\"You are not asked to leave action behind. You are asked to light a fire inside action — the fire of knowledge.\"\r\n— The Osho Way"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Krishna has stopped arguing about whether Arjuna should fight. Now he opens the deepest door: what is action, really? He tells Arjuna that this yoga is ancient — it passed from the sun to Manu to Ikshvaku, through a chain of masters and disciples, and it has been lost in the world because people kept the technique and dropped the transmission. And then Krishna says something that turns the whole Gita on its head: whenever dharma declines, he is born again. Not as a theology lesson about incarnations, but as a living law of inner life — whenever your inner dharma declines, awareness is born again in you."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The chapter is called Jnana-Karma-Sanyasa Yoga, the yoga of knowledge, action, and renunciation. Notice the strange joining of three words that seem to contradict each other. Renunciation says leave everything. Action says do everything. Knowledge says understand everything. Krishna's answer is that these three are not three roads but one journey. You do not renounce action by running away from it; you renounce it by seeing through it. And seeing is the fire that burns action — not to destroy it, but to release its smoke of anxiety and leave behind pure energy."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Osho reads this chapter as the death certificate of the ego-doer. The doer inside you is the one who sighs, \"I did this, and I deserve that result.\" That doer is the smoke. The fire of knowledge burns the doer, and what remains is action without the actor — inaction in action. That is why Krishna calls action a mystery that even the wise are confused about. It is the deepest paradox of inner life: you can be completely engaged and completely free at the same moment. The crisis of the doer is the door to the witness."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter is where Krishna begins to reveal himself — the avatara, the descent. Osho insists you do not need to believe in a historical incarnation to taste this. The avatar is not a past event; it is a present possibility. Every time your greed, your anger, your unconsciousness push dharma down inside you, something in you descends again. That something is what this chapter invites you to meet: the one who acts without being touched, the one who knows without accumulating, the one who is born in every age — including this one, in you."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After completing this chapter you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trace the transmission"
+        }), " — understand why Krishna calls this yoga ancient and why it was lost, and what the guru-parampara means for your own learning."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Meet the avatara within"
+        }), " — read the \"descent\" of the divine not as mythology but as a law of inner awareness that re-arises whenever your dharma declines."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Untangle action, inaction, and forbidden action"
+        }), " — grasp the paradox of inaction in action and action in inaction, the chapter's core insight."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Distinguish the many sacrifices"
+        }), " — recognize the whole ladder of inner offerings, from ritual gifts to the knowledge sacrifice where the giver, the gift, and the fire are one."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use doubt and knowledge correctly"
+        }), " — understand why doubt destroys and knowledge liberates, and how to cut the knot of doubt with the sword of knowing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Build a TypeScript tool"
+        }), " — a Karma Binding Analyzer that scores your daily actions for the binding forces of ego and expectation, and reports your jnana-fire index."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "jnana-karma-sanyasa-yoga-at-a-glance",
+      children: "Jnana-Karma-Sanyasa Yoga at a Glance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-scene-and-the-speakers",
+      children: "The scene and the speakers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "We are still on the field of Kurukshetra, the great plain where two armies wait, and Krishna is the charioteer speaking to Arjuna, the archer who refused to fight. This chapter follows the previous teaching on karma yoga: Krishna has told Arjuna to act without attachment. Now Arjuna's deeper question surfaces — if action is so dangerous, why not renounce it altogether? Krishna answers with a history lesson, a cosmology, and a psychology all at once. He reveals that this yoga is not his invention; it is the oldest teaching, passed from the sun-god Vivasvan to Manu, the first human lawgiver, and from Manu to Ikshvaku, ancestor of the solar dynasty of kings. The transmission is a line of royal sages — kings who meditated, rulers who were seers. That is the Mahabharata context: this knowledge was never meant for hermits only. It was meant for people with kingdoms to run and battles to fight."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-osho-lens",
+      children: "The Osho lens"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Osho refuses to let this chapter become theology. He reads the avatara not as a supernatural intervention in history but as a law of consciousness: whenever truth declines, truth descends. The same law works in your life. When your honesty declines, honesty is born again in you as unease. When your love declines, love is born again as longing. The descent of the divine is the re-birth of awareness in an unconscious mind. And the fourfold order Krishna describes is not a social caste system — it is a psychology of the gunas, the three qualities of nature. Every person carries all four varnas inside: the brahmin who sees, the kshatriya who acts, the vaishya who trades, the shudra who serves. The chapter becomes a mirror, not a mandate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-structure-of-the-chapter",
+      children: "The structure of the chapter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The 42 shlokas move in four waves:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Movement 1: 4.1–4.15 — The ancient transmission."
+        }), " Krishna speaks of the lost yoga, his own births, the law of descent, and why he is untouched by action. This is the ground: the divine doer as non-doer."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Movement 2: 4.16–4.24 — The mystery of action."
+        }), " What is action, what is inaction, what is forbidden action? The paradox of inaction in action, the wise one whose undertakings are desireless, and the vision where the whole act becomes Brahman."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Movement 3: 4.25–4.33 — The many sacrifices."
+        }), " A vast inventory of offerings — to gods, to the senses, to breath, to knowledge — all forms of one fire, with the knowledge sacrifice crowned as supreme."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Movement 4: 4.34–4.42 — The fire of knowledge and the sword."
+        }), " How to receive knowledge from one who sees, how knowledge burns karma like fire burns fuel, and the final call: cut the doubt in your heart with the sword of knowledge, and arise."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-three-framework-note",
+      children: "The three-framework note"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Gita's three great paths — karma (action), bhakti (love), jnana (knowledge) — are all alive in this chapter, and Krishna holds them as one. Karma appears as work done without craving for fruit. Bhakti appears in 4.11, where the divine responds to each person in the way they approach — love answers love in its own language. Jnana appears as the supreme sacrifice, the fire in which all other fires end. Osho's note: these are not successive rungs where you leave one behind. Knowledge without action is head-only; action without knowledge is blind; love without both is sentiment. The chapter is the place where the three threads are first woven together — the famous braiding that the rest of the Gita will keep tightening."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "traditional-reading-vs-osho-style-reading",
+      children: "Traditional Reading vs Osho-Style Reading"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Traditional reading"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Osho-style reading"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The avatara (4.7-8)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A historical incarnation of Vishnu in a particular age of decline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A law of consciousness: awareness is born again in you whenever your inner dharma falls"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The fourfold order (4.13)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The social caste system created by God, duties fixed by birth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A psychology of the gunas — every person carries the seer, the warrior, the trader, and the servant inside"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Renunciation of action (4.20)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Giving up desire for results so the soul is not tainted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The death of the ego-doer — action continues, only the actor evaporates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge as fire (4.37)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A metaphysical power that burns accumulated karma"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The light of awareness that dissolves identification — you stop claiming your deeds as \"mine\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Doubt (4.40)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spiritual ignorance that bars the path to liberation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The refusal to take the inner leap — doubt as the intellect protecting its own throne"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guru and questioning (4.34)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Surrender to a realized teacher, obedience to tradition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prostration, questioning, and service as three dimensions of real listening — the teacher is a mirror, not an authority"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "the-complete-text--all-42-shlokas",
+      children: "The Complete Text — All 42 Shlokas"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-41--the-ancient-teaching",
+      children: "Shloka 4.1 — The Ancient Teaching"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "श्रीभगवानुवाच |\r\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम् |\r\nविवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śrībhagavānuvāca . imaṃ vivasvate yogaṃ proktavānahamavyayam . vivasvānmanave prāha manurikṣvākave.abravīt"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The Blessed Lord said: I taught this imperishable yoga to Vivasvan, the sun; Vivasvan told it to Manu, and Manu proclaimed it to Ikshvaku."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Even the first verse is a secret. The sun does not learn — the sun is the source of light. And yet the teaching flows from the sun to Manu to Ikshvaku, a chain of handing over. Osho says: truth is not something you invent; it is something that has always been traveling toward you through living hands. A book cannot carry it. Only one person to another, eye to eye, breath to breath, can the transmission survive. When you read these lines today, you are standing at the end of that chain — and the question is whether the chain stops at you or continues through you."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-42--the-lost-yoga",
+      children: "Shloka 4.2 — The Lost Yoga"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "एवं परम्पराप्राप्तिमं राजर्षयो विदुः |\r\nस कालेनेह महता योगो नष्टः परन्तप"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " evaṃ paramparāprāptamimaṃ rājarṣayo viduḥ . sa kāleneha mahatā yogo naṣṭaḥ parantapa"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Thus handed down in an unbroken succession, the royal sages knew this yoga. But in the long course of time, O scorcher of foes, that yoga has been lost here on earth."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The technique never dies; the transmission dies. Rituals can be repeated for ten thousand years and still be empty, because no living heart passes through them. That is what Krishna means when he says the yoga was lost — it was still being practiced, but the fire in it had gone out. Osho invites you to feel the weight of this: you can memorize this entire chapter and still miss it, unless something in you catches fire. The difference between a dead tradition and a living one is a single person who has truly seen."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-43--the-supreme-secret",
+      children: "Shloka 4.3 — The Supreme Secret"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः |\r\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " sa evāyaṃ mayā te.adya yogaḥ proktaḥ purātanaḥ . bhakto.asi me sakhā ceti rahasyaṃ hyetaduttamam"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " That same ancient yoga I have now taught to you, because you are my devotee and my friend — this is the supreme secret."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Notice why Krishna gives the secret: not because Arjuna is intelligent, not because he deserves it by rank, but because he is a lover and a friend. Osho says the deepest truths are never given to the clever — they are given to the devoted, because only love has the patience to hold a mystery without crushing it into information. The head wants to dissect; the heart wants to sit beside. Knowledge that comes through love is the only knowledge that transforms."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-44--arjunas-honest-doubt",
+      children: "Shloka 4.4 — Arjuna's Honest Doubt"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अर्जुन उवाच |\r\nअपरं भवतो जन्म परं जन्म विवस्वतः |\r\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " arjuna uvāca . aparaṃ bhavato janma paraṃ janma vivasvataḥ . kathametadvijānīyāṃ tvamādau proktavāniti"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Arjuna said: Your birth came later, and the birth of Vivasvan came earlier. How am I to understand that you taught this yoga at the beginning of time?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Arjuna asks the question every honest student must ask: the teacher standing before him is younger than the teaching he claims to have given. Osho loves this doubt — it is the first sign that Arjuna is not a parrot. He will not swallow the story whole; he wants to understand. Doubt is not the enemy of the path; borrowed belief is. A doubt that is honestly voiced is already half a question that can become knowing, while a belief that is never examined stays forever a stranger inside you."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-45--the-many-births",
+      children: "Shloka 4.5 — The Many Births"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "श्रीभगवानुवाच |\r\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन |\r\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śrībhagavānuvāca . bahūni me vyatītāni janmāni tava cārjuna . tānyahaṃ veda sarvāṇi na tvaṃ vettha parantapa"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The Blessed Lord said: Many births of mine have passed, and of yours too, O Arjuna. I remember them all; you remember none, O scorcher of foes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Krishna's answer is a riddle about memory and identity. You have been here before — in this body, in other bodies, in other roles — but you do not remember, because your memory is tied to your mask. Osho says: awareness is memory without the mask. The witness remembers what the doer forgets. You have also lived many small births in this single life — every time an old identity died and a new one was born. And each time, you forgot the lesson of the previous life of that identity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-46--the-unborn-is-born",
+      children: "Shloka 4.6 — The Unborn Is Born"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् |\r\nप्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " ajo.api sannavyayātmā bhūtānāmīśvaro.api san . prakṛtiṃ svāmadhiṣṭhāya sambhavāmyātmamāyayā"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Though I am unborn, of imperishable nature, and the Lord of all beings, still I take birth by my own maya, governing my own nature."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Here is the first great paradox: the unborn is born, the Lord becomes a servant in a chariot. Osho reads maya not as illusion to be condemned but as the power of self-forgetting through which the whole play of existence becomes possible. The divine descends into form out of love — and that is exactly what you do every morning when you step into your role of worker, parent, friend. The art is to remember, even while wearing the mask, that you are not the mask. To be born by your own maya is to enter the game knowingly."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-47--whenever-dharma-declines",
+      children: "Shloka 4.7 — Whenever Dharma Declines"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत |\r\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yadā yadā hi dharmasya glānirbhavati bhārata . abhyutthānamadharmasya tadātmānaṃ sṛjāmyaham"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Whenever there is a decline of dharma, O Bharata, and a rise of adharma, then I manifest myself."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The most quoted verse of the Gita, and the most misunderstood. Osho does not ask you to believe in a god who patrols history. He asks you to watch your own inner history: whenever truth declines in you, truth descends in you — as a question, as a restlessness, as a knock that will not stop. The avatara is not a visit from above; it is the re-birth of your own awareness. When your greed becomes so loud that you begin to feel ashamed, that shame is the descent. Listen to it; it is the divine arriving in you."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-48--born-age-after-age",
+      children: "Shloka 4.8 — Born Age After Age"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "परित्राणाय साधूनां विनाशाय च दुष्कृताम् |\r\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām . dharmasaṃsthāpanārthāya sambhavāmi yuge yuge"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " For the protection of the good, for the destruction of the wicked, and for the establishment of dharma, I am born in every age."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Read this verse on the inner plane and it becomes a law of life: whenever you act to protect what is true in you, to dissolve what is cruel in you, and to re-establish your inner order, you are acting as the avatara. Osho adds a warning — do not appoint yourself the destroyer of others' wickedness. The destruction Krishna speaks of is first of all the destruction of the dushkrit inside you: the wicked deeds you keep rehearsing in your mind. Protect the good in you, dissolve the evil in you, and the age is already being redeemed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-49--knowing-the-divine-birth-and-action",
+      children: "Shloka 4.9 — Knowing the Divine Birth and Action"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः |\r\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " janma karma ca me divyamevaṃ yo vetti tattvataḥ . tyaktvā dehaṃ punarjanma naiti māmeti so.arjuna"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " He who knows in truth my divine birth and action, having left the body, is not born again — he comes to me, O Arjuna."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " \"Divine birth and action\" — not events to be believed, but a way of seeing your own life. The birth that matters is not your birthday; it is the moment you realize you are not the body, and every action done from that realization is divine action. Osho says: he who knows his own birth as consciousness and his own action as play has nothing more to be born into — because the whole cycle of becoming was a search for a home, and he has found it. Not born again means: no longer forced to return as a stranger to himself."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-410--the-many-who-have-crossed",
+      children: "Shloka 4.10 — The Many Who Have Crossed"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः |\r\nबहवो ज्ञानतपसा पूता मद्भावमागताः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " vītarāgabhayakrodhā manmayā māmupāśritāḥ . bahavo jñānatapasā pūtā madbhāvamāgatāḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Freed from attachment, fear, and anger, absorbed in me, taking refuge in me, purified by the fire of knowledge, many have come to my very being."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Mark the three enemies named here: attachment, fear, anger. They are not three separate demons — they are one river flowing through three channels. Attachment is the hand that grabs, fear is the hand that trembles at losing what it grabbed, and anger is the hand that strikes when the loss happens. The fire of knowledge burns the whole river. Osho says you do not fight these three; you see them. Seeing is the tapas — the heat — that purifies. \"Many have crossed\" — the path is ancient, crowded, and ordinary. You are not the first, and you will not be the last."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-411--as-you-come-so-you-are-met",
+      children: "Shloka 4.11 — As You Come, So You Are Met"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् |\r\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham . mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " In whatever way people approach me, in that same way I respond to them. All people follow my path, O Partha, in every way."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " This is the verse of infinite hospitality. The divine does not demand one road; every road that leads toward truth is welcomed and answered in its own language. Osho says this is the test of a real religion: it does not say \"only my path,\" it says \"come, however you are coming.\" The greedy one comes with greed and is met; the lover comes with love and is met; the skeptic comes with doubt and is met. God is not a gatekeeper — God is a mirror. Whatever you bring, you receive back, refined, until one day you bring yourself and receive yourself."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-412--the-quick-fruits-of-desire",
+      children: "Shloka 4.12 — The Quick Fruits of Desire"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः |\r\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " kāṅkṣantaḥ karmaṇāṃ siddhiṃ yajanta iha devatāḥ . kṣipraṃ hi mānuṣe loke siddhirbhavati karmajā"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Those who long for success in action worship the gods here on earth, for success born of action comes quickly in the human world."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Honest economics: if you want quick results, do not wait for the slow alchemy of knowledge. The world runs on exchange — you give effort, you get fruit, fast. Osho is not against this; he only asks you to see what you are actually buying. Success born of action is real and swift, but it is a loan that comes with interest: the more you need it, the more you need it. The devatas you worship may be a god, a boss, a market, a trend — all of them can deliver quick fruits. But the fruit of knowledge ripens on a different tree."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-413--the-fourfold-order-and-the-non-doer",
+      children: "Shloka 4.13 — The Fourfold Order and the Non-Doer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः |\r\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " cāturvarṇyaṃ mayā sṛṣṭaṃ guṇakarmavibhāgaśaḥ . tasya kartāramapi māṃ viddhyakartāramavyayam"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The fourfold order was created by me, divided according to guna and karma. Know me, who am its author, as the non-doer and the immutable."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " This verse has been used to imprison people in a caste born of their parents — which is exactly what Krishna does not say. He says the division is by guna and karma: your qualities and your actions, not your family. Osho reads the four varnas as four inner functions present in every human being — the seer (brahmin), the protector (kshatriya), the trader (vaishya), the server (shudra). And the deepest line is the last: I am the author, yet the non-doer. The creator of the system stands outside the system. Never worship the machine; meet the one who is untouched by it."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-414--untainted-by-action",
+      children: "Shloka 4.14 — Untainted by Action"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा |\r\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " na māṃ karmāṇi limpanti na me karmaphale spṛhā . iti māṃ yo.abhijānāti karmabhirna sa badhyate"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Actions do not taint me, nor do I crave their fruits. He who knows me thus is not bound by action either."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " What makes an action stick to you like mud? Two things: the thought \"I am doing this\" and the thought \"I want that result.\" Remove both, and the mud cannot stick — this is physics, not morality. Osho says the divine is not holy because it does good deeds; it is holy because it does not claim them. You can taste that holiness today: do one small thing completely, forget to file the result under your name, and feel how light the hand is. That lightness is what Krishna calls not being bound."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-415--the-ancient-seekers-acted",
+      children: "Shloka 4.15 — The Ancient Seekers Acted"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः |\r\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " evaṃ jñātvā kṛtaṃ karma pūrvairapi mumukṣubhiḥ . kuru karmaiva tasmāttvaṃ pūrvaiḥ pūrvataraṃ kṛtam"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Having known this, even the ancient seekers of freedom performed action. Therefore do you also perform action, as the ancients did long ago."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The seekers of freedom worked. This shatters the lazy fantasy that liberation means sitting with closed eyes while life passes. Osho insists: the people who burned for moksha did not drop the world; they dropped the clutching of the world. Janaka the king, the Gita will remind you, ruled a kingdom and was liberated. So do not wait to be free before you act — act your way into freedom. The door does not open for those who stop walking; it opens for those who walk without grasping."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-416--even-the-wise-are-confused",
+      children: "Shloka 4.16 — Even the Wise Are Confused"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः |\r\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " kiṃ karma kimakarmeti kavayo.apyatra mohitāḥ . tatte karma pravakṣyāmi yajjñātvā mokṣyase.aśubhāt"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " What is action? What is inaction? Even the wise are confused about this. I will teach you this action, knowing which you shall be released from what is inauspicious."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Now the chapter reaches its core question, and Krishna admits that even the clever stumble here. Osho says the confusion is built in, because the question itself comes from the wrong place: the doer asks \"what should I do?\" while the witness asks \"who is doing?\" You cannot solve the mystery of action with more action, any more than you can see your own face with your hands. You need a mirror. That mirror is what Krishna hands over in the next verses — and it is not a new technique, it is a new seat: the seat of the witness."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-417--the-three-kinds-of-karma",
+      children: "Shloka 4.17 — The Three Kinds of Karma"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः |\r\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " karmaṇo hyapi boddhavyaṃ boddhavyaṃ ca vikarmaṇaḥ . akarmaṇaśca boddhavyaṃ gahanā karmaṇo gatiḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The nature of action must be understood, and also of forbidden action, and of inaction. Deep and hard to fathom is the path of action."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Three doors: karma, vikarma, akarma. Action is the work done; forbidden action is the work that injures — including the inner sabotage you do to yourself; inaction is the stillness that is not laziness. Osho points to the trap: the lazy man calls his laziness inaction, and the frantic man calls his running action. Both are wrong, and both are entangled. The path of action is gahana — a dark forest. The only lantern that can pass through it is awareness, because in that forest the same gesture can be a cage or a door."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-418--inaction-in-action",
+      children: "Shloka 4.18 — Inaction in Action"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः |\r\nस बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ . sa buddhimānmanuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " He who sees inaction in action and action in inaction is wise among people; he is united in yoga and performs all actions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The most explosive verse of the chapter. Krishna says: the doer who is awake within his doing is actually doing nothing — and the idler who dreams of doing, sits in a storm of inner action. Osho says this is the whole science of witnessing in a single couplet. Your body can be fully engaged — hands moving, voice speaking, feet walking — while your inner being remains as still as a lamp in a windless room. And your body can be perfectly still while your mind runs a thousand races. Watch which one you actually live in. The wise are known not by what they do but by where they stand."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-419--the-sage-of-burnt-undertakings",
+      children: "Shloka 4.19 — The Sage of Burnt Undertakings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः |\r\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yasya sarve samārambhāḥ kāmasaṅkalpavarjitāḥ . jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " He whose undertakings are free of desire and personal designs, whose actions are burnt by the fire of knowledge — the wise call him a sage."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Note the two words that vanish in the sage: kama, desire, and sankalpa, the private plan. Most of your activity is really a deal you have made with the future: I will do this so that I get that. The sage's undertakings have no hidden clause. Osho says the fire of knowledge does not burn the deed — it burns the seed of the deed, the wanting inside it. A deed that comes from want creates a chain; a deed that comes from fullness ends at its own moment. The sage's actions leave no footprints because nothing was ever claimed."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-420--ever-content-depending-on-nothing",
+      children: "Shloka 4.20 — Ever Content, Depending on Nothing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः |\r\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ . karmaṇyabhipravṛtto.api naiva kiñcitkaroti saḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Having abandoned attachment to the fruits of action, ever content, resting on nothing — though engaged in activity, he really does nothing at all."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Three marks of the free worker: no attachment to results, eternal contentment, and dependence on nothing. Osho loves the word nirashraya — leaning on nothing. Your whole life is a series of crutches: results, opinions, applause, possessions. The free one has thrown away the crutches and discovers that the skeleton can stand — more, that it was never the skeleton standing, but the life within it. Contentment is not a mood that visits; it is the home he lives in, and work flows from that home like water from a spring."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-421--the-body-acts-the-self-does-not",
+      children: "Shloka 4.21 — The Body Acts, the Self Does Not"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः |\r\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " nirāśīryatacittātmā tyaktasarvaparigrahaḥ . śārīraṃ kevalaṃ karma kurvannāpnoti kilbiṣam"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Without hope, with mind and self controlled, having abandoned all possessiveness, doing only bodily action, he incurs no stain."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " There is a beautiful humility in this verse: the free one does not pretend his hands are not moving. He does sharira karma, bodily action, and nothing more — no inner commentary, no bargaining. Osho says the stain of action comes from the commentary track running inside your head: \"I am doing this, this is mine, I deserve credit.\" When the commentary stops, the gesture becomes pure — like a dancer's foot or a musician's breath. The body dances; nobody claims the dance. That nobody is the clean one."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-422--even-in-success-and-failure",
+      children: "Shloka 4.22 — Even in Success and Failure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः |\r\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yadṛcchālābhasantuṣṭo dvandvātīto vimatsaraḥ . samaḥ siddhāvasiddhau ca kṛtvāpi na nibadhyate"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Content with whatever comes of its own accord, beyond the pairs of opposites, free of envy, equal in success and failure — though acting, he is not bound."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The pairs of opposites are the two sides of one trap: success and failure, praise and blame, gain and loss. Osho says most people do not want success — they want the privilege of fearing failure, because fear gives life its urgency. The free one has walked out of the whole arena. Whatever comes, comes; whatever goes, goes. He is sama — equal — in both, and equality is not indifference. It is the warm presence of someone who knows the tide is not the sea. Test it on your next small failure: does the wave own you, or do you watch it?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-423--actions-that-dissolve",
+      children: "Shloka 4.23 — Actions That Dissolve"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः |\r\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " gatasaṅgasya muktasya jñānāvasthitacetasaḥ . yajñāyācarataḥ karma samagraṃ pravilīyate"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " For one free of attachment, liberated, whose mind is established in knowledge, working for the sake of sacrifice — the whole of action dissolves."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " A new word enters: yajna — sacrifice, offering. The free one does not work for himself, for his family, for his reputation; he works as an offering, like a flower placed at a shrine. And the miracle: the offering dissolves the offering. Osho says this is the alchemy of gratitude — when your work is given away at the moment it is done, nothing accumulates, nothing rots, nothing weighs. You do not become a saint by renouncing the world; you become a saint by giving the world your work as a gift."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-424--all-is-brahman",
+      children: "Shloka 4.24 — All Is Brahman"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् |\r\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " brahmārpaṇaṃ brahma havirbrahmāgnau brahmaṇā hutam . brahmaiva tena gantavyaṃ brahmakarmasamādhinā"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Brahman is the offering, Brahman is the oblation, poured by Brahman into the fire of Brahman. Brahman alone is reached by him who is absorbed in action as Brahman."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The last separation dies here. The giver, the gift, the fire, the act of giving — all one. Osho calls this the end of the arithmetic of religion: you stop counting what you give and what you will get, because there is only one substance everywhere. When you can look at your work, your anger, your love, your body, and your death and see the same one substance in all of them, then action has become samadhi. Not a posture — the whole of life standing in the sacred fire without being burnt."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-425--two-kinds-of-offering",
+      children: "Shloka 4.25 — Two Kinds of Offering"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "दैवमेवापरे यज्ञं योगिनः पर्युपासते |\r\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " daivamevāpare yajñaṃ yoginaḥ paryupāsate . brahmāgnāvapare yajñaṃ yajñenaivopajuhvati"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Some yogis worship the sacrifice to the gods; others offer sacrifice itself as the offering in the fire of Brahman."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Two altitudes of worship: some offer to the gods — to the powers of nature, the forces of life — and this is real and ancient and good. Others go deeper: they offer the offering itself. The first path works with the world; the second works with the very structure of giving. Osho says both are true, but the second is the fuller truth — because when you can offer your offering, you have understood that even your worship was not yours. All devotion ends in the discovery that the devotee, too, is being offered."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-426--senses-and-sense-objects-as-sacrifice",
+      children: "Shloka 4.26 — Senses and Sense-Objects as Sacrifice"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति |\r\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śrotrādīnīndriyāṇyanye saṃyamāgniṣu juhvati . śabdādīnviṣayānanya indriyāgniṣu juhvati"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Some offer the hearing and other senses into the fire of restraint; others offer sound and the other sense-objects into the fire of the senses."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The inventory of inner offerings begins. Two movements: some burn the senses themselves — they starve the organs of their wandering; others burn the objects — they stop chasing sounds, sights, tastes. Osho says both are real fires but one is more mature: you cannot burn a sense by strangling it. What you can burn is the fascination. The ear remains, the sound remains, but the grabbing is gone. That is the difference between suppression, which makes you dead, and sacrifice, which makes you spacious."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-427--all-functions-offered",
+      children: "Shloka 4.27 — All Functions Offered"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे |\r\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " sarvāṇīndriyakarmāṇi prāṇakarmāṇi cāpare . ātmasaṃyamayogāgnau juhvati jñānadīpite"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Others offer all the functions of the senses and of the breath into the fire of self-restraint, kindled by knowledge."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Now even the breath becomes an offering — the in-breath and the out-breath are poured into the fire of self-discipline. Osho says this is where meditation becomes scientific: when you watch your breathing, you are not doing breathing exercises, you are offering the breath into the fire of awareness. The fire is lit by knowledge — by the understanding of what you are doing. Without that understanding, breath control is gymnastics; with it, every breath is worship. The one who breathes is not you; the one who watches the breathing is the sacrifice."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-428--wealth-austerity-study-as-sacrifice",
+      children: "Shloka 4.28 — Wealth, Austerity, Study as Sacrifice"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे |\r\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " dravyayajñāstapoyajñā yogayajñāstathāpare . svādhyāyajñānayajñāśca yatayaḥ saṃśitavratāḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Others offer wealth as sacrifice, others austerity, others yoga, and the disciplined ones of firm vows offer study of scripture and knowledge."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The catalogue widens: money can be an offering, discipline can be an offering, practice can be an offering, even study can be an offering. Osho notes that everything depends on the fire, not on the fuel. Money given with a tight heart is commerce; money given freely is sacrifice. The same is true of your knowledge — you can hoard what you know like a miser, or pour it out like a lamp. The vow that matters is the one you make to keep the fire burning: that whatever you have, you give."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-429--breath-in-breath",
+      children: "Shloka 4.29 — Breath in Breath"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे |\r\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " apāne juhvati prāṇaṃ prāṇe.apānaṃ tathāpare . prāṇāpānagatī ruddhvā prāṇāyāmaparāyaṇāḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Others offer the in-breath into the out-breath and the out-breath into the in-breath, restraining the two currents, devoted to the control of prana."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The science of pranayama appears inside the list of sacrifices — breath offered into breath, a self-consuming fire that needs no fuel but itself. Osho says this is the most intimate sacrifice available to you: you can practice it at a traffic light, in a meeting, before sleep. The mind and the breath are one river; slow the breath and the mind begins to slow, the thoughts begin to dissolve. And the deepest point: when both currents are held in balance, you touch the still point between them — the witness who is neither in-breath nor out-breath."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-430--regulated-food-offering-to-offerings",
+      children: "Shloka 4.30 — Regulated Food, Offering to Offerings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति |\r\nसर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " apare niyatāhārāḥ prāṇānprāṇeṣu juhvati . sarve.apyete yajñavido yajñakṣapitakalmaṣāḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Others of regulated diet offer their life-breaths into the life-breaths. All these are knowers of sacrifice, whose stains are burnt away by sacrifice."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Even eating becomes part of the sacrifice — regulated food, food eaten with awareness, is breath offered into breath. Osho says the body is a fire, and food is its fuel; eat unconsciously and the fire smokes, eat with gratitude and the fire becomes clean. And then the great reassurance: all these — the giver, the breather, the faster, the student — are knowers of sacrifice. There is no one path, only one fire with many fuels. Whatever your temperament, you can find your way into the fire. The only sin is to stay outside it, cold and unoffered."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-431--the-nectar-of-the-remnant",
+      children: "Shloka 4.31 — The Nectar of the Remnant"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् |\r\nनायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yajñaśiṣṭāmṛtabhujo yānti brahma sanātanam . nāyaṃ loko.astyayajñasya kuto.anyaḥ kurusattama"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Those who eat the nectar of the remnant of sacrifice go to the eternal Brahman. There is no world even for the one who does not sacrifice — how then the other, O best of the Kurus?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " After the fire, what remains is amrita — nectar, the blessed remainder. Osho says life becomes a feast only when you stop grabbing at it and start receiving what the fire leaves behind. And the warning is blunt: the person who never offers anything has no world — he is always eating, never tasting; always accumulating, never receiving. Watch a miser eat; watch a lover eat. The difference is the remnant. The lover is fed by what is left over; the miser is starved by everything he keeps."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-432--born-of-action-know-them-all",
+      children: "Shloka 4.32 — Born of Action, Know Them All"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे |\r\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " evaṃ bahuvidhā yajñā vitatā brahmaṇo mukhe . karmajānviddhi tānsarvānevaṃ jñātvā vimokṣyase"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Thus many sacrifices are spread before the mouth of Brahman. Know them all as born of action — and knowing this, you shall be liberated."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The whole festival of sacrifices is a celebration of action — even renunciation is born of action, even knowledge is an act. Osho says this is the Gita's genius: it never lets you escape into passivity. The point is not to stop acting but to act in such a way that the action completes itself and dies at the moment of completion. When you know that every yajna is karmaja — born of action — you stop despising action and stop being enslaved by it. Both hatred and addiction fall away, and that double freedom is moksha."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-433--knowledge-surpasses-all-sacrifices",
+      children: "Shloka 4.33 — Knowledge Surpasses All Sacrifices"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप |\r\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śreyāndravyamayādyajñājjñānayajñaḥ parantapa . sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The sacrifice of knowledge is greater than sacrifice with material objects, O scorcher of foes. All action, in its entirety, O Partha, culminates in knowledge."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The crown of the inventory: jnana-yajna, the knowledge sacrifice, is supreme. Why? Because material sacrifice changes the outer world, while knowledge changes the inner one — and every other sacrifice, if followed to its end, terminates in knowing. Osho says all action is a long staircase, and the top step is understanding. A man can give away his whole fortune and still be a fool; but the moment understanding dawns, even the fool's silence is a festival. Do not stop at giving; grow until you know what the giving was for."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-434--prostration-question-service",
+      children: "Shloka 4.34 — Prostration, Question, Service"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया |\r\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " tadviddhi praṇipātena paripraśnena sevayā . upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Know that truth by prostration, by questioning, and by service — the wise who have seen the truth will teach you that knowledge."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Three keys to receiving: prostrate — surrender your knowing, question — bring your full doubt, serve — stand near the fire long enough to catch warmth. Osho says the teacher worth having is the one who has seen, not the one who has read — and you can tell the difference by the light, not by the certificates. But remember: prostration without questioning is slavery, and questioning without service is cleverness. All three together open the door. The teacher is a door, not a destination — enter and walk on, grateful."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-435--no-more-delusion",
+      children: "Shloka 4.35 — No More Delusion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव |\r\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yajjñātvā na punarmohamevaṃ yāsyasi pāṇḍava . yena bhūtānyaśeṣāṇi drakṣyasyātmanyatho mayi"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Knowing which, O Pandava, you shall not fall into this delusion again; and by it you shall see all beings in your Self, and also in me."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The promise is not a better theory — it is the end of delusion itself, because delusion is not a mistake of information; it is the fog of the separate self. When you see all beings in your Self, the fog has lifted. Osho says this seeing is not poetry; it is the most practical of all perceptions. The person who sees others in himself cannot exploit, cannot deceive, cannot kill — not because of a commandment, but because the separation that made cruelty possible has dissolved. This is the only peace treaty that has ever worked."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-436--the-raft-of-knowledge",
+      children: "Shloka 4.36 — The Raft of Knowledge"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः |\r\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " api cedasi pāpebhyaḥ sarvebhyaḥ pāpakṛttamaḥ . sarvaṃ jñānaplavenaiva vṛjinaṃ santariṣyasi"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Even if you are the worst sinner of all sinners, you shall cross all that is crooked by the raft of knowledge alone."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " No theology of punishment here — only an ocean and a raft. Osho says guilt is the favorite hiding place of the ego: as long as you are the greatest sinner, you are still somebody. The raft of knowledge cuts through both pride of virtue and pride of sin. Nothing is asked of you but to see. Not to deserve, not to prove, not to weep longer. Just to look with open eyes at what you have done and what you are — and the looking itself carries you across. The worst sinner has the shortest distance: he has the least illusion left."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-437--fire-burns-fuel",
+      children: "Shloka 4.37 — Fire Burns Fuel"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन |\r\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yathaidhāṃsi samiddho.agnirbhasmasātkurute.arjuna . jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " As a blazing fire turns fuel to ashes, O Arjuna, so the fire of knowledge turns all actions to ashes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The most famous image of the chapter: knowledge as fire, karma as fuel. Osho says the fire does not refuse the fuel — it burns it and is freed. Your past, your accumulated deeds, your old wounds — they are all fuel, and they are precious only as fuel. You have been carrying this wood on your back for years, believing it was your life. Knowledge is the discovery that the wood was always meant for burning, and the burning is the light. Let the whole stack go up. What remains is not ash — it is warmth, and in the warmth, freedom."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-438--nothing-purer-than-knowledge",
+      children: "Shloka 4.38 — Nothing Purer Than Knowledge"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते |\r\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " na hi jñānena sadṛśaṃ pavitramiha vidyate . tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Verily, there is nothing here as purifying as knowledge. He who is perfected in yoga finds it in himself in due time."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Water cleans the body, ritual cleans the society, but only knowledge cleans consciousness. And note where it is found: in the Self, in due time. Osho says you cannot go to the market and buy this purity, and you cannot steal it from a guru. It ripens — like a fruit, like a season. The yogi who keeps practicing, keeps sitting, keeps watching, will find knowledge flowering inside his own being one day, as naturally as a tree keeps its appointment with spring. Patience is not a virtue here; it is the very method."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-439--faith-devotion-restraint",
+      children: "Shloka 4.39 — Faith, Devotion, Restraint"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः |\r\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " śraddhāvā.Nllabhate jñānaṃ tatparaḥ saṃyatendriyaḥ . jñānaṃ labdhvā parāṃ śāntimacireṇādhigacchati"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The one full of faith, devoted to it, with senses restrained, obtains knowledge; and having obtained knowledge, he quickly attains supreme peace."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " Three conditions for the dawn: shraddha — trust that the path is real; tatpara — absorption, being utterly with the work; and restraint of the senses — not killing them, but giving them the day off. Osho says faith here is not belief in a dogma; it is the trust of a child walking into a dark room with a hand held out. Without that trust, you keep testing the water and the water keeps flowing. And the sequence is crucial: knowledge first, then peace. Peace is not the reward for knowing — it is what knowing feels like from inside."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-440--the-doubting-soul-is-lost",
+      children: "Shloka 4.40 — The Doubting Soul Is Lost"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति |\r\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " ajñaścāśraddadhānaśca saṃśayātmā vinaśyati . nāyaṃ loko.asti na paro na sukhaṃ saṃśayātmanaḥ"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " The ignorant, the faithless, the doubting self goes to ruin. There is no this world, no other world, no happiness for the doubting soul."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " This verse is the twin of 4.4 — and the difference is everything. Arjuna's doubt was a living question that knocked on the door; the doubt condemned here is doubt as a residence, a soul that lives permanently in the hallway between yes and no. Osho says the double-minded man is truly the most miserable: he never tastes the sweetness of commitment, never enjoys the release of trust, and even his pleasures are undermined by suspicion. He is not destroyed by the gods but by the eternal maybe. Come out of the hallway. Knock once, then choose."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-441--the-self-possessed-are-not-bound",
+      children: "Shloka 4.41 — The Self-Possessed Are Not Bound"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् |\r\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " yogasaṃnyastakarmāṇaṃ jñānasañchinnasaṃśayam . ātmavantaṃ na karmāṇi nibadhnanti dhanañjaya"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " For him who has renounced actions through yoga, whose doubt is cut asunder by knowledge, who is self-possessed — actions do not bind him, O Dhananjaya."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The chapter's two medicines appear in one verse: yoga for renouncing action, knowledge for cutting doubt. Osho notes the quiet word at the center: atmavant — self-possessed, dwelling in the self. The bound man is always somewhere else — in the past, in the future, in others' opinions. The free man is at home in himself, and from that home even the heaviest work is light. Actions come to him like waves to a rock: they touch, they break, they dissolve. They do not bind, because he is not made of sand."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "shloka-442--the-sword-of-knowledge",
+      children: "Shloka 4.42 — The Sword of Knowledge"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः |\r\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Transliteration:"
+      }), " tasmādajñānasambhūtaṃ hṛtsthaṃ jñānāsinātmanaḥ . chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Translation:"
+      }), " Therefore, having cut with the sword of knowledge the doubt born of ignorance that dwells in your heart, take refuge in yoga — arise, O Bharata!"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Osho Darshan:"
+      }), " The chapter ends where every inner teaching must end: not in conclusion but in command. Cut the doubt — not with more thinking, but with the sword of knowing. Then take refuge in yoga — in action, in union, in the practice. And then the smallest, largest word of all: uttishtha — arise! Osho says the whole Gita is in that word. The sitting, the thinking, the doubting must all end in standing up. Knowledge that does not make you stand is decoration. Arise, and act — the fire is lit, the fuel is ready, and the one who burns is already free."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-themes",
+      children: "Key Themes"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Theme"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Shlokas"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Osho-style insight"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The living transmission"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.1-4.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Truth passes hand to hand, not book to book; the technique survives, the fire is lost and must be re-lit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The descent of awareness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.5-4.9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The avatara is a law of consciousness — awareness is born again in you whenever inner dharma declines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The mystery of action"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.16-4.20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inaction in action: the witness is the only lantern in the dark forest of karma"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The death of the doer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.20-4.24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Drop the claim and the karma; the gesture remains pure when no one claims it"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "The inventory of sacrifice"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.25-4.33"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Every offering is born of action; all rivers end in the ocean of knowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Doubt, faith, and the sword"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.34-4.42"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Doubt as residence ruins; doubt as a question opens; knowledge cuts the knot, then you arise"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "the-inner-journey",
+      children: "The Inner Journey"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\r\n    A[\"Arjuna: how can you have taught the ancient yoga?\"] --> B[\"Krishna: many births; I remember, you forget\"]\r\n    B --> C[\"The law of descent: whenever dharma declines, awareness is reborn\"]\r\n    C --> D[\"The mystery: what is action, inaction, forbidden action\"]\r\n    D --> E[\"The paradox: inaction in action; the doer dissolves\"]\r\n    E --> F[\"The ladder of sacrifices: senses, breath, wealth, study\"]\r\n    F --> G[\"The knowledge sacrifice is supreme; all action ends in knowing\"]\r\n    G --> H[\"Prostration, questioning, service: receive from one who sees\"]\r\n    H --> I[\"The fire of knowledge burns karma like fuel\"]\r\n    I --> J[\"The sword: cut the doubt, take refuge in yoga, arise\"]\r\n    style E fill:#4446e8,color:#fff\r\n    style J fill:#eef0ff,color:#1a1b23\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "a-mind-map",
+      children: "A Mind Map"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "mindmap\r\n  root[(Jnana-Karma-Sanyasa Yoga)]\r\n    The transmission\r\n      Sun to Manu to Ikshvaku\r\n      Lost in time\r\n      Given to the devoted friend\r\n    The descent\r\n      The unborn is born\r\n      Dharma declines, awareness descends\r\n      Known in truth, no rebirth\r\n    The mystery of action\r\n      Inaction in action\r\n      Desires and designs burnt\r\n      Ever content, depending on nothing\r\n    The sacrifices\r\n      Senses in restraint\r\n      Breath in breath\r\n      Wealth, study, austerity\r\n      Knowledge sacrifice supreme\r\n    The fire and the sword\r\n      Raft of knowledge\r\n      Fire burns fuel\r\n      Faith, devotion, restraint\r\n      Cut doubt, arise\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter opens with the ancient lineage of the yoga and closes with a sword — it is a transmission, not an essay."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Krishna reveals the law of the avatara: when dharma declines, awareness descends; read it as your own inner history."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The core paradox is inaction in action: the doer can dissolve while the work continues, and the idler can be churning inside."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The many sacrifices form one ladder — senses, breath, wealth, study — all culminating in the knowledge sacrifice."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Knowledge is fire: it burns the binding power of karma while leaving the act itself free and luminous."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Faith, absorption, and restraint prepare the ground; doubt as a home destroys; doubt as a question opens the way."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter ends standing: cut the doubt, take refuge in yoga, and arise."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Track the doer, not the deed"
+        }), " — before acting today, ask: am I working for the work or for the claim on the result? Notice how the claim creates anxiety."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use the fourfold mirror"
+        }), " — in every task you have a seer, a warrior, a trader, and a servant inside; let the right one lead, whatever your family or job title says."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Make one thing an offering"
+        }), " — choose one daily action (your coffee, your email, your commute) and do it as a complete gift, with nothing to collect from it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Breathe as sacrifice"
+        }), " — a minute of watching the breath is a yajna available in any meeting, queue, or traffic jam; it burns small anxieties like fuel."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Let the fire burn your past"
+        }), " — write down one old deed you keep carrying, then read 4.37 slowly; see the wood for what it is — fuel, not identity."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ask one honest question"
+        }), " — like Arjuna, refuse borrowed belief: question your teacher, your path, yourself; a living doubt is already half the sword."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1. According to Shloka 4.2, why was the ancient yoga lost?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. Because the scriptures were burned"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. Because the transmission through living teachers broke over time"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. Because kings stopped practicing it"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. Because it was never written down"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2. In Shloka 4.7, Krishna says he manifests himself whenever —"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. A great sage is born"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. A temple is consecrated"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. Dharma declines and adharma rises"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. A new yuga begins"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: c."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3. What is the core paradox taught in Shloka 4.18?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. Action is always better than inaction"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. One can see inaction in action and action in inaction"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. Inaction is never possible for humans"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. The wise perform only mental actions"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4. Which sacrifice does Krishna call supreme in Shloka 4.33?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. The sacrifice of wealth"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. The sacrifice of austerity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. The sacrifice of knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. The sacrifice of study only"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: c."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5. In Shloka 4.37, what happens to actions in the fire of knowledge?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. They are stored for a later life"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. They are turned to ashes, like fuel in a blazing fire"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. They are carried forward into the next birth"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. They become divine and are recorded in heaven"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: b."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q6. What does Krishna command Arjuna to do with the doubt born of ignorance in Shloka 4.42?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a. Meditate on it until it dissolves by itself"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b. Ask the sages to explain it again"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c. Cut it with the sword of knowledge, take refuge in yoga, and arise"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d. Surrender it to the gods in sacrifice"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "bg4-q6",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer: c."
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The transmission audit (reflection):"
+        }), " Write down the five most important truths you live by, and beside each one, name the living person — teacher, parent, friend — through whom it reached you. Reflect: are you a terminal point of that transmission, or does it continue through you to others?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The inaction-in-action experiment (analysis):"
+        }), " For one day, split your activities into three columns: actions done with the doer (claiming and expecting), actions done without the doer (flowing), and inner action hidden in outer stillness (worry while idle). Count the hours in each column and study the result — where does your binding energy actually live?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Extend the tool (TypeScript):"
+        }), " Take the Karma Binding Analyzer below and add a new field, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "offeringScore"
+        }), ", that measures how many daily actions you performed as gifts. Plot the week and check whether offering and binding move in opposite directions."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-tool-karma-binding-analyzer",
+      children: "TypeScript Tool: Karma Binding Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/*\r\n * Karma Binding Analyzer\r\n * Based on Jnana-Karma-Sanyasa Yoga (Chapter 4 of the Bhagavad Gita):\r\n * actions bind when the doer claims them; the fire of knowledge\r\n * burns the claim and leaves the action free.\r\n * Osho's lens: watch the doer, not the deed.\r\n */\r\n\r\ninterface DailyAction {\r\n  date: string;\r\n  name: string;\r\n  expectationOfResult: number; // 0-10\r\n  egoInvolvement: number;      // 0-10\r\n  fearOfFailure: number;       // 0-10\r\n  awarenessLevel: number;      // 0-10\r\n}\r\n\r\ninterface BindingReport {\r\n  totalActions: number;\r\n  averageBinding: number;       // 0-100\r\n  jnanaFireScore: number;       // 0-100\r\n  status: string;\r\n  oshoGuidance: string;\r\n}\r\n\r\nconst BINDING_WEIGHTS = { expectation: 0.4, ego: 0.35, fear: 0.25 };\r\n\r\nfunction bindingScore(action: DailyAction): number {\r\n  const raw =\r\n    action.expectationOfResult * BINDING_WEIGHTS.expectation +\r\n    action.egoInvolvement * BINDING_WEIGHTS.ego +\r\n    action.fearOfFailure * BINDING_WEIGHTS.fear;\r\n  return Math.min(100, Math.round(raw * 10));\r\n}\r\n\r\nfunction jnanaFire(binding: number, awareness: number): number {\r\n  return Math.max(0, Math.min(100, Math.round(awareness * 10 - binding * 0.5)));\r\n}\r\n\r\nfunction analyzeBindings(actions: DailyAction[]): BindingReport {\r\n  const totalActions = actions.length;\r\n  const avgBinding = Math.round(actions.reduce((s, a) => s + bindingScore(a), 0) / totalActions);\r\n  const avgAwareness = actions.reduce((s, a) => s + a.awarenessLevel, 0) / totalActions;\r\n  const jnanaFireScore = jnanaFire(avgBinding, avgAwareness);\r\n\r\n  let status = 'bound';\r\n  let oshoGuidance =\r\n    'The doer is loud in you. Watch the claiming hand; do not argue with it, just see it.';\r\n  if (jnanaFireScore >= 70) {\r\n    status = 'burning bright';\r\n    oshoGuidance = 'Your fire is lit. Act, but do not collect. The work itself is the worship.';\r\n  } else if (jnanaFireScore >= 40) {\r\n    status = 'kindling';\r\n    oshoGuidance = 'The wood is gathered. Increase awareness; drop one expectation a day.';\r\n  }\r\n\r\n  return { totalActions, averageBinding: avgBinding, jnanaFireScore, status, oshoGuidance };\r\n}\r\n\r\nfunction runDemo(): void {\r\n  const week: DailyAction[] = [\r\n    { date: '2026-08-18', name: 'Project review', expectationOfResult: 8, egoInvolvement: 7, fearOfFailure: 5, awarenessLevel: 4 },\r\n    { date: '2026-08-18', name: 'Morning tea', expectationOfResult: 1, egoInvolvement: 0, fearOfFailure: 0, awarenessLevel: 9 },\r\n    { date: '2026-08-19', name: 'Interview prep', expectationOfResult: 9, egoInvolvement: 8, fearOfFailure: 8, awarenessLevel: 5 }\r\n  ];\r\n\r\n  const report = analyzeBindings(week);\r\n  console.log('=== Karma Binding Analyzer ===');\r\n  console.log(`Actions analyzed: ${report.totalActions}`);\r\n  console.log(`Average binding: ${report.averageBinding}/100`);\r\n  console.log(`Jnana fire score: ${report.jnanaFireScore}/100`);\r\n  console.log(`Status: ${report.status}`);\r\n  console.log(`Osho guidance: ${report.oshoGuidance}`);\r\n}\r\n\r\nrunDemo();\n"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

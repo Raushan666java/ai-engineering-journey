@@ -10,22 +10,31 @@ sidebar_position: 266
 
 ## Learning Objectives
 
-After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to identify the optimal approach for any LeetCode-style interview problem.
+After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to identify the optimal approach for any LeetCode-style interview problem. You will also know the complexity bounds that each pattern targets and how to adapt a solution when constraints change.
 
 ## Introduction
 
-Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
+Interviews test technical skill and communication together. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This problem bank is the working core of that preparation: 19 patterns, 140+ curated problems, and a repeatable process for solving any unknown problem under time pressure. The chapter ends with interview Q&A, a quiz, and exercises you can run in TypeScript.
 
 ## Prerequisites
 
-- Basic programming knowledge
-- Understanding of data structures
+- Basic programming knowledge in any language
+- Understanding of arrays, hash maps, linked lists, trees, and graphs
+- Familiarity with big-O notation and how to compare growth rates
+- A LeetCode or similar judge account for timed practice
 
 ## Key Terminology
 
-**Key Terms**: Core vocabulary and concepts for this topic.
-
-**Definition**: Essential terms you must know for interviews and production work.
+- **Pattern**: A repeatable algorithmic strategy that solves a class of problems, such as two pointers or sliding window.
+- **Optimal substructure**: A property where the optimal answer builds from optimal answers to smaller subproblems. It is the foundation of dynamic programming.
+- **Overlapping subproblems**: A property where the same subproblem is solved many times. Memoization caches those results.
+- **Two pointers**: Two indices moving toward each other or in the same direction to avoid nested loops.
+- **Sliding window**: A contiguous subarray/substring maintained with two indices while a count or sum invariant stays valid.
+- **Monotonic stack**: A stack whose values stay increasing or decreasing. It solves next-greater-element and histogram problems in O(n).
+- **Topological sort**: An ordering of a directed acyclic graph where every edge points forward. Kahn's algorithm or DFS both work.
+- **Union-Find**: A disjoint-set structure supporting near-constant-time find and union operations.
+- **Amortized complexity**: The average cost per operation over a sequence, even if one operation is expensive.
+- **Brute force**: The naive solution that checks every possibility, used as the correctness baseline.
 
 ## Theory
 
@@ -46,9 +55,20 @@ flowchart TD
     H -->|Yes| I[Move to Next Problem]
 ```
 
+The seven steps, practiced in order:
+
+1. **Understand**: repeat the problem in your own words, confirm input and output format, ask about constraints (size, range, duplicates, sorted?).
+2. **Brute force**: state the naive approach and its complexity. This shows you know where to start.
+3. **Optimize**: identify the bottleneck in the brute force. Consider trading space for time (hash map), sorting first, two pointers, or a sliding window.
+4. **Walk through**: trace your algorithm on a small example before coding.
+5. **Code**: implement cleanly with meaningful variable names.
+6. **Test**: check empty input, single element, large values, and edge cases.
+7. **Analyze**: state time and space complexity with confidence.
+
 ### Pattern Recognition
 
-The 19 patterns in this bank cover 95% of interview problems. To identify the pattern:
+The 19 patterns in this bank cover the overwhelming majority of interview problems. To identify the pattern:
+
 - **Arrays**: sorting, hashing, prefix sums, cyclic sort
 - **Strings**: sliding window, two pointers, trie
 - **Trees/Graphs**: BFS for shortest path, DFS for exhaustive search
@@ -57,20 +77,43 @@ The 19 patterns in this bank cover 95% of interview problems. To identify the pa
 
 ### Complexity Targeting
 
-Match your approach to constraints:
+Match your approach to constraints before you code:
+
 - n <= 20: O(2^n) backtracking or brute force
 - n <= 1000: O(n^2) nested loops
 - n <= 10^5: O(n log n) sorting or heap
 - n <= 10^7: O(n) single pass or hash map
 
+If your planned algorithm exceeds the bound the constraints allow, switch approach before writing code.
+
+### Complexity Reference
+
+| Complexity | Name | Example |
+|-----------|------|---------|
+| O(1) | Constant | Array access, hash map lookup |
+| O(log n) | Logarithmic | Binary search, balanced BST operations |
+| O(n) | Linear | Single pass through an array |
+| O(n log n) | Linearithmic | Sorting (merge sort, heap sort), divide and conquer |
+| O(n^2) | Quadratic | Nested loops, bubble sort |
+| O(2^n) | Exponential | Subsets, recursion without memoization |
+| O(n!) | Factorial | Permutations of n elements |
+
+### Space Complexity Reference
+
+| Complexity | Example |
+|-----------|---------|
+| O(1) | In-place algorithms, two pointers |
+| O(n) | Hash map, recursive stack (depth n), dynamic programming array |
+| O(n^2) | 2D DP table, adjacency matrix |
+
 ## How to Use This Bank
 
-Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy ones for warm-up, Medium for core practice, Hard for mastery. Do not look at hints until you have spent at least 20 minutes per problem.
+Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy ones for warm-up, Medium for core practice, Hard for mastery. Do not look at hints until you have spent at least 20 minutes per problem. After solving, record the pattern, the time complexity, and the key insight in a practice journal. Re-solve each problem after 1 day, 3 days, 1 week, and 1 month for spaced repetition.
 
 ## Pattern 1: Arrays & Hashing
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Two Sum | Easy | All | Use hash map for O(n). Complement = target - current | [Two Sum](https://leetcode.com/problems/two-sum/) |
 | 2 | Contains Duplicate | Easy | All | Set lookup. O(n) time, O(n) space | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |
 | 3 | Valid Anagram | Easy | G, A, M | Sort both strings or count char frequencies | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
@@ -78,14 +121,11 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | Top K Frequent Elements | Medium | G, F, M | Bucket sort or quickselect. O(n) | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |
 | 6 | Product of Array Except Self | Medium | G, M, A | Prefix and suffix products. No division | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
 | 7 | Longest Consecutive Sequence | Medium | G, F | Set membership check. O(n) | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) |
-| 8 | Encode and Decode Strings | Medium | M | Length-prefix encoding: len + delimiter + str | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) |
-| 9 | First Missing Positive | Hard | G, A | Cyclic sort: place each number at its index | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) |
-| 10 | Longest Substring Without Repeating | Medium | G, F, A | Sliding window with char set | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 
 ## Pattern 2: Two Pointers
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Valid Palindrome | Easy | All | Two pointers from ends. Skip non-alphanumeric | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) |
 | 2 | Two Sum II - Sorted | Medium | G, A | Left + right pointer, adjust based on sum | [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 | 3 | 3Sum | Medium | G, F, A | Sort first, fix one element, two-pointer the rest | [3Sum](https://leetcode.com/problems/3sum/) |
@@ -97,7 +137,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 3: Sliding Window
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Best Time to Buy and Sell Stock | Easy | All | Track min price, compute max profit | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
 | 2 | Longest Substring Without Repeating | Medium | G, F, A | Expand right, shrink left when duplicate found | [Longest Substring Without Repeating](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | 3 | Longest Repeating Character Replacement | Medium | G, M | Max frequency in window determines replacements | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |
@@ -108,7 +148,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 4: Binary Search
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Binary Search | Easy | All | Classic divide and conquer | [Binary Search](https://leetcode.com/problems/binary-search/) |
 | 2 | Search a 2D Matrix | Medium | All | Treat as flattened array, row = mid//cols | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) |
 | 3 | Find Minimum in Rotated Sorted Array | Medium | G, F, A | Compare mid with right to find rotation | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
@@ -120,7 +160,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 5: Linked Lists
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Reverse Linked List | Easy | All | Three pointers: prev, curr, next | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |
 | 2 | Merge Two Sorted Lists | Easy | All | Dummy head, compare and link | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
 | 3 | Linked List Cycle | Easy | All | Tortoise and hare. Fast/slow pointer | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) |
@@ -133,7 +173,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 6: Stacks & Queues
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Valid Parentheses | Easy | All | Stack, match closing with top | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |
 | 2 | Min Stack | Medium | G, F, A | Stack of pairs (value, currentMin) | [Min Stack](https://leetcode.com/problems/min-stack/) |
 | 3 | Evaluate Reverse Polish Notation | Medium | G, F | Stack for operands, apply operator | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
@@ -144,7 +184,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 7: Trees
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Maximum Depth of Binary Tree | Easy | All | Recursive DFS. Max(left, right) + 1 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
 | 2 | Invert Binary Tree | Easy | G | Swap left and right recursively | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) |
 | 3 | Same Tree | Easy | All | Recursive: check root then left and right | [Same Tree](https://leetcode.com/problems/same-tree/) |
@@ -159,7 +199,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 8: Heaps & Priority Queues
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Kth Largest Element in a Stream | Easy | G | Min-heap of size k | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
 | 2 | Kth Largest Element in an Array | Medium | G, F, A | Quickselect avg O(n) or min-heap O(n log k) | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
 | 3 | Find Median from Data Stream | Hard | G, F, A | Two heaps: max-heap for lower half, min-heap for upper | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |
@@ -169,7 +209,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 9: Graphs
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Number of Islands | Medium | G, F, A | DFS/BFS on each unvisited land cell | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
 | 2 | Clone Graph | Medium | G, F | Hash map for visited. DFS/BFS copy | [Clone Graph](https://leetcode.com/problems/clone-graph/) |
 | 3 | Course Schedule | Medium | G, F, A | Topological sort via Kahn or DFS cycle detection | [Course Schedule](https://leetcode.com/problems/course-schedule/) |
@@ -182,7 +222,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 10: Dynamic Programming 1D
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Climbing Stairs | Easy | All | dp[i] = dp[i-1] + dp[i-2] (Fibonacci) | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) |
 | 2 | House Robber | Medium | G, F, A | dp[i] = max(dp[i-1], dp[i-2] + nums[i]) | [House Robber](https://leetcode.com/problems/house-robber/) |
 | 3 | Coin Change | Medium | G, F, A | dp[i] = min(dp[i], dp[i-coin] + 1) | [Coin Change](https://leetcode.com/problems/coin-change/) |
@@ -194,7 +234,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 11: Dynamic Programming 2D
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Unique Paths | Medium | All | dp[i][j] = dp[i-1][j] + dp[i][j-1] | [Unique Paths](https://leetcode.com/problems/unique-paths/) |
 | 2 | Longest Common Subsequence | Medium | G, F, A | dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j], dp[i][j-1]) | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |
 | 3 | Edit Distance | Hard | G, F, A | dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + (0 if same else 1)) | [Edit Distance](https://leetcode.com/problems/edit-distance/) |
@@ -205,7 +245,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 12: Backtracking
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Subsets | Medium | G, F, A | Backtrack: include/exclude each element | [Subsets](https://leetcode.com/problems/subsets/) |
 | 2 | Permutations | Medium | G, F, A | Swap each element with current position | [Permutations](https://leetcode.com/problems/permutations/) |
 | 3 | Combination Sum | Medium | G, F, A | Sort first. Choose or skip, same element allowed multiple times | [Combination Sum](https://leetcode.com/problems/combination-sum/) |
@@ -216,7 +256,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 13: Tries
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Implement Trie | Medium | G, F | TrieNode with children map and isEnd flag | [Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/) |
 | 2 | Word Search II | Hard | G, F, A | Trie for dictionary, DFS on board | [Word Search II](https://leetcode.com/problems/word-search-ii/) |
 | 3 | Prefix and Suffix Search | Hard | G, F | Insert all prefix+suffix combos | [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) |
@@ -225,7 +265,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 14: Intervals
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Meeting Rooms | Easy | G, F, A | Sort by start, check overlap with next | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) |
 | 2 | Merge Intervals | Medium | G, F, A | Sort by start, merge if overlapping | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
 | 3 | Insert Interval | Medium | G, F, A | Process before overlap, merge overlap, after | [Insert Interval](https://leetcode.com/problems/insert-interval/) |
@@ -236,7 +276,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 ## Pattern 15: Math & Bit Manipulation
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Single Number | Easy | All | XOR all elements. Duplicates cancel | [Single Number](https://leetcode.com/problems/single-number/) |
 | 2 | Number of 1 Bits | Easy | All | n & (n-1) clears lowest set bit | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
 | 3 | Reverse Bits | Easy | G | Build result bit by bit | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) |
@@ -244,115 +284,10 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | Sum of Two Integers | Medium | G, F, A | Bit manipulation: carry = a&b, sum = a^b | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) |
 | 6 | Pow(x, n) | Medium | G, F, A | Binary exponentiation O(log n) | [Pow(x, n)](https://leetcode.com/problems/powx-n/) |
 
-## Company-Specific Focus
-
-- **Google**: Graphs, DP, design questions, math puzzles. Practice Word Ladder, Alien Dictionary, Median of Two Sorted Arrays
-- **Amazon**: Arrays, trees, stacks, OOD. Practice LRU Cache, Serialize Tree, Trapping Rain Water. Leadership Principle story integration
-- **Meta**: Strings, arrays, trees, product-focused system design. Practice Longest Substring, Group Anagrams, Binary Tree Level Order
-- **Apple**: Deep technical dives, past project discussion. Less DSA-heavy, more architecture
-- **Netflix**: Judgment-based system design. Less standard DSA
-
-### Problem-Solving Framework
-
-Follow this framework for every problem:
-
-1. **Understand**: repeat the problem in your own words, confirm input/output format, ask about constraints (size, range, duplicates, sorted?)
-2. **Brute force**: state the naive approach and its complexity. This shows you know where to start
-3. **Optimize**: identify the bottleneck in the brute force. Consider trade space for time (hash map), sort first, two pointers, sliding window
-4. **Walk through**: trace your algorithm on a small example before coding
-5. **Code**: implement cleanly with meaningful variable names
-6. **Test**: check empty input, single element, large values, edge cases
-7. **Analyze**: state time and space complexity
-
-### Time Complexity Reference
-
-| Complexity | Name | Example |
-|-----------|------|---------|
-| O(1) | Constant | Array access, hash map lookup |
-| O(log n) | Logarithmic | Binary search, balanced BST operations |
-| O(n) | Linear | Single pass through an array |
-| O(n log n) | Linearithmic | Sorting (merge sort, heap sort), divide and conquer |
-| O(n^2) | Quadratic | Nested loops, bubble sort |
-| O(2^n) | Exponential | Subsets, recursive without memoization |
-| O(n!) | Factorial | Permutations of n elements |
-
-### Space Complexity Reference
-
-| Complexity | Example |
-|-----------|---------|
-| O(1) | In-place algorithms, two pointers |
-| O(n) | Hash map, recursive stack (depth n), dynamic programming array |
-| O(n^2) | 2D DP table, adjacency matrix |
-
-### Pattern Recognition Cheat Sheet
-
-Ask these questions to identify the pattern:
-- Is the input sorted? -> Binary search or two pointers
-- Need to find subarray/substring? -> Sliding window
-- Need to compare elements with neighbors? -> Two pointers or monotonic stack
-- Smallest/largest/top-k? -> Heap
-- Need to enumerate all possibilities? -> Backtracking
-- Optimal value from overlapping subproblems? -> Dynamic programming
-- Relationship between elements (graph)? -> BFS/DFS/Union-Find
-- String matching with dictionary? -> Trie
-- Intervals that overlap/merge? -> Sort intervals
-- Fast lookup need? -> Hash map or Set
-
-### How to Practice Effectively
-
-- Spaced repetition: review each problem after 1 day, 3 days, 1 week, 1 month
-- Active recall: before looking at the solution, try to recreate the approach from memory
-- Interleaving: mix patterns in a practice session (do not do 10 sliding window problems in a row)
-- Whiteboard practice: code on paper or whiteboard to simulate interview conditions
-- Time pressure: set a timer for 25 minutes per medium problem
-- Reflection: after solving, write a 1-paragraph summary of the key insight
-
-### How to Use LeetCode Effectively
-
-1. Do not look at solutions immediately. Spend 20-30 minutes attempting the problem yourself
-2. If stuck, look for the pattern, not the solution. Identify which of the 15 patterns the problem matches
-3. Read the solution only after attempting. Implement it from memory the next day
-4. Re-solve the same problem after 3 days, 7 days, and 30 days (spaced repetition)
-5. For each problem, note: pattern, time complexity, space complexity, key insight
-6. Track your weak patterns and prioritize them in your study schedule
-
-### Recommended Study Plan
-
-Weeks 1-2: Core patterns (Arrays, Two Pointers, Sliding Window, Binary Search)
-Weeks 3-4: Data structures (Linked Lists, Trees, Graphs, Heaps)
-Weeks 5-6: Advanced (DP, Backtracking, Tries, Intervals)
-Weeks 7-8: Mixed review + company-specific problems
-
-Daily routine:
-- Morning: 1 warm-up easy problem (15 min)
-- Evening: 1 medium problem (30 min)
-- Weekly: 1 hard problem (60 min) + review weak areas
-
-### Common Mistakes and How to Avoid Them
-
-1. Starting to code before understanding the problem: spend 5 minutes on examples and edge cases
-2. Using excessive memory: prefer in-place solutions when possible
-3. Premature optimization: start with brute force, then optimize
-4. Ignoring constraints: input size determines acceptable complexity (n <= 10 -> O(n!), n <= 1000 -> O(n^2), n <= 10^5 -> O(n log n), n <= 10^7 -> O(n))
-5. Not testing edge cases: empty input, single element, duplicates, negative numbers, large values
-6. Getting stuck on one pattern: if stuck for 30 minutes, switch to a different problem or pattern
-7. Memorizing solutions instead of understanding patterns: focus on the pattern, not the specific problem
-
-### Time Management During the Interview
-
-- 2-3 min: Understand the problem. Ask clarifying questions
-- 2-3 min: Brainstorm approaches. Discuss tradeoffs with interviewer
-- 1-2 min: Agree on an approach. Confirm before coding
-- 10-15 min: Write code. Communicate as you type
-- 3-5 min: Test with examples. Walk through the code
-- 2-3 min: Analyze complexity. Discuss improvements
-
-Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pause and re-evaluate the approach.
-
 ## Pattern 16: More DP Problems
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Counting Bits | Easy | All | dp[i] = dp[i>>1] + (i & 1) | [Counting Bits](https://leetcode.com/problems/counting-bits/) |
 | 2 | Min Cost Climbing Stairs | Easy | All | dp[i] = cost[i] + min(dp[i-1], dp[i-2]) | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) |
 | 3 | Partition Equal Subset Sum | Medium | G, F, A | dp[s] = true if subset sums to s | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) |
@@ -364,7 +299,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 ## Pattern 17: Greedy
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Maximum Subarray | Medium | All | Kadane: current = max(num, current+num), max = max(max, current) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |
 | 2 | Jump Game | Medium | G, F, A | Track farthest reachable index. If i > farthest, fail | [Jump Game](https://leetcode.com/problems/jump-game/) |
 | 3 | Jump Game II | Medium | G, F, A | BFS-like: current end, farthest reachable, count jumps | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) |
@@ -375,7 +310,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 ## Pattern 18: Advanced Graphs
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Reconstruct Itinerary | Hard | G | Eulerian path. DFS with post-order, process lexical order | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) |
 | 2 | Minimum Height Trees | Medium | G | Topological removal of leaves. Repeat until 1-2 nodes remain | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |
 | 3 | Network Delay Time | Medium | G, F | Dijkstra from source. Max distance among reachable nodes | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) |
@@ -387,7 +322,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 ## Pattern 19: String Problems
 
 | # | Problem | Difficulty | Company | Hint | LeetCode |
-|---|---------|-----------|---------|------|
+|---|---------|-----------|---------|------|------|
 | 1 | Valid Palindrome II | Easy | G, F | Two pointers. Skip one char if mismatch | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) |
 | 2 | Longest Common Prefix | Easy | All | Sort and compare first and last, or vertical scanning | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) |
 | 3 | Reverse Words in a String | Medium | G, F, A | Split, reverse, join. Or two-pointer reverse each word | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) |
@@ -398,6 +333,87 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 8 | First Unique Character in a String | Easy | All | Frequency array, second pass for first with count 1 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) |
 | 9 | String to Integer (atoi) | Medium | G, F, A | Skip whitespace, handle sign, overflow, non-digit chars | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) |
 | 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) |
+
+## Company-Specific Focus
+
+- **Google**: Graphs, DP, design questions, math puzzles. Practice Word Ladder, Alien Dictionary, Median of Two Sorted Arrays.
+- **Amazon**: Arrays, trees, stacks, OOD. Practice LRU Cache, Serialize Tree, Trapping Rain Water. Prepare a Leadership Principles story.
+- **Meta**: Strings, arrays, trees, product-focused system design. Practice Longest Substring, Group Anagrams, Binary Tree Level Order.
+- **Apple**: Deep technical dives, past project discussion. Less DSA-heavy, more architecture.
+- **Netflix**: Judgment-based system design. Less standard DSA.
+- **NVIDIA**: Math, bit manipulation, and GPU-oriented algorithms. Practice Single Number, Pow(x, n), and matrix-heavy DP.
+- **AI startups**: Fast iteration on arrays, strings, and hashing. Practice Two Sum variants and sliding-window text problems.
+
+## Pattern Recognition Cheat Sheet
+
+Ask these questions to identify the pattern:
+
+- Is the input sorted? -> Binary search or two pointers
+- Need to find subarray/substring? -> Sliding window
+- Need to compare elements with neighbors? -> Two pointers or monotonic stack
+- Smallest/largest/top-k? -> Heap
+- Need to enumerate all possibilities? -> Backtracking
+- Optimal value from overlapping subproblems? -> Dynamic programming
+- Relationship between elements (graph)? -> BFS/DFS/Union-Find
+- String matching with dictionary? -> Trie
+- Intervals that overlap/merge? -> Sort intervals
+- Fast lookup needed? -> Hash map or Set
+- Prerequisite ordering between tasks? -> Topological sort
+
+## How to Practice Effectively
+
+- Spaced repetition: review each problem after 1 day, 3 days, 1 week, 1 month.
+- Active recall: before looking at the solution, try to recreate the approach from memory.
+- Interleaving: mix patterns in a practice session. Do not do 10 sliding window problems in a row.
+- Whiteboard practice: code on paper or a whiteboard to simulate interview conditions.
+- Time pressure: set a timer for 25 minutes per medium problem.
+- Reflection: after solving, write a one-paragraph summary of the key insight.
+
+## How to Use LeetCode Effectively
+
+1. Do not look at solutions immediately. Spend 20-30 minutes attempting the problem yourself.
+2. If stuck, look for the pattern, not the solution. Identify which of the 19 patterns the problem matches.
+3. Read the solution only after attempting. Implement it from memory the next day.
+4. Re-solve the same problem after 3 days, 7 days, and 30 days (spaced repetition).
+5. For each problem, note: pattern, time complexity, space complexity, key insight.
+6. Track your weak patterns and prioritize them in your study schedule.
+
+## Recommended Study Plan
+
+Weeks 1-2: Core patterns (Arrays, Two Pointers, Sliding Window, Binary Search).
+
+Weeks 3-4: Data structures (Linked Lists, Trees, Graphs, Heaps).
+
+Weeks 5-6: Advanced (DP, Backtracking, Tries, Intervals).
+
+Weeks 7-8: Mixed review + company-specific problems.
+
+Daily routine:
+
+- Morning: 1 warm-up easy problem (15 min).
+- Evening: 1 medium problem (30 min).
+- Weekly: 1 hard problem (60 min) + review weak areas.
+
+## Common Mistakes and How to Avoid Them
+
+1. Starting to code before understanding the problem: spend 5 minutes on examples and edge cases.
+2. Using excessive memory: prefer in-place solutions when possible.
+3. Premature optimization: start with brute force, then optimize.
+4. Ignoring constraints: input size determines acceptable complexity (n <= 10 -> O(n!), n <= 1000 -> O(n^2), n <= 10^5 -> O(n log n), n <= 10^7 -> O(n)).
+5. Not testing edge cases: empty input, single element, duplicates, negative numbers, large values.
+6. Getting stuck on one pattern: if stuck for 30 minutes, switch to a different problem or pattern.
+7. Memorizing solutions instead of understanding patterns: focus on the pattern, not the specific problem.
+
+## Time Management During the Interview
+
+- 2-3 min: Understand the problem. Ask clarifying questions.
+- 2-3 min: Brainstorm approaches. Discuss tradeoffs with the interviewer.
+- 1-2 min: Agree on an approach. Confirm before coding.
+- 10-15 min: Write code. Communicate as you type.
+- 3-5 min: Test with examples. Walk through the code.
+- 2-3 min: Analyze complexity. Discuss improvements.
+
+Total: 20-30 minutes per problem. If stuck for more than 5 minutes while coding, pause and re-evaluate the approach.
 
 ## Examples
 
@@ -414,6 +430,8 @@ function twoSum(nums: number[], target: number): number[] {
     return []
 }
 ```
+
+**Time**: O(n) single pass. **Space**: O(n) for the hash map.
 
 ### Example 2: Binary Search on Rotated Array
 
@@ -434,6 +452,8 @@ function search(nums: number[], target: number): number {
     return -1
 }
 ```
+
+**Time**: O(log n). **Space**: O(1).
 
 ### Example 3: LRU Cache (Linked List + HashMap)
 
@@ -459,19 +479,20 @@ class LRUCache {
 }
 ```
 
+**Time**: O(1) for both get and put. **Space**: O(capacity).
+
 ## Summary
 
-Practice consistently: 2-3 problems per day, timed (30 min each). Review solutions even for solved problems. Focus on patterns over memorization. Use the hints only after attempting the problem. Track your weak patterns and practice them more.
+Practice consistently: 2-3 problems per day, timed at 30 minutes each. Review solutions even for solved problems. Focus on patterns over memorization. Use the hints only after attempting the problem. Track your weak patterns and practice them more. The 19 patterns in this bank are the reusable vocabulary you carry into any interview.
 
 ## Practical Takeaways
 
-- Solve in order: understand pattern, attempt 30 min, read solution, re-implement next day
-- Use the LeetCode Discuss section for company-tagged problems
-- For Google: focus on graph and DP problems
-- For Amazon: focus on arrays, trees, and OOD
-- For Meta: focus on strings and product design
-- Rotate patterns to maintain freshness. Do not do all of one pattern at once
-- Simulate interview pressure: code on whiteboard or plain text editor, no autocomplete
+- Solve in order: understand the pattern, attempt for 30 minutes, read the solution, re-implement the next day.
+- Use the LeetCode Discuss section for company-tagged problems.
+- For Google: focus on graphs and DP. For Amazon: arrays, trees, and OOD. For Meta: strings and product design.
+- Rotate patterns to maintain freshness. Do not do all of one pattern at once.
+- Simulate interview pressure: code on a whiteboard or plain text editor with no autocomplete.
+- Re-solve your weakest pattern last in every session so it stays fresh for interviews.
 
 ## Interview Q&A
 
@@ -482,11 +503,11 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
   </summary>
   <div class="tp-qa-answer">
     <p>Use the pattern-recognition cheat sheet: sorted input suggests binary search or two pointers; subarray/substring constraints suggest sliding window; comparing elements with neighbors suggests two pointers or a monotonic stack; smallest/largest/top-k suggests a heap; enumerating all possibilities suggests backtracking; overlapping subproblems with optimal substructure suggests DP; element relationships suggest graphs (BFS/DFS/Union-Find); string matching against a dictionary suggests a trie; overlapping intervals suggests interval sorting; fast lookup suggests a hash map.</p>
-    <p>Then match complexity to constraints: n &lt;= 20 allows O(2^n) backtracking, n &lt;= 1000 allows O(n^2), n &lt;= 10^5 needs O(n log n), n &lt;= 10^7 needs O(n). The chapter's 19 patterns cover 95% of interview problems.</p>
+    <p>Then match complexity to constraints: n &lt;= 20 allows O(2^n) backtracking, n &lt;= 1000 allows O(n^2), n &lt;= 10^5 needs O(n log n), n &lt;= 10^7 needs O(n). The chapter's 19 patterns cover the large majority of interview problems.</p>
     <p><strong>Interview follow-up</strong>: Which questions distinguish DP from greedy on a problem like Jump Game?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="m21-s16-q2">
@@ -495,12 +516,12 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
     Q2: When do you choose two pointers over a sliding window?
   </summary>
   <div class="tp-qa-answer">
-    <p>Two pointers work when the array is sorted or when the solution involves pairing elements from opposite ends — Two Sum II, 3Sum, Container With Most Water, Trapping Rain Water. Sliding window works when the answer is a contiguous subarray/substring satisfying a condition — Longest Substring Without Repeating Characters, Minimum Window Substring, Best Time to Buy and Sell Stock.</p>
+    <p>Two pointers work when the array is sorted or when the solution involves pairing elements from opposite ends: Two Sum II, 3Sum, Container With Most Water, Trapping Rain Water. Sliding window works when the answer is a contiguous subarray or substring satisfying a condition: Longest Substring Without Repeating Characters, Minimum Window Substring, Best Time to Buy and Sell Stock.</p>
     <p>The distinction: two pointers usually move independently from both ends toward each other, while a sliding window maintains a single window that expands right and shrinks left. Both run in O(n); the window version usually tracks a frequency map or count invariant.</p>
-    <p><strong>Interview follow-up</strong>: Sliding Window Maximum uses a deque — why not a heap?</p>
+    <p><strong>Interview follow-up</strong>: Sliding Window Maximum uses a deque. Why not a heap?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="m21-s16-q3">
@@ -509,12 +530,12 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
     Q3: Trace binary search on a rotated sorted array. Why does it still run in O(log n)?
   </summary>
   <div class="tp-qa-answer">
-    <p>Compare <code>nums[mid]</code> with <code>nums[lo]</code> to determine which half is sorted. If the left half is sorted and target lies in <code>[lo, mid)</code>, search left; otherwise right. If the right half is sorted and target lies in <code>(mid, hi]</code>, search right; otherwise left. The chapter's <code>search()</code> example implements exactly this.</p>
-    <p>Each iteration discards half the array — the rotation only adds a constant-time comparison, so complexity stays O(log n). The variant Find Minimum in Rotated Sorted Array compares mid with the right endpoint to locate the rotation pivot.</p>
+    <p>Compare <code>nums[mid]</code> with <code>nums[lo]</code> to determine which half is sorted. If the left half is sorted and target lies in <code>[lo, mid)</code>, search left; otherwise search right. If the right half is sorted and target lies in <code>(mid, hi]</code>, search right; otherwise search left. The chapter's <code>search()</code> example implements exactly this.</p>
+    <p>Each iteration discards half the array. The rotation only adds a constant-time comparison, so complexity stays O(log n). The variant Find Minimum in Rotated Sorted Array compares mid with the right endpoint to locate the rotation pivot.</p>
     <p><strong>Interview follow-up</strong>: How would you adapt this when duplicates are allowed?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="m21-s16-q4">
@@ -523,12 +544,12 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
     Q4: When is topological sort the right tool, and how do you implement it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Topological sort orders the vertices of a directed acyclic graph so every edge points forward. Use it whenever a problem is about ordering dependencies: Course Schedule (prerequisite chains), Alien Dictionary (letter ordering from sorted words), task scheduling with dependencies. The graph must be acyclic — a cycle means no valid ordering.</p>
+    <p>Topological sort orders the vertices of a directed acyclic graph so every edge points forward. Use it whenever a problem is about ordering dependencies: Course Schedule (prerequisite chains), Alien Dictionary (letter ordering from sorted words), task scheduling with dependencies. The graph must be acyclic; a cycle means no valid ordering exists.</p>
     <p>Two implementations: Kahn's algorithm (count indegrees, process zero-indegree nodes with a queue) or DFS with a visited stack (post-order traversal reversed). Both run in O(V + E).</p>
     <p><strong>Interview follow-up</strong>: How do you detect the cycle in Course Schedule using Kahn's algorithm?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="m21-s16-q5">
@@ -537,12 +558,12 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
     Q5: How do you distinguish a DP problem from a greedy one?
   </summary>
   <div class="tp-qa-answer">
-    <p>DP applies when the problem has overlapping subproblems and optimal substructure — the answer builds from answers to smaller instances (Coin Change, Longest Increasing Subsequence, Edit Distance). Greedy applies when a local optimal choice provably leads to the global optimum (Maximum Subarray with Kadane, Jump Game, Gas Station, non-overlapping intervals).</p>
-    <p>The tell: if you can construct a counterexample where the locally optimal choice fails, it is DP. For example, greedy fails on Coin Change but succeeds on Jump Game. State the recurrence and the base cases for DP; state the invariant that justifies the greedy choice otherwise.</p>
+    <p>DP applies when the problem has overlapping subproblems and optimal substructure. The answer builds from answers to smaller instances: Coin Change, Longest Increasing Subsequence, Edit Distance. Greedy applies when a local optimal choice provably leads to the global optimum: Maximum Subarray with Kadane, Jump Game, Gas Station, non-overlapping intervals.</p>
+    <p>The tell: if you can construct a counterexample where the locally optimal choice fails, it is DP. For example, greedy fails on Coin Change but succeeds on Jump Game. State the recurrence and base cases for DP; state the invariant that justifies the greedy choice otherwise.</p>
     <p><strong>Interview follow-up</strong>: Why is Kadane's algorithm greedy and not DP?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="m21-s16-q6">
@@ -551,389 +572,239 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
     Q6: Design an LRU cache with O(1) get and put. Why both a doubly linked list and a hash map?
   </summary>
   <div class="tp-qa-answer">
-    <p>A hash map alone gives O(1) lookups but cannot track recency order; a linked list alone requires O(n) lookup. Combined: the hash map maps keys to nodes, and a doubly linked list maintains recency with the most recently used at the head. Get moves the node to the head (O(1) with the map). Put inserts at the head; on capacity overflow it evicts the tail node in O(1).</p>
-    <p>The doubly linked list matters because removing a node requires knowing its predecessor — with a singly linked list that needs O(n) traversal. The chapter's <code>LRUCache</code> example (Pattern 5 and the AI-assisted coding chapter's LRU simulation) demonstrates the full implementation with dummy head and tail to avoid null checks.</p>
+    <p>A hash map alone gives O(1) lookups but cannot track recency order; a linked list alone requires O(n) lookup. Combined: the hash map maps keys to nodes, and a doubly linked list maintains recency with the most recently used at the head. Get moves the node to the head in O(1) using the map. Put inserts at the head; on capacity overflow it evicts the tail node in O(1).</p>
+    <p>The doubly linked list matters because removing a node requires knowing its predecessor. With a singly linked list that needs O(n) traversal. The chapter's <code>LRUCache</code> example demonstrates the full implementation using a <code>Map</code>, which preserves insertion order.</p>
     <p><strong>Interview follow-up</strong>: How would you make LRU thread-safe, and what does the lock protect?</p>
   </div>
-  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 ## Chapter Quiz
 
-1. Which data structure is used for Sliding Window Maximum?
-   - A) Stack
-   - B) Queue
-   - C) Deque
-   - D) Heap
-   // correct: C
+**Q1**: Which data structure is used for Sliding Window Maximum?
 
-2. The optimal time complexity for Trapping Rain Water using two pointers is:
-   - A) O(n^2)
-   - B) O(n log n)
-   - C) O(n)
-   - D) O(1)
-   // correct: C
+a) Stack
+b) Queue
+c) Deque
+d) Heap
 
-3. Which algorithm finds the Kth largest element in O(n) average time?
-   - A) Merge sort
-   - B) Quickselect
-   - C) Heap
-   - D) Binary search
-   // correct: B
+<details class="tp-qa-card" data-qid="ip-s16-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Deque</strong></p><p>A monotonic deque keeps indices with decreasing values. The front is the window maximum; expired indices are popped from the front. Total time is O(n).</p></div></details>
 
-4. Topological sort requires the graph to be:
-   - A) Connected
-   - B) Weighted
-   - C) Directed Acyclic
-   - D) Undirected
-   // correct: C
+**Q2**: What is the optimal time complexity for Trapping Rain Water using two pointers?
 
-5. Union-Find with path compression has amortized time per operation:
-   - A) O(1)
-   - B) O(log n)
-   - C) O(alpha(n))
-   - D) O(n)
-   // correct: C
+a) O(n^2)
+b) O(n log n)
+c) O(n)
+d) O(1)
+
+<details class="tp-qa-card" data-qid="ip-s16-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) O(n)</strong></p><p>Two pointers move inward once each, tracking the running left and right maximum heights. Each element is visited once.</p></div></details>
+
+**Q3**: Which algorithm finds the Kth largest element in O(n) average time?
+
+a) Merge sort
+b) Quickselect
+c) Heap
+d) Binary search
+
+<details class="tp-qa-card" data-qid="ip-s16-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Quickselect</strong></p><p>Quickselect partitions around a pivot and recurses into only one side. Average O(n); worst case O(n^2) unless the pivot is chosen well.</p></div></details>
+
+**Q4**: Topological sort requires the graph to be:
+
+a) Connected
+b) Weighted
+c) Directed Acyclic
+d) Undirected
+
+<details class="tp-qa-card" data-qid="ip-s16-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Directed Acyclic</strong></p><p>An ordering where every edge points forward exists only for a DAG. A cycle means no valid topological order.</p></div></details>
+
+**Q5**: Union-Find with path compression and union by rank has amortized time per operation of:
+
+a) O(1)
+b) O(log n)
+c) O(alpha(n))
+d) O(n)
+
+<details class="tp-qa-card" data-qid="ip-s16-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) O(alpha(n))</strong></p><p>Path compression flattens the tree and union by rank keeps it shallow. The amortized bound is the inverse Ackermann function, nearly constant.</p></div></details>
+
+**Q6**: Which technique detects a cycle in a singly linked list in O(1) space?
+
+a) Hash set of visited nodes
+b) Tortoise and hare pointers
+c) Counting nodes in two passes
+d) Reversing the list
+
+<details class="tp-qa-card" data-qid="ip-s16-quiz6"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Tortoise and hare pointers</strong></p><p>Two pointers move at speeds 1 and 2. If they meet, a cycle exists. No extra memory is needed.</p></div></details>
 
 ## Exercises
 
-1. Solve 5 problems from your weakest pattern (timed, 30 min each). Track which hints you needed.
+1. Solve 5 problems from your weakest pattern, timed at 30 minutes each. Record which hints you needed and re-solve those problems after 3 days.
 
-2. Implement LRU Cache from scratch without looking at references. Test with get/set operations.
+2. Implement LRU Cache from scratch without looking at references. Test with get and put operations covering the eviction case.
 
-3. Write a function that serializes and deserializes an N-ary tree (not just binary).
+3. Write a function that serializes and deserializes an N-ary tree (not just binary). Use a pre-order traversal with a child count marker.
 
-4. Implement Union-Find with path compression and union by rank. Use it to solve Number of Connected Com
+4. Implement Union-Find with path compression and union by rank in TypeScript. Use it to count the number of connected components in an undirected graph.
 
-## Revision Notes
+```typescript
+class UnionFind {
+    private parent: number[]
+    private rank: number[]
+    constructor(n: number) {
+        this.parent = Array.from({ length: n }, (_, i) => i)
+        this.rank = new Array(n).fill(0)
+    }
+    find(x: number): number {
+        if (this.parent[x] !== x) this.parent[x] = this.find(this.parent[x])
+        return this.parent[x]
+    }
+    union(a: number, b: number): void {
+        let ra = this.find(a), rb = this.find(b)
+        if (ra === rb) return
+        if (this.rank[ra] < this.rank[rb]) [ra, rb] = [rb, ra]
+        this.parent[rb] = ra
+        if (this.rank[ra] === this.rank[rb]) this.rank[ra]++
+    }
+}
+```
 
-- - Core principle: Understand the fundamental concepts thoroughly
-- - Implementation pattern: Practice with real code examples
-- - Complexity: Know the time and space complexity
-- - Application: Know when to use this in production systems
-- - Interview: Frequently asked in technical interviews
-- - Edge cases: Consider common failure scenarios
-- - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-
-1. **Explain the core idea of DSA Problem Bank: 100+ Curated Problems in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
-
-2. **Design a minimal, well-typed function that demonstrates DSA Problem Bank: 100+ Curated Problems.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
-
-3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
-
-#### Amazon Style
-
-4. **Describe a production bug caused by misunderstanding DSA Problem Bank: 100+ Curated Problems. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
-
-5. **How would you scale a system that relies on DSA Problem Bank: 100+ Curated Problems from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
-
-#### Microsoft Style
-
-6. **Compare DSA Problem Bank: 100+ Curated Problems with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
-
-7. **Walk through how you would test a component that depends on DSA Problem Bank: 100+ Curated Problems.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
-
-#### NVIDIA Style
-
-8. **How does DSA Problem Bank: 100+ Curated Problems behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
-
-9. **How would you make an implementation of DSA Problem Bank: 100+ Curated Problems run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
-
-#### AI Startup Style
-
-10. **Write the smallest possible implementation of DSA Problem Bank: 100+ Curated Problems that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
-
-### Resume Tips
-
-- Name DSA Problem Bank: 100+ Curated Problems explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using DSA Problem Bank: 100+ Curated Problems").
-- Add a bullet describing a project that applies DSA Problem Bank: 100+ Curated Problems to real data, with numbers.
-- Mention the tools and libraries you used alongside DSA Problem Bank: 100+ Curated Problems (linters, test frameworks, profiling tools).
-- Keep resume bullets under 15 words and start each with an action verb.
-
-### Interview Day Checklist
-
-- Rehearse a 60-second explanation of DSA Problem Bank: 100+ Curated Problems and one real-world analogy.
-- Prepare one STAR story about debugging a DSA Problem Bank: 100+ Curated Problems-related production issue.
-- Review complexity and edge cases for the classic DSA Problem Bank: 100+ Curated Problems interview problem.
-- Have questions ready: how does the team apply DSA Problem Bank: 100+ Curated Problems in production today?
-- Test your environment (Python, editor, internet) 15 minutes before the interview.
-
-## True/False
-
-1. **True or False:** DSA Problem Bank: 100+ Curated Problems builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for DSA Problem Bank: 100+ Curated Problems before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for DSA Problem Bank: 100+ Curated Problems is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for DSA Problem Bank: 100+ Curated Problems in production. — **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the DSA Problem Bank: 100+ Curated Problems chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
-
-## Fill in the Blank
-
-1. The chapter that covers DSA Problem Bank: 100+ Curated Problems is Chapter ___ of this module. — Answer: check the module's table of contents.
-2. The time complexity of the standard approach to DSA Problem Bank: 100+ Curated Problems is ___. — Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing DSA Problem Bank: 100+ Curated Problems is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug DSA Problem Bank: 100+ Curated Problems issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to DSA Problem Bank: 100+ Curated Problems in the next chapter is ___. — Answer: see the Next Topic section.
-
-## Scenario Questions
-
-1. **Scenario:** A teammate ships a change involving DSA Problem Bank: 100+ Curated Problems that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
-
-2. **Scenario:** Your implementation of DSA Problem Bank: 100+ Curated Problems is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
-
-3. **Scenario:** A new hire asks you to explain DSA Problem Bank: 100+ Curated Problems in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
-
-4. **Scenario:** Your team's codebase has three different patterns for DSA Problem Bank: 100+ Curated Problems and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
-
-## Output Questions
-
-1. **What is the output of the simplest correct implementation of DSA Problem Bank: 100+ Curated Problems on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+5. Implement a min-heap in TypeScript and use it for Find Median from Data Stream by pairing it with a max-heap (store negative values).
 
 ## Difficulty Level
 
 | Level | Time | What It Takes |
 |-------|------|---------------|
-| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
-| Intermediate | 3-5 sessions | Complete Medium exercises, explain DSA Problem Bank: 100+ Curated Problems to someone else |
-| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
+| Beginner | 1-2 sessions | Read the theory, run the examples, solve the Easy problems in each pattern |
+| Intermediate | 3-5 sessions | Complete the Medium problems, explain each pattern to someone else |
+| Advanced | 1+ week | Solve the Hard problems, optimize for strict constraints, answer interview follow-ups |
 
 ## Tips & Tricks
 
-- Always write a one-line example of DSA Problem Bank: 100+ Curated Problems from memory before opening the chapter — active recall first.
-- Use the chapter's Revision Notes as a checklist: you have mastered DSA Problem Bank: 100+ Curated Problems when you can explain each bullet.
-- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
-- For interviews, practice explaining DSA Problem Bank: 100+ Curated Problems twice: once with a technical audience, once with a non-technical audience.
-- Keep a personal examples file where you collect your own DSA Problem Bank: 100+ Curated Problems snippets; interviewers love original examples.
-
-## Memory Tricks
-
-- **Acronym**: build a mnemonic from the 5 key concepts of DSA Problem Bank: 100+ Curated Problems listed in the Chapter at a Glance table.
-- **Story**: link DSA Problem Bank: 100+ Curated Problems to a familiar story — the analogy in the Visual Analogy section is designed to stick.
-- **Number anchor**: remember the complexity of DSA Problem Bank: 100+ Curated Problems by connecting it to a known algorithm of the same class.
-- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain DSA Problem Bank: 100+ Curated Problems to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
-
-## Further Reading
-
-- Official documentation for the primary tool or library used in this chapter
-- The chapter referenced in Related Topics for the next-level treatment of DSA Problem Bank: 100+ Curated Problems
-- The classic textbook chapter on DSA Problem Bank: 100+ Curated Problems (check the Research References below)
-- Two blog posts from engineers who debugged real DSA Problem Bank: 100+ Curated Problems problems in production
-- The repository of the open-source project that implements DSA Problem Bank: 100+ Curated Problems
-
-## Related Topics
-
-- The previous chapter in this module (see table of contents) — foundational for DSA Problem Bank: 100+ Curated Problems
-- The next chapter (see Next Topic below) — builds on DSA Problem Bank: 100+ Curated Problems
-- The system design chapters in Module 07 — how DSA Problem Bank: 100+ Curated Problems fits into production architectures
-- The interview preparation module — how DSA Problem Bank: 100+ Curated Problems is asked in screening rounds
-- The capstone project — where DSA Problem Bank: 100+ Curated Problems is applied end-to-end
-
-## FAQs
-
-1. **Do I need to memorize all of DSA Problem Bank: 100+ Curated Problems, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is DSA Problem Bank: 100+ Curated Problems asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
-
-## Important Notes
-
-- DSA Problem Bank: 100+ Curated Problems is a core requirement for the rest of this module — do not skip the examples.
-- Always analyze complexity (time and space) when working with DSA Problem Bank: 100+ Curated Problems.
-- Production correctness means handling edge cases, not just the happy path.
-- Interview answers should start with the definition, then the example, then the trade-offs.
-- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
-
-## Historical Context
-
-- DSA Problem Bank: 100+ Curated Problems emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
-- The tools used for DSA Problem Bank: 100+ Curated Problems today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about DSA Problem Bank: 100+ Curated Problems — it shows genuine interest, not just cramming.
-- The library/tooling ecosystem around DSA Problem Bank: 100+ Curated Problems changes quickly; focus on fundamentals that remain stable.
-
-## Security Considerations
-
-- Never trust external input: validate and sanitize data before processing DSA Problem Bank: 100+ Curated Problems.
-- Avoid `eval()` and dynamic code execution on untrusted strings.
-- Log errors without leaking sensitive data (keys, PII, internal paths).
-- For API contexts, add rate limiting and input size limits.
-- Review the chapter's code examples for injection or overflow risks before using them verbatim.
-
-## ML Intuition
-
-- DSA Problem Bank: 100+ Curated Problems appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding DSA Problem Bank: 100+ Curated Problems helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
-- In production ML, the DSA Problem Bank: 100+ Curated Problems concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
-- When optimizing ML systems, DSA Problem Bank: 100+ Curated Problems skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply DSA Problem Bank: 100+ Curated Problems to a dataset of 10 million records? — Batching and vectorization.
-
-## Analogies
-
-- **DSA Problem Bank: 100+ Curated Problems is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
-- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
-- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
-
-## Capstone Project Link
-
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the DSA Problem Bank: 100+ Curated Problems skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- Start every attempt with the cheat sheet. Naming the pattern out loud organizes your thinking.
+- Time-box each problem to 25 minutes before you allow yourself to peek at a hint.
+- Write the brute force first, then state the bottleneck before optimizing.
+- Keep a pattern journal with one line per problem: name, pattern, complexity, insight.
+- Practice test-first thinking: list the edge cases (empty, single, duplicate, large, overflow) before coding.
+- Pair a strong pattern with a weak one each session to build interleaving.
 
 ## Flashcards
 
-<details class="tp-qa-card" data-qid="21interviewpreparation-16dsaproblembank-flash1">
+<details class="tp-qa-card" data-qid="ip-s16-flash1">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    What is the core concept of DSA Problem Bank: 100+ Curated Problems in one sentence?
+    What is the difference between DP and greedy?
   </summary>
   <div class="tp-qa-answer">
-    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+    <p>DP explores overlapping subproblems and combines optimal substructure. Greedy commits to a local choice that provably reaches the global optimum. If a local choice can fail, use DP.</p>
   </div>
 </details>
 
-<details class="tp-qa-card" data-qid="21interviewpreparation-16dsaproblembank-flash2">
+<details class="tp-qa-card" data-qid="ip-s16-flash2">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    What is the most common mistake engineers make with 
+    When do you choose two pointers over a sliding window?
   </summary>
   <div class="tp-qa-answer">
-    <p>Check the Common Mistakes section of this chapter.</p>
+    <p>Two pointers pair elements from opposite ends, usually on sorted input. Sliding window maintains a contiguous range with a count or sum invariant.</p>
   </div>
 </details>
 
-<details class="tp-qa-card" data-qid="21interviewpreparation-16dsaproblembank-flash3">
+<details class="tp-qa-card" data-qid="ip-s16-flash3">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    What is the time and space complexity of the standard DSA Problem Bank: 100+ Curated Problems approach?
+    What is the amortized cost of Union-Find with path compression and union by rank?
   </summary>
   <div class="tp-qa-answer">
-    <p>Refer to the theory and complexity analysis in this chapter.</p>
+    <p>O(alpha(n)), the inverse Ackermann function, which is effectively constant for any realistic input size.</p>
   </div>
 </details>
 
-<details class="tp-qa-card" data-qid="21interviewpreparation-16dsaproblembank-flash4">
+<details class="tp-qa-card" data-qid="ip-s16-flash4">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    When is DSA Problem Bank: 100+ Curated Problems NOT the right choice?
+    How do you detect a cycle in a singly linked list in O(1) space?
   </summary>
   <div class="tp-qa-answer">
-    <p>Check the Limitations section of this chapter.</p>
+    <p>Use two pointers: a slow one moving one step and a fast one moving two steps. If they meet, a cycle exists.</p>
   </div>
 </details>
 
-<details class="tp-qa-card" data-qid="21interviewpreparation-16dsaproblembank-flash5">
+<details class="tp-qa-card" data-qid="ip-s16-flash5">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    How is DSA Problem Bank: 100+ Curated Problems applied in a real production system?
+    How does a monotonic stack solve next-greater-element problems?
   </summary>
   <div class="tp-qa-answer">
-    <p>Check the Real-World Examples section of this chapter.</p>
+    <p>Push indices while values are decreasing. When a larger value arrives, pop elements whose next greater element is now known. Each element is pushed and popped once, so it runs in O(n).</p>
   </div>
 </details>
-
-## Research References
-
-- Official documentation of the primary library for DSA Problem Bank: 100+ Curated Problems (linked in Further Reading)
-- The classic paper or textbook chapter introducing DSA Problem Bank: 100+ Curated Problems (see References below)
-- The standard library reference for DSA Problem Bank: 100+ Curated Problems-related functions
-- Engineering blog posts from companies running DSA Problem Bank: 100+ Curated Problems in production at scale
-- PEPs and RFCs where applicable (Python and networking standards)
-
-## Open-Source Tools
-
-- The primary library used in this chapter (see the code examples)
-- Python standard library modules used in the examples (check the imports)
-- Testing: pytest for unit tests of DSA Problem Bank: 100+ Curated Problems code
-- Linting and formatting: ruff + black
-- Profiling: cProfile or py-spy for performance work on DSA Problem Bank: 100+ Curated Problems
 
 ## Debugging Guide
 
-- Start with `print()` or a debugger to inspect intermediate values in DSA Problem Bank: 100+ Curated Problems code.
 - Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
-- For performance problems, profile before optimizing: measure, then fix.
-- When stuck, re-read the chapter's Examples and compare line by line with your code.
-- Use `pdb` or your IDE's debugger to step through the DSA Problem Bank: 100+ Curated Problems example code.
+- Trace the loop invariants: for two pointers, check that both pointers move and bounds hold.
+- Check off-by-one errors at mid computations and window shrink conditions.
+- Test edge cases in this order: empty input, single element, all duplicates, sorted input, reversed input, maximum values.
+- Print intermediate state at each step (indices, sums, maps) and compare against a hand trace.
+- If performance is the issue, profile the hot loop and look for accidental O(n^2) patterns inside O(n) algorithms.
+- When stuck, re-read the pattern's hint and re-walk the chapter example line by line.
 
-## Mock Interview Section
+## Placement Section
 
-**Round 1 — Screening (15 min)**
-- Explain DSA Problem Bank: 100+ Curated Problems in 60 seconds.
-- Write a minimal working example of DSA Problem Bank: 100+ Curated Problems.
-- What is the complexity of your example?
+### Top Interview Questions
 
-**Round 2 — Coding (45 min)**
-- Solve the Medium exercise from this chapter under time pressure.
-- State your assumptions, then implement with type hints.
-- Test with edge cases: empty input, boundary values, invalid input.
+#### Google Style
 
-**Round 3 — Behavioral + System (30 min)**
-- Tell me about a time you debugged a DSA Problem Bank: 100+ Curated Problems problem in a project.
-- How would you design a system where DSA Problem Bank: 100+ Curated Problems is used at scale?
-- What metrics would you monitor?
+1. **Implement twoSum in O(n). Then explain what changes if the array is already sorted.** — Interviewer checks: hash map usage, edge cases (duplicates, no solution), and the tradeoff of space versus the two-pointer variant.
 
-**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+2. **Design an LRU cache with O(1) get and put.** — Structure: hash map for lookups, doubly linked list for recency. Follow-up: how does the map plus list pair keep both operations O(1)?
 
-## Optimized Implementation
+3. **Find the median of two sorted arrays in O(log(min(n, m))).** — Partition both arrays and binary search the smaller one. Follow-up: what happens when totals are even?
 
-`python
-from typing import Any, Optional
+#### Amazon Style
 
-def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
-    """Runnable scaffold for DSA Problem Bank: 100+ Curated Problems.
+4. **Describe a production bug caused by a data-structure misuse. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-    Replace the body with the optimized implementation from the chapter,
-    keeping type hints, docstring, and edge-case handling.
-    """
-    if not input_data:
-        return None
-    # Step 1: validate input types
-    # Step 2: apply the core DSA Problem Bank: 100+ Curated Problems logic from the Examples section
-    # Step 3: return the result with the documented default
-    return 0.0
-`
+5. **Why is a hash map O(1) on average but O(n) in the worst case? How do you choose between a hash map and a tree map at scale?** — Discuss collisions, load factor, resizing, and the ordered operations a tree provides.
 
-- Keeps the function signature stable so tests written against it stay valid.
-- Handles the empty-input contract explicitly.
-- Add unit tests for the edge cases before implementing the logic (test-first).
+#### Microsoft Style
 
-## Evaluation Metrics
+6. **Compare a hash map and a balanced BST for a dictionary that must support order queries.** — Make a decision matrix: lookup cost, ordered iteration, memory, implementation complexity. Follow-up: what would change your decision?
 
-| Skill | Test | Target |
-|-------|------|--------|
-| Concept recall | Explain DSA Problem Bank: 100+ Curated Problems without notes | 60-second explanation |
-| Code fluency | Write the chapter example from memory | No syntax errors |
-| Edge cases | Handle empty/invalid input in exercises | All cases pass |
-| Complexity | State time/space for the standard approach | Correct big-O |
-| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
-| Retention | Chapter quiz score after 3 days | 80%+ |
+7. **Walk through how you would test a component that relies on a sliding-window invariant.** — Unit tests for window shrink, property tests for the count invariant, golden files for known inputs.
 
-## Real-World Examples
+#### NVIDIA Style
 
-- **Startup**: a small team uses DSA Problem Bank: 100+ Curated Problems daily in their data pipeline — the chapter's examples mirror their code.
-- **E-commerce**: DSA Problem Bank: 100+ Curated Problems patterns appear in order processing, inventory checks, and recommendation feeds.
-- **Fintech**: DSA Problem Bank: 100+ Curated Problems principles apply to transaction validation and fraud detection flows.
-- **ML platform**: DSA Problem Bank: 100+ Curated Problems shows up in feature engineering and model-serving infrastructure.
-- **Interview insight**: recruiters look for engineers who can connect DSA Problem Bank: 100+ Curated Problems to the business outcome, not just the code.
+8. **How does a DP recurrence behave at scale in memory and throughput?** — Discuss 2D tables versus rolling arrays, cache locality, and when to switch to iterative bottom-up over recursion.
+
+#### AI Startup Style
+
+9. **Write the smallest production-quality twoSum that handles duplicates, empty input, and overflow-safe comparisons.** — Include error handling and a short docstring. Follow-up: what would you refactor first as the input grows?
+
+### Resume Tips
+
+- Name specific patterns and problems in your skills section, paired with a measurable achievement ("Reduced API latency 40% by replacing nested loops with a hash map").
+- Add a bullet describing a project that applies DSA to real data with numbers.
+- Mention the tools you used alongside the patterns: profilers, test frameworks, and CI.
+- Keep resume bullets under 15 words and start each with an action verb.
+
+### Interview Day Checklist
+
+- Rehearse a 60-second explanation of each pattern and one real-world analogy.
+- Prepare one STAR story about debugging an algorithmic production issue.
+- Review the complexity and edge cases for the classic problems in each pattern.
+- Have questions ready about how the team applies DSA and system design in production.
+- Test your environment (editor, judge, internet) 15 minutes before the interview.
+
+## Further Reading
+
+- NeetCode 150 and LeetCode 75 problem lists, grouped by the same patterns as this bank.
+- "Grokking the Coding Interview: Patterns for Coding Questions" for pattern-first practice.
+- "Cracking the Coding Interview" by Gayle Laakmann McDowell for company walkthroughs.
+- "Elements of Programming Interviews" by Aziz, Lee, and Prakash for harder variants.
+- "Introduction to Algorithms" (CLRS) chapters on sorting, dynamic programming, and greedy algorithms for the theory.
+- LeetCode Discuss company-tagged boards for the latest interview signals.
 
 ## Next Topic
 
 [Low-Level and OOD Design](17-ood-design.md)
-
-## Limitations
-
-- DSA Problem Bank: 100+ Curated Problems, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
-- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of DSA Problem Bank: 100+ Curated Problems depends on input size and distribution — always benchmark for your own data.
-- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.
